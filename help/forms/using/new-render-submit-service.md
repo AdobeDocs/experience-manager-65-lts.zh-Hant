@@ -1,0 +1,163 @@
+---
+title: 新的轉譯與提交服務
+description: 在Workbench中定義轉譯和提交服務，以根據從中存取XDP表單的裝置將XDP表單轉譯為HTML或PDF。
+content-type: reference
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
+topic-tags: forms-workspace
+docset: aem65
+solution: Experience Manager, Experience Manager Forms
+feature: HTML5 Forms,Adaptive Forms,Mobile Forms
+role: Admin, User, Developer
+source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+workflow-type: tm+mt
+source-wordcount: '891'
+ht-degree: 0%
+
+---
+
+# 新的轉譯與提交服務{#new-render-and-submit-service}
+
+## 簡介 {#introduction}
+
+在Workbench中，當您定義`AssignTask`作業時，請指定特定表單(XDP或PDF表單)。 此外，透過動作設定檔指定一組轉譯和提交服務。
+
+XDP可呈現為PDF表單或HTML表單。 新功能包括：
+
+* 以HTML形式呈現和提交XDP表單
+* 在案頭上以PDF呈現和提交XDP表單，並在行動裝置上以HTML呈現(例如iPad)
+
+### 全新HTML Forms服務 {#new-html-forms-service}
+
+新的HTML Forms服務使用Forms中的新功能來支援將XDP表單轉譯為HTML。 新的HTML Forms服務會公開下列方法：
+
+```java
+/*
+ * Generates a URL (for the HTML Form) to be passed to client, given a TaskContext.
+ * The output of this API is something like this - /lc/content/xfaforms/profiles/default.ws.html?ContentRoot=repository://Applications/MyApplication/MyFolder&template=MyForm.xdp
+ * @param taskContext task context
+ * @param profileName Forms servlet URL.
+ * @return form URL string
+ */
+public String generateFormURL(TaskContext taskContext, String profileName);
+
+/*
+ * Render the XDP Form as HTML. Can be used directly for updating the runtimeMap in render.
+ * It adds the following keys to the map -
+ * hint:new html form = true
+ * newHTMLFormURL = the URL returned after calling 'generateFormURL' API.
+ * @param TaskContext taskContext
+ * @param profileName Forms servlet URL.
+ * @param runtimeMap runtime map<string,object> associated with form rendering.
+ * return runtimeMap
+ */
+public Map<String, Object> renderHTMLForm (TaskContext taskContext, String profileName, Map<String,Object> runtimeMap);
+```
+
+如需行動表單設定檔的詳細資訊，請參閱[建立自訂設定檔](/help/forms/using/custom-profile.md)。
+
+## 全新HTML表單轉譯與提交程式 {#new-html-form-render-amp-submit-processes}
+
+針對每個「AssignTask」作業，指定具有表單的「轉譯」和「提交」程式。 這些處理程式由TaskManager `renderForm`和`submitForm`API呼叫，以允許自訂處理。 新HTML表單的這些流程的語意：
+
+### 轉譯新的HTML表單 {#render-a-new-html-form}
+
+呈現HTML的新程式（與每個呈現程式一樣）具有下列I/O引數 — 
+
+輸入 — `taskContext`
+
+輸出 — `runtimeMap`
+
+輸出 — `outFormDoc`
+
+此方法會模擬NewHTMLFormsService的`renderHTMLForm` API的確切行為。 它會呼叫`generateFormURL` API來取得表單的HTML轉譯URL。 然後它會使用下列索引鍵或值填入runtimeMap：
+
+新html表單= true
+
+newHTMLFormURL =呼叫`generateFormURL` API後傳回的URL。
+
+### 提交新的HTML表單 {#submit-a-new-html-form}
+
+提交新HTML表單的此程式適用於下列I/O引數 — 
+
+輸入 — `taskContext`
+
+輸出 — `runtimeMap`
+
+輸出 — `outputDocument`
+
+處理程式將`outputDocument`設定為從`taskContext`擷取的`inputDocument`。
+
+## 預設呈現或提交程式，以及動作設定檔 {#default-render-or-submit-processes-and-action-profiles}
+
+預設的「轉譯與提交」服務可支援在案頭上轉譯PDF，以及在行動裝置上轉譯HTML (iPad)。
+
+### 預設演算表單 {#default-render-form}
+
+此過程可順暢地在多種平台上呈現XDP表單。 處理程式會從`taskContext`擷取使用者代理程式，並使用資料呼叫處理程式來轉譯HTML或PDF。
+
+![default-render-form](assets/default-render-form.png)
+
+### 預設提交表單 {#default-submit-form}
+
+此程式可順暢地在多個平台上提交XDP表單。 它會從`taskContext`擷取使用者代理程式，並使用資料呼叫程式來提交HTML或PDF。
+
+![default-submit-form](assets/default-submit-form.png)
+
+## 將行動表單的轉譯從PDF切換至HTML {#switch-the-rendering-of-mobile-forms-from-pdf-to-html}
+
+瀏覽器逐漸停止支援以NPAPI為基礎的外掛程式，包括Adobe Acrobat和Adobe Acrobat Reader的外掛程式。 您可以使用下列步驟，將行動表單的轉譯從PDF變更為HTML：
+
+1. 以有效使用者的身分登入Workbench。
+1. 選取&#x200B;**檔案** > **取得應用程式**。
+
+   「取得應用程式」對話方塊就會顯示。
+
+1. 選取您要變更行動表單轉譯的應用程式，然後按一下&#x200B;**確定**。
+1. 開啟您要變更其演算的程式。
+1. 開啟目標起點/工作，導覽至「簡報與資料」區段，然後按一下&#x200B;**管理動作設定檔**。
+
+   管理動作設定檔對話方塊就會顯示。
+1. 將預設轉譯器設定檔設定從PDF變更為HTML，然後按一下&#x200B;**確定**。
+1. 在程式中籤入。
+1. 重複這些步驟以變更其他處理程式的演算。
+1. 部署與已變更的處理程式相關的應用程式。
+
+### 預設動作設定檔 {#default-action-profile}
+
+預設動作設定檔將XDP表單轉譯為PDF。 此行為現在已變更為使用預設轉譯表單和預設提交表單程式。
+
+有關動作設定檔的一些常見問題如下：
+
+![gen_question_b_20](assets/gen_question_b_20.png) **哪些轉譯/提交程式將立即可用？**
+
+* 轉譯指南（指南已過時）
+* 轉譯表單指南
+* 呈現PDF表單
+* 呈現HTML表單
+* 轉譯新HTML表單（新）
+* 預設演算表單（新）
+
+以及等同的提交程式。
+
+![gen_question_b_20](assets/gen_question_b_20.png) **哪些動作設定檔將可立即使用？**
+
+對於XDP Forms：
+
+* 預設（使用新的「預設轉譯/提交」流程轉譯/提交）
+
+![gen_question_b_20](assets/gen_question_b_20.png) **流程設計工具需要執行哪些動作，才能讓表單在裝置上的HTML以及案頭上的PDF中呈現？**
+
+沒有內容。 系統會自動選擇預設的「動作設定檔」，並自動管理演算模式。
+
+![gen_question_b_20](assets/gen_question_b_20.png) **若要讓表單在案頭上於HTML中呈現，需要執行哪些動作？**
+
+使用者必須選取預設設定檔的HTML選項按鈕。
+
+![gen_question_b_20](assets/gen_question_b_20.png) **變更預設動作設定檔行為是否會受到任何升級影響？**
+
+可以，因為與預設動作設定檔關聯的先前轉譯與提交服務不同，所以會將其視為現有表單的自訂。 按一下&#x200B;**還原預設值**&#x200B;後，就會改為設定預設的轉譯器與送出服務。
+
+如果您修改了現有的轉譯器或提交PDF表單服務，或是建立了自訂服務（例如custom1），現在想要對HTML轉譯使用相同的功能。 您需要複製新的轉譯器或提交服務（例如custom2），並將類似的自訂套用至這些服務。 現在，修改您XDP的動作設定檔，以開始使用自訂2服務，而不是自訂1的呈現或提交。
+
+若要讓表單在裝置上於HTML中呈現，以及案頭上的PDF中呈現，流程設計人員必須執行哪些動作？
+若要讓表單在裝置上於HTML中呈現，以及案頭上的PDF中呈現，流程設計人員必須執行哪些動作？
