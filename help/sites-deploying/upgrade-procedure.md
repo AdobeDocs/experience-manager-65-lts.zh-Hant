@@ -10,9 +10,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 6a06ad15782b5cff7978547d005aaa312a837647
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -114,7 +114,7 @@ ht-degree: 0%
 
 ![mongo-secondaries](assets/mongo-secondaries.jpg)
 
-1. 建立新的6.5編寫執行個體，連線至升級的Mongo執行個體。
+1. 建立新的6.5.2025 Author執行個體，並連線至升級的Mongo執行個體。
 
 1. 重建從叢集移除的MongoDB節點。
 

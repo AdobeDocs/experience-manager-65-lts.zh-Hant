@@ -8,59 +8,97 @@ content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 34693070f2fcb5b468c72118cd5d5fc26d6d9dd0
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
 
 # 升級後解除安裝的過時套件組合清單{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
 
->[!NOTE]
->
->如果您的程式碼仰賴這些套件，請務必聯絡Adobe支援，要求取得受影響區域的相容性套件。
+升級至AEM 6.5.2025時，系統將根據執行升級的AEM 6.5 servicepack版本，自動解除安裝下列套件組合：
 
-升級至AEM 6.3時，系統會根據執行升級的AEM版本，自動解除安裝下列套件組合：
+* com.adobe.cq.social.cq-social-activitystreams
+* com.adobe.cq.social.cq-social-as-provider
+* com.adobe.cq.social.cq-social-badging-api
+* com.adobe.cq.social.cq-social-badging-basic-impl
+* com.adobe.cq.social.cq-social-badging-impl
+* com.adobe.cq.social.cq-social-calendar-api
+* com.adobe.cq.social.cq-social-calendar-impl
+* com.adobe.cq.social.cq-social-commons-oauth
+* com.adobe.cq.social.cq-social-commons
+* com.adobe.cq.social.cq-social-console
+* com.adobe.cq.social.cq-social-content-fragments-impl
+* com.adobe.cq.social.cq-social-enablement-api
+* com.adobe.cq.social.cq-social-enablement-impl
+* com.adobe.cq.social.cq-social-filelibrary
+* com.adobe.cq.social.cq-social-forum
+* com.adobe.cq.social.cq-social-gamification-api
+* com.adobe.cq.social.cq-social-gamification-impl
+* com.adobe.cq.social.cq-social-graph-api
+* com.adobe.cq.social.cq-social-graph-impl
+* com.adobe.cq.social.cq-social-group
+* com.adobe.cq.social.cq-social-handlebars
+* com.adobe.cq.social.cq-social-ideation-api
+* com.adobe.cq.social.cq-social-ideation-impl
+* com.adobe.cq.social.cq-social-jcr-provider-common
+* com.adobe.cq.social.cq-social-jcr-provider
+* com.adobe.cq.social.cq-social-journal
+* com.adobe.cq.social.cq-social-livefyre
+* com.adobe.cq.social.cq-social-members-api
+* com.adobe.cq.social.cq-social-members-impl
+* com.adobe.cq.social.cq-social-messaging-api
+* com.adobe.cq.social.cq-social-messaging-impl
+* com.adobe.cq.social.cq-social-moderation-spamdetector-core
+* com.adobe.cq.social.cq-social-moderation
+* com.adobe.cq.social.cq-social-ms-provider
+* com.adobe.cq.social.cq-social-notifications-api
+* com.adobe.cq.social.cq-social-notifications-channels-web
+* com.adobe.cq.social.cq-social-notifications-impl
+* com.adobe.cq.social.cq-social-qna
+* com.adobe.cq.social.cq-social-rdb-provider
+* com.adobe.cq.social.cq-social-reporting-management
+* com.adobe.cq.social.cq-social-review
+* com.adobe.cq.social.cq-social-scf-api
+* com.adobe.cq.social.cq-social-scf-impl
+* com.adobe.cq.social.cq-social-scoring-api
+* com.adobe.cq.social.cq-social-scoring-basic-impl
+* com.adobe.cq.social.cq-social-scoring-impl
+* com.adobe.cq.social.cq-social-serviceusers-api
+* com.adobe.cq.social.cq-social-serviceusers-impl
+* com.adobe.cq.social.cq-social-srp-api
+* com.adobe.cq.social.cq-social-srp-impl
+* com.adobe.cq.social.cq-social-tally
+* com.adobe.cq.social.cq-social-translation
+* com.adobe.cq.social.cq-social-ugc-search-collections
+* com.adobe.cq.social.cq-social-ugcbase-api
+* com.adobe.cq.social.cq-social-ugcbase-impl
+* com.adobe.cq.social.cq-social-user-ugc-management
+* com.adobe.cq.sample.we.retail.core
+* com.adobe.cq.screens.dcc
+* com.adobe.cq.screens.mq.activemq
+* com.adobe.cq.screens.mq.core
+* com.adobe.cq.screens
+* com.adobe.cq.screens.sessions
+* com.adobe.granite.socketio
+* org.apache.jackrabbit.jackrabbit-api （取代為較新版本org.apache.jackrabbit.oak-jackrabbit-api）
+* com.adobe.cq.commerce.cq-commerce-core
+* com.adobe.cq.commerce.cq-commerce-pim
+* com.adobe.cq.commerce.cq-commerce-social
+* org.apache.servicemix.bundles.abdera-parser
+* org.apache.servicemix.bundles.jdom
+* com.day.cq.dam.cq-dam-pim
+* com.day.cq.dam.cq-dam-rating
+* org.apache.commons.io （取代為較新版本的org.apache.commons.commons-io）
+* com.adobe.granite.crx-explorer
+* org.apache.jackrabbit.oak-solr-osgi
+* com.adobe.cq.cq-searchpromote-integration
 
-**AEM 6.1：**
+以下套件組合未包含在全新AEM 6.5.2025執行個體中。 升級後，您可能會發現這些套件組合處於非作用中狀態。 這些檔案可手動移除：
 
-* org.eclipse.equinox.region，1.1.0.v20120522-1841版，作用中
-* org.apache.sling.installer.factory.subsystems，版本1.0.0，Active
-* org.apache.aries.subsystem.core，1.2.0版，Active
-* org.apache.aries.subsystem.api，1.1.0版，Active
-* org.apache.felix.resolver，版本1.0.0，作用中
-* org.osgi.service.subsystem.region.context.0，版本1.0.0，作用中
-* com.adobe.cq.cq-creativecloud-cloudims，0.0.10版，Active
-* com.adobe.cq.cq-creativecloud-commons，0.0.8版，Active
-* com.adobe.cq.cq-creativecloud-filesync，0.0.12版，已安裝
-* com.adobe.cq.cq-creativecloud-storage，0.0.8版，已安裝
-* biz.aQute.bndlib，1.43.0版，作用中
-* com.day.cq.dam.commons.nekohtml，0.9.5版，Active
-* com.day.cq.mcm.cq-mcm-silverpop-integration，1.2.2版，Active
-
-**AEM 6.0：**
-
-* org.apache.sling.discovery.impl，版本1.1.6，活動
-* com.adobe.granite.installer.patch，0.4.0版，Active
-* biz.aQute.bndlib，1.43.0版，作用中
-* com.day.cq.cq-jobs-core，5.4.0版，Active
-* com.day.cq.cq-opensocial，5.7.2版，Active
-* com.day.cq.cq-pinauthhandler，1.1.2版，Active
-* com.day.cq.dam.commons.nekohtml，0.9.5版，Active
-* com.day.cq.mcm.cq-mcm-silverpop-integration，1.1.6版，Active
-* com.day.cq.wcm.cq-wcm-mobile-phonegap-build-integration，5.7.18版，Active
-
-**CQ 5.6.1：**
-
-* biz.aQute.bndlib，1.43.0版，作用中
-* com.day.cq.cq-pinauthhandler，1.0.0版，Active
-* com.day.cq.dam.commons.nekohtml，0.9.5版，Active
-* com.day.crx.crxde支援，2.3.14版，已安裝
-* com.day.cq.mcm.cq-mcm-silverpop-integration，1.0.2版，Active
-
-**CQ 5.6.0：**
-
-* com.day.cq.cq-pinauthhandler，1.0.0版，Active
-* com.day.cq.dam.commons.nekohtml，0.9.5版，Active
-* com.day.crx.crxde支援，2.3.14版，已安裝
+* org.apache.sling.atom.taglib
+* com.github.jknack.handlebars
+* com.adobe.granite.osgi.wrapper.guava
+* com.adobe.cq.core.wcm.components.core (可換成AEM 6.5 LTS相容版本)
+* com.adobe.cq.core.wcm.components.extension.contentfragment.bundle (可由AEM 6.5 LTS相容版本取代)

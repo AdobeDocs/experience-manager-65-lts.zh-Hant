@@ -9,28 +9,37 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 956da2542a958ee6548ede63a7e564f5a4705552
+source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 0%
+source-wordcount: '317'
+ht-degree: 1%
 
 ---
 
-# 升級至Adobe Experience Manager (AEM) 6.5 {#upgrading-to-aem}
+# 升級至Adobe Experience Manager (AEM) 6.5 LTS {#upgrading-to-aem}
+
+>[!NOTE]
+>最新6個Service Pack支援升級至AEM 6.5 LTS。
 
 本節說明如何將AEM安裝升級至AEM 6.5：
 
-* [規劃升級](/help/sites-deploying/upgrade-planning.md)
-* [使用模式偵測器評估升級複雜性](/help/sites-deploying/pattern-detector.md)
-* [在AEM 6.5中的向下相容性](/help/sites-deploying/backward-compatibility.md)
-  <!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
-* [升級程式](/help/sites-deploying/upgrade-procedure.md)
-* [升級程式碼和自訂](/help/sites-deploying/upgrading-code-and-customizations.md)
-* [升級前維護任務](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
-* [執行就地升級](/help/sites-deploying/in-place-upgrade.md)
-* [升級後檢查及疑難排解](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
-* [永續升級](/help/sites-deploying/sustainable-upgrades.md)
-* [緩慢的內容移轉](/help/sites-deploying/lazy-content-migration.md)
+<!-- Alexandru: drafting for now 
+
+* [Planning Your Upgrade](/help/sites-deploying/upgrade-planning.md)
+* [Assessing the Upgrade Complexity with Pattern Detector](/help/sites-deploying/pattern-detector.md)
+* [Backward Compatibility in AEM 6.5](/help/sites-deploying/backward-compatibility.md)
+  This was drafted before: * [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
+
+<!--
+* [Upgrade Procedure](/help/sites-deploying/upgrade-procedure.md)
+* [Upgrading Code and Customizations](/help/sites-deploying/upgrading-code-and-customizations.md)
+* [Pre-Upgrade Maintenance Tasks](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
+* [Performing an In-Place Upgrade](/help/sites-deploying/in-place-upgrade.md)
+* [Post Upgrade Checks and Troubleshooting](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
+* [Sustainable Upgrades](/help/sites-deploying/sustainable-upgrades.md)
+* [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md)
+
+-->
 
 為了更方便參考這些程式中涉及的AEM執行個體，以下辭彙已用在這些文章中：
 
@@ -39,44 +48,33 @@ ht-degree: 0%
 
 ## 變更為何？ {#what-has-changed}
 
+### 更新 {#updates}
+
 以下是AEM最後幾個版本的注意事項主要變更：
 
-AEM 6.0推出新的Jackrabbit Oak存放庫。 持續性管理員已由[微核心](/help/sites-deploying/platform.md#contentbody_title_4)取代。 從6.1版開始，不再支援CRX2。 必須執行名為crx2oak的移轉工具，才能從5.6.1執行個體移轉CRX2存放庫。 如需詳細資訊，請參閱[使用CRX2OAK移轉工具](/help/sites-deploying/using-crx2oak.md)。
+1. Foundation層已升級並支援Java 17 (其中包含來自Apache Sling、Apache Felix和Apache Jackrabbit Oak的套件組合開放原始碼層)
 
-如果使用Assets Insights，而您是從AEM 6.2之前的版本升級，則必須移轉資產，且透過JMX Bean產生ID。 針對Adobe的內部測試，TarMK環境上的125K資產在一小時內即完成移轉，但結果可能會有所差異。
+1. AEM 6.5 LTS jar封裝現在支援Jarkarta Servlet API規格5，而war封裝可部署至實施Jarta Servlet API規格5/6的servlet容器
 
-6.3為`SegmentNodeStore`引進了新格式，這是TarMK實作的基礎。 如果您從AEM 6.3之前的版本升級，這需要在升級過程中移轉存放庫，包括系統停機時間。
+1. AEM 6.5 LTS uber-jar的封裝已變更。 如需詳細資訊，請參閱[升級程式碼和自訂](/help/sites-deploying/upgrading-code-and-customizations.md)。
 
-Adobe工程部門估計約需20分鐘。 不需要重新索引。 此外，已發行crx2oak工具的新版本，可與新存放庫格式搭配使用。
+### 已移除舊版功能/成品 {#removed-legacy-features-artifacts}
 
-**從AEM 6.3升級至AEM 6.5時，不需要進行此移轉。**
+下列舊版解決方案已從AEM 6.5 LTS中移除。 如需詳細資訊，請參閱TBD：發行說明連結和[升級後解除安裝的過時套件組合清單](/help/sites-deploying/obsolete-bundles.md)
 
-已最佳化升級前維護任務，以支援自動化。
+1. Social
+1. Commerce
+1. Screens
+1. We-retail
+1. 整合搜尋和提升
 
-crx2oak工具命令列使用選項已變更為自動化易用，並支援更多升級路徑。
+**已移除成品**
 
-升級後的檢查也變得有利於自動化。
+1. CRX-explorer
+1. Crx2oak
+1. Google guava （因安全漏洞而移除）
+1. Abdera-parser （因安全性弱點而移除）
+1. jdom (`org.apache.servicemix.bundles.jdom`) （因安全性弱點而移除）
+1. `com.github.jknack.handlebars` （因安全性弱點而移除）
 
-修訂版本的定期資源回收和資料存放區資源回收現在是必須定期執行的例行維護任務。 隨著AEM 6.3的推出，Adobe支援並建議線上修訂清除。 如需如何設定這些工作的詳細資訊，請參閱[修訂清除](/help/sites-deploying/revision-cleanup.md)。
-
-AEM最近推出[模式偵測器](/help/sites-deploying/pattern-detector.md)，在您開始規劃升級時評估升級的複雜性。 6.5也特別注重[回溯相容性](/help/sites-deploying/backward-compatibility.md)的功能。 最後，也新增了[可持續升級](/help/sites-deploying/sustainable-upgrades.md)的最佳實務。
-
-如需有關近期AEM版本中其他變更的詳細資訊，請參閱完整發行說明：
-
-* [Adobe Experience Manager 6.5最新Service Pack發行說明](/help/release-notes/release-notes.md)
-
-## 升級概觀 {#upgrade-overview}
-
-升級AEM需要多個步驟，有時需要多個月的程式。 以下概述概述升級專案包含的內容及本檔案包含的內容：
-
-![screen_shot_2018-03-30at80708am](assets/screen_shot_2018-03-30at80708am.png)
-
-## 升級流程 {#upgrade-overview-1}
-
-下圖會擷取整體建議流程，並重點說明升級方法。 請注意Adobe推出新功能的參考資料。 升級應該從模式偵測器（請參閱[使用模式偵測器評估升級複雜性](/help/sites-deploying/pattern-detector.md)）開始，這應該可讓您根據產生的報告中的模式，決定要採取與AEM 6.4相容的路徑。
-
-6.5強調讓所有新功能向下相容，但若您仍看到部分回溯相容性問題，相容性模式可讓您暫時延遲開發，讓自訂程式碼與6.5相容。此方法可協助您在升級後立即避免開發工作(請參閱[AEM 6.5](/help/sites-deploying/backward-compatibility.md)中的回溯相容性)。
-
-最後，在您的6.5開發週期中，「可持續升級」（請參閱[可持續升級](/help/sites-deploying/sustainable-upgrades.md)）中匯入的功能可協助您遵循最佳實務，讓未來的升級更有效且更順暢。
-
-![6_4_upgrade_overviewflowchart-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
+AEM 6.5 LTS著重於功能的回溯相容性，並隨附分析器工具。 請參閱[使用AEM Analyzer評估升級複雜性](/help/sites-deploying/pattern-detector.md)，瞭解您開始規劃升級時的複雜性評估。 如需其他變更的詳細資訊，請參閱這裡的完整發行說明。 待定：AEM 6.5 LTS發行說明連結
