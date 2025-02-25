@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5檔案瞭解其運作方式，以及軟體可為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM 6.5
-source-git-commit: 72bf54362948b6429627466111a088bcebfd2a2b
+source-git-commit: 0f125455f975417590e7481e2d34da372d5428c2
 workflow-type: tm+mt
 source-wordcount: '7022'
 ht-degree: 19%
@@ -404,7 +404,7 @@ ht-degree: 19%
       + [設定 [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
 + Forms {#forms}
    + 發行說明 {#release-notes-new-features}
-      + [新增功能](/help/forms/using/whats-new.md)
+      + [最新資訊](/help/forms/using/whats-new.md)
       + [常見問題](/help/forms/using/frequently-asked-questions-faq.md)
    + 快速入門 {#getting-started}
       + [AEM Forms簡介](/help/forms/using/introduction-aem-forms.md)
@@ -782,7 +782,7 @@ ht-degree: 19%
       + [Designer FormCalc參考](https://www.adobe.com/go/learn_aemforms_formCalc_65)
       + [在HTML5 Forms中使用手寫簽名](/help/forms/using/scribble-signature.md)
       + [在 Designer 中變更頁面零內容](/help/forms/using/changing-page-zero-content-designer.md)
-      + [協助工具最佳實務]{#accessibility-best-practices}
+      + 協助工具最佳實務{#accessibility-best-practices}
          + [簡介](/help/forms/using/introduction-accessibility-forms-designer.md)
          + [建立表單的最佳實務](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
          + [測試表單協助工具的技術](/help/forms/using/techniques-for-testing-form-accessibility.md)
