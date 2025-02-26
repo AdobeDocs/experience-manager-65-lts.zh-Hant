@@ -1,13 +1,13 @@
 ---
-source-git-commit: 0deac9cb7fb13c6fec515739168eb2dbfd9a58c7
+source-git-commit: dc9fe33c0b32fe8bd11ddbf8d25339a6a2003857
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 64%
+source-wordcount: '503'
+ht-degree: 63%
 
 ---
-# 協助撰寫Adobe Experience Manager 6.6說明檔案
+# 為Adobe Experience Manager 6.5 LTS檔案貢獻內容
 
-感謝您選擇協助撰寫Adobe Experience Manager 6.6說明檔案！ 檔案團隊樂於接受整個讀者社群以及Adobe員工貢獻的內容。
+感謝您選擇協助撰寫Adobe Experience Manager 6.5 LTS說明檔案！ 檔案團隊樂於接受整個讀者社群以及Adobe員工貢獻的內容。
 
 本檔案說明您應如何提供內容，並指出在提供內容時應遵循的准則。
 
