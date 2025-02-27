@@ -9,9 +9,9 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 108e1b3d840287e3d694242d934d0fbe4606801c
+source-git-commit: 2eb9307f37098ee9f57ba9383600f74a5e3b2501
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1187'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,6 @@ ht-degree: 0%
 * [產生quickstart.properties檔案](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#generate-quickstart-properties)
 * [設定工作流程和稽核記錄清除](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#configure-wf-audit-purging)
 * [安裝、設定及執行升級前工作](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#install-configure-run-pre-upgrade-tasks)
-* [停用自訂登入模組](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-login-modules)
 * [從/install目錄移除更新](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#remove-updates-install-directory)
 * [停止任何冷待命執行個體](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#stop-tarmk-coldstandby-instance)
 * [停用自訂排程工作](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-scheduled-jobs)
@@ -146,6 +145,10 @@ ht-degree: 0%
 >只有TarMK安裝才需要此步驟
 
 如果使用TarMK，您應在升級前執行離線修訂清除。 如此一來，存放庫移轉步驟和後續升級工作執行速度會大幅加快，有助於確保在升級完成後，線上修訂清除可以成功執行。 如需有關執行離線修訂清除的資訊，請參閱[執行離線修訂清除](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup)。
+
+## 執行資料存放區記憶體回收 {#execute-datastore-garbage-collection}
+
+在CRX3執行個體上執行修訂清除後，您應該執行資料存放區記憶體回收，以移除資料存放區中所有未參考的blob。 如需指示，請參閱有關[資料存放區記憶體回收](/help/sites-administering/data-store-garbage-collection.md)的檔案。
 
 ## 旋轉記錄檔 {#rotate-log-files}
 
