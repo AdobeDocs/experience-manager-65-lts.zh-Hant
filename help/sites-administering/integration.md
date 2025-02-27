@@ -8,9 +8,9 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '100'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,6 @@ ht-degree: 0%
 * [與Adobe Experience Cloud整合](/help/sites-administering/marketing-cloud.md)
 * [與協力廠商服務整合](/help/sites-administering/third-party-services.md)
 * [Analytics與外部提供者](/help/sites-administering/external-providers.md)
-* [目錄製作者](/help/sites-administering/catalog-producer.md)
 * [瞭解、套用及組織智慧標籤](/help/assets/enhanced-smart-tags.md)
 
 下列為整合AEM與其他Adobe或協力廠商服務的相關資訊：

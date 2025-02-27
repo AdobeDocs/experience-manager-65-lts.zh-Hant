@@ -9,9 +9,9 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '484'
 ht-degree: 2%
 
 ---
@@ -61,13 +61,6 @@ ht-degree: 2%
  </tbody>
 </table>
 
-## 安裝問題 {#installation-issues}
-
-如需下列疑難排解情況的資訊，請參閱[常見安裝問題](/help/sites-deploying/troubleshooting.md#common-installation-issues)：
-
-* 連按兩下Quickstart jar或其他程式（例如archive manager）的JAR檔案沒有任何效果。
-* 在CRX上執行的應用程式擲回記憶體不足錯誤。
-* 按兩下AEM快速入門後，瀏覽器中不會顯示AEM歡迎畫面。
 
 ## 疑難排解分析的方法 {#methods-for-troubleshooting-analysis}
 

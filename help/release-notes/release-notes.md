@@ -1,9 +1,9 @@
 ---
 title: Adobe Experience Manager 6.5 LTS目前發行說明
 description: 以下是Adobe Experience Manager 6.5 LTS目前的發行說明。
-source-git-commit: 37dca00eef6918b1a0d3a56c87e0859fbc062e03
+source-git-commit: baa7e84c30117645d6a2e4ef8d8e182a9dd73321
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '796'
 ht-degree: 22%
 
 ---
@@ -95,6 +95,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | 解決方案 | 不支援社交/社群。 | 沒有可用的替代專案。 | 6.5 LTS GA |
 | Screens | 不支援Screens。 | 沒有可用的替代專案。 | 6.5 LTS GA |
 | Assets | 不支援`dam-pim`和`dam-rating`，因為套件組合依存於social。 | 沒有可用的替代專案。 | 6.5 LTS GA |
+| Assets | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()`已移除。 | 使用已新增的替代api `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()`。 | 6.5 LTS GA |
 | Granite | 組合`com.adobe.granite.socketio`已移除。 | 沒有可用的替代專案。 | 6.5 LTS GA |
 | Granite | 不支援`com.adobe.granite.crx-explorer`。 | 沒有可用的替代專案。 | 6.5 LTS GA |
 | 瓜瓦 | 所有Guava相依性現在在AEM中移除，因此`com.adobe.granite.osgi.wrapper.guava-15.0.0-0002`套件組合並非AEM的一部分。 | 如果客戶依賴Guava，則可自行新增Guava，或儘可能以Java集合或其他替代專案取代Guava程式碼。 | 6.5 LTS GA |
