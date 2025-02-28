@@ -1,9 +1,9 @@
 ---
 title: Adobe Experience Manager 6.5 LTS目前發行說明
 description: 以下是Adobe Experience Manager 6.5 LTS目前的發行說明。
-source-git-commit: 54f3f3019dcceda4307160aa2126c37835f6626e
+source-git-commit: 6a69d4e143c54b22127a1e1ff3546898fcdd0b2d
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '796'
 ht-degree: 22%
 
 ---
@@ -59,7 +59,6 @@ ht-degree: 22%
 >
 >Java™ 17是搭配AEM 6.5 LTS使用的建議版本。
 
-
 ## 過時和移除的功能 {#deprecated-and-removed-features}
 
 Adobe 持續評估產品功能，以更新或替代的方式來改善或取代舊功能，以提升客戶享有的整體價值，且隨時謹慎考慮是否回溯相容。
@@ -92,6 +91,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | Screens | 不支援Screens。 | 沒有可用的替代專案。 | 6.5 LTS GA |
 | Assets | 不支援`dam-pim`和`dam-rating`，因為套件組合依存於social。 | 沒有可用的替代專案。 | 6.5 LTS GA |
 | Assets | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()`已移除。 | 使用已新增的替代api `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()`。 | 6.5 LTS GA |
+| 入口網站 | 不支援AEM Portal Director。 | 沒有可用的替代專案。 | 6.5 LTS GA |
 | Granite | 組合`com.adobe.granite.socketio`已移除。 | 沒有可用的替代專案。 | 6.5 LTS GA |
 | Granite | 不支援`com.adobe.granite.crx-explorer`。 | 沒有可用的替代專案。 | 6.5 LTS GA |
 | Granite | 不支援`crx2oak`。 | 挑選相關的[Oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade)版本 | 6.5 LTS GA |
@@ -104,7 +104,6 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | 開放原始碼 | 正在從`com.sun.javax.mail`套件組合匯出`javax.mail`個套件。 | 不需要變更。 | 6.5 LTS GA |
 | 開放原始碼 | `org.apache.jackrabbit.api`個套件現在已從`org.apache.jackrabbit.oak-jackrabbit-api`套件組合匯出。 | 不需要變更。 | 6.5 LTS GA |
 | 開放原始碼 | 不支援`com.github.jknack.handlebars` | 挑選相關的[版本](https://mvnrepository.com/artifact/com.github.jknack/handlebars) | 6.5 LTS GA |
-
 
 ## 受限制的網站{#restricted-sites}
 
