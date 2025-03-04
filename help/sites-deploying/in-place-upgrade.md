@@ -5,9 +5,9 @@ topic-tags: upgrading
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
+source-git-commit: c3df47efd4b13dcd8061e5cdac32a75fbf36df4b
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -16,23 +16,27 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->本頁面概述AEM 6.5 LTS的升級程式。 如果安裝已部署到應用程式伺服器，請參閱[應用程式伺服器安裝的升級步驟](/help/sites-deploying/app-server-upgrade.md)。
+>本頁面概述AEM 6.5 LTS的就地升級程式。 如果安裝已部署到應用程式伺服器，請參閱[應用程式伺服器安裝的升級步驟](/help/sites-deploying/app-server-upgrade.md)。
 
 ## 升級前步驟 {#pre-upgrade-steps}
 
-在執行升級之前，必須完成數個步驟。 如需詳細資訊，請參閱[升級程式碼和自訂](/help/sites-deploying/upgrading-code-and-customizations.md)和[升級前維護工作](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。 此外，請確定您的系統符合AEM 6.5 LTS的需求。 瞭解Analyzer如何協助您評估升級的複雜性，並參閱[規劃升級](/help/sites-deploying/upgrade-planning.md)的升級範圍和需求一節，以取得詳細資訊。
+在執行升級之前，必須完成數個步驟。 如需詳細資訊，請參閱[升級程式碼和自訂](/help/sites-deploying/upgrading-code-and-customizations.md)和[升級前維護工作](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。 此外，請確定您的系統符合AEM 6.5 LTS ](/help/sites-deploying/technical-requirements.md)的[需求，並檢視[升級計畫考量事項](/help/sites-deploying/upgrade-planning.md)以及[分析器](/help/sites-deploying/pattern-detector.md)如何協助您估計複雜性。
 
 <!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## 移轉先決條件 {#migration-prerequisites}
 
-* **最低必要的Java版本：**&#x200B;請確定您的系統上已安裝Oracle的JRE 17。
+* **最低必要的Java版本：**&#x200B;請確定您的系統上已安裝Oracle的Java™ 17。
 
 ## 準備AEM Quickstart jar檔案 {#prep-quickstart-file}
 
+1. 下載新的AEM 6.5 LTS jar檔案
+
+1. [判斷正確的升級啟動命令](/help/sites-deploying/in-place-upgrade.md#determining-the-correct-upgrade-start-command-determining-the-correct-upgrade-start-command)
+
 1. 如果執行個體正在執行，請停止執行個體
 
-1. 下載新的AEM 6.5 LTS jar檔案，並使用它來取代`crx-quickstart`資料夾之外的舊檔案
+1. 使用新的AEM 6.5 LTS jar取代`crx-quickstart`資料夾之外的舊的
 
 1. 備份`sling.properties`檔案（通常出現在`crx-quickstart/conf/`中），然後刪除它
 
@@ -169,13 +173,13 @@ Where `/path/to/datastore` represents the path to your File Datastore.
    1. 複製`crx-quickstart/install/1`下的`com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/1`
    1. 複製`crx-quickstart/install/15`下的`com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/15`
 
-現在，使用[決定正確的升級啟動命令](#determining-the-correct-upgrade-start-command)區段下的資訊所決定的新命令，啟動AEM執行個體。
+現在，使用[決定正確的升級啟動命令](#determining-the-correct-upgrade-start-command)區段下的資訊，使用新命令來啟動AEM執行個體。
 
 ### 正在判斷正確的升級開始命令 {#determining-the-correct-upgrade-start-command}
 
 >[!NOTE]
 >
->Java 17中已移除對部分Java 8/11引數的支援，請參閱AEM 6.5 LTS的Java引數考量事項（連結虛設常式）。
+>部分Java 8/11引數的支援已在Java 17中移除，請參閱[Oracle Java™ 17檔案](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html)和[AEM 6.5 LTS的Java&amp;trade引數考量事項](https://git.corp.adobe.com/AdobeDocs/experience-manager-65-lts.en/blob/main/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations)。
 
 若要執行升級，重要的是使用jar檔案啟動AEM以啟動執行個體。
 
@@ -193,10 +197,10 @@ Where `/path/to/datastore` represents the path to your File Datastore.
    /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.5.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
-1. 將現有jar （在此例中為`crx-quickstart/app/aem-quickstart*.jar`）的路徑取代為`crx-quickstart`資料夾的同層級新jar，以修改命令。 以我們先前的指令為例，我們的指令會是：
+1. 將現有jar的路徑（在此案例中為`crx-quickstart/app/aem-quickstart*.jar`）取代為`crx-quickstart`資料夾同層級的新AEM 6.5 LTS jar，以修改命令。 以我們先前的指令為例，我們的指令會是：
 
    ```shell
-   /usr/bin/java -server -Xmx4096m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.6.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
+   /usr/bin/java -server -Xmx4096m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar <AEM-6.5-LTS.jar> -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
    這將確保所有適當的記憶體設定、自訂執行模式和其他環境引數都套用於升級。 升級完成後，執行個體可在未來啟動時從啟動指令碼啟動。
