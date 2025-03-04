@@ -9,9 +9,9 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: ee5f1f68f6f961ba0a18296eaf198ebe8671b226
+source-git-commit: 09b297721b08ef428f1ac8a26fec38d5a8bd34fd
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1200'
 ht-degree: 0%
 
 ---
@@ -20,28 +20,24 @@ ht-degree: 0%
 
 ## 升級後檢查 {#post-upgrade-checks}
 
-在[就地升級](/help/sites-deploying/in-place-upgrade.md)之後，應執行下列活動以完成升級。 我們假設已開始使用6.5.2025 jar來啟動AEM，且已部署升級後的程式碼基底。
+在[就地升級](/help/sites-deploying/in-place-upgrade.md)之後，應執行下列活動以完成升級。 我們假設AEM已使用AEM 6.5 LTS jar啟動，且已部署升級後的程式碼基底。
 
-* [驗證升級成功的記錄檔](#main-pars-header-290365562)
+* [驗證升級成功的記錄檔](#verify-logs-for-upgrade-success)
 
-* [驗證OSGi組合](#main-pars-header-1637350649)
+* [驗證OSGi組合](#verify-osgi-bundles)
 
-* [驗證Oak版本](#main-pars-header-1293049773)
+* [驗證Oak版本](#verify-oak-version)
 
-* [檢查PreUpgradeBackup資料夾](#main-pars-header-988995987)
+* [頁面初始驗證](#initial-validation-of-pages)
 
-* [頁面初始驗證](#main-pars-header-20827371)
-* [套用AEM Service Pack](#main-pars-header-215142387)
+* [驗證排程的維護設定](#verify-scheduled-maintenance-configurations)
 
-* [移轉AEM功能](#main-pars-header-1434457709)
+* [啟用復寫代理](#enable-replication-agents)
 
-* [驗證排程的維護設定](#main-pars-header-1552730183)
+* [啟用自訂排程工作](#enable-custom-scheduled-jobs)
 
-* [啟用復寫代理](#main-pars-header-823243751)
+* [執行測試計畫](#execute-test-plan)
 
-* [啟用自訂排程工作](#main-pars-header-244535083)
-
-* [執行測試計畫](#main-pars-header-1167972233)
 
 ### 驗證升級成功的記錄檔 {#verify-logs-for-upgrade-success}
 
@@ -53,7 +49,7 @@ ht-degree: 0%
 
 更具體來說，這可確保：
 
-* 升級架構偵測到的升級故障集中在單一升級報告中；
+* 升級架構偵測到的升級故障會集中到單一升級報告中。
 * 升級報告包含有關必要手動介入的指標。
 
 為了因應這種情況，已在`upgrade.log`檔案中產生記錄的方式上做了變更。
@@ -68,7 +64,7 @@ ht-degree: 0%
 
 ### 驗證Oak版本 {#verify-oak-version}
 
-升級之後，您應該會看到Oak版本已更新為&#x200B;**1.68.0**。 若要驗證Oak版本，請導覽至OSGi主控台，並檢視與Oak套件組合相關聯的版本：Oak Core、Oak Commons、Oak Segment Tar。
+升級後，您應該會看到Oak版本已更新為&#x200B;**1.68.1-B002**。 若要驗證Oak版本，請導覽至OSGi主控台，並檢視與Oak套件組合相關聯的版本：Oak Core、Oak Commons、Oak Segment Tar。
 
 ### 頁面初始驗證 {#initial-validation-of-pages}
 
@@ -88,10 +84,6 @@ ht-degree: 0%
 
 如果使用MongoMK或新的TarMK區段格式，請確保已啟用「修訂清除」任務並將其新增到「每日維護」清單中。 說明概述在[修訂清理](/help/sites-deploying/revision-cleanup.md)下。
 
-### 執行測試計畫 {#execute-test-plan}
-
-針對已定義的[升級程式碼和自訂](/help/sites-deploying/upgrading-code-and-customizations.md) （在&#x200B;**測試程式**&#x200B;區段下）執行詳細的測試計畫。
-
 ### 啟用復寫代理 {#enable-replication-agents}
 
 發佈環境完全升級和驗證後，在製作環境中啟用復寫代理程式。 驗證代理程式是否能夠連線至個別的發佈執行個體。 如需事件順序的詳細資訊，請參閱[升級程式](/help/sites-deploying/upgrade-procedure.md)。
@@ -100,19 +92,21 @@ ht-degree: 0%
 
 此時可以啟用任何已排程的工作，做為程式碼庫的一部分。
 
-## 分析升級相關問題 {#analyzing-issues-with-upgrade}
+### 執行測試計畫 {#execute-test-plan}
 
-本節包含升級到AEM 6.5.2025的程式中可能會遇到的一些問題案例。
+執行[升級&#x200B;**測試程式**&#x200B;區段](/help/sites-deploying/upgrading-code-and-customizations.md#testing-procedure-testing-procedure)下的程式碼和自訂專案中所定義的詳細測試計畫。
 
-這些案例應該有助於追蹤與升級相關問題的根本原因，並且應該有助於識別專案或產品專屬問題。
+## 分析升級相關問題 {#analyzing-issues-with-the-upgrade}
 
-### 套件和套件組合無法更新  {#packages-and-bundles-fail-to-update-}
+本節包含升級到AEM 6.5 LTS的程式中可能會遇到的一些問題案例。
+
+### 套件和套件組合無法更新  {#packages-and-bundles-fail-to-update}
 
 如果升級期間無法安裝套件，則其中包含的套件組合也不會更新。 這類問題是由資料存放區設定錯誤所造成。 它們也會在error.log中顯示為&#x200B;**ERROR**&#x200B;和&#x200B;**WARN**&#x200B;訊息。 由於在大部分的情況下，預設登入可能會無法運作，因此您可以直接使用CRXDE來檢查並尋找設定問題。
 
 ### 升級未執行 {#the-upgrade-did-not-run}
 
-開始準備步驟之前，請確定先使用Java™ -jar aem-quickstart.jar命令執行&#x200B;**來源**&#x200B;執行個體。 這是確定已正確產生quickstart.properties檔案所必需的。 如果遺失，升級將無法運作。 或者，您可以透過檢視來源執行個體的安裝資料夾中的`crx-quickstart/conf`來檢查檔案是否存在。 此外，啟動AEM以開始升級時，必須使用Java™ -jar aem-quickstart.jar命令執行。 從啟動指令碼啟動時，在升級模式下不會啟動AEM。
+在開始準備步驟之前，請確定您先使用`java -jar aem-quickstart.jar`命令執行&#x200B;**來源**&#x200B;執行個體。 這是確定已正確產生quickstart.properties檔案所必需的。 如果遺失，升級將無法運作。 或者，您可以透過檢視來源執行個體的安裝資料夾中的`crx-quickstart/conf`來檢查檔案是否存在。 此外，啟動AEM以開始升級時，必須使用`java -jar <aem-quickstart-6.5-LTS.jar>`命令執行。 從啟動指令碼啟動時，在升級模式下不會啟動AEM。
 
 ### 有些AEM套件組合沒有切換至作用中狀態 {#some-aem-bundles-are-not-switching-to-the-active-state}
 
@@ -120,13 +114,13 @@ ht-degree: 0%
 
 如果出現此問題，但此問題的基礎是套件安裝失敗，導致套件組合無法升級，則會將其視為與新版本不相容。 如需如何疑難排解此問題的詳細資訊，請參閱上面的&#x200B;**無法更新的套件和套件組合**。
 
-此外也建議您將全新AEM 6.5.2025執行個體的套件組合清單與升級後的套件組合清單進行比較，以偵測未升級的套件組合。 這將提供更密切的`error.log`搜尋範圍。
+此外也建議您將全新AEM 6.5 LTS執行個體的套件組合清單與升級後的套件組合清單進行比較，以偵測未升級的套件組合。 這將提供更密切的`error.log`搜尋範圍。
 
 ### 自訂組合未切換至作用中狀態 {#custom-bundles-not-switching-to-the-active-state}
 
-如果您的自訂套件組合未切換至使用中狀態，很可能是有程式碼未匯入變更API。 這通常會導致不滿意的相依性。
+如果您的自訂套件組合未切換至使用中狀態，很可能是因為有程式碼未匯入已變更的API。 這通常會導致不滿意的相依性。
 
-最好檢查造成問題的變更是否必要，如果不是，則恢復它。 此外，在嚴格的語意版本設定後，檢查套件匯出的版本增加是否超過必要。
+最好檢查造成問題的變更是否必要，如果不是，則回覆。 此外，在嚴格的語意版本設定後，檢查套件匯出的版本增加是否超過必要。
 
 ### 正在分析error.log和upgrade.log {#analyzing-the-error.log-and-upgrade.log}
 
@@ -150,4 +144,4 @@ grep -v UnrelatedErrorString
 
 ### 連絡 Adobe 支援人員 {#contacting-adobe-support}
 
-如果您詳閱過本頁面的建議，但仍遇到問題，請聯絡Adobe支援。 為了向處理您案例的支援工程師提供儘可能多的資訊，請務必加入升級中的upgrade.log檔案。
+如果您詳閱過本頁面的建議，但仍遇到問題，請聯絡Adobe支援。 若要向處理您案例的支援工程師提供儘可能多的資訊，請務必加入升級中的`error.log`和`upgrade.log`檔案。
