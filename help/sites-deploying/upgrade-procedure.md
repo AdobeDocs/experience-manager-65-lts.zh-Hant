@@ -10,9 +10,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 6a06ad15782b5cff7978547d005aaa312a837647
+source-git-commit: ae78421de75518894f3996829e554acd9003a6d1
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,6 @@ ht-degree: 0%
 1. 請重新啟動主要作者，以確保其正確重新啟動。
 1. 停用主要作者上的復寫代理。
 1. 在主要作者執行個體上執行[升級前維護工作](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。
-1. 如有需要，請使用WiredTiger將主要Mongo執行個體上的MongoDB升級至3.2版。
 
 ### 升級執行 {#Upgrade-execution-1}
 
@@ -114,7 +113,7 @@ ht-degree: 0%
 
 ![mongo-secondaries](assets/mongo-secondaries.jpg)
 
-1. 建立新的6.5.2025 Author執行個體，並連線至升級的Mongo執行個體。
+1. 建立新的AEM 6.5 LTS Author執行個體，並連線至升級的Mongo執行個體。
 
 1. 重建從叢集移除的MongoDB節點。
 
