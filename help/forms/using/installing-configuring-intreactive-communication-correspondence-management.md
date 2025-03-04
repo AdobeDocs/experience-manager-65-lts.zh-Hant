@@ -6,7 +6,7 @@ docset: aem65
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,Correspondence Management
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1383'
 ht-degree: 1%
@@ -93,7 +93,7 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 此套件包含AEM 
    1. 從解決方案&#x200B;****&#x200B;下拉式清單中選擇&#x200B;**[!UICONTROL Forms]**。
    2. 選擇包的版本和類型。 您也可以使用「 **[!UICONTROL Search下載]** 」選項來篩選結果。
 1. 選取適用於您作業系統的封裝名稱，選取&#x200B;**[!UICONTROL 接受EULA條款]**，然後選取&#x200B;**[!UICONTROL 下載]**。
-1. 打開 [封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-65-2025/administering/contentmanagement/package-manager.html)  然後按兩下上傳 **[!UICONTROL 包]** 以上傳包。
+1. 打開 [封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)  然後按兩下上傳 **[!UICONTROL 包]** 以上傳包。
 1. 選擇包，然後按兩下安裝&#x200B;****。
 
    還可以通過AEM Forms版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)一文中[列出的直接連結下載包。
@@ -143,7 +143,7 @@ AEM Forms有一些必要和選用的設定。 強制設定包括設定BouncyCast
 
 #### 安裝相容性套件 {#install-compatibility-package}
 
-互動式通訊是在AEM 6.5 Forms中建立客戶通訊的預設和建議方法。 如果您已從舊版升級或移轉，並計畫繼續使用字母（通訊管理），請安裝[AEMFD相容性套件](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en)。
+互動式通訊是在AEM 6.5 Forms中建立客戶通訊的預設和建議方法。 如果您已從舊版升級或移轉，並計畫繼續使用字母（通訊管理），請安裝[AEMFD相容性套件](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en)。
 
 AEMFD 相容性套件可讓您在 AEM 6.5 Forms AEM 6.4 Forms、AEM 6.3 Forms 和 AEM 6.2 Forms使用以下資產：
 

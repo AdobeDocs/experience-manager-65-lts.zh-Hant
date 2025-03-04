@@ -5,7 +5,7 @@ keywords: 啟用核心元件、核心元件調適Forms、6.5上的核心元件�
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 8efb1eb0b4a69cf59fa5853aa335dbf3d6061185
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 10%
@@ -31,7 +31,7 @@ ht-degree: 10%
 
 在AEM 6.5 Forms環境中啟用最適化Forms核心元件之前：
 
-* [升級至AEM 6.5 Forms Service Pack 16 (6.5.16.0)或更新版本](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html)。
+* [升級至AEM 6.5 Forms Service Pack 16 (6.5.16.0)或更新版本](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html)。
 
 * 安裝最新版的[Apache Maven](https://maven.apache.org/download.cgi)。
 
@@ -130,7 +130,7 @@ ht-degree: 10%
 
    成功建立AEM原型專案後，就會產生AEM套件。 您可以在[AEM原型專案資料夾]\all\target\[appid].all-[version].zip中找到該套件
 
-1. 使用[封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-65-2025/administering/contentmanagement/package-manager.html?lang=en)，在所有製作和發佈執行個體上部署[AEM Archetype專案資料夾]\all\target\[appid].all-[version].zip封裝。
+1. 使用[封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html?lang=en)，在所有製作和發佈執行個體上部署[AEM Archetype專案資料夾]\all\target\[appid].all-[version].zip封裝。
 
 >[!NOTE]
 >

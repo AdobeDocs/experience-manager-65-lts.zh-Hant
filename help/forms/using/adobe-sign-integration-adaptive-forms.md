@@ -8,7 +8,7 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components,Acrobat Sign
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2071'
 ht-degree: 16%
@@ -146,7 +146,7 @@ ht-degree: 16%
 1. 開啟&#x200B;**[!UICONTROL Forms Common Configuration Service].**
 1. 在&#x200B;**[!UICONTROL 允許]**&#x200B;欄位中，**選取**&#x200B;所有使用者 — 所有使用者（匿名或登入）都可以預覽附件、驗證和簽署表單，然後按一下&#x200B;**[!UICONTROL 儲存]。**&#x200B;作者執行個體設定為使用[!DNL Adobe Sign]。
 1. 發佈設定。
-1. 使用[復寫](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/replication.html)在對應發佈執行個體上建立相同的組態。
+1. 使用[復寫](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/replication.html)在對應發佈執行個體上建立相同的組態。
 
 現在，[!DNL Adobe Sign]已與AEM [!DNL Forms]整合，並準備好用於調適型表單。 若要[在最適化表單中使用Adobe Sign服務](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form)，請在最適化表單屬性中指定上述建立的設定容器。
 
@@ -261,7 +261,7 @@ ht-degree: 16%
 1. 在&#x200B;**[!UICONTROL 允許]**&#x200B;欄位中，**選取**&#x200B;所有使用者 — 所有使用者（匿名或登入）都可以預覽附件、驗證和簽署表單，然後按一下&#x200B;**[!UICONTROL 儲存]。**&#x200B;作者執行個體設定為使用[!DNL Adobe Sign]。
 
 1. 發佈設定。
-1. 使用[復寫](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/replication.html)在對應發佈執行個體上建立相同的組態。
+1. 使用[復寫](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/replication.html)在對應發佈執行個體上建立相同的組態。
 
 現在，您可以[在最適化表單中新增Adobe Acrobat Sign欄位](working-with-adobe-sign.md)或[AEM工作流程](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)。 請確定您將用於Cloud Service設定的設定容器新增至為[!DNL Adobe Acrobat Sign]啟用的所有最適化Forms。 您可以從最適化表單的屬性指定設定容器。
 

@@ -8,7 +8,7 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: eff477824f2d1e5dfe5417835e8ced4b7eb85a0f
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 3%
@@ -39,7 +39,7 @@ AEM提供了數種工具和資源，用於建立工作流程模型、開發工�
 >
 >* 參與工作流程，請參閱[使用工作流程](/help/sites-authoring/workflows.md)。
 >* 管理工作流程和工作流程執行個體，請參閱[管理工作流程](/help/sites-administering/workflows.md)。
->* 如需端對端社群文章，請參閱[使用Adobe Experience Manager工作流程修改數位Assets。](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/assets-workflow.html)
+>* 如需端對端社群文章，請參閱[使用Adobe Experience Manager工作流程修改數位Assets。](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html)
 >* 請參閱[向AEM專家提問工作流程線上講座](https://communities.adobeconnect.com/p5s33iburd54/)。
 >* 資訊位置的變更，請參閱[工作流程最佳實務 — 位置](/help/sites-developing/workflows-best-practices.md#locations)。
 >

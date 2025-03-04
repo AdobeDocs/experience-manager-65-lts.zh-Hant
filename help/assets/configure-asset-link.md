@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 238ff31ed4e5e833a14cb64e3eae75377038a857
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '3059'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 1. 若要將Creative Cloud授權使用者與Experience Manager使用者對應，請管理[使用者存取控制](#user-access)。
 
-1. 建立[自訂查詢索引](#create-custom-index)、設定InDesign的[FPO轉譯](/help/assets/configure-fpo-renditions.md)、設定[Adobe Stock整合](/help/assets/aem-assets-adobe-stock.md)，以及設定[視覺或相似性搜尋](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/search-assets.html#configvisualsearch)。
+1. 建立[自訂查詢索引](#create-custom-index)、設定InDesign的[FPO轉譯](/help/assets/configure-fpo-renditions.md)、設定[Adobe Stock整合](/help/assets/aem-assets-adobe-stock.md)，以及設定[視覺或相似性搜尋](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch)。
 
 ## 各種功能的先決條件和支援 {#prerequisites}
 
@@ -242,7 +242,7 @@ Adobe Asset Link使用者在登入Creative Cloud應用程式後，就能與Exper
 
 例如，對業務線使用者和行銷人員來說，例如在幾個特定資料夾上建立自訂工作流程時，此設定會很有用。 假設機構拍照時的所有資產都可加上浮水印，或是自由譯者上傳的所有資產都可經過處理，以建立特定轉譯。
 
-如需詳細資訊和Experience Manager組態，請參閱[在資產上自動執行工作流程](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets)。
+如需詳細資訊和Experience Manager組態，請參閱[在資產上自動執行工作流程](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets)。
 
 
 ## 在Experience Manager 6.4.x版本中建立自訂索引 {#create-custom-index}
@@ -260,7 +260,7 @@ Experience Manager包含用於查詢的索引。 為指定版本建立下列自�
 
 ## 設定視覺或相似性搜尋 {#configure-visual-similarity-search}
 
-視覺化搜尋功能可讓您使用Adobe Asset Link面板，在AEM Assets存放庫中搜尋視覺上類似的資產。 6.5.0或更新版本提供此功能，而且只會搜尋已編制索引的資產。 如需詳細資訊，請參閱[如何設定視覺化搜尋](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/search-assets.html#configvisualsearch)。
+視覺化搜尋功能可讓您使用Adobe Asset Link面板，在AEM Assets存放庫中搜尋視覺上類似的資產。 6.5.0或更新版本提供此功能，而且只會搜尋已編制索引的資產。 如需詳細資訊，請參閱[如何設定視覺化搜尋](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch)。
 
 ## 產生Adobe InDesign的「僅供刊登」轉譯 {#fpo-renditions}
 

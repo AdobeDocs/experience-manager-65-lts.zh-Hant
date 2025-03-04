@@ -6,7 +6,7 @@ topic-tags: author
 feature: Adaptive Forms,Foundation Components,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '5538'
 ht-degree: 1%
@@ -104,9 +104,9 @@ Adobe Experience Manager (AEM)表單可協助您將複雜的交易轉換為簡�
 
 * 只建議為作者使用&#x200B;**nosamplecontent**&#x200B;執行模式，不建議為發佈節點使用。
 * 製作資產（例如最適化表單、主題、範本或雲端設定）作業只會透過製作節點執行，其可在已設定的發佈節點發佈。
-如需詳細資訊，請參閱[發佈與取消發佈表單與檔案](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
+如需詳細資訊，請參閱[發佈與取消發佈表單與檔案](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
 * 製作和發佈需要Forms附加元件套件來支援檔案服務操作；因此，可將其視為相依性。
-如果您只想要Forms相關的範例範本、主題和DOR封裝，則可以從[aemforms-references-*封裝](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)下載。
+如果您只想要Forms相關的範例範本、主題和DOR封裝，則可以從[aemforms-references-*封裝](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)下載。
 
 如需進一步資訊，請參閱[製作最適化表單簡介](/help/forms/using/introduction-forms-authoring.md)中的最佳實務。
 
@@ -328,7 +328,7 @@ AEM提供翻譯工作流程，您可用來將最適化表單當地語系化。 �
 
 * 透過網頁伺服器壓縮模組啟用HTML。 如需詳細資訊，請參閱[AEM Forms伺服器的效能調整](/help/forms/using/performance-tuning-aem-forms.md)。
 * 針對大型表單，增加每個請求設定的呼叫。 請參閱[最佳化大型與複雜表單的效能](/help/forms/using/adaptive-forms-best-practices.md#optimizing-performance-of-large-and-complex-forms)。
-* 建立錯誤處理常式](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/platform/customizing-errorhandler-pages.html)顯示的[自訂錯誤頁面。
+* 建立錯誤處理常式](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html)顯示的[自訂錯誤頁面。
 * 安全的AEM Forms伺服器。
 
    * 使用`nosamplecontent`執行模式，確保生產伺服器上未部署範例內容和範例使用者。 請參閱[在生產就緒模式下執行AEM](/help/sites-administering/production-ready.md)。

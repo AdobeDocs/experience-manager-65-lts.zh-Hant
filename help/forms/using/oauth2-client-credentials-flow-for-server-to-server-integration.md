@@ -4,7 +4,7 @@ description: 使用OAuth 2.0使用者端憑證流程整合Salesforce與AEM Forms
 solution: Experience Manager, Experience Manager Forms
 feature: Form Data Model
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 68%
@@ -69,4 +69,4 @@ AEM Forms會交換在Salesforce連線應用程式中定義的使用者端憑證�
 1. 按一下「**[!UICONTROL 測試連線]**」。
 1. 如果連線成功，按一下「**[!UICONTROL 建立]**」按鈕。
 
-現在您可以[建立表單資料模型](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/form-data-model/create-form-data-models.html?lang=en)，將已設定的資料來源與您的Adaptive Forms整合。
+現在您可以[建立表單資料模型](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/form-data-model/create-form-data-models.html?lang=en)，將已設定的資料來源與您的Adaptive Forms整合。

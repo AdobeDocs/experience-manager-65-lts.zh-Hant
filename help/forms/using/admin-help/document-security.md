@@ -9,7 +9,7 @@ docset: aem65
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '3219'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Document Security可確保只有授權的使用者才能使用您的檔案。 �
 * Adobe PDF檔案
 * Microsoft®Word、Excel和PowerPoint檔案
 
-如需有關原則如何保護受支援檔案型別的詳細資訊，請參閱[更多Document Security資訊](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/use-document-security/document-security-offerings.html?lang=en)。
+如需有關原則如何保護受支援檔案型別的詳細資訊，請參閱[更多Document Security資訊](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/use-document-security/document-security-offerings.html?lang=en)。
 
 使用Document Security，您可以輕鬆建立、儲存及套用預先定義的機密性設定至您的檔案。 為了防止資訊擴散到您觸及的範圍之外，您還可以監視和控制在您分發檔案後收件者如何使用您的檔案。
 

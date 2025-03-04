@@ -8,7 +8,7 @@ topic-tags: interactive-communication
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 1%
@@ -86,7 +86,7 @@ ht-degree: 1%
    1. 指定資料夾的&#x200B;**[!UICONTROL 名稱]**&#x200B;和實體&#x200B;**[!UICONTROL 路徑]**。 例如，`c:\batchprocessing`。
    1. 選取&#x200B;**[!UICONTROL 使用]**&#x200B;處理檔案中的&#x200B;**[!UICONTROL 服務]**&#x200B;選項。
    1. 在&#x200B;**[!UICONTROL 服務名稱]**&#x200B;欄位中選取&#x200B;**[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]**&#x200B;服務。
-   1. 指定&#x200B;**[!UICONTROL 輸出檔案模式]**。 例如，%F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns)指定Watched資料夾可以在Watched資料夾\input資料夾的子資料夾中找到輸入檔案。
+   1. 指定&#x200B;**[!UICONTROL 輸出檔案模式]**。 例如，%F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns)指定Watched資料夾可以在Watched資料夾\input資料夾的子資料夾中找到輸入檔案。
 1. 設定進階引數：
    1. 開啟&#x200B;**[!UICONTROL 進階]**&#x200B;索引標籤並新增下列自訂屬性：
 
@@ -146,7 +146,7 @@ ht-degree: 1%
    1. 指定資料夾的&#x200B;**[!UICONTROL 名稱]**&#x200B;和實體&#x200B;**[!UICONTROL 路徑]**。 例如，`c:\batchprocessing`。
    1. 選取&#x200B;**[!UICONTROL 使用]**&#x200B;處理檔案中的&#x200B;**[!UICONTROL 服務]**&#x200B;選項。
    1. 在&#x200B;**[!UICONTROL 服務名稱]**&#x200B;欄位中選取&#x200B;**[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]**&#x200B;服務。
-   1. 指定&#x200B;**[!UICONTROL 輸出檔案模式]**。 例如，%F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns)指定Watched資料夾可以在Watched資料夾\input資料夾的子資料夾中找到輸入檔案。
+   1. 指定&#x200B;**[!UICONTROL 輸出檔案模式]**。 例如，%F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns)指定Watched資料夾可以在Watched資料夾\input資料夾的子資料夾中找到輸入檔案。
 1. 設定進階引數：
    1. 開啟&#x200B;**[!UICONTROL 進階]**&#x200B;索引標籤並新增下列自訂屬性：
 
@@ -362,4 +362,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->預設只會啟用CRX通訊協定。 若要啟用其他支援的通訊協定，請參閱[使用Configuration Manager設定預填服務](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en)。
+>預設只會啟用CRX通訊協定。 若要啟用其他支援的通訊協定，請參閱[使用Configuration Manager設定預填服務](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en)。

@@ -8,7 +8,7 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -31,9 +31,9 @@ ht-degree: 0%
 
 | 發行 | 目前版本 | 使用者動作 |
 |---|---|---|
-| JEE上的Experience Manager 6.5 Forms | 6.5.19.0 | [安裝最新的Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) |
-| JEE上的Experience Manager 6.5 Forms | 6.5.13.0 - 6.5.18.0 | 使用下列其中一種方法： <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en">安裝最新的Service Pack </a> </li> <li> <a href ="#use-manual-mitigation-steps">使用手動緩解步驟</a> |
-| JEE上的Experience Manager 6.5 Forms | 6.5 - 6.5.12.0 | [安裝最新的Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) </br> </br> **注意：** AEM Forms目前透過6.5.19.0支援版本6.5.13.0。 如果您使用舊版，建議您升級至6.5.13.0或更新版本。 如需安裝AEM 6.5.13.0或更新版本的指示，請參閱發行說明。 |
+| JEE上的Experience Manager 6.5 Forms | 6.5.19.0 | [安裝最新的Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) |
+| JEE上的Experience Manager 6.5 Forms | 6.5.13.0 - 6.5.18.0 | 使用下列其中一種方法： <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en">安裝最新的Service Pack </a> </li> <li> <a href ="#use-manual-mitigation-steps">使用手動緩解步驟</a> |
+| JEE上的Experience Manager 6.5 Forms | 6.5 - 6.5.12.0 | [安裝最新的Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) </br> </br> **注意：** AEM Forms目前透過6.5.19.0支援版本6.5.13.0。 如果您使用舊版，建議您升級至6.5.13.0或更新版本。 如需安裝AEM 6.5.13.0或更新版本的指示，請參閱發行說明。 |
 
 ### 使用手動緩解步驟 {#use-manual-mitigation-steps}
 

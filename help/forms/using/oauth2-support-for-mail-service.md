@@ -4,7 +4,7 @@ description: 設定Microsoft&reg (Forms JEE OAuth)的OAuth2驗證；Office 365�
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 5%
@@ -150,7 +150,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   > 若要瞭解更多與工作通知相關的資訊，[請按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service)。
+   > 若要瞭解更多與工作通知相關的資訊，[請按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service)。
 
 ## 設定電子郵件端點 {#configure_email_endpoint}
 
@@ -164,7 +164,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   > 若要瞭解有關設定電子郵件端點的詳細資訊，請按一下[設定電子郵件端點]。[](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-email-endpoints.html)
+   > 若要瞭解有關設定電子郵件端點的詳細資訊，請按一下[設定電子郵件端點]。[](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html)
 
 ## 疑難排解 {#troubleshooting}
 

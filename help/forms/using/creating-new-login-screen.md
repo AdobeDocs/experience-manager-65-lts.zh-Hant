@@ -8,7 +8,7 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 3%
@@ -97,7 +97,7 @@ String browserLocale = "en";
     }
 ```
 
-至
+收件者
 
 ```jsp
 String browserLocale = "en";
@@ -152,7 +152,7 @@ String browserLocale = "en";
     }
 ```
 
-至
+收件者
 
 ```jsp
 String browserLocale = "en";
@@ -225,7 +225,7 @@ String browserLocale = "en";
                        <% if (loginFailed) {%>
    ```
 
-   至
+   收件者
 
    ```jsp
    div class="loginContent">
@@ -276,7 +276,7 @@ css.newLoginContentArea {
   <div class="loginContentArea">
   ```
 
-  至
+  收件者
 
   ```jsp
   <div class="newLoginContentArea">
@@ -292,7 +292,7 @@ css.newLoginContentArea {
 1. 在`/apps/livecycle/core/content/login`中新增影像。 若要新增影像：
 
    1. 安裝WebDAV使用者端。
-   1. 使用webDAV使用者端導覽至`/apps/livecycle/core/content/login`資料夾。 如需詳細資訊，請參閱[WebDAV存取](https://experienceleague.adobe.com/docs/experience-manager-65-2025/administering/contentmanagement/webdav-access.html?lang=en)。
+   1. 使用webDAV使用者端導覽至`/apps/livecycle/core/content/login`資料夾。 如需詳細資訊，請參閱[WebDAV存取](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/webdav-access.html?lang=en)。
 
    1. 新增影像。
 
@@ -319,7 +319,7 @@ css.newLoginContentArea {
 <div class="loginContainerBkg">
 ```
 
-至
+收件者
 
 ```jsp
 <div class="newLginContainerBkg">

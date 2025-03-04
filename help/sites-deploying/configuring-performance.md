@@ -8,7 +8,7 @@ topic-tags: configuring
 feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '6470'
 ht-degree: 13%
@@ -202,7 +202,7 @@ AEM的某些層面（和/或基礎存放庫）可設定為最佳化效能。 以
 
 >[!NOTE]
 >
->請參閱[效能最佳化](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/configuring-performance.html)。
+>請參閱[效能最佳化](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html)。
 
 ### 搜尋索引 {#search-indexing}
 

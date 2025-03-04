@@ -4,7 +4,7 @@ description: 在AEM Headless開發人員歷程的這一部分，瞭解如何即�
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 53%
@@ -216,7 +216,7 @@ You can start deploying your code by using the Cloud Manager CI/CD pipeline, whi
 
 ## 其他資源 {#additional-resources}
 
-* [AEM開發指南](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/introduction/the-basics.html)
+* [AEM開發指南](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/introduction/the-basics.html)
 
 * [WKND教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
@@ -226,7 +226,7 @@ You can start deploying your code by using the Cloud Manager CI/CD pipeline, whi
 
    * [控制CDN快取](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
 
-   * 正在設定[CDN重寫程式](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/osgi-configuration-settings.html) （*搜尋CDN重寫程式*）
+   * 正在設定[CDN重寫程式](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/osgi-configuration-settings.html) （*搜尋CDN重寫程式*）
 
 * [AEM as a Headless CMS 簡介](/help/sites-developing/headless/introduction.md)
 * [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)

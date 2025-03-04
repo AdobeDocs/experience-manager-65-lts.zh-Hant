@@ -7,7 +7,7 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Release Information
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 38%
@@ -24,7 +24,7 @@ ht-degree: 38%
 
 ## Adobe Experience Manager 6.5 Forms Service Pack 19 (6.5.19.0)包含的內容
 
-Experience Manager 6.5.19.0包含自2019年4月6.5版首次發行以來所推出的新功能、客戶要求的重要增強功能、錯誤修正，以及效能、穩定性和安全性改善專案。 [在Experience Manager 6.5上安裝此Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html)。
+Experience Manager 6.5.19.0包含自2019年4月6.5版首次發行以來所推出的新功能、客戶要求的重要增強功能、錯誤修正，以及效能、穩定性和安全性改善專案。 [在Experience Manager 6.5上安裝此Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html)。
 
 ### 新功能
 
@@ -60,12 +60,12 @@ XMLFM的64位元版帶來更優異的效能、擴充能力，以及更精細的�
 
 ## 錯誤修正
 
-此版本也包含20多個客戶回報問題的修正。 如需Service Pack中包含的修正詳細清單，請參閱[發行說明](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/release-notes.html?lang=en#forms-6519)
+此版本也包含20多個客戶回報問題的修正。 如需Service Pack中包含的修正詳細清單，請參閱[發行說明](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html?lang=en#forms-6519)
 
 
 ## 安裝服務套件
 
-此Service Pack為JEE上的AEM Forms和OSGi上的AEM Forms提供新功能和錯誤修正。 與先前的Service Pack相比，安裝指示有所變更。如需安裝指示，請參閱[AEM Forms Service Pack安裝指示](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en)。
+此Service Pack為JEE上的AEM Forms和OSGi上的AEM Forms提供新功能和錯誤修正。 與先前的Service Pack相比，安裝指示有所變更。如需安裝指示，請參閱[AEM Forms Service Pack安裝指示](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en)。
 
 
 

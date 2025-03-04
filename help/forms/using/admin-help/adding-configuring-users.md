@@ -6,7 +6,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: eded255b54ff83f60f73cece8824c778d3a87680
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 0%
@@ -175,4 +175,4 @@ AEM表單無法區分具有相同使用者ID和密碼但屬於不同網域的使
 
 CQ提供一種機制，可覆寫預設的404處理常式jsp。
 
-如需有關如何自訂錯誤處理頁面的詳細資訊，請參閱Adobe Experience Manager檔案中的[自訂錯誤處理常式顯示的頁面](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/platform/customizing-errorhandler-pages.html?lang=en)。
+如需有關如何自訂錯誤處理頁面的詳細資訊，請參閱Adobe Experience Manager檔案中的[自訂錯誤處理常式顯示的頁面](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html?lang=en)。
