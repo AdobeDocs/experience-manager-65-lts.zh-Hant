@@ -8,7 +8,7 @@ content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 34693070f2fcb5b468c72118cd5d5fc26d6d9dd0
+source-git-commit: 5b31b74b89334efcae647c216d2ae2be35545b22
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 升級後解除安裝的過時套件組合清單{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
 
-升級至AEM 6.5.2025時，系統將根據執行升級的AEM 6.5 servicepack版本，自動解除安裝下列套件組合：
+升級至AEM 6.5 LTS時，系統會根據執行升級的AEM 6.5 servicepack版本，自動解除安裝下列套件組合：
 
 * com.adobe.cq.social.cq-social-activitystreams
 * com.adobe.cq.social.cq-social-as-provider
@@ -95,7 +95,7 @@ ht-degree: 0%
 * org.apache.jackrabbit.oak-solr-osgi
 * com.adobe.cq.cq-searchpromote-integration
 
-以下套件組合未包含在全新AEM 6.5.2025執行個體中。 升級後，您可能會發現這些套件組合處於非作用中狀態。 這些檔案可手動移除：
+全新的AEM 6.5 LTS執行個體不包含下列套件組合。 升級後，您可能會發現這些套件組合處於非作用中狀態。 這些檔案可手動移除：
 
 * org.apache.sling.atom.taglib
 * com.github.jknack.handlebars
