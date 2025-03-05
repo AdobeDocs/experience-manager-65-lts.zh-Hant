@@ -1,16 +1,15 @@
 ---
 title: 中繼資料結構描述會定義中繼資料屬性頁面的配置
 description: 中繼資料結構會定義屬性頁面的配置，以及為資產顯示的中繼資料屬性。 瞭解如何建立自訂中繼資料結構、編輯中繼資料結構，以及如何將中繼資料結構套用至資產。
-contentOwner: AG
 mini-toc-levels: 1
 role: User,Admin
 feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: c62ad80108619063025772cd991848a3f7d76be8
 workflow-type: tm+mt
-source-wordcount: '3595'
-ht-degree: 8%
+source-wordcount: '3607'
+ht-degree: 7%
 
 ---
 
@@ -89,21 +88,21 @@ ht-degree: 8%
 **[!UICONTROL 建置表單]**&#x200B;索引標籤會列出您在結構描述表單中使用的表單專案。 **[!UICONTROL 設定]**&#x200B;索引標籤提供您在&#x200B;**[!UICONTROL 建置表單]**&#x200B;索引標籤中選取之每個專案的屬性。 下表列出&#x200B;**[!UICONTROL 建置表單]**&#x200B;索引標籤中可用的表單專案：
 
 | 元件名稱 | 說明 |
-| -------------------------------- | ----------------------------------------------------------------------------------- |
-| [!UICONTROL 區段標題] | 新增區段標題以取得常用元件清單。 |
-| [!UICONTROL 單行文字] | 新增單行文字屬性。 它會儲存為字串。 |
-| [!UICONTROL 多值文字] | 新增多值文字屬性。 它會儲存為字串陣列。 |
-| [!UICONTROL 數字] | 新增數字元件。 |
-| [!UICONTROL 日期] | 新增日期元件。 |
-| [!UICONTROL 下拉式清單] | 新增下拉式清單。 |
-| [!UICONTROL 標準標籤] | 新增標籤。 |
-| [!UICONTROL 智慧標記] | 透過自動新增中繼資料標記增強搜尋功能。 |
-| [!UICONTROL 隱藏欄位] | 新增隱藏欄位。 儲存資產時，會以POST引數的形式傳送。 |
-| [!UICONTROL 資產參考者] | 新增此元件以檢視資產所參考的資產清單。 |
-| [!UICONTROL 資產引用] | 新增以顯示參照資產的資產清單。 |
-| [!UICONTROL 產品參考] | 新增以顯示與資產連結的產品清單。 |
-| [!UICONTROL 資產評等] | 新增以顯示資產評等選項。 |
-| [!UICONTROL 內容中繼資料] | 新增以控制其他中繼資料索引標籤在資產屬性頁面中的顯示。 |
+|----|----|
+| **[!UICONTROL 區段標題]** | 新增區段標題以取得常用元件清單。 |
+| **[!UICONTROL 單行文字]** | 新增單行文字屬性。 它會儲存為字串。 |
+| **[!UICONTROL 多值文字]** | 新增多值文字屬性。 它會儲存為字串陣列。 |
+| **[!UICONTROL 數字]** | 新增數字元件。 |
+| **[!UICONTROL 日期]** | 新增日期元件。 |
+| **[!UICONTROL 下拉式清單]** | 新增下拉式清單。 |
+| **[!UICONTROL 標準標籤]** | 新增標籤。 管理員可能需要變更路徑值。 例如，`/etc/tags/mac/<tenant_id>/<custom_tag_namespace>`，如果他們從Experience Manager Assets發佈中繼資料結構表單，其中路徑不包含租使用者資訊，例如，`/etc/tags/<custom_tag_namespace>`。 |
+| **[!UICONTROL 智慧標記]** | 如果您已購買並設定Experience Manager Assets智慧標籤附加元件，則會自動偵測標籤。 |
+| **[!UICONTROL 隱藏欄位]** | 新增隱藏欄位。 儲存資產時，會以POST引數的形式傳送。 |
+| **[!UICONTROL 資產參考者]** | 新增此元件以檢視資產所參考的資產清單。 |
+| **[!UICONTROL 資產引用]** | 新增以顯示參照資產的資產清單。 |
+| **[!UICONTROL 內容中繼資料]** | 新增以控制其他中繼資料索引標籤在資產屬性頁面中的顯示。 |
+
+<!--| **[!UICONTROL Asset Rating]** |  Average rating of an asset added from Experience Manager Assets before it is published to Brand Portal. |-->
 
 #### 編輯中繼資料元件 {#edit-the-metadata-component}
 
