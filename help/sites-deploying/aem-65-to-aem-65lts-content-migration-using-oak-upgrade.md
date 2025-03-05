@@ -4,7 +4,7 @@ description: 瞭解如何使用Oak-upgrade工具將內容從AEM 6.5移轉至AEM 
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 8798c608ea168d753be2a08b25a0d0d344b0fef6
+source-git-commit: ef25b11163ca727a9fa99799b713085e594ff520
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 0%
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 開始移轉之前，請先確認是否符合下列要求：
 
-1. Java相容性：必須安裝並設定AEM 6.5 LTS，才能與Java 17一起執行。 設定後，請啟動AEM執行個體，確認所有套件組合皆有效且執行中沒有任何問題
+1. Java相容性：必須安裝並設定AEM 6.5 LTS，才能與Java™ 17一起執行。 設定後，請啟動AEM執行個體，確認所有套件組合皆有效且執行中沒有任何問題
 1. 系統資源：確保有足夠的磁碟空間和記憶體可在移轉過程中處理這兩個存放庫
-1. Oak-upgrade工具：從[官方Maven存放庫](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade)下載`oak-upgrade` jar。 確保版本符合AEM 6.5 LTS中使用的Oak-core版本。 Oak升級工具在Oracle Java 11或更新版本上執行
+1. Oak-upgrade工具：從[官方Maven存放庫](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade)下載`oak-upgrade` jar。 確保版本符合AEM 6.5 LTS中使用的Oak-core版本。 Oak-upgrade工具會在Oracle® Java™ 11或更新版本上執行
 
 ## 逐步移轉程式 {#step-by-step-migration-process}
 
