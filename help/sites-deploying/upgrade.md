@@ -9,7 +9,7 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 598d6eecbdd3887c41a36a14daa215e2e8e6e09a
+source-git-commit: d4f89be13039e53564cd3a3148a4b845bcc183a7
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
@@ -52,4 +52,4 @@ ht-degree: 0%
 
 基礎層現在支援Java 17，並結合Apache Sling、Felix和Jackrabbit Oak的最新開放原始碼套件組合。 此外，AEM 6.5 LTS uber-jar的封裝已變更。 此外，AEM 6.5 LTS中也移除了一些舊版功能。 如需詳細資訊，請參閱[發行說明](/help/release-notes/release-notes.md#whats-new-what-s-new)和[升級後解除安裝的過時套件組合清單](/help/sites-deploying/obsolete-bundles.md)
 
-AEM 6.5 LTS著重於功能的回溯相容性，並隨附分析器工具。 請參閱[使用AEM Analyzer評估升級複雜性](/help/sites-deploying/pattern-detector.md)，以瞭解當您開始[規劃升級](/help/sites-deploying/upgrade-planning.md)時的複雜性評估。
+AEM 6.5 LTS著重於功能的回溯相容性，並隨附分析器工具。 請參閱[使用AEM Analyzer評估升級複雜性](/help/sites-deploying/aem-analyzer.md)，以瞭解當您開始[規劃升級](/help/sites-deploying/upgrade-planning.md)時的複雜性評估。

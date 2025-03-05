@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5 LTS檔案瞭解其運作方式，以及軟體可為您做什麼。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 8253f7c3b779f9ef08a15c9a5dfc9ae1b437756a
+source-git-commit: d4f89be13039e53564cd3a3148a4b845bcc183a7
 workflow-type: tm+mt
-source-wordcount: '7044'
+source-wordcount: '7052'
 ht-degree: 19%
 
 ---
@@ -1466,6 +1466,7 @@ ht-degree: 19%
          + [升級至AEM 6.5 LTS](/help/sites-deploying/upgrade.md)
          + [規劃升級](/help/sites-deploying/upgrade-planning.md)
          + [使用模式偵測器評估升級複雜性](/help/sites-deploying/pattern-detector.md)
+         + [使用AEM Analyzer評估升級複雜性](/help/sites-deploying/aem-analyzer.md)
          + [AEM 6.5 LTS的回溯相容性](/help/sites-deploying/backward-compatibility.md)
          + [升級程式](/help/sites-deploying/upgrade-procedure.md)
          + [執行就地升級](/help/sites-deploying/in-place-upgrade.md)
