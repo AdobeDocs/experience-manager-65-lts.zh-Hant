@@ -9,9 +9,9 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 2eb9307f37098ee9f57ba9383600f74a5e3b2501
+source-git-commit: b7304709729915dbcc27533caf88b61cd5657a2c
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: '1117'
 ht-degree: 0%
 
 ---
@@ -32,17 +32,15 @@ ht-degree: 0%
 * [執行離線修訂清除](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-offline-revision-cleanup)
 * [執行資料存放區記憶體回收](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-datastore-garbage-collection)
 * [視需要升級資料庫綱要](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#upgradethedatabaseschemaifneeded)
-* [刪除可能阻礙升級的使用者](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#delete-users-that-might-hinder-the-upgrade)
-
 * [旋轉記錄檔](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#rotate-log-files)
 
 ## 索引定義 {#index-definitions}
 
-請確定您至少已安裝隨AEM Service Pack 22提供的AEM 6.5 Service Pack發行的必要索引定義(如需詳細資訊，請參閱[AEM 6.5 servicepack發行說明](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/release-notes/release-notes))。
+請務必已安裝隨附於AEM 6.5 Service Pack發行的必要索引定義，至少直到AEM Service Pack 22為止。 (如需詳細資訊，請參閱[AEM 6.5 servicepack發行說明](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/release-notes/release-notes))。
 
 ## 確保有足夠的磁碟空間 {#ensure-sufficient-disk-space}
 
-執行升級時，除了內容和程式碼升級活動外，還必須執行存放庫移轉。 移轉作業會以新的Segment Tar格式建立存放庫復本。 因此，您需要足夠的磁碟空間，以保留儲存庫的第二個（可能更大）版本。
+執行升級時，請確保有足夠的磁碟空間。
 
 ## 完整備份AEM {#fully-back-up-aem}
 
@@ -56,7 +54,6 @@ ht-degree: 0%
 
 `WorkflowPurgeTask`和`com.day.cq.audit.impl.AuditLogMaintenanceTask`任務需要單獨的OSGi設定，沒有它們就無法運作。 如果它們在升級前工作執行期間失敗，遺失設定是最可能的原因。 因此，如果您不想執行OSGi設定，請務必為這些工作新增OSGi設定，或將其從升級前最佳化工作清單中完全移除。 您可以在[管理工作流程執行個體](/help/sites-administering/workflows-administering.md)找到設定工作流程清除工作的檔案，也可以在AEM 6](/help/sites-administering/operations-audit-log.md)中的[稽核記錄維護找到稽核記錄維護工作設定。
 
-如需CQ 5.6的工作流程與稽核記錄清除，以及AEM 6.0的稽核記錄清除，請參閱[清除工作流程與稽核節點](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)。
 
 ## 安裝、設定及執行升級前工作 {#install-configure-run-pre-upgrade-tasks}
 
@@ -144,7 +141,7 @@ ht-degree: 0%
 >
 >只有TarMK安裝才需要此步驟
 
-如果使用TarMK，您應在升級前執行離線修訂清除。 如此一來，存放庫移轉步驟和後續升級工作執行速度會大幅加快，有助於確保在升級完成後，線上修訂清除可以成功執行。 如需有關執行離線修訂清除的資訊，請參閱[執行離線修訂清除](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup)。
+如果使用TarMK，您應在升級前執行離線修訂清除。 如此一來，存放庫移轉步驟和後續升級工作執行速度會大幅加快，有助於確保在升級完成後，線上修訂清除可以成功執行。 如需有關執行離線修訂清除的資訊，請參閱[執行離線修訂清除](/help/sites-deploying/revision-cleanup.md#revision-cleanuprevision-cleanup)。
 
 ## 執行資料存放區記憶體回收 {#execute-datastore-garbage-collection}
 

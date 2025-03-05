@@ -5,9 +5,9 @@ topic-tags: upgrading
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: c3df47efd4b13dcd8061e5cdac32a75fbf36df4b
+source-git-commit: 67bd9b29ccc525111710a397cca5de1c961486ac
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -179,7 +179,7 @@ Where `/path/to/datastore` represents the path to your File Datastore.
 
 >[!NOTE]
 >
->部分Java 8/11引數的支援已在Java 17中移除，請參閱[Oracle Java™ 17檔案](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html)和[AEM 6.5 LTS的Java&amp;trade引數考量事項](https://git.corp.adobe.com/AdobeDocs/experience-manager-65-lts.en/blob/main/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations)。
+>部分Java 8/11引數的支援已在Java 17中移除，請參閱[Oracle Java™ 17檔案](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html)和[AEM 6.5 LTS的Java&amp;trade引數考量事項](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations)。
 
 若要執行升級，重要的是使用jar檔案啟動AEM以啟動執行個體。
 
