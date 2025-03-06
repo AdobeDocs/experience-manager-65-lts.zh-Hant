@@ -4,10 +4,10 @@ description: 瞭解如何設定AEM的IMS整合
 feature: Security
 role: Admin
 exl-id: 05ba39fc-4b53-43c0-9a9f-7da3293b1ca2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 63%
+source-wordcount: '397'
+ht-degree: 68%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->Adobe客戶使用[Adobe Developer Console](https://developer.adobe.com/console)產生可存取各種API的認證。 客戶可以選擇各種認證類型，包括 OAuth 伺服器到伺服器和單頁應用程式。認證型別服務帳戶(JWT)現在已遭取代，改用Service Pack 20的OAuth伺服器對伺服器認證。 此變更可重新移植到較舊的Service Pack，從Service Pack 11到Service Pack 20，並使用您可以[下載](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip)的Hotfix。
+>Adobe客戶使用[Adobe Developer Console](https://developer.adobe.com/console)產生可存取各種API的認證。 客戶可以選擇各種認證類型，包括 OAuth 伺服器到伺服器和單頁應用程式。認證型別服務帳戶(JWT)現在已遭取代，改用OAuth伺服器對伺服器認證。
 
 Adobe Experience Manager (AEM)可與許多其他Adobe解決方案整合。 例如 Adobe Target、Adobe Analytics 等。
 

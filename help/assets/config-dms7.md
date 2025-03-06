@@ -1,19 +1,14 @@
 ---
 title: 設定Dynamic Media - Scene7模式
 description: 瞭解如何設定Dynamic Media - Scene7模式。
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-docset: aem65
 role: User, Admin
 mini-toc-levels: 4
 feature: Configuration,Scene7 Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 98bd0c24-6c5e-4b96-a3aa-a3e4ef802baf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '6507'
+source-wordcount: '6491'
 ht-degree: 3%
 
 ---
@@ -132,7 +127,7 @@ Feature Pack 18912可讓您透過FTP大量擷取資產，或在Experience Manage
 
    * **[!UICONTROL 發佈Assets]** — 您可以從下列三個選項中選擇：
       * **[!UICONTROL 立即]**&#x200B;表示上傳資產時，系統會內嵌資產並立即提供URL/內嵌。 發佈資產不需要使用者介入。
-      * **[!UICONTROL 啟動時]**&#x200B;表示您必須先明確發佈資產，才能提供URL/內嵌連結。<br><!-- CQDOC-17478, Added March 9, 2021-->從Experience Manager 6.5.8開始，Experience Manager發佈執行個體僅會在&#x200B;**[!UICONTROL 啟動時]**&#x200B;發佈模式中反映正確的Dynamic Media中繼資料值，例如`dam:scene7Domain`和`dam:scene7FileStatus`。 若要啟用此功能，請安裝Service Pack 8，然後重新啟動Experience Manager。 前往Sling設定管理員。 尋找`Scene7ActivationJobConsumer Component`的設定或建立新的設定)。 選取&#x200B;**[!UICONTROL Dynamic Media發佈後復寫中繼資料]**&#x200B;核取方塊，然後選取&#x200B;**[!UICONTROL 儲存]**。
+      * **[!UICONTROL 啟動時]**&#x200B;表示您必須先明確發佈資產，才能提供URL/內嵌連結。<br><!-- CQDOC-17478, Added March 9, 2021-->從Experience Manager 6.5.8開始，Experience Manager發佈執行個體僅會在&#x200B;**[!UICONTROL 啟動時]**&#x200B;發佈模式中反映正確的Dynamic Media中繼資料值，例如`dam:scene7Domain`和`dam:scene7FileStatus`。 前往Sling設定管理員。 尋找`Scene7ActivationJobConsumer Component`的設定或建立新的設定)。 選取&#x200B;**[!UICONTROL Dynamic Media發佈後復寫中繼資料]**&#x200B;核取方塊，然後選取&#x200B;**[!UICONTROL 儲存]**。
 
         ![在Dynamic Media發佈後復寫中繼資料核取方塊](assets-dm/replicate-metadata-setting.png)
 
@@ -250,7 +245,7 @@ Dynamic Media中的密碼到期日設為目前系統日期起的100年。
 
 如果您打算使用此功能，請注意下列必要條件和要點：
 
-* 您必須在Dynamic Media - Scene7模式下執行具有Service Pack 6.5.4.0或更新版本的Experience Manager 6.5。
+* 您必須以Dynamic Media - Scene7模式執行Experience Manager 6.5 LTS。
 * 僅&#x200B;[*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html)客戶支援此大型上傳功能。
 * 請確定您的Experience Manager執行個體已設定Amazon S3或Microsoft® Azure Blob儲存空間。
 

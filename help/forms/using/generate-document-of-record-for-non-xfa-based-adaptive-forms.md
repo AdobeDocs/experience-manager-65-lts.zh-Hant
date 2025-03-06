@@ -1,17 +1,13 @@
 ---
 title: 產生最適化表單的記錄檔案
 description: 說明如何為最適化表單產生記錄檔案(DoR)。
-content-type: reference
-topic-tags: adaptive_forms, develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '4307'
+source-wordcount: '4283'
 ht-degree: 3%
 
 ---
@@ -31,11 +27,6 @@ ht-degree: 3%
 提交表單後，您的客戶通常希望以列印或檔案格式來記錄他們在表單中填寫的資訊，以供日後參考。 這稱為記錄檔案。
 
 本文說明如何產生Adaptive Forms或Adaptive Form片段的記錄檔案。
-
->[!NOTE]
->
-> AEM 6.5 Forms Service Pack 19 (6.5.19.0)已引進自訂您的最適化表單片段及其在最適化表單編輯器中欄位的支援。
-
 
 >[!NOTE]
 >

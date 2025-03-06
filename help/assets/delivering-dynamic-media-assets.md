@@ -1,19 +1,14 @@
 ---
 title: 傳遞 Dynamic Media 資產
 description: 瞭解如何將視訊和影像等Dynamic Media資產傳送至您的網頁。
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-docset: aem65
 role: User, Admin
 feature: Asset Management,Renditions
 solution: Experience Manager, Experience Manager Assets
 exl-id: b91173b4-f1d1-4aad-97d2-782bc8aeaeab
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 47b82956b41c3f78bed5ae220c7e993ce29e0385
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 9%
+source-wordcount: '313'
+ht-degree: 10%
 
 ---
 
@@ -42,9 +37,7 @@ ht-degree: 9%
 * [將 URL 連結至您的網頁應用程式](/help/assets/linking-urls-to-yourwebapplication.md)
 * [為回應式網站傳遞最佳化影像](/help/assets/responsive-site.md)
 * [HTTP2傳送內容](/help/assets/http2.md)
-* [透過Dynamic Media Classic使CDN快取失效](/help/assets/invalidate-cdn-cache-dm-classic.md)
 * [使用規則集轉換 URL](/help/assets/using-rulesets-to-transform-urls.md)
-
 
 ## Dynamic Media資產的HTTP/2傳送 {#http-delivery-of-dynamic-media-assets}
 

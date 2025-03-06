@@ -11,7 +11,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 6b94caf1-97b7-4430-92f1-4f4d0415aef3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 0%
@@ -29,9 +29,9 @@ ht-degree: 0%
 
 1. **AEM分析器** — 依照升級規劃中的說明執行AEM分析器，並在[使用AEM分析器評估升級複雜性](/help/sites-deploying/aem-analyzer.md)頁面上詳細說明。 您會收到AEM Analyzer報表，其中除了AEM目標版本中無法使用的API/套件組合，也包含必須解決之區域的詳細資訊。 AEM Analyzer報表可指出程式碼中的任何不相容專案。 如果不存在任何專案，表示您的部署已經與6.5 LTS相容。 您仍然可以選擇使用6.5 LTS功能進行新開發，但您不只為了維護相容性而需要它。
 1. **開發6.5 LTS的程式碼基底** — 為Target版本的程式碼基底建立專屬的分支或存放庫。 使用升級前相容性的資訊，規劃要更新的程式碼區域。
-1. **使用6.5 LTS Uber jar編譯** — 更新程式碼基底POM以指向6.5.2025 uber jar，並據此編譯程式碼。
+1. **使用6.5 LTS Uber jar編譯** — 更新程式碼基底POM以指向6.5 LTS uber jar並編譯程式碼。
 1. **部署至6.5 LTS環境** - AEM 6.5 LTS的乾淨執行個體（製作+發佈）應在Dev/QA環境中站立。 應部署更新的程式碼庫和代表性內容範例（來自目前生產環境）。
-1. **QA驗證和錯誤修正** - QA應在6.5.2025的Author和Publish執行個體上驗證應用程式。發現的任何錯誤都應修正並認可至6.5 LTS程式碼基底。 視需要重複開發週期，直到修復所有錯誤為止。
+1. **QA驗證和錯誤修正** - QA應在6.5 LTS的作者和發佈執行個體上驗證應用程式。 發現的任何錯誤都應修正並認可至6.5 LTS程式碼基底。 視需要重複開發週期，直到修復所有錯誤為止。
 
 在繼續升級之前，您應該要有已針對AEM 6.5 LTS完整測試的穩定應用程式程式碼基底。
 

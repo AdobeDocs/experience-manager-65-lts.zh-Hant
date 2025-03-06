@@ -10,9 +10,9 @@ role: Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 22a2428d-3ebd-4368-983e-d140f99de2dd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '675'
 ht-degree: 4%
 
 ---
@@ -68,11 +68,11 @@ This help describes the following two use-cases:
 
 [下載並安裝最新的AEM Service Pack](#servicepack)
 
-### 下載並安裝AEM 6.5 {#aemquickstart}
+### 下載並安裝AEM 6.5 LTS {#aemquickstart}
 
-建議使用AEM 6.5設定AEM Author例項。 如果您尚未啟動並執行AEM，請從下列位置下載：
+建議您使用AEM 6.5 LTS來設定AEM Author例項。 如果您尚未啟動並執行AEM，請從下列位置下載：
 
-* 如果您是AEM現有客戶，請從[AEM授權網站](https://licensing.adobe.com)下載Adobe 6.5。
+* 如果您是AEM現有客戶，請從[AEM授權網站](https://licensing.adobe.com)下載Adobe 6.5 LTS。
 
 * 如果您是Adobe合作夥伴，請使用[Adobe合作夥伴訓練計畫](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q)要求AEM 6.5。
 
@@ -80,7 +80,7 @@ This help describes the following two use-cases:
 
 ### 下載並安裝AEM最新Service Pack {#servicepack}
 
-如需詳細指示，請參閱目前的[AEM 6.5 Service Pack發行說明](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html)。
+如需詳細指示，請參閱目前的[AEM 6.5 LTS Service Pack發行說明](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html)。
 
 如果找不到最新的Adobe套件或Service Pack，請&#x200B;**連絡AEM客戶支援**。
 

@@ -9,9 +9,9 @@ thumbnail: 39476.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 22fcdadf-12c0-4545-a854-76345806386f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '765'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 根據AEM (CIF)為AEM開發Commerce integration framework Commerce專案時，會遵循與其他AEM專案相同的規則和最佳作法。 請先檢閱下列內容：
 
-- [AEM 6.5 Developing 使用指南](/help/sites-developing/getting-started.md)
+- [AEM開發使用手冊](/help/sites-developing/getting-started.md)
 - [AEM核心概念](/help/sites-developing/the-basics.md)
 - [AEM 開發 - 指導方針與最佳實務](/help/sites-developing/dev-guidelines-bestpractices.md)
 - [如何使用Apache Maven建置AEM專案](/help/sites-developing/ht-projects-maven.md)
@@ -31,17 +31,16 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->下列說明可協助您使用適用於AEM 6.5的CIF，為AEM Commerce設定本機AEM開發環境。 如果您使用AEM as a Cloud Service，請參閱[AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html)檔案。
+>下列說明可協助您使用適用於AEM 6.5 LTS的CIF，為AEM Commerce設定本機AEM開發環境。 如果您使用AEM as a Cloud Service，請參閱[AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html)檔案。
 
-適用於AEM 6.5 aka的AEM Commerce附加元件。 CIF附加元件可用於本機開發，並以AEM套件的形式提供。 可以從[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)下載它作為Feature Pack。
+適用於AEM的AEM Commerce附加元件(稱為CIF附加元件)可用於本機開發，並以AEM套件的形式提供。 可以從[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)下載它作為Feature Pack。
 
 ### 必要的軟體
 
 下列專案應在本機安裝：
 
-- 本機AEM 6.5
-- [AEM 6.5 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 7或更新版本
-- [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
+- 本機AEM 6.5 LTS
+- [Java 17](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (3.3.9 或更新版本)
 - [節點LTS](https://nodejs.org/en/)
 - [npm 6+](https://www.npmjs.com/)
@@ -58,8 +57,6 @@ ht-degree: 4%
 ### 本機設定
 
 對於使用AEM和CIF附加元件的本機CIF專案開發，請執行以下步驟：
-
-1. 取得AEM 6.5版本並安裝AEM 6.5 Service Pack。 需要AEM 6.5 Service Pack 7，但Adobe建議安裝最新可用的Service Pack。
 
 1. 解壓縮AEM .jar以建立`crx-quickstart`資料夾，請執行：
 
