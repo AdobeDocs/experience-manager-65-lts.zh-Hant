@@ -10,7 +10,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8b3d8d0f-10f7-4736-881d-8f1f21c69182
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a037dc7cbb13abfeb8a7289baded50d3d788cbf6
 workflow-type: tm+mt
 source-wordcount: '1200'
 ht-degree: 0%
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 ### 驗證Oak版本 {#verify-oak-version}
 
-升級後，您應該會看到Oak版本已更新為&#x200B;**1.68.1-B002**。 若要驗證Oak版本，請導覽至OSGi主控台，並檢視與Oak套件組合相關聯的版本：Oak Core、Oak Commons、Oak Segment Tar。
+升級後，您應該會看到Oak版本已更新為&#x200B;**1.68.x**。 若要驗證Oak版本，請導覽至OSGi主控台，並檢視與Oak套件組合相關聯的版本：Oak Core、Oak Commons、Oak Segment Tar。
 
 ### 頁面初始驗證 {#initial-validation-of-pages}
 
