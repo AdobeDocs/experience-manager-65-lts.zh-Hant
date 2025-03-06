@@ -4,7 +4,8 @@ description: 本檔案說明將獨立SPA上傳至Adobe Experience Manager執行�
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 71b7f46de3619605c8a5aedc496cfb85ed582f59
+exl-id: cb5495f9-bc54-4515-ae15-55a5397500aa
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2387'
 ht-degree: 0%

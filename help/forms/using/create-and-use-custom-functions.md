@@ -3,7 +3,8 @@ title: 在最適化表單中建立及新增自訂函式
 description: AEM Forms支援自訂函式，可讓使用者在規則編輯器中建立並使用自己的函式。
 feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 40329e80-d794-4e43-8ed4-d88ce3c48751
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 4%

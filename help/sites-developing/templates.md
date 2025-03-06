@@ -9,7 +9,8 @@ legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a6121f570f7840c9b7a63d10c7a95cd2894fe4ec
+exl-id: 3b3cff43-4edc-4250-8e6d-08eb5906ffcd
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 1%
@@ -129,4 +130,3 @@ AEM現在提供兩種基本型別的範本以用於建立頁面：
 您可以在範本的`jcr:content`節點上使用`cq:allowedTemplates`屬性，將此設定套用至使用此範本的所有新建立頁面。
 
 如果您想要新增更多限制，例如關於範本階層，您可以在範本上使用`allowedParents/allowedChildren`屬性。 然後，您可以明確指定從範本T建立的頁面必須是從範本T建立的頁面的父項/子項。
-

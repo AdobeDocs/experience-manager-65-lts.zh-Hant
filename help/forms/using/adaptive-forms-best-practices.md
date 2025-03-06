@@ -6,7 +6,8 @@ topic-tags: author
 feature: Adaptive Forms,Foundation Components,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: b87629fa-85a9-4024-963a-4761bc093e62
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '5538'
 ht-degree: 1%
@@ -416,6 +417,3 @@ AEM Forms規則編輯器提供建立和管理規則的視覺介面，減少大�
 * **有效的開發程式：**
    * 模組化可讓開發人員專注於特定功能。
    * 降低整個程式碼基底的複雜性，以提升開發流程的效率，進而減輕開發人員的負擔。
-
-
-

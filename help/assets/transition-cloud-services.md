@@ -4,7 +4,8 @@ description: 將翻譯雲端服務套用至Adobe Experience Manager中的資料�
 role: Admin
 feature: Translation
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: cbe4f479-a287-412e-ab8b-98c310bb49b5
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 45%

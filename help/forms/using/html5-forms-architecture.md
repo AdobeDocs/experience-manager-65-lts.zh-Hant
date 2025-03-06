@@ -9,7 +9,8 @@ docset: aem65
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e57d51de-9d98-4b20-8180-22fa81fad4fd
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1976'
 ht-degree: 0%
@@ -165,7 +166,7 @@ HTML5 forms支援義大利文(it)、西班牙文(es)、巴西葡萄牙文(pt_BR)
 
 Sling套件包含與設定檔和設定檔轉譯器相關的內容。
 
-#### 輪廓 {#profiles}
+#### 設定檔 {#profiles}
 
 設定檔是Sling中的資源節點，代表表單或Forms系列。 在CQ層級，這些設定檔是JCR節點。 節點位於JCR存放庫中的&#x200B;**/content**&#x200B;資料夾下，並且可以位於&#x200B;**/content**&#x200B;資料夾下的任何子資料夾內。
 

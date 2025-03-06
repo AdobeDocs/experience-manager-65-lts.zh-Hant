@@ -4,7 +4,8 @@ description: 瞭解如何使用網域管理設定和網域名稱和ID的一般�
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: eded255b54ff83f60f73cece8824c778d3a87680
+exl-id: 70b0472e-2547-4887-b761-b200dc7b714a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 0%

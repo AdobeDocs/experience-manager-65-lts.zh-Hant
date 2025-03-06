@@ -8,7 +8,8 @@ topic-tags: deploying
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
+exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 0%
@@ -246,4 +247,3 @@ AEM會以單一war檔案的形式進行部署。
    * 如果您要將AEM war檔案部署為根Web應用程式，請將它重新命名為ROOT.war。 如果要將aemauthor重新命名為內容根目錄，請將其重新命名為aemauthor.war。
    * 將其複製到tomcat的webapps資料夾。
    * 等到安裝AEM為止。
-

@@ -4,7 +4,8 @@ description: 當客戶透過WorkBench實作的服務產生大量PDF時，列印�
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 80a4e5c0-d68f-4591-a43d-ab75b5f0764c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 0%

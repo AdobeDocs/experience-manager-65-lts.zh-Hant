@@ -9,7 +9,8 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 50f2f9f186310bcdec471ec96937110ec17aeca0
+exl-id: a0ddb246-64eb-493c-9950-9b7ecb32e555
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '4643'
 ht-degree: 8%
@@ -45,7 +46,7 @@ ht-degree: 8%
 >
 >使用&#x200B;**範本主控台**&#x200B;建立的頁面和範本不適用於傳統UI，也不支援此類使用。
 
-## 在您開始之前 {#before-you-start}
+## 開始之前 {#before-you-start}
 
 >[!NOTE]
 >

@@ -4,7 +4,8 @@ description: 瞭解如何在Dynamic Media中使用視訊，例如編碼視訊、
 feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 3430ab95465f4f0ee40ab781989ee6cbf563de43
+exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '11126'
 ht-degree: 2%
@@ -585,7 +586,7 @@ DASH (Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，被�
 
 ## 關於Dynamic Media中視訊的多重註解和音訊追蹤支援{#about-msma}
 
-透過Dynamic Media的多重字幕與音訊曲目功能，您可以輕鬆將多重字幕與音訊曲目新增至主要視訊。 具備此功能代表全球客群都可以存取您的影片。您能夠使用多種語言針對全球客群客製化一部已發佈的主要影片，並遵守不同地理區域的無障礙指南。作者還可以從使用者介面中的單個標籤管理字幕和音訊。
+透過Dynamic Media的多重字幕與音訊曲目功能，您可以輕鬆將多重字幕與音訊曲目新增至主要視訊。 擁有此功能代表全球觀眾都可以存取您的影片。您可以著手自訂一部已發佈的主要影片，以多種語言提供給全球觀眾，並遵守不同地理區域的無障礙指南。作者還可以從使用者介面中的單個標籤管理字幕和音訊。
 
 ![Dynamic Media中的註解與音訊曲目標籤，以及顯示已上傳的`.vtt`註解檔案與已上傳視訊的.MP3音訊曲目檔案的表格。](assets-dm/msma-subtitle-audiotracks-tab2.png)
 

@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
-source-git-commit: 2a406ca2870e241539819ae62c6a14904ee71211
+exl-id: 558cf29b-34f4-4ead-b8d6-67ef8aaa5dc5
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1528'
 ht-degree: 2%
@@ -166,4 +167,3 @@ AEM提供各種元件供個人化使用。 有些專案可讓使用者登入並�
 | 登出 | 指出目前登入的使用者，並提供您登出的連結。 |
 | 標記雲 | 標籤雲，以圖形方式顯示網站內標籤選取範圍 |
 | Teaser | 顯示在首頁面上的內容（通常是影像），用來「誘惑」使用者存取基礎內容。 |
-

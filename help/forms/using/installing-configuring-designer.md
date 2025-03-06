@@ -4,7 +4,8 @@ description: Designer可作為獨立安裝程式提供，且與Workbench搭配�
 role: Admin, User, Developer
 feature: Forms Designer,Designer
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 1444b0fc0811cbb187d2a4d83b626444e44ef73f
+exl-id: 526bbc59-62c3-4e6d-a938-e368d07fe6b0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 0%
@@ -118,4 +119,3 @@ msiexec /i "<absolute path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-***
       1. 開啟Designer，前往說明，按一下關於設計工具，您會看到設計工具版本資訊以及位元資訊，例如，您會看到64位元寫入版本結尾處，如下所示：
          `6.5.21.20240522.1.161 | 64 bit`
       1. 開啟Designer，左上角會出現一個品牌圖示，其中包含產品名稱的64位元資訊。
-

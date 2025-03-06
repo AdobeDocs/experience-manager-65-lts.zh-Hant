@@ -4,7 +4,8 @@ description: 瞭解如何建立、佈局和預覽最適化表單。 另外，瞭
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 87e03ff2-1324-42bd-b4da-54a0c17ce98e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1314'
 ht-degree: 9%
@@ -167,8 +168,8 @@ AEM [!DNL Forms]提供許多元件，以便在最適化表單上顯示資訊。 
 
    | 屬性 | 值 |
    |--- |--- |
-   | 來自 | `donotreply@weretail.com` |
-   | 至 | `${customer_Email}` |
+   | 寄件者 | `donotreply@weretail.com` |
+   | 收件者 | `${customer_Email}` |
    | 主旨 | 通知：您已在We.Retail網站上新增運送地址。 |
    | 電子郵件範本 | `${customer_Name}`，您好，下列地址已新增為您的帳戶的送貨地址： <br>`${customer_Name}`、`${customer_Shipping_Address}`、`${customer_State}`、`${customer_ZIPCode}`<br>謹祝， We.Retail |
    | 包含附件 | 已啟用 |

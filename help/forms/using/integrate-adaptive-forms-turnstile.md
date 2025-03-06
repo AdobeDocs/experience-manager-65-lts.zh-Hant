@@ -3,7 +3,8 @@ title: 如何在AEM最適化表單6.5中使用Turnstile？
 description: 透過Turnstile服務輕鬆增強表單安全性。 內的逐步指南！
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-source-git-commit: 1444b0fc0811cbb187d2a4d83b626444e44ef73f
+exl-id: cca80e8d-496b-4d67-a90d-2eadf2931986
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '850'
 ht-degree: 2%

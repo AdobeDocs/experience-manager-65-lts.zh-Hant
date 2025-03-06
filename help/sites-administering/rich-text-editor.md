@@ -5,7 +5,8 @@ contentOwner: AG
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: e12f12862c31cef81b2808897fab5cf8e19dfa86
+exl-id: 5511817e-dcf8-463d-8e62-cbbef64ad162
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2817'
 ht-degree: 1%
@@ -384,4 +385,3 @@ AEM RTE功能有下列限制：
 **系統管理員可用的設定不適用於作者**
 
 如果介面組態更新反映在管理員而非作者帳戶中，請確定組態節點未命名為`config`。 使用[`configPath`屬性](/help/sites-developing/components-basics.md#cq-inplaceediting)。
-

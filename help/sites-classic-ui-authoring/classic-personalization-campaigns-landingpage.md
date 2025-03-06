@@ -4,7 +4,8 @@ description: 登入頁面功能可讓您將設計和內容快速輕鬆地直接�
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: ecb0dc4f1e443bc529468d0918642572135e361b
+exl-id: 827e5440-6451-41be-b565-c2fb7668b3da
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3360'
 ht-degree: 2%

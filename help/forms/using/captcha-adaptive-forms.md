@@ -8,10 +8,11 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 300fcbdc-d884-409b-9011-89cdf2706535
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1832'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -90,7 +91,7 @@ reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 請�
       1. 在組態瀏覽器中，選取&#x200B;**[!UICONTROL 全域]**&#x200B;資料夾，然後選取&#x200B;**[!UICONTROL 屬性]**。
 
       1. 在[組態內容]對話方塊中，啟用&#x200B;**[!UICONTROL 雲端組態]**。
-      1. 選取&#x200B;**[!UICONTROL 儲存並關閉]**&#x200B;以儲存設定並結束對話方塊。
+      1. 選取「**[!UICONTROL 儲存並關閉]**」，即可儲存設定並退出對話框。
 
    1. 在組態瀏覽器中，選取&#x200B;**[!UICONTROL 建立]**。
    1. 在[建立設定]對話方塊中，指定資料夾的標題並啟用&#x200B;**[!UICONTROL 雲端設定]**。

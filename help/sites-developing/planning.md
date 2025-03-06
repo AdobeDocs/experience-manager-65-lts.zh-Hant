@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 82199140-e464-45a5-9c00-dda2d8efde74
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 0%
@@ -23,7 +24,7 @@ ht-degree: 0%
 * [定義測試案例](/help/sites-developing/test-cases.md)
 * [測試 — 何時與誰？](/help/sites-developing/when-who.md)
 
-## 在您開始之前 {#before-you-start}
+## 開始之前 {#before-you-start}
 
 開始實際分析和定義測試之前，請先檢閱下列資訊：
 

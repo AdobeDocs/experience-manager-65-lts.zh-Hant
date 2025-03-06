@@ -7,7 +7,8 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 61a1c41a-7aec-4ffb-b622-905b3ca62c1b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3909'
 ht-degree: 15%
@@ -368,4 +369,3 @@ Experience Manager可讓您將遠端DAM部署作為來源連線至多個Experien
   ![無法擷取資產遠端參考](assets/reference-report-failure.png)
 
 * 如果Cookie不是從Sites伺服器傳送到Google Chrome中的Assets伺服器，這是因為Assets連線不是透過HTTPS。 如果您沒有在Assets執行個體上使用HTTPS，則當您向Assets伺服器驗證後，`SameSite=None`標頭無法新增到回應中。
-

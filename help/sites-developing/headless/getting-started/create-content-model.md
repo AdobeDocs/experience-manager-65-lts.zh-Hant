@@ -4,7 +4,8 @@ description: 定義您建立的內容結構，並使用內容片段模型透過A
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Architect,Data Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 768a5d73-521f-47a5-b4a3-d1b0b77798f7
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 51%

@@ -1,7 +1,8 @@
 ---
 title: 購物車和 Dispatcher 設定
 description: 瞭解購物車和Adobe Experience Manager Dispatcher設定。
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: bc393a38-cc81-4533-8d46-3e5861e6cafb
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 11%

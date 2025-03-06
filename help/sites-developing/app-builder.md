@@ -4,7 +4,8 @@ description: 使用Adobe Developer App Builder延伸 [!DNL Adobe Experience Mana
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: f9b3df58-c94b-4143-aeec-85ff031bac2e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%
@@ -64,4 +65,3 @@ App Builder為開發人員提供影片和檔案，包括指南，以及參考檔
 準備好開始開發了嗎？ 有許多範例應用程式可協助您快速上手：
 
 * [Adobe Developer網站上的App Builder Code Labs](https://developer.adobe.com/app-builder/docs/resources/)
-

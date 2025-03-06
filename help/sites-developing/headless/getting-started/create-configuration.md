@@ -4,7 +4,8 @@ description: 建立設定，作為在AEM 6.5中開始使用Headless的第一步�
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Architect,Data Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 6792f5c0-074e-4465-9b84-8be78abd6b8f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 61%

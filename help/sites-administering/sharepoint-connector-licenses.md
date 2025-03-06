@@ -9,7 +9,8 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4573803a-65dd-433a-b833-3242556bb1fe
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 1%
@@ -24,7 +25,7 @@ ht-degree: 1%
 
 下表列出SharePoint Connector核心程式庫內使用的協力廠商程式庫，以及其涵蓋的授權、版權注意事項或免責宣告：
 
-| 資料庫 | 授權類型 |
+| 程式庫 | 授權類型 |
 |---|---|
 | 註釋 | [Apache](#apache) |
 | axiom-api | [Apache](#apache) |
@@ -164,7 +165,7 @@ ht-degree: 1%
  </colgroup>
  <tbody>
   <tr>
-   <td>資料庫</td>
+   <td>程式庫</td>
    <td>授權</td>
   </tr>
   <tr>
