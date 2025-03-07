@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: f65f9e94-0837-48d1-a565-cfb880963790
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e7fc1120d12160ba866ceaddd087fc9acdfcd51d
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -93,10 +93,6 @@ Classic UI已透過AEM 6.4淘汰，Adobe不打算進一步增強Classic UI。 �
   </tr>
  </tbody>
 </table>
-
-### 常見問題集 {#faq}
-
-請參閱知識庫文章[Touch UI編寫常見問題集](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html)，以取得詳細資料；包括任何有關傳統UI淘汰排程的資訊。
 
 ### 選取您的UI {#selecting-your-ui}
 
