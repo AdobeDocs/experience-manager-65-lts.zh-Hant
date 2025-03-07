@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
 workflow-type: tm+mt
-source-wordcount: '11126'
+source-wordcount: '10487'
 ht-degree: 2%
 
 ---
@@ -129,7 +129,7 @@ Dynamic Media中的視訊是端對端解決方案，可讓您輕鬆發佈高品�
 
 如需演演算法的詳細技術資訊，請參閱[https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
 
-對於管理單一視訊和自我調整視訊集，支援下列專案：
+若是管理單一視訊和自我調整視訊集，則支援下列專案：
 
 * 上傳各種支援格式的視訊，並編碼至MP4 H.264以便在多個熒幕上播放。 您可以使用預先定義的自我調整視訊預設集、單一視訊編碼預設集，或自訂自己的編碼來控制視訊的品質和大小。
 
@@ -262,10 +262,6 @@ DASH是國際標準，HLS是Apple標準。 兩者都用於自我調整視訊串�
   </tr>
  </tbody>
 </table>
-
->[!IMPORTANT]
->
->*若要在視訊中使用DASH，Adobe技術支援必須先在您的帳戶中啟用。 請參閱[在您的Dynamic Media帳戶上啟用DASH](#enable-dash)。
 
 ## Dynamic Media視訊解決方案的架構 {#architecture-of-dynamic-media-video-solution}
 
@@ -419,60 +415,6 @@ VBR需要更長的時間來編碼，但會產生最有利的結果；媒體檔�
 
 Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用H.264視訊轉碼器，因此可提供高品質的視訊，但檔案大小必須經過壓縮。
 
-### 在您的Dynamic Media帳戶上啟用DASH、多重註解和音訊追蹤支援 {#enable-dash}
-
-**關於啟用您帳戶上的DASH**
-DASH (Digital Adaptive Streaming over HTTP)是視訊串流的國際標準，被廣泛採用於不同的視訊檢視器中。 在您的帳戶上啟用DASH後，您就可以選擇使用DASH或HLS進行最適化視訊串流。 或者，當您在檢視器預設集中選取**[!UICONTROL auto]**&#x200B;作為播放型別時，可以選擇在播放器之間自動切換。
-
-在您的帳戶上啟用DASH的一些主要優點包括：
-
-* 封裝DASH串流視訊，以進行最適化位元速率串流。 此方法可提高傳遞效率。 最適化串流可確保為客戶提供最佳檢視體驗。
-* 使用Dynamic Media播放器最佳化的瀏覽器串流可在HLS和DASH串流之間切換，以確保最佳服務品質。 使用Safari瀏覽器時，視訊播放器會自動切換至HLS。
-* 您可以編輯視訊檢視器預設集，以設定您偏好的串流方法(HLS或DASH)。
-* 最佳化的視訊編碼可確保啟用DASH功能時不會使用額外的儲存空間。 會為HLS和DASH建立單一視訊編碼集，以最佳化視訊儲存成本。
-* 協助讓客戶更容易存取視訊傳送。
-* 也透過API取得串流URL。
-
-在您的帳戶上啟用DASH需要兩個步驟：
-
-* 設定Dynamic Media使用DASH，讓您輕鬆自行。
-* 將Experience Manager設定為使用DASH，這是透過您建立和提交的Adobe客戶支援案例完成。
-
-當您建立Adobe支援案例以在您的帳戶上啟用DASH時，系統也會自動啟用多重註解和音訊追蹤支援。 啟用後，所有新上傳的視訊都會使用更新的後端架構進行處理，該架構支援新增多個註解和音訊曲目。
-
->[!IMPORTANT]
->
->在&#x200B;*之前，您已在您的Dynamic Media帳戶[上啟用多重標題與音訊追蹤支援的任何視訊，都必須重新處理](/help/assets/processing-profiles.md#reprocessing-assets)。*&#x200B;此視訊重新處理步驟是必要的，這樣使用者才能使用多個註解和音訊追蹤功能。 重新處理之後，視訊URL仍可繼續如常運作和播放。
-
-**若要啟用Dynamic Media帳戶上的DASH、多重註解與多重音軌支援：**
-
-<!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-
-1. Search for **AEM Assets Dynamic Media Video Advanced Streaming** feature flag.
-1. To enable (turn on) DASH, select the checkbox. -->
-1. 從&#x200B;**設定DASH的Dynamic Media**&#x200B;開始 — 從Experience Manager瀏覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 作業]** > **[!UICONTROL 網頁主控台]**。
-
-1. 從&#x200B;**[!UICONTROL Adobe Experience Manager Web主控台組態]**&#x200B;頁面，捲動至名稱&#x200B;*AEM Assets Dynamic Media視訊進階串流功能標幟*。
-
-1. 在名稱左側，選取核取方塊以啟用（開啟） DASH。
-
-1. 選取「**[!UICONTROL 儲存]**」。
-
-1. 現在請使用Admin Console開始[建立新的支援案例](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)。
-1. 若要建立支援案例，請遵循指示，同時確保您提供下列資訊：
-
-   * 主要連絡人姓名、電子郵件、電話。
-   * 您的Dynamic Media帳戶名稱。
-   * 指定您要在Experience Manager的Dynamic Media帳戶上啟用DASH、多字幕和多音訊追蹤支援。
-
-1. Adobe客戶支援會根據提交請求的順序，將您新增至客戶等候清單。
-1. 當Adobe準備好處理您的請求時，客戶支援將聯絡您以協調並設定啟用的目標日期。
-1. 客戶支援會在完成後通知您。
-1. 現在，您可以執行下列任一項作業：
-
-   * 照常建立您的[視訊檢視器預設集](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset)。
-   * [新增多個註解和音軌](#add-msma)到您的視訊。
-
 ## 檢視視訊報表 {#viewing-video-reports}
 
 >[!NOTE]
@@ -610,7 +552,6 @@ Dynamic Media ](/help/assets/assets-formats.md)和所有Dynamic Media視訊檢�
 
 * Dynamic Media是在AEM環境中設定。
 * [Dynamic Media視訊設定檔已套用至您擷取視訊的資料夾](/help/assets/video-profiles.md#applying-a-video-profile-to-folders)。
-* [已在您的Dynamic Media帳戶上啟用多重註解和音軌](#enable-dash)。
 
 WebVTT和Adobe `.vtt`格式支援新增的標題和註解。 此外，新增的音訊軌跡檔案也支援MP3格式。
 
@@ -842,10 +783,6 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一註解。 請參閱
 
 
 ## 新增隱藏式字幕至視訊 {#adding-captions-to-video}
-
->[!IMPORTANT]
->
->Adobe建議您在您的Dynamic Media帳戶上[啟用多重註解和音訊追蹤功能](#enable-dash)。 如此一來，您便可運用最新Dynamic Media後端架構及簡化的工作流程，在視訊中新增標題、字幕和音訊曲目。
 
 您可以將隱藏式字幕新增至單一視訊或最適化視訊集，以將視訊觸及全球市場。 透過新增隱藏式字幕，您就不需要對音訊進行配音，或是使用母語者重新錄製每種語言的音訊。 視訊會以錄製的語言播放。 出現外語註解時，不同語言的人仍可瞭解音訊部分。
 
