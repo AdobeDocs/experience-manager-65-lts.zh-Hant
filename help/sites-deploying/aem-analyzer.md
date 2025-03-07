@@ -2,14 +2,13 @@
 title: 使用AEM Analyzer評估升級複雜性
 description: 瞭解如何使用AEM Analyzer來評估升級的複雜性。
 topic-tags: upgrading
-content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6b846e456466492f4be2c1e5a1f6b3913ae4dab4
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2069'
 ht-degree: 15%
 
 ---
@@ -38,13 +37,13 @@ AEM 6.5 LTS Analyzer報表包含下列類別：
 
 ## 可用性 {#analyzer-availability}
 
-可以從[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下載AEM Analyzer的ZIP檔。 您可以在來源AEM執行個體上透過[封裝管理員](/help/sites-administering/package-manager.md)安裝封裝。
+可以從[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)下載AEM Analyzer的ZIP檔。 您可以在來源AEM執行個體上透過[封裝管理員](/help/sites-administering/package-manager.md)安裝封裝。
 
 ## 使用AEM Analyzer的重要考量 {#important-considerations-for-using-aem-analyzer}
 
 請參考以下章節，瞭解執行AEM Analyzer時的重要考量：
 
-* 分析器報告是使用AEM [模式偵測器](/help/sites-deploying/pattern-detector.md)的輸出所建置。 分析器使用的模式偵測器版本包含在AEM分析器安裝套件中
+* 分析器報告是使用AEM模式偵測器的輸出所建置。 分析器使用的模式偵測器版本包含在AEM分析器安裝套件中
 * AEM Analyzer只能由&#x200B;**管理員**&#x200B;使用者或&#x200B;**管理員**&#x200B;群組中的使用者執行
 * 在6.5版及更高版本的AEM執行個體上支援Analyzer。
 

@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 7f8de16f-9e9a-4d37-9978-d26c496b911c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b835dbf6fd7f40a2a1e1ca26c8a6870b69a19cbe
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 升級前步驟 {#pre-upgrade-steps}
 
-在執行升級之前，必須完成數個步驟。 如需詳細資訊，請參閱[升級程式碼和自訂](/help/sites-deploying/upgrading-code-and-customizations.md)和[升級前維護工作](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。 此外，請確定您的系統符合AEM 6.5 LTS ](/help/sites-deploying/technical-requirements.md)的[需求，並檢視[升級計畫考量事項](/help/sites-deploying/upgrade-planning.md)以及[分析器](/help/sites-deploying/pattern-detector.md)如何協助您估計複雜性。
+在執行升級之前，必須完成數個步驟。 如需詳細資訊，請參閱[升級程式碼和自訂](/help/sites-deploying/upgrading-code-and-customizations.md)和[升級前維護工作](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。 此外，請確定您的系統符合AEM 6.5 LTS ](/help/sites-deploying/technical-requirements.md)的[需求，並檢視[升級計畫考量事項](/help/sites-deploying/upgrade-planning.md)以及[分析器](/help/sites-deploying/aem-analyzer.md)如何協助您估計複雜性。
 
 
 ### 移轉先決條件 {#migration-prerequisites}
@@ -42,7 +42,7 @@ ht-degree: 0%
    ```
 
 1. 設定與AEM 6.5 LTS相容的Tomcat伺服器
-1. 請檢閱AEM伺服器的啟動引數，並確保根據系統需求更新引數。 如需詳細資訊，請參閱[Java 17考量事項](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations)
+1. 請檢閱AEM伺服器的啟動引數，並確保根據系統需求更新引數。 如需詳細資訊，請參閱[Java 17考量事項](/help/sites-deploying/custom-standalone-install.md#java-considerations)
 1. 使用Java 17在Tomcat伺服器上部署新下載的6.5 LTS War，並透過執行以下指令來啟動AEM 6.5 LTS Tomcat伺服器：
 
    ```

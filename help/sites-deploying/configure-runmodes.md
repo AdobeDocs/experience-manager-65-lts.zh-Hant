@@ -1,17 +1,13 @@
 ---
 title: 執行模式
 description: 瞭解如何使用執行模式，根據特定目的調整AEM執行個體。
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: configuring
-content-type: reference
 feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b21555f2-bc07-4653-a5da-966b9aa7ea1f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3370d62eafb9339a9f9c638f3fb2e2ce0f14d9ec
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '679'
 ht-degree: 1%
 
 ---
@@ -38,18 +34,14 @@ ht-degree: 1%
 
 * `author`
 * `publish`
-* `samplecontent`
-* `nosamplecontent`
 
 這兩組執行模式互斥；例如，您可以：
 
 * 定義`author`或`publish`，而不是同時定義
 
-* 將`author`與`samplecontent`或`nosamplecontent`結合（但不能兩者皆結合）
-
 >[!CAUTION]
 >
->使用上述執行模式之一(author、publish、samplecontent、nosamplecontent)時，安裝時使用的值會定義該安裝的&#x200B;*整個存留期*&#x200B;的執行模式。
+>使用上述執行模式之一（作者、發佈）時，安裝時使用的值會定義該安裝的&#x200B;*整個存留期*&#x200B;的執行模式。
 >
 >對於這些執行模式，您&#x200B;*無法在安裝後*&#x200B;變更它們。
 
@@ -68,16 +60,6 @@ ht-degree: 1%
 * 視需要。.
 
 每次啟動時也可以選取自訂的執行模式。
-
-## 使用samplecontent和nosamplecontent {#using-samplecontent-and-nosamplecontent}
-
-這些模式可讓您控制範例內容的使用。 範例內容是在建置快速入門之前定義，可包含套件、設定等：
-
-* `samplecontent`執行模式會安裝此內容（預設模式）。
-
-* `nosamplecontent`模式未安裝範例內容。
-
-nosamplecontent執行模式是針對生產安裝所設計。
 
 ## 定義執行模式的設定屬性 {#defining-configuration-properties-for-a-run-mode}
 

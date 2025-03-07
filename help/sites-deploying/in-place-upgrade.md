@@ -6,7 +6,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: db9bf14ec9fefcbafb7b6d749de966e97c54abda
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 1. 下載新的AEM 6.5 LTS jar檔案
 
-1. [判斷正確的升級啟動命令](/help/sites-deploying/in-place-upgrade.md#determining-the-correct-upgrade-start-command-determining-the-correct-upgrade-start-command)
+1. [判斷正確的升級啟動命令](#determining-the-correct-upgrade-start-command)
 
 1. 如果執行個體正在執行，請停止執行個體
 

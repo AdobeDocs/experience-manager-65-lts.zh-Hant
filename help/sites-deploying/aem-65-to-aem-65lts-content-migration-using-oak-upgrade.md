@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8c4ffb0e-b4dc-4a81-ac43-723754cbc0de
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9bf502146a309cd0d91f2aaa1778d5b550d424a8
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -87,3 +87,5 @@ Checkpoints won't be copied, because no external datastore has been specified. T
 也可以忽略警告，但在這種情況下，儲存庫將在第一次啟動時完全重新索引。 這可能是一個漫長的過程，尤其是對於大型執行個體而言。 在重新索引過程完成之前，存放庫將不可用。 使用`--skip-checkpoints`選項隱藏警告。
 
 您也可以使用[離線重新索引](/help/sites-deploying/upgrade-offline-reindexing.md)，在啟動AEM之前先離線重新索引存放庫，避免在第一次啟動時完全重新索引。
+
+如需Oak-upgrade工具和進階使用方式的詳細資訊，請參閱[正式檔案](https://jackrabbit.apache.org/oak/docs/migration.html)。

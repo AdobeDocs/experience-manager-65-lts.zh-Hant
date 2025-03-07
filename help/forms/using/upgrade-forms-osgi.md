@@ -6,9 +6,9 @@ role: Admin, User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: dd45dfe953a111ccbbc71e8e25a8a2577037587a
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '837'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,6 @@ ht-degree: 1%
       1. 選取封裝的版本和型別。 您也可以使用&#x200B;**[!UICONTROL 搜尋下載]**&#x200B;選項來篩選結果。
    1. 選取適用於您作業系統的封裝名稱，選取&#x200B;**[!UICONTROL 接受EULA條款]**，然後選取&#x200B;**[!UICONTROL 下載]**。
    1. 開啟[封裝管理員](/help/sites-administering/package-manager.md)，然後按一下&#x200B;**[!UICONTROL 上傳封裝]**&#x200B;以上傳封裝。
-   1. 開啟[封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)，然後按一下&#x200B;**[!UICONTROL 上傳封裝]**&#x200B;以上傳封裝。
    1. 選取封裝並按一下&#x200B;**[!UICONTROL 安裝]**。
 
       您也可以使用[AEM Forms發行版本](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)文章中所列的直接連結來下載套件。
@@ -43,11 +42,9 @@ ht-degree: 1%
 
       如果伺服器是透過指令碼或服務啟動，請更新以包含上述內容，這樣在後續重新啟動後也有效。
 
-1. 重新啟動AEM執行個體。
-
-   >[!NOTE]
-   >
-   > 建議您使用&#39;Ctrl + C&#39;命令重新啟動SDK。 使用替代方法重新啟動AEM SDK （例如停止Java程式），可能會導致AEM開發環境不一致。
+      >[!NOTE]
+      >
+      > 建議您使用&#39;Ctrl + C&#39;命令重新啟動SDK。 使用替代方法重新啟動AEM SDK （例如停止Java程式），可能會導致AEM開發環境不一致。
 
 1. 執行安裝後活動。
 

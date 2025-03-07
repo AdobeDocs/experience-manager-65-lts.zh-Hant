@@ -1,15 +1,13 @@
 ---
 title: 升級自訂搜尋Forms
 description: 本文詳細說明為了讓自訂搜尋表單正常運作，在升級後所需的調整。
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: upgrading
-content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
+hide: true
+hidefromtoc: true
 exl-id: 9df608f8-cdd0-4820-aab1-eab9fd70f961
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 547d7866346fb148cb66f546d8a2e1141f69f563
 workflow-type: tm+mt
 source-wordcount: '1797'
 ht-degree: 2%

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5 LTS檔案瞭解其運作方式，以及軟體可為您做什麼。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM 6.5 LTS
-source-git-commit: b4a1806c48ab0945f83691a597cad214c6d1b645
+source-git-commit: 96fdfc1f754358bc358595c10ba908a4aabce4af
 workflow-type: tm+mt
-source-wordcount: '6819'
+source-wordcount: '6802'
 ht-degree: 19%
 
 ---
@@ -971,12 +971,9 @@ ht-degree: 19%
    + 開發人員參考{#developer-reference}
       + [HTML範本語言](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
       + [偵錯最適化表單的AEM外掛程式](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
-      + [AEM Forms Java API參考](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
-      + [JEE Java API上的AEM Forms參考](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
       + [表單適用於HTML5的Bridge API](/help/forms/using/form-bridge-apis.md)
       + 最適化Forms的[JavaScript資料庫API參考](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
       + [組合器服務與DDX參考](https://www.adobe.com/go/learn_aemforms_ddxRef_65)
-      + [Workbench說明](https://www.adobe.com/go/learn_aemforms_workbench_65)
       + 在JEE {#programming-aem-forms-jee}上使用AEM Forms進行程式設計
          + JEE版AEM Forms {#introduction-programming-aem-forms-jee}的程式設計簡介
             + [Java API快速入門簡介](/help/forms/developing/introducing-java-api-soap-quick.md)

@@ -1,15 +1,13 @@
 ---
 title: 在Windows Vista上設定SSL
 description: 瞭解如何在Windows Vista上設定SSL。 使用並執行Java Keytool來產生包含RSA金鑰的SSL憑證以進行驗證。
-contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/configuring_ssl
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security
 role: User, Developer
+hide: true
+hidefromtoc: true
 exl-id: ee73f6a1-712c-461f-95e8-85f8c5694293
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d0f29cb177e98315cd50c2d7e96c3605eec14885
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
