@@ -4,8 +4,10 @@ description: 瞭解如何還原已損毀的CRX存放庫的步驟。
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
+hide: true
+hidefromtoc: true
 exl-id: 716d8eb2-2010-4d55-b8fe-bd4f6f256a4d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 1%

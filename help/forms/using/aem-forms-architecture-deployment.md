@@ -9,10 +9,10 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 23ffbaa6-1bd9-48c3-afa3-19737bb15de0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '2469'
-ht-degree: 0%
+source-wordcount: '1471'
+ht-degree: 1%
 
 ---
 
@@ -41,19 +41,23 @@ AEM Forms的架構包括下列元件：
 
 **OSGi上的AEM Forms：** OSGi環境上的AEM Forms是標準的AEM Author或AEM Publish ，且已在其上部署AEM Forms套件。 您可以在[單一伺服器環境、伺服器陣列和叢集設定](/help/sites-deploying/recommended-deploys.md)中的OSGi上執行AEM Forms。 叢集設定僅適用於AEM Author執行個體。
 
-JEE上的&#x200B;**AEM Forms：** JEE上的AEM Forms是在JEE棧疊上執行的AEM Forms伺服器。 它的AEM Author搭配AEM Forms附加元件套件，以及其他AEM Forms JEE功能，可共同部署於應用程式伺服器上執行的單一JEE棧疊上。 您可以在單一伺服器和叢集設定中在JEE上執行AEM Forms 。 只有執行Document Security、程式管理，以及升級至AEM Forms的LiveCycle客戶時，才需要JEE上的AEM Forms。 以下是一些在JEE上使用AEM Forms的其他案例：
+<!--
 
-* **HTML工作區支援(適用於使用HTML工作區的客戶)：** AEM Forms on JEE可啟用單一登入來處理執行個體、在處理執行個體上提供某些轉譯的資產，以及處理HTML工作區中轉譯的表單提交。
-* **進階額外表單/互動式通訊資料處理**：在需要進階程式管理功能的複雜使用案例中，可以使用JEE上的AEM Forms來額外處理表單/互動式通訊資料（並將結果儲存到適當的資料存放區）。
+**AEM Forms on JEE:** AEM Forms on JEE is AEM Forms server running on JEE stack. It has AEM Author with AEM Forms add-on packages and additional AEM Forms JEE capabilities co-deployed on a single JEE stack running on an application server. You can run AEM Forms on JEE in single-server and clustered setups. AEM Forms on JEE is required only to run document security, process management, and for LiveCycle customers upgrading to AEM Forms. Here are a few additional scenarios to use AEM Forms on JEE:
 
-JEE上的AEM Forms也包含對AEM元件提供的下列支援服務：
+* **HTML workspace support (for customers using HTML workspace):** AEM Forms on JEE enables single sign-on with Processing instances, serves certain assets rendered on Processing instances, and handles submission of forms rendered within the HTML workspace.
+* **Advanced additional form/interactive communication data processing**: AEM Forms on JEE can be utilized for additionally processing form/interactive communication data (and saving the results to a suitable data store) in complex use-cases where advanced process-management capabilities are required.
 
-* **整合式使用者管理：**&#x200B;可讓JEE上的AEM Forms使用者在OSGi使用者上辨識為AEM表單，並協助為OSGi和JEE使用者啟用SSO。 若需要在OSGi上的AEM表單與JEE上的AEM Forms之間進行單一登入(例如HTML工作區)，則需要此專案。
-* **資產託管：** JEE上的AEM Forms可以提供OSGi上在AEM Forms上轉譯的資產(例如HTML5表單)。
+AEM Forms on JEE also includes provides following supporting services to the AEM components:
 
-AEM Forms製作使用者介面不支援建立記錄檔案(DOR)、PDF forms和HTML5 Forms。 這類資產是使用獨立的Forms Designer應用程式來設計，並個別上傳至AEM Forms Manager。 或者，對於JEE上的AEM Forms ，可將表單設計成應用程式(在AEM Forms Workbench中)資產，並部署至JEE伺服器上的AEM Forms 。
+* **Integrated user management:** Allows users of AEM Forms on JEE to be recognized as AEM forms on OSGi users and helps enable SSO for both OSGi and JEE users. This is required for scenarios where single sign-on between AEM forms on OSGi and AEM Forms on JEE is required (for example, HTML workspace).
+* **Asset hosting:** AEM Forms on JEE can serve assets (for example, HTML5 forms) rendered on AEM Forms on OSGi.
 
-OSGi上的AEM Forms和JEE上的AEM Forms都有工作流程功能。 您可以在OSGi上的AEM表單中快速建立及部署各種工作流程的基本工作流程，而無須在JEE上安裝AEM Forms的完整程式管理功能。 OSGi上AEM Forms的表單中心工作流程[功能與JEE上AEM Forms的流程管理功能](capabilities-osgi-jee-workflows.md)有一些差異。 在OSGi上，使用AEM Forms熟悉的AEM Workflow和AEM收件匣功能來開發和管理表單中心工作流程。
+-->
+
+AEM Forms製作使用者介面不支援建立記錄檔案(DOR)、PDF forms和HTML5 Forms。 這類資產是使用獨立的Forms Designer應用程式來設計，並個別上傳至AEM Forms Manager。<!--Alternatively, for AEM Forms on JEE, forms can be designed as application (in AEM Forms Workbench) assets and deployed into AEM Forms on JEE server.-->
+
+OSGi <!--and AEM Forms on JEE both-->上的AEM Forms具有工作流程功能。 您可以在OSGi.<!--, without having to install the full-fledged Process Management capability of AEM Forms on JEE. There is some difference in the [features of Form-centric workflow on AEM Forms on OSGi and Process Management capability of AEM Forms on JEE](capabilities-osgi-jee-workflows.md). The development and management of Form-centric workflows on AEM Forms on OSGi uses the familiar AEM Workflow and AEM Inbox capabilities.-->上的AEM表單上，快速建置和部署各種工作的基本工作流程
 
 ## 術語 {#terminologies}
 
@@ -61,7 +65,7 @@ OSGi上的AEM Forms和JEE上的AEM Forms都有工作流程功能。 您可以在
 
 ![aem_forms_-_recommendedtopology](assets/aem_forms_-_recommendedtopology.png)
 
-**作者：**&#x200B;作者執行個體是以標準作者執行模式執行的AEM Forms伺服器。 這可以是JEE上的AEM Forms或OSGi環境上的AEM Forms 。 此範本適用於內部使用者、表單和互動式通訊設計人員以及開發人員。 可啟用下列功能：
+**作者：**&#x200B;作者執行個體是以標準作者執行模式執行的AEM Forms伺服器。 <!--It can be AEM Forms on JEE or AEM Forms on OSGi environment.-->專為內部使用者、表單和互動式通訊設計人員以及開發人員所設計。 可啟用下列功能：
 
 * **製作及管理表單與互動式通訊：**&#x200B;設計人員和開發人員可以建立和編輯最適化表單與互動式通訊、上傳外部建立的其他型別的表單(例如在Adobe Forms Designer中建立的表單)，以及使用Forms Manager主控台管理這些資產。
 * **表單與互動式通訊發佈：**&#x200B;裝載於製作執行個體的Assets可以發佈至發佈執行個體，以執行執行階段作業。 資產發佈使用AEM的復寫功能。 Adobe建議在所有作者執行個體上設定復寫代理程式，以手動方式將發佈的表單推播到處理執行個體，並在處理執行個體上設定另一個復寫代理程式，且啟用&#x200B;*接收時*&#x200B;觸發程式，以自動將收到的表單復寫到發佈執行個體。
@@ -72,7 +76,7 @@ OSGi上的AEM Forms和JEE上的AEM Forms都有工作流程功能。 您可以在
 * 將原始提交的表單資料傳輸至處理執行個體，以便在最終記錄系統中進一步處理和儲存。 AEM Forms中提供的預設實施，會使用AEM的反向復寫功能來達成此目的。 您也可以使用替代實作，將表單資料直接推送至處理伺服器，而非先在本機儲存（後者是啟用反向復寫的先決條件）。 擔心發佈執行個體上儲存潛在敏感資料的客戶，可以加入此[替代實作](/help/forms/using/configuring-draft-submission-storage.md)，因為處理執行個體通常位於較安全的區域中。
 * 呈現和提互動動式通訊和信件：互動式通訊和信件會呈現在發佈執行個體上，而對應的資料會提交至處理執行個體，以進行儲存和後處理。 資料可以儲存在發佈執行個體本機上，並在稍後反向複製到處理執行個體（預設選項），也可以直接推送至處理執行個體，而不儲存在發佈執行個體上。 後者實作對注重安全性的客戶很有用。
 
-**處理中：** AEM Forms的執行個體以作者執行模式執行，未將使用者指派給表單管理員群組。 您可以在JEE上部署AEM Forms，或在OSGi上部署AEM Forms作為處理執行個體。 未指派使用者以確保表單製作和管理活動未在處理執行個體上執行並僅在製作執行個體上發生。 處理執行個體可啟用下列功能：
+**處理中：** AEM Forms的執行個體以作者執行模式執行，未將使用者指派給表單管理員群組。 您可以在OSGi上部署<!--AEM Forms on JEE or--> AEM Forms作為處理執行個體。 未指派使用者以確保表單製作和管理活動未在處理執行個體上執行並僅在製作執行個體上發生。 處理執行個體可啟用下列功能：
 
 * **處理從發佈執行個體到達的原始表單資料：**&#x200B;這主要是透過資料到達時觸發的AEM工作流程在處理執行個體上達成。 工作流程可以使用現成可用的表單資料模型步驟，將資料或檔案封存至適當的資料存放區。
 * **表單資料的安全儲存**：處理作業提供防火牆後存放庫，供與使用者隔離的原始表單資料使用。 無論是作者執行個體的表單設計人員或發佈執行個體的一般使用者都無法存取此存放庫。
@@ -90,42 +94,46 @@ OSGi上的AEM Forms和JEE上的AEM Forms都有工作流程功能。 您可以在
 * 它可讓您從發佈執行個體反向復寫原始表單資料。 預設的資料儲存處理常式需要反向復寫功能。
 * AEM工作流程是處理從發佈執行個體到達的原始表單資料的主要方法，建議在作者樣式系統上執行。
 
-## JEE上AEM Forms的實體拓撲範例 {#sample-physical-topologies-for-aem-forms-on-jee}
+<!--
 
-以下建議的JEE拓撲AEM Forms主要適用於從JEE上的LiveCycle或舊版AEM Forms進行升級的客戶。 Adobe建議在OSGi上使用AEM Forms進行全新安裝。 只有使用「檔案安全性」和「程式管理」功能時，才建議在JEE上全新安裝AEM Forms。
+## Sample physical topologies for AEM Forms on JEE {#sample-physical-topologies-for-aem-forms-on-jee}
 
-### 用於使用Document Services或Document Security功能的拓撲 {#topology-for-using-document-services-or-document-security-capabilities}
+The AEM Forms on JEE topologies recommended below are mainly for customers upgrading from LiveCycle or a previous version of AEM Forms on JEE. Adobe recommends using AEM Forms on OSGi for fresh installations. A fresh installation of AEM Forms on JEE only recommended for using Document Security and Process Management capabilities.
 
-計畫僅使用Document Services或Document Security功能的AEM Forms客戶可擁有類似於以下顯示的拓撲。 此拓撲建議使用單一AEM Forms例項。 如有需要，您也可以建立AEM Forms伺服器的叢集或陣列。 當大部分使用者以程式設計方式存取AEM Forms伺服器的功能時，且透過使用者介面的干預最小時，建議使用此拓撲。 拓撲有助於檔案服務的批次處理操作。 例如，每天使用輸出服務建立數百份不可編輯的PDF檔案。
+### Topology for using document services or document security capabilities {#topology-for-using-document-services-or-document-security-capabilities}
 
-雖然AEM Forms可讓您從單一伺服器設定並執行所有功能，但您仍應執行容量規劃、負載平衡，並為生產環境中的特定功能設定專用伺服器。 例如，在使用PDF Generator服務每天轉換數千頁並新增數位簽名以限制存取檔案的環境中，請為PDF Generator服務和數位簽名功能設定個別的AEM Forms伺服器。 它有助於提供最佳效能，並獨立擴充伺服器。
+AEM Forms customers planning to use only document services or document security capabilities can have a topology similar to the one displayed below. This topology recommends using a single instance of AEM Forms. You can also create a cluster or farm of AEM Forms servers, if necessary. This topology is recommended when most users programmatically access capabilities of AEM Forms server and intervention through the user interface is minimum. The topology is helpful in batch processing operations of document services. For example, using output service to create hundreds of non-editable PDF documents on daily basis.
 
-![基本功能](assets/basic-features.png)
+Although, AEM Forms lets you set up and run all the functionalities from a single server, yet, you should do capacity planning, load balancing, and set up dedicated servers for specific capabilities in a production environment. For example, for an environment using the PDF Generator service to convert thousands of pages a day and add digital signatures to limit access to documents, set up separate AEM Forms servers for the PDF Generator service and digital signature capabilities. It helps provide optimum performance and scale the servers independent of each other.
 
-### 使用AEM Forms流程管理的拓撲 {#topology-for-using-aem-forms-process-management}
+![basic-features](assets/basic-features.png)
 
-AEM Forms客戶計畫使用AEM Forms流程管理功能，例如HTML Workspace可擁有類似於以下顯示的拓朴。 JEE伺服器上的AEM Forms可以在單一伺服器或叢集設定中。
+### Topology for using AEM Forms process management {#topology-for-using-aem-forms-process-management}
 
-如果您要從LiveCycle ES4升級，此拓撲會密切反映您在LiveCycle中已有的內容，除了在JEE上新增AEM Author內建至AEM Forms之外。 此外，執行升級之客戶的叢集需求沒有改變。 如果您在叢集環境中使用AEM Forms，則可以在AEM 6.5 Forms中繼續使用相同功能。 若要使用HTML Workspace全新安裝JEE的AEM Forms，則需額外執行內建至JEE環境的AEM製作例項。
+AEM Forms customers planning to use AEM Forms process management features, for example, HTML Workspace can have a topology similar to the one displayed below. The AEM Forms on JEE server can be in a single server or cluster configuration.
 
-表單資料存放區是協力廠商資料存放區，用於儲存表單及互動式通訊的最終處理資料。 這是拓撲中的選用元素。 如有需要，您也可以選擇設定處理執行個體，並將其存放庫作為最終的記錄系統。
+If you are upgrading from LiveCycle ES4, this topology closely mirrors with what you already have in LiveCycle except for the addition of AEM Author built-in to AEM Forms on JEE. Moreover, there is no change in the clustering requirements for customers performing an upgrade. If you were using AEM Forms in a clustered environment, you can continue with same in AEM 6.5 Forms. For a fresh installation of AEM Forms of JEE for using HTML Workspace, running AEM author instance built-in to the JEE environment is an additional requirement.
+
+Form data store is a third-party data store used for storing final processed data of forms and interactive communications. This is an optional element in the topology. You can also choose to set up a processing instance and use its repository as the final system-of-record system, if necessary.
 
 ![topology_for_usinghtmlworkspaceandformsapp](assets/topology_for_usinghtmlworkspaceandformsapp.png)
 
-此拓撲建議給打算使用JEE伺服器上的AEM Forms進行程式管理功能(HTML Workspace)的客戶，而不需使用任何後續處理、調適型表單、HTML5表單和互動式通訊功能。
+The topology is recommended to the customers planning to use AEM Forms on JEE server for process management capabilities (HTML Workspace) without using any post-processing, adaptive forms, HTML5 forms, and interactive communication capabilities.
 
-### 使用自適應表單、HTML5 forms、互動式通訊功能的拓撲 {#topology-for-using-adaptive-forms-html-forms-interactive-communication-capabilities}
+### Topology for using adaptive forms, HTML5 forms, interactive communication capabilities {#topology-for-using-adaptive-forms-html-forms-interactive-communication-capabilities}
 
-計畫使用AEM Forms資料擷取功能(例如最適化表單、HTML5 Forms、PDF forms)的AEM Forms客戶，可擁有類似於以下顯示的拓撲。 在使用AEM Forms的互動式通訊功能時，也建議使用此拓撲。
+AEM Forms customers planning to use AEM Forms data capture capabilities, for example, adaptive forms, HTML5 Forms, PDF Forms, can have a topology similar to the one displayed below. This topology is also recommended for using interactive communication capabilities of AEM Forms.
 
 ![topology-for-using-forms-osgi-modules](assets/topology-for-using-forms-osgi-modules.png)
 
-您可以對上述建議的拓撲進行下列變更/自訂：
+You can make the following changes/customizations to the above-suggested topology:
 
-* 使用HTML Workspace和AEM Forms應用程式需要AEM作者或處理例項。 您可以在JEE伺服器上使用AEM製作執行個體內建至AEM Forms，而非設定額外的外部AEM製作伺服器。
-* 只有在OSGi、適用性表單、表單入口網站和互動式通訊中以AEM為中心的工作流程，才需要Forms製作或處理例項。
-* 互動式通訊Agent UI通常在組織內執行。 因此，您可以在私人網路內保留代理程式UI的發佈伺服器。
-* JEE伺服器上AEM Forms內建的OSGi執行個體上的AEM表單也可在OSGi和Watched資料夾上執行Forms中心的工作流程。
+* Using HTML Workspace and AEM Forms app requires an AEM author or processing instance. You can use the AEM author instance built-in to AEM Forms on JEE server instead of setting up an additional external AEM author server.
+* An AEM Author or Processing instance is required only for Forms-centric workflows on OSGi, adaptive forms, forms portal, and interactive communication.
+* interactive communication Agent UI is generally run within the organization. So, you can keep a publish server for Agent UI within the private network.
+* AEM forms on OSGi instance built-in to AEM Forms on JEE server can also run Forms-centric workflows on OSGi and Watched Folders.
+
+-->
 
 ## 在OSGi上使用AEM Forms的實體拓撲範例 {#sample-physical-topologies-for-using-aem-forms-on-osgi}
 

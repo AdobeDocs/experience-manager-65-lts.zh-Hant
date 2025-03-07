@@ -6,7 +6,7 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
 source-wordcount: '5660'
 ht-degree: 1%
@@ -74,8 +74,8 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 
 * 已安裝在Microsoft®Windows和Linux®上執行PDF產生器轉換所需的使用者端軟體：
 
-   * **Microsoft® Windows**：安裝[Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)或[Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
-   * **Linux®**：安裝[Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
+   * **Microsoft® Windows**：安裝&#x200B;**Microsoft® Office**&#x200B;或&#x200B;**Apache OpenOffice**
+   * **Linux®**：安裝&#x200B;**Apache OpenOffice**
 
 >[!NOTE]
 >
@@ -654,7 +654,7 @@ DocAssurance服務可套用使用許可權至PDF檔案。 若要套用使用許�
 
 +++ Adobe Acrobat
 
-* 確保只安裝[支援的Microsoft® Office （32位元）和Adobe Acrobat版本](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)，並取消開啟對話方塊。
+* 確保只安裝[支援的Microsoft® Office （32位元）和Adobe Acrobat版本](/help/sites-deploying/technical-requirements.md)，並取消開啟對話方塊。
 * 請確定Adobe Acrobat更新服務已停用。
 * 確定[Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service)批次檔案是以管理員許可權執行。
 * 確認已在PDF Generator設定UI中新增PDF使用者。
@@ -667,7 +667,7 @@ DocAssurance服務可套用使用許可權至PDF檔案。 若要套用使用許�
 
 **Microsoft® Windows**
 
-* 請確認已安裝32位元[支援的Microsoft Office版本](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)，並取消所有應用程式的開啟對話方塊。
+* 請確認已安裝32位元[支援的Microsoft Office版本](/help/sites-deploying/technical-requirements.md)，並取消所有應用程式的開啟對話方塊。
 * 確認已在PDF Generator設定UI中新增PDF使用者。
 * 請確定PDF Generator使用者是系統管理員群組的成員，並且已為該使用者設定了[取代處理序層級權杖](#grant-the-replace-a-process-level-token-privilege)許可權。
 * 請確認已在PDF Generator UI中設定使用者，並執行下列動作：
@@ -681,7 +681,7 @@ DocAssurance服務可套用使用許可權至PDF檔案。 若要套用使用許�
 
 **Linux®**
 
-* 安裝[支援的OpenOffice版本](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)。 AEM Forms支援32位元和64位元版本。 安裝之後，請開啟所有OpenOffice應用程式、取消所有對話視窗，然後關閉應用程式。 重新開啟應用程式，並確保開啟OpenOffice應用程式時不會顯示任何對話方塊。
+* 安裝支援的OpenOffice版本。 AEM Forms支援32位元和64位元版本。 安裝之後，請開啟所有OpenOffice應用程式、取消所有對話視窗，然後關閉應用程式。 重新開啟應用程式，並確保開啟OpenOffice應用程式時不會顯示任何對話方塊。
 
 * 建立環境變數`OpenOffice_PATH`，並將其設定為指向設定在[主控台](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/)或dt （裝置樹狀結構）設定檔中的OpenOffice安裝。
 * 如果安裝OpenOffice時發生問題，請確定OpenOffice安裝所需的[32位元程式庫](#extrarequirements)可供使用。

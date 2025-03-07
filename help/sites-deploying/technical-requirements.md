@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '3044'
+source-wordcount: '3064'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ Adobe支援平台上的(AEM) Adobe Experience Manager，詳情請參閱本檔案
 
 有關詳細資訊，請參閱 [硬體大小調整指南](/help/managing/hardware-sizing-guidelines.md)。
 
-### 支援等級 {#support-levels}
+### 支援層級 {#support-levels}
 
 本檔案列出Adobe Experience Manager支援的使用者端和伺服器平台。 Adobe提供數個支援層級，針對建議設定和其他設定皆適用。
 
@@ -150,12 +150,11 @@ Adobe Experience Manager可與下列伺服器平台搭配使用以用於生產�
 
 | **平台** | **支援等級** |
 |---|---|
-| **Linux®，根據Red Hat®分佈** | A：支援的`[1]` `[3]` |
-| Linux®，根據Debian分佈，包括 烏本圖 | A：支援的`[1]` `[2]` |
+| **Linux®，根據Red Hat®分佈** | A：支援的`[1]` `[2]` |
+| Linux®，根據Debian分佈，包括 烏本圖 | A：支援的`[1]` |
 | Linux®，根據SUSE®分佈 | A：支援的`[1]` |
 
-1. Linux® Kernel 5。 x和6。 x包含來自Red Hat® Distribution的衍生程式，包括Red Hat® Enterprise Linux®、CentOS、Oracle Linux®和Amazon Linux®。 只有CentOS 7、Red Hat® Enterprise Linux® 7、Red Hat® Enterprise Linux® 8和Red Hat® Enterprise Linux® 9支援AEM Forms附加元件功能。
-1. Ubuntu 20.04 LTS支援AEM Forms。
+1. Linux® Kernel 5。 x和6。 x包含來自Red Hat® Distribution的衍生程式，包括Red Hat® Enterprise Linux®、CentOS、Oracle Linux®和Amazon Linux®。
 1. Adobe Managed Services支援的Linux®發行版本。
 
    >[!NOTE]
@@ -166,6 +165,8 @@ Adobe Experience Manager可與下列伺服器平台搭配使用以用於生產�
    >* zlib.x86-64 (1.2.7-17)
    >* libxcb.x86_64 (1.13-1.el7)
    >* libXau.x86_64 (1.0.8-2.1.el7)
+   >* glibc-locale.x86_64 （2.17或更新版本）
+
 
 ### 虛擬與雲端運算環境 {#virtual-cloud-computing-environments}
 
@@ -181,7 +182,7 @@ Adobe也提供Adobe Managed Services，可在Azure或AWS上部署AEM。 Adobe Ma
 
 ### Dispatcher平台（網頁伺服器） {#dispatcher-platforms-web-servers}
 
-Dispatcher是快取和負載平衡元件。 [下載最新的 Dispatcher 版本](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html)。 Experience Manager 6.5 需要 Dispatcher 4.3.2 版或更高版本。
+Dispatcher是快取和負載平衡元件。 [下載最新的Dispatcher版本](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html)。 Experience Manager 6.5 需要 Dispatcher 4.3.2 版或更高版本。
 
 下列 Web 伺服器支援搭配 Dispatcher 4.3.2 版使用：
 
@@ -342,7 +343,7 @@ AEM Dynamic Media預設為停用。 請參閱此處[啟用Dynamic Media](/help/a
 
 >[!NOTE]
 >
->**伺服器主機名稱必須解析：** 確保伺服器的主機名稱可解析為 IP 地址。 如果無法做到這一點，請將完全限定的 主機 名稱和 IP 地址 **添加到 /etc/hosts**：
+>**伺服器主機名稱必須解析：**&#x200B;請確定伺服器的主機名稱可解析為IP位址。 如果無法做到這一點，請將完全限定的 主機 名稱和 IP 地址 **添加到 /etc/hosts**：
 >
 >`<ip address> <fully qualified hostname>`
 
@@ -356,13 +357,13 @@ AEM Dynamic Media預設為停用。 請參閱此處[啟用Dynamic Media](/help/a
 若是Windows x64：
 
 * 在[https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)取得Microsoft® Visual Studio 2010可轉散發套件
-* 在[https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)取得Microsoft® Visual Studio 2013可轉散發套件
+* 在 https://www.microsoft.com/en-us/download/details.aspx?id=40784 獲取 [Visual Studio 2013 可再發行元件Microsoft®](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
 * 在 https://www.microsoft.com/en-us/download/details.aspx?id=48145 獲取 [Visual Studio 2015 可再發行元件Microsoft®](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
 
 Windows x86：
 
-* 在 https://www.microsoft.com/en-us/download/details.aspx?id=26999 獲取 [Visual Studio 2010 可再發行元件Microsoft®](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
-* 在 https://www.microsoft.com/en-in/download/details.aspx?id=40769 獲取 [Visual Studio 2013 可再發行元件Microsoft®](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
+* 在[https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)取得Microsoft® Visual Studio 2010可轉散發套件
+* 在[https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)取得Microsoft® Visual Studio 2013可轉散發套件
 * 在 https://www.microsoft.com/en-us/download/details.aspx?id=52685 取得 [Visual Studio 2015 可再發行元件Microsoft®](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
 
 #### macOS {#macos}
@@ -393,7 +394,7 @@ Windows x86：
    <td>DOC、DOCX、XLS、XLSX、PPT、PPTX、RTF 和 TXT</td>
   </tr>
   <tr>
-   <td>Microsoft® Office 2016 （已棄用）</td>
+   <td>® Microsoft Office 2016 （已棄用）</td>
    <td>DOC、DOCX、XLS、XLSX、PPT、PPTX、RTF和TXT</td>
   </tr>
   <tr>
@@ -434,10 +435,12 @@ Windows x86：
 >此外，
 >
 >* PDF Generator需要32位元版本的[Acrobat 2020 classic track 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html)或Acrobat 2017 17.011.30078版來執行轉換。
->* 只有Windows和Linux®才支援OpenOffice適用的PDF Generator轉換。
->* PDF Generator僅支援32位元零售版的Microsoft® Office Professional Plus，以及Windows作業系統上轉換所需的其他軟體。
+>* PDF Generator僅支援32位元零售版的Microsoft® Office Professional Plus，以及其他轉換所需的軟體。
+>* Microsoft® Office Professional Plus安裝可能會使用零售或MAK/KMS/AD型大量授權。
+>* 如果Microsoft® Office安裝由於任何原因（例如磁碟區授權安裝無法在指定期間內找到KMS主機）而停用或取消授權，轉換可能會失敗，直到安裝重新授權並重新啟用。
 >* PDF Generator支援Linux®作業系統上的32位元和64位元版OpenOffice。
 >* PDF Generator不支援Microsoft® Office 365。
+>* 只有Windows和Linux®才支援OpenOffice適用的PDF Generator轉換。
 >* 只有Windows支援OCR PDF、最佳化PDF和Export PDF功能。
 >* Acrobat版本與AEM Forms搭配，可啟用PDF Generator功能。 在AEM Forms授權期間，僅以程式設計方式存取AEM Forms隨附的版本，以與AEM Forms PDF Generator搭配使用。 如需詳細資訊，請參閱根據您的部署([內部部署](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)或[Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))提供的AEM Forms產品說明
 >* PDF Generator服務不支援Microsoft® Windows 10。
@@ -445,26 +448,26 @@ Windows x86：
 >* PDF Generator無法使用Microsoft® Project 2019轉換檔案。 您可以繼續使用Microsoft® Project 2016來轉換`.VSD`和`.VSDX`檔案。
 >
 
-### AEM Forms Designer的需求 {#requirements-for-aem-forms-designer}
+### AEM Forms Designer 的要求 {#requirements-for-aem-forms-designer}
 
-* Microsoft® Windows® 2016 Server、Microsoft® Windows® 2019 Server、Microsoft® Windows® 10或Windows® 11
+* ® Microsoft Windows® 2016 Server、Microsoft® Windows® 2019 Server、Microsoft® Windows® 10 或 Windows® 11
 * 1 GHz 或更快的處理器，支援PAE、NX和SSE2。
 * 32 位為 1 GB RAM，64 位作系統為 2 GB RAM
 * 32 位為 16 GB 磁碟空間，64 位作系統為 20 GB 磁碟空間
-* 顯存 - 128 MB GPU（建議 256 MB）
-* 2.35 GB 可用硬碟空間
+* 顯示卡記憶體 — 128 MB的GPU （建議使用256 MB）
+* 2.35 GB的可用硬碟空間
 * 1024 X 768畫素或更高的熒幕解析度
-* 視訊硬體加速（選購）
+* 影片硬體加速（選擇）
 * Acrobat Pro DC、Acrobat Standard DC或Adobe Acrobat Reader DC
-* 安裝設計器的管理許可權
+* 安裝Designer的管理許可權
 * Microsoft Visual C++ 2019（VC 14.28 或更高版本）適用於 32 位AEM Forms設計器的 32 位運行時
-* Microsoft Visual C++ 2019 （VC 14.28或更新版本）適用於64位元AEM Forms Designer的64位元執行階段（適用於OSGI和JEE棧疊）
+* Microsoft Visual C++ 2019（VC 14.28 或更高版本） 適用於 64 位 AEM Forms Designer 的 64 位運行時（適用於 OSGI 和 JEE 堆棧）
 
-[安裝及設定AEM Forms designer](/help/forms/using/installing-configuring-designer.md)
+[安裝和配置 AEM Forms 設計器](/help/forms/using/installing-configuring-designer.md)
 
 ### AEM Assets XMP中繼資料回寫的要求 {#requirements-for-aem-assets-xmp-metadata-write-back}
 
-以下平台和檔案格式支援並啟用了XMP回寫：
+下列平台和檔案格式支援並啟用XMP回寫：
 
 * **作業系統：**
 

@@ -9,8 +9,10 @@ docset: aem65
 feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
+hide: true
+hidefromtoc: true
 exl-id: cc0a3d56-3adc-4d6e-87a3-9a8587bbe3f2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -19,7 +21,7 @@ ht-degree: 0%
 
 # 使用PDF Generator簡介 {#introduction-to-working-with-pdf-generator}
 
-PDF Generator會將各種檔案格式轉換為PDF。 它也會將PDF轉換為其他檔案格式，並最佳化PDF檔案的大小。 如需支援的檔案格式清單，請參閱[PDF Generator的軟體支援](/help/forms/using/aem-forms-jee-supported-platforms.md)
+PDF Generator會將各種檔案格式轉換為PDF。 它也會將PDF轉換為其他檔案格式，並最佳化PDF檔案的大小。 如需支援的檔案格式清單，請參閱[PDF Generator的軟體支援](/help/sites-deploying/technical-requirements.md)
 
 **正在傳送檔案到PDF Generator以進行處理**
 

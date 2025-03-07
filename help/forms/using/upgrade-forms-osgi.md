@@ -1,45 +1,25 @@
 ---
-title: 在OSGi上升級至AEM 6.5 Forms
-description: 您可以從AEM 6.1 Forms、AEM 6.2 Forms和LiveCycle ES4 SP1直接升級至AEM 6.3 Forms。
+title: 在OSGi上升級至AEM 6.5 Forms LTS
+description: 您可以從AEM 6.5.22.0 Forms直接升級至AEM 6.5 Forms LTS。
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.3/FORMS
-topic-tags: installing
-geptopics: SG_AEMFORMS/categories/jee
-role: Admin,User
+role: Admin, User
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms,AEM Forms on OSGi, AEM Forms Upgrade
+feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '853'
 ht-degree: 1%
 
 ---
 
-# 在OSGi上升級至AEM 6.5 Forms {#upgrade-to-aem-forms-osgi}
+# 在OSGi上升級至AEM 6.5 Forms LTS {#upgrade-to-aem-forms-osgi}
 
-您可以從AEM 6.3 Forms或AEM 6.4 Forms直接升級至AEM 6.5 Forms。
+若要[從AEM 6.5升級至AEM 6.5 LTS](/help/sites-deploying/upgrade.md)，請升級至AEM 6.5.22.0 Forms或更新版本。 支援從AEM 6.5.22.0直接升級至AEM 6.5 Forms LTS。
 
-不提供從&#x200B;**AEM 6.0 Forms、AEM 6.1 Forms**&#x200B;和&#x200B;**AEM 6.2 Forms**&#x200B;到AEM 6.5 Forms的直接升級路徑。 執行中繼[升級至AEM 6.2 Forms](https://helpx.adobe.com/experience-manager/6-2/forms/using/upgrade.html)、[升級至AEM 6.3 Forms](https://helpx.adobe.com/experience-manager/6-3/forms/using/upgrade.html)，或[升級至AEM 6.4 Forms](/help/forms/using/upgrade.md)，然後從AEM 6.3 Forms或AEM 6.4 Forms升級至AEM 6.5 Forms。
+如果您使用AEM 6.0 Forms、AEM 6.1 Forms、AEM 6.2 Forms、AEM 6.3 Forms、AEM 6.4 Forms或AEM 6.5 Forms，則無法直接升級至AEM 6.5 Forms LTS。 如需詳細的升級路徑，請參閱[升級路徑](/help/forms/using/upgrade.md)檔案。
 
-若要從AEM 6.3 Forms或AEM 6.4 Forms升級至AEM 6.5 Forms，請執行下列動作：
-
-1. 將現有的AEM執行個體升級至AEM 6.5。步驟如下：
-
-   1. 安裝AEM 6.3 Forms或AEM 6.4 Forms的最新Service Pack和修補程式。 如需詳細資訊，請參閱[AEM維護中心](https://helpx.adobe.com/tw/experience-manager/aem-releases-updates.html)。
-   1. 準備來源執行個體以進行升級。 如需詳細步驟，請參閱[升級至AEM 6.5](/help/sites-deploying/upgrade.md)。
-   1. 下載[AEM 6.5 QuickStart](/help/sites-deploying/deploy.md#getting%20the%20software)。
-   1. **（僅限Unix/Linux安裝）**&#x200B;如果您使用UNIX或Linux做為基礎作業系統，請開啟終端機視窗，瀏覽至包含crx-quickstart的資料夾，然後執行下列命令：
-
-      `chmod -R 755 ../crx-quickstart`
-
-   1. 將您的AEM執行個體升級至AEM 6.3。如需逐步指示，請參閱[升級至AEM 6.5](/help/sites-deploying/upgrade.md)。
-
-      繼續後續步驟之前，請等待ServiceEvent REGISTERED和ServiceEvent UNREGISTERED訊息停止出現在&lt;crx-repository>/error.log檔案中。
-
-      >[!NOTE]
-      >
-      >伺服器啟動並執行後，一些AEM Forms套件組合會維持安裝狀態。 每個安裝的套件組合數量可能有所不同。 您可以安全地忽略這些套裝的狀態。 套件組合列於https://&#39;[伺服器]：[連線埠]&#39;/system/console/。
+升級至Service Pack AEM Forms 6.5.22.0後，請依照下列步驟升級至AEM 6.5 LTS Forms：
 
 1. 安裝AEM Forms附加元件套件。 步驟如下：
 
@@ -49,20 +29,25 @@ ht-degree: 1%
       1. 從&#x200B;**[!UICONTROL 解決方案]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Forms]**。
       1. 選取封裝的版本和型別。 您也可以使用&#x200B;**[!UICONTROL 搜尋下載]**&#x200B;選項來篩選結果。
    1. 選取適用於您作業系統的封裝名稱，選取&#x200B;**[!UICONTROL 接受EULA條款]**，然後選取&#x200B;**[!UICONTROL 下載]**。
+   1. 開啟[封裝管理員](/help/sites-administering/package-manager.md)，然後按一下&#x200B;**[!UICONTROL 上傳封裝]**&#x200B;以上傳封裝。
    1. 開啟[封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)，然後按一下&#x200B;**[!UICONTROL 上傳封裝]**&#x200B;以上傳封裝。
    1. 選取封裝並按一下&#x200B;**[!UICONTROL 安裝]**。
 
-      您也可以使用[AEM Forms發行版本](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)文章中所列的直接連結來下載套件。
+      您也可以使用[AEM Forms發行版本](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)文章中所列的直接連結來下載套件。
 
-      >[!NOTE]
-      >
-      >安裝套件後，系統會提示您重新啟動AEM執行個體。 **不要立即停止伺服器。**&#x200B;在停止AEM Forms伺服器之前，請等候直到ServiceEvent REGISTERED和ServiceEvent UNREGISTERED訊息停止出現在&lt;crx-repository>/error.log檔案中，而且記錄檔穩定。 另請注意，有些套件可能維持已安裝狀態。 您可以安全地忽略這些套裝程式的狀態。
+      安裝套件後，系統會提示您重新啟動AEM執行個體。 **不要立即停止伺服器。**&#x200B;在停止AEM Forms伺服器之前，請等候直到ServiceEvent REGISTERED和ServiceEvent UNREGISTERED訊息停止出現在&lt;crx-repository>/error.log檔案中，而且記錄檔穩定。 另請注意，有些套件可能維持已安裝狀態。 您可以安全地忽略這些套裝程式的狀態。
+
+
+      **使用下列其他JVM命令列引數重新啟動AEM執行個體**：
+      `--add-opens java.base/java.util=ALL-UNNAMED --add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED`
+
+      如果伺服器是透過指令碼或服務啟動，請更新以包含上述內容，這樣在後續重新啟動後也有效。
 
 1. 重新啟動AEM執行個體。
 
    >[!NOTE]
    >
-   建議您使用&#39;Ctrl + C&#39;命令重新啟動SDK。 使用替代方法重新啟動AEM SDK （例如停止Java程式），可能會導致AEM開發環境不一致。
+   > 建議您使用&#39;Ctrl + C&#39;命令重新啟動SDK。 使用替代方法重新啟動AEM SDK （例如停止Java程式），可能會導致AEM開發環境不一致。
 
 1. 執行安裝後活動。
 
@@ -108,3 +93,7 @@ ht-degree: 1%
       * `https://'[server]:[port]'/crx/packmgr`
       * `https://'[server]:[port]'/crx/de`
       * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
+
+   >[!NOTE]
+   >
+   >在AEM 6.4 Forms中，crx-repository的結構已變更。 如果從6.3 Forms升級至AEM 6.5 Forms，請使用變更的路徑進行重新建立的自訂。 如需已變更路徑的完整清單，請參閱[AEM中的Forms存放庫重組](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5)。

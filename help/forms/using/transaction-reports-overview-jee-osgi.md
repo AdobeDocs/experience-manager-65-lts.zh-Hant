@@ -6,9 +6,9 @@ feature: Transaction Reports
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 exl-id: 4a075532-5ad9-4b1d-9e04-c0b80d215e00
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,15 @@ AEM Forms中的交易報告可讓您監視自AEM Forms部署上的指定日期�
 
 如需如何根據AEM Forms技術棧疊啟用交易、可計費API清單及自訂錄製器實作的完整指示，請參閱以下內容：
 
-JEE上AEM Forms的&#x200B;**交易報告**
+<!--
 
-* [在JEE上啟用和檢視AEM Forms的交易報告](/help/forms/using/transaction-report-overview-jee.md)
-* [適用於AEM Forms on JEE的計費API清單](/help/forms/using/transaction-reports-billable-apis-jee.md)
-* [記錄自訂元件API的交易](/help/forms/using/record-transaction-custom-component-jee.md)
+**Transaction Reporting for AEM Forms on JEE**
+
+* [Enabling and viewing transaction report for AEM Forms on JEE](/help/forms/using/transaction-report-overview-jee.md)
+* [List of billable APIs for AEM Forms on JEE](/help/forms/using/transaction-reports-billable-apis-jee.md)
+* [Record a transaction for custom component APIs](/help/forms/using/record-transaction-custom-component-jee.md)
+
+-->
 
 在OSGi上為AEM Forms建立&#x200B;**交易報告**
 
