@@ -8,8 +8,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
+hide: true
+hidefromtoc: true
 exl-id: 755df7e2-3603-4c0d-ad07-ec6f27de8c64
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -26,7 +28,7 @@ ht-degree: 0%
 
 此外，「程式報告」還提供執行臨機查詢並將自訂報告檢視整合到「程式報告」使用者介面的介面。
 
-如需支援的瀏覽器清單，請參閱[AEM Forms支援的平台](/help/forms/using/aem-forms-jee-supported-platforms.md)。
+如需支援的瀏覽器清單，請參閱[AEM Forms支援的平台](/help/sites-deploying/technical-requirements.md)
 
 程式報告會建置在具備下列條件的模組上：
 

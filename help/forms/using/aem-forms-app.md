@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 9cc83733-630a-4846-bd9e-72fd76a3286d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2337'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 概觀 {#overview}
 
-AEM Forms應用程式可根據您的伺服器，在行動裝置上同步最適化表單、行動表單和表單集。 您可以在OSGi](/help/forms/using/aem-forms-workflow.md)上定義以[Forms為中心的工作流程，或在JEE上定義Forms工作流程。 例如，您經營一間銀行公司，並使用AEM Forms管理客戶應用程式和通訊。 您的客戶填寫表單並提交以進行驗證。 如果您在行動裝置上啟用表單，您的客戶可以在AEM Forms應用程式中填寫表單。 您也可以在行動裝置上啟用驗證表單，以管理驗證工作流程。 您的欄位工作者可以攜帶行動裝置給客戶、驗證詳細資料並提交表單。 AEM Forms應用程式會與AEM Forms伺服器同步，並擷取為行動裝置啟用的表單。 如果應用程式離線，則會將資料儲存在本機。
+AEM Forms應用程式可根據您的伺服器，在行動裝置上同步最適化表單、行動表單和表單集。 您可以在OSGi](/help/forms/using/aem-forms-workflow.md) <!--or Forms workflows on JEE-->上定義以[Forms為中心的工作流程。 例如，您經營一間銀行公司，並使用AEM Forms管理客戶應用程式和通訊。 您的客戶填寫表單並提交以進行驗證。 如果您在行動裝置上啟用表單，您的客戶可以在AEM Forms應用程式中填寫表單。 您也可以在行動裝置上啟用驗證表單，以管理驗證工作流程。 您的欄位工作者可以攜帶行動裝置給客戶、驗證詳細資料並提交表單。 AEM Forms應用程式會與AEM Forms伺服器同步，並擷取為行動裝置啟用的表單。 如果應用程式離線，則會將資料儲存在本機。
 
 客戶可透過Software Distribution取得AEM Forms應用程式的原始程式碼。 Software Distribution中的原始程式碼套件可用為： `adobe-aemfd-forms-app-src-pkg-<version>.zip`。
 
@@ -62,9 +62,13 @@ AEM Forms應用程式需要AEM Forms伺服器。 使用者可以轉譯您在AEM 
 
 表單發佈時，應用程式會與伺服器同步並擷取表單。 若要同步多個表單，請在作者執行個體中，選取表單管理員中的多個表單，然後選取&#x200B;**[!UICONTROL 與AEM Forms應用程式同步]**。
 
-## 行動裝置支援 {#mobile-device-support}
+<!--
 
-請參閱[AEM Forms應用程式(先前稱為行動Workspace)](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)
+## Mobile device support {#mobile-device-support}
+
+See [AEM Forms app (previously known as Mobile Workspace)](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)
+
+-->
 
 ## AEM Forms應用程式的主要功能 {#key-features-of-aem-forms-app}
 
@@ -72,7 +76,7 @@ AEM Forms應用程式需要AEM Forms伺服器。 使用者可以轉譯您在AEM 
 
 您可以將應用程式與AEM Forms伺服器同步，並可在行動裝置上使用表單。
 
-使用AEM Forms工作流程伺服器時，表單可以與Workbench程式和AEM收件匣應用程式中的起點相關聯。 AEM收件匣應用程式可以有與其關聯的最適化表單。 起點可以有一個最適化表單、HTML5表單或與之關聯的表單集。 起點可以作為任務提交，也可以將任務另存為草稿。 如需有關AEM收件匣應用程式與起點之間差異的詳細資訊，請參閱[OSGi和AEM Forms JEE工作流程上以表單為中心的AEM工作流程的動作和功能](capabilities-osgi-jee-workflows.md)。
+使用AEM Forms工作流程伺服器時，表單可以與Workbench程式和AEM收件匣應用程式中的起點相關聯。 AEM收件匣應用程式可以有與其關聯的最適化表單。 起點可以有一個最適化表單、HTML5表單或與之關聯的表單集。 起點可以作為任務提交，也可以將任務另存為草稿。<!--For more information on differences between an AEM Inbox application and a startpoint see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).-->
 
 在沒有AEM Forms工作流程的AEM Forms伺服器上，啟用於應用程式中同步的表單會在AEM Forms應用程式中轉譯。 Forms可在應用程式的Forms標籤中使用，可以提交或儲存為草稿。 應用程式支援最適化表單和行動表單。
 
@@ -123,7 +127,7 @@ AEM Forms應用程式需要AEM Forms伺服器。 使用者可以轉譯您在AEM 
 
 ## AEM收件匣與AEM Forms應用程式功能之間的差異 {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-啟動Forms工作流程的兩個顯著方法是使用[AEM收件匣](/help/forms/using/manage-applications-inbox.md)和AEM Forms應用程式。 不過，AEM收件匣和AEM Forms應用程式的功能有所不同。 AEM收件匣僅可與[以Forms為中心的工作流程](/help/forms/using/aem-forms-workflow.md)搭配使用，而AEM Forms應用程式則可與Forms為中心的工作流程及程式管理搭配使用。 如需有關AEM收件匣與AEM Forms應用程式功能之間差異的詳細資訊，請參閱OSGi和AEM Forms JEE工作流程上的[以表單為中心的AEM工作流程動作和功能](capabilities-osgi-jee-workflows.md)。
+啟動Forms工作流程的兩個顯著方法是使用[AEM收件匣](/help/forms/using/manage-applications-inbox.md)和AEM Forms應用程式。 不過，AEM收件匣和AEM Forms應用程式的功能有所不同。 AEM收件匣僅可與[以Forms為中心的工作流程](/help/forms/using/aem-forms-workflow.md)搭配使用，而AEM Forms應用程式則可與Forms為中心的工作流程及程式管理搭配使用。<!--For more information on differences between AEM Inbox and AEM Forms app capabilities, see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).-->
 
 ## 支援的表單 {#supported-forms}
 
