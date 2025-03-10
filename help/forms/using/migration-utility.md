@@ -1,31 +1,26 @@
 ---
 title: 移轉 AEM Forms 資產和文件
-description: 移轉公用程式可讓您將Adobe Experience Manager (AEM) Forms資產和檔案從AEM 6.3 Forms或舊版移轉至AEM 6.4 Forms。
+description: 移轉公用程式可讓您將Adobe Experience Manager (AEM) Forms資產和檔案從AEM 6.5.22.0 Forms移轉到AEM 6.5 Forms LTS。
 content-type: reference
-topic-tags: correspondence-management, installing
-geptopics: SG_AEMFORMS/categories/jee
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-content-strategy: max-2018
-docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 636f7b61-549e-45c7-ab21-94bb90db2b22
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: '1698'
 ht-degree: 1%
 
 ---
 
 # 移轉 AEM Forms 資產和文件{#migrate-aem-forms-assets-and-documents}
 
-移轉公用程式會將[最適化Forms資產](../../forms/using/introduction-forms-authoring.md)、[雲端設定](/help/sites-developing/extending-cloud-config.md)和[通訊管理資產](/help/forms/using/cm-overview.md)從舊版所使用的格式，轉換為Adobe Experience Manager (AEM) 6.5 Forms中使用的格式。 當您執行移轉公用程式時，將會移轉下列專案：
+移轉公用程式會將[最適化Forms資產](../../forms/using/introduction-forms-authoring.md)、[雲端組態](/help/sites-developing/extending-cloud-config.md)及[通訊管理資產](/help/forms/using/cm-overview.md)從舊版所使用的格式，轉換為Adobe Experience Manager (AEM) 6.5 LTS Forms中使用的格式。 當您執行移轉公用程式時，將會移轉下列專案：
 
 * 調適型表單的自訂元件
 * 最適化表單與通訊管理範本
 * 雲端設定
-* 通訊管理和調適型表單資產
+* 通訊管理和最適化Forms資產
 
 >[!NOTE]
 >
@@ -33,11 +28,11 @@ ht-degree: 1%
 
 ## 移轉方法 {#approach-to-migration}
 
-您可以[將](../../forms/using/upgrade.md)從AEM Forms 6.4、6.3或6.2 升級至AEM Forms 6.5的最新版本，或是新的安裝。 根據您是升級先前的安裝還是執行全新安裝，您必須執行下列其中一項操作：
+您可以從AEM Forms 6.5.22.0](/help/forms/using/upgrade-forms-osgi.md) [升級](../../forms/using/upgrade.md)至[AEM Forms 6.5 LTS。 根據您是升級先前的安裝還是執行全新安裝，您必須執行下列其中一項操作：
 
 **如果有就地升級**
 
-如果您執行就地升級，則升級的執行個體已有資產和檔案。 不過，您必須先安裝[AEMFD相容性套件](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) （包含通訊管理相容性套件），才能使用資產和檔案
+如果您執行[就地升級](/help/sites-deploying/in-place-upgrade.md)，則升級的執行個體已經有資產和檔案。 不過，您必須先安裝[AEMFD相容性套件](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) （包含通訊管理相容性套件），才能使用資產和檔案。
 
 接著，您必須執行[移轉公用程式](#runningmigrationutility)，更新資產和檔案。
 
@@ -62,7 +57,7 @@ ht-degree: 1%
 * 由於AEM 6.1 Forms已棄用「準備發佈」狀態，因此「準備發佈」狀態的所有資產都會變更為「已修改」狀態。
 * 由於使用者介面在AEM Forms 6.3中更新，執行自訂的步驟也不同。 如果您要從6.3版之前的版本移轉，請重做自訂。
 * 佈局片段從`/content/apps/cm/layouts/fragmentlayouts/1001`移至`/content/apps/cm/modules/fragmentlayouts`。 資產中的資料字典參考會顯示資料字典的路徑而非其名稱。
-* 文字模組中用於對齊的任何定位字元空格都必須重新調整。 如需詳細資訊，請參閱[通訊管理 — 使用定位點間距來排列文字](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html)。
+* 文字模組中用於對齊的任何定位字元空格都必須重新調整。<!--For more information, see [Correspondence Management - Using tab spacing for arranging text](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html)-->。
 * 「通訊管理」設定的資產撰寫器設定變更。
 * Assets會移至名為「現有文字」和「現有清單」等名稱的資料夾下。
 
