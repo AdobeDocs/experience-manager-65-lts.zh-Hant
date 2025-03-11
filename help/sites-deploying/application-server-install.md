@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: d716571f490fe4bf3b7e58ea2ca85bbe6703ec0d
+source-git-commit: 5f968f5dc0696a683cc063d330c8edfba05f11ab
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -45,9 +45,9 @@ AEM會以單一war檔案的形式進行部署。
 如果部署，預設將會發生下列情況：
 
 * 執行模式為`author`
-* 執行個體（存放庫、Felix OSGI環境、套件組合等）安裝在`${user.dir}/crx-quickstart`中，其中`${user.dir}`為目前的工作目錄，此crx-quickstart路徑稱為`sling.home`
+* 執行個體（存放庫、Felix OSGI環境、套件組合等）的安裝位置為`${user.dir}/crx-quickstart`，其中`${user.dir}`為目前的工作目錄。 此crx-quickstart路徑稱為`sling.home`
 
-* 內容根目錄是war檔案名稱，例如`aem-65-lts`
+* 內容根目錄是WAR檔案名稱。 例如，`aem-65-lts`。
 
 #### 設定 {#configuration}
 
@@ -55,7 +55,7 @@ AEM會以單一war檔案的形式進行部署。
 
 * 執行模式：部署前在AEM war檔案的`WEB-INF/web.xml`檔案中設定`sling.run.modes`引數
 
-* sling.home：部署前先在AEM war檔案的`WEB-INF/web.xml`檔案中設定`sling.home`引數
+* sling.home：在部署之前設定AEM war檔案`WEB-INF/web.xml`檔案中的`sling.home`引數
 
 * 內容根目錄：重新命名AEM war檔案
 
@@ -63,32 +63,32 @@ AEM會以單一war檔案的形式進行部署。
 
 若要部署發佈執行個體，您必須將執行模式設定為發佈：
 
-* 從AEM war檔案中解壓縮WEB-INF/web.xml
-* 將sling.run.modes引數變更為發佈
-* 將web.xml檔案重新封裝成AEM war檔案
+* 從AEM war檔案中解壓縮`WEB-INF/web.xml`
+* 變更`sling.run.modes`引數以發佈
+* 將`web.xml`檔案重新封裝到AEM war檔案中
 * 部署AEM war檔案
 
 #### 安裝檢查 {#installation-check}
 
-若要檢查是否已安裝all，您可以：
+若要檢查是否已安裝所有專案，您可以：
 
 * 追蹤`error.log`檔案以檢視是否已安裝所有內容
 * 檢視`/system/console`所有套件組合均已安裝
 
 #### 同一應用程式伺服器上的兩個執行個體 {#two-instances-on-the-same-application-server}
 
-為了示範，將製作和發佈例項安裝在一個應用程式伺服器上可能是適當的。 為此，請執行以下操作：
+為了示範，將製作和發佈執行個體同時安裝在同一部應用程式伺服器上可能是適當的。 若要達成此目的，您需要：
 
-1. 變更發佈執行個體的sling.home變數和sling.run.modes變數。
-1. 從AEM war檔案中解壓縮WEB-INF/web.xml檔案。
-1. 將sling.home引數變更為不同的路徑（可以使用絕對和相對路徑）。
-1. 將sling.run.modes變更為針對發佈執行個體發佈。
-1. 重新封裝web.xml檔案。
-1. 重新命名war檔案，使其名稱不同。 例如，一個重新命名為aemauthor.war，另一個重新命名為aempublish.war。
+1. 變更發佈執行個體的`sling.home`變數和`sling.run.modes`變數
+1. 從AEM war檔案中解壓縮`WEB-INF/web.xml`檔案
+1. 將`sling.home`引數變更為不同的路徑（可以使用絕對和相對路徑）
+1. 將發佈執行個體的`sling.run.modes`變更為`publish`
+1. 重新封裝`web.xml`檔案
+1. 重新命名war檔案，使其名稱不同。 例如，將其中一個重新命名為`aemauthor.war`，將另一個重新命名為`aempublish.war`
 1. 使用較高的記憶體設定。 例如，預設AEM執行個體使用`-Xmx3072m`
-1. 部署兩個網頁應用程式。
-1. 部署後，請停止兩個Web應用程式。
-1. 在製作和發佈執行個體中，都會確保在sling.properties檔案中，屬性felix.service.urlhandlers=false設為false （預設為設為true）。
+1. 部署兩個網頁應用程式
+1. 部署後，停止兩個Web應用程式
+1. 在製作和發佈執行個體中，請確定在`sling.properties`檔案中，屬性`felix.service.urlhandlers`設定為`false`。 （預設值是設為`true`）。
 1. 再次啟動兩個網頁應用程式。
 
 ## 應用程式伺服器的安裝程式 {#application-servers-installation-procedures}
@@ -101,26 +101,26 @@ AEM會以單一war檔案的形式進行部署。
 
 * 讓基本驗證標題通過：
 
-   * 讓AEM驗證使用者的方法之一是停用WebSphere®伺服器的全域管理安全性，若要這樣做：移至[安全性] > [全域安全性]，然後取消勾選[啟用管理安全性]核取方塊，儲存並重新啟動伺服器。
+   * 讓AEM驗證使用者的一種方式是停用WebSphere®伺服器的全域管理安全性。 若要這麼做，請移至&#x200B;**安全性>全域安全性**&#x200B;並取消勾選&#x200B;**啟用系統管理安全性核取方塊**，儲存並重新啟動伺服器。
 
-* 設定`"JAVA_OPTS= -Xmx2048m"`
+* 設定 `"JAVA_OPTS= -Xmx2048m"`
 * 如果您想使用內容根目錄= /安裝AEM，請變更現有預設Web應用程式的內容根目錄。
 
 **部署AEM Web應用程式**
 
 * 下載AEM war檔案
-* 如有需要，請在web.xml中進行設定（請參閱上文「一般說明」中的）
+* 如有需要，請在`web.xml`檔案中進行設定。 如需詳細資訊，請參閱上述[一般說明](#general-description)。
 
-   * 解壓縮WEB-INF/web.xml檔案
-   * 將sling.run.modes引數變更為發佈
-   * 取消註解sling.home初始引數，並視需要設定此路徑
-   * 重新封裝web.xml檔案
+   * 解壓縮`WEB-INF/web.xml`檔案
+   * 將`sling.run.modes`引數變更為`publish`
+   * 取消註解初始`sling.home`引數，並視需要設定此路徑
+   * 重新封裝`web.xml`檔案。
 
 * 部署AEM war檔案
 
-   * 選擇內容根目錄（如果要設定Sling執行模式，則需要選取部署精靈的詳細步驟，然後在精靈的步驟6中指定）
+   * 選擇內容根目錄。 如果要設定sling執行模式，您需要選取部署精靈的詳細步驟，然後在精靈的步驟6中指定。
 
-* 啟動AEM網頁應用程式
+* 啟動AEM網路應用程式
 
 #### Tomcat 11.0.x {#tomcat}
 
@@ -131,7 +131,10 @@ AEM會以單一war檔案的形式進行部署。
    * 增加VM記憶體設定：
 
       * 在`bin/catalina.bat` (UNIX®上代表`catalina.sh`)中新增下列設定：
-      * `set "JAVA_OPTS= -Xmx2048m`
+
+        ```
+        set "JAVA_OPTS= -Xmx2048m`
+        ```
 
    * Tomcat在安裝時不會啟用管理員或管理員存取權。 因此，您必須手動編輯`tomcat-users.xml`以允許這些帳戶的存取權：
 
@@ -154,15 +157,15 @@ AEM會以單一war檔案的形式進行部署。
 
    * 如果您想要使用內容根目錄「/」部署AEM，則必須變更現有ROOT Web應用程式的內容根目錄：
 
-      * 停止和取消部署ROOT Web應用程式
-      * 重新命名tomcat webapps資料夾中的ROOT.war資料夾
-      * 再次啟動Web應用程式
+      * 停止並取消部署ROOT Web應用程式
+      * 重新命名Tomcat的Webapps資料夾中的`ROOT.war`資料夾
+      * 再次啟動Webapp
 
-   * 如果您使用管理員gui安裝AEM Web應用程式，則需要增加已上傳檔案的最大大小，因為預設僅允許50MB上傳大小。 針對開啟管理程式Web應用程式的web.xml，
+   * 如果您使用管理員gui安裝AEM Web應用程式，則需要增加已上傳檔案的最大大小，因為預設僅允許50MB上傳大小。 為了達成開啟管理員Web應用程式的`web.xml`的目的：
 
      `webapps/manager/WEB-INF/web.xml`
 
-     並將max-file-size和max-request-size增加到至少500MB，請參閱下列`multipart-config`此類`web.xml`檔案的範例。
+     並將`max-file-size`和`max-request-size`增加到至少500MB。 在下列範例`web.xml`檔案中檢視下列`multipart-config`：
 
      ```xml
      <multipart-config>
@@ -176,13 +179,13 @@ AEM會以單一war檔案的形式進行部署。
 * **部署AEM Web應用程式**
 
    * 下載AEM war檔案。
-   * 如有需要，請在web.xml中進行設定（請參閱上文「一般說明」中的）。
+   * 如有需要，請在`web.xml`檔案中進行設定。
 
-      * 解壓縮WEB-INF/web.xml檔案。
-      * 將sling.run.modes引數變更為發佈。
-      * 取消註解sling.home初始引數，並視需要設定此路徑。
-      * 重新封裝web.xml檔案。
+      * 解壓縮`WEB-INF/web.xml`檔案
+      * 將`sling.run.modes`引數變更為`publish`
+      * 取消註解初始`sling.home`引數，並視需要設定此路徑
+      * 重新封裝`web.xml`檔案。
 
-   * 如果您要將AEM war檔案部署為根Web應用程式，請將它重新命名為ROOT.war。 如果要將aemauthor重新命名為內容根目錄，請將其重新命名為aemauthor.war。
-   * 將其複製到tomcat的webapps資料夾。
+   * 如果您要將AEM war檔案部署為根Webapp，請將它重新命名為`ROOT.war`。 如果要將`aemauthor`重新命名為內容根目錄，請將其重新命名為`aemauthor.war`。
+   * 將其複製到Tomcat的webapps資料夾
    * 等到安裝AEM為止。

@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: 57302061656ebf37a49041753dd5eb34e7ba22ef
+source-git-commit: 6a94b2e2e1d387401bf11810c46d371c538407f9
 workflow-type: tm+mt
 source-wordcount: '1221'
 ht-degree: 3%
@@ -118,7 +118,7 @@ AEM伺服器是&#x200B;**Java型**，並在支援該平台的大多數作業系�
 
 為了熟悉和開發AEM，通常會使用安裝在執行Apple OS X或Microsoft® Windows或Linux®案頭版本的本機電腦上的執行個體。
 
-在使用者端上，AEM可在桌上型電腦及平板電腦作業系統上與所有現代瀏覽器(**Microsoft® Edge**、**Chrome **51+****、**Firefox **47+、**Safari** 8+)搭配使用。 如需詳細資訊，請參閱[支援的使用者端平台](/help/sites-deploying/technical-requirements.md#supported-client-platforms)。
+在使用者端，AEM可在桌上型電腦和平板電腦作業系統上與所有現代瀏覽器(**Microsoft® Edge**、**Chrome 51+**、**Firefox 47+**、**Safari 8+**)搭配使用。 如需詳細資訊，請參閱[支援的使用者端平台](/help/sites-deploying/technical-requirements.md#supported-client-platforms)。
 
 ### 取得軟體 {#getting-the-software}
 
@@ -265,6 +265,7 @@ AEM會啟動，並自動將您的網頁瀏覽器重新導向至適當的頁面�
 `https://localhost:4502/`
 
 ![登入畫面](assets/screen_shot_2019-04-08at83533am.png)
+
 <!-- 
 After you are logged in, you have access to AEM. For more information, depending on your role, see the following:
 
