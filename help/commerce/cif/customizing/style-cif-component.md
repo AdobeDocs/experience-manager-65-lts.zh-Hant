@@ -3,7 +3,6 @@ title: 樣式Adobe Experience Manager CIF核心元件
 description: 瞭解如何設定Adobe Experience Manager CIF核心元件的樣式。 本教學課程涵蓋如何使用使用者端資料庫或clientlibs來針對Adobe Experience Manager (AEM) Commerce實作部署及管理CSS和JavaScript。 本教學課程也涵蓋ui.frontend模組和webpack專案如何整合至端對端建置流程。
 sub-product: Commerce
 topics: Development
-version: Cloud Service
 doc-type: tutorial
 feature: Commerce Integration Framework
 kt: 3456
@@ -11,7 +10,7 @@ thumbnail: 3456-style-cif.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 92689d52-6485-4cd5-a04f-4738096a0dba
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d571dc696e42bae873cd58f2e7f321bd3002f42e
 workflow-type: tm+mt
 source-wordcount: '2338'
 ht-degree: 0%

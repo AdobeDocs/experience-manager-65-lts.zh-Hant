@@ -9,9 +9,9 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 114a77bc-0b7e-49ce-bca1-e5195b4884dc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3cbc2ddd4ff448278e678d1a73c4ee7ba3af56f4
 workflow-type: tm+mt
-source-wordcount: '5696'
+source-wordcount: '5139'
 ht-degree: 0%
 
 ---
@@ -78,18 +78,15 @@ AEM 6.3及更高版本引進了此功能的線上版本，稱為「線上修訂�
 
 ## 完整和尾部壓縮模式  {#full-and-tail-compaction-modes}
 
-**AEM 6.5**&#x200B;為線上修訂清除程式的&#x200B;**壓縮**&#x200B;階段引入&#x200B;**兩種新模式**：
+**AEM 6.5 LTS**&#x200B;針對線上修訂清除程式的&#x200B;**壓縮**&#x200B;階段，具有&#x200B;**兩種模式**：
 
-* **完整壓縮**&#x200B;模式會重寫整個存放庫中的所有區段和tar檔案。 因此，後續的清理階段可以移除整個存放庫的最大資源量。 因為完整壓縮會影響整個存放庫，所以需要相當多的系統資源與時間才能完成。 完全壓縮對應於AEM 6.3中的壓縮階段。
+* **完整壓縮**&#x200B;模式會重寫整個存放庫中的所有區段和tar檔案。 因此，後續的清理階段可以移除整個存放庫的最大資源量。 因為完整壓縮會影響整個存放庫，所以需要相當多的系統資源與時間才能完成。
 * **尾部壓縮**&#x200B;模式只會重寫存放庫中最近的區段和tar檔案。 最新的區段和tar檔案是上次執行完整或尾部壓縮後新增的區段。 因此，後續的清理階段只能移除存放庫最近部分中所包含的垃圾。 由於尾部壓縮只會影響存放庫的一部分，因此它比完全壓縮需要更少的系統資源和完成時間。
 
 這些壓縮模式構成效率與資源消耗之間的權衡：尾端壓縮的效果較低，對正常系統作業的影響也較小。 相較之下，完全壓縮的效果較佳，但對系統正常運作的影響較大。
 
-AEM 6.5在壓縮期間也引進了更有效率的內容重複資料刪除機制，進一步減少存放庫在磁碟上的空間。
+AEM 6.5 LTS在壓縮期間提供有效的內容重複資料刪除機制，進一步減少存放庫在磁碟上的空間。
 
-以下兩張圖表呈現內部實驗室測試的結果，其中說明AEM 6.5與AEM 6.3相比可縮短平均執行時間，並降低平均磁碟空間：
-
-![onrc-duration-6_4vs63](assets/onrc-duration-6_4vs63.png) ![segmentstore-6_4vs63](assets/segmentstore-6_4vs63.png)
 
 ### 如何設定完全和尾部壓縮 {#how-to-configure-full-and-tail-compaction}
 
@@ -108,7 +105,7 @@ AEM 6.5在壓縮期間也引進了更有效率的內容重複資料刪除機制�
 使用新的壓縮模式時，請牢記以下事項：
 
 * 您可以監視輸入/輸出(I/O)活動，例如：I/O作業、CPU等候IO、認可佇列大小。 這有助於判斷系統是否受到I/O限制，而且需要升級。
-* `RevisionCleanupTaskHealthCheck`表示線上修訂清除的整體健康狀態。 其運作方式與AEM 6.3相同，且無法區分完全和尾部壓縮。
+* `RevisionCleanupTaskHealthCheck`表示線上修訂清除的整體健康狀態。
 * 記錄訊息包含有關壓縮模式的相關資訊。 例如，當「線上修訂清除」啟動時，對應的日誌訊息會指示壓縮模式。 此外，在某些轉角案例中，當排定執行尾部壓縮時，系統恢復為完全壓縮，並且日誌訊息指示此變更。 下列記錄範例指出壓縮模式以及從尾部到完全壓縮的變更：
 
 ```
@@ -123,83 +120,6 @@ TarMK GC: no base state available, running full compaction instead
 **建議將磁碟大小至少比最初估計的存放庫大小大兩到三倍。**
 
 ## 線上修訂清除常見問題 {#online-revision-cleanup-frequently-asked-questions}
-
-### AEM 6.5升級考量事項 {#aem-upgrade-considerations}
-
-<table style="table-layout:auto">
- <tbody>
-  <tr>
-   <td>問題 </td>
-   <td>答案</td>
-  </tr>
-  <tr>
-   <td>升級至AEM 6.5時應該注意什麼？</td>
-   <td><p>TarMK的持續性格式會隨著AEM 6.5而改變。這些變更不需要主動式移轉步驟。 現有存放庫會進行滾動式移轉，對使用者而言是透明的。 AEM 6.5 （或相關工具）首次存取存放庫時，就會起始移轉程式。</p> <p><strong>一旦開始移轉至AEM 6.5持續性格式，存放庫就無法回覆成之前的AEM 6.3持續性格式。</strong></p> </td>
-  </tr>
- </tbody>
-</table>
-
-### 移轉至Oak Tar區段 {#migrating-to-oak-segment-tar}
-
-<table style="table-layout:auto">
- <tbody>
-  <tr>
-   <td><strong>問題</strong></td>
-   <td><strong>答案</strong></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>為什麼我需要移轉存放庫？</strong></td>
-   <td><p>在AEM 6.3中，需要變更儲存格式，尤其是為了改善線上修訂清除的效能和功效。 這些變更無法回溯相容，且使用舊版Oak區段(AEM 6.2和舊版)建立的存放庫必須移轉。</p> <p>變更儲存格式的其他優點：</p>
-    <ul>
-     <li>更優異的擴充能力（最佳化的區段大小）。</li>
-     <li>加快<a href="/help/sites-administering/data-store-garbage-collection.md" target="_blank">資料存放區記憶體回收</a>.<br /> </li>
-     <li>為未來的增強功能做基礎工作。</li>
-    </ul> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>仍支援舊版的Tar格式嗎？</strong></td>
-   <td>AEM 6.3或更新版本只支援新的Oak區段Tar。</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>內容移轉是否一律為強制性？</strong></td>
-   <td>可以。除非您以新的執行個體開始，否則永遠必須移轉內容。</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>我可以升級到6.3或更高版本並在稍後進行移轉（例如，使用另一個維護時段）嗎？</strong></td>
-   <td>否，如上所述，內容移轉是強制性的。</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>移轉時可避免停機嗎？</strong></td>
-   <td>不行。這是一次性工作，無法在執行中的執行個體上完成。</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>如果我意外執行了錯誤的存放庫格式，會發生什麼情況？</strong></td>
-   <td>如果您嘗試對oak-segment-tar存放庫執行oak-segment模組（或反之），啟動會失敗並出現<em>IllegalStateException</em>訊息「無效的區段格式」。 不會發生資料損毀。</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>是否需要重新索引搜尋索引？</strong></td>
-   <td>不行。從Oak-segment移轉至Oak-segment-tar會導致容器格式發生變更。 包含的資料不受影響，且不會修改。</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>如何以最佳方式計算移轉期間和之後所需的預期磁碟空間？</strong></td>
-   <td>移轉等同於以新格式重新建立區段存放區。 這可用來估計移轉期間所需的額外磁碟空間。 移轉後，可以刪除舊區段存放區以回收空間。</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>如何最好地估計移轉的持續時間？</strong></td>
-   <td>如果在移轉之前執行<a href="/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup">離線修訂清理</a>，即可大幅改善移轉效能。 建議所有客戶在升級程式前先執行此作業。 一般而言，移轉的持續時間應與離線修訂清除工作的持續時間類似，假設離線修訂清除工作已在移轉之前執行。</td>
-   <td> </td>
-  </tr>
- </tbody>
-</table>
 
 ### 正在執行線上修訂清除 {#running-online-revision-cleanup}
 
@@ -243,11 +163,6 @@ TarMK GC: no base state available, running full compaction instead
   <tr>
    <td><strong>「作者」和「發佈」通常會有不同的「線上修訂清除」視窗嗎？</strong></td>
    <td>這取決於營業時間和客戶線上狀態的流量模式。 維護時段應在主要生產時間之外設定，以實現最佳清理功效。 若為多個AEM發佈執行個體（TarMK陣列），線上修訂清除的維護時段應分批進行。</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>執行線上修訂清除之前是否有任何先決條件？</strong></td>
-   <td><p>線上修訂清除僅適用於AEM 6.3及更高版本。 此外，如果您使用舊版AEM，則必須移轉至新的<a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">Oak區段Tar</a>。</p> </td>
    <td> </td>
   </tr>
   <tr>

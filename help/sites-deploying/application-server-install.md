@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d716571f490fe4bf3b7e58ea2ca85bbe6703ec0d
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -28,15 +28,13 @@ ht-degree: 0%
 以下應用程式伺服器的安裝步驟已說明：
 
 * [WebSphere](#websphere)
-* [Jboss](#jboss-eap)
-* [Oracle WebLogic 12.1.3/12.2](#oracle-weblogic)
-* [Tomcat 8/8.5](#tomcat)
+* [Tomcat 11.0.x](#tomcat)
 
 請參閱適當的應用程式伺服器檔案，以取得有關安裝Web應用程式、伺服器設定以及如何啟動和停止伺服器的詳細資訊。
 
->[!NOTE]
+<!-- >[!NOTE]
 >
->如果您在WAR部署中使用Dynamic Media，請參閱[Dynamic Media檔案](/help/assets/config-dynamic.md#enabling-dynamic-media)。
+>If you are using Dynamic Media in a WAR deployment, see [Dynamic Media documentation](/help/assets/config-dynamic.md#enabling-dynamic-media). -->
 
 ## 一般說明 {#general-description}
 
@@ -49,7 +47,7 @@ AEM會以單一war檔案的形式進行部署。
 * 執行模式為`author`
 * 執行個體（存放庫、Felix OSGI環境、套件組合等）安裝在`${user.dir}/crx-quickstart`中，其中`${user.dir}`為目前的工作目錄，此crx-quickstart路徑稱為`sling.home`
 
-* 內容根目錄是war檔案名稱，例如`aem-6`
+* 內容根目錄是war檔案名稱，例如`aem-65-lts`
 
 #### 設定 {#configuration}
 
@@ -95,7 +93,7 @@ AEM會以單一war檔案的形式進行部署。
 
 ## 應用程式伺服器的安裝程式 {#application-servers-installation-procedures}
 
-### WebSphere® 8.5 {#websphere}
+### WebSphere® 24.0.0.7 {#websphere}
 
 在部署之前，請閱讀上述[一般說明](#general-description)。
 
@@ -124,66 +122,7 @@ AEM會以單一war檔案的形式進行部署。
 
 * 啟動AEM網頁應用程式
 
-#### JBoss® EAP 6.3.0/6.4.0 {#jboss-eap}
-
-在部署之前，請閱讀上述[一般說明](#general-description)。
-
-**準備JBoss®伺服器**
-
-在您的conf檔案中設定記憶體引數（例如，`standalone.conf`）
-
-* JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
-
-如果您使用部署 — 掃描器來安裝AEM Web應用程式，則增加執行個體xml檔案中設定`deployment-timeout`屬性的`deployment-timeout,`可能是好事(例如，`configuration/standalone.xml)`：
-
-```xml
-<subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
-            <deployment-scanner path="deployments" relative-to="jboss.server.base.dir" scan-interval="5000" deployment-timeout="1000"/>
-</subsystem>
-```
-
-**部署AEM Web應用程式**
-
-* 在您的JBoss®管理控制檯中上傳AEM Web應用程式。
-
-* 啟用AEM網頁應用程式。
-
-#### Oracle WebLogic 12.1.3/12.2 {#oracle-weblogic}
-
-在部署之前，請閱讀上述[一般說明](#general-description)。
-
-這會使用僅含管理伺服器的簡單伺服器配置。
-
-**WebLogic伺服器準備**
-
-* 在`${myDomain}/config/config.xml`中，新增至安全性設定區段：
-
-   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>`在[https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd)上檢視正確的位置（根據預設，將其定位在區段結尾即可）
-
-* 增加VM記憶體設定：
-
-   * 開啟`${myDomain}/bin/setDomainEnv.cmd` (resp .sh)搜尋WLS_MEM_ARGS，設定，例如，設定`WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
-   * 重新啟動WebLogic Server
-
-* 在`${myDomain}`中建立套件資料夾，並在cq資料夾內和計畫資料夾中建立
-
-**部署AEM Web應用程式**
-
-* 下載AEM war檔案
-* 將AEM war檔案放入${myDomain}/packages/cq資料夾
-* 如有需要，請在`WEB-INF/web.xml`中進行設定（請參閱上方的一般說明）
-
-   * 解壓縮`WEB-INF/web.xml`檔案
-   * 將sling.run.modes引數變更為發佈
-   * 取消註解sling.home初始引數並視需要設定此路徑（請參閱一般說明）
-   * 重新封裝web.xml檔案
-
-* 將AEM war檔案部署為應用程式（對於其他設定，請使用預設設定）
-* 安裝可能需要一些時間……
-* 檢查安裝是否已如一般說明中所述完成（例如，追蹤error.log）
-* 您可以在WebLogic `/console`中Web應用程式的[組態]索引標籤中變更內容根目錄
-
-#### Tomcat 8/8.5 {#tomcat}
+#### Tomcat 11.0.x {#tomcat}
 
 在部署之前，請閱讀上述[一般說明](#general-description)。
 
