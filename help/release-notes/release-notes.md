@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager 6.5 LTS目前發行說明
-description: 以下是Adobe Experience Manager 6.5 LTS目前的發行說明。
+description: 這些是 Adobe Experience Manager 6.5 LTS 的最新發行說明。
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
@@ -8,7 +8,7 @@ exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: e7fc1120d12160ba866ceaddd087fc9acdfcd51d
 workflow-type: tm+mt
 source-wordcount: '795'
-ht-degree: 22%
+ht-degree: 24%
 
 ---
 
