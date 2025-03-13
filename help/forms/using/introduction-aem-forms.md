@@ -1,18 +1,14 @@
 ---
 title: AEM Forms簡介
-description: 使用此 AEM 6.5 指南建立、管理、發佈和更新數位表單。尋找有關如何進行安裝、升級和設定的說明，並了解如何編寫最適化表單。
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: introduction
-docset: aem65
+description: 使用此AEM 6.5 LTS指南來建立、管理、發佈和更新數位表格。 尋找有關如何進行安裝、升級和設定的說明，並了解如何編寫最適化表單。
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: e9549ac9-0ada-4661-969a-709f0ed3b133
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3b83225e1150f1e623997c9ece6329de995148be
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 15%
+source-wordcount: '951'
+ht-degree: 14%
 
 ---
 
