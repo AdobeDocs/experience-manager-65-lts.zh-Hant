@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5 LTS檔案瞭解其運作方式，以及軟體可為您做什麼。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 96fdfc1f754358bc358595c10ba908a4aabce4af
+source-git-commit: 3cc47de71aec7e110b55f511ceaa0d314a1369ef
 workflow-type: tm+mt
-source-wordcount: '6802'
-ht-degree: 19%
+source-wordcount: '6798'
+ht-degree: 20%
 
 ---
 
@@ -176,7 +176,7 @@ ht-degree: 19%
          + [工具主控台](/help/sites-administering/tools-consoles.md)
          + [報告](/help/sites-administering/reporting.md)
          + [設定配置容器和配置模式](/help/sites-administering/configuring-responsive-layout.md)
-         + [編輯者](/help/sites-administering/enable-classic-ui-editor.md)
+         + [編輯器](/help/sites-administering/enable-classic-ui-editor.md)
          + [啟用對傳統UI的存取權](/help/sites-administering/enable-classic-ui.md)
          + [Admin Console](/help/sites-administering/enable-classic-ui-admin.md)
       + 個人化 {#personalization}
@@ -1407,7 +1407,6 @@ ht-degree: 19%
          + [修訂清除](/help/sites-deploying/revision-cleanup.md)
          + [Oak查詢與索引](/help/sites-deploying/queries-and-indexing.md)
          + [如何使用TarMK冷待命執行AEM](/help/sites-deploying/tarmk-cold-standby.md)
-         + [AEM中的RDBMS支援](/help/sites-deploying/rdbms-support-in-aem.md)
          + [透過Oak-run Jar建立索引](/help/sites-deploying/indexing-via-the-oak-run-jar.md)
          + [Oak-run.jar索引使用案例](/help/sites-deploying/oak-run-indexing-usecases.md)
          + [疑難排解Oak索引](/help/sites-deploying/troubleshooting-oak-indexes.md)

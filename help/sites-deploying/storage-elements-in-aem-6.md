@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: e51842b5-fa91-42d2-a490-5a7e867dada7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3cc47de71aec7e110b55f511ceaa0d314a1369ef
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---
@@ -40,10 +40,10 @@ AEM 6最重要的變更之一是存放庫層級的創新。
 
 依預設，AEM 6會使用Tar儲存空間，使用預設的設定選項來儲存節點和二進位檔。 您可以執行下列動作，手動設定其儲存設定：
 
-1. 下載AEM 6快速入門Jar並將其放入新資料夾中。
+1. 下載AEM 6.5 LTS快速入門Jar並將其放入新資料夾中。
 1. 透過執行以下動作解壓縮AEM：
 
-   `java -jar cq-quickstart-6.jar -unpack`
+   `java -jar <aem-65-lts>.jar -unpack`
 
 1. 在安裝目錄中建立名為`crx-quickstart\install`的資料夾。
 
@@ -60,12 +60,12 @@ AEM 6最重要的變更之一是存放庫層級的創新。
 
 #### 使用Mongo Storage執行最新安裝的AEM執行個體 {#running-a-freshly-installed-aem-instance-with-mongo-storage}
 
-您可以依照下列程式，將AEM 6設定為使用MongoDB儲存體執行：
+AEM 6.5 LTS可以設定為使用MongoDB儲存體執行，請遵循以下程式：
 
-1. 下載AEM 6快速入門Jar並將其放入新資料夾中。
+1. 下載AEM 6.5 LTS快速入門Jar並將其放入新資料夾中。
 1. 透過執行以下命令來解壓縮AEM：
 
-   `java -jar cq-quickstart-6.jar -unpack`
+   `java -jar <aem-65-lts>.jar -unpack`
 
 1. 確定已安裝MongoDB且正在執行`mongod`的執行個體。 如需詳細資訊，請參閱[安裝MongoDB](https://docs.mongodb.org/manual/installation/)。
 1. 在安裝目錄中建立名為`crx-quickstart\install`的資料夾。
@@ -83,10 +83,10 @@ AEM 6最重要的變更之一是存放庫層級的創新。
 
 1. 以您要使用之資料存放區的PID建立設定檔案，並編輯檔案以設定設定選項。 如需詳細資訊，請參閱[設定節點存放區和資料存放區](/help/sites-deploying/data-store-config.md)。
 
-1. 執行，啟動具有MongoDB儲存後端的AEM 6 jar：
+1. 執行，啟動具有MongoDB儲存後端的AEM 6.5 LTS jar：
 
    ```shell
-   java -jar cq-quickstart-6.jar -r crx3,crx3mongo
+   java -jar <aem-65-lts>.jar -r crx3,crx3mongo
    ```
 
    其中後端執行模式為&#x200B;**`-r`**，範例從MongoDB支援開始。

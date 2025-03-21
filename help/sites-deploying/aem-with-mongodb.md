@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b87199e70b4fefc345c86eabbe89054d4b240e95
 workflow-type: tm+mt
-source-wordcount: '6216'
+source-wordcount: '6217'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ AEM作者已連線至`mongod`個執行個體，每個AEM作者都連線至所有
 
 ### 作業系統 {#operating-systems}
 
-如需AEM 6支援的作業系統清單，請參閱[技術需求頁面](/help/sites-deploying/technical-requirements.md)。
+如需AEM 6.5 LTS支援的作業系統清單，請參閱[技術需求頁面](/help/sites-deploying/technical-requirements.md)。
 
 ### 環境 {#environments}
 
