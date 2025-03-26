@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5 LTS檔案瞭解其運作方式，以及軟體可為您做什麼。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 3cc47de71aec7e110b55f511ceaa0d314a1369ef
+source-git-commit: 5405b449377e464b7311b09f2f854488e404c1fd
 workflow-type: tm+mt
 source-wordcount: '6798'
 ht-degree: 20%
@@ -75,7 +75,7 @@ ht-degree: 20%
          + [元件](/help/sites-authoring/default-components.md)
          + [疑難排解製作時的AEM](/help/sites-authoring/troubleshooting.md)
          + [編輯頁面時的鍵盤快速鍵](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-         + [最佳做法](/help/sites-authoring/best-practices.md)
+         + [最佳實務](/help/sites-authoring/best-practices.md)
       + 網站和頁面功能{#siteandpage}
          + [使用標記](/help/sites-authoring/tags.md)
          + [建立頁面範本](/help/sites-authoring/templates.md)
@@ -225,7 +225,7 @@ ht-degree: 20%
          + [將體驗片段匯出到 Adobe Target](/help/sites-administering/experience-fragments-target.md)
          + [電子郵件範本的最佳實務](/help/sites-administering/best-practices-for-email-templates.md)
       + 最佳作法 {#bestpractices}
-         + [最佳做法](/help/sites-administering/administer-best-practices.md)
+         + [最佳實務](/help/sites-administering/administer-best-practices.md)
          + [翻譯最佳實務](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/administering/introduction/tc-bp.html)
          + [MSM最佳實務](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/administering/introduction/msm-best-practices.html)
          + [AEM Sites - GDPR整備](/help/sites-administering/gdpr-compliance-sites.md)
@@ -1281,7 +1281,7 @@ ht-degree: 20%
          + [使用 React 快速入門](/help/sites-developing/spa-getting-started-react.md)
          + [針對 SPA 實作 React元件](/help/sites-developing/spa-implementing-react-component.md)
          + [使用 Angular 快速入門](/help/sites-developing/spa-getting-started-angular.md)
-         + [SPA 深入探討](/help/sites-developing/spa-deep-dives.md)
+         + [SPA 深入探討](/help/sites-developing/spa-deep-dives-gems.md)
          + [針對 AEM 開發 SPA](/help/sites-developing/spa-architecture.md)
          + [SPA 編輯器概觀](/help/sites-developing/spa-overview.md)
          + [SPA 藍圖](/help/sites-developing/spa-blueprint.md)
