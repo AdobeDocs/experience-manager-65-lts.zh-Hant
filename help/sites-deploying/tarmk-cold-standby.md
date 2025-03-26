@@ -12,7 +12,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 71e3d2cd-4e22-44a2-88dd-1f165bf2b3d8
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: eb6903d0a34e9f9e90eaeee3ca6a89d1a2622dd0
 workflow-type: tm+mt
 source-wordcount: '2672'
 ht-degree: 0%
@@ -68,7 +68,7 @@ Tar微核心的冷待命容量可讓一或多個待命Adobe Experience Manager (
 
 #### 效能 {#performance}
 
-在主要執行個體上啟用TarMK冷待命幾乎對效能沒有可衡量的影響。 額外的CPU耗電量很低，額外的硬碟和網路IO應該不會產生效能問題。
+在主要執行個體上啟用TarMK冷待命幾乎對效能沒有可衡量的影響。 額外的CPU耗電量很低，額外的硬碟和網路IO應該不會產生任何效能問題。
 
 在待命狀態下，您可能會在同步程式期間消耗大量的CPU。 因為程式不是多執行緒，所以使用多核心無法加快速度。 如果未變更或傳輸任何資料，則沒有可測量的活動。 連線速度視硬體與網路環境而異，但並不取決於存放庫的大小或SSL使用。 在預估初始同步所需的時間或在主要節點上同時變更許多資料時，請記住這一點。
 
