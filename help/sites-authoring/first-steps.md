@@ -1,6 +1,6 @@
 ---
 title: 作者在AEM中建立內容時的首要步驟
-description: 探索在AEM 6.5 LTS中建立內容和編寫的重要概念。 您也會找到使用標籤、範本和其他頁面功能的相關資訊。
+description: 探索在 AEM 6.5 LTS 中建立內容和編寫的關鍵概念。您也會找到使用標記、範本及其他頁面功能等相關資訊。
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
@@ -8,7 +8,7 @@ exl-id: 8fc30cfe-cb10-47ba-911c-e4fdfaa970b5
 source-git-commit: 31370571843508acfb5d1e5cc491fdb043153a8f
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 

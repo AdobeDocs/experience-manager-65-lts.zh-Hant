@@ -1,6 +1,6 @@
 ---
 title: AEM平台簡介
-description: 瞭解AEM平台及其最重要的元件(包括安裝和部署Adobe Experience Manager 6.5 LTS)，並瞭解其架構(包括Adobe Managed Services雲端部署)。
+description: 了解 AEM 平台及其最重要的元件，包括安裝和部署 Adobe Experience Manager 6.5 LTS 及其架構 (包括 Adobe Managed Services 雲端部署)。
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Architect
@@ -10,7 +10,7 @@ exl-id: c9ea613d-f1d1-49be-bd52-95d489442f46
 source-git-commit: 4666e698b05510e2ed90995f7e7098e7f8d860da
 workflow-type: tm+mt
 source-wordcount: '777'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
