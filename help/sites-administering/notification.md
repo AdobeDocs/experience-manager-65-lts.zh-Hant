@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 3ef72c05-1301-402e-94ce-49fbaf26fb98
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: aff6c41e13293a1c83eca226354f5c16cff18d99
 workflow-type: tm+mt
-source-wordcount: '2149'
+source-wordcount: '2147'
 ht-degree: 8%
 
 ---
@@ -83,7 +83,7 @@ AEM傳送電子郵件通知給使用者，符合以下條件：
 
 ## 設定工作流程電子郵件通知服務 {#configuring-the-workflow-email-notification-service}
 
-當您收到工作流程電子郵件通知時，寄件者電子郵件地址和主機URL首碼都會設定為預設值。 您可以在Web主控台中設定&#x200B;**Day CQ工作流程電子郵件通知服務**，以變更這些值。 如果這樣做，建議將變更保留在存放庫中。
+當您收到工作流程電子郵件通知時，寄件者電子郵件地址和主機URL首碼都會設定為預設值。 您可以在Web主控台中設定&#x200B;**Day CQ工作流程電子郵件通知服務**，以變更這些值。 如果這樣做，您必須將變更保留在存放庫中。
 
 在Web主控台中，預設設定如下所示：
 
