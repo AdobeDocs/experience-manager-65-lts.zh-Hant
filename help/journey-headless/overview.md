@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Developing,Content Fragments
 role: Admin, Developer
 exl-id: 77f797c8-d8ed-42ea-ad5f-988d976e0ce5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7e1d05c2c6bda15632d49aaecfd931238ae25e79
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 63%
+ht-degree: 57%
 
 ---
 
@@ -48,7 +48,7 @@ Headless歷程專為不同角色而設計，從不同角度列出實作Headless�
 |---|---|---|
 | [Headless 開發人員歷程](/help/journey-headless/developer/overview.md) | 瞭解Headless技術、其為使用者帶來哪些體驗、AEM如何支援Headless模型，以及如何從頭到尾實施您自己的Headless開發專案。 | 開發人員 |
 | [Headless 翻譯歷程](/help/journey-headless/translation/overview.md) | 瞭解Headless技術、為何會在您的專案中使用這些技術，以及如何在AEM中從A到Z建立和更新翻譯專案。 | 翻譯專家 |
-| [Headless 製作歷程](/help/journey-headless/author/overview.md) | 從這裡開始，逐步引導您了解 AEM 強大且有彈性的 Headless 功能、其功能，以及如何在您的第一個 Headless 專案中建立內容的模型。 | 架構師 |
-| [Headless 架構者歷程](/help/journey-headless/architect/overview.md)  | 從這裡開始介紹 Adobe Experience Manager as a Cloud Service 的強大、靈活、 Headless 功能，以及如何為您的專案建立內容的模型。 | 內容建立者和作者 |
+| [Headless 架構師歷程](/help/journey-headless/architect/overview.md)  | 從這裡開始，此歷程會逐步引導您了解 AEM 強大且靈活的 Headless 特性、其功能，以及如何在您的第一個 Headless 專案中建立內容模型。 | 架構師 |
+| [Headless 製作歷程](/help/journey-headless/author/overview.md) | 從這裡開始瞭解Adobe Experience Manager as a Cloud Service強大且有彈性的無周邊功能，以及如何為您的專案建立內容。 | 內容建立者和作者 |
 
 請密切注意[即將到來、涵蓋其他角色的歷程。](/help/journey-documentation/home.md#journeys)
