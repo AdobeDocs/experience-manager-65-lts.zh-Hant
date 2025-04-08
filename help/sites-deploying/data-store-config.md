@@ -1,5 +1,5 @@
 ---
-title: 在AEM 6中設定節點存放區和資料存放區
+title: 在AEM 6.5 LTS中設定節點存放區和資料存放區
 description: 瞭解如何設定節點存放區和資料存放區，以及如何執行資料存放區記憶體回收。
 content-type: reference
 topic-tags: deploying
@@ -10,14 +10,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '3461'
+source-wordcount: '3330'
 ht-degree: 1%
 
 ---
 
-# 在AEM 6中設定節點存放區和資料存放區{#configuring-node-stores-and-data-stores-in-aem}
+# 在AEM 6.5 LTS中設定節點存放區和資料存放區{#configuring-node-stores-and-data-stores-in-aem}
 
 ## 簡介 {#introduction}
 
@@ -46,19 +46,10 @@ ht-degree: 1%
 
 ## 節點存放區設定 {#node-store-configurations}
 
->[!CAUTION]
->
->較新版本的Oak採用新的命名方案和格式用於OSGi設定檔案。 新的命名配置需要名稱為&#x200B;**.config**&#x200B;的組態檔，而新格式需要輸入值。 如需詳細資訊，請參閱[Apache Sling布建模型和Apache SlingStart — 預設設定格式](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format)。
->
->如果您從舊版Oak升級，請務必先備份`crx-quickstart/install`資料夾。 升級之後，將資料夾的內容還原至升級後的安裝，並將組態檔的副檔名從&#x200B;**.cfg**&#x200B;修改為&#x200B;**.config**。
-
 ### 區段節點存放區 {#segment-node-store}
 
-區段節點存放區是Adobe在AEM6中實施TarMK的基礎。 它使用`org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` PID進行設定。
+區段節點存放區是Adobe在AEM 6.5 LTS中實施TarMK的基礎。 它使用`org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` PID進行設定。
 
->[!CAUTION]
->
->區段節點存放區的PID已從AEM 6的`org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions`變更為AEM 6.3中的`org.apache.jackrabbit.oak.segment.SegmentNodeStoreService`。請務必進行必要的設定調整以反映此變更。
 
 您可以設定下列選項：
 
@@ -86,7 +77,7 @@ customBlobStore=B"true"
 
 * `mongouri`：連線至Mongo資料庫所需的[MongoURI](https://docs.mongodb.org/manual/reference/connection-string/)。 預設值為`mongodb://localhost:27017`
 
-* `db`： Mongo資料庫的名稱。 預設為&#x200B;**Oak** ``. However, new AEM 6 installations use **aem-author** ``作為預設資料庫名稱。
+* `db`： Mongo資料庫的名稱。 預設值為&#x200B;**aem-author**。
 
 * `cache`：快取大小（以MB為單位）。 這會分散在DocumentNodeStore中使用的各種快取之間。 預設值為`256`
 
@@ -143,9 +134,9 @@ AEM可設定為將資料儲存在Amazon的Simple Storage Service (S3)。 它使�
 
 >[!NOTE]
 >
->AEM 6.5支援在Amazon的S3中儲存資料，但並未延伸至在其他平台中儲存資料，因為這些平台的廠商可能有自己的Amazon S3 API實作。
+>AEM 6.5 LTS支援在Amazon的S3中儲存資料，但並未延伸支援至在其他平台中儲存資料，這些平台的廠商可能有自己的Amazon S3 API實作。
 
-若要啟用S3資料存放區功能，必須下載及安裝包含S3資料存放區聯結器的Feature Pack。 前往[Adobe存放庫](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)並從Feature Pack 1.10.x版（例如com.adobe.granite.oak.s3connector-1.10.0.zip）下載最新版本。 此外，您必須下載並安裝[AEM 6.5發行說明](/help/release-notes/release-notes.md)頁面上列出的最新AEM Service Pack。
+若要啟用S3資料存放區功能，必須下載及安裝包含S3資料存放區聯結器的Feature Pack。 前往[Adobe存放庫](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)並從Feature Pack 1.60.x版（例如com.adobe.granite.oak.s3connector-1.60.2.zip）下載最新版本。 此外，您必須下載並安裝[AEM 6.5 LTS發行說明](/help/release-notes/release-notes.md)頁面上列出的最新AEM Service Pack。
 
 >[!NOTE]
 >
@@ -189,9 +180,9 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 1. 編輯檔案並新增安裝程式所需的設定選項。
 1. 啟動AEM。
 
-## 升級至新版1.10.x S3 Connector {#upgrading-to-a-new-version-of-the-s-connector}
+## 升級至新版1.60.x S3 Connector {#upgrading-to-a-new-version-of-the-s-connector}
 
-若要升級為1.10.x S3聯結器的新版本（例如從1.10.0到1.10.4），請遵循下列步驟：
+若要升級至新版1.60.x S3聯結器，請遵循下列步驟：
 
 1. 停止AEM執行個體。
 
@@ -205,7 +196,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
    >
    >上述檔案名稱僅供說明之用。
 
-1. 從[Adobe存放庫](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)下載最新版的1.10.x Feature Pack。
+1. 從[Software Distribution.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/s3-connector/6-5-lts/com.adobe.granite.oak.s3connector-1.60.2.zip)下載1.60.x功能套件的最新版本。
 1. 將內容解壓縮至個別資料夾，然後導覽至`jcr_root/libs/system/install/15`。
 1. 將jar檔案複製到AEM安裝資料夾中的&#x200B;**&lt;aem-install>**/crx-quickstart/install/15。
 1. 啟動AEM並檢查聯結器功能。
@@ -413,7 +404,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 
 AEM可設定為將資料儲存在Microsoft®的Azure儲存服務。 它使用`org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` PID進行設定。
 
-若要啟用Azure資料存放區功能，必須下載並安裝包含Azure Connector的功能套件。 前往[Adobe存放庫](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/)並從Feature Pack 1.6.x版（例如com.adobe.granite.oak.azureblobconnector-1.6.3.zip）下載最新版本。
+若要啟用Azure資料存放區功能，必須下載並安裝包含Azure Connector的功能套件。 移至[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/azure-connector/6-5-lts/com.adobe.granite.oak.azureblobconnector-1.9.16.zip)，並從Feature Pack 1.9.x版（例如com.adobe.granite.oak.azureblobconnector-1.9.16.zip）下載最新版本。
 
 >[!NOTE]
 >

@@ -1,6 +1,6 @@
 ---
-title: AEM 6.5中的儲存元素
-description: 瞭解AEM 6.5中可用的節點儲存實施以及如何維護存放庫。
+title: AEM 6.5 LTS中的儲存元素
+description: 瞭解AEM 6.5 LTS中可用的節點儲存實作，以及如何維護存放庫。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -10,35 +10,31 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: e51842b5-fa91-42d2-a490-5a7e867dada7
-source-git-commit: 3cc47de71aec7e110b55f511ceaa0d314a1369ef
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
 
-# AEM 6.5中的儲存元素{#storage-elements-in-aem}
+# AEM 6.5 LTS中的儲存元素{#storage-elements-in-aem}
 
 本文涵蓋下列內容：
 
-* [AEM 6的儲存空間概覽](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
+* [AEM 6.5 LTS中的儲存空間概觀](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
 * [維護存放庫](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)
 
-## AEM 6的儲存空間概覽 {#overview-of-storage-in-aem}
+## AEM 6.5 LTS中的儲存空間概觀 {#overview-of-storage-in-aem}
 
-AEM 6最重要的變更之一是存放庫層級的創新。
+AEM 6.5 LTS最重要的變更之一是存放庫層級的創新。
 
-目前，AEM6提供兩種節點儲存實作： Tar儲存和MongoDB儲存。
+目前，AEM 6.5 LTS提供兩種節點儲存實作： Tar儲存和MongoDB儲存。
 
 ### Tar儲存 {#tar-storage}
 
 #### 執行最新安裝的AEM執行個體搭配Tar儲存 {#running-a-freshly-installed-aem-instance-with-tar-storage}
 
->[!CAUTION]
->
->區段節點存放區的PID已從org.apache.jackrabbit.oak變更。舊版AEM 6中的&#x200B;**plugins**.segment.SegmentNodeStoreService至AEM 6.3中的org.apache.jackrabbit.oak.segment.SegmentNodeStoreService。請確定已進行必要的設定調整，以便反映變更。
-
-依預設，AEM 6會使用Tar儲存空間，使用預設的設定選項來儲存節點和二進位檔。 您可以執行下列動作，手動設定其儲存設定：
+依預設，AEM 6.5 LTS會使用Tar儲存空間，使用預設的設定選項來儲存節點和二進位檔案。 您可以執行下列動作，手動設定其儲存設定：
 
 1. 下載AEM 6.5 LTS快速入門Jar並將其放入新資料夾中。
 1. 透過執行以下動作解壓縮AEM：
@@ -47,7 +43,7 @@ AEM 6最重要的變更之一是存放庫層級的創新。
 
 1. 在安裝目錄中建立名為`crx-quickstart\install`的資料夾。
 
-1. 在新建立的資料夾中建立名為`org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`的檔案。
+1. 在新建立的資料夾中建立名為`org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`的檔案。
 
 1. 編輯檔案並設定組態選項。 下列選項適用於區段節點存放區，這是AEM實施Tar儲存體的基礎：
 
@@ -57,6 +53,10 @@ AEM 6最重要的變更之一是存放庫層級的創新。
 1. 啟動AEM。
 
 ### Mongo儲存 {#mongo-storage}
+
+>[!NOTE]
+>
+>最低支援的Mongo版本為Mongo 6。
 
 #### 使用Mongo Storage執行最新安裝的AEM執行個體 {#running-a-freshly-installed-aem-instance-with-mongo-storage}
 
@@ -71,12 +71,12 @@ AEM 6.5 LTS可以設定為使用MongoDB儲存體執行，請遵循以下程式�
 1. 在安裝目錄中建立名為`crx-quickstart\install`的資料夾。
 1. 建立組態檔，使用您要在`crx-quickstart\install`目錄中使用的組態名稱來設定節點存放區。
 
-   檔案節點存放區(這是AEM的MongoDB儲存體實作的基礎)使用名為`org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`的檔案
+   檔案節點存放區(這是AEM的MongoDB儲存體實作的基礎)使用名為`org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`的檔案
 
 1. 編輯檔案並設定組態選項。 下列選項可供使用：
 
    * `mongouri`：連線至Mongo資料庫所需的[MongoURI](https://docs.mongodb.org/manual/reference/connection-string/)。 預設值為`mongodb://localhost:27017`
-   * `db`： Mongo資料庫的名稱。 根據預設，新的AEM 6安裝使用&#x200B;**aem-author**&#x200B;作為資料庫名稱。
+   * `db`： Mongo資料庫的名稱。 根據預設，新的AEM 6.5 LTS安裝使用&#x200B;**aem-author**&#x200B;作為資料庫名稱。
    * `cache`：快取大小(MB)。 此快取大小分佈於DocumentNodeStore中使用的各種快取中。 預設值為256。
    * `changesSize`： Mongo中用於快取diff輸出的限定集合大小（以MB為單位）。 預設值為256。
    * `customBlobStore`：表示使用自訂資料存放區的布林值。 預設值為false。

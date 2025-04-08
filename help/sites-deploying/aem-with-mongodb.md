@@ -12,14 +12,18 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
-source-git-commit: b87199e70b4fefc345c86eabbe89054d4b240e95
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '6217'
+source-wordcount: '5965'
 ht-degree: 0%
 
 ---
 
 # Adobe Experience Manager與MongoDB{#aem-with-mongodb}
+
+>[!NOTE]
+>
+>最低支援的Mongo版本為Mongo 6。
 
 本文旨在進一步瞭解成功使用MongoDB部署AEM (Adobe Experience Manager)所需的任務和考量事項。
 
@@ -74,8 +78,6 @@ AEM作者已連線至`mongod`個執行個體，每個AEM作者都連線至所有
 
 ### RAM {#ram}
 
-使用MMAP儲存引擎的MongoDB 2.6和3.0版需要資料庫的工作集及其索引符合RAM。
-
 RAM不足會導致效能大幅降低。 工作集和資料庫的大小與應用程式高度相關。 雖然可以做出一些估計，但最可靠的判斷所需RAM數量方法是建置AEM應用程式並進行負載測試。
 
 為了協助負載測試過程，可以假設工作集與資料庫總大小的比率如下：
@@ -85,11 +87,9 @@ RAM不足會導致效能大幅降低。 工作集和資料庫的大小與應用�
 
 這些比率表示SSD部署需要200 GB的RAM才能使用2 TB的資料庫。
 
-雖然相同的限制適用於MongoDB 3.0中的WiredTiger儲存引擎，但工作集、RAM和頁面錯誤之間的關聯性並不強。 WiredTiger的記憶體對應方式與MMAP儲存引擎不同。
-
 >[!NOTE]
 >
->對於使用MongoDB 3.0的AEM 6.1部署，Adobe建議使用WiredTiger儲存引擎。
+>對於使用MongoDB 6或以上版本的AEM 6.5 LTS部署，Adobe建議使用WiredTiger儲存引擎。
 
 ### 資料存放區 {#data-store}
 
@@ -235,8 +235,6 @@ cacheSizeInMB=128
 
 ### 作業系統支援 {#operating-system-support}
 
-MongoDB 2.6使用記憶體對應儲存引擎，對RAM和磁碟之間作業系統層級管理的某些方面很敏感。 MongoDB執行個體的查詢和讀取效能取決於避免或消除通常稱為頁面錯誤的緩慢I/O作業。 這些問題特別適用於`mongod`處理序的頁面錯誤。 請勿將此與作業系統層級的頁面錯誤混為一談。
-
 為了快速作業，MongoDB資料庫應該只存取已經在RAM中的資料。 它必須存取的資料是由索引和資料所組成。 這個索引和資料的集合稱為工作集。 當工作集大於可用的RAM時，MongoDB必須從磁碟中分頁該資料，這會產生I/O成本，並逐出已在記憶體中的其他資料。 如果逐出造成資料從磁碟重新載入，頁面錯誤會占主導地位，效能會降低。 如果工作集是動態和可變的，則會產生更多頁面錯誤以支援操作。
 
 MongoDB可在數種作業系統上執行，包括各種Linux®風格、Windows和macOS。 如需其他詳細資訊，請參閱[https://docs.mongodb.com/manual/installation/#supported-platforms](https://docs.mongodb.com/manual/installation/#supported-platforms)。 根據您的作業系統選擇，MongoDB有不同的作業系統層級建議。 本文記錄於[https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration](https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration)，並摘要至此處，以方便您參考。
@@ -246,7 +244,6 @@ MongoDB可在數種作業系統上執行，包括各種Linux®風格、Windows�
 * 關閉透明的hugpage和磁碟重組。 如需詳細資訊，請參閱[透明大型頁面設定](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/)。
 * [調整儲存資料庫檔案之裝置上的預讀設定](https://docs.mongodb.com/manual/administration/production-notes/#readahead)，以符合您的使用案例。
 
-   * 對於MMAPv1儲存引擎，如果您的工作集大於可用的RAM，而且檔案存取模式是隨機的，請考慮將讀取提前數降低到32或16。 評估不同的設定，以便找出最佳值，最大化常駐記憶體並降低頁面錯誤數目。
    * 對於WiredTiger儲存引擎，無論儲存媒體型別為何（旋轉、SSD等），都請將讀取前設定為0。 一般而言，除非測試顯示可測量、可重複及可靠的好處，以獲得更高的預先讀取值，否則請使用建議的預先讀取設定。 [MongoDB Professional Support](https://docs.mongodb.com/manual/administration/production-notes/#readahead)可提供非零預讀組態的建議與指引。
 
 * 如果您在虛擬環境中執行RHEL 7 / CentOS 7，請停用調整工具。
@@ -358,11 +355,13 @@ WiredTiger內部快取中的集合資料會解壓縮，並使用與磁碟格式�
 
 ### NUMA {#numa}
 
-NUMA （非統一記憶體存取）可讓核心管理記憶體對應到處理器核心的方式。 雖然此程式會嘗試讓核心的記憶體存取速度更快，以確保他們能夠存取所需的資料，但NUMA會干擾MMAP，導致無法預測讀取的額外延遲。 因此，必須在所有支援的作業系統上為`mongod`處理序停用NUMA。
+NUMA （非統一記憶體存取）可讓核心管理記憶體對應到處理器核心的方式。
 
 實質上，在NUMA架構中，記憶體會連線至CPU，而CPU會連線至匯流排。 在SMP或UMA架構中，記憶體會連線至匯流排並由CPU共用。 執行緒在NUMA CPU上分配記憶體時，會根據原則進行分配。 預設會分配附加到執行緒本機CPU的記憶體，除非沒有可用空間，否則會使用來自可用CPU的記憶體，但成本較高。 配置之後，記憶體不會在CPU之間移動。 配置是由從父系對話串繼承的原則執行，該對話串最終是啟動程式的對話串。
 
-在許多將電腦視為多核心統一記憶體架構的資料庫中，此情況會導致初始CPU先變滿，而次要CPU稍後變滿。 如果中央執行緒負責配置記憶體緩衝區，就特別正確。 解決方案是執行下列命令，變更用來啟動`mongod`處理序之主要執行緒的NUMA原則：
+在採用非統一記憶體存取(NUMA)的系統上執行MongoDB可能會造成許多作業問題，包括一段時間效能緩慢、無法使用所有可用的RAM，以及系統處理序使用率較高。
+
+解決方案是執行下列命令，變更用來啟動`mongod`處理序之主要執行緒的NUMA原則：
 
 ```shell
 numactl --interleaved=all <mongod> -f config
@@ -676,10 +675,6 @@ CSP可讓您微調原則。 不過，在複雜的應用程式中，開發CSP標�
 雖然MongoMK支援同時使用具有單一資料庫的多個AEM執行個體，但並不支援同時安裝。
 
 若要解決此問題，請確定先使用單一成員執行安裝，並在第一個成員完成安裝後新增其他成員。
-
-### 頁面名稱長度 {#page-name-length}
-
-如果AEM在MongoMK持續性管理員部署上執行，[頁面名稱限製為150個字元。](/help/sites-authoring/managing-pages.md)
 
 >[!NOTE]
 >
