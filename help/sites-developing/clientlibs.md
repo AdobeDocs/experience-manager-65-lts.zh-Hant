@@ -1,6 +1,6 @@
 ---
 title: 使用用戶端資料庫
-description: AEM提供使用者端程式庫資料夾，可讓您將使用者端程式碼儲存在存放庫中、將其組織成類別，並定義每個類別程式碼何時及如何提供給使用者端
+description: AEM 提供了用戶端庫資料夾，通過這些資料夾，您可以在存放庫中商店用戶端代碼，將其組織到類別中，並定義何時以及如何向用戶端提供每個代碼類別
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
 exl-id: cafc7120-114e-487a-8b81-9c695318731e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a061c19dcb883b94ee61be21459c46e21eaf696a
 workflow-type: tm+mt
 source-wordcount: '2791'
 ht-degree: 1%
@@ -19,13 +19,13 @@ ht-degree: 1%
 
 # 使用用戶端資料庫{#using-client-side-libraries}
 
-現代網站非常依賴由複雜的JavaScript和CSS程式碼驅動的使用者端處理。 組織和最佳化此程式碼的伺服可能是一個複雜的問題。
+現代網站嚴重依賴由複雜JavaScript和 CSS 代碼驅動的用戶端處理。 組織和優化此代碼的服務可能是個複雜的問題。
 
 為協助處理此問題，AEM提供&#x200B;**使用者端程式庫資料夾**，可讓您將使用者端程式碼儲存在存放庫中、將其組織成類別，以及定義每個類別程式碼何時及如何提供給使用者端。 然後，使用者端程式庫系統會負責在最終網頁中產生正確的連結，以載入正確的程式碼。
 
 ## AEM中使用者端資料庫的運作方式 {#how-client-side-libraries-work-in-aem}
 
-在頁面的HTML中包含使用者端資料庫（即JS或CSS檔案）的標準方式，就是在該頁面的JSP中包含`<script>`或`<link>`標籤，並包含相關檔案的路徑。 例如，
+在頁面的 HTML 中包含 用戶端 資料庫（即 JS 或 CSS 文件）的標準方法是簡單地在該頁面的 JSP 中包含 或 `<script>` `<link>` 標記，其中包含相關文件的路徑。 例如，
 
 ```xml
 ...
@@ -37,7 +37,7 @@ ht-degree: 1%
 ...
 ```
 
-雖然此方法可在AEM中運作，但當頁面及其組成元件變得複雜時，可能會導致問題。 在這種情況下，最終HTML輸出中可能會包含同一JS程式庫的多份副本，這是很危險的。 為避免此情況，並允許邏輯組織使用者端程式庫AEM使用&#x200B;**使用者端程式庫資料夾**。
+雖然此方法適用於AEM，但當頁面及其組成元件變得複雜時，它可以銷售機會問題。 在這種情況下，存在最終 HTML 輸出中可能包含同一 JS 資料庫的多個副本的危險。 若要避免此問題並允許邏輯組織用戶端資料庫AEM請使用 **用戶端資料庫資料夾**。
 
 使用者端程式庫資料夾是型別`cq:ClientLibraryFolder`的存放庫節點。 [CND表示法](https://jackrabbit.apache.org/node-type-notation.html)中的定義為
 
@@ -119,7 +119,7 @@ ht-degree: 1%
 
 ![clientlibarch](assets/clientlibarch.png)
 
-如需有關Widget使用者端資料庫特定需求的資訊，請參閱[使用和擴充Widget](/help/sites-developing/widgets.md)。
+有關特定於小部件的用戶端資料庫要求的資訊，請參閱 [使用和擴展小部件](/help/sites-developing/widgets.md)。
 
 Web使用者端必須擁有存取`cq:ClientLibraryFolder`節點的許可權。 您也可以從存放庫的安全區域公開程式庫（請參閱下方的從其他程式庫內嵌程式碼）。
 
@@ -127,39 +127,39 @@ Web使用者端必須擁有存取`cq:ClientLibraryFolder`節點的許可權。 �
 
 位於`/apps`下方的使用者端資料庫資料夾優先於`/libs`中類似名稱的資料夾。 例如，`/apps/cq/ui/widgets`優先於`/libs/cq/ui/widgets`。 當這些資料庫屬於相同類別時，會使用`/apps`以下的資料庫。
 
-### 找到使用者端程式庫資料夾並使用Proxy使用者端程式庫Servlet {#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet}
+### 查找用戶端庫檔案夾和使用代理用戶端庫 Servlet {#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet}
 
-在舊版中，使用者端程式庫資料夾位於存放庫中的`/etc/clientlibs`下方。 仍支援此功能，但建議使用者端程式庫現在位於`/apps`下方。 這是為了在其他指令碼附近找到使用者端程式庫，這些指令碼通常位於`/apps`和`/libs`下方。
-
->[!NOTE]
->
->使用者端程式庫資料夾下方的靜態資源必須位於名為&#x200B;*資源*&#x200B;的資料夾中。 如果您在資料夾&#x200B;*資源*&#x200B;下沒有靜態資源（例如影像），則無法在發佈執行個體上參考該資源。 範例如下：https://localhost:4503/etc.clientlibs/geometrixx/components/clientlibs/resources/example.gif
+在以前的版本中，用戶端資料庫資料夾位於存放庫的下方 `/etc/clientlibs` 。 目前仍支援此功能，但建議將用戶端資料庫置於 `/apps`下。 這是為了將用戶端資料庫放置在其他腳本附近，這些腳本通常在下面 `/apps` 和 `/libs`中找到。
 
 >[!NOTE]
 >
->若要將程式碼與內容和設定更隔離，建議在`/apps`下找出使用者端程式庫，並使用`allowProxy`屬性透過`/etc.clientlibs`公開它們。
+>用戶端資料庫資料夾下的靜態資源必須位於名為資源的&#x200B;**&#x200B;資料夾中。如果資料夾 *資源*&#x200B;下沒有靜態資源（如圖像），則無法在發佈執行個體上引用該資源。 以下是範例： https://localhost:4503/etc.clientlibs/geometrixx/components/clientlibs/resources/example.gif
 
-為了能夠存取`/apps`下的使用者端程式庫，使用Proxy servelt。 ACL仍強制在使用者端程式庫資料夾上，但如果`allowProxy`屬性設定為`true`，則servlet允許透過`/etc.clientlibs/`讀取內容。
+>[!NOTE]
+>
+>為了更好地將代碼與內容和配置隔離開來，建議將用戶端資料庫置於 下`/apps`，並使用 屬性 公開它們`/etc.clientlibs``allowProxy`。
 
-如果靜態資源位於使用者端程式庫資料夾下方的資源之下，則只能透過Proxy存取。
+為使客戶機 資料庫 下的 `/apps` 可存取，使用了 Proxy Servlet。 仍在客戶機資料庫資料夾上強制實施 ACL，但如果屬性設置為 ，`true`則 `allowProxy` servlet 允許通過`/etc.clientlibs/`讀取內容。
+
+如果靜態資源位於用戶端資料庫資料夾下的資源下，則只能通過代理訪問靜態資源。
 
 例如：
 
-* 您在`/apps/myproject/clientlibs/foo`中有clientlib
-* 您在`/apps/myprojects/clientlibs/foo/resources/icon.png`中有靜態影像
+* 您有一個 clientlib 在 `/apps/myprojects/clientlibs/foo`
+* 您有一個靜態圖像 `/apps/myprojects/clientlibs/foo/resources/icon.png`
 
 然後您將`foo`上的`allowProxy`屬性設定為true。
 
 * 您接著可以要求`/etc.clientlibs/myprojects/clientlibs/foo.js`
-* 然後您可以透過`/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`參考影像
+* 然後，您可以通過以下方式參考圖像 `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`
 
 >[!CAUTION]
 >
->使用代理使用者端程式庫時，AEM Dispatcher設定可能需要更新，以確保可允許具有擴充功能clientlibs的URI。
+>使用代理用戶端資料庫時，AEM Dispatcher配置可能需要更新，以確保允許具有擴展用戶端庫的 URI。
 
 >[!CAUTION]
 >
->Adobe建議在`/apps`下尋找使用者端程式庫，並使用Proxy servlet讓使用者端程式庫可供使用。 不過請記住，最佳實務仍要求公用網站不得包含直接透過`/apps`或`/libs`路徑提供的任何內容。
+>Adobe Systems 建議在 下 `/apps` 找到用戶端資料庫，並使用 Proxy Servlet 使其可用。 但是請記住，最佳實務仍然要求公共網站永遠不要包含直接通過 or `/libs` 路徑提供`/apps`的任何內容。
 
 ### 建立使用者端資源庫資料夾 {#create-a-client-library-folder}
 
@@ -187,24 +187,24 @@ Web使用者端必須擁有存取`cq:ClientLibraryFolder`節點的許可權。 �
 
    `#base=*[root]*`
 
-   將* `[root]`*替換為包含來源檔案的資料夾相對於TXT檔案的路徑。 例如，當來源檔案與TXT檔案位於相同的資料夾時，請使用下列文字：
+   取代 * `[root]`* 包含源檔的資料夾的路徑，相對於 TXT 檔。 例如，當源檔與 TXT 檔案位於同一資料夾中時，請使用以下文字：
 
    `#base=.`
 
-   下列程式碼會將根設定為`cq:ClientLibraryFolder`節點底下名為mobile的資料夾：
+   以下代碼將根設定為節點下 `cq:ClientLibraryFolder` 名為 mobile 的資料夾：
 
    `#base=mobile`
 
 1. 在`#base=[root]`下方的行中，輸入來源檔案相對於根的路徑。 將每個檔案名稱放在單獨的一行上。
 1. 按一下&#x200B;**「儲存全部」**。
 
-### 連結至相依性 {#linking-to-dependencies}
+### 連結到依賴項 {#linking-to-dependencies}
 
-當使用者端程式庫資料夾中的程式碼參考其他程式庫時，請將其他程式庫識別為相依性。 在JSP中，參照使用者端程式庫資料夾的`ui:includeClientLib`標籤會導致HTML程式碼包含您產生的程式庫檔案和相依性的連結。
+當用戶端資料庫資料夾中的代碼引用其他資料庫時，請將其他資料庫標識為依賴項。 在 JSP 中， `ui:includeClientLib` 引用客戶機資料庫資料夾的標記會導致 HTML 代碼包含對生成的資料庫文件和依賴項的連結。
 
-相依性必須是另一個`cq:ClientLibraryFolder`。 若要識別相依性，請使用下列屬性將屬性新增至您的`cq:ClientLibraryFolder`節點：
+相依項目必須是另一個 `cq:ClientLibraryFolder`。 若要標識依賴項，請使用以下屬性向節點添加 `cq:ClientLibraryFolder` 屬性：
 
-* **名稱：**&#x200B;相依性
+* **名稱：** 依賴項
 * **型別：**&#x200B;字串[]
 * **值：**&#x200B;目前程式庫資料夾所依賴之cq：ClientLibraryFolder節點的categories屬性值。
 
@@ -227,7 +227,7 @@ Web使用者端必須擁有存取`cq:ClientLibraryFolder`節點的許可權。 �
 
 使用categories屬性來識別要內嵌的使用者端資料庫資料夾。 若要內嵌程式庫，請使用下列屬性將屬性新增至內嵌`cq:ClientLibraryFolder`節點：
 
-* **名稱：**&#x200B;內嵌
+* **名稱：** 嵌入
 * **型別：**&#x200B;字串[]
 * **值：**&#x200B;要內嵌`cq:ClientLibraryFolder`節點的categories屬性值。
 
@@ -244,9 +244,9 @@ Web使用者端必須擁有存取`cq:ClientLibraryFolder`節點的許可權。 �
 <script type="text/javascript" src="/etc/clientlibs/foundation/personalization/kernel.js"></script>
 ```
 
-在這種情況下，將所有必要的使用者端程式庫程式碼結合到單一檔案中會很有用，這樣就能減少頁面載入上的來回請求數量。 若要這麼做，您可以使用`cq:ClientLibraryFolder`節點的內嵌屬性，將必要的程式庫`embed`到您應用程式專屬的使用者端程式庫中。
+在這種情況下，將所有必需的用戶端資料庫代碼合併到單個文件中非常有用，這樣可以減少載入頁面時的來回請求數。 為此，您可以使用 `embed` 節點的 `cq:ClientLibraryFolder` 嵌入屬性將所需的資料庫到特定于應用的用戶端資料庫中。
 
-AEM包含下列使用者端資料庫類別。 您應該僅內嵌特定網站運作所需的專案。 不過，**您應該維持此處列出的順序**：
+下列客戶資料庫類別包含 AEM。 您應該只嵌入執行您的特定網站所需的那些。 但是， **您應維持此處**&#x200B;列出的順序：
 
 1. `browsermap.standard`
 1. `browsermap`
@@ -267,13 +267,13 @@ AEM包含下列使用者端資料庫類別。 您應該僅內嵌特定網站運�
 1. `cq.collab.forum`
 1. `cq.cleditor`
 
-#### CSS檔案中的路徑 {#paths-in-css-files}
+#### CSS 檔案中的路徑 {#paths-in-css-files}
 
-內嵌CSS檔案時，產生的CSS程式碼會使用與內嵌程式庫相關的資源路徑。 例如，可公開存取的程式庫`/etc/client/libraries/myclientlibs/publicmain`內嵌`/apps/myapp/clientlib`使用者端程式庫：
+嵌入 CSS 檔時，生成的 CSS 代碼使用相對於嵌入資料庫的資源路徑。 例如，可公開訪問的資料庫 `/etc/client/libraries/myclientlibs/publicmain` 嵌入用戶端資料庫 `/apps/myapp/clientlib` ：
 
 ![screen_shot_2012-05-29at20122pm](assets/screen_shot_2012-05-29at20122pm.png)
 
-`main.css`檔案包含下列樣式：
+該檔案 `main.css` 包含以下樣式：
 
 ```xml
 body {
@@ -284,7 +284,7 @@ body {
 }
 ```
 
-`publicmain`節點產生的CSS檔案包含下列樣式（使用原始影像的URL）：
+節點生成的 CSS 文件 `publicmain` 包含以下樣式，使用原始圖像的URL：
 
 ```xml
 body {
@@ -295,15 +295,15 @@ body {
 }
 ```
 
-### 針對特定行動群組使用資料庫 {#using-a-library-for-specific-mobile-groups}
+### 將資料庫用於特定行動群組 {#using-a-library-for-specific-mobile-groups}
 
-使用使用者端資料庫資料夾的`channels`屬性，識別使用資料庫的行動群組。 當相同類別的程式庫是針對不同裝置功能而設計時，`channels`屬性很有用。
+`channels`使用用戶端資料庫資料夾的屬性來標識使用該資料庫的移動群組。當相同類別的程式庫是針對不同裝置功能而設計時，`channels`屬性很有用。
 
 若要將使用者端程式庫資料夾與裝置群組建立關聯，請將屬性新增至具有下列屬性的`cq:ClientLibraryFolder`節點：
 
-* **名稱：**&#x200B;管道
-* **型別：**&#x200B;字串[]
-* **值：**&#x200B;行動群組的名稱。 若要從群組中排除程式庫資料夾，請在名稱前面加上驚歎號(「！」)。
+* **名稱：** 頻道
+* **類型：** 字串[]
+* **值：** 行動群組的名稱。 若要從群組中排除 資料庫 資料夾，請在名稱前面加上感嘆號 （“！”）。
 
 例如，下表列出`cq.widgets`類別中每個使用者端程式庫資料夾的`channels`屬性值：
 
@@ -347,9 +347,9 @@ AEM允許可插拔的前處理器，並隨附對CSS和JavaScript的[YUI Compress
 
 * 或透過&#x200B;**HTML資料庫管理員** OSGi設定來定義系統預設設定
 
-clientlib節點上的前置處理器設定優先於OSGI設定。
+用戶端庫節點上的預處理器配置優先於 OSGI 配置。
 
-### 格式與範例 {#format-and-examples}
+### 格式和範例 {#format-and-examples}
 
 #### 格式 {#format}
 
@@ -378,7 +378,7 @@ jsProcessor: [
 ]
 ```
 
-#### 其他GCC選項 {#additional-gcc-options}
+#### 其他海灣合作委員會選項 {#additional-gcc-options}
 
 ```xml
 failOnWarning (defaults to "false")
@@ -387,13 +387,13 @@ languageOut (defaults to "ECMASCRIPT5")
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
-如需GCC選項的詳細資訊，請參閱[GCC檔案](https://developers.google.com/closure/compiler/docs/compilation_levels)。
+有關 GCC 選項的更多詳細資訊，請參閱 [GCC 文件](https://developers.google.com/closure/compiler/docs/compilation_levels)。
 
-### 設定系統預設的迷你器 {#set-system-default-minifier}
+### 設定系統預設縮小器 {#set-system-default-minifier}
 
-YUI已設定為AEM中的預設縮制器。 若要將此變更為GCC，請按照以下步驟操作。
+YUI 在 AEM 中設置為預設的縮小器。 若要將其更改為 GCC，請追隨以下步驟。
 
-1. 前往[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)的Apache Felix設定管理員
+1. 轉到位於 https://localhost:4502/system/console/configMgr 的 [Apache Felix Config Manager](https://localhost:4502/system/console/configMgr)
 1. 尋找並編輯&#x200B;**Adobe Granite HTML資料庫管理員**。
 1. 啟用&#x200B;**最小化**&#x200B;選項（如果尚未啟用）。
 1. 將&#x200B;**JS處理器預設組態**&#x200B;的值設定為`min:gcc`。
@@ -410,7 +410,7 @@ AEM提供數種用於偵錯和測試使用者端程式庫資料夾的工具。
 
 若要追蹤內嵌程式碼的來源，或確保內嵌使用者端程式庫產生預期的結果，您可以檢視執行階段內嵌檔案的名稱。 若要檢視檔案名稱，請將`debugClientLibs=true`引數附加至網頁的URL。 產生的程式庫包含`@import`個陳述式，而非內嵌程式碼。
 
-在先前[內嵌其他程式庫的程式碼](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries)區段的範例中，`/etc/client/libraries/myclientlibs/publicmain`使用者端程式庫資料夾內嵌`/apps/myapp/clientlib`使用者端程式庫資料夾。 將引數附加至網頁會在網頁的原始程式碼中產生以下連結：
+在先前[內嵌其他程式庫的程式碼](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries)區段的範例中，`/etc/client/libraries/myclientlibs/publicmain`使用者端程式庫資料夾內嵌`/apps/myapp/clientlib`使用者端程式庫資料夾。 將該参数追加到 Web 頁面會在 Web 頁面 的原始程式碼中生成以下連結：
 
 ```xml
 <link rel="stylesheet" href="/etc/clientlibs/mycientlibs/publicmain.css">
@@ -430,27 +430,27 @@ AEM提供數種用於偵錯和測試使用者端程式庫資料夾的工具。
 
 ### 探索使用者端資料庫 {#discover-client-libraries}
 
-`/libs/cq/granite/components/dumplibs/dumplibs`元件會產生系統上所有使用者端程式庫資料夾的資訊頁面。 `/libs/granite/ui/content/dumplibs`節點將元件作為資源型別。 若要開啟頁面，請使用下列URL （視需要變更主機和連線埠）：
+該 `/libs/cq/granite/components/dumplibs/dumplibs` 元件生成有關系統上所有用戶端資料庫資料夾的信息頁面。 `/libs/granite/ui/content/dumplibs`節點將元件作為資源類型。若要打開頁面，請使用以下URL（根據需要更改主機和連接埠）：
 
 `https://<host>:<port>/libs/granite/ui/content/dumplibs.test.html`
 
-資訊包括程式庫路徑和型別（CSS或JS）以及程式庫屬性的值（例如類別和相依性）。 頁面上的後續表格會顯示每個類別和管道中的程式庫。
+這些資訊包括資料庫路徑和類型（CSS 或 JS）以及資料庫屬性（如類別和依賴項）的值。 頁面上的後續表格顯示了每個類別和通道中的資料庫。
 
-### 檢視產生的輸出 {#see-generated-output}
+### 請參閱已產生的Output {#see-generated-output}
 
-`dumplibs`元件包含一個測試選擇器，顯示為`ui:includeClientLib`標籤產生的原始程式碼。 此頁面包含不同js、css和主題屬性組合的程式碼。
+該 `dumplibs` 元件包括一個測試選擇器，該显示為標記生成的 `ui:includeClientLib` 原始程式碼。 該頁面包括 js、css 和主題屬性不同組合的代碼。
 
-1. 使用下列其中一種方法來開啟「測試輸出」頁面：
+1. 使用以下方法之一打開測試Output頁面：
 
-   * 從`dumplibs.html`頁面，按一下&#x200B;**按一下此處輸出測試**&#x200B;文字中的連結。
+   * 在 `dumplibs.html` 頁面中，按兩下按兩下 **此處獲取輸出測試** 文字中的連結。
 
-   * 在網頁瀏覽器中開啟下列URL （視需要使用不同的主機和連線埠）：
+   * 在您的網页瀏覽器中開啟下列URL （根據需要使用不同的主機和連接埠）：
 
       * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
 
-   預設頁面顯示沒有categories屬性值的標籤的輸出。
+   默認頁面會顯示沒有類別屬性值的標記的輸出。
 
-1. 若要檢視類別的輸出，請輸入使用者端程式庫的`categories`屬性值，然後按一下&#x200B;**送出查詢**。
+1. 若要查看類別的輸出，請鍵入用戶端資料庫屬性 `categories` 的值，然後按兩下提交 **查詢**”
 
 ## 為開發和生產設定程式庫處理 {#configuring-library-handling-for-development-and-production}
 
