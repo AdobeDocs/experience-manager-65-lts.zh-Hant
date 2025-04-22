@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: d3356f5f-f80f-4ce0-b4e2-3ee927208ab1
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b76c11f28fab1be574142d73c13ea9555143bf9a
 workflow-type: tm+mt
-source-wordcount: '3360'
+source-wordcount: '3247'
 ht-degree: 0%
 
 ---
@@ -36,10 +36,6 @@ OSGi「*」提供標準化的原語，允許使用小型、可重複使用且協
 >所需的設定因專案而異。
 >
 >請參閱Web主控台，以取得使用的值以及引數的詳細資訊。
-
->[!NOTE]
->
->[AEM Tools](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html)的OSGi Configuration Diff工具可用來列出預設的OSGi設定。
 
 >[!NOTE]
 >
@@ -81,7 +77,7 @@ OSGi「*」提供標準化的原語，允許使用小型、可重複使用且協
 
 請參閱[AEM記錄](/help/sites-deploying/configure-logging.md)和[Sling記錄](https://sling.apache.org/documentation/development/logging.html)。
 
-**Apache Sling事件執行緒集區**&#x200B;設定：
+**Apache Sling執行緒集區**&#x200B;設定：
 
 * **最小集區大小**&#x200B;和&#x200B;**最大集區大小**，用來儲存事件執行緒的集區大小。
 
@@ -102,7 +98,7 @@ OSGi「*」提供標準化的原語，允許使用小型、可重複使用且協
 >
 >如果您在[生產就緒模式](/help/sites-administering/production-ready.md)中執行AEM，系統會自動為生產執行個體設定此設定。
 
-**Apache Sling JavaScript處理常式**&#x200B;設定以指令碼(servlet)編譯.java檔案的設定。
+**Apache Sling Java指令碼處理常式**&#x200B;設定以指令碼(servlet)編譯.java檔案的設定。
 
 某些設定可能會影響效能。 請儘可能停用這些設定，尤其是生產執行個體。
 
@@ -118,9 +114,9 @@ OSGi「*」提供標準化的原語，允許使用小型、可重複使用且協
 
 * **搜尋路徑**，jcrinstall會搜尋要安裝的資源的路徑清單，以及表示該路徑加權因子的數字。
 
-**Apache Sling作業事件處理常式**&#x200B;設定管理作業排程的引數：
+**Apache Sling佇列設定**&#x200B;設定管理作業排程的引數：
 
-* **重試間隔**、**重試次數上限**、**平行工作數目上限**、**認可等待時間**&#x200B;等等。
+* **重試間隔**、**最大重試次數**、**最大平行工作**&#x200B;等等。
 
 * 變更這些設定可以在有大量工作的情境中改善效能；例如，大量使用AEM DAM和工作流程。
 * 您情境的特定值應使用測試來建立。
@@ -177,7 +173,7 @@ OSGi「*」提供標準化的原語，允許使用小型、可重複使用且協
 
 * **每個要求的呼叫數**&#x200B;和&#x200B;**遞回深度**，可保護您的系統不受無限遞回和過多的指令碼呼叫的影響。
 
-**Apache Sling MIME型別服務**&#x200B;設定：
+**Apache Sling Commons MIME型別服務**&#x200B;設定：
 
 * **MIME型別**，以將專案所需的型別新增至系統。 如此可讓檔案上的`GET`要求設定連結檔案型別和應用程式的正確內容型別標頭。
 
@@ -239,23 +235,11 @@ OSGi「*」提供標準化的原語，允許使用小型、可重複使用且協
 * **執行路徑** — 列出搜尋可執行指令碼的路徑。 透過設定特定路徑，您可以限制可以執行的指令碼。 如果未設定路徑，則會使用預設值( `/` = root)，允許執行所有指令碼。
 如果設定的路徑值以斜線結尾，則會搜尋整個子樹。 如果沒有這類結尾斜線，指令碼只有在完全相符時才執行。
 
-* **指令碼使用者** — 此選擇性屬性可指定讀取指令碼所使用的存放庫使用者帳戶。 如果未指定帳戶，則預設會使用`admin`使用者。
-
 * **預設擴充功能** — 使用預設行為的擴充功能清單。 資源型別的最後一個路徑區段可作為指令碼名稱使用。
 
 **Apache HTTP元件Proxy組態** — 使用Apache HTTP使用者端的所有程式碼的Proxy組態，在建立HTTP時使用。 例如，在復寫上。
 
 建立組態時，請勿變更工廠組態。 請改用此處提供的組態管理員來建立此元件的工廠組態： **https://localhost:4502/system/console/configMgr/**。 **org.apache.http.proxyconfigurator.**&#x200B;中提供Proxy設定
-
->[!NOTE]
->
->在AEM 6.0及舊版中，Proxy是在Day Commons HTTP Client中設定。 自AEM 6.1及更新版本起，Proxy設定已移至「Apache HTTP元件Proxy設定」，而非「Day Commons HTTP Client」設定。
-
-**Day CQ Antispam**&#x200B;設定使用的反垃圾郵件服務(Akismet)。 此功能需要您註冊下列專案：
-
-* **提供者**
-* **API金鑰**
-* **已登入的URL**
 
 **Adobe Granite HTML Library Manager**&#x200B;設定以控制使用者端資料庫（css或js）的處理，包括如何檢視基礎結構。
 
@@ -281,7 +265,7 @@ OSGi「*」提供標準化的原語，允許使用小型、可重複使用且協
 >
 >如果您在[生產就緒模式](/help/sites-administering/production-ready.md)中執行AEM，系統會自動為生產執行個體設定此設定。
 
-**Day CQ HTTP Header Authentication Handler** HTTP要求之基本驗證方法的全系統設定。
+**Adobe Granite HTTP Header Authentication Handler** HTTP要求之基本驗證方法的全系統設定。
 
 使用[已關閉的使用者群組](/help/sites-administering/cug.md)時，您可以設定下列專案：
 
@@ -377,7 +361,7 @@ OSGi框架服務排名值用於表示呼叫此服務所用的順序。 此值是
 >
 >如果您在[生產就緒模式](/help/sites-administering/production-ready.md)中執行AEM，系統會自動為生產執行個體設定此設定。
 
-**Day CQ WCM連結檢查器設定器**&#x200B;設定：
+**Day CQ WCM連結檢查器**&#x200B;設定：
 
 * **重寫組態清單**，以指定內容連結檢查器組態的位置清單。 這些設定可以根據執行模式。 由於連結檢查器設定可能不同，因此此事實對於區分製作和發佈環境很重要。
 
@@ -427,7 +411,7 @@ OSGi框架服務排名值用於表示呼叫此服務所用的順序。 此值是
 
 **Day CQ工作流程電子郵件通知服務**&#x200B;設定工作流程所傳送通知的電子郵件設定。
 
-**CQ Rewriter HTML Parser Factory**
+**Adobe AEM Rewriter HTML Parser Factory**
 
 控制CQ重寫程式的HTML剖析器。
 

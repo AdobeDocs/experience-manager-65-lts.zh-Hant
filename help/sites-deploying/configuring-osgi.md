@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3bf3ba2e-f5f2-428a-a1fc-36f885350f6b
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b76c11f28fab1be574142d73c13ea9555143bf9a
 workflow-type: tm+mt
-source-wordcount: '1954'
+source-wordcount: '1900'
 ht-degree: 0%
 
 ---
@@ -174,9 +174,6 @@ Web主控台不會顯示存放庫中儲存變更的位置，但可以輕鬆找�
 * 根據服務名稱篩選
 * 根據執行模式篩選
 
->[!NOTE]
->
->另請閱讀[如何定義特定執行個體的存放庫型設定](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html)。
 
 ### 新增設定至存放庫 {#adding-a-new-configuration-to-the-repository}
 
@@ -186,9 +183,9 @@ Web主控台不會顯示存放庫中儲存變更的位置，但可以輕鬆找�
 
 1. 服務的&#x200B;**持續性身分** (PID)。
 
-   參考Web主控台中的&#x200B;**組態**&#x200B;欄位。 此名稱會顯示在組合名稱后的方括弧中（或顯示在頁面底部的&#x200B;**組態資訊**&#x200B;中）。
+   參考Web主控台中的&#x200B;**組態**。 名稱會顯示在頁面底部的&#x200B;**組態資訊**&#x200B;中。
 
-   例如，建立節點`com.day.cq.wcm.core.impl.VersionManagerImpl.`以設定&#x200B;**AEM WCM版本管理員**。
+   例如，`com.day.cq.wcm.core.impl.VersionManagerImpl.`可設定&#x200B;**AEM WCM版本管理員**。
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
@@ -237,13 +234,13 @@ Web主控台不會顯示存放庫中儲存變更的位置，但可以輕鬆找�
 
    >[!NOTE]
    >
-   >進行Factory組態時，將`-<identifier>`附加至名稱。
+   >進行Factory組態時，將`~<identifier>`附加至名稱。
    >
-   >原樣： `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
+   >原樣： `org.apache.sling.commons.log.LogManager.factory.config~<identifier>`
    >
    >其中`<identifier>`由您（必須）輸入以識別執行個體的任意文字取代（您無法忽略此資訊）；例如：
    >
-   >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
+   >`org.apache.sling.commons.log.LogManager.factory.config~MINE`
 
 1. 針對您要設定的每個引數，在此節點上建立一個屬性：
 
@@ -310,23 +307,7 @@ Web主控台不會顯示存放庫中儲存變更的位置，但可以輕鬆找�
 
 ### 標準設定 {#standard-configurations}
 
-下列清單顯示存放庫中（在標準安裝中）提供的一小部分設定：
-
-* 作者 — AEM WCM篩選器：
-
-  `libs/wcm/core/config.author/com.day.cq.wcm.core.WCMRequestFilter`
-
-* 發佈 — AEM WCM篩選器：
-
-  `libs/wcm/core/config.publish/com.day.cq.wcm.core.WCMRequestFilter`
-
-* 發佈 — AEM WCM頁面統計資料：
-
-  `libs/wcm/core/config.publish/com.day.cq.wcm.core.stats.PageViewStatistics`
-
->[!NOTE]
->
->由於這些設定位於`/libs`，因此不可直接編輯它們，但在自訂之前必須先複製到您的應用程式區域( `/apps`)。
+如果任何標準組態位於`/libs`，則不得直接編輯它，而是在自訂之前將其複製到您的應用程式區域( `/apps`)。
 
 若要列出執行個體中的所有設定節點，請使用CRXDE Lite中的&#x200B;**查詢**&#x200B;功能來提交下列SQL查詢：
 

@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 86613671-dacd-487e-b6ff-88365289e591
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b76c11f28fab1be574142d73c13ea9555143bf9a
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -41,10 +41,6 @@ AEM可讓您設定：
 * 要保留的版本數量
 * 版本輪換；大小上限或時間間隔
 * 寫入記錄訊息時要使用的格式
-
->[!NOTE]
->
->此[知識庫文章](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html)說明如何輪換request.log和access.log檔案。
 
 ## 個別服務的記錄器與寫入器 {#loggers-and-writers-for-individual-services}
 
