@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: b840d970-9365-4df3-8467-e34abd940074
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
 workflow-type: tm+mt
-source-wordcount: '3286'
+source-wordcount: '3287'
 ht-degree: 2%
 
 ---
@@ -60,18 +60,26 @@ ht-degree: 2%
 
 ### 復寫 — 立即可用 {#replication-out-of-the-box}
 
-AEM標準安裝中包含的We-Retail網站可用於說明復寫。
+依照[建立及組織頁面](/help/sites-authoring/managing-pages.md)來建立頁面。
 
 若要遵循此範例並使用預設的復寫代理程式，[安裝AEM](/help/sites-deploying/deploy.md)並包含：
 
+
 * 連線埠`4502`上的作者環境
 * 通訊埠`4503`上的發佈環境
+
+系統會從製作環境執行下列動作來執行此復寫：
+
+* **預設代理程式（發佈）**
+此代理程式會將內容復寫至預設的發佈執行個體。
+您可以從製作環境的「工具」主控台存取此專案的詳細資訊（設定和記錄）；或：
+  `http://localhost:4502/etc/replication/agents.author/publish.html`。
 
 >[!NOTE]
 >
 >預設為啟用：
 >
->* 作者上的代理程式：預設代理程式（發佈）
+>* 作者代理程式：預設代理程式（發佈），如果沒有，在繼續之前請務必啟用。
 >
 >預設會有效停用(自AEM 6.1起) ：
 >
@@ -84,19 +92,13 @@ AEM標準安裝中包含的We-Retail網站可用於說明復寫。
 #### 復寫（作者至發佈） {#replication-author-to-publish}
 
 1. 導覽至作者環境上的支援頁面。
-   **https://localhost:4502/content/we-retail/us/en/experience.html** `<pi>`
+   **https://localhost:4502/content/site1/test.html** `<pi>`
 1. 編輯頁面，以便新增一些文字。
 1. **啟動頁面**，以便發佈變更。
 1. 在發佈環境中開啟支援頁面：
-   **https://localhost:4503/content/we-retail/us/en/experience.html**
+   **https://localhost:4503/content/site1/test.html**
 1. 您現在可以看到您在Author上輸入的變更。
 
-系統會從製作環境執行下列動作來執行此復寫：
-
-* **預設代理程式（發佈）**
-此代理程式會將內容復寫至預設的發佈執行個體。
-您可以從製作環境的「工具」主控台存取此專案的詳細資訊（設定和記錄）；或：
-  `https://localhost:4502/etc/replication/agents.author/publish.html`。
 
 #### 復寫代理程式 — 立即可用 {#replication-agents-out-of-the-box}
 
@@ -108,7 +110,7 @@ AEM標準安裝中包含的We-Retail網站可用於說明復寫。
 * Dispatcher Flush
 此項用於管理Dispatcher快取。 如需詳細資訊，請參閱[使編寫環境中的Dispatcher快取失效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment)和[使發佈執行個體中的Dispatcher快取失效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance)。
 
-* [反向復寫](#reverse-replication-publish-to-author)
+* [反向復寫](#configuring-reverse-replication)
 用於從發佈復寫至作者。 反向復寫不適用於Communities功能，例如論壇、部落格和評論。 由於未啟用寄件匣，因此此功能實際上已停用。 使用反向復寫需要自訂設定。
 
 * 靜態代理程式

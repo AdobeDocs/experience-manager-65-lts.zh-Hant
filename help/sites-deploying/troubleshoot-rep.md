@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
 workflow-type: tm+mt
-source-wordcount: '1224'
+source-wordcount: '1221'
 ht-degree: 0%
 
 ---
@@ -33,8 +33,7 @@ ht-degree: 0%
 
 **按一下[啟動]按鈕時，是否會觸發復寫？ 如果NOT，則執行下列動作：**
 
-1. 前往/crx/explorer並以管理員身分登入。
-1. 開啟「內容總管」
+1. 前往/crx/de/index.jsp並以管理員身分登入。
 1. 檢視節點/bin/replicate或/bin/replicate.json是否存在。 如果節點存在，則刪除它並儲存。
 
 **復寫是否在復寫代理程式佇列中排入佇列？**
@@ -76,12 +75,12 @@ ht-degree: 0%
 有時候，在DEBUG層級將所有的復寫記錄檔設定為新增到個別的記錄檔中會很有幫助。 若要這麼做：
 
 1. 前往https://host:port/system/console/configMgr並以管理員身分登入。
-1. 尋找Apache Sling Logging Logger Factory，並按一下工廠設定右側的&#x200B;**+**&#x200B;按鈕以建立執行個體。 這會建立新的記錄日誌程式。
+1. 尋找Apache Sling記錄記錄器設定，並按一下工廠設定右側的&#x200B;**+**&#x200B;按鈕以建立執行個體。 這會建立新的記錄日誌程式。
 1. 設定設定如下：
 
    * 記錄層級： DEBUG
-   * 記錄檔路徑： logs/replication.log
-   * 類別： com.day.cq.replication
+   * 記錄檔：logs/replication.log
+   * 記錄器： com.day.cq.replication
 
 1. 如果您懷疑問題與任何方式的Sling事件/工作有關，您也可以在categories：org.apache.sling.event底下新增此Java™套件
 
