@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5 LTS檔案瞭解其運作方式，以及軟體可為您做什麼。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM 6.5 LTS
-source-git-commit: bec8386db59691ae2d0346afc0cbd48fbc4890de
+source-git-commit: 3f644c8df73281bc35bd91a552f8e86aaae2dd4a
 workflow-type: tm+mt
-source-wordcount: '6800'
+source-wordcount: '6797'
 ht-degree: 20%
 
 ---
@@ -88,7 +88,7 @@ ht-degree: 20%
          + [內容分析](/help/sites-authoring/content-insights.md)
          + [建立可存取的內容 (符合 WCAG 2.1)](/help/sites-authoring/creating-accessible-content.md)
          + [在設計模式中設定元件](/help/sites-authoring/default-components-designmode.md)
-         + [基礎元件](/help/sites-authoring/default-components-foundation.md)
+         + [Foundation 元件](/help/sites-authoring/default-components-foundation.md)
          + [檢視頁面分析資料](/help/sites-authoring/page-analytics-using.md)
       + 專案 {#projects}
          + [專案](/help/sites-authoring/projects.md)
@@ -387,7 +387,7 @@ ht-degree: 20%
       + [準備要翻譯的資產](/help/assets/preparing-assets-for-translation.md)
       + [從Experience Manager下載資產](/help/assets/download-assets-from-aem.md)
       + [Lightbox](/help/assets/light-box.md)
-      + [Assets深入分析](/help/assets/asset-insights.md)
+      + [資產深入分析](/help/assets/asset-insights.md)
       + [透過DTM啟用資產分析](/help/assets/use-dtm-for-asset-insights.md)
       + [設定資產分析](/help/assets/configure-asset-insights.md)
       + [簽入和簽出資產](/help/assets/check-out-and-submit-assets.md)
@@ -1092,7 +1092,7 @@ ht-degree: 20%
    + 整合 {#integrations}
       + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
       + [第三方 Commerce 解決方案](/help/commerce/cif/integrating/third-party.md)
-   + AEM店面 {#storefront}
+   + AEM 店面 {#storefront}
       + [快速入門](/help/commerce/cif/getting-started.md)
       + 製作 {#authoring}
          + [Commerce 體驗](/help/commerce/cif/authoring/authoring-commerce-experiences.md)
@@ -1226,7 +1226,7 @@ ht-degree: 20%
       + [AEM Headful 和 Headless 技術](/help/sites-developing/headful-headless.md)
       + Headless 體驗管理 {#headless}
          + [Headless和AEM](/help/sites-developing/headless/introduction.md)
-         + Headless歷程 {#journeys}
+         + Headless 歷程 {#journeys}
             + Headless 開發人員歷程 {#developer}
                + [瞭解AEM中的Headless](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/overview.html)
                + [了解 CMS Headless 開發](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/learn-about.html)
@@ -1238,7 +1238,7 @@ ht-degree: 20%
                + [如何整合一切](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/put-it-all-together.html)
                + [如何將 Headless 應用程式上線](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/go-live.html)
                + [選擇性 — 如何使用AEM建立單頁應用程式](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/create-spa.html)
-            + Headless內容架構者歷程 {#architect}
+            + Headless 內容架構者歷程 {#architect}
                + [AEM Headless內容架構者歷程概觀](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/overview.html)
                + 使用AEM建立Headless的[內容模型 — 簡介](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/introduction.html)
                + [使用AEM瞭解Headless的內容模型基本概念](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/basics.html)
@@ -1432,7 +1432,6 @@ ht-degree: 20%
          + [效能最佳化](/help/sites-deploying/configuring-performance.md)
          + [Assets效能指南](/help/sites-deploying/assets-performance-sizing.md)
          + [設定作法文章](/help/sites-deploying/ht-deploy.md)
-         + [設定Web主控台](/help/sites-deploying/configuring-web-console.md)
       + 升級至AEM 6.5 LTS {#upgrading}
          + [升級至AEM 6.5 LTS](/help/sites-deploying/upgrade.md)
          + [規劃升級](/help/sites-deploying/upgrade-planning.md)
@@ -1473,7 +1472,7 @@ ht-degree: 20%
       + [硬體大小調整准則](/help/managing/hardware-sizing-guidelines.md)
       + [企業 DevOps](/help/managing/enterprise-devops.md)
       + [SEO和URL管理最佳作法](/help/managing/seo-and-url-management.md)
-   + 親和力 {#accessibility}
+   + 協助工具 {#accessibility}
       + [AEM與網頁協助工具准則](/help/managing/web-accessibility.md)
       + [WCAG 2.1快速指南](/help/managing/qg-wcag.md)
    + 資料保護 {#data-protection}
