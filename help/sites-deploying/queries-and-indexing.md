@@ -1,6 +1,6 @@
 ---
 title: Oak查詢與索引
-description: 瞭解如何在Adobe Experience Manager (AEM) 6.5中設定索引。
+description: 瞭解如何在Adobe Experience Manager (AEM) 6.5 LTS中設定索引。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 432fc767-a6b8-48f8-b124-b13baca51fe8
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
-source-wordcount: '3034'
+source-wordcount: '2577'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->本文會介紹如何在AEM 6中設定索引。 如需最佳化查詢和索引效能的最佳實務，請參閱[查詢和索引的最佳實務](/help/sites-deploying/best-practices-for-queries-and-indexing.md)。
+>本文會介紹如何在AEM 6.5 LTS中設定索引。 如需最佳化查詢和索引效能的最佳實務，請參閱[查詢和索引的最佳實務](/help/sites-deploying/best-practices-for-queries-and-indexing.md)。
 
 ## 簡介 {#introduction}
 
@@ -50,7 +50,7 @@ Oak查詢引擎支援下列語言：
 
 一個索引子是&#x200B;**屬性索引**，其索引定義儲存在存放庫本身中。
 
-**Apache Lucene**&#x200B;和&#x200B;**Solr**&#x200B;的實作預設也可供使用，兩者都支援全文檢索索引。
+**Apache Lucene**&#x200B;的實作預設可用，支援全文檢索索引。
 
 如果沒有其他索引器可用，則會使用&#x200B;**周遊索引**。 這表示內容未編制索引，系統會周遊內容節點以尋找與查詢相符的內容。
 
@@ -109,7 +109,7 @@ Ordered索引是Property索引的延伸。 但是，它已被取代。 必須以
 
 ### Lucene全文索引 {#the-lucene-full-text-index}
 
-AEM 6提供以Apache Lucene為基礎的全文檢索器。
+AEM 6.5 LTS提供以Apache Lucene為基礎的全文檢索器。
 
 如果設定了全文檢索索引，則無論是否有其他條件已編制索引，也無論是否有路徑限制，所有具有全文檢索條件的查詢都會使用全文檢索索引。
 
@@ -308,7 +308,7 @@ select * from [nt:base] where [alias] = '/admin'
 
 #### 透過構成建立分析器 {#creating-analyzers-via-composition}
 
-分析器也可以根據`Tokenizers`、`TokenFilters`和`CharFilters`組成。 您可以指定分析器並建立其選擇性代碼化工具的子節點，以及依列出的順序套用的篩選器，以達成此目的。 另請參閱[https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
+分析器也可以根據`Tokenizers`、`TokenFilters`和`CharFilters`組成。 您可以指定分析器並建立其選擇性代碼化工具的子節點，以及依列出的順序套用的篩選器，以達成此目的。
 
 以這個節點結構為例：
 
@@ -359,87 +359,6 @@ select * from [nt:base] where [alias] = '/admin'
 工廠所需的任何組態引數都會指定為相關節點的屬性。
 
 對於必須載入外部檔案內容的載入停用字詞等情況，可透過為相關檔案建立`nt:file`型別的子節點來提供內容。
-
-### Solr索引 {#the-solr-index}
-
-Solr索引的用途是全文檢索搜尋，但也可以用來依路徑、屬性限制及主要型別限制來索引搜尋。 這表示Oak中的Solr索引可用於任何型別的JCR查詢。
-
-AEM中的整合會在存放庫層級進行，因此Solr是AEM隨附的新存放庫實作Oak中可能使用的索引之一。
-
-它可以設定為搭配AEM執行個體作為遠端伺服器運作。
-
-### 使用單一遠端Solr伺服器設定AEM {#configuring-aem-with-a-single-remote-solr-server}
-
-AEM也可以設定為與遠端Solr伺服器執行個體搭配使用：
-
-1. 下載並解壓縮最新版的Solr。 如需如何執行此動作的詳細資訊，請參閱[Apache Solr安裝檔案](https://solr.apache.org/guide/6_6/installing-solr.html)。
-1. 現在，建立兩個Solr分片。 您可以透過在解壓縮Solr的資料夾中為每個分割槽建立資料夾來執行此操作：
-
-   * 針對第一個分片，建立資料夾：
-
-   `<solrunpackdirectory>\aemsolr1\node1`
-
-   * 針對第二個分片，建立資料夾：
-
-   `<solrunpackdirectory>\aemsolr2\node2`
-
-1. 找到Solr套裝程式中的範例執行個體。 它位於封裝根目錄中名為&quot; `example`&quot;的資料夾中。
-1. 將下列資料夾從範例執行個體複製到兩個分片資料夾（ `aemsolr1\node1`和`aemsolr2\node2`）：
-
-   * `contexts`
-   * `etc`
-   * `lib`
-   * `resources`
-   * `scripts`
-   * `solr-webapp`
-   * `webapps`
-   * `start.jar`
-
-1. 在兩個分片資料夾的每個中建立名為「`cfg`」的資料夾。
-1. 將您的Solr和Zookeeper設定檔案放入新建立的`cfg`資料夾中。
-
-   >[!NOTE]
-   >
-   >如需Solr和ZooKeeper組態的詳細資訊，請參閱[Solr組態檔案](https://cwiki.apache.org/confluence/display/solr/ConfiguringSolr)和[ZooKeeper快速入門手冊](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html)。
-
-1. 移至`aemsolr1\node1`並執行下列命令，開始支援ZooKeeper的第一個分割：
-
-   ```xml
-   java -Xmx2g -Dbootstrap_confdir=./cfg/oak/conf -Dcollection.configName=myconf -DzkRun -DnumShards=2 -jar start.jar
-   ```
-
-1. 移至`aemsolr2\node2`並執行下列命令以啟動第二個分片：
-
-   ```xml
-   java -Xmx2g -Djetty.port=7574 -DzkHost=localhost:9983 -jar start.jar
-   ```
-
-1. 兩個分片啟動後，透過連線至`http://localhost:8983/solr/#/`的Solr介面，測試一切是否正常運作
-1. 啟動AEM並前往位於`http://localhost:4502/system/console/configMgr`的Web主控台
-1. 在&#x200B;**Oak Solr遠端伺服器組態**&#x200B;下設定下列組態：
-
-   * Solr HTTP URL： `http://localhost:8983/solr/`
-
-1. 在&#x200B;**Oak Solr**&#x200B;伺服器提供者下方的下拉式清單中選擇&#x200B;**遠端Solr**。
-
-1. 前往CRXDE並以管理員身分登入。
-1. 在&#x200B;**oak：index**&#x200B;下建立名為&#x200B;**solrIndex**&#x200B;的節點，並設定下列屬性：
-
-   * **型別：** solr （型別為String）
-   * **非同步處理：**&#x200B;非同步處理（字串型別）
-   * **重新索引：** true （屬於布林型別）
-
-1. 儲存變更。
-
-#### Solr的建議設定 {#recommended-configuration-for-solr}
-
-以下是可搭配本文所述所有三個Solr部署使用的基本設定範例。 它可容納已存在於AEM中的專用屬性索引；請勿與其他應用程式一起使用。
-
-若要正確使用它，您必須將歸檔的內容直接置於Solr主目錄中。 如果有多節點部署，應直接放置在每個節點的根資料夾下。
-
-建議的Solr組態檔
-
-[取得檔案](assets/recommended-conf.zip)
 
 ### AEM索引工具 {#aem-indexing-tools}
 

@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 6f92750a-4eaa-43cf-8f67-b1a65b1c6930
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1375'
 ht-degree: 0%
 
 ---
@@ -52,10 +52,6 @@ AEM的內部重新索引程式會收集存放庫資料並將其儲存在Oak索�
 1. 請等候約45分鐘，讓AEM繼續正常的非同步索引操作。
 
 ## 執行緒集區超載 {#thread-pool-overloaded}
-
->[!NOTE]
->
->若為AEM 6.1，請確定已安裝[AEM 6.1 CFP 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)。
 
 在特殊情況下，用於管理非同步索引的對話串池可能會變得超載。 為了隔離索引過程，可以設定對話串集區，以防止其他AEM工作干擾Oak及時索引內容的能力。 在這種情況下，請執行以下操作：
 

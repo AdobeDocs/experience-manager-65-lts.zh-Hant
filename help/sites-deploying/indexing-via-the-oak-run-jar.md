@@ -10,7 +10,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: a6344463-7796-4ee3-8b2e-b3bfd2aec99a
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Oak-run支援命令列上的所有索引使用案例，不必從JMX層級操作。 Oak-run方法的優點包括：
 
-1. 這是適用於AEM 6.4的全新索引工具集
+1. 這是自AEM 6.4以來新的索引工具集
 1. 這能縮短重新編列索引的時間，而有利於影響大型存放庫的重新編列索引時間
 1. 這減少了在AEM中重新索引時的資源消耗，導致其他AEM活動獲得更好的系統效能
 1. Oak-run提供頻外支援：如果生產條件不允許您在生產執行個體上執行重新索引，則可以使用複製的環境來重新索引，以避免對效能產生嚴重影響。
@@ -64,7 +64,7 @@ Oak-run支援命令列上的所有索引使用案例，不必從JMX層級操作�
 
 ### SegmentNodeStore和DocumentNodeStore的文字預先擷取 {#textpre-extraction}
 
-[文字預先擷取](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (AEM 6.3已有的功能)可用來減少重新索引的時間。 文字預先擷取可用於所有重新索引方法。
+[文字預先擷取](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (自AEM 6.3起便已存在的功能)可用來減少重新索引的時間。 文字預先擷取可用於所有重新索引方法。
 
 根據`oak-run.jar`索引方法，下圖中「執行重新索引」步驟的每一側都有各種步驟。
 
