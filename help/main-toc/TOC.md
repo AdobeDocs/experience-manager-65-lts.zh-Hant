@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5 LTS檔案瞭解其運作方式，以及軟體可為您做什麼。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 3f644c8df73281bc35bd91a552f8e86aaae2dd4a
+source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
 workflow-type: tm+mt
-source-wordcount: '6797'
+source-wordcount: '6795'
 ht-degree: 20%
 
 ---
@@ -397,13 +397,13 @@ ht-degree: 20%
       + [相關資產](/help/assets/related-assets.md)
       + [私人資料夾共用](/help/assets/private-folder.md)
       + [視訊轉譯](/help/assets/video-renditions.md)
-   + 和其他解決方案整合 {#integrations}
+   + 與其他解決方案整合 {#integrations}
       + [與  [!DNL Adobe Workfront] 整合](/help/assets/workfront-integrations.md)
       + [安裝 [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [設定 [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
 + Forms {#forms}
    + 發行說明 {#release-notes-new-features}
-      + [最新資訊](/help/forms/using/whats-new.md)
+      + [新增功能](/help/forms/using/whats-new.md)
       + [常見問題](/help/forms/using/frequently-asked-questions-faq.md)
    + 快速入門 {#getting-started}
       + [AEM Forms簡介](/help/forms/using/introduction-aem-forms.md)
@@ -1428,7 +1428,6 @@ ht-degree: 20%
          + [正在解除安裝工作](/help/sites-deploying/offloading.md)
          + [資源對應](/help/sites-deploying/resource-mapping.md)
          + [一致性和周遊檢查](/help/sites-deploying/consistency-check.md)
-         + [效能准則](/help/sites-deploying/performance-guidelines.md)
          + [效能最佳化](/help/sites-deploying/configuring-performance.md)
          + [Assets效能指南](/help/sites-deploying/assets-performance-sizing.md)
          + [設定作法文章](/help/sites-deploying/ht-deploy.md)

@@ -1,6 +1,6 @@
 ---
-title: 監控和維護您的Adobe Experience Manager執行個體
-description: 了解如何監視和維護您的Adobe Experience Manager執行個體。
+title: 監控及維護您的Adobe Experience Manager執行個體
+description: 瞭解如何監控及維護您的Adobe Experience Manager執行個體。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
@@ -12,14 +12,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
 workflow-type: tm+mt
-source-wordcount: '5792'
+source-wordcount: '5601'
 ht-degree: 0%
 
 ---
 
-# 監控和維護您的Adobe Experience Manager執行個體{#monitoring-and-maintaining-your-aem-instance}
+# 監控及維護您的Adobe Experience Manager執行個體{#monitoring-and-maintaining-your-aem-instance}
 
 部署AEM執行個體後，您必須監控並維護其操作、效能和完整性。
 
@@ -61,10 +61,6 @@ ht-degree: 0%
 >
 >如果沒有這項測試，備份可能會毫無用處（最壞的情況）。
 
->[!NOTE]
->
->有關備份性能的更多信息，請閱讀 [返回性能](/help/sites-deploying/configuring-performance.md#backup-performance) 部分。
-
 ### 備份軟體安裝 {#backing-up-your-software-installation}
 
 安裝或對配置進行重大更改后，請創建軟體安裝備份。
@@ -72,7 +68,7 @@ ht-degree: 0%
 若要完成此任務， [請備份整個存放庫](#backing-up-your-repository) 然後：
 
 1. 停止AEM。
-1. 從您的檔案系統備份整個`<cq-installation-dir>`。
+1. 從檔案系統中返回整個 `<cq-installation-dir>` 。
 
 >[!CAUTION]
 >
@@ -86,7 +82,7 @@ ht-degree: 0%
 >
 >磁碟映象也可作為備份機制使用。
 
-### 備份存放庫 {#backing-up-your-repository}
+### 備份您的存放庫 {#backing-up-your-repository}
 
 CRX檔案的[備份與還原](/help/sites-administering/backup-and-restore.md)區段涵蓋所有與CRX存放庫備份相關的問題。
 
@@ -96,11 +92,11 @@ CRX檔案的[備份與還原](/help/sites-administering/backup-and-restore.md)�
 
 **清除版本**&#x200B;工具旨在清除存放庫中節點或節點階層的版本。 其主要用途是協助您移除舊版節點，以縮小存放庫的大小。
 
-本節將討論與AEM的版本設定功能相關的維護操作。 **清除版本**&#x200B;工具旨在清除存放庫中節點或節點階層的版本。 其主要目的是通過刪除舊版本的節點來説明您減小存放庫的大小。
+本節將討論與AEM的版本設定功能相關的維護操作。 **清除版本**&#x200B;工具旨在清除存放庫中節點或節點階層的版本。 其主要用途是協助您移除舊版節點，以縮小存放庫的大小。
 
 ### 概觀 {#overview}
 
-清除 **版本** 工具可作為每周維護任務提供。 在首次使用之前，必須先添加它，然後進行配置。 之後，可依請求或每週執行。
+**清除版本**&#x200B;工具可做為每週維護工作使用。 在第一次使用之前，必須先新增該變數，然後進行設定。 之後，可依請求或每週執行。
 
 ### 清除網站的版本 {#purging-versions-of-a-web-site}
 
@@ -160,7 +156,7 @@ CRX檔案的[備份與還原](/help/sites-administering/backup-and-restore.md)�
 >
 >* http://localhost:4502/etc/versioning/purge.html
 >
->必須還原存放庫，才能還原已清除的節點。 在清除之前，請一律執行試用，以處理您的設定。
+>如果不還原存放庫，則無法還原已清除的節點。 通過始終在清除之前執行試運行來照顧您的配置。
 
 #### 試用 — 分析主控台 {#analyzing-the-console}
 
@@ -193,7 +189,7 @@ CRX檔案的[備份與還原](/help/sites-administering/backup-and-restore.md)�
 
 ## 使用稽核記錄和記錄檔 {#working-with-audit-records-and-log-files}
 
-您可以在不同的位置找到與Adobe Experience Manager (AEM)相關的稽核記錄和記錄檔。 以下內容旨在讓您大致瞭解可以找到的內容和位置。
+您可以在不同的位置找到與Adobe Experience Manager (AEM)相關的稽核記錄和記錄檔。 以下提供您可找到內容及位置的概觀。
 
 ### 使用記錄檔 {#working-with-logs}
 
@@ -209,11 +205,11 @@ AEM WCM會記錄詳細的記錄。 拆開包裝並開始快速入門後，您可
 
 * 已根據模式`{original_filename}.yyyy-MM-dd`重新命名`error.log`檔案。 例如，在2010年7月11日，將目前的記錄檔重新命名為`error.log-2010-07-10`，然後建立新的`error.log`。
 
-* 上一個日誌文件不會被刪除，因此您有責任定期清理舊的日誌文件以限制磁碟使用量。
+* 先前的記錄檔不會被刪除，因此您有責任定期清理舊記錄檔，以限制磁碟的使用量。
 
 >[!NOTE]
 >
->如果升級 AEM 安裝，AEM不再使用的任何現有記錄檔都將保留在磁碟上。 您可以毫無風險地刪除它們。 所有新的記錄專案都會寫入新的記錄檔中。
+>如果您升級AEM安裝，則AEM不再使用的任何現有記錄檔會保留在磁碟上。 您無須冒風險即可移除這些專案。 所有新的記錄專案都會寫入新的記錄檔中。
 
 ### 尋找記錄檔 {#finding-the-log-files}
 
@@ -278,7 +274,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 | 0 | 嚴重錯誤 | 動作已失敗，安裝程式無法繼續。 |
 |---|---|---|
 | 1 | 錯誤 | 動作已失敗。 安裝會繼續，但部分AEM WCM未正確安裝且無法運作。 |
-| 2 | 警告 | 動作成功但發生問題。 AEM WCM可能正常運作，也可能無法正常運作。 |
+| 2 | 警告 | 作已成功，但遇到問題。 AEM WCM可能會也可能不會正常工作。 |
 | 3 | 資訊 | 動作已成功。 |
 
 ### 建立自訂記錄檔 {#create-a-custom-log-file}
@@ -294,7 +290,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
    * 名稱：`org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
 
-     其中 `<identifier>` 替換為您（必須）輸入以標識執行個體免費文本（不能省略此信息）。
+     其中`<identifier>`由您（必須）輸入以識別執行個體的任意文字取代（您無法忽略此資訊）。
 
      例如 `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
@@ -316,7 +312,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
      型別：字串[] （字串+多個）
 
-     值：指定記錄器要記錄消息的OSGi服務;例如，以下所有內容：
+     值：指定記錄器要記錄訊息的OSGi服務；例如，下列全部：
 
       * `org.apache.sling`
       * `org.apache.felix`
@@ -334,7 +330,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
         類型：`String`
 
-        值：根據需要指定日誌消息的模式;例如
+        值：視需要指定記錄訊息的模式；例如，
 
         `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
 
@@ -435,13 +431,13 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
    >指示何時建立新檔案（以及根據名稱模式重新命名現有檔案）。
    >
    >* 可使用數字指定大小限制。 如果未指定大小指標，則會將其視為位元組數，或者您可以新增其中一個大小指標 — `KB`、`MB`或`GB` （忽略大小寫）。
-   >* 可以將時間/日期計劃指定為模式 `java.util.SimpleDateFormat` 。 它定義了文件旋轉之後的時段。 此外，附加在旋轉檔的後綴（用於識別）。
+   >* 可將時間/日期排程指定為`java.util.SimpleDateFormat`模式。 它會定義檔案旋轉的時間段。 此外，尾碼也會附加至旋轉後的檔案（用於識別）。
    >
    >預設值為「」。yyyy-MM-dd （用於每日日誌輪換）。
    >
    >例如，在 2010 年 1 月 20 日午夜（或在此日期之後出現的第一條日誌消息精確時）,../logs/error.log 更名為 ../logs/error.log.2010-01-20. 1 月 21 日的記錄輸出到（新的和空的）../logs/error.log 直到在下一個日期更改時滾動。
    >
-   >| `'.'yyyy-MM` | 每月月初輪換 |
+   >| `'.'yyyy-MM` | 每個月初的輪換 |
    >|---|---|
    >| `'.'yyyy-ww` | 每週第一天的輪換（視地區設定而定）。 |
    >| `'.'yyyy-MM-dd` | 在每天的午夜輪換。 |
@@ -516,7 +512,7 @@ OSGi事件也會產生稽核記錄，您可以從AEM Web Console的&#x200B;**組
    * 檢視代理程式是否已啟用。
    * 檢視任何復寫的目標。
    * 檢視復寫佇列是否為使用中（已啟用）。
-   * 檢視佇列中是否有任何專案。
+   * 查看佇列中是否有任何專案。
    * **重新整理**&#x200B;或&#x200B;**清除**&#x200B;以更新佇列專案的顯示。 這麼做有助於檢視進入和離開佇列的專案。
    * **檢視記錄檔**&#x200B;以存取復寫代理程式的任何動作記錄檔。
    * **測試目標執行個體的連線**。
@@ -538,13 +534,13 @@ OSGi事件也會產生稽核記錄，您可以從AEM Web Console的&#x200B;**組
 
 [效能最佳化](/help/sites-deploying/configuring-performance.md)是互動式處理序，在開發期間接收焦點。 部署後，會在特定間隔或事件後進行稽核。
 
-收集最佳化資訊時使用的方法也可用於持續監控。
+在收集資訊以進行優化時使用的方法也可用於持續監視。
 
 >[!NOTE]
 >
->也可以檢查可改善效能](/help/sites-deploying/configuring-performance.md#configuring-for-performance)的特定[組態。
+>還可以檢查可用於提高性能](/help/sites-deploying/configuring-performance.md#configuring-for-performance)的特定[配置。
 
-以下列出常見的效能問題，以及如何發現和處理這些問題的建議。
+下面列出了發生的常見性能問題，以及有關如何發現和抵消這些問題的建議。
 
 | 區域 | 症狀 | 若要增加容量…… | 若要減少磁碟區…… |
 |---|---|---|---|
@@ -579,7 +575,7 @@ OSGi事件也會產生稽核記錄，您可以從AEM Web Console的&#x200B;**組
    * 提出問題，例如：
 
       * 問題是否只會在特定時間發生？
-      * 問題是否只發生在特定頁面？
+      * 問題是否僅發生在特定頁面上？
       * 其他請求是否會受到影響？
 
    * 收集儘可能多的資訊，以便與您在正常情況下的系統知識進行比較：
@@ -651,11 +647,6 @@ OSGi事件也會產生稽核記錄，您可以從AEM Web Console的&#x200B;**組
    <td>JConsole</td>
    <td>觀察JVM量度和執行緒。</td>
    <td><p>使用方式： jconsole</p> <p>請參閱<a href="https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html">jconsole</a>和<a href="#monitoring-performance-using-jconsole">使用JConsole</a>監控效能。</p> <p><strong>注意：</strong>若使用JDK 1.8，JConsole可透過外掛程式擴充；例如Top或TDA （對話串傾印分析器）。</p> </td>
-  </tr>
-  <tr>
-   <td>Java™ VisualVM</td>
-   <td>觀察JVM量度、執行緒、記憶體及設定檔分析。</td>
-   <td><p>使用方式： visualvm或visualvm<br /> </p> <p>請參閱<a href="https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/">visualvm</a>和<a href="#monitoring-performance-using-j-visualvm">使用(J)VisualVM</a>監控效能。</p> <p><strong>注意：</strong>若使用JDK 1.8，VisualVM可使用外掛程式進行擴充。 VisualVM在JDK 9之後即終止。 請改用Java™ Flight Recorder。</p> </td>
   </tr>
   <tr>
    <td>桁架/桁架， lsof</td>
@@ -925,31 +916,6 @@ JDK可使用工具命令`jconsole`。
 
    現在您可以選取其他選項。
 
-### 使用 （J）VisualVM 監控性能 {#monitoring-performance-using-j-visualvm}
-
-對於 JDK 6-8，可以使用 工具 命令 `visualvm` 。 安裝JDK後，您可以執行下列動作：
-
-1. 啟動您的AEM執行個體。
-
-   >[!NOTE]
-   >
-   >如果使用Java™ 5，您可以將`-Dcom.sun.management.jmxremote`引數新增到啟動JVM的Java™命令列。 Java™ 6依預設會啟用JMX。
-
-1. 執行：
-
-   * `jvisualvm`：在JDK 1.6 bin資料夾（已測試的版本）中
-   * `visualvm`：可從[VisualVM](https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/) （leading edge版本）下載
-
-1. 在`Local`應用程式中，按兩下`com.day.crx.quickstart.Main`。 「概述」會顯示為預設值：
-
-   ![chlimage_1-2](assets/chlimage_1-2.png)
-
-   現在您可以選取其他選項，包括「監視」：
-
-   ![chlimage_1-3](assets/chlimage_1-3.png)
-
-您可以使用此工具來產生對話串傾印和記憶體磁頭傾印。 技術支援團隊通常會要求您提供此資訊。
-
 ### 資訊彙集 {#information-collection}
 
 儘可能瞭解您的安裝狀況，有助於您追蹤可能導致效能變更的原因，以及這些變更是否合理。 定期收集這些量度，以便輕鬆檢視重大變更。
@@ -1039,9 +1005,9 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 #### 資產的平均大小是多少？ {#what-is-the-average-size-of-the-assets}
 
-要確定資料夾的總 `/var/dam` 大小，請執行以下作：
+若要判斷`/var/dam`資料夾的總大小：
 
-1. 使用 WebDAV 將存放庫映射到本地文件系統。
+1. 使用WebDAV將存放庫對應到本機檔案系統。
 
 1. 使用命令列：
 
@@ -1103,16 +1069,11 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 >* [執行緒傾印](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
 >* [分析記憶體問題](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 >* [使用內建分析工具](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)進行分析
->* [分析緩慢和封鎖的處理序](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
 ### CPU 100% {#cpu-at}
 
-如果系統的CPU持續以100%的速度執行，請參閱下列內容：
-
-* 知識庫：
-
-   * [分析緩慢和封鎖的處理序](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+如果系統的CPU持續以100%執行，請檢查AEM記錄檔並使用top、htop或jstack等工具來識別高CPU執行緒。 分析對話串傾印以找出無限回圈、封鎖的對話串或過多的記憶體回收。
 
 ### 記憶體不足 {#out-of-memory}
 
@@ -1136,32 +1097,29 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * 無論您是否已停用除錯資訊的收集，都可以在各種位置進行設定，包括：
 
    * [Apache Sling JSP指令碼處理常式](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
-   * [Apache Sling JavaScript處理程式](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
-   * [Apache Sling 記錄組態](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
-   * [CQ HTML 庫管理員](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [CQ WCM Debug 篩選](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
-   * [伐木](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
+   * [Apache Sling JavaScript處理常式](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
+   * [Apache Sling記錄設定](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
+   * [CQ HTML資料庫管理員](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
+   * [CQ WCM偵錯篩選器](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+   * [記錄器](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
-* 是否已以及如何配置 [版本清除](/help/sites-deploying/version-purging.md)
+* 您是否設定[版本清除](/help/sites-deploying/version-purging.md)，以及設定方式
 * 知識庫：
 
    * [開啟太多檔案](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
-   * [日誌佔用太多磁碟空間](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### 定期效能降低 {#regular-performance-degradation}
 
-如果您在每次重新啟動後（有時一周或更晚）看到執行個體的性能下降，則可以檢查以下内容：
+如果您在每次重新開機後（有時是一週或以後）發現執行個體的效能惡化，則可以檢查下列專案：
 
 * [記憶體不足](#outofmemory)
-* 知識庫：
-
-   * [未關閉的工作階段](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html)
+* [未關閉的工作階段](/help/sites-administering/troubleshoot.md#checking-for-unclosed-jcr-sessions-checking-for-unclosed-jcr-sessions)
 
 ### JVM調整 {#jvm-tuning}
 
-Java™ Virtual Machine (JVM)在調整方面已有所改善(尤其是自Java™ 7以來)。 因此，指定合理的固定JVM大小並使用預設值通常是合適的。
+Java™ Virtual Machine (JVM)在調整方面已有所改善。 因此，指定合理的固定JVM大小並使用預設值通常是合適的。
 
-如果預設設置不合適，那麼建立一種監視和評估氣相色譜性能的方法非常重要。 在嘗試調整 JVM 之前執行此作。 此過程可能涉及監視因素，包括堆大小、演算法和其他方面。
+如果預設設定不適用，則建立方法來監控和評估GC效能很重要。 請先執行此動作，然後再嘗試調整JVM。 此程式可能涉及監視因素，包括棧積大小、演演算法及其他方面。
 
 常見的選項包括：
 
@@ -1190,12 +1148,6 @@ Java™ Virtual Machine (JVM)在調整方面已有所改善(尤其是自Java™ 
   ```
 
 * 然後使用JConsole連線到JVM；請參閱以下內容：
-  ` [https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html)`
+  ` [https://docs.oracle.com/en/java/javase/17/management/using-jconsole.html](https://docs.oracle.com/en/java/javase/17/management/using-jconsole.html)`
 
 您可以檢視使用了多少記憶體、使用了哪些GC演演算法、執行時間長短，以及此過程對您的應用程式效能有何影響。 如果沒有它，調整只是「隨機地轉動旋鈕」。
-
->[!NOTE]
->
->若為Oracle的VM，也可在下列網址取得資訊：
->
->[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)
