@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e9b26de3-6e14-4187-8f25-6e56ee3092a7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '611'
 ht-degree: 3%
 
 ---
@@ -100,10 +100,6 @@ ht-degree: 3%
 </table>
 
 換句話說，將UI的區段從傳統UI移轉到觸控式UI意指將&#x200B;*ExtJS Widget*&#x200B;移轉到&#x200B;*Sling元件*。 為方便起見，觸控式UI以Granite UI框架為基礎，該框架已為UI提供了一些Sling元件（稱為Granite UI元件）。
-
-開始之前，請檢查狀態和相關建議：
-
-* [客戶適用的使用者介面建議](/help/sites-deploying/ui-recommendations.md)
 
 開發觸控式UI的基礎知識提供了堅實的基礎：
 

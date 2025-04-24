@@ -11,10 +11,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4f830ee9-e0e3-48df-b67d-709258cb1991
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 4%
+source-wordcount: '374'
+ht-degree: 5%
 
 ---
 
@@ -71,10 +71,6 @@ ht-degree: 4%
 </table>
 
 ## UI {#ui}
-
-有關使用者介面的最佳實務說明如下：
-
-[客戶適用的使用者介面建議](/help/sites-deploying/ui-recommendations.md)
 
 AEM目前在同一版本中有兩個UI：傳統和觸控最佳化UI。 因此，客戶必須在專案實作期間決定使用哪一個。 本檔案旨在協助您找到正確的選擇。
 

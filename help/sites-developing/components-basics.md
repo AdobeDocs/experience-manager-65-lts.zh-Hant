@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '4843'
+source-wordcount: '4834'
 ht-degree: 1%
 
 ---
@@ -51,8 +51,6 @@ ht-degree: 1%
   [標準使用者介面](/help/sites-developing/touch-ui-concepts.md)是以Adobe Experience Cloud的統一使用者體驗為基礎，使用[Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui)和[Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui)的基礎技術。
 * **傳統UI**
 以AEM 6.4已淘汰的ExtJS技術為基礎的使用者介面。
-
-如需詳細資訊，請參閱[客戶的UI介面建議](/help/sites-deploying/ui-recommendations.md)。
 
 可以實作元件以支援觸控式UI和/或傳統UI。 檢視標準執行個體時，您也會看到原本針對傳統UI或觸控式UI （或兩者）設計的現成元件。
 

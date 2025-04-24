@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 29c20cf3-1694-4d06-ab7c-688018808c44
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '1790'
+source-wordcount: '1762'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,6 @@ AEM中的許多效能測量（例如查詢回應時間）都可能受到系統�
 
 * **載入執行器**&#x200B;是企業級載入測試產品。 提供免費的評估版本。 如需詳細資訊，請參閱[https://www.microfocus.com/en-us/portfolio/performance-engineering/overview](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
 
-* 也可以使用[Vercara](https://vercara.com/website-performance-management)之類的網站負載測試工具。
 * 測試行動或回應式網站時，必須使用另一組工具。 這些設定可藉由節流網路頻寬、模擬較慢的行動連線(如3G或EDGE)來運作。 使用範圍較廣的工具包括：
 
    * **[網路連結調節器](https://nshipster.com/network-link-conditioner/)** — 它提供簡單易用的UI，在網路棧疊上以相當低的層級運作。 其中包括OS X和iOS的版本；
@@ -108,21 +107,18 @@ Google的PageSpeed工具提供網站分析，以符合頁面效能最佳實務�
 
 * **整合快取統計資料** MBean。 您可以透過以下位置直接存取該區域：
 
-`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
+`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DConsolidated+Cache+statistics%2Ctype%3DConsolidatedCacheStats`
 
 對於名為&#x200B;**Document-Diff**&#x200B;的快取，命中率應超過`.90`。 如果點選率降至90%以下，您可能必須編輯`DocumentNodeStoreService`設定。 Adobe產品支援可為您的環境建議最佳設定。
 
 * **Oak儲存庫統計資料** Mbean。 您可以透過以下位置直接存取該區域：
 
-`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D16%2Cname%3D%22Oak+Repository+Statistics%22%2Ctype%3D%22RepositoryStats%22`
+`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DOak+Repository+Statistics%2Ctype%3DRepositoryStats`
 
 **ObservationQueueMaxLength**&#x200B;區段會顯示Oak的觀察佇列中過去小時、分鐘、秒和周的事件數。 在「每小時」區段中找出事件數量最多者。 將此數字與`oak.observation.queue-length`設定進行比較。 如果為觀察佇列顯示的最高數目超過`queue-length`設定：
 
-1. 建立名為的檔案： `com.adobe.granite.repository.impl.SlingRepositoryManager.cfg`，其中包含引數`oak.observation.queue‐length=50000`
+1. 建立名為的檔案： `com.adobe.granite.repository.impl.SlingRepositoryManager.config`，其中包含引數`oak.observation.queue‐length=50000`
 1. 將其放在/crx--quickstart/install資料夾下。
-
->[!NOTE]
->請參閱[AEM 6.x | 效能調整秘訣](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html)
 
 預設值為10,000，但大多數部署都必須將其提高至20,000或50,000。
 
@@ -150,10 +146,9 @@ Google的PageSpeed工具提供網站分析，以符合頁面效能最佳實務�
 * 檢視錯誤記錄檔中是否有錯誤或警告。 如需詳細資訊，請參閱[記錄](/help/sites-deploying/configure-logging.md)。
 * 監視系統硬體資源，例如記憶體和CPU使用率、磁碟I/O或網路I/O。這些資源通常是造成效能瓶頸的原因。
 * 最佳化頁面的架構以及處理方式，以儘量減少URL引數的使用，進而允許儘可能多的快取。
-* 請依照[效能最佳化](/help/sites-deploying/configuring-performance.md)和[效能調整提示](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html)檔案操作。
-
+* 請依照[效能最佳化](/help/sites-deploying/configuring-performance.md)檔案操作。
 * 如果編輯作者執行個體上的特定頁面或元件時發生問題，請使用TouchUI開發人員模式來檢查有問題的頁面。 這樣做會提供頁面上每個內容區域的劃分，及其載入時間。
-* 將網站上的所有JS和CSS縮制。 檢視此[部落格](https://blogs.adobe.com/foxes/enable-js-and-css-minification/)。
+* 將網站上的所有JS和CSS縮制。
 * 排除元件中的內嵌CSS和JS。 使用者端程式庫應包含並加以縮制，以將轉譯頁面所需的請求數量降至最低。
 * 若要檢查伺服器請求並檢視哪些請求的執行時間最長，請使用Chrome的「網路」標籤等瀏覽器工具。
 

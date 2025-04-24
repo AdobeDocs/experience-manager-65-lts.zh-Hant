@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5 LTS檔案瞭解其運作方式，以及軟體可為您做什麼。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM 6.5 LTS
-source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '6795'
+source-wordcount: '6790'
 ht-degree: 20%
 
 ---
@@ -1457,7 +1457,6 @@ ht-degree: 20%
          + [效能樹狀結構](/help/sites-deploying/performance-tree.md)
          + [效能測試的最佳實務](/help/sites-deploying/best-practices-for-performance-testing.md)
          + [查詢和建立索引的最佳實務](/help/sites-deploying/best-practices-for-queries-and-indexing.md)
-         + [客戶適用的使用者介面建議](/help/sites-deploying/ui-recommendations.md)
          + [效能與擴充性](/help/sites-deploying/performance.md)
    + 流暢的使用體驗 {#fluid-experiences}
       + [功能清單](/help/fluid-experiences/feature-list.md)
