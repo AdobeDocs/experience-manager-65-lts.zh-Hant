@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: ba5cc5fb-934f-4144-8e28-7aa5fdd9b92a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 438d383aa7a08334d9977411fd37395f89133834
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1567'
 ht-degree: 2%
 
 ---
@@ -21,6 +21,13 @@ ht-degree: 2%
    * 還原您對頁面所做的變更。
 * 將頁面的目前版本與先前版本進行比較：
    * 以醒目提示文字和影像中的差異。
+
+>[!NOTE]
+>
+>AEM存放庫中只會建立內容的版本。 程式碼、CSS和JavaScript等動態資源不會進行版本設定。
+>
+>* 檢視版本時，內容會與存放庫的最新程式碼、CSS和JavaScript一併檢視。
+>* 還原版本時，只會還原內容，並套用存放庫的最新程式碼、CSS和JavaScript。
 
 ## 建立新版本 {#creating-a-new-version}
 
