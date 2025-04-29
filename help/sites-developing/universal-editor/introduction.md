@@ -4,9 +4,9 @@ description: 瞭解通用編輯器的彈性，以及如何協助您使用AEM 6.5
 feature: Developing
 role: Developer
 exl-id: 495df631-5bdd-456b-b115-ec8561f33488
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3f6d0791968ad3017256dcd5ecea617bc7c8ed83
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1174'
 ht-degree: 1%
 
 ---
@@ -38,9 +38,9 @@ Universal Editor是一項與AEM搭配使用的服務，可讓您無頭製作內�
 
 下列專案支援通用編輯器：
 
-* AEM 6.5 LTS
+* AEM 6.5 LTS GA
    * 同時支援內部部署和AMS託管。
-* [AEM 6.5](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) （Service Pack 21或22加上Feature Pack）
+* [AEM 6.5](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) （Service Pack 21或22加上Feature Pack或更新版本）
    * 同時支援內部部署和AMS託管。
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) （版本`2023.8.13099`或更新版本）
 
@@ -50,29 +50,15 @@ Universal Editor是一項與AEM搭配使用的服務，可讓您無頭製作內�
 
 若要測試通用編輯器，您需要：
 
-1. [更新及設定您的AEM編寫執行個體。](#update-configure-aem)
+1. [在您的AEM編寫執行個體上設定服務。](#configure-aem)
 1. [設定本機通用編輯器服務。](#set-up-ue)
 1. [調整您的Dispatcher以允許Universal Editor服務。](#update-dispatcher)
 
 完成設定之後，您可以[檢測應用程式以使用通用編輯器。](#instrumentation)
 
-### 更新AEM {#update-aem}
+### 設定服務 {#configure-aem}
 
-若要搭配AEM 6.5使用通用編輯器，需要AEM的Service Pack 21或22以及Feature Pack。
-
-#### 套用最新Service Pack {#latest}
-
-請確定您至少正在執行AEM 6.5適用的Service Pack 21或22。您可以從[軟體發佈](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)下載最新的Service Pack。
-
-#### 安裝通用編輯器Feature Pack {#feature-pack}
-
-安裝Software Distribution提供的AEM 6.5 **[適用的** Universal Editor Feature Pack。](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)
-
-如果您已執行Service Pack 23或更新版本，則不需要此Feature Pack。
-
-### 設定服務 {#configure-services}
-
-此Feature Pack會安裝許多需要額外設定的新套件。
+Universal Editor依賴許多必須設定的服務。
 
 #### 設定`login-token` Cookie的SameSite屬性。 {#samesite-attribute}
 
