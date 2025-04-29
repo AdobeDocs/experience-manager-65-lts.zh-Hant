@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: b840d970-9365-4df3-8467-e34abd940074
-source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
+source-git-commit: 262b73813a0e1ccb9c45a4e099461d4dd8eccd00
 workflow-type: tm+mt
-source-wordcount: '3287'
+source-wordcount: '3270'
 ht-degree: 2%
 
 ---
@@ -347,8 +347,6 @@ ht-degree: 2%
   選取後，代理程式不會強制活動頁面的版本設定。
 
 ## 設定復寫代理 {#configuring-your-replication-agents}
-
-如需有關使用MSSL將復寫代理程式連線到發佈執行個體的資訊，請參閱[使用雙向SSL復寫](/help/sites-deploying/mssl-replication.md)。
 
 ### 從製作環境設定復寫代理 {#configuring-your-replication-agents-from-the-author-environment}
 

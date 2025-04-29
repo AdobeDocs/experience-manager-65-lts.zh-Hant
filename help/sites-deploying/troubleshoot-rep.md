@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
-source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
+source-git-commit: 262b73813a0e1ccb9c45a4e099461d4dd8eccd00
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
@@ -59,16 +59,6 @@ ht-degree: 0%
    1. 在「查詢」方塊中，輸入此查詢/jcr：root/var/eventing/jobs//element(&#42;，slingevent：Job) order by @slingevent：created
    1. 按一下「搜尋」。
    1. 在結果中，排名最前的專案是最新的Sling事件工作。 按一下每個復寫，然後尋找符合佇列頂端所顯示內容的停滯復寫。
-
-1. Sling事件框架工作佇列可能有問題。 請嘗試在/system/console中重新啟動org.apache.sling.event套件組合。
-1. 可能是工作處理已關閉。 您可以在Sling事件標籤中的Felix主控台下檢視它。 檢查是否顯示 — Apache Sling事件（作業處理已停用！）
-
-   * 如果是，請檢查Felix主控台中「設定」索引標籤下的Apache Sling工作事件處理常式。 可能是未勾選「啟用工作處理」核取方塊。 如果勾選了此方塊，但畫面仍顯示「作業處理已停用」，則請檢查/apps/system/config下是否有任何覆蓋正在停用作業處理。 請嘗試為jobmanager.enabled建立osgi：config節點（布林值為true），並重新檢查啟動是否開始，以及佇列中是否沒有其他作業。
-
-1. DefaultJobManager組態可能也會進入不一致的狀態。 當有人透過OSGiconsole手動修改「Apache Sling工作事件處理常式」設定（例如，停用並重新啟用「啟用工作處理」屬性並儲存設定）時，就會發生這種情況。
-
-   * 此時，儲存在crx-quickstart/launchpad/config/org/apache/sling/event/impl/jobs/DefaultJobManager.config的DefaultJobManager設定會進入不一致的狀態。 即使「Apache Sling作業事件處理常式」屬性將「作業處理已啟用」顯示為已勾選狀態，當使用者導覽至「Sling事件」標籤時，會顯示訊息 — 「作業處理已停用」且復寫無法運作。
-   * 若要解決此問題，請導覽至OSGi主控台的「設定」頁面，並刪除「Apache Sling工作事件處理常式」設定。 然後重新啟動叢集的主節點，讓設定回到一致的狀態。 這應該會修正問題，且復寫會再次開始運作。
 
 **建立replication.log**
 
