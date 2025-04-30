@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2444'
 ht-degree: 53%
@@ -43,8 +43,8 @@ ht-degree: 53%
 
 多網站管理由以下套件組成：
 
-* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
-* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
+* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
+* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
 
 主要MSM API物件的互動方式如下（另請參閱[使用的術語](/help/sites-administering/msm.md#terms-used)）：
 
@@ -103,8 +103,8 @@ ht-degree: 53%
 
 建立自訂同步操作以與您的轉出設定一起使用。 當[安裝的動作](/help/sites-administering/msm-sync.md#installed-synchronization-actions)不符合您的特定應用程式需求時，請建立同步化動作。 為此，請建立兩個類別：
 
-* 執行動作的 [`com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) 介面的實作。
-* 實作[`com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html)介面並建立`LiveAction`類別之執行個體的OSGI元件。
+* 執行動作的 [`com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) 介面的實作。
+* 實作[`com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html)介面並建立`LiveAction`類別之執行個體的OSGI元件。
 
 `LiveActionFactory` 會針對以下特定設定建立 `LiveAction` 類別的執行個體：
 
@@ -127,7 +127,7 @@ ht-degree: 53%
 
 例如，`LiveAction` 需要儲存藍圖作者的名稱。設定節點的屬性包括儲存該資訊的藍圖頁面屬性名稱。在執行階段時，`LiveAction` 會從設定中擷取屬性名稱，然後獲取屬性值。
 
-[`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) 方法的參數是一種 `Resource` 物件。此`Resource`物件代表轉出設定中此即時動作的`cq:LiveSyncAction`節點；請參閱[建立轉出設定](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration)。 和平常一樣，使用設定節點時，您應該將其調整為 `ValueMap` 物件：
+[`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) 方法的參數是一種 `Resource` 物件。此`Resource`物件代表轉出設定中此即時動作的`cq:LiveSyncAction`節點；請參閱[建立轉出設定](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration)。 和平常一樣，使用設定節點時，您應該將其調整為 `ValueMap` 物件：
 
 ```java
 public LiveAction createAction(Resource resource) throws WCMException {
@@ -145,9 +145,9 @@ public LiveAction createAction(Resource resource) throws WCMException {
 
 下列物件會以 `LiveAction` 物件之 `execute` 方法的參數提供：
 
-* 代表即時副本來源的[`Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html)物件。
+* 代表即時副本來源的[`Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/Resource.html)物件。
 * 代表即時副本目標的`Resource`物件。
-* 即時副本的[`LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html)物件。
+* 即時副本的[`LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html)物件。
 * `autoSave`值指出您的`LiveAction`是否應該儲存對存放庫所做的變更。
 
 * 重設值表示轉出重設模式。
@@ -164,7 +164,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->`Resource` 引數可能是 `null` 或者 `Resources` 物件 (不適應於 `Node` 物件，例如 [`NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/NonExistingResource.html) 物件)。
+>`Resource` 引數可能是 `null` 或者 `Resources` 物件 (不適應於 `Node` 物件，例如 [`NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/NonExistingResource.html) 物件)。
 
 ## 建立新的推出設定 {#creating-a-new-rollout-configuration}
 

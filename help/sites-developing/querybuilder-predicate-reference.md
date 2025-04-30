@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2313'
 ht-degree: 2%
@@ -269,7 +269,7 @@ group.2_group.type=dam:Asset
 
 ### memberOf {#memberof}
 
-尋找屬於特定[sling資源集合](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/resource/collection/ResourceCollection.html)成員的專案。
+尋找屬於特定[sling資源集合](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html)成員的專案。
 
 這是僅供篩選的述詞，無法使用搜尋索引。 不支援多面向擷取。
 

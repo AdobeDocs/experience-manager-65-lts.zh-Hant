@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: b2e73e28-fa34-436d-8a20-848d353e3b8c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 0%
@@ -105,9 +105,9 @@ AEM提供多種機制，可讓您自訂編寫執行個體的主控台和頁面�
 
 #### CoralUI 2和CoralUI 3型元件有何不同？ {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
-已為Coral3建立一組新的Granite UI Foundation的Sling元件，這些元件位於[/libs/granite/ui/components/coral/foundation下。](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html)一組適用於CoralUI 2元件，另一組適用於CoralUI 3元件。 新集合不會只是複製貼上舊集合，而是會加以清除（例如，精簡、移除已棄用的功能）。 因此，建議頁面僅使用以CoralUI 3為基礎或以CoralUI 2為基礎的組合。
+已為Coral3建立一組新的Granite UI Foundation的Sling元件，這些元件位於[/libs/granite/ui/components/coral/foundation下。](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html)一組適用於CoralUI 2元件，另一組適用於CoralUI 3元件。 新集合不會只是複製貼上舊集合，而是會加以清除（例如，精簡、移除已棄用的功能）。 因此，建議頁面僅使用以CoralUI 3為基礎或以CoralUI 2為基礎的組合。
 
-若要深入瞭解，請參閱[CoralUI 3移轉指南](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html)。
+若要深入瞭解，請參閱[CoralUI 3移轉指南](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html)。
 
 #### 如何在AEM Assets中自訂搜尋元件？ {#how-to-customize-the-search-component-in-aem-assets}
 

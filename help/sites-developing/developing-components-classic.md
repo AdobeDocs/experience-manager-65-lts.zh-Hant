@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d44e6ea8-b4e5-4ed7-a6d0-de1da2709e18
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2340'
 ht-degree: 1%
@@ -92,15 +92,15 @@ JSP指令碼檔案`global.jsp`可用來讓特定物件（亦即存取內容）�
 
 * 透過`global.jsp`中引入的`currentPage`物件：
 
-  `currentPage`物件是頁面的執行個體(請參閱[AEM API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html))。 Page類別提供一些存取內容的方法。
+  `currentPage`物件是頁面的執行個體(請參閱[AEM API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html))。 Page類別提供一些存取內容的方法。
 
-  範例： `String pageTitle = currentPage.getTitle();`
+  範例：`String pageTitle = currentPage.getTitle();`
 
 * 透過`global.jsp`中引入的`currentNode`物件：
 
   `currentNode`物件是節點的執行個體（請參閱[JCR API](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)）。 `getProperty()`方法可存取節點的屬性。
 
-  範例： `String pageTitle = currentNode.getProperty("jcr:title");`
+  範例：`String pageTitle = currentNode.getProperty("jcr:title");`
 
 ## JSP標籤庫 {#jsp-tag-libraries}
 

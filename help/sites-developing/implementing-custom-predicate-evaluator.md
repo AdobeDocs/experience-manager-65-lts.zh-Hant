@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: 5c98915c-e516-4505-9f9e-76f4509ba581
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 0%
@@ -55,7 +55,7 @@ GITHUB上的程式碼
 
 >[!NOTE]
 >
->如需`PredicateEvaluator`與`com.day.cq.search`封裝的詳細資訊，請參閱[Java™檔案](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/search/package-summary.html)。
+>如需`PredicateEvaluator`與`com.day.cq.search`封裝的詳細資訊，請參閱[Java™檔案](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/search/package-summary.html)。
 
 ### 實施復寫中繼資料的自訂述詞求值器 {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
@@ -140,7 +140,7 @@ pom.xml
 
 >[!NOTE]
 >
->下列程式說明如何建置`Xpath`運算式以篩選資料。 另一個選項是實作以列為基礎選取資料的`includes`方法。 如需詳細資訊，請參閱[Java™檔案](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29)。
+>下列程式說明如何建置`Xpath`運算式以篩選資料。 另一個選項是實作以列為基礎選取資料的`includes`方法。 如需詳細資訊，請參閱[Java™檔案](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29)。
 
 1. 建立擴充`com.day.cq.search.eval.AbstractPredicateEvaluator`的Java™類別
 1. 使用`@Component`標註您的類別，如下所示

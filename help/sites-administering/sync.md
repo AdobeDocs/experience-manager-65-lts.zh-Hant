@@ -10,7 +10,7 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b7b1bce6-9cea-4f13-955f-f9e361f298bf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2224'
 ht-degree: 1%
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 ## Sling散佈 {#sling-distribution}
 
-使用者資料及其[ACL](/help/sites-administering/security.md)儲存在Oak JCR下層的[Oak Core](/help/sites-deploying/platform.md)中，並可使用[Oak API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/jackrabbit/oak/api/package-tree.html)存取。 由於不經常更新，因此使用[Sling內容發佈](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) （Sling發佈）將使用者資料與其他發佈執行個體同步是合理的。
+使用者資料及其[ACL](/help/sites-administering/security.md)儲存在Oak JCR下層的[Oak Core](/help/sites-deploying/platform.md)中，並可使用[Oak API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-tree.html)存取。 由於不經常更新，因此使用[Sling內容發佈](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) （Sling發佈）將使用者資料與其他發佈執行個體同步是合理的。
 
 與傳統復寫相比，使用Sling散發進行使用者同步的優點包括：
 

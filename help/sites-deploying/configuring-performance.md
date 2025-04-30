@@ -9,7 +9,7 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '5052'
 ht-degree: 16%
@@ -218,7 +218,7 @@ AEM的某些層面（和/或基礎存放庫）可設定為最佳化效能。 以
 
 <!-- TODO: Change the reference to 6.5 LTS javadocs -->
 * Granite工作流程佇列：大部分的工作流程步驟（例如處理DAM資產的步驟）都會使用Granite工作流程佇列服務。
-* Granite工作流程外部程式工作佇列：此服務用於特殊外部工作流程步驟，通常用於連絡外部系統和輪詢結果。 例如，「InDesign媒體提取程式」步驟會實作為外部程式。 工作流程引擎使用外部佇列來處理輪詢。 (請參閱[com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html)。)
+* Granite工作流程外部程式工作佇列：此服務用於特殊外部工作流程步驟，通常用於連絡外部系統和輪詢結果。 例如，「InDesign媒體提取程式」步驟會實作為外部程式。 工作流程引擎使用外部佇列來處理輪詢。 (請參閱[com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html)。)
 
 設定這些服務以限制同時執行的工作流程程式數上限。
 

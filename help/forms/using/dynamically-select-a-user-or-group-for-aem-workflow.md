@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Document Services
 exl-id: b3b3567f-df0a-4a24-849c-dcc0b745de63
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 1%
@@ -115,7 +115,7 @@ function getAdobeSignRecipients() {
 
 ## 使用Java介面動態選擇使用者或群組 {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-您可以使用[RecipientInfoSpecificer](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java介面動態選擇Adobe Sign和指派工作步驟的使用者或群組。 您可以建立使用[RecipientInfoSpecificer](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java介面的OSGi套件組合，並將其部署至AEM Forms伺服器。 這可讓您在AEM工作流程的指派任務和Adobe Sign元件中選取選項。
+您可以使用[RecipientInfoSpecificer](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java介面動態選擇Adobe Sign和指派工作步驟的使用者或群組。 您可以建立使用[RecipientInfoSpecificer](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java介面的OSGi套件組合，並將其部署至AEM Forms伺服器。 這可讓您在AEM工作流程的指派任務和Adobe Sign元件中選取選項。
 
 您需要[AEM Forms使用者端SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) jar和[granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/)檔案，才能編譯下列的程式碼範例。 將這些jar檔案新增為外部相依性至OSGi套件專案。 您可以使用任何Java IDE來建立OSGi套件。 下列程式提供使用Eclipse建立OSGi套件的步驟：
 
@@ -224,7 +224,7 @@ function getAdobeSignRecipients() {
    </project>
    ```
 
-1. 新增使用[RecipientInfoSpecificer](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java介面來動態選擇指派工作步驟的使用者或群組的原始程式碼。 如需程式碼範例，請參閱[使用Java介面動態選擇使用者或群組的範例](#-sample-scripts-for)。
+1. 新增使用[RecipientInfoSpecificer](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java介面來動態選擇指派工作步驟的使用者或群組的原始程式碼。 如需程式碼範例，請參閱[使用Java介面動態選擇使用者或群組的範例](#-sample-scripts-for)。
 1. 開啟命令提示字元並導覽至包含OSGi套件專案的目錄。 使用以下命令來建立OSGi套件：
 
    `mvn clean install`

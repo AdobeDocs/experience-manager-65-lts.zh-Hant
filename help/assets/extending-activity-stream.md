@@ -6,7 +6,7 @@ role: Developer
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 44604607-e49d-469c-a6f1-dedbcd657d65
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -59,4 +59,4 @@ ht-degree: 0%
 
 ## 讀取錄製的事件 {#reading-recorded-events}
 
-記錄的事件會儲存為活動。 您可以使用[ActivityManager API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html)以程式設計方式讀取它們。
+記錄的事件會儲存為活動。 您可以使用[ActivityManager API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/activitystreams/ActivityManager.html)以程式設計方式讀取它們。

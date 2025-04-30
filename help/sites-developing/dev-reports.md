@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6ca4f66d-993b-4cfb-9b09-84bb20a54d4c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '5177'
 ht-degree: 0%
@@ -107,7 +107,7 @@ Adobe Experience Manager (AEM)提供了一系列[標準報告](/help/sites-admin
 查詢：
 
 * 定義為[`reportbase`](#report-base)元件的一部分。
-* 是以[CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/QueryBuilder.html)為基礎。
+* 是以[CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html)為基礎。
 * 擷取用作報表基礎的資料。 結果集（表格）的每一列都會繫結至查詢傳回的節點。 接著會從此資料集中擷取[個別資料行](#column-base-component)的特定資訊。
 
 * 通常包含：

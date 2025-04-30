@@ -6,7 +6,7 @@ role: Admin, Architect
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
 exl-id: 8de16e9d-40b6-49d2-9e6b-1aba13137d78
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Proxy Worker是負責處理工作和建立結果的處理器。 Worker位於Prox
 
 ### 使用者端API {#client-api}
 
-[`JobService`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html)可用作OSGi服務，提供建立工作、移除工作以及從這些工作取得結果的方法。 此服務的預設實作(`JobServiceImpl`)使用HTTP使用者端與遠端Proxy servlet通訊。
+[`JobService`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html)可用作OSGi服務，提供建立工作、移除工作以及從這些工作取得結果的方法。 此服務的預設實作(`JobServiceImpl`)使用HTTP使用者端與遠端Proxy servlet通訊。
 
 以下是API使用方式的範例：
 
@@ -107,10 +107,10 @@ Proxy Worker是負責處理工作和建立結果的處理器。 Worker位於Prox
 
 ### Cloud Service設定 {#cloud-service-configurations}
 
-<!-- TBD: Cannot find com.day.cq.dam.api.proxy at https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html which were generated in May 2020. Hiding this broken link for now.
+<!-- TBD: Cannot find com.day.cq.dam.api.proxy at https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html which were generated in May 2020. Hiding this broken link for now.
 >[!NOTE]
 >
->Reference documentation for the proxy API is available under [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
+>Reference documentation for the proxy API is available under [`com.day.cq.dam.api.proxy`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
 -->
 
 Proxy和Proxy Worker組態均可透過雲端服務組態使用，可從[!DNL Assets] **工具**&#x200B;主控台或`/etc/cloudservices/proxy`下存取。 每個Proxy背景工作應該在`/etc/cloudservices/proxy`下新增節點，以取得背景工作的特定組態詳細資料（例如，`/etc/cloudservices/proxy/workername`）。

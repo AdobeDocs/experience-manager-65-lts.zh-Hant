@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Security
 role: Developer
 exl-id: abc2747f-cfd8-4ee1-bbc0-5ad89beb383a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%
@@ -34,7 +34,7 @@ AEM提供的XSS保護機制是以[OWASP (Open Web Application Security Project)]
 
 >[!NOTE]
 >
->Adobe建議您一律使用AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html)提供的[XSSAPI來存取XSS保護API。
+>Adobe建議您一律使用AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/xss/XSSAPI.html)提供的[XSSAPI來存取XSS保護API。
 
 此外，Web應用程式防火牆（例如Apache的[mod_security](https://www.modsecurity.org)）可提供部署環境安全性的可靠集中控制，並防止先前未偵測到的跨網站指令碼攻擊。
 

@@ -6,7 +6,7 @@ role: Developer
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: c1f80437-275a-48b6-99b9-bec070577da0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 23%
@@ -261,7 +261,7 @@ Assets可以有多個轉譯。 這些通常會顯示為子實體，其中一個�
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱[API參考](/help/assets/assets-api-content-fragments.md#api-reference)。 特別是 [Adobe Experience Manager Assets API - 內容片段](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)。
+>如需詳細資訊，請參閱[API參考](/help/assets/assets-api-content-fragments.md#api-reference)。 特別是 [Adobe Experience Manager Assets API - 內容片段](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)。
 
 ### 讀取/傳遞 {#read-delivery}
 
@@ -385,7 +385,7 @@ Assets可以有多個轉譯。 這些通常會顯示為子實體，其中一個�
 
 如需詳細的API參考資料，請參閱此處：
 
-* [Adobe Experience Manager Assets API - 內容片段](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - 內容片段](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
    * [可用功能](/help/assets/mac-api-assets.md#assets)

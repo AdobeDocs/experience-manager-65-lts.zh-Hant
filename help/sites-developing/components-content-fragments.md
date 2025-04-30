@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Content Fragments
 role: Developer
 exl-id: 2196af09-8053-49c3-8a23-caf03bb9a39d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
@@ -131,4 +131,4 @@ Adobe Experience Manager (AEM)內容片段是[建立並管理為不受頁面影�
 * `transformer-cfm-parfilter` — 如果指定了段落範圍，則篩選掉不需要的段落（與內容片段元件一樣）
 * `transformer-cfm-assetprocessor` — 內部用於擷取內嵌於片段中的資產清單
 
-轉譯程式透過[`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)公開，如有需要，可由自訂元件使用（例如）。
+轉譯程式透過[`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)公開，如有需要，可由自訂元件使用（例如）。

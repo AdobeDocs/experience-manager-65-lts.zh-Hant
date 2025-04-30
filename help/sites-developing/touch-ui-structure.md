@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 1fcf6de4-30b5-46cb-9c1d-109a160d5030
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '862'
 ht-degree: 4%
@@ -167,4 +167,4 @@ AEM隨附數個已針對頁面製作實作的圖層；例如編輯、預覽、�
 
 如需有關觸控式UI概念的詳細資訊，請參閱[AEM觸控式UI的概念](/help/sites-developing/touch-ui-concepts.md)。
 
-如需更多技術資訊，請參閱觸控式頁面編輯器的[JS檔案集](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)。
+如需更多技術資訊，請參閱觸控式頁面編輯器的[JS檔案集](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)。

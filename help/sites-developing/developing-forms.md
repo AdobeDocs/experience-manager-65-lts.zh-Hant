@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d1475168-6625-4d27-9c3b-01e415c2f398
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1930'
 ht-degree: 0%
@@ -315,7 +315,7 @@ ht-degree: 0%
 
 ### 開發指令碼以與Forms搭配使用 {#developing-scripts-for-use-with-forms}
 
-如需可在編寫指令碼時使用的API元素的詳細資訊，請參閱與表單](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html)相關的[javadocs。
+如需可在編寫指令碼時使用的API元素的詳細資訊，請參閱與表單](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html)相關的[javadocs。
 
 您可以將此用於動作，例如在提交表單前呼叫服務，以及在服務失敗時取消服務：
 

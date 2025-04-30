@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 exl-id: 322f08c7-f13a-473f-8c59-1050b2e6c2f5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 87%
@@ -257,7 +257,7 @@ API 參考文件中定義了受支援要求的確切格式。
 
 >[!NOTE]
 >
->如需更多詳細資訊，請參閱 API 參考。特別是 [Adobe Experience Manager Assets API - 內容片段](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)。
+>如需更多詳細資訊，請參閱 API 參考。特別是 [Adobe Experience Manager Assets API - 內容片段](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)。
 
 ### 讀取/傳遞 {#read-delivery}
 
@@ -327,7 +327,7 @@ API 參考文件中定義了受支援要求的確切格式。
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 * [內容片段 REST API](/help/assets/assets-api-content-fragments.md)
    * [API 參考](/help/assets/assets-api-content-fragments.md#api-reference)
-* [Adobe Experience Manager Assets API - 內容片段](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - 內容片段](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [使用內容片段](/help/assets/content-fragments/content-fragments.md)
 * [AEM 核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [CORS/AEM 說明](https://helpx.adobe.com/tw/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)

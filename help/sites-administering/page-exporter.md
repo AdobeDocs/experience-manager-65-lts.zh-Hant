@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 997637d5-1627-4102-8b7c-a0cfd871a7b2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Adobe Experience Manager (AEM)可讓您將頁面匯出為包含影像、`.js`和
 
 ## 建立網站的頁面匯出工具組態 {#creating-a-page-exporter-configuration-for-your-site}
 
-頁面匯出工具是以[內容同步架構](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html)為基礎。 **頁面屬性**&#x200B;對話方塊中可用的設定是定義頁面所需相依性的匯出範本。
+頁面匯出工具是以[內容同步架構](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/package-summary.html)為基礎。 **頁面屬性**&#x200B;對話方塊中可用的設定是定義頁面所需相依性的匯出範本。
 
 觸發頁面匯出時，會參考匯出範本。 頁面路徑和設計路徑都會動態套用。 然後使用標準Content Sync功能建立zip檔案。
 
@@ -108,7 +108,7 @@ Adobe Experience Manager (AEM)可讓您將頁面匯出為包含影像、`.js`和
 
 ### 頁面匯出工具組態節點 {#page-exporter-configuration-nodes}
 
-範本包含節點結構，因為它使用[Content Sync架構](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html)。 每個節點都有`type`屬性，定義了zip檔案建立過程中的特定動作。
+範本包含節點結構，因為它使用[Content Sync架構](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/package-summary.html)。 每個節點都有`type`屬性，定義了zip檔案建立過程中的特定動作。
 
 <!-- For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
@@ -178,14 +178,14 @@ Adobe Experience Manager (AEM)可讓您將頁面匯出為包含影像、`.js`和
 As you may have noticed in the node structure, the **Geometrixx** page export template has a `logo` node with a `type` property set to `image`. This is a special configuration type that has been created to copy the image logo to the zip file. 
 -->
 
-若要符合某些特定需求，請實作[自訂更新處理常式](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html)。
+若要符合某些特定需求，請實作[自訂更新處理常式](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/handler/package-summary.html)。
 
 <!-- To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## 以程式匯出頁面 {#programmatically-exporting-a-page}
 
-若要以程式設計方式匯出頁面，您可以使用[PageExporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) OSGI服務。 此服務可讓您：
+若要以程式設計方式匯出頁面，您可以使用[PageExporter](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) OSGI服務。 此服務可讓您：
 
 * 匯出頁面並寫入HTTP servlet回應。
 * 匯出頁面，並將zip檔案儲存在特定位置。

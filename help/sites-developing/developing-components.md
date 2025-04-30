@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: ff9c9e25-13a8-4ca7-a347-1da1352ef223
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '3200'
 ht-degree: 1%
@@ -110,13 +110,13 @@ AEM 6.0推出的[HTML範本語言(HTL)](https://experienceleague.adobe.com/docs/
 
 ## 設定預覽行為 {#configuring-the-preview-behavior}
 
-切換至&#x200B;**預覽**&#x200B;模式時，即使頁面未重新整理，也會設定[WCM模式](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie。
+切換至&#x200B;**預覽**&#x200B;模式時，即使頁面未重新整理，也會設定[WCM模式](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie。
 
 對於具有對WCM模式敏感的轉譯之元件，需要定義它們以專門重新整理自身，然後依賴Cookie的值。
 
 >[!NOTE]
 >
->在觸控式UI中，[WCM模式](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie僅使用值`EDIT`和`PREVIEW`。
+>在觸控式UI中，[WCM模式](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie僅使用值`EDIT`和`PREVIEW`。
 
 ## 建立和設定對話方塊 {#creating-and-configuring-a-dialog}
 

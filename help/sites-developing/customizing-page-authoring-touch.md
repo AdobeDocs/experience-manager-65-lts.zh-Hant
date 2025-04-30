@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 8d53072b-826d-4ff4-843b-09204fb5a455
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 38%
@@ -109,7 +109,7 @@ GITHUB上的程式碼
 
 若要將清單保持為合理的大小並且和使用案例相關，可以以自訂述詞的形式實作篩選器。例如，如果使用[`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui)元件來允許使用者選取特定資源的路徑，則顯示的路徑可依下列方式篩選：
 
-* 透過實作 [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) 介面實作自訂述詞。
+* 透過實作 [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/predicate/package-summary.html) 介面實作自訂述詞。
 * 指定述詞的名稱，並在使用 `pathbrowser` 時參照該名稱。
 
 如需建立自訂述詞的詳細資訊，請參閱[為查詢產生器實作自訂述詞評估器](/help/sites-developing/implementing-custom-predicate-evaluator.md)。

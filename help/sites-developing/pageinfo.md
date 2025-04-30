@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6c54197f-86da-41bd-93e6-ee78ece91013
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 1%
@@ -554,7 +554,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 ### PageInfoProvider實作範例 {#example-pageinfoprovider-implementation}
 
-下列Java類別實作[PageInfoProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html)並傳回目前頁面資源的已發佈URL。
+下列Java類別實作[PageInfoProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html)並傳回目前頁面資源的已發佈URL。
 
 ```java
 package com.adobe.example;

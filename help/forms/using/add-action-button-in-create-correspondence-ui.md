@@ -9,7 +9,7 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 8294cbbe-f37f-41d0-b8e8-298f9413462e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '1854'
 ht-degree: 2%
@@ -424,11 +424,11 @@ LCA程式會在LiveCycle伺服器上執行，而且需要伺服器位址和登�
    >
    >每次在伺服器端進行變更時，請重新啟動LiveCycle Server。
 
-   DSCSample.jar檔案使用renderLetter API。 如需有關renderLetter API的詳細資訊，請參閱[介面LetterRenderService](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html)。
+   DSCSample.jar檔案使用renderLetter API。 如需有關renderLetter API的詳細資訊，請參閱[介面LetterRenderService](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html)。
 
 #### 將DSC匯入LiveCycle {#import-dsc-to-livecyle}
 
-DSCSample.jar檔案使用renderLetter API從DSC提供作為輸入的XML資料將信函轉譯為PDF位元組。 如需有關renderLetter和其他API的詳細資訊，請參閱[信函轉譯服務](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html)。
+DSCSample.jar檔案使用renderLetter API從DSC提供作為輸入的XML資料將信函轉譯為PDF位元組。 如需有關renderLetter和其他API的詳細資訊，請參閱[信函轉譯服務](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html)。
 
 1. 啟動Workbench並登入。
 1. 選取&#x200B;**視窗>顯示檢視>元件**。 「元件」檢視會新增至Workbench ES2。

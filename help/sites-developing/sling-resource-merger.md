@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6fb6e522-fb81-4ba2-90b2-aad68f8bfa9e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Sling Resource Merger提供存取及合併資源的服務。 它為兩者提供�
 
 >[!CAUTION]
 >
->Sling Resource Merger和相關方法只能搭配[Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)使用。 這也表示這僅適用於標準的觸控式UI，特別是以這種方式定義的覆寫僅適用於元件的觸控式對話方塊。
+>Sling Resource Merger和相關方法只能搭配[Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html)使用。 這也表示這僅適用於標準的觸控式UI，特別是以這種方式定義的覆寫僅適用於元件的觸控式對話方塊。
 >
 >其他區域（包括觸控式元件或傳統UI的其他方面）的覆蓋/覆寫涉及將適當的節點和結構從原始複製到將定義自訂的位置。
 

@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6b9b8d8c-8cd5-4c21-9b75-acd74d00354a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 3%
@@ -136,7 +136,7 @@ propertyname
 
 ### API {#api}
 
-如需API的參考檔案，請參閱[com.day.cq.wcm.webservicesupport](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html)。
+如需API的參考檔案，請參閱[com.day.cq.wcm.webservicesupport](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html)。
 
 ### AEM整合 {#aem-integration}
 

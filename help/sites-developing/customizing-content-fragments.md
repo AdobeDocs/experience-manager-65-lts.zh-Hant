@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments
 role: Developer
 exl-id: 705bffea-ef70-40b5-81d8-b130d3908073
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '2687'
 ht-degree: 1%
@@ -243,7 +243,7 @@ ht-degree: 1%
 
 您可以使用伺服器端API來存取您的內容片段；請參閱：
 
-[com.adobe.cq.dam.cfm](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
+[com.adobe.cq.dam.cfm](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
 
 >[!CAUTION]
 >
@@ -253,7 +253,7 @@ ht-degree: 1%
 
 下列三個介面可作為進入點：
 
-* **片段範本** ([FragmentTemplate](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
+* **片段範本** ([FragmentTemplate](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
   使用`FragmentTemplate.createFragment()`建立片段。
 
@@ -296,7 +296,7 @@ ht-degree: 1%
 
       * 取得基本資料（名稱、標題、說明）
 
-* **內容片段** ([ContentFragment](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **內容片段** ([ContentFragment](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
   此介面可讓您以抽象方式處理內容片段。
 
@@ -328,7 +328,7 @@ ht-degree: 1%
 
   代表片段主要元素的介面包括：
 
-   * **Content元素** ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **Content元素** ([ContentElement](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * 取得基本資料（名稱、標題、說明）
       * 取得/設定內容
@@ -342,7 +342,7 @@ ht-degree: 1%
 
       * 解決變數的捷徑（如果指定的變數不適用於元素，則套用一些額外的實作專用遞補邏輯）
 
-   * **內容變數** ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **內容變數** ([ContentVariation](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * 取得基本資料（名稱、標題、說明）
       * 取得/設定內容

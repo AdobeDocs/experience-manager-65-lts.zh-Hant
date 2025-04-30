@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e82d97c2-c26a-48df-9210-47dc017c68c8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '3227'
 ht-degree: 1%
@@ -428,7 +428,7 @@ function check(){
 
 * **OSGi服務**
 
-  服務必須實作[com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html)介面。 介面會定義下列成員：
+  服務必須實作[com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html)介面。 介面會定義下列成員：
 
    * `SERVICE_PROPERTY_LABEL`欄位：使用此欄位來指定參與者選擇器的名稱。 該名稱出現在&#x200B;**動態參與者步驟**&#x200B;屬性的可用參與者選擇器清單中。
 

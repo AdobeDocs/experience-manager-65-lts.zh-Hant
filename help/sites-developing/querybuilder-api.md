@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: a87c571e-7afb-42e7-836c-170dcfb0d03b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2033'
 ht-degree: 0%
@@ -22,11 +22,11 @@ ht-degree: 0%
 
 [資產共用查詢產生器](/help/assets/assets-finder-editor.md)的功能透過Java™ API和REST API公開。 本節將說明這些API。
 
-伺服器端查詢產生器( [`QueryBuilder`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html))接受查詢說明、建立並執行XPath查詢、選擇性地篩選結果集，以及視需要擷取Facet。
+伺服器端查詢產生器( [`QueryBuilder`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html))接受查詢說明、建立並執行XPath查詢、選擇性地篩選結果集，以及視需要擷取Facet。
 
-查詢描述只是一組述詞([`Predicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/Predicate.html))。 範例包括全文檢索述詞，其對應至XPath中的`jcr:contains()`函式。
+查詢描述只是一組述詞([`Predicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/Predicate.html))。 範例包括全文檢索述詞，其對應至XPath中的`jcr:contains()`函式。
 
-對於每個述詞型別，都有一個評估器元件([`PredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html))知道如何處理XPath、篩選和Facet擷取的特定述詞。 可輕鬆建立自訂評估器，並透過OSGi元件執行階段插入。
+對於每個述詞型別，都有一個評估器元件([`PredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html))知道如何處理XPath、篩選和Facet擷取的特定述詞。 可輕鬆建立自訂評估器，並透過OSGi元件執行階段插入。
 
 REST API透過HTTP提供相同功能的存取權，且回應會以JSON傳送。
 
@@ -136,7 +136,7 @@ orderby=path
 
 例如，UI可以調整以下方法：
 
-* 取得並顯示總點選數的精確計數([SearchResult.getTotalMatches()](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches)或querybuilder.json回應中的總計)小於或等於100；
+* 取得並顯示總點選數的精確計數([SearchResult.getTotalMatches()](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches)或querybuilder.json回應中的總計)小於或等於100；
 * 呼叫Query Builder時將`guessTotal`設為100。
 
 * 回應可能會產生下列結果：
@@ -360,9 +360,9 @@ p.nodedepth=5
 
 如需更多述詞，請參閱[查詢產生器述詞參考頁面](/help/sites-developing/querybuilder-predicate-reference.md)。
 
-您也可以檢查`PredicateEvaluator`類別的[Javadoc](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)。 這些類別的Javadoc包含您可以使用的屬性清單。
+您也可以檢查`PredicateEvaluator`類別的[Javadoc](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)。 這些類別的Javadoc包含您可以使用的屬性清單。
 
-類別名稱的前置詞（例如，[`SimilarityPredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)中的&quot; `similar`&quot;）是類別的&#x200B;*主體屬性*。 此屬性也是要在查詢中使用的述詞名稱（小寫）。
+類別名稱的前置詞（例如，[`SimilarityPredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)中的&quot; `similar`&quot;）是類別的&#x200B;*主體屬性*。 此屬性也是要在查詢中使用的述詞名稱（小寫）。
 
 對於這類主體屬性，您可以縮短查詢並使用&quot; `similar=/content/en`&quot;而不是完全合格的變體&quot; `similar.similar=/content/en`&quot;。 類別的所有非主要屬性都必須使用完整格式。
 
@@ -438,13 +438,13 @@ p.nodedepth=5
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
 ```
 
-使用[`QueryBuilder#storeQuery`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html#storequerycomdaycqsearchqueryjavalangstringbooleanjavaxjcrsession)方法時，指定的`Query`會根據`createFile`引數值，以檔案或屬性的形式儲存在儲存庫中。 下列範例說明如何將路徑`/mypath/getfiles`的`Query`儲存為檔案：
+使用[`QueryBuilder#storeQuery`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html#storequerycomdaycqsearchqueryjavalangstringbooleanjavaxjcrsession)方法時，指定的`Query`會根據`createFile`引數值，以檔案或屬性的形式儲存在儲存庫中。 下列範例說明如何將路徑`/mypath/getfiles`的`Query`儲存為檔案：
 
 ```java
 builder.storeQuery(query, "/mypath/getfiles", true, session);
 ```
 
-使用[`QueryBuilder#loadQuery`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html#loadqueryjavalangstringjavaxjcrsession)方法可以從存放庫載入任何先前儲存的查詢：
+使用[`QueryBuilder#loadQuery`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html#loadqueryjavalangstringjavaxjcrsession)方法可以從存放庫載入任何先前儲存的查詢：
 
 ```java
 Query loadQuery(String path, Session session) throws RepositoryException, IOException
@@ -567,10 +567,10 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 
 | **Javadoc** | **說明** |
 |---|---|
-| [com.day.cq.search](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/package-summary.html) | 基本QueryBuilder和查詢API |
-| [com.day.cq.search.result](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/package-summary.html) | 結果API |
-| [com.day.cq.search.facets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/package-summary.html) | Facet |
-| [com.day.cq.search.facets.buckets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | 值區（包含在Facet中） |
-| [com.day.cq.search.eval](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html) | 述詞評估工具 |
-| [com.day.cq.search.facets.extractors](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Facet擷取器（適用於評估器） |
-| [com.day.cq.search.writer](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/writer/package-summary.html) | Querybuilder servlet的JSON結果點選撰寫器(/bin/querybuilder.json) |
+| [com.day.cq.search](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/package-summary.html) | 基本QueryBuilder和查詢API |
+| [com.day.cq.search.result](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/result/package-summary.html) | 結果API |
+| [com.day.cq.search.facets](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/facets/package-summary.html) | Facet |
+| [com.day.cq.search.facets.buckets](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | 值區（包含在Facet中） |
+| [com.day.cq.search.eval](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/package-summary.html) | 述詞評估工具 |
+| [com.day.cq.search.facets.extractors](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Facet擷取器（適用於評估器） |
+| [com.day.cq.search.writer](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/writer/package-summary.html) | Querybuilder servlet的JSON結果點選撰寫器(/bin/querybuilder.json) |

@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 2a94ea8d-2919-4f30-be31-ce559493805d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 22%
@@ -39,7 +39,7 @@ Clientlibs可讓您擴充預設實作以實現新功能，同時重複使用標�
 >
 >* 正在使用和建立[clientlibs](/help/sites-developing/clientlibs.md)。
 >* 使用和建立[重疊](/help/sites-developing/overlays.md)。
->* [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
+>* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
 >
 
 
@@ -150,7 +150,7 @@ Clientlibs可讓您擴充預設實作以實現新功能，同時重複使用標�
 
 1. 選擇性：
 
-   * 如果您想要插入其他資料，您必須使用撰寫[PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)
+   * 如果您想要插入其他資料，您必須使用撰寫[PageInforProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)
      `pageInfoProviderType`屬性。
 
    例如，請參閱底下的附加類別/套件（來自GitHub）。

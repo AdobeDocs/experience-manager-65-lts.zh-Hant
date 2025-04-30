@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7e14471e-8bb5-4cce-9175-3bbff9d803a9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1857'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## 使用工作流程Java API {#using-the-workflow-java-api}
 
-工作流程Java API包含[`com.adobe.granite.workflow`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/package-summary.html)套件和多個子套件。 API最重要的成員是`com.adobe.granite.workflow.WorkflowSession`類別。 `WorkflowSession`類別同時提供設計階段和執行階段工作流程物件的存取權：
+工作流程Java API包含[`com.adobe.granite.workflow`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/package-summary.html)套件和多個子套件。 API最重要的成員是`com.adobe.granite.workflow.WorkflowSession`類別。 `WorkflowSession`類別同時提供設計階段和執行階段工作流程物件的存取權：
 
 * 工作流程模型
 * 工作專案
@@ -40,10 +40,10 @@ ht-degree: 0%
 
 | 功能 | 物件 |
 |---|---|
-| 存取工作流程 | [`WorkflowSession`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html) |
-| 執行和查詢工作流程執行個體 | [`Workflow`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html)</br>[`WorkItem`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkItem.html)</br>[`WorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) |
-| 管理工作流程模型 | [`WorkflowModel`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowModel.html)</br>[`WorkflowNode`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowNode.html)</br>[`WorkflowTransition`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowTransition.html) |
-| 工作流程中節點（或不工作流程）的資訊 | [`WorkflowStatus`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) |
+| 存取工作流程 | [`WorkflowSession`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/WorkflowSession.html) |
+| 執行和查詢工作流程執行個體 | [`Workflow`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/Workflow.html)</br>[`WorkItem`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkItem.html)</br>[`WorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) |
+| 管理工作流程模型 | [`WorkflowModel`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/model/WorkflowModel.html)</br>[`WorkflowNode`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/model/WorkflowNode.html)</br>[`WorkflowTransition`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/model/WorkflowTransition.html) |
+| 工作流程中節點（或不工作流程）的資訊 | [`WorkflowStatus`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) |
 
 ## 在ECMA指令碼中取得工作流程物件 {#obtaining-workflow-objects-in-ecma-scripts}
 
@@ -558,7 +558,7 @@ curl -u admin:admin -X DELETE http://localhost:4502/etc/workflow/models/{id}
 
 ### 檢查工作流程狀態時篩選出系統工作流程 {#filtering-out-system-workflows-when-checking-workflow-status}
 
-您可以使用[WorkflowStatus API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html)來擷取有關節點的工作流程狀態的資訊。
+您可以使用[WorkflowStatus API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html)來擷取有關節點的工作流程狀態的資訊。
 
 各種方法都有引數：
 
@@ -809,7 +809,7 @@ wfSession.complete(workItem, routes.get(0));
 
 ### 接聽工作流程事件 {#listening-for-workflow-events}
 
-使用OSGi事件架構接聽[`com.adobe.granite.workflow.event.WorkflowEvent`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html)類別定義的事件。 此類別也提供幾個實用方法，用來取得有關事件主旨的資訊。 例如，`getWorkItem`方法會傳回事件所涉及之工作專案的`WorkItem`物件。
+使用OSGi事件架構接聽[`com.adobe.granite.workflow.event.WorkflowEvent`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html)類別定義的事件。 此類別也提供幾個實用方法，用來取得有關事件主旨的資訊。 例如，`getWorkItem`方法會傳回事件所涉及之工作專案的`WorkItem`物件。
 
 以下範常式式碼會定義一項服務，此服務會監聽工作流程事件並根據事件型別執行工作。
 

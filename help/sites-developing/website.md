@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 743645c5-b4c9-45ff-a130-0bf72aa6e6f2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '4919'
 ht-degree: 3%
@@ -523,9 +523,9 @@ static.css檔案與影像範例
 
 1. 將下列程式碼複製到`navimage.png.java.`此程式碼會擴充AbstractImageServlet類別：
 
-   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html)會建立儲存目前資源屬性的ImageContext物件。
+   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html)會建立儲存目前資源屬性的ImageContext物件。
    * 資源的父頁面是從ImageContext物件擷取。 然後取得頁面標題和副標題。
-   * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/ImageHelper.html)用於從網站設計的navimage_bg.jpg檔案、頁面標題和頁面子標題產生影像。
+   * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/ImageHelper.html)用於從網站設計的navimage_bg.jpg檔案、頁面標題和頁面子標題產生影像。
 
    ```java
    package apps.mywebsite.components.contentpage;

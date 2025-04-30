@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 9036e26c-74cd-4013-a63d-70ece0f80904
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '3499'
 ht-degree: 1%
@@ -76,9 +76,9 @@ ht-degree: 1%
 
 下列物件在ECMA指令碼中可供使用（視步驟型別而定）：
 
-* [工作專案](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkItem.html)工作專案
-* [工作流程工作階段](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/WorkflowSession.html)工作流程工作階段
-* [工作流程資料](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowData.html)工作流程資料
+* [工作專案](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkItem.html)工作專案
+* [工作流程工作階段](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/WorkflowSession.html)工作流程工作階段
+* [工作流程資料](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkflowData.html)工作流程資料
 * `args`：具有處理序引數的陣列。
 
 * `sling`：存取其他osgi服務。
@@ -257,7 +257,7 @@ ht-degree: 1%
 
 您可以使用工作流程中繼資料來儲存工作流程存留期期間以及步驟之間所需的資訊。 工作流程步驟的常見要求是儲存資料以供未來使用，或從先前步驟中擷取儲存的資料。
 
-工作流程中繼資料儲存在[`MetaDataMap`](#metadatamaps)物件中。 Java API提供[`Workflow.getWorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html)方法，以傳回提供適當`MetaDataMap`物件的[`WorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html)物件。 此`WorkflowData` `MetaDataMap`物件可用於步驟元件的OSGi服務或ECMA指令碼。
+工作流程中繼資料儲存在[`MetaDataMap`](#metadatamaps)物件中。 Java API提供[`Workflow.getWorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/Workflow.html)方法，以傳回提供適當`MetaDataMap`物件的[`WorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html)物件。 此`WorkflowData` `MetaDataMap`物件可用於步驟元件的OSGi服務或ECMA指令碼。
 
 #### Java {#java}
 
@@ -662,8 +662,8 @@ function getParticipant() {
 >
 >以下工作流程處理步驟接受工作流程套件以進行大量頁面啟用：
 >
->* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
->* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
+>* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
+>* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
 >
 
 您可以開發工作流程步驟來取得封裝資源並加以處理。 `com.day.cq.workflow.collection`封裝的下列成員提供工作流程封裝的存取權：
@@ -832,7 +832,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 
    * `cq:icon`
 
-     用於指定步驟的[珊瑚色圖示](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html)。
+     用於指定步驟的[珊瑚色圖示](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/Coral.Icon.html)。
 
    * `componentGroup`
 

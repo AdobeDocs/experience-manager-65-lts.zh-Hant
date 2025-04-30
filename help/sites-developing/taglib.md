@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Tagging
 role: Developer
 exl-id: 15f30571-7129-402c-98be-270a142c4cbb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2452'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Granite標籤庫包含有用的函式。
 
 ### &lt;ui：includeClientLib> {#ui-includeclientlib}
 
-`<ui:includeClientLib>`標籤包含AEM html使用者端資料庫，可以是js、css或主題資料庫。 對於不同型別的多個包含專案（例如js和css），此標籤必須在jsp中多次使用。 此標籤是` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`服務介面的便利包裝函式。
+`<ui:includeClientLib>`標籤包含AEM html使用者端資料庫，可以是js、css或主題資料庫。 對於不同型別的多個包含專案（例如js和css），此標籤必須在jsp中多次使用。 此標籤是` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`服務介面的便利包裝函式。
 
 它具有下列屬性：
 
