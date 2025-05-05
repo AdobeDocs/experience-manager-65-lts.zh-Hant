@@ -137,7 +137,7 @@ Web使用者端必須擁有存取`cq:ClientLibraryFolder`節點的許可權。 �
 
 >[!NOTE]
 >
->為了更好地將代碼與內容和配置隔離開來，建議將用戶端資料庫置於 下`/apps`，並使用 屬性 公開它們`/etc.clientlibs``allowProxy`。
+>為了更好地將代碼與內容和配置隔離開來，建議將用戶端資料庫置於 下`/apps`，並使用 屬性 公開它們`/etc.clientlibs` `allowProxy`。
 
 為使客戶機 資料庫 下的 `/apps` 可存取，使用了 Proxy Servlet。 仍在客戶機資料庫資料夾上強制實施 ACL，但如果屬性設置為 ，`true`則 `allowProxy` servlet 允許通過`/etc.clientlibs/`讀取內容。
 
@@ -165,7 +165,7 @@ Web使用者端必須擁有存取`cq:ClientLibraryFolder`節點的許可權。 �
 
 1. 在網頁瀏覽器([https://localhost:4502/crx/de](https://localhost:4502/crx/de))中開啟CRXDE Lite。
 1. 選取您要尋找使用者端程式庫資料夾的資料夾，然後按一下[建立] > [建立節點] **。**
-1. 輸入程式庫檔案的名稱，然後在[型別]清單中選取`cq:ClientLibraryFolder`。 按一下[確定]****，然後按一下[儲存全部]****。
+1. 輸入程式庫檔案的名稱，然後在[型別]清單中選取`cq:ClientLibraryFolder`。 按一下[確定]&#x200B;**&#x200B;**，然後按一下[儲存全部]&#x200B;**&#x200B;**。
 1. 若要指定程式庫所屬的類別，請選取`cq:ClientLibraryFolder`節點、新增下列屬性，然後按一下[儲存全部] **：**
 
    * 名稱：類別

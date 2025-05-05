@@ -659,27 +659,27 @@ Experience Manager傳回的內嵌程式碼已備有立即可用的事件處理�
   <tbody>
   <tr>
     <td><p>在查詢字串中找到單一SKU</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
     <td>在URL路徑中找到單一SKU</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/product/" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
     <td><p>查詢字串中的SKU和類別ID</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   </tbody>
 </table>

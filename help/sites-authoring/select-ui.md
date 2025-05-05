@@ -39,7 +39,7 @@ Adobe Experience Manager (AEM)觸控式UI是標準UI。 不過，使用者有時
 >
 >從舊版升級的執行個體會保留傳統UI以供編寫頁面。
 >
->升級後，頁面編寫不會自動切換至觸控式UI，但您可以使用&#x200B;**WCM編寫UI模式服務** （ `AuthoringUIMode`服務）的[OSGi設定](/help/sites-deploying/configuring-osgi.md)來設定此設定。 檢視編輯器](#ui-overrides-for-the-editor)的[UI覆寫。
+>升級後，頁面編寫不會自動切換至觸控式UI，但您可以使用&#x200B;**WCM編寫UI模式服務** （ `AuthoringUIMode`服務）的[OSGi設定](/help/sites-deploying/configuring-osgi.md)來設定此設定。 檢視編輯器[&#128279;](#ui-overrides-for-the-editor)的UI覆寫。
 
 ## 為您的執行個體設定預設UI {#configuring-the-default-ui-for-your-instance}
 
@@ -104,9 +104,11 @@ Adobe Experience Manager (AEM)觸控式UI是標準UI。 不過，使用者有時
 * 編寫頁面時：
 
    * 在URL中使用`cf#`存取頁面時，會強制使用傳統編輯器。 例如：
+
      `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
    * 在URL中使用`/editor.html`或使用觸控裝置時，會強制使用觸控式編輯器。 例如：
+
      `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * 任何強制都是暫時性的，只對瀏覽器工作階段有效

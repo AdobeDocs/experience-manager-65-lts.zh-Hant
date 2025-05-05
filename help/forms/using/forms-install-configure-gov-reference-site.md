@@ -312,15 +312,15 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   測試服務後，按一下&#x200B;**取消**&#x200B;以確保非自願的變更不會傳播至表單資料模型。
+   >測試服務後，按一下&#x200B;**取消**&#x200B;以確保非自願的變更不會傳播至表單資料模型。
 
    >[!NOTE]
    >
-   據報導，AEM伺服器必須重新啟動，Data Source才能成功繫結至FDM。
+   >據報導，AEM伺服器必須重新啟動，Data Source才能成功繫結至FDM。
 
    >[!NOTE]
    >
-   建議您使用&#39;Ctrl + C&#39;命令重新啟動SDK。 使用替代方法重新啟動AEM SDK （例如停止Java程式），可能會導致AEM開發環境不一致。
+   >建議您使用&#39;Ctrl + C&#39;命令重新啟動SDK。 使用替代方法重新啟動AEM SDK （例如停止Java程式），可能會導致AEM開發環境不一致。
 
 #### 測試Forms資料模型(Derby) {#test-fdm-derby}
 
@@ -386,7 +386,7 @@ ht-degree: 1%
    ![快速存取](assets/aftia-quick-access.jpg)
 1. 導覽至「管理員」標籤，並選取「使用者管理（舊版）」專案
    ![報告](assets/aftia-reports.jpg)
-1. 選取&#x200B;**使用者**索引標籤。
+1. 選取&#x200B;**使用者**&#x200B;索引標籤。
    ![使用者管理](assets/aftia-user-management.jpg)
 1. 從使用者清單中選取所需的使用者。
 1. 捲動至頁面底部，使用者驗證資訊將顯示在頁面底部。
@@ -425,7 +425,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-如果已安裝`we-gov-forms.ui.analytics-<version>.zip`套件，則AEM Forms Analytics資料可在離線時或無Adobe Analytics Cloud設定時取得，但AEM Sites資料需要有效雲端設定。
+>如果已安裝`we-gov-forms.ui.analytics-<version>.zip`套件，則AEM Forms Analytics資料可在離線時或無Adobe Analytics Cloud設定時取得，但AEM Sites資料需要有效雲端設定。
 
 1. 導覽至&#x200B;*https://&lt;aemserver>：&lt;port>/sites.html/content*
 1. 選取「AEM Forms We.Gov網站」以檢視網頁。
@@ -454,7 +454,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-如果已安裝`we-gov-forms.ui.analytics-<version>.zip`套件，則AEM Forms Analytics資料可在離線時或無Adobe Analytics Cloud設定時取得，但AEM Sites資料需要有效雲端設定。
+>如果已安裝`we-gov-forms.ui.analytics-<version>.zip`套件，則AEM Forms Analytics資料可在離線時或無Adobe Analytics Cloud設定時取得，但AEM Sites資料需要有效雲端設定。
 
 1. 瀏覽至
 
@@ -501,7 +501,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-本節中建立的憑證將用於在Adobe I/O中建立整合服務。一旦使用者在整合服務中建立，使用者就可以使用該資訊從Adobe I/O完成設定。
+>本節中建立的憑證將用於在Adobe I/O中建立整合服務。一旦使用者在整合服務中建立，使用者就可以使用該資訊從Adobe I/O完成設定。
 
 #### 在Adobe I/O中建立整合 {#create-integration-adobeio}
 
@@ -800,7 +800,7 @@ IMS設定完成後，我們就可以繼續在AEM中建立雲端設定。
 
    >[!NOTE]
    >
-   僅僅因為使用者在Configuration Manager頁面中啟用服務，使用者仍需設定服務組態，以便與要求的外部服務通訊。
+   >僅僅因為使用者在Configuration Manager頁面中啟用服務，使用者仍需設定服務組態，以便與要求的外部服務通訊。
 
    ![我們管理表單封裝](assets/aftia-configuration-options.jpg)
 

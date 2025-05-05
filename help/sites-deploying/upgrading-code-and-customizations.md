@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ## 升級程式碼基底 {#upgrade-code-base}
 
-### 在版本控制{#create-a-dedicated-branch-for-6.5-lts-code-in-version-control}中建立6.5 LTS程式碼的專用分支
+### 在版本控制中建立6.5 LTS程式碼的專用分支{#create-a-dedicated-branch-for-6.5-lts-code-in-version-control}
 
 您應使用某種形式的版本控制來管理實施AEM所需的所有程式碼和設定。 應建立版本控制中的專用分支，以管理目標版本AEM中程式碼庫所需的任何變更。 針對AEM的目標版本反複測試程式碼基底，以及後續的錯誤修正，會管理於此分支。
 

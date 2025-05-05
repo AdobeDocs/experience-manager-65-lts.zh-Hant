@@ -27,7 +27,7 @@ AEMFD相容性套件也可讓您[在AEM Forms 6.5 LTS上](../../forms/using/comp
 
 如需詳細資訊，請參閱[藉由安裝相容性套件](../../forms/using/compatibility-package.md#assetsmadecompatible)，讓Assets與AEM Forms 6.5相容。
 
-## 在AEM Forms 6.5 LTS {#add-support-for-aem-forms-and-assets-in-aem-forms-6.5.lts}中新增對AEM Forms 6.5、6.4、6.3和6.2資產的支援
+## 在AEM Forms 6.5 LTS中新增對AEM Forms 6.5、6.4、6.3和6.2資產的支援 {#add-support-for-aem-forms-and-assets-in-aem-forms-6.5.lts}
 
 執行升級後，請執行以下操作以安裝AEMFD相容性套件，並讓您的資產相容於6.5：
 

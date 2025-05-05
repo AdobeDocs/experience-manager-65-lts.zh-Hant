@@ -93,7 +93,7 @@ Adobe Experience Manager可搭配下列版本的Java™虛擬機器器運作：
 | Oracle Java™ SE 17 JDK | A：支援的`[1]` |
 | IBM® Semeru J9 VM — 組建17.0.13.0 | A：支援的`[2]` |
 
-1. Oracle已改用Oracle Java™ SE產品的「長期支援」(LTS)模型。 Java™ 9、Java™ 10、Java™ 12、Java™ 13、Java™ 14、Java™ 15m Java™ 16是Oracle的非LTS版本(請參閱[Oracle Java™ SE支援藍圖](https://www.oracle.com/technetwork/java/eol-135779.html))。 若要在生產環境中部署AEM，Adobe僅支援Java™的LTS版本。 Adobe直接為所有使用Oracle Java™ SE技術的AEM客戶支援Oracle Java™ SE JDK的支援與發佈，包括公開更新結束之後的LTS版本的所有維護更新。 請參閱Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf)的[Java™支援原則。
+1. Oracle已改用Oracle Java™ SE產品的「長期支援」(LTS)模型。 Java™ 9、Java™ 10、Java™ 12、Java™ 13、Java™ 14、Java™ 15m Java™ 16是Oracle的非LTS版本(請參閱[Oracle Java™ SE支援藍圖](https://www.oracle.com/technetwork/java/eol-135779.html))。 若要在生產環境中部署AEM，Adobe僅支援Java™的LTS版本。 Adobe直接為所有使用Oracle Java™ SE技術的AEM客戶支援Oracle Java™ SE JDK的支援與發佈，包括公開更新結束之後的LTS版本的所有維護更新。 請參閱Adobe Experience Manager[&#128279;](assets/Java_Policy_for_Adobe_Experience_Manager.pdf)的Java™支援原則。
    **此版本支援Oracle Java™ 17。**
 
 1. IBM® JRE僅與WebSphere®應用程式伺服器一起受支援。

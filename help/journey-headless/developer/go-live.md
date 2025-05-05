@@ -199,7 +199,7 @@ You can start deploying your code by using the Cloud Manager CI/CD pipeline, whi
 
 恭喜！您已經完成 AEM Headless 開發人員歷程！您現在應該已經了解：
 
-*  Headless 和 Headful 內容傳遞之間的差異。
+* Headless 和 Headful 內容傳遞之間的差異。
 * AEM 的 Headless 功能。
 * 如何組織 AEM Headless 專案。
 * 如何在 AEM 建立 Headless 內容。

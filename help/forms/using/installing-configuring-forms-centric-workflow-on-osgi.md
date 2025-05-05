@@ -109,7 +109,7 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 此套件包含有�
 
    您也可以透過[AEM Forms發行版本](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)文章中列出的直接連結來下載套件。
 
-1. 安裝套件後，系統會提示您重新啟動AEM執行個體。 **不要立即重新啟動伺服器。**&#x200B;在停止 AEM Forms 伺服器之前，請等待 ServiceEvent REGISTERED 和 ServiceEvent UNREGISTERED 消息停止出現在 AEM-Installation-Directory]/crx-quickstart/logs/error.記錄檔 中[，並且日誌穩定。
+1. 安裝套件後，系統會提示您重新啟動AEM執行個體。 **不要立即重新啟動伺服器。**&#x200B;在停止 AEM Forms 伺服器之前，請等待 ServiceEvent REGISTERED 和 ServiceEvent UNREGISTERED 消息停止出現在 AEM-Installation-Directory&rbrack;/crx-quickstart/logs/error.記錄檔 中&lbrack;，並且日誌穩定。
 
    >[!NOTE]
    >

@@ -57,7 +57,7 @@ Dynamic Media支援下列3D格式。
 
 在Dynamic Media中使用3D資產之前，請確定Experience Manager管理員已在Dynamic Media - Scene7模式下啟用並設定Dynamic Media雲端服務。
 
-請參閱[設定Dynamic Media - Scene7模式和[疑難排解Dynamic Media - Scene7模式](/help/assets/troubleshoot-dms7.md)中的Dynamic Media雲端服務](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)。
+請參閱[&#128279;](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)設定Dynamic Media - Scene7模式和[疑難排解Dynamic Media - Scene7模式](/help/assets/troubleshoot-dms7.md)中的Dynamic Media雲端服務。
 
 1. **上傳3D資產**
 
@@ -151,8 +151,8 @@ Dynamic Media支援下列3D格式。
    * 在頁面的右上角附近，選取&#x200B;**[!UICONTROL 預覽]**&#x200B;以進入&#x200B;**[!UICONTROL 預覽]**&#x200B;模式。
    * 從瀏覽器中的頁面URL刪除`/editor.html`。
 
-   顯示3D媒體元件](/help/assets/assets-dm/3d-asset-in-3d-media.png)內的![3D資產
-以**[!UICONTROL 預覽]**&#x200B;模式顯示的完全互動式3D資產。
+   顯示3D媒體元件![&#128279;](/help/assets/assets-dm/3d-asset-in-3d-media.png)內的3D資產
+以&#x200B;**[!UICONTROL 預覽]**&#x200B;模式顯示的完全互動式3D資產。
 
 1. 在&#x200B;**[!UICONTROL 預覽]**&#x200B;模式中時，請執行下列任一項動作：
 
@@ -253,7 +253,7 @@ Dynamic Media接受Dynamic Media支援的各種3D檔案格式為&#x200B;*靜態�
 
 另請參閱[取得靜態資產的URL](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)。
 
-在&#x200B;**[!UICONTROL 卡片檢視]**&#x200B;中，資產名稱正下方及其日期和時間左側會顯示一個小型全球圖示，以指出資產已發佈。 在「清 **[!UICONTROL 單檢視]**」中，「已發佈」 **** 欄會指出已發佈或未發佈的資產。
+在&#x200B;**[!UICONTROL 卡片檢視]**&#x200B;中，資產名稱正下方及其日期和時間左側會顯示一個小型全球圖示，以指出資產已發佈。 在「清 **[!UICONTROL 單檢視]**」中，「已發佈」 **&#x200B;**&#x200B;欄會指出已發佈或未發佈的資產。
 
 如果您使用Experience Manager做為WCM，請使用此發佈方法直接在網頁上新增Dynamic Media 3D資產。
 
