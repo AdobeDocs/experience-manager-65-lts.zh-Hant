@@ -20,7 +20,7 @@ ht-degree: 0%
 * [How to Use the Log Viewer](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
 -->
 
-* [如何清除工作流程和稽核記錄](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24590)
+* [如何清除工作流程和稽核記錄](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-24590)
 
 * [效能調整秘訣](/help/sites-deploying/configuring-performance.md)
 

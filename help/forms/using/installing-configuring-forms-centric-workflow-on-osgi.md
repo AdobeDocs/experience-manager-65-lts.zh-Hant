@@ -107,7 +107,7 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 此套件包含有�
 1. 開啟[封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)，然後按一下&#x200B;**[!UICONTROL 上傳封裝]**&#x200B;以上傳封裝。
 1. 選取封裝並按一下&#x200B;**[!UICONTROL 安裝]**。
 
-   您也可以透過[AEM Forms發行版本](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)文章中列出的直接連結來下載套件。
+   您也可以透過[AEM Forms發行版本](https://helpx.adobe.com/tw/aem-forms/kb/aem-forms-releases.html)文章中列出的直接連結來下載套件。
 
 1. 安裝套件後，系統會提示您重新啟動AEM執行個體。 **不要立即重新啟動伺服器。**&#x200B;在停止 AEM Forms 伺服器之前，請等待 ServiceEvent REGISTERED 和 ServiceEvent UNREGISTERED 消息停止出現在 AEM-Installation-Directory&rbrack;/crx-quickstart/logs/error.記錄檔 中&lbrack;，並且日誌穩定。
 
@@ -154,7 +154,7 @@ AEM Forms有一些必要和選用的設定。 強制設定包括設定BouncyCast
 
 #### 設定Dispatcher {#configure-dispatcher}
 
-Dispatcher是適用於AEM的快取與負載平衡工具。 AEM Dispatcher也有助於保護AEM伺服器不受攻擊。 您可以搭配使用Dispatcher與企業級網頁伺服器，以提高AEM執行個體的安全性。 如果您使用[Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)，請針對AEM Forms執行下列設定：
+Dispatcher是適用於AEM的快取與負載平衡工具。 AEM Dispatcher也有助於保護AEM伺服器不受攻擊。 您可以搭配使用Dispatcher與企業級網頁伺服器，以提高AEM執行個體的安全性。 如果您使用[Dispatcher](https://helpx.adobe.com/tw/experience-manager/dispatcher/using/dispatcher-configuration.html)，請針對AEM Forms執行下列設定：
 
 1. 設定AEM Forms的存取權：
 
@@ -162,7 +162,7 @@ Dispatcher是適用於AEM的快取與負載平衡工具。 AEM Dispatcher也有�
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   儲存並關閉檔案。 如需有關篩選器的詳細資訊，請參閱[Dispatcher檔案](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)。
+   儲存並關閉檔案。 如需有關篩選器的詳細資訊，請參閱[Dispatcher檔案](https://helpx.adobe.com/tw/experience-manager/dispatcher/using/dispatcher-configuration.html)。
 
 1. 設定反向連結篩選服務：
 
@@ -172,7 +172,7 @@ Dispatcher是適用於AEM的快取與負載平衡工具。 AEM Dispatcher也有�
 
 快取是縮短資料存取時間、減少延遲，以及改善輸入/輸出(I/O)速度的機制。 調適型表單快取只會儲存調適型表單的HTML內容和JSON結構，不會儲存任何預先填入的資料。 這有助於減少轉譯最適化表單所需的時間。
 
-* 在使用最適化表單快取時，請使用[AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)來快取最適化表單的使用者端資料庫(CSS和JavaScript)。
+* 在使用最適化表單快取時，請使用[AEM Dispatcher](https://helpx.adobe.com/tw/experience-manager/dispatcher/using/dispatcher-configuration.html)來快取最適化表單的使用者端資料庫(CSS和JavaScript)。
 * 開發自訂元件時，請停用用於開發的伺服器上的最適化表單快取。
 
 執行以下步驟來設定調適型表單快取：

@@ -97,7 +97,7 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 此套件包含AEM 
 1. 打開 [封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)  然後按兩下上傳 **[!UICONTROL 包]** 以上傳包。
 1. 選擇包，然後按兩下安裝&#x200B;**&#x200B;**。
 
-   還可以通過AEM Forms版本[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)一文中列出的直接連結下載包。
+   還可以通過AEM Forms版本[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hant)一文中列出的直接連結下載包。
 
 1. 安裝包后，系統會提示您重新啟動AEM執行個體。 **不要立即重新啟動伺服器。**&#x200B;在停止 AEM Forms 伺服器之前，請等待 ServiceEvent REGISTERED 和 ServiceEvent UNREGISTERED 消息停止出現在 AEM-Installation-Directory&rbrack;/crx-quickstart/logs/error.記錄檔 中&lbrack;，並且日誌穩定。
 

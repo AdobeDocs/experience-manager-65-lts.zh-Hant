@@ -16,7 +16,7 @@ ht-degree: 3%
 
 ## 概觀 {#overview}
 
-互動式通訊是AEM Forms 6.5 LTS中建立客戶通訊的預設和建議方法。 若要繼續使用AEM Forms 6.5 LTS中的字母，您必須安裝最新的[AEMFD相容性套件](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)。
+互動式通訊是AEM Forms 6.5 LTS中建立客戶通訊的預設和建議方法。 若要繼續使用AEM Forms 6.5 LTS中的字母，您必須安裝最新的[AEMFD相容性套件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)。
 
 AEMFD相容性套件也可讓您[在AEM Forms 6.5 LTS上](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)使用下列來自AEM Forms 6.5.22.0、6.4、6.3和6.2的資產
 
@@ -31,9 +31,9 @@ AEMFD相容性套件也可讓您[在AEM Forms 6.5 LTS上](../../forms/using/comp
 
 執行升級後，請執行以下操作以安裝AEMFD相容性套件，並讓您的資產相容於6.5：
 
-確定您已預先安裝[AEM相容性套件](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)。
+確定您已預先安裝[AEM相容性套件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)。
 
-1. 安裝最新的AEM 6.5 LTS [相容性套件](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)。
+1. 安裝最新的AEM 6.5 LTS [相容性套件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)。
 
    如需上傳和安裝套件的詳細資訊，請參閱[如何使用套件](/help/sites-administering/package-manager.md)。
 

@@ -32,7 +32,7 @@ ht-degree: 1%
    1. 開啟[封裝管理員](/help/sites-administering/package-manager.md)，然後按一下&#x200B;**[!UICONTROL 上傳封裝]**&#x200B;以上傳封裝。
    1. 選取封裝並按一下&#x200B;**[!UICONTROL 安裝]**。
 
-      您也可以使用[AEM Forms發行版本](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)文章中所列的直接連結來下載套件。
+      您也可以使用[AEM Forms發行版本](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)文章中所列的直接連結來下載套件。
 
       安裝套件後，系統會提示您重新啟動AEM執行個體。 **不要立即停止伺服器。**&#x200B;在停止AEM Forms伺服器之前，請等候直到ServiceEvent REGISTERED和ServiceEvent UNREGISTERED訊息停止出現在&lt;crx-repository>/error.log檔案中，而且記錄檔穩定。 另請注意，有些套件可能維持已安裝狀態。 您可以安全地忽略這些套裝程式的狀態。
 
@@ -52,7 +52,7 @@ ht-degree: 1%
 
      移轉公用程式可讓舊版的最適化表單和通訊管理資產相容於AEM 6.5表單。 您可以從AEM Software Distribution下載公用程式。 如需設定及使用移轉公用程式的逐步資訊，請參閱[移轉公用程式](../../forms/using/migration-utility.md)。
 
-     如果您使用[範例將草稿與提交元件](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html)與資料庫整合，並從舊版升級，請在執行升級後執行下列SQL查詢：
+     如果您使用[範例將草稿與提交元件](https://helpx.adobe.com/tw/experience-manager/6-3/forms/using/integrate-draft-submission-database.html)與資料庫整合，並從舊版升級，請在執行升級後執行下列SQL查詢：
 
      ```sql
      UPDATE metadata m, additionalmetadatatable am
@@ -93,4 +93,4 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >在AEM 6.4 Forms中，crx-repository的結構已變更。 如果從6.3 Forms升級至AEM 6.5 Forms，請使用變更的路徑進行重新建立的自訂。 如需已變更路徑的完整清單，請參閱[AEM中的Forms存放庫重組](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5)。
+   >在AEM 6.4 Forms中，crx-repository的結構已變更。 如果從6.3 Forms升級至AEM 6.5 Forms，請使用變更的路徑進行重新建立的自訂。 如需已變更路徑的完整清單，請參閱[AEM中的Forms存放庫重組](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5)。

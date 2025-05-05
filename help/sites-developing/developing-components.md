@@ -74,7 +74,7 @@ AEM元件可用來保留、格式化及轉譯可在您的網頁上使用的內�
 
 ### 使用HTML範本語言 {#using-the-html-template-language}
 
-AEM 6.0推出的[HTML範本語言(HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)取代了JSP (JavaServer Pages)，成為HTML偏好且建議使用的伺服器端範本系統。 對於需要建立強大企業網站的網頁開發人員而言，HTL有助於提高安全性和開發效率。
+AEM 6.0推出的[HTML範本語言(HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hant)取代了JSP (JavaServer Pages)，成為HTML偏好且建議使用的伺服器端範本系統。 對於需要建立強大企業網站的網頁開發人員而言，HTL有助於提高安全性和開發效率。
 
 >[!NOTE]
 >
@@ -88,11 +88,11 @@ AEM 6.0推出的[HTML範本語言(HTL)](https://experienceleague.adobe.com/docs/
 
 ### 使用Java {#using-java}
 
-[HTL Java Use-API讓HTL檔案能夠存取自訂Java類別中的Helper方法](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html)。 這可讓您使用Java程式碼來實作選取和設定元件內容的邏輯。
+[HTL Java Use-API讓HTL檔案能夠存取自訂Java類別中的Helper方法](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=zh-Hant)。 這可讓您使用Java程式碼來實作選取和設定元件內容的邏輯。
 
 ### 使用JavaScript {#using-javascript}
 
-[HTL JavaScript Use-API讓HTL檔案能夠存取以JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html)撰寫的Helper程式碼。 這可讓您使用JavaScript程式碼來實作選取和設定元件內容的邏輯。
+[HTL JavaScript Use-API讓HTL檔案能夠存取以JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=zh-Hant)撰寫的Helper程式碼。 這可讓您使用JavaScript程式碼來實作選取和設定元件內容的邏輯。
 
 ### 使用使用者端HTML資料庫 {#using-client-side-html-libraries}
 
@@ -191,7 +191,7 @@ newComponent (cq:Component)
 >
 >請參閱：
 >
->* [自訂對話方塊欄位](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html)上的AEM Gems工作階段。
+>* [自訂對話方塊欄位](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=zh-Hant)上的AEM Gems工作階段。
 >* [程式碼範例 — 如何自訂對話方塊欄位](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)下涵蓋的相關範常式式碼。
 >
 
@@ -432,7 +432,7 @@ GITHUB上的程式碼
 擴充功能：
 
 * 簡化同步作業（不需要Maven或File Vault），協助提高開發人員效率，同時協助知識有限AEM的前端開發人員參與專案。
-* 提供一些[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)支援，這種範本語言旨在簡化元件開發並提高安全性。
+* 提供一些[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hant)支援，這種範本語言旨在簡化元件開發並提高安全性。
 
 >[!NOTE]
 >
@@ -444,7 +444,7 @@ GITHUB上的程式碼
 
 * HTL
 
-   * 不強制使用[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)，但如果您的元件需要更新，最好考慮將[從JSP移轉至HTL](/help/sites-developing/components-basics.md#htl-vs-jsp)。
+   * 不強制使用[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hant)，但如果您的元件需要更新，最好考慮將[從JSP移轉至HTL](/help/sites-developing/components-basics.md#htl-vs-jsp)。
 
 * 元件
 
@@ -457,9 +457,9 @@ GITHUB上的程式碼
    * 建立對話方塊以用於觸控式UI。 不過，為相容性目的，如果沒有為觸控式UI定義對話方塊，觸控式UI可以使用傳統UI對話方塊的定義。
    * 提供[AEM現代化工具](/help/sites-developing/modernization-tools.md)以協助您擴充現有元件。
    * [將ExtJS對應到Granite UI元件](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components)可提供ExtJS xtype和節點型別與其對等Granite UI資源型別的便利概觀。
-   * 自訂欄位，如需詳細資訊，請參閱[自訂對話方塊欄位](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html)上的AEM Gems工作階段。
+   * 自訂欄位，如需詳細資訊，請參閱[自訂對話方塊欄位](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=zh-Hant)上的AEM Gems工作階段。
    * 從vtypes移轉至[Granite UI驗證](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * 使用JS接聽程式，如需詳細資訊，請參閱[自訂對話方塊欄位](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html)上的[處理欄位事件](#handling-field-events)和AEM Gems工作階段。
+   * 使用JS接聽程式，如需詳細資訊，請參閱[自訂對話方塊欄位](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=zh-Hant)上的[處理欄位事件](#handling-field-events)和AEM Gems工作階段。
 
 ### 正在移轉cq：listener程式碼 {#migrating-cq-listener-code}
 

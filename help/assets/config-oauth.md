@@ -27,7 +27,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->如有需要，您可以在[支援程式](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support)之後提交支援票證。
+>如有需要，您可以在[支援程式](https://experienceleague.adobe.com/zh-hant?lang=en&amp;support-tab=home#support)之後提交支援票證。
 
 ## 現有AMS使用者的OAuth設定 {#oauth-config-new-ams-users}
 
@@ -44,7 +44,7 @@ OAuth設定需要下列先決條件：
 
 ### 現有AMS和On Prem使用者的OAuth設定 {#steps-config-oauth-onprem}
 
-以下步驟可由系統管理員執行。 AMS客戶可以聯絡Adobe代表，或在[支援程式](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support)後提交支援票證。
+以下步驟可由系統管理員執行。 AMS客戶可以聯絡Adobe代表，或在[支援程式](https://experienceleague.adobe.com/zh-hant?lang=en&amp;support-tab=home#support)後提交支援票證。
 
 1. 在`com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`中新增或更新以下屬性：
 
@@ -187,4 +187,4 @@ OAuth設定需要下列先決條件：
 >
 >* [智慧標籤概觀及訓練方式](enhanced-smart-tags.md)
 >* [設定智慧標籤](config-smart-tagging.md)
->* [有關智慧標籤的教學影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
+>* [有關智慧標籤的教學影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=zh-Hant)

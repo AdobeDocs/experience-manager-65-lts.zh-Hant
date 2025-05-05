@@ -358,7 +358,7 @@ Lucene索引在Oak 1.0.9中引入，並針對AEM 6首次推出時引入的屬性
    * 如果這樣仍無法解決問題，且`AsyncIndexUpdate`例外狀況持續存在，則：
 
       1. [重新索引](#how-to-re-index)錯誤的索引
-      1. 同時提交[Adobe支援](https://helpx.adobe.com/support.html)票證
+      1. 同時提交[Adobe支援](https://helpx.adobe.com/tw/support.html)票證
 
 ### 如何重新索引 {#how-to-re-index}
 

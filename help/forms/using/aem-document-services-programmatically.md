@@ -26,7 +26,7 @@ ht-degree: 1%
 
 * 在使用DocAssurance服務API之前，[設定DocAssurance服務](/help/forms/using/install-configure-document-services.md)。
 
-* 使用您的AEM Forms maven專案下載及設定[AEM使用者端SDK](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)。 該處提供使用AEM檔案服務建置Maven專案所需的使用者端類別。
+* 使用您的AEM Forms maven專案下載及設定[AEM使用者端SDK](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)。 該處提供使用AEM檔案服務建置Maven專案所需的使用者端類別。
 
 * 瞭解[如何使用Maven](/help/sites-developing/ht-projects-maven.md)建置您的AEM專案
 
@@ -68,7 +68,7 @@ DocAssurance服務包括下列服務：
 
 >[!NOTE]
 >
->所有這些服務都使用Document物件作為輸入引數，可在URL [https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html)找到Javadoc
+>所有這些服務都使用Document物件作為輸入引數，可在URL [https://helpx.adobe.com/tw/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/tw/experience-manager/6-3/forms/javadocs/index.html)找到Javadoc
 
 ### 新增不可見的簽章欄位 {#adding-an-invisible-signature-field}
 
@@ -4463,7 +4463,7 @@ PDF Generator服務提供可將原生檔案格式轉換為PDF的API。 它也會
 GeneratePDFService提供的API可將各種檔案格式(如.doc、.docx、.ppt、.pptx、.xls、.xlsx、.odp、.odt、.ods、.swf （已棄用）、.jpg、.bmp、.tif、.png、.html和許多其他檔案格式)轉換為PDF。 它也提供將PDF匯出為各種檔案格式和最佳化PDF的API。 此服務支援下列API：
 
 * **createPDF**：將支援的檔案型別轉換為PDF檔案。 它支援Microsoft Word、Microsoft PowerPoint、Microsoft Excel和Microsoft Project等檔案格式。 除了這些應用程式外，任何產生應用程式型別的協力廠商通用PDF也可以插入API中。
-* **exportPDF**：將PDF檔案轉換為支援的檔案型別。 方法接受PDF作為輸入，並以指定的檔案型別格式匯出PDF的內容。 您可以將PDF檔案匯出為Encapsulated PostScript( eps)、HTML 3.2( htm， html)、HTML 4.01 (含CSS 1.0( htm， html)、JPEG( jpg， jpeg， jpe)、JPEG2000( jpf， jpx， jp2， j2k， j2c， jpc)、Microsoft Word Document( doc， docx) Microsoft Excel活頁簿( xlsx)、Microsoft PowerPoint簡報( pptx)、PNG( png)、PostScript( ps)、Rtf格式( rtf)文本（可訪問）(txt)、文本（純）(txt) TIFF( tif， tiff)、XML 1.0( xml)、PDF/A-1a(sRGB)、PDF/A-1b、PDF/A-2a(sRGB)、PDF/A-2b(sRGB)、PDF/A-3a(sRGB)、PDF/A-3b(sRGB)格式。 您也可以為PDF輸出指定[自訂預檢設定檔](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html)。
+* **exportPDF**：將PDF檔案轉換為支援的檔案型別。 方法接受PDF作為輸入，並以指定的檔案型別格式匯出PDF的內容。 您可以將PDF檔案匯出為Encapsulated PostScript( eps)、HTML 3.2( htm， html)、HTML 4.01 (含CSS 1.0( htm， html)、JPEG( jpg， jpeg， jpe)、JPEG2000( jpf， jpx， jp2， j2k， j2c， jpc)、Microsoft Word Document( doc， docx) Microsoft Excel活頁簿( xlsx)、Microsoft PowerPoint簡報( pptx)、PNG( png)、PostScript( ps)、Rtf格式( rtf)文本（可訪問）(txt)、文本（純）(txt) TIFF( tif， tiff)、XML 1.0( xml)、PDF/A-1a(sRGB)、PDF/A-1b、PDF/A-2a(sRGB)、PDF/A-2b(sRGB)、PDF/A-3a(sRGB)、PDF/A-3b(sRGB)格式。 您也可以為PDF輸出指定[自訂預檢設定檔](https://helpx.adobe.com/tw/acrobat/using/preflight-profiles-acrobat-pro.html)。
 
 * **optimizePDF**：最佳化PDF檔案，並將PDF檔案從一種型別轉換為另一種型別。 方法接受PDF檔案作為輸入。
 * **htmlToPdf2**：將HTML頁面轉換為PDF檔案。 它接受HTML頁面的URL作為輸入。
