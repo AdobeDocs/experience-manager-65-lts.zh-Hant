@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 0afd255ec5c9d3db37f2f059782b35052761b1cf
+source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 23%
+source-wordcount: '805'
+ht-degree: 21%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 23%
 
 ## 新增功能 {#what-s-new}
 
-[!DNL Adobe Experience Manager] 6.5 LTS是[!DNL Adobe Experience Manager] 6.5程式碼基底的升級版本。 此版本提供全新的增強功能、重要客戶修正、高優先順序的客戶增強功能，以及針對產品穩定化的一般錯誤修正。其中也包含[!DNL Adobe Experience Manager]個6.5 Service Pack發行版本，最高至SP22。
+[!DNL Adobe Experience Manager] 6.5 LTS是[!DNL Adobe Experience Manager] 6.5程式碼基底的升級版本。 它提供重要的客戶修正、高優先順序的客戶增強功能，以及針對產品穩定化的一般錯誤修正。 其中也包含[!DNL Adobe Experience Manager]個6.5 Service Pack發行版本，最高至SP22。
 
 下列清單提供概述，後續頁面則列出完整詳細資訊。
 
@@ -36,9 +36,9 @@ ht-degree: 23%
 
 #### Java™支援  {#java-support}
 
-* 支援Java™ 17。
+* 支援Java™ 17和Java™ 21。
 * 為獲得最佳效能，請以其他值覆寫預設GC值。 如需詳細資訊，請參閱[安裝與更新](/help/sites-deploying/custom-standalone-install.md)區段。
-* Adobe會發佈Java™ 17維護更新，以供客戶在AEM相關專案中使用(若未從Oracle公開提供)。
+* Adobe會發佈Java™ 17和Java™ 21維護更新，以供客戶在AEM相關專案中使用(若未從Oracle公開提供)。
 
 #### Uberjar封裝 {#uber-jar-packaging}
 
@@ -60,7 +60,7 @@ ht-degree: 23%
 
 >[!NOTE]
 >
->Java™ 17是搭配AEM 6.5 LTS使用的建議版本。
+>Java™ 17/Java™ 21是搭配AEM 6.5 LTS使用的建議版本。
 
 ## 過時和移除的功能 {#deprecated-and-removed-features}
 
@@ -113,5 +113,5 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 這些網站僅供客戶使用。 如果您是客戶且需要存取權，請聯絡您的Adobe客戶經理。
 
 * [產品下載網址為licensing.adobe.com](https://licensing.adobe.com/)
-* [連絡Adobe客戶支援](https://experienceleague.adobe.com/zh-hant/docs/customer-one/using/home)。
+* [連絡Adobe客戶支援](https://experienceleague.adobe.com/en/docs/customer-one/using/home)。
 

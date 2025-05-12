@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: d18c9dc3-fdcc-4558-b9b6-ecf1ce61048a
-source-git-commit: 3677c3921a7dd603afd251aebf4be67947fb1e02
+source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '263'
 ht-degree: 1%
 
 ---
@@ -18,11 +18,11 @@ ht-degree: 1%
 
 ## Adobe為何發行適用於AEM的6.5 LTS？
 
-Adobe對其提供之應用程式的安全性和穩定性維持高度承諾。 AEM 6.5長期支援為AEM 6.5的未來更新奠定了基礎。值得注意的是，AEM 6.5 LTS包含對Oracle Java 17的支援，並將是AEM分支，接受新的AEM功能和創新。
+Adobe對其提供之應用程式的安全性和穩定性維持高度承諾。 AEM 6.5長期支援為AEM 6.5的未來更新奠定了基礎。值得注意的是，AEM 6.5 LTS包含對Oracle Java 17和Java 21的支援，並將是AEM分支，接受新的AEM功能和創新。
 
 ## 我是內部部署客戶，如果不升級至AEM 6.5 LTS會發生什麼事？
 
-AEM 6.5 LTS包含重要安全性和穩定性更新，包括支援Oracle Java 17。 雖然Adobe在至少未來2年內仍會持續支援AEM 6.5，但建議組織開始規劃升級至6.5 LTS。
+AEM 6.5 LTS包含重要安全性和穩定性更新，包括對Oracle Java 17和Java 21的支援。 雖然Adobe在至少未來2年內仍會持續支援AEM 6.5，但建議組織開始規劃升級至6.5 LTS。
 
 ## 我現有的自訂和整合是否會受到影響？
 

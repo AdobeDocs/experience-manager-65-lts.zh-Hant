@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1539'
 ht-degree: 0%
 
 ---
@@ -44,11 +44,11 @@ AEM的預設連線埠為4502。 如果該連線埠無法使用或已使用，Qui
 >
 >您也可以使用start指令中的`-port`選項來變更連線埠號碼。
 
-### Java 17考量事項 {#java-considerations}
+### Java 17/Java 21考量事項 {#java-considerations}
 
-如果您執行Oracle Java 17，啟動AEM時必須在命令列中新增其他引數。
+如果您執行Oracle Java 17或Java 21，啟動AEM時必須在命令列中新增其他引數。
 
-以下範例說明在Java 17上啟動AEM時，其他JVM引數的外觀：
+以下範例說明在Java 17/Java 21上啟動AEM時，其他JVM引數的外觀：
 
 ```shell
 -XX:+UseG1GC --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.lang=org.apache.sling.commons.threads -Djdk.util.zip.disableZip64ExtraFieldValidation=true
