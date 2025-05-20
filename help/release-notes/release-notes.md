@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
+source-git-commit: 8f6d152ceeae12cdadd0096e114584ce2a63a2ac
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 21%
+source-wordcount: '927'
+ht-degree: 18%
 
 ---
 
@@ -108,10 +108,28 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | 開放原始碼 | `org.apache.jackrabbit.api`個套件現在已從`org.apache.jackrabbit.oak-jackrabbit-api`套件組合匯出。 | 不需要變更。 | 6.5 LTS GA |
 | 開放原始碼 | 不支援`com.github.jknack.handlebars` | 挑選相關的[版本](https://mvnrepository.com/artifact/com.github.jknack/handlebars) | 6.5 LTS GA |
 
+## 已知問題 {#known-issues}
+
+### 僅SSL功能的Dispatcher連線失敗 {#ssl-only-feature}
+
+在AEM部署中啟用SSL專用功能時，有一個已知問題會影響Dispatcher與AEM執行個體之間的連線。 啟用此功能後，健康情況檢查可能會失敗，並且Dispatcher與AEM執行個體之間的通訊可能會中斷。
+
+**影響：**
+* HTTP 500回應代碼的健康情況檢查失敗
+* Dispatcher與AEM執行個體之間的流量中斷
+* 無法透過排程程式正確提供內容
+
+**受影響的環境：**
+* 使用Dispatcher設定進行AEM部署
+* 已啟用僅SSL功能的系統
+
+**解決方案：**
+如果您遇到此問題，請聯絡Adobe客戶支援。 Hotfix [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.0.zip)可用來解決此問題。 在套用必要的Hotfix之前，請勿嘗試啟用僅限SSL的功能。
+
 ## 受限制的網站{#restricted-sites}
 
 這些網站僅供客戶使用。 如果您是客戶且需要存取權，請聯絡您的Adobe客戶經理。
 
 * [產品下載網址為licensing.adobe.com](https://licensing.adobe.com/)
-* [連絡Adobe客戶支援](https://experienceleague.adobe.com/zh-hant/docs/customer-one/using/home)。
+* [連絡Adobe客戶支援](https://experienceleague.adobe.com/en/docs/customer-one/using/home)。
 
