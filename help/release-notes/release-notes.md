@@ -1,14 +1,14 @@
 ---
 title: Adobe Experience Manager 6.5 LTS目前發行說明
-description: 這些是 Adobe Experience Manager 6.5 LTS 的最新發行說明。
+description: 尋找Adobe Experience Manager 6.5 LTS的最新發行資訊。
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 8f6d152ceeae12cdadd0096e114584ce2a63a2ac
+source-git-commit: abba652bb5d7eb9b5f902ce99c07f2186e313173
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 18%
+source-wordcount: '1016'
+ht-degree: 12%
 
 ---
 
@@ -32,13 +32,13 @@ ht-degree: 18%
 
 [!DNL Adobe Experience Manager] 6.5 LTS的平台建置在OSGi架構的更新版本（Apache Sling和Apache Felix）以及Java™內容存放庫： Apache Jackrabbit Oak 1.68.x之上。
 
-快速入門使用Eclipse Jetty 11.0.x作為servlet引擎。
+Eclipse Jetty 11.0.x作為Quickstart的servlet引擎使用。
 
 #### Java™支援  {#java-support}
 
 * 支援Java™ 17和Java™ 21。
 * 為獲得最佳效能，請以其他值覆寫預設GC值。 如需詳細資訊，請參閱[安裝與更新](/help/sites-deploying/custom-standalone-install.md)區段。
-* Adobe會發佈Java™ 17和Java™ 21維護更新，以供客戶在AEM相關專案中使用(若未從Oracle公開提供)。
+* 當Oracle未公開提供客戶在AEM相關專案中使用時，Adobe會發佈Java™ 17和Java™ 21維護更新。
 
 #### Uberjar封裝 {#uber-jar-packaging}
 
@@ -64,18 +64,19 @@ ht-degree: 18%
 
 ## 過時和移除的功能 {#deprecated-and-removed-features}
 
-Adobe 持續評估產品功能，以更新或替代的方式來改善或取代舊功能，以提升客戶享有的整體價值，且隨時謹慎考慮是否回溯相容。
+Adobe會持續審視產品功能，以透過更新或取代舊功能來提升客戶價值。 進行這些變更時，會留意回溯相容性。
 
 若要傳達Adobe Experience Manager (AEM)功能即將移除或取代的訊息，請套用下列規則：
 
 1. 首先需公告功能已過時。雖然已棄用，功能仍可使用，但不會進一步增強。
-1. 後續最新主要發行版本，則將最先移除已棄用的功能。 實際的目標移除日期將於稍後宣佈。
+1. 後續最新主要發行版本，則將最先移除已棄用的功能。 實際的目標移除日期計畫稍後公告。
 
 此程序可讓客戶在功能真正移除之前，至少還有一個發行週期，讓實作適應過時功能的新版本或後續版本。
 
 ### 已棄用的功能 {#deprecated-features}
 
-本節提供AEM 6.5 LTS中標示為過時的功能。 通常，未來新發行版本預計移除的功能，將先設為過時並提供其他選項。
+本節列出Adobe在AEM 6.5 LTS中已棄用的功能。 在未來版本中移除功能之前，Adobe通常會先淘汰這些功能，並提供替代方案。
+
 
 建議客戶檢閱是否在目前的部署中使用這些功能，並規劃變更實作，改用所提供的替代方案。
 
@@ -89,7 +90,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 | 區域 | 功能 | 替代方案 | 版本(SP) |
 |--- |--- |--- |--- |
-| Commerce | 不支援AEM CIF Classic。 | 您應該移轉至[AEM CIF](/help/commerce/cif/migration.md)。 | 6.5 LTS GA |
+| Commerce | 不支援AEM CIF Classic。 | 移轉至[AEM CIF](/help/commerce/cif/migration.md)。 | 6.5 LTS GA |
 | 解決方案 | 不支援社交/社群。 | 沒有可用的替代專案。 | 6.5 LTS GA |
 | Screens | 不支援Screens。 | 沒有可用的替代專案。 | 6.5 LTS GA |
 | Assets | 不支援`dam-pim`和`dam-rating`，因為套件組合依存於social。 | 沒有可用的替代專案。 | 6.5 LTS GA |
@@ -97,7 +98,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | 入口網站 | 不支援AEM Portal Director。 | 沒有可用的替代專案。 | 6.5 LTS GA |
 | Granite | 組合`com.adobe.granite.socketio`已移除。 | 沒有可用的替代專案。 | 6.5 LTS GA |
 | Granite | 不支援`com.adobe.granite.crx-explorer`。 | 沒有可用的替代專案。 | 6.5 LTS GA |
-| Granite | 不支援`crx2oak`。 | 挑選相關的[Oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade)版本 | 6.5 LTS GA |
+| Granite | 不支援`crx2oak`。 | 挑選相關版本的[Oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) | 6.5 LTS GA |
 | Adobe | 不支援`com.adobe.cq.cq-searchpromote-integration`。 | 沒有可用的替代專案。 | 6.5 LTS GA |
 | 瓜瓦 | 所有Guava相依性現在在AEM中移除，因此`com.adobe.granite.osgi.wrapper.guava-15.0.0-0002`套件組合並非AEM的一部分。 | 如果客戶依賴Guava，則可自行新增Guava，或儘可能以Java集合或其他替代專案取代Guava程式碼。 | 6.5 LTS GA |
 | We.Retail | 不支援We-Retail範例網站。 | 沒有可用的替代專案。 | 6.5 LTS GA |
@@ -110,17 +111,34 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 ## 已知問題 {#known-issues}
 
+### AEM 6.5.21-6.5.23和AEM 6.5 LTS GA**中的JSP指令碼套件組合問題
+
+AEM 6.5.21、6.5.22、6.5.23和AEM 6.5 LTS GA隨附`org.apache.sling.scripting.jsp:2.6.0`套件，其中包含已知問題。 AEM執行個體處理許多並行請求時，高負載下通常會發生問題。
+
+發生此問題時，下列其中一個例外可能會與對`org.apache.sling.scripting.jsp:2.6.0`的參考一起出現在錯誤記錄中：
+
+* `java.io.IOException: classFile.delete() failed`
+* `java.io.IOException: tmpFile.renameTo(classFile) failed`
+* `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
+* `java.io.FileNotFoundException`
+
+發生此錯誤時，唯一的復原方法是重新啟動AEM執行個體。
+
+請聯絡Adobe客戶支援，並參閱此版本注意事項以尋求解決方案。
+
 ### 僅SSL功能的Dispatcher連線失敗 {#ssl-only-feature}
 
-在AEM部署中啟用SSL專用功能時，有一個已知問題會影響Dispatcher與AEM執行個體之間的連線。 啟用此功能後，健康情況檢查可能會失敗，並且Dispatcher與AEM執行個體之間的通訊可能會中斷。
+在AEM部署中啟用SSL專用功能時，有一個已知問題會影響Dispatcher與AEM執行個體之間的連線。 啟用此功能後，健康情況檢查可能會失敗，而Dispatcher與AEM執行個體之間的通訊可能會中斷。
 
 **影響：**
+
 * HTTP 500回應代碼的健康情況檢查失敗
 * Dispatcher與AEM執行個體之間的流量中斷
-* 無法透過排程程式正確提供內容
+* 無法透過Dispatcher正確提供內容
 
 **受影響的環境：**
-* 使用Dispatcher設定進行AEM部署
+
+* AEM部署搭配Dispatcher設定
 * 已啟用僅SSL功能的系統
 
 **解決方案：**
@@ -131,5 +149,5 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 這些網站僅供客戶使用。 如果您是客戶且需要存取權，請聯絡您的Adobe客戶經理。
 
 * [產品下載網址為licensing.adobe.com](https://licensing.adobe.com/)
-* [連絡Adobe客戶支援](https://experienceleague.adobe.com/zh-hant/docs/customer-one/using/home)。
+* [連絡Adobe客戶支援](https://experienceleague.adobe.com/en/docs/customer-one/using/home)。
 
