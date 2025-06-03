@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
+source-git-commit: dc92f670e7025f9490abbcecff4b485af331bd6d
 workflow-type: tm+mt
-source-wordcount: '1539'
+source-wordcount: '1525'
 ht-degree: 0%
 
 ---
@@ -73,10 +73,6 @@ AEM的預設連線埠為4502。 如果該連線埠無法使用或已使用，Qui
 * 在開發期間，將內容放入檔案系統可能會更容易。
 * 如果發生錯誤，將無法存取Web主控台和存放庫。 透過此功能，您可以將其他套件組合放入此目錄中，並且應該安裝這些套件。
 * 可以在快速入門開始之前建立`crx-quickstart/install`資料夾，並且可以將其他套件放在該資料夾中。
-
->[!NOTE]
->
->另請參閱[如何在伺服器啟動時自動安裝CRX套件](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html)以取得範例。
 
 ## 安裝和啟動Adobe Experience Manager as a Windows Service {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
 
