@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 7f8de16f-9e9a-4d37-9978-d26c496b911c
-source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
+source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,13 @@ ht-degree: 0%
 
 ## 升級前步驟 {#pre-upgrade-steps}
 
-在執行升級之前，必須完成數個步驟。 如需詳細資訊，請參閱[升級程式碼和自訂](/help/sites-deploying/upgrading-code-and-customizations.md)和[升級前維護工作](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。 此外，請確定您的系統符合AEM 6.5 LTS [&#128279;](/help/sites-deploying/technical-requirements.md)的需求，並檢視[升級計畫考量事項](/help/sites-deploying/upgrade-planning.md)以及[分析器](/help/sites-deploying/aem-analyzer.md)如何協助您估計複雜性。
+在執行升級之前，必須完成數個步驟。 如需詳細資訊，請參閱[升級程式碼和自訂](/help/sites-deploying/upgrading-code-and-customizations.md)和[升級前維護工作](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。 此外，請確定您的系統符合AEM 6.5 LTS ](/help/sites-deploying/technical-requirements.md)的[需求，並檢視[升級計畫考量事項](/help/sites-deploying/upgrade-planning.md)以及[分析器](/help/sites-deploying/aem-analyzer.md)如何協助您估計複雜性。
 
 
 ### 移轉先決條件 {#migration-prerequisites}
 
 * **最低必要的Java版本**：請確定您已在Tomcat伺服器上安裝Oracle® JRE 17/21。
-* **Tomcat伺服器**： 6.5 LTS所需的Tomcat伺服器版本是&#x200B;**11.0.x**。
+* **Tomcat伺服器**： AEM 6.5 LTS支援的Tomcat伺服器版本為&#x200B;**10.0.x**&#x200B;和&#x200B;**10.1.x**。
 
 ### 執行升級 {#performing-the-upgrade}
 

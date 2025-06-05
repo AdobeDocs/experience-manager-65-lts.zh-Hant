@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: 5f968f5dc0696a683cc063d330c8edfba05f11ab
+source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '843'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 以下應用程式伺服器的安裝步驟已說明：
 
 * [WebSphere](#websphere)
-* [Tomcat 11.0.x](#tomcat)
+* [Tomcat 10.0.x/10.1.x](#tomcat)
 
 請參閱適當的應用程式伺服器檔案，以取得有關安裝Web應用程式、伺服器設定以及如何啟動和停止伺服器的詳細資訊。
 
@@ -122,7 +122,7 @@ AEM會以單一war檔案的形式進行部署。
 
 * 啟動AEM網路應用程式
 
-#### Tomcat 11.0.x {#tomcat}
+#### Tomcat 10.0.x/10.1.x {#tomcat}
 
 在部署之前，請閱讀上述[一般說明](#general-description)。
 
