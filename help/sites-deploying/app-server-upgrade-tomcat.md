@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 升級前步驟 {#pre-upgrade-steps}
 
-在執行升級之前，必須完成數個步驟。 如需詳細資訊，請參閱[升級程式碼和自訂](/help/sites-deploying/upgrading-code-and-customizations.md)和[升級前維護工作](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。 此外，請確定您的系統符合AEM 6.5 LTS ](/help/sites-deploying/technical-requirements.md)的[需求，並檢視[升級計畫考量事項](/help/sites-deploying/upgrade-planning.md)以及[分析器](/help/sites-deploying/aem-analyzer.md)如何協助您估計複雜性。
+在執行升級之前，必須完成數個步驟。 如需詳細資訊，請參閱[升級程式碼和自訂](/help/sites-deploying/upgrading-code-and-customizations.md)和[升級前維護工作](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。 此外，請確定您的系統符合AEM 6.5 LTS [&#128279;](/help/sites-deploying/technical-requirements.md)的需求，並檢視[升級計畫考量事項](/help/sites-deploying/upgrade-planning.md)以及[分析器](/help/sites-deploying/aem-analyzer.md)如何協助您估計複雜性。
 
 
 ### 移轉先決條件 {#migration-prerequisites}
