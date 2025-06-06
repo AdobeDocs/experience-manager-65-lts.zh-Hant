@@ -10,9 +10,9 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 432fc767-a6b8-48f8-b124-b13baca51fe8
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 7584fa1c544f9dd499b4007a9158e25b783f620c
 workflow-type: tm+mt
-source-wordcount: '2577'
+source-wordcount: '2594'
 ht-degree: 1%
 
 ---
@@ -211,6 +211,10 @@ Lucene在兩個清單（或循環配置資源`n`清單，搜尋`n`個字時）�
 | --- | --- | --- |
 
 找到多個專案時，會依分數排序。
+
+>[!NOTE]
+>
+>本節中說明的搜尋機制使用Lucene索引，而非部份比對，如Linux `grep`命令。
 
 ### Lucene屬性索引 {#the-lucene-property-index}
 
