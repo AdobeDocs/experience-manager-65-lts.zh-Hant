@@ -1,19 +1,19 @@
 ---
 title: 通用編輯器
-description: 瞭解通用編輯器的彈性，以及如何協助您使用AEM 6.5強化Headless體驗。
+description: 瞭解通用編輯器的彈性，以及如何協助您使用AEM 6.5 LTS強化Headless體驗。
 feature: Developing
 role: Developer
 exl-id: 495df631-5bdd-456b-b115-ec8561f33488
-source-git-commit: 3f6d0791968ad3017256dcd5ecea617bc7c8ed83
+source-git-commit: 1529d3309a07aecaab29198f30e752ad00c53fab
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1192'
 ht-degree: 1%
 
 ---
 
 # 通用編輯器 {#universal-editor}
 
-瞭解通用編輯器的彈性，以及如何協助您使用AEM 6.5強化Headless體驗。
+瞭解通用編輯器的彈性，以及如何協助您使用AEM 6.5 LTS強化Headless體驗。
 
 ## 概觀 {#overview}
 
@@ -22,13 +22,13 @@ ht-degree: 1%
 * 由於通用編輯器支援對所有形式的AEM Headless內容進行相同一致的視覺編輯，因此作者可受益於通用編輯器的彈性。
 * 開發人員可受益於Universal Editor的多功能性，因為它也支援實作的真正分離。 它可讓開發人員利用他們選擇的任何架構或架構，而不受任何SDK或技術限制。
 
-如需詳細資訊，請參閱通用編輯器[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)上的AEM as a Cloud Service檔案。
+如需詳細資訊，請參閱通用編輯器](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)上的[AEM as a Cloud Service檔案。
 
 ## 架構 {#architecture}
 
 Universal Editor是一項與AEM搭配使用的服務，可讓您無頭製作內容。
 
-* Universal Editor託管於`https://experience.adobe.com/#/aem/editor/canvas`，可編輯AEM 6.5轉譯的頁面。
+* Universal Editor託管於`https://experience.adobe.com/#/aem/editor/canvas`，可編輯AEM 6.5 LTS轉譯的頁面。
 * Universal Editor會透過AEM作者例項中的Dispatcher讀取AEM頁面。
 * 與Dispatcher在相同主機上執行的Universal Editor服務會將變更寫回AEM作者例項。
 
@@ -40,15 +40,18 @@ Universal Editor是一項與AEM搭配使用的服務，可讓您無頭製作內�
 
 * AEM 6.5 LTS GA
    * 同時支援內部部署和AMS託管。
-* [AEM 6.5](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) （Service Pack 21或22加上Feature Pack或更新版本）
+* [AEM 6.5](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
    * 同時支援內部部署和AMS託管。
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) （版本`2023.8.13099`或更新版本）
 
-本檔案著重於通用編輯器的AEM 6.5 LTS支援。
+本檔案著重於通用編輯器的AEM 6.5 LTS支援。 若要搭配AEM 6.5 LTS使用通用編輯器，您將需要：
+
+* AEM 6.5 LTS GA
+* Dispatcher已正確設定
 
 ## 設定 {#setup}
 
-若要測試通用編輯器，您需要：
+若要使用通用編輯器，您需要：
 
 1. [在您的AEM編寫執行個體上設定服務。](#configure-aem)
 1. [設定本機通用編輯器服務。](#set-up-ue)
@@ -132,9 +135,9 @@ Universal Editor依賴許多必須設定的服務。
 更新並設定AEM後，您就可以設定本機通用編輯器服務，以供您自己的本機開發和測試使用。
 
 1. 安裝Node.js version >=20。
-1. 從[Software Distribution](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud/software-distribution/home)下載並解除封裝最新的Universal Editor服務
+1. 從[Software Distribution](https://experienceleague.adobe.com/en/docs/experience-cloud/software-distribution/home)下載並解除封裝最新的Universal Editor服務
 1. 透過環境變數或`.env`檔案設定Universal Editor Service。
-   * [如需詳細資訊，請參閱AEM as a Cloud Service Universal Editor檔案。](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
+   * [如需詳細資訊，請參閱AEM as a Cloud Service Universal Editor檔案。](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
    * 請注意，如果需要內部IP重寫，您可能需要使用`UES_MAPPING`選項。
 1. 執行`universal-editor-service.cjs`
 
@@ -153,7 +156,7 @@ Universal Editor依賴許多必須設定的服務。
 
    >[!NOTE]
    >
-   >8080是預設連線埠。 如果您使用[您的`.env`檔案，](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)中的`UES_PORT`引數變更此專案，您必須在此相應地調整連線埠值。
+   >8080是預設連線埠。 如果您使用[您的`.env`檔案，](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)中的`UES_PORT`引數變更此專案，您必須在此相應地調整連線埠值。
 
 1. 重新啟動Apache。
 
@@ -161,9 +164,9 @@ Universal Editor依賴許多必須設定的服務。
 
 更新AEM並執行本機Universal Editor Service後，您就可以使用Universal Editor開始編輯Headless內容。
 
-不過，您的應用程式必須檢測為使用通用編輯器。 這涉及包括中繼標籤，以指示編輯器如何以及在何處保留內容。 此檢測的詳細資訊可在AEM as a Cloud Service的[通用編輯器檔案中取得。](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page)
+不過，您的應用程式必須檢測為使用通用編輯器。 這涉及包括中繼標籤，以指示編輯器如何以及在何處保留內容。 此檢測的詳細資訊可在AEM as a Cloud Service的[通用編輯器檔案中取得。](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page)
 
-請注意，在針對AEM as a Cloud Service通用編輯器編寫以下檔案時，將其與AEM 6.5搭配使用時將套用以下變更。
+請注意，在針對AEM as a Cloud Service通用編輯器編寫以下檔案時，將其與AEM 6.5 LTS搭配使用時套用以下變更。
 
 * 中繼標籤中的通訊協定必須是`aem65`而非`aem`。
 
@@ -181,12 +184,12 @@ Universal Editor依賴許多必須設定的服務。
 
 >[!TIP]
 >
->如需開發人員快速入門通用編輯器的完整指南，請參閱AEM as a Cloud Service檔案中的檔案[AEM開發人員的通用編輯器概述](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview)，同時牢記本節所述的AEM 6.5支援所需的必要變更。
+>如需開發人員快速入門通用編輯器的完整指南，請參閱AEM as a Cloud Service檔案中的檔案[AEM開發人員的通用編輯器概述](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview)，同時牢記本節所述的AEM 6.5 LTS支援所需的必要變更。
 
-## AEM 6.5與AEM as a Cloud Service之間的差異 {#differences}
+## AEM 6.5 LTS與AEM as a Cloud Service之間的差異 {#differences}
 
-AEM 6.5中的通用編輯器的運作方式與AEM as a Cloud Service大致相同，包括UI和大部分設定。 不過，請注意其中的差異。
+AEM 6.5 LTS中的通用編輯器與AEM as a Cloud Service中的通用編輯器運作方式大致相同，包括UI和大部分設定。 不過，請注意其中的差異。
 
-* 6.5中的通用編輯器僅支援Headless使用案例。
-* 通用編輯器的設定對6.5稍有不同（[如目前檔案所述](#setup)）。
-* 6.5中的Universal Editor使用與AEM as a Cloud Service不同的資產選擇器和內容片段選擇器。
+* 6.5 LTS中的Universal Editor僅支援Headless使用案例。
+* 通用編輯器的設定對6.5 LTS稍有不同（[如目前檔案所述](#setup)）。
+* 6.5 LTS中的Universal Editor使用與AEM as a Cloud Service不同的資產選擇器和內容片段選擇器。
