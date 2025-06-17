@@ -9,12 +9,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: 0a72d11c-1411-4b95-bcde-bf7458b7856e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '129'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
+
 
 # SPA WKND 教學課程{#spa-wknd-tutorial}
 
@@ -26,7 +28,7 @@ ht-degree: 5%
 
 如需建立您自己的單頁應用程式的端對端範例，這些應用程式可透過AEM編輯，從應用程式路由的專案設定開始，請參閱WKND SPA教學課程：
 
-* [開始使用AEM SPA Editor和Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=zh-Hant)
-* [AEM SPA Editor and React快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=zh-Hant)
+* [開始使用AEM SPA Editor和Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
+* [AEM SPA Editor and React快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
 
 不過，在您開始專為AEM的SPA專案之前，也請務必檢閱[為AEM開發SPA](/help/sites-developing/spa-architecture.md)檔案。

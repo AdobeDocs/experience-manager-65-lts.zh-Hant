@@ -10,12 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: f4a15b51-fbb9-454f-809d-b15ed8cbdd0c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 9%
 
 ---
+
 
 # 針對 SPA 實作 React元件{#implementing-a-react-component-for-spa}
 
@@ -31,12 +33,12 @@ SPA製作功能提供全方位的解決方案，可支援AEM中的SPA。 本文�
 
 本文說明We.Retail Journal範例SPA上的天氣元件範例。
 
-在閱讀本文之前，您應該先熟悉AEM[&#128279;](/help/sites-developing/spa-getting-started-react.md)的SPA應用程式的結構。
+在閱讀本文之前，您應該先熟悉AEM](/help/sites-developing/spa-getting-started-react.md)的SPA應用程式的[結構。
 
 >[!CAUTION]
 >本檔案僅將[We.Retail Journal應用程式](https://github.com/adobe/aem-sample-we-retail-journal)用於示範用途。 請勿用於任何專案工作。
 >
->任何 AEM 專案都應使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)，它支援使用 React 或 Angular 的 SPA 專案並使用 SPA SDK。
+>任何 AEM 專案都應使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用 React 或 Angular 的 SPA 專案並使用 SPA SDK。
 
 ## 天氣元件 {#the-weather-component}
 
