@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager 6.5 LTS目前發行說明
-description: 尋找Adobe Experience Manager 6.5 LTS的最新發行資訊。
+description: 尋找 Adobe Experience Manager 6.5 LTS 目前的版本資訊。
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
@@ -8,7 +8,7 @@ exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 2a83d6d4f25a866eacd87d6e2a4318b99c158ea0
 workflow-type: tm+mt
 source-wordcount: '1002'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
@@ -147,5 +147,5 @@ Hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/
 這些網站僅供客戶使用。 如果您是客戶且需要存取權，請聯絡您的Adobe客戶經理。
 
 * [產品下載網址為licensing.adobe.com](https://licensing.adobe.com/)
-* [連絡Adobe客戶支援](https://experienceleague.adobe.com/zh-hant/docs/customer-one/using/home)。
+* [連絡Adobe客戶支援](https://experienceleague.adobe.com/en/docs/customer-one/using/home)。
 
