@@ -1,17 +1,13 @@
 ---
 title: 在 AEM 收件匣管理 Forms 應用程式和任務
 description: AEM收件匣可讓您透過提交應用程式和管理工作，啟動以Forms為中心的工作流程。
-contentOwner: vishgupt
-topic-tags: document_services, publish
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 5454ee3d-45fb-4ed2-b2f2-1fa9e2460759
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1066'
 ht-degree: 3%
 
 ---
@@ -109,7 +105,7 @@ AEM收件匣只會顯示作用中的任務。 已完成的任務未出現在清�
 
    ![篩選器](assets/filter.png)
 
-1. 選取以選取工作並按一下[開啟]。**&#x200B;**
+1. 選取以選取工作並按一下[開啟]。****
 
 任務會開啟以顯示與任務相關聯的檔案或最適化表單。 對於最適化表單，任務會顯示唯讀的最適化表單或其PDF記錄檔案，如[指派任務工作流程步驟](/help/sites-developing/workflows-step-ref.md)的表單/檔案索引標籤中所設定。
 
@@ -140,7 +136,7 @@ AEM收件匣只會顯示作用中的任務。 已完成的任務未出現在清�
      | allowExplicitSharing | allowExplicitSharing | 布林值 |
 
 
-   * 透過AEM套件部署索引。 您可以使用[AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=zh-Hant)專案來建立可部署的AEM套件。 使用以下範常式式碼，將索引新增至AEM Archetype專案：
+   * 透過AEM套件部署索引。 您可以使用[AEM Archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using)專案來建立可部署的AEM套件。 使用以下範常式式碼，將索引新增至AEM Archetype專案：
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -150,8 +146,6 @@ AEM收件匣只會顯示作用中的任務。 已完成的任務未出現在清�
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [建立屬性索引並將其設定為true](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/queries-and-indexing.html#the-property-index)。
+1. [建立屬性索引並將其設定為true](/help/sites-deploying/queries-and-indexing.md#the-property-index)。
 
-1. 在CRX DE中設定索引或透過封裝進行部署後，[重新索引存放庫](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex)。
-
-https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/queries-and-indexing.html
+1. 在CRX DE中設定索引或透過套件部署後，請重新索引存放庫。

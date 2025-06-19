@@ -8,9 +8,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: a804ba9b-c5c6-4d76-96e4-5d729b673ca4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '703'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ AEM Forms應用程式Source程式碼套件參考`adobe-lc-mobileworkspace-src-<v
    1. 從&#x200B;**[!UICONTROL 解決方案]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Forms]**。
    2. 選取封裝的版本和型別。 您也可以使用&#x200B;**[!UICONTROL 搜尋下載]**&#x200B;選項來篩選結果。
 1. 選取適用於您作業系統的封裝名稱，選取&#x200B;**[!UICONTROL 接受EULA條款]**，然後選取&#x200B;**[!UICONTROL 下載]**。
-1. 開啟[封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)，然後按一下&#x200B;**[!UICONTROL 上傳封裝]**&#x200B;以上傳封裝。
+1. 開啟[封裝管理員](/help/sites-administering/package-manager.md)，然後按一下&#x200B;**[!UICONTROL 上傳封裝]**&#x200B;以上傳封裝。
 1. 選取封裝並按一下&#x200B;**[!UICONTROL 安裝]**。
 1. 若要下載原始程式碼封存，請在瀏覽器中開啟&#x200B;**https://&lt;server>：&lt;port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-&lt;version>.zip**。 已在您的裝置上下載Android應用程式.zip檔案。
 1. 將.zip檔案的內容解壓縮至本機檔案系統上的資料夾。 例如，*C:\&lt;資料夾結構>\adobe-lc-mobileworkspace-src-2.4.20*

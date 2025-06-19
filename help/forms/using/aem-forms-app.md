@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 9cc83733-630a-4846-bd9e-72fd76a3286d
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '2337'
+source-wordcount: '2336'
 ht-degree: 0%
 
 ---
@@ -20,17 +20,17 @@ ht-degree: 0%
 
 ## 概觀 {#overview}
 
-AEM Forms應用程式可根據您的伺服器，在行動裝置上同步最適化表單、行動表單和表單集。 您可以在OSGi&rbrack;(/help/forms/using/aem-forms-workflow.md) <!--or Forms workflows on JEE-->上定義以&lbrack;Forms為中心的工作流程。 例如，您經營一間銀行公司，並使用AEM Forms管理客戶應用程式和通訊。 您的客戶填寫表單並提交以進行驗證。 如果您在行動裝置上啟用表單，您的客戶可以在AEM Forms應用程式中填寫表單。 您也可以在行動裝置上啟用驗證表單，以管理驗證工作流程。 您的欄位工作者可以攜帶行動裝置給客戶、驗證詳細資料並提交表單。 AEM Forms應用程式會與AEM Forms伺服器同步，並擷取為行動裝置啟用的表單。 如果應用程式離線，則會將資料儲存在本機。
+AEM Forms應用程式可根據您的伺服器，在行動裝置上同步最適化表單、行動表單和表單集。 您可以在OSGi](/help/forms/using/aem-forms-workflow.md) <!--or Forms workflows on JEE-->上定義以[Forms為中心的工作流程。 例如，您經營一間銀行公司，並使用AEM Forms管理客戶應用程式和通訊。 您的客戶填寫表單並提交以進行驗證。 如果您在行動裝置上啟用表單，您的客戶可以在AEM Forms應用程式中填寫表單。 您也可以在行動裝置上啟用驗證表單，以管理驗證工作流程。 您的欄位工作者可以攜帶行動裝置給客戶、驗證詳細資料並提交表單。 AEM Forms應用程式會與AEM Forms伺服器同步，並擷取為行動裝置啟用的表單。 如果應用程式離線，則會將資料儲存在本機。
 
 客戶可透過Software Distribution取得AEM Forms應用程式的原始程式碼。 Software Distribution中的原始程式碼套件可用為： `adobe-aemfd-forms-app-src-pkg-<version>.zip`。
 
 iOS、Android、Windows裝置支援AEM Forms應用程式。 您可以從Google Play安裝適用於Android的AEM Forms應用程式，從App Store安裝iOS，以及從Windows市集安裝Windows。
 
-    [ ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
+    [ ！[google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
     
-    [ ![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
+    [ ！[app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
     
-    [ ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
+    [ ！[microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 若要在iOS、Android或Windows裝置上安裝、自訂和發佈應用程式，請參閱[自訂、建置和發佈AEM Forms應用程式](#customize-build-distribute)。
 
@@ -192,7 +192,7 @@ AEM Forms應用程式可輕鬆根據組織的特定需求進行自訂。 應用�
    1. 從&#x200B;**[!UICONTROL 解決方案]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Forms]**。
    2. 選取封裝的版本和型別。 您也可以使用&#x200B;**[!UICONTROL 搜尋下載]**&#x200B;選項來篩選結果。
 1. 選取適用於您作業系統的封裝名稱，選取&#x200B;**[!UICONTROL 接受EULA條款]**，然後選取&#x200B;**[!UICONTROL 下載]**。
-1. 開啟[封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)，然後按一下&#x200B;**[!UICONTROL 上傳封裝]**&#x200B;以上傳封裝。
+1. 開啟[封裝管理員](/help/sites-administering/package-manager.md)，然後按一下&#x200B;**[!UICONTROL 上傳封裝]**&#x200B;以上傳封裝。
 1. 選取封裝並按一下&#x200B;**[!UICONTROL 安裝]**。
 
 iOS **的**：

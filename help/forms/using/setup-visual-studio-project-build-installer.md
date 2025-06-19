@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: c2e9200f-a4b7-46fc-9dde-425329e5365d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '895'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ AEM Forms提供AEM Forms應用程式的完整原始碼。 來源包含建立自�
    1. 從&#x200B;**[!UICONTROL 解決方案]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Forms]**。
    2. 選取封裝的版本和型別。 您也可以使用&#x200B;**[!UICONTROL 搜尋下載]**&#x200B;選項來篩選結果。
 1. 選取適用於您作業系統的封裝名稱，選取&#x200B;**[!UICONTROL 接受EULA條款]**，然後選取&#x200B;**[!UICONTROL 下載]**。
-1. 開啟[封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)，然後按一下&#x200B;**[!UICONTROL 上傳封裝]**&#x200B;以上傳封裝。
+1. 開啟[封裝管理員](/help/sites-administering/package-manager.md)，然後按一下&#x200B;**[!UICONTROL 上傳封裝]**&#x200B;以上傳封裝。
 1. 選取封裝並按一下&#x200B;**[!UICONTROL 安裝]**。
 
 1. 若要下載原始程式碼封存，請在瀏覽器中開啟`https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip`。\
@@ -80,7 +80,7 @@ AEM Forms提供AEM Forms應用程式的完整原始碼。 來源包含建立自�
 
    ![重新鎖定目標 — 解決方案](assets/retarget-solution.png)
 
-1. 在[建立應用程式封裝]精靈中，選取您是否要上傳應用程式至Windows市集，然後按一下[下一步]&#x200B;**&#x200B;**。
+1. 在[建立應用程式封裝]精靈中，選取您是否要上傳應用程式至Windows市集，然後按一下[下一步]****。
 
    ![createapppackageswizard1](assets/createapppackageswizard1.png)
 

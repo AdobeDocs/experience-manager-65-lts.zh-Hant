@@ -6,10 +6,10 @@ feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: 5181d278-2e6e-41f7-891e-1067a03de016
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 9%
+source-wordcount: '1112'
+ht-degree: 4%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 9%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=en) |
 | AEM 6.5 | 本文章 |
 
 [!DNL Adobe Workfront]是工作管理應用程式，可協助您在一個地方管理整個工作生命週期。 [!DNL Workfront]與[!DNL Adobe Experience Manager Assets]之間的整合可讓組織在本質上連線工作和數位資產管理，藉以改善內容速度和上市時間。 在Workfront中管理其工作的情況下，使用者可以存取所需的檔案和影像。
 
-[!DNL Workfront for Experience Manager enhanced connector]可啟用具有端對端工作流程的增強型業務流程，並提供個人化的端對端使用者端體驗和中央儲存空間。 Adobe提供標準聯結器和增強型聯結器，整合這兩個解決方案。 如需比較，請參閱下列支援的功能，並參閱[ [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience)的新功能。
+[!DNL Workfront for Experience Manager enhanced connector]可啟用具有端對端工作流程的增強型業務流程，並提供個人化的端對端使用者端體驗和中央儲存空間。 Adobe提供標準聯結器和增強型聯結器，整合這兩個解決方案。 如需比較，請參閱下列支援的功能，並參閱[ [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience)的新功能。
 
 [!DNL Workfront for Experience Manage enhanced connector]可讓您的組織：
 
@@ -32,7 +32,7 @@ ht-degree: 9%
 * 使用Workfront工作流程，根據可設定的條件設定Experience Manager物件狀態。
 * 將資產發佈到Experience Manager發佈環境或Brand Portal。
 
-檢視增強型聯結器的平台支援和[必要條件](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience)。
+檢視增強型聯結器的平台支援和[必要條件](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience)。
 
 >[!IMPORTANT]
 >
@@ -40,7 +40,7 @@ ht-degree: 9%
 >
 >* Adobe可能會發行[!DNL Adobe Workfront]和[!DNL Adobe Experience Manager]的更新，使此聯結器成為多餘的；如果發生這種情況，客戶可能需要從使用此聯結器進行轉換。
 >
->* Adobe支援增強型聯結器1.7.4版及更新版本。 不支援舊版發行前版本和自訂版本。 若要檢查增強型聯結器版本，請瀏覽至[封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html?lang=en)左側窗格中可用的`digital.hoodoo`群組。
+>* Adobe支援增強型聯結器1.7.4版及更新版本。 不支援舊版發行前版本和自訂版本。 若要檢查增強型聯結器版本，請瀏覽至[封裝管理員](/help/sites-administering/package-manager.md)左側窗格中可用的`digital.hoodoo`群組。
 >
 >* 請參閱Experience Manager Assets增強型聯結器的[Workfront合作夥伴認證測驗](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html)。 如需有關考試的資訊，請參閱[考試指南](https://express.adobe.com/page/Tc7Mq6zLbPFy8/)。
 

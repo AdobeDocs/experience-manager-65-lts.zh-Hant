@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 exl-id: 9c05a71b-70fa-4470-afdf-823fd5da5ad1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '4534'
+source-wordcount: '4533'
 ht-degree: 1%
 
 ---
@@ -88,7 +88,7 @@ ht-degree: 1%
    1. 從&#x200B;**[!UICONTROL 解決方案]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Forms]**。
    2. 選取封裝的版本和型別。 您也可以使用&#x200B;**[!UICONTROL 搜尋下載]**&#x200B;選項來篩選結果。
 1. 選取&#x200B;**we-gov-forms.pkg.all-&lt;version>.zip**&#x200B;封裝名稱，選取&#x200B;**[!UICONTROL 接受EULA條款]**，然後選取&#x200B;**[!UICONTROL 下載]**。
-1. 開啟[封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)，然後按一下&#x200B;**[!UICONTROL 上傳封裝]**&#x200B;以上傳封裝。
+1. 開啟[封裝管理員](/help/sites-administering/package-manager.md)，然後按一下&#x200B;**[!UICONTROL 上傳封裝]**&#x200B;以上傳封裝。
 1. 選取封裝並按一下&#x200B;**[!UICONTROL 安裝]**。
 
    ![我們管理表單封裝](assets/wegov_forms_package.jpg)
@@ -226,7 +226,7 @@ ht-degree: 1%
 **參考：**
 
 1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [設定AEM Forms的Microsoft® Dynamics](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html?lang=zh-Hant)
+1. [設定AEM Forms的Microsoft® Dynamics](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html)
 
 #### MS® Dynamics OData雲端服務 {#ms-dynamics-odata-cloud-service}
 
@@ -320,7 +320,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >建議您使用&#39;Ctrl + C&#39;命令重新啟動SDK。 使用替代方法重新啟動AEM SDK （例如停止Java程式），可能會導致AEM開發環境不一致。
+   > 建議您使用&#39;Ctrl + C&#39;命令重新啟動SDK。 使用替代方法重新啟動AEM SDK （例如停止Java程式），可能會導致AEM開發環境不一致。
 
 #### 測試Forms資料模型(Derby) {#test-fdm-derby}
 
@@ -386,7 +386,7 @@ ht-degree: 1%
    ![快速存取](assets/aftia-quick-access.jpg)
 1. 導覽至「管理員」標籤，並選取「使用者管理（舊版）」專案
    ![報告](assets/aftia-reports.jpg)
-1. 選取&#x200B;**使用者**&#x200B;索引標籤。
+1. 選取&#x200B;**使用者**索引標籤。
    ![使用者管理](assets/aftia-user-management.jpg)
 1. 從使用者清單中選取所需的使用者。
 1. 捲動至頁面底部，使用者驗證資訊將顯示在頁面底部。
@@ -480,7 +480,7 @@ ht-degree: 1%
 
 閱讀進一步指示前，請先檢閱下列內容：
 
-* [設定自動表單轉換服務](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=zh-Hant)
+* [設定自動表單轉換服務](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
 
 #### 建立IMS設定第1部分 {#creating-ims-config}
 
@@ -579,7 +579,7 @@ IMS設定完成後，您可以繼續檢閱AEM中的雲端設定。 如果設定�
 
 1. 對於此設定，我們將兩個核取方塊值留空。
 
-   * 若要進一步瞭解這些選項，請參閱[設定雲端服務](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=zh-Hant#configure-the-cloud-service)。
+   * 若要進一步瞭解這些選項，請參閱[設定雲端服務](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service)。
 
 #### 設定雲端設定(We.Finance AFC Production) {#configure-cloud-configuration-wefinance}
 
@@ -609,7 +609,7 @@ IMS設定完成後，我們就可以繼續在AEM中建立雲端設定。
 
 1. 對於此設定，我們將兩個核取方塊值留空。
 
-   * 若要進一步瞭解這些選項，請參閱[設定雲端服務](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=zh-Hant#configure-the-cloud-service)。
+   * 若要進一步瞭解這些選項，請參閱[設定雲端服務](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service)。
 
 #### 測試表單轉換（We.Gov註冊應用程式） {#test-forms-conversion}
 
@@ -649,7 +649,7 @@ IMS設定完成後，我們就可以繼續在AEM中建立雲端設定。
 
 #### 已知問題和注意事項 {#known-issues-notes}
 
-自動錶單轉換服務包含特定[最佳實務、已知的複雜模式](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html?lang=zh-Hant)和[已知問題](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html?lang=zh-Hant)。 開始使用AEM Forms自動化表單轉換服務前，請先檢閱這些內容。
+自動錶單轉換服務包含特定[最佳實務、已知的複雜模式](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html)和[已知問題](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html)。 開始使用AEM Forms自動化表單轉換服務前，請先檢閱這些內容。
 
 1. 如果您想要在轉換後將表單繫結到FDM，請在啟用資料繫結的情況下產生具有產生自適應表單的表單。
 

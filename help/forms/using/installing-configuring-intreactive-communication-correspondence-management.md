@@ -1,20 +1,20 @@
 ---
-title: 安裝和配置 互動式 通信
-description: 安裝和配置 AEM Forms 互動式 通信以創建業務通信、文件、報表、福利通知、行銷郵件、帳單和歡迎工具包。
+title: 安裝及設定互動式通訊
+description: 安裝並設定AEM Forms互動式通訊，以建立商務對應、檔案、對帳單、福利通知、行銷郵件、帳單和歡迎套件。
 topic-tags: installing
 docset: aem65
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,Correspondence Management
 exl-id: d03965e1-4fa3-414c-80b6-c9fca281bee4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1382'
 ht-degree: 1%
 
 ---
 
-# 安裝和配置 互動式 通信{#install-and-configure-interactive-communications}
+# 安裝及設定互動式通訊{#install-and-configure-interactive-communications}
 
 ## 簡介 {#introduction}
 
@@ -48,9 +48,9 @@ AEM Forms互動式通訊會在AEM Forms的製作例項上執行管理、製作�
 
    * **發佈**：透過網際網路或內部網路，向公眾提供已發佈內容的AEM執行個體。
 
-* 符合記憶體需求。 AEM Forms附加包需要：
+* 符合記憶體需求。 AEM Forms附加元件套件需要：
 
-   * 15 GB 的臨時空間，用於Microsoft® Windows 安裝。
+   * Microsoft® Windows安裝專用的15 GB暫存空間。
    * UNIX安裝需要6 GB的暫存空間。
 
 * UNIX系統的額外需求：如果您使用的是UNIX作業系統，請從個別作業系統的安裝媒體安裝下列套件。
@@ -89,17 +89,17 @@ AEM Forms互動式通訊會在AEM Forms的製作例項上執行管理、製作�
 AEM Forms附加元件套件是部署至AEM的應用程式。 此套件包含AEM Forms互動式通訊、通訊管理和其他功能。 執行以下步驟來安裝附加套件：
 
 1. 開啟 [Software Distribution](https://experience.adobe.com/downloads)。您需要 Adobe ID 才能登入 Software Distribution。
-1. 選擇 **[!UICONTROL 標題功能表中的可用Adobe Experience Manager]** 。
-1. 在「篩選器」**&#x200B;**&#x200B;部分中：
-   1. 從解決方案&#x200B;**&#x200B;**&#x200B;下拉式清單中選擇&#x200B;**[!UICONTROL Forms]**。
-   2. 選擇包的版本和類型。 您也可以使用「 **[!UICONTROL Search下載]** 」選項來篩選結果。
+1. 選取標題功能表中可用的&#x200B;**[!UICONTROL Adobe Experience Manager]**。
+1. 在&#x200B;**[!UICONTROL 篩選器]**&#x200B;區段中：
+   1. 從&#x200B;**[!UICONTROL 解決方案]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Forms]**。
+   2. 選取封裝的版本和型別。 您也可以使用&#x200B;**[!UICONTROL 搜尋下載]**&#x200B;選項來篩選結果。
 1. 選取適用於您作業系統的封裝名稱，選取&#x200B;**[!UICONTROL 接受EULA條款]**，然後選取&#x200B;**[!UICONTROL 下載]**。
-1. 打開 [封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)  然後按兩下上傳 **[!UICONTROL 包]** 以上傳包。
-1. 選擇包，然後按兩下安裝&#x200B;**&#x200B;**。
+1. 開啟[封裝管理員](/help/sites-administering/package-manager.md)，然後按一下&#x200B;**[!UICONTROL 上傳封裝]**&#x200B;以上傳封裝。
+1. 選取封裝並按一下&#x200B;**[!UICONTROL 安裝]**。
 
-   還可以通過AEM Forms版本[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hant)一文中列出的直接連結下載包。
+   您也可以透過[AEM Forms發行版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)文章中列出的直接連結來下載套件。
 
-1. 安裝包后，系統會提示您重新啟動AEM執行個體。 **不要立即重新啟動伺服器。**&#x200B;在停止 AEM Forms 伺服器之前，請等待 ServiceEvent REGISTERED 和 ServiceEvent UNREGISTERED 消息停止出現在 AEM-Installation-Directory&rbrack;/crx-quickstart/logs/error.記錄檔 中&lbrack;，並且日誌穩定。
+1. 安裝套件後，系統會提示您重新啟動AEM執行個體。 **不要立即重新啟動伺服器。**&#x200B;在停止AEM Forms伺服器之前，請等候直到ServiceEvent REGISTERED和ServiceEvent UNREGISTERED訊息停止出現在[AEM-Installation-Directory]/crx-quickstart/logs/error.log檔案中，而且記錄檔穩定。
 
    >[!NOTE]
    >
@@ -146,9 +146,9 @@ AEM Forms有一些必要和選用的設定。 強制設定包括設定BouncyCast
 
 互動式通訊是在AEM 6.5 Forms中建立客戶通訊的預設和建議方法。 如果您已從舊版升級或移轉，並計畫繼續使用字母（通訊管理），請安裝[AEMFD相容性套件](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en)。
 
-AEMFD 相容性套件可讓您在 AEM 6.5 Forms AEM 6.4 Forms、AEM 6.3 Forms 和 AEM 6.2 Forms使用以下資產：
+AEMFD相容性套件可讓您在AEM 6.5 Forms上使用AEM 6.4 Forms、AEM 6.3 Forms和AEM 6.2 Forms中的下列資產：
 
-* 檔片段
+* 檔案片段
 * 字母
 * 資料字典
 * 最適化表單已棄用的範本和頁面
@@ -167,7 +167,7 @@ Dispatcher是Adobe Experience Manager的快取與負載平衡工具，用於企�
 
 1. 設定反向連結篩選服務：
 
-   以管理員身分登入Apache Felix設定管理員。 組態管理員的預設URL為https://&#39;server&#39;：[連線埠號碼]/system/console/configMgr。 在&#x200B;**設定**&#x200B;功能表中，選取&#x200B;**Apache Sling反向連結篩選器**&#x200B;選項。 在「允許主機」欄位中，輸入Dispatcher的主機名稱，以允許其作為反向連結，然後按一下「儲存」**&#x200B;**。 專案的格式為https://&#39;[伺服器]：[連線埠]&#39;。
+   以管理員身分登入Apache Felix設定管理員。 組態管理員的預設URL為https://&#39;server&#39;：[連線埠號碼]/system/console/configMgr。 在&#x200B;**設定**&#x200B;功能表中，選取&#x200B;**Apache Sling反向連結篩選器**&#x200B;選項。 在「允許主機」欄位中，輸入Dispatcher的主機名稱，以允許其作為反向連結，然後按一下「儲存」****。 專案的格式為https://&#39;[伺服器]：[連線埠]&#39;。
 
 #### 整合Adobe Target {#integrate-adobe-target}
 
@@ -183,10 +183,10 @@ AEM forms與Adobe Experience Cloud解決方案Adobe Target整合，跨多個數�
 
 ## 後續步驟 {#next-steps}
 
-您已將環境配置為使用交互式通信和通信管理功能。 現在，使用該功能的步驟如下：
+您已將環境設定為使用互動式通訊和通訊管理功能。 現在，使用功能的步驟如下：
 
-* [通信管理概述](/help/forms/using/interactive-communications-overview.md)
+* [通訊管理概觀](/help/forms/using/interactive-communications-overview.md)
 
 * [建立互動式通訊](../../forms/using/create-interactive-communication.md)
 
-* [建立通信管理信函](../../forms/using/create-letter.md)
+* [建立通訊管理信件](../../forms/using/create-letter.md)

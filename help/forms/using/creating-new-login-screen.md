@@ -1,17 +1,13 @@
 ---
 title: 建立登入畫面
 description: 如何修改LiveCycle模組的登入頁面，例如AEM Forms工作區或Forms Manager。
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: forms-workspace
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 3e20857b-05bb-4f44-8011-550bdaf857c5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '443'
 ht-degree: 3%
 
 ---
@@ -293,7 +289,7 @@ css.newLoginContentArea {
 1. 在`/apps/livecycle/core/content/login`中新增影像。 若要新增影像：
 
    1. 安裝WebDAV使用者端。
-   1. 使用webDAV使用者端導覽至`/apps/livecycle/core/content/login`資料夾。 如需詳細資訊，請參閱[WebDAV存取](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/webdav-access.html?lang=en)。
+   1. 使用webDAV使用者端導覽至`/apps/livecycle/core/content/login`資料夾。 如需詳細資訊，請參閱[WebDAV存取](/help/sites-administering/webdav-access.md)。
 
    1. 新增影像。
 

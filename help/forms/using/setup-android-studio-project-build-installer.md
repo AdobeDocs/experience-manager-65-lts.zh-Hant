@@ -8,9 +8,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 425c6194-0b87-4b01-a013-f620755072b3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '582'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ AEM Forms提供AEM Forms應用程式的完整原始碼。 來源包含建立自�
    1. 從&#x200B;**[!UICONTROL 解決方案]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Forms]**。
    2. 選取封裝的版本和型別。 您也可以使用&#x200B;**[!UICONTROL 搜尋下載]**&#x200B;選項來篩選結果。
 1. 選取適用於您作業系統的封裝名稱，選取&#x200B;**[!UICONTROL 接受EULA條款]**，然後選取&#x200B;**[!UICONTROL 下載]**。
-1. 開啟[封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)，然後按一下&#x200B;**[!UICONTROL 上傳封裝]**&#x200B;以上傳封裝。
+1. 開啟[封裝管理員](/help/sites-administering/package-manager.md)，然後按一下&#x200B;**[!UICONTROL 上傳封裝]**&#x200B;以上傳封裝。
 1. 選取封裝並按一下&#x200B;**[!UICONTROL 安裝]**。
 
 下列影像顯示`adobe-lc-mobileworkspace-src-<version>.zip`的擷取內容。
@@ -38,7 +38,7 @@ AEM Forms提供AEM Forms應用程式的完整原始碼。 來源包含建立自�
 
 下列影像顯示`src`資料夾中`android`資料夾的目錄結構。
 
-src![&#128279;](assets/android-folder.png)中Android資料夾的目錄結構
+src](assets/android-folder.png)中Android資料夾的![目錄結構
 
 ## 建置標準AEM Forms應用程式 {#set-up-the-xcode-project}
 
@@ -93,7 +93,7 @@ src![&#128279;](assets/android-folder.png)中Android資料夾的目錄結構
 
    ![gradleconsole](assets/gradleconsole.png)
 
-1. Android™ Studio會顯示連線的裝置和可用的模擬器。 選取您要執行應用程式的裝置，然後按一下[確定]。**&#x200B;**
+1. Android™ Studio會顯示連線的裝置和可用的模擬器。 選取您要執行應用程式的裝置，然後按一下[確定]。****
 
    ![connecteddevice](assets/connecteddevice.png)
 

@@ -1,16 +1,13 @@
 ---
 title: OSGi上的Forms中心工作流程 — 步驟參考
 description: 以OSGi步驟為中心的Forms工作流程，可讓您快速建立最適化表單式工作流程。
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: publish
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: User, Developer
 exl-id: 13d84b04-dab6-453f-bc0d-62a5f557c4f2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '7640'
+source-wordcount: '7604'
 ht-degree: 0%
 
 ---
@@ -19,14 +16,14 @@ ht-degree: 0%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference) |
 | AEM 6.5 | 本文章 |
 
 您可以使用工作流程模型，將商業邏輯轉換為自動化重複式處理。 模型可協助您定義並執行一系列步驟。 您也可以定義模型屬性，例如工作流程是暫時的或使用多個資源。 您可以[在模型中加入各種AEM工作流程步驟，以達成商業邏輯](/help/sites-developing/workflows-models.md#extending-aem)。
 
 ## Forms Workflow步驟 {#forms-workflow-steps}
 
-Forms Workflow步驟會在AEM工作流程中執行AEM Forms專屬的操作。 這些步驟可讓您在OSGi上快速建立以最適化表單為基礎的Forms工作流程。 這些工作流程可用於開發基本的稽核和核准工作流程、內部和跨防火牆的業務流程。 您也可以使用Forms Workflow步驟來啟動檔案服務、整合Adobe Sign簽名工作流程，以及執行其他AEM Forms作業。 您需要[AEM Forms附加元件](https://www.adobe.com/go/learn_aemforms_documentation_63)才能在工作流程中使用這些步驟。
+Forms Workflow步驟會在AEM工作流程中執行AEM Forms專屬的操作。 這些步驟可讓您在OSGi上快速建立以最適化表單為基礎的Forms工作流程。 這些工作流程可用於開發基本的稽核和核准工作流程、內部和跨防火牆的業務流程。 您也可以使用Forms Workflow步驟來啟動檔案服務、整合Adobe Sign簽名工作流程，以及執行其他AEM Forms作業。
 
 以Forms為中心的工作流程步驟，會在AEM工作流程中執行AEM Forms特定的操作。 這些步驟可讓您在OSGi上快速建立以Adaptive Forms為基礎的Forms工作流程。 這些工作流程可用於開發基本的稽核和核准工作流程、內部和跨防火牆業務流程。
 
@@ -75,7 +72,7 @@ Forms Workflow步驟會在AEM工作流程中執行AEM Forms專屬的操作。 �
       * **選擇輸入JSON：**&#x200B;使用相對於承載或儲存在Document、JSON或表單資料模型資料型別變數中的路徑來選取輸入JSON檔案。 如果您從「型別」下拉式清單中選取「互動式通訊代理程式UI」或「互動式通訊Web Channel檔案」，即可使用此選項。
       * **選擇自訂預填服務：**&#x200B;選取預填服務以擷取資料，並預填互動式通訊Web Channel檔案或代理程式UI。
       * **使用以上選取之互動式通訊的預填服務：**&#x200B;使用此選項以使用互動式通訊下拉式清單中定義的互動式通訊的預填服務。
-      * **要求屬性對應：**&#x200B;使用[要求屬性對應]區段來定義要求屬性[&#128279;](../../forms/using/work-with-form-data-model.md#bindargument)的名稱和值。 根據請求中指定的屬性名稱和值從資料來源擷取詳細資料。 您可以使用常值或String資料型別的變數來定義請求屬性值。\
+      * **要求屬性對應：**&#x200B;使用[要求屬性對應]區段來定義要求屬性](../../forms/using/work-with-form-data-model.md#bindargument)的[名稱和值。 根據請求中指定的屬性名稱和值從資料來源擷取詳細資料。 您可以使用常值或String資料型別的變數來定義請求屬性值。\
         您必須從「型別」下拉式清單中選取「互動式通訊代理程式UI」或「互動式通訊Web Channel檔案」，才能使用預填服務和要求屬性對應選項。
 
 * **提交的資訊：**&#x200B;下列欄位可作為工作的輸出位置：
@@ -89,7 +86,7 @@ Forms Workflow步驟會在AEM工作流程中執行AEM Forms專屬的操作。 �
    * **儲存配置範本，使用：**&#x200B;使用相對於承載的路徑儲存配置範本，或將其儲存在Document資料型別的變數中。 [配置範本](../../forms/using/layout-design-details.md)參考您使用Forms Designer建立的XDP檔案。 只有從「型別」下拉式清單中選取「互動式通訊代理程式UI」，才能使用此選項。
 
 * **受指派人>指派選項：**&#x200B;指定將工作指派給使用者的方法。 您可以使用「參與者選擇器」指令碼動態地將任務指派給使用者或群組，或將任務指派給特定的AEM使用者或群組。
-* **參與者選擇器：**&#x200B;在[指派選項]欄位中選取&#x200B;**動態至使用者或群組**&#x200B;選項時，即可使用此選項。 您可以使用ECMAScript或服務來動態選取使用者或群組。 如需詳細資訊，請參閱[動態指派工作流程給使用者](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html)和[建立自訂Adobe Experience Manager動態參與者步驟。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant&amp;CID=RedirectAEMCommunityKautuk)
+* **參與者選擇器：**&#x200B;在[指派選項]欄位中選取&#x200B;**動態至使用者或群組**&#x200B;選項時，即可使用此選項。 您可以使用ECMAScript或服務來動態選取使用者或群組。
 
 * **參與者：**&#x200B;在&#x200B;**參與者選擇器**&#x200B;欄位中選取&#x200B;**[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]**&#x200B;選項時，即可使用此欄位。 欄位可讓您為RandomParticipantChooser選項選取使用者或群組。
 

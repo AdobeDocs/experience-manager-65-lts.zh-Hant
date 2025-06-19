@@ -6,9 +6,9 @@ feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: 810be820-b577-4035-9fda-3d919361c58c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1697'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=en) |
 | AEM 6.5 | 本文章 |
 
 在[!DNL Adobe Experience Manager]中擁有管理員存取許可權的使用者會在安裝增強型聯結器後進行設定。 如需安裝說明，請參閱[安裝聯結器](/help/assets/workfront-integrations.md)。
@@ -28,7 +28,7 @@ ht-degree: 1%
 >
 >* Adobe可能會發行[!DNL Adobe Workfront]和[!DNL Adobe Experience Manager]的更新，使此聯結器成為多餘的；如果發生這種情況，客戶可能需要從使用此聯結器進行轉換。
 >
->* Adobe支援增強型聯結器1.7.4版及更新版本。 不支援舊版發行前版本和自訂版本。 若要檢查增強型聯結器版本，請瀏覽至[封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html?lang=en)左側窗格中可用的`digital.hoodoo`群組。
+>* Adobe支援增強型聯結器1.7.4版及更新版本。 不支援舊版發行前版本和自訂版本。 若要檢查增強型聯結器版本，請瀏覽至[封裝管理員](/help/sites-administering/package-manager.md)左側窗格中可用的`digital.hoodoo`群組。
 >
 >* 請參閱Experience Manager Assets增強型聯結器的[Workfront合作夥伴認證測驗](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html)。 如需有關考試的資訊，請參閱[考試指南](https://express.adobe.com/page/Tc7Mq6zLbPFy8/)。
 
@@ -145,7 +145,7 @@ Adobe Workfront檔案與Assets之間的中繼資料對應是在AEM中繼資料�
 
 ## 設定狀態 {#set-status}
 
-在工作流程編輯器中，編輯&#x200B;**[!UICONTROL Workfront — 在**&#x200B;[!UICONTROL &#x200B;引數&#x200B;]&#x200B;**索引標籤中設定狀態]**&#x200B;的屬性。
+在工作流程編輯器中，編輯&#x200B;**[!UICONTROL Workfront — 在**[!UICONTROL &#x200B;引數&#x200B;]**索引標籤中設定狀態]**&#x200B;的屬性。
 
 ![編輯工作流程以設定狀態](/help/assets/assets/wf-set-status.png)
 

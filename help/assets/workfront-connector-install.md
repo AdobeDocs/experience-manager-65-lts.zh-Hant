@@ -6,21 +6,21 @@ feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: dd6eec1e-fa63-410a-bcd3-61892861fd0c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '427'
 ht-degree: 3%
 
 ---
 
-# 安裝[!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
+# 安裝 [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=en) |
 | AEM 6.5 | 本文章 |
 
-在[!DNL Adobe Experience Manager]中擁有管理員存取許可權的使用者會安裝增強型聯結器。 安裝之前，請先檢閱平台支援和聯結器[&#128279;](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience)的其他必要條件。
+在[!DNL Adobe Experience Manager]中擁有管理員存取許可權的使用者會安裝增強型聯結器。 安裝之前，請先檢閱平台支援和聯結器](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience)的其他[必要條件。
 
 >[!IMPORTANT]
 >
@@ -28,14 +28,14 @@ ht-degree: 3%
 >
 >* Adobe可能會發行[!DNL Adobe Workfront]和[!DNL Adobe Experience Manager]的更新，使此聯結器成為多餘的；如果發生這種情況，客戶可能需要從使用此聯結器進行轉換。
 >
->* Adobe支援增強型聯結器1.7.4版及更新版本。 不支援舊版發行前版本和自訂版本。 若要檢查增強型聯結器版本，請瀏覽至[封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html?lang=en)左側窗格中可用的`digital.hoodoo`群組。
+>* Adobe支援增強型聯結器1.7.4版及更新版本。 不支援舊版發行前版本和自訂版本。 若要檢查增強型聯結器版本，請瀏覽至[封裝管理員](/help/sites-administering/package-manager.md)左側窗格中可用的`digital.hoodoo`群組。
 >
 >* 請參閱Experience Manager Assets增強型聯結器的[Workfront合作夥伴認證測驗](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html)。 如需有關考試的資訊，請參閱[考試指南](https://express.adobe.com/page/Tc7Mq6zLbPFy8/)。
 
 若要安裝聯結器，請遵循下列步驟：
 
 1. 從[[!DNL Software Distribution] 連結](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip)下載聯結器。
-1. [設定防火牆](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html)。
+1. [設定防火牆](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html)。
 1. 在Dispatcher上，允許名為`authorization`、`username`和`apikey`的HTTP標頭。 允許`GET`、`POST`和`PUT`要求傳送給`/bin/workfront-tools`。
 1. 確定[!DNL Experience Manager]存放庫中不存在下列路徑：
 
@@ -48,8 +48,7 @@ ht-degree: 3%
 1. 使用[!UICONTROL 封裝管理員]安裝封裝。 若要瞭解如何安裝封裝，請參閱[封裝管理員檔案](/help/sites-administering/package-manager.md)。
 1. 在[!DNL Experience Manager]使用者群組中建立`wf-workfront-users`並將許可權`jcr:all`指派給`/content/dam`。
 1. 新增自訂屬性至&#x200B;**`ntFolderDamLucene(/oak:index/ntFolderDamLucene)`**&#x200B;的現成索引定義。 執行以下步驟：
-   * 將名為&#x200B;**`wfReferenceNumber`**&#x200B;的&#x200B;**`nt:unstructured`**&#x200B;屬性新增至：
-
+   * 將名為&#x200B;**`wfReferenceNumber`**&#x200B;的&#x200B;**`nt:unstructured`**屬性新增至：
      `/oak:index/ntFolderDamLucene/indexRules/nt:folder/properties/wfReferenceNumber`。
    * 將重新索引旗標翻轉到`true`來重新索引`index /oak:index/ntFolderDamLucene`。
 
