@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 330f5cc5-1af4-4777-b386-b0755e6781df
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d37df3dc09122909adbb62ede6634939af105e06
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '782'
 ht-degree: 2%
 
 ---
@@ -55,7 +55,7 @@ AEM中的[工作流程模型](/help/sites-developing/workflows.md#model)是商�
 
 >[!CAUTION]
 >
->執行的步驟是在產生執行個體時由工作流程模型&#x200B;*定義的步驟*。 如需詳細資訊，請參閱[開發工作流程](/help/sites-developing/workflows.md#model)。
+>執行的步驟是在產生執行個體時由工作流程模型&#x200B;*定義的步驟*。 如需詳細資訊，請參閱[開發和擴充工作流程 — 模型](/help/sites-developing/workflows.md#model)。
 
 工作流程例項會進行下列生命週期：
 
