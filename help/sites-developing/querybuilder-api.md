@@ -36,11 +36,11 @@ REST API透過HTTP提供相同功能的存取權，且回應會以JSON傳送。
 
 ## Gem講座 {#gem-session}
 
-[Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html)是Adobe專家提供的一系列深入探討Adobe Experience Manager的技術影片。 此查詢產生器專用會議有助於工具概述和使用。
+[Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=zh-Hant)是Adobe專家提供的一系列深入探討Adobe Experience Manager的技術影片。 此查詢產生器專用會議有助於工具概述和使用。
 
 >[!NOTE]
 >
->AEM Gem工作階段[使用AEM查詢產生器輕鬆搜尋表單](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html)，以取得查詢產生器的詳細概觀。
+>AEM Gem工作階段[使用AEM查詢產生器輕鬆搜尋表單](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html?lang=zh-Hant)，以取得查詢產生器的詳細概觀。
 
 ## 範例查詢 {#sample-queries}
 
