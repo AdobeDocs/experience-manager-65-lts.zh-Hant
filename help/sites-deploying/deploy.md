@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: 79551cfa77420fae965ecac8060fd2005beff558
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 3%
+source-wordcount: '1363'
+ht-degree: 4%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 3%
 * [設定作法文章](/help/sites-deploying/ht-deploy.md)
 * [Web 控制台](/help/sites-deploying/web-console.md)
 * [疑難排解復寫](/help/sites-deploying/troubleshoot-rep.md)
-* [最佳做法](/help/sites-deploying/best-practices.md)
+* [最佳實務](/help/sites-deploying/best-practices.md)
 * [AEM平台簡介](/help/sites-deploying/platform.md)
 
 ## 基本概念 {#basic-concepts}
@@ -234,10 +234,6 @@ AEM需要幾分鐘來解壓縮jar檔案、自行安裝並啟動。 上述程式�
 
 ![啟動畫面](assets/screen_shot_.png)
 
->[!NOTE]
->
->如果您正在使用symlink，請檢視[有關symlink](https://helpx.adobe.com/experience-manager/kb/changing-symlink.html)的問題。
-
 ### 啟動和停止 {#starting-and-stopping}
 
 當AEM自行解壓縮並首次啟動後，在安裝目錄中連按兩下jar檔案即可啟動執行個體，但不會重新安裝。
@@ -287,6 +283,6 @@ AEM會啟動，並自動將您的網頁瀏覽器重新導向至適當的頁面�
 * [設定作法文章](/help/sites-deploying/ht-deploy.md)
 * [Web 控制台](/help/sites-deploying/web-console.md)
 * [疑難排解復寫](/help/sites-deploying/troubleshoot-rep.md)
-* [最佳做法](/help/sites-deploying/best-practices.md)
+* [最佳實務](/help/sites-deploying/best-practices.md)
 * [AEM平台簡介](/help/sites-deploying/platform.md)
 

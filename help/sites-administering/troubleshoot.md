@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 802130c3-9cb8-46b7-98c2-fd9e83d18ec3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '475'
 ht-degree: 2%
 
 ---
@@ -94,7 +94,7 @@ ht-degree: 2%
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-如需詳細資訊，請參閱[如何從JVM進行對話串傾印](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=zh-Hant)檔案
+如需詳細資訊，請參閱[如何從JVM進行對話串傾印](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)檔案
 
 ### 檢查未關閉的JCR工作階段 {#checking-for-unclosed-jcr-sessions}
 
@@ -104,7 +104,7 @@ ht-degree: 2%
 * 您可以看到大部份CacheManager： resizeAll專案在記錄檔中；下列數字(size=&lt;x>)顯示快取數目，每個工作階段會開啟數個快取。
 * 系統有時會用盡記憶體（在數小時、數天或數週後，視嚴重程度而定）。
 
-若要分析未關閉的工作階段並找出哪些程式碼未關閉工作階段，請參閱知識庫文章[分析未關閉的工作階段](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html)。
+若要開始分析未關閉的工作階段，請參閱知識庫文章[未關閉的資源解析器](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761)。
 
 ### 使用Adobe Experience Manager Web Console {#using-the-adobe-experience-manager-web-console}
 

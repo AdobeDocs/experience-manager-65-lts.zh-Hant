@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 1ea2f849-ef36-47bf-ac3a-49d1984efca5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7d1ab7984bc890aa4f079357061f44784a3bd1fe
 workflow-type: tm+mt
-source-wordcount: '9070'
+source-wordcount: '9057'
 ht-degree: 5%
 
 ---
@@ -41,7 +41,7 @@ WCAG 2.0包含一系列不仰賴技術的指引和成功標準，有助身心障
 
 這些指南會根據三個一致性層級進行分級：A級（最低）、AA級和AAA級（最高）。 簡而言之，層級的定義如下：
 
-* **&#x200B;**&#x200B;A級：您的網站達到基本的最低協助功能等級。要達到此級別，將滿足所有A級成功標準。
+* **** A級：您的網站達到基本的最低協助功能等級。要達到此級別，將滿足所有A級成功標準。
 * **等級AA：**&#x200B;您最理想的協助工具等級，網站達到更高的協助工具等級，因此大部分使用者都可使用大部分的技術。 要達到此級別，將滿足所有A級和A級成功標準。
 * **等級AAA：**&#x200B;您的網站達到高水準的協助工具。 要達到此級別，將滿足所有A級、AA級和AAA級成功標準。
 
@@ -312,7 +312,7 @@ AEM預設會新增&#x200B;**替代文字**&#x200B;至您的影像。 對於傳�
 
 * [瞭解成功標準1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html)：
 * [如何達到成功標準1.2.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
-* [Adobe Encore CS5](https://helpx.adobe.com/tw/premiere-pro/using/whats-new.html)
+* [Adobe Encore CS5](https://helpx.adobe.com/premiere-pro/using/whats-new.html)
 
 ### 註解（即時） (1.2.4)  {#captions-live}
 
@@ -328,10 +328,9 @@ AEM預設會新增&#x200B;**替代文字**&#x200B;至您的影像。 對於傳�
 
 遵循以上[字幕（預先錄製）](#captions-pre-recorded)所提供的指引。 然而，由於媒體的即時性質，提供註解必須儘快建立，並對正在發生的事情做出回應。 因此，您應該考慮使用即時字幕或語音轉文字工具。
 
-詳細指示不在本檔案的涵蓋範圍內，但下列資源提供有用的資訊：
+詳細指示不在本檔案的範圍，但下列資源提供有用的資訊：
 
 * [WebAIM：即時字幕](https://webaim.org/techniques/captions/realtime)
-* [AccessIT （華盛頓大學）：能否使用語音辨識自動產生字幕？](https://www.washington.edu/doit/programs/accessit?1209)
 
 #### 更多資訊 — 字幕（即時） (1.2.4) {#more-information-captions-live}
 
@@ -455,7 +454,7 @@ AEM可讓您使用適當的HTML元素輕鬆建構網頁。 在RTE （文字元�
   新增&#x200B;**表格**&#x200B;時，您可以使用對話方塊設定&#x200B;**表格屬性**。
 
    * 適當的&#x200B;**標題**。
-   * 理想情況下，請移除「寬 **度」、「邊框高度」、「邊框高度」、「邊框高度**」、「單元格間距」、「單元格間距 **」、「單元格**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;間距」的預設值。因為這些屬性可以在全局樣式表中設定。
+   * 理想情況下，請移除「寬 **度」、「邊框高度」、「邊框高度」、「邊框高度**」、「單元格間距」、「單元格間距 **」、「單元格**************&#x200B;間距」的預設值。因為這些屬性可以在全局樣式表中設定。
 
   ![資料表內容對話方塊。](assets/chlimage_1-20a.png)
 
@@ -941,13 +940,13 @@ John Smith's publications
 
 #### 影像按鈕 {#image-buttons}
 
-其中使用影像按鈕(例如 **Image Button** 元件)時，編輯對話方塊的「標題」和「文字」索引標籤中的「標題 **&#x200B;**&#x200B;**&#x200B;** 」欄位實際上會提供影像的替代文字，而非標籤。因此，在以下範例中，包含文字的影像 `Submit` 的alt文字為 `Submit`，使用編輯對話方塊中的 **Title** 欄位新增。
+其中使用影像按鈕(例如 **Image Button** 元件)時，編輯對話方塊的「標題」和「文字」索引標籤中的「標題 ******** 」欄位實際上會提供影像的替代文字，而非標籤。因此，在以下範例中，包含文字的影像 `Submit` 的alt文字為 `Submit`，使用編輯對話方塊中的 **Title** 欄位新增。
 
 在[標題]欄位中設定了Alt文字的![影像按鈕（編輯對話方塊）。](assets/chlimage_1-23a.png)
 
 #### 表單欄位群組 {#groups-of-form-fields}
 
-如果有一組相關控制項，例如&#x200B;**無線電群組**，則可能需要該群組的標題以及個別控制項。 在AEM中新增一組選項按鈕時，「標題 **」欄位會提供此群組標題，而個別標題會指定為選項按鈕(** Items **&#x200B;**)。
+如果有一組相關控制項，例如&#x200B;**無線電群組**，則可能需要該群組的標題以及個別控制項。 在AEM中新增一組選項按鈕時，「標題 **」欄位會提供此群組標題，而個別標題會指定為選項按鈕(** Items ****)。
 
 ![正在新增專案至選項群組。 群組標題為&#39;連絡方式&#39; — 定義於[標題]欄位。](assets/chlimage_1-24a.png)
 

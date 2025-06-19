@@ -8,7 +8,7 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '3330'
 ht-degree: 1%
@@ -156,7 +156,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 
    將以上位置的所有內容複製到`<aem-install>/crx-quickstart/install.`
 
-1. 如果AEM已設定為搭配Tar或MongoDB儲存體使用，請先從&#x200B;***&lt;aem-install>***/*crx-quickstart*/*install*&#x200B;資料夾移除任何現有的設定檔，然後再繼續。 必須移除的檔案包括：
+1. 如果AEM已設定為搭配Tar或MongoDB儲存體使用，請先從***&lt;aem-install>***/*crx-quickstart*/*install*&#x200B;資料夾移除任何現有的設定檔，然後再繼續。 必須移除的檔案包括：
 
    * `For MongoMK: org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
    * `For TarMK: org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
@@ -223,7 +223,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 >
 >S3聯結器同時支援IAM使用者驗證和IAM角色驗證。 若要使用IAM角色驗證，請忽略組態檔中的`accessKey`和`secretKey`值。 然後，S3聯結器會預設為指派給執行個體的[IAM角色](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html)。
 
-| 索引鍵 | 描述 | 預設 | 必填 |
+| 索引鍵 | 說明 | 預設 | 必要 |
 | --- | --- | --- | --- |
 | accessKey | 可存取貯體之IAM使用者的存取金鑰ID。 | | 是，當不使用IAM角色時。 |
 | secretKey | 可存取貯體的IAM使用者機密存取金鑰。 | | 是，當不使用IAM角色時。 |
@@ -436,7 +436,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 * azureSas=」：在聯結器的1.6.3版本中，新增了Azure共用存取簽章(SAS)支援。 **如果組態檔中同時存在SAS和儲存認證，則SAS具有優先權。**&#x200B;如需SAS的詳細資訊，請參閱[正式檔案](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview)。 請確定&#39;=&#39;字元已逸出，如&#39;\=&#39;。
 
 * azureBlobEndpoint=&quot;： Azure Blob端點。 例如，https://&lt;storage-account>.blob.core.windows.net。
-* accessKey=&quot;：儲存體帳戶名稱。 如需Microsoft® Azure驗證認證的詳細資訊，請參閱[正式檔案](https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account)。
+* accessKey=&quot;：儲存體帳戶名稱。 如需Microsoft® Azure驗證認證的詳細資訊，請參閱[正式檔案](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create)。
 
 * secretKey=&quot;：儲存體存取金鑰。 請確定&#39;=&#39;字元已逸出，如&#39;\=&#39;。
 * container=&quot;： Microsoft® Azure Blob儲存容器名稱。 容器是一組Blob。 如需其他詳細資訊，請閱讀[正式檔案](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN)。

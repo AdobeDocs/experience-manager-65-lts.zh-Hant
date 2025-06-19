@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: ed55397c-6777-4d00-a6e2-8b1b025e533f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ David是Day Software AG的聯合創始人和CTO，該公司是全球內容管理
 
 ### 規則#1：資料優先，結構優先。 也許吧。 {#rule-data-first-structure-later-maybe}
 
-#### 解釋 {#explanation-1}
+#### 說明 {#explanation-1}
 
 我建議您不要擔心ERD意義上的宣告資料結構。 最初。
 
@@ -60,7 +60,7 @@ David是Day Software AG的聯合創始人和CTO，該公司是全球內容管理
 
 ### 規則#2：驅動內容階層；不要讓它發生。 {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
 
-#### 解釋 {#explanation-2}
+#### 說明 {#explanation-2}
 
 內容階層是寶貴的資產。 不要讓它發生；請設計它。 如果您沒有適合節點的「良好」、人類看得懂的名稱，建議您重新考慮。 任意數字很難算是「好名稱」。
 
@@ -73,8 +73,6 @@ David是Day Software AG的聯合創始人和CTO，該公司是全球內容管理
 >[!CAUTION]
 >
 >內容存放庫的結構方式也會影響效能。 為獲得最佳效能，附加至內容存放庫中個別節點的子節點數量不應超過1,000個。
->
->請參閱[ CRX可以處理多少資料？](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)
 
 #### 範例 {#example-2}
 
@@ -98,7 +96,7 @@ David是Day Software AG的聯合創始人和CTO，該公司是全球內容管理
 
 ### 規則#3：工作區用於clone()、merge()和update()。 {#rule-workspaces-are-for-clone-merge-and-update}
 
-#### 解釋 {#explanation-3}
+#### 說明 {#explanation-3}
 
 如果您在應用程式中未使用`clone()`、`merge()`或`update()`方法，單一工作區可能是可行的方式。
 
@@ -129,7 +127,7 @@ JCR引進了工作區的抽象概念，讓許多開發人員不知道如何處�
 
 ### 規則#4：注意同名的同層級。 {#rule-beware-of-same-name-siblings}
 
-#### 解釋 {#explanation-4}
+#### 說明 {#explanation-4}
 
 規格中引入了相同名稱同層級(SNS)，以便與專為XML設計並透過XML表示的資料結構相容，因此對JCR很有價值。 但是，SNS帶來了管理費用和存放庫的複雜性。
 
@@ -155,7 +153,7 @@ JCR引進了工作區的抽象概念，讓許多開發人員不知道如何處�
 
 ### 規則#5：參照被視為有害。 {#rule-references-considered-harmful}
 
-#### 解釋 {#explanation-5}
+#### 說明 {#explanation-5}
 
 參照表示參照完整性。 請務必瞭解，參考不僅會為存放庫管理參考完整性增加額外成本，但從內容彈性的角度來看，成本也很高昂。
 
@@ -171,7 +169,7 @@ JCR引進了工作區的抽象概念，讓許多開發人員不知道如何處�
 
 ### 規則#6：檔案是檔案。 {#rule-files-are-files}
 
-#### 解釋 {#explanation-6}
+#### 說明 {#explanation-6}
 
 如果內容模型揭露某些連遠端都聞起來像檔案或資料夾的東西，我就會嘗試使用（或延伸） `nt:file`、`nt:folder`和`nt:resource`。
 
@@ -201,7 +199,7 @@ JCR引進了工作區的抽象概念，讓許多開發人員不知道如何處�
 
 ### 規則#7：ID是邪惡的。 {#rule-ids-are-evil}
 
-#### 解釋 {#explanation-7}
+#### 說明 {#explanation-7}
 
 在關聯式資料庫中，ID是表示關係的必要方式，因此人們也傾向於在內容模型中使用它們。 多半是出於錯誤的原因。
 

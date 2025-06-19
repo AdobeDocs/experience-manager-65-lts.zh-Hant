@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: b30bb90b-adca-4d3a-ae15-bede70e1c39a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 3%
@@ -56,8 +56,8 @@ ht-degree: 3%
 >
 >請參閱：
 >
->* 知識庫文章，[疑難排解AEM TouchUI問題](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)，以取得進一步的秘訣和工具。
->* 關於[AEM 6.0開發人員模式](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=zh-Hant)的AEM Gems工作階段。
+>* 知識庫文章，[疑難排解AEM TouchUI問題](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935)，以取得進一步的秘訣和工具。
+>* 關於[AEM 6.0開發人員模式](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html)的AEM Gems工作階段。
 >
 
 ## 開啟開發人員模式 {#opening-developer-mode}

@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: a87c571e-7afb-42e7-836c-170dcfb0d03b
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2033'
+source-wordcount: '2032'
 ht-degree: 0%
 
 ---
@@ -32,15 +32,15 @@ REST API透過HTTP提供相同功能的存取權，且回應會以JSON傳送。
 
 >[!NOTE]
 >
->QueryBuilder API是使用JCR API建置。 您也可以使用OSGi套件組合中的JCR API來查詢Adobe Experience Manager JCR。 如需詳細資訊，請參閱使用JCR API的[Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/access-jcr.html)。
+>QueryBuilder API是使用JCR API建置。 您也可以使用OSGi套件組合中的JCR API來查詢Adobe Experience Manager JCR。 如需詳細資訊，請參閱使用JCR API的[Adobe Experience Manager](/help/sites-developing/access-jcr.md)。
 
 ## Gem講座 {#gem-session}
 
-[Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=zh-Hant)是Adobe專家提供的一系列深入探討Adobe Experience Manager的技術影片。 此查詢產生器專用會議有助於工具概述和使用。
+[Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html)是Adobe專家提供的一系列深入探討Adobe Experience Manager的技術影片。 此查詢產生器專用會議有助於工具概述和使用。
 
 >[!NOTE]
 >
->AEM Gem工作階段[使用AEM查詢產生器輕鬆搜尋表單](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html?lang=zh-Hant)，以取得查詢產生器的詳細概觀。
+>AEM Gem工作階段[使用AEM查詢產生器輕鬆搜尋表單](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html)，以取得查詢產生器的詳細概觀。
 
 ## 範例查詢 {#sample-queries}
 
@@ -324,7 +324,7 @@ p.properties
 
 `http://localhost:4502/bin/querybuilder.json?p.hits=selective&property=jcr%3atitle&property.value=Triangle`
 
-[`http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle) [p.hits=selective&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.nodedepth=5&amp;p.properties=sling%3aresourceType%20jcr%3apath&amp;property=jcr%3atitle&amp;property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
+[`http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.properties=sling%3aresourceType%20jcr%3aprimaryType&property=jcr%3atitle&property.value=Triangle) [p.hits=selective&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.nodedepth=5&p.properties=sling%3aresourceType%20jcr%3apath&property=jcr%3atitle&property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
 
 ```xml
 property=jcr:title

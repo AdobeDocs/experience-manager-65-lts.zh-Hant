@@ -1,17 +1,13 @@
 ---
 title: 基本設定概念
 description: 瞭解如何針對您自己的特定需求設定Adobe Experience Manager。
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: configuring
-content-type: reference
 feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 338ea82e-c248-4118-9d42-e268d6396e65
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2093'
+source-wordcount: '2085'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ Adobe Experience Manager (AEM)已安裝所有引數的預設設定，允許其�
 
 AEM有許多方面可供設定：
 
-* 某些是每個專案安裝通常都設定的[&#128279;](#primary-configuration-considerations)，必須檢閱以確認它們是否適用於您的專案。
+* 某些是每個專案安裝通常都設定的[](#primary-configuration-considerations)，必須檢閱以確認它們是否適用於您的專案。
 * [其他組態](#further-configuration-considerations)可能為通用組態，但不是必要組態；與功能或系統效能與穩定性相關。
 * 只有AEM的特定選用功能才需要其他功能（這些功能會與適當的功能一併記錄）。
 
@@ -180,11 +176,11 @@ LDAP驗證會在存放庫層級進行，因此會直接由存放庫處理。 如
 
 Dispatcher是Adobe Experience Manager的快取或/及負載平衡工具。 它可以搭配企業級網頁伺服器使用。
 
-如需完整詳細資訊，請參閱[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)，特別是[設定Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hant)以取得進一步的設定詳細資料。
+如需完整詳細資訊，請參閱[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)，特別是[設定Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html)以取得進一步的設定詳細資料。
 
 ### 設定AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
-隨著AEM Doc Services和AEM Doc Security的發行，AEM現在能夠叫用LiveCycle檔案服務來轉譯XFA表單、將檔案轉換為PDF以及原則保護檔案。 如需詳細資訊，請參閱[AEM LiveCycle Connector](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html)。
+隨著AEM Doc Services和AEM Doc Security的發行，AEM現在能夠叫用LiveCycle檔案服務來轉譯XFA表單、將檔案轉換為PDF以及原則保護檔案。
 
 ### 工作解除安裝與拓撲管理 {#job-offloading-and-topology-administration}
 

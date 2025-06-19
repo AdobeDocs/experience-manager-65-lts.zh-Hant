@@ -4,7 +4,7 @@ description: 瞭解如何設定AEM的IMS整合
 feature: Security
 role: Admin
 exl-id: 05ba39fc-4b53-43c0-9a9f-7da3293b1ca2
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 68%
@@ -50,11 +50,11 @@ Adobe Experience Manager (AEM)可與許多其他Adobe解決方案整合。 例�
 
 * 建立新的 OAuth 認證：
 
-   * [OAuth 伺服器對伺服器認證實作指南](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+   * [OAuth 伺服器對伺服器認證實作指南](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
 * 將現有 JWT 認證移轉到 OAuth 認證：
 
-   * [從服務帳戶 (JWT) 認證移轉至 OAuth 伺服器對伺服器認證](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
+   * [從服務帳戶 (JWT) 認證移轉至 OAuth 伺服器對伺服器認證](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
 
 例如：
 
@@ -68,7 +68,7 @@ Adobe Experience Manager (AEM)可與許多其他Adobe解決方案整合。 例�
 
 1. 選取「**建立**」。
 
-1. 根據 [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/) 中的詳細資訊完成設定。例如：
+1. 根據 [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) 中的詳細資訊完成設定。例如：
 
    ![建立 OAuth 設定](assets/ims-create-oauth-configuration.png)
 

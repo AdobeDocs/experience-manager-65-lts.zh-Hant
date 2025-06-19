@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 625affd0-0e1a-4db8-812f-b6ce70cfe035
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1453'
 ht-degree: 3%
 
 ---
@@ -39,10 +39,9 @@ AEM提供了數種工具和資源，用於建立工作流程模型、開發工�
 >
 >* 參與工作流程，請參閱[使用工作流程](/help/sites-authoring/workflows.md)。
 >* 管理工作流程和工作流程執行個體，請參閱[管理工作流程](/help/sites-administering/workflows.md)。
->* 如需端對端社群文章，請參閱[使用Adobe Experience Manager工作流程修改數位Assets。](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html)
+>* 如需端對端社群文章，請參閱[使用Adobe Experience Manager工作流程修改數位Assets。](/help/assets/assets-workflow.md)。
 >* 請參閱[向AEM專家提問工作流程線上講座](https://communities.adobeconnect.com/p5s33iburd54/)。
 >* 資訊位置的變更，請參閱[工作流程最佳實務 — 位置](/help/sites-developing/workflows-best-practices.md#locations)。
->
 
 ## 模型 {#model}
 
@@ -52,7 +51,7 @@ AEM提供了數種工具和資源，用於建立工作流程模型、開發工�
 
 工作流程模型的版本已設定。 當您執行工作流程例項時，它會使用並保留工作流程的執行階段模型（如工作流程啟動時可用）。
 
-在工作流程模型編輯器[&#128279;](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model)中觸發&#x200B;**Sync**&#x200B;時，產生執行階段模型。
+在工作流程模型編輯器](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model)中觸發&#x200B;**Sync**&#x200B;時，產生執行階段模型[。
 
 對發生的工作流程模型或產生的執行階段模型（或兩者皆有） *之後*&#x200B;特定執行個體啟動的編輯未套用至該執行個體。
 
@@ -201,11 +200,11 @@ AEM提供了數種工具和資源，用於建立工作流程模型、開發工�
    | 步驟 5 | 完成 |
    | 步驟 6 | 完成 |
 
-1. 執行工作流程時，使用者可以根據階段名稱（而不是步驟名稱）檢視進度。 工作流程進度顯示在[收件匣](/help/sites-authoring/inbox.md)中列出的工作流程專案[&#128279;](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions)的工作流程詳細資訊視窗的工作流程資訊索引標籤中。
+1. 執行工作流程時，使用者可以根據階段名稱（而不是步驟名稱）檢視進度。 工作流程進度顯示在[收件匣](/help/sites-authoring/inbox.md)中列出的工作流程專案](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions)的工作流程詳細資訊視窗的[工作流程資訊索引標籤中。
 
 ### 工作流程和Forms {#workflows-and-forms}
 
-工作流程通常用於處理AEM中的表單提交。 它可以是標準AEM執行個體中可用的[核心元件表單元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=zh-Hant)，或是[AEM Forms解決方案](/help/forms/using/aem-forms-workflow.md)。
+工作流程通常用於處理AEM中的表單提交。 它可以是標準AEM執行個體中可用的[核心元件表單元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html)，或是[AEM Forms解決方案](/help/forms/using/aem-forms-workflow.md)。
 
 建立表單時，可輕鬆將表單提交與工作流程模型建立關聯。 例如，將內容儲存在存放庫的特定位置，或通知使用者表單提交及其內容。
 

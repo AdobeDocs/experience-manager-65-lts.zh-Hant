@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: f9b3df58-c94b-4143-aeec-85ff031bac2e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ App Builder為客戶提供了一種方法，可輕鬆地在各種使用案例中
 * 核心服務擴充性 — 透過自訂功能和商業邏輯擴充預設行為，進而擴充核心應用程式功能。
 * 使用者體驗擴充性 — 擴充核心體驗以支援業務需求，或建置客戶專屬的數位財產、店面和後台應用程式。
 
-自2020年夏季起，App Builder已透過Adobe的Developer Preview為企業客戶和合作夥伴提供。 App Builder正式發行(GA)日期排定於2021年12月。 Adobe歡迎開發人員透過Adobe的[試用方案](https://developer.adobe.com/app-builder/trial/)來試用App Builder。
+自2020年夏季起，App Builder已透過Adobe的Developer Preview為企業客戶和合作夥伴提供。 App Builder正式發行(GA)日期排定於2021年12月。 Adobe歡迎開發人員透過Adobe的[試用方案](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/set-up#access-and-credentials)來試用App Builder。
 
 >[!NOTE]
 >
->若是AEM as a Cloud Service的客戶，且想要使用App Builder，請參閱[使用Adobe Developer App Builder延伸Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/extending-aem/app-builder.html)。
+>若是AEM as a Cloud Service的客戶，且想要使用App Builder，請參閱[使用Adobe Developer App Builder延伸Adobe Experience Manager as a Cloud Service](/help/sites-developing/app-builder.md)。
 
 ## 架構 {#architecture}
 
@@ -45,13 +45,13 @@ Adobe Developer App Builder並非提供立即可用的解決方案，而是提�
 
 ![架構](assets/appbuilder-architecture.jpg)
 
-如需App Builder架構的詳細資訊，請參閱[架構概覽](https://developer.adobe.com/app-builder/docs/guides/)。
+如需App Builder架構的詳細資訊，請參閱[架構概覽](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/architecture_overview/architecture-overview)。
 
 ## 開始使用App Builder {#additional-resources}
 
 為協助您開始使用App Builder，我們建立了一系列檔案來協助您開始：
 
-* [App Builder快速入門](https://developer.adobe.com/app-builder/docs/getting_started/)
+* [App Builder快速入門](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app)
 
 ## 繼續學習說明檔案 {#appbuilder-documentation}
 

@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 49225f9f-d09e-4ab6-9e29-b47ba41e8889
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1205'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,3 @@ NAS中延遲和傳輸量不良的原因在於網路拓撲或其他服務的NAS�
 
 * 選擇性產生轉譯：僅透過將條件新增至資產處理工作流程，產生您所需的轉譯，因此僅針對選取的資產產生成本較高的轉譯。
 * 執行個體之間共用資料存放區：當磁碟空間不足時，這可能會大幅減少所需的磁碟空間，但代價是需要付出更高的設定工作量，並失去資料存放區的自動清理。
-
-## 延伸閱讀 {#further-reading}
-
-* [正在分析緩慢和封鎖的處理序](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
