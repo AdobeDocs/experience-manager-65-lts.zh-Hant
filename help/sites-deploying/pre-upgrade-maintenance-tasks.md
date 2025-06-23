@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 8f7bbc3887601e10cf29e99ee54959a10c8a3f98
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1110'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ## 索引定義 {#index-definitions}
 
-請務必已安裝隨附於AEM 6.5 Service Pack發行的必要索引定義，至少直到AEM Service Pack 22為止。 (如需詳細資訊，請參閱[AEM 6.5 servicepack發行說明](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/release-notes/release-notes))。
+請確定您已安裝隨最新AEM 6.5 Service Pack發行的必要索引定義。 (如需詳細資訊，請參閱[AEM 6.5 servicepack發行說明](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/release-notes/release-notes))。
 
 ## 確保有足夠的磁碟空間 {#ensure-sufficient-disk-space}
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 ## 設定工作流程和稽核記錄清除 {#configure-wf-audit-purging}
 
-`WorkflowPurgeTask`和`com.day.cq.audit.impl.AuditLogMaintenanceTask`任務需要單獨的OSGi設定，沒有它們就無法運作。 如果它們在升級前工作執行期間失敗，遺失設定是最可能的原因。 因此，如果您不想執行OSGi設定，請務必為這些工作新增OSGi設定，或將其從升級前最佳化工作清單中完全移除。 您可以在[管理工作流程執行個體](/help/sites-administering/workflows-administering.md)找到設定工作流程清除工作的檔案，也可以在AEM 6[&#128279;](/help/sites-administering/operations-audit-log.md)中的稽核記錄維護找到稽核記錄維護工作設定。
+`WorkflowPurgeTask`和`com.day.cq.audit.impl.AuditLogMaintenanceTask`任務需要單獨的OSGi設定，沒有它們就無法運作。 如果它們在升級前工作執行期間失敗，遺失設定是最可能的原因。 因此，如果您不想執行OSGi設定，請務必為這些工作新增OSGi設定，或將其從升級前最佳化工作清單中完全移除。 您可以在[管理工作流程執行個體](/help/sites-administering/workflows-administering.md)找到設定工作流程清除工作的檔案，也可以在AEM 6](/help/sites-administering/operations-audit-log.md)中的[稽核記錄維護找到稽核記錄維護工作設定。
 
 
 ## 安裝、設定及執行升級前工作 {#install-configure-run-pre-upgrade-tasks}

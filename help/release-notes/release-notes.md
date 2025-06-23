@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 2a83d6d4f25a866eacd87d6e2a4318b99c158ea0
+source-git-commit: d353cde4e9cc2af738e600d5a9b74928d98496cb
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 14%
+source-wordcount: '1019'
+ht-degree: 13%
 
 ---
 
@@ -53,6 +53,10 @@ Eclipse Jetty 11.0.x作為Quickstart的servlet引擎使用。
 如需安裝需求，請參閱[安裝指示](/help/sites-deploying/custom-standalone-install.md)。
 
 如需詳細指示，請參閱[升級檔案](/help/sites-deploying/upgrade.md)。
+
+>[!NOTE]
+>
+> 對於全新的AEM 6.5 LTS安裝，必須單獨安裝索引定義。 如需詳細資訊，請參閱[這個](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions)。
 
 ## 支援平台 {#supported-platforms}
 
@@ -147,5 +151,5 @@ Hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/
 這些網站僅供客戶使用。 如果您是客戶且需要存取權，請聯絡您的Adobe客戶經理。
 
 * [產品下載網址為licensing.adobe.com](https://licensing.adobe.com/)
-* [連絡Adobe客戶支援](https://experienceleague.adobe.com/zh-hant/docs/customer-one/using/home)。
+* [連絡Adobe客戶支援](https://experienceleague.adobe.com/en/docs/customer-one/using/home)。
 
