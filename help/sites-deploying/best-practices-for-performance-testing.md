@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 29c20cf3-1694-4d06-ab7c-688018808c44
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 4087a6f44bd87e3f841feb09220a9ea34ec1dc1c
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1765'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ AEM中的許多效能測量（例如查詢回應時間）都可能受到系統�
 * AEM提供立即可用的工具，讓您快速檢視有問題的查詢、請求和錯誤訊息。 如需詳細資訊，請參閱操作儀表板檔案的[診斷工具](/help/sites-administering/operations-dashboard.md#diagnosis-tools)區段。
 * Apache提供名為&#x200B;**JMeter**&#x200B;的產品，可用於效能和負載測試，以及功能行為。 它是開放原始碼軟體，可以自由使用，但功能集比企業產品更小，而且學習曲線更陡峭。 您可以在Apache的網站[https://jmeter.apache.org/](https://jmeter.apache.org/)找到JMeter
 
-* **載入執行器**&#x200B;是企業級載入測試產品。 提供免費的評估版本。 如需詳細資訊，請參閱[https://www.microfocus.com/en-us/portfolio/performance-engineering/overview](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
+* **載入執行器**&#x200B;是企業級載入測試產品。 提供免費的評估版本。 如需詳細資訊，請參閱[OpenText專業效能工程](https://www.opentext.com/products/professional-performance-engineering)。
 
 * 測試行動或回應式網站時，必須使用另一組工具。 這些設定可藉由節流網路頻寬、模擬較慢的行動連線(如3G或EDGE)來運作。 使用範圍較廣的工具包括：
 
@@ -74,7 +74,7 @@ AEM中的許多效能測量（例如查詢回應時間）都可能受到系統�
 
 觸控式UI中的&#x200B;**開發人員模式**
 
-AEM 6的觸控式UI的其中一項新功能是開發人員模式。 就像作者可以在編輯和預覽模式之間切換一樣，開發人員可以在作者UI中切換到開發人員模式。 這麼做可讓您檢視頁面上每個元件的轉譯時間，以及檢視任何錯誤的棧疊追蹤。 如需開發人員模式的詳細資訊，請參閱此[CQ Gems簡報](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=zh-Hant)。
+AEM 6的觸控式UI的其中一項新功能是開發人員模式。 就像作者可以在編輯和預覽模式之間切換一樣，開發人員可以在作者UI中切換到開發人員模式。 這麼做可讓您檢視頁面上每個元件的轉譯時間，以及檢視任何錯誤的棧疊追蹤。 如需開發人員模式的詳細資訊，請參閱此[CQ Gems簡報](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html)。
 
 **使用rlog.jar讀取要求記錄檔**
 

@@ -1,18 +1,13 @@
 ---
 title: Adobe Experience Manager元件 — 基本需知
 description: 當您開始開發新元件時，您需要瞭解其結構和設定的基本知識。
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: components
-content-type: reference
-legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
-source-git-commit: 013c9155817811913963ca514f7a6369b338d487
+source-git-commit: a0fe5bbfe93719641118521c6861bcb2cca76d60
 workflow-type: tm+mt
-source-wordcount: '4834'
+source-wordcount: '4819'
 ht-degree: 1%
 
 ---
@@ -64,13 +59,13 @@ ht-degree: 1%
 
 Adobe建議將負責標籤和轉譯的程式碼，與控制用來選取元件內容之邏輯的程式碼分開。
 
-[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hant)支援此理念，這是一種範本化語言，刻意加以限制，以確保使用真正的程式語言來定義基礎商業邏輯。 此（選用）邏輯會使用特定命令從HTL叫用。 此機制會醒目顯示呼叫特定檢視的程式碼，並在必要時允許同一元件的不同檢視使用特定邏輯。
+[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)支援此理念，這是一種範本化語言，刻意加以限制，以確保使用真正的程式語言來定義基礎商業邏輯。 此（選用）邏輯會使用特定命令從HTL叫用。 此機制會醒目顯示呼叫特定檢視的程式碼，並在必要時允許同一元件的不同檢視使用特定邏輯。
 
 ### HTL與JSP {#htl-vs-jsp}
 
 HTL是AEM 6.0引進的HTML範本語言。
 
-關於在開發您自己的元件時是使用[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hant)或JSP (Java™ Server Pages)的討論應該簡單明瞭，因為HTL現在是建議的AEM指令碼語言。
+關於在開發您自己的元件時是使用[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)或JSP (Java™ Server Pages)的討論應該簡單明瞭，因為HTL現在是建議的AEM指令碼語言。
 
 HTL和JSP都可用來開發傳統和觸控式UI的元件。 雖然我們可能會傾向於假設HTL僅適用於觸控式UI和適用於傳統UI的JSP，但這只是誤解，而且更受時機的影響。 觸控式UI和HTL大約在同一期間併入AEM。 由於HTL現在是建議的語言，因此它被用於新元件，而新元件傾向於用於觸控式UI。
 
@@ -257,7 +252,7 @@ AEM元件的結構既強大又靈活，主要考量事項為：
   <tr>
    <td><strong>名稱 <br /> </strong></td>
    <td><strong>類型 <br /> </strong></td>
-   <td><strong>描述 <br /> </strong></td>
+   <td><strong>說明 <br /> </strong></td>
   </tr>
   <tr>
    <td>.<br /> </td>
@@ -312,7 +307,7 @@ AEM元件的結構既強大又靈活，主要考量事項為：
   <tr>
    <td><code>cq:cellName</code></td>
    <td><code>String</code></td>
-   <td>如果設定，此屬性會視為儲存格ID。 如需詳細資訊，請參閱知識庫文章<a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html">如何建置設計儲存格ID</a>。<br /> </td>
+   <td>如果設定，此屬性會視為儲存格識別碼。<br /> </td>
   </tr>
   <tr>
    <td><code>cq:childEditConfig</code></td>
@@ -597,7 +592,7 @@ AEM中的元件受到三個不同階層的限制：
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* 若要尋找`cq:editConfig`的子節點，例如，您可以搜尋`cq:dropTargets`，其型別為`cq:DropTargetConfig`；您可以在 **&#x200B; CRXDE Lite**&#x200B;中使用查詢工具，並使用下列XPath查詢字串進行搜尋：
+* 若要尋找`cq:editConfig`的子節點，例如，您可以搜尋`cq:dropTargets`，其型別為`cq:DropTargetConfig`；您可以在** CRXDE Lite**中使用查詢工具，並使用下列XPath查詢字串進行搜尋：
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 
@@ -644,7 +639,7 @@ AEM中的元件受到三個不同階層的限制：
  <tbody>
   <tr>
    <td><strong>屬性值</strong></td>
-   <td><strong>描述</strong></td>
+   <td><strong>說明</strong></td>
   </tr>
   <tr>
    <td><code>text:&lt;some text&gt;</code></td>
@@ -703,7 +698,7 @@ AEM中的元件受到三個不同階層的限制：
  <tbody>
   <tr>
    <td><strong>屬性值</strong></td>
-   <td><strong>描述</strong></td>
+   <td><strong>說明</strong></td>
   </tr>
   <tr>
    <td><code>rollover</code></td>
@@ -742,7 +737,7 @@ AEM中的元件受到三個不同階層的限制：
  <tbody>
   <tr>
    <td><strong>屬性值</strong></td>
-   <td><strong>描述</strong></td>
+   <td><strong>說明</strong></td>
   </tr>
   <tr>
    <td><code>floating</code></td>

@@ -2,16 +2,13 @@
 title: 如何建立或自訂最適化表單主題？
 description: 瞭解如何使用BEM規格建立或自訂最適化Forms核心元件的主題
 keywords: 建立最適化表單核心元件主題、建立新主題、自訂主題、上傳新主題、在表單中使用主題、刪除主題、在AEM 6.5表單中建立主題
-contentOwner: Khushwant Singh
-topic-tags: Adaptive Forms
-docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 59b54622-55c4-4526-b584-c08bbd1d08bb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7eddd03e7b1256f2f2b54bdd92672d5a1e4440d1
 workflow-type: tm+mt
-source-wordcount: '1939'
+source-wordcount: '1938'
 ht-degree: 5%
 
 ---
@@ -20,7 +17,7 @@ ht-degree: 5%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
 | AEM 6.5 | 本文 |
 
 
@@ -81,7 +78,7 @@ AEM Forms 6.5提供下列核心元件型最適化Forms的主題。
 
 * 安裝最新版的[Apache Maven。](https://maven.apache.org/download.cgi) Apache Maven是常用於Java™專案的組建自動化工具。 安裝最新版本可確保您擁有佈景主題自訂的必要相依性。
 
-* 瞭解如何在Adobe Experience Manager[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/introduction/clientlibs.html)中建立使用者端資料庫。 AEM提供使用者端程式庫，可讓您將使用者端程式碼儲存在存放庫中、將其組織成類別，並定義每個類別程式碼何時及如何提供給使用者端。
+* 瞭解如何在Adobe Experience Manager](/help/sites-developing/clientlibs.md)中建立[使用者端資料庫。 AEM提供使用者端程式庫，可讓您將使用者端程式碼儲存在存放庫中、將其組織成類別，並定義每個類別程式碼何時及如何提供給使用者端。
 
 * 安裝純文字編輯器。 例如，Microsoft® Visual Studio Code。 使用純文字編輯器(例如Microsoft® Visual Studio Code)可提供方便使用的環境，用於編輯和修改佈景主題檔案。
 
@@ -89,7 +86,7 @@ AEM Forms 6.5提供下列核心元件型最適化Forms的主題。
 
 ### 自訂主題的考量事項 {#consideration}
 
-* 請確定您使用在您的環境中啟用Adaptive Forms核心元件[&#128279;](/help/forms/using/enable-adaptive-forms-core-components.md)所使用的Archetype專案，來自訂您的主題。
+* 請確定您使用在您的環境中啟用Adaptive Forms核心元件](/help/forms/using/enable-adaptive-forms-core-components.md)所使用的[Archetype專案，來自訂您的主題。
 
 * 發佈最適化表單時，使用者端程式庫不會自動發佈在發佈執行個體上。 請確定您手動將在最適化表單中參考的使用者端程式庫發佈到您的發佈環境。
 
@@ -129,7 +126,7 @@ AEM Forms 6.5提供下列核心元件型最適化Forms的主題。
       git clone [Path of Git Repository of the theme]
    ```
 
-   將主題&rbrack;的Git存放庫的&lbrack;路徑取代為主題對應的Git存放庫的實際URL
+   將主題]的Git存放庫的[路徑取代為主題對應的Git存放庫的實際URL
 
    例如，若要複製畫布主題，請執行下列命令：
 
@@ -143,7 +140,7 @@ AEM Forms 6.5提供下列核心元件型最適化Forms的主題。
 
 #### 2.自訂主題 {#customize-the-theme}
 
-您可以彈性地自訂個別元件，或使用佈景主題的全域變數進行佈景主題層級的變更。 修改全域變數會對所有個別元件產生階層式效果。 例如，您可以利用全域變數來變更最適化表單中所有元件的邊框顏色，或對「行動號召」(CTA)按鈕套用鮮明的填色顏色。 您可以：
+您可以彈性地自訂個別元件，或使用佈景主題的全域變數進行佈景主題層級的變更。 修改全域變數會對所有個別元件產生階層式效果。 例如，您可以使用全域變數來變更最適化表單中所有元件的邊框顏色，或對Call to action (CTA)按鈕套用鮮明的填色顏色。 您可以：
 
 * [設定主題層級樣式](#theme-customization-global-level)
 
@@ -291,7 +288,7 @@ The selected theme is applied to the Adaptive Form.
 將主題套用至最適化表單的步驟如下：
 
 1. 登入您的本機AEM作者執行個體。
-1. 在 Experience Manager 登入頁面上輸入您的認證。選取&#x200B;**Adobe Experience Manager** > **Forms** > **Forms與檔案**。
+1. 在 Experience Manager 登入頁面上輸入您的認證。選取「**Adobe Experience Manager** > **表單** > **表單與文件**」。
 1. 按一下&#x200B;**建立** > **最適化Forms**。
 1. 選取最適化Forms核心元件範本，然後按一下「下一步&#x200B;**」**。 **新增屬性**&#x200B;出現
 1. 指定最適化表單的&#x200B;**名稱**。
@@ -302,7 +299,7 @@ The selected theme is applied to the Adaptive Form.
    > * 依預設，已選取`adaptiveform.theme.canvas3`主題。
    > * 您可以從&#x200B;**主題使用者端資料庫**&#x200B;下拉式功能表中選擇不同的主題。
 
-1. 按一下&#x200B;**建立**。
+1. 按一下「**建立**」。
 
 最適化表單主題用於最適化表單範本的一部分，以便在建立最適化表單時定義樣式。
 
@@ -344,4 +341,4 @@ The selected theme is applied to the Adaptive Form.
 * [建立或自訂核心元件型最適化Forms的主題](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [建立核心元件型最適化Forms的範本](template-editor.md)
 * [建立最適化表單或新增最適化表單至AEM Sites頁面或體驗片段](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [範例主題範本和表單資料模型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hant)
+* [範例主題範本和表單資料模型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

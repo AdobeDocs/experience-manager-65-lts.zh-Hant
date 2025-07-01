@@ -11,9 +11,9 @@ thumbnail: 34350.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 5f6171f8-20ca-4c31-a99f-a5bc07a63baf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e4cf6ae3392cef2ffd7e8fff3226b50c95f5a248
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '803'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->搜尋引擎最佳化 (SEO) 已成為許多行銷人員的重點考量。因此，許多AEM專案中的SEO考量都必須解決。 如需詳細資訊，請參閱[SEO和URL管理最佳實務](https://experienceleague.adobe.com/docs/experience-manager-65-lts/managing/managing-further-reference/seo-and-url-management.html)。
+>搜尋引擎最佳化 (SEO) 已成為許多行銷人員的重點考量。因此，許多AEM專案中的SEO考量都必須解決。 如需詳細資訊，請參閱[SEO和URL管理最佳實務](/help/managing/seo-and-url-management.md)。
 
 [AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components)提供進階設定，可自訂產品和類別頁面的URL。 許多實施會針對搜尋引擎最佳化(SEO)目的自訂這些URL。 以下影片詳細說明如何設定`UrlProvider`服務和[Sling對應](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)的功能，以自訂產品和類別頁面的URL。
 
@@ -110,5 +110,5 @@ ht-degree: 3%
 ## 其他資源
 
 * [Venia參考存放區](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM資源對應](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/resource-mapping.html)
+* [AEM資源對應](/help/sites-deploying/resource-mapping.md)
 * [Sling對應](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
