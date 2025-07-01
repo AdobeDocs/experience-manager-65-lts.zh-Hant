@@ -20,11 +20,11 @@ ht-degree: 2%
 * Proxy Worker用來定義和管理特定工作。
 這些可以涵蓋各種工作；例如，使用[!DNL InDesign Server]處理檔案。
 
-若要將檔案完全上傳至您已使用[!DNL Adobe InDesign]建立的[!DNL Experience Manager Assets]，請使用Proxy。 這會使用Proxy背景工作來與[!DNL Adobe InDesign Server]通訊，其中執行[指令碼](https://helpx.adobe.com/indesign/using/scripting.html)以擷取中繼資料並產生[!DNL Experience Manager Assets]的各種轉譯。 Proxy背景工作可啟用雲端組態中[!DNL InDesign Server]與[!DNL Experience Manager]執行個體之間的雙向通訊。
+若要將檔案完全上傳至您已使用[!DNL Adobe InDesign]建立的[!DNL Experience Manager Assets]，請使用Proxy。 這會使用Proxy背景工作來與[!DNL Adobe InDesign Server]通訊，其中執行[指令碼](https://helpx.adobe.com/tw/indesign/using/scripting.html)以擷取中繼資料並產生[!DNL Experience Manager Assets]的各種轉譯。 Proxy背景工作可啟用雲端組態中[!DNL InDesign Server]與[!DNL Experience Manager]執行個體之間的雙向通訊。
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign]以兩種不同的方案提供。 [Adobe InDesign](https://www.adobe.com/products/indesign.html)案頭應用程式，用來設計列印和數位分送的版面配置。 [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html)可讓您根據使用[!DNL InDesign]建立的內容，以程式設計方式建立自動化檔案。 它作為提供介面給其[ExtendScript](https://helpx.adobe.com/indesign/using/scripting.html)引擎的服務運作。指令碼是以[!DNL ExtendScript]撰寫的，類似[!DNL JavaScript]。
+>[!DNL Adobe InDesign]以兩種不同的方案提供。 [Adobe InDesign](https://www.adobe.com/products/indesign.html)案頭應用程式，用來設計列印和數位分送的版面配置。 [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html)可讓您根據使用[!DNL InDesign]建立的內容，以程式設計方式建立自動化檔案。 它作為提供介面給其[ExtendScript](https://helpx.adobe.com/tw/indesign/using/scripting.html)引擎的服務運作。指令碼是以[!DNL ExtendScript]撰寫的，類似[!DNL JavaScript]。
 
 ## 擷取的運作方式 {#how-the-extraction-works}
 
