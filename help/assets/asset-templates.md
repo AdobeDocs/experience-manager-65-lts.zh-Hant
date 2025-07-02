@@ -1,14 +1,13 @@
 ---
 title: 資產範本
 description: 瞭解 [!DNL Adobe Experience Manager Assets] 中的資產範本，以及如何使用資產範本建立行銷宣傳品。
-contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
 solution: Experience Manager, Experience Manager Assets
 exl-id: 8584d5ea-6ef2-4e81-8b18-5aa2d4226ea6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9ed889c74a886e1b41c379dac77bb570ef5c2c39
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1557'
 ht-degree: 1%
 
 ---
@@ -124,12 +123,10 @@ ht-degree: 1%
    >
    >若要啟用[!DNL Experience Manager]以解析影像，請執行下列動作：
    >
-   >* 建立[!DNL InDesign]範本時內嵌影像（請參閱[關於連結和內嵌圖形](https://helpx.adobe.com/tw/indesign/using/graphics-links.html)）。
+   >* 建立[!DNL InDesign]範本時內嵌影像（請參閱[關於連結和內嵌圖形](https://helpx.adobe.com/indesign/using/graphics-links.html)）。
    >* 將[!DNL Experience Manager]掛接至您的本機檔案系統，然後將遺漏的圖示與[!DNL Experience Manager]中的現有資產對應。
-   >
-   >如需有關使用[!DNL InDesign]檔案的詳細資訊，請參閱[在Experience Manager中使用InDesign檔案的最佳實務](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html)。
 
-1. 若要產生手冊的PDF轉譯，請在對話方塊中選取Acrobat選項，然後按一下[繼續]。**&#x200B;**
+1. 若要產生手冊的PDF轉譯，請在對話方塊中選取Acrobat選項，然後按一下[繼續]。****
 1. 附屬品片段會建立於您開始使用的資料夾中。 若要檢視轉譯，請開啟宣傳品，然後從GlobalNav清單中選擇&#x200B;**[!UICONTROL 轉譯]**。
 
    ![chlimage_1-118](assets/chlimage_1-323.png)
@@ -165,7 +162,7 @@ ht-degree: 1%
 
    ![chlimage_1-126](assets/chlimage_1-331.png)
 
-1. 在[!UICONTROL 設定範本]畫面中，指定附屬專案的名稱。 選擇性地指定您認為適當的任何標籤。 如果要以PDF格式匯出輸出，請選取&#x200B;**[!UICONTROL Acrobat (.PDF)]**。 依預設，宣傳品會以JPG和[!DNL InDesign]格式匯出。 若要變更多頁附屬資料的顯示縮圖，請按一下[變更縮圖]。**&#x200B;**
+1. 在[!UICONTROL 設定範本]畫面中，指定附屬專案的名稱。 選擇性地指定您認為適當的任何標籤。 如果要以PDF格式匯出輸出，請選取&#x200B;**[!UICONTROL Acrobat (.PDF)]**。 依預設，宣傳品會以JPG和[!DNL InDesign]格式匯出。 若要變更多頁附屬資料的顯示縮圖，請按一下[變更縮圖]。****
 
    ![chlimage_1-127](assets/chlimage_1-332.png)
 
@@ -177,4 +174,4 @@ ht-degree: 1%
 
 ## 最佳作法和限制 {#best-practices-limitations-tips}
 
-* [!DNL Experience Manager]中的[!DNL InDesign]編輯器在標籤層級運作，且單一標籤下的所有文字都視為單一實體。 若要在編輯時保留文字格式和樣式，請分別標籤每個段落（或使用不同樣式的文字）。
+* [!DNL InDesign]中的[!DNL Experience Manager]編輯器在標籤層級運作，且單一標籤下的所有文字都視為單一實體。 若要在編輯時保留文字格式和樣式，請分別標籤每個段落（或使用不同樣式的文字）。

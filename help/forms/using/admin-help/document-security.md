@@ -1,20 +1,15 @@
 ---
 title: 什麼是Document Security？
 description: 瞭解如何建立、儲存和套用預先定義的機密性設定，以及如何使用Document Security安全地散發您的資訊。
-contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/working_with_document_security
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5e7fe85e-3c7f-4a37-8f65-5c0ad4bbd66c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 32da9c3f13cb1eba130e96e03ab97617d18e1486
 workflow-type: tm+mt
-source-wordcount: '3219'
+source-wordcount: '3218'
 ht-degree: 0%
 
 ---
@@ -26,7 +21,7 @@ Document Security可確保只有授權的使用者才能使用您的檔案。 �
 * Adobe PDF檔案
 * Microsoft®Word、Excel和PowerPoint檔案
 
-如需有關原則如何保護受支援檔案型別的詳細資訊，請參閱[更多Document Security資訊](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/use-document-security/document-security-offerings.html?lang=en)。
+如需有關原則如何保護受支援檔案型別的詳細資訊，請參閱[更多Document Security資訊](/help/forms/using/document-security-offerings.md)。
 
 使用Document Security，您可以輕鬆建立、儲存及套用預先定義的機密性設定至您的檔案。 為了防止資訊擴散到您觸及的範圍之外，您還可以監視和控制在您分發檔案後收件者如何使用您的檔案。
 
@@ -233,7 +228,7 @@ Document Security管理員可以在「使用者管理」中使用以下許可權
 
 安裝Document Security時，會建立名為&#x200B;*全域原則集*&#x200B;的預設原則集。 安裝軟體的管理員負責管理這個原則集。
 
-## 最佳做法 {#best-practices}
+## 最佳實務 {#best-practices}
 
 原則是可套用至各種檔案的一組可重複使用的許可權和使用者群組。 適用於受保護的檔案。 這些原則可確保只有授權的使用者才能使用允許的功能。 政策和原則集的數量預期會隨著部門內不同使用者角色和檔案的增加而增加。 若要建立和管理原則，以下是一些考量事項和最佳實務：
 

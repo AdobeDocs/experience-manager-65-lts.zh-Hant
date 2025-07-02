@@ -10,9 +10,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9d4681c0b184cc7769a8da20a4c50d420e1137c7
 workflow-type: tm+mt
-source-wordcount: '6200'
+source-wordcount: '6185'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ ht-degree: 0%
 
 1. 完成所有區段後，請按一下&#x200B;**[!UICONTROL 儲存]**&#x200B;或&#x200B;**[!UICONTROL 另存新檔]**，並提供設定的名稱。
 
-可自訂對各種檔案型別的支援。 (請參閱[使用AEM表單程式設計](https://www.adobe.com/go/learn_lc_programming_11)中的「[新增對其他原生檔案格式的支援](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)」。)
+可自訂對各種檔案型別的支援。
 
 ## 變更預設設定 {#change-the-default-settings}
 
@@ -267,7 +267,7 @@ PDF Generator支援縮減PDF檔案大小的功能。 是否使用這些設定或
 
    >[!NOTE]
    >
-   >*如果您使用此選項搭配&#x200B;**取消嵌入某些字型**，則&#x200B;**新增字型至取消嵌入**&#x200B;清單中的字型仍會完全取消嵌入。*
+   >*如果您使用此選項搭配&#x200B;**取消嵌入某些字型**，則&#x200B;**新增字型至取消嵌入**清單中的字型仍會完全取消嵌入。*
 
    >[!NOTE]
    >
@@ -384,7 +384,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 ### 清除 {#clean-up}
 
-選取&#x200B;**清除**&#x200B;以移除檔案中不必要的專案。
+選取&#x200B;**清除**以移除檔案中不必要的專案。
 這些專案包括已過時或不必要用於檔案預期用途的元素。 移除某些元素可能會嚴重影響PDF的功能。 依預設，只會選取不影響功能的元素。 如果您不確定移除其他選項的影響，請使用預設選取專案。
 
 **壓縮**

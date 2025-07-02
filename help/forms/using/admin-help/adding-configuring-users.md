@@ -1,17 +1,15 @@
 ---
 title: 新增和設定使用者
 description: 管理主控台中的「使用者管理」設定可讓您建立或刪除使用者，以及設定其他使用者設定。
-contentOwner: admin
-geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: b3f8e1d6-3e6e-4b2c-8528-3346bbda3396
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9dcdf84b70a3b0ea6fb332cd2cf8ccf1d4476489
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -31,20 +29,16 @@ ht-degree: 0%
 1. 在管理控制檯中，按一下&#x200B;**[!UICONTROL 設定>使用者管理>使用者和群組]**，然後按一下&#x200B;**[!UICONTROL 新增使用者]**。
 .
 1. 在&#x200B;**[!UICONTROL 一般設定]**&#x200B;下，視需要提供資訊，然後按一下&#x200B;**[!UICONTROL 下一步]**。 如需設定的詳細資訊，請參閱[使用者設定](adding-configuring-users.md#user-settings)。
-1. （選擇性）若要將使用者新增至群組，請按一下[尋找群組] **&#x200B;**，然後執行下列工作：
+1. （選擇性）若要將使用者新增至群組，請按一下[尋找群組] ****，然後執行下列工作：
 
    * 在&#x200B;**[!UICONTROL 尋找]**&#x200B;方塊中，輸入全部或部分群組名稱。
-   * 選取要搜尋的網域，選取要顯示的專案數，然後按一下[尋找]。**&#x200B;**
-   * （選擇性）若要檢視群組詳細資料，請選取群組名稱，然後按一下[確定] **返回搜尋結果頁面。**
-   * 選取群組的核取方塊，然後按一下[確定]。**&#x200B;**
+   * 選取要搜尋的網域，選取要顯示的專案數，然後按一下[尋找]。****
+   * （選擇性）若要檢視群組詳細資料，請選取群組名稱，然後按一下[確定] **[!UICONTROL 返回搜尋結果頁面。]**
+   * 選取群組的核取方塊，然後按一下[確定]。****
    * 按一下「**[!UICONTROL 下一步]**」。
 
 1. （選擇性）若要將角色指派給使用者，請按一下&#x200B;**[!UICONTROL 尋找角色]**，選取要指派的角色核取方塊，然後按一下&#x200B;**[!UICONTROL 確定]**。
 1. 按一下&#x200B;**[!UICONTROL 完成]**。
-
-   >[!NOTE]
-   >
-   >如果您發現使用者的任何登入問題，請參閱[JEE上的AEM Forms使用者無法登入OSGi端的AEM Forms ](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html)。
 
 ## 使用者設定 {#user-settings}
 
@@ -117,7 +111,7 @@ AEM表單無法區分具有相同使用者ID和密碼但屬於不同網域的使
 1. 在管理控制檯中，按一下&#x200B;**[!UICONTROL 設定>使用者管理>使用者和群組]**。
 1. 指定資訊以縮小特定使用者的搜尋範圍，然後按一下&#x200B;**[!UICONTROL 尋找]**。 搜尋結果會列在頁面底部。 您可以按一下任何欄標題來排序清單。
 1. 按一下使用者名稱，然後按一下&#x200B;**[!UICONTROL 變更密碼]**。
-1. 輸入並確認新密碼，然後按一下[確定]。**&#x200B;** 密碼必須至少為八個字元。
+1. 輸入並確認新密碼，然後按一下[確定]。**** 密碼必須至少為八個字元。
 
 ## 編輯使用者的屬性 {#edit-a-user-s-properties}
 
@@ -127,14 +121,14 @@ AEM表單無法區分具有相同使用者ID和密碼但屬於不同網域的使
    * 在&#x200B;**[!UICONTROL 尋找]**&#x200B;方塊中，輸入搜尋條件。
    * 在&#x200B;**[!UICONTROL 使用]**&#x200B;清單中，選取&#x200B;**[!UICONTROL 名稱]**、**[!UICONTROL 電子郵件]**&#x200B;或&#x200B;**[!UICONTROL 使用者識別碼]**。
    * 在&#x200B;**[!UICONTROL 清單]**&#x200B;中，選取&#x200B;**[!UICONTROL 使用者]**。
-   * 選取網域，選取要顯示的專案數，然後按一下[尋找]。**&#x200B;**
+   * 選取網域，選取要顯示的專案數，然後按一下[尋找]。****
 
 1. 按一下要編輯的使用者。
 1. 對於屬於本機或混合式網域的使用者，請在&#x200B;**[!UICONTROL 詳細資料]**&#x200B;索引標籤上編輯&#x200B;**[!UICONTROL 一般設定]**&#x200B;和&#x200B;**[!UICONTROL 登入設定]**，然後按一下&#x200B;**[!UICONTROL 儲存]**。 如需設定的詳細資訊，請參閱[使用者設定](adding-configuring-users.md#user-settings)。 您無法編輯屬於企業網域之使用者的一般和登入設定。
 1. 若要編輯使用者的群組設定，請按一下&#x200B;**[!UICONTROL 群組成員資格]**&#x200B;標籤，然後執行下列工作：
 
    * 按一下「**[!UICONTROL 尋找群組]**」並完成搜尋資訊。
-   * 若要新增使用者至新群組，請選取群組的核取方塊，按一下[確定]，然後按一下[儲存]。**&#x200B;**。**&#x200B;**
+   * 若要新增使用者至新群組，請選取群組的核取方塊，按一下[確定]，然後按一下[儲存]。****。****
 
    >[!NOTE]
    >
@@ -144,9 +138,9 @@ AEM表單無法區分具有相同使用者ID和密碼但屬於不同網域的使
 
 1. 若要編輯使用者的角色，請按一下&#x200B;**[!UICONTROL 角色指派]**&#x200B;標籤，然後執行下列工作：
 
-   * 若要顯示角色清單，請按一下[尋找角色]。**&#x200B;**
-   * 若要新增角色，請選取該角色的核取方塊，按一下[確定]，然後按一下[儲存]。**&#x200B;**。**&#x200B;**
-   * 若要移除角色，請選取該角色的核取方塊，按一下[取消指派] **，然後按一下[儲存]**&#x200B;**。**
+   * 若要顯示角色清單，請按一下[尋找角色]。****
+   * 若要新增角色，請選取該角色的核取方塊，按一下[確定]，然後按一下[儲存]。****。****
+   * 若要移除角色，請選取該角色的核取方塊，按一下[取消指派] **[!UICONTROL ，然後按一下[儲存]]****[!UICONTROL 。]**
 
 ## 刪除使用者 {#delete-a-user}
 
@@ -156,9 +150,9 @@ AEM表單無法區分具有相同使用者ID和密碼但屬於不同網域的使
    * 在&#x200B;**[!UICONTROL 尋找]**&#x200B;方塊中，輸入搜尋條件。
    * 在&#x200B;**[!UICONTROL 使用]**&#x200B;清單中，選取&#x200B;**[!UICONTROL 名稱]**、**[!UICONTROL 電子郵件]**&#x200B;或&#x200B;**[!UICONTROL 使用者識別碼]**。
    * 在&#x200B;**[!UICONTROL 清單]**&#x200B;中，選取&#x200B;**[!UICONTROL 使用者]**。
-   * 選取網域，選取要顯示的專案數，然後按一下[尋找]。**&#x200B;**
+   * 選取網域，選取要顯示的專案數，然後按一下[尋找]。****
 
-1. 選取使用者的核取方塊，按一下[刪除]，然後按一下[確定]。**&#x200B;**。**&#x200B;**
+1. 選取使用者的核取方塊，按一下[刪除]，然後按一下[確定]。****。****
 
 >[!NOTE]
 >
@@ -178,4 +172,4 @@ AEM表單無法區分具有相同使用者ID和密碼但屬於不同網域的使
 
 CQ提供一種機制，可覆寫預設的404處理常式jsp。
 
-如需有關如何自訂錯誤處理頁面的詳細資訊，請參閱Adobe Experience Manager檔案中的[自訂錯誤處理常式顯示的頁面](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html?lang=en)。
+如需有關如何自訂錯誤處理頁面的詳細資訊，請參閱Adobe Experience Manager檔案中的[自訂錯誤處理常式顯示的頁面](/help/sites-developing/customizing-errorhandler-pages.md)。

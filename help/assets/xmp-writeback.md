@@ -1,15 +1,14 @@
 ---
 title: XMP回寫至轉譯
 description: 瞭解XMP回寫功能如何將資產的中繼資料變更傳播至資產的所有或特定轉譯。
-contentOwner: AG
 role: User, Admin
 feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e3972784-9ded-4da8-b90c-ec2da9c3297a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 863ec2b6d8a6e22705c2f48a4f7bbb76fa34f7c7
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '780'
 ht-degree: 6%
 
 ---
@@ -18,8 +17,8 @@ ht-degree: 6%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=zh-Hant) |
-| AEM 6.5 | 本文章 |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=en) |
+| AEM 6.5 LTS | 本文章 |
 
 [!DNL Adobe Experience Manager Assets]中的這個XMP回寫功能會將中繼資料變更復寫至原始資產的轉譯。 當您從Assets內變更資產的中繼資料或上傳資產時，變更最初會儲存在資產階層中的中繼資料節點中。
 
@@ -29,11 +28,11 @@ XMP回寫功能可讓您將中繼資料變更傳播至資產的所有或特定�
 
 ![中繼資料](assets/metadata.png)
 
-在此案例中，[!DNL Experience Manager Assets]會針對儲存在資產階層中的資產中繼資料，將變更儲存在`dc:title`引數中的&#x200B;**[!UICONTROL Title]**&#x200B;屬性。
+在此案例中，[!DNL Experience Manager Assets]會針對儲存在資產階層中的資產中繼資料，將變更儲存在&#x200B;**[!UICONTROL 引數中的]** Title`dc:title`屬性。
 
 ![metadata_stored](assets/metadata_stored.png)
 
-但是，[!DNL Experience Manager Assets]不會自動將任何中繼資料變更傳播到資產的轉譯。 請參閱如何啟用XMP回寫[&#128279;](#enable-xmp-writeback)。
+但是，[!DNL Experience Manager Assets]不會自動將任何中繼資料變更傳播到資產的轉譯。 請參閱如何啟用XMP回寫[。](#enable-xmp-writeback)
 
 ## 啟用XMP回寫 {#enable-xmp-writeback}
 
@@ -69,8 +68,6 @@ XMP回寫功能可讓您將中繼資料變更傳播至資產的所有或特定�
 中繼資料變更會傳播至資產的轉譯專案thumbnail.140.100.png和thumbnail.319.319.png ，而非其他專案。
 
 >[!NOTE]
->
->如需64位元Linux中的XMP回寫問題，請參閱[如何啟用64位元RedHat Linux上的XMP回寫](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)。
 >
 >如需支援的平台，請參閱[XMP中繼資料回寫先決條件](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back)。
 

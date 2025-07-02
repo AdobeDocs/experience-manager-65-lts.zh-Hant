@@ -1,19 +1,15 @@
 ---
 title: 在叢集環境中進行備份與還原的策略
 description: 如果您的AEM表單實作將其他自訂資料儲存在其他資料庫中，您必須實作策略來備份此資料，以確保其與AEM表單資料保持同步。
-contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0fe9b02a-96b4-462f-a940-a2d6084ed0a4
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 1b7e0c532ab46346059de01cee4a1adecf3a0a13
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1391'
 ht-degree: 0%
 
 ---
@@ -53,7 +49,7 @@ ht-degree: 0%
    1. 備份任何次要叢集節點的所有檔案，包括子目錄。
    1. 分別備份每個叢集節點的儲存庫/系統ID。
 
-   如需詳細步驟，請參閱[備份與還原](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)。
+   如需詳細步驟，請參閱[備份與還原](/help/sites-administering/backup-and-restore.md)。
 
 1. 備份任何其他資料，例如客戶字型。
 1. 再次啟動叢集。
@@ -72,7 +68,7 @@ ht-degree: 0%
    1. 備份任何次要叢集節點的所有檔案，包括子目錄。
    1. 分別備份每個叢集節點的repository/system.id 。
 
-   如需詳細步驟，請參閱[備份與還原](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)。
+   如需詳細步驟，請參閱[備份與還原](/help/sites-administering/backup-and-restore.md)。
 
 1. 備份任何其他資料，例如客戶字型。
 1. 再次啟動叢集。
@@ -178,15 +174,15 @@ ht-degree: 0%
 
 ## 備份和還原Correspondence Management Solution發佈節點 {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-發行者節點在叢集環境中沒有任何主要 — 次要關係。 您可以執行[備份與還原](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)，以備份任何發行者節點。
+發行者節點在叢集環境中沒有任何主要 — 次要關係。 您可以執行[備份與還原](/help/sites-administering/backup-and-restore.md)，以備份任何發行者節點。
 
 ### 復原單一發行者節點 {#recover-a-single-publisher-node}
 
 1. 關閉必須復原的節點，在節點再次啟動之前不要進行任何發佈活動。
-1. 使用[還原備份](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)來還原發佈節點。
+1. 使用[還原備份](/help/sites-administering/backup-and-restore.md)來還原發佈節點。
 
 ### 復原叢集 {#recover-a-cluster}
 
 1. 關閉叢集。
-1. 使用[還原備份](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)來還原發佈節點。
+1. 使用[還原備份](/help/sites-administering/backup-and-restore.md)來還原發佈節點。
 1. 啟動主要節點，接著啟動製作叢集的次要節點。
