@@ -29,7 +29,7 @@ ht-degree: 1%
 
 ## 使用QueryBuilder的REST介面 {#using-the-rest-interface-of-the-querybuilder}
 
-CRX QueryBuilder REST介面透過Java API和REST API公開Asset Share Query Builder的功能。 在執行下列步驟之前，瞭解如何使用[CRX QueryBuilder REST介面](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en)：
+CRX QueryBuilder REST介面透過Java API和REST API公開Asset Share Query Builder的功能。 在執行下列步驟之前，瞭解如何使用[CRX QueryBuilder REST介面](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=zh-Hant)：
 
 1. 瀏覽至URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. 根據Process Reporting儲存節點結構和節點屬性建立查詢。
@@ -46,7 +46,7 @@ CRX QueryBuilder REST介面透過Java API和REST API公開Asset Share Query Buil
 
 ## 使用Query Builder API建立服務  {#creating-a-service-using-query-builder-api-nbsp}
 
-使用Query Builder API建立服務的先決條件是[使用Query Builder API建立和部署CQ OSGI組合](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)和[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en)。
+使用Query Builder API建立服務的先決條件是[使用Query Builder API建立和部署CQ OSGI組合](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)和[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=zh-Hant)。
 
 1. 建立包含適當註解的OSGi服務。 若要存取QueryBuilder，請使用：
 
