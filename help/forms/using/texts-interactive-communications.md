@@ -246,7 +246,7 @@ ht-degree: 1%
 
 ![specialcharacters-2](assets/specialcharacters-2.png)
 
-文字編輯器已內建對210個特殊字元的支援。 管理員可以透過自訂[ ](/help/forms/using/custom-special-characters.md)新增更多/自訂特殊字元的支援。
+文字編輯器已內建對210個特殊字元的支援。 管理員可以透過自訂[&#128279;](/help/forms/using/custom-special-characters.md)新增更多/自訂特殊字元的支援。
 
 ## 搜尋和取代文字 {#searching}
 
