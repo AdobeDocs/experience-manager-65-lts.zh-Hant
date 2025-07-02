@@ -1,17 +1,14 @@
 ---
 title: 啟用AEM以搜尋受Document Security保護的PDF和Microsoft Office檔案
 description: 瞭解如何啟用原生AEM搜尋，以在受DRM保護的PDF檔案上執行全文搜尋。
-content-type: reference
-geptopics: SG_AEMFORMS/categories/working_with_document_security
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 noindex: true
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 5e9d3f3c-8fc4-4d01-9f1e-62d3c29ab9e5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: cd6caaf9de907488db14df2a6396fa60efa2d42c
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '664'
 ht-degree: 1%
 
 ---
@@ -49,7 +46,7 @@ Adobe Experience Manager提供使用者介面，用於搜尋和找出AEM中儲�
 
 ### 使用相互驗證設定AEM Forms使用者端SDK套件組合 {#configure-aem-forms-client-sdk-bundle-using-mutual-authentication}
 
-1. 啟用JEE上AEM Forms的相互驗證。 如需詳細資訊，請參閱[CAC和相互驗證](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html)。
+1. 啟用JEE上AEM Forms的相互驗證。
 1. 開啟AEM設定管理員，並以管理員身分登入。 預設URL為https://&lt;serverName>：&lt;port>/lc/system/console/configMgr。
 1. 搜尋並開啟AEM Forms使用者端SDK套件組合。 指定下列屬性的值：
 

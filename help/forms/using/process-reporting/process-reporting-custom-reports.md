@@ -1,19 +1,15 @@
 ---
 title: 自訂報告進行中報告
 description: 您可以建立自訂報表，並將這些報表新增至JEE上的AEM Forms程式報表UI。
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: process-reporting
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5670fede-4567-445e-8eeb-84349405db0e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 7e7c9f2414504ade45d6695641e08108afed0bd2
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '835'
 ht-degree: 1%
 
 ---
@@ -26,14 +22,14 @@ ht-degree: 1%
 
 在新增任何自訂報表之前，請執行以下範本程式：
 
-1. 自訂報表中使用的資料必須可在程式報表中使用。 若要確保資料可用性，請排程cron工作或使用[程式報告]UI上的[同步] [&#128279;](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)**選項。**
-1. URL要求（封裝所要的查詢）必須傳回適當的查詢結果物件。 若要建立查詢，您可以使用[QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=zh-Hant)的REST介面，使用QueryBuilder API建立OSGi服務。 您可以建立動態或靜態查詢。
+1. 自訂報表中使用的資料必須可在程式報表中使用。 為確保資料可用，請排程cron工作或使用[處理序報告]UI上的[同步] **選項。**
+1. URL要求（封裝所要的查詢）必須傳回適當的查詢結果物件。 若要建立查詢，您可以使用[QueryBuilder](/help/sites-developing/querybuilder-api.md)的REST介面，使用QueryBuilder API建立OSGi服務。 您可以建立動態或靜態查詢。
 
 1. 建立自訂使用者介面以顯示結果。 您可以建立獨立的使用者介面，或將結果與現有的程式報告UI整合。
 
 ## 使用QueryBuilder的REST介面 {#using-the-rest-interface-of-the-querybuilder}
 
-CRX QueryBuilder REST介面透過Java API和REST API公開Asset Share Query Builder的功能。 在執行下列步驟之前，瞭解如何使用[CRX QueryBuilder REST介面](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=zh-Hant)：
+CRX QueryBuilder REST介面透過Java API和REST API公開Asset Share Query Builder的功能。 在執行下列步驟之前，瞭解如何使用[CRX QueryBuilder REST介面](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en)：
 
 1. 瀏覽至URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. 根據Process Reporting儲存節點結構和節點屬性建立查詢。
@@ -50,7 +46,7 @@ CRX QueryBuilder REST介面透過Java API和REST API公開Asset Share Query Buil
 
 ## 使用Query Builder API建立服務  {#creating-a-service-using-query-builder-api-nbsp}
 
-使用Query Builder API建立服務的先決條件是[使用Query Builder API建立和部署CQ OSGI組合](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)和[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=zh-Hant)。
+使用Query Builder API建立服務的先決條件是[使用Query Builder API建立和部署CQ OSGI組合](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)和[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en)。
 
 1. 建立包含適當註解的OSGi服務。 若要存取QueryBuilder，請使用：
 
@@ -66,7 +62,7 @@ CRX QueryBuilder REST介面透過Java API和REST API公開Asset Share Query Buil
     predicateGroup.setAllRequired(true);
    ```
 
-1. 新增述詞至新建立的predicateGroup。 幾個有用的述詞結構是： 5.3[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)中的[JcrBoolPropertyPredicateEvaluator、5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)中的[JcrPropertyPredicateEvaluator、5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)中的[RangePropertyPredicateEvaluator、5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)中的[DateRangePredicateEvaluator和5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)中的TypePredicateEvaluator。
+1. 新增述詞至新建立的predicateGroup。 幾個有用的述詞結構是： 5.3[中的](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)JcrBoolPropertyPredicateEvaluator、5.3[中的](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)JcrPropertyPredicateEvaluator、5.3[中的](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)RangePropertyPredicateEvaluator、5.3[中的](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)DateRangePredicateEvaluator和5.3[中的](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)TypePredicateEvaluator。
 
    對於靜態報表，則是以硬式編碼撰寫述詞，而對於動態報表，則是從請求擷取述詞。
 
@@ -636,7 +632,7 @@ response.setCharacterEncoding("utf-8");
 建立顯示結果的獨立UI的先決條件是[Sling基本知識](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html)、[建立CRX節點](/help/sites-developing/developing-with-crxde-lite.md#creating-a-node)並提供適當的[存取許可權](/help/sites-developing/developing-with-crxde-lite.md#access-control)。
 
 1. 建立個別的UI。
-1. 在每個可插入報告的`/content/process-reporting-runtime/custom-reports`節點處建立子`nt:unstructured`節點。
+1. 在每個可插入報告的`nt:unstructured`節點處建立子`/content/process-reporting-runtime/custom-reports`節點。
 
    * **id** — 指定報表的唯一識別碼。
    * **名稱** — 指定報表的名稱。 名稱會顯示在UI中。

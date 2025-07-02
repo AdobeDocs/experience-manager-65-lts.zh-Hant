@@ -5,9 +5,9 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: e9549ac9-0ada-4661-969a-709f0ed3b133
-source-git-commit: 3b83225e1150f1e623997c9ece6329de995148be
+source-git-commit: d9f6415aabcbc55af23824d9e0ab33c418f6761f
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '950'
 ht-degree: 15%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 15%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
 | AEM 6.5 | 本文章 |
 
 如需AEM Forms最新功能和增強功能的相關資訊，請參閱[AEM Forms的新功能](../../forms/using/whats-new.md)。
@@ -33,7 +33,7 @@ AEM Forms提供的表單管理工具不僅可讓您管理最適化表單，還�
 
 >[!NOTE]
 >
->調適型表單功能 (適用於 [AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/deploy.html)) 僅用於探索和評估目的。若要供生產使用，必須獲得 AEM Forms 的有效許可；調適型表單的功能需要適當許可才可使用。
+>調適型表單功能 (適用於 [AEM 6.5 QuickStart](/help/sites-deploying/deploy.md)) 僅用於探索和評估目的。若要供生產使用，必須獲得 AEM Forms 的有效許可；調適型表單的功能需要適當許可才可使用。
 
 ![AEM表單功能](do-not-localize/4th-draft-updated.gif)
 
@@ -96,7 +96,7 @@ AEM Forms提供Forms Workspace，此行動應用程式可將您的數位業務�
 * 企業內容管理聯結器(ECM)
 * 開放式標準支援，包括XML和SOAP，可將表單資料與企業系統連線
 * 現成的HTML報告可監控積壓、工作佇列和關鍵績效指標(KPI)
-* 可自訂儀表板，以即時洞察業務營運
+* 可自訂儀表板，讓insight即時進入業務營運
 * 用於連線協力廠商報告工具的API
 
 ![第三份草稿](do-not-localize/3rd-draft.gif)

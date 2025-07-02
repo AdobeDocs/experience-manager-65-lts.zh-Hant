@@ -1,16 +1,13 @@
 ---
 title: AEM中的檔案片段
 description: 通訊管理中的檔案片段（例如文字、清單、條件和版面配置片段）可讓您形成客戶通訊的靜態、動態且可重複的元件。
-topic-tags: correspondence-management
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: ece49f03-e711-439f-9c2d-6308fe2998ae
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4f2374a48687d39f7d365e09d9055edf583e2c20
 workflow-type: tm+mt
-source-wordcount: '6905'
+source-wordcount: '6895'
 ht-degree: 0%
 
 ---
@@ -92,10 +89,6 @@ ht-degree: 0%
 
    ![pastetexttextmodule](assets/pastetexttextmodule.png)
 
-   >[!NOTE]
-   >
-   >不過，貼上文字的格式有些[限制](https://helpx.adobe.com/aem-forms/kb/cm-copy-paste-text-limitations.html)。
-
 1. 如有必要，請在檔案片段中插入特殊字元。 例如，您可以使用「特殊字元」浮動視窗來插入：
 
    * 幣別符號，例如€、¥和£
@@ -104,13 +97,13 @@ ht-degree: 0%
 
    ![specialcharacters-1](assets/specialcharacters-1.png)
 
-   通訊管理已內建對210個特殊字元的支援。 管理員可以透過自訂[&#128279;](/help/forms/using/custom-special-characters.md) 新增更多/自訂特殊字元的支援。
+   通訊管理已內建對210個特殊字元的支援。 管理員可以透過自訂[ ](/help/forms/using/custom-special-characters.md)新增更多/自訂特殊字元的支援。
 
 1. 若要在可編輯的內嵌模組中反白顯示\強調部分文字，請選取文字並選取「反白顯示顏色」。
 
    ![textbackgroundcolorapplied](assets/textbackgroundcolorapplied.png)
 
-   您可以直接選取[基本色彩]調色盤中的基本色彩`**[A]**`，或在使用滑桿`**[B]**`選擇適當的色彩陰影后選取[選取]**&#x200B;**。
+   您可以直接選取[基本色彩]調色盤中的基本色彩`**[A]**`，或在使用滑桿&#x200B;**選擇適當的色彩陰影后選取[選取]**`**[B]**`。
 
    或者，您也可以移至[進階]索引標籤，選取適當的[色相]、[明度]和[飽和度] `**[C]**`來建立精確色彩，然後選取[選取] `**[D]**`來套用色彩以反白顯示文字。
 
@@ -245,7 +238,7 @@ ht-degree: 0%
 
 1. 選取&#x200B;**「下一步」**。
 1. 選取&#x200B;**新增資產**。
-1. 若要將資產新增至清單，請在[選取Assets]頁面中選取資產，然後選取[完成]&#x200B;**&#x200B;**。
+1. 若要將資產新增至清單，請在[選取Assets]頁面中選取資產，然後選取[完成]****。
 
    ![選取要新增至清單的資產](assets/selectassets.png)
 
@@ -405,7 +398,7 @@ ht-degree: 0%
 
 1. 選取&#x200B;**表格**&#x200B;索引標籤，並指定下列配置資訊：
 
-   * **&#x200B;**&#x200B;的設定：選取要設定的資料表。如果資料表是靜態資料表，下拉式清單中資料表名稱的尾碼為（靜態）；如果資料表是動態資料表，則為（動態）。 靜態表格包含固定數量的列。 靜態表格可包含目標區域和欄位。 這些目標區域和欄位無法繫結到重複的DDE。 繫結至表格儲存格的資料會決定動態表格的列數。
+   * ****&#x200B;的設定：選取要設定的資料表。如果資料表是靜態資料表，下拉式清單中資料表名稱的尾碼為（靜態）；如果資料表是動態資料表，則為（動態）。 靜態表格包含固定數量的列。 靜態表格可包含目標區域和欄位。 這些目標區域和欄位無法繫結到重複的DDE。 繫結至表格儲存格的資料會決定動態表格的列數。
 
    * **列**：選取配置的列數。 設定的資料列計數必須大於或等於原始的資料列計數。
    * **欄**：選取配置的欄數。 設定的欄計數必須大於或等於原始欄計數。

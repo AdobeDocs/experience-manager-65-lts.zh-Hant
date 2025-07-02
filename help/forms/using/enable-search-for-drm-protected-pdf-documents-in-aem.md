@@ -1,25 +1,20 @@
 ---
 title: 啟用AEM以搜尋受Document Security保護的PDF檔案
 description: 瞭解如何啟用原生AEM搜尋，以在受DRM保護的PDF檔案上執行全文搜尋。
-contentOwner: khsingh
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-geptopics: SG_AEMFORMS/categories/working_with_document_security
-docset: aem65
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: ad86398d-0dc9-4168-b409-4d231b8d586b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 757c26274b39f5fb37a090f320493abd1af44c42
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
 
 # 啟用AEM以搜尋受Document Security保護的PDF檔案{#enable-aem-to-search-document-security-protected-pdf-documents}
 
-AEM搜尋可搜尋和找到AEM資產，並對各種常用的檔案格式(例如純文字檔、Microsoft Office檔案和PDF檔案)執行文字搜尋。 您也可以擴充原生搜尋，以便對受PDF Document Security[&#128279;](../../forms/using/admin-help/document-security.md)保護的AEM檔案執行全文搜尋。 若要讓AEM能夠在這類檔案上執行全文搜尋，請執行下列步驟：
+AEM搜尋可搜尋和找到AEM資產，並對各種常用的檔案格式(例如純文字檔、Microsoft Office檔案和PDF檔案)執行文字搜尋。 您也可以擴充原生搜尋，以便對受PDF Document Security[保護的](../../forms/using/admin-help/document-security.md)AEM檔案執行全文搜尋。 若要讓AEM能夠在這類檔案上執行全文搜尋，請執行下列步驟：
 
 1. 建立安全連線
 1. 為受原則保護的PDF範例檔案建立索引
@@ -28,7 +23,7 @@ AEM搜尋可搜尋和找到AEM資產，並對各種常用的檔案格式(例如�
 
 * 如果您在OSGi上使用AEM Forms：
 
-   * 在AEM Forms伺服器上安裝[AEM Forms Document Security Indexer套件](https://helpx.adobe.com/tw/aem-forms/kb/aem-forms-releases.html)。
+   * 在AEM Forms伺服器上安裝[AEM Forms Document Security Indexer套件](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)。
 
    * 確保JEE伺服器上的AEM Forms啟動並執行，且JEE伺服器上的對應AEM Forms已安裝Document Security。 必須使用JEE伺服器上的AEM表單，才能為受保護的檔案建立索引。
 
@@ -43,7 +38,7 @@ AEM搜尋可搜尋和找到AEM資產，並對各種常用的檔案格式(例如�
    1. 開啟AEM Web Console。 URL是https://&#39;[伺服器]：[連線埠]&#39;/system/console/configMgr。
    1. 找到並開啟&#x200B;**還原序列化防火牆設定**。
 
-   1. 將sun.util.calendar套件新增至[允許清單的類別]或[套件首碼]欄位，然後按一下[儲存]。**&#x200B;**
+   1. 將sun.util.calendar套件新增至[允許清單的類別]或[套件首碼]欄位，然後按一下[儲存]。****
 
 ### 在AEM Forms JEE和OSGi棧疊之間建立安全連線 {#establish-a-secure-connection-between-aem-forms-jee-and-osgi-stacks}
 
@@ -66,7 +61,7 @@ AEM搜尋可搜尋和找到AEM資產，並對各種常用的檔案格式(例如�
 
 #### 使用相互驗證設定Adobe LiveCycle Client SDK套裝 {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
-1. 啟用JEE上AEM Forms的相互驗證。 如需詳細資訊，請參閱[CAC和相互驗證](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html)。
+1. 啟用JEE上AEM Forms的相互驗證。
 1. 開啟AEM Web Console。 URL是https://&#39;[伺服器]：[連線埠]&#39;/system/console/configMgr。
 1. 找到並開啟&#x200B;**Adobe LiveCycle Client SDK**&#x200B;套件。 指定下列屬性的值：
 

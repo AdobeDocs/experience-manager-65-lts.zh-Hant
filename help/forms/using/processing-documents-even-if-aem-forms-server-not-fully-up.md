@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 22dd8daa-b8c6-4e7d-bca3-3958a79fb4b5
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 402b42d8ce5539739205a85d99bcb035d382a036
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '110'
 ht-degree: 3%
 
 ---
@@ -29,4 +29,4 @@ ht-degree: 3%
 
 ## 解決方案 {#solution}
 
-若要解決此問題，請在伺服器啟動期間將引數`Dcom.adobe.livecycle.dsc.deferServiceStart=true`新增至[批次檔](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/command-line-start-and-stop.html#windows-platform-start-bat-script-example)。
+若要解決此問題，請在伺服器啟動期間將引數`Dcom.adobe.livecycle.dsc.deferServiceStart=true`新增至[批次檔](/help/sites-deploying/command-line-start-and-stop.md#windows-platform-start-bat-script-example)。
