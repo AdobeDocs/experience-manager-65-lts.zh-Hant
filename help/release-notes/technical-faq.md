@@ -4,9 +4,10 @@ description: 關於AEM 6.5 LTS的常見技術問題。
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 2352420843c613884ad3cae487ed048bd775e294
+exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
+source-git-commit: ec722773ce3acff1d0de861523db8ff7df552c4b
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '247'
 ht-degree: 2%
 
 ---
@@ -28,6 +29,14 @@ ht-degree: 2%
 ### AEM Groovy主控台支援
 
 由於缺少Guava相依性，AEM 6.5中使用的AEM Groovy主控台版本可能無法在AEM 6.5 LTS中運作。 新支援的AEM Groovy主控台版本是[19.0.8](https://mvnrepository.com/artifact/be.orbinson.aem/aem-groovy-console/19.0.8)。
+
+### AEM 6.5 LTS是否支援使用者同步功能？
+
+是的，AEM 6.5 LTS支援使用者同步處理。 AEM 6.5和6.5 LTS之間的使用者同步功能沒有變更。
+
+### Maven Central上的Uber JAR似乎已損毀 — 這是什麼問題？
+
+確認您正在搭配`apis`分類器使用Uber JAR。 請注意，AEM 6.5 LTS中Uber JAR的封裝結構已變更。 如需詳細資訊，請參閱[更新AEM Uber Jar版本](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version)。
 
 ## 取得其他說明
 
