@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: d353cde4e9cc2af738e600d5a9b74928d98496cb
+source-git-commit: 2c2e8defbaab13a31beeb7c6978af5da19535e70
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1074'
 ht-degree: 13%
 
 ---
@@ -108,8 +108,8 @@ Adobe會持續審視產品功能，以透過更新或取代舊功能來提升客
 | We.Retail | 不支援We-Retail範例網站。 | 沒有可用的替代專案。 | 6.5 LTS GA |
 | 開放原始碼 | 不支援`oak-solr-osgi`組合。 | 沒有可用的替代專案。 | 6.5 LTS GA |
 | 開放原始碼 | 不支援`org.apache.servicemix.bundles.abdera-parser`、`org.apache.servicemix.bundles.jdom`和`org.apache.sling.atom.taglib`。 | 沒有可用的替代專案。 | 6.5 LTS GA |
-| 開放原始碼 | 已從`org.apache.commons.commons-io`匯出`org.apache.commons.io`個套件。 | 不需要變更。 | 6.5 LTS GA |
-| 開放原始碼 | 正在從`com.sun.javax.mail`套件組合匯出`javax.mail`個套件。 | 不需要變更。 | 6.5 LTS GA |
+| 開放原始碼 | 已從`org.apache.commons.io`匯出`org.apache.commons.commons-io`個套件。 | 不需要變更。 | 6.5 LTS GA |
+| 開放原始碼 | 正在從`javax.mail`套件組合匯出`com.sun.javax.mail`個套件。 | 不需要變更。 | 6.5 LTS GA |
 | 開放原始碼 | `org.apache.jackrabbit.api`個套件現在已從`org.apache.jackrabbit.oak-jackrabbit-api`套件組合匯出。 | 不需要變更。 | 6.5 LTS GA |
 | 開放原始碼 | 不支援`com.github.jknack.handlebars` | 挑選相關的[版本](https://mvnrepository.com/artifact/com.github.jknack/handlebars) | 6.5 LTS GA |
 
@@ -130,18 +130,21 @@ Hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/
 
 ### 僅SSL功能的Dispatcher連線失敗 {#ssl-only-feature}
 
-在AEM部署中啟用SSL專用功能時，有一個已知問題會影響Dispatcher與AEM執行個體之間的連線。 啟用此功能後，健康情況檢查可能會失敗，而Dispatcher與AEM執行個體之間的通訊可能會中斷。
+在AEM部署中啟用SSL專用功能時，有一個已知問題會影響Dispatcher與AEM執行個體之間的連線。 啟用此功能後，健康情況檢查可能會失敗，而Dispatcher與AEM執行個體之間的通訊可能會中斷。 當客戶嘗試透過`https + IP`從Dispatcher連線到AEM執行個體時，就會發生此問題，而且此問題會與SNI （伺服器名稱指示）驗證問題有關。
 
 **影響：**
 
-* HTTP 500回應代碼的健康情況檢查失敗
+* HTTP 400回應代碼的健康情況檢查失敗
 * Dispatcher與AEM執行個體之間的流量中斷
 * 無法透過Dispatcher正確提供內容
+* 在Dispatcher設定中將HTTPS與IP位址搭配使用時出現連線失敗
+* HTTP 400透過HTTPS + IP連線時出現「無效的SNI」錯誤
 
 **受影響的環境：**
 
 * AEM部署搭配Dispatcher設定
 * 已啟用僅SSL功能的系統
+* 使用`https + IP`連線方法連線至AEM執行個體的Dispatcher設定
 
 **解決方案：**
 如果您遇到此問題，請聯絡Adobe客戶支援。 Hotfix [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip)可用來解決此問題。 在套用必要的Hotfix之前，請勿嘗試啟用僅限SSL的功能。
@@ -151,5 +154,5 @@ Hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/
 這些網站僅供客戶使用。 如果您是客戶且需要存取權，請聯絡您的Adobe客戶經理。
 
 * [產品下載網址為licensing.adobe.com](https://licensing.adobe.com/)
-* [連絡Adobe客戶支援](https://experienceleague.adobe.com/zh-hant/docs/customer-one/using/home)。
+* [連絡Adobe客戶支援](https://experienceleague.adobe.com/en/docs/customer-one/using/home)。
 
