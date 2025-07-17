@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: d18c9dc3-fdcc-4558-b9b6-ecf1ce61048a
-source-git-commit: 3d0353f207aeaf39198ba55dc37cc4194f25133d
+source-git-commit: a57a71a64cd454b37087abdf01be120d20ab791c
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '263'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,3 @@ AEM 6.5 LTS包含重要安全性和穩定性更新，包括對Oracle Java 17和J
 * 使用[AEM Analyzer工具](/help/sites-deploying/aem-analyzer.md)評估升級的複雜性。
 * 為升級程式規劃並分配足夠的時間和資源。
 * 參與Adobe支援和賦權工作階段以取得指引和協助。
-
-## AEM 6.5 LTS是否支援使用者同步？
-
-是，AEM 6.5 LTS支援使用者同步。
