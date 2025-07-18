@@ -10,12 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 34678cae-3c7f-4c9f-b7b6-c1dd4e0758ad
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1072'
 ht-degree: 1%
 
 ---
+
 
 # 電子郵件範本的最佳實務 {#best-practices-for-email-templates}
 
@@ -23,7 +25,7 @@ ht-degree: 1%
 >
 >本文適用於已棄用的AEM電子郵件元件基礎元件。
 >
->建議使用者使用現代[核心元件電子郵件元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=zh-Hant)
+>建議使用者使用現代[核心元件電子郵件元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 本檔案說明產生完善開發的電子郵件行銷活動範本的電子郵件設計相關最佳實務。
 
@@ -33,7 +35,7 @@ AEM中提供的示範行銷活動會遵循所有這些最佳實務。 每個最�
 
 >[!NOTE]
 >
->所有行銷活動內容應建立於型別為`cq/personalization/components/ambitpage`的`master`頁面下。
+>所有行銷活動內容應建立於型別為`master`的`cq/personalization/components/ambitpage`頁面下。
 >
 >例如，如果您的計畫行銷活動結構類似於
 >
@@ -45,7 +47,7 @@ AEM中提供的示範行銷活動會遵循所有這些最佳實務。 每個最�
 
 >[!NOTE]
 >
->建立Adobe Campaign的郵件範本時，您必須將值為&#x200B;**mapRecipient**&#x200B;的屬性&#x200B;**acMapping**&#x200B;包含在範本的&#x200B;**jcr：content**&#x200B;節點中。 如果不這樣做，您就無法在Experience Manager的&#x200B;**頁面屬性**&#x200B;中選取Adobe Campaign範本（欄位已停用）。
+>建立Adobe Campaign的郵件範本時，您必須將值為&#x200B;**mapRecipient**&#x200B;的屬性&#x200B;**acMapping**&#x200B;包含在範本的&#x200B;**jcr:content**&#x200B;節點中。 如果不這樣做，您就無法在Experience Manager的&#x200B;**頁面屬性**&#x200B;中選取Adobe Campaign範本（欄位已停用）。
 
 ## 範本/頁面元件 {#template-page-component}
 
@@ -55,7 +57,7 @@ AEM中提供的示範行銷活動會遵循所有這些最佳實務。 每個最�
  <tbody>
   <tr>
    <td><strong>最佳實務</strong></td>
-   <td><strong>實作</strong></td>
+   <td><strong>實施</strong></td>
   </tr>
   <tr>
    <td><p>指定檔案型別，以確保轉譯的一致性。</p> <p>在開頭新增DOCTYPE (HTML或XHTML)</p> </td>
@@ -111,7 +113,7 @@ AEM中提供的示範行銷活動會遵循所有這些最佳實務。 每個最�
  <tbody>
   <tr>
    <td><strong>最佳實務</strong></td>
-   <td><strong>實作</strong></td>
+   <td><strong>實施</strong></td>
   </tr>
   <tr>
    <td>在CSS (font-family)中使用html &lt;font&gt;取代樣式</td>

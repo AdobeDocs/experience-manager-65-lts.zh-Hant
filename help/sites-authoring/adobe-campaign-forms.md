@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
 exl-id: 6a72ba56-8222-4853-adc6-ee8f3d395d9d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1280'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ AEM可讓您建立並使用與您網站上的Adobe Campaign互動的表單。 �
 
 >[!NOTE]
 >
->當使用Adobe Campaign Classic或Adobe Campaign Standard時，請確定頁面&#x200B;**jcr：content**&#x200B;節點上的&#x200B;**acMapping**&#x200B;屬性分別設為&#x200B;**mapRecipient**&#x200B;或&#x200B;**profile**
+>當使用Adobe Campaign Classic或Adobe Campaign Standard時，請確定頁面&#x200B;**jcr**&#x200B;節點上的&#x200B;**acMapping:content**&#x200B;屬性分別設為&#x200B;**mapRecipient**&#x200B;或&#x200B;**profile**
 >
 
 1. 在AEM的Sites中，導覽至您要建立頁面的位置。
@@ -78,7 +78,7 @@ Adobe Campaign專用的Forms具有特定元件。 這些元件有選項可讓您
 
 >[!NOTE]
 >
->如果無法使用所需的範本，請參閱[讓範本可用](/help/sites-authoring/adobe-campaign.md)。
+>如果無法使用所需的範本，請參閱[讓範本可用。](/help/sites-authoring/campaign.md)
 
 本節僅詳細說明Adobe Campaign的特定連結。 如需如何在Adobe Experience Manager中使用表單的一般概覽的詳細資訊，請參閱[編輯模式元件](/help/sites-authoring/default-components-foundation.md)。
 

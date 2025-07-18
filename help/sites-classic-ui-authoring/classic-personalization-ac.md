@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 4a659a56-ba49-4bfa-8fc2-e0d033f27809
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '126'
 ht-degree: 2%
 
 ---
@@ -35,5 +35,5 @@ Adobe Campaign這一組解決方案可讓您跨所有線上及離線管道個人
 
 此外，如果您想要自訂整合，請參閱下列主題：
 
-* [建立自訂擴充功能](/help/sites-developing/extending-campaign-extensions.md)
+* [自訂Adobe Campaign擴充功能](/help/sites-developing/extending-campaign-extensions.md)
 * [建立自訂表單對應](/help/sites-developing/extending-campaign-form-mapping.md)

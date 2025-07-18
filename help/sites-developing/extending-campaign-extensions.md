@@ -1,5 +1,5 @@
 ---
-title: 建立自訂擴充功能
+title: 自訂Adobe Campaign擴充功能
 description: 您可以在Adobe Campaign中從AEM或從AEM呼叫Adobe Campaign的自訂程式碼。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,16 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7cdce721-ca00-43ac-a543-85bfad382821
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '492'
 ht-degree: 2%
 
 ---
 
-# 建立自訂擴充功能{#creating-custom-extensions}
+
+# 自訂Adobe Campaign擴充功能 {#creating-custom-extensions}
 
 一般而言，實作專案時，您在AEM和Adobe Campaign中都有自訂程式碼。 使用現有API，您可以在Adobe Campaign中從AEM或從AEM呼叫Adobe Campaign的自訂程式碼。 本檔案將說明如何執行此操作。
 
@@ -35,17 +37,13 @@ AEM與Campaign之間的標準整合是以JSON和JSSP (JavaScript伺服器頁面)
 
 ![chlimage_1-15](assets/chlimage_1-15a.png)
 
->[!NOTE]
->
->[如需此範例，請參閱Geometrixx](/help/sites-developing/we-retail.md)，此範例可從「封裝共用」取得。
-
 在此範例中，已建立新的自訂JSSP檔案，並從AEM端呼叫該檔案來擷取結果。 例如，它可用來從Adobe Campaign擷取資料，或將資料儲存至Adobe Campaign。
 
 1. 若要在Adobe Campaign中建立JSSP檔案，請按一下&#x200B;**新增**&#x200B;圖示。
 
    ![左上角附近有星號的頁面所指示的新圖示。](do-not-localize/chlimage_1-4a.png)
 
-1. 輸入此JSSP檔案的名稱。 在此範例中，使用了&#x200B;**cus：custom.jssp** （表示它位於&#x200B;**cus**&#x200B;名稱空間）。
+1. 輸入此JSSP檔案的名稱。 在此範例中，使用了&#x200B;**cus:custom.jssp** （表示它位於&#x200B;**cus**&#x200B;名稱空間）。
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 
@@ -167,17 +165,13 @@ AEM提供立即可用的API，可擷取Siteadmin Explorer檢視中任何位置�
 
 ![chlimage_1-17](assets/chlimage_1-17a.png)
 
->[!NOTE]
->
->[如需此範例，請參閱Geometrixx](/help/sites-developing/we-retail.md)，此範例可從「封裝共用」取得。
-
 對於總管中的每個節點，都有一個API連結至該節點。 例如，對於節點：
 
-* [http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends](http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends)
+* [http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommended](http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends)
 
 API是：
 
-* [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
+* [http://localhost:4502/content/campaigns/geometrixx/scott-recommended.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
 URL **.1.json**&#x200B;的結尾可以根據您想要取得的子層級數目由&#x200B;**.2.json**、**.3.json**&#x200B;取代。 若要取得所有關鍵字，可使用&#x200B;**無限**：
 
