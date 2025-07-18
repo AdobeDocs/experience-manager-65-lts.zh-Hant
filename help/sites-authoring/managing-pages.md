@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
-source-wordcount: '2416'
+source-wordcount: '2476'
 ht-degree: 2%
 
 ---
@@ -95,7 +95,7 @@ ht-degree: 2%
 
 #### 頁面名稱限制和最佳實務 {#page-name-restrictions-and-best-practices}
 
-頁面 **標題**&#x200B;**和名稱可以單獨建立** ，但是是相關的：
+頁面 **標題****和名稱可以單獨建立** ，但是是相關的：
 
 * 建立頁面時，只需要&#x200B;**標題**&#x200B;欄位。 如果建立頁面時未提供&#x200B;**Name**，AEM將會從標題的前64個字元產生名稱（遵循以下設定的驗證）。 僅前64個字元用於支援短頁面名稱的最佳做法。
 
@@ -103,7 +103,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->定義頁面名稱時，一個好的經驗法則是保持頁面名稱簡短，但儘可能表達到位且容易記憶，讓讀者容易理解。 如需詳細資訊，請參閱`title`專案的[W3C樣式指南](https://www.w3.org/Provider/Style/TITLE.html)。
+>定義頁面名稱時，一個好的經驗法則是保持頁面名稱簡短，但儘可能表達到位且容易記憶，讓讀者容易理解。 如需詳細資訊，請參閱[專案的](https://www.w3.org/Provider/Style/TITLE.html)W3C樣式指南`title`。
 >
 >也請記住，某些瀏覽器（例如舊版的IE）只能接受一定長度的URL，因此還有技術原因需縮短頁面名稱。
 
@@ -175,7 +175,7 @@ AEM隨附數種現成可用的範本。 可用的範本視個別網站而定。 
 * 影片
 * 以及更多功能
 
-建立並開啟頁面後，您就可以使用[元件瀏覽器](/help/sites-authoring/author-environment-tools.md#componentbrowser)提供的元件[&#128279;](/help/sites-authoring/editing-content.md#insertinganewparagraph)來新增內容。
+建立並開啟頁面後，您就可以使用[元件瀏覽器](/help/sites-authoring/editing-content.md#insertinganewparagraph)提供的元件[來](/help/sites-authoring/author-environment-tools.md#componentbrowser)新增內容。
 
 >[!NOTE]
 >
@@ -203,7 +203,7 @@ AEM隨附數種現成可用的範本。 可用的範本視個別網站而定。 
 
 1. 在精靈的最後階段，您可以：
 
-   * 使用三個索引標籤來輸入您要指派給新頁面的[頁面屬性](/help/sites-authoring/editing-page-properties.md)，然後按一下[建立]&#x200B;**來實際建立頁面。**
+   * 使用三個索引標籤來輸入您要指派給新頁面的[頁面屬性](/help/sites-authoring/editing-page-properties.md)，然後按一下[建立]**來實際建立頁面。**
 
    * 使用&#x200B;**上一步**&#x200B;返回範本選取範圍。
 
@@ -288,7 +288,7 @@ AEM隨附數種現成可用的範本。 可用的範本視個別網站而定。 
 
    ![貼上](assets/paste-without-children.png)
 
-   您可以執行下列兩個動作中的一個:
+   下列兩個動作您可以擇一執行：
    * 選取&#x200B;**貼上**&#x200B;頁面圖示本身：將在此位置建立原始頁面及任何子頁面的復本。
    * 選取下拉箭頭以顯示不含子項的&#x200B;**貼上**&#x200B;選項。 將在此位置建立原始頁面的復本；不會複製子頁面。
 
@@ -326,7 +326,7 @@ AEM提供可更新任何內部連結的功能，這些連結會參照正在重�
 
    這會開啟移動頁面精靈。
 
-1. 從精靈的&#x200B;**重新命名**&#x200B;階段，您可以：
+1. 精靈的&#x200B;**重新命名**&#x200B;步驟提供您&#x200B;**頁面相關資訊**，包括建立日期、路徑和直接參照數目。 您可從這裡：
 
    * 指定移動頁面後您要使用的名稱，然後按一下[下一步] **繼續。**
 
@@ -345,7 +345,7 @@ AEM提供可更新任何內部連結的功能，這些連結會參照正在重�
    * 使用[欄檢視](/help/sites-authoring/basic-handling.md#column-view)瀏覽至頁面的新位置：
 
       * 按一下目的地的縮圖，以選取目的地。
-      * 按一下[下一步]&#x200B;**&#x200B;**&#x200B;繼續。
+      * 按一下[下一步]****&#x200B;繼續。
 
    * 使用&#x200B;**上一步**&#x200B;返回頁面名稱規格。
 
@@ -365,11 +365,12 @@ AEM提供可更新任何內部連結的功能，這些連結會參照正在重�
 
    >[!NOTE]
    >
-   >如果頁面既未連結也未參考，則無法使用此步驟。
+   >* 如果頁面既未連結也未參考，則無法使用此步驟。
+   >* 此步驟會列出直接和間接參照。 這可能與在精靈的&#x200B;**重新命名**&#x200B;步驟上報告的數量以及參考邊欄報告的參考不同，兩者都僅報告基於效能原因的直接參考。
 
    ![caop-09](assets/caop-09.png)
 
-1. 選取「移動&#x200B;**&#x200B;**」將會完成程式，並視需要移動/重新命名您的頁面。
+1. 選取「移動&#x200B;****」將會完成程式，並視需要移動/重新命名您的頁面。
 
 >[!NOTE]
 >
@@ -389,7 +390,7 @@ AEM提供可更新任何內部連結的功能，這些連結會參照正在重�
 
   ![非同步頁面移動](assets/asynchronous-page-move.png)
 
-可在&#x200B;**全域導覽** > **工具** > **作業** > **作業**&#x200B;的&#x200B;[**非同步作業狀態**&#x200B;儀表板](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)中檢查非同步作業的狀態
+可在&#x200B;[**全域導覽** > ](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)工具&#x200B;**>**&#x200B;作業&#x200B;**>**&#x200B;作業&#x200B;**的**&#x200B;非同步作業狀態&#x200B;**儀表板**&#x200B;中檢查非同步作業的狀態
 
 >[!NOTE]
 >
@@ -408,7 +409,7 @@ AEM提供可更新任何內部連結的功能，這些連結會參照正在重�
 
    >[!NOTE]
    >
-   >為了安全起見，「刪 **&#x200B;**&#x200B;除」頁面圖示不能作為快速動作使用。
+   >為了安全起見，「刪 **** 除」頁面圖示不能作為快速動作使用。
 
 1. 對話方塊將會要求確認，使用：
 

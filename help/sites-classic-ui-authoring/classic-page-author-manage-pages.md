@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: bff63900-0007-472d-a910-bf20b8013668
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1898'
 ht-degree: 1%
 
 ---
@@ -150,7 +150,7 @@ AEM隨附數種現成可用的範本。 提供的範本取決於個別網站，�
 * 影片
 * 更多專案
 
-建立並開啟頁面後，您就可以使用[sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick)提供的元件[&#128279;](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph)來新增內容。
+建立並開啟頁面後，您就可以使用[sidekick](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph)提供的元件[來](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick)新增內容。
 
 ## 管理頁面 {#managing-pages}
 
@@ -266,7 +266,7 @@ AEM提供更新要重新命名或移動之頁面的內部連結的功能。 您�
 
    ![screen_shot_2012-02-15at121336pm](assets/screen_shot_2012-02-15at121336pm.png)
 
-   頁面也會列出參照所移動頁面的頁面。 根據參照頁面的狀態，您或許可以調整這些連結和/或重新發佈頁面。
+   頁面也會列出直接或間接參照所移動頁面的頁面。 根據參照頁面的狀態，您或許可以調整這些連結和/或重新發佈頁面。
 
 1. 視情況填寫下列欄位：
 

@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: c4ac3f14-f45a-44f6-a232-69cae483a776
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: dc46c3e2689df1069eea6980ef615f639db42e92
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '931'
 ht-degree: 4%
 
 ---
@@ -39,7 +39,7 @@ AEM的製作環境提供各種機制來組織和編輯您的內容。 提供的�
 
 您可以從AEM中直接存取各種&#x200B;**說明**&#x200B;資源：
 
-除了從主控台工具列[&#128279;](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help)存取說明外，您也可以從sidekick存取說明(使用？ 圖示)：
+除了從主控台工具列[存取](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help)說明外，您也可以從sidekick存取說明(使用？ 圖示)：
 
 ![Sidekick已摺疊](do-not-localize/sidekick-collapsed-2.png)
 
@@ -156,7 +156,7 @@ Sidekick的&#x200B;**元件**&#x200B;索引標籤可讓您瀏覽可新增至目�
 
 AEM可讓您檢視哪些頁面連結至您目前工作的頁面。
 
-若要顯示直接頁面參照：
+若要顯示頁面參照：
 
 1. 在Sidekick中，選取&#x200B;**頁面**&#x200B;索引標籤圖示。
 
@@ -166,6 +166,10 @@ AEM可讓您檢視哪些頁面連結至您目前工作的頁面。
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
+AEM會顯示直接參照所選頁面以及任何間接參照的所有頁面。 如果您需要移動或刪除頁面，這有助於瞭解所有將更新的連結。
+
+## 其他Sidekick動作 {#additional-actions}
+
 在某些情況下，可從Sidekick取得進一步動作，包括：
 
 * [啟動](/help/sites-classic-ui-authoring/classic-launches.md)
@@ -173,7 +177,7 @@ AEM可讓您檢視哪些頁面連結至您目前工作的頁面。
 
 * [藍圖](/help/sites-administering/msm-best-practices.md)
 
-在網站主控台[&#128279;](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console)中可以看到其他頁面間關係。
+在網站主控台[中可以看到其他](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console)頁面間關係。
 
 ## 稽核記錄 {#audit-log}
 
