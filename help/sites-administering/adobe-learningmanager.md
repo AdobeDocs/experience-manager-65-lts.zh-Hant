@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: d6f7807b-e1d9-4ecc-a1f7-c994f55d8ef7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 406516503140e7890dfacd4a7fae818d141d9a36
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 12%
@@ -20,4 +20,4 @@ ht-degree: 12%
 
 Adobe Learning Manager (ALM)與Adobe Experience Manager (AEM)網站整合。 這可讓您以最少的編碼工作量，為Adobe Learning Manager建立自己的網站和回應式行動介面。 透過這項整合，您可以為使用者建立自訂的學習體驗。
 
-如需詳細資訊，請參閱AEM Sites[&#128279;](https://helpx.adobe.com/tw/learning-manager/adobe-learning-manager-integration-aem.html)的Adobe Learning Manager參考網站（ALM參考網站）套件。
+如需詳細資訊，請參閱AEM Sites[的](https://experienceleague.adobe.com/en/docs/learning-manager/using/integration/aem-sites/adobe-learning-manager-integration-aem)Adobe Learning Manager參考網站（ALM參考網站）套件。
