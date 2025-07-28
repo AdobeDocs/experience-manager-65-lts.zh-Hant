@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 4aa45f02-ff89-4e40-a15d-e62c5879a87d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: cf2f70432ccf9ebc80847cf5ec6acfe630feb39f
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 1%
@@ -40,7 +40,9 @@ ht-degree: 1%
 1. 停止您的Experience Manager Forms伺服器。
 1. 為您的應用程式伺服器設定下列JVM引數：
 
-   `-Djdk.xml.xpathExprOpLimit=2000`
+   `-Djdk.xml.xpathExprGrpLimit=100`
+   `-Djdk.xml.xpathExprOpLimit=10000`
+   `-Djdk.xml.xpathTotalOpLimit=10000`
 
    它會將JVM中的系統屬性設定為相當高的值，這樣就不會達到預設限制。
 
