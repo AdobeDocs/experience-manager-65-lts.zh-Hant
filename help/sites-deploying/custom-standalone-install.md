@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: 90e63ad3be32b7ce551c5e3579c722ef75d97f95
+source-git-commit: 93aa6218c36b52bfcd7a204e6f0b65871a4b365b
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1563'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ AEM的預設連線埠為4502。 如果該連線埠無法使用或已使用，Qui
 -XX:+UseG1GC --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.lang=org.apache.sling.commons.threads -Djdk.util.zip.disableZip64ExtraFieldValidation=true
 ```
 
-* [僅限Forms]以下提供範例，確保AEM Forms可搭配Java 17/Java21正常運作，並包含下列其他JVM引數：
+* [僅限Forms]以下提供範例，確保AEM Forms可搭配Java 17/Java21使用，並包含下列其他JVM引數：
 
 ```shell
 --add-opens=java.base/java.util=ALL-UNNAMED -add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
