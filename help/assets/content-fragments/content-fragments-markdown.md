@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5ca53958-dfcd-4058-a04c-c750ab4d9a6e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a8ff456d323e848cc0c6296670b39834682a36b9
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '522'
 ht-degree: 4%
 
 ---
@@ -166,7 +166,7 @@ ht-degree: 4%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-若要指出程式碼範圍，請以反勾號(&amp;amp；grave；)將程式碼換行。 和預先格式化的程式碼區塊不同，程式碼範圍表示一般段落中的程式碼。
+若要指出程式碼範圍，請用反引號(`` ` ``)括住程式碼。 和預先格式化的程式碼區塊不同，程式碼範圍表示一般段落中的程式碼。
 
 例如：
 
