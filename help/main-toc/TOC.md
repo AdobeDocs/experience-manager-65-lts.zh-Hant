@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5 LTS檔案瞭解其運作方式，以及軟體可為您做什麼。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: 023a8cc757ebbdd48466fbe512fde347c78ec848
 workflow-type: tm+mt
-source-wordcount: '6782'
-ht-degree: 21%
+source-wordcount: '6754'
+ht-degree: 23%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 21%
 
 + 發行說明 {#release-notes}
    + [發行說明](/help/release-notes/release-notes.md)
+   + 舊版發行說明 {#service-pack}
+      + [全面發佈](/help/release-notes/previous/ga.md)
    + [常見問題](/help/release-notes/faq.md)
    + [技術常見問題集](/help/release-notes/technical-faq.md)
 + 安全性 {#security}
@@ -76,7 +78,7 @@ ht-degree: 21%
          + [元件](/help/sites-authoring/default-components.md)
          + [疑難排解製作時的AEM](/help/sites-authoring/troubleshooting.md)
          + [編輯頁面時的鍵盤快速鍵](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-         + [最佳實務](/help/sites-authoring/best-practices.md)
+         + [最佳做法](/help/sites-authoring/best-practices.md)
       + 網站和頁面功能 {#siteandpage}
          + [使用標記](/help/sites-authoring/tags.md)
          + [建立頁面範本](/help/sites-authoring/templates.md)
@@ -106,7 +108,7 @@ ht-degree: 21%
          + [參與工作流程](/help/sites-authoring/workflows-participating.md)
          + [使用專案工作流程](/help/sites-authoring/projects-with-workflows.md)
       + 頁面效能 {#page-performance}
-         + [內容Insight](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/authoring/siteandpage/content-insights.html?lang=zh-Hant)
+         + [內容Insight](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/authoring/siteandpage/content-insights.html)
          + [分析頁面效能](/help/sites-authoring/ci-analyze.md)
          + [檢視頁面分析資料](/help/sites-authoring/pa-using.md)
       + 個人化 {#personalization}
@@ -181,7 +183,7 @@ ht-degree: 21%
          + [Admin Console](/help/sites-administering/enable-classic-ui-admin.md)
       + 個人化 {#personalization}
          + [個人化](/help/sites-administering/personalization.md)
-         + [設定ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/personlization/ch-configuring.html?lang=zh-Hant)
+         + [設定ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/personlization/ch-configuring.html)
          + [ClientContext](/help/sites-administering/client-context.md)
          + [使用 ContextHub 設定分段](/help/sites-administering/segmentation.md)
          + [設定分段](/help/sites-administering/campaign-segmentation.md)
@@ -215,19 +217,19 @@ ht-degree: 21%
          + [與 Adobe Campaign 整合](/help/sites-administering/campaign.md)
          + [與ExactTarget整合](/help/sites-administering/exacttarget.md)
          + [Analytics與外部提供者](/help/sites-administering/external-providers.md)
-         + [與Adobe Marketing Cloud整合](/help/sites-administering/marketing-cloud.md)
+         + [與Adobe Experience Cloud整合](/help/sites-administering/marketing-cloud.md)
          + [手動設定與Adobe Target的整合](/help/sites-administering/target-configuring.md)
          + [與Adobe Target整合的先決條件](/help/sites-administering/target-requirements.md)
          + [Adobe分類](/help/sites-administering/adobeanalytics-classifications.md)
          + [解決方案整合](/help/sites-administering/integration.md)
          + [將體驗片段匯出到 Adobe Target](/help/sites-administering/experience-fragments-target.md)
          + [電子郵件範本的最佳實務](/help/sites-administering/best-practices-for-email-templates.md)
-      + 最佳實務 {#bestpractices}
-         + [最佳實務](/help/sites-administering/administer-best-practices.md)
-         + [翻譯最佳實務](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/administering/introduction/tc-bp.html?lang=zh-Hant)
-         + [MSM最佳實務](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/administering/introduction/msm-best-practices.html?lang=zh-Hant)
+      + 最佳做法 {#bestpractices}
+         + [最佳做法](/help/sites-administering/administer-best-practices.md)
+         + [翻譯最佳實務](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/administering/introduction/tc-bp.html)
+         + [MSM最佳實務](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/administering/introduction/msm-best-practices.html)
          + [AEM Sites - GDPR整備](/help/sites-administering/gdpr-compliance-sites.md)
-         + [處理AEM Foundation的GDPR要求](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/security/handling-gdpr-requests-for-aem-platform.html?lang=zh-Hant)
+         + [處理AEM Foundation的GDPR要求](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/security/handling-gdpr-requests-for-aem-platform.html)
          + [AEM Commerce - GDPR整備](/help/sites-administering/gdpr-compliance-commerce.md)
       + 內容管理 {#contentmanagement}
          + [封裝管理員](/help/sites-administering/package-manager.md)
@@ -441,10 +443,10 @@ ht-degree: 21%
          + [安裝及設定資料擷取功能](/help/forms/using/installing-configuring-aem-forms-osgi.md)
          + [在OSGi上安裝和設定以Forms為中心的工作流程](/help/forms/using/installing-configuring-forms-centric-workflow-on-osgi.md)
          + [安裝及設定互動式通訊](/help/forms/using/installing-configuring-intreactive-communication-correspondence-management.md)
-         + [安裝並設定自動錶單轉換服務](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=zh-Hant)
+         + [安裝並設定自動錶單轉換服務](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
       + [安裝及設定Designer](/help/forms/using/installing-configuring-designer.md)
       + 設定 AEM Forms {#configure-aem-forms}
-         + [AEM Forms 伺服器的效能調整](/help/forms/using/performance-tuning-aem-forms.md)
+         + [AEM Forms伺服器的效能調整](/help/forms/using/performance-tuning-aem-forms.md)
          + [設定最適化表單快取](/help/forms/using/configure-adaptive-forms-cache.md)
          + [正在設定AEM DS設定](/help/forms/using/configuring-the-processing-server-url.md)
          + [設定同步排程器](/help/forms/using/configure-synchronization-scheduler.md)
@@ -632,8 +634,8 @@ ht-degree: 21%
       + [設定Xcode專案並建置iOS應用程式](/help/forms/using/setup-xcode-project-build-installer.md)
       + [為iOS建置安全的AEM Forms應用程式](/help/forms/using/building-secure-mobile-workspace-app.md)
       + [設定Visual Studio專案並建置Windows應用程式](/help/forms/using/setup-visual-studio-project-build-installer.md)
-      + [設定Android studio專案並建置Android應用程式](/help/forms/using/setup-android-studio-project-build-installer.md)
-      + [建立AEM Forms Android應用程式](/help/forms/using/setup-eclipse-project-build-installer.md)
+      + [設定Android](/help/forms/using/setup-android-studio-project-build-installer.md)
+      + [建立AEM Forms Android](/help/forms/using/setup-eclipse-project-build-installer.md)
       + [發佈AEM Forms應用程式](/help/forms/using/distribute-mobile-workspace-app.md)
       + [手勢自訂](/help/forms/using/gesture-customization.md)
       + [品牌自訂](/help/forms/using/branding-customization.md)
@@ -652,34 +654,34 @@ ht-degree: 21%
       + [更新一般設定](/help/forms/using/update-general-settings.md)
       + [疑難排解AEM Forms應用程式](/help/forms/using/issues-aem-forms-app.md)
    + HTML5 表單 {#html5-forms}
-      + [HTML5 forms簡介](/help/forms/using/introduction.md)
-      + [HTML5表單快速入門](/help/forms/using/get-started.md)
-      + [HTML5 Forms的架構](/help/forms/using/html5-forms-architecture.md)
-      + [HTML5 forms與PDF forms的功能差異](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md)
-      + [HTML5表單常見問題集(FAQ)](/help/forms/using/faq.md)
-      + [為HTML5表單設計表單範本](/help/forms/using/designing-form-template.md)
-      + [HTML5 Forms的最佳作法](/help/forms/using/best-practices-for-html5-forms.md)
-      + [設計無障礙的HTML5表單](/help/forms/using/design-accessible-html5-forms.md)
-      + [產生XDP表單的HTML5預覽](/help/forms/using/preview-xdp-forms-html.md)
-      + [HTML5表單的轉譯表單範本](/help/forms/using/rendering-form-template.md)
-      + [啟用HTML5表單的附件](/help/forms/using/enabling-attachments-html5-form.md)
-      + [HTML5 forms service proxy](/help/forms/using/service-proxy.md)
-      + [最佳化HTML5表單](/help/forms/using/optimize-html5-forms.md)
-      + [HTML5表單的熒幕助讀程式](/help/forms/using/screen-readers.md)
-      + [建立HTML5表單的自訂設定檔](/help/forms/using/custom-profile.md)
-      + [HTML5表單中的由右至左語言](/help/forms/using/right-left-languages.md)
-      + [針對HTML5表單整合Form Bridge與自訂入口網站](/help/forms/using/integrate-form-bridge-forms-portal.md)
-      + [在HTML5表單中建立自訂外觀](/help/forms/using/custom-widgets.md)
-      + [變更HTML5表單的預設樣式](/help/forms/using/changing-default-styles.md)
-      + [HTML5表單的Picture子句支援](/help/forms/using/picture-clause-support.md)
-      + [在HTML5表單中建立無障礙的複雜表格](/help/forms/using/accessible-tables.md)
-      + [建立HTML5表單的CSS樣式](/help/forms/using/css-styles.md)
-      + [為HTML5表單自訂錯誤訊息](/help/forms/using/customzing-errors-html5-forms.md)
-      + [將HTML5表單儲存為草稿](/help/forms/using/saving-html5-form-draft.md)
-      + [啟用HTML5表單的記錄](/help/forms/using/enable-logs.md)
-      + [偵錯HTML5 forms](/help/forms/using/debug.md)
-      + [HTML5表單的指令碼支援](/help/forms/using/scripting-support.md)
-      + [AEM Forms中的表單集](/help/forms/using/formset-in-aem-forms.md)
+      + [HTML5 表單簡介](/help/forms/using/introduction.md)
+      + [HTML5 表單快速入門](/help/forms/using/get-started.md)
+      + [HTML5 表單架構](/help/forms/using/html5-forms-architecture.md)
+      + [HTML5 表單和 PDF 表單之間的功能差異](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md)
+      + [HTML5 表單常見問題集 (FAQ)](/help/forms/using/faq.md)
+      + [設計 HTML5 表單的表單範本](/help/forms/using/designing-form-template.md)
+      + [HTML5 表單的最佳做法](/help/forms/using/best-practices-for-html5-forms.md)
+      + [設計無障礙的 HTML5 表單](/help/forms/using/design-accessible-html5-forms.md)
+      + [產生 XDP 表單的 HTML5 預覽](/help/forms/using/preview-xdp-forms-html.md)
+      + [轉譯 HTML5 表單的表單範本](/help/forms/using/rendering-form-template.md)
+      + [啟用 HTML5 表單附件](/help/forms/using/enabling-attachments-html5-form.md)
+      + [HTML5 表單服務代理](/help/forms/using/service-proxy.md)
+      + [最佳化 HTML5 表單](/help/forms/using/optimize-html5-forms.md)
+      + [HTML5 表單的螢幕閱讀器](/help/forms/using/screen-readers.md)
+      + [建立 HTML5 表單的自訂設定檔](/help/forms/using/custom-profile.md)
+      + [HTML5 表單從右至左的語言](/help/forms/using/right-left-languages.md)
+      + [將 Form Bridge 與自訂入口網站進行整合以供 HTML5 表單使用](/help/forms/using/integrate-form-bridge-forms-portal.md)
+      + [在 HTML5 表單中建立自訂外觀](/help/forms/using/custom-widgets.md)
+      + [變更 HTML5 表單的預設樣式](/help/forms/using/changing-default-styles.md)
+      + [HTML5 表單的圖片子句支援](/help/forms/using/picture-clause-support.md)
+      + [在 HTML5 表單中建立無障礙的複雜表單](/help/forms/using/accessible-tables.md)
+      + [建立 HTML5 表單的 CSS 樣式](/help/forms/using/css-styles.md)
+      + [自訂 HTML5 表單的錯誤訊息](/help/forms/using/customzing-errors-html5-forms.md)
+      + [將 HTML5 表單儲存為草稿](/help/forms/using/saving-html5-form-draft.md)
+      + [啟用 HTML5 表單的記錄](/help/forms/using/enable-logs.md)
+      + [HTML5 表單偵錯](/help/forms/using/debug.md)
+      + [HTML5 表單的指令碼支援](/help/forms/using/scripting-support.md)
+      + [AEM Forms 的表單集](/help/forms/using/formset-in-aem-forms.md)
    + 信件與對應 {#letters-correspondences}
       + [通訊管理概觀](/help/forms/using/cm-overview.md)
       + [版面設計](/help/forms/using/layout-design-details.md)
@@ -728,9 +730,9 @@ ht-degree: 21%
       + [在電子郵件通知中使用中繼資料](/help/forms/using/use-metadata-in-email-notifications.md)
    + Forms Portal {#use-forms-portal}
       + [自訂Forms Portal元件的範本](/help/forms/using/customizing-templates-forms-portal-components.md)
-      + [啟用表單入口網站元件](/help/forms/using/enabling-forms-portal-components.md)
-      + [建立表單入口網站頁面](/help/forms/using/creating-form-portal-page.md)
-      + [用於處理Forms Portal上已提交表單的API](/help/forms/using/report-submitted-data-forms.md)
+      + [啟用Forms Portal元件](/help/forms/using/enabling-forms-portal-components.md)
+      + [建立Forms入口網站頁面](/help/forms/using/creating-form-portal-page.md)
+      + [在Forms入口網站上處理已提交表單的API](/help/forms/using/report-submitted-data-forms.md)
       + [草稿和提交元件的自訂儲存](/help/forms/using/adding-custom-storage-provider-forms.md)
    + 文件服務 {#use-document-services}
       + [AEM檔案服務概觀](/help/forms/using/overview-aem-document-services.md)
@@ -753,9 +755,9 @@ ht-degree: 21%
       + [使用Designer](https://www.adobe.com/go/learn_aemforms_designer_65_tw)
       + [Designer快速入門教學課程](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
       + [Designer範例](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
-      + [Designer基本指令碼](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_tw)
-      + [Designer指令碼參考](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_tw)
-      + [Designer FormCalc參考](https://www.adobe.com/go/learn_aemforms_formCalc_65_tw)
+      + [Designer基本指令碼](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
+      + [Designer指令碼參考](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
+      + [Designer FormCalc參考](https://www.adobe.com/go/learn_aemforms_formCalc_65)
       + [在HTML5 Forms中使用手寫簽名](/help/forms/using/scribble-signature.md)
       + [在 Designer 中變更頁面零內容](/help/forms/using/changing-page-zero-content-designer.md)
       + 協助工具最佳實務 {#accessibility-best-practices}
@@ -790,7 +792,7 @@ ht-degree: 21%
          + [適用於AEM Forms on JEE的計費API清單](/help/forms/using/transaction-reports-billable-apis-jee.md)
          + [記錄自訂元件API的交易](/help/forms/using/record-transaction-custom-component-jee.md)
    + JEE上AEM Forms的管理員說明 {#administrator-help}
-      + 開始使用 {#get-started}
+      + 快速入門 {#get-started}
          + [一般AEM Forms設定](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
          + [更新部署的授權型別](/help/forms/using/admin-help/update-license-type-deployment.md)
       + 設定和管理網域 {#setup-manage-domains}
@@ -820,8 +822,8 @@ ht-degree: 21%
          + [建立和設定角色](/help/forms/using/admin-help/creating-configuring-roles.md)
       + 連線到內容管理系統 {#connect-content-management-system}
          + [為EMC Documentum設定聯結器](/help/forms/using/admin-help/configuring-connector-emc-documentum.md)
-         + [設定IBM FileNet的聯結器](/help/forms/using/admin-help/configuring-connector-ibm-filenet.md)
-         + [設定IBM Content Manager的聯結器](/help/forms/using/admin-help/configuring-connector-ibm-content-manager.md)
+         + [設定IBM的聯結器](/help/forms/using/admin-help/configuring-connector-ibm-filenet.md)
+         + [設定IBM的聯結器](/help/forms/using/admin-help/configuring-connector-ibm-content-manager.md)
          + [設定Microsoft SharePoint的聯結器](/help/forms/using/admin-help/configuring-connector-microsoft-sharepoint.md)
       + 管理憑證和認證 {#manage-certificates-credentials}
          + [新增和移除使用者名稱和密碼認證](/help/forms/using/admin-help/adding-removing-user-name-password.md)
@@ -839,18 +841,18 @@ ht-degree: 21%
          + [啟動和停止服務](/help/forms/using/admin-help/starting-stopping-services.md)
       + 管理端點 {#manage-endpoints}
          + [新增、啟用、修改或移除端點](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
-      + [設定電子郵件端點](/help/forms/using/admin-help/configuring-email-endpoints.md)
-      + [設定oAuth2.0驗證](/help/forms/using/oauth2-support-for-mail-service.md)
-      + [設定遠端端點](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
-      + [正在設定watched資料夾端點](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
-      + [設定任務管理員端點](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
-      + [端點型別](/help/forms/using/admin-help/types-endpoints.md)
+         + [設定電子郵件端點](/help/forms/using/admin-help/configuring-email-endpoints.md)
+         + [設定oAuth2.0驗證](/help/forms/using/oauth2-support-for-mail-service.md)
+         + [設定遠端端點](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
+         + [正在設定watched資料夾端點](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
+         + [設定任務管理員端點](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
+         + [端點型別](/help/forms/using/admin-help/types-endpoints.md)
       + 設定Acrobat Reader DC延伸模組 {#configure-acrobat-reader-dc-extensions}
-         + [Acrobat Reader DC擴充功能使用的憑證型別](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
+         + [Acrobat Reader DC Extensions使用的憑證型別](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
          + [在PDF檔案中辨識有效及過期的憑證](/help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md)
-         + [設定Acrobat Reader DC擴充功能以進行資料擷取](/help/forms/using/admin-help/configuring-acrobat-reader-dc-extensions.md)
+         + [設定Acrobat Reader DC Extensions以擷取資料](/help/forms/using/admin-help/configuring-acrobat-reader-dc-extensions.md)
          + [檢閱認證使用資訊](/help/forms/using/admin-help/review-credential-information.md)
-         + [設定用於Acrobat Reader DC擴充功能的認證](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md)
+         + [設定用於Acrobat Reader DC Extensions的認證](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md)
          + [檢閱PDF檔案的使用許可權](/help/forms/using/admin-help/review-usage-rights-pdf-file.md)
          + [啟用Adobe Reader網頁瀏覽器外掛程式的線上註解](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
          + [設定與Acrobat Reader DC擴充功能搭配使用的逾時值](/help/forms/using/admin-help/setting-timeout-values-acrobat-reader.md)
@@ -869,9 +871,9 @@ ht-degree: 21%
          + [使用PDF Generator轉換檔案](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)
       + 設定SSL {#configure-ssl}
          + [設定SSL的概觀](/help/forms/using/admin-help/overview-6.md)
-         + [為JBoss應用程式伺服器設定SSL](/help/forms/using/admin-help/configuring-ssl-jboss-application-server.md)
+         + [為JBoss設定SSL](/help/forms/using/admin-help/configuring-ssl-jboss-application-server.md)
          + [在Windows Vista上設定SSL](/help/forms/using/admin-help/configuring-ssl-windows-vista.md)
-         + [為WebSphere Application Server設定SSL](/help/forms/using/admin-help/configuring-ssl-websphere-application-server.md)
+         + [為WebSphere設定SSL](/help/forms/using/admin-help/configuring-ssl-websphere-application-server.md)
       + 使用Document Security {#work-with-document-security}
          + [關於Document Security](/help/forms/using/admin-help/document-security.md)
          + [大量安全資訊傳遞](/help/forms/using/admin-help/high-volume-secure-information-delivery.md)
@@ -902,11 +904,11 @@ ht-degree: 21%
          + [指定要嵌入的字型](/help/forms/using/admin-help/specify-fonts-embed.md)
          + [指定安全性設定](/help/forms/using/admin-help/specify-security-settings.md)
          + [變更字元集](/help/forms/using/admin-help/change-character-set.md)
-      + 設定表單工作流程{#configure-forms-workflow}
+      + 設定Forms Workflow{#configure-forms-workflow}
          + [關於管理與程式術語](/help/forms/using/admin-help/administration-process-terminology.md)
          + [管理流程](/help/forms/using/admin-help/processes.md)
          + [設定商務行事曆](/help/forms/using/admin-help/configuring-business-calendars.md)
-         + [Forms工作流程概觀](/help/forms/using/admin-help/overview-9.md)
+         + [Forms Workflow概觀](/help/forms/using/admin-help/overview-9.md)
          + [正在設定[外出]設定](/help/forms/using/admin-help/configuring-out-office-settings.md)
          + [搜尋程式執行個體](/help/forms/using/admin-help/searching-process-instances.md)
          + [設定伺服器設定](/help/forms/using/admin-help/configuring-server-settings.md)
@@ -932,9 +934,9 @@ ht-degree: 21%
          + [工作管理員和節流](/help/forms/using/admin-help/manager-throttling.md)
          + [在維護模式下執行AEM表單](/help/forms/using/admin-help/running-aem-forms-maintenance-mode.md)
       + 維護AEM表單資料庫 {#maintain-aem-forms-database}
-         + [DB2資料庫：每週執行處理作業](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
+         + [DB2](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
          + [Oracle資料庫最大開啟游標臨界值](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
-         + [IBM DB2資料庫：執行命令以進行定期維護](/help/forms/using/admin-help/ibm-db2-database-running-commands.md)
+         + [IBM](/help/forms/using/admin-help/ibm-db2-database-running-commands.md)
          + [清除程式資料](/help/forms/using/admin-help/purging-process-data.md)
          + [Microsoft SQL Server資料庫：微調組態](/help/forms/using/admin-help/microsoft-sql-server-database-fine.md)
          + [將資料庫成長減至最低的秘訣](/help/forms/using/admin-help/tips-minimizing-database-growth.md)
@@ -943,9 +945,9 @@ ht-degree: 21%
          + [全域檔案儲存目錄](/help/forms/using/admin-help/global-document-storage-directory.md)
          + [執行AdministrationConsole時的注意事項](/help/forms/using/admin-help/considerations-running-administration-console.md)
          + [增強應用程式伺服器效能](/help/forms/using/admin-help/enhancing-application-server-performance.md)
-         + [啟動和停止WebSphere Application Server](/help/forms/using/admin-help/starting-stopping-websphere-application-server.md)
+         + [啟動和停止WebSphere](/help/forms/using/admin-help/starting-stopping-websphere-application-server.md)
       + AEM Forms備份和復原 {#aem-forms-backup-recovery}
-         + [備份和復原EMC Documentum存放庫](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md)
+         + [備份和復原EMC Documentum](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md)
          + [啟用和停用安全備份模式](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md)
          + [備份AEM表單資料](/help/forms/using/admin-help/backing-aem-forms-data.md)
          + [要備份和復原的檔案](/help/forms/using/admin-help/files-back-recover.md)
@@ -953,7 +955,7 @@ ht-degree: 21%
          + [PDF Generator備份限制](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
          + [觀察資料夾的備份策略](/help/forms/using/admin-help/backup-strategies-watched-folders.md)
          + [復原AEM表單資料](/help/forms/using/admin-help/recovering-aem-forms-data.md)
-         + [EMC Documentum使用者的Connector備份策略](/help/forms/using/admin-help/backup-strategy-connector-emc-documentum.md)
+         + [EMC Documentum聯結器備份策略](/help/forms/using/admin-help/backup-strategy-connector-emc-documentum.md)
          + [在叢集環境中進行備份與還原的策略](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md)
       + 系統資訊服務 {#system-information-service}
          + [設定系統資訊服務](/help/forms/using/admin-help/set-system-information-service.md)
@@ -967,24 +969,24 @@ ht-degree: 21%
       + [程式報表中的特定查詢](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
       + [疑難排解程式報告](/help/forms/using/process-reporting/troubleshooting-process-management.md)
    + 開發人員參考資料 {#developer-reference}
-      + [HTML範本語言](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hant)
+      + [HTML範本語言](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
       + [偵錯最適化表單的AEM外掛程式](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
       + [表單適用於HTML5的Bridge API](/help/forms/using/form-bridge-apis.md)
-      + [最適化Forms的JavaScript資料庫API參考](https://helpx.adobe.com/tw/experience-manager/6-5/forms/javascript-api/index.html)
-      + [組合器服務與DDX參考](https://www.adobe.com/go/learn_aemforms_ddxRef_65_tw)
+      + 最適化Forms的[JavaScript資料庫API參考](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
+      + [組合器服務與DDX參考](https://www.adobe.com/go/learn_aemforms_ddxRef_65)
       + 使用JEE上的AEM Forms進行程式設計 {#programming-aem-forms-jee}
          + 使用AEM Forms on JEE的程式設計簡介 {#introduction-programming-aem-forms-jee}
             + [Java API快速入門簡介](/help/forms/developing/introducing-java-api-soap-quick.md)
             + [使用API叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-apis.md)
-         + [瞭解AEM Forms流程](/help/forms/developing/aem-forms-processes.md)
-         + [服務容器](/help/forms/developing/service-container.md)
+            + [瞭解AEM Forms流程](/help/forms/developing/aem-forms-processes.md)
+            + [服務容器](/help/forms/developing/service-container.md)
          + 為AEM Forms開發SPI {#developing-spis-aem-forms}
             + [建立邀請外部使用者處理常式](/help/forms/developing/creating-invite-external-users-handler.md)
          + Java API快速入門 — 程式碼範例 {#java-api-quick-start-code-examples}
             + [應用程式管理員使用者端JavaAPI快速入門(SOAP)](/help/forms/developing/application-manager-client-java-api.md)
             + [應用程式管理員服務JavaAPI快速入門(SOAP)](/help/forms/developing/application-manager-service-java-api.md)
             + [組合器服務Java API快速入門(SOAP)](/help/forms/developing/assembler-service-java-api-quick.md)
-            + [Acrobat Reader DC擴充功能服務Java API快速入門(SOAP)](/help/forms/developing/acrobat-reader-dc-extensions-service.md)
+            + [Acrobat Reader DC Extensions Service Java API快速入門(SOAP)](/help/forms/developing/acrobat-reader-dc-extensions-service.md)
             + [備份與還原服務APIQuick開始](/help/forms/developing/backup-restore-service-api-quick.md)
             + [條碼式Forms服務Java APIQuick啟動(SOAP)](/help/forms/developing/barcoded-forms-service-java-api.md)
             + [元件與服務Java ApiqUick Start(SOAP)](/help/forms/developing/components-services-java-api-quick.md)
@@ -1056,7 +1058,7 @@ ht-degree: 21%
             + [匯入和匯出資料](/help/forms/developing/importing-exporting-data.md)
             + [管理使用者](/help/forms/developing/users.md)
             + [使用AEM Forms存放庫](/help/forms/developing/aem-forms-repository.md)
-            + [使用條碼式表單](/help/forms/developing/barcoded-forms.md)
+            + [使用條碼Forms](/help/forms/developing/barcoded-forms.md)
             + [使用認證](/help/forms/developing/credentials.md)
             + [使用PDF/A檔案](/help/forms/developing/pdf-a-documents.md)
             + [使用PDF公用程式](/help/forms/developing/pdf-utilities.md)
@@ -1088,7 +1090,7 @@ ht-degree: 21%
    + [AEM內容和Commerce重大變更](/help/commerce/cif/changes.md)
    + 整合 {#integrations}
       + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
-      + [第三方 Commerce 解決方案](/help/commerce/cif/integrating/third-party.md)
+      + [協力廠商Commerce解決方案](/help/commerce/cif/integrating/third-party.md)
    + AEM 店面 {#storefront}
       + [快速入門](/help/commerce/cif/getting-started.md)
       + 編寫 {#authoring}
@@ -1194,8 +1196,8 @@ ht-degree: 21%
          + [開發大量編輯器](/help/sites-developing/dev-bulk-editor.md)
          + [開發報表](/help/sites-developing/dev-reports.md)
       + 元件{#components}
-         + [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
-         + [樣式系統](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/authoring/siteandpage/style-system.html?lang=zh-Hant)
+         + [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+         + [樣式系統](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/authoring/siteandpage/style-system.html)
          + [元件概觀](/help/sites-developing/components.md)
          + [AEM元件 — 基本需知](/help/sites-developing/components-basics.md)
          + [開發AEM元件](/help/sites-developing/developing-components.md)
@@ -1225,21 +1227,21 @@ ht-degree: 21%
          + [Headless和AEM](/help/sites-developing/headless/introduction.md)
          + Headless 歷程 {#journeys}
             + Headless 開發人員歷程 {#developer}
-               + [瞭解AEM中的Headless](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/overview.html?lang=zh-Hant)
-               + [了解 CMS Headless 開發](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/learn-about.html?lang=zh-Hant)
-               + [AEM Headless as a Cloud Service 快速入門](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/getting-started.html?lang=zh-Hant)
-               + [踏上首次使用 AEM Headless 之路](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/path-to-first-experience.html?lang=zh-Hant)
-               + [如何將您的內容模型化為AEM內容模型](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/model-your-content.html?lang=zh-Hant)
-               + [如何透過 AEM Delivery API 存取您的內容](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/access-your-content.html?lang=zh-Hant)
-               + [如何透過 AEM Assets API 更新您的內容](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/update-your-content.html?lang=zh-Hant)
-               + [如何整合一切](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/put-it-all-together.html?lang=zh-Hant)
-               + [如何將 Headless 應用程式上線](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/go-live.html?lang=zh-Hant)
-               + [選擇性 — 如何使用AEM建立單頁應用程式](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/create-spa.html?lang=zh-Hant)
+               + [瞭解AEM中的Headless](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/overview.html)
+               + [了解 CMS Headless 開發](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/learn-about.html)
+               + [AEM Headless as a Cloud Service 快速入門](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/getting-started.html)
+               + [踏上首次使用 AEM Headless 之路](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/path-to-first-experience.html)
+               + [如何將您的內容模型化為AEM內容模型](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/model-your-content.html)
+               + [如何透過 AEM Delivery API 存取您的內容](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/access-your-content.html)
+               + [如何透過 AEM Assets API 更新您的內容](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/update-your-content.html)
+               + [如何整合一切](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/put-it-all-together.html)
+               + [如何將 Headless 應用程式上線](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/go-live.html)
+               + [選擇性 — 如何使用AEM建立單頁應用程式](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/create-spa.html)
             + Headless 內容架構者歷程 {#architect}
-               + [AEM Headless內容架構者歷程概觀](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/overview.html?lang=zh-Hant)
-               + [使用AEM建立Headless的內容模型 — 簡介](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/introduction.html?lang=zh-Hant)
-               + [使用AEM瞭解Headless的內容模型基本概念](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/basics.html?lang=zh-Hant)
-               + [瞭解如何在AEM中建立內容片段模型](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/model-structure.html?lang=zh-Hant)
+               + [AEM Headless內容架構者歷程概觀](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/overview.html)
+               + 使用AEM建立Headless的[內容模型 — 簡介](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/introduction.html)
+               + [使用AEM瞭解Headless的內容模型基本概念](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/basics.html)
+               + [瞭解如何在AEM中建立內容片段模型](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/model-structure.html)
          + 快速入門指南 {#getting-started}
             + [簡介](/help/sites-developing/headless/getting-started/introduction.md)
             + [建立設定](/help/sites-developing/headless/getting-started/create-configuration.md)
@@ -1248,28 +1250,28 @@ ht-degree: 21%
             + [建立內容片段](/help/sites-developing/headless/getting-started/create-content-fragment.md)
             + [存取及傳遞內容片段](/help/sites-developing/headless/getting-started/create-api-request.md)
          + 內容片段{#content-fragments}
-            + [含內容片段和GraphQL的Headless傳遞](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-graphql.html?lang=zh-Hant)
-            + [使用內容片段](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments.html?lang=zh-Hant)
-            + [為您的執行個體啟用內容片段功能](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-configuration-browser.html?lang=zh-Hant)
-            + [內容片段模型](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-models.html?lang=zh-Hant)
-            + [管理內容片段](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-managing.html?lang=zh-Hant)
-            + [變化 - 編寫片段內容](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-variations.html?lang=zh-Hant)
-            + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-markdown.html?lang=zh-Hant)
-            + [使用關聯內容](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-assoc-content.html?lang=zh-Hant)
-            + [中繼資料 - 片段屬性](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-metadata.html?lang=zh-Hant)
-            + [樹狀結構](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-structure-tree.html?lang=zh-Hant)
-            + [預覽 — JSON表示方式](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-json-preview.html?lang=zh-Hant)
+            + [含內容片段和GraphQL的Headless傳遞](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-graphql.html)
+            + [使用內容片段](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments.html)
+            + [為您的執行個體啟用內容片段功能](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-configuration-browser.html)
+            + [內容片段模型](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-models.html)
+            + [管理內容片段](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-managing.html)
+            + [變化 - 編寫片段內容](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-variations.html)
+            + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-markdown.html)
+            + [使用關聯內容](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-assoc-content.html)
+            + [中繼資料 - 片段屬性](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-metadata.html)
+            + [樹狀結構](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-structure-tree.html)
+            + [預覽 — JSON表示方式](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-json-preview.html)
          + 傳送API{#delivery-api}
-            + [Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/mac-api-assets.html?lang=zh-Hant)
-            + [內容片段 REST API](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/assets-api-content-fragments.html?lang=zh-Hant)
-            + [內容片段GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphql-api-content-fragments.html?lang=zh-Hant)
+            + [Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/mac-api-assets.html)
+            + [內容片段 REST API](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/assets-api-content-fragments.html)
+            + [內容片段GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphql-api-content-fragments.html)
             + [管理GraphQL端點](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
-            + [使用GraphiQL IDE](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphiql-ide.html?lang=zh-Hant)
-            + [持續查詢](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/persisted-queries.html?lang=zh-Hant)
+            + [使用GraphiQL IDE](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphiql-ide.html)
+            + [持續查詢](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/persisted-queries.html)
             + [最佳化 GraphQL 查詢](/help/sites-developing/headless/graphql-api/graphql-optimization.md)
             + [更新您的內容片段，以達到最佳化 GraphQL 篩選](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
-            + [對內容片段的遠端AEM GraphQL查詢的驗證](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphql-authentication-content-fragments.html?lang=zh-Hant)
-            + [含內容片段的AEM GraphQL API — 範例內容和查詢](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/content-fragments-graphql-samples.html?lang=zh-Hant)
+            + [對內容片段的遠端AEM GraphQL查詢的驗證](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphql-authentication-content-fragments.html)
+            + [含內容片段的AEM GraphQL API — 範例內容和查詢](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/content-fragments-graphql-samples.html)
          + 通用編輯器 {#universal-editor}
             + [簡介](/help/sites-developing/universal-editor/introduction.md)
       + 混合式與SPA AEM開發 {#spas}
@@ -1290,7 +1292,7 @@ ht-degree: 21%
          + [RemotePage 元件](/help/sites-developing/spa-remote-page.md)
          + [在 AEM 中編輯外部 SPA](/help/sites-developing/spa-edit-external.md)
          + [SPA 中的複合元件](/help/sites-developing/spa-composite-component.md)
-         + [為元件啟用 JSON 匯出](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/components/json-exporter-components.html?lang=zh-Hant)
+         + [為元件啟用 JSON 匯出](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/components/json-exporter-components.html)
          + [啟動整合](/help/sites-developing/spa-launch.md)
          + [SPA參考資料](/help/sites-developing/spa-reference-materials.md)
       + 開發工具 {#devtools}
@@ -1356,7 +1358,7 @@ ht-degree: 21%
          + 擴充傳統UI{#extending-classic-ui}
             + [自訂網站主控台（傳統UI）](/help/sites-developing/customizing-siteadmin.md)
             + [自訂歡迎主控台（傳統UI）](/help/sites-developing/customizing-the-welcome-console.md)
-            + [正在開發報表](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/platform/dev-reports.html?lang=zh-Hant)
+            + [正在開發報表](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/platform/dev-reports.html)
       + 測試 {#testing}
          + [規劃](/help/sites-developing/planning.md)
          + [需要哪些測試環境？](/help/sites-developing/test-environments.md)
@@ -1369,10 +1371,10 @@ ht-degree: 21%
          + [下一個版本……](/help/sites-developing/the-next-release.md)
          + [檢查清單](/help/sites-developing/checklists.md)
          + [艱苦的一天](/help/sites-developing/tough-day.md)
-         + [正在測試您的UI](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/components/hobbes.html?lang=zh-Hant)
-      + 最佳實務 {#bestpractices}
+         + [正在測試您的UI](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/components/hobbes.html)
+      + 最佳做法 {#bestpractices}
          + [最佳實務概述](/help/sites-developing/best-practices.md)
-         + [AEM開發指導方針與最佳實務](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/introduction/dev-guidelines-bestpractices.html?lang=zh-Hant)
+         + [AEM開發指導方針與最佳實務](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/introduction/dev-guidelines-bestpractices.html)
          + [開發最佳實務](/help/sites-developing/development-practices.md)
          + [內容架構](/help/sites-developing/content-architecture.md)
          + [軟體架構](/help/sites-developing/software-architecture.md)
@@ -1393,7 +1395,7 @@ ht-degree: 21%
    + 部署中 {#deploying}
       + AEM平台簡介 {#introduction}
          + [AEM平台簡介](/help/sites-deploying/platform.md)
-         + [技術需求](/help/sites-deploying/technical-requirements.md)
+         + [技術要求](/help/sites-deploying/technical-requirements.md)
          + [AEM中的儲存元素](/help/sites-deploying/storage-elements-in-aem-6.md)
          + [AEM與MongoDB](/help/sites-deploying/aem-with-mongodb.md)
       + 部署AEM {#deploying}
@@ -1449,7 +1451,7 @@ ht-degree: 21%
          + [應用程式伺服器安裝的升級步驟(WLP)](/help/sites-deploying/app-server-upgrade-wlp.md)
          + [應用程式伺服器安裝的升級步驟(Tomcat)](/help/sites-deploying/app-server-upgrade-tomcat.md)
          + [升級後解除安裝的過時套件組合清單](/help/sites-deploying/obsolete-bundles.md)
-      + 最佳實務 {#practices}
+      + 最佳做法 {#practices}
          + [部署最佳實務](/help/sites-deploying/best-practices.md)
          + [效能樹狀結構](/help/sites-deploying/performance-tree.md)
          + [效能測試的最佳實務](/help/sites-deploying/best-practices-for-performance-testing.md)
