@@ -32,12 +32,12 @@ ht-degree: 94%
 
 [!DNL Adobe Experience Manager] 6.5 LTS 平台是以更新版本的 OSGi 式框架 (Apache Sling 和 Apache Felix) 以及 Java™ 內容存放庫 (Apache Jackrabbit Oak 1.68.x) 為基礎進行建置。
 
-Eclipse Jetty 11.0.x 做為快速入門的 servlet 引擎。
+Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 
 #### Java™支援  {#java-support}
 
 * Java™ 17 和 Java™ 21 的支援。
-* 為獲得最佳效能，請使用其他值覆寫預設的 GC 值。如需詳細資訊，請參閱[安裝與更新](/help/sites-deploying/custom-standalone-install.md)區段。
+* 為實現最佳效能，請使用其他值覆寫預設的 GC 值。如需詳細資訊，請參閱[安裝與更新](/help/sites-deploying/custom-standalone-install.md)區段。
 * 若是 Oracle 尚未正式推出，Adobe 會分發 Java™ 17 和 Java™ 21 維護更新供客戶在 AEM 相關專案中使用。
 
 #### Uberjar封裝 {#uber-jar-packaging}
@@ -46,11 +46,11 @@ Eclipse Jetty 11.0.x 做為快速入門的 servlet 引擎。
 
 #### 升級 {#upgrade}
 
-* 關於升級程序的詳細資訊，請參閱[升級文件](/help/sites-deploying/upgrade.md)。
+* 如需升級程序的詳細資訊，請參閱[升級文件](/help/sites-deploying/upgrade.md)。
 
 ## 安裝與更新 {#install-update}
 
-關於設定要求，請參閱[安裝指示](/help/sites-deploying/custom-standalone-install.md)。
+如需設定需求，請參閱[安裝指示](/help/sites-deploying/custom-standalone-install.md)。
 
 如需詳細說明，請參閱[升級文件](/help/sites-deploying/upgrade.md)。
 
