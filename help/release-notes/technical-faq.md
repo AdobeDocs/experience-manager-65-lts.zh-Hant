@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
-source-git-commit: ec722773ce3acff1d0de861523db8ff7df552c4b
-workflow-type: ht
+source-git-commit: f983fc1edc613feaa070c4e82a92aabab9d50cbb
+workflow-type: tm+mt
 source-wordcount: '247'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ### AEM Groovy 主控台支援
 
-在 AEM 6.5 中使用的 AEM Groovy 主控台版本因為缺少 guava 相依性，可能無法在 AEM 6.5 LTS 中運作。新支援的 AEM Groovy 主控台版本為 [19.0.8](https://mvnrepository.com/artifact/be.orbinson.aem/aem-groovy-console/19.0.8)。
+在 AEM 6.5 中使用的 AEM Groovy 主控台版本因為缺少 guava 相依性，可能無法在 AEM 6.5 LTS 中運作。新支援的 AEM Groovy 主控台版本為 [19.0.8](https://github.com/orbinson/aem-groovy-console/releases/download/19.0.8/aem-groovy-console-all-19.0.8.zip)。
 
 ### AEM 6.5 LTS 是否支援使用者同步？
 

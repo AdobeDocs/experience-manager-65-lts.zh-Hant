@@ -11,7 +11,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 6b94caf1-97b7-4430-92f1-4f4d0415aef3
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: f983fc1edc613feaa070c4e82a92aabab9d50cbb
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 0%
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ## 升級程式碼基底 {#upgrade-code-base}
 
-### 在版本控制中建立6.5 LTS程式碼的專用分支{#create-a-dedicated-branch-for-6.5-lts-code-in-version-control}
+### 在版本控制中為6.5 LTS程式碼建立專用分支 {#create-a-dedicated-branch-for-6.5-lts-code-in-version-control}
 
 您應使用某種形式的版本控制來管理實施AEM所需的所有程式碼和設定。 應建立版本控制中的專用分支，以管理目標版本AEM中程式碼庫所需的任何變更。 針對AEM的目標版本反複測試程式碼基底，以及後續的錯誤修正，會管理於此分支。
 
@@ -73,7 +73,7 @@ AEM Uber jar包含所有AEM API，作為您Maven專案`pom.xml`中的單一相�
 
 **主要差異： AEM 6.5與AEM 6.5 LTS Uber Jars**
 
-* 在AEM 6.5中，如果同時需要公用和過時的API，您可以在`pom.xml`檔案中使用包含單一jar `uber-jar-6.5.x-apis-with-deprecations.jar`。
+* 在AEM 6.5中，如果同時需要公用和過時的API，您可以在`uber-jar-6.5.x-apis-with-deprecations.jar`檔案中使用包含單一jar `pom.xml`。
 * 在AEM 6.5 LTS中，如果您同時需要公用和過時的API，您必須包含兩個個別的jar，即公用API的`uber-jar-6.6.x-apis.jar`和過時的API的`uber-jar-6.6.x-deprecated-apis.jar`。
 
 已棄用的API Jar的&#x200B;**Maven座標**
@@ -83,7 +83,7 @@ AEM Uber jar包含所有AEM API，作為您Maven專案`pom.xml`中的單一相�
     <groupId>com.adobe.aem</groupId>
     <artifactId>uber-jar</artifactId>
     <version>6.6.0</version>
-    <classifier>apis</classifier>
+    <classifier>deprecated-apis</classifier>
     <scope>provided</scope>
 </dependency>
 ```
@@ -109,7 +109,7 @@ AEM Uber jar包含所有AEM API，作為您Maven專案`pom.xml`中的單一相�
  <tbody>
   <tr>
    <td><strong>功能測試區域</strong></td>
-   <td><strong>描述</strong></td>
+   <td><strong>說明</strong></td>
   </tr>
   <tr>
    <td>已發佈的網站</td>
