@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: ebc34847-dc3d-41ed-b0d6-f004c3debcd9
-source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
+source-git-commit: e9fc4a6294588b527a3b19d64101c81f0eb7bf55
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,11 @@ ht-degree: 0%
 # 升級至Adobe Experience Manager (AEM) 6.5 LTS {#upgrading-to-aem}
 
 >[!NOTE]
->最新6個Service Pack支援升級至AEM 6.5 LTS。
+>所有支援的6.5 Service Pack都能升級至AEM 6.5 LTS。
+
+>[!NOTE]
+>
+>從技術角度來看，從AEM 6.5 LTS升級至AEM 6.5 LTS Service Pack的程式設計是順暢的[就地升級](/help/sites-deploying/in-place-upgrade.md)。 此程式通常不需要客戶變更任何程式碼，除非在發行說明中有特別說明。
 
 本節說明如何將AEM安裝升級至AEM 6.5 LTS：
 

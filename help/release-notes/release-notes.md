@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6b101bcb474abe07a72d5fd04895f858eef34587
+source-git-commit: e9fc4a6294588b527a3b19d64101c81f0eb7bf55
 workflow-type: tm+mt
-source-wordcount: '5228'
+source-wordcount: '5238'
 ht-degree: 19%
 
 ---
@@ -297,7 +297,6 @@ AEM現在可以防止影像資產中XMP中繼資料的格式錯誤導致效能�
 #### 快速入門{#foundation-quickstart-65-lts-sp1}
 
 * 更新解除安裝指令碼，以調整Guava套裝軟體的版本範圍，防止透過「封裝管理員」安裝時遭到封鎖。 (GRANITE-59559)
-* 透過更新伺服器設定以支援大型套件安裝，而不觸發剖析失敗，解決了在使用JDK 17的Tomcat 11上AEMFD套件上傳期間發生的多部分設定錯誤。 (GRANITE-58327)
 * 修正復寫UI中，透過更正介面中傳統核取方塊的處理方式，在編輯復寫代理程式時顯示錯誤(`#1660`)的問題。 (GRANITE-58302)
 * 解決使用JDK 21執行AEM 6.5 LTS時S3資料存放區的多個啟動錯誤，解決遺失的服務許可權、更新設定處理，並確保必要的服務正確初始化。 (GRANITE-57082)
 * 已定義AEM 6.5的維護和維護策略。此修正包含下列內容：
@@ -369,6 +368,11 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 ## 安裝與更新 {#install-update}
 
 如需設定需求，請參閱[安裝指示](/help/sites-deploying/custom-standalone-install.md)。
+
+>[!NOTE]
+>
+> 如果您要從舊的6.5 SP直接升級至LTS SP1，請依照6.5到6.5 LTS GA [升級](/help/sites-deploying/upgrade.md)的指示操作。
+
 
 如需詳細說明，請參閱[升級文件](/help/sites-deploying/upgrade.md)。
 
@@ -452,7 +456,11 @@ AEM 6.5.21、6.5.22、6.5.23 和 AEM 6.5 LTS 正式發佈版隨附 `org.apache.s
 
 可以使用 Hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) 解決此問題。
 
-### 僅SSL功能的Dispatcher連線失敗 {#ssl-only-feature}
+### Dispatcher連線失敗並提供僅限SSL的功能(已在AEM 6.5 LTS SP1及更新版本中修正){#ssl-only-feature}
+
+>[!NOTE]
+>
+> 此問題僅出現在AEM 6.5 LTS GA版本中。
 
 在 AEM 部署中啟用僅限 SSL 功能時，有一項已知問題會影響 Dispatcher 和 AEM 實例之間的連線。啟用此功能後，健康情況檢查可能會失敗，且 Dispatcher 和 AEM 實例之間的通訊可能會中斷。當客戶嘗試透過 `https + IP` 從 Dispatcher 連線至 AEM 執行個體時，特別容易發生此問題。此問題與 SNI (伺服器名稱指示) 驗證問題有關。
 
