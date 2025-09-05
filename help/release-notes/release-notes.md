@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 516fb71493cad9d4f4105bb09f56fe95d2971974
+source-git-commit: d6b324ed961dc59a22e8e33109a5ba5262553aa7
 workflow-type: tm+mt
-source-wordcount: '7204'
-ht-degree: 72%
+source-wordcount: '7221'
+ht-degree: 71%
 
 ---
 
@@ -456,6 +456,12 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 >[!NOTE]
 >
 > 對於全新的 AEM 6.5 LTS 安裝，必須獨立安裝索引定義。如需更多詳細資訊，請參閱[此文章](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions)。
+
+## 安裝並更新AEM Forms附加元件 {#install-update-aem-forms-add-on}
+
+如需詳細指示，請參閱[AEM Forms Service Pack安裝指示](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions)。
+
+
 
 ## 支援平台 {#supported-platforms}
 
