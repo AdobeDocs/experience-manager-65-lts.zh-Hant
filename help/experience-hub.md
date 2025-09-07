@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 6dbc943b-3bca-4926-896d-f1471a49a70f
-source-git-commit: 66f0240a32830ba629b656e7f9aef84af2efc91c
+source-git-commit: 713dc1615ef1751c2fdbf67b5f97690ce6eed676
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '590'
 ht-degree: 9%
 
 ---
@@ -19,7 +19,7 @@ Experience Hub推出管理Adobe Experience Manager內容、資產和網站的集
 
 觀看重新構想的AEM Experience Hub工作區快速導覽（4分鐘、9秒）。
 
->[!VIDEO](https://video.tv.adobe.com/v/3471453?learn=on&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3471396?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -50,11 +50,11 @@ Adobe Experience Manager頁面已更新為增強型導覽和互動式Widget。 �
 >
 >顯示的Widget、工具和成品取決於使用者角色、權益和AEM部署型別(AEM as a Cloud Service或Managed Services 6.5/6.5 LTS)。
 
-這些解決方案現在移至&#x200B;**工具**&#x200B;或&#x200B;**服務**&#x200B;下的主要導覽。 此外，新的導覽元素可讓您快速存取主要Adobe Experience Manager功能，這些功能是已啟用解決方案專用的，例如Assets、Sites、Forms、內容片段、啟動等等。
+這些解決方案現在移至&#x200B;**工具**&#x200B;或&#x200B;**服務**&#x200B;下的主要導覽。 此外，新導覽元素可讓您快速存取已啟用解決方案專屬的關鍵Adobe Experience Manager功能。 這類解決方案包括Assets、Sites、Forms、內容片段、啟動等。
 
 ![Experience Hub環境](/help/assets/assets-experience-hub/experience-hub-author-environments-ams.png)
 
-這些功能適用於您有權存取的主要生產環境，或者您可以選取特定環境作為目標，以備您存取多個AEM執行個體時使用。
+這些功能適用於您可以存取的主要生產環境。 或者，您可以選取特定環境，以利您存取多個AEM執行個體時使用。
 
 ![生產和中繼環境](/help/assets/assets-experience-hub/experience-hub-prod-stage-ams.png)
 
@@ -66,7 +66,7 @@ Widget也可以在頁面上調整大小和重新定位，以更符合您的需�
 
 ![Experience Hub Widget](/help/assets/assets-experience-hub/experience-hub-custom-widgets-ams.png)
 
-**製作環境**&#x200B;區段會顯示您可存取的所有AEM環境，其中包含解決方案和頁面可用的特定捷徑，也可讓您在清單頂端釘選您要顯示的特定環境。
+**製作環境**&#x200B;區段會顯示您可以存取的所有AEM環境。 解決方案和頁面有特定的捷徑可供使用，也可讓您在清單頂端釘選您要顯示的特定環境。
 
 下圖中的&#x200B;**最近**&#x200B;區段列出您最近在AEM中造訪的頁面。 根據您的租使用者授權，Widget可能包含「方案」、「管道執行」、「Assets」、「頁面編輯器」和「表單編輯器」等專案。
 
