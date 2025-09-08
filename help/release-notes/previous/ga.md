@@ -1,19 +1,20 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  6.5 LTS 版發行說明'
-description: 尋找 Adobe Experience Manager 6.5 LTS 的最新發行資訊。
+description: 尋找 Adobe Experience Manager 6.5 LTS 的最新版本資訊。
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 922b2391b45ac1a08987f286cdbd736fe9a383c8
-workflow-type: tm+mt
+exl-id: dfda31ac-765b-401d-98d0-c19f0de22aab
+source-git-commit: eda8fc347ee8c68c1022495cbe8d48175c819be3
+workflow-type: ht
 source-wordcount: '1068'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager 6.5 LTS目前發行說明 {#release-notes}
+# Adobe Experience Manager 6.5 LTS 的最新發行說明 {#release-notes}
 
-## 發行資訊 {#release-information}
+## 版本資訊 {#release-information}
 
 | 產品 | [!DNL Adobe Experience Manager] |
 |---|---|
@@ -65,7 +66,7 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 >
 >建議與 AEM 6.5 LTS 搭配使用的版本為 Java™ 17/Java™ 21。
 
-## 過時和移除的功能 {#deprecated-and-removed-features}
+## 已棄用和已移除的功能 {#deprecated-and-removed-features}
 
 Adobe 會持續審閱產品功能，藉由更新或取代舊功能，提高客戶價值。進行這些變更時，皆會仔細留意回溯相容性。
 
@@ -127,7 +128,7 @@ AEM 6.5.21、6.5.22、6.5.23 和 AEM 6.5 LTS 正式發佈版隨附 `org.apache.s
 
 可以使用 Hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) 解決此問題。
 
-### 僅SSL功能的Dispatcher連線失敗 {#ssl-only-feature}
+### Dispatcher 連線失敗因為設定為僅限 SSL 連線 {#ssl-only-feature}
 
 在 AEM 部署中啟用僅限 SSL 功能時，有一項已知問題會影響 Dispatcher 和 AEM 實例之間的連線。啟用此功能後，健康情況檢查可能會失敗，且 Dispatcher 和 AEM 實例之間的通訊可能會中斷。當客戶嘗試透過 `https + IP` 從 Dispatcher 連線至 AEM 執行個體時，特別容易發生此問題。此問題與 SNI (伺服器名稱指示) 驗證問題有關。
 
