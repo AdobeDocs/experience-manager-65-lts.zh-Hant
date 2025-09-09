@@ -463,7 +463,7 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 
 ## 安裝並更新AEM Forms附加元件 {#install-update-aem-forms-add-on}
 
-如需詳細指示，請參閱[執行就地升級](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions)。
+如需詳細指示，請參閱[執行就地升級](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions)。
 
 
 
