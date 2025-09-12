@@ -8,7 +8,7 @@ exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 12e2966754fe317c2a20951ee29b401425de486b
 workflow-type: tm+mt
 source-wordcount: '7223'
-ht-degree: 71%
+ht-degree: 99%
 
 ---
 
@@ -350,81 +350,81 @@ AEM 現在會避免因影像資產中格式錯誤的 XMP 後設資料而造成�
 
 ### Forms Designer
 
-* 當使用者使用exportDataAPI匯出以XFA為基礎的PDF的資料時，產生的XML與使用Acrobat Reader手動匯出的XML資料相比，會顯示差異。 與Acrobat Reader產生的輸出相比，輸出中缺少某些欄位的值。 (LC-3922791)
-* 在Workbench中使用「輸出服務」產生已標籤PDF時，會在目錄專案的參考標籤下新增非預期的標籤標籤。 (LC-3922756)
-* 使用輸出服務將動態的、可填寫的PDF平面化為PDF/A格式時，不會保留動態狀態。 這會導致資料遺失和潛在的合規性問題，尤其是在啟用標籤的情況下。 (LC-3922708)
-* 當使用者在AEM Forms Designer中以底部或右側對齊方式放置欄位註解時，標籤樹僅包含註解而沒有對應的值，導致不完整的協助工具標籤。 (LC-3922619)
-* 產生的PDF中的QR碼變得無法讀取。 QR碼的替代文字也未能通過協助工具測試，影響熒幕助讀程式的相容性。 (LC-3922551)
-* 當使用者在代理程式UI中轉譯信函時，由於FormService render() API，內容無法正確顯示。 (LC-3922461)
-* 當使用者嘗試從XDP中以AEM Forms中的下沈方形樣式建立PDF/A檔案時，會導致邊框轉譯問題。 (LC-3922180)
-* 繫結至XSD結構描述的動態表單平面化會導致部分資料遺失，因為某些繫結的表單資料不會保留在最終PDF中。 (LC-3922008)
-* 當使用者嘗試使用AEM Forms 6.5.13及更高版本中的extractData API從互動式PDF匯出資料時，相較於手動匯出，這會造成資料遺失。 (LC-3921983)
-* 使用者面臨協助工具法規遵循問題，其中使用AEM Forms Designer或輸出服務將XDP表單轉換為靜態PDF時，會建立多個連結OBJR標籤，而不是建立單一統一的連結標籤。 (LC-3921977)
+* 當使用者透過 exportDataAPI 匯出 XFA 型 PDF 適用的資料時，所產生的 XML 與使用 Acrobat Reader 手動匯出的 XML 資料不一致。與 Acrobat Reader 產生的輸出比較，其輸出缺少某些欄位的值。(LC-3922791)
+* 使用工作台的 Output 服務產生有標記的 PDF，會在目錄項目的參照標記之下新增非預期的標籤標記。(LC-3922756)
+* 使用 Output 服務將動態、可填寫的 PDF 扁平化為 PDF/A 格式時，並未保留動態狀態。此情況會導致資料遺失和潛在的合規性問題，尤其是在啟用標記功能時。(LC-3922708)
+* 當使用者在 AEM Forms Designer 中將欄位註解設定為底部或右側對齊時，標記樹狀結構僅包含註解而沒有相應的值，造成不完整的無障礙標記。(LC-3922619)
+* 所產生之 PDF 中的 QR 碼變得無法讀取。QR 碼的替代文字也未能通過無障礙測試，影響螢幕閱讀器的相容性。(LC-3922551)
+* 當使用者在代理程式 UI 中轉譯信件時，因為 FormService render() API 而導致內容無法正確顯示。(LC-3922461)
+* 當使用者在 AEM Forms 中嘗試使用採用 Sunken Square 樣式的 XDP 建立 PDF/A 檔案時，會導致邊框轉譯問題。(LC-3922180)
+* 將與 XSD 結構描述繫結的動態表單扁平化時，會導致部分資料遺失，因為最終 PDF 中未保留某些繫結的表單資料。(LC-3922008)
+* 當使用者在 AEM Forms 6.5.13 及以上版本中使用 extractData API 從互動式 PDF 匯出資料時，與手動匯出相比，其中缺少部分資料。(LC-3921983)
+* 使用者面臨無障礙合規性問題，當使用 AEM Forms Designer 或 Output 服務將 XDP 表單轉換為靜態 PDF 時，會建立多個 Link-OBJR 標記，而非建立一個統一的連結標記。(LC-3921977)
 
 ### 自適應表單
 
-* 在AEM Forms中，在根面板上啟用「允許標題為RTF文字」會導致巢狀面板上的「從記錄檔案排除標題」無法正確地隱藏根面板的標題。 這會在產生的記錄檔案中進行。 (FORMS-19696)
-* 系統會忽略透過JSON結構描述中的aem:resourceType指派的自訂sling:afProperties。 呈現期間會忽略自訂資源型別。 (FORMS-19691)
-* 當使用者提交具有使用URI預填附件的調適型表單時，由於缺少二進位資料，表單提交會失敗並出現NullPointerException。 (FORMS-19371) (FORMS-19486)
-* 當使用者上傳「Forms和檔案」區段下的PDF時，時間軸功能停止運作。 (FORMS-19407)(FORMS-19234)
-* 當使用者使用AEM Forms中的現成(OOTB)檔案附件元件上傳檔案時，會識別安全漏洞。 此問題可能會導致未經授權的實體攔截提交流程。 (FORMS-19271)
-* 當使用者在AEM Forms中設定現成的最適化表單以自動產生記錄檔案(DoR)時，Acrobat Reader檔案屬性中的「標題」欄位不顯示擷取的DoR標題。 依預設，表單標題不會出現在檔案名稱的位置。 (FORMS-19263)
-* 當使用者在代理程式UI中開啟互動式通訊時，預先填入的資料無法完全清除；移除後，它會自動以相同的資料重新填入。 (FORMS-19151)
-* 當使用者在代理UI中預覽日期欄位時，日期意外變化。 此問題發生的原因是VM的UTC設定與系統對日期的詮釋之間存在時區差異。 (FORMS-19115)
-* 使用者提交表單時，檔案附件可能會重複，導致同一檔案多次上傳。 (FORMS-19045)(FORMS-19051)
-* 在Document Security中將協調員新增到原則集會在生產環境和較低環境中失敗。 (FORMS-18603、FORMS-18212、FORMS-19697)
-* 當使用者在案頭模式下使用空白欄位按一下「datepicker-calendar-icon」時，由於未定義的_$focusedDate變數會發生錯誤，並中斷關聯的自訂指令碼。 (FORMS-18483)(FORMS-18268)
-* 當客戶預覽信函時，「字數金額」欄位無法正確顯示或更新數字值，導致對齊錯誤和內容中缺少空格。 (FORMS-18437、FORMS-17330、FORMS-18209、FORMS-18557、CTG-4150848、FORMS-19614、LC-3922004)
-* 當客戶預覽在RHEL上儲存的字母時，內容未妥善對齊、缺少空格，且出現未預期的字元，例如「x」。 (FORMS-18422)(FORMS-17641)
-* 當使用者在AEM Forms中的標籤之間導覽時，在第一個標籤上選取元件會變得無回應。 (FORMS-18345)
-* 當使用者使用WebToPDF選項將HTML檔案轉換為PDF時，輸出PDF缺少標題區段，包括中繼資料和標題標籤。 (FORMS-18223、FORMS-17835、FORMS-19642、FORMS-18224)
-* 在AEM JEE Process Manager SDK中，當使用者叫用retryAction(long actionOid)方法時，系統會錯誤地重試tb_action_instance表格中的第一個動作。 即使提供特定動作ID或ID為空值，也會發生此工作流程，導致非預期的行為。 (FORMS-18187)
-* 使用者遇到問題，即儲存的草稿和提交功能失敗，未顯示任何錯誤訊息。 (FORMS-18069)
-* 從XSD式基礎元件轉換至核心元件，可防止在JSON結構描述中實作跨檔案參照，影響最適化Forms移轉。 (FORMS-18065)
-* 當使用者在代理UI中預覽信函時，由於IC時間轉換問題，日期欄位顯示不正確的值。 這些差異是由於VM環境與系統對時間的詮釋（UTC與當地時間）之間的時區差異所造成。 (FORMS-17988) (FORMS-17248)
-* 當使用者在AEM Forms中使用通知IC範本預覽信函時，PDF的產生時間差異顯著，從1.5秒到超過10秒，即使在同一部伺服器上也是如此。 這種不一致會影響關鍵業務工作流程。 (FORMS-17951)
-* 當使用者使用「資料來源」選項將調適型表單中的手寫簽名物件繫結到XDP時，無法儲存變更。 原因是持續外觀比例驗證錯誤，即使使用有效值亦然。 (FORMS-17587)
-* 當使用者使用具有許多用於檔案片段的隱藏欄位的特定XDP時，AEM會建立CRX節點，並將cm:optional屬性設定為false，這會造成互動式通訊(IC)提交失敗。 (FORMS-17538)
-* 當客戶預覽信函時，若已定義Lead和Frac的數字限制，數值方塊欄位將無法正確處理負值。 此問題是因為使用parseFloat而發生，這會將減號視為數字的一部分。 (FORMS-17451)
-* 預覽信函時，系統注意到Adobe.json檔案中使用「*」萬用字元，因此擔心其用途和可能的修改。 (FORMS-17317)
-* 當使用者在套用固定利率儲蓄者聯合帳戶上使用熒幕助讀程式時，標題錯誤地宣佈為可點按，導致協助工具問題。 (FORMS-17038)
-* 內嵌表單時，產生的iframe會遺失title屬性，導致協助工具相容問題。 (FORMS-17010)
-* 使用Forms Manager UI下載表單一律包含關聯的相依性，例如主題和片段。 (FORMS-15811)
-* 當使用者存取行動裝置上的表單(iOS和Android™)時，第一個頁面上的「下一個」和「上一個」按鈕會停用。 不過，熒幕助讀程式不會將其識別為停用。 (FORMS-15773)
-* 當使用者儲存已啟用片段和延遲載入的大型表單時，將無法擷取草稿，並中斷工作流程。 (FORMS-19890， FORMS-19808)
-* 根據核心元件為最適化表單儲存表單屬性的使用者遇到問題。 發生此狀況是因為納入以基礎元件編輯器為基礎的最適化表單中的備援指令碼，導致以核心元件為基礎的最適化表單中出現衝突。 編輯者。 (FORMS-17474)
-* 使用者遇到Adobe Sign GovCloud簽名頁面未在iframe中呈現的問題。 (FORMS-16803)
-* 使用者在選取核心元件Adaptive Forms (AF)片段的參考時會遇到錯誤。 出現錯誤訊息「無法轉譯參考：不是絕對路徑」，導致無法正確轉譯參考。 (FORMS-19678)
-* 新增支援Acrobat DC的多執行緒轉換，讓使用者能夠更有效率地同時執行Word、Excel和PowerPoint檔案轉換至PDF檔案。 (FORMS-21310)
-* 新增在AEM Service Pack 24中包含`com.adobe.granite.toggle.impl.dev`套件組合，可透過從Forms附加元件中移除該套件組合來簡化開發流程。 (FORMS-20139)
-* 已從forms-foundation移除FeatureToggleRenderConditionServlet，並從forms附加元件移除com.adobe.granite.toggle.impl.dev套件組合。 此更新可確保在Forms附加元件安裝後，轉譯條件能正確解析，進而改善客戶的元件功能。 (FORMS-20138)
-* 由於最適化Forms中的查詢長時間執行，使用者遇到效能緩慢的問題。 此更新會將查詢變更反向移植，以提高效率。 客戶現在可以使用標籤名稱aemformsAFReferences建立索引。 (FORMS-21411)
-* 使用WebtoPDF將HTML轉換為可攜式檔案格式(PDF)時，使用者遇到標題位置未對齊的問題。 此問題會影響檔案版面配置一致性和輸出的可讀性。 (FORMS-21502， FORMS-21540)
-* 儘管成功進行PreFlight驗證，使用者仍遇到PDF/A-1b驗證失敗。 此問題會影響使用PDF驗證工具的企業客戶的檔案合規性檢查。 (FORMS-20196)
-* 使用者在UI上遇到未翻譯的字串，導致混淆和難以瞭解介面。 (FORMS-6542)
-* 使用者遇到電子郵件通知問題。 「傳送電子郵件」工作流程步驟無法傳送電子郵件，影響自動化通訊程式。 (FORMS-17961)
-* 使用者在表單工作流程中遇到失敗測試，這影響了他們有效完成工作流程流程的能力。 (FORMS-16231)
-* 使用者無法在AEM表單中使用PDF檔案的時間軸功能。 此問題會影響使用者有效追蹤檔案變更和修訂的能力。 在PDF表單區域的「Forms和檔案」區段底下上傳任何AEM時，時間軸檢視會停止運作。 (FORMS-19408)
-* 使用者在與OData互動時會遇到Null指標例外狀況。 這會導致資料擷取程式中斷。 (FORMS-20348)
-* 移除開放原始碼Java程式庫Guava後，移除了google.common.collect程式庫。 此更新可確保使用Adaptive Forms的企業客戶獲得更好的相容性和效能。 (FORMS-17031)
+* 在 AEM Forms 中，在根面板上啟用「允許標題使用 RTF 文字」會造成巢狀面板出現「從記錄文件中排除標題」的狀況，錯誤地隱藏根面板的標題。這個情況會發生在所產生的記錄文件中。(FORMS-19696)
+* 系統忽略 JSON 結構描述中透過 AEM:afProperties 指派的自訂 sling:resourceType。在轉譯過程中忽略自訂資源類型。(FORMS-19691)
+* 當使用者透過 URI 提交含有預填附件的自適應表單時，由於缺少二進位資料，表單提交失敗並出現 NullPointerException。(FORMS-19371) (FORMS-19486)
+* 當使用者在「表單和文件」區段中上傳 PDF 時，時間軸功能停止運作。(FORMS-19407)(FORMS-19234)
+* 當使用者利用 AEM Forms 中現成可用 (OOTB) 的檔案附件元件上傳檔案時，發現安全性漏洞。此問題可能導致未經授權的實體攔截提交過程。(FORMS-19271)
+* 當使用者在 AEM Forms 中設定現成可用的自適應表單，以便自動產生記錄文件 (DoR) 時，Acrobat Reader 文件屬性中的「標題」欄位未顯示所擷取的記錄文件標題。預設情況下，表單標題不會出現在檔案名稱的位置。(FORMS-19263)
+* 當使用者在代理程式 UI 中開啟互動式通訊時，預填的資料無法完全刪除；刪除後，系統會自動重新填入相同的資料。(FORMS-19151)
+* 當使用者在代理程式 UI 中預覽日期欄位時，日期出現非預期的變更。出現此問題的原因是 VM 的 UTC 設定與系統的日期解讀方式使用不一樣的時區。(FORMS-19115)
+* 當使用者提交表單時，檔案附件可能會重複，導致同一個檔案多次上傳。(FORMS-19045)(FORMS-19051)
+* 在生產環境和較低層級的環境中，無法對文件安全性原則集新增協調人員。(FORMS-18603、FORMS-18212、FORMS-19697)
+* 當使用者在桌面模式中按一下空白欄位的「日期選擇器行事曆圖示」時，由於未定義 _$focusedDate 變數而發生錯誤，使得相關的自訂指令碼執行中斷。(FORMS-18483)(FORMS-18268)
+* 當客戶預覽信件時，「字數」欄位無法顯示或更新為錯誤的數字值，導致內容無法對齊和缺少空格。(FORMS-18437、FORMS-17330、FORMS-18209、FORMS-18557、CTG-4150848、FORMS-19614、LC-3922004)
+* 當客戶在 RHEL 上預覽已儲存的信件時，內容並未對齊、缺少空格以及意外出現「x」等字元。(FORMS-18422)(FORMS-17641)
+* 當使用者在 AEM Forms 的各個索引標籤之間導覽時，選取第一個索引標籤的元件卻沒有回應。(FORMS-18345)
+* 當使用者使用 WebToPDF 選項將 HTML 檔案轉換為 PDF 時，輸出的 PDF 缺少頁首區段，包括後設資料和標題標記。(FORMS-18223、FORMS-17835、FORMS-19642、FORMS-18224)
+* 在 AEM JEE Process Manager SDK 中，當使用者叫用 retryAction(long actionOid) 方法時，系統錯誤地重試在 tb_action_instance 表格中找到的第一個動作。即使提供特定的動作 ID 或 ID 為 Null 時，仍然會發生此工作流程，導致非預期的行為。(FORMS-18187)
+* 使用者遇到已儲存的草稿和提交功能執行失敗，但沒有顯示任何錯誤訊息的問題。(FORMS-18069)
+* 從 XSD 型基礎元件轉變為核心元件，會導致在 JSON 結構描述中無法實施跨檔案參照，進而影響自適應表單移轉。(FORMS-18065)
+* 當使用者在代理程式 UI 中預覽信件時，由於 IC 時間轉換問題，日期欄位顯示不正確的值。這些不一致性是因為 VM 環境和系統的時間解讀方式使用不一樣的時區 (UTC 相對於當地時間)。(FORMS-17988) (FORMS-17248)
+* 當使用者透過 AEM Forms 中的通知 IC 範本預覽信件時，即便是在同一台伺服器上，PDF 產生時間也會有顯著差異，從 1.5 秒到 10 秒以上不等。這樣的不一致會影響業務關鍵工作流程。(FORMS-17951)
+* 當使用者透過「資料來源」選項將自適應表單中的手寫簽名物件繫結至 XDP 時，無法儲存變更。問題出自於持續發生外觀比例驗證錯誤，即便使用有效值也一樣。(FORMS-17587)
+* 當使用者將具有多個隱藏欄位的特定 XDP 做為文件片段時，AEM 會建立 CRX 節點且 cm:optional 屬性設定為 false，因此導致互動式通訊 (IC) 提交失敗。(FORMS-17538)
+* 當客戶預覽信件時，若有定義 Lead 和 Frac 的位數限制，數值框欄位無法正確處理負值。此問題的原因出自於使用 parseFloat，其會將減號視為數字的一部分。(FORMS-17451)
+* 預覽信件時，會注意到 Adobe.json 檔案中使用「*」萬用字元，引起人們對其用途和潛在修改的疑慮。(FORMS-17317)
+* 當使用者透過螢幕閱讀器閱讀「申請固定利率儲蓄聯名帳戶」時，標題被錯誤宣告為可點按，導致無障礙問題。(FORMS-17038)
+* 當嵌入表單時，所產生的 iframe 缺少標題屬性，導致無障礙合規性問題。(FORMS-17010)
+* 透過 Forms Manager UI 下載表單總是包含關聯的相依性，例如主題和片段。(FORMS-15811)
+* 當使用者在行動裝置 (iOS 和 Android™) 上存取表單時，第一頁上的「下一頁」和「上一頁」按鈕為停用狀態。但是，螢幕閱讀器並未將這些按鈕識別為停用狀態。(FORMS-15773)
+* 當使用者儲存包含片段並啟用延遲載入的大型表單時，無法擷取草稿，導致工作流程中斷。(FORMS-19890、FORMS-19808)
+* 使用者在儲存核心元件型自適應表單的表單屬性時遇到問題。發生這個問題是因為其中包含了以基礎元件編輯器為基礎的自適應表單多餘指令碼，導致以核心元件編輯器為基礎的自適應表單發生衝突。(FORMS-17474)
+* 使用者遇到 Adobe Sign GovCloud 簽章頁面並未在 iframe 中轉譯的問題。(FORMS-16803)
+* 使用者在選取核心元件自適應表單 (AF) 片段的參照時遇到錯誤。出現錯誤訊息「無法轉譯參照：非絕對路徑」，導致無法正確轉譯參照。(FORMS-19678)
+* 新增對於 Acrobat DC 多執行緒轉換的支援，讓使用者能夠更有效率地同時執行 Word、Excel 和 PowerPoint 文件轉換為 PDF 文件的操作。(FORMS-21310)
+* 在 AEM Service Pack 24 中新增 `com.adobe.granite.toggle.impl.dev` 套件，將這個套件從 Forms 附加元件中移除後可讓開發流程更加精簡。(FORMS-20139)
+* 從 forms-foundation 中移除 FeatureToggleRenderConditionServlet，並從表單附加元件中移除 com.adobe.granite.toggle.impl.dev 套件。此項更新確保在安裝表單附加元件後，會正確地解析轉譯條件，為客戶提供更好的元件功能。(FORMS-20138)
+* 由於自適應表單中的查詢執行時間過長，使用者遇到效能緩慢的問題。此項更新將查詢變更反向移植，以便提高效率。客戶現在可以使用標記名稱 aemformsAFReferences 建立索引。(FORMS-21411)
+* 使用者使用 WebtoPDF 將 HTML 轉換為可攜式文件格式 (PDF) 時，遇到標頭位置未對齊的狀況。這項問題影響到文件版面的一致性和輸出的可讀性。(FORMS-21502、FORMS-21540)
+* 儘管預檢驗證成功，但使用者仍遇到 PDF/A-1b 驗證失敗的情況。這項問題影響到企業客戶使用 PDF 驗證工具進行的文件合規性檢查。(FORMS-20196)
+* 使用者在 UI 上遇到未翻譯的字串，導致無法理解介面內容或是感到混淆。(FORMS-6542)
+* 使用者遇到電子郵件通知方面的問題。傳送電子郵件工作流程步驟無法傳送電子郵件，因而影響自動化通訊流程。(FORMS-17961)
+* 使用者的表單工作流程測試執行失敗，影響其有效率地完成工作流程的能力。(FORMS-16231)
+* 使用者在 AEM Forms 中無法使用 PDF 檔案的時間軸功能。這項問題導致使用者無法有效地追蹤文件變更和修訂。在 AEM Forms 區域的「表單和文件」區段上傳任何 PDF 時，時間軸視圖停止運作。(FORMS-19408)
+* 使用者與 OData 互動時遇到 Null 指標異常的狀況。這個情況會導致資料擷取過程中斷。(FORMS-20348)
+* 在移除 Guava (一個開源的 Java 程式庫) 之後，亦已移除 google.common.collect 程式庫。這項更新確保使用自適應表單的企業客戶獲得更好的相容性和效能。(FORMS-17031)
 
-### Forms驗證碼
+### 表單驗證碼
 
-* 針對以基礎元件為基礎的最適化Forms新增Hcaptcha和Turnstile支援。 (FORMS-16562)
-* 使用者在建立Captcha設定對話方塊中遇到圖示重疊問題。 填寫必填欄位時，資訊圖示與錯誤圖示重疊，導致在設定組態期間產生混淆。 (FORMS-16916)
-* 使用者在根據基礎元件的最適化Forms中遇到擷取到reCAPTCHA的設定不正確。 未選取表單的設定容器時，`conf/global`資料夾中的多個設定會造成問題。 (FORMS-19237)
-* 使用者遇到reCAPTCHA未轉譯的問題。 這會影響企業客戶的表單提交與安全性驗證。 (FORMS-17136， FORMS-19596)
-* 使用者遇到reCAPTCHA Enterprise的大小未反映在使用者介面(UI)中的問題。 (FORMS-16574)
-* 使用者因「ReCaptchaConfigurationServiceImpl」中的ResourceResolver未關閉而遇到ReCaptcha功能問題，導致表單提交期間間歇性驗證失敗。 (FORMS-19241)
-* 使用者在Sites中製作表單時，遇到reCAPTCHA驗證問題。 AEM表單無法正確辨識表單名稱，導致驗證失敗。 (FORMS-20486)
-* 即使企業reCAPTCHA分數為1.0，使用者仍會提交表單，導致潛在安全性風險。 (FORMS-16766){{$include }}
-* 將提交錯誤代碼更新為400，改善調適型Forms中的reCAPTCHA警報。 此外，精細化記錄警報以區分逾時、過期和機器人偵測失敗，提高疑難排解精確度和系統可觀察性。 (FORMS-19240)
-* 已關閉ReCaptchaConfigurationServiceImpl中未關閉的ResourceResolver執行個體，以防止在AEM Forms中使用reCAPTCHA整合時可能發生的資源洩漏並改善系統穩定性。 (FORMS-19242)
-* 當/conf/global資料夾中有多個專案時，請確定每個表單都有正確的設定繫結，以改善AEM Forms的驗證碼設定處理。 避免在未明確選取組態容器時，意外使用不正確的驗證碼設定。 (FORMS-19239)
+* 基礎元件型自適應表單現已支援 Hcaptcha 和 Turnstile。(FORMS-16562)
+* 使用者在「建立 hCaptcha 設定」對話框中遇到圖示重疊問題。填寫必要欄位時，資訊圖示與錯誤圖示重疊，導致進行設定期間出現令人混淆的狀況。(FORMS-16916)
+* 使用者在基礎元件型自適應表單中遇到 reCAPTCHA 設定錯誤的問題。未選取表單的設定容器時，`conf/global` 資料夾中的多個設定便造成問題。(FORMS-19237)
+* 使用者遇到 reCAPTCHA 無法轉譯的問題。這個情況會影響企業客戶的表單提交和安全性驗證。(FORMS-17136、FORMS-19596)
+* 使用者遇到 reCAPTCHA 企業版的尺寸未反映在使用者介面 (UI) 中的問題。(FORMS-16574)
+* 由於「ReCaptchaConfigurationServiceImpl」中的 ResourceResolver 未關閉，導致使用者在使用 ReCaptcha 功能時遇到問題，而使表單提交期間出現間歇性驗證失敗。(FORMS-19241)
+* 於 Sites 中製作表單時，使用者遇到 reCAPTCHA 驗證問題。AEM Forms 無法正確辨識表單名稱，導致驗證失敗。(FORMS-20486)
+* 即使 reCAPTCHA 企業版分數為 1.0，使用者仍然提交表單，帶來潛在的安全性風險。(FORMS-16766){{$include }}
+* 將提交錯誤代碼更新為 400，藉此改善自適應表單的 reCAPTCHA 警報。此外，亦提供更完善的記錄警報，區分逾時、過期和機器人偵測失敗的不同情況，提高疑難排解的準確性和系統可觀察性。(FORMS-19240)
+* 關閉 ReCaptchaConfigurationServiceImpl 中未關閉的 ResourceResolver 實例，防止潛在的資源洩漏，並提高於 AEM Forms 中使用 reCAPTCHA 整合時的系統穩定性。(FORMS-19242)
+* 當 /conf/global 資料夾中存在多個項目時，確保將正確的設定繫結至各個表單，藉此改善 AEM Forms 的驗證碼設定處理。在未明確選取設定容器時，避免意外使用不正確的驗證碼設定。(FORMS-19239)
 
 ### 表單管理 UI
 
-* 使用者在「Forms >建立Watchfolder > Watchfolder建立程式」中遇到未當地語系化的字串。 建立watchfolder時，找不到「Watchfolder建立」和「Watchfolder已成功建立」等字串，這會影響使用者介面體驗。 (FORMS-15234)
+* 使用者在「Forms > 建立監看資料夾 > 監看資料夾」建立流程中遇到未本地化的字串。建立監看資料夾時，並未找到「監看資料夾建立」和「已成功建立監看資料夾」等字串，影響使用者介面體驗。(FORMS-15234)
 
 ## [!DNL Experience Manager Foundation] {#experience-manager-foundation}
 
@@ -448,11 +448,11 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 
 ## 安裝與更新 {#install-update}
 
-如需設定需求，請參閱[安裝指示](/help/sites-deploying/custom-standalone-install.md)。
+如需關於設定需求的資訊，請參閱[安裝指示](/help/sites-deploying/custom-standalone-install.md)。
 
 >[!NOTE]
 >
-> 如果您要從舊的6.5 SP直接升級至LTS SP1，請依照6.5到6.5 LTS GA [升級](/help/sites-deploying/upgrade.md)的指示操作。
+> 若您要從舊版 6.5 SP 直接升級至 LTS SP1，請按照從 6.5 升級至 6.5 LTS GA 的[升級](/help/sites-deploying/upgrade.md)說明進行操作。
 
 
 如需詳細說明，請參閱[升級文件](/help/sites-deploying/upgrade.md)。
@@ -461,9 +461,9 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 >
 > 對於全新的 AEM 6.5 LTS 安裝，必須獨立安裝索引定義。如需更多詳細資訊，請參閱[此文章](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions)。
 
-## 安裝並更新AEM Forms附加元件 {#install-update-aem-forms-add-on}
+## 安裝並更新 AEM Forms 附加元件 {#install-update-aem-forms-add-on}
 
-如需詳細指示，請參閱[執行就地升級](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions)。
+如需詳細說明，請參閱[執行就地升級](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions)。
 
 
 
@@ -543,11 +543,11 @@ AEM 6.5.21、6.5.22、6.5.23 和 AEM 6.5 LTS 正式發佈版隨附 `org.apache.s
 
 可以使用 Hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) 解決此問題。
 
-### Dispatcher連線失敗並提供僅限SSL的功能(已在AEM 6.5 LTS SP1及更新版本中修正){#ssl-only-feature}
+### 使用僅限 SSL 連線功能時 Dispatcher 連線失敗 (AEM 6.5 LTS SP1 及以上版本已修正){#ssl-only-feature}
 
 >[!NOTE]
 >
-> 此問題僅出現在AEM 6.5 LTS GA版本中。
+> 此問題僅出現在 AEM 6.5 LTS GA 版本。
 
 在 AEM 部署中啟用僅限 SSL 功能時，有一項已知問題會影響 Dispatcher 和 AEM 實例之間的連線。啟用此功能後，健康情況檢查可能會失敗，且 Dispatcher 和 AEM 實例之間的通訊可能會中斷。當客戶嘗試透過 `https + IP` 從 Dispatcher 連線至 AEM 執行個體時，特別容易發生此問題。此問題與 SNI (伺服器名稱指示) 驗證問題有關。
 
