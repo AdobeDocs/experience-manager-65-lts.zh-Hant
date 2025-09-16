@@ -8,9 +8,9 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: 826074f588c60c77c9ec32b3f94b47ab9aa0c12d
 workflow-type: tm+mt
-source-wordcount: '3330'
+source-wordcount: '3345'
 ht-degree: 1%
 
 ---
@@ -108,7 +108,7 @@ customBlobStore=B"false"
 
 >[!NOTE]
 >
->若要啟用自訂資料存放區，您必須確定在個別節點存放區組態檔（[區段節點存放區](/help/sites-deploying/data-store-config.md#segment-node-store)或[檔案節點存放區](/help/sites-deploying/data-store-config.md#document-node-store)）中，`customBlobStore`已設為`true`。
+>若要啟用自訂資料存放區，您必須確定在個別節點存放區組態檔（`customBlobStore`區段節點存放區`true`或[檔案節點存放區](/help/sites-deploying/data-store-config.md#segment-node-store)）中，[已設為](/help/sites-deploying/data-store-config.md#document-node-store)。
 
 ### 檔案資料存放區 {#file-data-store}
 
@@ -156,7 +156,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 
    將以上位置的所有內容複製到`<aem-install>/crx-quickstart/install.`
 
-1. 如果AEM已設定為搭配Tar或MongoDB儲存體使用，請先從&#x200B;***&lt;aem-install>***/*crx-quickstart*/*install*&#x200B;資料夾移除任何現有的設定檔，然後再繼續。 必須移除的檔案包括：
+1. 如果AEM已設定為搭配Tar或MongoDB儲存體使用，請先從***&lt;aem-install>***/*crx-quickstart*/*install*&#x200B;資料夾移除任何現有的設定檔，然後再繼續。 必須移除的檔案包括：
 
    * `For MongoMK: org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
    * `For TarMK: org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
@@ -184,19 +184,19 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 
 1. 停止AEM執行個體。
 
-1. 導覽至AEM安裝資料夾中的`<aem-install>/crx-quickstart/install/15`，並備份其內容。
-1. 備份之後，刪除S3 Connector的舊版本及其相依性，方法是刪除`<aem-install>/crx-quickstart/install/15`資料夾中的所有jar檔案，例如：
+1. 導覽至AEM安裝資料夾中的`<aem-install>/crx-quickstart/install`，並備份其所有子資料夾。
+1. 備份之後，刪除S3 Connector的舊版本及其相依性，方法是刪除`<aem-install>/crx-quickstart/install/`資料夾下所有資料夾中的所有jar檔案，例如：
 
-   * **oak-blob-cloud-1.6.1.jar**
-   * **aws-java-sdk-osgi-1.10.76.jar**
+   * **15/oak-blob-cloud-1.78.XXX.jar**
+   * **15/aws-java-sdk-osgi-1.12.XXX.jar**
 
    >[!NOTE]
    >
    >上述檔案名稱僅供說明之用。
 
-1. 從[Software Distribution.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/s3-connector/6-5-lts/com.adobe.granite.oak.s3connector-1.60.2.zip)下載1.60.x功能套件的最新版本。
-1. 將內容解壓縮至個別資料夾，然後導覽至`jcr_root/libs/system/install/15`。
-1. 將jar檔案複製到AEM安裝資料夾中的&#x200B;**&lt;aem-install>**/crx-quickstart/install/15。
+1. 從[Maven存放庫下載1.60.x Feature Pack的最新版本。](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)
+1. 將內容解壓縮至個別資料夾，然後導覽至`jcr_root/libs/system/install/`。
+1. 將所有子資料夾複製到AEM安裝資料夾中的&#x200B;**&lt;aem-install>**/crx-quickstart/install/。
 1. 啟動AEM並檢查聯結器功能。
 
 您可以使用包含下列詳細選項的組態檔。
@@ -318,13 +318,13 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 若要使用S3設定無二進位式複製，必須執行下列步驟：
 
 1. 安裝作者和發佈執行個體，並確定它們已正確啟動。
-1. 開啟&#x200B;*https://localhost:4502/etc/replication/agents.author/publish.html*&#x200B;的頁面，前往復寫代理程式設定。
+1. 透過開啟&#x200B;*https://localhost:4502/etc/replication/agents.author/publish.html*&#x200B;的頁面，前往復寫代理程式設定。
 1. 按&#x200B;**設定**&#x200B;區段中的&#x200B;**編輯**&#x200B;按鈕。
 1. 將&#x200B;**序列化**&#x200B;型別選項變更為&#x200B;**少二進位**。
 
 1. 在傳輸URI中新增引數&quot; `binaryless`= `true`&quot;。 在變更後，URI應該看起來類似以下內容：
 
-   *https://localhost:4503/bin/receive?sling:authRequestLogin=1&amp;binaryless=true*
+   *https://localhost:4503/bin/receive？sling:authRequestLogin=1&amp;binaryless=true*
 
 1. 重新啟動所有製作和發佈執行個體，讓變更生效。
 
@@ -359,7 +359,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 
    * 如果您使用`FileDataStore`，請建立名為`org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`的檔案，並將其放在`<aem-install>/crx-quickstart/install`資料夾中。
 
-   * 如果使用S3做為資料存放區，請在`<aem-install>/crx-quickstart/install`資料夾中建立名為`rg.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config`的檔案，如上所述。
+   * 如果使用S3做為資料存放區，請在`rg.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config`資料夾中建立名為`<aem-install>/crx-quickstart/install`的檔案，如上所述。
 
 1. 修改每個執行個體上的資料存放區組態檔，使其指向相同的資料存放區。 如需詳細資訊，請參閱[資料存放區組態](/help/sites-deploying/data-store-config.md#data-store-configurations)。
 1. 如果執行個體是從現有的伺服器複製的，您必須在存放庫離線時使用最新的Oak-run工具移除新執行個體的`clusterId`。 您必須執行的命令為：
@@ -471,10 +471,10 @@ secretKey="28932hfjlkwdo8fufsdfas\=\="
 
 您可以透過以下方式執行資料存放區記憶體回收：
 
-1. 前往位於&#x200B;*https://&lt;serveraddress：port>/system/console/jmx*&#x200B;的JMX主控台
+1. 前往位於&#x200B;*https://&lt;serveraddress:port>/system/console/jmx*&#x200B;的JMX主控台
 1. 正在搜尋&#x200B;**RepositoryManagement。**&#x200B;找到存放庫管理員MBean後，按一下它即可顯示可用的選項。
 1. 捲動至頁面結尾，然後按一下&#x200B;**startDataStoreGC（布林值markOnly）**&#x200B;連結。
-1. 在下列對話方塊中，輸入`markOnly`引數的`false`，然後按一下&#x200B;**叫用**：
+1. 在下列對話方塊中，輸入`false`引數的`markOnly`，然後按一下&#x200B;**叫用**：
 
    ![chlimage_1-9](assets/chlimage_1-9.png)
 
@@ -493,13 +493,13 @@ secretKey="28932hfjlkwdo8fufsdfas\=\="
 >如果您使用共用資料存放區設定，且資料存放區廢棄專案收集已停用，執行Lucene二進位清理工作可能會突然增加使用的磁碟空間。 請考慮執行下列動作，在所有作者和發佈執行個體上停用BlobTracker：
 >
 >1. 停止AEM執行個體。
->2. 在`crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`檔案中新增`blobTrackSnapshotIntervalInSecs=L"0"`引數。 此引數需要Oak 1.12.0、1.10.2或更新版本。
+>2. 在`blobTrackSnapshotIntervalInSecs=L"0"`檔案中新增`crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`引數。 此引數需要Oak 1.12.0、1.10.2或更新版本。
 >3. 重新啟動AEM執行個體。
 
 使用較新版本的AEM，資料存放區記憶體回收也可以在多個存放庫共用的資料存放區上執行。 若要在共用資料存放區上執行資料存放區記憶體回收，請執行下列步驟：
 
 1. 請確定所有共用資料存放區的存放庫執行個體上，針對資料存放區廢棄專案收集設定的所有維護任務都已停用。
-1. 在共用資料存放區的&#x200B;**所有**&#x200B;存放庫執行個體上個別執行[二進位記憶體回收](/help/sites-deploying/data-store-config.md#data-store-garbage-collection)中提到的步驟。 不過，在按一下[叫用]按鈕之前，請務必輸入`markOnly`引數的`true`：
+1. 在共用資料存放區的[所有](/help/sites-deploying/data-store-config.md#data-store-garbage-collection)存放庫執行個體上個別執行&#x200B;**二進位記憶體回收**&#x200B;中提到的步驟。 不過，在按一下[叫用]按鈕之前，請務必輸入`true`引數的`markOnly`：
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
@@ -507,6 +507,6 @@ secretKey="28932hfjlkwdo8fufsdfas\=\="
 
    1. 前往JMX主控台，然後選取「儲存區域管理員Mbean」。
    1. 按一下&#x200B;**Click startDataStoreGC（布林值markOnly）**&#x200B;連結。
-   1. 在下列對話方塊中，再次輸入`markOnly`引數的`false`。
+   1. 在下列對話方塊中，再次輸入`false`引數的`markOnly`。
 
    所有找到的檔案會使用之前使用的標籤階段進行整理，並從資料存放區中刪除未使用的其餘檔案。
