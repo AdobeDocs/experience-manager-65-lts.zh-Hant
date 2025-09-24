@@ -7,7 +7,7 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: 6dbc943b-3bca-4926-896d-f1471a49a70f
-source-git-commit: 2773e1092e63479aa135918e48dd4b01e3dad310
+source-git-commit: 2bf6c1432f8e7b7fcdc00daeef7c2c5f31530107
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 11%
@@ -18,9 +18,9 @@ ht-degree: 11%
 
 Experience Hub推出管理Adobe Experience Manager內容、資產和網站的集中式起點。 Experience Hub的設計目的是提供個人化體驗，可讓您根據自己的角色和目標，順暢地在AEM生態系統中導覽。 它以指南的方式提供關鍵的深入解析和建議的動作，協助您有效率地達成目標。Experience Hub擁有清晰、以人物為導向的版面配置，可確保快速存取基本工具，並支援所有AEM功能中精簡而有效的體驗。
 
-觀看重新構想的AEM Experience Hub工作區快速導覽（4分鐘、9秒）。
+觀看重新構想的AEM Experience Hub工作區快速導覽（2分鐘39秒）。
 
->[!VIDEO](https://video.tv.adobe.com/v/3471453?learn=on&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
