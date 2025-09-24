@@ -6,9 +6,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 4e4d367b93f1e99cf076df14a15352f664890676
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7103'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -317,7 +317,7 @@ AEM 現在會避免因影像資產中格式錯誤的 XMP 後設資料而造成�
 
 * 已將 Sling ResourceAccessSecurity 更新至版本 1.1.2，以解決初始化多個`ClassCastException`參考資料時發生的`ResourceAccessGate`問題`ResourceAccessSecurityImpl`。(NPR-42750)
 * 已修正 Adobe Stock 整合中原本授權對話框顯示為灰色的問題。此問題是由於 `sunt:initList` 函數移除必要的輸入欄位所導致。該函數位在 Coral Foundation 用戶端程式庫中。已更新用戶端程式庫以保留必要的欄位，以便授權對話框的功能正常運作。(NPR-42748)
-* 修正`org.apache.sling.scripting.jsp 2.6.0`的未預期JSP編譯錯誤。 (NPR-42640)
+* 修正 `org.apache.sling.scripting.jsp 2.6.0` 的非預期 JSP 編譯錯誤。(NPR-42640)
 
 <!--
 * Backported the fix for Sling Scripting issue that caused `DataTimeParseException` and `String.length()` null pointer exceptions during package installation. Updated Sling Scripting to version 2.8.3-1.0.10.6 to reduce installation errors and improve stability. (NPR-42640) -->
@@ -355,25 +355,25 @@ AEM 現在會避免因影像資產中格式錯誤的 XMP 後設資料而造成�
 
 * 當使用者透過 exportDataAPI 匯出 XFA 型 PDF 適用的資料時，所產生的 XML 與使用 Acrobat Reader 手動匯出的 XML 資料不一致。與 Acrobat Reader 產生的輸出比較，其輸出缺少某些欄位的值。(LC-3922791)
 * 使用工作台的 Output 服務產生有標記的 PDF，會在目錄項目的參照標記之下新增非預期的標籤標記。(LC-3922756)
-* 使用 Output 服務將動態、可填寫的 PDF 扁平化為 PDF/A 格式時，並未保留動態狀態。此問題會導致資料遺失和潛在的合規性問題，尤其是在啟用標籤的情況下。 (LC-3922708)
+* 使用 Output 服務將動態、可填寫的 PDF 扁平化為 PDF/A 格式時，並未保留動態狀態。這項問題會導致資料遺失和潛在的合規性問題，尤其是在啟用標記功能時。(LC-3922708)
 * 當使用者在 AEM Forms Designer 中將欄位註解設定為底部或右側對齊時，標記樹狀結構僅包含註解而沒有相應的值，造成不完整的無障礙標記。(LC-3922619)
 * 所產生之 PDF 中的 QR 碼變得無法讀取。QR 碼的替代文字也未能通過無障礙測試，影響螢幕閱讀器的相容性。(LC-3922551)
-* 當使用者在代理程式UI中轉譯信函時，由於FormService render() API，內容無法正確顯示。 (LC-3922461)
+* 當使用者在代理程式 UI 中轉譯信件時，因為 FormService render() API 而導致內容無法正確顯示。(LC-3922461)
 * 當使用者在 AEM Forms 中嘗試使用採用 Sunken Square 樣式的 XDP 建立 PDF/A 檔案時，會導致邊框轉譯問題。(LC-3922180)
 * 將與 XSD 結構描述繫結的動態表單扁平化時，會導致部分資料遺失，因為最終 PDF 中未保留某些繫結的表單資料。(LC-3922008)
 * 當使用者在 AEM Forms 6.5.13 及以上版本中使用 extractData API 從互動式 PDF 匯出資料時，與手動匯出相比，其中缺少部分資料。(LC-3921983)
-* 使用AEM Forms Designer或輸出服務將XDP表單轉換為靜態PDF會建立多個`Link-OBJR`標籤。 問題會導致無障礙法規遵循問題，因為預期會有單一統一的連結標籤。 (LC-3921977)
+* 使用 AEM Forms Designer 或 Output 服務將 XDP 表單轉換為靜態 PDF，會建立多個 `Link-OBJR` 標記。這些問題會導致無障礙合規性問題，因為預期應有一個統一的連結標記。(LC-3921977)
 
 ### 自適應表單
 
 * 在 AEM Forms 中，在根面板上啟用「允許標題使用 RTF 文字」會造成巢狀面板出現「從記錄文件中排除標題」的狀況，錯誤地隱藏根面板的標題。這個情況會發生在所產生的記錄文件中。(FORMS-19696)
-* 系統會忽略透過JSON結構描述中的`sling:resourceType`指派的自訂`aem:afProperties`。 在轉譯過程中忽略自訂資源類型。(FORMS-19691)
+* 系統忽略 JSON 結構描述中透過 `aem:afProperties` 指派的自訂 `sling:resourceType`。在轉譯過程中忽略自訂資源類型。(FORMS-19691)
 * 當使用者透過 URI 提交含有預填附件的自適應表單時，由於缺少二進位資料，表單提交失敗並出現 NullPointerException。(FORMS-19371) (FORMS-19486)
 * 當使用者在「表單和文件」區段中上傳 PDF 時，時間軸功能停止運作。(FORMS-19407)(FORMS-19234)
-* 當使用者利用 AEM Forms 中現成可用 (OOTB) 的檔案附件元件上傳檔案時，發現安全性漏洞。此問題可能會導致未獲授權實體攔截提交流程。 (FORMS-19271)
+* 當使用者利用 AEM Forms 中現成可用 (OOTB) 的檔案附件元件上傳檔案時，發現安全性漏洞。這項問題可能導致未經授權的實體攔截提交過程。(FORMS-19271)
 * 當使用者在 AEM Forms 中設定現成可用的自適應表單，以便自動產生記錄文件 (DoR) 時，Acrobat Reader 文件屬性中的「標題」欄位未顯示所擷取的記錄文件標題。預設情況下，表單標題不會出現在檔案名稱的位置。(FORMS-19263)
 * 當使用者在代理程式 UI 中開啟互動式通訊時，預填的資料無法完全刪除；刪除後，系統會自動重新填入相同的資料。(FORMS-19151)
-* 當使用者在代理程式 UI 中預覽日期欄位時，日期出現非預期的變更。問題發生的原因是VM的UTC設定與系統對日期的詮釋之間存在時區差異。 (FORMS-19115)
+* 當使用者在代理程式 UI 中預覽日期欄位時，日期出現非預期的變更。出現此問題的原因是 VM 的 UTC 設定與系統的日期解讀方式使用不一樣的時區。(FORMS-19115)
 * 當使用者提交表單時，檔案附件可能會重複，導致同一個檔案多次上傳。(FORMS-19045)(FORMS-19051)
 * 在生產環境和較低層級的環境中，無法對文件安全性原則集新增協調人員。(FORMS-18603、FORMS-18212、FORMS-19697)
 * 當使用者在桌面模式中按一下空白欄位的「日期選擇器行事曆圖示」時，由於未定義 _$focusedDate 變數而發生錯誤，使得相關的自訂指令碼執行中斷。(FORMS-18483)(FORMS-18268)
@@ -383,28 +383,28 @@ AEM 現在會避免因影像資產中格式錯誤的 XMP 後設資料而造成�
 * 當使用者使用 WebToPDF 選項將 HTML 檔案轉換為 PDF 時，輸出的 PDF 缺少頁首區段，包括後設資料和標題標記。(FORMS-18223、FORMS-17835、FORMS-19642、FORMS-18224)
 * 在 AEM JEE Process Manager SDK 中，當使用者叫用 retryAction(long actionOid) 方法時，系統錯誤地重試在 tb_action_instance 表格中找到的第一個動作。即使提供特定的動作 ID 或 ID 為 Null 時，仍然會發生此工作流程，導致非預期的行為。(FORMS-18187)
 * 使用者遇到已儲存的草稿和提交功能執行失敗，但沒有顯示任何錯誤訊息的問題。(FORMS-18069)
-* 從XSD式基礎元件轉換至核心元件，可防止在JSON結構描述中實作跨檔案參照，影響最適化Forms移轉。 (FORMS-18065)
+* 從 XSD 型基礎元件轉變為核心元件，會導致在 JSON 結構描述中無法實施跨檔案參照，進而影響自適應表單移轉。(FORMS-18065)
 * 當使用者在代理程式 UI 中預覽信件時，由於 IC 時間轉換問題，日期欄位顯示不正確的值。這些不一致性是因為 VM 環境和系統的時間解讀方式使用不一樣的時區 (UTC 相對於當地時間)。(FORMS-17988) (FORMS-17248)
 * 當使用者透過 AEM Forms 中的通知 IC 範本預覽信件時，即便是在同一台伺服器上，PDF 產生時間也會有顯著差異，從 1.5 秒到 10 秒以上不等。這樣的不一致會影響業務關鍵工作流程。(FORMS-17951)
 * 當使用者透過「資料來源」選項將自適應表單中的手寫簽名物件繫結至 XDP 時，無法儲存變更。問題出自於持續發生外觀比例驗證錯誤，即便使用有效值也一樣。(FORMS-17587)
-* 當使用者使用具有許多隱藏欄位的特定XDP作為檔案片段時，AEM會建立CRX節點並將`cm:optional`屬性設定為false，這會造成互動式通訊(IC)提交失敗。 (FORMS-17538)
+* 當使用者將具有多個隱藏欄位的特定 XDP 做為文件片段時，AEM 會建立 CRX 節點且其 `cm:optional` 屬性設定為 false，因此導致互動式通訊 (IC) 提交失敗。(FORMS-17538)
 * 當客戶預覽信件時，若有定義 Lead 和 Frac 的位數限制，數值框欄位無法正確處理負值。此問題的原因出自於使用 parseFloat，其會將減號視為數字的一部分。(FORMS-17451)
-* 預覽信函時，系統注意到Adobe.json檔案中使用&quot;*&quot;萬用字元，令人擔心其用途和可能的修改。 (FORMS-17317)
+* 預覽信件時，會注意到 Adobe.json 檔案中使用「*」萬用字元，引起人們對其用途和潛在修改的疑慮。(FORMS-17317)
 * 當使用者透過螢幕閱讀器閱讀「申請固定利率儲蓄聯名帳戶」時，標題被錯誤宣告為可點按，導致無障礙問題。(FORMS-17038)
 * 當嵌入表單時，所產生的 iframe 缺少標題屬性，導致無障礙合規性問題。(FORMS-17010)
 * 透過 Forms Manager UI 下載表單總是包含關聯的相依性，例如主題和片段。(FORMS-15811)
 * 當使用者在行動裝置 (iOS 和 Android™) 上存取表單時，第一頁上的「下一頁」和「上一頁」按鈕為停用狀態。但是，螢幕閱讀器並未將這些按鈕識別為停用狀態。(FORMS-15773)
 * 當使用者儲存包含片段並啟用延遲載入的大型表單時，無法擷取草稿，導致工作流程中斷。(FORMS-19890、FORMS-19808)
-* 使用者在儲存核心元件型自適應表單的表單屬性時遇到問題。發生此錯誤是因為適用性表單中包含根據基礎元件編輯器的備援指令碼，導致適用性表單根據核心元件發生衝突。 發生衝突。(FORMS-17474)
+* 使用者在儲存核心元件型自適應表單的表單屬性時遇到問題。發生這個錯誤是因為其中包含了以基礎元件編輯器為基礎的自適應表單多餘指令碼，導致以核心元件編輯器為基礎的自適應表單出現衝突。發生衝突。(FORMS-17474)
 * 使用者遇到 Adobe Sign GovCloud 簽章頁面並未在 iframe 中轉譯的問題。(FORMS-16803)
-* 使用者在選取核心元件Adaptive Forms (AF)片段的參考時發生錯誤。 出現錯誤訊息「無法轉譯參照：非絕對路徑」，導致無法正確轉譯參照。(FORMS-19678)
+* 使用者在選取核心元件自適應表單 (AF) 片段的參照時遇到錯誤。出現錯誤訊息「無法轉譯參照：非絕對路徑」，導致無法正確轉譯參照。(FORMS-19678)
 * 新增對於 Acrobat DC 多執行緒轉換的支援，讓使用者能夠更有效率地同時執行 Word、Excel 和 PowerPoint 文件轉換為 PDF 文件的操作。(FORMS-21310)
 * 在 AEM Service Pack 24 中新增 `com.adobe.granite.toggle.impl.dev` 套件，將這個套件從 Forms 附加元件中移除後可讓開發流程更加精簡。(FORMS-20139)
 * 從 forms-foundation 中移除 FeatureToggleRenderConditionServlet，並從表單附加元件中移除 com.adobe.granite.toggle.impl.dev 套件。此項更新確保在安裝表單附加元件後，會正確地解析轉譯條件，為客戶提供更好的元件功能。(FORMS-20138)
-* 由於自適應表單中的查詢執行時間過長，使用者遇到效能緩慢的問題。此項更新將查詢變更反向移植，以便提高效率。客戶現在可以使用標籤名稱aemformsAFReferences建立索引。 (FORMS-21411)
-* 使用者使用 WebtoPDF 將 HTML 轉換為可攜式文件格式 (PDF) 時，遇到標頭位置未對齊的狀況。此問題會影響檔案版面的一致性和輸出的可讀性。 (FORMS-21502、FORMS-21540)
+* 由於自適應表單中的查詢執行時間過長，使用者遇到效能緩慢的問題。此項更新將查詢變更反向移植，以便提高效率。客戶現在可以使用標記名稱 aemformsAFReferences 建立索引。(FORMS-21411)
+* 使用者使用 WebtoPDF 將 HTML 轉換為可攜式文件格式 (PDF) 時，遇到標頭位置未對齊的狀況。這項問題影響到文件版面的一致性和輸出的可讀性。(FORMS-21502、FORMS-21540)
 * 儘管預檢驗證成功，但使用者仍遇到 PDF/A-1b 驗證失敗的情況。這項問題影響到企業客戶使用 PDF 驗證工具進行的文件合規性檢查。(FORMS-20196)
-* 使用者在UI中遇到未翻譯的字串，導致混淆和難以瞭解介面。 (FORMS-6542)
+* 使用者在 UI 中遇到未翻譯的字串，導致無法理解介面內容或是感到混淆。(FORMS-6542)
 * 使用者遇到電子郵件通知方面的問題。傳送電子郵件工作流程步驟無法傳送電子郵件，因而影響自動化通訊流程。(FORMS-17961)
 * 使用者的表單工作流程測試執行失敗，影響其有效率地完成工作流程的能力。(FORMS-16231)
 * 使用者在 AEM Forms 中無法使用 PDF 檔案的時間軸功能。這項問題導致使用者無法有效地追蹤文件變更和修訂。在 AEM Forms 區域的「表單和文件」區段上傳任何 PDF 時，時間軸視圖停止運作。(FORMS-19408)
@@ -413,12 +413,12 @@ AEM 現在會避免因影像資產中格式錯誤的 XMP 後設資料而造成�
 
 ### 表單驗證碼
 
-* 已針對以基礎元件為基礎的最適化Forms新增`Hcaptcha`和`Turnstile`支援。 (FORMS-16562)
-* 使用者在`Create hCaptcha Configuration`對話方塊中遇到圖示重疊問題。 填寫必要欄位時，資訊圖示與錯誤圖示重疊，導致進行設定期間出現令人混淆的狀況。(FORMS-16916)
-* 使用者在根據基礎元件的最適化Forms中遇到擷取到reCAPTCHA的設定不正確。 未選取表單的設定容器時，`conf/global` 資料夾中的多個設定便造成問題。(FORMS-19237)
+* 基礎元件型自適應表單現已支援 `Hcaptcha` 和 `Turnstile`。(FORMS-16562)
+* 使用者在 `Create hCaptcha Configuration` 對話框中遇到圖示重疊問題。填寫必要欄位時，資訊圖示與錯誤圖示重疊，導致進行設定期間出現令人混淆的狀況。(FORMS-16916)
+* 使用者在基礎元件型自適應表單中遇到 reCAPTCHA 設定錯誤的問題。未選取表單的設定容器時，`conf/global` 資料夾中的多個設定便造成問題。(FORMS-19237)
 * 使用者遇到 reCAPTCHA 無法轉譯的問題。這個情況會影響企業客戶的表單提交和安全性驗證。(FORMS-17136、FORMS-19596)
 * 使用者遇到 reCAPTCHA 企業版的尺寸未反映在使用者介面 (UI) 中的問題。(FORMS-16574)
-* 使用者因`ReCaptchaConfigurationServiceImpl`中未關閉的ResourceResolver而遇到ReCaptcha功能問題，導致表單提交期間間歇性驗證失敗。 (FORMS-19241)
+* 由於 `ReCaptchaConfigurationServiceImpl` 中的 ResourceResolver 未關閉，導致使用者在使用 ReCaptcha 功能時遇到問題，而使表單提交期間出現間歇性驗證失敗。(FORMS-19241)
 * 於 Sites 中製作表單時，使用者遇到 reCAPTCHA 驗證問題。AEM Forms 無法正確辨識表單名稱，導致驗證失敗。(FORMS-20486)
 * 即使 reCAPTCHA 企業版分數為 1.0，使用者仍然提交表單，帶來潛在的安全性風險。(FORMS-16766){{$include }}
 * 將提交錯誤代碼更新為 400，藉此改善自適應表單的 reCAPTCHA 警報。此外，亦提供更完善的記錄警報，區分逾時、過期和機器人偵測失敗的不同情況，提高疑難排解的準確性和系統可觀察性。(FORMS-19240)
@@ -427,7 +427,7 @@ AEM 現在會避免因影像資產中格式錯誤的 XMP 後設資料而造成�
 
 ### 表單管理 UI
 
-* 使用者在`Forms` > `Create Watchfolder` >` Watchfolder`建立程式中遇到未當地語系化的字串。 建立watched資料夾時，找不到`Watchfolder creation`和`Watchfolder created successfully`等字串，這會影響使用者介面體驗。 (FORMS-15234)
+* 使用者在 `Forms` > `Create Watchfolder` >` Watchfolder` 建立流程中遇到未本地化的字串。建立監看資料夾時，並未找到 `Watchfolder creation` 和 `Watchfolder created successfully` 等字串，影響使用者介面體驗。(FORMS-15234)
 
 ## [!DNL Experience Manager Foundation] {#experience-manager-foundation}
 
@@ -551,7 +551,7 @@ A hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/download
 
 >[!NOTE]
 >
-> 此問題僅出現在AEM 6.5 LTS GA版本中。
+> 這項問題僅出現在 AEM 6.5 LTS GA 版本。
 
 在 AEM 部署中啟用僅限 SSL 功能時，有一項已知問題會影響 Dispatcher 和 AEM 實例之間的連線。啟用此功能後，健康情況檢查可能會失敗，且 Dispatcher 和 AEM 實例之間的通訊可能會中斷。當客戶嘗試透過 `https + IP` 從 Dispatcher 連線至 AEM 執行個體時，特別容易發生此問題。此問題與 SNI (伺服器名稱指示) 驗證問題有關。
 
