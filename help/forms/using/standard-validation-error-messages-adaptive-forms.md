@@ -10,21 +10,22 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 17d1976e-96bd-4f8a-8be5-ea208c5ba93f
-source-git-commit: 0588e3590da69cdf49c61abc0a422093d04f5c41
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2352'
-ht-degree: 85%
+source-wordcount: '2361'
+ht-degree: 84%
 
 ---
 
 # Adaptive Forms中的錯誤處理常式 {#error-handlers-in-adaptive-form}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/add-custom-error-handler-adaptive-forms.html?lang=zh-Hant) |
-| AEM 6.5 | 本文章 |
+## 套用至 {#applies-to}
+
+本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
+
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/add-custom-error-handler-adaptive-forms.html)AEM Forms 。
 
 
 AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這還可提供自訂錯誤處理常式函數的功能。例如，您可以針對特定錯誤程式碼在後端叫用自訂的工作流程，或通知客戶服務已關閉。處理常式是根據伺服器回應執行的用戶端函數。當使用 API 調用外部服務時，資料會傳輸至伺服器進行驗證，伺服器會向用戶端傳回回應，其中包含有關提交成功或錯誤事件的資訊。這項資訊可以參數傳遞至相關處理常式以執行該函數。錯誤處理常式有助於管理和顯示遇到的錯誤或驗證問題。
@@ -181,7 +182,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 
 在最適化Forms中使用自訂錯誤處理常式之前：
 
-* [建立自訂函式](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=zh-Hant#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.)的基本知識。
+* [建立自訂函式](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.)的基本知識。
 * 安裝最新版的[Apache Maven](https://maven.apache.org/download.cgi)。
 
 
@@ -207,7 +208,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 
 1. 以編寫模式開啟最適化表單，選取表單元件，然後選取&#x200B;**[!UICONTROL 規則編輯器]**&#x200B;以開啟規則編輯器。
 1. 選取「**[!UICONTROL 建立]**」。
-1. 在「**何時**」規則部分中建立條件。例如，[寵物 ID 欄位名稱&#x200B;]&#x200B;**&#x200B;**&#x200B;何時變更。「選取」從「**選取狀態**」下拉式清單變更「選取」。
+1. 在「**何時**」規則部分中建立條件。例如，[寵物 ID 欄位名稱&#x200B;]****&#x200B;何時變更。「選取」從「**選取狀態**」下拉式清單變更「選取」。
 1. 在「**然後**」部分，從「**選取動作**」下拉式清單中選取「**[!UICONTROL 調用服務]**」。
 1. 選取「**郵遞服務**」，及其自「**輸入**」部分的對應資料綁定。例如，若要驗證&#x200B;**Pet ID**，請選取&#x200B;**貼文服務**&#x200B;作為&#x200B;**GET /pet/{petId}**，並在&#x200B;**輸入**&#x200B;區段中選取&#x200B;**Pet ID**。
 1. 從「**輸出**」部分，選取資料綁定。選取「**寵物名稱**」(在「**輸出**」部分)。
@@ -257,9 +258,9 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 
 1. 儲存您的變更。
 
-1. 在`clientlibs`資料夾下建立名為`js`的資料夾。
-1. 在`js`資料夾下建立名為`functions.js`的JavaScript檔案
-1. 在`clientlibs`資料夾下建立名為`js.txt`的檔案。
+1. 在`js`資料夾下建立名為`clientlibs`的資料夾。
+1. 在`functions.js`資料夾下建立名為`js`的JavaScript檔案
+1. 在`js.txt`資料夾下建立名為`clientlibs`的檔案。
 1. 儲存您的變更。
 已建立的檔案夾結構如下所示：
 
@@ -305,7 +306,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 
 ![在最適化表單容器設定中新增用戶端資料庫的名稱](/help/forms/using/assets/client-library-category-name.png)
 
-在此情況下，使用者端資料庫名稱會在`.content.xml`檔案中以`customfunctionsdemo`的形式提供。
+在此情況下，使用者端資料庫名稱會在`customfunctionsdemo`檔案中以`.content.xml`的形式提供。
 
 若要使用自訂錯誤處理常式，請使用&#x200B;**[!UICONTROL 規則編輯器調用服務]**&#x200B;行動：
 

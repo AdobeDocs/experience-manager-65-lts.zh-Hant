@@ -9,19 +9,20 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 712590c6-2348-4c0d-93b9-686e6478ca03
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1967'
-ht-degree: 2%
+source-wordcount: '1973'
+ht-degree: 1%
 
 ---
 
 # 管理表單中繼資料{#manage-form-metadata}
 
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html?lang=zh-Hant) |
-| AEM 6.5 | 本文章 |
+## 套用至 {#applies-to}
+
+本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
+
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html)AEM Forms 。
 
 ## 概觀  {#overview-nbsp}
 
@@ -63,7 +64,7 @@ AEM Forms支援下列資產型別：
    <td>表單的顯示名稱。<br /> </td> 
   </tr> 
   <tr> 
-   <td>描述</td> 
+   <td>說明</td> 
    <td>除了資源以外的所有專案</td> 
    <td>表單說明。 使用者可以指定這個值。<br /> </td> 
   </tr> 
@@ -80,7 +81,7 @@ AEM Forms支援下列資產型別：
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>建立日期</td> 
+   <td>已建立</td> 
    <td>全部</td> 
    <td>指定資產建立時間的唯讀值。</td> 
   </tr> 
@@ -153,7 +154,7 @@ AEM Forms支援下列資產型別：
    <td>與表單關聯的標籤有助於快速輕鬆的搜尋。</td> 
   </tr> 
   <tr> 
-   <td>參考</td> 
+   <td>參照</td> 
    <td><p>調適性表單</p> <p>表單範本</p> <p>資源</p> </td> 
    <td><p>與此表單相關的資產（其他表單或資源）清單。 這些資產可能分為以下兩個類別：</p> 
     <ul> 
@@ -269,7 +270,7 @@ AEM Forms會公開此工具中支援之表單型別的中繼資料結構。 如�
 
 1. AEM Forms會開啟所選資產型別的中繼資料結構編輯器/表單產生器（在此案例中為調適型表單）。
 
-   最適化表單型別![&#128279;](assets/metadata-schema-editor-for-adaptive-form-type.png)的中繼資料結構描述編輯器
+   最適化表單型別![的](assets/metadata-schema-editor-for-adaptive-form-type.png)中繼資料結構描述編輯器
 
    中繼資料編輯器
 
@@ -295,11 +296,11 @@ AEM Forms會公開此工具中支援之表單型別的中繼資料結構。 如�
 1. 按一下您剛才拖曳的元件。 在右側面板中開啟的「設定」標籤中，填寫下列欄位的資訊：
 
    1. 指定欄位標籤，在結構描述中的欄位上方做為顯示名稱（例如：Department）
-   1. 在[對應至屬性]欄位下，您可以看到預填值&#x200B;**&#39;。/jcr：content/metadata/default&#39;**。 將&#39;**default**&#39;變更為所需的屬性名稱，用來儲存crx存放庫中的屬性(例如： &#39;。/jcr：content/metadata/department&#39;)
+   1. 在[對應至屬性]欄位下，您可以看到預填值&#x200B;**&#39;。/jcr:content/metadata/default&#39;**。 將&#39;**default**&#39;變更為所需的屬性名稱，用來儲存crx存放庫中的屬性(例如： &#39;。/jcr:content/metadata/department&#39;)
 
       >[!NOTE]
       >
-      >請勿變更前置詞&#39;。/jcr：content/metadata/&#39;，定義儲存屬性的路徑。
+      >請勿變更前置詞&#39;。/jcr:content/metadata/&#39;，因為它定義了儲存屬性的路徑。
       >
       >此外，屬性名稱必須是唯一的，以避免在存放庫的同一位置寫入兩個或更多屬性的值。 因此，建議您變更「預設」值。
 

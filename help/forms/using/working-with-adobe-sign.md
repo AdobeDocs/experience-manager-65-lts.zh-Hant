@@ -10,21 +10,22 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 3e804a65-156c-40b5-b707-8f20f84a58e5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '3875'
-ht-degree: 1%
+source-wordcount: '3884'
+ht-degree: 2%
 
 ---
 
 # 在最適化表單中使用[!DNL Adobe Sign]{#using-adobe-sign-in-an-adaptive-form}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=zh-Hant) |
-| AEM 6.5 | 本文章 |
+## 套用至 {#applies-to}
+
+本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
+
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html)AEM Forms 。
 
 
 [!DNL Adobe Sign]啟用最適化表單的電子簽章工作流程。 電子簽章可改善處理法律、銷售、薪資、人力資源管理及更多領域檔案的工作流程。
@@ -78,13 +79,13 @@ ht-degree: 1%
 
 執行以下步驟來建立啟用簽署的調適型表單：
 
-1. 導覽至&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**。
+1. 導覽至「**[!UICONTROL Adobe Experience Manager]**」>「**[!UICONTROL 「表單]**」>「**[!UICONTROL 表單與文件]**」。
 1. 選取&#x200B;**[!UICONTROL 建立]**&#x200B;並選取&#x200B;**[!UICONTROL 最適化表單]**。 範本清單隨即顯示。 選取範本並選取&#x200B;**[!UICONTROL 下一步]**。
 1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;索引標籤中：
 
    1. 指定最適化表單的&#x200B;**[!UICONTROL 名稱]**&#x200B;和&#x200B;**[!UICONTROL 標題]**。
 
-   1. 選取使用AEM [!DNL Forms]設定[!DNL Adobe Sign]時所建立的[設定容器](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms)。
+   1. 選取使用AEM [設定](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms)時所建立的[!DNL Adobe Sign]設定容器[!DNL Forms]。
 
       >[!NOTE]
       >
@@ -102,9 +103,9 @@ ht-degree: 1%
 
 執行以下步驟，在現有的最適化表單中使用[!DNL Adobe Sign]：
 
-1. 導覽至&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**。
+1. 導覽至「**[!UICONTROL Adobe Experience Manager]**」>「**[!UICONTROL 「表單]**」>「**[!UICONTROL 表單與文件]**」。
 1. 選取最適化表單並選取&#x200B;**[!UICONTROL 屬性]**。
-1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;索引標籤中，選取使用AEM [!DNL Forms]設定[!DNL Adobe Sign]時所建立的[設定容器](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms)。
+1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;索引標籤中，選取使用AEM [設定](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms)時所建立的[!DNL Adobe Sign]設定容器[!DNL Forms]。
 1. 在&#x200B;**[!UICONTROL 表單模型]**&#x200B;索引標籤中，選取下列其中一個選項：
 
    * 選取&#x200B;**[!UICONTROL 關聯表單範本作為記錄檔案範本]**&#x200B;選項，並選取記錄檔案範本。 如果您使用以表單範本為基礎的調適型表單，則傳送以供簽署的檔案只會顯示以相關表單範本為基礎的欄位。 它不會顯示最適化表單的所有欄位。
@@ -140,7 +141,7 @@ ht-degree: 1%
 
 1. 選取&#x200B;**[!UICONTROL Adobe Sign]欄位** ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png)圖示。 它會顯示選取和新增[!DNL Adobe Sign]欄位的選項。
 
-   展開&#x200B;**[!UICONTROL 型別]**&#x200B;下拉式欄位以選取[!DNL Adobe Sign]欄位，並選取「完成![aem_6_3_forms_save](assets/aem_6_3_forms_save.png)」圖示以將選取的欄位新增至[!DNL Adobe Sign]區塊。 **[!UICONTROL 型別]**&#x200B;下拉式欄位包含簽章、簽署者資訊和資料欄位型別。 [!DNL Adobe Sign]與AEM的整合[!DNL Forms]僅支援[!UICONTROL 型別]下拉式方塊中列出的欄位。 如需[!DNL Adobe Sign]欄位的詳細資訊，請參閱[Adobe Sign檔案](https://helpx.adobe.com/tw/sign/help/field-types.html)。
+   展開&#x200B;**[!UICONTROL 型別]**&#x200B;下拉式欄位以選取[!DNL Adobe Sign]欄位，並選取「完成![aem_6_3_forms_save](assets/aem_6_3_forms_save.png)」圖示以將選取的欄位新增至[!DNL Adobe Sign]區塊。 **[!UICONTROL 型別]**&#x200B;下拉式欄位包含簽章、簽署者資訊和資料欄位型別。 [!DNL Adobe Sign]與AEM的整合[!DNL Forms]僅支援[!UICONTROL 型別]下拉式方塊中列出的欄位。 如需[!DNL Adobe Sign]欄位的詳細資訊，請參閱[Adobe Sign檔案](https://helpx.adobe.com/sign/help/field-types.html)。
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
@@ -148,7 +149,7 @@ ht-degree: 1%
 
    如果您從下拉式清單中選取&#x200B;**[!UICONTROL 數位簽章]**，您可以將數位簽章套用至最適化表單：
 
-   * 使用雲端簽章，以由信任服務提供者代管的[數位識別碼](https://helpx.adobe.com/tw/sign/kb/digital-certificate-providers.html)進行線上簽署。
+   * 使用雲端簽章，以由信任服務提供者代管的[數位識別碼](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html)進行線上簽署。
    * 使用智慧卡、USB權杖或檔案式數位ID，透過Adobe Acrobat或Reader下載檔案即可在本機執行。
 
 ### 為最適化表單啟用[!DNL Adobe Sign] {#enableadobsignforanadaptiveform}
@@ -160,7 +161,7 @@ ht-degree: 1%
 
 ### 選取[!DNL Adobe Sign] Cloud Service和簽署順序 {#selectadobesigncloudserviceforanadaptiveform}
 
-您可以為AEM [!DNL Forms]的執行個體設定多個[!DNL Adobe Sign]服務。 建議您為每個功能（人力資源、財務等）設定個別的服務集。 它可讓您更輕鬆地追蹤及報告已簽署的檔案。 例如，銀行擁有多個部門。 您可以為每個部門設定個別的設定，以便更妥善地追蹤檔案。
+您可以為AEM [!DNL Adobe Sign]的執行個體設定多個[!DNL Forms]服務。 建議您為每個功能（人力資源、財務等）設定個別的服務集。 它可讓您更輕鬆地追蹤及報告已簽署的檔案。 例如，銀行擁有多個部門。 您可以為每個部門設定個別的設定，以便更妥善地追蹤檔案。
 
 檔案也可以有多個簽署者。 例如，信用卡申請可以有多個應徵者。 在開始處理申請之前，銀行需要所有申請者的簽章。 對於多重簽署者情況，您可以選取以循序或同時順序簽署檔案。
 
@@ -174,9 +175,9 @@ ht-degree: 1%
 
    如果&#x200B;**[!UICONTROL Adobe Sign Cloud Service]**&#x200B;清單是空的，請依照[使用AEM Forms設定Adobe Sign](../../forms/using/adobe-sign-integration-adaptive-forms.md)文章中的說明來設定服務。
 
-   下拉式清單列出位於「工具> **[!UICONTROL 雲端服務]** > **[!UICONTROL Adobe Sign]**」的`global`資料夾中的雲端服務。 此外，當您建立最適化表單時，下拉式清單也會列出您在&#x200B;**[!UICONTROL 設定容器]**&#x200B;欄位中選取的資料夾中存在的雲端服務。
+   下拉式清單列出位於「工具> `global`雲端服務&#x200B;**[!UICONTROL >]** Adobe Sign **[!UICONTROL 」的]**&#x200B;資料夾中的雲端服務。 此外，當您建立最適化表單時，下拉式清單也會列出您在&#x200B;**[!UICONTROL 設定容器]**&#x200B;欄位中選取的資料夾中存在的雲端服務。
 
-1. 從&#x200B;**[!UICONTROL 簽署者可以簽署]**&#x200B;對話方塊中選取簽署順序。 [!DNL Adobe Sign]位歌手可以依序簽署最適化表單&#x200B;**&#x200B;** — 一個接著另一個簽署者，或&#x200B;**[!UICONTROL 同時]** — 任何順序。
+1. 從&#x200B;**[!UICONTROL 簽署者可以簽署]**&#x200B;對話方塊中選取簽署順序。 [!DNL Adobe Sign]位歌手可以依序簽署最適化表單&#x200B;**** — 一個接著另一個簽署者，或&#x200B;**[!UICONTROL 同時]** — 任何順序。
 
    依序由一位簽署者一次收到需要簽署的表單。 簽名者完成檔案簽名後，表單會傳送給下一個簽名者，依此類推。
 
@@ -222,7 +223,7 @@ ht-degree: 1%
 
 之後，新增[!DNL Adobe Sign]欄位至最適化表單、啟用表單容器中的[!DNL Adobe Sign]、選取[!DNL Adobe Sign] Cloud Service，然後新增[!DNL Adobe Sign]位簽署者，為最適化表單選取適當的提交動作。 如需最適化表單提交動作的詳細資訊，請參閱[設定提交動作](../../forms/using/configuring-submit-actions.md)。
 
-此外，只有在所有簽署者簽署表單後，才會提交啟用[!DNL Adobe Sign]的最適化表單。 您可以在Forms Portal的「等待簽署」區段中找到部分簽署的表單。 [!DNL Adobe Sign]設定服務會以[固定間隔](../../forms/using/adobe-sign-integration-adaptive-forms.md)持續輪詢[!DNL Adobe Sign]伺服器，以驗證簽章的狀態。 如果所有簽署者完成表單簽署，則會啟動提交動作服務並提交表單。 如果您使用自訂提交動作且表單使用[!DNL Adobe Sign]，請更新您的自訂提交動作以使用提交動作服務。
+此外，只有在所有簽署者簽署表單後，才會提交啟用[!DNL Adobe Sign]的最適化表單。 您可以在Forms Portal的「等待簽署」區段中找到部分簽署的表單。 [!DNL Adobe Sign]設定服務會以[!DNL Adobe Sign]固定間隔[持續輪詢](../../forms/using/adobe-sign-integration-adaptive-forms.md)伺服器，以驗證簽章的狀態。 如果所有簽署者完成表單簽署，則會啟動提交動作服務並提交表單。 如果您使用自訂提交動作且表單使用[!DNL Adobe Sign]，請更新您的自訂提交動作以使用提交動作服務。
 
 <!-- Remove when forms portal goes live
 >[!NOTE]
@@ -258,7 +259,7 @@ ht-degree: 1%
 
    使用以下專案將數位簽名套用至最適化表單：
 
-   * 雲端簽章：使用由信任服務提供者代管的[數位識別碼](https://helpx.adobe.com/tw/sign/kb/digital-certificate-providers.html)簽署。 雲端簽名選項不適用於適用於政府機關的Adobe Acrobat Sign Solutions。
+   * 雲端簽章：使用由信任服務提供者代管的[數位識別碼](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html)簽署。 雲端簽名選項不適用於適用於政府機關的Adobe Acrobat Sign Solutions。
 
    * Adobe Acrobat或Reader：使用Adobe Acrobat或Reader下載並開啟檔案，以使用智慧卡、USB權杖或檔案式數位ID簽名。
 
@@ -328,11 +329,11 @@ ht-degree: 1%
 **問：**&#x200B;您可以將最適化表單內嵌在其他最適化表單中。 內嵌的最適化表單可以啟用[!DNL Adobe Sign]嗎？
 **Ans：**&#x200B;否，AEM [!DNL Forms]不支援使用內嵌[!DNL Adobe Sign]已啟用的最適化表單以供簽署的最適化表單
 
-**問：**&#x200B;當我使用進階範本建立最適化表單並開啟以進行編輯時，出現錯誤訊息「電子簽章或簽署者設定不正確」。 隨即顯示。 如何解決錯誤訊息？
+**問：**當我使用進階範本建立最適化表單並開啟以進行編輯時，出現錯誤訊息「電子簽章或簽署者設定不正確」。 隨即顯示。 如何解決錯誤訊息？
 **Ans：**&#x200B;使用進階範本建立的最適化表單已設定為使用[!DNL Adobe Sign]。 若要解決錯誤，請建立並選取[!DNL Adobe Sign]雲端設定，然後為最適化表單設定[!DNL Adobe Sign]簽署者。
 
 **問：**&#x200B;我可以在最適化表單的靜態文字元件中使用[!DNL Adobe Sign]文字標籤嗎？
-**ANS：**&#x200B;是，您可以在文字元件中使用文字標籤，將[!DNL Adobe Sign]欄位新增至[記錄檔案](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) （僅限自動產生的記錄檔案選項）啟用的最適化表單。 若要瞭解建立文字標籤的程式和規則，請參閱[Adobe Sign檔案](https://helpx.adobe.com/tw/sign/using/text-tag.html)。 另請注意，調適型表單對文字標籤的支援有限。 您只能使用文字標籤來建立[Adobe Sign Block](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form)支援的欄位。
+**ANS：**&#x200B;是，您可以在文字元件中使用文字標籤，將[!DNL Adobe Sign]欄位新增至[記錄檔案](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) （僅限自動產生的記錄檔案選項）啟用的最適化表單。 若要瞭解建立文字標籤的程式和規則，請參閱[Adobe Sign檔案](https://helpx.adobe.com/sign/using/text-tag.html)。 另請注意，調適型表單對文字標籤的支援有限。 您只能使用文字標籤來建立[Adobe Sign Block](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form)支援的欄位。
 
 **問：** AEM [!DNL Forms]同時提供[!UICONTROL Adobe Sign區塊]和簽章步驟元件。 這些可否在最適化表單中同時使用？
 **Ans：**&#x200B;您可以在表單中同時使用這兩個元件。 以下是一些使用這些元件的建議：
@@ -350,20 +351,20 @@ ht-degree: 1%
 
 **解析度**
 
-* 檢查最適化表單中使用的Adobe Sign雲端服務[&#128279;](../../forms/using/adobe-sign-integration-adaptive-forms.md)的設定。
+* 檢查最適化表單中使用的Adobe Sign雲端服務[的](../../forms/using/adobe-sign-integration-adaptive-forms.md)設定。
 * 請確定用來設定[!DNL Adobe Sign]雲端服務的[!DNL Adobe Sign]伺服器上的API應用程式具有必要許可權。
 * 如果您使用多個[!DNL Adobe Sign]雲端服務，請將所有服務的&#x200B;**[!UICONTROL oAuth URL]**&#x200B;指向相同的&#x200B;**[!UICONTROL Adobe Sign Shard]**。
 
 * 使用個別的電子郵件地址來設定[!DNL Adobe Sign]帳戶，以及第一個簽署者和單一簽署者。 第一個簽署者或唯一簽署者（如果有單一簽署者）的電子郵件地址不能與設定AEM雲端服務所用的[!DNL Adobe Sign]帳戶相同。
 
-### 為已啟用[!DNL Adobe Sign]的最適化表單設定的AEM [!DNL Forms]工作流程未啟動 {#adobe-sign-aem-form-workflow-failures}
+### 為已啟用[!DNL Forms]的最適化表單設定的AEM [!DNL Adobe Sign]工作流程未啟動 {#adobe-sign-aem-form-workflow-failures}
 
 **問題**
 針對最適化表單設定[!DNL Adobe Sign]時，使用叫用[!DNL Forms]工作流程選項設定的工作流程不會啟動。
 
 **解析度**
 
-* 當您不使用簽章步驟或表單需要多人簽章時， AEM [!DNL Forms]伺服器會等待排程器確認所有人員都已簽署表單。 [!DNL Adobe Sign]排程器只會在所有人完成簽署後提交調適型表單，而工作流程只會在成功提交調適型表單後開始。 您可以縮短[排程器](adobe-sign-integration-adaptive-forms.md)的間隔，以快速間隔檢查表單簽署的狀態，並加快表單提交。
+* 當您不使用簽章步驟或表單需要多人簽章時， AEM [!DNL Adobe Sign]伺服器會等待排程器確認所有人員都已簽署表單。 [!DNL Forms]排程器只會在所有人完成簽署後提交調適型表單，而工作流程只會在成功提交調適型表單後開始。 您可以縮短[排程器](adobe-sign-integration-adaptive-forms.md)的間隔，以快速間隔檢查表單簽署的狀態，並加快表單提交。
 
 
 ## 相關文章 {#related-articles}

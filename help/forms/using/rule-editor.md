@@ -9,21 +9,22 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2c0a5185-7759-447a-b4c6-36feaa4a23d3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '6607'
+source-wordcount: '6615'
 ht-degree: 2%
 
 ---
 
 # 調適型表單規則編輯器{#adaptive-forms-rule-editor}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=zh-Hant) |
-| AEM 6.5 | 本文章 |
+## 套用至 {#applies-to}
+
+本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
+
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html)AEM Forms 。
 
 ## 概觀 {#overview}
 
@@ -72,13 +73,13 @@ Adobe Experience Manager Forms中的規則編輯器功能可讓表單業務使�
 
 * 建立規則時，經驗法則的典型做法是思考您所撰寫規則的物件內容。 假設您要根據使用者在欄位A中指定的值隱藏或顯示欄位B。在此案例中，您評估欄位A的條件，並且根據它傳回的值，觸發欄位B的動作。
 
-  因此，如果您在欄位B （您評估條件的物件）上撰寫規則，請使用condition-action建構或When規則型別。 同樣，在欄位 A 上使用作條件構造或顯示或隱藏規則類型。
+  因此，如果您在欄位B （您評估條件的物件）上撰寫規則，請使用condition-action建構或When規則型別。 同樣地，使用動作條件建構或在欄位A上顯示或隱藏規則型別。
 
 * 有時候，您需要根據一個條件執行多個動作。 在這種情況下，建議使用條件 — 動作建構。 在此建構中，您可以評估條件一次，並指定多個動作陳述式。
 
   例如，若要根據條件隱藏欄位B、C和D，以檢查使用者在欄位A中指定的值，請撰寫一個具有條件 — 動作建構的規則或欄位A上的規則型別時並指定動作來控制欄位B、C和D的可見性。否則，您需要在欄位B、C和D上設定三個個別規則，每個規則會檢查條件並顯示或隱藏個別欄位。 在此範例中，在一個物件上撰寫When規則型別比在三個物件上撰寫Show或Hide規則型別更有效率。
 
-* 若要根據多個條件來觸發動作，建議使用動作條件建構。 例如，要通過評估欄位 B、C 和 D 上的條件來顯示和隱藏欄位 A，請在欄位 A 上使用顯示或隱藏規則類型。
+* 若要根據多個條件來觸發動作，建議使用動作條件建構。 例如，若要藉由評估欄位B、C和D的條件來顯示和隱藏欄位A，請在欄位A上使用顯示或隱藏規則型別。
 * 如果規則包含適用於一個條件的一個動作，請使用條件 — 動作或動作條件建構。
 * 如果規則檢查條件，並在欄位中提供值或退出欄位時立即執行動作，則建議在評估條件的欄位上編寫具有條件 — 動作建構或When規則型別的規則。
 * 當使用者變更套用When規則的物件值時，會評估When規則中的條件。 不過，如果您希望動作在伺服器端變更時觸發（例如預先填入值），建議寫入在欄位初始化時觸發動作的When規則。
@@ -105,11 +106,11 @@ Adobe Experience Manager Forms中的規則編輯器功能可讓表單業務使�
 
 ### 條件 {#whenruletype}
 
-**When**&#x200B;規則型別遵循&#x200B;**condition-action-alternate action**&#x200B;規則建構，有時只遵循&#x200B;**condition-action**&#x200B;建構。 在此規則類型中，首先指定評估條件，然後在滿足條件時觸發作 （ `True`）。 使用 When 規則 類型時，可以使用多個 AND 和 OR 運算符來創建 [嵌套表達式](#nestedexpressions)。
+**When**&#x200B;規則型別遵循&#x200B;**condition-action-alternate action**&#x200B;規則建構，有時只遵循&#x200B;**condition-action**&#x200B;建構。 在此規則型別中，您先指定評估條件，接著指定滿足條件時觸發的動作( `True`)。 使用When規則型別時，您可以使用多個AND和OR運運算元來建立[巢狀運算式](#nestedexpressions)。
 
-使用 When 規則 類型，您可以評估表單對象的條件並對一個或多個物件執行作。
+使用When規則型別，您可以評估表單物件的條件，並對一或多個物件執行動作。
 
-簡而言之，典型的 When 規則 結構如下：
+簡單地說，典型的When規則結構如下：
 
 `When on Object A:`
 
@@ -117,9 +118,9 @@ Adobe Experience Manager Forms中的規則編輯器功能可讓表單業務使�
 
 `Then, do the following:`
 
-關於物件B的行動2;
+物件B上的動作2；
 和
-關於物件C的行動3;
+物件C上的動作3；
 
 _
 
@@ -200,27 +201,27 @@ _
 
 ### 設定值 {#set-value-of}
 
-**規則型別的**&#x200B;設定值可讓您依據指定的條件是否符合，來設定表單物件的值。 值可以設定為另一個物件的值、常值字串、從數學運算式或函式衍生的值、另一個物件的屬性值，或表單資料模型服務的輸出。 同樣地，您可以檢查元件、字串、屬性或衍生自函式或數學運算式的值的條件。
+**[!UICONTROL 規則型別的]**&#x200B;設定值可讓您依據指定的條件是否符合，來設定表單物件的值。 值可以設定為另一個物件的值、常值字串、從數學運算式或函式衍生的值、另一個物件的屬性值，或表單資料模型服務的輸出。 同樣地，您可以檢查元件、字串、屬性或衍生自函式或數學運算式的值的條件。
 
-規則型別的「設定值」不適用於所有表單物件，例如面板和工具列按鈕。 標準的「規則集值」具有下列結構：
-
-
-
-將物件 A 的值設定為：
-
-（字串 ABC）或
-（物件 屬性 物件 C 的 X）或
-（來自函數的值）或
-（值來自數學運算式）或
-（數據模型服務或Web服務的輸出值）;
-
-時間（選擇）：
-
-（條件 1 和條件 2 和條件 3） 為 TRUE;
+規則型別的「設定值」不適用於所有表單物件，例如面板和工具列按鈕。 標準的「設定值」規則具有以下結構：
 
 
 
-以下範例將欄位中的值`dependentid`作為輸入，並將欄位的值`Relation`設置為表單數據模型服務參數`getDependent`的`Relation`輸出。
+將物件A的值設為：
+
+（字串ABC）或
+（物件C的物件屬性X）或
+（函式中的值） OR
+（數學運算式的值） OR
+（資料模型服務或Web服務的輸出值）；
+
+當（選擇性）：
+
+（條件1和條件2和條件3）為TRUE；
+
+
+
+下列範例以`dependentid`欄位中的值作為輸入，並將`Relation`欄位的值設定為`Relation`表單資料模型服務的`getDependent`引數的輸出。
 
 ![set-value-web-service](assets/set-value-web-service.png)
 
@@ -372,13 +373,13 @@ _
 
 規則編輯器使用者介面左側的窗格包含兩個標籤 — **[!UICONTROL Forms物件]**&#x200B;和&#x200B;**[!UICONTROL 函式]**。
 
-「表單物件」標籤會顯示最適化表單中包含之所有物件的階層檢視。 它會顯示物件的標題和型別。 撰寫規則時，您可以將表單物件拖放至規則編輯器上。 創建或编辑規則時，將物件或函數拖放到佔位符中時，佔位符元會自動採用適當的值類型。
+「表單物件」標籤會顯示最適化表單中包含之所有物件的階層檢視。 它會顯示物件的標題和型別。 撰寫規則時，您可以將表單物件拖放至規則編輯器上。 將物件或函式拖放至預留位置時，在建立或編輯規則時，預留位置會自動採用適當的值型別。
 
-應用了一個或多個有效規則的表單物件用綠點標記。 如果無效應用於表單物件的任何規則，則表單對象將標有黃點。
+已套用一或多個有效規則的表單物件會以綠色圓點標示。 如果套用至表單物件的任何規則無效，則表單物件會標示為黃點。
 
-函數標籤包括一組內置函數，如總和、最小值、最大值、平均值、數量和驗證窗體。 您可以使用這些函數來計算可重複面板和表行中的值，並在編寫規則時在作和條件語句中使用它們。 不過，您也可以建立 [自定義函數](#custom-functions) 。
+函式索引標籤包含一組內建函式，例如Sum Of、Min Of、Max Of、Average Of、Number Of和Validate表單。 您可以使用這些函式計算可重複面板和表格列中的值，並在撰寫規則時在動作和條件陳述式中使用它們。 不過，您也可以建立[自訂函式](#custom-functions)。
 
-![函数標籤](assets/functions.png)
+![函式索引標籤](assets/functions.png)
 
 >[!NOTE]
 >
@@ -406,7 +407,7 @@ AEM Forms會追蹤您上次用來撰寫規則的規則編輯器模式。 當您�
 1. 按一下以編輯&#x200B;**[!UICONTROL 最適化表單和互動式通訊Web Channel設定]**。
 1. 從&#x200B;**[!UICONTROL 規則編輯器預設模式]**&#x200B;下拉式清單中選擇&#x200B;**[!UICONTROL 視覺化編輯器]**&#x200B;或&#x200B;**[!UICONTROL 程式碼編輯器]**
 
-1. 按一下「**[!UICONTROL 儲存]**」。
+1. 按一下&#x200B;**[!UICONTROL 儲存]**。
 
 ### F.完成和取消按鈕 {#f-done-and-cancel-buttons}
 
@@ -549,7 +550,7 @@ AEM Forms會追蹤您上次用來撰寫規則的規則編輯器模式。 當您�
 
 新增至表單超級使用者群組的使用者可使用程式碼編輯器。 規則編輯器會自動為您使用視覺化編輯器建立的任何規則產生JavaScript程式碼。 您可以從視覺化編輯器切換到程式碼編輯器以檢視產生的程式碼。 不過，如果您在程式碼編輯器中修改規則程式碼，則無法切換回視覺化編輯器。 如果您偏好在程式碼編輯器中而不是視覺化編輯器中撰寫規則，您可以在程式碼編輯器中重新撰寫規則。 視覺化程式碼編輯器切換器可協助您在兩種模式之間切換。
 
-程式碼編輯器JavaScript是適用性表單的運算式語言。 所有運算式都是有效的JavaScript運算式，並使用適用性表單指令碼模型API。 這些運算式會傳回某些型別的值。 如需最適化表單類別、事件、物件和公用API的完整清單，請參閱[最適化表單的JavaScript資料庫API參考](https://helpx.adobe.com/tw/experience-manager/6-5/forms/javascript-api/index.html)。
+程式碼編輯器JavaScript是適用性表單的運算式語言。 所有運算式都是有效的JavaScript運算式，並使用適用性表單指令碼模型API。 這些運算式會傳回某些型別的值。 如需最適化表單類別、事件、物件和公用API的完整清單，請參閱[最適化表單的JavaScript資料庫API參考](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)。
 
 如需有關在程式碼編輯器中編寫規則的准則的詳細資訊，請參閱[最適化表單運算式](/help/forms/using/adaptive-form-expressions.md)。
 
@@ -608,7 +609,7 @@ AEM Forms會追蹤您上次用來撰寫規則的規則編輯器模式。 當您�
 語法： `@return {type}`
 或者，您可以使用`@returns {type}`。
 新增函式的相關資訊，例如其目標。
-{type}代表函式的傳回型別。 允許的傳回型別為：
+  {type}代表函式的傳回型別。 允許的傳回型別為：
 
    1. 字串
    1. 數字
@@ -621,7 +622,7 @@ AEM Forms會追蹤您上次用來撰寫規則的規則編輯器模式。 當您�
 
   使用@this可參照寫入規則的最適化表單元件。
 
-  以下範例是根據欄位值。 在以下範例中，規則會隱藏表單中的欄位。 `this.value`的`this`部分參考寫入規則的基礎調適型表單元件。
+  以下範例是根據欄位值。 在以下範例中，規則會隱藏表單中的欄位。 `this`的`this.value`部分參考寫入規則的基礎調適型表單元件。
 
   ```
      /**
@@ -890,10 +891,10 @@ var c = {
 
 ![example-validate](assets/example-validate.png)
 
-視覺編輯者中的規則
+視覺化編輯器中的規則
 
-規則代碼編輯者中显示如下。
+此規則在程式碼編輯器中會顯示如下。
 
 ![example-validate-code](assets/example-validate-code.png)
 
-代碼編輯者中的規則
+程式碼編輯器中的規則

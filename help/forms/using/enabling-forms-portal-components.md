@@ -8,19 +8,20 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: a537fc63-b894-4e47-a71f-98ea07747baa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 4%
+source-wordcount: '341'
+ht-degree: 1%
 
 ---
 
 # 啟用表單入口網站元件 {#enabling-forms-portal-components}
 
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=zh-Hant) |
-| AEM 6.5 | 本文章 |
+## 套用至 {#applies-to}
+
+本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
+
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html)AEM Forms 。
 
 Forms Portal元件是現成可用的元件。 若要讓元件出現在AEM sidekick的可用元件清單中，請執行以下步驟：
 

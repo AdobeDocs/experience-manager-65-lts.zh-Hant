@@ -9,19 +9,20 @@ solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
 exl-id: 606cd19d-b244-4c4d-ab25-7709351dcfe0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 1%
+source-wordcount: '1052'
+ht-degree: 0%
 
 ---
 
 # 在入口網站上發佈表單簡介{#introduction-to-publishing-forms-on-a-portal}
 
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=zh-Hant) |
-| AEM 6.5 | 本文章 |
+## 套用至 {#applies-to}
+
+本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
+
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html)AEM Forms 。
 
 
 ## AEM Forms入口網站元件概觀 {#aem-forms-portal-components-overview}

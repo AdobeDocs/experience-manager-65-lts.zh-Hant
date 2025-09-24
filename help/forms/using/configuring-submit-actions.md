@@ -8,21 +8,22 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: a5aff5dd-912d-49ee-94e8-38cdbc396e5b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2592'
-ht-degree: 48%
+source-wordcount: '2602'
+ht-degree: 47%
 
 ---
 
 # 設定提交動作 {#configuring-the-submit-action}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=zh-Hant) |
-| AEM 6.5 | 本文章 |
+## 套用至 {#applies-to}
+
+本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
+
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html)AEM Forms 。
 
 
 ## 提交動作簡介 {#introduction-to-submit-actions}
@@ -53,7 +54,7 @@ ht-degree: 48%
 >[!NOTE]
 >
 >請確定[AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM資料夾
->「 」已存在。 需要目錄才能暫時儲存附件。 如果目錄不存在，請建立目錄。
+>>「 」已存在。 需要目錄才能暫時儲存附件。 如果目錄不存在，請建立目錄。
 
 >[!CAUTION]
 >
@@ -173,7 +174,7 @@ ht-degree: 48%
 
 >[!NOTE]
 >
->提交至Microsoft® SharePoint清單功能是在AEM 6.5 Forms Service Pack 19 (6.5.19.0)中引入。
+> 提交至Microsoft® SharePoint清單功能是在AEM 6.5 Forms Service Pack 19 (6.5.19.0)中引入。
 
 **[!UICONTROL 提交至SharePoint]**&#x200B;提交動作會將最適化表單與Microsoft® SharePoint儲存體連線。 您可以將表單資料檔案、附件或記錄檔案提交至連線的Microsoft® Sharepoint儲存體。
 
@@ -194,12 +195,12 @@ ht-degree: 48%
 1. 指定「**[!UICONTROL 標題]**」、「**[!UICONTROL 用戶端 ID]**」、「**[!UICONTROL 用戶端密碼]**」和「**[!UICONTROL OAuth URL]**」。如需有關如何擷取 OAuth URL 之用戶端 ID、用戶端密碼、租用戶 ID 的資訊，請參閱 [Microsoft® 文件](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)。
    * 您可以從 Microsoft® Azure 入口網站擷取應用程式的 `Client ID` 和 `Client Secret`。
    * 在 Microsoft® Azure 入口網站中，將重新導向 URI 新增為 `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`。以作者執行個體的 URL 取代 `[author-instance]`。
-   * 在&#x200B;**Microsoft® Graph**&#x200B;索引標籤中新增API許可權`offline_access`和`Sites.Manage.All`以提供讀取/寫入許可權。 在&#x200B;**Sharepoint**&#x200B;索引標籤中新增`AllSites.Manage`許可權，以便從遠端與SharePoint資料互動。
+   * 在`offline_access`Microsoft® Graph`Sites.Manage.All`索引標籤中新增API許可權&#x200B;**和**&#x200B;以提供讀取/寫入許可權。 在`AllSites.Manage`Sharepoint **索引標籤中新增**&#x200B;許可權，以便從遠端與SharePoint資料互動。
    * 使用 OAuth URL：`https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`。從 Microsoft® Azure 入口網站，以應用程式的 `tenant-id` 取代 `<tenant-id>`。
 
      >[!NOTE]
      >
-     >**用戶端密碼**&#x200B;欄位為必填或選用，取決於您的 Azure Active Directory 應用程式設定。如果您的應用程式設定為使用用戶端密碼，就必須提供用戶端密碼。
+     > **用戶端密碼**&#x200B;欄位為必填或選用，取決於您的 Azure Active Directory 應用程式設定。如果您的應用程式設定為使用用戶端密碼，就必須提供用戶端密碼。
 
 1. 按一下「**[!UICONTROL 連結]**」。連結成功後，就會顯示 `Connection Successful` 訊息。
 1. 從下拉式清單中選取&#x200B;**[!UICONTROL SharePoint網站]**&#x200B;和&#x200B;**[!UICONTROL SharePoint清單]**。
@@ -218,16 +219,16 @@ ht-degree: 48%
 
 >[!NOTE]
 >
->Microsoft® SharePoint清單不支援下列欄型別：
->* 影像欄
->* 中繼資料欄
->* 人員欄
->* 外部資料欄
+> Microsoft® SharePoint清單不支援下列欄型別：
+> * 影像欄
+> * 中繼資料欄
+> * 人員欄
+> * 外部資料欄
 
 
 >[!NOTE]
 >
->若要設定值，請[使用 AEM SDK 產生 OSGi 設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=zh-Hant#generating-osgi-configurations-using-the-aem-sdk-quickstart)，並[將設定部署至](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hant#deployment-process)您的 Cloud Service 執行個體。
+> 若要設定值，請[使用 AEM SDK 產生 OSGi 設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=zh-Hant#generating-osgi-configurations-using-the-aem-sdk-quickstart)，並[將設定部署至](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hant#deployment-process)您的 Cloud Service 執行個體。
 
 ## 最適化表單中的伺服器端重新驗證 {#server-side-revalidation-in-adaptive-form}
 

@@ -9,19 +9,20 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 23ffbaa6-1bd9-48c3-afa3-19737bb15de0
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1471'
-ht-degree: 1%
+source-wordcount: '1480'
+ht-degree: 0%
 
 ---
 
 # AEM Forms的架構和部署拓撲 {#architecture-and-deployment-topologies-for-aem-forms}
 
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html?lang=zh-Hant) |
-| AEM 6.5 | 本文章 |
+## 套用至 {#applies-to}
+
+本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
+
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html)AEM Forms 。
 
 ## 架構 {#architecture}
 

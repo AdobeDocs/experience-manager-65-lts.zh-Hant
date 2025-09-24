@@ -8,19 +8,20 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: e95c4cc4-1800-4bd8-a3c4-c6c868a1276d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '4159'
+source-wordcount: '4168'
 ht-degree: 0%
 
 ---
 
 # 使用表單資料模型{#work-with-form-data-model}
 
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html?lang=zh-Hant) |
-| AEM 6.5 | 本文章 |
+## 套用至 {#applies-to}
+
+本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
+
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html)AEM Forms 。
 
 ![資料整合](do-not-localize/data-integeration.png)
 
@@ -190,7 +191,7 @@ ht-degree: 0%
 
 ![使用者設定檔](assets/binding_crxde_user_profile_new.png)
 
-在此範例中，請在`grios`使用者的&#x200B;**[!UICONTROL 繫結值]**&#x200B;欄位中指定`profile.empid`。
+在此範例中，請在`profile.empid`使用者的&#x200B;**[!UICONTROL 繫結值]**&#x200B;欄位中指定`grios`。
 
 ![編輯引數](assets/edit_argument_user_profile_new.png)
 
@@ -454,7 +455,7 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
  <tbody> 
   <tr> 
    <td>限制</td> 
-   <td>描述</td> 
+   <td>說明</td> 
    <td>輸入資料來源</td> 
   </tr> 
   <tr> 

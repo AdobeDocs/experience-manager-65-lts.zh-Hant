@@ -5,21 +5,20 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: e9549ac9-0ada-4661-969a-709f0ed3b133
-source-git-commit: d9f6415aabcbc55af23824d9e0ab33c418f6761f
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 15%
+source-wordcount: '943'
+ht-degree: 14%
 
 ---
 
-# AEM Forms簡介{#introduction-to-aem-forms}
+# AEM Forms簡介 {#introduction-to-aem-forms}
 
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=zh-Hant) |
-| AEM 6.5 | 本文章 |
+## 套用至 {#applies-to}
 
-如需AEM Forms最新功能和增強功能的相關資訊，請參閱[AEM Forms的新功能](../../forms/using/whats-new.md)。
+本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
+
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html)AEM Forms 。
 
 ## 關於AEM Forms {#about-aem-forms}
 

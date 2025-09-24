@@ -8,19 +8,20 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 30b7b311-574d-4b01-8b48-0342c160d4d4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2073'
+source-wordcount: '2085'
 ht-degree: 2%
 
 ---
 
 # 設定資料來源{#configure-data-sources}
 
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=zh-Hant) |
-| AEM 6.5 | 本文章 |
+## 套用至 {#applies-to}
+
+本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
+
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html)AEM Forms 。
 
 
 ![資料整合](do-not-localize/data-integeration.png)
@@ -87,7 +88,7 @@ AEM Forms資料整合可讓您設定並連線至不同的資料來源。 下列�
 
    >[!NOTE]
    >
-   >上述範例中的&#x200B;**&#42;**&#x200B;代表CRXDE結構中AEM使用者設定檔中`profile/empLocation/`節點下的所有節點。 這表示表單資料模型可以存取`profile/empLocation/`節點下任何節點中存在的型別`string`的`city`屬性。 不過，包含指定屬性的節點必須遵循一致結構。
+   >上述範例中的&#x200B;**&#42;**&#x200B;代表CRXDE結構中AEM使用者設定檔中`profile/empLocation/`節點下的所有節點。 這表示表單資料模型可以存取`city`節點下任何節點中存在的型別`string`的`profile/empLocation/`屬性。 不過，包含指定屬性的節點必須遵循一致結構。
 
 1. 選取&#x200B;**[!UICONTROL 儲存]**&#x200B;以儲存組態。
 
@@ -151,7 +152,7 @@ AEM中的所有雲端服務設定都已整合到AEM存放庫的`/conf`資料夾�
 
 1. 以管理員身分登入[!DNL Experience Manager Forms]作者執行個體並移至[!DNL Experience Manager]網頁主控台組合。 預設URL為[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)。
 
-1. 選取REST資料來源&#x200B;**的**&#x200B;表單資料模型Http使用者端設定。
+1. 選取REST資料來源&#x200B;**[!UICONTROL 的]**&#x200B;表單資料模型Http使用者端設定。
 
 1. 在[!UICONTROL 表單資料模型REST資料來源]的Http使用者端設定對話方塊中：
 
@@ -161,7 +162,7 @@ AEM中的所有雲端服務設定都已整合到AEM存放庫的`/conf`資料夾�
 
    * 在&#x200B;**[!UICONTROL 保持連線]**&#x200B;欄位中指定持續性HTTP連線持續運作的持續時間。 預設值為15秒。
 
-   * 在&#x200B;**[!UICONTROL 連線逾時]**&#x200B;欄位中指定[!DNL Experience Manager Forms]伺服器等待連線建立的持續時間。 預設值為10秒。
+   * 在[!DNL Experience Manager Forms]連線逾時&#x200B;**[!UICONTROL 欄位中指定]**&#x200B;伺服器等待連線建立的持續時間。 預設值為10秒。
 
    * 在&#x200B;**[!UICONTROL 通訊端逾時]**&#x200B;欄位中，指定兩個資料封包之間閒置的最長時間。 預設值為30秒。
 
@@ -181,7 +182,7 @@ AEM中的所有雲端服務設定都已整合到AEM存放庫的`/conf`資料夾�
    * 選取驗證型別 — None、OAuth2.0（[授權代碼](https://oauth.net/2/grant-types/authorization-code/)、[使用者端認證](https://oauth.net/2/grant-types/client-credentials/)）、Basic Authentication、Custom Authentication、X509 Token或Mutual Authentication — 以存取SOAP服務，並相應地提供驗證的詳細資料。
 
      如果您選取&#x200B;**[!UICONTROL X509 Token]**&#x200B;作為驗證型別，請設定X509憑證。 如需詳細資訊，請參閱[設定憑證](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service)。
-在&#x200B;**[!UICONTROL 金鑰別名]**&#x200B;欄位中指定X509憑證的KeyStore別名。 在&#x200B;**[!UICONTROL 存留時間]**&#x200B;欄位中，指定驗證要求保持有效的時間（以秒為單位）。 或者，選取以簽署訊息本文或時間戳記標題，或兩者皆簽署。
+在**[!UICONTROL 金鑰別名]**&#x200B;欄位中指定X509憑證的KeyStore別名。 在&#x200B;**[!UICONTROL 存留時間]**&#x200B;欄位中，指定驗證要求保持有效的時間（以秒為單位）。 或者，選取以簽署訊息本文或時間戳記標題，或兩者皆簽署。
 
      如果您選取&#x200B;**[!UICONTROL 相互驗證]**&#x200B;做為驗證型別，請參閱[RESTful與SOAP Web服務的憑證式相互驗證](#mutual-authentication)。
 
@@ -194,7 +195,7 @@ OData服務由其服務根URL識別。 若要在AEM雲端服務中設定OData服
 >[!NOTE]
 >
 >表單資料模型支援[OData 4](https://www.odata.org/documentation/)版。
->如需設定Microsoft Dynamics 365 （線上或內部部署）的逐步指南，請參閱[Microsoft Dynamics OData設定](/help/forms/using/ms-dynamics-odata-configuration.md)。
+>>如需設定Microsoft Dynamics 365 （線上或內部部署）的逐步指南，請參閱[Microsoft Dynamics OData設定](/help/forms/using/ms-dynamics-odata-configuration.md)。
 
 1. 移至&#x200B;**[!UICONTROL 工具>雲端服務>資料來源]**。 選取以選取您要建立雲端設定的資料夾。
 

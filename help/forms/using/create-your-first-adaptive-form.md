@@ -5,19 +5,20 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: caa79def-4a29-4746-9a35-c362ea1c3c0c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 5%
+source-wordcount: '917'
+ht-degree: 4%
 
 ---
 
 # 教學課程：建立第一個最適化表單 {#tutorial-create-your-first-adaptive-form}
 
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=zh-Hant) |
-| AEM 6.5 | 本文章 |
+## 套用至 {#applies-to}
+
+本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
+
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html)AEM Forms 。
 
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
@@ -43,7 +44,7 @@ ht-degree: 5%
 
 ### 必備條件 {#prerequisite}
 
-* 設定[AEM作者執行個體](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html?lang=zh-Hant#author-and-publish-installs)
+* 設定[AEM作者執行個體](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * 在作者執行個體上安裝[AEM Forms附加元件](../../forms/using/installing-configuring-aem-forms-osgi.md)。
 * 從資料庫提供者取得JDBC資料庫驅動程式（JAR檔案）。 教學課程中的範例是以[!DNL MySQL]資料庫為基礎，並使用[!DNL Oracle's] [MySQL JDBC資料庫驅動程式](https://dev.mysql.com/downloads/connector/j/5.1.html)。
 
@@ -66,7 +67,7 @@ ht-degree: 5%
 
 [![請參閱指南](assets/see-the-guide-sm.png)](create-adaptive-form.md)
 
-## 步驟2：建立表單資料模型 {#step-create-form-data-model}
+## 步驟 2：建立表單資料模型 {#step-create-form-data-model}
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
@@ -113,7 +114,7 @@ ht-degree: 5%
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
-您可以將最適化表單發佈為獨立表單（單頁應用程式）、包含在AEM [網站頁面](/help/forms/using/embed-adaptive-form-aem-sites.md)中，或使用[Forms入口網站](../../forms/using/introduction-publishing-forms.md)在AEM [!DNL Site]上列出。
+您可以將最適化表單發佈為獨立表單（單頁應用程式）、包含在AEM [網站頁面](/help/forms/using/embed-adaptive-form-aem-sites.md)中，或使用[!DNL Site]Forms入口網站[在AEM ](../../forms/using/introduction-publishing-forms.md)上列出。
 
 目標：
 

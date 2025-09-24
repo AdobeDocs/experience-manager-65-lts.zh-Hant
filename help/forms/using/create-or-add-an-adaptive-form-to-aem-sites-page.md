@@ -6,27 +6,28 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 6e69ca67-883f-4079-96e2-5b7a9c843ada
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2884'
-ht-degree: 23%
+source-wordcount: '2893'
+ht-degree: 24%
 
 ---
 
 # 建立或新增調適型表單至 AEM Sites 頁面 {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM 6.5 | 本文章 |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=zh-Hant) |
+## 套用至 {#applies-to}
+
+本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
+
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html)AEM Forms 。
 
 透過 AEM Forms，您可以將調適型表單無縫整合到您的網頁中。 這可讓您的訪客方便填寫和提交表單，而無需離開他們所在的頁面。 這麼，他們便可毫不費力地使用網站的其他元素，同時積極與表單進行互動。
 
 您可以使用AEM頁面編輯器快速建立多個表單並新增到您的AEM Sites頁面。 使用AEM頁面編輯器，內容作者就能運用調適型表單元件的強大功能（包括動態行為、驗證、資料整合、產生記錄檔案和業務流程自動化），在Sites頁面內建立順暢的資料擷取體驗。 它也可讓您使用AEM Sites頁面的各種功能，例如，版本設定、目標定位、翻譯和多網站管理員。
 
-AEM Forms 會提供調適型表單內容和調適型表單 – 內嵌元件。 您可以使用調適型表單容器在體驗片段或AEM Sites頁面中建立表單，而調適型Forms — 內嵌元件可讓您新增現有的調適型表單或使用調適型Forms編輯器建立表單。
+AEM Forms 會提供調適型表單內容和調適型表單 – 嵌入元件。 您可以使用調適型表單容器在體驗片段或AEM Sites頁面中建立表單，而調適型Forms — 內嵌元件可讓您新增現有的調適型表單或使用調適型Forms編輯器建立表單。
 
 ![網站頁面中的最適化表單](/help/forms/using/assets/adaptive-form-in-sites-page.png)
 
@@ -63,18 +64,18 @@ AEM Forms 會提供調適型表單內容和調適型表單 – 內嵌元件。 �
 
 * 當您使用調適型表單容器建立或新增表單時，表單會透過 AEM Sites 翻譯流程進行翻譯和本地化。 對於每種語言，系統會產生網站頁面和相應表單的個別副本 (語言副本)，當內容作者在父頁面表單中修訂規則時，表單的所有語言副本必須進行相同的變更。 最適化表單容器也可讓您使用AEM Sites頁面的各種功能，例如，版本設定、目標定位、翻譯和多網站管理員。
 
-* 當您使用調適型表單 - 內嵌元件建立或新增表單時，表單會使用 AEM Forms 翻譯流程進行翻譯和本地化。 在這種情況下，Sites 頁面的所有語言副本中會維持和引用單一表單。 調適型表單-內嵌元件不會讓您存取 AEM Sites 頁面的各種功能，例如版本設定、目標定位、翻譯和多個網站管理員。
+* 當您使用調適型表單 - 嵌入元件建立或新增表單時，表單會使用 AEM Forms 翻譯流程進行翻譯和本地化。 在這種情況下，Sites 頁面的所有語言副本中會維持和引用單一表單。 調適型表單-嵌入元件不會讓您存取 AEM Sites 頁面的各種功能，例如版本設定、目標定位、翻譯和多個網站管理員。
 
 
 ## 開始之前 {#before-you-start}
 
 +++  為您的環境啟用調適型表單核心元件
 
-確定您的環境已啟用[最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=zh-Hant)。
+確定您的環境已啟用[最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en)。
 
-+++
++++ 
 
-+++  新增Adaptive Forms使用者端資料庫至您的AEM Sites頁面和體驗片段頁面元件
++++  新增Adaptive Forms使用者端資料庫至您的AEM Sites頁面和體驗片段頁面元件 
 
 若要啟用調適型表單容器元件的完整功能，請使用部署管道將 Customheaderlibs 和 Customfooterlibs 客戶端資料庫新增至您的 AEM Sites 頁面。 若要新增資料庫：
 
@@ -118,7 +119,7 @@ AEM Forms 會提供調適型表單內容和調適型表單 – 內嵌元件。 �
 
 1. 在您的環境中重複上述所有製作和發佈執行個體的步驟。
 
-+++
++++ 
 
 +++ 啟用最適化Forms容器
 
@@ -133,7 +134,7 @@ AEM Forms 會提供調適型表單內容和調適型表單 – 內嵌元件。 �
 
 +++
 
-## 建立最適化表單 {#create-an-adaptive-form-in-sites-editor-or-experience-fragment}
+## 建立自適應表單 {#create-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
 您可以直接在AEM Sites頁面或體驗片段中，從頭開始建立全新的表單，根據您的需求和設計偏好設定進行量身打造。 對於單次使用的表單，建議直接編寫到AEM Sites頁面，而體驗片段則適用於需要在您網站上的多個頁面中重複使用的表單。
 
@@ -202,12 +203,12 @@ AEM Forms 會提供調適型表單內容和調適型表單 – 內嵌元件。 �
 
 ## 設定表單的結構描述或表單資料模型 {#configure-schema-or-data-model-for-form}
 
-您可以使用表單資料模型將表單連線至資料Source，以根據使用者動作傳送及接收資料。 您也可以將表單連線至JSON結構描述，以預先定義的格式接收提交的資料。
+您可以使用「表單資料模型」將表單連線至「資料來源」，以根據使用者動作傳送及接收資料。您也可以將表單連線至JSON結構描述，以預先定義的格式接收提交的資料。
 
 將表單連線至結構描述或表單資料模型之前
 
-* [建立JSON結構描述並上傳至您的環境](adaptive-form-json-schema-form-model.md)
-* [建立表單資料模型](create-form-data-models.md)
+* [建立 JSON 結構描述並上傳至您的環境](adaptive-form-json-schema-form-model.md)
+* [建立「表單資料模型」](create-form-data-models.md)
 
 若要設定表單的JSON結構描述或表單資料模型：
 
@@ -220,7 +221,7 @@ AEM Forms 會提供調適型表單內容和調適型表單 – 內嵌元件。 �
    * 當您選取&#x200B;**[!UICONTROL 表單模型]**&#x200B;選項時，請使用&#x200B;**[!UICONTROL 選取表單資料模型]**&#x200B;選項來選取預先設定的表單資料模型。
    * 當您選取&#x200B;**[!UICONTROL 結構描述]**&#x200B;選項時，請使用&#x200B;**[!UICONTROL 結構描述]**&#x200B;選項為您的表單選取JSON結構描述。
 
-1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+1. 按一下&#x200B;**[!UICONTROL 完成]**。
 
 ## 設定表單的預填服務 {#configure-prefill-service-for-form}
 
@@ -231,14 +232,14 @@ AEM Forms 會提供調適型表單內容和調適型表單 – 內嵌元件。 �
 
 ### 使用表單資料模型預填服務 {#fdm-prefill-service}
 
-您可以使用表單資料模型預填服務，使用已設定的表單資料模型預填表單的欄位。 表單資料模型預填服務使用已設定的表單資料模型[&#128279;](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services)的Get服務來擷取資料。 若要針對最適化表單使用表單資料模型預填服務：
+您可以使用表單資料模型預填服務，使用已設定的表單資料模型預填表單的欄位。 表單資料模型預填服務使用已設定的表單資料模型[的](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services)Get服務來擷取資料。 若要針對最適化表單使用表單資料模型預填服務：
 
 1. 開啟包含最適化表單的AEM頁面編輯器或體驗片段。
 1. 開啟內容樹狀結構，然後選取裝載您最適化表單的&#x200B;**[!UICONTROL 最適化Forms容器]**。 一個AEM Sites頁面可以託管多個最適化Forms。 因此，請仔細選取正確的最適化Forms容器。
 1. 按一下最適化表單容器屬性![最適化表單容器屬性](/help/forms/using/assets/configure-icon.svg)圖示。 用來設定資料模型的最適化表單容器對話方塊隨即開啟。
    ![預填服務fdm aem sites頁面編輯器](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
 1. 選取表單資料模型。 開啟&#x200B;**[!UICONTROL 基本]**&#x200B;標籤。 在預填服務中，選取&#x200B;**[!UICONTROL Forms入口網站草稿預填服務]**。
-1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+1. 按一下&#x200B;**[!UICONTROL 完成]**。
 
 ## 在表單提交時將使用者重新導向至新使用者，或顯示感謝訊息
 

@@ -5,19 +5,20 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: ea10d2e1-9f17-4757-ae2e-67447ff0ad0a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 2%
+source-wordcount: '835'
+ht-degree: 0%
 
 ---
 
 # 設定「外出」設定 {#configure-out-of-office-settings}
 
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html?lang=zh-Hant) |
-| AEM 6.5 | 本文章 |
+## 套用至 {#applies-to}
+
+本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
+
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html)AEM Forms 。
 
 如果您計畫不在辦公室，則可以指定指定指定給您該期間之料號的變更。
 
@@ -40,8 +41,8 @@ ht-degree: 2%
 執行以下步驟來啟用您帳戶的郵件答錄機設定，並將您的收件匣專案委派給其他使用者：
 
 1. 登入您的AEM執行個體。 選取![收件匣](assets/bell.svg)圖示，然後選取&#x200B;**[!UICONTROL 全部檢視]**。 您的收件匣專案清單隨即顯示。
-1. 選取&#x200B;**[!UICONTROL 建立]**&#x200B;按鈕旁的![檢視選擇器](assets/viewlist.svg)或![檢視選擇器](assets/calendar.svg)圖示，並選取&#x200B;**[!UICONTROL 設定]**。 設定對話方塊隨即顯示。
-1. 開啟[設定]對話方塊上的[外出] **&#x200B;**&#x200B;索引標籤。
+1. 選取![建立](assets/viewlist.svg)按鈕旁的![檢視選擇器](assets/calendar.svg)或&#x200B;**[!UICONTROL 檢視選擇器]**&#x200B;圖示，並選取&#x200B;**[!UICONTROL 設定]**。 設定對話方塊隨即顯示。
+1. 開啟[設定]對話方塊上的[外出] ****&#x200B;索引標籤。
 1. 選取&#x200B;**[!UICONTROL 啟用/停用]**&#x200B;按鈕以啟用「外出」設定。
 1. 指定設定的&#x200B;**[!UICONTROL 開始時間]**&#x200B;和&#x200B;**[!UICONTROL 結束時間]**。 專案只會在指定的期間內委派。 將&#x200B;**[!UICONTROL 結束時間]**&#x200B;欄位保留空白以委派專案無限期。
 1. 選取&#x200B;**[!UICONTROL 在此期間]**&#x200B;轉寄我的專案核取方塊。 如果您未選取選項也未指定受託人，則您的專案不會轉寄給任何使用者。 雖然您離開並啟用了設定，但專案仍會保留在您的「收件匣」中。

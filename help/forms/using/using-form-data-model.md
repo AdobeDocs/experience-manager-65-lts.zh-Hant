@@ -8,19 +8,20 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 900ec6cd-d780-46eb-8ab1-907e563d81d7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1268'
-ht-degree: 2%
+source-wordcount: '1277'
+ht-degree: 1%
 
 ---
 
 # 使用表單資料模型{#use-form-data-model}
 
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html?lang=zh-Hant) |
-| AEM 6.5 | 本文章 |
+## 套用至 {#applies-to}
+
+本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
+
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html)AEM Forms 。
 
 
 ![hero-image](do-not-localize/data-integration.png)

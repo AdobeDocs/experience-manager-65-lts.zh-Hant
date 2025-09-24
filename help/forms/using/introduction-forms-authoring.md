@@ -9,19 +9,20 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: a1791374-d05c-4f60-b178-152a7bc06c45
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '3142'
-ht-degree: 55%
+source-wordcount: '3151'
+ht-degree: 54%
 
 ---
 
 # 製作調適型表單簡介 {#introduction-to-authoring-adaptive-forms}
 
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html?lang=zh-Hant) |
-| AEM 6.5 | 本文章 |
+## 套用至 {#applies-to}
+
+本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
+
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html)AEM Forms 。
 
 
 ## 概觀 {#overview}
@@ -152,11 +153,11 @@ XML 和 JSON 結構描述表示組織的後端系統產生或使用資料的結�
   </tr>
   <tr>
    <td>電子郵件</td>
-   <td><p>新增欄位以擷取電子郵件地址。電子郵件元件預設會使用以下規則運算式驗證電子郵件地址。</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>新增欄位以擷取電子郵件地址。電子郵件元件預設會使用以下規則運算式驗證電子郵件地址。</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>檔案附件</td>
-   <td><p>新增按鈕，讓使用者可瀏覽支援檔案並將其附加至表單。 您可以將多個檔案附加至「檔案」附件元件。 您也可以在元件的屬性瀏覽器中，為附件指定&#x200B;**[!UICONTROL 檔案大小上限]**&#x200B;和&#x200B;**[!UICONTROL 支援的檔案型別]**。 </p> <p><strong> 注意： </strong><ul> <li> 元件不支援附加檔案名稱(.)開頭為字元，且包含\ / ： * ？ 「 &lt; &gt; | ； % $，或包含保留給Windows作業系統（如nul、prn、con、lpt或com）的特殊檔案名稱。 </li> <li> 若要將多個檔案附加至Apple Safari瀏覽器中開啟的檔案附件元件，請逐一選取並附加檔案。 您無法一次選取並附加多個檔案。</li> <li>「檔案附件」元件支援為Adobe Sign啟用的調適型表單中預先定義的檔案格式集。 如需詳細資訊，請參閱<a href="https://helpx.adobe.com/tw/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">支援的檔案格式</a>。 </li></ul></p> </td>
+   <td><p>新增按鈕，讓使用者可瀏覽支援檔案並將其附加至表單。 您可以將多個檔案附加至「檔案」附件元件。 您也可以在元件的屬性瀏覽器中，為附件指定**[！UICONTROL檔案大小上限]**和**[！UICONTROL支援的檔案型別]**。 </p> <p><strong> 注意： </strong><ul> <li> 元件不支援附加檔案名稱(.)開頭為字元，且包含\ / ： * ？ 「 &lt; &gt; | ； % $，或包含保留給Windows作業系統（如nul、prn、con、lpt或com）的特殊檔案名稱。 </li> <li> 若要將多個檔案附加至Apple Safari瀏覽器中開啟的檔案附件元件，請逐一選取並附加檔案。 您無法一次選取並附加多個檔案。</li> <li>「檔案附件」元件支援為Adobe Sign啟用的調適型表單中預先定義的檔案格式集。 如需詳細資訊，請參閱<a href="https://helpx.adobe.com/tw/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">支援的檔案格式</a>。 </li></ul></p> </td>
   </tr>
   <tr>
    <td>檔案附件清單</td>

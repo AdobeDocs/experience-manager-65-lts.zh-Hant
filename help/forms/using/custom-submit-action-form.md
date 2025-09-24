@@ -5,19 +5,20 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components,Form Data Model
 exl-id: dc3bd697-5b1a-4efe-9554-c6aa1575c1c0
-source-git-commit: 98097c29b1b9cfb436f9431e8b7dca6e6a58634a
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1543'
-ht-degree: 1%
+source-wordcount: '1544'
+ht-degree: 0%
 
 ---
 
 # 撰寫最適化表單的自訂提交動作{#writing-custom-submit-action-for-adaptive-forms}
 
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html?lang=zh-Hant) |
-| AEM 6.5 | 本文章 |
+## 套用至 {#applies-to}
+
+本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
+
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html)AEM Forms 。
 
 調適型表單需要提交動作來處理使用者指定的資料。 提交動作會決定使用最適化表單提交之資料所執行的工作。 Adobe Experience Manager (AEM)包含[立即可用的提交動作](../../forms/using/configuring-submit-actions.md)，可示範您可使用使用者提交的資料執行的自訂工作。 例如，您可以執行工作，例如傳送電子郵件或儲存資料。
 
@@ -89,7 +90,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 ## 提交動作 {#submit-action}
 
-提交動作是sling：Folder，包含下列專案：
+提交動作是包含以下專案的sling:Folder：
 
 * **addfields.jsp**：此指令碼提供在轉譯期間新增至HTML檔案的動作欄位。 使用此指令碼在post.POST.jsp指令碼中新增提交期間所需的隱藏輸入引數。
 * **dialog.xml**：此指令碼類似於CQ元件對話方塊。 它提供作者自訂的設定資訊。 當您選取提交動作時，欄位會顯示在「最適化表單編輯」對話方塊的「提交動作」索引標籤中。
@@ -98,25 +99,25 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
    * **guideComponentType**，型別為String，值為&#x200B;**fd/af/components/guidesubmittype**
    * **guideDataModel**，型別為String，其指定適用提交動作的適用適用最適化表單的型別。 XFA型最適化表單支援&#x200B;**xfa**，而XSD型最適化表單支援&#x200B;**xsd**。 不使用XDP或XSD的最適化表單支援&#x200B;**basic**。 若要顯示多種最適化表單型別的動作，請新增對應的字串。 以逗號分隔每個字串。 例如，若要讓動作顯示在XFA和XSD型最適化表單上，請分別指定值&#x200B;**xfa**&#x200B;和&#x200B;**xsd**。
 
-   * **jcr：description**&#x200B;屬於字串型別。 此屬性的值會顯示在「最適化表單編輯」對話方塊之「提交動作」索引標籤的「提交」動作清單中。 現成的動作存在於CRX存放庫中的位置&#x200B;**/libs/fd/af/components/guidesubmittype**。
+   * **jcr:description**&#x200B;屬於字串型別。 此屬性的值會顯示在「最適化表單編輯」對話方塊之「提交動作」索引標籤的「提交」動作清單中。 現成的動作存在於CRX存放庫中的位置&#x200B;**/libs/fd/af/components/guidesubmittype**。
 
 ## 建立自訂提交動作 {#creating-a-custom-submit-action}
 
-執行以下步驟來建立自訂提交動作，將資料儲存至CRX存放庫，然後傳送電子郵件給您。 最適化表單包含立即可用的提交動作存放區內容（已棄用），可將資料儲存至CRX存放庫。 此外，CQ還提供可用於傳送電子郵件的[郵件](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant) API。 在使用Mail API之前，請透過系統主控台[設定](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant&wcmmode=disabled) Day CQ Mail服務。 您可以重複使用「儲存內容（已棄用）」動作，將資料儲存在存放庫中。 存放區內容（已棄用）動作可在CRX存放庫中的/libs/fd/af/components/guidessubmittype/store位置取得。
+執行以下步驟來建立自訂提交動作，將資料儲存至CRX存放庫，然後傳送電子郵件給您。 最適化表單包含立即可用的提交動作存放區內容（已棄用），可將資料儲存至CRX存放庫。 此外，CQ還提供可用於傳送電子郵件的[郵件](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant) API。 在使用Mail API之前，請透過系統主控台[設定](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&wcmmode=disabled) Day CQ Mail服務。 您可以重複使用「儲存內容（已棄用）」動作，將資料儲存在存放庫中。 存放區內容（已棄用）動作可在CRX存放庫中的/libs/fd/af/components/guidessubmittype/store位置取得。
 
-1. 登入CRXDE Lite，網址為https://&lt;server>：&lt;port>/crx/de/index.jsp。 在/apps/custom_submit_action資料夾中建立具有sling：Folder屬性並命名為store_and_mail的節點。 建立custom_submit_action資料夾（如果尚未存在）。
+1. 登入CRXDE Lite，網址為https://&lt;server>：&lt;port>/crx/de/index.jsp。 在/apps/custom_submit_action資料夾中建立具有屬性sling:Folder和名稱store_and_mail的節點。 建立custom_submit_action資料夾（如果尚未存在）。
 
-   ![描述使用屬性sling：Folder](assets/step1.png)建立節點的熒幕擷圖
+   ![描述使用屬性sling:Folder](assets/step1.png)建立節點的熒幕擷圖
 
 1. **提供必要設定欄位。**
 
-   新增存放區動作所需的設定。 將存放區動作的&#x200B;**cq：dialog**&#x200B;節點從/libs/fd/af/components/guidesubmittype/store複製到/apps/custom_submit_action/store_and_email的動作資料夾。
+   新增存放區動作所需的設定。 將存放區動作的&#x200B;**cq:dialog**&#x200B;節點從/libs/fd/af/components/guidesubmittype/store複製到/apps/custom_submit_action/store_and_email的動作資料夾。
 
    ![熒幕擷圖顯示對話方塊節點複製到動作資料夾](assets/step2.png)
 
 1. **提供設定欄位，以提示作者設定電子郵件。**
 
-   最適化表單也提供電子郵件動作，可向使用者傳送電子郵件。 根據您的需求自訂此動作。 導覽至/libs/fd/af/components/guidessubmittype/email/dialog。 將cq：dialog節點內的節點複製到提交動作(/apps/custom_submit_action/store_and_email/dialog)的cq：dialog節點。
+   最適化表單也提供電子郵件動作，可向使用者傳送電子郵件。 根據您的需求自訂此動作。 導覽至/libs/fd/af/components/guidessubmittype/email/dialog。 將cq:dialog節點內的節點複製到提交動作(/apps/custom_submit_action/store_and_email/dialog)的cq:dialog節點。
 
    ![自訂電子郵件動作](assets/step3.png)
 
@@ -128,7 +129,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
    * **guideDataModel**，型別為&#x200B;**字串**，值為&#x200B;**xfa， xsd， basic**
 
-   * **jcr：description**，型別為&#x200B;**String**，值為&#x200B;**存放區與電子郵件動作**
+   * **jcr:description**，型別為&#x200B;**字串**，值為&#x200B;**存放區與電子郵件動作**
 
 1. 開啟任何最適化表單。 按一下&#x200B;**開始**&#x200B;旁的&#x200B;**編輯**&#x200B;按鈕，開啟最適化表單容器的&#x200B;**編輯**&#x200B;對話方塊。 新動作會顯示在&#x200B;**提交動作**&#x200B;索引標籤中。 選取&#x200B;**存放區和電子郵件動作**&#x200B;會顯示對話方塊節點中新增的組態。
 

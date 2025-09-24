@@ -9,19 +9,20 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 03430815-6459-469c-b3dd-4cd83b9eec5f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 2%
+source-wordcount: '1675'
+ht-degree: 1%
 
 ---
 
 # 建立表單入口網站頁面{#creating-a-forms-portal-page}
 
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=zh-Hant) |
-| AEM 6.5 | 本文章 |
+## 套用至 {#applies-to}
+
+本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
+
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html)AEM Forms 。
 
 Forms入口網站元件可讓網頁開發人員在利用Adobe Experience Manager (AEM)編寫的網站上建立及自訂表單入口網站。 如需快速瞭解表單入口網站，請參閱[在入口網站上發佈表單的簡介](../../forms/using/introduction-publishing-forms.md)。
 
@@ -67,9 +68,9 @@ Document Services元件類別底下提供的Search &amp; Lister元件可用來�
 <table>
  <tbody>
   <tr>
-   <th>定位符號</th>
+   <th>標籤</th>
    <th>設定</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td><span class="uicontrol"><strong>資產檔案夾</strong></code></td>
@@ -77,7 +78,7 @@ Document Services元件類別底下提供的Search &amp; Lister元件可用來�
    <td>設定使用AEM Forms UI上傳資產的資料夾。 預設情況下，其中會列出所有上傳的資產。 如需AEM Forms UI的詳細資訊，請參閱<a href="../../forms/using/introduction-managing-forms.md" target="_blank">管理表單簡介</a>。</td>
   </tr>
   <tr>
-   <td><p><span class="uicontrol"><strong>顯示區</strong></code></p> </td>
+   <td><p><span class="uicontrol"><strong>顯示器</strong></code></p> </td>
    <td>標題文字</td>
    <td>搜尋與清單元件的標題。 預設標題為<strong>Forms入口網站。</strong></td>
   </tr>
@@ -114,7 +115,7 @@ Document Services元件類別底下提供的Search &amp; Lister元件可用來�
   <tr>
    <td> </td>
    <td>Of 文字</td>
-   <td><p>以指定的文字（第1 <strong>頁，共</strong>51頁）取代</strong>的<strong>字。 預設值為<strong>個，共</strong>個。</p> <p>例如，如果您在此欄位中指定<strong> / </strong>，文字會變更為第1頁<strong> / </strong>51。</p> </td>
+   <td><p>以指定的文字（第1 <strong>頁，共</strong>51頁）取代<strong>的</strong>字。 預設值為<strong>個，共</strong>個。</p> <p>例如，如果您在此欄位中指定<strong> / </strong>，文字會變更為第1頁<strong> / </strong>51。</p> </td>
   </tr>
   <tr>
    <td><span class="uicontrol"><strong>表單連結</strong></code></td>

@@ -9,19 +9,20 @@ feature: Document Services,Reader Extensions, Forms Service,PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 03e87c5a-c106-4b4c-9b42-8ce7a04d9c0c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 1%
+source-wordcount: '1422'
+ht-degree: 0%
 
 ---
 
 # AEM檔案服務概觀{#overview-of-aem-document-services}
 
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=zh-Hant) |
-| AEM 6.5 | 本文章 |
+## 套用至 {#applies-to}
+
+本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
+
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html)AEM Forms 。
 
 
 AEM檔案服務是一組OSGi服務，用於建立、彙編和保護PDF檔案。 檔案服務包含下列服務：

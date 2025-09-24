@@ -10,19 +10,20 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 1681e92b-2d88-4b10-a700-a516aa5a02c8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 6%
+source-wordcount: '298'
+ht-degree: 2%
 
 ---
 
 # OSGi群組和許可權上的AEM Forms{#aem-forms-on-osgi-groups-and-privileges}
 
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html?lang=zh-Hant) |
-| AEM 6.5 | 本文章 |
+## 套用至 {#applies-to}
+
+本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
+
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html)AEM Forms 。
 
 您可以[建立群組](/help/sites-administering/user-group-ac-admin.md#group-administration)，並將原則和[使用者](/help/sites-administering/user-group-ac-admin.md#user-administration)指派給Adobe Experience Manager (AEM)中的群組。 這些原則控制屬於群組之使用者的許可權。
 

@@ -5,19 +5,20 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: User, Developer
 exl-id: 13d84b04-dab6-453f-bc0d-62a5f557c4f2
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '7604'
+source-wordcount: '7613'
 ht-degree: 0%
 
 ---
 
 # OSGi上的Forms中心工作流程 — 步驟參考 {#forms-centric-workflow-on-osgi-step-reference}
 
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference) |
-| AEM 6.5 | 本文章 |
+## 套用至 {#applies-to}
+
+本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
+
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference)AEM Forms 。
 
 您可以使用工作流程模型，將商業邏輯轉換為自動化重複式處理。 模型可協助您定義並執行一系列步驟。 您也可以定義模型屬性，例如工作流程是暫時的或使用多個資源。 您可以[在模型中加入各種AEM工作流程步驟，以達成商業邏輯](/help/sites-developing/workflows-models.md#extending-aem)。
 
@@ -72,7 +73,7 @@ Forms Workflow步驟會在AEM工作流程中執行AEM Forms專屬的操作。 �
       * **選擇輸入JSON：**&#x200B;使用相對於承載或儲存在Document、JSON或表單資料模型資料型別變數中的路徑來選取輸入JSON檔案。 如果您從「型別」下拉式清單中選取「互動式通訊代理程式UI」或「互動式通訊Web Channel檔案」，即可使用此選項。
       * **選擇自訂預填服務：**&#x200B;選取預填服務以擷取資料，並預填互動式通訊Web Channel檔案或代理程式UI。
       * **使用以上選取之互動式通訊的預填服務：**&#x200B;使用此選項以使用互動式通訊下拉式清單中定義的互動式通訊的預填服務。
-      * **要求屬性對應：**&#x200B;使用[要求屬性對應]區段來定義要求屬性[&#128279;](../../forms/using/work-with-form-data-model.md#bindargument)的名稱和值。 根據請求中指定的屬性名稱和值從資料來源擷取詳細資料。 您可以使用常值或String資料型別的變數來定義請求屬性值。\
+      * **要求屬性對應：**&#x200B;使用[要求屬性對應]區段來定義要求屬性[的](../../forms/using/work-with-form-data-model.md#bindargument)名稱和值。 根據請求中指定的屬性名稱和值從資料來源擷取詳細資料。 您可以使用常值或String資料型別的變數來定義請求屬性值。\
         您必須從「型別」下拉式清單中選取「互動式通訊代理程式UI」或「互動式通訊Web Channel檔案」，才能使用預填服務和要求屬性對應選項。
 
 * **提交的資訊：**&#x200B;下列欄位可作為工作的輸出位置：
@@ -88,9 +89,9 @@ Forms Workflow步驟會在AEM工作流程中執行AEM Forms專屬的操作。 �
 * **受指派人>指派選項：**&#x200B;指定將工作指派給使用者的方法。 您可以使用「參與者選擇器」指令碼動態地將任務指派給使用者或群組，或將任務指派給特定的AEM使用者或群組。
 * **參與者選擇器：**&#x200B;在[指派選項]欄位中選取&#x200B;**動態至使用者或群組**&#x200B;選項時，即可使用此選項。 您可以使用ECMAScript或服務來動態選取使用者或群組。
 
-* **參與者：**&#x200B;在&#x200B;**參與者選擇器**&#x200B;欄位中選取&#x200B;**[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]**&#x200B;選項時，即可使用此欄位。 欄位可讓您為RandomParticipantChooser選項選取使用者或群組。
+* **參與者：**&#x200B;在&#x200B;**[!UICONTROL 參與者選擇器]**&#x200B;欄位中選取&#x200B;**com.adobe.granite.workflow.core.process.RandomParticipantChooser**&#x200B;選項時，即可使用此欄位。 欄位可讓您為RandomParticipantChooser選項選取使用者或群組。
 
-* **受指派人：**&#x200B;在&#x200B;**參與者選擇器**&#x200B;欄位中選取&#x200B;**[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]**&#x200B;時，該欄位可供使用。 欄位可讓您選取字串資料型別的變數以定義受託人。
+* **受指派人：**&#x200B;在&#x200B;**[!UICONTROL 參與者選擇器]**&#x200B;欄位中選取&#x200B;**com.adobe.fd.workspace.step.service.VariableParticipantChooser**&#x200B;時，該欄位可供使用。 欄位可讓您選取字串資料型別的變數以定義受託人。
 
 * **引數：**&#x200B;在「參與者選擇器」欄位中選取RandomParticipantChoose指令碼以外的指令碼時，該欄位可供使用。 欄位可讓您針對「參與者選擇器」欄位中所選的指令碼，提供以逗號分隔的引數清單。
 
@@ -260,7 +261,7 @@ Forms Workflow步驟會在AEM工作流程中執行AEM Forms專屬的操作。 �
    * **從工作流程中繼資料擷取：**&#x200B;當要使用的值儲存在工作流程中繼資料屬性時，請使用選項。 例如，emailAddress。
    * **[!UICONTROL 相對於承載]**：使用選項來擷取儲存在相對於承載路徑中的檔案附件。 選取選項並指定包含檔案附件的資料夾名稱，或在文字方塊中指定檔案附件名稱。
 
-     例如，如果CRX存放庫中的「相對於有效負載」資料夾在`attachment\attachment-folder`位置包含檔案附件，請在選取「**[!UICONTROL 相對於有效負載]**」選項後，在文字方塊中指定`attachment\attachment-folder`。
+     例如，如果CRX存放庫中的「相對於有效負載」資料夾在`attachment\attachment-folder`位置包含檔案附件，請在選取「`attachment\attachment-folder`相對於有效負載&#x200B;**[!UICONTROL 」選項後，在文字方塊中指定]**。
    * **JSON點標籤法：**&#x200B;當要使用的值位於JSON檔案中時，請使用選項。 例如，insurance.customerDetails.emailAddress。 JSON Dot Notation選項僅在選取「從輸入JSON對應輸入欄位」選項時可用。
    * **從輸入JSON對應輸入欄位：**&#x200B;指定JSON檔案的路徑，以從JSON檔案取得某些服務引數的輸入值。 JSON檔案的路徑可以是相對於裝載、絕對路徑，或者您可以使用JSON或表單資料模型型別的變數來選取輸入JSON檔案。
 

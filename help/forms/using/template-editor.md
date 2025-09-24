@@ -9,21 +9,22 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 6e909f87-4233-4158-a4e1-f0ee2ada366a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2039'
 ht-degree: 3%
 
 ---
 
 # 最適化表單範本{#adaptive-form-templates}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
-| 版本 | 文章連結 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html?lang=zh-Hant) |
-| AEM 6.5 | 本文章 |
+## 套用至 {#applies-to}
+
+本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
+
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html)AEM Forms 。
 
 
 
@@ -48,7 +49,7 @@ ht-degree: 3%
 1. 在範本主控台中，選取您已建立的資料夾中的&#x200B;**建立**。
 1. 在「挑選範本型別」區段中，選取&#x200B;**最適化表單範本**，然後選取&#x200B;**下一步**。
 
-1. 在[範本詳細資料]區段中，提供範本標題並選取[建立]。**&#x200B;**
+1. 在[範本詳細資料]區段中，提供範本標題並選取[建立]。****
 您可以提供說明和縮圖，以便在表單製作時選取建立的範本時看得到。
 
 1. 選取&#x200B;**完成**&#x200B;以返回主控台，或選取&#x200B;**開啟**&#x200B;以在編輯器中開啟範本。
@@ -63,8 +64,8 @@ ht-degree: 3%
    * **切換側面板**：可讓您顯示或隱藏側欄。
    * **頁面資訊**：可讓您指定發佈/取消發佈時間、縮圖、使用者端資料庫、頁面原則及頁面設計使用者端資料庫等資訊。
    * **模擬器**：可讓您模擬及自訂不同裝置的外觀。
-   * **圖層選擇器：**&#x200B;可讓您變更圖層。
-您可以選擇&#x200B;**結構**&#x200B;圖層或&#x200B;**初始內容**&#x200B;圖層。 結構圖層可讓您新增及自訂頁首與頁尾。 初始內容層可讓您自訂表單內容。
+   * **圖層選擇器：**可讓您變更圖層。
+您可以選擇**結構**&#x200B;圖層或&#x200B;**初始內容**&#x200B;圖層。 結構圖層可讓您新增及自訂頁首與頁尾。 初始內容層可讓您自訂表單內容。
 
    * **預覽：**&#x200B;讓您預覽範本在發佈時的外觀。 您可以使用「圖層選取器」和「預覽」來切換編輯和預覽模式。
 
@@ -172,7 +173,7 @@ ht-degree: 3%
 
 ## 匯入或匯出範本 {#importing-or-exporting-a-template}
 
-表單可與其範本搭配使用。 下載使用自訂範本建立的最適化表單時，不會下載範本。 當您在其他AEM Forms執行個體上匯入表單時，會匯入表單而不包含其範本。 如果表單已匯入，但其範本無法使用，則不會轉譯表單。 您可以封裝來自`https://<server>:<port>/crx/packmgr`中`/conf`節點的自訂範本，並將其連線您要上傳表單的AEM Forms執行個體。
+表單可與其範本搭配使用。 下載使用自訂範本建立的最適化表單時，不會下載範本。 當您在其他AEM Forms執行個體上匯入表單時，會匯入表單而不包含其範本。 如果表單已匯入，但其範本無法使用，則不會轉譯表單。 您可以封裝來自`/conf`中`https://<server>:<port>/crx/packmgr`節點的自訂範本，並將其連線您要上傳表單的AEM Forms執行個體。
 
 ## 使用範本建立最適化表單 {#creating-an-adaptive-form-using-the-template}
 
