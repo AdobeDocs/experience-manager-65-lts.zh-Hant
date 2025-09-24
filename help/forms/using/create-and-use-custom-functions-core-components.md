@@ -61,8 +61,8 @@ AEM Forms 6.5包含JavaScript函式，可讓您使用規則編輯器定義複雜
 
 >[!NOTE]
 >`[functionName]`是函式的名稱。 不允許空格。
->>`<Function Name>` 是Adaptive Forms規則編輯器中函式的顯示名稱。
->>如果函式名稱與函式本身的名稱相同，您可以在語法中省略`[functionName]`。
+>&#x200B;>`<Function Name>` 是Adaptive Forms規則編輯器中函式的顯示名稱。
+>&#x200B;>如果函式名稱與函式本身的名稱相同，您可以在語法中省略`[functionName]`。
 
 #### 參數
 

@@ -56,7 +56,7 @@ ht-degree: 16%
 
    >[!NOTE]
    >
-   >您可以執行步驟1-4以建立設定容器並在容器中建立[!DNL Adobe Sign]設定，或使用`global`工具&#x200B;**** hammer![ > ](assets/hammer.png)雲端服務&#x200B;**[!UICONTROL >]** Adobe Sign **[!UICONTROL 中的現有]**&#x200B;資料夾。 如果您在新的設定容器中建立設定，在建立最適化表單時，請確保在&#x200B;**[!UICONTROL 設定容器]**&#x200B;欄位中指定容器名稱。
+   >您可以執行步驟1-4以建立設定容器並在容器中建立[!DNL Adobe Sign]設定，或使用`global`工具&#x200B;**&#x200B;** hammer![ > ](assets/hammer.png)雲端服務&#x200B;**[!UICONTROL >]** Adobe Sign **[!UICONTROL 中的現有]**&#x200B;資料夾。 如果您在新的設定容器中建立設定，在建立最適化表單時，請確保在&#x200B;**[!UICONTROL 設定容器]**&#x200B;欄位中指定容器名稱。
 
    >[!NOTE]
    >
@@ -88,7 +88,7 @@ ht-degree: 16%
 
    其中：
 
-   **na1** 是指預設的資料庫分片。您可以修改資料庫分片的值。確保[!DNL  Adobe Acrobat Sign] Cloud Configurations 指向[正確的分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
+   **na1** 是指預設的資料庫分片。您可以修改資料庫分片的值。確保[!DNL &#x200B; Adobe Acrobat Sign] Cloud Configurations 指向[正確的分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
 
    >[!NOTE]
    >
@@ -237,7 +237,7 @@ ht-degree: 16%
 
    其中：
 
-   **na1** 是指預設的資料庫分片。您可以修改資料庫分片的值。確保[!DNL  Adobe Acrobat Sign] Cloud Configurations 指向[正確的分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
+   **na1** 是指預設的資料庫分片。您可以修改資料庫分片的值。確保[!DNL &#x200B; Adobe Acrobat Sign] Cloud Configurations 指向[正確的分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
 
    >[!NOTE]
    >

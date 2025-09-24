@@ -54,7 +54,7 @@ ht-degree: 47%
 >[!NOTE]
 >
 >請確定[AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM資料夾
->>「 」已存在。 需要目錄才能暫時儲存附件。 如果目錄不存在，請建立目錄。
+>&#x200B;>「 」已存在。 需要目錄才能暫時儲存附件。 如果目錄不存在，請建立目錄。
 
 >[!CAUTION]
 >
