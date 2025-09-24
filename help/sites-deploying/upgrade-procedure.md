@@ -11,7 +11,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 255ef365-0da5-4bc9-b099-2e3bc67dd25a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 57bf39aa914bddca05d526b46b581579965069d6
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 0%
@@ -25,12 +25,6 @@ ht-degree: 0%
 >由於大部分的Adobe Experience Manager (AEM)升級都會就地執行，因此升級作業需要製作層級的停機時間。 遵循這些最佳實務，您就能將發佈層級停機時間減少或消除。
 
 升級AEM環境時，您必須考慮升級作者環境或發佈環境之間方法上的差異，以將作者和一般使用者的停機時間減至最少。 此頁面概述升級AEM 6.x版本目前所執行AEM拓朴的高階程式。由於程式在製作和發佈層級，以及Mongo和TarMK型部署之間有所不同，因此每個層級和微核心都會列在單獨的區段中。 執行部署時，Adobe建議先升級作者環境、判斷是否成功，然後繼續發佈環境。
-
-<!--
->[!IMPORTANT]
->
->The downtime during the upgrade can be significally reduced by indexing the repository before performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)
--->
 
 ## TarMK作者階層 {#tarmk-author-tier}
 

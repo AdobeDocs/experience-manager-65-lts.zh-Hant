@@ -6,7 +6,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: 9e58e4c993929f792bd71bf70b3e64719e761b7f
+source-git-commit: 57bf39aa914bddca05d526b46b581579965069d6
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 0%
@@ -21,9 +21,7 @@ ht-degree: 0%
 
 ## 升級前步驟 {#pre-upgrade-steps}
 
-在執行升級之前，必須完成數個步驟。 如需詳細資訊，請參閱[升級程式碼和自訂](/help/sites-deploying/upgrading-code-and-customizations.md)和[升級前維護工作](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。 此外，請確定您的系統符合AEM 6.5 LTS [&#128279;](/help/sites-deploying/technical-requirements.md)的需求，並檢視[升級計畫考量事項](/help/sites-deploying/upgrade-planning.md)以及[分析器](/help/sites-deploying/pattern-detector.md)如何協助您估計複雜性。
-
-<!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
+在執行升級之前，必須完成數個步驟。 如需詳細資訊，請參閱[升級程式碼和自訂](/help/sites-deploying/upgrading-code-and-customizations.md)和[升級前維護工作](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。 此外，請確定您的系統符合AEM 6.5 LTS [的](/help/sites-deploying/technical-requirements.md)需求，並檢視[升級計畫考量事項](/help/sites-deploying/upgrade-planning.md)以及[分析器](/help/sites-deploying/pattern-detector.md)如何協助您估計複雜性。
 
 ## 移轉先決條件 {#migration-prerequisites}
 
@@ -171,8 +169,8 @@ Where `/path/to/datastore` represents the path to your File Datastore.
 
 1. 解壓縮S3聯結器（1.60.2版）並複製`crx-quickstart/install`下下列資料夾的內容，如下所示：
 
-   1. 複製`crx-quickstart/install/1`下的`com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/1`
-   1. 複製`crx-quickstart/install/15`下的`com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/15`
+   1. 複製`com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/1`下的`crx-quickstart/install/1`
+   1. 複製`com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/15`下的`crx-quickstart/install/15`
 
 現在，使用[決定正確的升級啟動命令](#determining-the-correct-upgrade-start-command)區段下的資訊，使用新命令來啟動AEM執行個體。
 

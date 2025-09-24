@@ -5,7 +5,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8c4ffb0e-b4dc-4a81-ac43-723754cbc0de
-source-git-commit: 9bf502146a309cd0d91f2aaa1778d5b550d424a8
+source-git-commit: 69033442fda82d9efdd1ba2f55a45173c8ffc6ec
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 1. Java相容性：必須安裝並設定AEM 6.5 LTS，才能與Java™ 17一起執行。 設定後，請啟動AEM執行個體，確認所有套件組合皆有效且執行中沒有任何問題
 1. 系統資源：確保有足夠的磁碟空間和記憶體可在移轉過程中處理這兩個存放庫
-1. Oak-upgrade工具：從[官方Maven存放庫](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade)下載`oak-upgrade` jar。 確保版本符合AEM 6.5 LTS中使用的Oak-core版本。 Oak-upgrade工具會在Oracle® Java™ 11或更新版本上執行
+1. Oak-upgrade工具：從`oak-upgrade`官方Maven存放庫[下載](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) jar。 確保版本符合AEM 6.5 LTS中使用的Oak-core版本。 Oak-upgrade工具會在Oracle® Java™ 11或更新版本上執行
 
 ## 逐步移轉程式 {#step-by-step-migration-process}
 
@@ -86,6 +86,6 @@ Checkpoints won't be copied, because no external datastore has been specified. T
 
 也可以忽略警告，但在這種情況下，儲存庫將在第一次啟動時完全重新索引。 這可能是一個漫長的過程，尤其是對於大型執行個體而言。 在重新索引過程完成之前，存放庫將不可用。 使用`--skip-checkpoints`選項隱藏警告。
 
-您也可以使用[離線重新索引](/help/sites-deploying/upgrade-offline-reindexing.md)，在啟動AEM之前先離線重新索引存放庫，避免在第一次啟動時完全重新索引。
+您也可以使用[離線重新索引](/help/sites-deploying/offline-reindexing.md)，在啟動AEM之前先離線重新索引存放庫，避免在第一次啟動時完全重新索引。
 
 如需Oak-upgrade工具和進階使用方式的詳細資訊，請參閱[正式檔案](https://jackrabbit.apache.org/oak/docs/migration.html)。
