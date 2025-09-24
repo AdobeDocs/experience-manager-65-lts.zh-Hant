@@ -18,7 +18,7 @@ ht-degree: 0%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference)AEM Forms 。
 
 您可以使用工作流程模型，將商業邏輯轉換為自動化重複式處理。 模型可協助您定義並執行一系列步驟。 您也可以定義模型屬性，例如工作流程是暫時的或使用多個資源。 您可以[在模型中加入各種AEM工作流程步驟，以達成商業邏輯](/help/sites-developing/workflows-models.md#extending-aem)。
 

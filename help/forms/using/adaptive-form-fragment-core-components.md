@@ -20,7 +20,7 @@ ht-degree: 9%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=zh-Hant)AEM Forms 。
 
 雖然每個表單都是為特定目的而設計，但大多數表單中都有一些常見的區段，例如提供個人詳細資訊，例如姓名和地址、家庭詳細資訊、收入詳細資訊。 每次建立新表單時，表單開發人員都必須建立這些通用區段。
 
@@ -32,7 +32,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
-> 您可以使用[表單片段元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment)的「設定」對話方塊和「設計」對話方塊，輕鬆自訂使用者的片段體驗。
+> 您可以使用[表單片段元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment)的「設定」對話方塊和「設計」對話方塊，輕鬆自訂使用者的片段體驗。
 
 
 ## 建立表單片段 {#create-a-fragment}
@@ -208,4 +208,4 @@ Perform the following steps to show complete fragments in forms:
 * [建立或自訂核心元件型最適化Forms的主題](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [建立核心元件型最適化Forms的範本](template-editor.md)
 * [建立最適化表單或新增最適化表單至AEM Sites頁面或體驗片段](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [範例主題範本和表單資料模型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+* [範例主題範本和表單資料模型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hant)

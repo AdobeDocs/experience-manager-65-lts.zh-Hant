@@ -18,7 +18,7 @@ ht-degree: 4%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=zh-Hant)AEM Forms 。
 
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
@@ -44,7 +44,7 @@ ht-degree: 4%
 
 ### 必備條件 {#prerequisite}
 
-* 設定[AEM作者執行個體](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
+* 設定[AEM作者執行個體](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html?lang=zh-Hant#author-and-publish-installs)
 * 在作者執行個體上安裝[AEM Forms附加元件](../../forms/using/installing-configuring-aem-forms-osgi.md)。
 * 從資料庫提供者取得JDBC資料庫驅動程式（JAR檔案）。 教學課程中的範例是以[!DNL MySQL]資料庫為基礎，並使用[!DNL Oracle's] [MySQL JDBC資料庫驅動程式](https://dev.mysql.com/downloads/connector/j/5.1.html)。
 
