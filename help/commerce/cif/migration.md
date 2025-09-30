@@ -5,7 +5,7 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 847c33c1-17d6-447a-9f2c-91f2a81a3f04
-source-git-commit: fdb84a17b3af7eaa76e5a7c30d21d7a601463278
+source-git-commit: 981b175b039fd7ffbddf558a77d2da2fed52ad79
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 4%
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 ## CIF附加元件
 
-可透過[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=commerce*&amp;2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;2_group.propertyvalues.operation=equals&amp;2_group.propertyvalues.0_values=target-version%3Aaem%2F6-5&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=16)取得CIF附加元件。 它是相容的，提供和適用於Experience Manager as a Cloud Service的CIF附加元件相同的功能。
+可透過[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=commerce*&2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&2_group.propertyvalues.operation=equals&2_group.propertyvalues.0_values=target-version%3Aaem%2F6-5-lts&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=16)取得CIF附加元件。 它是相容的，提供和適用於Experience Manager as a Cloud Service的CIF附加元件相同的功能。
 
 請參閱[開始使用AEM內容和Commerce](getting-started.md)。
 
