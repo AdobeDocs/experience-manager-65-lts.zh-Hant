@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 4e4d367b93f1e99cf076df14a15352f664890676
-workflow-type: ht
-source-wordcount: '7103'
-ht-degree: 100%
+source-git-commit: 08f9b6697e298689a91a9b31038f382a908acd5b
+workflow-type: tm+mt
+source-wordcount: '7319'
+ht-degree: 97%
 
 ---
 
@@ -448,6 +448,43 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 ### 升級 {#upgrade}
 
 * 如需升級程序的詳細資訊，請參閱[升級文件](/help/sites-deploying/upgrade.md)。
+
+#### AEM 6.5 LTS Service Pack升級的最佳作法
+
+<!-- THE INFORMATION UNDER THIS HEADING CAME FROM CQDOC-23078 -->
+
+**環境**
+適用於：安裝Service Pack 1 (SP1)的AEM 6.5 LTS （內部部署）客戶。 SP1會以Quickstart JAR形式提供。
+
+**這很重要的原因**
+AEM 6.5 LTS的SP1會以Quickstart JAR形式出貨，而非透過「封裝管理員」安裝的ZIP。 內部部署客戶可透過取代Quickstart JAR、解壓縮並重新啟動來進行升級。 此方法與Adobe的就地升級程式一致。
+
+**建議的升級流程（作者或發佈）**
+
+1. 驗證您的AEM 6.5 LTS執行個體是否健康且可存取。
+1. 從Software Distribution下載SP1 Quickstart JAR （例如`cq-quickstart-6.6.x.jar`）。
+1. 停止執行中的執行個體。
+1. 在AEM安裝目錄（`crx-quickstart/`以外）中，將先前的快速入門JAR取代為SP1 JAR。
+1. 解壓縮JAR：
+
+   ```java
+   java -jar cq-quickstart-6.6.x.jar -unpack
+   ```
+
+   （視需要調整棧積標幟。）
+
+1. 重新命名解壓縮的JAR以符合角色和連線埠，例如`cq-author-4502.jar`或`cq-publish-4503.jar`。
+1. 啟動AEM，並在UI （「說明>關於」）和記錄中確認升級。
+
+**良好的衛生**
+
+* 在生產前在低層/測試環境中執行升級。
+* 開始之前，請先進行完整、可還原的備份（儲存庫加上任何外部資料存放區）。
+* 檢閱Adobe的就地升級指導和技術要求（LTS建議使用Java 17/21）。
+
+>[!NOTE]
+>
+>以上所示的檔案名稱（例如，`cq-quickstart-6.6.x.jar`）會反映此LTS發行版本所觀察到的SP1 Quickstart成品命名；請一律使用您從Software Distribution下載的確切檔案名稱。
 
 ## 安裝與更新 {#install-update}
 
