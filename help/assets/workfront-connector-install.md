@@ -6,9 +6,9 @@ feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: dd6eec1e-fa63-410a-bcd3-61892861fd0c
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: cbcce32b78970bb4aae70f041b2f293a53348fad
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '455'
 ht-degree: 3%
 
 ---
@@ -17,18 +17,18 @@ ht-degree: 3%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=en) |
 | AEM 6.5 | 本文章 |
 
-在[!DNL Adobe Experience Manager]中擁有管理員存取許可權的使用者會安裝增強型聯結器。 安裝之前，請先檢閱平台支援和聯結器[&#128279;](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience)的其他必要條件。
+在[!DNL Adobe Experience Manager]中擁有管理員存取許可權的使用者會安裝增強型聯結器。 安裝之前，請先檢閱平台支援和聯結器[的其他](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience)必要條件。
 
 >[!IMPORTANT]
 >
->* Adobe僅需要透過認證合作夥伴或[!DNL Adobe Professional Services]來部署及設定[!DNL Adobe Workfront for Experience Manager enhanced connector]。 如果未透過認證合作夥伴或[!DNL Adobe Professional Services]進行部署與設定，則Adobe不支援此功能。
+>* Adobe僅需要透過認證合作夥伴或[!DNL Adobe Workfront for Experience Manager enhanced connector]來部署及設定[!DNL Adobe Professional Services]。 如果未透過認證合作夥伴或[!DNL Adobe Professional Services]進行部署與設定，則Adobe不支援此功能。
 >
 >* Adobe可能會發行[!DNL Adobe Workfront]和[!DNL Adobe Experience Manager]的更新，使此聯結器成為多餘的；如果發生這種情況，客戶可能需要從使用此聯結器進行轉換。
 >
->* Adobe支援增強型聯結器1.7.4版及更新版本。 不支援舊版發行前版本和自訂版本。 若要檢查增強型聯結器版本，請瀏覽至[封裝管理員](/help/sites-administering/package-manager.md)左側窗格中可用的`digital.hoodoo`群組。
+>* Adobe支援增強型聯結器1.7.4版及更新版本。 不支援舊版發行前版本和自訂版本。 若要檢查增強型聯結器版本，請瀏覽至`digital.hoodoo`封裝管理員[左側窗格中可用的](/help/sites-administering/package-manager.md)群組。
 >
 >* 請參閱Experience Manager Assets增強型聯結器的[Workfront合作夥伴認證測驗](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html)。 如需有關考試的資訊，請參閱[考試指南](https://express.adobe.com/page/Tc7Mq6zLbPFy8/)。
 
@@ -46,14 +46,17 @@ ht-degree: 3%
    * `/apps/settings/dam/cfm/models/formbuilderconfig`
 
 1. 使用[!UICONTROL 封裝管理員]安裝封裝。 若要瞭解如何安裝封裝，請參閱[封裝管理員檔案](/help/sites-administering/package-manager.md)。
-1. 在[!DNL Experience Manager]使用者群組中建立`wf-workfront-users`並將許可權`jcr:all`指派給`/content/dam`。
+1. 在`wf-workfront-users`使用者群組中建立[!DNL Experience Manager]並將許可權`jcr:all`指派給`/content/dam`。
 1. 新增自訂屬性至&#x200B;**`ntFolderDamLucene(/oak:index/ntFolderDamLucene)`**&#x200B;的現成索引定義。 執行以下步驟：
-   * 將名為&#x200B;**`wfReferenceNumber`**&#x200B;的&#x200B;**`nt:unstructured`**&#x200B;屬性新增至：
-
+   * 將名為&#x200B;**`nt:unstructured`**&#x200B;的&#x200B;**`wfReferenceNumber`**屬性新增至：
      `/oak:index/ntFolderDamLucene/indexRules/nt:folder/properties/wfReferenceNumber`。
-   * 將重新索引旗標翻轉到`true`來重新索引`index /oak:index/ntFolderDamLucene`。
+   * 將重新索引旗標翻轉到`index /oak:index/ntFolderDamLucene`來重新索引`true`。
 
 系統使用者`workfront-tools`會自動建立，且必要的許可權會自動管理。 來自[!DNL Workfront]且使用聯結器的所有使用者都會自動新增為此群組的一部分。
+
+>[!NOTE]
+>
+> 當您使用公司Proxy伺服器時，請在[!DNL workfront]Apache HTTP元件Proxy設定PID[!UICONTROL 中加入]，以便[!UICONTROL 增強型Workfront聯結器]識別它。 必要的PID格式為： `org.apache.http.proxyconfigurator~workfront`。
 
 ## 設定[!DNL Experience Manager]與[!DNL Workfront]之間的連線 {#configure-connection}
 
@@ -67,7 +70,7 @@ ht-degree: 3%
 
    ![連線[!DNL Experience Manager]和[!DNL Workfront]](/help/assets/assets/wf-connection-config.png)
 
-1. 若要驗證連線，請在[!DNL Workfront]中存取該連線，並驗證API金鑰是否相同，以及連線是否為&#x200B;**[!UICONTROL 已啟用]**。 若要這麼做，請在[!DNL Workfront]中選取&#x200B;**[!UICONTROL 設定]** > **[!UICONTROL 檔案]** > **[!UICONTROL 自訂整合]**。
+1. 若要驗證連線，請在[!DNL Workfront]中存取該連線，並驗證API金鑰是否相同，以及連線是否為&#x200B;**[!UICONTROL 已啟用]**。 若要這麼做，請在&#x200B;**[!UICONTROL 中選取]**&#x200B;設定&#x200B;**[!UICONTROL >]**&#x200B;檔案&#x200B;**[!UICONTROL >]**&#x200B;自訂整合[!DNL Workfront]。
 
 ## 更新[!DNL Workfront for Experience Manager enhanced connector] {#update-enhanced-connector-for-workfront}
 
