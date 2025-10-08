@@ -6,9 +6,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 08f9b6697e298689a91a9b31038f382a908acd5b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7319'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -449,42 +449,42 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 
 * 如需升級程序的詳細資訊，請參閱[升級文件](/help/sites-deploying/upgrade.md)。
 
-#### AEM 6.5 LTS Service Pack升級的最佳作法
+#### AEM 6.5 LTS Service Pack 升級的最佳做法
 
 <!-- THE INFORMATION UNDER THIS HEADING CAME FROM CQDOC-23078 -->
 
 **環境**
-適用於：安裝Service Pack 1 (SP1)的AEM 6.5 LTS （內部部署）客戶。 SP1會以Quickstart JAR形式提供。
+適用於：安裝 Service Pack 1 (SP1) 的 AEM 6.5 LTS (內部部署) 客戶。SP1 會以 Quickstart JAR 形式提供。
 
-**這很重要的原因**
-AEM 6.5 LTS的SP1會以Quickstart JAR形式出貨，而非透過「封裝管理員」安裝的ZIP。 內部部署客戶可透過取代Quickstart JAR、解壓縮並重新啟動來進行升級。 此方法與Adobe的就地升級程式一致。
+**為什麼這很重要**
+AEM 6.5 LTS 適用的 SP1 會以 Quickstart JAR 形式提供，而非透過「封裝管理員」進行安裝的 ZIP 檔。內部部署客戶的升級方式是取代 Quickstart JAR，將檔案解壓縮然後重新啟動。此方法與 Adobe 的就地升級程序一致。
 
-**建議的升級流程（作者或發佈）**
+**建議的升級流程 (作者或發佈)**
 
-1. 驗證您的AEM 6.5 LTS執行個體是否健康且可存取。
-1. 從Software Distribution下載SP1 Quickstart JAR （例如`cq-quickstart-6.6.x.jar`）。
-1. 停止執行中的執行個體。
-1. 在AEM安裝目錄（`crx-quickstart/`以外）中，將先前的快速入門JAR取代為SP1 JAR。
-1. 解壓縮JAR：
+1. 驗證您的 AEM 6.5 LTS 實例是否運作正常且可存取。
+1. 從 Software Distribution 下載 SP1 Quickstart JAR (例如 `cq-quickstart-6.6.x.jar`)。
+1. 停止正在運作的實例。
+1. 在 AEM 安裝目錄中 (`crx-quickstart/` 之外)，使用 SP1 JAR 取代先前的 Quickstart JAR。
+1. 將 JAR 解壓縮：
 
    ```java
    java -jar cq-quickstart-6.6.x.jar -unpack
    ```
 
-   （視需要調整棧積標幟。）
+   (視需要調整堆積旗標。)
 
-1. 重新命名解壓縮的JAR以符合角色和連線埠，例如`cq-author-4502.jar`或`cq-publish-4503.jar`。
-1. 啟動AEM，並在UI （「說明>關於」）和記錄中確認升級。
+1. 根據其角色和連接埠，將解壓縮的 JAR 重新命名，例如 `cq-author-4502.jar` 或 `cq-publish-4503.jar`。
+1. 開始 AEM，並在 UI (「說明」>「關於」) 和記錄中確認升級。
 
-**良好的衛生**
+**良好的操作規範**
 
-* 在生產前在低層/測試環境中執行升級。
-* 開始之前，請先進行完整、可還原的備份（儲存庫加上任何外部資料存放區）。
-* 檢閱Adobe的就地升級指導和技術要求（LTS建議使用Java 17/21）。
+* 進入生產前，在低階/測試環境中執行升級。
+* 在開始之前，先進行可還原的完整備份 (存放庫外加任何外部資料存放庫)。
+* 審閱 Adobe 的就地升級指引和技術要求 (LTS 建議使用 Java 17/21)。
 
 >[!NOTE]
 >
->以上所示的檔案名稱（例如，`cq-quickstart-6.6.x.jar`）會反映此LTS發行版本所觀察到的SP1 Quickstart成品命名；請一律使用您從Software Distribution下載的確切檔案名稱。
+>以上所示的檔案名稱 (例如 `cq-quickstart-6.6.x.jar`) 會反映在此 LTS 版本所看到的 SP1 Quickstart 成品命名方式；請一律使用與您從 Software Distribution 下載之檔案完全相同的檔案名稱。
 
 ## 安裝與更新 {#install-update}
 
@@ -613,7 +613,7 @@ A hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/download
 
 以下文字文件列出在此 [!DNL Experience Manager] 6.5 LTS Service Pack 1 版本中所包含的 OSGi 套件與內容套件：
 
-* [&#x200B; Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [ Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 * [Experience Manager 6.5 LTS Service Pack 1 中包含的內容套件清單](/help/release-notes/assets/65lts_sp1_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## 受限制的網站{#restricted-sites}
