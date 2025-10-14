@@ -56,11 +56,11 @@ ht-degree: 16%
 
    >[!NOTE]
    >
-   >您可以執行步驟1-4以建立設定容器並在容器中建立[!DNL Adobe Sign]設定，或使用`global`工具&#x200B;**&#x200B;** hammer![ > ](assets/hammer.png)雲端服務&#x200B;**[!UICONTROL >]** Adobe Sign **[!UICONTROL 中的現有]**&#x200B;資料夾。 如果您在新的設定容器中建立設定，在建立最適化表單時，請確保在&#x200B;**[!UICONTROL 設定容器]**&#x200B;欄位中指定容器名稱。
+   >您可以執行步驟1-4以建立設定容器並在容器中建立[!DNL Adobe Sign]設定，或使用`global`工具&#x200B;**&#x200B;** hammer![&#x200B; > &#x200B;](assets/hammer.png)雲端服務&#x200B;**[!UICONTROL >]** Adobe Sign **[!UICONTROL 中的現有]**&#x200B;資料夾。 如果您在新的設定容器中建立設定，在建立最適化表單時，請確保在&#x200B;**[!UICONTROL 設定容器]**&#x200B;欄位中指定容器名稱。
 
    >[!NOTE]
    >
-   >確定雲端服務設定頁面的URL是以&#x200B;**HTTPS**&#x200B;開頭。 如果沒有，請[啟用AEM ](/help/sites-administering/ssl-by-default.md)伺服器的SSL[!DNL Forms]。
+   >確定雲端服務設定頁面的URL是以&#x200B;**HTTPS**&#x200B;開頭。 如果沒有，請[啟用AEM &#x200B;](/help/sites-administering/ssl-by-default.md)伺服器的SSL[!DNL Forms]。
 
 
 1. 在設定頁面上，點選「**[!UICONTROL 建立]**」以在AEM [!DNL Adobe Sign]中建立[!DNL Forms]設定。
@@ -194,7 +194,7 @@ ht-degree: 16%
 
 適用於政府的Adobe Acrobat Sign解決方案團隊需要為您的Adobe Acrobat Sign應用程式（如下所列）啟用`re-direct URL`和某些範圍，才能產生認證（使用者端ID和使用者端密碼），讓您將AEM Forms與適用於政府的Adobe Acrobat Sign Solutions連線。
 
-與您的Adobe Acrobat Sign政府解決方案代表`scopes`Adobe Professional Services團隊成員`re-direct URL`共用[ （如下所列），以及建立並記下上一節的最後一步的](https://opensource.adobe.com/acrobat-sign/signgov/gstarted.html#password)。
+與您的Adobe Acrobat Sign政府解決方案代表`scopes`Adobe Professional Services團隊成員`re-direct URL`共用[&#x200B; （如下所列），以及建立並記下上一節的最後一步的](https://opensource.adobe.com/acrobat-sign/signgov/gstarted.html#password)。
 
 **_領域_**
 

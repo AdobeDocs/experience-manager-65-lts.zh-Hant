@@ -114,7 +114,7 @@ ht-degree: 4%
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
-您可以將最適化表單發佈為獨立表單（單頁應用程式）、包含在AEM [網站頁面](/help/forms/using/embed-adaptive-form-aem-sites.md)中，或使用[!DNL Site]Forms入口網站[在AEM ](../../forms/using/introduction-publishing-forms.md)上列出。
+您可以將最適化表單發佈為獨立表單（單頁應用程式）、包含在AEM [網站頁面](/help/forms/using/embed-adaptive-form-aem-sites.md)中，或使用[!DNL Site]Forms入口網站[在AEM &#x200B;](../../forms/using/introduction-publishing-forms.md)上列出。
 
 目標：
 
