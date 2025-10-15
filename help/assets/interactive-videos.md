@@ -10,9 +10,9 @@ feature: Interactive Videos
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: caacf3b3-1e12-4ea3-9160-774181aadf41
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
 workflow-type: tm+mt
-source-wordcount: '5913'
+source-wordcount: '5900'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 您可以輕鬆建立互動式視訊（也稱為可購物視訊），以直接從視訊推動轉換。 客戶與影片互動於影片播放器旁的面板中進行，相關服務、資訊或產品縮圖會根據影片中的功能捲動至檢視畫面中。 客戶可以選取縮圖並直接連結至服務，或將專案新增至購物車以立即購買，或連結至網頁以取得詳細資訊。
 
-影片結束時，會顯示所有方案的視覺化摘要，以激發行動號召。 客戶有另一個機會可選取他們想要的專案。 這類可操作且特定的體驗，可增加客戶參與度和轉換率。
+影片結束時，會顯示所有方案的視覺化摘要，以推動call to action。 客戶有另一個機會可選取他們想要的專案。 這類可操作且特定的體驗，可增加客戶參與度和轉換率。
 
 另請參閱[互動式影像](/help/assets/interactive-images.md)。
 
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 * 如果要暫停視訊並開啟產品的快速檢視，請選取縮圖。 例如，在視訊中選取KitchenAid縮圖影像以體驗混合器的360度旋轉檢視，或放大以檢視混合器詳細資訊。
 
-<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html?lang=zh-Hant. This now needs to call a new interactive video-->
+<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
 ![互動式可購物視訊的影格](assets/chlimage_1-126.png) *互動式可購物視訊的視訊影格擷取。*
 
@@ -50,9 +50,11 @@ ht-degree: 2%
 
 「在Experience Manager Assets中使用互動式視訊、連結共用和YouTube共用」網路研討會會教導您如何使用互動式視訊和其他功能，將轉換驅動的事件連結至視訊行銷內容。
 
+<!-- NOT FOUND; FIND REPLACEMENT
 >[!NOTE]
 >
->[在Experience Manager Assets中使用互動式視訊、連結共用和YouTube共用](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/)。
+>[Using Interactive Video, Link Sharing, and YouTube sharing in Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
+-->
 
 ## 快速入門：互動式影片 {#quick-start-interactive-videos}
 
@@ -60,13 +62,13 @@ ht-degree: 2%
 
 在部分快速入門工作中尋找&#x200B;**範例**&#x200B;標題。 它包含以這個開始示範網頁為基礎的簡短教學課程，*尚未*&#x200B;新增互動功能：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=zh-Hant](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=zh-Hant)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 範例 **可協助您說明** ，如何將互動式視訊整合在您自己的網站上。
 
 當您完成最後一個範例區段中的教學課程時，最後示範網頁與完全整合的互動式影片看起來會像這樣：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=zh-Hant](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=zh-Hant)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 互動視訊步驟：
 
@@ -149,10 +151,10 @@ ht-degree: 2%
     <td><p>在查詢字串中找到單一SKU。</p> </td>
     <td><p>錄製的快速檢視URL包含以下專案：</p>
     <ul>
-      <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>URL中唯一的變數部分是<code>productId=</code>查詢字串引數的值，而且它顯然是SKU值。 因此，您的縮圖只需要填入<strong><code>866558</code></strong>、<strong><code>1196184</code></strong>、<strong><code>1081492</code></strong>、<strong><code>1898294</code></strong>等值的SKU欄位。</p> </td>
   </tr>
   <tr>
@@ -168,9 +170,9 @@ ht-degree: 2%
     <td><p>查詢字串中的SKU和類別ID。</p> </td>
     <td><p>錄製的快速檢視URL包含以下專案：</p>
     <ul>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
     </ul> <p>在這種情況下，URL中有兩個不同的部分。 SKU儲存在<code>prodId</code>引數中，而類別識別碼儲存在<code>category=</code>引數中。</p> <p>因此，縮圖定義成對。 即SKU值和稱為<code>categoryId</code>的額外變數。 產生的配對如下：</p>
     <ul>
       <li>SKU是<code>305466</code>，<code>categoryId</code>是 <code>1100004</code></li>
@@ -185,7 +187,7 @@ ht-degree: 2%
 
 將上述方法套用至範例網站時，您的網頁會有數個產品縮圖，每個縮圖都有「檢視更多」按鈕：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=zh-Hant](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=zh-Hant)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 啟用頁面上可用的所有產品快速檢視後，您會取得向後端提出之快速檢視要求的清單如下：
 
@@ -495,7 +497,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >當您儲存互動式視訊時，會自動 `.vtt` 儲存相關的檔案。`.vtt`檔案已儲存至&#x200B;**[!UICONTROL Assets]**&#x200B;根目錄的`_VTT`資料夾。 您的互動式視訊必須有檔案和資料夾才能在網站上正確播放。因此，請勿移動、編輯或刪除資料夾 `_VTT` 或其內容。
+   >當您儲存互動式視訊時，會自動 `.vtt` 儲存相關的檔案。`.vtt`檔案已儲存至`_VTT`Assets **[!UICONTROL 根目錄的]**&#x200B;資料夾。 您的互動式視訊必須有檔案和資料夾才能在網站上正確播放。因此，請勿移動、編輯或刪除資料夾 `_VTT` 或其內容。
 
 1. 發佈互動式視訊。 發佈作業會建立內嵌程式碼或URL，您最後會將其複製並貼到您的網站體驗中。
 
@@ -539,7 +541,7 @@ ht-degree: 2%
 
 以示範網站為例：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=zh-Hant](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=zh-Hant)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 請注意，內嵌程式碼為標準版：
 
@@ -570,7 +572,7 @@ ht-degree: 2%
 
 整合就像移除視訊內嵌程式碼，並從Experience Manager將其取代為互動式視訊內嵌程式碼一樣簡單。 您可以在以下URL看到結果。 雖然它會顯示頁面上顯示的互動式視訊，但尚未與現有的快速檢視整合：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=zh-Hant](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=zh-Hant)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
 ## 將互動式視訊與現有的Quickview整合 {#integrating-an-interactive-video-with-an-existing-quickview}
 
@@ -659,27 +661,27 @@ Experience Manager傳回的內嵌程式碼已備有立即可用的事件處理�
   <tbody>
   <tr>
     <td><p>在查詢字串中找到單一SKU</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td>在URL路徑中找到單一SKU</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td><p>查詢字串中的SKU和類別ID</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   </tbody>
 </table>
@@ -692,7 +694,7 @@ Experience Manager傳回的內嵌程式碼已備有立即可用的事件處理�
 /datafeed/$CategoryId$-$SKU$.json
 ```
 
-透過檢視器的程式碼，使用傳遞至處理常式的`inData`物件中的`categoryId`和`sku`欄位，在`quickViewActivate`處理常式中很容易重新建構此URL，如下所示：
+透過檢視器的程式碼，使用傳遞至處理常式的`quickViewActivate`物件中的`categoryId`和`sku`欄位，在`inData`處理常式中很容易重新建構此URL，如下所示：
 
 ```xml
 var sku=inData.sku;
@@ -770,7 +772,7 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 具備完全整合互動式視訊的最終示範網站看起來如下所示：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=zh-Hant](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=zh-Hant)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 ## 使用 Quickview 建立自訂快顯視窗 {#using-quickviews-to-create-custom-pop-ups}
 

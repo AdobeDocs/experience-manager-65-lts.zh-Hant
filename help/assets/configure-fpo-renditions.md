@@ -7,7 +7,7 @@ feature: Renditions
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7f66bc81-c4f7-4267-93b8-b78097ebbb16
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
@@ -18,10 +18,10 @@ ht-degree: 1%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/configure-fpo-renditions.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/configure-fpo-renditions.html?lang=en) |
 | AEM 6.5 | 本文章 |
 
-將大型資產從Experience Manager置入Adobe InDesign檔案時，創意專業人士在[置入資產](https://helpx.adobe.com/tw/indesign/using/placing-graphics.html)後，必須等候相當長的時間。 同時，使用者被封鎖而無法使用InDesign。 這會中斷創意流程，並對使用者體驗產生負面影響。 Adobe一開始可讓您將小型轉譯暫時放入InDesign檔案。 需要最終輸出時（例如針對列印及發佈工作流程），原始的完整解析度資產會在背景取代暫時轉譯。 這種背景的非同步更新可加快設計流程以提高生產力，且不會影響創作流程。
+將大型資產從Experience Manager置入Adobe InDesign檔案時，創意專業人士在[置入資產](https://helpx.adobe.com/indesign/using/placing-graphics.html)後，必須等候相當長的時間。 同時，使用者被封鎖而無法使用InDesign。 這會中斷創意流程，並對使用者體驗產生負面影響。 Adobe一開始可讓您將小型轉譯暫時放入InDesign檔案。 需要最終輸出時（例如針對列印及發佈工作流程），原始的完整解析度資產會在背景取代暫時轉譯。 這種背景的非同步更新可加快設計流程以提高生產力，且不會影響創作流程。
 
 Adobe Experience Manager (AEM)提供僅用於刊登(FPO)的轉譯。 這些FPO轉譯的檔案大小較小，但外觀比例相同。 如果資產無法使用FPO轉譯，Adobe InDesign會改用原始資產。 此遞補機制可確保創意工作流程無任何中斷地進行。
 
@@ -52,13 +52,13 @@ Experience Manager允許使用許多方法來處理影像，以用來產生FPO�
 
    ![fpo_rendition_damupdateasset_model](assets/fpo_rendition_damupdateasset_model.png)
 
-1. 調整&#x200B;**[!UICONTROL 品質]**，並視需要新增或修改&#x200B;**[!UICONTROL 格式清單]**&#x200B;值。 依預設，產生FPO轉譯的MIME型別清單為pjpeg、jpeg、jpg、gif、png、x-png和tiff。 按一下&#x200B;**[!UICONTROL 「完成」]**。
+1. 調整&#x200B;**[!UICONTROL 品質]**，並視需要新增或修改&#x200B;**[!UICONTROL 格式清單]**&#x200B;值。 依預設，產生FPO轉譯的MIME型別清單為pjpeg、jpeg、jpg、gif、png、x-png和tiff。 按一下&#x200B;**[!UICONTROL 完成]**。
 
    >[!NOTE]
    >
    >檔案型別JPEG、GIF、PNG、TIFF、PSD和BMP支援產生轉譯。
 
-1. 若要啟用變更，請按一下[同步]。**&#x200B;**
+1. 若要啟用變更，請按一下[同步]。****
 
 >[!NOTE]
 >
@@ -90,9 +90,9 @@ Experience Manager允許使用許多方法來處理影像，以用來產生FPO�
 
    `convert -quality 10% -units PixelsPerInch ${filename} -resample 72 -flatten cq5dam.fpo.jpeg`
 
-1. 若要啟用變更，請按一下[同步]。**&#x200B;**
+1. 若要啟用變更，請按一下[同步]。****
 
-如需ImageMagick命令列功能的詳細資訊，請參閱[https://imagemagick.org](https://imagemagick.org)。
+如需ImageMagick命令列功能的詳細資訊，請參閱`https://imagemagick.org`網站。
 
 ## 使用Experience Manager工作流程產生現有資產的轉譯 {#generate-renditions-of-existing-assets-using-aem-workflow}
 
@@ -112,7 +112,7 @@ Experience Manager允許使用許多方法來處理影像，以用來產生FPO�
 
 1. 選取&#x200B;**[!UICONTROL 處理縮圖]**&#x200B;並按一下&#x200B;**[!UICONTROL 設定]**。 依照[設定，使用Experience Manager工作流程](#generate-renditions-of-new-assets-using-aem-workflow)產生新資產的轉譯。
 
-1. 若要啟用變更，請按一下[同步]。**&#x200B;**
+1. 若要啟用變更，請按一下[同步]。****
 
 
 ## 使用ImageMagick產生現有資產的轉譯 {#generate-renditions-of-existing-assets-using-imagemagick}
