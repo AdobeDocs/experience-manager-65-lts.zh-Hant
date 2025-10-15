@@ -21,13 +21,13 @@ ht-degree: 0%
 
 功能套件18912的安裝是&#x200B;*選擇性*。
 
-Feature Pack 18912可讓您透過FTP將資產直接大量擷取到Adobe Experience Manager上的Dynamic Media - Scene7模式。 它也可讓您將資產從Dynamic Media Classic移轉至Experience Manager上的Dynamic Media - Scene7模式。 功能套件可從[Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html)取得。
+Feature Pack 18912可讓您透過FTP將資產直接大量擷取到Adobe Experience Manager上的Dynamic Media - Scene7模式。 它也可讓您將資產從Dynamic Media Classic移轉至Experience Manager上的Dynamic Media - Scene7模式。 功能套件可從[Adobe Professional Services](https://business.adobe.com/tw/customers/consulting-services/main.html)取得。
 
 >[!IMPORTANT]
 >
 >您可以使用Feature Pack自行將資產從Dynamic Media Classic大量移轉至Experience Manager中的Dynamic Media - Scene7模式。 您也可以使用Dynamic Media Classic中的FTP功能來大量移轉資產。 不過，由於涉及的複雜性，Adobe並&#x200B;*不*&#x200B;建議您使用其中一種方法。
 >
->因此，透過[Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html)完成時，此移轉功能套件僅&#x200B;*支援*&#x200B;作為移轉專案的一部分。
+>因此，透過[Adobe Professional Services](https://business.adobe.com/tw/customers/consulting-services/main.html)完成時，此移轉功能套件僅&#x200B;*支援*&#x200B;作為移轉專案的一部分。
 
 安裝Feature Pack之前，請先建立服務使用者，並將該資訊提供給Adobe支援。
 
