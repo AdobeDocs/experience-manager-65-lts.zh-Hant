@@ -110,7 +110,7 @@ Adobe的Imaging Transcoding Library是專屬的影像處理解決方案，可執
 
 1. 從&#x200B;**[!UICONTROL 工作流程模型]**&#x200B;頁面，在編輯模式下開啟&#x200B;**[!UICONTROL DAM更新資產]**&#x200B;工作流程模型。
 
-1. 開啟&#x200B;**[!UICONTROL 處理縮圖]**&#x200B;工作流程處理步驟。 在&#x200B;**[!UICONTROL 縮圖]**&#x200B;索引標籤中，在&#x200B;**[!UICONTROL 略過MIME型別]**清單中，新增您要略過預設縮圖產生程式的MIME型別。
+1. 開啟&#x200B;**[!UICONTROL 處理縮圖]**&#x200B;工作流程處理步驟。 在&#x200B;**[!UICONTROL 縮圖]**&#x200B;索引標籤中，在&#x200B;**[!UICONTROL 略過MIME型別]**&#x200B;清單中，新增您要略過預設縮圖產生程式的MIME型別。
 例如，如果您想使用影像轉碼資料庫為TIFF影像建立縮圖，請在`image/tiff`略過MIME型別&#x200B;**[!UICONTROL 欄位中指定]**。
 
 1. 在&#x200B;**[!UICONTROL 啟用Web的影像]**&#x200B;索引標籤中，新增您要在&#x200B;**[!UICONTROL 略過清單]**&#x200B;中略過預設Web轉譯產生程式的MIME型別。 例如，如果您在上述步驟中略過MIME型別`image/tiff`，請新增`image/tiff`至略過清單。

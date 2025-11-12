@@ -548,7 +548,7 @@ Dynamic Media Cloud Service支援影像和視訊、視訊分析和視訊編碼�
 **開始使用：**&#x200B;完成下列三個工作以設定視訊報告。
 
 1. 在第一個作者節點上設定Dynamic Media設定（6.3以前版本）後，請建立Video Analytics預設套件。 此初始工作很重要，因為它可讓新設定繼續使用相同的報表套裝。
-1. 將Video Analytics預設集套件安裝至您設定Dynamic Media設定（6.3以前版本）的任何&#x200B;***新***&#x200B;作者節點&#x200B;******。
+1. 將Video Analytics預設集套件安裝至您設定Dynamic Media設定（6.3以前版本）的任何&#x200B;***新***&#x200B;作者節點&#x200B;**&#x200B;**&#x200B;**。
 1. 驗證及偵錯套件安裝。
 
 ### 設定第一個「作者」節點後，建立Video Analytics預設套件 {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
@@ -605,7 +605,7 @@ Dynamic Media Cloud Service支援影像和視訊、視訊分析和視訊編碼�
      ```
 
    * **透過Experience Manager中的視訊報告工具檢查視訊分析預設集**
-導覽至**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 視訊報告]**
+導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 視訊報告]**
 
      `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
@@ -1225,28 +1225,28 @@ Adobe的色彩管理使用ICC （國際色彩聯盟）設定檔，這是由ICC�
   </tr>
   <tr>
    <td>複製檢視器URL</td>
-   <td><p>「複製URL」對話方塊會顯示類似以下的URL （URL僅供示範之用）：</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>其中<code>PUBLISHNODE</code>參考一般Experience Manager發佈節點，<code>IMAGESERVICEPUBLISHNODE</code>參考影像服務URL。</p> <p>另請參閱<a href="/help/assets/delivering-dynamic-media-assets.md">傳遞Dynamic Media Assets</a>。</p> </td>
+   <td><p>「複製URL」對話方塊會顯示類似以下的URL （URL僅供示範之用）：</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&contentRoot=%2F</code></p> <p>其中<code>PUBLISHNODE</code>參考一般Experience Manager發佈節點，<code>IMAGESERVICEPUBLISHNODE</code>參考影像服務URL。</p> <p>另請參閱<a href="/help/assets/delivering-dynamic-media-assets.md">傳遞Dynamic Media Assets</a>。</p> </td>
   </tr>
   <tr>
    <td>複製檢視器的內嵌程式碼</td>
    <td><p>複製內嵌程式碼對話方塊會顯示類似下列的程式碼片段（程式碼範例僅供示範之用）：</p> <p><code class="code">&lt;style type="text/css"&gt;
-       #s7basiczoom_div.s7basiczoomviewer{
+       &#x200B;#s7basiczoom_div.s7basiczoomviewer&lbrace;
        width:100%;
        height:auto;
-       }
+       &rbrace;
        &lt;/style&gt;
        &lt;script
        type="text/javascript" src="https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/js/BasicZoomViewer.js"&gt;&lt;/script&gt;
        &lt;div id="s7basiczoom_div"&gt;&lt;/div&gt;
        &lt;script type="text/javascript"&gt;
-       var s7basiczoomviewer = new s7viewers.BasicZoomViewer({
+       var s7basiczoomviewer = new s7viewers.BasicZoomViewer(&lbrace;
        "containerId" : "s7basiczoom_div",
-       "params" : {
+       "params" : &lbrace;
        "serverurl" : "https://IMAGESERVICEPUBLISHNODE/is/image/",
        "contenturl" : "https://PUBLISHNODE/",
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
-       "asset" : "/content/dam/path/to/Image.jpg" }
-       }).init();
+       "asset" : "/content/dam/path/to/Image.jpg" &rbrace;
+       &rbrace;).init();
        &lt;/script&gt;</code></p> <p>其中<code>PUBLISHNODE</code>參考一般Experience Manager發佈節點，<code>IMAGESERVICEPUBLISHNODE</code>參考影像服務URL。</p> <p>另請參閱<a href="/help/assets/delivering-dynamic-media-assets.md">傳遞Dynamic Media Assets</a>。</p> </td>
   </tr>
  </tbody>
