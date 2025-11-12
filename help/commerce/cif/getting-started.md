@@ -6,9 +6,9 @@ feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 15face30-3039-49a0-bfee-56bff21e5c27
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: 0b337740dffb9e6421e6d2c44a1ae222dfa37711
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '676'
 ht-degree: 3%
 
 ---
@@ -22,15 +22,15 @@ ht-degree: 3%
 
 AEM內容和Commerce的上線流程分為兩個步驟：
 
-1. 安裝適用於AEM 6.5的AEM內容和Commerce附加元件
+1. 安裝適用於AEM 6.5 LTS的AEM內容和Commerce附加元件
 
 2. 將AEM與您的商務解決方案連結
 
-### 安裝適用於AEM 6.5的AEM內容和Commerce附加元件 {#install-add-on}
+### 安裝適用於AEM 6.5 LTS的AEM內容和Commerce附加元件 {#install-add-on}
 
-從[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)入口網站下載並安裝適用於AEM 6.5的AEM Commerce附加元件。
+從[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)入口網站下載並安裝適用於AEM 6.5 LTS的AEM Commerce附加元件。
 
-啟動並安裝必要的AEM 6.5 Service Pack。 建議您安裝最後一個可用的Service Pack。
+啟動並安裝必要的AEM 6.5 LTS Service Pack。 建議您安裝最後一個可用的Service Pack。
 
 >[!NOTE]
 >
@@ -42,9 +42,9 @@ AEM可連線至任何具有AEM適用的GraphQL端點可存取的商務系統。 
 
 可選擇提供驗證標頭，以使用需要驗證的其他CIF功能。
 
-必須調整由[AEM專案原型](https://github.com/adobe/aem-project-archetype)和已包含在[預設設定](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json)中的[AEM Venia參考存放區](https://github.com/adobe/aem-cif-guides-venia)產生的專案。
+必須調整由[AEM專案原型](https://github.com/adobe/aem-project-archetype)和已包含在[預設設定](https://github.com/adobe/aem-cif-guides-venia)中的[AEM Venia參考存放區](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json)產生的專案。
 
-將`com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json`中`url`的值取代為您的商務系統的GraphQL端點。 此設定可透過OSGI主控台完成，或透過專案部署OSGI設定來完成。 使用不同的AEM執行模式，可支援中繼和生產系統的不同設定。
+將`url`中`com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json`的值取代為您的商務系統的GraphQL端點。 此設定可透過OSGI主控台完成，或透過專案部署OSGI設定來完成。 使用不同的AEM執行模式，可支援中繼和生產系統的不同設定。
 
 AEM內容和Commerce附加元件及CIF核心元件同時使用AEM伺服器端和使用者端連線。 使用者端CIF核心元件和CIF附加撰寫工具預設會連線至`/api/graphql`。 如有需要，可透過CIF Cloud Service設定調整此專案（請參閱下文）。
 

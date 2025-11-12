@@ -1,18 +1,13 @@
 ---
 title: 管理專案 — 最佳實務檢查清單
 description: 管理專案以實施Adobe Experience Manager (AEM)需要計畫和瞭解。 專案檢查清單旨在作為專案傳送的一組最佳實務。 它們會引導您完成專案生命週期的所有階段，並提供您狀態的高層級監控。
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-topic-tags: managing-checklist, introduction
-content-type: reference
-docset: aem65
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Admin,Architect,Data Architect,Developer,Leader
 exl-id: 8f8883d8-4e2b-4ba0-bd83-414a96e7d382
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 58c2f666ef6fd89fc42f5d969d1ef1626e45fe45
 workflow-type: tm+mt
-source-wordcount: '3214'
+source-wordcount: '3212'
 ht-degree: 0%
 
 ---
@@ -34,7 +29,7 @@ ht-degree: 0%
    * [依角色的狀態](#status-by-role)總覽。
    * [階段和里程碑](#phases-and-milestones)。
    * [關鍵角色](#persona)及其在每個（相關）階段的參與。
-   * [必要檔案和交付專案](#required-documents-and-deliverables)的[字彙表](/help/managing/best-practices-glossary.md)。
+   * [必要檔案和交付專案](/help/managing/best-practices-glossary.md)的[字彙表](#required-documents-and-deliverables)。
 
 * [進一步參考](/help/managing/best-practices-further-reference.md)資料以提供特定區域的更多詳細資料。
 
@@ -56,7 +51,7 @@ ht-degree: 0%
 
 ## 按角色顯示狀態 {#status-by-role}
 
-[角色狀態&#x200B;**]工作表顯示**&#x200B;[&#x200B;階段&#x200B;](#phases-and-milestones)**與**&#x200B;[&#x200B;角色&#x200B;](#persona)**之&lbrace;2**&#x200B;健康狀態&#x200B;**、&lbrace;品質及&#x200B;**&#x200B;完整性&#x200B;**[&#128279;](#projectheartbeat)&#x200B;的詳細劃分。**&#x200B;**
+[角色狀態&#x200B;**]工作表顯示**&#x200B;階段&#x200B;[**與**&#x200B;角色&#x200B;**之{2**健康狀態**](#projectheartbeat)、{品質及&#x200B;**[完整性](#phases-and-milestones)**&#x200B;的詳細劃分。**[](#persona)**
 
 ## 階段和里程碑 {#phases-and-milestones}
 
@@ -188,7 +183,7 @@ ht-degree: 0%
 
    * 每個環境的程式；例如，部署和維護需求
    * 維護活動（Datastore GC、TarPM最佳化等）
-   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)快取
+   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)快取
    * [叢集](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)發佈/Authorshare
    * 使用者端的效能（JS精簡、concat、css指令集、http請求總數及其他）
 
@@ -239,7 +234,7 @@ ht-degree: 0%
 
   在開發之前，應設定部署、發行、測試和報告問題所需的所有支援流程。
 
-  另請參閱[Adobe支援入口網站](https://experienceleague.adobe.com/zh-hant?support-solution=General&support-tab=home#support)。
+  另請參閱[Adobe支援入口網站](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)。
 
 ### 作業計畫與作業 {#operations-planning-and-operations}
 
@@ -460,7 +455,7 @@ ht-degree: 0%
 
   準備並執行您的煙霧測試。
 
-## 角色 {#persona}
+## 人物誌 {#persona}
 
 核對清單由人員設計。 這些角色與專案生命週期有重大的關係。
 
@@ -628,8 +623,8 @@ ht-degree: 0%
 
       * [開發 — 基本知識](/help/sites-developing/the-basics.md)
       * [MSM概念](/help/sites-administering/msm.md)
-      * [HTML範本語言(HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hant)
+      * [HTML範本語言(HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 * 相關檔案
 
-   * Adobe Experience Cloud - [規劃Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html?lang=zh-Hant)
+   * Adobe Experience Cloud - [規劃Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)

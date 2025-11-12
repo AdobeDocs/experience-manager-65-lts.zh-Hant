@@ -1,14 +1,14 @@
 ---
 title: 使用RTF編輯器創作內容
-description: 使用RTF編輯器在Adobe Experience Manager 6.5中編寫內容。
+description: 使用RTF編輯器在Adobe Experience Manager 6.5 LTS中編寫內容。
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 01c2a67a-7168-4362-ad7d-f4990ea43ed8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7fcb784124027df87bf41cc6169815d755cea6d7
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 0%
+source-wordcount: '265'
+ht-degree: 1%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 RTF編輯器(RTE)是將文字內容插入AEM的基本建置區塊。 它構成各種元件的基礎，包括：
 
-* [文字](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/wcm-components/text)
-* [表格](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/wcm-components/text#table)
+* [文字](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
+* [表格](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text#table)
 
 ## 就地編輯 {#in-place-editing}
 

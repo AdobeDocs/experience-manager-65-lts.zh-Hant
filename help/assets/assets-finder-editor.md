@@ -1,12 +1,11 @@
 ---
 title: 建立和設定Asset Editor頁面
 description: 瞭解如何建立自訂Asset Editor頁面並同時編輯多個資產。
-contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 39e1b20b-27d5-4869-b7e1-0dd2d087df7b
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 7b62f47a0ce75ad5676ea41c86b299160e8b505c
 workflow-type: tm+mt
 source-wordcount: '2088'
 ht-degree: 0%
@@ -21,7 +20,7 @@ ht-degree: 0%
 * 如何建立和自訂Asset Editor頁面，這些是WCM頁面，可讓您檢視和編輯資產的中繼資料以及執行動作。
 * 如何同時編輯多個資產。
 
-<!-- TBD: Add UICONTROL tags. Need PM review. Flatten the structure a bit. Re-write to remove Geometrixx mentions and to adhere to 6.5 default samples. -->
+<!-- TBD: Add UICONTROL tags. Need PM review. Flatten the structure a bit. Re-write to remove Geometrixx mentions and to adhere to default samples. -->
 
 >[!NOTE]
 >
@@ -252,7 +251,7 @@ For more information, see the [predicate Javadocs](https://developer.adobe.com/e
 >
 >設計Asset Editor頁面時，您會建立唯讀或可編輯的元件。 使用者知道，如果鉛筆影像出現在元件中，則可以編輯欄位。 依預設，大部分元件都設為唯讀。
 
-| 元件 | 描述 |
+| 元件 | 說明 |
 |---|---|
 | **[!UICONTROL 中繼資料表單]和[!UICONTROL 中繼資料文字欄位]** | 可讓您新增其他中繼資料至資產，以及對該資產執行動作，例如提交。 |
 | **[!UICONTROL 子Assets]** | 可讓您自訂子資產。 |
@@ -374,13 +373,13 @@ For more information, see the [predicate Javadocs](https://developer.adobe.com/e
 
 下列動作可供使用：
 
-| 動作 | 描述 |
+| 動作 | 說明 |
 |---|---|
 | [!UICONTROL 下載] | 可讓使用者將選取的資產下載至其電腦。 |
 | [!UICONTROL 編輯器] | 可讓使用者編輯影像（互動式編輯） |
 | [!UICONTROL 燈箱] | 將資產儲存至「燈箱」，讓您在其中執行其他動作。 這項功能可在處理多個頁面的資產時方便使用。 |
 | [!UICONTROL 鎖定] | 可讓使用者鎖定資產。 預設不會啟用此功能，且必須在元件清單中啟用。 |
-| [!UICONTROL 個參考] | 按一下此以在使用資產的頁面上顯示。 |
+| [!UICONTROL 參照] | 按一下此以在使用資產的頁面上顯示。 |
 | [!UICONTROL 版本設定] | 可讓您建立和還原資產的版本。 |
 
 1. 將適當的動作拖曳至頁面上的&#x200B;**動作**&#x200B;區域。 這會建立一個選項，用來執行在頁面上拖曳的動作。
@@ -393,7 +392,7 @@ For more information, see the [predicate Javadocs](https://developer.adobe.com/e
 
 若要使用「資產編輯器」頁面多重編輯資產：
 
-1. 開啟Geometrixx **Press Center**&#x200B;頁面：
+1. 開啟Geometrixx **Press Center**頁面：
    `https://localhost:4502/content/geometrixx/en/company/press.html`
 
 1. 選取資產：

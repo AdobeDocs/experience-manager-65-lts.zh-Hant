@@ -1,16 +1,11 @@
 ---
 title: 頁面差異
 description: 頁面差異功能可方便的對兩個頁面進行並排比較，並反白顯示其差異。
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 228c1ffb-91af-4f2e-82f8-1e570034f7ec
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: db1c30db0a61e852484a25909c60ad5940b2b33a
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 1%
@@ -51,7 +46,7 @@ ht-degree: 1%
 
 兩個頁面的來源會清楚顯示在瀏覽器視窗頂端的標題列中。
 
-標題![&#128279;](assets/chlimage_1-109.png)中顯示Source
+標題![中顯示](assets/chlimage_1-109.png)Source
 
 差異會偵測元件和HTML層級的變更。 已變更的專案會以不同的顏色反白。
 

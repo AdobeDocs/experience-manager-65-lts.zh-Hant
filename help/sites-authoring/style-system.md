@@ -1,16 +1,13 @@
 ---
 title: 樣式系統
 description: 樣式系統可讓範本作者在元件的內容原則中定義樣式類別，讓內容作者在編輯頁面上的元件時能夠選取這些類別。 這些樣式可作為元件的替代視覺變體，使其更靈活。
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: a3d42a73-e1b2-4f76-b98a-89cd98eea2c9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 1b01d338c8400f38e4f062cb3ee592062f560a67
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1292'
 ht-degree: 1%
 
 ---
@@ -62,7 +59,7 @@ ht-degree: 1%
 
 ## 使用 {#use}
 
-為了示範此功能，我們將使用核心元件的[標題元件](https://www.adobe.com/go/aem_cmp_title_v2_tw)的[WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant)實作作為範例。
+為了示範此功能，我們將使用核心元件的[標題元件](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)的[WKND](https://www.adobe.com/go/aem_cmp_title_v2)實作作為範例。
 
 下列章節[As a Content Author](#as-a-content-author)及[As a Template Author](#as-a-template-author)說明如何使用WKND的樣式系統測試樣式系統的功能。
 
@@ -129,7 +126,7 @@ ht-degree: 1%
 
 ### 在編輯對話方塊中啟用樣式索引標籤 {#enable-styles-tab-edit}
 
-自AEM版本6.5.3.0起，「編輯」對話方塊中的選用「樣式」索引標籤現已可用。 與「設計」對話方塊索引標籤不同，「編輯」對話方塊中的索引標籤對於樣式系統的運作並非必要，但它是內容作者設定樣式的選用替代介面。
+編輯對話方塊中的可選樣式索引標籤現在可供使用。 與「設計」對話方塊索引標籤不同，「編輯」對話方塊中的索引標籤對於樣式系統的運作並非必要，但它是內容作者設定樣式的選用替代介面。
 
 編輯對話方塊索引標籤可以類似設計對話方塊索引標籤的方式加入：
 

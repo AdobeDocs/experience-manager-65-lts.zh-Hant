@@ -1,15 +1,14 @@
 ---
 title: 使用Media Library進行基本的數位資產管理
 description: '[!DNL Experience Manager Assets]和媒體庫用於資產管理。'
-contentOwner: AG
 role: Architect, Leader
 feature: Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 50a980e5-3b35-4485-9a5b-44d1a42a837c
-source-git-commit: 51f6da4da0bb3f79aa6fa17371b8084b72de7546
+source-git-commit: 92c9dd0043b644e258b75a999ad1d556689907a7
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '541'
 ht-degree: 2%
 
 ---
@@ -18,8 +17,8 @@ ht-degree: 2%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=zh-Hant) |
-| AEM 6.5 | 本文章 |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en) |
+| AEM 6.5 LTS | 本文章 |
 
 [!DNL Adobe Experience Manager]平台提供管理資產的不同功能。 媒體庫可讓使用者將少量資產上傳到存放庫、搜尋並使用網頁中的資產，以及完成資產的簡單資產管理任務。
 
@@ -90,9 +89,3 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 請注意，在沒有[!DNL Asset]授權的情況下，您無法使用智慧標籤、[!DNL Asset]連結、[!DNL Adobe Experience Manager]選取器、大量標籤、修改資產工作流程或標準[!DNL Assets]使用者介面來存取媒體庫。
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
-
->[!MORELIKETHIS]
->
->* 在[&#x200B; [!DNL Experience Manager Assets]中的](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts/content/assets/assets)DAM功能
->* [[!DNL Experience Manager] 6.5 Managed Services產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-manager-managed-services.html)
->* [[!DNL Experience Manager] 6.5內部部署產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-manager-on-premise.html)

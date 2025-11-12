@@ -1,19 +1,14 @@
 ---
 title: 資料保護和資料隱私權法規 — Adobe Experience Manager整備
 description: 瞭解Adobe Experience Manager對各種資料保護和資料隱私權法規的支援。 其中包括歐盟一般資料保護規範(GDPR)、加州消費者隱私保護法，以及在實施新的AEM專案時如何遵守。
-contentOwner: AEM Docs
-topic-tags: introduction, grdp
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-docset: aem65
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
 exl-id: 6faf8e4f-ca2a-4d68-a354-fb0aa6c2644b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4a93e17da1157253a681bf8b3a38252962d8fb59
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 44%
+source-wordcount: '739'
+ht-degree: 42%
 
 ---
 
@@ -81,7 +76,7 @@ Adobe Experience Manager執行個體以及在其上執行的應用程式是由Ad
 
 Adobe正提供各項程式，用於處理與Adobe Experience Manager的存取、刪除和選擇退出相關的隱私權請求。 有時候，可以從客戶開發的入口網站或指令碼中呼叫可用的API，以幫助實現自動化。
 
-下圖說明了隱私權請求工作流程的模樣 (使用 Adobe Experience Manager 6.5 進行說明)：
+下圖說明了隱私權請求工作流程可能的樣子：
 
 ![資料保護和隱私權](assets/data-protection-and-privacy-01.png)
 
@@ -109,7 +104,7 @@ Adobe正提供各項程式，用於處理與Adobe Experience Manager的存取、
 
 * [Adobe Target - 隱私權概觀](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en)
 
-* [Adobe Analytics 資料隱私權工作流程](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=zh-Hant)
+* [Adobe Analytics 資料隱私權工作流程](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)
 
 ## AEM Forms {#aem-forms}
 

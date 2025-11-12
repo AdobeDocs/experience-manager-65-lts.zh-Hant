@@ -1,18 +1,13 @@
 ---
 title: 建立有效的Newsletter登陸頁面
 description: 有效的電子報登陸頁面可協助您讓儘可能多的使用者註冊您的電子報（或其他電子郵件行銷活動）。 您可以使用從電子報註冊收集到的資訊來取得銷售機會。
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: personalization
-content-type: reference
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 92f4946d-1f49-4286-a51e-84b2a46a6b8a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f69262246bafca44f88ff15a4c86125f5335507e
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
@@ -49,7 +44,7 @@ ht-degree: 0%
 
 下列範例中的隱藏欄位提供最低限度的資訊量（電子郵件）；此外，您可以稍後新增更多欄位，但這會影響轉換率。
 
-以下範例是在https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html建立的表單。
+下列範例是在https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html建立的表單。
 
 1. 建立表單。
 

@@ -1,19 +1,13 @@
 ---
 title: 檢視頁面分析資料，以評估頁面內容的成效
 description: 使用頁面分析資料來評估其頁面內容的成效
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
-docset: aem65
-legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: b47591ac-10ff-4b87-b75d-68ed635ceca8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 87f0e0530b14c8cb7d25ee139ec89d75551fb16e
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '437'
 ht-degree: 4%
 
 ---
@@ -28,7 +22,7 @@ ht-degree: 4%
 
 頁面分析資料顯示在Sites主控台的[清單檢視](/help/sites-authoring/basic-handling.md#list-view)中。 當頁面以清單格式顯示時，預設會提供下列欄：
 
-* 頁面檢視
+* 頁面檢視量
 * 獨特訪客
 * 頁面逗留時間
 
@@ -69,7 +63,7 @@ analytics-administrators使用者群組的成員可以設定Sites主控台，讓
 
    ![spad-03](assets/spad-03.png)
 
-1. 選取您要在Sites主控台中公開給作者的量度，然後按一下[新增]。**&#x200B;**
+1. 選取您要在Sites主控台中公開給作者的量度，然後按一下[新增]。****
 
    顯示的欄是從Adobe Analytics中擷取的。
 
@@ -77,7 +71,7 @@ analytics-administrators使用者群組的成員可以設定Sites主控台，讓
 
 ### 從Sites開啟內容分析 {#opening-content-insights-from-sites}
 
-從Sites主控台開啟[內容分析](/help/sites-authoring/content-insights.md)以進一步調查頁面有效性。
+從Sites主控台開啟[內容Insight](/help/sites-authoring/content-insights.md)以進一步調查頁面有效性。
 
 1. 在Sites主控台中，選取您要檢視其內容深入分析的頁面。
 1. 在工具列上，按一下Analytics和Recommendations圖示。
@@ -90,4 +84,4 @@ analytics-administrators使用者群組的成員可以設定Sites主控台，讓
 >
 >由於Adobe Analytics API中的安全性變更，AEM中包含的Activity Map版本已無法再使用。
 >
->現在應該使用Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=zh-Hant)提供的ActivityMap外掛程式。
+>現在應該使用Adobe Analytics[提供的](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)ActivityMap外掛程式。

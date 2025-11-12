@@ -1,15 +1,11 @@
 ---
 title: 檢查清單 — 進一步參考
 description: 進一步瞭解詳細說明和/或擴大「管理專案 — 最佳實務檢查清單」涵蓋的檔案和原則。
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-topic-tags: managing-checklist
-content-type: reference
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Admin,Architect,Data Architect,Developer,Leader
 exl-id: 15d9c2ac-0b13-4839-a873-bc884ee69132
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2efe81437790352d674bdb0e9cc9ff524fd00487
 workflow-type: tm+mt
 source-wordcount: '3695'
 ht-degree: 1%
@@ -28,7 +24,7 @@ ht-degree: 1%
 
 ### AEM的功能 {#features-within-aem}
 
-實作AEM （特別是第一次）時，請檢閱AEM[&#128279;](https://business.adobe.com/tw/products/experience-manager/adobe-experience-manager.html)的功能和工作流程，以確定您想要或需要的區域。
+實作AEM （特別是第一次）時，請檢閱AEM[的](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)功能和工作流程，以確定您想要或需要的區域。
 
 請考量您使用的AEM功能及其對您設計的影響；例如：
 
@@ -472,7 +468,7 @@ AEM可以與其他Adobe產品、協力廠商服務或兩者整合。 這些工�
 >
 >這些數字只能用於初始估計。 經驗豐富的AEM開發人員必須進行詳細分析。
 
-| 階段 | 付出 |
+| 階段 | 成果 |
 |---|---|
 | 開發 | 涵蓋所有開發需求的每個元件節點2至4小時的粗略估計。 |
 | 開發人員測試 | 15%的開發專案 |

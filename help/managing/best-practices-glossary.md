@@ -1,16 +1,11 @@
 ---
 title: 字彙表
 description: 此辭彙表會列出「專案檢查清單」中所有「交付專案」檔案的詳細資料（按字母順序）。
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-topic-tags: managing-checklist
-content-type: reference
-docset: aem65
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Admin,Architect,Data Architect,Developer,Leader
 exl-id: e6542ba9-1182-4b81-b251-537747b89e4c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: fb979ab973476212aeed9ce86d3251eb1aedcb8c
 workflow-type: tm+mt
 source-wordcount: '6926'
 ht-degree: 0%
@@ -64,11 +59,11 @@ Adobe支援入口網站可讓實作合作夥伴和客戶在支援入口網站中
 
 ### AEM認證考試 {#aem-certification-exam}
 
-請確定已註冊適當的角色，以參加相關的[認證考試](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)。
+請確定已註冊適當的角色，以參加相關的[認證考試](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager)。
 
 ### AEM認證 {#aem-certified}
 
-確定適當的角色已通過相關的[認證考試](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)。
+確定適當的角色已通過相關的[認證考試](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager)。
 
 ### AEM技術培訓 {#aem-technical-training}
 

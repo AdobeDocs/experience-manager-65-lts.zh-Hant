@@ -1,17 +1,14 @@
 ---
 title: SEO和URL管理最佳作法
 description: 瞭解AEM實作的SEO最佳實務和建議。
-topic-tags: managing
-content-type: reference
-docset: aem65
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader
 exl-id: 3f3437fb-1fff-4703-a50d-28da89b0a856
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: fd3404f62beb377362db73ab937b58391b15e195
 workflow-type: tm+mt
-source-wordcount: '3523'
-ht-degree: 65%
+source-wordcount: '3475'
+ht-degree: 66%
 
 ---
 
@@ -52,7 +49,6 @@ URL有一些公認的最佳作法。
    * 在網頁上使用選擇器時，建議使用提供語意值的選取器。
    * 如果使用者無法透過字面理解您的 URL，則搜尋引擎也無法。
    * 例如：
-
      `mybrand.com/products/product-detail.product-category.product-name.html`
 比 `mybrand.com/products/product-detail.1234.html` 更適合
 
@@ -254,10 +250,9 @@ Resource myPage = req.getResource();
 
 1. **SlingResourceResolver 規則**
 
-   您可以使用 Web 控制台 (例如 localhost:4502/system/console/configMgr) 設定 Sling Resource Resolver：
+   您可以使用Web主控台（例如localhost:4502/system/console/configMgr）設定Sling Resource Resolver：
 
    * **Apache Sling Resource Resolver Factory**
-
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`。
 
    Adobe建議您建置所需對應來將URL縮短為規則運算式，然後在包含在組建中的OsgiConfignode `config.publish`下定義這些組態。
@@ -365,12 +360,6 @@ Disallow: /
 
 AEM 使用 [Apache Sling Sitemap 模組](https://github.com/apache/sling-org-apache-sling-sitemap)產生 XML Sitemap，這為開發人員和編輯人員提供了廣泛的選項，使網站 XML Sitemap 保持最新。
 
->[!NOTE]
->
->自Adobe Experience Manager版本6.5.11.0起可做為產品功能使用。
-> 
->對於舊版，您可以自行註冊Sling Servlet以接聽`sitemap.xml`呼叫。 使用透過servlet API提供的資源來查詢目前頁面及其子系，以輸出`sitemap.xml`檔案。
-
 Apache Sling Sitemap 模組會區分頂層 Sitemap 和巢狀 Sitemap，這兩者都是為將 `sling:sitemapRoot` 屬性設為 `true` 的任何資源產生的。通常，Sitemap 是使用樹狀頂層 Sitemap 路徑上的選擇器呈現的，這是沒有其他 Sitemap 根上階的資源。此頂層 Sitemap 根也會公開了 Sitemap 索引，這通常是網站所有者在搜索引擎的設定入口網站中設定，或新增到網站的 `robots.txt` 的 Sitemap 索引。
 
 例如，假設有一個網站，將頂層 Sitemap 根定義在 `my-page`，將巢狀 Sitemap 根定義在 `my-page/news`，為新聞子樹狀結構中的頁面產生專用 Sitemap。由此產生的相關 URL 將是
@@ -398,7 +387,7 @@ AEM Sites 包含 `SitemapGenerator` 的預設實作，它周遊頁面樹以產�
 若要限制 Sitemap 的內容，可以在需要時實作以下服務介面：
 
 * 可以實作 [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) 以隱藏 AEM Sites 特定 Sitemap 產生器所產生之 XML Sitemap 的頁面。
-* 可以實作 [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) 或 [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) 以篩選出 [商務整合框架](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=zh-Hant) 特定 Sitemap 產生器所產生之 XML Sitemap 的產品或類別。
+* 可以實作 [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) 或 [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) 以篩選出 [商務整合框架](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html) 特定 Sitemap 產生器所產生之 XML Sitemap 的產品或類別。
 
 如果預設實作不適用於特定使用案例，或擴充點不夠靈活，請實作自訂`SitemapGenerator`以完全控制產生的Sitemap內容。 以下範例使用AEM Sites的預設實作邏輯。 它使用 [ResourceTreeSitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html) 作為周遊頁面樹的起點：
 

@@ -1,16 +1,11 @@
 ---
 title: 使用行銷活動管理員
 description: 行銷活動管理員(MCM)主控台可協助您管理多管道行銷活動。 使用此行銷自動化軟體，您可以管理所有品牌、行銷活動和體驗，以及相關區段、清單、銷售機會和報表。
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: personalization
-content-type: reference
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: fb2fd382-e06a-4779-a4c5-e483ef42796d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 120c3fd005ce94021758ffbd14dd6b552de7afe9
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 0%
@@ -175,7 +170,7 @@ AEM提供不同的報表，協助您分析及監控執行個體的狀態。 此M
    * 建立&#x200B;**新的……**&#x200B;體驗；例如Adobe Target選件、Teaser和電子報。
    * **編輯**&#x200B;特定Teaser頁面或電子報的詳細資料（也可以使用連按兩下）。
    * 為特定的Teaser頁面或電子報定義&#x200B;**屬性……**。
-   * **模擬**&#x200B;體驗（Teaser頁面或電子報）的外觀與風格。
+   * **模擬**體驗（Teaser頁面或電子報）的外觀與風格。
 當模擬頁面開啟時，您可以接著開啟Sidekick以切換至該頁面的編輯模式。
 
    * **分析……**&#x200B;為頁面產生的曝光數。
