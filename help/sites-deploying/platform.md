@@ -46,7 +46,7 @@ Oak實作[JSR-283](https://jcp.org/en/jsr/detail?id=283) (JCR 2.0)規格。 其�
 Oak核心在儲存層上新增了數個圖層：
 
 * 存取層級控制
-* 搜尋和建立索引
+* 搜尋和索引
 * 觀察
 
 ### OAK JCR {#oak-jcr}
