@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6023c211220bb500814ecd511b8787d107c3c6cd
+source-git-commit: 5dfcc115fd2e1991a8a4701597b0fb25b374e3ee
 workflow-type: tm+mt
-source-wordcount: '7381'
-ht-degree: 99%
+source-wordcount: '7405'
+ht-degree: 98%
 
 ---
 
@@ -410,6 +410,7 @@ AEM 現在會避免因影像資產中格式錯誤的 XMP 後設資料而造成�
 * 使用者在 AEM Forms 中無法使用 PDF 檔案的時間軸功能。這項問題導致使用者無法有效地追蹤文件變更和修訂。在 AEM Forms 區域的「表單和文件」區段上傳任何 PDF 時，時間軸視圖停止運作。(FORMS-19408)
 * 使用者與 OData 互動時遇到 Null 指標異常的狀況。這個情況會導致資料擷取過程中斷。(FORMS-20348)
 * 在移除 Guava (一個開源的 Java 程式庫) 之後，亦已移除 google.common.collect 程式庫。這項更新確保使用自適應表單的企業客戶獲得更好的相容性和效能。(FORMS-17031)
+* 啟用伺服器端驗證(SSV)時，表單提交可能會失敗。 如果您遇到此問題，請聯絡[Adobe支援](https://business.adobe.com/in/support/main.html)以尋求協助。 (FORMS-21966)
 
 ### 表單驗證碼
 
@@ -625,7 +626,7 @@ Hotfix [cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/
 
 以下文字文件列出在此 [!DNL Experience Manager] 6.5 LTS Service Pack 1 版本中所包含的 OSGi 套件與內容套件：
 
-* [&#x200B; Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [ Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 * [Experience Manager 6.5 LTS Service Pack 1 中包含的內容套件清單](/help/release-notes/assets/65lts_sp1_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## 受限制的網站{#restricted-sites}
