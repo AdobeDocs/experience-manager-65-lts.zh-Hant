@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: eef69d02-2e88-4f44-98bb-d98fa297e3a2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ffb467630ee061bce5a9cab4e8a311e70b2aeb38
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,10 @@ NotSoSerial是Java™層級問題的Java™層級解決方案，不是AEM專屬�
 此代理程式的用途是協助緩解最新已知的脆弱類別。 如果您的專案正在還原序列化不受信任的資料，它仍可能容易受到拒絕服務攻擊、記憶體不足攻擊和未知的未來還原序列化利用的攻擊。
 
 Adobe正式支援Java™ 6、7和8。 不過，Adobe的瞭解是NotSoSerial也支援Java™ 5。
+
+>[!WARNING]
+>
+>NotSoSerial不應搭配Java™ 17或更新版本使用。
 
 ## 安裝代理程式 {#installing-the-agent}
 
