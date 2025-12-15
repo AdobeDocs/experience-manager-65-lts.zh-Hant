@@ -7,10 +7,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: 93aa6218c36b52bfcd7a204e6f0b65871a4b365b
+source-git-commit: 5c7ead37f55175bb565f8661c0c156f76f135131
 workflow-type: tm+mt
 source-wordcount: '1563'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -57,7 +57,7 @@ AEM的預設連線埠為4502。 如果該連線埠無法使用或已使用，Qui
 * [僅限Forms]以下提供範例，確保AEM Forms可搭配Java 17/Java21使用，並包含下列其他JVM引數：
 
 ```shell
---add-opens=java.base/java.util=ALL-UNNAMED -add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
+--add-opens=java.base/java.util=ALL-UNNAMED --add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
 ```
 
 ## 執行模式 {#run-modes}
@@ -323,7 +323,7 @@ CRXDE Lite主控台。
 
 >[!NOTE]
 >
-> 對於全新的AEM 6.5 LTS安裝，必須單獨安裝索引定義。 如需詳細資訊，請參閱[這個](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions)。
+> 對於全新的 AEM 6.5 LTS 安裝，必須獨立安裝索引定義。如需詳細資訊，請參閱[此處](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions)。
 
 ## 存取CRXDE Lite和Web主控台 {#accessing-crxde-lite-and-the-web-console}
 
