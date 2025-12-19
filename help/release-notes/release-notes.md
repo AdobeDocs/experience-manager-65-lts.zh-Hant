@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6ca845ce5f4b97bfc5a360b3426f7284fb9cd401
+source-git-commit: 0a050ebdc32e127a093270be91f1eed59f8f4654
 workflow-type: tm+mt
-source-wordcount: '7476'
+source-wordcount: '7478'
 ht-degree: 97%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 97%
 
 ### Forms
 
-JEE版AEM 6.5 Forms LTS現已推出。 如需支援環境的詳細資訊，請參閱支援的平台組合檔案。 AEM Forms發行頁面提供安裝程式連結。
+JEE版AEM 6.5 Forms LTS現已推出。 如需支援環境的詳細資訊，請參閱[支援的平台](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms)組合檔案。 安裝程式連結可在[AEM Forms發行版本](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)頁面上取得。
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
@@ -612,7 +612,7 @@ Hotfix [cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/
 
 以下文字文件列出在此 [!DNL Experience Manager] 6.5 LTS Service Pack 1 版本中所包含的 OSGi 套件與內容套件：
 
-* [&#x200B; Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [ Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 * [Experience Manager 6.5 LTS Service Pack 1 中包含的內容套件清單](/help/release-notes/assets/65lts_sp1_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## 受限制的網站{#restricted-sites}
