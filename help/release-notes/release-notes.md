@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 0d68ed7cb5fe2bf942ffc62f99da9b005ce00410
+source-git-commit: 6ca845ce5f4b97bfc5a360b3426f7284fb9cd401
 workflow-type: tm+mt
-source-wordcount: '7405'
-ht-degree: 98%
+source-wordcount: '7476'
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,11 @@ ht-degree: 98%
 
 [!DNL Experience Manager] 6.5 LTS SP1 包含新功能、客戶要求的重要增強功能和錯誤修正。其中也包括自 2025 年 3 月首次推出 6.5 LTS 版本以來針對效能、穩定性與安全性所發佈的增強功能。[在 6.5 LTS 上安裝此 Service Pack](#install-update)。
 
-<!-- ## Key features and enhancements -->
+## 主要功能和增強功能
+
+### Forms
+
+JEE版AEM 6.5 Forms LTS現已推出。 如需支援環境的詳細資訊，請參閱支援的平台組合檔案。 AEM Forms發行頁面提供安裝程式連結。
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
@@ -213,10 +217,7 @@ AEM 現在會避免因影像資產中格式錯誤的 XMP 後設資料而造成�
 
 #### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-65-lts-sp1}
 
-
-
 ### [!DNL Forms]{#forms-65-lts-sp1}
-
 
 #### Forms Designer 
 
@@ -231,8 +232,6 @@ AEM 現在會避免因影像資產中格式錯誤的 XMP 後設資料而造成�
 #### [!DNL Adaptive Forms] {#adaptive-forms-65-lts-sp1}
 
 #### [!DNL Forms Designer] {#forms-designer-65-lts-sp1} -->
-
-
 
 ### 基礎 {#foundation-65-lts-sp1}
 
@@ -605,12 +604,15 @@ Adobe 會持續審閱產品功能，藉由更新或取代舊功能，提高客�
 **解決方案：**
 Hotfix [cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip)可用於解決此問題。
 
+### FORMS JEE
+
+* Linux環境上的使用者可能會因為Windows樣式的行結尾而遇到安裝程式或Configuration Manager (LCM)指令碼失敗。 請先轉換所有使用dos2unix的.sh檔案，再執行安裝程式或LCM以防止執行錯誤。
 
 ## 包含的 OSGi 套件和內容套件{#osgi-bundles-and-content-packages-included}
 
 以下文字文件列出在此 [!DNL Experience Manager] 6.5 LTS Service Pack 1 版本中所包含的 OSGi 套件與內容套件：
 
-* [&#x200B; Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [ Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 * [Experience Manager 6.5 LTS Service Pack 1 中包含的內容套件清單](/help/release-notes/assets/65lts_sp1_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## 受限制的網站{#restricted-sites}
