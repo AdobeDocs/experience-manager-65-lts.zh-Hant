@@ -39,7 +39,7 @@ ht-degree: 97%
 
 ### Forms
 
-JEE版AEM 6.5 Forms LTS現已推出。 如需支援環境的詳細資訊，請參閱[支援的平台](/help/forms/using/aem-forms-jee-supported-platforms.md)組合檔案。 安裝程式連結可在[AEM Forms發行版本](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)頁面上取得。
+JEE版AEM 6.5 Forms LTS現已推出。 如需支援環境的詳細資訊，請參閱[支援的平台](/help/forms/using/aem-forms-jee-supported-platforms.md)組合檔案。 安裝程式連結可在[AEM Forms發行版本](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)頁面上取得。
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
