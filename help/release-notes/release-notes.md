@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6fdc7449673bede6a35151d4e7b97c6aa1605d4e
+source-git-commit: c9a7faf5810e78f8e80b38a87446794488efdd35
 workflow-type: tm+mt
-source-wordcount: '7477'
-ht-degree: 97%
+source-wordcount: '7355'
+ht-degree: 99%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 97%
 
 ### Forms
 
-JEE版AEM 6.5 Forms LTS現已推出。 如需支援環境的詳細資訊，請參閱[支援的平台](/help/forms/using/aem-forms-jee-supported-platforms.md)組合檔案。 安裝程式連結可在[AEM Forms發行版本](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)頁面上取得。
+JEE版AEM 6.5 Forms LTS現已推出。 如需支援環境的詳細資訊，請參閱[支援的平台](/help/forms/using/aem-forms-jee-supported-platforms.md)組合檔案。 安裝程式連結可在[AEM Forms發行版本](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)頁面上取得。
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
@@ -319,6 +319,10 @@ AEM 現在會避免因影像資產中格式錯誤的 XMP 後設資料而造成�
 * 修正 `org.apache.sling.scripting.jsp 2.6.0` 的非預期 JSP 編譯錯誤。(NPR-42640)
 
 <!--
+* Backported the fix for Sling Scripting issue that caused `DataTimeParseException` and `String.length()` null pointer exceptions during package installation. Updated Sling Scripting to version 2.8.3-1.0.10.6 to reduce installation errors and improve stability. (NPR-42640) -->
+
+<!--
+
 #### Translation{#foundation-translation-65-lts-sp1} -->
 
 #### 使用者介面{#foundation-ui-65-lts-sp1}
@@ -406,7 +410,6 @@ AEM 現在會避免因影像資產中格式錯誤的 XMP 後設資料而造成�
 * 使用者在 AEM Forms 中無法使用 PDF 檔案的時間軸功能。這項問題導致使用者無法有效地追蹤文件變更和修訂。在 AEM Forms 區域的「表單和文件」區段上傳任何 PDF 時，時間軸視圖停止運作。(FORMS-19408)
 * 使用者與 OData 互動時遇到 Null 指標異常的狀況。這個情況會導致資料擷取過程中斷。(FORMS-20348)
 * 在移除 Guava (一個開源的 Java 程式庫) 之後，亦已移除 google.common.collect 程式庫。這項更新確保使用自適應表單的企業客戶獲得更好的相容性和效能。(FORMS-17031)
-* 啟用伺服器端驗證(SSV)時，表單提交可能會失敗。 如果您遇到此問題，請聯絡[Adobe支援](https://business.adobe.com/in/support/main.html)以尋求協助。 (FORMS-21966)
 
 ### 表單驗證碼
 
@@ -567,6 +570,19 @@ Adobe 會持續審閱產品功能，藉由更新或取代舊功能，提高客�
 
 <!-- DO THESE KNOWN ISSUES CARRY OVER EACH RELEASE? THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST. -->
 
+<!-- REMOVED THIS SECTION AS PER CQDOC-23046
+### Issue with JSP scripting bundle in AEM 6.5.21-6.5.23 and AEM 6.5 LTS GA
+
+AEM 6.5.21, 6.5.22, 6.5.23, and AEM 6.5 LTS GA ship with the `org.apache.sling.scripting.jsp:2.6.0` bundle, which contains a known issue. The issue typically occurs under high load when the AEM instance handles many concurrent requests.
+
+When this issue occurs, one of the following exceptions may appear in the error logs alongside references to `org.apache.sling.scripting.jsp:2.6.0`:
+
+* `java.io.IOException: classFile.delete() failed`
+* `java.io.IOException: tmpFile.renameTo(classFile) failed`
+* `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
+* `java.io.FileNotFoundException`
+
+A hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) is available to resolve this problem. -->
 
 ### 使用僅限 SSL 連線功能時 Dispatcher 連線失敗 (AEM 6.5 LTS SP1 及以上版本已修正){#ssl-only-feature}
 
@@ -593,26 +609,11 @@ Adobe 會持續審閱產品功能，藉由更新或取代舊功能，提高客�
 **解決方案：**
 若您遇到此問題，請聯絡 Adobe 客戶支援。可以使用 Hotfix [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) 解決此問題。在套用必要的 Hotfix 之前，請勿嘗試啟用僅限 SSL 功能。
 
-### AEM 6.5 LTS SP1上安全性UI的空白許可權頁面
-
->[!NOTE]
->
-> 此問題僅出現在AEM 6.5 LTS SP1版本中。
-
-存取AEM 6.5 LTS SP1中「工具 — >安全性」底下的「許可權」頁面時，會提供空白頁面，而非顯示使用者或群組的許可權。
-
-**解決方案：**
-Hotfix [cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip)可用於解決此問題。
-
-### FORMS JEE
-
-* Linux環境上的使用者可能會因為Windows樣式的行結尾而遇到安裝程式或Configuration Manager (LCM)指令碼失敗。 請先轉換所有使用dos2unix的.sh檔案，再執行安裝程式或LCM以防止執行錯誤。
-
 ## 包含的 OSGi 套件和內容套件{#osgi-bundles-and-content-packages-included}
 
 以下文字文件列出在此 [!DNL Experience Manager] 6.5 LTS Service Pack 1 版本中所包含的 OSGi 套件與內容套件：
 
-* [&#x200B; Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [ Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 * [Experience Manager 6.5 LTS Service Pack 1 中包含的內容套件清單](/help/release-notes/assets/65lts_sp1_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## 受限制的網站{#restricted-sites}
