@@ -181,7 +181,7 @@ Adobe Experience Manager可與下列伺服器平台搭配使用以用於生產�
 
 對於雲端原生環境，請檢閱AEM產品線的最新產品：Adobe Experience Manager as a Cloud Service 。 如需詳細資訊，請參閱[Adobe Experience Manager as a Cloud Service檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hant)。
 
-Adobe也提供Adobe Managed Services，可在Azure或AWS上部署AEM。 Adobe Managed Services為專家提供在這些雲端運算環境中部署和操作AEM的經驗和技能。 請參閱[有關Adobe Managed Services的其他檔案](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t)。
+Adobe也提供Adobe Managed Services，可在Azure或AWS上部署AEM。 Adobe Managed Services為專家提供在這些雲端運算環境中部署和操作AEM的經驗和技能。 請參閱[有關Adobe Managed Services的其他檔案](https://business.adobe.com/tw/products/experience-manager/managed-services.html?aemClk=t)。
 
 在Azure或AWS或任何其它雲端運算環境上部署AEM的所有其他情況下，虛擬運算環境會包含Adobe的支援。 該虛擬環境必須依照本頁所列的技術規格執行。 任何報告的問題與AEM在任一雲端環境中執行相關，必須可獨立於雲端運算環境特定的任何雲端服務重複產生。 換言之，除非本頁所列的技術需求(例如Azure Blob儲存或AWS S3)支援雲端服務，否則不會產生任何影響。
 
@@ -189,7 +189,7 @@ Adobe也提供Adobe Managed Services，可在Azure或AWS上部署AEM。 Adobe Ma
 
 ### Dispatcher平台（網頁伺服器） {#dispatcher-platforms-web-servers}
 
-Dispatcher是快取和負載平衡元件。 [下載最新的Dispatcher版本](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html)。 Experience Manager 6.5需要Dispatcher版本4.3.2或更新版本。
+Dispatcher是快取和負載平衡元件。 [下載最新的Dispatcher版本](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=zh-Hant)。 Experience Manager 6.5需要Dispatcher版本4.3.2或更新版本。
 
 下列Web伺服器支援與Dispatcher 4.3.2版搭配使用：
 
@@ -387,7 +387,7 @@ AEM Dynamic Media預設為停用。 請參閱此處[啟用Dynamic Media](/help/a
    <th><p><strong>支援的格式可轉換成PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a>最新版本</td>
+   <td><a href="https://helpx.adobe.com/tw/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a>最新版本</td>
    <td>XPS、影像格式(BMP、GIF、JPEG、JPG、TIF、TIFF、PNG、JPF、JPX、JP2、J2K、J2C、JPC)、HTML和HTM</td>
   </tr>
 
