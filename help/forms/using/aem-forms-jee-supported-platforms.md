@@ -8,9 +8,9 @@ docset: aem65
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: f3ee715a8f65c6ea781948064a83f59097b3ceae
+source-git-commit: 4097adf1dd533bbf21c8635a1948f9ef4c294896
 workflow-type: tm+mt
-source-wordcount: '3078'
+source-wordcount: '2982'
 ht-degree: 3%
 
 ---
@@ -371,48 +371,35 @@ AEM Forms應用程式現在支援Apache Cordova。 以下是支援的平台特�
    <th><p><strong>支援的格式可轉換成PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/tw/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020傳統路線</a>最新版本</td>
-   <td>XPS、影像格式(BMP、GIF、JPEG、JPG、TIF、TIFF、PNG、JPF、JPX、JP2、J2K、J2C、JPC)、HTML、HTM、DWG、DXF和DWF</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a>最新版本</td>
+   <td>XPS、影像格式(BMP、GIF、JPEG、JPG、TIF、TIFF、PNG、JPF、JPX、JP2、J2K、J2C、JPC)、HTML和HTM</td>
   </tr>
-  <tr>
-   <td>Microsoft® Office 2019</td>
+
+<tr>
+   <td>Microsoft® Office 2021 Professional Plus、零售及大量授權</td>
    <td>DOC、DOCX、XLS、XLSX、PPT、PPTX、RTF和TXT</td>
   </tr>
   <tr>
-   <td>WordPerfect 2020<br /> </td>
-   <td>WP、WPD</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Publisher 2019<br /> </td>
-   <td>公共</td>
-  </tr>
-  <tr>
-   <td>Microsoft®專案2019<br /> </td>
-   <td>MPP</td>
-  </tr>
-  <tr>
-   <td>OpenOffice 4.1.10</td>
-   <td>ODT、ODP、ODS、ODG、ODF、SXW、SXI、SXC、SXD、XLS、XLSX、DOC、DOCX、PPT、PPTX、影像格式(BMP、GIF、JPEG、JPG、TIF、TIFF、PNG、JPF、JPX、JP2、J2K、J2C、JPC)、HTML、HTM、RTF、TXT</td>
+   <td>
+    <strong>OpenOffice 4.1.15</strong>   </td>
+   <td>
+    ODT、ODP、ODS、ODG、ODF、SXW、SXI、SXC、SXD、XLS、XLSX、DOC、DOCX、PPT、PPTX、影像格式(BMP、GIF、JPEG、JPG、TIF、TIFF、PNG、JPF、JPX、JP2、J2K、J2C、JPC)、HTML、HTM、RTF、TXT<br>
+
+</td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->PDF Generator僅支援英文、法文、德文和日文版本的支援作業系統和應用程式。
->
->此外：
->
->- PDF Generator僅支援32位元零售版的Microsoft® Office Professional Plus，以及其他轉換所需的軟體。
->- Microsoft® Office Professional Plus安裝可能會使用零售或MAK/KMS/AD型大量授權。
+>- PDF Generator僅支援英文、法文、德文和日文版本的支援作業系統和應用程式。
+>- PDF Generator需要Adobe Acrobat Pro DC （32位元）來執行轉換。
+>- PDF Generator僅支援32位元版本的Microsoft® Office Professional Plus及其他轉換所需的軟體。
 >- 如果Microsoft® Office安裝由於任何原因（例如磁碟區授權安裝無法在指定期間內找到KMS主機）而停用或取消授權，轉換可能會失敗，直到安裝重新授權並重新啟用。
 >- PDF Generator不支援Microsoft® Office 365。
->- 只有Windows和Linux®才支援OpenOffice適用的PDF Generator轉換。
+>- Windows和Linux®均支援OpenOffice適用的PDF Generator轉換。
 >- 只有Windows支援OCR PDF、最佳化PDF和Export PDF功能。
->- Acrobat版本與AEM Forms搭配，可啟用PDF Generator功能。 套件版本僅可在AEM Forms授權期間，透過AEM Forms以程式設計方式存取，以與AEM Forms PDF Generator搭配使用。 如需詳細資訊，請參閱根據您的部署([內部部署](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-manager-on-premise.html)或[Managed Services](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-manager-managed-services.html))提供的AEM Forms產品說明
->- PDF Generator服務不支援Microsoft® Windows 10。
->- PDF Generator無法使用Microsoft® Visio 2019轉換檔案。
->- PDF Generator無法使用Microsoft® Project 2019轉換檔案。
+>- PDF Generator服務不支援Microsoft® Windows 11
 
 <!-- Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.-->
@@ -461,8 +448,8 @@ AEM Forms應用程式現在支援Apache Cordova。 以下是支援的平台特�
 
 如需其他需求，請參閱：
 
-- [JEE部署上單一伺服器AEM Forms的系統需求](https://www.adobe.com/go/learn_aemforms_sysreq_single_65_tw)
-- JEE部署上叢集AEM Forms的[系統需求](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65_tw)
+- [JEE部署上單一伺服器AEM Forms的系統需求](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
+- JEE部署上叢集AEM Forms的[系統需求](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
 ### Adobe Acrobat與Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -629,7 +616,7 @@ AEM Forms應用程式適用於下列平台：
 
 ## 協力廠商修補支援政策 {#third-party-patch-support-policy}
 
-JEE版AEM Forms的協力廠商軟體需求記錄在各自產品檔案的「系統需求」一節。 從[https://adobe.com/go/learn_aemforms_documentation_65_tw](https://adobe.com/go/learn_aemforms_documentation_65_tw)存取所有檔案。
+JEE版AEM Forms的協力廠商軟體需求記錄在各自產品檔案的「系統需求」一節。 從[https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65)存取所有檔案。
 
 JEE上的AEM Forms第三方參考平台會說明在JEE上AEM Forms開發和發行期間第三方基礎架構的特定修補程式層級，以及該JEE上AEM Forms版本支援之基礎架構的最低修補程式/Service Pack層級。
 
@@ -657,7 +644,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/tw/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -740,7 +727,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/tw/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -809,7 +796,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
-| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/tw/support/programs/eol-matrix.html)|
+| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/support/programs/eol-matrix.html)|
 |  | Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)| |
 |  | | Microsoft&reg; Windows Server 2016 (64-bit)|
 |  | | Microsoft&reg; Office 2016 |

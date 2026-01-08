@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: d55edd443081ba21be7f119a77fcd01f68f47d4e
+source-git-commit: 4097adf1dd533bbf21c8635a1948f9ef4c294896
 workflow-type: tm+mt
-source-wordcount: '3232'
-ht-degree: 4%
+source-wordcount: '2877'
+ht-degree: 5%
 
 ---
 
@@ -181,7 +181,7 @@ Adobe Experience Manager可與下列伺服器平台搭配使用以用於生產�
 
 對於雲端原生環境，請檢閱AEM產品線的最新產品：Adobe Experience Manager as a Cloud Service 。 如需詳細資訊，請參閱[Adobe Experience Manager as a Cloud Service檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hant)。
 
-Adobe也提供Adobe Managed Services，可在Azure或AWS上部署AEM。 Adobe Managed Services為專家提供在這些雲端運算環境中部署和操作AEM的經驗和技能。 請參閱[有關Adobe Managed Services的其他檔案](https://business.adobe.com/tw/products/experience-manager/managed-services.html?aemClk=t)。
+Adobe也提供Adobe Managed Services，可在Azure或AWS上部署AEM。 Adobe Managed Services為專家提供在這些雲端運算環境中部署和操作AEM的經驗和技能。 請參閱[有關Adobe Managed Services的其他檔案](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t)。
 
 在Azure或AWS或任何其它雲端運算環境上部署AEM的所有其他情況下，虛擬運算環境會包含Adobe的支援。 該虛擬環境必須依照本頁所列的技術規格執行。 任何報告的問題與AEM在任一雲端環境中執行相關，必須可獨立於雲端運算環境特定的任何雲端服務重複產生。 換言之，除非本頁所列的技術需求(例如Azure Blob儲存或AWS S3)支援雲端服務，否則不會產生任何影響。
 
@@ -189,7 +189,7 @@ Adobe也提供Adobe Managed Services，可在Azure或AWS上部署AEM。 Adobe Ma
 
 ### Dispatcher平台（網頁伺服器） {#dispatcher-platforms-web-servers}
 
-Dispatcher是快取和負載平衡元件。 [下載最新的Dispatcher版本](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=zh-Hant)。 Experience Manager 6.5需要Dispatcher版本4.3.2或更新版本。
+Dispatcher是快取和負載平衡元件。 [下載最新的Dispatcher版本](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html)。 Experience Manager 6.5需要Dispatcher版本4.3.2或更新版本。
 
 下列Web伺服器支援與Dispatcher 4.3.2版搭配使用：
 
@@ -387,7 +387,7 @@ AEM Dynamic Media預設為停用。 請參閱此處[啟用Dynamic Media](/help/a
    <th><p><strong>支援的格式可轉換成PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/tw/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a>最新版本</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a>最新版本</td>
    <td>XPS、影像格式(BMP、GIF、JPEG、JPG、TIF、TIFF、PNG、JPF、JPX、JP2、J2K、J2C、JPC)、HTML和HTM</td>
   </tr>
 
@@ -415,57 +415,7 @@ AEM Dynamic Media預設為停用。 請參閱此處[啟用Dynamic Media](/help/a
 >* PDF Generator不支援Microsoft® Office 365。
 >* Windows和Linux®均支援OpenOffice適用的PDF Generator轉換。
 >* 只有Windows支援OCR PDF、最佳化PDF和Export PDF功能。
->* PDF Generator服務不支援Microsoft® Windows 11。
-
-
-<table>
- <tbody>
-  <tr>
-   <th><p><strong>產品</strong></p> </th>
-   <th><p><strong>支援的格式可轉換成PDF</strong></p> </th>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/tw/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020傳統路線</a>最新版本</td>
-   <td>XPS、影像格式(BMP、GIF、JPEG、JPG、TIF、TIFF、PNG、JPF、JPX、JP2、J2K、J2C、JPC)、HTML、HTM、DWG、DXF和DWF</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Office 2019</td>
-   <td>DOC、DOCX、XLS、XLSX、PPT、PPTX、RTF和TXT</td>
-  </tr>
-  <tr>
-   <td>WordPerfect 2020<br /> </td>
-   <td>WP、WPD</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Publisher 2019<br /> </td>
-   <td>公共</td>
-  </tr>
-  <tr>
-   <td>OpenOffice 4.1.10</td>
-   <td>ODT、ODP、ODS、ODG、ODF、SXW、SXI、SXC、SXD、XLS、XLSX、DOC、DOCX、PPT、PPTX、影像格式(BMP、GIF、JPEG、JPG、TIF、TIFF、PNG、JPF、JPX、JP2、J2K、J2C、JPC)、HTML、HTM、RTF、TXT</td>
-  </tr>
- </tbody>
-</table>
-
->[!NOTE]
->
->PDF Generator僅支援英文、法文、德文和日文版本的支援作業系統和應用程式。
->
->此外，
->
->* PDF Generator需要32位元版本的[Acrobat 2020 classic track 20.004.30006](https://helpx.adobe.com/tw/acrobat/release-note/release-notes-acrobat-reader.html)或Acrobat 2017 17.011.30078版來執行轉換。
->* PDF Generator僅支援32位元零售版的Microsoft® Office Professional Plus，以及其他轉換所需的軟體。
->* Microsoft® Office Professional Plus安裝可能會使用零售或MAK/KMS/AD型大量授權。
->* 如果Microsoft® Office安裝由於任何原因（例如磁碟區授權安裝無法在指定期間內找到KMS主機）而停用或取消授權，轉換可能會失敗，直到安裝重新授權並重新啟用。
->* PDF Generator支援Linux®作業系統上的32位元和64位元版OpenOffice。
->* PDF Generator不支援Microsoft® Office 365。
->* 只有Windows和Linux®才支援OpenOffice適用的PDF Generator轉換。
->* 只有Windows支援OCR PDF、最佳化PDF和Export PDF功能。
->* Acrobat版本與AEM Forms搭配，可啟用PDF Generator功能。 在AEM Forms授權期間，僅以程式設計方式存取AEM Forms隨附的版本，以與AEM Forms PDF Generator搭配使用。 如需詳細資訊，請參閱根據您的部署([內部部署](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-manager-on-premise.html)或[Managed Services](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-manager-managed-services.html))提供的AEM Forms產品說明
->* PDF Generator服務不支援Microsoft® Windows 10。
->* PDF Generator無法使用Microsoft® Visio 2019轉換檔案。 您可以繼續使用Microsoft® Visio 2016來轉換`.VSD`和`.VSDX`檔案。
->* PDF Generator無法使用Microsoft® Project 2019轉換檔案。 您可以繼續使用Microsoft® Project 2016來轉換`.VSD`和`.VSDX`檔案。
->
+>* PDF Generator服務不支援Microsoft® Windows 11
 
 ### AEM Forms Designer的需求 {#requirements-for-aem-forms-designer}
 
@@ -499,3 +449,5 @@ AEM Dynamic Media預設為停用。 請參閱此處[啟用Dynamic Media](/help/a
 ### AEM Assets在Linux上處理中繼資料密集的資產的需求® {#assetsonlinux}
 
 XMPFilesProcessor處理需要程式庫GLIBC_2.14才能運作。 使用包含GLIBC_2.14的Linux®核心，例如Linux®核心版本3.1.x。它可改善處理包含大量中繼資料的資產(例如PSD檔案)的效能。 使用舊版GLIBC會導致以`com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`開頭的記錄發生錯誤。
+
+如需任何與支援的格式或平台版本相關的查詢，請連絡[AEM Forms支援](https://business.adobe.com/in/support/main.html)
