@@ -5,21 +5,21 @@ role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: be7c294c-149b-4825-8376-573f9e2987e2
-source-git-commit: 1cedead501597fb655c2c7b87336b29cbf048294
+source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1896'
 ht-degree: 19%
 
 ---
 
 # 準備[!DNL Assets]以進行智慧標籤 {#configure-asset-tagging-using-the-smart-content-service}
 
-開始使用Smart Content Services標籤資產之前，請先將[!DNL Experience Manager Assets]與Adobe Developer Console整合，以使用[!DNL Adobe Sensei]的Smart Service。 設定之後，請使用一些影像和標籤來訓練服務。
+開始使用Smart Content Services標籤資產之前，請先將[!DNL Experience Manager Assets]與Adobe Developer Console整合，以使用[!DNL Adobe AI]的Smart Service。 設定之後，請使用一些影像和標籤來訓練服務。
 在使用智慧內容服務之前，請先確定下列事項：
 
 * [與Adobe Developer Console](#integrate-adobe-io)整合。
 * [訓練智慧內容服務](#training-the-smart-content-service)。
-* 安裝最新的[[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=zh-Hant)。
+* 安裝最新的[[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)。
 
 >[!IMPORTANT]
 >
@@ -49,7 +49,7 @@ ht-degree: 19%
 
 ### 建立Adobe Developer Console整合 {#create-adobe-io-integration}
 
-若要使用Smart Content Service API，請在Adobe Developer Console中建立整合，以取得[!UICONTROL 中雲端設定的]Assets智慧標籤服務設定[!UICONTROL 的]API金鑰[!UICONTROL &#x200B; (產生於Adobe Developer Console整合的]使用者端識別碼[!UICONTROL 欄位中)、]組織識別碼[!UICONTROL 以及]使用者端密碼[!DNL Experience Manager]。
+若要使用Smart Content Service API，請在Adobe Developer Console中建立整合，以取得[!UICONTROL 中雲端設定的]Assets智慧標籤服務設定[!UICONTROL 的]API金鑰[!UICONTROL  (產生於Adobe Developer Console整合的]使用者端識別碼[!UICONTROL 欄位中)、]組織識別碼[!UICONTROL 以及]使用者端密碼[!DNL Experience Manager]。
 
 1. 存取瀏覽器中的[https://developer.adobe.com](https://developer.adobe.com/)。 選取適當的帳戶，並確認關聯的組織角色是系統&#x200B;**管理員**。
 
@@ -93,7 +93,7 @@ ht-degree: 19%
    | 雲端解決方案 | 從下拉式清單中選擇&#x200B;**[!UICONTROL 智慧標籤]**。 |
    | 標題 | 新增設定IMS帳戶的標題。 |
    | 授權伺服器 | 新增`https://ims-na1.adobelogin.com` |
-   | 用戶端識別碼 | 將透過[Adobe Developer主控台](https://developer.adobe.com/console/)提供。 |
+   | 用戶端 ID | 將透過[Adobe Developer主控台](https://developer.adobe.com/console/)提供。 |
    | 用戶端密碼 | 將透過[Adobe Developer主控台](https://developer.adobe.com/console/)提供。 |
    | 範圍 | 將透過[Adobe Developer主控台](https://developer.adobe.com/console/)提供。 |
    | 組織 ID | 將透過[Adobe Developer主控台](https://developer.adobe.com/console/)提供。 |
@@ -162,7 +162,7 @@ ht-degree: 19%
 
    ![設定DAM更新資產工作流程並新增智慧標籤步驟](assets/smart-tag-step-properties-workflow1.png)
 
-1. 在「參 **[!UICONTROL 數]** 」頁籤中，如果希望工作流完成，即使自動標籤步驟失敗，請選擇「忽略錯誤 **&#x200B;**&#x200B;」。
+1. 在「參 **[!UICONTROL 數]** 」頁籤中，如果希望工作流完成，即使自動標籤步驟失敗，請選擇「忽略錯誤 **** 」。
 
    此外，若無論是否對資料夾啟用智慧標籤，都要在資產上傳時標籤資產，請選取&#x200B;**[!UICONTROL 忽略智慧標籤旗標]**。
 
@@ -188,7 +188,7 @@ ht-degree: 19%
 
 為達到最佳效果，訓練集中的影像需符合下列准則：
 
-**&#x200B;**&#x200B;數量和大小：每個標籤至少30個影像。長邊至少500像素。
+**** 數量和大小：每個標籤至少30個影像。長邊至少500像素。
 
 **Coherence**：用於特定標籤的影像在視覺上類似。
 
@@ -208,7 +208,7 @@ ht-degree: 19%
 
 ![說明性影像，以示範訓練准則](/help/assets/assets/do-not-localize/distraction.png)
 
-**&#x200B;**&#x200B;完整性：如果影像符合多個標籤的資格，請先新增所有適用的標籤，再加入影像以進行訓練。例如，對於標籤（例如`raincoat`和`model-side-view`），請先在符合資格的資產上新增兩個標籤，然後再加入以進行訓練。
+**** 完整性：如果影像符合多個標籤的資格，請先新增所有適用的標籤，再加入影像以進行訓練。例如，對於標籤（例如`raincoat`和`model-side-view`），請先在符合資格的資產上新增兩個標籤，然後再加入以進行訓練。
 
 ![說明性影像，以示範訓練准則](/help/assets/assets/do-not-localize/completeness.png)
 
@@ -254,7 +254,7 @@ ht-degree: 19%
 
    如果您在此報告中未看到您的標籤，請再次執行這些標籤的培訓工作流程。
 
-1. 若要下載報表，請從清單中選取報表，然後按一下工具列中的[下載]。 **&#x200B;**&#x200B;報表會下載為Microsoft Excel試算表。
+1. 若要下載報表，請從清單中選取報表，然後按一下工具列中的[下載]。 ****&#x200B;報表會下載為Microsoft Excel試算表。
 
 ## 限制 {#limitations}
 
@@ -270,4 +270,4 @@ ht-degree: 19%
 >
 >* [智慧標籤概觀及訓練方式](enhanced-smart-tags.md)
 >* [疑難排解OAuth憑證的智慧標籤](config-oauth.md)
->* [有關智慧標籤的教學影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=zh-Hant)
+>* [有關智慧標籤的教學影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

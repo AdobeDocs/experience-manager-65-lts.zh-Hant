@@ -7,9 +7,9 @@ role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 3511e07b-f6d0-435a-aa80-55357d3dccf5
-source-git-commit: df4b8b9c80734917569c40d01ea5789e16bfb4e3
+source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
 workflow-type: tm+mt
-source-wordcount: '5645'
+source-wordcount: '5633'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=en) |
 | AEM 6.5 LTS | 本文章 |
 
 [!DNL Adobe Experience Manager Assets]提供強大的資產探索方法，協助您達到更高的內容速度。 您的團隊可使用開箱即用的功能和自訂方法，透過順暢的智慧型搜尋體驗縮短上市時間。 搜尋資產是使用數位資產管理系統的核心，無論是供創意人員進一步使用、供業務使用者和行銷人員健全管理資產，還是DAM管理員管理。 您可以透過[!DNL Assets]使用者介面或其他應用程式和介面執行的簡單、進階和自訂搜尋，有助於完成這些使用案例。
@@ -119,13 +119,13 @@ ht-degree: 5%
 
 您可以改善特定資產的關鍵字關聯性，以協助根據關鍵字提升搜尋次數。 換言之，當您根據這些關鍵字進行搜尋時，您為其升級特定關鍵字的影像會出現在搜尋結果的最上方。
 
-1. 從[!DNL Assets]使用者介面，開啟資產的屬性頁面。 按一下「進階」**&#x200B;**，然後按一下「**[!UICONTROL 提升搜尋關鍵字]**」下的「新增」**&#x200B;**。
+1. 從[!DNL Assets]使用者介面，開啟資產的屬性頁面。 按一下「進階」****，然後按一下「**[!UICONTROL 提升搜尋關鍵字]**」下的「新增」****。
 1. 在&#x200B;**[!UICONTROL 搜尋提升]**&#x200B;方塊中，指定您要提升影像搜尋的關鍵字，然後按一下&#x200B;**[!UICONTROL 新增]**。 您可以用相同方式指定多個關鍵字。
 1. 按一下&#x200B;**[!UICONTROL 儲存並關閉]**。 您針對此關鍵字提升的資產會出現在最上層的搜尋結果中。
 
-您可以藉此機會提升目標關鍵字搜尋結果中某些資產的排名。 請觀看下方的視訊範例。 如需詳細資訊，請參閱[搜尋 [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=zh-Hant)。
+您可以藉此機會提升目標關鍵字搜尋結果中某些資產的排名。 請觀看下方的視訊範例。 如需詳細資訊，請參閱[搜尋 [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3444069/?quality=6&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *影片：瞭解搜尋結果的排名方式，以及如何影響排名。*
 
@@ -143,7 +143,7 @@ ht-degree: 5%
 
 ### 尋找類似影像 {#visualsearch}
 
-若要尋找視覺上類似使用者選取之影像的影像，請從影像的卡片檢視或工具列按一下「尋找類似 **&#x200B;**&#x200B;」選項。[!DNL Experience Manager]會顯示來自DAM存放庫的智慧型標籤影像，這些影像類似於使用者選取的影像。 瞭解 [如何設定相似性搜尋](#configvisualsearch)。
+若要尋找視覺上類似使用者選取之影像的影像，請從影像的卡片檢視或工具列按一下「尋找類似 **** 」選項。[!DNL Experience Manager]會顯示來自DAM存放庫的智慧型標籤影像，這些影像類似於使用者選取的影像。 瞭解 [如何設定相似性搜尋](#configvisualsearch)。
 
 ![使用卡片檢視中的選項尋找類似的影像](assets/search_find_similar.png)
 
@@ -163,27 +163,27 @@ ht-degree: 5%
 
 | 中繼資料欄位 | Facet值和使用狀況 |
 |---|---|
-| 標題 | title：John |
-| 建立者 | 建立者：John |
-| 位置 | 位置：NA |
+| 標題 | 標題:John |
+| 建立者 | 建立者:John |
+| 位置 | 位置:NA |
 | 說明 | description：&quot;Sample Image&quot; |
 | 建立者工具 | creatortool：&quot;Adobe Photoshop&quot; |
 | 版權擁有者 | 版權擁有者：&quot;Adobe Systems&quot; |
-| 參與者 | 貢獻者：John |
+| 參與者 | 參與者:John |
 | 使用條款 | usageterms：&quot;CopyRights Reserved&quot; |
-| 建立時間 | created：YYYY-MM-DDTHH |
-| 到期日期 | expires：YYYY-MM-DDTHH |
-| 準時 | ontime：YYYY-MM-DDTHH |
-| 關閉時間 | offtime：YYYY-MM-DDTHH |
+| 建立時間 | 已建立:YYYY-MM-DDTHH |
+| 到期日期 | 過期:YYYY-MM-DDTHH |
+| 準時 | ontime:YYYY-MM-DDTHH |
+| 關閉時間 | offtime:YYYY-MM-DDTHH |
 | 時間範圍(expires dateontime，offtime) | Facet欄位：下限……上界 |
 | 路徑 | /content/dam/&lt;資料夾名稱> |
 | PDF 標題 | pdftitle：&quot;Adobe檔案&quot; |
 | 主旨 | 主旨：「培訓」 |
 | 標記 | 標籤：「地點和旅遊」 |
 | 類型 | 型別：&quot;image\png&quot; |
-| 影像寬度 | 寬度：下限……上界 |
-| 影像高度 | 高度：下限……上界 |
-| 人員 | 人員：John |
+| 影像寬度 | 寬度:lowerbound..上界 |
+| 影像高度 | 高度:lowerbound..上界 |
+| 人員 | 人員:John |
 
 屬性`path`、`limit`、`size`和`orderby`無法搭配其他任何屬性使用`OR`運運算元組合。
 
@@ -208,15 +208,15 @@ ht-degree: 5%
 
 ### 從Adobe Asset Link面板搜尋數位資產 {#aal}
 
-使用Adobe Asset Link，創意專業人士現在無需離開支援的Adobe Creative Cloud應用程式，即可存取[!DNL Experience Manager Assets]中儲存的內容。 創意人員可以使用[!DNL Adobe Creative Cloud]應用程式中的應用程式內面板，順暢地瀏覽、搜尋、簽出和簽入資產： [!DNL Adobe Photoshop]、[!DNL Adobe Illustrator]和[!DNL Adobe InDesign]。 Asset Link也可讓使用者搜尋視覺上類似的結果。 視覺化搜尋顯示結果由Adobe Sensei的機器學習演演算法提供支援，並幫助使用者尋找在美學上相似的影像。 請參閱[使用Adobe Asset Link搜尋和瀏覽資產](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)。
+使用Adobe Asset Link，創意專業人士現在無需離開支援的Adobe Creative Cloud應用程式，即可存取[!DNL Experience Manager Assets]中儲存的內容。 創意人員可以使用[!DNL Adobe Creative Cloud]應用程式中的應用程式內面板，順暢地瀏覽、搜尋、簽出和簽入資產： [!DNL Adobe Photoshop]、[!DNL Adobe Illustrator]和[!DNL Adobe InDesign]。 Asset Link也可讓使用者搜尋視覺上類似的結果。 視覺化搜尋顯示結果由Adobe AI機器學習演演算法提供支援，並幫助使用者尋找在美學上相似的影像。 請參閱[使用Adobe Asset Link搜尋和瀏覽資產](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)。
 
 ### 在[!DNL Experience Manager]案頭應用程式中搜尋數位資產 {#desktop-app}
 
-Creative專業人員使用案頭應用程式，讓[!DNL Experience Manager Assets]可輕鬆地在本機案頭(Win或Mac)上搜尋和使用。 創意人員可以輕鬆地在Mac Finder或Windows檔案總管中顯示所需的資產、在案頭應用程式中開啟並在本機變更 — 變更會透過在存放庫中建立的新版本儲存回[!DNL Experience Manager]。 應用程式支援使用一或多個關鍵字、`*`和`?`萬用字元以及`AND`運運算元進行基本搜尋。 請參閱案頭應用程式中的[瀏覽、搜尋及預覽資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hant#browse-search-preview-assets)。
+Creative專業人員使用案頭應用程式，讓[!DNL Experience Manager Assets]可輕鬆地在本機案頭(Win或Mac)上搜尋和使用。 創意人員可以輕鬆地在Mac Finder或Windows檔案總管中顯示所需的資產、在案頭應用程式中開啟並在本機變更 — 變更會透過在存放庫中建立的新版本儲存回[!DNL Experience Manager]。 應用程式支援使用一或多個關鍵字、`*`和`?`萬用字元以及`AND`運運算元進行基本搜尋。 請參閱案頭應用程式中的[瀏覽、搜尋及預覽資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。
 
 ### 在[!DNL Brand Portal]中搜尋數位資產 {#brand-portal}
 
-業務線使用者和行銷人員可使用Brand Portal，有效率且安全地與擴充的內部團隊、合作夥伴和經銷商共用核准的數位資產。 請參閱[在Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html?lang=zh-Hant)上搜尋資產。
+業務線使用者和行銷人員可使用Brand Portal，有效率且安全地與擴充的內部團隊、合作夥伴和經銷商共用核准的數位資產。 請參閱[在Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html)上搜尋資產。
 
 ### 搜尋[!DNL Adobe Stock]個影像 {#adobe-stock1}
 
@@ -224,7 +224,7 @@ Creative專業人員使用案頭應用程式，讓[!DNL Experience Manager Asset
 
 ### 搜尋[!DNL Dynamic Media]資產 {#dynamic-media}
 
-您可以從&#x200B;**[!UICONTROL 「篩選器」]**&#x200B;面板中選取&#x200B;**[!UICONTROL 「動態媒體」]**>**[!UICONTROL 「集合」]**，以篩選動態媒體影像。這樣可以篩選並顯示影像集、旋轉木馬、混合媒體集和迴轉集等資產。在製作網頁時，作者可在內容尋找工具中搜尋集合。集合的篩選器可從快顯功能表中取得。
+您可以從&#x200B;**[!UICONTROL 「篩選器」]**&#x200B;面板中選取&#x200B;**[!UICONTROL 「動態媒體」]**>**[!UICONTROL 「集合」]**，以篩選動態媒體影像。這樣可以篩選並顯示影像集、輪播、混合媒體集和迴轉集等資產。在製作網頁時，作者可在內容尋找工具中搜尋集合。集合的篩選器可從快顯功能表中取得。
 
 ### 製作網頁時在Content Finder中搜尋數位資產 {#content-finder}
 
@@ -238,7 +238,7 @@ Creative專業人員使用案頭應用程式，讓[!DNL Experience Manager Asset
 
 >[!NOTE]
 >
->在舊版[中，資產選取器稱為](https://helpx.adobe.com/tw/experience-manager/6-2/assets/using/asset-picker.html)資產選取器[!DNL Adobe Experience Manager]。
+>在舊版[中，資產選取器稱為](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html)資產選取器[!DNL Adobe Experience Manager]。
 
 資產選擇器可讓您以特殊方式搜尋、篩選和瀏覽DAM資產。 資產選擇器位於`https://[aem_server]:[port]/aem/assetpicker.html`。 您可以擷取使用資產選擇器所選取資產的中繼資料。 您可以使用支援的請求引數來啟動它，例如資產型別（影像、視訊、文字）和選取模式（單一或多個選取範圍）。 這些引數會為特定搜尋執行個體設定資產選擇器的內容，並在整個選取範圍中維持不變。
 
@@ -250,7 +250,7 @@ Creative專業人員使用案頭應用程式，讓[!DNL Experience Manager Asset
 |---|---|---|---|
 | 資源尾碼(B) | 在URL中做為資源尾碼的資料夾路徑： [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | 若要在選取特定資料夾的情況下啟動資產選擇器（例如，在選取資料夾`/content/dam/we-retail/en/activities`的情況下），URL的格式應為： `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | 如果您在啟動資產選擇器時要求選擇特定資料夾，請將其作為資源尾碼傳遞。 |
 | `mode` | 單一，多個 | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | 在多重模式中，您可以使用資產選擇器同時選取數個資產。 |
-| `dialog` | true， false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | 使用這些引數以Granite對話方塊開啟資產選擇器。 此選項僅適用於透過Granite路徑欄位啟動資產選擇器，並將其設定為pickerSrc URL時。 |
+| `dialog` | true， false | [https://localhost:4502/aem/assetpicker.html？dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | 使用這些引數以Granite對話方塊開啟資產選擇器。 此選項僅適用於透過Granite路徑欄位啟動資產選擇器，並將其設定為pickerSrc URL時。 |
 | `root` | &lt;資料夾路徑> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | 使用此選項可指定資產選擇器的根資料夾。 在此情況下，資產選擇器可讓您僅選取根資料夾下的子資產（直接/間接）。 |
 | `viewmode` | 搜尋 | | 若要在搜尋模式中啟動資產選擇器，請使用`assettype`和`mimetype`引數。 |
 | `assettype` | 影像、檔案、多媒體、封存。 | <ul><li>`https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives` </li></ul> | 使用選項可依據提供的值篩選資產型別。 |
@@ -291,7 +291,7 @@ Creative專業人員使用案頭應用程式，讓[!DNL Experience Manager Asset
 * 全文檢索搜尋支援`-`和`^`等運運算元。 若要將這些字母搜尋為字串常值，請以雙引號括住搜尋運算式。 例如，使用`"Notebook - Beauty"`而非`Notebook - Beauty`。
 * 如果搜尋結果太多，請將所要資產的搜尋[範圍](#scope)限製為零。 當您知道如何更妥善尋找所需資產（例如特定檔案型別、特定位置、特定中繼資料等）時，此功能就會最有效。
 
-* **標籤**：標籤可協助您將可瀏覽和搜尋的資產分類，以提高效率。 標籤有助於將適當的分類傳播給其他使用者和工作流程。 [!DNL Experience Manager]提供使用Adobe Sensei的人工智慧服務自動標籤資產的方法，以透過使用和訓練標籤您的資產方面持續改善。 搜尋資產時，如果您的帳戶已啟用智慧型標籤功能，則會將智慧型標籤納入考量。 它可與內建搜尋功能搭配使用。 請參閱[搜尋行為](#searchbehavior)。 若要最佳化搜尋結果的顯示順序，您可以[提升一些選定資產的搜尋排名](#searchrank)。
+* **標籤**：標籤可協助您將可瀏覽和搜尋的資產分類，以提高效率。 標籤有助於將適當的分類傳播給其他使用者和工作流程。 [!DNL Experience Manager]提供使用Adobe AI服務自動標籤資產的方法，以透過使用和訓練標籤您的資產時越來越好。 搜尋資產時，如果您的帳戶已啟用智慧型標籤功能，則會將智慧型標籤納入考量。 它可與內建搜尋功能搭配使用。 請參閱[搜尋行為](#searchbehavior)。 若要最佳化搜尋結果的顯示順序，您可以[提升一些選定資產的搜尋排名](#searchrank)。
 
 * **索引**：搜尋結果中只會傳回已索引的中繼資料和資產。 為了獲得更好的涵蓋範圍和效能，請確保建立適當的索引並遵循最佳實務。 請參閱[索引](#searchindex)。
 
@@ -364,11 +364,11 @@ Creative專業人員使用案頭應用程式，讓[!DNL Experience Manager Asset
    儲存變更。
 
 1. 存取`/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags`並新增值為`similarityTags`之型別`Boolean`的`true`屬性。
-1. 將智慧標籤套用至[!DNL Experience Manager]存放庫中的資產。 請參閱[如何設定智慧標籤](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=zh-Hant#configuring)。
+1. 將智慧標籤套用至[!DNL Experience Manager]存放庫中的資產。 請參閱[如何設定智慧標籤](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring)。
 1. 在CRXDE的`/oak-index/damAssetLucene`節點中，將`reindex`屬性設定為`true`。 儲存變更。
 1. （選擇性）如果您有自訂的搜尋表單，則將`/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch`節點複製到`/conf/global/settings/dam/search/facets/assets/jcr:content/items`。 儲存變更。
 
-如需相關資訊，請參閱[瞭解Experience Manager中的智慧標籤](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=zh-Hant)和[如何管理智慧標籤](/help/assets/enhanced-smart-tags.md)。
+如需相關資訊，請參閱[瞭解Experience Manager中的智慧標籤](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)和[如何管理智慧標籤](/help/assets/enhanced-smart-tags.md)。
 
 >[!CAUTION]
 >
@@ -446,7 +446,7 @@ Creative專業人員使用案頭應用程式，讓[!DNL Experience Manager Asset
 
 ### 下載搜尋的資產 {#download}
 
-您可以下載搜尋的資產及其轉譯，就像從資料夾下載一般資產一樣。 從搜尋結果中選取一或多個資產，然後按一下工具列中的[下載]。**&#x200B;**
+您可以下載搜尋的資產及其轉譯，就像從資料夾下載一般資產一樣。 從搜尋結果中選取一或多個資產，然後按一下工具列中的[下載]。****
 
 ### 大量更新中繼資料屬性 {#metadataupdates}
 
@@ -465,7 +465,7 @@ Creative專業人員使用案頭應用程式，讓[!DNL Experience Manager Asset
 
 ### 建立版本 {#create-version}
 
-建立顯示在搜尋結果中的資產版本。 選取資產並按一下&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL 版本]**。 新增選用標籤或註解，然後按一下[建立]。**&#x200B;** 您也可以同時選取多個資產並建立其版本。
+建立顯示在搜尋結果中的資產版本。 選取資產並按一下&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL 版本]**。 新增選用標籤或註解，然後按一下[建立]。**** 您也可以同時選取多個資產並建立其版本。
 
 ### 建立工作流程 {#create-workflow}
 
@@ -491,5 +491,5 @@ Creative專業人員使用案頭應用程式，讓[!DNL Experience Manager Asset
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 搜尋實作指南](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=zh-Hant)
->* [提升搜尋結果的進階設定](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/search-and-discovery/search-boost)
+>* [[!DNL Experience Manager] 搜尋實作指南](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [提升搜尋結果的進階設定](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/search-and-discovery/search-boost)
