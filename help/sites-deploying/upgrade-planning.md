@@ -10,7 +10,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 3fe5421e-e97e-43c4-b34b-b84bf189a779
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 425b3fae2658d78b0885f5034ff4c61da625d9d4
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
@@ -29,9 +29,9 @@ AEM升級程式需要謹慎處理規劃、分析和執行階段，並為每個�
 
 >[!NOTE]
 >
->最新6個Service Pack支援升級至AEM 6.5 LTS
+>所有支援的6.5 Service Pack都能升級至AEM 6.5 LTS。
 
-請務必確保您執行的是支援的作業系統、Java™執行階段、httpd和Dispatcher版本。 如需詳細資訊，請參閱AEM 6.5 LTS [&#128279;](/help/sites-deploying/technical-requirements.md)的技術需求。 升級這些元件必須在升級計畫中考量，並應於升級AEM前進行。
+請務必確保您執行的是支援的作業系統、Java™執行階段、httpd和Dispatcher版本。 如需詳細資訊，請參閱AEM 6.5 LTS [的](/help/sites-deploying/technical-requirements.md)技術需求。 升級這些元件必須在升級計畫中考量，並應於升級AEM前進行。
 
 <!-- Alexandru: drafting for now
 
@@ -115,7 +115,7 @@ New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/rel
 
 由於Adobe客戶在其AEM環境中套用的自訂專案和性質多種多樣，因此請務必花一些時間預先判斷升級時應期望的整體工作量等級。 適用於AEM 6.5 LTS的[AEM Analyzer](/help/sites-deploying/aem-analyzer.md)可協助您評估升級的複雜性。
 
-適用於AEM 6.5 LTS[&#128279;](/help/sites-deploying/pattern-detector.md)的AEM Analyzer應可讓您在升級期間，針對大多數情況提供相當準確的估計值。 不過，若是較複雜的自訂與部署有不相容的變更，您可以根據[執行就地升級](/help/sites-deploying/in-place-upgrade.md)中的指示，將開發執行個體升級至AEM 6.5 LTS。 完成後，請在此環境中執行一些高階煙霧測試。 本練習的目標不是要徹底完成測試案例詳細目錄並產生正式的缺陷詳細目錄，而是要提供升級AEM 6.5 LTS相容性程式碼所需的工作量粗略估計。 結合[AEM Analyzer](/help/sites-deploying/aem-analyzer.md)和上一節中決定的架構變更時，可以為專案管理團隊提供粗略的估計，以計畫升級。
+適用於AEM 6.5 LTS[的](/help/sites-deploying/pattern-detector.md)AEM Analyzer應可讓您在升級期間，針對大多數情況提供相當準確的估計值。 不過，若是較複雜的自訂與部署有不相容的變更，您可以根據[執行就地升級](/help/sites-deploying/in-place-upgrade.md)中的指示，將開發執行個體升級至AEM 6.5 LTS。 完成後，請在此環境中執行一些高階煙霧測試。 本練習的目標不是要徹底完成測試案例詳細目錄並產生正式的缺陷詳細目錄，而是要提供升級AEM 6.5 LTS相容性程式碼所需的工作量粗略估計。 結合[AEM Analyzer](/help/sites-deploying/aem-analyzer.md)和上一節中決定的架構變更時，可以為專案管理團隊提供粗略的估計，以計畫升級。
 
 ### 建立升級和回覆Runbook {#building-the-upgrade-and-rollback-runbook}
 
