@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: add91325feaa96338526edcdde977d1f619e09d4
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 4%
@@ -50,7 +50,7 @@ ht-degree: 4%
 * [設定作法文章](/help/sites-deploying/ht-deploy.md)
 * [Web 控制台](/help/sites-deploying/web-console.md)
 * [疑難排解復寫](/help/sites-deploying/troubleshoot-rep.md)
-* [最佳實務](/help/sites-deploying/best-practices.md)
+* [最佳做法](/help/sites-deploying/best-practices.md)
 * [AEM平台簡介](/help/sites-deploying/platform.md)
 
 ## 基本概念 {#basic-concepts}
@@ -137,7 +137,7 @@ AEM軟體套件有兩種形式：
 
    UNIX®安裝位置： **/opt/aem**
 
-   Windows安裝位置： **`C:\Program Files\aem`**
+   Windows安裝位置： **`C:\aem`**
 
    同樣地，將範例執行個體直接安裝在案頭上的資料夾中也是很常見的做法。 無論如何，Adobe一般會將此位置稱為：
 
@@ -173,11 +173,11 @@ AEM需要幾分鐘來解壓縮jar檔案、自行安裝並啟動。 上述程式�
 
 **`https://localhost:4502`**
 
-作者執行個體中的結果將會自動設定為連線到&#x200B;**`localhost:4503`**&#x200B;上的&#x200B;**發佈執行個體**。
+作者執行個體中的結果將會自動設定為連線到&#x200B;**上的**&#x200B;發佈執行個體&#x200B;**`localhost:4503`**。
 
 ### 製作和發佈安裝 {#author-and-publish-installs}
 
-預設安裝（在&#x200B;**`localhost:4502`**&#x200B;上的&#x200B;**作者**&#x200B;執行個體）只需在第一次啟動`jar`檔案之前重新命名檔案即可變更。 命名模式為：
+預設安裝（在&#x200B;**上的**&#x200B;作者&#x200B;**`localhost:4502`**&#x200B;執行個體）只需在第一次啟動`jar`檔案之前重新命名檔案即可變更。 命名模式為：
 
 **`cq-<instance-type>-p<port-number>.jar`**
 
@@ -283,6 +283,6 @@ AEM會啟動，並自動將您的網頁瀏覽器重新導向至適當的頁面�
 * [設定作法文章](/help/sites-deploying/ht-deploy.md)
 * [Web 控制台](/help/sites-deploying/web-console.md)
 * [疑難排解復寫](/help/sites-deploying/troubleshoot-rep.md)
-* [最佳實務](/help/sites-deploying/best-practices.md)
+* [最佳做法](/help/sites-deploying/best-practices.md)
 * [AEM平台簡介](/help/sites-deploying/platform.md)
 
