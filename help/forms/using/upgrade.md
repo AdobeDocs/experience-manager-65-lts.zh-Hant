@@ -1,6 +1,6 @@
 ---
-title: 升級至 AEM 6.5 Forms
-description: 您可以從AEM 6.3 Forms和AEM 6.4 Forms直接升級至AEM 6.5 Forms。
+title: 升級至AEM 6.5 LTS Forms
+description: 您可以從AEM 6.3 Forms和AEM 6.4 Forms直接升級至AEM 6.5 LTS Forms。
 content-type: reference
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
@@ -9,63 +9,45 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade
 exl-id: 93126750-4645-4084-a21b-5362e3cc08a9
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f37da2418465de645d18e6cdaf46bcd5ebb32427
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 6%
+source-wordcount: '206'
+ht-degree: 1%
 
 ---
 
-# 升級至 AEM 6.5 Forms {#upgrade-to-aem-forms}
+# 升級至AEM 6.5 Forms LTS {#upgrade-to-aem-forms}
 
 ## 套用至 {#applies-to}
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html?lang=zh-Hant)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html)AEM Forms 。
 
 
-AEM 6.5 Forms包含數項新功能和增強功能，可簡化表單和對應項的建立、管理和使用者體驗。 若要瞭解AEM 6.5的所有新功能和增強功能，請參閱[新功能摘要檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/release-notes/release-notes)。
+AEM 6.5 LTS Forms包含多項新功能和增強功能，可簡化表單和對應之建立、管理和使用者體驗。 若要瞭解AEM 6.5 LTS的所有新功能和增強功能，請參閱[新功能摘要檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts/content/release-notes/release-notes)。
 
-您可以升級現有的LiveCycle或AEM Forms安裝，以取得AEM 6.5 Forms提供的新功能和增強功能，同時完整保留現有的資料、流程和資產。 升級時，也會保留處理序的中繼資料和狀態。 您可以選擇升級路徑以開始升級。
+您可以升級現有的LiveCycle或AEM Forms安裝，以取得AEM 6.5 LTS Forms提供的新功能和增強功能，同時完整保留現有的資料、流程和資產。 升級時，也會保留處理序的中繼資料和狀態。 您可以選擇升級路徑以開始升級。
 
-下圖顯示OSGi上AEM Forms的可用升級路徑：
+下圖顯示OSGi上AEM Forms LTS的可用升級路徑：
 
 ![OSGi升級流程](/help/forms/using/assets/updated-img-forms-upgrade-lts.png)
 
 您可以從下列位置執行直接升級：
 
-* OSGi上的AEM 6.3 Forms
-* OSGi上的AEM 6.4 Forms
-* AEM 6.5.22.0至AEM Forms 6.5 LTS
+* AEM 6.5.23.0至AEM Forms 6.5 LTS
 
-您也可以從以下位置執行多重躍點升級：
+下圖顯示JEE上AEM Forms LTS的可用升級路徑：
 
-* OSGi上的AEM 6.0 Forms
-* OSGi上的AEM 6.1 Forms
-* OSGi上的AEM 6.2 Forms
+![JEE升級6.5](do-not-localize/jee-upgrade-6-5.png)
+
+您可以從下列位置執行直接升級：
+
+* JEE上的AEM 6.5.23.0 Forms
+
 
 <!--
-
-The following diagram displays the available upgrade paths for AEM Forms on JEE:
-
-![JEE upgrade 6.5](do-not-localize/jee-upgrade-6-5.png) 
-
-
-You can perform a direct upgrade from:
-
-* AEM 6.3 Forms on JEE
-* AEM 6.4 Forms on JEE
-* AEM 6.5.x.x Forms on JEE
-
-You can also perform a multi-hop upgrade from
-
-* LiveCycle ES4 SP1
-* AEM 6.0 Forms on JEE
-* AEM 6.1 Forms on JEE
-* AEM 6.2 Forms on JEE
-
-AEM 6.5.18.0 Forms on JEE provides two types of installers: [Full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hant) and [Patch installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hant).
+AEM 6.5.18.0 Forms on JEE provides two types of installers: [Full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) and [Patch installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 **Full installer**: You can use the full installer to set up fresh AEM Forms instances or perform upgrades from AEM 6.5.x.x Forms on JEE to AEM 6.5.18.0 Forms on JEE.
 
@@ -86,12 +68,12 @@ Refer to the [AEM 6.5 Forms Service Pack installation instructions](https://expe
 Migration involves moving only assets (PDF, XDP, images, adaptive forms, correspondence management assets) from one server to another - processes (LCA), settings, configurations, and a few other pieces of metadata are not migrated. Perform the following steps to migrate to AEM 6.3 Forms:
 
 1. Set up a fresh environment of [AEM 6.3 Forms](https://adobe.com/go/learn_aemforms_documentation_63).
-1. Move XDP or other compatible assets to the freshly set instance. For detailed instructions, see [Importing and exporting assets to AEM Forms](../../forms/using/import-export-forms-templates.md). [import templates](../../forms/using/import-export-forms-templates.md)
-1. Build the required services, if any.
+2. Move XDP or other compatible assets to the freshly set instance. For detailed instructions, see [Importing and exporting assets to AEM Forms](../../forms/using/import-export-forms-templates.md). [import templates](../../forms/using/import-export-forms-templates.md)
+3. Build the required services, if any.
 
    For example, if you are using AEM Forms on JEE Document Services, changes are required in the code to use document services available in AEM Forms on OSGi.
 
-1. Perform post-installation activities:
+4. Perform post-installation activities:
 
     * **Run Migration Utility**
 
