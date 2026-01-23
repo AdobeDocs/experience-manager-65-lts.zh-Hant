@@ -1,15 +1,15 @@
 ---
 title: 資料庫認證存放區設定（Elytron型）
-description: JBoss EAP 8支援Elytron認證存放區，以在AEM Forms中進行安全的資料庫密碼管理，並具備網域模式設定的自動化指令碼。
+description: JBoss EAP 8支援Elytron認證存放區，以便在AEM Forms中安全地管理資料庫密碼，以進行網域模式設定。
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5d020671efaa4527a5f6dbb4b779c7a3351888a4
+source-git-commit: d397e6a51ad2a52da5ccb0a690e1acd3fafcee3c
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '379'
 ht-degree: 2%
 
 ---
