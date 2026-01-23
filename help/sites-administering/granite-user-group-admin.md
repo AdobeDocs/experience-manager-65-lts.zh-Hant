@@ -9,7 +9,7 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: ba02f9d4-5286-41d6-995c-307d6e13431b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 1%
@@ -91,7 +91,7 @@ ht-degree: 1%
    * **帳戶設定**
 
       * **狀態**
-您可以將帳戶標幟為&#x200B;**使用中**&#x200B;或&#x200B;**非使用中**。
+您可以將帳戶標幟為**使用中**&#x200B;或&#x200B;**非使用中**。
 
    * **像片**
 

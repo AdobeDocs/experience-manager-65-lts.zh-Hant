@@ -11,7 +11,7 @@ feature: Integration
 role: Admin
 exl-id: 34678cae-3c7f-4c9f-b7b6-c1dd4e0758ad
 index: false
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 >
 >本文適用於已棄用的AEM電子郵件元件基礎元件。
 >
->建議使用者使用現代[核心元件電子郵件元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=zh-Hant)
+>建議使用者使用現代[核心元件電子郵件元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 本檔案說明產生完善開發的電子郵件行銷活動範本的電子郵件設計相關最佳實務。
 
@@ -98,7 +98,7 @@ AEM中提供的示範行銷活動會遵循所有這些最佳實務。 每個最�
 
 /libs/mcm/campaign/components/image
 
-| **最佳實務** | **實作** |
+| **最佳實務** | **實施** |
 |---|---|
 | 新增&#x200B;*alt*&#x200B;屬性至影像 | *alt*&#x200B;屬性已定義為影像元件的必要屬性。 |
 | 影像請使用&#x200B;*jpg*&#x200B;格式，而非&#x200B;*png*&#x200B;格式 | 影像元件一律會將影像當作JPG使用。 |
@@ -128,7 +128,7 @@ AEM中提供的示範行銷活動會遵循所有這些最佳實務。 每個最�
 
 ### 通用 {#generic}
 
-| **最佳實務** | **實作** |
+| **最佳實務** | **實施** |
 |---|---|
 | 使用W3C驗證器修正HTML程式碼。 請確定所有開啟的標籤皆已正確關閉。 | 程式碼已驗證。 僅適用於XHTML可轉換Doctype，`<html>`專案遺失的xmlns屬性遺失。 |
 | 避免使用JavaScript或Flash，這些技術通常不受電子郵件使用者端支援。 | 新聞稿範本中不使用JavaScript或Flash。 |

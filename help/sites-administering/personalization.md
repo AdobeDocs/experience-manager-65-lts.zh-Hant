@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
 exl-id: 558cf29b-34f4-4ead-b8d6-67ef8aaa5dc5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '1528'
 ht-degree: 2%
@@ -143,7 +143,7 @@ AEM提供各種元件供個人化使用。 有些專案可讓使用者登入並�
 | 組合登入註冊 | 允許使用者登入現有帳戶或註冊新帳戶。 |
 | Forms位址列位 | 允許輸入國際地址的複雜欄位。 |
 | Forms開始 | 開始表單定義 |
-| Forms驗證碼 | 由自動重新整理的英數字元組成的欄位。 驗證碼元件可保護網站免受機器人攻擊。 |
+| 表單驗證碼 | 由自動重新整理的英數字元組成的欄位。 驗證碼元件可保護網站免受機器人攻擊。 |
 | Forms核取方塊組 | 將多個專案組織成清單，且前面有核取方塊。 使用者可選取多個核取方塊。 |
 | Forms下拉式清單 | 將多個專案組織到下拉式清單中。 「多重可選取」切換引數會指定是否可從清單中選取數個元素。 |
 | Forms結尾 | 終止表單定義。 |

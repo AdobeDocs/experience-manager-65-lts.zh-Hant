@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 45d49917-d20f-470c-bf95-6e701de67a11
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 3%
@@ -61,7 +61,7 @@ cURL命令可建置供AEM中的大部分作業使用，例如觸發工作流程�
 
    ![chlimage_1-68](assets/chlimage_1-68a.png)
 
-1. 將cURL命令複製到文字編輯器，並從命令中移除所有以`-H`開頭的標頭（在下圖中以藍色標示），並新增適當的驗證引數，例如`-u <user>:<password>`。
+1. 將cURL命令複製到文字編輯器，並從命令中移除所有以`-H`開頭的標頭（在下圖中以藍色反白顯示），並新增適當的驗證引數，例如`-u <user>:<password>`。
 
    ![chlimage_1-69](assets/chlimage_1-69a.png)
 
@@ -75,7 +75,7 @@ cURL命令可建置供AEM中的大部分作業使用，例如觸發工作流程�
 
 >[!NOTE]
 >
->下列範例假設AEM正在連線埠`4502`上的`localhost`上執行，並使用密碼為`admin`的使用者`admin`。 其他的命令預留位置設定在角括弧中。
+>下列範例假設AEM正在連線埠`localhost`上的`4502`上執行，並使用密碼為`admin`的使用者`admin`。 其他的命令預留位置設定在角括弧中。
 
 ### 封裝管理 {#package-management}
 
@@ -223,7 +223,7 @@ curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/group
 
 如需詳細資訊，請參閱[備份與還原](/help/sites-administering/backup-and-restore.md#automating-aem-online-backup)。
 
-### osgi {#osgi}
+### OSGi {#osgi}
 
 #### 啟動套件組合 {#starting-a-bundle}
 
@@ -310,7 +310,7 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 >[!NOTE]
 >
->下列範例假設AEM正在連線埠`4502`上的`localhost`上執行，並使用密碼為`admin`的使用者`admin`。 其他的命令預留位置設定在角括弧中。
+>下列範例假設AEM正在連線埠`localhost`上的`4502`上執行，並使用密碼為`admin`的使用者`admin`。 其他的命令預留位置設定在角括弧中。
 
 ### 頁面管理 {#page-management}
 

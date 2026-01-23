@@ -9,10 +9,10 @@ thumbnail: 39476.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 22fcdadf-12c0-4545-a854-76345806386f
-source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
+source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 4%
+source-wordcount: '770'
+ht-degree: 5%
 
 ---
 
@@ -31,17 +31,17 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->下列說明可協助您使用適用於AEM 6.5 LTS的CIF，為AEM Commerce設定本機AEM開發環境。 如果您使用AEM as a Cloud Service，請參閱[AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=zh-Hant)檔案。
+>下列指示可協助您使用適用於AEM 6.5 LTS的CIF，為AEM Commerce設定本機AEM開發環境。 如果您使用AEM as a Cloud Service，請參閱[AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html)檔案。
 
 適用於AEM的AEM Commerce附加元件(稱為CIF附加元件)可用於本機開發，並以AEM套件的形式提供。 可以從[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)下載它作為Feature Pack。
 
 ### 必要的軟體
 
-下列專案應在本機安裝：
+必須在本機安裝以下工具：
 
 - 本機AEM 6.5 LTS
 - [Java 17/Java 21](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
-- [Apache Maven](https://maven.apache.org/) (3.3.9 或更新版本)
+- [Apache Maven](https://maven.apache.org/) (3.3.9 或以上版本)
 - [節點LTS](https://nodejs.org/en/)
 - [npm 6+](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
@@ -153,7 +153,7 @@ CIF核心元件可透過包含提供的`all`套件或使用CIF內容套件和相
 
 由[AEM專案原型](https://github.com/adobe/aem-project-archetype)或[AEM Venia參考存放區](https://github.com/adobe/aem-cif-guides-venia)產生的專案都已包含必須調整的[預設設定](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json)。
 
-將`com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json`中`url`的值取代為專案所使用的商務系統的GraphQL端點。
+將`url`中`com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json`的值取代為專案所使用的商務系統的GraphQL端點。
 
 AEM Commerce附加元件和CIF核心元件會透過AEM伺服器並直接透過瀏覽器，連線至商務GraphQL端點。 使用者端CIF核心元件和CIF附加撰寫工具預設會連線至`/api/graphql`。 如有需要，可透過CIF Cloud Service設定調整此專案（請參閱下文）。
 

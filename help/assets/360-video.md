@@ -10,7 +10,7 @@ feature: 360 VR Video
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 17e45464-3de4-40a8-b102-ccc9eaba92a3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f27795b9acf834101d82937d9f9f142361816735
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Dynamic Media - Scene7模式包含傳送360個視訊資產的原生支援。 依
 
 您可以使用Adobe Premier Pro來檢視和編輯360/VR素材。 例如，您可以在場景中正確放置標誌和文字，並套用專為等矩形媒體設計的效果和轉場。
 
-請參閱[編輯360/VR視訊](https://helpx.adobe.com/tw/premiere-pro/how-to/edit-360-vr-video.html)。
+請參閱[編輯360/VR視訊](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html)。
 
 ## 上傳資產以與360視訊檢視器搭配使用 {#uploading-assets-for-use-with-the-video-viewer}
 
@@ -51,7 +51,7 @@ Dynamic Media - Scene7模式包含傳送360個視訊資產的原生支援。 依
 
 **上傳資產以與360視訊檢視器搭配使用：**
 
-1. 已建立專用於您的360度影片資產的資料夾。
+1. 建立您的360度影片資產專用的資料夾。
 1. [將最適化視訊設定檔套用至資料夾](/help/assets/video-profiles.md#applying-a-video-profile-to-folders)。
 
    轉譯360度視訊內容對來源視訊解析度以及編碼轉譯解析度的需求，比標準的非360度視訊內容更高。

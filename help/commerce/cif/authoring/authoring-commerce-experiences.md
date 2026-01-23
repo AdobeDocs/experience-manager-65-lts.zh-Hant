@@ -5,9 +5,9 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: b749ec33-9a78-41d5-889f-73dbdb33ceed
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 概觀 {#overview}
 
-CIF附加元件以特定於Commerce的功能擴充AEM的製作功能。 這可讓作者在不離開內容的情況下存取產品資料和內容，以有效率地建置和管理商務相關的體驗。
+CIF附加元件以特定於Commerce的功能擴充AEM的製作功能。 如此一來，作者就能在不離開上下文的情況下存取產品資料和內容，有效率地建立及管理商務相關體驗。
 
 ## 選取器 {#pickers}
 
@@ -64,7 +64,7 @@ Universal Editor已擴充功能，可存取即時產品資料和相關產品內�
 
 ![產品資料側面板](/help/commerce/cif/assets/authoring/products-side-panel.png)
 
-與資產類比，產品可在頁面上加入（這會建立產品Teaser元件作為預設）或元件（目前支援的是產品Teaser和產品輪播）。
+與資產類似，產品可以拖放至頁面（這會建立產品Teaser元件作為預設）或元件（目前支援的是產品Teaser和產品輪播）。
 
 ### 使用RTE在文字欄位中新增連結 {#rte}
 
@@ -80,7 +80,7 @@ CIF產品目錄頁面是即時轉譯的虛擬頁面。 因此，不可能內嵌�
 
 ### 存取關聯產品內容 {#associated-content}
 
-如果通用編輯器可辨識頁面上的1：n產品，側面板會自動顯示「關聯的Commerce內容」索引標籤。 此索引標籤可讓作者快速存取已使用產品標籤的AEM內容(如需詳細資訊，請參閱[以相關AEM內容擴充產品資料](./enrich-product-associated-content.md))。 如果頁面上有多個產品，此標籤會提供下拉式選單，以篩選內容型別和特定產品。 使用內容的運作方式與使用「Assets」標籤中的內容完全相同。
+如果Universal Editor可辨識頁面上的1:n個產品，側面板會自動顯示「關聯的Commerce內容」索引標籤。 此索引標籤可讓作者快速存取已使用產品標籤的AEM內容(如需詳細資訊，請參閱[以相關AEM內容擴充產品資料](./enrich-product-associated-content.md))。 如果頁面上有多個產品，此標籤會提供下拉式選單，以篩選內容型別和特定產品。 使用內容的運作方式與使用「Assets」標籤中的內容完全相同。
 
 ![產品資料側面板](/help/commerce/cif/assets/authoring/associated-commerce-content-tab.png)
 
@@ -94,7 +94,7 @@ CIF產品目錄頁面是即時轉譯的虛擬頁面。 因此，不可能內嵌�
 
 ![暫存指標](/help/commerce/cif/assets/authoring/staged-indicator.png)
 
-## Omnisearch {#omnisearch}
+## 全方位搜尋 {#omnisearch}
 
 使用Omnisearch可讓從業人員透過全文檢索搜尋，輕鬆尋找AEM內容和產品目錄資料。 Omnisearch將在AEM和commerce後端中執行全文搜尋，以在commerce後端和AEM內容中尋找產品目錄物件。 AEM結果也包含已標籤產品/類別資料的內容。
 

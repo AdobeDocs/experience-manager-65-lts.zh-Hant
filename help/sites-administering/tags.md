@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 6659ca39-f297-40b9-88e2-d942aa653e9b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1744'
+source-wordcount: '1745'
 ht-degree: 9%
 
 ---
@@ -44,8 +44,8 @@ AEM中的部分標籤功能包括：
    * 非容器標籤的標籤稱為分葉標籤
    * 標籤名稱空間是葉標籤或容器標籤
 
-* [搜尋元件](https://helpx.adobe.com/tw/experience-manager/core-components/using/quick-search.html)使用標籤來協助尋找內容。
-* 標籤由[Teaser元件](https://helpx.adobe.com/tw/experience-manager/core-components/using/teaser.html)使用，該元件會監視使用者的標籤雲以提供目標內容。
+* [搜尋元件](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html)使用標籤來協助尋找內容。
+* 標籤由[Teaser元件](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html)使用，該元件會監視使用者的標籤雲以提供目標內容。
 * 如果標籤是內容的重要方面
 
    * 請務必封裝標籤與使用這些標籤的頁面
@@ -95,7 +95,7 @@ AEM中的部分標籤功能包括：
 選取名稱空間或其他標籤後，您便可以進行下列操作：
 
 * [檢視屬性](#viewing-tag-properties)
-* [參考](#showing-tag-references)
+* [參照](#showing-tag-references)
 * [建立標記](#creating-tags)
 * [編輯](#editing-tags)
 * [移動](#moving-tags)
@@ -167,7 +167,7 @@ AEM中的部分標籤功能包括：
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
-選取名稱空間或其他標籤時，可以變更標題、說明，並透過選取&#x200B;**`Edit`**&#x200B;圖示提供標題的當地語系化。
+選取名稱空間或其他標籤時，可以變更標題、說明，並透過選取**`Edit`**圖示提供標題的當地語系化。
 
 完成編輯後，選取&#x200B;**儲存**。
 
@@ -252,11 +252,11 @@ AEM中的部分標籤功能包括：
       * 例如，瀏覽至http://localhost:4502/useradmin
 
    * 在左窗格中，選取要授與[讀取許可權](/help/sites-administering/security.md#permissions)的群組（或使用者）
-   * 在右窗格中，找到&#x200B;**Path &#x200B;** 到「標籤名稱空間」
+   * 在右窗格中，找到**Path **到「標籤名稱空間」
 
       * 例如，`/content/cq:tags/mycommunity`
 
-   * 選取&#x200B;**讀取**&#x200B;資料行中的`checkbox`
+   * 選取`checkbox`讀取&#x200B;**資料行中的**
    * 選取&#x200B;**儲存**
 
 ![chlimage_1-204](assets/chlimage_1-204.png)
@@ -277,9 +277,9 @@ AEM中的部分標籤功能包括：
 
 ### 定義多種語言的標籤標題 {#defining-tag-titles-in-multiple-languages}
 
-以下說明如何將標籤&#x200B;**Animals**&#x200B;的`title`從英文翻譯成德文和法文。
+以下說明如何將標籤`title`Animals **的**&#x200B;從英文翻譯成德文和法文。
 
-首先，請選取&#x200B;**Stock Photography**&#x200B;名稱空間下的標籤，然後選取&#x200B;**`Edit`**&#x200B;圖示（請參閱[編輯標籤](#editing-tags)區段）。
+首先，請選取&#x200B;**Stock Photography**&#x200B;名稱空間下的標籤，然後選取**`Edit`**圖示（請參閱[編輯標籤](#editing-tags)區段）。
 
 「編輯標籤」面板可讓您選擇要將標籤標題當地語系化的語言。
 

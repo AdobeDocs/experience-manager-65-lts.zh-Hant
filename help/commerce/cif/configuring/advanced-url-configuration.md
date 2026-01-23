@@ -11,7 +11,7 @@ thumbnail: 34350.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 5f6171f8-20ca-4c31-a99f-a5bc07a63baf
-source-git-commit: e4cf6ae3392cef2ffd7e8fff3226b50c95f5a248
+source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 3%
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->自AEM CIF核心元件2.0.0版開始，「URL提供者」設定僅提供預先定義的URL格式，而非1.x版已知的自由文字可設定格式。 此外，在URL中使用選取器傳遞資料的功能，已由尾碼取代。
+>自AEM CIF核心元件2.0.0版開始， URL提供者設定僅提供預先定義的url格式，而非1.x版已知的自由文字可設定格式。 此外，在URL中使用選取器傳遞資料的功能，已由尾碼取代。
 
 ### 產品頁面URL格式 {#product}
 
@@ -105,7 +105,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->此設定必須使用專案使用的外部網域進行調整。 Sling對應是根據主機名稱和網域來運作。 因此，此設定預設為停用，必須在部署之前啟用。 若要這樣做，請根據使用的網域名稱重新命名`ui.content/src/main/content/jcr_root/etc/map.publish/https`中的Sling對應`hostname.adobeaemcloud.com`資料夾，並將`resource.resolver.map.location="/etc/map.publish"`新增到專案的`JcrResourceResolver`設定中來啟用此設定。
+>此設定必須使用專案使用的外部網域進行調整。 Sling對應是根據主機名稱和網域來運作。 因此，此設定預設為停用，必須在部署之前啟用。 若要這樣做，請根據使用的網域名稱重新命名`hostname.adobeaemcloud.com`中的Sling對應`ui.content/src/main/content/jcr_root/etc/map.publish/https`資料夾，並將`resource.resolver.map.location="/etc/map.publish"`新增到專案的`JcrResourceResolver`設定中來啟用此設定。
 
 ## 其他資源
 

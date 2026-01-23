@@ -6,7 +6,7 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 453331b3-41f7-4bf1-90fc-afeaf40577c8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f27795b9acf834101d82937d9f9f142361816735
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 12%
@@ -28,7 +28,7 @@ ht-degree: 12%
 * 拒絕
 * 移動
 
-將從儲存日誌檔案的CRX位置`/var/audit/com.day.cq.dam/content/dam`擷取要在時間軸中顯示的活動日誌。 此外，當上傳新資產或修改現有資產並透過[Adobe資產連結](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)或[Experience Manager案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=zh-Hant)簽入[!DNL Experience Manager]時，會記錄時間軸活動。
+將從儲存日誌檔案的CRX位置`/var/audit/com.day.cq.dam/content/dam`擷取要在時間軸中顯示的活動日誌。 此外，當上傳新資產或修改現有資產並透過[!DNL Experience Manager]Adobe資產連結[或](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)Experience Manager案頭應用程式[簽入](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)時，會記錄時間軸活動。
 
 >[!NOTE]
 >

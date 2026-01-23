@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
 exl-id: 6a72ba56-8222-4853-adc6-ee8f3d395d9d
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: 3bc6f5aab61b6ea0ae1d6d909bf2d36fd7e4dbe4
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 1%
@@ -96,7 +96,7 @@ Adobe Campaign專用的Forms具有特定元件。 這些元件有選項可讓您
    * **Adobe Campaign：訂閱服務**：可讓您在Adobe Campaign中管理收件者的訂閱。
    * **Adobe Campaign：取消訂閱服務**：可讓您取消Adobe Campaign中收件者的訂閱。
 
-1. 每個表單上都必須有&#x200B;**加密的主要金鑰**&#x200B;元件。 此元件會定義哪個URL引數用於接受Adobe Campaign設定檔的加密主要金鑰。 在「元件」中選取Adobe Campaign ，只顯示元件。
+1. 每個表單上都必須有&#x200B;**加密的主要金鑰**&#x200B;元件。 此元件會定義哪個URL引數用於接受Adobe Campaign設定檔的加密主要金鑰。 在「元件」中選取「Adobe Campaign」，以便只顯示那些元件。
 1. 將元件&#x200B;**加密的主要金鑰**&#x200B;拖曳至表單（任何位置），然後按一下&#x200B;**組態**&#x200B;圖示。 在&#x200B;**Adobe Campaign**&#x200B;索引標籤中，指定URL引數的任何名稱。 按一下核取記號以儲存變更。
 
    產生的此表單連結需要使用此URL引數，並指派給Adobe Campaign設定檔的加密主要金鑰。 加密的主要金鑰必須正確以URL （百分比）編碼。
@@ -118,7 +118,7 @@ Adobe Campaign專用的Forms具有特定元件。 這些元件有選項可讓您
 
    >[!CAUTION]
    >
-   >您需要提供雲端服務匿名使用者的讀取許可權，才能在發佈上使用表單。 但是，請注意向匿名使用者提供讀取許可權的潛在安全性問題，並務必透過例如設定Dispatcher來緩解此問題。
+   >您需要提供讀取許可權給雲端服務上的匿名使用者，才能在發佈上使用表單。 但是，請注意向匿名使用者提供讀取許可權的潛在安全性問題，並務必透過例如設定Dispatcher來緩解此問題。
 
 ## 測試表單 {#testing-a-form}
 
@@ -126,7 +126,7 @@ Adobe Campaign專用的Forms具有特定元件。 這些元件有選項可讓您
 
 >[!NOTE]
 >
->每個表單上都必須有&#x200B;**已加密的主索引鍵**&#x200B;元件。 在「元件」中選取Adobe Campaign ，只顯示元件。
+>每個表單上都必須有&#x200B;**加密的主要金鑰**&#x200B;元件。 在「元件」中選取「Adobe Campaign」，以便只顯示那些元件。
 >
 >雖然您在此程式中手動輸入電話號碼，但實際上，使用者會在電子報中取得此頁面的連結（無論是取消訂閱、訂閱或更新您的設定檔）。 頁面會根據使用者自動更新。
 >

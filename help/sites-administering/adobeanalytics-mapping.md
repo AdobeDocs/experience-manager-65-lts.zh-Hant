@@ -10,16 +10,16 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: d9ffc796-1c2b-4fa6-b434-fb3ee03d40b5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1450'
 ht-degree: 0%
 
 ---
 
 # 使用Adobe Analytics屬性對應元件資料{#mapping-component-data-with-adobe-analytics-properties}
 
-將元件新增至框架，以收集要傳送至Adobe Analytics的資料。 設計用來收集分析資料的元件，會將資料儲存在適當的&#x200B;**CQ變數**&#x200B;中。 當您將這類元件新增到框架時，該框架會顯示CQ變數清單，以便您可以將每個變數新增到適當的&#x200B;**Analytics變數**。
+將元件新增至框架，以收集要傳送至Adobe Analytics的資料。 設計用來收集分析資料的元件，會將資料儲存在適當的&#x200B;**CQ變數**&#x200B;中。 當您將這類元件新增到框架時，該框架會顯示CQ變數清單，以便您將每個變數對應到適當的&#x200B;**Analytics變數**。
 
 ![aa-11](assets/aa-11.png)
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 AEM使用慣例來命名產品相關變數和事件，這些變數和事件會對應至Adobe Analytics產品相關屬性：
 
-| CQ變數 | 分析變數 | 描述 |
+| CQ變數 | 分析變數 | 說明 |
 |--- |--- |--- |
 | `product.category` | `product.category` （轉換變數） | 產品類別。 |
 | `product.sku` | `product.sku` （轉換變數） | 產品sku。 |
