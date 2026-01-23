@@ -67,7 +67,7 @@ JBoss EAP 8上的AEM Forms使用Elytron來管理安全認證。 客戶必須設�
 
 ## 升級
 
-如需詳細的升級指示，請參閱JEE上的[AEM Forms 6.5 LTS SP1升級指南](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+如需詳細的升級指示，請參閱JEE上的[AEM Forms 6.5 LTS SP1升級指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 ## 安裝
 
