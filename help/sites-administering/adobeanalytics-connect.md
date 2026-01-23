@@ -174,7 +174,7 @@ Adobe Analytics [資料中心](https://experienceleague.adobe.com/docs/analytics
 
 1. 從&#x200B;**網站**&#x200B;主控台，選取您要設定追蹤的頁面。
 1. 直接從主控台或頁面編輯器開啟&#x200B;**[頁面屬性](/help/sites-authoring/editing-page-properties.md)**。
-1. 開啟** Cloud Services**標籤。
+1. 開啟 **&#x200B; Cloud Services**&#x200B;標籤。
 
 1. 使用&#x200B;**新增組態**&#x200B;下拉式清單，從可用選項中選取&#x200B;**Adobe Analytics**。 如果有繼承，請在選取器可供使用之前停用該繼承。
 
