@@ -9,9 +9,9 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 8294cbbe-f37f-41d0-b8e8-298f9413462e
-source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1853'
 ht-degree: 2%
 
 ---
@@ -222,7 +222,7 @@ ACMExtensionsMessages.properties檔案包含「建立通訊」使用者介面中
       將檔案命名為ccrcustomization.js。
 
    1. 連按兩下ccrcustomization.js檔案，以在CRX中開啟。
-   1. 在檔案中貼上下列程式碼，然後按一下[儲存全部] **&#x200B;**：
+   1. 在檔案中貼上下列程式碼，然後按一下[儲存全部] ****：
 
       ```javascript
       /* for adding and handling custom actions in Extensible Toolbar.
@@ -264,7 +264,7 @@ ACMExtensionsMessages.properties檔案包含「建立通訊」使用者介面中
           };
           /**
            * Should the action be enabled in toolbar
-           * @param extraParams additional arguements that may be passed to handler (For future use)
+           * @param extraParams additional arguments that may be passed to handler (For future use)
            * @return flag indicating whether the action should be enabled
            */
          CCRCustomActionHandler.prototype.actionEnabled = function(extraParams){
@@ -387,7 +387,7 @@ LCA程式會在LiveCycle伺服器上執行，而且需要伺服器位址和登�
 1. 找到並按一下&#x200B;**Adobe LiveCycle Client SDK設定**。 Adobe LiveCycle Client SDK設定面板隨即顯示。
 1. 在服務名稱清單中，按一下+圖示並新增serviceName **SendLetterForReview/SendLetterForReviewProcess**。
 
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
 #### 設定電子郵件服務 {#configure-the-email-service}
 
@@ -401,7 +401,7 @@ LCA程式會在LiveCycle伺服器上執行，而且需要伺服器位址和登�
 
 1. 在&#x200B;**SMTP主機**&#x200B;中設定電子郵件服務。
 
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
 #### 設定DSC服務 {#configure-the-dsc-service}
 

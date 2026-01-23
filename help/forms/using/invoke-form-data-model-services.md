@@ -8,7 +8,7 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: e36be2da-af72-485f-87a6-cef6172037c6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 10%
@@ -17,11 +17,11 @@ ht-degree: 10%
 
 # 從調適型表單叫用表單資料模型服務的API {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
 ## 概觀 {#overview}
 
-AEM Forms可讓表單作者從最適化表單欄位叫用表單資料模型中設定的服務，進一步簡化及增強表單填寫體驗。 若要叫用資料模型服務，您可以在視覺化編輯器中建立規則，或在[規則編輯器](/help/forms/using/rule-editor.md)的程式碼編輯器中使用`guidelib.dataIntegrationUtils.executeOperation` API指定JavaScript。
+AEM Forms可讓表單作者從最適化表單欄位叫用表單資料模型中設定的服務，進一步簡化及增強表單填寫體驗。 若要叫用資料模型服務，您可以在視覺化編輯器中建立規則，或在`guidelib.dataIntegrationUtils.executeOperation`規則編輯器[的程式碼編輯器中使用](/help/forms/using/rule-editor.md) API指定JavaScript。
 
 本檔案著重於使用`guidelib.dataIntegrationUtils.executeOperation` API來撰寫JavaScript以叫用服務。
 
@@ -92,9 +92,9 @@ API結構會指定下列有關服務操作的詳細資訊。
 
 ## 用於叫用服務的範例指令碼 {#sample-script-to-invoke-a-service}
 
-下列範例指令碼使用`guidelib.dataIntegrationUtils.executeOperation` API來叫用在`employeeAccount`表單資料模型中設定的`getAccountById`服務作業。
+下列範例指令碼使用`guidelib.dataIntegrationUtils.executeOperation` API來叫用在`getAccountById`表單資料模型中設定的`employeeAccount`服務作業。
 
-`getAccountById`作業將`employeeID`表單欄位中的值當作`empId`引數的輸入，並傳回對應員工的員工姓名、帳號及帳戶餘額。 輸出值會填入指定的表單欄位中。 例如，`name`引數中的值已填入`fullName`表單元素中，`account`表單元素中`accountNumber`引數的值。
+`getAccountById`作業將`employeeID`表單欄位中的值當作`empId`引數的輸入，並傳回對應員工的員工姓名、帳號及帳戶餘額。 輸出值會填入指定的表單欄位中。 例如，`name`引數中的值已填入`fullName`表單元素中，`accountNumber`表單元素中`account`引數的值。
 
 ```javascript
 var operationInfo = {
@@ -124,9 +124,9 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, c
 
 ### 包含成功和失敗回呼函式的範例指令碼 {#callback-function-success-failure}
 
-下列範例指令碼使用`guidelib.dataIntegrationUtils.executeOperation` API來叫用在`employeeOrder`表單資料模型中設定的`GETOrder`服務作業。
+下列範例指令碼使用`guidelib.dataIntegrationUtils.executeOperation` API來叫用在`GETOrder`表單資料模型中設定的`employeeOrder`服務作業。
 
-`GETOrder`作業將`Order ID`表單欄位中的值當作`orderId`引數的輸入，並傳回`success`回呼函式中的訂單數量值。  如果`success`回呼函式未傳回訂單數量，`failure`回呼函式會顯示`Error occured`訊息。
+`GETOrder`作業將`Order ID`表單欄位中的值當作`orderId`引數的輸入，並傳回`success`回呼函式中的訂單數量值。  如果`success`回呼函式未傳回訂單數量，`failure`回呼函式會顯示`Error occurred`訊息。
 
 >[!NOTE]
 >

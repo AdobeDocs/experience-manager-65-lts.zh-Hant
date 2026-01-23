@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 413f15c9-5b51-4d8d-8cf0-3e98608b9d9e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '1389'
+source-wordcount: '1388'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >本檔案為網站管理員和開發人員提供回應式設計的概覽，說明如何在AEM中實現功能。
 >
->對於內容作者，如何在內容頁面上使用回應式設計功能的詳細資訊，可在內容頁面的回應式佈局檔案中取得。[&#128279;](/help/sites-authoring/responsive-layout.md)
+>對於內容作者，如何在內容頁面上使用回應式設計功能的詳細資訊，可在內容頁面的回應式佈局檔案中取得。[](/help/sites-authoring/responsive-layout.md)
 
 ## 概觀 {#overview}
 
@@ -47,7 +47,7 @@ AEM使用多種機制組合，為您的頁面實現回應式佈局：
         您可以將版面容器設為頁面的標準版面容器，同時允許使用者在此容器中新增更多版面容器；例如，實現欄控制。
 
 * **[配置模式](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
-將配置容器放置到頁面上後，您就可以使用&#x200B;**配置**&#x200B;模式在回應式格線內放置內容。
+將配置容器放置到頁面上後，您就可以使用**配置**&#x200B;模式在回應式格線內放置內容。
 
 * [**模擬器**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
 這可讓您建立及編輯回應式網站，這些網站會透過以互動方式調整元件大小，根據裝置/視窗大小重新安排版面。 之後，使用者可以使用模擬器檢視內容的呈現方式。
@@ -135,7 +135,7 @@ AEM使用多種機制組合，為您的頁面實現回應式佈局：
 
 #### 使用XML設定中斷點 {#configuring-breakpoints-using-xml}
 
-中斷點位於`.context.html`的`<jcr:content>`區段內，在適當的範本（或內容）資料夾下。
+中斷點位於`<jcr:content>`的`.context.html`區段內，在適當的範本（或內容）資料夾下。
 
 範例定義：
 
@@ -193,7 +193,7 @@ AEM使用多種機制組合，為您的頁面實現回應式佈局：
 
 AEM使用LESS來產生必要CSS的部分，這些需要包含在您的專案中。
 
-您也必須建立[使用者端程式庫](https://experienceleague.adobe.com/docs/?lang=zh-Hant)，以提供額外的設定和函式呼叫。 以下LESS擷取是您必須新增至專案的最小值範例：
+您也必須建立[使用者端程式庫](https://experienceleague.adobe.com/docs/)，以提供額外的設定和函式呼叫。 以下LESS擷取是您必須新增至專案的最小值範例：
 
 ```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -249,7 +249,7 @@ AEM使用LESS來產生必要CSS的部分，這些需要包含在您的專案中�
 
 * `afterchildedit`
 
-若要正確調整回應式格線中所包含的最適化影像內容大小並加以更新，您必須將設為`REFRESH_PAGE`的`afterEdit`接聽程式新增至每個所包含元件的`EditConfig`檔案。
+若要正確調整回應式格線中所包含的最適化影像內容大小並加以更新，您必須將設為`afterEdit`的`REFRESH_PAGE`接聽程式新增至每個所包含元件的`EditConfig`檔案。
 
 例如：
 

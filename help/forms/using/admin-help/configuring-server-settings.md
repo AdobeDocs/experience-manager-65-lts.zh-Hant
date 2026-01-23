@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: da8031f2-26ab-41e2-bf54-7032727ca192
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '2643'
 ht-degree: 0%
@@ -50,7 +50,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果您使用Microsoft Exchange Server，而且電子郵件地址為無效的電子郵件地址，則Microsoft Exchange Server無法傳送電子郵件至通訊群組清單。 若要解決此問題，請為Microsoft Exchange伺服器上的每個通訊群組清單分別選取&#x200B;**啟用外部通訊**&#x200B;選項。
+   >如果您使用Microsoft Exchange Server，而且電子郵件地址為無效的電子郵件地址，則Microsoft Exchange Server無法傳送電子郵件至通訊群組清單。 若要解決此問題，請針對Microsoft Exchange伺服器上的每個通訊群組清單，分別選取&#x200B;**啟用外部通訊**&#x200B;選項。
 
 1. 按一下「儲存」。
 

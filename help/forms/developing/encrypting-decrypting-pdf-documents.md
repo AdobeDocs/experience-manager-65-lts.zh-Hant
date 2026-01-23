@@ -11,7 +11,7 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 9f694358-e502-4fc0-8352-4c5119573756
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '8133'
 ht-degree: 0%
@@ -130,18 +130,18 @@ ht-degree: 0%
 1. 建立加密使用者端API。
 
    * 建立包含連線屬性的`ServiceClientFactory`物件。
-   * 使用它的建構函式並傳遞`ServiceClientFactory`物件來建立`EncryptionServiceClient`物件。
+   * 使用它的建構函式並傳遞`EncryptionServiceClient`物件來建立`ServiceClientFactory`物件。
 
 1. 取得PDF檔案以進行加密。
 
    * 使用要加密的PDF檔案的建構函式，並傳遞指定PDF檔案位置的字串值，來建立代表該檔案的`java.io.FileInputStream`物件。
-   * 使用它的建構函式並傳遞`java.io.FileInputStream`物件來建立`com.adobe.idp.Document`物件。
+   * 使用它的建構函式並傳遞`com.adobe.idp.Document`物件來建立`java.io.FileInputStream`物件。
 
 1. 設定加密執行階段選項。
 
    * 透過叫用它的建構函式來建立`PasswordEncryptionOptionSpec`物件。
    * 叫用`PasswordEncryptionOptionSpec`物件的`setEncryptOption`方法，並傳遞指定要加密的檔案資源的`PasswordEncryptionOption`列舉值，以指定要加密的PDF檔案資源。 例如，若要加密整個PDF檔案，包括其中繼資料及其附件，請指定`PasswordEncryptionOption.ALL`。
-   * 使用`ArrayList`建構函式建立儲存加密許可權的`java.util.List`物件。
+   * 使用`java.util.List`建構函式建立儲存加密許可權的`ArrayList`物件。
    * 透過叫用`java.util.List`物件的`add`方法並傳遞對應到您要設定的許可權的列舉值來指定許可權。 例如，若要設定允許使用者複製PDF檔案中資料的許可權，請指定`PasswordEncryptionPermission.PASSWORD_EDIT_COPY`。 （對每個要設定的許可權重複此步驟）。
    * 呼叫`PasswordEncryptionOptionSpec`物件的`setCompatability`方法，並傳遞指定Acrobat相容性層級的列舉值，以指定Acrobat相容性選項。 例如，您可以指定`PasswordEncryptionCompatability.ACRO_7`。
    * 指定密碼值，讓使用者可以透過叫用`PasswordEncryptionOptionSpec`物件的`setDocumentOpenPassword`方法並傳遞代表開啟密碼的字串值，來開啟加密的PDF檔案。
@@ -159,7 +159,7 @@ ht-degree: 0%
 1. 將加密的PDF檔案儲存為PDF檔案。
 
    * 建立`java.io.File`物件，並確定副檔名為.pdf。
-   * 叫用`com.adobe.idp.Document`物件的`copyToFile`方法，將`com.adobe.idp.Document`物件的內容複製到檔案。 確定您使用的是`encryptPDFUsingPassword`方法傳回的`com.adobe.idp.Document`物件。
+   * 叫用`com.adobe.idp.Document`物件的`copyToFile`方法，將`com.adobe.idp.Document`物件的內容複製到檔案。 確定您使用的是`com.adobe.idp.Document`方法傳回的`encryptPDFUsingPassword`物件。
 
 **另請參閱**
 
@@ -187,8 +187,8 @@ ht-degree: 0%
 1. 建立加密使用者端API物件。
 
    * 使用預設建構函式建立`EncryptionServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`EncryptionServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/EncryptionService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
-   * 取得`EncryptionServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
+   * 使用`EncryptionServiceClient.Endpoint.Address`建構函式建立`System.ServiceModel.EndpointAddress`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/EncryptionService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
+   * 取得`System.ServiceModel.BasicHttpBinding`欄位的值，以建立`EncryptionServiceClient.Endpoint.Binding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
 
@@ -203,13 +203,13 @@ ht-degree: 0%
    * 建立`System.IO.FileStream`物件，方法為叫用其建構函式，並傳遞代表PDF要加密之檔案位置的字串值，以及開啟檔案的模式。
    * 建立位元組陣列以儲存`System.IO.FileStream`物件的內容。 您可以取得`System.IO.FileStream`物件的`Length`屬性來決定位元組陣列的大小。
    * 呼叫`System.IO.FileStream`物件的`Read`方法，並傳遞要讀取的位元組陣列、起始位置和資料流長度，以資料流資料填入位元組陣列。
-   * 將位元組陣列的內容指派給`BLOB`物件的`MTOM`資料成員，以填入`BLOB`物件。
+   * 將位元組陣列的內容指派給`BLOB`物件的`BLOB`資料成員，以填入`MTOM`物件。
 
 1. 設定加密執行階段選項。
 
    * 使用物件的建構函式建立`PasswordEncryptionOptionSpec`物件。
    * 指定`PasswordEncryptionOption`列舉值給`PasswordEncryptionOptionSpec`物件的`encryptOption`資料成員，以指定要加密的PDF檔案資源。 若要加密整個PDF，包括其中繼資料及其附件，請將`PasswordEncryptionOption.ALL`指派給此資料成員。
-   * 將`PasswordEncryptionCompatability`列舉值指派給`PasswordEncryptionOptionSpec`物件的`compatability`資料成員，以指定Acrobat相容性選項。 例如，將`PasswordEncryptionCompatability.ACRO_7`指派給此資料成員。
+   * 將`PasswordEncryptionCompatibility`列舉值指派給`PasswordEncryptionOptionSpec`物件的`compatibility`資料成員，以指定Acrobat相容性選項。 例如，將`PasswordEncryptionCompatibility.ACRO_7`指派給此資料成員。
    * 指定密碼值，讓使用者藉由指定字串值來開啟加密的PDF檔案，該字串值代表`PasswordEncryptionOptionSpec`物件的`documentOpenPassword`資料成員的開啟密碼。
    * 指定密碼值，可讓使用者透過將代表主密碼的字串值指派給`PasswordEncryptionOptionSpec`物件的`permissionPassword`資料成員，從PDF檔案中移除加密。
 
@@ -225,8 +225,8 @@ ht-degree: 0%
 1. 將加密的PDF檔案儲存為PDF檔案。
 
    * 建立`System.IO.FileStream`物件，方法為叫用其建構函式，並傳遞代表受保護PDF檔案之檔案位置的字串值。
-   * 建立位元組陣列，儲存`encryptPDFUsingPassword`方法傳回的`BLOB`物件的資料內容。 取得`BLOB`物件的`MTOM`資料成員的值，以填入位元組陣列。
-   * 透過叫用它的建構函式並傳遞`System.IO.FileStream`物件來建立`System.IO.BinaryWriter`物件。
+   * 建立位元組陣列，儲存`BLOB`方法傳回的`encryptPDFUsingPassword`物件的資料內容。 取得`BLOB`物件的`MTOM`資料成員的值，以填入位元組陣列。
+   * 透過叫用它的建構函式並傳遞`System.IO.BinaryWriter`物件來建立`System.IO.FileStream`物件。
    * 呼叫`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入PDF檔案。
 
 **另請參閱**
@@ -335,12 +335,12 @@ ht-degree: 0%
 1. 建立加密使用者端API物件。
 
    * 建立包含連線屬性的`ServiceClientFactory`物件。
-   * 使用它的建構函式並傳遞`ServiceClientFactory`物件來建立`EncryptionServiceClient`物件。
+   * 使用它的建構函式並傳遞`EncryptionServiceClient`物件來建立`ServiceClientFactory`物件。
 
 1. 取得PDF檔案以進行加密。
 
    * 使用要加密的PDF檔案的建構函式，並傳遞指定PDF檔案位置的字串值，來建立代表該檔案的`java.io.FileInputStream`物件。
-   * 使用它的建構函式並傳遞`java.io.FileInputStream`物件來建立`com.adobe.idp.Document`物件。
+   * 使用它的建構函式並傳遞`com.adobe.idp.Document`物件來建立`java.io.FileInputStream`物件。
 
 1. 參考憑證。
 
@@ -348,7 +348,7 @@ ht-degree: 0%
    * 透過叫用`java.util.List`物件的`add`方法並傳遞`CertificateEncryptionPermissions`列舉值來指定與加密檔案相關聯的許可權，該列舉值代表將許可權授與開啟安全PDF檔案的使用者。 例如，若要指定所有許可權，請傳遞`CertificateEncryptionPermissions.PKI_ALL_PERM`。
    * 使用物件的建構函式建立`Recipient`物件。
    * 建立`java.io.FileInputStream`物件，代表使用建構函式加密PDF檔案的憑證，並傳遞指定憑證位置的字串值。
-   * 使用它的建構函式並傳遞代表憑證的`java.io.FileInputStream`物件來建立`com.adobe.idp.Document`物件。
+   * 使用它的建構函式並傳遞代表憑證的`com.adobe.idp.Document`物件來建立`java.io.FileInputStream`物件。
    * 叫用`Recipient`物件的`setX509Cert`方法，並傳遞包含憑證的`com.adobe.idp.Document`物件。 （此外，`Recipient`物件可以有Truststore憑證別名或LDAP URL做為憑證來源。）
    * 使用它的建構函式建立儲存許可權和憑證資訊的`CertificateEncryptionIdentity`物件。
    * 叫用`CertificateEncryptionIdentity`物件的`setPerms`方法，並傳遞儲存許可權資訊的`java.util.List`物件。
@@ -375,7 +375,7 @@ ht-degree: 0%
 1. 將加密的PDF檔案儲存為PDF檔案。
 
    * 建立`java.io.File`物件，並確定副檔名為.pdf。
-   * 叫用`com.adobe.idp.Document`物件的`copyToFile`方法，將`com.adobe.idp.Document`物件的內容複製到檔案。 確定您使用的是`encryptPDFUsingCertificates`方法傳回的`com.adobe.idp.Document`物件。
+   * 叫用`com.adobe.idp.Document`物件的`copyToFile`方法，將`com.adobe.idp.Document`物件的內容複製到檔案。 確定您使用的是`com.adobe.idp.Document`方法傳回的`encryptPDFUsingCertificates`物件。
 
 **另請參閱**
 
@@ -402,8 +402,8 @@ ht-degree: 0%
 1. 建立加密使用者端API物件。
 
    * 使用預設建構函式建立`EncryptionServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`EncryptionServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/EncryptionService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
-   * 取得`EncryptionServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
+   * 使用`EncryptionServiceClient.Endpoint.Address`建構函式建立`System.ServiceModel.EndpointAddress`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/EncryptionService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
+   * 取得`System.ServiceModel.BasicHttpBinding`欄位的值，以建立`EncryptionServiceClient.Endpoint.Binding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
 
@@ -418,7 +418,7 @@ ht-degree: 0%
    * 建立`System.IO.FileStream`物件，方法為叫用其建構函式，並傳遞代表PDF要加密之檔案位置的字串值，以及開啟檔案的模式。
    * 建立位元組陣列以儲存`System.IO.FileStream`物件的內容。 您可以取得`System.IO.FileStream`物件的`Length`屬性來決定位元組陣列的大小。
    * 呼叫`System.IO.FileStream`物件的`Read`方法，並傳遞要讀取的位元組陣列、起始位置和資料流長度，以資料流資料填入位元組陣列。
-   * 以位元組陣列的內容指派物件的`MTOM`屬性，填入`BLOB`物件。
+   * 以位元組陣列的內容指派物件的`BLOB`屬性，填入`MTOM`物件。
 
 1. 參考憑證。
 
@@ -427,7 +427,7 @@ ht-degree: 0%
    * 建立`System.IO.FileStream`物件，方法是叫用其建構函式，並傳遞代表憑證的檔案位置及開啟檔案的模式的字串值。
    * 建立位元組陣列以儲存`System.IO.FileStream`物件的內容。 您可以取得`System.IO.FileStream`物件的`Length`屬性來決定位元組陣列的大小。
    * 呼叫`System.IO.FileStream`物件的`Read`方法，並傳遞要讀取的位元組陣列、起始位置和資料流長度，以資料流資料填入位元組陣列。
-   * 將位元組陣列的內容指派給`BLOB`物件的`MTOM`資料成員，以填入`BLOB`物件。
+   * 將位元組陣列的內容指派給`BLOB`物件的`BLOB`資料成員，以填入`MTOM`物件。
    * 將儲存憑證的`BLOB`物件指派給`Recipient`物件的`x509Cert`資料成員。
    * 使用它的建構函式建立儲存憑證資訊的`CertificateEncryptionIdentity`物件。
    * 將儲存憑證的`Recipient`物件指派給`CertificateEncryptionIdentity`物件的收件者資料成員。
@@ -452,8 +452,8 @@ ht-degree: 0%
 1. 將加密的PDF檔案儲存為PDF檔案。
 
    * 建立`System.IO.FileStream`物件，方法為叫用其建構函式，並傳遞代表受保護PDF檔案之檔案位置的字串值。
-   * 建立位元組陣列，儲存`encryptPDFUsingCertificates`方法傳回的`BLOB`物件的資料內容。 取得`BLOB`物件的`binaryData`資料成員的值，以填入位元組陣列。
-   * 透過叫用它的建構函式並傳遞`System.IO.FileStream`物件來建立`System.IO.BinaryWriter`物件。
+   * 建立位元組陣列，儲存`BLOB`方法傳回的`encryptPDFUsingCertificates`物件的資料內容。 取得`BLOB`物件的`binaryData`資料成員的值，以填入位元組陣列。
+   * 透過叫用它的建構函式並傳遞`System.IO.BinaryWriter`物件來建立`System.IO.FileStream`物件。
    * 呼叫`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入PDF檔案。
 
 **另請參閱**
@@ -537,12 +537,12 @@ ht-degree: 0%
 1. 建立加密服務使用者端。
 
    * 建立包含連線屬性的`ServiceClientFactory`物件。
-   * 使用它的建構函式並傳遞`ServiceClientFactory`物件來建立`EncryptionServiceClient`物件。
+   * 使用它的建構函式並傳遞`EncryptionServiceClient`物件來建立`ServiceClientFactory`物件。
 
 1. 取得加密的PDF檔案。
 
    * 使用加密PDF檔案的建構函式，並傳遞指定加密PDF檔案位置的字串值，來建立代表加密檔案的`java.io.FileInputStream`物件。
-   * 使用它的建構函式並傳遞`java.io.FileInputStream`物件來建立`com.adobe.idp.Document`物件。
+   * 使用它的建構函式並傳遞`com.adobe.idp.Document`物件來建立`java.io.FileInputStream`物件。
 
 1. 移除加密。
 
@@ -556,7 +556,7 @@ ht-degree: 0%
 1. 儲存PDF檔案。
 
    * 建立`java.io.File`物件，並確定副檔名為.pdf。
-   * 叫用`com.adobe.idp.Document`物件的`copyToFile`方法，將`Document`物件的內容複製到檔案。 確定您使用的是`removePDFCredentialSecurity`方法傳回的`com.adobe.idp.Document`物件。
+   * 叫用`com.adobe.idp.Document`物件的`copyToFile`方法，將`Document`物件的內容複製到檔案。 確定您使用的是`com.adobe.idp.Document`方法傳回的`removePDFCredentialSecurity`物件。
 
 **另請參閱**
 
@@ -583,8 +583,8 @@ ht-degree: 0%
 1. 建立加密服務使用者端。
 
    * 使用預設建構函式建立`EncryptionServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`EncryptionServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/EncryptionService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
-   * 取得`EncryptionServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
+   * 使用`EncryptionServiceClient.Endpoint.Address`建構函式建立`System.ServiceModel.EndpointAddress`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/EncryptionService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
+   * 取得`System.ServiceModel.BasicHttpBinding`欄位的值，以建立`EncryptionServiceClient.Endpoint.Binding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
 
@@ -599,7 +599,7 @@ ht-degree: 0%
    * 建立`System.IO.FileStream`物件，方法為叫用其建構函式，並傳遞代表加密PDF檔案的檔案位置及開啟檔案的模式的字串值。
    * 建立位元組陣列以儲存`System.IO.FileStream`物件的內容。 您可以取得`System.IO.FileStream`物件的`Length`屬性來決定位元組陣列的大小。
    * 呼叫`System.IO.FileStream`物件的`Read`方法，並傳遞要讀取的位元組陣列、起始位置和資料流長度，以資料流資料填入位元組陣列。
-   * 將位元組陣列的內容指派給`BLOB`物件的`MTOM`資料成員，以填入`BLOB`物件。
+   * 將位元組陣列的內容指派給`BLOB`物件的`BLOB`資料成員，以填入`MTOM`物件。
 
 1. 移除加密。
 
@@ -613,8 +613,8 @@ ht-degree: 0%
 1. 儲存PDF檔案。
 
    * 建立`System.IO.FileStream`物件，方法為叫用其建構函式，並傳遞代表不安全PDF檔案檔案位置的字串值。
-   * 建立位元組陣列，儲存`removePDFPasswordSecurity`方法傳回的`BLOB`物件的內容。 取得`BLOB`物件的`MTOM`資料成員的值，以填入位元組陣列。
-   * 透過叫用它的建構函式並傳遞`System.IO.FileStream`物件來建立`System.IO.BinaryWriter`物件。
+   * 建立位元組陣列，儲存`BLOB`方法傳回的`removePDFPasswordSecurity`物件的內容。 取得`BLOB`物件的`MTOM`資料成員的值，以填入位元組陣列。
+   * 透過叫用它的建構函式並傳遞`System.IO.BinaryWriter`物件來建立`System.IO.FileStream`物件。
    * 呼叫`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入PDF檔案。
 
 **另請參閱**
@@ -692,12 +692,12 @@ ht-degree: 0%
 1. 建立加密服務使用者端。
 
    * 建立包含連線屬性的`ServiceClientFactory`物件。
-   * 使用它的建構函式並傳遞`ServiceClientFactory`物件來建立`EncryptionServiceClient`物件。
+   * 使用它的建構函式並傳遞`EncryptionServiceClient`物件來建立`ServiceClientFactory`物件。
 
 1. 取得加密的PDF檔案。
 
    * 使用加密PDF檔案的建構函式，並傳遞指定PDF檔案位置的字串值，來建立代表加密的檔案的`java.io.FileInputStream`物件。
-   * 使用它的建構函式並傳遞`java.io.FileInputStream`物件來建立`com.adobe.idp.Document`物件。
+   * 使用它的建構函式並傳遞`com.adobe.idp.Document`物件來建立`java.io.FileInputStream`物件。
 
 1. 移除密碼。
 
@@ -711,7 +711,7 @@ ht-degree: 0%
 1. 儲存PDF檔案。
 
    * 建立`java.io.File`物件，並確定副檔名為.pdf。
-   * 叫用`com.adobe.idp.Document`物件的`copyToFile`方法，將`Document`物件的內容複製到檔案。 確定您使用的是`removePDFPasswordSecurity`方法傳回的`Document`物件。
+   * 叫用`com.adobe.idp.Document`物件的`copyToFile`方法，將`Document`物件的內容複製到檔案。 確定您使用的是`Document`方法傳回的`removePDFPasswordSecurity`物件。
 
 **另請參閱**
 
@@ -732,8 +732,8 @@ ht-degree: 0%
 1. 建立加密服務使用者端。
 
    * 使用預設建構函式建立`EncryptionServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`EncryptionServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/EncryptionService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
-   * 取得`EncryptionServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
+   * 使用`EncryptionServiceClient.Endpoint.Address`建構函式建立`System.ServiceModel.EndpointAddress`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/EncryptionService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
+   * 取得`System.ServiceModel.BasicHttpBinding`欄位的值，以建立`EncryptionServiceClient.Endpoint.Binding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
 
@@ -748,7 +748,7 @@ ht-degree: 0%
    * 建立`System.IO.FileStream`物件，方法為叫用其建構函式，並傳遞代表加密PDF檔案的檔案位置及開啟檔案的模式的字串值。
    * 建立位元組陣列以儲存`System.IO.FileStream`物件的內容。 您可以取得`System.IO.FileStream`物件的`Length`屬性來決定位元組陣列的大小。
    * 呼叫`System.IO.FileStream`物件的`Read`方法，並傳遞要讀取的位元組陣列、起始位置和資料流長度，以資料流資料填入位元組陣列。
-   * 將位元組陣列的內容指派給`BLOB`物件的`MTOM`資料成員，以填入`BLOB`物件。
+   * 將位元組陣列的內容指派給`BLOB`物件的`BLOB`資料成員，以填入`MTOM`物件。
 
 1. 移除密碼。
 
@@ -762,8 +762,8 @@ ht-degree: 0%
 1. 儲存PDF檔案。
 
    * 建立`System.IO.FileStream`物件，方法為叫用其建構函式，並傳遞代表不安全PDF檔案檔案位置的字串值。
-   * 建立位元組陣列，儲存`removePDFPasswordSecurity`方法傳回的`BLOB`物件的內容。 取得`BLOB`物件的`MTOM`資料成員的值，以填入位元組陣列。
-   * 透過叫用它的建構函式並傳遞`System.IO.FileStream`物件來建立`System.IO.BinaryWriter`物件。
+   * 建立位元組陣列，儲存`BLOB`方法傳回的`removePDFPasswordSecurity`物件的內容。 取得`BLOB`物件的`MTOM`資料成員的值，以填入位元組陣列。
+   * 透過叫用它的建構函式並傳遞`System.IO.BinaryWriter`物件來建立`System.IO.FileStream`物件。
    * 呼叫`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入PDF檔案。
 
 **另請參閱**
@@ -843,12 +843,12 @@ ht-degree: 0%
 1. 建立加密服務使用者端。
 
    * 建立包含連線屬性的`ServiceClientFactory`物件。
-   * 使用它的建構函式並傳遞`ServiceClientFactory`物件來建立`EncryptionServiceClient`物件。
+   * 使用它的建構函式並傳遞`EncryptionServiceClient`物件來建立`ServiceClientFactory`物件。
 
 1. 取得加密的PDF檔案。
 
    * 使用加密PDF檔案的建構函式，並傳遞指定加密PDF檔案位置的字串值，來建立代表加密檔案的`java.io.FileInputStream`物件。
-   * 使用它的建構函式並傳遞`java.io.FileInputStream`物件來建立`com.adobe.idp.Document`物件。
+   * 使用它的建構函式並傳遞`com.adobe.idp.Document`物件來建立`java.io.FileInputStream`物件。
 
 1. 解鎖檔案。
 
@@ -868,7 +868,7 @@ ht-degree: 0%
 
 1. 執行AEM Forms作業。
 
-   在未鎖定的PDF檔案上執行AEM Forms操作，以符合您的業務需求。 例如，假設您要將使用許可權套用至未鎖定的PDF檔案，請將`unlockPDFUsingPassword`或`unlockPDFUsingCredential`方法傳回的`com.adobe.idp.Document`物件傳遞至`ReaderExtensionsServiceClient`物件的`applyUsageRights`方法。
+   在未鎖定的PDF檔案上執行AEM Forms操作，以符合您的業務需求。 例如，假設您要將使用許可權套用至未鎖定的PDF檔案，請將`com.adobe.idp.Document`或`unlockPDFUsingPassword`方法傳回的`unlockPDFUsingCredential`物件傳遞至`ReaderExtensionsServiceClient`物件的`applyUsageRights`方法。
 
 **另請參閱**
 
@@ -897,8 +897,8 @@ ht-degree: 0%
 1. 建立加密服務使用者端。
 
    * 使用預設建構函式建立`EncryptionServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`EncryptionServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/EncryptionService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
-   * 取得`EncryptionServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
+   * 使用`EncryptionServiceClient.Endpoint.Address`建構函式建立`System.ServiceModel.EndpointAddress`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/EncryptionService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
+   * 取得`System.ServiceModel.BasicHttpBinding`欄位的值，以建立`EncryptionServiceClient.Endpoint.Binding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
 
@@ -913,7 +913,7 @@ ht-degree: 0%
    * 建立`System.IO.FileStream`物件，方法為叫用其建構函式，並傳遞代表加密PDF檔案的檔案位置及開啟檔案的模式的字串值。
    * 建立位元組陣列以儲存`System.IO.FileStream`物件的內容。 您可以取得`System.IO.FileStream`物件的`Length`屬性來決定位元組陣列的大小。
    * 呼叫`System.IO.FileStream`物件的`Read`方法，並傳遞要讀取的位元組陣列、起始位置和資料流長度，以資料流資料填入位元組陣列。
-   * 將位元組陣列的內容指派給`BLOB`物件的`MTOM`資料成員，以填入`BLOB`物件。
+   * 將位元組陣列的內容指派給`BLOB`物件的`BLOB`資料成員，以填入`MTOM`物件。
 
 1. 解鎖檔案。
 
@@ -933,7 +933,7 @@ ht-degree: 0%
 
 1. 執行AEM Forms作業。
 
-   在未鎖定的PDF檔案上執行AEM Forms操作，以符合您的業務需求。 例如，假設您要將使用許可權套用至已解除鎖定的PDF檔案，請將`unlockPDFUsingPassword`或`unlockPDFUsingCredential`方法傳回的`BLOB`物件傳遞至`ReaderExtensionsServiceClient`物件的`applyUsageRights`方法。
+   在未鎖定的PDF檔案上執行AEM Forms操作，以符合您的業務需求。 例如，假設您要將使用許可權套用至已解除鎖定的PDF檔案，請將`BLOB`或`unlockPDFUsingPassword`方法傳回的`unlockPDFUsingCredential`物件傳遞至`ReaderExtensionsServiceClient`物件的`applyUsageRights`方法。
 
 **另請參閱**
 
@@ -1016,12 +1016,12 @@ PDF檔案可受下列加密型別保護：
 1. 建立服務使用者端。
 
    * 建立包含連線屬性的`ServiceClientFactory`物件。
-   * 使用它的建構函式並傳遞`ServiceClientFactory`物件來建立`EncryptionServiceClient`物件。
+   * 使用它的建構函式並傳遞`EncryptionServiceClient`物件來建立`ServiceClientFactory`物件。
 
 1. 取得加密的PDF檔案。
 
    * 使用它的建構函式並傳遞指定PDF檔案位置的字串值，建立代表PDF檔案的`java.io.FileInputStream`物件。
-   * 使用它的建構函式並傳遞`java.io.FileInputStream`物件來建立`com.adobe.idp.Document`物件。
+   * 使用它的建構函式並傳遞`com.adobe.idp.Document`物件來建立`java.io.FileInputStream`物件。
 
 1. 決定加密型別。
 
@@ -1053,8 +1053,8 @@ PDF檔案可受下列加密型別保護：
 1. 建立服務使用者端。
 
    * 使用預設建構函式建立`EncryptionServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`EncryptionServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/EncryptionService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
-   * 取得`EncryptionServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
+   * 使用`EncryptionServiceClient.Endpoint.Address`建構函式建立`System.ServiceModel.EndpointAddress`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/EncryptionService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
+   * 取得`System.ServiceModel.BasicHttpBinding`欄位的值，以建立`EncryptionServiceClient.Endpoint.Binding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
 
@@ -1069,7 +1069,7 @@ PDF檔案可受下列加密型別保護：
    * 建立`System.IO.FileStream`物件，方法為叫用其建構函式，並傳遞代表加密PDF檔案的檔案位置及開啟檔案的模式的字串值。
    * 建立位元組陣列以儲存`System.IO.FileStream`物件的內容。 您可以取得`System.IO.FileStream`物件的`Length`屬性來決定位元組陣列的大小。
    * 呼叫`System.IO.FileStream`物件的`Read`方法，並傳遞要讀取的位元組陣列、起始位置和資料流長度，以資料流資料填入位元組陣列。
-   * 將位元組陣列的內容指派給`BLOB`物件的`MTOM`資料成員，以填入`BLOB`物件。
+   * 將位元組陣列的內容指派給`BLOB`物件的`BLOB`資料成員，以填入`MTOM`物件。
 
 1. 決定加密型別。
 

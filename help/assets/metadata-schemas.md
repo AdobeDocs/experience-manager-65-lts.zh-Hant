@@ -7,7 +7,7 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: bf5c2dff-db68-4e82-8217-ff35069dcb81
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '3607'
 ht-degree: 7%
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=en) |
 | AEM 6.5 | 本文章 |
 
 組織會提出中繼資料模型，藉以強化資產探索、使用、互通性等。 正確的中繼資料應用程式對於維護中繼資料驅動的工作流程和流程至關重要。 若要遵循組織範圍的中繼資料策略和標準，您可以使用可協助DAM使用者調整的中繼資料結構。 [!DNL Adobe Experience Manager]可讓您以簡單靈活的方法建立、維護和套用中繼資料結構。
@@ -45,7 +45,7 @@ ht-degree: 7%
 
 [!DNL Experience Manager]提供下列中繼資料結構表單範本。
 
-| 範本 | | 描述 |
+| 範本 | | 說明 |
 |---|---|---|
 | [!UICONTROL 預設] | | 資產的基本中繼資料結構表單。 |
 | | 下列子表單繼承[!UICONTROL 預設]表單的屬性： | |
@@ -66,7 +66,7 @@ ht-degree: 7%
 
 若要新增中繼資料結構表單，請執行下列步驟：
 
-1. 若要新增自訂範本至清單，請按一下工具列中的[建立]。**&#x200B;**
+1. 若要新增自訂範本至清單，請按一下工具列中的[建立]。****
 
    >[!NOTE]
    >
@@ -232,7 +232,7 @@ ht-degree: 7%
 
    ![select_dependentfield](assets/select_dependentfield.png)
 
-1. 在&#x200B;**[!UICONTROL 需求]**&#x200B;底下，根據新規則&#x200B;**選項選擇**&#x200B;必要。
+1. 在&#x200B;**[!UICONTROL 需求]**&#x200B;底下，根據新規則&#x200B;**[!UICONTROL 選項選擇]**&#x200B;必要。
 1. 按一下&#x200B;**[!UICONTROL 新增規則]**&#x200B;並選擇&#x200B;**[!UICONTROL 資產型別]**&#x200B;欄位以建立相依性。 也選擇要在其上建立相關性的欄位值。在這種情況下，請選擇「 **[!UICONTROL 視訊」]**。按一下「**[!UICONTROL 完成]**」以儲存變更。
 
    ![define_rule](assets/define_rule.png)
@@ -290,7 +290,7 @@ ht-degree: 7%
 
 #### 針對各種MIME型別使用現有結構描述範本 {#use-an-existing-schema-template-for-various-mime-types}
 
-您可以將現有的範本用於不同的MIME型別。 例如，使用MIME型別`image/png`之資產的`image/jpeg`表單。
+您可以將現有的範本用於不同的MIME型別。 例如，使用MIME型別`image/jpeg`之資產的`image/png`表單。
 
 在這種情況下，請在CRX存放庫中的`/etc/dam/metadataeditor/mimetypemappings`建立節點。 指定節點名稱並定義下列屬性：
 
@@ -301,7 +301,7 @@ ht-degree: 7%
 
 [!DNL Assets]對應下列MIME型別和結構描述表單：
 
-| 結構表單 | MIME型別 |
+| 結構表單 | MIME 類型 |
 |---|---|
 | image/jpeg | image/pjpeg |
 | image/tiff | image/x-tiff |
@@ -341,9 +341,9 @@ ht-degree: 7%
    *圖：文字欄位已新增至中繼資料結構描述表單編輯器。*
 
 1. 按一下「**[!UICONTROL 儲存]**」。修改後的表單會列在&#x200B;**[!UICONTROL 中繼資料結構Forms]**&#x200B;頁面中。
-1. 按一下工具列中的「套用至資料夾」**&#x200B;**，將自訂中繼資料套用至資料夾。
+1. 按一下工具列中的「套用至資料夾」****，將自訂中繼資料套用至資料夾。
 
-1. 選取要套用修改的結構描述的資料夾，然後按一下[套用]。**&#x200B;**
+1. 選取要套用修改的結構描述的資料夾，然後按一下[套用]。****
 
    ![選取要套用中繼資料結構描述的資料夾](assets/metadata-schema-select-folder.png)
 
@@ -374,7 +374,7 @@ ht-degree: 7%
 
    ![上傳資料夾中的資產時，資產卡檢視中缺少必要中繼資料的訊息](assets/metadata-missing-info-card-view.png)
 
-1. （選擇性）存取`https://[aem_server]:[port]/system/console/components/`。 設定並啟用預設為停用的`com.day.cq.dam.core.impl.MissingMetadataNotificationJob`元件。 設定[!DNL Experience Manager]檢查資產中繼資料有效性的頻率。 此設定會將屬性`hasValidMetadata`新增至資產的`jcr:content`。 [!DNL Experience Manager]使用此屬性來篩選搜尋結果中的無效資產。 如果您在檢查後新增資產，則在下次排程檢查前，資產不會以`hasValidMetadata`標籤。 因此，直到下一次排程檢查後，資產才會出現在無效中繼資料的搜尋篩選條件中。
+1. （選擇性）存取`https://[aem_server]:[port]/system/console/components/`。 設定並啟用預設為停用的`com.day.cq.dam.core.impl.MissingMetadataNotificationJob`元件。 設定[!DNL Experience Manager]檢查資產中繼資料有效性的頻率。 此設定會將屬性`hasValidMetadata`新增至資產的`jcr:content`。 [!DNL Experience Manager]使用此屬性來篩選搜尋結果中的無效資產。 如果您在檢查後新增資產，則在下次排程檢查前，資產不會以`hasValidMetadata`標籤。 因此，在下次排程檢查之前，資產不會出現在無效中繼資料的搜尋篩選條件中。
 
    >[!CAUTION]
    >
