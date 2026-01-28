@@ -11,9 +11,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 6b94caf1-97b7-4430-92f1-4f4d0415aef3
-source-git-commit: f983fc1edc613feaa070c4e82a92aabab9d50cbb
+source-git-commit: c1935b95d4e9e8e3773f2ff9825c759f97738304
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1097'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,7 @@ AEM Uber jar包含所有AEM API，作為您Maven專案`pom.xml`中的單一相�
 
 * AEM 6.5 LTS不含現成的Google Guava程式庫，可視需求安裝所需版本。
 * Sling XSS組合現在使用Java HTML Sanitizer程式庫，應該使用`XSSAPI#filterHTML()`方法的使用來安全地呈現HTML內容，而不是將資料傳遞至其他API。
+* 更新至Apache Felix HTTP SSL篩選設定：在AEM 6.5 LTS中，`org.apache.felix.http.sslfilter`套件組合已從1.2.6版升級至2.0.2版。作為此升級的一部分，OSGi設定PID `org.apache.felix.http.sslfilter.SslFilter`已被取代，並取代為新的PID： `org.apache.felix.http.sslfilter.Configuration`。 如果部署中使用了SSL篩選器，則必須使用OSGi Configuration Manager (`/system/console/configMgr`)將現有設定手動移轉至新的PID。 無法移轉設定可能會導致升級後無法如預期套用SSL篩選器。
 
 ## 測試程式 {#testing-procedure}
 
