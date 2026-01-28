@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: c9a7faf5810e78f8e80b38a87446794488efdd35
+source-git-commit: 8f5a06dc80943362acebfd7b19fed13c051417d1
 workflow-type: tm+mt
-source-wordcount: '7355'
-ht-degree: 99%
+source-wordcount: '7751'
+ht-degree: 93%
 
 ---
 
@@ -39,7 +39,91 @@ ht-degree: 99%
 
 ### Forms
 
-JEE版AEM 6.5 Forms LTS現已推出。 如需支援環境的詳細資訊，請參閱[支援的平台](/help/forms/using/aem-forms-jee-supported-platforms.md)組合檔案。 安裝程式連結可在[AEM Forms發行版本](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)頁面上取得。
+JEE版AEM 6.5 Forms LTS現已推出。 如需支援環境的詳細資訊，請參閱[支援的平台](/help/forms/using/aem-forms-jee-supported-platforms.md)組合檔案。 安裝程式連結可在[AEM Forms發行版本](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)頁面上取得。
+
+#### AEM Forms 6.5 LTS SP1包含的內容
+
+**Java支援更新**
+
+已引進對較新Java版本的支援：
+
+* Java™ 17
+* Java™ 21
+
+**應用程式伺服器支援更新**
+
+* 新增了對JBoss EAP 8的支援。
+* 舊版PicketBox安全性架構已移除。
+* Elytron式的認證存放區現在支援安全的認證管理。
+
+**設定：認證存放區（Elytron型）**
+
+JBoss EAP 8上的AEM Forms使用Elytron來管理安全認證。 客戶必須設定以Elytron為基礎的認證存放區，以確保伺服器成功啟動及安全資料庫驗證。
+
+如需組態詳細資訊，請參閱安裝與組態指南。
+
+**平台與相容性變更**
+
+* 支援Servlet規格5+
+* 根據Jakarta EE 9法規遵循
+
+**名稱空間移轉需求**
+
+* Jakarta EE 9引入名稱空間從`javax.*`變更為`jakarta.*`
+* 所有&#x200B;**自訂DSC**&#x200B;都必須移轉至`jakarta.*`名稱空間
+* AEM Forms 6.5 LTS SP1僅支援&#x200B;**Jakarta EE 9+應用程式伺服器**
+
+如需詳細資訊，請參閱&#x200B;**從javax移轉至jakarta名稱空間**。
+
+**從Javax移轉至Jakarta名稱空間**
+
+#### 從`javax`移轉至`jakarta`名稱空間
+
+從&#x200B;**AEM Forms 6.5 LTS SP1**&#x200B;開始，僅支援實作&#x200B;**Jakarta Servlet API 5/6**&#x200B;的應用程式伺服器。 透過&#x200B;**Jakarta EE 9和更新版本**，所有API都會從`javax.{}`名稱空間轉換為`jakarta.`。
+
+因此，**所有自訂DSC都必須使用`jakarta`名稱空間**。 使用`javax.{}` API建置的自訂元件&#x200B;**與支援的應用程式伺服器不相容**。
+
+自訂DSC的&#x200B;**移轉選項**
+
+您可以使用下列其中一種方法移轉現有的自訂DSC：
+
+**選項1：移轉Source程式碼（建議）**
+
+* 將所有匯入陳述式從`javax.{}`更新為`jakarta.`
+* 重建並重新編譯自訂DSC專案
+* 將更新的元件重新部署到應用程式伺服器
+
+**優點：**
+
+* 確保與Jakarta EE 9+長期相容
+* 最適合主動維護的專案
+
+**選項2：使用Eclipse轉換程式的二進位移轉**
+
+* 使用&#x200B;**Eclipse轉換器**&#x200B;工具將編譯的二進位檔(`.jar`， `.war`)從`javax`轉換為`jakarta`
+* 不需要變更原始程式碼或重新編譯
+* 將轉換後的二進位檔重新部署到應用程式伺服器
+
+>[!NOTE]
+>
+> 在&#x200B;**位元組碼層級**&#x200B;執行二進位轉換。
+
+以下是移轉期間所需的名稱空間變更的常見範例：
+
+早於(javax)    之後（雅加達）
+javax.servlet。 **jakarta.servlet**
+javax.servlet.http。 **jakarta.servlet.http.**
+
+**範例匯入對應**
+
+下表顯示從`javax`移轉至`jakarta`時所需的一般名稱空間變更：
+
+| 在(`javax`)之前 | 在(`jakarta`)之後 |
+| ---------------------- | ------------------------ |
+| `javax.servlet.*` | `jakarta.servlet.*` |
+| `javax.servlet.http.*` | `jakarta.servlet.http.*` |
+
+在更新自訂DSC原始程式碼或驗證轉換後的二進位檔時，使用這些對應作為參考。
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
@@ -448,6 +532,7 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 ### 升級 {#upgrade}
 
 * 如需升級程序的詳細資訊，請參閱[升級文件](/help/sites-deploying/upgrade.md)。
+* 如需詳細的升級指示，請參閱JEE上的[AEM Forms 6.5 LTS SP1升級指南](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### AEM 6.5 LTS Service Pack 升級的最佳做法
 
@@ -520,14 +605,15 @@ AEM 6.5 LTS 適用的 SP1 會以 Quickstart JAR 形式提供，而非透過「�
 
 <!-- CARRY OVER EACH RELEASE -->
 
-Adobe 會持續審閱產品功能，藉由更新或取代舊功能，提高客戶價值。進行這些變更時，皆會仔細留意回溯相容性。
+Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為客戶提供更高價值。 實施這些變更時，會考量回溯相容性。
 
-若要傳達即將移除或取代 Adobe Experience Manager (AEM) 功能的訊息，請套用下列規則：
+為了確保透明度並允許適當規劃，Adobe會遵循Adobe Experience Manager (AEM)的淘汰流程：
 
-1. 首先公告功能已棄用。雖已棄用，功能仍可繼續使用，但往後不會再進行增強。
-1. 最早會於下一個主要版本中移除已棄用的功能。移除的實際目標日期依規劃稍後公告。
+* 首先宣佈淘汰。 過時的功能仍可使用，但已不再增強。
 
-此程序讓客戶在實際移除功能之前，至少還有一個發行週期的時間可以調整其實施方案，使其適應已棄用功能的新版本或後續功能。
+* 移除不會早於下一個主要版本。 計畫的移除時間表會單獨通訊。
+
+* 至少會提供一個發行週期，讓客戶在功能移除前轉換為支援的替代方案。
 
 ### 已棄用功能 {#deprecated-features}
 
@@ -543,6 +629,10 @@ Adobe 會持續審閱產品功能，藉由更新或取代舊功能，提高客�
 ### 已移除的功能 {#removed-features}
 
 此區段列出 AEM 6.5 LTS 已移除的特點和功能。先前的版本已將這些功能標記為已棄用。
+
+* 針對CRX存放庫持續性的RDBMK支援已移除。
+
+* 在叢集環境中，MongoMK現在是存放庫持續存在的唯一支援選項。
 
 | 區域 | 功能 | 替代方案 | 版本 (SP) |
 | --- | --- | --- | --- |
@@ -613,7 +703,7 @@ A hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/download
 
 以下文字文件列出在此 [!DNL Experience Manager] 6.5 LTS Service Pack 1 版本中所包含的 OSGi 套件與內容套件：
 
-* [&#x200B; Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [ Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 * [Experience Manager 6.5 LTS Service Pack 1 中包含的內容套件清單](/help/release-notes/assets/65lts_sp1_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## 受限制的網站{#restricted-sites}
