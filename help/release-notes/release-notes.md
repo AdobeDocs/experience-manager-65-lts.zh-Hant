@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 8f5a06dc80943362acebfd7b19fed13c051417d1
+source-git-commit: 6a6a79663579e4d63e68ae6c9a4bec97f24032f9
 workflow-type: tm+mt
-source-wordcount: '7751'
+source-wordcount: '7745'
 ht-degree: 93%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 93%
 
 ### Forms
 
-JEE版AEM 6.5 Forms LTS現已推出。 如需支援環境的詳細資訊，請參閱[支援的平台](/help/forms/using/aem-forms-jee-supported-platforms.md)組合檔案。 安裝程式連結可在[AEM Forms發行版本](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)頁面上取得。
+JEE版AEM 6.5 Forms LTS現已推出。 如需支援環境的詳細資訊，請參閱[支援的平台](/help/forms/using/aem-forms-jee-supported-platforms.md)組合檔案。 安裝程式連結可在[AEM Forms發行版本](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)頁面上取得。
 
 #### AEM Forms 6.5 LTS SP1包含的內容
 
@@ -75,8 +75,6 @@ JBoss EAP 8上的AEM Forms使用Elytron來管理安全認證。 客戶必須設�
 
 如需詳細資訊，請參閱&#x200B;**從javax移轉至jakarta名稱空間**。
 
-**從Javax移轉至Jakarta名稱空間**
-
 #### 從`javax`移轉至`jakarta`名稱空間
 
 從&#x200B;**AEM Forms 6.5 LTS SP1**&#x200B;開始，僅支援實作&#x200B;**Jakarta Servlet API 5/6**&#x200B;的應用程式伺服器。 透過&#x200B;**Jakarta EE 9和更新版本**，所有API都會從`javax.{}`名稱空間轉換為`jakarta.`。
@@ -110,9 +108,9 @@ JBoss EAP 8上的AEM Forms使用Elytron來管理安全認證。 客戶必須設�
 
 以下是移轉期間所需的名稱空間變更的常見範例：
 
-早於(javax)    之後（雅加達）
-javax.servlet。 **jakarta.servlet**
-javax.servlet.http。 **jakarta.servlet.http.**
+* 早於(javax)    之後（雅加達）
+* javax.servlet。 **jakarta.servlet**
+* javax.servlet.http。 **jakarta.servlet.http.**
 
 **範例匯入對應**
 
@@ -532,7 +530,7 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 ### 升級 {#upgrade}
 
 * 如需升級程序的詳細資訊，請參閱[升級文件](/help/sites-deploying/upgrade.md)。
-* 如需詳細的升級指示，請參閱JEE上的[AEM Forms 6.5 LTS SP1升級指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* 如需詳細的升級指示，請參閱JEE上的[AEM Forms 6.5 LTS SP1升級指南](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### AEM 6.5 LTS Service Pack 升級的最佳做法
 
@@ -703,7 +701,7 @@ A hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/download
 
 以下文字文件列出在此 [!DNL Experience Manager] 6.5 LTS Service Pack 1 版本中所包含的 OSGi 套件與內容套件：
 
-* [&#x200B; Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [ Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 * [Experience Manager 6.5 LTS Service Pack 1 中包含的內容套件清單](/help/release-notes/assets/65lts_sp1_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## 受限制的網站{#restricted-sites}
