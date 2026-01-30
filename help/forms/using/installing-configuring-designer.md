@@ -119,6 +119,6 @@ msiexec /i "<absolute path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-***
 
       1. 開啟Designer。
       1. 按一下「**說明** > **關於Designer**」以檢視Designer版本和位元資訊。
-例如，版本字串結尾是**64位元**，如下列範例所示：
+例如，版本字串結尾是&#x200B;**64位元**，如下列範例所示：
          `6.5.21.20240522.1.161 | 64 bit`
       1. 開啟Designer，左上角會顯示含有64位元資訊和產品名稱的品牌圖示。
