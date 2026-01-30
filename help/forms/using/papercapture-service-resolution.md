@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: de3cd0ad-0b18-4d9a-8c6b-72cc16149cfc
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: eb6f6b994fdd3b2b01e77700d2deb7bd2830ac8f
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '192'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,8 @@ ht-degree: 2%
 ## 套用至
 
 此解決方案適用於：
-* 所有(JBoss、Weblogic、Websphere) JEE伺服器上的AEM Forms
+
+* 所有(JBoss®、WebLogic、WebSphere®) JEE伺服器上的AEM Forms
 * OSGi伺服器上的AEM Forms
 
 ## 解決方案
@@ -31,13 +32,11 @@ ht-degree: 2%
 1. 從軟體發佈入口網站下載[Hotfix](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0)。
 1. 擷取並複製下載資料夾的內容。
 1. 導覽至下列對應應用程式伺服器的路徑：
-   * **jboss**：
-
+   * **JBoss®**：
      `..\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\PaperCaptureSvc`
-   * **weblogic**：
-
+   * **WebLogic**：
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`
-   * **websphere**：\
+   * **WebSphere®**：\
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`
    * **OSGi設定**：\
      `..\quickstart\crx-quickstart\bedrock\svcnative\PaperCaptureSvc`
@@ -47,4 +46,4 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   > 建議您使用&#39;Ctrl + C&#39;命令重新啟動SDK。 使用替代方法重新啟動AEM SDK （例如停止Java程式），可能會導致AEM開發環境不一致。
+   >Adobe建議您使用`Ctrl + C`命令重新啟動SDK。 使用替代方法重新啟動AEM SDK （例如停止Java程式），可能會導致AEM開發環境不一致。
