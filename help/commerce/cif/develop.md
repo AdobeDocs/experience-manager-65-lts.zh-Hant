@@ -9,10 +9,10 @@ thumbnail: 39476.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 22fcdadf-12c0-4545-a854-76345806386f
-source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
+source-git-commit: 5995dda0aac101e6c0d506ac5bba786674b0735b
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 5%
+source-wordcount: '765'
+ht-degree: 6%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->下列指示可協助您使用適用於AEM 6.5 LTS的CIF，為AEM Commerce設定本機AEM開發環境。 如果您使用AEM as a Cloud Service，請參閱[AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=zh-Hant)檔案。
+>下列指示可協助您使用適用於AEM 6.5 LTS的CIF，為AEM Commerce設定本機AEM開發環境。 如果您使用AEM as a Cloud Service，請參閱[AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#)檔案。
 
 適用於AEM的AEM Commerce附加元件(稱為CIF附加元件)可用於本機開發，並以AEM套件的形式提供。 可以從[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)下載它作為Feature Pack。
 
@@ -48,7 +48,7 @@ ht-degree: 5%
 
 ### 存取CIF附加元件
 
-可以從[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)下載CIF附加元件，搜尋「AEM Commerce附加元件」。
+可以從[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)下載CIF附加元件，搜尋`AEM Commerce add-on`。
 
 >[!TIP]
 >
@@ -56,7 +56,7 @@ ht-degree: 5%
 
 ### 本機設定
 
-對於使用AEM和CIF附加元件的本機CIF專案開發，請執行以下步驟：
+針對使用AEM和附加元件CIF的本機CIF專案開發，請執行以下操作：
 
 1. 解壓縮AEM .jar以建立`crx-quickstart`資料夾，請執行：
 
@@ -70,11 +70,11 @@ ht-degree: 5%
 
 >[!TIP]
 >
->或者，您也可以透過「封裝管理員」安裝CIF附加套件。
+>或者，使用封裝管理員安裝CIF附加元件套件。
 
 1. 啟動AEM快速入門
 
-透過OSGI主控台驗證安裝： `http://localhost:4502/system/console/osgi-installer`。 此清單應包含與CIF附加元件相關的組合、內容套件和OSGI設定。 請確定所有套件組合都已啟動。
+透過OSGI主控台驗證安裝程式： `http://localhost:4502/system/console/osgi-installer`。 此清單應包含與CIF附加元件相關的組合、內容套件和OSGI設定。 請確定所有套件組合都已啟動。
 
 ## 專案設定 {#project}
 
@@ -82,7 +82,7 @@ ht-degree: 5%
 
 ### 使用AEM專案原型
 
-[AEM專案原型](https://github.com/adobe/aem-project-archetype)是啟動預先設定的專案以開始使用CIF的主要工具。 CIF核心元件和所有的必要設定，都可包含於產生專案中，外加一個選項。
+[AEM專案原型](https://github.com/adobe/aem-project-archetype)是Bootstrap預先設定專案以開始使用CIF的主要工具。 CIF核心元件和所有的必要設定，都可包含於產生專案中，外加一個選項。
 
 >[!TIP]
 >
@@ -105,7 +105,7 @@ mvn -B archetype:generate \
  -D includeCommerce=y
 ```
 
-CIF核心元件可透過包含提供的`all`套件或使用CIF內容套件和相關OSGI套裝的個別來用於任何專案。 若要手動將CIF核心元件新增至專案，請使用下列相依性：
+您可以在任何專案中使用CIF核心元件。 只需包含提供的`all`套件，或分別使用CIF內容套件和相關OSGi套件組合即可。 使用以下相依性手動將CIF核心元件新增至專案：
 
 ```java
 <dependency>
@@ -137,11 +137,11 @@ CIF核心元件可透過包含提供的`all`套件或使用CIF內容套件和相
 </dependency>
 ```
 
-### 使用AEM Venia Reference Store
+### 使用AEM Venia參考存放區
 
 啟動CIF專案的第二個選項是複製並使用[AEM Venia參考存放區](https://github.com/adobe/aem-cif-guides-venia)。 AEM Venia Reference Store是參考店面應用程式範例，可示範AEM的CIF核心元件的使用情形。 其目的是作為一組最佳實務範例，以及開發您自己的功能的潛在起點。
 
-若要開始使用Venia Reference Store，只要複製[Git存放庫](https://github.com/adobe/aem-cif-guides-venia)並開始根據您的需求自訂專案即可。
+複製[Git存放庫](https://github.com/adobe/aem-cif-guides-venia)以開始使用Venia參考存放區，並開始根據您的需求自訂專案。
 
 >[!NOTE]
 >
@@ -151,11 +151,11 @@ CIF核心元件可透過包含提供的`all`套件或使用CIF內容套件和相
 
 若要將您的專案連線到商務系統，AEM必須設定為您的商務系統的GraphQL端點。
 
-由[AEM專案原型](https://github.com/adobe/aem-project-archetype)或[AEM Venia參考存放區](https://github.com/adobe/aem-cif-guides-venia)產生的專案都已包含必須調整的[預設設定](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json)。
+由[AEM專案原型](https://github.com/adobe/aem-project-archetype)或[AEM Venia參考存放區](https://github.com/adobe/aem-cif-guides-venia)產生的專案都已包含必須調整的預設設定。
 
 將`url`中`com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json`的值取代為專案所使用的商務系統的GraphQL端點。
 
-AEM Commerce附加元件和CIF核心元件會透過AEM伺服器並直接透過瀏覽器，連線至商務GraphQL端點。 使用者端CIF核心元件和CIF附加撰寫工具預設會連線至`/api/graphql`。 如有需要，可透過CIF Cloud Service設定調整此專案（請參閱下文）。
+AEM Commerce附加元件和CIF核心元件會透過AEM伺服器連線至Commerce GraphQL端點。 或者，直接從瀏覽器。 使用者端CIF核心元件和CIF附加撰寫工具預設會連線至`/api/graphql`。 如有需要，您可以透過CIF Cloud Service設定加以調整（請參閱下文）。
 
 CIF附加元件提供位於`/api/graphql`的GraphQL Proxy servlet。 如果您不打算使用本機AEM Dispatcher，建議一併設定GraphQL Proxy servlet。
 
