@@ -117,7 +117,7 @@ function getAdobeSignRecipients() {
 
 您可以使用[RecipientInfoSpecificer](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java介面，動態地為Adobe Sign和指派工作步驟選擇使用者或群組。 您可以建立使用[RecipientInfoSpecificer](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java介面的OSGi套件組合，並將其部署至AEM Forms伺服器。 此選項可供您在AEM工作流程的`Assign Task`和Adobe Sign元件中選取。
 
-您需要[AEM Forms使用者端SDK](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) jar和[granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/)檔案，才能編譯下列的程式碼範例。 將這些jar檔案新增為外部相依性至OSGi套件專案。 您可以使用任何Java IDE來建立OSGi套件。 下列程式提供使用Eclipse建立OSGi套件的步驟：
+您需要[AEM Forms使用者端SDK](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) jar和[granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/)檔案，才能編譯下列的程式碼範例。 將這些jar檔案新增為外部相依性至OSGi套件專案。 您可以使用任何Java IDE來建立OSGi套件。 下列程式提供使用Eclipse建立OSGi套件的步驟：
 
 1. 開啟Eclipse IDE。 瀏覽至&#x200B;**[!UICONTROL 檔案]**> **[!UICONTROL 新專案]**。
 1. 在[選取精靈]畫面上，選取&#x200B;**[!UICONTROL Maven專案]**，然後按一下[下一步] **[!UICONTROL 。]**
