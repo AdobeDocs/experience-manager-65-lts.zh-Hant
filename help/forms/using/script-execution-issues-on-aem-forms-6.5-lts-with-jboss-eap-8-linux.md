@@ -4,10 +4,7 @@ description: 在Linux環境中設定JBoss EAP 8.0時，執行Shell指令碼或�
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: d397e6a51ad2a52da5ccb0a690e1acd3fafcee3c
+source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 1%
@@ -26,8 +23,8 @@ ht-degree: 1%
 $'\r': command not found
 ```
 
-在&#x200B;**Windows**&#x200B;系統上建立或編輯Shell指令碼或組態檔，且包含&#x200B;**CRLF （歸位+換行）**&#x200B;行結尾時，就會發生這些錯誤。
-Linux系統僅支援&#x200B;**LF （換行）**&#x200B;行結尾，而Windows樣式的行結尾會導致指令碼執行失敗。
+在&#x200B;**Windows**&#x200B;系統上建立或編輯Shell指令碼或組態檔，且包含&#x200B;**CRLF （歸位+換行）**行結尾時，就會發生這些錯誤。
+Linux系統僅支援**LF （換行）**&#x200B;行結尾，而Windows樣式的行結尾會導致指令碼執行失敗。
 
 ## 適用於
 

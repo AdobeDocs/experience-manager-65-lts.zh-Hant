@@ -4,10 +4,7 @@ description: 在使用JBoss EAP 8的AEM Forms 6.5.1 LTS叢集部署中，設定�
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 5d020671efaa4527a5f6dbb4b779c7a3351888a4
+source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 1%
@@ -19,7 +16,7 @@ ht-degree: 1%
 
 ## 問題
 
-在使用&#x200B;**JBoss EAP 8**&#x200B;的&#x200B;**AEM Forms 6.5.1 LTS**&#x200B;叢集部署中，組態檔
+在使用&#x200B;**JBoss EAP 8**&#x200B;的&#x200B;**AEM Forms 6.5.1 LTS**叢集部署中，組態檔
 `<JBOSS_HOME>/domain/configuration/domain_oracle.xml` （和資料庫特定變體）可能包含&#x200B;**重複的開頭`<security>`標籤**。
 
 這會導致&#x200B;**無效的XML組態**，導致&#x200B;**JBoss網域控制站啟動失敗**，並阻礙叢集初始化成功。
