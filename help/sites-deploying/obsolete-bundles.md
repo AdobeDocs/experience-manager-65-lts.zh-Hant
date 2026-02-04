@@ -101,5 +101,5 @@ ht-degree: 0%
 * org.apache.sling.atom.taglib
 * com.github.jknack.handlebars
 * com.adobe.granite.osgi.wrapper.guava
-* com.adobe.cq.core.wcm.components.core (可取代為[AEM 6.5 LTS相容版本](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/versions))
+* com.adobe.cq.core.wcm.components.core (可取代為[AEM 6.5 LTS相容版本](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/versions))
 * com.adobe.cq.core.wcm.components.extension.contentfragment.bundle (可由AEM 6.5 LTS相容版本取代)
