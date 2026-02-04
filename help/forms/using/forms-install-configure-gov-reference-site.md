@@ -228,7 +228,7 @@ ht-degree: 1%
 **參考：**
 
 1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [設定AEM Forms的Microsoft® Dynamics](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
+1. [設定AEM Forms的Microsoft® Dynamics](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
 
 #### MS® Dynamics OData雲端服務 {#ms-dynamics-odata-cloud-service}
 
@@ -483,7 +483,7 @@ ht-degree: 1%
 
 閱讀進一步指示前，請先檢閱下列內容：
 
-* [設定自動錶單轉換服務](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#)
+* [設定自動錶單轉換服務](https://experienceleague.adobe.com/zh-hant/docs/aem-forms-automated-conversion-service/using/configure-service#)
 
 #### 建立IMS設定 — 第1部分 {#creating-ims-config}
 
@@ -582,7 +582,7 @@ IMS設定完成後，您可以繼續檢閱AEM中的雲端設定。 如果設定�
 
 1. 對於此設定，兩個核取方塊值會保留空白。
 
-   若要深入瞭解這些選項，請參閱[設定雲端服務](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service)。
+   若要深入瞭解這些選項，請參閱[設定雲端服務](https://experienceleague.adobe.com/zh-hant/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service)。
 
 #### 設定雲端設定（`We.Finance` AFC生產） {#configure-cloud-configuration-wefinance}
 
@@ -612,7 +612,7 @@ IMS設定完成後，您可以繼續在AEM中建立雲端設定。
 
 1. 對於此設定，兩個核取方塊值會保留空白。
 
-   * 若要進一步瞭解這些選項，請參閱[設定雲端服務](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service)。
+   * 若要進一步瞭解這些選項，請參閱[設定雲端服務](https://experienceleague.adobe.com/zh-hant/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service)。
 
 #### 測試表單轉換（We.Gov註冊應用程式） {#test-forms-conversion}
 
@@ -652,7 +652,7 @@ IMS設定完成後，您可以繼續在AEM中建立雲端設定。
 
 #### 已知問題和注意事項 {#known-issues-notes}
 
-自動錶單轉換服務包含特定[最佳實務、已知的複雜模式](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#)和[已知問題](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/known-issues#)。 開始使用AEM Forms自動錶單轉換服務前，請先檢閱此資訊。
+自動錶單轉換服務包含特定[最佳實務、已知的複雜模式](https://experienceleague.adobe.com/zh-hant/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#)和[已知問題](https://experienceleague.adobe.com/zh-hant/docs/aem-forms-automated-conversion-service/using/known-issues#)。 開始使用AEM Forms自動錶單轉換服務前，請先檢閱此資訊。
 
 1. 如果您想要在轉換後將表單繫結到FDM，請建立具有已啟用資料繫結之產生調適型表單的表單。
 
