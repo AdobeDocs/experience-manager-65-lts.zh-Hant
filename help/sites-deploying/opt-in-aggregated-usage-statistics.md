@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 410691eb-27a9-4f8e-b926-01027c7f84d4
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: cc96a14ebaf9f895a798b5f4904f5b4769b990bb
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 1%
+source-wordcount: '300'
+ht-degree: 2%
 
 ---
 
@@ -27,13 +27,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有各種資料保護和隱私權法規；例如GDPR和CCPA。 AEM Sites已準備好協助客戶履行其資料保護和隱私權法規遵循義務。 此頁面會逐步引導客戶完成選擇加入（或退出）彙總使用統計資料的收集程式。
+>有各種資料保護和隱私權法規；例如GDPR和CCPA。 AEM Sites已準備好協助客戶履行其資料保護和隱私權法規遵循義務。 此頁面會逐步引導客戶完成選擇加入（或退出）彙總使用狀況統計資料的收集程式。
 >
 >如需進一步資訊，另請參閱[Adobe的隱私權中心](https://www.adobe.com/tw/privacy.html)。
 
 >[!NOTE]
 >
->您可以隨時使用[網頁主控台](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console)或不在AEM選擇加入畫面中選取選擇加入選項來選擇退出。
+>您隨時可以使用[網頁主控台]&#x200B;(/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console選擇退出，或不在AEM選擇加入畫面中選取選擇加入選項。
 
 ## 使用觸控式UI選擇加入 {#opt-in-by-using-the-touch-ui}
 
@@ -47,11 +47,11 @@ ht-degree: 1%
 
    ![usage_statisticsnavigationscreen2](assets/usage_statisticsnavigationscreen2.png)
 
-1. 在選擇加入畫面上，選取「**允許收集彙總使用狀況統計資料**」。
+1. 在選擇加入畫面上，按一下選項&#x200B;**[!UICONTROL 允許收集彙總使用狀況統計資料]**。
 
    ![usage_statisticsopt-inscreen](assets/usage_statisticsopt-inscreen.png)
 
-1. 按一下「**完成**」。
+1. 按一下&#x200B;**完成**。
 
 ## 使用Web主控台選擇加入 {#opt-in-by-using-the-web-console}
 
@@ -65,7 +65,7 @@ ht-degree: 1%
 
    ![usage_statisticswebconsole](assets/usage_statisticswebconsole.png)
 
-1. 搜尋&quot;**彙總的使用狀況統計資料集合**&quot;。
+1. 搜尋&#x200B;**彙總的使用狀況統計資料集合**。
 1. 按一下&#x200B;**編輯**&#x200B;圖示。
 
    ![usage_statisticscollectionedit](assets/usage_statisticscollectionedit.png)
@@ -74,4 +74,4 @@ ht-degree: 1%
 
    ![usage_statisticsselect](assets/usage_statisticsselect.png)
 
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
