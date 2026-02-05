@@ -35,7 +35,7 @@ JSON匯出是以[Sling模型](https://sling.apache.org/documentation/bundles/mod
 
 >[!NOTE]
 >
->如需使用Sling模型的範例，請參閱[在AEM中開發Sling模型匯出工具](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter)。
+>如需使用Sling模型的範例，請參閱[在AEM中開發Sling模型匯出工具](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter)。
 
 Sling模型實作類別必須使用以下專案註釋：
 
@@ -91,8 +91,8 @@ GITHUB上的程式碼
 
 ## 相關檔案 {#related-documentation}
 
-* Assets使用手冊[中的](https://experienceleague.adobe.com/en/docs/experience-manager-64/assets/home#)內容片段主題
+* Assets使用手冊[中的](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-64/assets/home#)內容片段主題
 * [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)
 * [使用內容片段製作](/help/sites-authoring/content-fragments.md)
 * [內容服務的 JSON 匯出工具](/help/sites-developing/json-exporter.md)
-* [核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/introduction)和[內容片段元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/content-fragment-component)
+* [核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/introduction)和[內容片段元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/wcm-components/content-fragment-component)

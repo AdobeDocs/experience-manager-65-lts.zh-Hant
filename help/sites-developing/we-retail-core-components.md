@@ -86,10 +86,10 @@ ht-degree: 5%
 
 ## 另請參閱 {#further-information}
 
-如需核心元件的詳細資訊，請參閱撰寫指南[核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/introduction)，以取得功能的概觀。 如需技術概覽，請參閱指南[開發核心元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview)。
+如需核心元件的詳細資訊，請參閱撰寫指南[核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/introduction)，以取得功能的概觀。 如需技術概覽，請參閱指南[開發核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/overview)。
 
 
 
-如需核心元件的詳細資訊，請參閱撰寫檔案[核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/introduction)，以取得核心元件功能的概述，以及開發人員檔案[開發核心元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview)，以取得技術詳細資訊。
+如需核心元件的詳細資訊，請參閱撰寫檔案[核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/introduction)，以取得核心元件功能的概述，以及開發人員檔案[開發核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/overview)，以取得技術詳細資訊。
 
 您可能也想要調查[可編輯的範本](/help/sites-developing/we-retail-editable-templates.md)。 如需可編輯範本的完整詳細資訊，請參閱編寫檔案[建立頁面範本](/help/sites-authoring/templates.md)或開發人員檔案頁面[範本 — 可編輯](/help/sites-developing/page-templates-editable.md)。
