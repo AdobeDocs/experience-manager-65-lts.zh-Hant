@@ -4,7 +4,7 @@ description: JBoss EAP 8使用Elytron來啟用次要節點與主要網域控制�
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+source-git-commit: f093f39fb535209297940cff13a99c7631812152
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 3%
@@ -19,6 +19,7 @@ ht-degree: 3%
 JBoss EAP 8使用&#x200B;**Elytron**&#x200B;來驗證叢集部署中&#x200B;**主要和次要節點**&#x200B;之間的通訊。 此設定可確保次要節點與主要網域控制站的安全註冊與通訊。
 
 視環境和安全需求而定，提供兩種設定選項。
+
 
 ## 先決條件
 

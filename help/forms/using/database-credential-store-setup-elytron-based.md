@@ -4,7 +4,7 @@ description: JBoss EAP 8支援Elytron認證存放區，以便在AEM Forms中安�
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+source-git-commit: f093f39fb535209297940cff13a99c7631812152
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 2%
@@ -17,6 +17,7 @@ ht-degree: 2%
 ## 使用Elytron設定資料庫認證存放區
 
 JBoss EAP 8使用&#x200B;**Elytron認證存放區**&#x200B;來安全地管理AEM Forms部署的資料庫密碼。 Adobe提供&#x200B;**自動化指令碼**，以簡化網域模式中Elytron認證存放區的建立和設定。
+
 
 在啟動JBoss網域控制站&#x200B;**之前，必須先完成此設定**。
 

@@ -4,7 +4,7 @@ description: 在獨立模式下，尋找JBoss/Red Hat EAP上AEM Forms JEE的資�
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+source-git-commit: f093f39fb535209297940cff13a99c7631812152
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 0%
@@ -17,6 +17,7 @@ ht-degree: 0%
 ## 概觀
 
 本指南涵蓋&#x200B;**獨立模式**&#x200B;下JBoss/Red Hat EAP上AEM Forms JEE的&#x200B;**資料庫認證存放區設定**。 執行手動安裝時需要此資訊。
+
 
 **本指南涵蓋：**
 
