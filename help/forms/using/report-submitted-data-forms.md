@@ -1,6 +1,6 @@
 ---
-title: 用於處理Forms Portal上已提交表單的API
-description: AEM Forms提供API，供您查詢表單入口網站中的已提交表單資料，並對其採取動作。
+title: 在Forms入口網站上處理已提交表單的API
+description: AEM Forms提供API，供您用於在Forms Portal中查詢已提交的表單資料及對其執行動作。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
@@ -8,22 +8,22 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: a24d0218-d534-49c9-81c1-12b38d794caa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 5%
+source-wordcount: '512'
+ht-degree: 6%
 
 ---
 
-# 用於處理Forms Portal上已提交表單的API {#apis-to-work-with-submitted-forms-on-forms-portal}
+# 在Forms入口網站上處理已提交表單的API {#apis-to-work-with-submitted-forms-on-forms-portal}
 
-AEM Forms提供API，供您查詢透過Forms Portal提交的表單資料。 此外，您可以使用本檔案說明的API張貼註釋或更新已提交表單的屬性。
+AEM Forms提供可用於查詢透過Forms入口網站提交之表單資料的API。 此外，您可以使用本檔案說明的API張貼註釋或更新已提交表單的屬性。
 
 >[!NOTE]
 >
->將叫用API的使用者必須新增至稽核者群組，如[將提交稽核者與表單建立關聯](/help/forms/using/adding-reviewers-form.md)中所述。
+>叫用API的使用者必須新增到稽核者群組。 請參閱[將提交稽核者關聯至表單](/help/forms/using/adding-reviewers-form.md)。
 
-## GET /content/forms/portal/submission.review.json？func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
+## GET `/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview` {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
 傳回所有合格表單的清單。
 
@@ -57,7 +57,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
 [{"formPath":"/content/dam/formsanddocuments/forms-review/form2","formName":"form2"},{"formPath":"/content/dam/formsanddocuments/forms-review/form1","formName":"form1"}]
 ```
 
-## GET /content/forms/portal/submission.review.json？func=getAllSubmissions {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
+## GET `/content/forms/portal/submission.review.json?func=getAllSubmissions` {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
 
 傳回所有已提交表單的詳細資料。 不過，您可以使用URL引數來限制結果。
 
@@ -85,11 +85,11 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
   </tr>
   <tr>
    <td><code>orderby</code> <br /> (可選)</td>
-   <td>指定排序結果的屬性。 預設值為<strong>jcr：lastModified</strong>，會根據上次修改時間排序結果。</td>
+   <td>指定排序結果的屬性。 預設值為<code>jcr:lastModified</code>，會根據上次修改時間排序結果。</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> (可選)</td>
-   <td>指定排序結果的順序。 預設值為<strong>desc</strong>，會依遞減順序排序結果。 您可以指定<code>asc</code>以遞增順序排序結果。</td>
+   <td>指定排序結果的順序。 預設值為<code>desc</code>，這會以遞減順序排序結果。 您可以指定<code>asc</code>以遞增順序排序結果。</td>
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (可選)</td>
@@ -97,7 +97,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
   </tr>
   <tr>
    <td><code>search</code> <br /> (可選)</td>
-   <td>在表單屬性中搜尋指定的值並傳回具有相符值的表單。 預設值為<strong>"</strong>。</td>
+   <td>在表單屬性中搜尋指定的值並傳回具有相符值的表單。 預設值為 <code>""</code>。</td>
   </tr>
  </tbody>
 </table>
@@ -127,7 +127,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSub
 {"total":1,"items":[{"formName":"form2","formPath":"/content/dam/formsanddocuments/forms-review/form2","submitID":"1403037413508500","formType":"af","jcr:lastModified":"2015-11-05T17:52:32.243+05:30","owner":"admin"}]}
 ```
 
-## POST /content/forms/portal/submission.review.json？func=addComment {#post-content-forms-portal-submission-review-json-func-addcomment-br}
+## 張貼`/content/forms/portal/submission.review.json?func=addComment` {#post-content-forms-portal-submission-review-json-func-addcomment-br}
 
 將註解新增至指定的提交執行個體。
 
@@ -158,7 +158,7 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 1403873422601300
 ```
 
-## GET /content/forms/portal/submission.review.json？func=getComments   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
+## GET `/content/forms/portal/submission.review.json?func=getComments`   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
 
 傳回指定提交執行個體上張貼的所有註解。
 
@@ -196,7 +196,7 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=getCommen
 [{"owner":"fr1","comment":"API test comment","time":1446726988250}]
 ```
 
-## POST /content/forms/portal/submission.review.json？func=updateSubmission {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
+## 張貼`/content/forms/portal/submission.review.json?func=updateSubmission` {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
 
 更新指定之提交表單執行個體的指定屬性值。
 
@@ -212,7 +212,7 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=getCommen
 
 ### 回應 {#response-4}
 
-傳回JSON物件，內含所張貼更新資訊。
+它會傳回JSON物件，其中包含所發佈更新的相關資訊。
 
 ### 範例 {#example-4}
 

@@ -1,5 +1,5 @@
 ---
-title: 將建立通訊UI與您的自訂入口網站整合
+title: 整合建立通訊解決方案與您的自訂入口網站
 description: 瞭解如何將建立通訊UI與您的自訂入口網站整合
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,22 +9,22 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 496b125b-b091-4843-ba9f-2479dbeba07b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '403'
 ht-degree: 4%
 
 ---
 
-# 將建立通訊UI與您的自訂入口網站整合{#integrating-create-correspondence-ui-with-your-custom-portal}
+# 將`Create Correspondence`解決方案與您的自訂入口網站整合{#integrating-create-correspondence-ui-with-your-custom-portal}
 
 ## 概觀 {#overview}
 
-本文詳細說明如何將建立通訊解決方案與您的環境整合。
+本文詳細說明如何將`Create Correspondence`解決方案與您的環境整合。
 
 ## URL型引動過程 {#url-based-invocation}
 
-從自訂入口網站呼叫「建立通訊」應用程式的一種方法是使用下列請求引數準備URL：
+從自訂入口網站呼叫`Create Correspondence`應用程式的一種方法是，使用下列要求引數準備URL：
 
 * 信函範本的識別碼（使用cmLetterId引數）。
 
@@ -39,16 +39,16 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->在呼叫「建立通訊」應用程式之前，請儲存並上傳資料以在指定的dataURL呼叫「建立通訊」UI。 您可以從自訂入口網站本身或透過另一個後端程式執行此操作。
+>在呼叫`Create Correspondence`應用程式之前，儲存並上傳資料以在指定的dataURL呼叫`Create Correspondence` UI。 此程式可以從自訂入口網站本身或透過另一個後端程式完成。
 
 ## 內嵌資料型引動過程 {#inline-data-based-invocation}
 
-呼叫建立通訊應用程式的另一個（也是更安全的）方法可能是，直接點選https://&#39;[伺服器]：[連線埠]&#39;/[contextPath]/aem/forms/createcorrespondence.html的URL，同時傳送引數和資料以呼叫建立通訊應用程式作為POST要求（對一般使用者隱藏它們）。 這也表示您現在可以內嵌傳遞「建立對應」應用程式的XML資料（作為相同請求的一部分，使用cmData引數），這在先前的方法中是不可能的/理想的作法。
+另一個更安全的呼叫`Create Correspondence`應用程式的方法是前往位於https://&#39;[伺服器]：[連線埠]&#39;/[contextPath]/aem/forms/createcorrespondence.html的URL。 傳送引數和資料時執行此URL以以POST要求形式呼叫`Create Correspondence`應用程式，對一般使用者隱藏它們。 此工作流程也表示您現在可以傳遞`Create Correspondence`應用程式內嵌的XML資料（作為相同請求的一部分，使用`cmData`引數）。 此工作流程在先前的方法中不可能或理想。
 
 ### 指定字母的引數 {#parameters-for-specifying-letter}
 
 | **名稱** | **類型** | **說明** |
-|---|---|---|
+| --- | --- | --- |
 | cmLetterInstanceId | 字串 | 信件例項的識別碼。 |
 | cmLetterId | 字串 | 信函範本的名稱。 |
 
@@ -61,12 +61,12 @@ ht-degree: 4%
   <tr>
    <td><strong>名稱</strong></td> 
    <td><strong>類型</strong></td> 
-   <td><strong>描述</strong></td> 
+   <td><strong>說明</strong></td> 
   </tr>
   <tr>
    <td>cmDataUrl<br /> </td> 
    <td>URL</td> 
-   <td>使用基本通訊協定（例如cq、ftp、http或檔案）的來源檔案中的XML資料。<br /> </td> 
+   <td>來自使用基本通訊協定（例如cq、ftp、http或檔案）之來源檔案的XML資料。<br /> </td> 
   </tr>
   <tr>
    <td>cmLetterInstanceId</td> 
@@ -90,7 +90,7 @@ ht-degree: 4%
   <tr>
    <td><strong>名稱</strong></td> 
    <td><strong>類型</strong></td> 
-   <td><strong>描述</strong></td> 
+   <td><strong>說明</strong></td> 
   </tr>
   <tr>
    <td>cmPreview<br /> </td> 
@@ -105,4 +105,4 @@ ht-degree: 4%
  </tbody>
 </table>
 
-如果您使用cmDataURL的http或cq通訊協定，應可匿名存取http/cq的URL。
+如果您使用`cmDataURL`的http或cq通訊協定，則`http/cq`的URL必須可匿名存取。
