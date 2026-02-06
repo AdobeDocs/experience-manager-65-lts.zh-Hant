@@ -22,6 +22,6 @@ AEM 6.5遵循套件管理和專案結構的最新最佳實務。 它使用最新
 >
 >* AEM as a Cloud Service檔案中的[AEM專案結構](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure)文章，說明如何結構現代AEM專案。
 >* [AEM專案原型](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/overview)檔案，說明如何使用原型啟動新的AEM專案。
->* AEM as a Cloud Service檔案中的[Adobe Content Package Maven外掛程式](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/maven-plugin#developer-tools)文章，說明如何部署AEM應用程式。
+>* AEM as a Cloud Service檔案中的[Adobe Content Package Maven外掛程式](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developer-tools/maven-plugin#developer-tools)文章，說明如何部署AEM應用程式。
 >
 >全部三份檔案皆適用於AEM 6.5。

@@ -31,7 +31,7 @@ ht-degree: 0%
 >
 >Target團隊必須啟用您的帳戶才能使用整合。
 >
->如果不是這種情況，請聯絡[Adobe客戶服務](https://experienceleague.adobe.com/en/docs/target/using/cmp-resources-and-contact-information)。
+>如果不是這種情況，請聯絡[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant/docs/target/using/cmp-resources-and-contact-information)。
 
 ## 啟用Target復寫代理 {#enabling-the-target-replication-agent}
 
