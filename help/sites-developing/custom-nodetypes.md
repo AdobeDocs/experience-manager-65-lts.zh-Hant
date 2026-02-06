@@ -9,16 +9,16 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 255f52f3-aff4-432c-a541-3ce03e626742
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9bc1cad84bb14b7513ede1fff2c1a37768dac442
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1703'
 ht-degree: 5%
 
 ---
 
 # 自訂節點型別{#custom-node-types}
 
-由於Adobe Experience Manager (AEM)以Sling為基礎，並使用JCR存放庫，因此這兩種系統提供的節點型別皆可使用：
+由於Adobe Experience Manager (AEM)是以Sling為基礎，並使用JCR存放庫，因此兩者提供的節點型別都可用於以下專案：
 
 * [JCR節點型別](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling節點型別](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
@@ -27,7 +27,7 @@ ht-degree: 5%
 
 ## 稽核 {#audit}
 
-### cq：AuditEvent {#cq-auditevent}
+### `cq:AuditEvent` {#cq-auditevent}
 
 **說明**
 
@@ -55,7 +55,7 @@ ht-degree: 5%
 
 ## 評論 {#comment}
 
-### cq：Comment {#cq-comment}
+### `cq:Comment` {#cq-comment}
 
 **說明**
 
@@ -74,7 +74,7 @@ ht-degree: 5%
 * `- userIdentifier (string)`
 * `- authorizableId (string)`
 
-### cq：CommentAttachment {#cq-commentattachment}
+### `cq:CommentAttachment` {#cq-commentattachment}
 
 **說明**
 
@@ -86,7 +86,7 @@ ht-degree: 5%
    * `- * (undefined)`
    * `- * (undefined) multiple`
 
-### cq：CommentContent {#cq-commentcontent}
+### `cq:CommentContent` {#cq-commentcontent}
 
 **說明**
 
@@ -103,7 +103,7 @@ ht-degree: 5%
 * `- userIdentifier (string)`
 * `- authorizableId (string)`
 
-### cq：GeoLocation {#cq-geolocation}
+### `cq:GeoLocation` {#cq-geolocation}
 
 **說明**
 
@@ -118,7 +118,7 @@ ht-degree: 5%
 * `- latitude (double)`
 * `- longitude (double)`
 
-### cq：Trackback {#cq-trackback}
+### `cq:Trackback` {#cq-trackback}
 
 **說明**
 
@@ -130,7 +130,7 @@ ht-degree: 5%
 
 ## 核心 {#core}
 
-### cq:Page {#cq-page}
+### `cq:Page` {#cq-page}
 
 **說明**
 
@@ -144,17 +144,17 @@ ht-degree: 5%
    * `+ jcr:content (nt:base) = nt:unstructured copy primary`
    * `+ * (nt:base) = nt:base version`
 
-### cq：PseudoPage {#cq-pseudopage}
+### `cq:PseudoPage` {#cq-pseudopage}
 
 **說明**
 
-定義將節點標示為虛擬頁面的mixin型別。 換言之，這表示它們可以調整為適用於Page和WCM編輯支援。
+此mixin型別將節點標示為虛擬頁面。 換言之，這表示它們可以調整為適用於Page和WCM編輯支援。
 
 **定義**
 
 * `[cq:PseudoPage] mixin`
 
-### cq:PageContent {#cq-pagecontent}
+### `cq:PageContent` {#cq-pagecontent}
 
 **說明**
 
@@ -178,6 +178,7 @@ ht-degree: 5%
 >頁面內容不必使用此型別。
 
 **定義**
+
 * `[cq:PageContent] > nt:unstructured, mix:title, mix:created, cq:OwnerTaggable, sling:VanityPath, cq:ReplicationStatus, sling:Resource orderable`
    * `- cq:template (string)`
    * `- cq:allowedTemplates (string) multiple`
@@ -191,7 +192,7 @@ ht-degree: 5%
    * `- cq:designPath (string)`
    * `- jcr:language (string)`
 
-### cq:Template {#cq-template}
+### `cq:Template` {#cq-template}
 
 **說明**
 
@@ -223,7 +224,7 @@ ht-degree: 5%
    * `- allowedChildren (string) multiple`
    * `- ranking (long)`
 
-### cq:Component {#cq-component}
+### `cq:Component` {#cq-component}
 
 **說明**
 
@@ -238,7 +239,7 @@ ht-degree: 5%
 * `@prop cq:isContainer` — 指出它是否為容器元件。 強制使用子元件的儲存格名稱，而非路徑名稱。 例如，`parsys`是容器元件。 如果未定義此值，則會根據`cq:childEditConfig`的存在性來進行檢查。
 * `@prop cq:noDecoration` — 如果為true，則加入此元件時不會繪製任何裝飾`div`標籤。
 * `@node cq:editConfig` — 定義編輯列引數的設定。
-* `@node cq:childEditConfig` — 子元件繼承的編輯設定。
+* `@node cq:childEditConfig` — 子元件繼承的編輯組態。
 * `@node cq:htmlTag` — 定義當包含元件時新增到「周圍」`div`標籤的其他標籤屬性。
 * `@node icon.png` — 儲存特徵圖示的檔案。
 * `@node thumbnail.png` — 儲存特徵縮圖影像的檔案。
@@ -246,7 +247,7 @@ ht-degree: 5%
 * `@prop allowedChildren` — 規則運算式模式，用來決定允許做為子元件的元件路徑。
 * `@node virtual` — 包含反映用於元件拖放之虛擬元件的子節點。
 * `@prop componentGroup` — 元件群組的名稱，用於元件拖放。
-* `@node cq:infoProviders` — 包含子節點，每個子節點都有參照`PageInfoProvider`的屬性`className`。
+* `@node cq:infoProviders` — 包含子節點，每個子節點都有參照`className`的屬性`PageInfoProvider`。
 
 **定義**
 
@@ -271,7 +272,7 @@ ht-degree: 5%
    * `- componentGroup (string)`
    * `+ cq:infoProviders (nt:base) = nt:unstructured copy`
 
-### cq：ComponentMixin {#cq-componentmixin}
+### `cq:ComponentMixin` {#cq-componentmixin}
 
 **說明**
 
@@ -281,11 +282,11 @@ ht-degree: 5%
 
 `[cq:ComponentMixin] > cq:Component mixin`
 
-### cq：EditConfig {#cq-editconfig}
+### `cq:EditConfig` {#cq-editconfig}
 
 **說明**
 
-定義「編輯列」的設定。
+定義`editbar`的組態。
 
 * `@prop cq:dialogMode` — 對話方塊模式：
    * `floating` — 適用於一般浮動對話方塊
@@ -313,7 +314,7 @@ ht-degree: 5%
    * `+ cq:dropTargets (nt:base) = nt:unstructured`
    * `+ cq:listeners (nt:base) = cq:EditListenersConfig`
 
-### cq：DropTargetConfig {#cq-droptargetconfig}
+### `cq:DropTargetConfig` {#cq-droptargetconfig}
 
 **說明**
 
@@ -331,7 +332,7 @@ ht-degree: 5%
    * `- propertyName (string)`
    * `+ parameters (nt:base) = nt:unstructured`
 
-### cq：VirtualComponent {#cq-virtualcomponent}
+### `cq:VirtualComponent` {#cq-virtualcomponent}
 
 **說明**
 
@@ -340,7 +341,7 @@ ht-degree: 5%
 * `@prop jcr:title` — 此元件的標題。
 * `@prop jcr:description` — 此元件的描述。
 * `@node cq:editConfig` — 編輯定義編輯列引數的設定。
-* `@node cq:childEditConfig` — 編輯子元件繼承的設定。
+* `@node cq:childEditConfig` — 編輯子元件繼承的組態。
 * `@node icon.png` — 儲存特徵圖示的檔案。
 * `@node thumbnail.png` — 儲存特徵縮圖影像的檔案。
 * `@prop allowedParents` — 規則運算式模式，用來決定允許做為父系元件的元件路徑。
@@ -360,7 +361,7 @@ ht-degree: 5%
 `- allowedChildren (string) multiple`
 `- componentGroup (string)`
 
-### cq：EditListenersConfig {#cq-editlistenersconfig}
+### `cq:EditListenersConfig` {#cq-editlistenersconfig}
 
 **說明**
 
@@ -392,7 +393,7 @@ ht-degree: 5%
 
 ## DAM {#dam}
 
-### dam:AssetContent {#dam-assetcontent}
+### `dam:AssetContent` {#dam-assetcontent}
 
 **說明**
 
@@ -404,7 +405,7 @@ DAM資產的內容。
    * `+ metadata (nt:unstructured)`
    * `+ renditions (nt:folder)`
 
-### dam:Asset {#dam-asset}
+### `dam:Asset` {#dam-asset}
 
 **說明**
 
@@ -416,7 +417,7 @@ DAM資產。
 `+ jcr:content (dam:AssetContent) = dam:AssetContent copy primary`
 `+ * (nt:base) = nt:base version`
 
-### dam：Thumbnail {#dam-thumbnail}
+### `dam:Thumbnail` {#dam-thumbnail}
 
 **說明**
 
@@ -430,7 +431,7 @@ DAM資產。
 
 ## 傳遞容器清單 {#delivery-container-list}
 
-### cq：containerList {#cq-containerlist}
+### `cq:containerList` {#cq-containerlist}
 
 **說明**
 
@@ -443,14 +444,14 @@ DAM資產。
 
 ## 傳遞頁面 {#delivery-page}
 
-### cq：Cq4PageAttributes {#cq-cq-pageattributes}
+### `cq:Cq4PageAttributes` {#cq-cq-pageattributes}
 
 **說明**
 
-節點型別`cq:attributes`適用於ContentBus版本標籤。 此節點只有一系列屬性；其中三個為預先定義的「已建立」、「csd」和「時間戳記」。
+節點型別`cq:attributes`適用於ContentBus版本標籤。 此節點只有一系列屬性，其中三個是預先定義的： `created`、`csd`和`timestamp`。
 
 * `@prop created (long) mandatory copy` — 建立版本資訊的時間戳記，通常是舊版簽入的時間或建立頁面的時間。
-* `@prop csd (string) mandatory copy` - csd標準屬性，頁面節點的cq：csd屬性副本
+* `@prop csd (string) mandatory copy` - `csd`標準屬性，頁面節點的`cq:csd`屬性復本
 * `@prop timestamp (long) mandatory copy` — 上次版本修改的時間戳記，通常為簽入時間。
 * `@prop * (string) copy` — 其他屬性，以父節點建立版本。
 
@@ -462,7 +463,7 @@ DAM資產。
    * `- timestamp (long) mandatory copy`
    * `- &ast; (string) copy`
 
-### cq：Cq4ContentPage {#cq-cq-contentpage}
+### `cq:Cq4ContentPage` {#cq-cq-contentpage}
 
 **說明**
 
@@ -471,8 +472,8 @@ DAM資產。
 `cq:Cq4ContentPage`中的專案為：
 
 * `@prop cq:csd` — 頁面的ContentBus CSD。
-* `@node cq:content` — 頁面的內容。 如果頁面節點處於「現有但不含內容」或「已刪除」狀態，則此子節點不存在。
-* `@node cq:attributes` — 頁面屬性的清單，以前稱為版本標籤。 cq：contentPage型別必須有此節點。 當頁面為節點建立版本時，就會建立屬性節點的版本。
+* `@node cq:content` — 頁面的內容。 如果頁面節點處於「現有不含內容」或「已刪除」狀態，則此子節點不存在。
+* `@node cq:attributes` — 頁面屬性的清單，以前稱為版本標籤。 此節點是`cq:contentPage`型別的必要節點。 建立頁面節點的版本時，會建立屬性節點的版本。
 
 **定義**
 
@@ -482,16 +483,16 @@ DAM資產。
 
 ## 匯入工具 {#importer}
 
-### cq:PollConfig {#cq-pollconfig}
+### `cq:PollConfig` {#cq-pollconfig}
 
 **說明**
 
 輪詢設定。
 
 * `@prop source (String) mandatory` — 資料來源URI。 必要項，且不得空白。
-* `@prop target (String)` — 儲存從資料來源擷取的資料的目標位置。 選用且預設為cq：PollConfig節點。
+* `@prop target (String)` — 儲存從資料來源擷取的資料的目標位置。 選用且預設為cq:PollConfig節點。
 * `@prop interval (Long)` — 輪詢資料來源中新資料或更新資料的間隔（秒）。 選填，預設為30分鐘（1800秒）。
-* [建立Adobe Experience Manager的自訂資料匯入工具服務](https://helpx.adobe.com/experience-manager/using/polling.html)
+* [建立Adobe Experience Manager的自訂資料匯入工具服務](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
 
 **定義**
 
@@ -501,7 +502,7 @@ DAM資產。
    * `- target (String)`
    * `- interval (Long)`
 
-### cq:PollConfigFolder {#cq-pollconfigfolder}
+### `cq:PollConfigFolder` {#cq-pollconfigfolder}
 
 **說明**
 
@@ -513,7 +514,7 @@ DAM資產。
 
 ## 位置 {#location}
 
-### cq：GeoLocation {#cq-geolocation-1}
+### `cq:GeoLocation` {#cq-geolocation-1}
 
 **說明**
 
@@ -531,7 +532,7 @@ DAM資產。
 
 ## 郵件程式 {#mailer}
 
-### cq：mailerMessage {#cq-mailermessage}
+### `cq:mailerMessage` {#cq-mailermessage}
 
 **說明**
 
@@ -547,7 +548,7 @@ MailerService節點型別。 郵件程式會使用具有此mixin的節點作為�
 
 ## MSM {#msm}
 
-### cq：LiveRelationship {#cq-liverelationship}
+### `cq:LiveRelationship` {#cq-liverelationship}
 
 **說明**
 
@@ -560,7 +561,7 @@ MailerService節點型別。 郵件程式會使用具有此mixin的節點作為�
    * `- cq:lastRolledoutBy (string)`
    * `- cq:sourceUUID (string)`
 
-### cq：LiveSync {#cq-livesync}
+### `cq:LiveSync` {#cq-livesync}
 
 **說明**
 
@@ -577,7 +578,7 @@ MailerService節點型別。 郵件程式會使用具有此mixin的節點作為�
 `+ * (cq:LiveSyncAction) = cq:LiveSyncAction`
 `+ cq:LiveSyncConfig (nt:base) = cq:LiveSyncConfig`
 
-### cq：LiveSyncCanceled {#cq-livesynccancelled}
+### `cq:LiveSyncCancelled` {#cq-livesynccancelled}
 
 **說明**
 
@@ -590,7 +591,7 @@ MailerService節點型別。 郵件程式會使用具有此mixin的節點作為�
 * `[cq:LiveSyncCancelled] > cq:LiveRelationship mixin`
    * `- cq:isCancelledForChildren (boolean)`
 
-### cq：LiveSyncAction {#cq-livesyncaction}
+### `cq:LiveSyncAction` {#cq-livesyncaction}
 
 **說明**
 
@@ -603,7 +604,7 @@ MailerService節點型別。 郵件程式會使用具有此mixin的節點作為�
 
 * `[cq:LiveSyncAction] > nt:unstructured`
 
-### cq：LiveSyncConfig {#cq-livesyncconfig}
+### `cq:LiveSyncConfig` {#cq-livesyncconfig}
 
 **說明**
 
@@ -620,7 +621,7 @@ Live Sync設定。
 
 * `- cq:rolloutConfigs (string) multiple /** deprecated **/`
 
-### cq：BlueprintAction {#cq-blueprintaction}
+### `cq:BlueprintAction` {#cq-blueprintaction}
 
 **說明**
 
@@ -632,7 +633,7 @@ Blueprint動作
 
 ## Platform {#platform}
 
-### cq：Console {#cq-console}
+### `cq:Console` {#cq-console}
 
 **說明**
 
@@ -645,7 +646,7 @@ Blueprint動作
 
 ## 複製 {#replication}
 
-### cq：ReplicationStatus {#cq-replicationstatus}
+### `cq:ReplicationStatus` {#cq-replicationstatus}
 
 **說明**
 
@@ -671,21 +672,21 @@ Blueprint動作
 
 ## 安全性 {#security}
 
-### cq：ApplicationPrivilege {#cq-applicationprivilege}
+### `cq:ApplicationPrivilege` {#cq-applicationprivilege}
 
 **說明**
 
-定義應用程式許可權。
+它會定義應用程式許可權。
 
 **定義**
 
 * `[cq:ApplicationPrivilege] mixin`
 
-### cq：PrivilegeAcl {#cq-privilegeacl}
+### `cq:PrivilegeAcl` {#cq-privilegeacl}
 
 **說明**
 
-定義應用程式許可權ACL。
+它定義應用程式許可權ACL。
 
 * `@prop cq:isPathDependent`
 * `@node * ACEs`
@@ -696,11 +697,11 @@ Blueprint動作
    * `- cq:isPathDependent (boolean)`
    * `+ * (cq:PrivilegeAce) = cq:PrivilegeAce`
 
-### cq：PrivilegeAce {#cq-privilegeace}
+### `cq:PrivilegeAce` {#cq-privilegeace}
 
 **說明**
 
-定義應用程式許可權ACE。
+它定義應用程式許可權的ACE。
 
 * `@prop path`
 * `@prop deny`
@@ -711,21 +712,21 @@ Blueprint動作
    * `- path mandatory`
    * `- deny (boolean)`
 
-### cq：ApplicationPrivilege {#cq-applicationprivilege-1}
+### `cq:ApplicationPrivilege` {#cq-applicationprivilege-1}
 
 **說明**
 
-定義應用程式許可權。
+它會定義應用程式許可權。
 
 **定義**
 
 * `[cq:ApplicationPrivilege] mixin`
 
-### cq：PrivilegeAcl {#cq-privilegeacl-1}
+### `cq:PrivilegeAcl` {#cq-privilegeacl-1}
 
 **說明**
 
-定義應用程式許可權ACL。
+它定義應用程式許可權ACL。
 
 * `@prop cq:isPathDependent`
 * `@node * ACEs`
@@ -736,11 +737,11 @@ Blueprint動作
    * `- cq:isPathDependent (boolean)`
    * `+ * (cq:PrivilegeAce) = cq:PrivilegeAce`
 
-### cq：PrivilegeAce {#cq-privilegeace-1}
+### `cq:PrivilegeAce` {#cq-privilegeace-1}
 
 **說明**
 
-定義應用程式許可權ACE。
+它定義應用程式許可權的ACE。
 
 * `@prop path`
 * `@prop deny`
@@ -753,11 +754,11 @@ Blueprint動作
 
 ## Site Importer {#site-importer}
 
-### cq：ComponentExtractorSource {#cq-componentextractorsource}
+### `cq:ComponentExtractorSource` {#cq-componentextractorsource}
 
 **說明**
 
-定義mixin型別，用於標籤可使用元件提取器開啟的檔案。
+定義mixin型別，用於標籤可使用元件擷取器開啟的檔案。
 
 **定義**
 
@@ -765,7 +766,7 @@ Blueprint動作
 
 ## 標記 {#tagging}
 
-### cq：Tag {#cq-tag}
+### `cq:Tag` {#cq-tag}
 
 **說明**
 
@@ -779,7 +780,7 @@ Blueprint動作
    * `- * (undefined)`
    * `+ * (nt:base) = cq:Tag version`
 
-### cq:Taggable {#cq-taggable}
+### `cq:Taggable` {#cq-taggable}
 
 **說明**
 
@@ -792,7 +793,7 @@ Blueprint動作
 * `[cq:Taggable]`
    * `- cq:tags (string) multiple`
 
-### cq：OwnerTaggable {#cq-ownertaggable}
+### `cq:OwnerTaggable` {#cq-ownertaggable}
 
 **說明**
 
@@ -802,22 +803,22 @@ Blueprint動作
 
 * `[cq:OwnerTaggable] > cq:Taggable`
 
-### cq：UserTaggable {#cq-usertaggable}
+### `cq:UserTaggable` {#cq-usertaggable}
 
 **說明**
 
-任何使用者/公用網站都可以標籤cq：userContent內使用的內容（Web2.0樣式）。
+任何使用者或公用網站都可以標籤`cq:userContent`內使用的內容（Web2.0樣式）。
 
 **定義**
 
 * `[cq:UserTaggable] > cq:Taggable`
    * `mixin`
 
-### cq：AllowsUserContent {#cq-allowsusercontent}
+### `cq:AllowsUserContent` {#cq-allowsusercontent}
 
 **說明**
 
-新增可由使用者修改的`cq:userContent`子節點。 每個使用者都有自己的`cq:userContent/<userid>`子節點，這些子節點通常有mixin `cq:UserTaggable`。
+新增使用者可編輯的`cq:userContent`子節點。 每個使用者都有自己的`cq:userContent/<userid>`子節點，這些子節點通常有mixin `cq:UserTaggable`。
 
 **定義**
 
@@ -831,11 +832,11 @@ Blueprint動作
    * `mixin`
    * `+ cq:userContent (cq:UserContent)`
 
-### cq：UserContent {#cq-usercontent}
+### `cq:UserContent` {#cq-usercontent}
 
 **說明**
 
-可由使用者修改。
+使用者可以編輯它。
 
 **定義**
 
@@ -845,7 +846,7 @@ Blueprint動作
    * `// other content`
    * `+ * (nt:base)`
 
-### cq：UserData {#cq-userdata}
+### `cq:UserData` {#cq-userdata}
 
 **說明**
 
@@ -857,7 +858,7 @@ Blueprint動作
 
 ## Widget {#widgets}
 
-### cq：ClientLibraryFolder {#cq-clientlibraryfolder}
+### `cq:ClientLibraryFolder` {#cq-clientlibraryfolder}
 
 **說明**
 
@@ -869,7 +870,7 @@ Blueprint動作
    * `- categories (string) multiple`
    * `- dependencies (string) multiple`
 
-### cq：Widget {#cq-widget}
+### `cq:Widget` {#cq-widget}
 
 **說明**
 
@@ -883,7 +884,7 @@ Blueprint動作
    * `- title (string)`
    * `+ items (nt:base) = cq:WidgetCollection copy`
 
-### cq：WidgetCollection {#cq-widgetcollection}
+### `cq:WidgetCollection` {#cq-widgetcollection}
 
 **說明**
 
@@ -895,7 +896,7 @@ Widget集合
    * `orderable`
    * `+ * (cq:Widget) = cq:Widget copy`
 
-### cq：Dialog {#cq-dialog}
+### `cq:Dialog` {#cq-dialog}
 
 **說明**
 
@@ -905,7 +906,7 @@ Widget集合
 
 * `[cq:Dialog] > cq:Widget orderable`
 
-### cq：Panel {#cq-panel}
+### `cq:Panel` {#cq-panel}
 
 **說明**
 
@@ -915,7 +916,7 @@ Widget集合
 
 `[cq:Panel] > cq:Widget orderable`
 
-### cq：TabPanel {#cq-tabpanel}
+### `cq:TabPanel` {#cq-tabpanel}
 
 **說明**
 
@@ -926,7 +927,7 @@ Widget集合
 * `[cq:TabPanel]` > `cq:Panel orderable`
    * `- activeTab (long)`
 
-### cq：Field {#cq-field}
+### `cq:Field` {#cq-field}
 
 **說明**
 
@@ -941,7 +942,7 @@ Widget集合
 
 ## Wiki {#wiki}
 
-### Wiki：主題 {#wiki-topic}
+### `wiki:Topic` {#wiki-topic}
 
 **說明**
 
@@ -962,7 +963,7 @@ Wiki主題
    * `- wiki:logMessage (string)`
    * `- wiki:quietSave (boolean)`
 
-### wiki：User {#wiki-user}
+### `wiki:User` {#wiki-user}
 
 **說明**
 
@@ -973,7 +974,7 @@ Wiki使用者
 * `[wiki:User] mixin`
    * `- wiki:subscriptions (string) multiple`
 
-### wiki：屬性 {#wiki-properties}
+### `wiki:Properties` {#wiki-properties}
 
 **說明**
 
@@ -987,7 +988,7 @@ Wiki屬性
 
 ## 工作流程 {#workflow}
 
-### cq：Workflow {#cq-workflow}
+### `cq:Workflow` {#cq-workflow}
 
 **說明**
 
@@ -1012,7 +1013,7 @@ Wiki屬性
    * `+ metaData (nt:unstructured)`
    * `+ workItems (nt:unstructured)`
 
-### cq：WorkItem {#cq-workitem}
+### `cq:WorkItem` {#cq-workitem}
 
 **說明**
 
@@ -1030,11 +1031,11 @@ Wiki屬性
    * `- sling:resourceType (String) = "cq/workflow/components/workitem" mandatory autocreated`
    * `+ metaData (nt:unstructured)`
 
-### cq：Payload {#cq-payload}
+### `cq:Payload` {#cq-payload}
 
 **說明**
 
-總額
+承載
 
 **定義**
 
@@ -1047,7 +1048,7 @@ Wiki屬性
    * `- * (undefined)`
    * `- * (undefined) multiple`
 
-### cq：WorkflowData {#cq-workflowdata}
+### `cq:WorkflowData` {#cq-workflowdata}
 
 **說明**
 
@@ -1061,11 +1062,12 @@ Wiki屬性
    * `+ payload (cq:Payload)`
    * `+ metaData (nt:unstructured) copy`
 
-### cq：WorkflowModel {#cq-workflowmodel}
+### `cq:WorkflowModel` {#cq-workflowmodel}
 
 **說明**
 
 自動指派工作流程設定。 設定遵循以下結構：
+
 * `workflows`
    * `+ name1`
       * `- cq:path`
@@ -1086,7 +1088,7 @@ Wiki屬性
    * `+ metaData (nt:unstructured)`
       * `copy`
 
-### cq：WorkflowNode {#cq-workflownode}
+### `cq:WorkflowNode` {#cq-workflownode}
 
 **說明**
 
@@ -1106,7 +1108,7 @@ Wiki屬性
    * `+ timeoutConfiguration (nt:unstructured)`
       * `copy`
 
-### cq：WorkflowTransition {#cq-workflowtransition}
+### `cq:WorkflowTransition` {#cq-workflowtransition}
 
 **說明**
 
@@ -1121,7 +1123,7 @@ Wiki屬性
    * `+ metaData (nt:unstructured)`
       * `copy`
 
-### cq：OrTab {#cq-ortab}
+### `cq:OrTab` {#cq-ortab}
 
 **說明**
 
@@ -1130,10 +1132,10 @@ Wiki屬性
 **定義**
 
 * `[cq:OrTab]`
-   * `- workflowId (String) // not compulsory as this node will already be attached to the workflow node`
+   * `- workflowId (String) // not compulsory as this node is already be attached to the workflow node`
    * `- nodeId (String)`
 
-### cq：Wait {#cq-wait}
+### `cq:Wait` {#cq-wait}
 
 **說明**
 
@@ -1142,11 +1144,11 @@ Wiki屬性
 **定義**
 
 * `[cq:Wait]`
-   * `- workflowId (String) // not compulsory as this node will be already attached to the workflow node`
+   * `- workflowId (String) // not compulsory as this node is already attached to the workflow node`
    * `- destNodeId (String)`
    * `- fromNodeId (String)`
 
-### cq：WorkflowStack {#cq-workflowstack}
+### `cq:WorkflowStack` {#cq-workflowstack}
 
 **說明**
 
@@ -1159,7 +1161,7 @@ Wiki屬性
    * `- parentInstanceId (String)`
    * `- nodeId (String)`
 
-### cq：ProcessStack {#cq-processstack}
+### `cq:ProcessStack` {#cq-processstack}
 
 **說明**
 
@@ -1168,12 +1170,12 @@ Wiki屬性
 **定義**
 
 * `[cq:ProcessStack]`
-   * `- workflowId (String) // not compulsory as this node will be already attached to the workflow node`
+   * `- workflowId (String) // not compulsory as this node is already attached to the workflow node`
    * `- containerWorkflowModelId (String)`
    * `- containerWorkflowNodeId`
    * `- containerWorkflowEndNodeId // still needed (if name already defines that id)`
 
-### cq：WorkflowLauncher {#cq-workflowlauncher}
+### `cq:WorkflowLauncher` {#cq-workflowlauncher}
 
 **說明**
 
