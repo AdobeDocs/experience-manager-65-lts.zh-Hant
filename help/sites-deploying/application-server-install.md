@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
+source-git-commit: 2a33cb4b8aa1dcfd989cf61465492d563f9cd99a
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 0%
@@ -53,9 +53,9 @@ AEM會以單一war檔案的形式進行部署。
 
 您可以透過下列方式變更預設行為：
 
-* 執行模式：部署前在AEM war檔案的`WEB-INF/web.xml`檔案中設定`sling.run.modes`引數
+* 執行模式：部署前在AEM war檔案的`sling.run.modes`檔案中設定`WEB-INF/web.xml`引數
 
-* sling.home：在部署之前設定AEM war檔案`WEB-INF/web.xml`檔案中的`sling.home`引數
+* sling.home：在部署之前設定AEM war檔案`sling.home`檔案中的`WEB-INF/web.xml`引數
 
 * 內容根目錄：重新命名AEM war檔案
 
@@ -143,15 +143,15 @@ AEM會以單一war檔案的形式進行部署。
         ```xml
         <?xml version='1.0' encoding='utf-8'?>
         <tomcat-users>
-        role rolename="manager"/>
-        role rolename="tomcat"/>
-        <role rolename="admin"/>
-        <role rolename="role1"/>
-        <role rolename="manager-gui"/>
-        <user username="both" password="tomcat" roles="tomcat,role1"/>
-        <user username="tomcat" password="tomcat" roles="tomcat"/>
-        <user username="admin" password="admin" roles="admin,manager-gui"/>
-        <user username="role1" password="tomcat" roles="role1"/>
+          <role rolename="manager"/>
+          <role rolename="tomcat"/>
+          <role rolename="admin"/>
+          <role rolename="role1"/>
+          <role rolename="manager-gui"/>
+          <user username="both" password="tomcat" roles="tomcat,role1"/>
+          <user username="tomcat" password="tomcat" roles="tomcat"/>
+          <user username="admin" password="admin" roles="admin,manager-gui"/>
+          <user username="role1" password="tomcat" roles="role1"/>
         </tomcat-users>
         ```
 
@@ -165,7 +165,7 @@ AEM會以單一war檔案的形式進行部署。
 
      `webapps/manager/WEB-INF/web.xml`
 
-     並將`max-file-size`和`max-request-size`增加到至少500MB。 在下列範例`web.xml`檔案中檢視下列`multipart-config`：
+     並將`max-file-size`和`max-request-size`增加到至少500MB。 在下列範例`multipart-config`檔案中檢視下列`web.xml`：
 
      ```xml
      <multipart-config>
@@ -186,6 +186,6 @@ AEM會以單一war檔案的形式進行部署。
       * 取消註解初始`sling.home`引數，並視需要設定此路徑
       * 重新封裝`web.xml`檔案。
 
-   * 如果您要將AEM war檔案部署為根Webapp，請將它重新命名為`ROOT.war`。 如果要將`aemauthor`重新命名為內容根目錄，請將其重新命名為`aemauthor.war`。
+   * 如果您要將AEM war檔案部署為根Webapp，請將它重新命名為`ROOT.war`。 如果要將`aemauthor.war`重新命名為內容根目錄，請將其重新命名為`aemauthor`。
    * 將其複製到Tomcat的webapps資料夾
    * 等到安裝AEM為止。
