@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 7c3f5d203be1ee2daa3274f76eade9af2ab9c821
+source-git-commit: f895a226e35b8d41b54245bdd25908f48ffc3045
 workflow-type: tm+mt
 source-wordcount: '7751'
 ht-degree: 93%
@@ -21,7 +21,7 @@ ht-degree: 93%
 | 版本 | Service Pack 1 (SP1)，GRANITE-61551 的 Hotfix <!-- UPDATE FOR EACH NEW RELEASE --> |
 | 類型 | Service Pack 發行 |
 | 日期 | 2025 年 9 月 9 日 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| 下載 URL | [軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq660%2Fhotfixes%2Fcq-6.5.lts.1-hotfix-GRANITE-61551-1.2.zip) |
+| 下載 URL | [軟體發佈] (https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-61551-1.4.zip) |
 
 <!-- OLD URL TO JAR
 (https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack-lts/cq-quickstart-6.6.1.jar) | -->
@@ -39,7 +39,7 @@ ht-degree: 93%
 
 ### Forms
 
-JEE版AEM 6.5 Forms LTS現已推出。 如需支援環境的詳細資訊，請參閱[支援的平台](/help/forms/using/aem-forms-jee-supported-platforms.md)組合檔案。 安裝程式連結可在[AEM Forms發行版本](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)頁面上取得。
+JEE版AEM 6.5 Forms LTS現已推出。 如需支援環境的詳細資訊，請參閱[支援的平台](/help/forms/using/aem-forms-jee-supported-platforms.md)組合檔案。 安裝程式連結可在[AEM Forms發行版本](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)頁面上取得。
 
 #### AEM Forms 6.5 LTS SP1包含的內容
 
@@ -530,7 +530,7 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 ### 升級 {#upgrade}
 
 * 如需升級程序的詳細資訊，請參閱[升級文件](/help/sites-deploying/upgrade.md)。
-* 如需詳細的升級指示，請參閱JEE上的[AEM Forms 6.5 LTS SP1升級指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* 如需詳細的升級指示，請參閱JEE上的[AEM Forms 6.5 LTS SP1升級指南](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### AEM 6.5 LTS Service Pack 升級的最佳做法
 
@@ -569,7 +569,7 @@ AEM 6.5 LTS 適用的 SP1 會以 Quickstart JAR 形式提供，而非透過「�
 >
 >以上所示的檔案名稱 (例如 `cq-quickstart-6.6.x.jar`) 會反映在此 LTS 版本所看到的 SP1 Quickstart 成品命名方式；請一律使用與您從 Software Distribution 下載之檔案完全相同的檔案名稱。
 
-## 安裝與更新 {#install-update}
+## 安裝與更新{#install-update}
 
 如需關於設定需求的資訊，請參閱[安裝指示](/help/sites-deploying/custom-standalone-install.md)。
 
@@ -701,7 +701,7 @@ A hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/download
 
 以下文字文件列出在此 [!DNL Experience Manager] 6.5 LTS Service Pack 1 版本中所包含的 OSGi 套件與內容套件：
 
-* [&#x200B; Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [ Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 * [Experience Manager 6.5 LTS Service Pack 1 中包含的內容套件清單](/help/release-notes/assets/65lts_sp1_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## 受限制的網站{#restricted-sites}
