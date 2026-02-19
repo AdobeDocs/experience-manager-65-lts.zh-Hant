@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 56a6a366aa563cab3a0385c619041238f04b31c5
+source-git-commit: ad26ea17d3d8fba351c31199607003ab4981c53d
 workflow-type: tm+mt
-source-wordcount: '5867'
+source-wordcount: '6060'
 ht-degree: 21%
 
 ---
@@ -302,9 +302,9 @@ Expression Security Validator現在會處理空白或Null的OSGi設定值。 它
 <!--
 #### Jetty{#foundation-jetty-65-lts-sp2}
 
-#### Localization{#foundation-localization-65-lts-sp2}
+#### Localization{#foundation-localization-65-lts-sp2} 
 
-#### Oak {#foundation-oak-65-lts-sp2}
+
 
 #### Omnisearch{#foundation-omnisearch-65-lts-sp2}
 
@@ -313,9 +313,36 @@ Expression Security Validator現在會處理空白或Null的OSGi設定值。 它
 #### Projects{#foundation-projects-65-lts-sp2}
 -->
 
+#### Oak {#foundation-oak-65-lts-sp2}
+
+AEM 6.5 LTS Service Pack 2需要S3 Connector 1.60.10或更新版本。 S3資料存放區設定現在包含`crossRegionAccess`和`mode`，因此管理員可以啟用跨區域貯體存取，並在需要時將儲存空間切換至GCP。 `s3EndPoint`現在需要與`s3Region`對齊的區域，或者它保持空白以便驅動程式產生端點。 (GRANITE-64873)
+
+
 #### 快速入門{#foundation-quickstart-65-lts-sp2}
 
-AEM 6.5 LTS SP2更新了Sling、Oak和Felix的基礎層套件組合集。 這些升級會增強核心執行階段穩定性，並調整整個平台的相依性版本。 (GRANITE-61874)
+* Sling會更新管理登入允許清單，以使用內含術語和新的設定PID。 此變更與Sling JCR Base 3.2.0一致。 (GRANITE-63756)
+
+  **影響**
+
+   * Sling會棄用這些PID，您應該從設定中移除它們：
+      * 工廠PID： `org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment`
+      * 全域PID： `org.apache.sling.jcr.base.internal.LoginAdminWhitelist`
+這些舊組態使用屬性，例如`whitelist.name`和`whitelist.bundles`。
+
+   * Sling仍會為過時的PID提供部分回溯相容性，但不會將其用於新設定。 請改用較新的`LoginAdminAllowList.*` PID。
+   * 請勿同時執行已棄用和新的允許清單設定。 混合設定可能會產生模稜兩可的情況並產生非預期的行為。 當您移轉至AEM 6.5 LTS SP2時，請完全移除已棄用的PID。
+
+  **您應該做什麼**
+
+   1. 尋找使用`LoginAdminWhitelist*` PID的允許清單設定。
+   1. 以適當的新PID取代：
+
+      * 工廠PID： `org.apache.sling.jcr.base.LoginAdminAllowList.fragment`
+      * 全域PID： `org.apache.sling.jcr.base.LoginAdminAllowList`
+
+      如需其他詳細資訊，請參閱[管理登入允許清單套裝的過時方法](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecated-approach-to-allowlist-bundles-for-administrative-login)。
+
+* AEM 6.5 LTS SP2更新了Sling、Oak和Felix的基礎層套件組合集。 這些升級會增強核心執行階段穩定性，並調整整個平台的相依性版本。 (GRANITE-61874)
 
 <!--
 #### Security{#foundation-security-65-lts-sp2}
@@ -362,7 +389,7 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 ### 升級 {#upgrade}
 
 * 如需升級程序的詳細資訊，請參閱[升級文件](/help/sites-deploying/upgrade.md)。
-* 如需詳細的升級指示，請參閱JEE上的[AEM Forms 6.5 LTS SP1升級指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* 如需詳細的升級指示，請參閱JEE上的[AEM Forms 6.5 LTS SP1升級指南](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### AEM 6.5 LTS Service Pack 升級的最佳做法
 
@@ -529,7 +556,7 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 
 以下文字文件列出在此 [!DNL Experience Manager] 6.5 LTS Service Pack 1 版本中所包含的 OSGi 套件與內容套件：
 
-* [&#x200B; Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [ Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 * [Experience Manager 6.5 LTS Service Pack 1 中包含的內容套件清單](/help/release-notes/assets/65lts_sp1_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## 受限制的網站{#restricted-sites}
@@ -537,5 +564,5 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 這些網站僅供客戶使用。若您是客戶並且需要存取權，請聯絡您的 Adobe 客戶經理。
 
 * [在 licensing.adobe.com 下載產品](https://licensing.adobe.com/)
-* [聯絡 Adobe 客戶支援](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience)。
+* [聯絡 Adobe 客戶支援](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience)。
 
