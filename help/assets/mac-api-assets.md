@@ -7,7 +7,7 @@ feature: Assets HTTP API,Developer Tools
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7bb4aec8-e6c0-416a-a318-d3120f9688c4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f0385f595035dfd0dce77fc7eb8b2413eaf5431a
 workflow-type: tm+mt
 source-wordcount: '1775'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=en) |
 | AEM 6.5 | 本文章 |
 
 ## 概觀 {#overview}
@@ -28,7 +28,7 @@ ht-degree: 1%
 若要存取API：
 
 1. 在`https://[hostname]:[port]/api.json`開啟API服務檔案。
-1. 依循前往`https://[hostname]:[server]/api/assets.json`的[!DNL Assets]服務連結。
+1. 依循前往[!DNL Assets]的`https://[hostname]:[server]/api/assets.json`服務連結。
 
 API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代碼。 JSON回應為選用專案，可能無法用於PDF等檔案。 仰賴回應程式碼進行進一步分析或動作。
 
@@ -36,7 +36,7 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 
 >[!CAUTION]
 >
->[HTTP API會更新`jcr`名稱空間中的中繼資料屬性](#update-asset-metadata)。 不過，Experience Manager使用者介面會更新`dc`名稱空間中的中繼資料屬性。
+>[HTTP API會更新](#update-asset-metadata)名稱空間中的中繼資料屬性`jcr`。 不過，Experience Manager使用者介面會更新`dc`名稱空間中的中繼資料屬性。
 
 ## 內容片段 {#content-fragments}
 
@@ -63,7 +63,7 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 
 >[!NOTE]
 >
->資料夾或資產的某些屬性會對應至不同的首碼。 `jcr:title`、`jcr:description`和`jcr:language`的`jcr`首碼已取代為`dc`首碼。 因此，在傳回的JSON中，`dc:title`和`dc:description`分別包含`jcr:title`和`jcr:description`的值。
+>資料夾或資產的某些屬性會對應至不同的首碼。 `jcr`、`jcr:title`和`jcr:description`的`jcr:language`首碼已取代為`dc`首碼。 因此，在傳回的JSON中，`dc:title`和`dc:description`分別包含`jcr:title`和`jcr:description`的值。
 
 **連結**&#x200B;資料夾公開三個連結：
 
@@ -105,7 +105,7 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 >
 >為方便閱讀，下列範例會忽略完整的cURL標籤法。 事實上，表示法與[Resty](https://github.com/micha/resty)相關，後者是`cURL`的指令碼包裝函式。
 
-**必備條件**
+**先決條件**
 
 * 存取`https://[aem_server]:[port]/system/console/configMgr`。
 * 導覽至&#x200B;**[!UICONTROL Adobe Granite CSRF篩選器]**。
@@ -123,7 +123,7 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 * 404 - NOT FOUND — 資料夾不存在或無法存取。
 * 500 — 內部伺服器錯誤 — 如果發生其他錯誤。
 
-**回應**：傳回的實體類別是資產或資料夾。 包含之圖元的屬性是每個圖元之完整屬性集的子集。 若要取得實體的完整表示法，使用者端應擷取連結所指向的URL內容，該URL具有`self`的`rel`。
+**回應**：傳回的實體類別是資產或資料夾。 包含之圖元的屬性是每個圖元之完整屬性集的子集。 若要取得實體的完整表示法，使用者端應擷取連結所指向的URL內容，該URL具有`rel`的`self`。
 
 ## 建立資料夾 {#create-a-folder}
 
@@ -318,6 +318,6 @@ curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.p
 
 ## 提示和限制 {#tips-best-practices-limitations}
 
-* [HTTP API會更新`jcr`名稱空間中的中繼資料屬性](#update-asset-metadata)。 不過，Experience Manager使用者介面會更新`dc`名稱空間中的中繼資料屬性。
+* [HTTP API會更新](#update-asset-metadata)名稱空間中的中繼資料屬性`jcr`。 不過，Experience Manager使用者介面會更新`dc`名稱空間中的中繼資料屬性。
 
 * Assets HTTP API未傳回完整的中繼資料。 系統會以硬式編碼撰寫名稱空間，而且只會傳回這些名稱空間。 如需完整的中繼資料，請參閱資產路徑`/jcr_content/metadata.json`。

@@ -6,10 +6,10 @@ role: Developer
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: c1f80437-275a-48b6-99b9-bec070577da0
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: e799e9c99a12cad108ae2c035797e5887a2f4ef1
 workflow-type: tm+mt
-source-wordcount: '1902'
-ht-degree: 23%
+source-wordcount: '1939'
+ht-degree: 22%
 
 ---
 
@@ -17,11 +17,20 @@ ht-degree: 23%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=zh-Hant) |
 | AEM 6.5 | 本文章 |
 
-
 ## 概觀 {#overview}
+
+>[!CAUTION]
+>
+>Assets HTTP API中的內容片段支援現在[已棄用](/help/release-notes/release-notes.md#deprecated-features)。
+>
+>已由[內容片段和內容片段模型管理OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/65lts/)取代。
+
+>[!NOTE]
+>
+>如需Experience Manager API的最新資訊，請造訪[Adobe Experience Manager API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)。
 
 瞭解AEM HTTP API支援內容片段，這是Assets的Headless傳送功能的重要一環。
 
@@ -40,7 +49,7 @@ ht-degree: 23%
 
 例如，單頁應用程式(SPA)，以框架為基礎或自訂，需要透過HTTP API提供的內容，通常為JSON格式。
 
-雖然[AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)提供非常完整、彈性且可自訂的API，可為此提供所需的讀取作業，並可自訂其JSON輸出，但這些元件確實需要AEM WCM （網頁內容管理）專門知識才能實作，因為它們必須託管在基於專用AEM範本的頁面中。 並非所有SPA開發組織都能直接存取這些知識。
+雖然[AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)提供非常完整、彈性且可自訂的API，可為此提供所需的讀取作業，並可自訂其JSON輸出，但這些元件確實需要AEM WCM （網頁內容管理）專門知識才能實作，因為它們必須託管在基於專用AEM範本的頁面中。 並非所有SPA開發組織都能直接存取這些知識。
 
 此時可使用Assets REST API。 它可讓開發人員直接存取資產（例如影像和內容片段），而不需要先將資產內嵌在頁面中，並以序列化JSON格式傳送其內容。
 
@@ -103,7 +112,7 @@ HTTP 方法決定要執行的操作：
 <table>
  <thead>
   <tr>
-   <td>外觀</td>
+   <td>層面</td>
    <td>Assets REST API<br/> </td>
    <td>AEM元件<br/> （使用Sling模型的元件）</td>
   </tr>
@@ -121,7 +130,7 @@ HTTP 方法決定要執行的操作：
   </tr>
   <tr>
    <td>存取</td>
-   <td><p>可直接存取。</p> <p>使用對應至<code>/content/dam</code> （在存放庫中）的<code>/api/assets </code>端點。</p> 
+   <td><p>可直接存取。</p> <p>使用對應至<code>/api/assets </code> （在存放庫中）的<code>/content/dam</code>端點。</p> 
    <p>範例路徑如下所示： <code>/api/assets/wknd/en/adventures/cycling-tuscany.json</code></p>
    </td>
     <td><p>需要透過AEM頁面上的AEM元件參考。</p> <p>使用<code>.model</code>選取器建立JSON表示方式。</p> <p>範例路徑如下所示：<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
@@ -153,8 +162,8 @@ HTTP 方法決定要執行的操作：
 >
 >如需進一步詳細資訊，請參閱：
 >
->* [CORS/AEM 說明](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=zh-Hant)
->* [影片 - 使用 AEM 開發 CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=zh-Hant)
+>* [CORS/AEM 說明](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [影片 - 使用 AEM 開發 CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 在有特定驗證需求的環境中，建議使用OAuth。
@@ -344,7 +353,7 @@ Assets可以有多個轉譯。 這些通常會顯示為子實體，其中一個�
   以下列出傳回此錯誤狀態的常見案例，以及產生的錯誤訊息（等寬）：
 
    * 父資料夾不存在（透過`POST`建立內容片段時）
-   * 未提供任何內容片段模型（缺少cq：model）、無法讀取（由於無效路徑或許可權問題）或沒有有效的片段模型：
+   * 未提供任何內容片段模型（缺少cq:model）、無法讀取（因為路徑無效或許可權問題）或沒有有效的片段模型：
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
@@ -395,4 +404,4 @@ Assets可以有多個轉譯。 這些通常會顯示為子實體，其中一個�
 如需進一步詳細資訊，請參閱：
 
 * [Assets HTTP API檔案](/help/assets/mac-api-assets.md)
-* [AEM Gem工作階段： OAuth](https://helpx.adobe.com/tw/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [AEM Gem工作階段： OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
