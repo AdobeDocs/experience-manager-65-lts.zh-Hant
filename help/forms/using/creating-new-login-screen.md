@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 3e20857b-05bb-4f44-8011-550bdaf857c5
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 3%
@@ -21,7 +21,7 @@ ht-degree: 3%
 1. 以系統管理員許可權在`/lc/crx/de`登入。
 1. 執行下列動作：
 
-   1. 在`/apps/livecycle/core/content`復寫`/libs/livecycle/core/content`的階層結構。
+   1. 在`/libs/livecycle/core/content`復寫`/apps/livecycle/core/content`的階層結構。
 
       維護相同的（節點/資料夾）屬性和存取控制。
 
@@ -35,7 +35,7 @@ ht-degree: 3%
 
 1. 執行下列動作：
 
-   1. 在`/apps/livecycle/core/components/login`復寫`/libs/livecycle/core/components/login`的階層結構。 維護相同的（節點/資料夾）屬性和存取控制。
+   1. 在`/libs/livecycle/core/components/login`復寫`/apps/livecycle/core/components/login`的階層結構。 維護相同的（節點/資料夾）屬性和存取控制。
 
    1. 將元件資料夾：從`/libs/livecycle/core`複製到`/apps/livecycle/core`。
 
@@ -198,7 +198,7 @@ String browserLocale = "en";
    * 從 `/libs/livecycle/core/components/login`
    * 至`/apps/livecycle/core/components/login`
 
-1. 現在修改您想要變更文字之節點（在所需的地區設定代碼資料夾下）的屬性`sling:message`的值。 透過在節點的`sling:key`屬性值中提及的索引鍵完成轉譯。
+1. 現在修改您要變更文字之節點（在所需的地區設定代碼資料夾下）的屬性`sling:message`的值。 透過在節點的`sling:key`屬性值中提及的索引鍵完成轉譯。
 
 1. 若要新增索引鍵/值組，請執行下列動作。 請檢視下列熒幕擷圖中的範例。
 
@@ -241,7 +241,7 @@ String browserLocale = "en";
    * 從 `/libs/livecycle/core/content`
    * 至`/apps/livecycle/core/content`
 
-1. 從節點`/apps/livecycle/core/content/login.`刪除檔案`login.js`和`jquery-1.8.0.min.js`
+1. 從節點`login.js`刪除檔案`jquery-1.8.0.min.js`和`/apps/livecycle/core/content/login.`
 1. 修改CSS檔案中的樣式。
 1. 若要新增樣式：
 

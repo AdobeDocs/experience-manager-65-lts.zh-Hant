@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 6665b95a-39fd-472a-b3b5-8b97257c69a7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -58,13 +58,13 @@ ht-degree: 0%
 1. 使用管理員帳戶登入管理主控台。
 1. 選取&#x200B;**服務** > **Forms Workflow** > **共用佇列**。
 
-1. 在管理使用者的存取權索引標籤中，尋找並選取您要管理其佇列的使用者。
+1. 在管理使用者的存取權標籤中，尋找並選取您要管理其佇列的使用者。
 1. 右下方的窗格會顯示可存取所選使用者佇列的使用者清單。 選取使用者，然後按一下撤銷。
 1. 按一下「儲存」以完成。
 
 ## 管理指派給使用者的佇列 {#managing-queues-assigned-to-a-user}
 
-「依使用者管理存取」功能可讓您管理指派給選定使用者的佇列。 您可以將使用者佇列的存取權個別授與或撤銷給選取的使用者。 例如，您希望將Akira Tanaka和John Jacobs使用者佇列指派給Kara Bowman。 使用「依使用者管理存取權」功能，您可以搜尋Kara Bowman並授予指派給Akira Tanaka和John Jacobs的工作存取權。 您稍後可以撤銷Kara Bowman對這些使用者佇列的存取權。
+「依使用者管理存取」功能可讓您管理指派給選定使用者的佇列。 您可以將使用者佇列的存取權個別授與或撤銷給選取的使用者。 例如，您想要將Akira Tanaka和John Jacobs使用者佇列指派給Kara Bowman。 使用「依使用者管理存取權」功能，您可以搜尋Kara Bowman並授予指派給Akira Tanaka和John Jacobs的工作存取權。 您稍後可以撤銷Kara Bowman對這些使用者佇列的存取權。
 
 指派後，使用者即可使用Workspace完成這些工作。
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 1. 使用管理員帳戶登入管理主控台。
 1. 選取&#x200B;**服務** > **Forms Workflow** > **共用佇列**。
 
-1. 在管理使用者的存取權索引標籤中，尋找並選取您要共用其佇列的使用者。 在任何時候，右下角窗格都會顯示可存取所選使用者佇列的使用者清單。
+1. 在管理使用者的存取權標籤上，尋找並選取您要共用其佇列的使用者。 在任何時候，右下角窗格都會顯示可存取所選使用者佇列的使用者清單。
 1. 在左下方的窗格中，尋找並選取您要與所選使用者共用的使用者佇列。 按一下「共用」。
 1. 按一下「儲存」以完成。
 

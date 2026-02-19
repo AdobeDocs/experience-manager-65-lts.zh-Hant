@@ -7,7 +7,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 2f49cb29-698b-43ab-971f-81e2b18e6fa9
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 0%
@@ -30,7 +30,7 @@ JEE流程管理工作流程中的AEM Forms涉及許多XML，例如：XML資訊�
 
 在本教學課程中，整體應用程式和流程建立不在範圍之內，但就本指示而言，已建立名為「DemoApplication02」的應用程式。 假設應用程式已經建立，您需要在此應用程式中建立程式以呼叫executeScript服務。 若要將處理程式新增至包含`Execute Script`服務的應用程式：
 
-1. 用滑鼠右鍵按一下您的應用程式並選取&#x200B;**[!UICONTROL 新增]**。 在&#x200B;**[!UICONTROL 新增]**&#x200B;滑出功能表中，選取&#x200B;**[!UICONTROL 處理序]**。 為流程命名，視需要新增說明，然後選取要代表此流程的圖示。 出於本教學課程的目的，我們已建立處理序，並將其命名為`executeScriptDemoProcess`。
+1. 用滑鼠右鍵按一下您的應用程式並選取&#x200B;**[!UICONTROL 新增]**。 在&#x200B;**[!UICONTROL 新增]**&#x200B;滑出功能表中，選取&#x200B;**[!UICONTROL 處理序]**。 為程式命名，視需要新增說明，並選取要代表此程式的圖示。 出於本教學課程的目的，我們已建立處理序，並將其命名為`executeScriptDemoProcess`。
 1. 定義您的起點，或稍後新增起點的簡單選擇。
 1. 處理序現在已建立，應該會在[!UICONTROL 處理序設計]視窗中自動開啟。 在此視窗中，按一下「流程設計」視窗頂端的「活動選擇器」圖示，並將新活動拖曳到泳道上。 此時，[!UICONTROL 定義活動視窗]應該會出現（請參閱下圖）。
    ![定義活動](assets/define-activity.jpg)

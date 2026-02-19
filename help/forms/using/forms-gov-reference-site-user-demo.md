@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 exl-id: a9cbab12-62a6-4779-955f-2858166945e6
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '2478'
 ht-degree: 1%
@@ -499,7 +499,7 @@ George會核准Aya的申請，並且由於現有的自動化工作流程，也�
 
    ![在[檢視]下拉式功能表中列出檢視](/help/forms/using/assets/list_view_view_dropdown.jpg)
 
-1. 從相同的功能表選取&#x200B;**檢視設定**，並從&#x200B;**Analytics**&#x200B;區段中選取您要顯示的資料行。
+1. 從相同功能表選取&#x200B;**檢視設定**，並從&#x200B;**Analytics**&#x200B;區段中選取您要顯示的資料行。
 
    ![設定資料行的顯示](/help/forms/using/assets/view_setting_analytics.jpg)
 

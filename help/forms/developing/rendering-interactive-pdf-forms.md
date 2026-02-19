@@ -12,7 +12,7 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: de61c579-50ed-423b-adca-60329f3f0b89
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '2455'
 ht-degree: 0%
@@ -191,7 +191,7 @@ Forms應用程式中的資源路徑為：
 1. 建立Forms使用者端API物件
 
    * 建立包含連線屬性的`ServiceClientFactory`物件。
-   * 使用它的建構函式並傳遞`ServiceClientFactory`物件來建立`FormsServiceClient`物件。
+   * 使用它的建構函式並傳遞`FormsServiceClient`物件來建立`ServiceClientFactory`物件。
 
 1. 指定URI值
 
@@ -227,11 +227,11 @@ Forms應用程式中的資源路徑為：
 
 1. 將表單資料流寫入使用者端網頁瀏覽器
 
-   * 呼叫`FormsResult`物件的`getOutputContent`方法，以建立`com.adobe.idp.Document`物件。
-   * 透過叫用物件的`getContentType`方法，取得`com.adobe.idp.Document`物件的內容型別。
-   * 透過叫用其`setContentType`方法並傳遞`com.adobe.idp.Document`物件的內容型別來設定`javax.servlet.http.HttpServletResponse`物件的內容型別。
-   * 呼叫`javax.servlet.http.HttpServletResponse`物件的`getOutputStream`方法，建立用來將表單資料流寫入使用者端網頁瀏覽器的`javax.servlet.ServletOutputStream`物件。
-   * 呼叫`com.adobe.idp.Document`物件的`getInputStream`方法，以建立`java.io.InputStream`物件。
+   * 呼叫`com.adobe.idp.Document`物件的`FormsResult`方法，以建立`getOutputContent`物件。
+   * 透過叫用物件的`com.adobe.idp.Document`方法，取得`getContentType`物件的內容型別。
+   * 透過叫用其`javax.servlet.http.HttpServletResponse`方法並傳遞`setContentType`物件的內容型別來設定`com.adobe.idp.Document`物件的內容型別。
+   * 呼叫`javax.servlet.ServletOutputStream`物件的`javax.servlet.http.HttpServletResponse`方法，建立用來將表單資料流寫入使用者端網頁瀏覽器的`getOutputStream`物件。
+   * 呼叫`java.io.InputStream`物件的`com.adobe.idp.Document`方法，以建立`getInputStream`物件。
    * 呼叫`InputStream`物件的`read`方法，並將位元組陣列作為引數傳遞，以建立位元組陣列並以表單資料串流填入。
    * 叫用`javax.servlet.ServletOutputStream`物件的`write`方法，將表單資料流傳送至使用者端網頁瀏覽器。 將位元組陣列傳遞至`write`方法。
 
@@ -286,11 +286,11 @@ Forms應用程式中的資源路徑為：
 
 1. 將表單資料流寫入使用者端網頁瀏覽器
 
-   * 取得`com.adobe.idp.services.holders.FormsResultHolder`物件之`value`資料成員的值，以建立`FormResult`物件。
-   * 呼叫`FormsResult`物件的`getOutputContent`方法，建立包含表單資料的`BLOB`物件。
-   * 透過叫用物件的`getContentType`方法，取得`BLOB`物件的內容型別。
-   * 透過叫用其`setContentType`方法並傳遞`BLOB`物件的內容型別來設定`javax.servlet.http.HttpServletResponse`物件的內容型別。
-   * 呼叫`javax.servlet.http.HttpServletResponse`物件的`getOutputStream`方法，建立用來將表單資料流寫入使用者端網頁瀏覽器的`javax.servlet.ServletOutputStream`物件。
+   * 取得`FormResult`物件之`com.adobe.idp.services.holders.FormsResultHolder`資料成員的值，以建立`value`物件。
+   * 呼叫`BLOB`物件的`FormsResult`方法，建立包含表單資料的`getOutputContent`物件。
+   * 透過叫用物件的`BLOB`方法，取得`getContentType`物件的內容型別。
+   * 透過叫用其`javax.servlet.http.HttpServletResponse`方法並傳遞`setContentType`物件的內容型別來設定`BLOB`物件的內容型別。
+   * 呼叫`javax.servlet.ServletOutputStream`物件的`javax.servlet.http.HttpServletResponse`方法，建立用來將表單資料流寫入使用者端網頁瀏覽器的`getOutputStream`物件。
    * 建立位元組陣列，並透過叫用`BLOB`物件的`getBinaryData`方法來填入該陣列。 此工作會將`FormsResult`物件的內容指派給位元組陣列。
    * 叫用`javax.servlet.http.HttpServletResponse`物件的`write`方法，將表單資料流傳送至使用者端網頁瀏覽器。 將位元組陣列傳遞至`write`方法。
 
