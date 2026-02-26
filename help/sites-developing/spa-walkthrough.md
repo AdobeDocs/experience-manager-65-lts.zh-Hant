@@ -8,10 +8,10 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: aceec3ac-abdf-4ae2-b197-f58cb7faea5f
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: 97f3bbc3eb5b4119accf2d93fb63bec35fd56c44
 workflow-type: tm+mt
 source-wordcount: '1925'
-ht-degree: 65%
+ht-degree: 66%
 
 ---
 
@@ -64,7 +64,7 @@ AEM SPA 編輯器允許前端開發人員建立可整合到 AEM 網站的 SPA，
 
 ![screen_shot_2018-08-20at135550](assets/screen_shot_2018-08-20at135550.png)
 
-**位訪客**
+**訪問者**
 
 * 訪客在與內容互動時希望獲得類似原生的體驗。
 * 有明確資料代表頁面生成越快，就越可能發生轉換。
@@ -83,7 +83,7 @@ AEM SPA 編輯器允許前端開發人員建立可整合到 AEM 網站的 SPA，
 
 SPA的主要想法是減少伺服器呼叫和相依性，以將伺服器呼叫導致的延遲降至最低，讓SPA可接近原生應用程式的回應速度。
 
-在傳統的循序網頁中，僅載入即時頁面所需的資料。這表示當訪客移至另一個頁面時，將呼叫伺服器以取得額外資源。訪客與頁面上的元素互動時，可能需要額外的呼叫。 由於頁面必須趕上訪客的要求，因此這些多次呼叫可能會讓人產生延滯或延遲的感覺。
+在傳統的循序網頁中，僅載入即時頁面所需的資料。這表示當訪客移至另一個頁面時，將呼叫伺服器以取得額外資源。當訪客與頁面上的元素互動時，可能需要額外的呼叫。由於頁面必須趕上訪客的要求，因此這些多次呼叫可能會讓人產生延滯或延遲的感覺。
 
 ![screen_shot_2018-08-20at140449](assets/screen_shot_2018-08-20at140449.png)
 
@@ -93,9 +93,9 @@ SPA的主要想法是減少伺服器呼叫和相依性，以將伺服器呼叫�
 
 >[!NOTE]
 >
->如需SPA在AEM中如何運作的技術詳細資訊，請參閱文章[在AEM中開始使用SPA](/help/sites-developing/spa-getting-started-react.md)。
+>有關如何工作的SPA技術詳AEM細資訊，請參閱文章[在](/help/sites-developing/spa-getting-started-react.md)中開始SPA的AEM操作。
 >
->如需SPA編輯器的設計、架構和技術工作流程的詳細資訊，請參閱文章[&#x200B; SPA編輯器概觀](/help/sites-developing/spa-overview.md)。
+>如需SPA編輯器的設計、架構和技術工作流程的詳細資訊，請參閱文章[ SPA編輯器概觀](/help/sites-developing/spa-overview.md)。
 
 ## SPA 的內容編輯體驗 {#content-editing-experience-with-spa}
 
@@ -137,7 +137,7 @@ SPA的主要想法是減少伺服器呼叫和相依性，以將伺服器呼叫�
 
 ## SPA 應用程式和 AEM SPA 編輯器 {#spa-apps-and-the-aem-spa-editor}
 
-體驗SPA如何為一般使用者運作，然後檢查SPA頁面，有助於更清楚瞭解SAP應用程式如何在AEM中搭配SPA Editor運作。
+體驗最終SPA用戶的行為，然後檢查頁SPA面有助於更好地瞭解SAP應用與中的編輯器SPA的工作AEM方式。
 
 ### 使用 SPA 應用程式 {#using-an-spa-application}
 
