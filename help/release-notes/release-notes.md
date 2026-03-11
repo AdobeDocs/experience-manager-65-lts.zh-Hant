@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: f4b6c695110704bdd92967ce7f256c55c1229d34
+source-git-commit: c275e55834c2375fbc23d0bbc209760062e6c2bc
 workflow-type: tm+mt
-source-wordcount: '6063'
-ht-degree: 21%
+source-wordcount: '6197'
+ht-degree: 20%
 
 ---
 
@@ -25,6 +25,10 @@ ht-degree: 21%
 
 
 <!-- UPDATE ABOVE FOR EACH NEW RELEASE -->
+
+>[!IMPORTANT]
+>
+> **強制Hotfix** — 若要在安裝SP2時避免離線壓縮發生SNFE (SegmentNotFoundException)問題，請安裝[已知問題 — 線上壓縮期間儲存庫損毀](#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146)中說明的Hotfix。
 
 ## [!DNL Adobe Experience Manager] 6.5 LTS、SP2包含哪些專案 {#what-is-new}
 
@@ -387,7 +391,7 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 ### 升級 {#upgrade}
 
 * 如需升級程序的詳細資訊，請參閱[升級文件](/help/sites-deploying/upgrade.md)。
-* 如需詳細的升級指示，請參閱JEE上的[AEM Forms 6.5 LTS SP1升級指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* 如需詳細的升級指示，請參閱JEE上的[AEM Forms 6.5 LTS SP1升級指南](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### AEM 6.5 LTS Service Pack 升級的最佳做法
 
@@ -511,6 +515,20 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 
 ## 已知問題 {#known-issues}
 
+### 離線壓縮後線上壓縮期間存放庫損毀(GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
+
+如果先前在JCR存放庫上執行離線壓縮，使用者可能會線上上壓縮期間遇到存放庫損毀的情況。 此情境中可能會發生`SegmentNotFoundException` (SNFE)，並可能導致存放庫損毀。
+
+若要解決此問題，請安裝Hotfix （封裝管理員）。 姚可以從[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-65388-1.0.zip)取得Hotfix。 由於Hotfix包含低階`oak-segment-tar`套件組合，所以執行個體會在安裝後重新啟動。
+
+在套用執行個體停機時間時進行規劃。 若要進行離線壓縮，請使用對應的[Oak-run jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar) （也可在Software Distribution上取得）。
+
+>[!NOTE]
+>
+> * 對於任何Oak-run作業，請使用[Oak-run 1.88.1-B006 jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar)。
+>
+> * 設定系統屬性`oak.compaction.legacy=true`以啟動AEM。
+
 ### 安裝Sites Headless API所需的Oak索引{#site-headless-api}
 
 部分移至Sites Headless的API需要額外的Oak索引才能完整發揮功能。
@@ -554,7 +572,7 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 
 以下文字文件列出在此 [!DNL Experience Manager] 6.5 LTS Service Pack 1 版本中所包含的 OSGi 套件與內容套件：
 
-* [&#x200B; Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [ Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 * [Experience Manager 6.5 LTS Service Pack 1 中包含的內容套件清單](/help/release-notes/assets/65lts_sp1_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## 受限制的網站{#restricted-sites}
@@ -562,5 +580,5 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 這些網站僅供客戶使用。若您是客戶並且需要存取權，請聯絡您的 Adobe 客戶經理。
 
 * [在 licensing.adobe.com 下載產品](https://licensing.adobe.com/)
-* [聯絡 Adobe 客戶支援](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience)。
+* [聯絡 Adobe 客戶支援](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience)。
 
