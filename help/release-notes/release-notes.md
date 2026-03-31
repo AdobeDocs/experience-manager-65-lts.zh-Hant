@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 68bcdfff6ea13c7d392991eba9df957bd5ab1523
+source-git-commit: a3d1ebd3e1c4adba80fb63f0138d662a6d056cc6
 workflow-type: tm+mt
-source-wordcount: '6243'
-ht-degree: 20%
+source-wordcount: '6403'
+ht-degree: 19%
 
 ---
 
@@ -49,7 +49,7 @@ AEM 6.5 LTS SP2現在包含適用於[內容片段及模型管理](https://develo
 
 ### [!DNL Sites]{#sites-65-LTS-SP2}
 
-#### 無障礙功能 {#sites-accessibility-65-lts-sp2}
+#### 協助工具 {#sites-accessibility-65-lts-sp2}
 
 * 當作者在編輯期間將專案暫留在元件瀏覽器中時，文字元件遺失鍵盤焦點。 這會中斷輸入，並觸發WCAG 3.2.1下的協助工具失敗。此修正可防止暫留樣式移動焦點，並使文字元件在元件瀏覽器互動期間維持焦點。 (SITES-35370)
 * 修正說明RTF欄位中使用Tab鍵封鎖向前導覽的焦點管理。 使用者在RTE中卡住，因為元件依賴非標準鍵盤命令來轉移焦點，這會中斷預期的對話方塊導覽。 此變更會強制標準鍵盤互動，並保留整個對話方塊的邏輯Tab排序。 (SITES-35228)
@@ -239,14 +239,18 @@ Assets Relate現在適用於包含空格的檔案名稱。 更新關聯使用者
 
 <!-- #### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-65-lts-sp2} -->
 
-
 <!--
+#### Forms Designer-->
+
 ### [!DNL Forms]{#forms-65-lts-sp2}
 
-#### Forms Designer
 
 #### Forms
 
+* 在JBoss EAP 8上的AEM Forms 6.5 LTS叢集部署中，`domain/configuration/domain_oracle.xml`不再包含造成無效XML且導致網域控制站無法啟動的重複`<security>`標籤。 (FORMS-24687)
+* 在Turnkey Upgrade模式中，更新`lc_turnkey.xml`中的資料庫連線埠現在會在升級期間正確套用，且不再參考舊的連線埠值。 (FORMS-24689)
+* 在Linux上設定JBoss EAP 8.0時，在Windows上修改的Shell指令碼不會因為CRLF行結尾而造成`/bin/sh^M: bad interpreter or $'\r': command not found`錯誤。 (FORMS-24688)
+<!--
 #### Forms JEE 
 
 #### Forms Captcha {#forms-captcha-65-lts-sp2}
@@ -417,7 +421,7 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 ### 升級 {#upgrade}
 
 * 如需升級程序的詳細資訊，請參閱[升級文件](/help/sites-deploying/upgrade.md)。
-* 如需詳細的升級指示，請參閱JEE上的[AEM Forms 6.5 LTS SP1升級指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* 如需詳細的升級指示，請參閱JEE上的[AEM Forms 6.5 LTS SP1升級指南](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### AEM 6.5 LTS Service Pack 升級的最佳做法
 
@@ -541,6 +545,14 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 
 ## 已知問題 {#known-issues}
 
+### AEM Forms
+
+* **FORMS-24690：**&#x200B;在Configuration Manager中，如果未選取任何模組，則在以自訂組態的Turnkey模式執行AEM Forms 6.5 LTS JEE時，在啟動程式期間資料庫初始化會失敗。
+
+* **FORMS-24692：**&#x200B;郵件服務可能無法建立TLS通訊端連線，導致電子郵件傳遞失敗。
+
+* **FORMS-24741：**&#x200B;在Linux上的AEM Forms 6.5 LTS JEE中，如果OSFileSetIntendedFor未正確設定，Configuration Manager可能會失敗。 執行Configuration Manager之前，請先在必要的組態檔中將其更新為Linux。
+
 ### 離線壓縮後線上壓縮期間存放庫損毀(GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
 如果先前在JCR存放庫上執行離線壓縮，使用者可能會線上上壓縮期間遇到存放庫損毀的情況。 此情境中可能會發生`SegmentNotFoundException` (SNFE)，並可能導致存放庫損毀。
@@ -598,7 +610,7 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 
 以下文字文件列出在此 [!DNL Experience Manager] 6.5 LTS Service Pack 1 版本中所包含的 OSGi 套件與內容套件：
 
-* [&#x200B; Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [ Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 * [Experience Manager 6.5 LTS Service Pack 1 中包含的內容套件清單](/help/release-notes/assets/65lts_sp1_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## 受限制的網站{#restricted-sites}
@@ -606,5 +618,5 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 這些網站僅供客戶使用。若您是客戶並且需要存取權，請聯絡您的 Adobe 客戶經理。
 
 * [在 licensing.adobe.com 下載產品](https://licensing.adobe.com/)
-* [聯絡 Adobe 客戶支援](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience)。
+* [聯絡 Adobe 客戶支援](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience)。
 
