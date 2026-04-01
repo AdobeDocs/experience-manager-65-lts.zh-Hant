@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 2ef60b4896c8d90714b33a9025567bf833f2ce06
+source-git-commit: 449f466473a3696d2ae8a7b91bd762765ddeac5b
 workflow-type: tm+mt
-source-wordcount: '6954'
+source-wordcount: '6983'
 ht-degree: 18%
 
 ---
@@ -286,9 +286,9 @@ Assets Relate現在適用於包含空格的檔案名稱。 更新關聯使用者
 
 * Forms-20679：使用者在Adaptive Forms儀表板中遇到安全性弱點。 具體來說，在startpointcontrol.js檔案中發現跨網站指令碼(XSS)問題，這可能允許執行惡意指令碼。
 
-* Forms-24687：在JBoss EAP 8上的AEM Forms 6.5 LTS叢集部署中，`domain/configuration/domain_oracle.xml`不再包含重複的`<security>`標籤，導致無效的XML並阻止網域控制站啟動。
+* Forms-24687：在JBoss EAP 8上的AEM Forms 6.5 LTS叢集部署中，domain/configuration/domain_oracle.xml、domain_mysql.xml和domain_mssql.xml檔案不再包含重複的`<security>`標籤，這些標籤造成無效的XML且無法啟動網域控制站。
 
-* Forms-24689:In Turnkey Upgrade Mode （在`lc_turnkey.xml`中更新資料庫連線埠）現在會在升級期間正確套用，且不再參考舊的連線埠值。
+* Forms-24689：在Turnkey模式中，現在會在全新安裝和升級期間正確套用資料庫連線埠更新。 在全新安裝模式中，使用者可以從所有可用的連線埠中進行選取，而在升級模式中，在升級過程中會正確參考lc_turnkey.xml中更新的資料庫連線埠。
 
 * Forms-24688：在Linux上設定JBoss EAP 8.0時，在Windows上修改的Shell指令碼不會因為CRLF行結尾而造成`/bin/sh^M: bad interpreter or $'\r': command not found`錯誤。
 
@@ -463,7 +463,7 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 ### 升級 {#upgrade}
 
 * 如需升級程序的詳細資訊，請參閱[升級文件](/help/sites-deploying/upgrade.md)。
-* 如需詳細的升級指示，請參閱JEE上的[AEM Forms 6.5 LTS SP1升級指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* 如需詳細的升級指示，請參閱JEE上的[AEM Forms 6.5 LTS SP1升級指南](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### AEM 6.5 LTS Service Pack 升級的最佳做法
 
@@ -589,7 +589,7 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 
 ### AEM Forms
 
-* **FORMS-24690：**&#x200B;在Configuration Manager中，未選取模組或僅選取有限元件時，在AEM Forms 6.5 LTS JEE Turnkey自訂模式中的啟動程式期間，資料庫初始化可能會失敗。 失敗是因為遺失相依性(xalan-2.7.2.jar)，導致錯誤。 將JAR檔案新增至adobe-livecycle-jboss.ear\lib即可解決問題。
+* **FORMS-24690：**&#x200B;在Configuration Manager中，未選取模組或僅選取有限元件時，在AEM Forms 6.5 LTS JEE Turnkey自訂模式中的啟動程式期間，資料庫初始化會失敗。 失敗是因為遺失相依性(xalan-2.7.2.jar)，導致錯誤。 將JAR檔案新增至adobe-livecycle-jboss.ear\lib即可解決問題。
 
 * **FORMS-24692：**&#x200B;郵件服務可能無法建立TLS通訊端連線，導致電子郵件傳遞失敗。
 
@@ -650,7 +650,7 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 
 以下文字文件列出在此 [!DNL Experience Manager] 6.5 LTS Service Pack 1 版本中所包含的 OSGi 套件與內容套件：
 
-* [&#x200B; Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [ Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 * [Experience Manager 6.5 LTS Service Pack 1 中包含的內容套件清單](/help/release-notes/assets/65lts_sp1_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## 受限制的網站{#restricted-sites}
@@ -658,5 +658,5 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 這些網站僅供客戶使用。若您是客戶並且需要存取權，請聯絡您的 Adobe 客戶經理。
 
 * [在 licensing.adobe.com 下載產品](https://licensing.adobe.com/)
-* [聯絡 Adobe 客戶支援](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience)。
+* [聯絡 Adobe 客戶支援](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience)。
 
