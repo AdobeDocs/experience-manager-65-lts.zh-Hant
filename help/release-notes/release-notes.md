@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: a3d1ebd3e1c4adba80fb63f0138d662a6d056cc6
+source-git-commit: 2ef60b4896c8d90714b33a9025567bf833f2ce06
 workflow-type: tm+mt
-source-wordcount: '6403'
-ht-degree: 19%
+source-wordcount: '6954'
+ht-degree: 18%
 
 ---
 
@@ -42,6 +42,23 @@ ht-degree: 19%
 
 AEM 6.5 LTS SP2現在包含適用於[內容片段及模型管理](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/65lts/)和[啟動](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/launches/)的OpenAPI。 這些API提供內容片段和啟動項的存取權，以進行製作和排程。 它們使用與AEM as a Cloud Service相同的現代OpenAPI。
 
+**AEM Forms**
+
+* 視覺規則編輯器中的增強使用者體驗。 此更新包括：
+
+   * 儲存後自動重新載入摘要檢視以顯示更新的規則狀態
+
+   * 顯示「新增」/「刪除」按鈕，並允許切換而非隱藏它們
+
+   * 在規則儲存作業失敗時提供清楚的回饋(FORMS-21261)
+
+* 新增執行階段應用程式設計介面(API)，在AEM Forms中切換舊版可延伸標籤語言(XML)匯出模式，取代-Dcom.adobe.fd.forms.export.legacy引數。 此增強功能可讓使用者更有效率地切換匯出模式，提高工作流程彈性。 (FORMS-23115)
+
+* 新增對最適化Forms中名稱空間標籤的JavaScript物件標籤法(JSON)的支援。 此增強功能可讓使用者更有效地處理JSON資料結構，進而改善資料整合與處理功能。 (FORMS-22519)
+
+* 在規則編輯器中新增下載記錄檔案(DoR) /表單提交作為現成可用的(OOTB)按鈕。 此增強功能可讓客戶不需撰寫自訂程式碼即可使用downloadDoR函式，進而提高使用性和效率。 (FORMS-21263)
+
+* 新增對最適化Forms中名稱空間標籤的JavaScript物件標籤法(JSON)的支援。 此增強功能可讓使用者更精確且更有效率地預填表單，進而改善資料整合併減少手動輸入錯誤。 (FORMS-10883)
 
 <!-- UPDATE THE EACH RELEASE -->
 
@@ -247,9 +264,34 @@ Assets Relate現在適用於包含空格的檔案名稱。 更新關聯使用者
 
 #### Forms
 
-* 在JBoss EAP 8上的AEM Forms 6.5 LTS叢集部署中，`domain/configuration/domain_oracle.xml`不再包含造成無效XML且導致網域控制站無法啟動的重複`<security>`標籤。 (FORMS-24687)
-* 在Turnkey Upgrade模式中，更新`lc_turnkey.xml`中的資料庫連線埠現在會在升級期間正確套用，且不再參考舊的連線埠值。 (FORMS-24689)
-* 在Linux上設定JBoss EAP 8.0時，在Windows上修改的Shell指令碼不會因為CRLF行結尾而造成`/bin/sh^M: bad interpreter or $'\r': command not found`錯誤。 (FORMS-24688)
+* Forms-23971：使用者遇到表單資料模型(FDM)編輯器的「資料Source /輸入關鍵字」功能問題。 這會影響搜尋及選取資料來源的能力。
+
+* Forms-23754：在行動裝置上，最適化Forms中的表格元件會在頂端呈現隱藏的標題，導致熒幕閱讀器誤判內容。 這會影響依賴熒幕助讀程式進行導覽的使用者。
+
+* Forms-23632：使用者遇到以核心元件為基礎的最適化Forms參考標籤為granite:InternalArea的資源型別問題，這影響了內部部署Forms附加元件中的多個granite元件的功能。
+
+* Forms-23457：升級至AEM 6.5 LTS SP1後，表單提交失敗。 使用者遇到遺失com.adobe.cq.social.commons.CollabUtil造成JSP編譯錯誤和電子郵件動作失敗的問題。
+
+* Forms-23426：使用者遇到了hCaptcha無法正確在Foundation元件式的最適化Forms中翻譯的問題。 這會影響非英語使用者準確完成表單的能力。
+
+* Forms-22633：使用者遇到表單提交失敗的SAXParseException：「prolog中不允許內容」(HTTP 500)。 發生此問題的原因是預填資料XML中有null值，導致伺服器端XML剖析失敗。
+
+* Forms-22101：由於表單的索引標籤導覽標籤無效（非清單元素會呈現為清單的直接子項，而僅允許清單專案），Adaptive Forms未通過Web內容協助工具准則(WCAG)稽核的使用者。 這會導致表單無法傳遞協助工具驗證程式，以及必須符合法律或內部法規遵循要求的受影響組織。
+
+* Forms-21989：使用者遇到記錄檔案(DoR) /提交PDF的協助工具問題，空白表單欄位未標籤為表單元素。 這會對熒幕助讀程式造成困難，影響殘障使用者有效導覽和完成表單的能力。
+
+* Forms-21925：使用者遇到在表單載入期間子面板內元件的註腳未顯示的問題。 當具有註腳的專案是頁面上的最後一個元件時，就會發生此問題。
+
+* Forms-21814：使用者在AEM Forms編輯器中選取元件時遇到問題。 在標籤之間導覽並返回第一個標籤時，某些容器會變成無法選取，導致無法輕鬆識別和互動。
+
+* Forms-20679：使用者在Adaptive Forms儀表板中遇到安全性弱點。 具體來說，在startpointcontrol.js檔案中發現跨網站指令碼(XSS)問題，這可能允許執行惡意指令碼。
+
+* Forms-24687：在JBoss EAP 8上的AEM Forms 6.5 LTS叢集部署中，`domain/configuration/domain_oracle.xml`不再包含重複的`<security>`標籤，導致無效的XML並阻止網域控制站啟動。
+
+* Forms-24689:In Turnkey Upgrade Mode （在`lc_turnkey.xml`中更新資料庫連線埠）現在會在升級期間正確套用，且不再參考舊的連線埠值。
+
+* Forms-24688：在Linux上設定JBoss EAP 8.0時，在Windows上修改的Shell指令碼不會因為CRLF行結尾而造成`/bin/sh^M: bad interpreter or $'\r': command not found`錯誤。
+
 <!--
 #### Forms JEE 
 
@@ -421,7 +463,7 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 ### 升級 {#upgrade}
 
 * 如需升級程序的詳細資訊，請參閱[升級文件](/help/sites-deploying/upgrade.md)。
-* 如需詳細的升級指示，請參閱JEE上的[AEM Forms 6.5 LTS SP1升級指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* 如需詳細的升級指示，請參閱JEE上的[AEM Forms 6.5 LTS SP1升級指南](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### AEM 6.5 LTS Service Pack 升級的最佳做法
 
@@ -547,11 +589,9 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 
 ### AEM Forms
 
-* **FORMS-24690：**&#x200B;在Configuration Manager中，如果未選取任何模組，則在以自訂組態的Turnkey模式執行AEM Forms 6.5 LTS JEE時，在啟動程式期間資料庫初始化會失敗。
+* **FORMS-24690：**&#x200B;在Configuration Manager中，未選取模組或僅選取有限元件時，在AEM Forms 6.5 LTS JEE Turnkey自訂模式中的啟動程式期間，資料庫初始化可能會失敗。 失敗是因為遺失相依性(xalan-2.7.2.jar)，導致錯誤。 將JAR檔案新增至adobe-livecycle-jboss.ear\lib即可解決問題。
 
 * **FORMS-24692：**&#x200B;郵件服務可能無法建立TLS通訊端連線，導致電子郵件傳遞失敗。
-
-* **FORMS-24741：**&#x200B;在Linux上的AEM Forms 6.5 LTS JEE中，如果OSFileSetIntendedFor未正確設定，Configuration Manager可能會失敗。 執行Configuration Manager之前，請先在必要的組態檔中將其更新為Linux。
 
 ### 離線壓縮後線上壓縮期間存放庫損毀(GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
@@ -610,7 +650,7 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 
 以下文字文件列出在此 [!DNL Experience Manager] 6.5 LTS Service Pack 1 版本中所包含的 OSGi 套件與內容套件：
 
-* [&#x200B; Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [ Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 * [Experience Manager 6.5 LTS Service Pack 1 中包含的內容套件清單](/help/release-notes/assets/65lts_sp1_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## 受限制的網站{#restricted-sites}
@@ -618,5 +658,5 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 這些網站僅供客戶使用。若您是客戶並且需要存取權，請聯絡您的 Adobe 客戶經理。
 
 * [在 licensing.adobe.com 下載產品](https://licensing.adobe.com/)
-* [聯絡 Adobe 客戶支援](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience)。
+* [聯絡 Adobe 客戶支援](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience)。
 
