@@ -24,7 +24,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign]以兩種不同的方案提供。 [Adobe InDesign](https://www.adobe.com/products/indesign.html)案頭應用程式，用來設計列印和數位分送的版面配置。 [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html)可讓您根據使用[!DNL InDesign]建立的內容，以程式設計方式建立自動化檔案。 它作為提供介面給其[ExtendScript](https://helpx.adobe.com/tw/indesign/using/scripting.html)引擎的服務運作。指令碼是以[!DNL ExtendScript]撰寫的，類似[!DNL JavaScript]。
+>[!DNL Adobe InDesign]以兩種不同的方案提供。 [Adobe InDesign](https://www.adobe.com/tw/products/indesign.html)案頭應用程式，用來設計列印和數位分送的版面配置。 [Adobe InDesign Server](https://www.adobe.com/tw/products/indesignserver.html)可讓您根據使用[!DNL InDesign]建立的內容，以程式設計方式建立自動化檔案。 它作為提供介面給其[ExtendScript](https://helpx.adobe.com/tw/indesign/using/scripting.html)引擎的服務運作。指令碼是以[!DNL ExtendScript]撰寫的，類似[!DNL JavaScript]。
 
 ## 擷取的運作方式 {#how-the-extraction-works}
 
@@ -238,4 +238,4 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 >[!MORELIKETHIS]
 >
->* [關於Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)
+>* [關於Adobe InDesign Server](https://www.adobe.com/tw/products/indesignserver/faq.html)
