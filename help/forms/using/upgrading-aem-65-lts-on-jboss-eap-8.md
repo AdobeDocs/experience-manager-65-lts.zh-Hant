@@ -550,8 +550,8 @@ del "C:\jboss-eap-8.0\bin\crx-repository\crx-quickstart\launchpad\sling_bootstra
 ## 相關檔案
 
 - [JBoss EAP 8移轉指南](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0/html/migration_guide/)
-- [Adobe Experience Manager 6.5升級指南](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html)
-- [AEM正在安裝Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html)
+- [Adobe Experience Manager 6.5升級指南](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html?lang=zh-Hant)
+- [AEM正在安裝Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=zh-Hant)
 
 ## 檔案資訊
 
