@@ -3,12 +3,12 @@ title: Adobe Experience Manager 6.5 LTS、SP2最新發行說明
 description: 尋找 Adobe Experience Manager 6.5 LTS Service Pack 2 的最新版本資訊。
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: f1dbf625f1cb42feaede7acb0dee073ac78ebab3
+source-git-commit: 4c1f1b9a7b6667c58760b5e427cdd82bf197f297
 workflow-type: tm+mt
-source-wordcount: '7002'
-ht-degree: 18%
+source-wordcount: '7102'
+ht-degree: 17%
 
 ---
 
@@ -468,7 +468,7 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 ### 升級 {#upgrade}
 
 * 如需升級程序的詳細資訊，請參閱[升級文件](/help/sites-deploying/upgrade.md)。
-* 如需詳細的升級指示，請參閱JEE上的[AEM Forms 6.5 LTS SP1升級指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* 如需詳細的升級指示，請參閱JEE上的[AEM Forms 6.5 LTS SP1升級指南](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### AEM 6.5 LTS Service Pack 升級的最佳做法
 
@@ -596,7 +596,11 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 
 * **FORMS-24690：**&#x200B;在Configuration Manager中，未選取模組或僅選取有限元件時，在AEM Forms 6.5 LTS JEE Turnkey自訂模式中的啟動程式期間，資料庫初始化會失敗。 失敗是因為遺失相依性(xalan-2.7.2.jar)，導致錯誤。 將JAR檔案新增至adobe-livecycle-jboss.ear\lib即可解決問題。
 
-* **FORMS-24692：**&#x200B;郵件服務可能無法建立TLS通訊端連線，導致電子郵件傳遞失敗。
+* **FORMS-24894：**&#x200B;在JBoss EAP 8上執行的Forms JEE LTS部署中，Reader擴充功能UI可能會失敗，並出現內部伺服器錯誤。
+
+* **FORMS-24892：**&#x200B;在JBoss上執行的Forms JEE LTS上，電子郵件相關功能可能會失敗。 嘗試使用電子郵件功能時，伺服器可能會記錄類似`Error IMAPProvider not a subtype`的錯誤。
+
+* **FORMS-24741：**&#x200B;在Linux平台上，Forms JEE LTS需要先正確設定`OSFileSetIntendedFor`中的`LFS_Foundation.properties`屬性，才能執行Configuration Manager。 如果未更新，則可能無法針對Linux適當地量身打造設定，這可能會導致執行階段或部署問題。 若要解決此問題，請在執行安裝程式之後和執行Configuration Manager之前，瀏覽至`configurationManager/config/solcomp/`，開啟`LFS_Foundation.properties`，設定`OSFileSetIntendedFor=Linux`，儲存檔案，然後執行Configuration Manager。
 
 ### 離線壓縮後線上壓縮期間存放庫損毀(GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
@@ -655,7 +659,7 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 
 以下文字文件列出在此 [!DNL Experience Manager] 6.5 LTS Service Pack 1 版本中所包含的 OSGi 套件與內容套件：
 
-* [&#x200B; Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [ Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 * [Experience Manager 6.5 LTS Service Pack 1 中包含的內容套件清單](/help/release-notes/assets/65lts_sp1_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## 受限制的網站{#restricted-sites}
@@ -663,5 +667,5 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 這些網站僅供客戶使用。若您是客戶並且需要存取權，請聯絡您的 Adobe 客戶經理。
 
 * [在 licensing.adobe.com 下載產品](https://licensing.adobe.com/)
-* [聯絡 Adobe 客戶支援](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience)。
+* [聯絡 Adobe 客戶支援](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience)。
 
