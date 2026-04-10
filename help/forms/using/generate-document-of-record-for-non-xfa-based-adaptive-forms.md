@@ -5,7 +5,7 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
 source-wordcount: '4292'
 ht-degree: 3%
@@ -14,13 +14,13 @@ ht-degree: 3%
 
 # 產生最適化表單或最適化表單片段的記錄檔案 {#generate-document-of-record-for-adaptive-forms}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
 ## 套用至 {#applies-to}
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=zh-Hant)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html)AEM Forms 。
 
 
 ## 概觀 {#overview}
@@ -124,7 +124,7 @@ ht-degree: 3%
    <td> </td>
   </tr>
   <tr>
-   <td>草寫簽名</td>
+   <td>手寫簽名</td>
    <td>手寫簽名</td>
    <td>true</td>
    <td> </td>
@@ -200,9 +200,9 @@ ht-degree: 3%
 ### 靜態元件 {#static-components}
 
 | 最適化表單元件 | 對應的XFA元件 | 備註 |
-|---|---|---|
+| --- | --- | --- |
 | 影像 | 影像 | 除非使用記錄檔案設定加以排除，否則TextDraw和Image元件（無論已繫結或未繫結）一律會出現在XSD型調適型表單的記錄檔案中。 |
-| 文字 | 文字 |
+| 文字 | 文字 | |
 
 >[!NOTE]
 >
@@ -243,7 +243,7 @@ ht-degree: 3%
 
 1. 選取&#x200B;**Forms — 記錄檔案**&#x200B;類別。
 1. 選取&#x200B;**DoR基底範本**。
-1. 按一下[下一步]&#x200B;**&#x200B;**&#x200B;並提供必要的資訊。
+1. 按一下[下一步]****&#x200B;並提供必要的資訊。
 
 1. （選擇性）修改您要在記錄檔案中欄位上套用的欄位樣式和外觀。
 1. 儲存表單。
@@ -412,7 +412,7 @@ ht-degree: 3%
 **表單層級設定**
 
 * **[!UICONTROL 基本]**
-   * **範本：**&#x200B;您可以選取[預設]或[自訂]範本。
+   * **範本：**您可以選取[預設]或[自訂]範本。
      ![替代文字](image.png)
    * **強調色：**&#x200B;您可以預先定義[!UICONTROL 記錄檔案]的範本顏色。
    * **字型系列：**&#x200B;為[!UICONTROL 記錄檔案]文字選取字型型別。

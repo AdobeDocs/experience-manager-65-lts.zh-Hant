@@ -3,9 +3,9 @@ title: 建立設定Headless快速入門手冊
 description: 建立設定，作為在AEM 6.5中開始使用Headless的第一步。
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: 6792f5c0-074e-4465-9b84-8be78abd6b8f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 61%
@@ -39,7 +39,7 @@ ht-degree: 61%
 
    ![建立設定](assets/create-configuration.png)
 
-1. 按一下「**建立**」。
+1. 按一下「**建立**」
 
 如果需要，您可以建立多個設定。設定也可以是巢狀。
 

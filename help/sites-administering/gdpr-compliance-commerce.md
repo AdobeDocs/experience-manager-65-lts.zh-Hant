@@ -4,9 +4,9 @@ description: 瞭解在AEM Commerce中處理GDPR請求的程式以及如何使用
 contentOwner: carlino
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
-role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
+role: Admin,Developer,Leader,User
 exl-id: 2d7ae2ad-a7ad-4b7d-bfa4-167caa49a087
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >以下各節以GDPR為例，但說明的詳細資料適用於所有資料保護和隱私權法規，例如GDPR和CCPA。
 
-歐盟資料隱私權的一般資料保護規範於2018年5月起生效。 請參閱Adobe隱私權中心[&#128279;](https://business.adobe.com/tw/privacy/general-data-protection-regulation.html)的GDPR頁面。
+歐盟資料隱私權的一般資料保護規範於2018年5月起生效。 請參閱Adobe隱私權中心[的](https://business.adobe.com/privacy/general-data-protection-regulation.html)GDPR頁面。
 
 >[!NOTE]
 >

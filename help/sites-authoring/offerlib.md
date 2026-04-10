@@ -8,9 +8,9 @@ topic-tags: personalization
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: f2493159-8cca-4a9f-aa94-4717e28132d4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 0%
@@ -39,7 +39,7 @@ ht-degree: 0%
 1. 按一下「**建立**」，然後按「**建立**」**品牌**。
 1. 選取品牌範本，然後按一下&#x200B;**下一步**。
 1. 輸入您希望品牌在「選件」和「活動」主控台中顯示的標題。 或者，輸入或選取一或多個要與品牌關聯的標籤。
-1. 按一下&#x200B;**建立**。
+1. 按一下「**建立**」。
 
 ## 新增資料夾至選件程式庫 {#add-a-folder-to-an-offer-library}
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-1. 按一下&#x200B;**建立**。
+1. 按一下「**建立**」。
 
 ## 將優惠方案新增至優惠方案庫 {#add-an-offer-to-an-offer-library}
 
@@ -69,7 +69,7 @@ ht-degree: 0%
    ![screen-shot_2019-03-05at124557-1](assets/screen-shot_2019-03-05at124557-1.png)
 
 1. 選取&#x200B;**選件頁面**&#x200B;範本，然後按一下&#x200B;**下一步**。
-1. 輸入優惠方案的標題，並選擇性地選取或輸入一或多個標籤以關聯優惠方案，然後按一下[建立]。**&#x200B;**
+1. 輸入優惠方案的標題，並選擇性地選取或輸入一或多個標籤以關聯優惠方案，然後按一下[建立]。****
 1. 在確認對話方塊中，若要開啟選件以進行編輯，請按一下&#x200B;**開啟頁面**。
 
 ## 編輯選件 {#editing-an-offer}
@@ -94,8 +94,8 @@ ht-degree: 0%
 1. 在出現的對話方塊中，按一下&#x200B;**刪除**&#x200B;以確認刪除。
 1. 如果選件用於一或多個體驗，會顯示一個對話方塊，指出已參考選件：
 
-   * 若要刪除選件並將其從體驗中移除，請按一下[強制刪除]。**&#x200B;**
-   * 若要保留優惠，請按一下[取消]。**&#x200B;**
+   * 若要刪除選件並將其從體驗中移除，請按一下[強制刪除]。****
+   * 若要保留優惠，請按一下[取消]。****
 
 ## 搜尋選件 {#searching-for-offers}
 

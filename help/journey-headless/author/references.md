@@ -3,9 +3,9 @@ title: 了解如何在內容片段中使用參考
 description: 了解如何在內容片段中使用內容、其他片段和其他資產 (媒體) 的參考。介紹巢狀片段對 Headless CMS 製作的必要性和機制。
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin,Developer,User,Leader
 exl-id: a8d4c122-6de6-42da-a8ef-d3b93fd3d3ae
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 95%
@@ -78,7 +78,7 @@ ht-degree: 95%
 
 ### 如何編寫巢狀片段 {#author-nested-fragment}
 
-製作片段參考非常簡單 (儘管欄位通常不會被標記為&#x200B;**片段參考**)。您可以直接輸入參考，或者 (更有可能) 選取資料夾圖示以開啟瀏覽器，讓您可瀏覽和選取所需片段。
+製作片段參考非常簡單 (儘管此欄位的標籤通常不會設為&#x200B;**片段參考**)。您可以直接輸入參考，或者 (更有可能) 選取資料夾圖示以開啟瀏覽器，讓您可瀏覽和選取所需片段。
 
 ![內容片段 - 參考](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 

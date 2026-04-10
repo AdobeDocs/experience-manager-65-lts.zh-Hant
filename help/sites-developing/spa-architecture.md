@@ -11,7 +11,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 8670d700-6ccd-4809-b719-8580d6fb2cf8
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 5%
@@ -66,11 +66,11 @@ SPA應該僅依賴內容的動態轉譯。 這是AEM擷取並轉譯內容結構�
 
 ## AEM 專案原型 {#aem-project-archetype}
 
-任何 AEM 專案都應使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)，它支援使用 React 或 Angular 的 SPA 專案並使用 SPA SDK。
+任何 AEM 專案都應使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用 React 或 Angular 的 SPA 專案並使用 SPA SDK。
 
 ## SPA設計模型 {#spa-design-models}
 
-如果遵循AEM[&#128279;](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)中開發SPA的原則，則您的SPA將可搭配所有支援的AEM內容製作功能運作。
+如果遵循AEM[中開發SPA的](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)原則，則您的SPA將可搭配所有支援的AEM內容製作功能運作。
 
 不過，在某些情況下，這並非完全必要。 下表概述各種設計模型、其優點和缺點。
 
@@ -101,7 +101,7 @@ SPA應該僅依賴內容的動態轉譯。 這是AEM擷取並轉譯內容結構�
 
 >[!NOTE]
 >
->雖然AEM支援所有模型，但只有實作第三種(因此遵循AEM中建議的[SPA開發原則](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem))後，內容作者才能在AEM中與已習慣的SPA內容互動及編輯內容。
+>雖然AEM支援所有模型，但只有實作第三種（因此遵循AEM中建議的[SPA開發原則](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)）後，內容作者才能在AEM中與已習慣的SPA內容互動及編輯內容。
 
 ## 將現有SPA移轉至AEM {#migrating-existing-spas-to-aem}
 
@@ -226,7 +226,7 @@ SPA應該僅依賴內容的動態轉譯。 這是AEM擷取並轉譯內容結構�
 
 如需AEM中簡單SPA如何建構及其運作方式的概觀，請參閱[React](/help/sites-developing/spa-getting-started-react.md)和[Angular](/help/sites-developing/spa-getting-started-angular.md)的快速入門手冊。
 
-如需建立您自己的SPA的逐步指南，請參閱[AEM SPA Editor快速入門 — WKND事件教學課程](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)。
+如需建立您自己的SPA的逐步指南，請參閱[AEM SPA Editor快速入門 — WKND事件教學課程](https://helpx.adobe.com/tw/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)。
 
 如需有關動態模型到元件對應及其在AEM中SPA內運作方式的詳細資訊，請參閱文章[SPA的動態模型到元件對應](/help/sites-developing/spa-dynamic-model-to-component-mapping.md)。
 

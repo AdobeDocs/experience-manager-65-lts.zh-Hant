@@ -2,10 +2,10 @@
 title: AEM 文件歷程
 description: 檔案歷程透過將複雜和不同的功能繫結在一起，以最佳實務的方式解決業務目標，在AEM檔案中提供敘述結構。 專為 AEM 初學者而設計，該歷程介紹了從頭到尾實現目標的概念和功能。
 solution: Experience Manager, Experience Manager Sites
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin,Developer,User,Leader
 feature: Administering
 exl-id: 5de9469f-b92f-42f6-a187-0c6835ad972c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 91%
@@ -42,7 +42,7 @@ AEM 具有豐富而強大的功能集，可能會讓新使用者 (有時有經�
 
 ## 文件歷程是如何建構的？ {#structure}
 
-文件歷程可以最佳實務為基礎，介紹 AEM 如何解決常見的業務問題。有基於此，每個歷程的設計都考慮到 AEM 入門讀者，列出業務問題，描述任何必要的理論，然後逐步概述 AEM 如何解決問題。由於歷程的綜合性，它對 AEM 入門讀者和有經驗的使用者都很有用。
+文件歷程可以最佳實務為基礎，介紹 AEM 如何解決常見的業務問題。有基於此，每個歷程的設計都考慮到 AEM 入門讀者，列出業務問題，描述任何必要的理論，然後逐步概觀 AEM 如何解決問題。由於歷程的綜合性，它對 AEM 入門讀者和有經驗的使用者都很有用。
 
 典型的文件歷程包含以下部分。
 
@@ -69,7 +69,7 @@ AEM 文件歷程的主要目標是透過敘述的方式幫助 AEM 入門讀者�
 * 翻譯專家
 * 內容架構師
 
-每個歷程都以明確陳述歷程的目標客群開始。因為沒有人在與外界隔絕下工作，當讀者需要借助系統使用者或角色的輸入時，這在歷程中有明確的解釋。
+每個歷程都以明確陳述歷程的目標客群開始。因為沒有人在與外界隔絕下工作，當讀者需要借助系統使用者或人物誌的輸入時，這在歷程中有明確的解釋。
 
 ## 文件歷程如何融入 AEM 文件? {#compare}
 

@@ -3,9 +3,9 @@ title: 瞭解建立行銷活動時的分段
 description: 細分是建立行銷活動時的關鍵考量。
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 7167c672-8d24-4493-aff6-b5b453074bff
-source-git-commit: 36022b939d598a43ee7f5339ed04122e476205b7
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 1%
@@ -60,7 +60,7 @@ ht-degree: 1%
 
 **衍生特徵** — 某些人口統計特徵在未註冊的情況下很難判斷，但可透過結合行為和人口統計特徵來衍生。
 
-例如，將反向連結URL （作為行為特徵）與人口統計資料(從例如[Google Ad Planner](https://www.google.com/adplanner/)之類的工具取得)結合，網站擁有者便可匯出其訪客的人口統計特徵。
+例如，將反向連結URL （作為行為特徵）與人口統計資料（從例如[Google Ad Planner](https://www.google.com/adplanner/)之類的工具取得）結合，網站擁有者便可匯出其訪客的人口統計特徵。
 
 **子區段** — 一個區段可以劃分為幾個子區段。 可透過定義其他特徵來達成此目的。
 

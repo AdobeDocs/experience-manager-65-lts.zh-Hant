@@ -6,7 +6,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 95cc8c29-7494-4326-934d-6def59875d71
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 1%
@@ -51,7 +51,7 @@ ht-degree: 1%
 首先，建立構成複合元件的元件，也就是影像及其文字的元件。
 
 1. 在您的AEM專案中建立文字元件。
-1. 從元件的`editConfig`節點中的專案新增對應的`resourceType`。
+1. 從元件的`resourceType`節點中的專案新增對應的`editConfig`。
 
    ```text
     resourceType: 'wknd-spa/components/text' 
@@ -137,7 +137,7 @@ function Home() {
 
 接著，您可以將它新增至SPA並擷取其內容。
 
-1. 在SPA中為此建立對應的元件。 確保子元件對應至SPA專案中其對應的AEM資源型別。 在此範例中，我們使用與先前案例中詳細[相同的`AEMText`和`AEMImage`元件。](#component-does-not-exist)
+1. 在SPA中為此建立對應的元件。 確保子元件對應至SPA專案中其對應的AEM資源型別。 在此範例中，我們使用與先前案例中詳細`AEMText`相同的`AEMImage`和[元件。](#component-does-not-exist)
 
    ```javascript
    import React from 'react';

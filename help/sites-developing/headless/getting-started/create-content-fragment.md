@@ -3,9 +3,9 @@ title: 建立內容片段Headless快速入門手冊
 description: 了解如何使用 AEM 的內容片段來設計、建立、規劃和使用每頁自主的內容以進行 Headless 傳遞。
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: 7b26e5cb-3aab-4f69-a0f1-42268c39bba8
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 60%
@@ -31,7 +31,7 @@ ht-degree: 60%
 1. 登入AEM，從主功能表選取&#x200B;**導覽> Assets**。
 1. 導覽至您先前建立的[資料夾。](create-assets-folder.md)
 1. 按一下&#x200B;**建立>內容片段**。
-1. 內容片段的建立以兩步驟的精靈呈現。 請先選取您要使用哪個模式來建立內容片段，然後按一下[下一步]。**&#x200B;**
+1. 內容片段的建立以兩步驟的精靈呈現。 請先選取您要使用哪個模式來建立內容片段，然後按一下[下一步]。****
    * 可用模型取決於您為內容片段建立所在資產資料夾所定義的&#x200B;[**雲端設定**](create-assets-folder.md)。
    * 如果您收到訊息`We could not find any models`，請檢查資產資料夾的設定。
 

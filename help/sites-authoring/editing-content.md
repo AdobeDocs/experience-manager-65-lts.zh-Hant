@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 07048aa7-5f38-4810-9ef2-ce6892f9b9b6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '3015'
 ht-degree: 4%
@@ -384,7 +384,7 @@ ht-degree: 4%
 
 ## 編輯元件配置 {#edit-component-layout}
 
-您可以選取元件的&#x200B;**配置**&#x200B;動作，以變更該元件的配置，而不需重複從編輯切換到[配置模式](/help/sites-authoring/responsive-layout.md)來調整元件。 不必離開編輯模式，即可節省時間。
+您可以選取元件的[配置](/help/sites-authoring/responsive-layout.md)動作，以變更該元件的配置，而不需重複從編輯切換到&#x200B;**配置模式**&#x200B;來調整元件。 不必離開編輯模式，即可節省時間。
 
 1. 在網站主控台的&#x200B;**編輯**&#x200B;模式中，選取元件會顯示元件的工具列。
 
@@ -450,11 +450,11 @@ ht-degree: 4%
 
 ## 編輯頁面範本 {#editing-the-page-template}
 
-如果頁面是以[可編輯的範本](/help/sites-authoring/templates.md#editable-and-static-templates)為基礎，您可以選取[頁面資訊功能表](/help/sites-authoring/author-environment-tools.md#page-information)中的&#x200B;**編輯範本**，輕鬆切換至[範本編輯器](/help/sites-authoring/templates.md#editing-templates-template-authors)。
+如果頁面是以[可編輯的範本](/help/sites-authoring/templates.md#editable-and-static-templates)為基礎，您可以選取[頁面資訊功能表](/help/sites-authoring/templates.md#editing-templates-template-authors)中的&#x200B;**編輯範本**，輕鬆切換至[範本編輯器](/help/sites-authoring/author-environment-tools.md#page-information)。
 
-如果頁面是以[靜態範本](/help/sites-authoring/templates.md#editable-and-static-templates)為基礎，您可以使用工具列上的[頁面模式選取器](/help/sites-authoring/author-environment-tools.md#page-modes)切換至[設計模式](/help/sites-authoring/default-components-designmode.md)，以啟用/停用頁面上使用的元件。
+如果頁面是以[靜態範本](/help/sites-authoring/templates.md#editable-and-static-templates)為基礎，您可以使用工具列上的[頁面模式選取器](/help/sites-authoring/default-components-designmode.md)切換至[設計模式](/help/sites-authoring/author-environment-tools.md#page-modes)，以啟用/停用頁面上使用的元件。
 
-在「欄檢視」或「清單檢視」中選取頁面時，您可輕鬆查看該頁 [面所依據](/help/sites-authoring/basic-handling.md#column-view) [的範本](/help/sites-authoring/basic-handling.md#list-view)。
+在「欄檢視」或「清單檢視」中選取頁面時，您可輕鬆查看該頁 [面所依據](/help/sites-authoring/basic-handling.md#column-view)[的範本](/help/sites-authoring/basic-handling.md#list-view)。
 
 ## 即時副本狀態 {#live-copy-status}
 
@@ -538,7 +538,7 @@ AEM可讓您鎖定頁面，不讓其他人修改內容。 當您對某個特定�
 
 解除鎖定頁麵類似於[鎖定頁面](#locking-a-page)。 鎖定頁面時，鎖定選項會由解鎖動作取代。
 
-「頁面資訊」功能表 **會列出** 「解除鎖定」為選項，而網站主控台中的「鎖定」圖示會以「解除鎖定」圖示 **&#x200B;**&#x200B;取代。
+「頁面資訊」功能表 **會列出** 「解除鎖定」為選項，而網站主控台中的「鎖定」圖示會以「解除鎖定」圖示 **** 取代。
 
 ![解除鎖定](assets/screen_shot_2018-03-22at134942.png)
 

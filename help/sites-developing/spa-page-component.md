@@ -11,7 +11,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 470636ce-3934-4aac-80ff-1fe6bd84455e
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 6%
@@ -84,7 +84,7 @@ SPA的頁面元件不會透過JSP或HTL檔案和資源物件提供其子元件�
 * `cq:wcmmode`：編輯器的WCM模式（例如，頁面、範本）
 * `cq:pagemodel_root_url`：應用程式根模型的URL。 由於子頁面模型是應用程式根模型的片段，因此直接存取子頁面時十分重要。 然後，` [PageModelManager](/help/sites-developing/spa-page-component.md)`會系統地將應用程式初始模型重新組合為從根進入點進入應用程式。
 
-* `cq:pagemodel_router`：啟用或停用`PageModelManager`資料庫的` [ModelRouter](/help/sites-developing/spa-routing.md)`
+* `cq:pagemodel_router`：啟用或停用` [ModelRouter](/help/sites-developing/spa-routing.md)`資料庫的`PageModelManager`
 
 * `cq:pagemodel_route_filters`：以逗號分隔的清單或規則運算式，提供` [ModelRouter](/help/sites-developing/spa-routing.md)`必須忽略的路由。
 
@@ -92,7 +92,7 @@ SPA的頁面元件不會透過JSP或HTL檔案和資源物件提供其子元件�
 >
 >本檔案僅供示範之用，而使用We.Retail日誌應用程式。 請勿用於任何專案工作。
 >
->任何AEM專案都應該使用[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)，其支援使用React或Angular的SPA專案，並使用SPA SDK。AEM上的所有SPA專案都應該以SPA Starter Kit的Maven Archetype為基礎。
+>任何AEM專案都應該使用[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，其支援使用React或Angular的SPA專案，並使用SPA SDK。AEM上的所有SPA專案都應該以SPA Starter Kit的Maven Archetype為基礎。
 
 ## 頁面編輯器覆蓋同步 {#page-editor-overlay-synchronization}
 

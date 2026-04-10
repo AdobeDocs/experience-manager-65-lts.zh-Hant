@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: personalization
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 435fcee8-ddb4-4b3c-a55f-fca1b91b7d52
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 11%
@@ -20,7 +20,7 @@ ht-degree: 11%
 
 下圖顯示如何架構目標內容的多網站支援。
 
-**/content/campaigns/&lt;brand>**&#x200B;下方會顯示區域，依預設，每個品牌都有自動建立的主區域。 每個區域都包含自身的一組活動、體驗和選件。
+區域會顯示在&#x200B;**/content/campaigns/&lt;brand>**&#x200B;下方，依預設，每個品牌都有自動建立的主區域。 每個區域都包含自身的一組活動、體驗和選件。
 
 ![chlimage_1-268](assets/chlimage_1-268.png)
 

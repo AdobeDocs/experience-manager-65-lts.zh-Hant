@@ -3,9 +3,9 @@ title: 頁面差異
 description: 頁面差異功能可方便的對兩個頁面進行並排比較，並反白顯示其差異。
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 228c1ffb-91af-4f2e-82f8-1e570034f7ec
-source-git-commit: db1c30db0a61e852484a25909c60ad5940b2b33a
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 1%

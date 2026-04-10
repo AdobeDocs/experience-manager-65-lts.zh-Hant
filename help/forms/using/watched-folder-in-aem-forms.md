@@ -9,16 +9,16 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 632ecead-f57d-4b43-8a3d-f2b0b8fe1115
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '7164'
+source-wordcount: '7136'
 ht-degree: 0%
 
 ---
 
 # AEM Forms中的Watched資料夾{#watched-folder-in-aem-forms}
 
-管理員可以設定網路資料夾，稱為Watched資料夾，這樣當使用者將檔案(例如PDF檔案)放入Watched資料夾時，就會啟動預先設定的工作流程、服務或指令碼操作，以處理新增的檔案。 服務執行指定的操作後，會將結果檔案儲存在指定的輸出資料夾中。 如需工作流程、服務及指令碼的詳細資訊，請參閱[各種處理檔案的方法](#variousmethodsforprocessingfiles)。
+管理員可以設定網路資料夾，稱為Watched資料夾，這樣當使用者將檔案（例如PDF檔案）放入Watched資料夾時，就會啟動預先設定的工作流程、服務或指令碼操作，以處理新增的檔案。 服務執行指定的操作後，會將結果檔案儲存在指定的輸出資料夾中。 如需工作流程、服務及指令碼的詳細資訊，請參閱[各種處理檔案的方法](#variousmethodsforprocessingfiles)。
 
 ## 建立Watched資料夾 {#create-a-watched-folder}
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 * **inputProcessorType （字串）**：要啟動的處理序型別。 您可以指定工作流程、指令碼或服務。 這是強制屬性。
 * **inputProcessorId （字串）**： inputProcessorId屬性的行為是以為inputProcessorType屬性指定的值為基礎。 這是強制屬性。 下列清單詳細說明了inputProcessorType屬性的所有可能值以及inputProcessorType屬性的對應必要條件：
 
-   * 針對工作流程，指定要執行的工作流程模型。 例如，/etc/workflow/models/&lt;workflow_name>/jcr：content/model
+   * 針對工作流程，指定要執行的工作流程模型。 例如，/etc/workflow/models/&lt;workflow_name>/jcr:content/model
    * 對於指令碼，指定要執行的指令碼的JCR路徑。 例如， /etc/fd/watchfolder/test/testScript.ecma
    * 針對服務，指定用於找到OSGi服務的篩選器。 此服務已註冊為com.adobe.aemfd.watchfolder.service.api.ContentProcessor Interface的實作。
 
@@ -102,9 +102,9 @@ ht-degree: 0%
    * 具有特定名稱的檔案；例如， data&#42;會排除名為data1、data2等的檔案和資料夾。
    * 在名稱和副檔名中有複合運算式的檔案，如下列範例所示：
 
-      * 資料[0-9][0-9][0-9]。[d][aA]&#39;連線埠&#39;
-      * &#42;。[d][Aa]&#39;連線埠&#39;
-      * &#42;。[Xx][毫米][Ll]
+      * 資料`[0-9][0-9][0-9]`。`[dD][aA]`&#39;連線埠&#39;
+      * &#42;。`[dD][Aa]`&#39;連線埠&#39;
+      * &#42;.`[Xx][Mm][Ll]`
 
 如需檔案模式的詳細資訊，請參閱[關於檔案模式](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)。
 
@@ -115,10 +115,10 @@ ht-degree: 0%
 
 * 在名稱和副檔名中有複合運算式的檔案，如下列範例所示：
 
-   * 資料[0-9][0-9][0-9]。[d][aA]&#39;連線埠&#39;
+   * 資料`[0-9][0-9][0-9]`。`[dD][aA]`&#39;連線埠&#39;
 
-      * &#42;。[d][Aa]&#39;連線埠&#39;
-      * &#42;。[Xx][毫米][Ll]
+      * &#42;。`[dD][Aa]`&#39;連線埠&#39;
+      * &#42;.`[Xx][Mm][Ll]`
 
 如需檔案模式的詳細資訊，請參閱[關於檔案模式](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
@@ -297,7 +297,7 @@ processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docm
 1. 以程式設計方式或透過主控台https://&#39;[伺服器]：[連線埠]&#39;/crx/explorer建立系統使用者。 您也可以使用現有的系統使用者。 請務必在這裡與系統使用者而非一般使用者合作。
 1. 在儲存指令碼的自訂位置上，為新建立或現有系統使用者提供讀取許可權。 您可以有多個自訂位置。 至少為所有自訂位置提供讀取許可權。
 1. 在Felix設定主控台(/system/console/configMgr)中，找到監視資料夾的服務使用者對應。 此對應類似於「對應： adobe-aemds-core-watch-folder=...」。
-1. 按一下對應。 對於專案「adobe-aemds-core-watch-folder：scripts=fd-service」，請將fd-service變更為自訂系統使用者的ID。 按一下「儲存」。
+1. 按一下對應。 對於&#39;adobe-aemds-core-watch-folder:scripts=fd-service&#39;專案，請將fd-service變更為自訂系統使用者的ID。 按一下「儲存」。
 
 現在，您可以使用已設定的自訂位置來儲存指令碼。
 
@@ -568,9 +568,9 @@ Watched資料夾可以連結在一起，因此一個Watched資料夾的結果檔
 * 具有特定名稱的檔案；例如，資料。&#42;
 * 在名稱和副檔名中有複合運算式的檔案，如下列範例所示：
 
-   * 資料[0-9][0-9][0-9]。[d][aA]&#39;連線埠&#39;
-   * &#42;。[d][Aa]&#39;連線埠&#39;
-   * &#42;。[Xx][毫米][Ll]
+   * 資料`[0-9][0-9][0-9]`。`[dD][aA]`&#39;連線埠&#39;
+   * &#42;。`[dD][Aa]`&#39;連線埠&#39;
+   * &#42;.`[Xx][Mm][Ll]`
 
 * 管理員可以定義儲存結果的輸出資料夾的檔案模式。 對於輸出資料夾（結果、保留和失敗），管理員可以指定下列任一檔案模式：
 * %Y =年（完整）
@@ -643,11 +643,11 @@ ECMAScript會使用PDF Generator的createPDF API將Microsoft Word (.docx)檔案�
 1. 在瀏覽器視窗中開啟AEM工作流程UI。
    <https://[servername>]：&#39;port&#39;/workflow
 
-1. 在[模型]檢視中，按一下[新增]。**&#x200B;** 在[新增工作流程]對話方塊中，指定&#x200B;**標題**，然後按一下[確定]。**&#x200B;**
+1. 在[模型]檢視中，按一下[新增]。**** 在[新增工作流程]對話方塊中，指定&#x200B;**標題**，然後按一下[確定]。****
 
    ![create-a-workflow-pdf](assets/create-a-workflow-pdf.png)
 
-1. 選取新建立的工作流程，然後按一下[編輯]。**&#x200B;** 工作流程會在新視窗中開啟。
+1. 選取新建立的工作流程，然後按一下[編輯]。**** 工作流程會在新視窗中開啟。
 
 1. 刪除預設的工作流程步驟。 將「流程步驟」從Sidekick拖放至「工作流程」。
 
@@ -663,7 +663,7 @@ ECMAScript會使用PDF Generator的createPDF API將Microsoft Word (.docx)檔案�
 
 1. 在瀏覽器視窗中開啟CRXDE Lite。 https://&#39;[伺服器]：[連線埠]&#39;/crx/de/
 
-1. 導覽至/etc/fd/watchfolder/config/資料夾，並建立nt：unstructured型別的節點。
+1. 導覽至/etc/fd/watchfolder/config/資料夾，並建立nt:unstructured型別的節點。
 
    ![configure-the-watched-folder-pdf](assets/configure-the-watched-folder-pdf.png)
 
@@ -672,7 +672,7 @@ ECMAScript會使用PDF Generator的createPDF API將Microsoft Word (.docx)檔案�
    * folderPath （字串）：在定義的時間間隔掃描的資料夾路徑。 資料夾必須位於共用位置，且所有伺服器都必須具備伺服器的完整存取許可權。
 inputProcessorType （字串）：要啟動的程式型別。 在本教學課程中，指定工作流程。
 
-   * inputProcessorId （字串）： inputProcessorId屬性的行為是根據inputProcessorType屬性的指定值而定。 在此範例中，inputProcessorType屬性的值為workflow。 因此，針對inputProcessorId屬性指定PDFG工作流程的以下路徑： /etc/workflow/models/pdfg/jcr：content/model
+   * inputProcessorId （字串）： inputProcessorId屬性的行為是根據inputProcessorType屬性的指定值而定。 在此範例中，inputProcessorType屬性的值為workflow。 因此，針對inputProcessorId屬性指定PDFG工作流程的以下路徑： /etc/workflow/models/pdfg/jcr:content/model
 
    * outputFilePattern （字串）：輸出檔案的模式。 您可以指定資料夾或檔案模式。 如果指定資料夾模式，則輸出檔案的名稱如工作流程中所述。 如果指定了檔案模式，則輸出檔案的名稱如檔案模式中所述。
 

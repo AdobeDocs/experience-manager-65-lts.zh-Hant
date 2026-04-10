@@ -3,9 +3,9 @@ title: 資料保護和資料隱私權法規 — Adobe Experience Manager整備
 description: 瞭解Adobe Experience Manager對各種資料保護和資料隱私權法規的支援。 其中包括歐盟一般資料保護規範(GDPR)、加州消費者隱私保護法，以及在實施新的AEM專案時如何遵守。
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
-role: Developer,Leader,Architect,Data Architect,User
+role: Developer,Leader,User
 exl-id: 6faf8e4f-ca2a-4d68-a354-fb0aa6c2644b
-source-git-commit: 4a93e17da1157253a681bf8b3a38252962d8fb59
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 42%
@@ -104,7 +104,7 @@ Adobe正提供各項程式，用於處理與Adobe Experience Manager的存取、
 
 * [Adobe Target - 隱私權概觀](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en)
 
-* [Adobe Analytics 資料隱私權工作流程](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=zh-Hant)
+* [Adobe Analytics 資料隱私權工作流程](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)
 
 ## AEM Forms {#aem-forms}
 
@@ -114,6 +114,6 @@ AEM Forms包含可擷取、處理和儲存資料的元件和工作流程，以�
 * [通信管理](/help/forms/using/correspondence-management-handling-user-data.md)
 * [與Adobe Sign整合](/help/forms/using/integration-adobe-sign-handling-user-data.md)
 * [OSGi上以Forms為中心的工作流程](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
-* [Forms JEE工作流程](/help/forms/using/forms-workflow-jee-handling-user-data.md) (僅限AEM Forms JEE)
-* [Document Security](/help/forms/using/document-security-handling-user-data.md) (僅限AEM Forms JEE)
-* [使用者管理](/help/forms/using/user-management-handling-user-data.md) (僅限AEM Forms JEE)
+* [Forms JEE工作流程](/help/forms/using/forms-workflow-jee-handling-user-data.md) （僅限AEM Forms JEE）
+* [Document Security](/help/forms/using/document-security-handling-user-data.md) （僅限AEM Forms JEE）
+* [使用者管理](/help/forms/using/user-management-handling-user-data.md) （僅限AEM Forms JEE）

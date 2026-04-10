@@ -7,7 +7,7 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: bf5c2dff-db68-4e82-8217-ff35069dcb81
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '3607'
 ht-degree: 7%
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=en) |
 | AEM 6.5 | 本文章 |
 
 組織會提出中繼資料模型，藉以強化資產探索、使用、互通性等。 正確的中繼資料應用程式對於維護中繼資料驅動的工作流程和流程至關重要。 若要遵循組織範圍的中繼資料策略和標準，您可以使用可協助DAM使用者調整的中繼資料結構。 [!DNL Adobe Experience Manager]可讓您以簡單靈活的方法建立、維護和套用中繼資料結構。
@@ -66,7 +66,7 @@ ht-degree: 7%
 
 若要新增中繼資料結構表單，請執行下列步驟：
 
-1. 若要新增自訂範本至清單，請按一下工具列中的[建立]。**&#x200B;**
+1. 若要新增自訂範本至清單，請按一下工具列中的[建立]。****
 
    >[!NOTE]
    >
@@ -224,7 +224,7 @@ ht-degree: 7%
 
 1. （選用）新增其他必要欄位。 例如，資產型別視訊的格式、轉碼器和持續時間。
 
-   同樣地，為其他資產型別新增相依欄位。 例如，為檔案資產(例如PDF和Word檔案)新增頁面計數和作者欄位。
+   同樣地，為其他資產型別新增相依欄位。 例如，為檔案資產（例如PDF和Word檔案）新增頁面計數和作者欄位。
 
    ![視訊相依欄位](assets/video_dependent_fields.png)
 
@@ -256,7 +256,7 @@ ht-degree: 7%
    >您可以套用 **[!UICONTROL 「需求]** 」條件 **[!UICONTROL 和「可見性]** 」條件，它們彼此獨立。
 
 1. 同樣地，在「資產型別」欄位中的「視訊」值與其他欄位（例如「轉碼器」和「持續時間」）之間建立相依性。
-1. 重複這些步驟，在[!UICONTROL 資產型別]欄位和[!UICONTROL 頁面計數]和[!UICONTROL 作者]等欄位中，建立檔案資產(PDF和Word)之間的相依性。
+1. 重複這些步驟，在[!UICONTROL 資產型別]欄位和[!UICONTROL 頁面計數]和[!UICONTROL 作者]等欄位中，建立檔案資產（PDF和Word）之間的相依性。
 1. 按一下「**[!UICONTROL 儲存]**」。將中繼資料結構套用至資料夾。
 
 1. 導覽至您套用中繼資料結構的資料夾，並開啟資產的屬性頁面。 視您在「資產型別」欄位中的選擇而定，會顯示相關的階層式中繼資料欄位。
@@ -286,7 +286,7 @@ ht-degree: 7%
 
 ### 為MIME型別新增表單 {#add-new-forms-for-mime-types}
 
-在適當的表單型別下建立表單。 例如，若要為`image/png`子型別新增範本，請在「影像」表單下建立表單。 結構描述表單的標題是子類型名稱。在此案例中，標題為`png`。
+在適當的表單型別下建立表單。 例如，若要為`image/png`子型別新增範本，請在「影像」表單下建立表單。 結構描述表單的標題是子類型名稱。 在此案例中，標題為`png`。
 
 #### 針對各種MIME型別使用現有結構描述範本 {#use-an-existing-schema-template-for-various-mime-types}
 
@@ -341,9 +341,9 @@ ht-degree: 7%
    *圖：文字欄位已新增至中繼資料結構描述表單編輯器。*
 
 1. 按一下「**[!UICONTROL 儲存]**」。修改後的表單會列在&#x200B;**[!UICONTROL 中繼資料結構Forms]**&#x200B;頁面中。
-1. 按一下工具列中的「套用至資料夾」**&#x200B;**，將自訂中繼資料套用至資料夾。
+1. 按一下工具列中的「套用至資料夾」****，將自訂中繼資料套用至資料夾。
 
-1. 選取要套用修改的結構描述的資料夾，然後按一下[套用]。**&#x200B;**
+1. 選取要套用修改的結構描述的資料夾，然後按一下[套用]。****
 
    ![選取要套用中繼資料結構描述的資料夾](assets/metadata-schema-select-folder.png)
 

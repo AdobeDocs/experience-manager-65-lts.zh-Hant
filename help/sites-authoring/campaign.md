@@ -7,11 +7,11 @@ content-type: reference
 topic-tags: personalization
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 1d621e12-6da5-4b49-98c9-3fb9b8189ff7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2769'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 2%
 有兩種可能的情況：
 
 * 內容可以與Adobe Campaign的傳送同步。 這可讓您在傳送中使用AEM內容。
-* (僅適用於Adobe Campaign Classic)內容可直接傳送至Adobe Campaign，其會自動產生新的電子郵件傳送。 此模式具有限制。
+* （僅適用於Adobe Campaign Classic）內容可直接傳送至Adobe Campaign，其會自動產生新的電子郵件傳送。 此模式具有限制。
 
 本檔案將說明詳細說明。
 
@@ -63,7 +63,7 @@ ht-degree: 2%
    ![chlimage_1-15](assets/chlimage_1-15a.png)
 
 1. 選取&#x200B;**建立**，然後選取&#x200B;**建立頁面**。
-1. 選取您連線至Adobe Campaign的特定可用範本之一，然後按一下[下一步] **&#x200B;**。 預設提供三個範本：
+1. 選取您連線至Adobe Campaign的特定可用範本之一，然後按一下[下一步] ****。 預設提供三個範本：
 
    * **Adobe Campaign Classic電子郵件**：可讓您在將內容傳送至Adobe Campaign Classic傳送之前，先新增內容至預先定義的範本（兩欄）。
    * **Adobe Campaign Standard電子郵件**：可讓您在將內容傳送至Adobe Campaign Standard傳送之前，先新增內容至預先定義的範本（兩欄）。
@@ -93,7 +93,7 @@ ht-degree: 2%
 1. 從下拉式清單中選取與您的Adobe Campaign執行個體相符的設定，然後按一下&#x200B;**儲存**&#x200B;進行確認。
 1. 您可以按一下&#x200B;**Adobe Campaign**&#x200B;索引標籤，以檢視電子郵件已套用的範本。 如果要選取其他範本，您可以在編輯時從電子郵件中存取該範本。
 
-   如果您想要套用預設郵件範本以外的特定電子郵件傳遞範本(來自Adobe Campaign)，請在「**屬性**」中選取「**Adobe Campaign**」標籤。 在相關的Adobe Campaign執行個體中輸入電子郵件傳遞範本的內部名稱。
+   如果您想要套用預設郵件範本以外的特定電子郵件傳遞範本（來自Adobe Campaign），請在「**屬性**」中選取「**Adobe Campaign**」標籤。 在相關的Adobe Campaign執行個體中輸入電子郵件傳遞範本的內部名稱。
 
    您選取的範本決定了Adobe Campaign提供的個人化欄位。
 
@@ -173,11 +173,11 @@ ht-degree: 2%
    >Adobe Campaign Standard的&#x200B;**：**
    >
    >* 可用的內容欄位對應至Adobe Campaign中的&#x200B;**設定檔**&#x200B;目標維度。
-   >* 請參閱將AEM頁面連結至Adobe Campaign電子郵件[&#128279;](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard)。
+   >* 請參閱將AEM頁面連結至Adobe Campaign電子郵件[。](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard)
    >
    >Adobe Campaign Classic的&#x200B;**：**
    >
-   >* 可用的內容欄位會從Adobe Campaign **nms：seedMember**&#x200B;結構描述中動態復原。 目標擴充功能資料會從包含與內容同步之傳遞的工作流程中動態復原。 (請參閱[將AEM中建立的內容與Adobe Campaign的傳遞同步](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic)區段)。
+   >* 可用的內容欄位會從Adobe Campaign **nms:seedMember**&#x200B;結構描述中動態復原。 目標擴充功能資料會從包含與內容同步之傳遞的工作流程中動態復原。 （請參閱[將AEM中建立的內容與Adobe Campaign的傳遞同步](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic)區段）。
    >
    >* 若要新增或隱藏個人化元素，請參閱[管理個人化欄位和區塊](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks)。
    >* **重要**：所有種子表格欄位也必須在收件者表格（或對應的聯絡人表格）中。
@@ -198,7 +198,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >如果您使用Adobe Campaign Standard並使用範例範本，顯示初始內容的兩個個人化區塊 — **&quot;&lt;%@ include view=&quot;MirrorPage&quot; %>&quot;**&#x200B;和&#x200B;**&quot;&lt;%@ include view=&quot;UnsubscriptionLink&quot; %>&quot;** — 在傳送期間匯入內容時將會擲回錯誤。 您可以使用個人化區塊選擇器選取對應的區塊，以調整這些區塊。
+   >如果您使用Adobe Campaign Standard並使用範例範本，顯示初始內容的兩個個人化區塊 — **&quot;&lt;%@包含view=&quot;MirrorPage&quot; %>&quot;**&#x200B;和&#x200B;**&quot;&lt;%@包含view=&quot;UnsubscriptionLink&quot; %>&quot;** — 在傳送期間匯入內容時將會擲回錯誤。 您可以使用個人化區塊選擇器選取對應的區塊，以調整這些區塊。
 
 1. 若要預覽個人化，請按一下/點選工具列中的對應圖示以開啟ContextHub。 個人化欄位標籤現在由所選角色的種子資料取代。 瞭解在ContextHub中切換角色時，變數如何調整。
 
@@ -260,7 +260,7 @@ Adobe Campaign Standard可讓您復原和連結在AEM中建立的內容，包含
 
 若要將AEM中建立的頁面連結至Adobe Campaign的電子郵件：
 
-1. 根據AEM專屬的電子郵件範本建立電子郵件。 如需詳細資訊，請參閱[在Adobe Campaign Standard中建立電子郵件](https://helpx.adobe.com/tw/campaign/standard/channels/using/creating-an-email.html)。
+1. 根據AEM專屬的電子郵件範本建立電子郵件。 如需詳細資訊，請參閱[在Adobe Campaign Standard中建立電子郵件](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html)。
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 

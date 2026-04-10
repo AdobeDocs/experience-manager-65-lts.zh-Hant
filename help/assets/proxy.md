@@ -2,11 +2,11 @@
 title: '[!DNL Assets] Proxy開發'
 description: Proxy是使用Proxy Worker處理工作的 [!DNL Experience Manager] 執行個體。 瞭解如何設定 [!DNL Experience Manager] Proxy、支援的作業、Proxy元件，以及如何開發自訂Proxy Worker。
 contentOwner: AG
-role: Admin, Architect
+role: Admin,Developer
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
 exl-id: 8de16e9d-40b6-49d2-9e6b-1aba13137d78
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 0%
@@ -188,4 +188,4 @@ Proxy和Proxy Worker組態均可透過雲端服務組態使用，可從[!DNL Ass
 >
 >結果的同步化：
 >
->如果有n個執行個體使用相同的Proxy，處理結果會保留在Proxy。 使用者端(Experience Manager作者)的作業是使用建立作業時提供給使用者端的相同唯一作業ID來請求結果。 Proxy只會讓工作完成，並讓結果準備好進行要求。
+>如果有n個執行個體使用相同的Proxy，處理結果會保留在Proxy。 使用者端（Experience Manager作者）的作業是使用建立作業時提供給使用者端的相同唯一作業ID來請求結果。 Proxy只會讓工作完成，並讓結果準備好進行要求。

@@ -7,9 +7,9 @@ topic-tags: projects
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: eb19a269-8b3f-476b-b22b-8116dce70388
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 3%
@@ -73,7 +73,7 @@ ht-degree: 3%
 
 ## 產品拍照工作流程 {#product-photo-shoot-workflow}
 
-**產品拍照**&#x200B;工作流程（商務和非商務）已在檔案[創意專案](/help/sites-authoring/managing-product-information.md)中詳細說明
+**產品拍照**&#x200B;工作流程（商務和非商務）已在檔案[Creative專案](/help/sites-authoring/managing-product-information.md)中詳細說明
 
 ## 專案核准工作流程 {#project-approval-workflow}
 

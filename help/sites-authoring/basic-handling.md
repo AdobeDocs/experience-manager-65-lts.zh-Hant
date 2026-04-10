@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 281c96e2-24f8-4568-add2-67972148b406
-source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2919'
 ht-degree: 4%
@@ -143,7 +143,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 
   您也可以使用[捷徑鍵](/help/sites-authoring/keyboard-shortcuts.md) `/` （正斜線）從任何主控台叫用搜尋。
 
-* [解決方案](https://business.adobe.com/tw/)
+* [解決方案](https://business.adobe.com/)
 
   ![解決方案](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -173,7 +173,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 
   ![邊欄選擇器](assets/screen_shot_2018-03-23at104029.png)
 
-* 導覽列
+* 階層連結
 
   ![階層連結](assets/bh-05.png)
 
@@ -569,7 +569,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 
 ![bh-28](assets/bh-28.png)
 
-### 篩選 {#filter}
+### 篩選器 {#filter}
 
 這會開啟類似於[搜尋](/help/sites-authoring/search.md)的面板，並設定適當的位置篩選器，讓您進一步篩選想要檢視的內容。
 

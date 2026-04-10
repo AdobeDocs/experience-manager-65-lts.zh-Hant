@@ -3,9 +3,9 @@ title: 使用內容頁面版本
 description: 在Adobe Experience Manager中建立、比較和還原頁面版本。
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: ba5cc5fb-934f-4144-8e28-7aa5fdd9b92a
-source-git-commit: d286db53c2f9605794bdadcc876b5069037edde3
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 2%

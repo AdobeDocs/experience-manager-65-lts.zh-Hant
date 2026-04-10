@@ -7,9 +7,9 @@ topic-tags: introduction
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: bff562ff-bf0e-4f56-afd2-77907ec01e2c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 4%
@@ -28,7 +28,7 @@ AEM提供各種鍵盤快速鍵。 有些適用於使用主控台，有些則適�
 
 下列捷徑適用於「網站」、「Commerce」、「Screens」、「Assets」、「使用者」、「群組」、「專案」和「體驗片段」主控台。
 
-| 位置 | 捷徑 | 描述 |
+| 位置 | 捷徑 | 說明 |
 |---|---|---|
 | 一般 | `Ctrl+Click` | 在桌上型電腦裝置上進行多選 |
 | 主控台 — 欄檢視與內容檢視 | `Right Arrow` | 向下導覽至您網站的結構/展開樹狀節點 |

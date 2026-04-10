@@ -3,9 +3,9 @@ title: 預設元件
 description: Adobe Experience Manager隨附多種現成可用的元件，可為網站作者提供全方位功能。
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 2a5d3d80-2710-4bb0-ad24-9a86525c6aea
-source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 1%

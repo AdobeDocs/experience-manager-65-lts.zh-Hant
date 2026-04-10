@@ -8,7 +8,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: aceec3ac-abdf-4ae2-b197-f58cb7faea5f
 index: false
-source-git-commit: 97f3bbc3eb5b4119accf2d93fb63bec35fd56c44
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 66%
@@ -64,7 +64,7 @@ AEM SPA 編輯器允許前端開發人員建立可整合到 AEM 網站的 SPA，
 
 ![screen_shot_2018-08-20at135550](assets/screen_shot_2018-08-20at135550.png)
 
-**訪問者**
+**位訪客**
 
 * 訪客在與內容互動時希望獲得類似原生的體驗。
 * 有明確資料代表頁面生成越快，就越可能發生轉換。
@@ -93,9 +93,9 @@ SPA的主要想法是減少伺服器呼叫和相依性，以將伺服器呼叫�
 
 >[!NOTE]
 >
->有關如何工作的SPA技術詳AEM細資訊，請參閱文章[在](/help/sites-developing/spa-getting-started-react.md)中開始SPA的AEM操作。
+>如需SPA在AEM中如何運作的技術詳細資訊，請參閱文章[在AEM中開始使用SPA](/help/sites-developing/spa-getting-started-react.md)。
 >
->如需SPA編輯器的設計、架構和技術工作流程的詳細資訊，請參閱文章[&#x200B; SPA編輯器概觀](/help/sites-developing/spa-overview.md)。
+>如需SPA編輯器的設計、架構和技術工作流程的詳細資訊，請參閱文章[ SPA編輯器概觀](/help/sites-developing/spa-overview.md)。
 
 ## SPA 的內容編輯體驗 {#content-editing-experience-with-spa}
 
@@ -137,7 +137,7 @@ SPA的主要想法是減少伺服器呼叫和相依性，以將伺服器呼叫�
 
 ## SPA 應用程式和 AEM SPA 編輯器 {#spa-apps-and-the-aem-spa-editor}
 
-體驗最終SPA用戶的行為，然後檢查頁SPA面有助於更好地瞭解SAP應用與中的編輯器SPA的工作AEM方式。
+體驗SPA如何為一般使用者運作，然後檢查SPA頁面，有助於更清楚瞭解SAP應用程式如何在AEM中搭配SPA Editor運作。
 
 ### 使用 SPA 應用程式 {#using-an-spa-application}
 

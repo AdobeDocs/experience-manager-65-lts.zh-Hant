@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 743645c5-b4c9-45ff-a130-0bf72aa6e6f2
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '4919'
+source-wordcount: '4923'
 ht-degree: 3%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 3%
 
 ## 安裝Adobe Experience Manager {#installing-adobe-experience-manager}
 
-若要安裝開發您網站的AEM執行個體，請依照使用作者和發佈執行個體[&#128279;](/help/sites-deploying/deploy.md#author-and-publish-installs)設定部署環境的指示操作，或執行[一般安裝](/help/sites-deploying/deploy.md#default-local-install)。 一般安裝包括下載AEM Quickstart JAR檔案、將license.properties檔案放在與JAR檔案相同的目錄中，以及連按兩下JAR檔案。
+若要安裝開發您網站的AEM執行個體，請依照使用作者和發佈執行個體[設定](/help/sites-deploying/deploy.md#author-and-publish-installs)部署環境的指示操作，或執行[一般安裝](/help/sites-deploying/deploy.md#default-local-install)。 一般安裝包括下載AEM Quickstart JAR檔案、將license.properties檔案放在與JAR檔案相同的目錄中，以及連按兩下JAR檔案。
 
 安裝AEM後，請按一下歡迎頁面上的CRXDE Lite連結來存取CRXDE Lite開發環境：
 
@@ -123,7 +123,7 @@ static.css檔案與影像範例
 
 1. 在CRXDE Lite的資料夾樹狀結構中，用滑鼠右鍵按一下`/apps/mywebsite/templates`，然後按一下&#x200B;**建立** > **建立範本**。
 
-1. 在[建立範本]對話方塊中，輸入下列值，然後按一下[下一步] **&#x200B;**：
+1. 在[建立範本]對話方塊中，輸入下列值，然後按一下[下一步] ****：
 
    * **標籤**： contentpage
    * **標題**：我的網站內容頁面範本
@@ -165,7 +165,7 @@ static.css檔案與影像範例
 
    此通訊會將範本連線到元件，並且對網站的正確運作至關重要。
 
-1. 按一下[下一步]&#x200B;**&#x200B;**，直到對話方塊的[允許的子系]面板出現為止，然後按一下[確定]&#x200B;**&#x200B;**。 在CRXDE Lite中，按一下&#x200B;**全部儲存**。
+1. 按一下[下一步]****，直到對話方塊的[允許的子系]面板出現為止，然後按一下[確定]****。 在CRXDE Lite中，按一下&#x200B;**全部儲存**。
 
    結構現在看起來如下所示：
 
@@ -175,7 +175,7 @@ static.css檔案與影像範例
 
 將程式碼新增至contentpage.jsp指令碼以定義頁面內容。
 
-1. 在CRXDE Lite中，在`/apps/mywebsite/components/contentpage`中開啟檔案`contentpage.jsp`。 依預設，檔案包含下列程式碼：
+1. 在CRXDE Lite中，在`contentpage.jsp`中開啟檔案`/apps/mywebsite/components/contentpage`。 依預設，檔案包含下列程式碼：
 
    ```java
    <%--
@@ -210,7 +210,7 @@ static.css檔案與影像範例
    </html>
    ```
 
-1. 按一下[儲存全部]&#x200B;**&#x200B;**&#x200B;以儲存變更。
+1. 按一下[儲存全部]****&#x200B;以儲存變更。
 
 ### 建立您的網站頁面與內容頁面 {#creating-your-website-page-and-content-pages}
 
@@ -260,7 +260,7 @@ static.css檔案與影像範例
 
 1. 若要將您的頁面連結至mywebsite設計，請在CRXDE Lite中選取`/content/mywebsite/en/jcr:content`節點。 在「屬性」標籤上，輸入新屬性的下列值，然後按一下「新增」：
 
-   * 名稱：cq：designPath
+   * 名稱： cq:designPath
    * 型別：字串
    * 值： /etc/designs/mywebsite
 
@@ -289,13 +289,13 @@ static.css檔案與影像範例
    1. 選取`/apps/mywebsite/components/contentpage`節點。
    1. 在「屬性」標籤底部，輸入下列屬性值，然後按一下「新增」：
 
-      * **名稱：** sling：resourceSuperType
+      * **名稱：** sling:resourceSuperType
       * **型別：**&#x200B;字串
       * **值：** foundation/components/page
 
    1. 按一下「儲存全部」。
 
-1. 開啟`/apps/mywebsite/components/contentpage`下的`contentpage.jsp`檔案，並將現有程式碼取代為下列程式碼：
+1. 開啟`contentpage.jsp`下的`/apps/mywebsite/components/contentpage`檔案，並將現有程式碼取代為下列程式碼：
 
    ```xml
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -327,9 +327,9 @@ static.css檔案與影像範例
 
 **提示：**&#x200B;當元件包含與元件之超級型別中的檔案具有相同名稱和相對位置的檔案時，它稱為&#x200B;*覆蓋*。
 
-1. 在CRXDE Lite中，在`/apps/mywebsite/components/contentpage`下建立檔案`left.jsp`：
+1. 在CRXDE Lite中，在`left.jsp`下建立檔案`/apps/mywebsite/components/contentpage`：
 
-   1. 在節點`/apps/mywebsite/components/contentpage`上按一下滑鼠右鍵，然後選取&#x200B;**建立**&#x200B;然後選取&#x200B;**建立檔案**。
+   1. 在節點`/apps/mywebsite/components/contentpage`上按一下滑鼠右鍵，然後選取**建立**然後選取&#x200B;**建立檔案**。
 
    1. 在視窗中，輸入`left.jsp`作為&#x200B;**名稱**，然後按一下&#x200B;**確定**。
 
@@ -345,7 +345,7 @@ static.css檔案與影像範例
    ```
 
 1. 儲存變更。
-1. 在CRXDE Lite中，在`/apps/mywebsite/components/contentpage`下建立檔案`center.jsp`：
+1. 在CRXDE Lite中，在`center.jsp`下建立檔案`/apps/mywebsite/components/contentpage`：
 
    1. 在節點`/apps/mywebsite/components/contentpage`上按一下滑鼠右鍵，選取&#x200B;**建立**，然後選取&#x200B;**建立檔案**。
 
@@ -363,7 +363,7 @@ static.css檔案與影像範例
    ```
 
 1. 儲存變更。
-1. 在CRXDE Lite中，在`/apps/mywebsite/components/contentpage`下建立檔案`right.jsp`：
+1. 在CRXDE Lite中，在`right.jsp`下建立檔案`/apps/mywebsite/components/contentpage`：
 
    1. 在節點`/apps/mywebsite/components/contentpage`上按一下滑鼠右鍵，選取&#x200B;**建立**，然後選取&#x200B;**建立檔案**。
 
@@ -379,7 +379,7 @@ static.css檔案與影像範例
    ```
 
 1. 儲存變更。
-1. 在CRXDE Lite中，在`/apps/mywebsite/components/contentpage`下建立檔案`body.jsp`：
+1. 在CRXDE Lite中，在`body.jsp`下建立檔案`/apps/mywebsite/components/contentpage`：
 1. 編輯檔案`body.jsp`以移除現有內容並取代為下列程式碼：
 
    ```java
@@ -425,13 +425,13 @@ static.css檔案與影像範例
 
    * **描述**： `This is My Top Navigation Component`
 
-1. 按一下[下一步]&#x200B;**&#x200B;**，直到您進入最後一個按一下[確定]&#x200B;**的視窗**。 儲存您的變更。
+1. 按一下[下一步]****，直到您進入最後一個按一下[確定]**的視窗**。 儲存您的變更。
 
 #### 建立含有文字連結的頂端導覽指令碼 {#creating-the-top-navigation-script-with-textual-links}
 
 將轉譯指令碼新增至topnav，以產生子頁面的文字連結：
 
-1. 在CRXDE Lite中，開啟`/apps/mywebsite/components/topnav`下的檔案`topnav.jsp`。
+1. 在CRXDE Lite中，開啟`topnav.jsp`下的檔案`/apps/mywebsite/components/topnav`。
 1. 複製並貼上下列程式碼，以取代現有的程式碼：
 
    ```xml
@@ -458,7 +458,7 @@ static.css檔案與影像範例
 
 若要在內容頁面元件中包含topnav：
 
-1. 在CRXDE Lite中，開啟`/apps/mywebsite/components/contentpage`下的`body.jsp`並取代：
+1. 在CRXDE Lite中，開啟`body.jsp`下的`/apps/mywebsite/components/contentpage`並取代：
 
    ```xml
    <div class="topnav">topnav</div>
@@ -485,7 +485,7 @@ static.css檔案與影像範例
 1. 重複上述步驟，將我們的服務&#x200B;**的相關子標題**&#x200B;新增至&#x200B;**服務**&#x200B;頁面。
 1. 重複上述步驟，將副標題&#x200B;**我們獲得的信任**&#x200B;新增至&#x200B;**客戶**&#x200B;頁面。
 
-   **秘訣：**&#x200B;在CRXDE Lite中，選取/content/mywebsite/en/products/jcr：content節點以檢視是否已新增subtitle屬性。
+   **秘訣：**&#x200B;在CRXDE Lite中，選取/content/mywebsite/en/products/jcr:content節點以檢視是否已新增subtitle屬性。
 
 #### 使用影像連結增強頂端導覽 {#enhance-top-navigation-by-using-image-links}
 
@@ -503,7 +503,7 @@ static.css檔案與影像範例
 
 在本練習中，Sling會將這些URL比對至您建立的/apps/mywebsite/components/contentpage/navimage.png.java指令碼。
 
-1. 在CRXDE Lite中，開啟`/apps/mywebsite/components/topnav.`底下的`topnav.jsp`找出錨點元素的內容（第14行）：
+1. 在CRXDE Lite中，開啟`topnav.jsp`底下的`/apps/mywebsite/components/topnav.`找出錨點元素的內容（第14行）：
 
    ```xml
    <%=child.getTitle() %>
@@ -691,10 +691,10 @@ static.css檔案與影像範例
 
 1. 在CRXDE Lite中，設定「產品2」頁面的說明和日期：
 
-   1. 選取/content/mywebsite/en/products/product2/jcr：content節點。
+   1. 選取/content/mywebsite/en/products/product2/jcr:content節點。
    1. 在&#x200B;**屬性**&#x200B;索引標籤中，輸入下列值：
 
-      * 名稱： jcr：description
+      * 名稱： jcr:description
       * 型別：字串
       * 值：這是產品2的說明！。
 
@@ -725,7 +725,7 @@ static.css檔案與影像範例
 
 為listchildren元件開發指令碼。
 
-1. 在CRXDE Lite中，開啟`/apps/mywebsite/components/listchildren`下的檔案`listchildren.jsp`。
+1. 在CRXDE Lite中，開啟`listchildren.jsp`下的檔案`/apps/mywebsite/components/listchildren`。
 1. 將預設程式碼取代為下列程式碼：
 
    ```xml
@@ -782,14 +782,14 @@ static.css檔案與影像範例
 1. 選取tab1節點，然後按一下「建立>建立節點」，輸入下列屬性值，然後按一下「確定」：
 
    * 名稱：專案
-   * 型別： cq：WidgetCollection
+   * 型別： cq:WidgetCollection
 
    ![screen_shot_2012-03-07at51018pm](assets/screen_shot_2012-03-07at51018pm.png)
 
 1. 使用以下屬性值在items節點底下建立節點：
 
    * 名稱： listroot
-   * 型別： cq：Widget
+   * 型別： cq:Widget
 
    ![screen_shot_2012-03-07at51031pm](assets/screen_shot_2012-03-07at51031pm.png)
 
@@ -807,7 +807,7 @@ static.css檔案與影像範例
 
 若要在您的contentpage元件中包含listchildren元件，請依照下列步驟進行：
 
-1. 在CRXDE Lite中，開啟`/apps/mywebsite/components/contentpage`下的檔案`left.jsp`，並找出下列程式碼（第4行）：
+1. 在CRXDE Lite中，開啟`left.jsp`下的檔案`/apps/mywebsite/components/contentpage`，並找出下列程式碼（第4行）：
 
    ```xml
    <div>newslist</div>
@@ -866,13 +866,13 @@ static.css檔案與影像範例
    * 標題： `My Logo Component`。
    * 描述： `This is My Logo Component`。
 
-1. 按一下[下一步]，直到到達對話方塊的最後一個面板，然後按一下[確定]。**&#x200B;**
+1. 按一下[下一步]，直到到達對話方塊的最後一個面板，然後按一下[確定]。****
 
 #### 建立標誌指令碼 {#creating-the-logo-script}
 
 本節說明如何建立指令碼，以顯示含有首頁連結的標誌影像。
 
-1. 在CRXDE Lite中，開啟`/apps/mywebsite/components/logo`下的檔案`logo.jsp`。
+1. 在CRXDE Lite中，開啟`logo.jsp`下的檔案`/apps/mywebsite/components/logo`。
 1. 下列程式碼會建立網站首頁的連結，並新增標誌影像的參照。 將程式碼複製到`logo.jsp`：
 
    ```xml
@@ -922,7 +922,7 @@ static.css檔案與影像範例
       * **標題：** `Logo (Design)`
 
 1. 以滑鼠右鍵按一下design_dialog分支中的tab1節點，然後按一下「刪除」。 按一下「儲存全部」。
-1. 在`design_dialog/items/items`節點下，建立型別為`cq:Widget`且名為`img`的節點。 新增下列屬性，然後按一下「儲存全部」：
+1. 在`design_dialog/items/items`節點下，建立型別為`img`且名為`cq:Widget`的節點。 新增下列屬性，然後按一下「儲存全部」：
 
    | 名稱 | 類型 | 值 |
    |---|---|---|
@@ -1009,7 +1009,7 @@ public class img_GET extends AbstractImageServlet {
 
 #### 將標誌元件新增至Contentpage元件 {#adding-the-logo-component-to-the-contentpage-component}
 
-1. 在CRXDE Lite中，開啟`/apps/mywebsite/components/contentpage file`下的`left.jsp`，並找出下列程式碼行：
+1. 在CRXDE Lite中，開啟`left.jsp`下的`/apps/mywebsite/components/contentpage file`，並找出下列程式碼行：
 
    ```xml
    <div>logo</div>
@@ -1172,32 +1172,32 @@ public class img_GET extends AbstractImageServlet {
 
 1. 儲存變更。
 
-#### 建立影像cq：editConfig節點 {#creating-the-image-cq-editconfig-node}
+#### 正在建立影像cq:editConfig節點 {#creating-the-image-cq-editconfig-node}
 
 `cq:editConfig`節點型別可讓您在編輯元件的屬性時，設定元件的特定行為。
 
-在此區段中，您可以使用cq：editConfig節點來將資產從「內容尋找器」拖曳至影像元件中。
+在此區段中，您使用cq:editConfig節點來讓您將資產從「內容尋找器」拖曳到影像元件中。
 
 1. 在CRXDE Lite中的/apps/mywebsite/components/image節點下方，建立節點，如下所示：
 
-   * 名稱：cq：editConfig。
-   * 型別：cq：EditConfig。
+   * 名稱： cq:editConfig。
+   * 型別： cq:EditConfig。
 
-1. 在節點cq：editConfig下，建立節點，如下所示：
+1. 在節點cq:editConfig下，建立節點，如下所示：
 
-   * 名稱：cq：dropTargets。
-   * 型別：cq：DropTargetConfig。
+   * 名稱： cq:dropTargets。
+   * 型別： cq:DropTargetConfig。
 
-1. 在節點cq：dropTargets底下，建立節點，如下所示：
+1. 在節點cq:dropTargets下，建立節點，如下所示：
 
    * 名稱：影像。
-   * 型別： nt：unstructured。
+   * 型別： nt:unstructured。
 
 1. 在CRXDE中，設定屬性如下：
 
 | 名稱 | 類型 | 值 |
 |---|---|---|
-| 接受 | 字串 | image/(gif | jpeg | png) |
+| accept | 字串 | image/(gif\|jpeg\|png) |
 | 個群組 | 字串 | 媒體 |
 | propertyName | 字串 | ./imageReference |
 
@@ -1253,7 +1253,7 @@ public class img_GET extends AbstractImageServlet {
 1. 在工具列下，建立下列頁面：
 
    * 連絡人
-   * 意見回饋
+   * 回饋
    * 登入
    * 搜尋
 
@@ -1457,7 +1457,7 @@ public class img_GET extends AbstractImageServlet {
 
 若要在內容頁面的左側區段中加入搜尋輸入方塊，請依照下列步驟進行：
 
-1. 在CRXDE Lite中，開啟`/apps/mywebsite/components/contentpage`下的檔案`left.jsp`，並找出下列程式碼（第2行）：
+1. 在CRXDE Lite中，開啟`left.jsp`下的檔案`/apps/mywebsite/components/contentpage`，並找出下列程式碼（第2行）：
 
    ```xml
    %><div class="left">
@@ -1530,6 +1530,6 @@ public class img_GET extends AbstractImageServlet {
    ```
 
 1. 儲存變更。
-1. 在您的瀏覽器中，重新載入 **&#x200B; Products**&#x200B;頁面。 整個頁面如下：
+1. 在您的瀏覽器中，重新載入** Products**頁面。 整個頁面如下：
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)

@@ -3,9 +3,9 @@ title: Adobe Experience Manager (AEM)與網頁協助工具准則
 description: Adobe Experience Manager (AEM)與網路無障礙指引簡介
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
-role: Developer,Leader,Architect,Data Architect,User
+role: Developer,Leader,User
 exl-id: 3df5379b-a66f-4d74-bbb1-75440324ef98
-source-git-commit: 311bbd8aa4622c95980ff0889ba22a64dd6586a1
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 65%
@@ -38,7 +38,7 @@ Adobe Experience Manager符合[全球資訊網協會](#wcag-accessibility-guidel
 
 ## 網頁內容可及性指引 (WCAG) 2.1  {#wcag-accessibility-guidelines}
 
-為協助網頁設計人員和開發人員製作無障礙的網站，[資訊網可及性推動組織 (WAI)](https://www.w3.org/WAI/) 於 2018 年 6 月發佈[網頁內容可及性指引 (WCAG) 2.1 &#x200B;](https://www.w3.org/TR/WCAG/)。
+為協助網頁設計人員和開發人員製作無障礙的網站，[資訊網可及性推動組織 (WAI)](https://www.w3.org/WAI/) 於 2018 年 6 月發佈[網頁內容可及性指引 (WCAG) 2.1 ](https://www.w3.org/TR/WCAG/)。
 
 WCAG 2.1 提供的[指引 (及相關成功標準) 說明了無障礙環境等級以及指引的遵循方式](https://www.w3.org/TR/WCAG/#conformance)。
 

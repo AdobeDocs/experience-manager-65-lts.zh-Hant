@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 4c6d1d6a-c000-48cf-9d86-306245a3c10c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 6%
@@ -80,7 +80,7 @@ AEM的製作環境提供多種搜尋內容的機制，視資源型別而定。
    >
    >
    >    * 視您選取的資源型別而定；例如，Assets和Communities條件可理解為專門化。
-   >    * 您可以自訂[搜尋Forms](/help/sites-administering/search-forms.md)的執行個體(適用於AEM內的位置)。
+   >    * 您可以自訂[搜尋Forms](/help/sites-administering/search-forms.md)的執行個體（適用於AEM內的位置）。
    >
    >
 
@@ -90,7 +90,7 @@ AEM的製作環境提供多種搜尋內容的機制，視資源型別而定。
 
    ![screen-shot_2019-03-05at102613](assets/screen-shot_2019-03-05at102613.png)
 
-1. 使用 **X** (右上方 **&#x200B;**&#x200B;)關閉搜尋。
+1. 使用 **X** (右上方 **** )關閉搜尋。
 
 >[!NOTE]
 >

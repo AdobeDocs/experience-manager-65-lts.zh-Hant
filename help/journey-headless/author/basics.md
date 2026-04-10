@@ -3,9 +3,9 @@ title: 了解製作基本知識
 description: 了解使用內容片段為 Headless CMS 製作內容的概念和機制。
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin,Developer,User,Leader
 exl-id: 20ff7c83-0882-454e-a8f5-9eda1724cfe3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 75%
@@ -194,7 +194,7 @@ AEM 安裝通常至少包含兩個環境：
 * **內容片段模型**
 
   您將在編輯器頂端看到內容片段模型的名稱 - 就在片段名稱下方。這也是一個將您帶到模型編輯器的連結。
-內容片段模型實際上對您的內容片段至關重要，因為它們定義了您使用的結構。然而，建立和編輯模型 (通常) 是另一個角色的責任，即內容架構師。
+內容片段模型實際上對您的內容片段至關重要，因為它們定義了您使用的結構。然而，建立和編輯模型 (通常) 是另一個人物誌的責任，即內容架構師。
 
   >[!NOTE]
   >
@@ -220,7 +220,7 @@ AEM 安裝通常至少包含兩個環境：
 
 完成片段後，您可以&#x200B;**發佈**&#x200B;以供 Headless 應用程式使用。
 
-發佈動作可在編輯器中使用(或從&#x200B;**Assets**&#x200B;主控台的工具列中使用)：
+發佈動作可在編輯器中使用（或從&#x200B;**Assets**&#x200B;主控台的工具列中使用）：
 
 ![內容片段編輯器 - 我的片段](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 

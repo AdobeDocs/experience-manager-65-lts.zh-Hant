@@ -7,9 +7,9 @@ topic-tags: page-authoring
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 33b531c0-8fda-4649-bad1-d28c58a160e0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 2%
@@ -26,7 +26,7 @@ AEM提供各種鍵盤快速鍵。 有些適用於編輯頁面，有些則適用�
 
 ## 編輯鍵盤快速鍵 {#editing-keyboard-shortcuts}
 
-| 位置 | 捷徑 | 描述 |
+| 位置 | 捷徑 | 說明 |
 |---|---|---|
 | 任何編輯視窗模式 | `Ctrl-Shift-m` | 在&#x200B;**預覽**&#x200B;和目前選取的[模式](/help/sites-authoring/author-environment-tools.md#page-modes)</a>之間切換（例如，**編輯**、**配置**&#x200B;等） |
 | **編輯**&#x200B;模式 | `Ctrl-z` | [復原上次變更](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |

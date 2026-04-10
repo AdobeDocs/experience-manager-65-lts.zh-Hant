@@ -3,12 +3,12 @@ title: 更新您的內容片段，以達到最佳化 GraphQL 篩選
 description: 瞭解如何更新您的內容片段，以用於Adobe Experience Manager中最佳化的GraphQL篩選，以進行Headless內容傳送。
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: 40211033-7084-4117-a3e2-73e504283266
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 49%
+source-wordcount: '250'
+ht-degree: 50%
 
 ---
 
@@ -28,14 +28,14 @@ ht-degree: 49%
 
 若要執行此程式，請使用下列步驟：
 
-1. [設定&#x200B;**內容片段移轉工作設定**&#x200B;的OSGi設定](/help/sites-deploying/configuring-osgi.md)：
+1. [設定](/help/sites-deploying/configuring-osgi.md)內容片段移轉工作設定&#x200B;**的OSGi設定**：
 
    ![OSGi內容片段移轉工作設定](assets/cfm-graphql-update-01.png "OSGi內容片段移轉工作設定")
 
 1. 在對話方塊中，設定這兩個引數如下：
 
-   * **ContentFragmentMigration：Enabled** ： `1`
-   * **ContentFragmentMigration：強制** ： `1`
+   * **ContentFragmentMigration:Enabled** ： `1`
+   * **ContentFragmentMigration:Enforce** ： `1`
 
 1. **儲存**&#x200B;規格 — 更新程式開始。
 
@@ -45,8 +45,8 @@ ht-degree: 49%
 
    在&#x200B;**內容片段移轉工作設定**&#x200B;的對話方塊中，設定這兩個引數如下：
 
-   * **ContentFragmentMigration：Enabled** ： `0`
-   * **ContentFragmentMigration：強制** ： `0`
+   * **ContentFragmentMigration:Enabled** ： `0`
+   * **ContentFragmentMigration:Enforce** ： `0`
 
 ## 限制 {#limitations}
 

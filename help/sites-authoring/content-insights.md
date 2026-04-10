@@ -1,36 +1,36 @@
 ---
-title: 內容分析
-description: 內容分析會使用網頁分析和SEO建議來提供頁面效能的相關資訊
+title: 內容洞察
+description: 內容Insight使用網頁分析和SEO建議提供頁面效能的相關資訊
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 10bf533d-c0a8-43ac-8dd5-d4fa501b8726
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '537'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-# 內容分析{#content-insight}
+# 內容洞察{#content-insight}
 
-「內容分析」會使用網頁分析和SEO建議來提供頁面效能的相關資訊。 使用內容深入分析來決定如何修改頁面，或瞭解先前的變更如何變更效能。 對於您編寫的每個頁面，都可以開啟「內容分析」來分析頁面。
+內容Insight提供使用網頁分析和SEO建議的頁面效能相關資訊。 使用內容Insight來決定如何修改頁面，或瞭解先前的變更如何變更效能。 對於您編寫的每個頁面，都可以開啟「內容Insight」以分析頁面。
 
 ![chlimage_1-311](assets/chlimage_1-311.png)
 
-「內容分析」頁面的版面配置會隨著您使用之裝置的熒幕維度和方向而改變。
+「內容Insight」頁面的版面配置會隨著您使用裝置的熒幕大小和方向而改變。
 
 ## 報表資料
 
-「內容分析」頁面包含使用Adobe SiteCatalyst、Adobe Target、Adobe Social和BrightEdge資料的報表：
+「內容Insight」頁面包含使用Adobe SiteCatalyst、Adobe Target、Adobe Social和BrightEdge資料的報表：
 
 * SiteCatalyst：下列量度的報表可供使用：
 
-   * 頁面檢視
+   * 頁面檢視量
    * 頁面平均逗留時間
    * 來源
 
@@ -45,7 +45,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->內容深入分析控制面板的時間表在`GMT`內。
+>內容Insight儀表板的時間表在`GMT`內。
 
 您也可以指定報告資料的詳細程度，例如，您可以檢視每日、每週、每月或每年資料。
 

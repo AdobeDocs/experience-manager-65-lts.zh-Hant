@@ -3,9 +3,9 @@ title: 檢查清單
 description: 專案檢查清單旨在作為專案傳送的一組最佳實務。 它們會引導您完成專案生命週期的所有階段，並提供您目前狀態的高層級監控。
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
+role: Admin,Developer,Leader
 exl-id: 4a7d8228-101a-47bd-9bcf-d521a69d87a0
-source-git-commit: 343fe14be5c85eecdd34f7428460ee016e97734b
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%

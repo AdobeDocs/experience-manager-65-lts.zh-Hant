@@ -7,9 +7,9 @@ topic-tags: page-authoring
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 1e735d57-834a-4251-9b92-ccc6d4712f2a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 * **原因**：
 
-   * 這可能有多種原因，通常是快取(本機瀏覽器或Dispatcher)，但有時復寫佇列可能會發生問題。
+   * 這可能有多種原因，通常是快取（本機瀏覽器或Dispatcher），但有時復寫佇列可能會發生問題。
 
 * **解決方案**：
 

@@ -2,13 +2,13 @@
 title: 監視 [!DNL Assets] 部署的最佳實務
 description: 部署 [!DNL Adobe Experience Manager] 部署後，監視其環境和效能的最佳實務。
 contentOwner: AG
-role: Admin, Architect
+role: Admin,Developer
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: d2cb447c-69d6-4659-a29e-02af22b543fd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1638'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ Threads
 
 **監視器[!DNL Experience Manager]**
 
-[!DNL Experience Manager]也會透過JMX公開一組統計資料和作業。 這些功能有助於評估系統健康狀況，並在潛在問題影響使用者之前識別它們。 如需詳細資訊，請參閱[!DNL Experience Manager] JMX MBean上的[檔案](/help/sites-administering/jmx-console.md)。
+[!DNL Experience Manager]也會透過JMX公開一組統計資料和作業。 這些功能有助於評估系統健康狀況，並在潛在問題影響使用者之前識別它們。 如需詳細資訊，請參閱[ JMX MBean上的](/help/sites-administering/jmx-console.md)檔案[!DNL Experience Manager]。
 
 以下是您可以監視[!DNL Experience Manager]的一些基準線引數：
 
@@ -131,7 +131,7 @@ Threads
 工作階段計數器
 
 * MBean： `org.apache.jackrabbit.oak:id=7,name="OakRepository Statistics",type="RepositoryStats"`
-* URL： */system/console/jmx/org.apache.jackrabbit.oak：id=7，name=&quot;OakRepository Statistics&quot;，type*=&quot;RepositoryStats&quot;
+* URL： */system/console/jmx/org.apache.jackrabbit.oak:id=7，name=&quot;OakRepository Statistics&quot;，type*=&quot;RepositoryStats&quot;
 * 執行個體：所有伺服器
 * 警報臨界值：當開啟的工作階段超過基準線50%以上時。
 * 警報定義：工作階段可能會透過程式碼開啟，但絕不會關閉。 隨著時間推移，這種情況可能會慢慢發生，最終導致系統中的記憶體遺失。 雖然系統上的工作階段數應該會波動，但不應持續增加。
@@ -194,7 +194,7 @@ Threads
 在監視過程中，如果您遇到問題，您可以執行下面一些疑難排解工作，以解決[!DNL Experience Manager]部署的常見問題：
 
 * 如果使用TarMK，請經常執行Tar壓縮。 如需詳細資訊，請參閱[維護存放庫](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)。
-* 檢查`OutOfMemoryError`記錄。 如需詳細資訊，請參閱[分析記憶體問題](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=zh-Hant)。
+* 檢查`OutOfMemoryError`記錄。 如需詳細資訊，請參閱[分析記憶體問題](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)。
 
 * 檢查記錄檔中是否有未編制索引的查詢、樹狀結構周遊或索引周遊的參考。 這些表示未編制索引的查詢或索引不足的查詢。 如需最佳化查詢和索引效能的最佳實務，請參閱[查詢和索引的最佳實務](/help/sites-deploying/best-practices-for-queries-and-indexing.md)。
 * 使用工作流程主控台，驗證您的工作流程是否如預期般執行。 如有可能，請將多個工作流程壓縮為單一工作流程。

@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
-source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '10487'
+source-wordcount: '10480'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,6 @@ ht-degree: 2%
    * 預覽和發佈視訊資產
 
       * 檢視視訊的來源視訊和編碼轉譯及其相關縮圖：
-
         [預覽視訊](managing-video-assets.md#upload-and-preview-video-assets)或[預覽資產](previewing-assets.md)
         [檢視視訊轉譯](video-renditions.md)
         [管理視訊轉譯](manage-assets.md#managing-renditions)
@@ -76,11 +75,9 @@ ht-degree: 2%
    * 使用視訊中繼資料
 
       * 檢視已編碼視訊轉譯的屬性，例如影格速率、音訊和視訊位元速率以及轉碼器：
-
         [檢視視訊轉譯屬性](video-renditions.md)
 
       * 編輯視訊的屬性，例如標題、說明和標籤、自訂中繼資料欄位：
-
         [編輯視訊內容](manage-assets.md#editing-properties)
 
       * [管理數位資產的中繼資料](metadata.md)
@@ -105,11 +102,9 @@ ht-degree: 2%
    * 如果您使用協力廠商網站內容管理系統，您可以將影片連結或內嵌至網頁。
 
       * 使用URL整合視訊：
-
         [將URL連結至您的網頁應用程式](linking-urls-to-yourwebapplication.md)。
 
       * 使用網頁上的內嵌程式碼整合影片：
-
         [將視訊檢視器內嵌在網頁上](embed-code.md)。
 
    * [產生視訊報告](#viewing-video-reports)。
@@ -118,7 +113,7 @@ ht-degree: 2%
 
 ## 在Dynamic Media中處理視訊 {#working-with-video-in-dynamic-media}
 
-Dynamic Media中的視訊是端對端解決方案，可讓您輕鬆發佈高品質的最適化視訊，以跨多個熒幕(包括桌上型電腦、iOS、Android™、BlackBerry®和Windows行動裝置)串流。 「最適化視訊集」會將使用不同位元速率和格式（例如400 kbps、800 kbps和1000 kbps）編碼的相同視訊版本分組。 桌上型電腦或行動裝置會偵測可用的頻寬。
+Dynamic Media中的視訊是端對端解決方案，可讓您輕鬆發佈高品質的最適化視訊，以跨多個熒幕（包括桌上型電腦、iOS、Android™、BlackBerry®和Windows行動裝置）串流。 「最適化視訊集」會將使用不同位元速率和格式（例如400 kbps、800 kbps和1000 kbps）編碼的相同視訊版本分組。 桌上型電腦或行動裝置會偵測可用的頻寬。
 
 例如，在iOS行動裝置上，它會偵測頻寬，例如3G、4G或Wi-Fi。 之後，它會從「自我調整視訊集」中的各種視訊位元速率中，自動選取正確的編碼視訊。 影片會串流至桌上型電腦、行動裝置或平板電腦。
 
@@ -145,7 +140,7 @@ Dynamic Media中的視訊是端對端解決方案，可讓您輕鬆發佈高品�
 * 使用完整中繼資料支援來組織、瀏覽和搜尋視訊，以有效管理視訊資產。
 * 將最適化視訊集傳送到網頁以及桌上型電腦和行動裝置，包括iPhone、iPad、Android™、BlackBerry®和Windows Phone。
 
-各種iOS平台均支援最適化視訊串流。 請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video)。
+各種iOS平台均支援最適化視訊串流。 請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video)。
 
 Dynamic Media支援MP4 H.264視訊的行動視訊播放。<!-- LINK IS 404 WITH NO SUITABLE REPLACEMENT You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482). -->
 
@@ -161,7 +156,7 @@ Dynamic Media支援MP4 H.264視訊的行動視訊播放。<!-- LINK IS 404 WITH 
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-另請參閱[僅適用於Experience Manager Assets和Dynamic Media Classic的檢視器](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc)以及[僅適用於Experience Manager資產的檢視器](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)。
+另請參閱[僅適用於Experience Manager Assets和Dynamic Media Classic的檢視器](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc)以及[僅適用於Experience Manager資產的檢視器](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)。
 
 ## 最佳實務：使用HTML5視訊檢視器 {#best-practice-using-the-html-video-viewer}
 
@@ -179,7 +174,7 @@ Dynamic Media HTML5視訊檢視器預設集是強大的視訊播放器。 您可
 
 您可以將豐富媒體內容的觸及面擴展到桌上型電腦和行動使用者，並確保簡化的視訊體驗。
 
-另請參閱[關於HTML5檢視器](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)。
+另請參閱[關於HTML5檢視器](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)。
 
 ### 使用HTML5視訊檢視器在桌上型電腦和行動裝置上播放視訊 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -187,7 +182,7 @@ Dynamic Media HTML5視訊檢視器預設集是強大的視訊播放器。 您可
 
 使用DASH或HLS或漸進式視訊下載程式進行視訊播放。 在舊版Experience Manager （例如6.0、6.1和6.2）中，影片會透過HTTP進行串流處理。
 
-在Experience Manager 6.3及更新版本中，視訊現在會透過HTTPS (亦即DASH或HLS)進行串流，因為DM閘道服務URL也一律使用HTTPS。 此預設行為不會影響客戶。 除了瀏覽器不支援外，視訊串流一律透過HTTPS進行。 （請參閱下表）。 因此，
+在Experience Manager 6.3及更新版本中，視訊現在會透過HTTPS （亦即DASH或HLS）進行串流，因為DM閘道服務URL也一律使用HTTPS。 此預設行為不會影響客戶。 除了瀏覽器不支援外，視訊串流一律透過HTTPS進行。 （請參閱下表）。 因此，
 
 * 如果您的HTTPS網站採用HTTPS視訊串流，則串流沒有問題。
 * 如果您的HTTP網站具有HTTPS視訊串流，串流就不會有問題，而且網頁瀏覽器也不會出現混合內容問題。
@@ -236,32 +231,32 @@ DASH是國際標準，HLS是Apple標準。 兩者都用於自我調整視訊串�
    <td>HLS最適化位元速率串流。</td>
   </tr>
   <tr>
-   <td>行動</td>
-   <td>Chrome (Android™ 6或更舊版本)</td>
+   <td>行動裝置</td>
+   <td>Chrome （Android™ 6或更舊版本）</td>
    <td>漸進式下載。</td>
   </tr>
   <tr>
-   <td>行動</td>
-   <td>Chrome (Android™ 7或更新版本)</td>
+   <td>行動裝置</td>
+   <td>Chrome （Android™ 7或更新版本）</td>
    <td>DASH*或HLS最適化位元速率串流。</td>
   </tr>
   <tr>
-   <td>行動</td>
-   <td>Android™ （預設瀏覽器）</td>
+   <td>行動裝置</td>
+   <td>™ （預設瀏覽器）</td>
    <td>漸進式下載。</td>
   </tr>
   <tr>
-   <td>行動</td>
+   <td>行動裝置</td>
    <td>Safari (iOS)</td>
    <td>HLS最適化位元速率串流。</td>
   </tr>
   <tr>
-   <td>行動</td>
+   <td>行動裝置</td>
    <td>Chrome (iOS)</td>
    <td>HLS最適化位元速率串流。</td>
   </tr>
   <tr>
-   <td>行動</td>
+   <td>行動裝置</td>
    <td>BlackBerry®</td>
    <td>DASH*或HLS最適化位元速率串流。/td&gt;
   </tr>
@@ -362,7 +357,7 @@ VBR需要更長的時間來編碼，但會產生最有利的結果；媒體檔�
 
 ### 解決方法 {#resolution}
 
-**解析度**&#x200B;描述視訊檔案的高度和寬度（畫素）。 大部分的來源視訊都是以高解析度儲存(例如1920 × 1080)。 為了串流目的，來源視訊會壓縮成較小的解析度(640 × 480或更小)。
+**解析度**&#x200B;描述視訊檔案的高度和寬度（畫素）。 大部分的來源視訊都是以高解析度儲存（例如1920 × 1080）。 為了串流目的，來源視訊會壓縮成較小的解析度（640 × 480或更小）。
 
 解析度和資料速率是決定視訊品質的兩個整合因素。 若要維持相同的視訊品質，視訊檔案中的畫素數越高（解析度越高），資料速率就必須越高。 例如，請考慮320 × 240解析度和640 × 480解析度視訊檔案中每幀的畫素數：
 
@@ -455,11 +450,11 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 1. 在Experience Manager的左上角，選取Experience Manager標誌，然後在左側導軌中，按一下&#x200B;**[!UICONTROL 工具]** （槌子圖示） > **[!UICONTROL Assets]** > **[!UICONTROL 視訊報表]**。
 1. 在「視訊報表」頁面上，執行下列任一項作業：
 
-   * 在右上角附近，選取&#x200B;**重新整理視訊報告**&#x200B;圖示。
+   * 在右上角附近，選取&#x200B;**重新整理視訊報告**圖示。
 只有在報表的結束日期為當天時，才使用重新整理。 這麼做可確保您看到自上次執行報表以來發生的視訊追蹤。
 
-   * 在右上角附近，選取&#x200B;**日期選擇器**&#x200B;圖示。
-指定您要視訊資料的開始和結束日期範圍，然後選取&#x200B;**[!UICONTROL 執行報表]**。
+   * 在右上角附近，選取&#x200B;**日期選擇器**圖示。
+指定您要視訊資料的開始和結束日期範圍，然後選取**[!UICONTROL 執行報表]**。
 
    「排名在前的量度」群組方塊可識別您網站上所有&#x200B;*已發佈*&#x200B;視訊的各種彙總測量。
 
@@ -469,7 +464,7 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 
 如果您使用Dynamic Media提供的現成視訊檢視器，或您根據現成視訊檢視器建立自訂檢視器預設集，則檢視視視訊報表不需要執行其他步驟。 不過，如果您已根據HTML5 Viewer SDK API建立自己的視訊檢視器，請使用下列步驟來確保視訊檢視器傳送追蹤事件至Dynamic Media視訊報表。
 
-使用[Adobe Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources)和[HTML5檢視器SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)建立您自己的視訊檢視器。
+使用[Adobe Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources)和[HTML5檢視器SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)建立您自己的視訊檢視器。
 
 **若要根據您使用Dynamic Media HTML5檢視器SDK所建立的視訊檢視器檢視視視訊報表：**
 
@@ -547,7 +542,7 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 |  | 註解追蹤 |
 |  | 描述性音訊 |
 
-Dynamic Media [&#128279;](/help/assets/assets-formats.md)和所有Dynamic Media視訊檢視器支援的所有視訊格式（Dynamic Media *Video_360*&#x200B;檢視器除外）都支援搭配多個註解和音軌使用。
+Dynamic Media [和所有Dynamic Media視訊檢視器支援的所有](/help/assets/assets-formats.md)視訊格式（Dynamic Media *Video_360*&#x200B;檢視器除外）都支援搭配多個註解和音軌使用。
 
 透過必須由Adobe客戶支援啟用（開啟）的功能切換，您的Dynamic Media帳戶可使用多字幕和音訊追蹤功能。
 
@@ -562,7 +557,7 @@ WebVTT和Adobe `.vtt`格式支援新增的標題和註解。 此外，新增的�
 
 >[!IMPORTANT]
 >
->在&#x200B;*之前，您已在您的Dynamic Media帳戶[上啟用多重標題與音訊追蹤支援的任何視訊，都必須重新處理](/help/assets/processing-profiles.md#reprocessing-assets)。*&#x200B;此視訊重新處理步驟是必要的，這樣使用者才能使用多個註解和音訊追蹤功能。 重新處理之後，視訊URL仍可繼續如常運作和播放。
+>在&#x200B;*之前，您已在您的Dynamic Media帳戶*&#x200B;上啟用多重標題與音訊追蹤支援的任何視訊，都必須重新處理[。 ](/help/assets/processing-profiles.md#reprocessing-assets)此視訊重新處理步驟是必要的，這樣使用者才能使用多個註解和音訊追蹤功能。 重新處理之後，視訊URL仍可繼續如常運作和播放。
 
 **若要在視訊中加入多個註解和音軌：**
 
@@ -588,7 +583,7 @@ WebVTT和Adobe `.vtt`格式支援新增的標題和註解。 此外，新增的�
    * 導覽至一或多個`.vtt` （影片文字軌）檔案，並加以開啟。
    * 若要在媒體播放器上顯示註解，您&#x200B;*必須*&#x200B;新增您上傳的每個&#x200B;*註解檔案的必要詳細資料（中繼資料）。*&#x200B;選取註解檔案名稱右側的鉛筆圖示。 在&#x200B;**編輯標題**&#x200B;對話方塊中，輸入下列檔案的必要詳細資訊，然後選取&#x200B;**[!UICONTROL 儲存]**。 對您上傳的每個註解檔案重複此程式：
 
-     | 標題中繼資料 | 描述 |
+     | 標題中繼資料 | 說明 |
      |--- |--- |
      | 檔案名稱 | 預設檔案名稱衍生自原始檔案名稱。 檔案名稱只能在上傳時變更，以後無法變更。 檔案名稱字元需求與AEM Assets相同。<br>其他註解檔和音訊曲目檔不能使用相同的檔名。 |
      | 語言 | 選取註解的語言。 |
@@ -602,11 +597,11 @@ WebVTT和Adobe `.vtt`格式支援新增的標題和註解。 此外，新增的�
    * 導覽至一或多個.mp3檔案並加以選取，然後開啟。
    * 若要讓音訊曲目出現在媒體播放器的&#x200B;**[!UICONTROL 選取音訊或標題]**&#x200B;快顯清單中，您&#x200B;*必須*&#x200B;提供必要的詳細資料。 您新增的&#x200B;*每個*&#x200B;音訊曲目檔案都需要這些詳細資料。 選取音軌檔案名稱右側的鉛筆圖示。 在&#x200B;**編輯音軌**&#x200B;對話方塊中，輸入下列必要的詳細資料，然後選取&#x200B;**[!UICONTROL 儲存]**。 為您上傳的每個音訊曲目檔案重複此程式。
 
-     | 音訊曲目中繼資料 | 描述 |
+     | 音訊曲目中繼資料 | 說明 |
      |--- |--- |
      | 檔案名稱 | 預設檔案名稱衍生自原始檔案名稱。 檔案名稱只能在上傳時變更，以後無法變更。 檔案名稱字元需求與AEM Assets相同。<br>其他音訊曲目檔或標題檔不能使用相同的檔名。 |
      | 語言 | 選取音訊曲目的語言。 |
-     | 類型 | 選取您正在使用的音軌型別。<br>**原始** — 音訊曲目最初附加至視訊，並在預設選取語言為`English`的標籤中以`[Original]`表示。 雖然&#x200B;**[!UICONTROL 標籤]**&#x200B;和&#x200B;**[!UICONTROL 語言]**&#x200B;可以在&#x200B;**[!UICONTROL 編輯音軌]**&#x200B;對話方塊中變更，但如果重新處理主要視訊，預設值會為原始值。<br>**標準** — 原始語言以外的附加音軌。<br>**音訊描述** — 音訊曲目也包含視訊中非語言動作和手勢的描述性旁白，讓視障者更容易存取內容。 |
+     | 類型 | 選取您正在使用的音軌型別。<br>**原始** — 音訊曲目最初附加至視訊，並在預設選取語言為`[Original]`的標籤中以`English`表示。 雖然&#x200B;**[!UICONTROL 標籤]**&#x200B;和&#x200B;**[!UICONTROL 語言]**&#x200B;可以在&#x200B;**[!UICONTROL 編輯音軌]**&#x200B;對話方塊中變更，但如果重新處理主要視訊，預設值會為原始值。<br>**標準** — 原始語言以外的附加音軌。<br>**音訊描述** — 音訊曲目也包含視訊中非語言動作和手勢的描述性旁白，讓視障者更容易存取內容。 |
      | 標籤 | 在媒體播放器的&#x200B;**[!UICONTROL 選取音訊或子標題]**&#x200B;快顯清單中顯示為音軌名稱的文字。 客戶看到的標籤與音訊軌相對應。 例如 `English [Original]`。附加至視訊的音訊標籤預設為`[Original]`。 |
 
      如有需要，您可以稍後變更或編輯此音訊曲目中繼資料。 發佈影片時，這些詳細資料會反映在已發佈影片中的公開URL上。
@@ -661,7 +656,7 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一註解。 請參閱
 1. 在工具列上，選取「屬性」圖示（內有「i」的圓形）。
 1. 在[內容]頁面上，選取&#x200B;**[!UICONTROL 註解與音軌]**&#x200B;標籤。 在「狀態」欄中，記下每個註解或音訊檔案的狀態。
 
-| 註解或音訊曲目狀態 | 描述 |
+| 註解或音訊曲目狀態 | 說明 |
 | --- | --- |
 | 處理中 | 新增並儲存新的註解或音訊曲目檔案時，檔案會進入「正在處理」狀態。 Dynamic Media會將串流資訊清單附加至主要視訊，以處理檔案。 |
 | 已處理 | 處理完成後，註解或音訊曲目檔案，或與主要視訊相關的原始音訊曲目會以「已處理」狀態出現。 您可以預覽標題和音訊曲目檔案，這些檔案在您發佈視訊上線&#x200B;*之前*&#x200B;顯示為「已處理」。 |
@@ -692,7 +687,7 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一註解。 請參閱
 1. 在[內容]頁面上，選取&#x200B;**[!UICONTROL 註解與音軌]**&#x200B;標籤。
 1. 在&#x200B;**音軌**&#x200B;標題下，選取您要設定為視訊預設的音軌檔案。
 1. 選取&#x200B;**[!UICONTROL 設定為預設值]**。
-在&#x200B;**設定為預設值**&#x200B;對話方塊中，選取&#x200B;**[!UICONTROL 取代]**。
+在**設定為預設值**&#x200B;對話方塊中，選取&#x200B;**[!UICONTROL 取代]**。
 
    ![音訊曲目標題具有選取的音訊曲目檔案名稱，並反白顯示[設定為預設]按鈕。](assets-dm/msma-defaultaudiotrack2.png)*正在設定視訊的預設音軌。*
 
@@ -729,8 +724,8 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一註解。 請參閱
 
    ![視訊檢視器中的音訊和註解快顯清單。](assets-dm/msma-selectaudiosubtitle.png)*模擬使用者選取視訊播放的音訊和標題。*
 
-1. 若要開始播放，請選取視訊的&#x200B;**[!UICONTROL 播放]**&#x200B;按鈕。
-記下左下角的&#x200B;**[!UICONTROL URL]**&#x200B;和&#x200B;**[!UICONTROL Embed]**&#x200B;按鈕。 使用這些按鈕分別將視訊的URL[連結至您的網頁應用程式](/help/assets/linking-urls-to-yourwebapplication.md)或[將視訊內嵌至網頁](/help/assets/embed-code.md)。
+1. 若要開始播放，請選取視訊的&#x200B;**[!UICONTROL 播放]**按鈕。
+記下左下角的**[!UICONTROL URL]**&#x200B;和&#x200B;**[!UICONTROL Embed]**&#x200B;按鈕。 使用這些按鈕分別將視訊的URL[連結至您的網頁應用程式](/help/assets/linking-urls-to-yourwebapplication.md)或[將視訊內嵌至網頁](/help/assets/embed-code.md)。
 1. 在預覽頁面的右上角附近，選取&#x200B;**[!UICONTROL 關閉]**。
 
 ### 從視訊中刪除註解或音訊曲目檔案
@@ -745,12 +740,12 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一註解。 請參閱
 1. 在資產選取模式中，從「清單檢視」或「卡片檢視」中選取視訊資產。
 1. 在工具列上，選取「屬性」圖示（內有「i」的圓形）。
 1. 在[內容]頁面上，選取&#x200B;**[!UICONTROL 註解與音軌]**&#x200B;標籤。
-1. 執行下列任一項：
+1. 執行下列其中一項：
 
    * 註解 — 在&#x200B;**註解**&#x200B;標題下，選取一或多個要從視訊中刪除的註解檔案，然後選取&#x200B;**[!UICONTROL 刪除]**。
    * 音訊曲目 — 在&#x200B;**音訊曲目**&#x200B;標題下，選取您要從視訊中刪除的一或多個音訊曲目檔案，然後選取&#x200B;**[!UICONTROL 刪除]**。
 
-1. 在[刪除]對話方塊中，選取[確定]。**&#x200B;**
+1. 在[刪除]對話方塊中，選取[確定]。****
 1. 發佈視訊。
 
 ### 下載已上傳至視訊的註解或音訊曲目檔案
@@ -765,14 +760,14 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一註解。 請參閱
 1. 在資產選取模式中，從「清單檢視」或「卡片檢視」中選取視訊資產。
 1. 在工具列上，選取「屬性」圖示（內有「i」的圓形）。
 1. 在[內容]頁面上，選取&#x200B;**[!UICONTROL 註解與音軌]**&#x200B;標籤。
-1. 執行下列任一項：
+1. 執行下列其中一項：
 
    * 註解 — 在&#x200B;**註解**&#x200B;標題下，選取您要從視訊下載的一或多個註解檔案，然後選取&#x200B;**[!UICONTROL 下載]**。
    * 音訊曲目 — 在&#x200B;**音訊曲目**&#x200B;標題下，選取您要從視訊下載的一或多個音訊曲目檔案，然後選取&#x200B;**[!UICONTROL 下載]**。
 
 1. 在「下載」對話方塊中，設定下列選項：
 
-   | 選項 | 描述 |
+   | 選項 | 說明 |
    |--- |--- |
    | 另存新檔 | 使用「另存新檔」文字欄位中指定的預設檔案名稱，或指定您自己的名稱。 |
    | 為每個資產建立個別的資料夾 | 為您選取要下載的每個註解檔或音訊追蹤檔建立一個資料夾。 |
@@ -799,9 +794,9 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一註解。 請參閱
 
 另請參閱Dynamic Media中的[協助工具](/help/assets/accessibility-dm.md)。
 
-Dynamic Media會將註解檔案轉換為JSON (JavaScript物件標籤法)格式。 此轉換表示您可以將JSON文字內嵌至網頁，做為影片隱藏但完整的文字記錄。 搜尋引擎接著可以編目和索引內容，讓影片更容易找到，並為客戶提供更多有關影片內容的詳細資料。
+Dynamic Media會將註解檔案轉換為JSON （JavaScript物件標籤法）格式。 此轉換表示您可以將JSON文字內嵌至網頁，做為影片隱藏但完整的文字記錄。 搜尋引擎接著可以抓取和索引內容，讓影片更容易找到，並為客戶提供更多有關影片內容的詳細資料。
 
-如需在URL中使用JSON函式的詳細資訊，請參閱[提供靜態（非影像）內容](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api)。
+如需在URL中使用JSON函式的詳細資訊，請參閱[提供靜態（非影像）內容](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api)。
 
 **若要新增隱藏式字幕至視訊：**
 
@@ -1046,7 +1041,7 @@ Dynamic Media會根據視訊的總時間擷取10個（預設）縮圖影像。 �
    * 如果要重新排序間隔值，請選取向上箭頭圖示和向下箭頭圖示。
 
 1. 選取「**[!UICONTROL 確定]**」並返回「屬性」標籤。
-1. 在CRXDE Lite頁面的左上角附近，選取「儲存全部」**&#x200B;**，然後選取左上角的「首頁」圖示以返回Experience Manager。
+1. 在CRXDE Lite頁面的左上角附近，選取「儲存全部」****，然後選取左上角的「首頁」圖示以返回Experience Manager。
 
    請參閱[新增視訊縮圖](#adding-a-video-thumbnail)。
 
@@ -1060,9 +1055,9 @@ Dynamic Media會根據視訊的總時間擷取10個（預設）縮圖影像。 �
 1. 在資產選取模式中，從「清單檢視」或「卡片檢視」中選取視訊資產。
 1. 在工具列上，選取&#x200B;**[!UICONTROL 檢視屬性]**&#x200B;圖示（內有「i」的圓形）。
 1. 在視訊的「屬性」頁面上，選取&#x200B;**[!UICONTROL 變更縮圖]**。
-1. 在[變更縮圖]頁面的工具列上，選取[上傳]新縮圖&#x200B;**。**
+1. 在[變更縮圖]頁面的工具列上，選取[上傳]新縮圖&#x200B;**[!UICONTROL 。]**
 1. 導覽至您要使用的縮圖影像，選取該影像，然後選取「**[!UICONTROL 開啟]**」以開始將該影像上傳至Experience Manager。 上傳後，請務必發佈影像。
-1. 成功上傳並發佈影像後，在[變更縮圖]頁面中，選取[儲存變更]。**&#x200B;**
+1. 成功上傳並發佈影像後，在[變更縮圖]頁面中，選取[儲存變更]。****
 
    自訂縮圖會新增至您的視訊。
 
@@ -1113,7 +1108,7 @@ String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean
    * 未使用Dynamic Media中的最適化視訊集擷取視訊。
 
 * 在連線至Dynamic Media時發生問題時，`IOException`會獲得記錄。
-* 當傳遞的`manifestType`引數為`ManifestType.DASH`且未使用DASH格式處理視訊時，會記錄`UnsupportedOperationException`。
+* 當傳遞的`UnsupportedOperationException`引數為`manifestType`且未使用DASH格式處理視訊時，會記錄`ManifestType.DASH`。
 
 以下範例為上述API使用以&#x200B;*HTTPWhiteBoard*&#x200B;規格撰寫的servlet。 選取每個索引標籤以取得程式碼語法。
 
@@ -1121,7 +1116,7 @@ String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean
 
 >[!TAB 在pom.xml中新增相依性]
 
-+++**在pom.xml中新增相依性**
++++**在pom.xml中新增相依性** 
 
 ```java
 dependency> 
@@ -1136,7 +1131,7 @@ dependency>
 
 >[!TAB 範例servlet]
 
-+++**範例servlet**
++++**範例servlet** 
 
 ```java
 @Component
@@ -1213,9 +1208,9 @@ public class ManifestServlet extends HttpServlet {
 
 +++
 
->[!TAB servlet的 回應類別]
+>servlet[!TAB 的]回應類別
 
-+++servlet **的**&#x200B;回應類別
++++servlet **的**&#x200B;回應類別 
 
 ```java
 public class ManifestUrl extends VideoResponse { 
@@ -1243,9 +1238,9 @@ public abstract class VideoResponse {
 
 +++
 
->[!TAB 在servlet中參考的 常數檔案]
+>在servlet[!TAB 中參考的]常數檔案
 
-+++在servlet **中參考的**&#x200B;常數檔案
++++在servlet **中參考的**&#x200B;常數檔案 
 
 ```java
 public final class Constants { 
@@ -1264,7 +1259,7 @@ public final class Constants {
 
 >[!TAB ServletContext]
 
-+++**ServletContext**
++++**ServletContext** 
 
 使用`servletContext`掛接上述servlet。 以下是`servletContext`的範例。
 
@@ -1376,9 +1371,9 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
 
 ### 使用範例servlet
 
-您在`/dmSample/dynamicmedia/video/manifestUrl`執行`GET`作業以叫用此servlet。 傳遞的查詢引數如下：
+您在`GET`執行`/dmSample/dynamicmedia/video/manifestUrl`作業以叫用此servlet。 傳遞的查詢引數如下：
 
-| 查詢引數 | 描述 |
+| 查詢引數 | 說明 |
 | --- | --- |
 | `assetPath` | 強制。 產生`manifestUrl`之視訊的路徑。 |
 | `manifestType` | 選擇性。引數可以是DASH或HLS。 如果未傳遞，則預設為DASH。 |
@@ -1393,7 +1388,7 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
 
 您可以透過下列方式叫用servlet：
 
-| 類型 | 描述 |
+| 類型 | 說明 |
 | :--- | --- |
 | HLS | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=HLS&assetPath=/content/dam/video-example/scenery.mp4`<br><br>若啟用DASH傳遞：<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8?packagedStreaming=true"}`<br><br>若停用DASH傳遞：<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8"}` |
 | 虛線 | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scenery.mp4`<br><br>若啟用DASH傳遞：<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.mpd"}`<br><br>若停用DASH傳遞：<br>`{}` |

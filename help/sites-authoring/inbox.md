@@ -3,9 +3,9 @@ title: 管理任務的收件匣
 description: 在Adobe Experience Manager 6.5 LTS中使用收件匣管理您的工作。
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 077407ef-1d7f-47ad-b924-0afa19f21119
-source-git-commit: 524f1bcea6761e299141bc1d1496e32c498ffd14
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1156'
 ht-degree: 8%
@@ -79,7 +79,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->收件箱作為控制台運行，因此，在您完成 [後，使用全局導航](/help/sites-authoring/basic-handling.md#global-navigation) [&#128279;](/help/sites-authoring/search.md) 或搜索導航到其他位置。
+>收件箱作為控制台運行，因此，在您完成 [後，使用全局導航](/help/sites-authoring/basic-handling.md#global-navigation)[](/help/sites-authoring/search.md) 或搜索導航到其他位置。
 
 ### 收件匣 — 清單檢視 {#inbox-list-view}
 
@@ -113,7 +113,7 @@ ht-degree: 8%
   您可以針對&#x200B;**行事曆檢視**&#x200B;設定：
 
    * **群組依據**
-   * **排程** 或無 **&#x200B;**
+   * **排程** 或無 ****
    * **卡片大小**
 
   ![wf-92](assets/wf-92.png)

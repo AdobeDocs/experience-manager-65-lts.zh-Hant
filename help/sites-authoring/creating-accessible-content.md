@@ -3,12 +3,12 @@ title: 為Adobe Experience Manager建立無障礙內容（符合WCAG 2.1）
 description: 使用AEM協助讓身心障礙人士存取及使用網路內容
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 0c3e3b6c-3c41-455e-823a-7cce50f174d4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '13636'
-ht-degree: 2%
+source-wordcount: '13630'
+ht-degree: 3%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 指引會根據三個一致性層級進行分級：A級（最低）、AA級和AAA級（最高）。 簡而言之，層級的定義如下：
 
-* **&#x200B;**&#x200B;A級：您的網站達到基本的最低協助功能等級。要達到此級別，將滿足所有A級成功標準。
+* **** A級：您的網站達到基本的最低協助功能等級。要達到此級別，將滿足所有A級成功標準。
 * **AA級：**&#x200B;這是您努力追求的最佳無障礙環境支援等級，其中您的網站可達到基本無障礙環境支援等級，因此大部分使用者都可使用大部分的技術。 要達到此級別，將滿足所有A級和A級成功標準。
 * **等級AAA：**&#x200B;您的網站達到高水準的協助工具。 要達到此級別，將滿足所有A級、AA級和AAA級成功標準。
 
@@ -43,8 +43,8 @@ ht-degree: 2%
 >
 >本檔案將使用下列專案：
 >
->* WCAG 2.1指引[&#128279;](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance)的簡短名稱。
->* WCAG 2.1指引[&#128279;](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1)中使用的編號，可協助與WCAG網站交叉參照。
+>* WCAG 2.1指引[的](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance)簡短名稱。
+>* WCAG 2.1指引[中使用的](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1)編號，可協助與WCAG網站交叉參照。
 
 ## 准則1：可感知 {#principle-perceivable}
 
@@ -57,7 +57,7 @@ ht-degree: 2%
 ### 非文字內容(1.1.1) {#non-text-content}
 
 * 成功標準1.1.1
-* A級
+* A 級
 * 非文字內容：除了下列情況外，所有呈現給使用者的非文字內容都有相同用途的替代文字。
 
 #### 用途 — 非文字內容(1.1.1) {#purpose-non-text-content}
@@ -68,13 +68,13 @@ ht-degree: 2%
 
 #### 如何達到標準 — 非文字內容(1.1.1) {#how-to-meet-non-text-content}
 
-對於靜態圖形，基本要求是為圖形提供對等文字替代文字。 您可以在&#x200B;**替代文字**&#x200B;欄位中完成此作業。 檢視核心元件&#x200B;**[影像](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=zh-Hant)**。
+對於靜態圖形，基本要求是為圖形提供對等文字替代文字。 您可以在&#x200B;**替代文字**&#x200B;欄位中完成此作業。 檢視核心元件&#x200B;**[影像](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)**。
 
 >[!NOTE]
 >
->某些現成可用的核心元件（例如&#x200B;**[轉盤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=zh-Hant)**）不提供用於新增替代文字說明至個別影像的&#x200B;**替代文字**&#x200B;欄位，儘管整個元件有&#x200B;**標籤**&#x200B;欄位（**[協助工具](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=zh-Hant#accessibility-tab)**&#x200B;標籤）。
+>某些現成可用的核心元件（例如&#x200B;**[轉盤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html)**）不提供用於新增替代文字說明至個別影像的&#x200B;**替代文字**&#x200B;欄位，儘管整個元件有&#x200B;**標籤**&#x200B;欄位（**[協助工具](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html#accessibility-tab)**&#x200B;標籤）。
 >
->當針對您的AEM執行個體實作這些版本時，您的開發團隊必須設定這些元件以支援`alt`屬性，讓作者可以將其新增至內容(請參閱[新增對其他HTML元素和屬性的支援](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes))。
+>當針對您的AEM執行個體實作這些版本時，您的開發團隊必須設定這些元件以支援`alt`屬性，讓作者可以將其新增至內容（請參閱[新增對其他HTML元素和屬性的支援](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)）。
 
 依預設，AEM要求填入&#x200B;**替代文字**&#x200B;欄位。 如果影像是純粹的裝飾且不需要替代文字，則可以核取&#x200B;**影像為裝飾性**&#x200B;選項。
 
@@ -130,7 +130,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 ### 純音訊和純視訊（預先錄製）(1.2.1) {#audio-only-and-video-only-prerecorded}
 
 * 成功標準1.2.1
-* A級
+* A 級
 * 純音訊和純視訊（預先錄製）：對於預先錄製的純音訊和預先錄製的純視訊媒體，除非音訊或視訊是文字的替代媒體，且標示清楚如下，否則情況如下：
    * 僅限預先錄製的音訊：時間型媒體的替代方案，為預先錄製的僅限音訊內容提供同等資訊。
    * 僅限預先錄製的視訊：這是以時間為基礎的媒體的替代選擇，或是提供的音訊曲目，可提供與預先錄製的僅限視訊內容相同的資訊。
@@ -143,7 +143,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 * 有聽力障礙或耳聾且聽不到音軌的人；
 * 聽得見音軌但不瞭解說話內容的人（例如，因為這是他們不懂的語言）。
 
-使用不支援以特定媒體格式(例如Adobe Flash)播放內容的瀏覽器或裝置，的人也可能無法播放視訊或音訊。
+使用不支援以特定媒體格式（例如Adobe Flash）播放內容的瀏覽器或裝置，的人也可能無法播放視訊或音訊。
 
 以不同的格式提供這項資訊，例如文字（或沒有音訊的視訊），可以讓無法存取原始內容的人存取這些資訊。
 
@@ -175,7 +175,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 ### 註解（預先錄製） (1.2.2) {#captions-prerecorded}
 
 * 成功標準1.2.2
-* A級
+* A 級
 * 註解（預先錄製）：除了媒體是文字的替代媒體，且明確標示為文字外，同步媒體中的所有預先錄製的音訊內容都會提供註解。
 
 #### 用途 — 字幕（預先錄製）(1.2.2) {#purpose-captions-prerecorded}
@@ -208,7 +208,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 ### 音訊描述或替代媒體（預先錄製） (1.2.3) {#audio-description-or-media-alternative-prerecorded}
 
 * 成功標準1.2.3
-* A級
+* A 級
 * 音訊說明或替代媒體（預先錄製）：除了媒體是文字的替代媒體，且明確標示為文字的替代媒體外，系統會為同步媒體提供時間型媒體或預先錄製的視訊內容的替代媒體。
 
 #### 用途 — 音訊說明或替代媒體（預先錄製） (1.2.3) {#purpose-audio-description-or-media-alternative-prerecorded}
@@ -235,13 +235,13 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 * [如何達到成功標準1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
 
 <!--
-* [Adobe Encore](https://www.adobe.com/tw/products/encore.html) - a DVD authoring software tool
+* [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
 -->
 
 ### 註解（即時） (1.2.4)  {#captions-live}
 
 * 成功標準1.2.4
-* AA級
+* AA 級
 * 註解（即時）：為同步媒體中的所有即時音訊內容提供註解。
 
 #### 用途 — 註解（即時） (1.2.4) {#purpose-captions-live}
@@ -266,7 +266,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 ### 音訊說明（預先錄製） (1.2.5)  {#audio-description-prerecorded}
 
 * 成功標準1.2.5
-* AA級
+* AA 級
 * 音訊說明（預先錄製）：提供同步媒體中所有預先錄製的視訊內容的音訊說明。
 
 #### 用途 — 音訊說明（預先錄製） (1.2.5) {#purpose-audio-description-prerecorded}
@@ -295,7 +295,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 ### 資訊和關係(1.3.1)  {#info-and-relationships}
 
 * 成功標準1.3.1
-* A級
+* A 級
 * 資訊和關係：透過表示法傳遞的資訊、結構和關係可以程式化方式決定，或是可在文字中使用。
 
 #### 用途 — 資訊和關係(1.3.1) {#purpose-info-and-relationships}
@@ -318,7 +318,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
   如果要將現有內容變更為特定清單型別，請反白適當的文字並選取適當的清單型別。 如前一個顯示段落文字輸入方式的範例一樣，適當的清單元素會自動新增至您的HTML。
 
-  在全螢幕模式中，會顯示個別 **的「項目符號清單** 」和「 **&#x200B;**&#x200B;編號清單」圖示。當未處於全螢幕模式時，單一「清單」圖示後面會提供這兩個 **選項** 。
+  在全螢幕模式中，會顯示個別 **的「項目符號清單** 」和「 **** 編號清單」圖示。當未處於全螢幕模式時，單一「清單」圖示後面會提供這兩個 **選項** 。
 
 * **資料表**：資料表必須使用HTML資料表元素識別：
    * 一個`<table>`元素
@@ -330,22 +330,22 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
    * `<caption>`專案是用來為資料表提供可見的標題。 字幕預設會顯示在表格上方，但可以使用CSS適當地放置字幕。 註解會以程式設計方式與表格相關聯，因此是一種提供內容簡介的實用方法。
    * `<summary>`元素透過提供視力正常使用者可看到的摘要資訊，協助失明使用者更輕鬆地瞭解表格中呈現的資訊。 這在使用了複雜或非常規表格佈局的情況下很有用（此屬性不會顯示在瀏覽器中，只會由輔助型技術讀取）。
-   * `<th>`專案的`scope`屬性是用來指出儲存格代表特定列的標題，還是代表特定欄的標題。 在複雜的表格中使用標題和id屬性也是類似的方法，其中資料儲存格可能會與一個或多個標題相關聯。
+   * `scope`專案的`<th>`屬性是用來指出儲存格代表特定列的標題，還是代表特定欄的標題。 在複雜的表格中使用標題和id屬性也是類似的方法，其中資料儲存格可能會與一個或多個標題相關聯。
 
   >[!NOTE]
   >
-  >預設情況下，這些元素和屬性不直接可用，但系統管理員可以在&#x200B;**表格屬性**&#x200B;對話方塊中新增對這些值的支援(請參閱[新增對其他HTML元素和屬性的支援](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes))。
+  >預設情況下，這些元素和屬性不直接可用，但系統管理員可以在&#x200B;**表格屬性**&#x200B;對話方塊中新增對這些值的支援（請參閱[新增對其他HTML元素和屬性的支援](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)）。
 
   若要開啟&#x200B;**表格**&#x200B;對話方塊，您可以在此選取&#x200B;**表格屬性**&#x200B;索引標籤：
 
    * 定義適當的&#x200B;**標題**。
-   * 理想情況下，請移除「寬 **度」、「邊框高度」、「邊框高度」、「邊框高度**」、「單元格間距」、「單元格間距 **」、「單元格**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;間距」的預設值。因為這些屬性可以在全局樣式表中設定。
+   * 理想情況下，請移除「寬 **度」、「邊框高度」、「邊框高度」、「邊框高度**」、「單元格間距」、「單元格間距 **」、「單元格**************&#x200B;間距」的預設值。因為這些屬性可以在全局樣式表中設定。
 
   然後，您可以使用&#x200B;**儲存格屬性**&#x200B;來選擇儲存格是資料或標題儲存格：
 
 * **Emphasis**：使用`<strong>`或`<em>`元素來指示強調。 請勿使用標題來反白標示段落中的文字。
    * 反白您要強調的文字；
-   * 按一下&#x200B;**屬性**&#x200B;面板中顯示的&#x200B;**B**&#x200B;圖示(`<strong>`)或&#x200B;**I**&#x200B;圖示(`<em>`)(請確定已選取HTML)。
+   * 按一下&#x200B;**屬性**&#x200B;面板中顯示的`<strong>`B **圖示(**)或`<em>`I **圖示(**)（請確定已選取HTML）。
 
      >[!NOTE]
      >
@@ -405,7 +405,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 ### 有意義的順序(1.3.2)  {#meaningful-sequence}
 
 * 成功標準1.3.2
-* A級
+* A 級
 * 有意義的順序：當內容的顯示順序會影響內容含義時，能以程式設計方式決定正確的閱讀順序。
 
 #### 用途 — 有意義的順序(1.3.2) {#purpose-meaningful-sequence}
@@ -424,7 +424,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 ### 感官特性(1.3.3)  {#sensory-characteristics}
 
 * 成功標準1.3.3
-* A級
+* A 級
 * 感官特性：提供用於理解和操作內容的指示，不會僅依賴元件的感官特性，例如形狀、大小、視覺位置、方向或聲音。
 
 #### 用途 — 感官特性(1.3.3) {#purpose-sensory-characteristics}
@@ -460,7 +460,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 ### 使用顏色(1.4.1)  {#use-of-color}
 
 * 成功標準1.4.1
-* A級
+* A 級
 * 使用顏色：顏色並非唯一用於傳達資訊（表示動作、提示回應或區分視覺元素）的視覺方式。
 
 >[!NOTE]
@@ -493,7 +493,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 ### 音訊控制(1.4.2)  {#audio-control}
 
 * 成功標準1.4.2
-* A級
+* A 級
 * 音訊控制：如果網頁上的任何音訊自動播放超過3秒，則要麼有一種機制可用來暫停或停止音訊，要麼有一種獨立於整體系統音量控制音量的機制。
 
 #### 用途 — 音訊控制(1.4.2) {#purpose-audio-control}
@@ -518,8 +518,8 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 ### 對比（最小） (1.4.3) {#contrast-minimum}
 
 * 成功標準1.4.3
-* AA級
-* 對比度（最小）：文字的視覺呈現和影像的對比度至少為4.5:1，以下除外：
+* AA 級
+* 對比（最小）：文字的視覺化呈現方式與文字影像的對比率至少為4.5:1，以下除外：
    * 大型文字：大型文字和影像的對比率至少為3:1。
    * 附屬專案：文字或文字影像屬於非使用中使用者介面元件的一部分，[純粹裝飾](https://www.w3.org/TR/WCAG/#dfn-pure-decoration)，任何人都看不到，或是包含其他重要視覺內容的圖片的一部分，因此沒有對比度要求。
    * 圖志型別：屬於圖志或品牌名稱的文字沒有最低對比要求。
@@ -543,9 +543,9 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 請確定文字與其背景的對比度已足夠。 對比率視相關文字的大小和樣式而定：
 
-* 對於大小小於18點（或粗體小於14點）的文字，文字的文字/影像與背景之間的對比率應至少為4.5:1。
+* 對於大小小於18點（或粗體為小於14點）的文字，文字的文字/影像與背景之間的對比率應至少為4.5:1。
 * 對於大小至少為18點（或粗體為14點）的文字，對比率應至少為3:1。
-* 如果陣列化背景，則任何文字周圍的背景都應著色，以維持4.5:1或3:1的比例。
+* 如果背景是陣列化的，則任何文字周圍的背景都應加上陰影，以維持4.5:1或3:1的比例。
 
 >[!NOTE]
 >
@@ -575,7 +575,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 ### 調整文字大小(1.4.4)  {#resize-text}
 
 * 成功標準1.4.4
-* A級
+* A 級
 * 調整文字大小：除了文字的註解和影像之外，在不使用輔助技術的情況下，最多可調整文字大小200%，而不會失去內容或功能。
 
 #### 用途 — 調整文字大小(1.4.4) {#purpose-resize-text}
@@ -594,7 +594,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 ### 文字的影像(1.4.5) {#images-of-text}
 
 * 成功標準1.4.5
-* AA級
+* AA 級
 * 文字的影像：如果使用的技術可以達到視覺呈現效果，文字會用來傳遞資訊，而非文字的影像，但下列專案除外：
    * 可自訂：可視地根據使用者的需求自訂文字影像；
    * 必要：文字的特定呈現方式對於傳達的資訊至關重要。
@@ -629,7 +629,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 ### 鍵盤(2.1.1)  {#keyboard}
 
 * 成功標準2.1.1
-* A級
+* A 級
 * 鍵盤：內容的所有功能都可透過鍵盤介面操作，不需要個別擊鍵的特定時間，除非基礎功能需要取決於使用者移動路徑的輸入，而不僅僅是端點。
 
 #### 用途 — 鍵盤(2.1.1) {#purpose-keyboard}
@@ -648,7 +648,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 ### 無鍵盤陷阱(2.1.2)  {#no-keyboard-trap}
 
 * 成功標準2.1.2
-* A級
+* A 級
 * 無鍵盤陷阱：如果可以使用鍵盤介面將鍵盤焦點移至頁面的元件，則焦點只需使用鍵盤介面即可從該元件移開，如果除了使用未修改的箭頭、Tab鍵或其他標準退出方法外，該移開功能還需使用其他工具，系統會告知使用者將焦點移開的方法。
 
 #### 用途 — 無鍵盤陷阱(2.1.2) {#purpose-no-keyboard-trap}
@@ -675,7 +675,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 ### 計時可調(2.2.1)  {#timing-adjustable}
 
 * 成功標準2.2.1
-* A級
+* A 級
 * 鍵盤：為使用者提供充足的時間來閱讀及使用內容。
 
 #### 用途 — 計時可調(2.2.1) {#purpose-timing-adjustable}
@@ -694,7 +694,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 ### 暫停、停止、隱藏(2.2.2)  {#pause-stop-hide}
 
 * 成功標準2.2.2
-* A級
+* A 級
 * 暫停、停止、隱藏：對於移動、閃爍、捲動或自動更新的資訊，符合下列情況：
    * 移動、閃爍、捲動：適用於任何移動、閃爍或捲動資訊，
       * (a)自動啟動，
@@ -739,7 +739,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 ### 閃光三次或低於臨界值(2.3.1) {#three-flashes-or-below-threshold}
 
 * 成功標準2.3.1
-* A級
+* A 級
 * 閃光三次或低於臨界值：網頁在任何一秒的期間內，都不包含閃光三次以上的任何專案，或是閃光低於一般閃光和紅色閃光臨界值。
 
 >[!NOTE]
@@ -771,7 +771,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 ### 略過區塊(2.4.1)  {#bypass-blocks}
 
 * 成功標準2.4.1
-* A級
+* A 級
 * 略過區塊：提供的機制可略過多個網頁上重複的內容區塊。
 
 #### 用途 — 略過區塊(2.4.1) {#purpose-bypass-blocks}
@@ -790,7 +790,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 ### 頁面帶有標題(2.4.2)  {#page-titled}
 
 * 成功標準2.4.2
-* A級
+* A 級
 * 頁面標題：網頁具有說明主題或目的的標題。
 
 #### 用途 — 頁面帶有標題(2.4.2) {#purpose-page-titled}
@@ -801,7 +801,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 在AEM中建立新的HTML頁面時，您可以指定頁面標題。 請確定標題足以描述頁面內容和用途，尤其是任何不重複方面，讓訪客可快速找出內容是否符合其需求。
 
-編輯頁面時，您也可以編輯頁面標題，頁面資訊——屬 **性可**&#x200B;**存取。**
+編輯頁面時，您也可以編輯頁面標題，頁面資訊——屬 **性可****存取。**
 
 #### 更多資訊 — 頁面帶有標題(2.4.2) {#more-information-page-titled}
 
@@ -811,7 +811,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 ### 焦點順序(2.4.3)  {#focus-order}
 
 * 成功標準2.4.3
-* A級
+* A 級
 * 焦點順序：如果網頁可以循序導覽，且導覽順序會影響含義或作業，可聚焦元件會以保留含義和可操作性的順序接收焦點。
 
 #### 用途 — 焦點順序(2.4.3) {#purpose-focus-order}
@@ -830,7 +830,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 ### 連結目的（在內容中） (2.4.4)  {#link-purpose-in-context}
 
 * 成功標準2.4.4
-* A級
+* A 級
 * 連結目的（在內容中）：每個連結的目的都可以單獨從連結文字中決定，或是從連結文字及其程式化決定的連結內容中決定，除非連結目的通常對使用者來說模稜兩可。
 
 #### 用途 — 連結用途（在內容中） (2.4.4) {#purpose-link-purpose-in-context}
@@ -897,7 +897,7 @@ John Smith's publications
 ### 多種方式(2.4.5)  {#multiple-ways}
 
 * 成功標準2.4.5
-* AA級
+* AA 級
 * 多種方式：除了當網頁是程式的結果或步驟外，還有其他方法可用於在一組網頁中找出網頁。
 
 #### 用途 — 多種方式(2.4.5) {#purpose-multiple-ways}
@@ -918,7 +918,7 @@ John Smith's publications
 ### 標題和標籤(2.4.6)  {#headings-and-labels}
 
 * 成功標準2.4.6
-* AA級
+* AA 級
 * 標題和標籤：標題和標籤會說明主題或用途。
 
 #### 用途 — 標題和標籤(2.4.6) {#purpose-headings-and-labels}
@@ -937,7 +937,7 @@ John Smith's publications
 ### 焦點可見(2.4.7)  {#focus-visible}
 
 * 成功標準2.4.7
-* AA級
+* AA 級
 * 焦點可見：任何鍵盤可操作的使用者介面都有可看到鍵盤焦點指示器的操作模式。
 
 #### 用途 — 焦點可見(2.4.7) {#purpose-focus-visible}
@@ -968,7 +968,7 @@ John Smith's publications
 ### 頁面語言(3.1.1) {#language-of-page}
 
 * 成功標準3.1.1
-* A級
+* A 級
 * 頁面語言：每個網頁的預設人類語言均可由程式決定。
 
 #### 用途 — 頁面語言(3.1.1) {#purpose-language-of-page}
@@ -977,7 +977,7 @@ John Smith's publications
 
 #### 如何達到標準 — 頁面語言(3.1.1) {#how-to-meet-language-of-page}
 
-若要符合此成功標準，可以使用頁面頂端`<html>`元素中的`lang`屬性來識別網頁的預設語言。 例如：
+若要符合此成功標準，可以使用頁面頂端`lang`元素中的`<html>`屬性來識別網頁的預設語言。 例如：
 
 * 如果頁面是以英文撰寫，`<html>`元素應該寫成：
   `<html lang = "en">`
@@ -1000,7 +1000,7 @@ John Smith's publications
 ### 區域性語言(3.1.2)  {#language-of-parts}
 
 * 成功標準3.1.2
-* AA級
+* AA 級
 * 部分語言：內容中每個段落或片語的人類語言能以程式設計方式決定。 唯一例外的是正確的名稱、技術術語、不定語言的單詞，以及已變成緊鄰文字的白語中的單詞或短語。
 
 #### 用途 — 區域性語言(3.1.2) {#purpose-language-of-parts}
@@ -1011,7 +1011,7 @@ John Smith's publications
 
 * 使用盲文轉換軟體插入重音字元。
 * 熒幕助讀程式，可朗讀那些具有特殊字元或未使用在頁面層級識別的預設語言的單字。
-* 翻譯工具(例如Google Translate)可正確將內容從一種語言翻譯成另一種語言。
+* 翻譯工具（例如Google Translate）可正確將內容從一種語言翻譯成另一種語言。
 
 #### 如何達到標準 — 零件語言(3.1.2) {#how-to-meet-language-of-parts}
 
@@ -1037,7 +1037,7 @@ John Smith's publications
 >
 >納入不同語言的人名或城市時，不必遵循此成功標準。 或者，使用預設語言中常見的借用字詞或短語時，例如英文中的&#x200B;*schadenfreude*。
 
-若要新增包含適當語言的span元素，您可以在RTE的來源編輯模式中手動編輯HTML標籤，使其顯示如上。 或者，系統管理員可以將`lang`屬性包含在RTE中(請參閱[新增對其他HTML元素和屬性的支援](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes))。
+若要新增包含適當語言的span元素，您可以在RTE的來源編輯模式中手動編輯HTML標籤，使其顯示如上。 或者，系統管理員可以將`lang`屬性包含在RTE中（請參閱[新增對其他HTML元素和屬性的支援](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)）。
 
 #### 更多資訊 — 區域性語言(3.1.2) {#more-information-language-of-parts}
 
@@ -1053,7 +1053,7 @@ John Smith's publications
 ### 聚焦(3.2.1)  {#on-focus}
 
 * 成功標準3.2.1
-* A級
+* A 級
 * 聚焦：當任何使用者介面元件收到焦點時，它不會起始內容的變更。
 
 #### 用途 — 聚焦(3.2.1) {#purpose-on-focus}
@@ -1078,7 +1078,7 @@ John Smith's publications
 ### 輸入(3.2.2)  {#on-input}
 
 * 成功標準3.2.2
-* A級
+* A 級
 * 輸入：變更任何使用者介面元件的設定不會自動導致內容變更，除非使用者在使用元件之前已被告知該行為。
 
 #### 用途 — 輸入(3.2.2) {#purpose-on-input}
@@ -1097,7 +1097,7 @@ John Smith's publications
 ### 一致的導覽(3.2.3)  {#consistent-navigation}
 
 * 成功標準3.2.3
-* AA級
+* AA 級
 * 一致的導覽：在一組網頁內的多個網頁上重複執行的導覽機制，每次都以相同的相對順序發生，除非使用者已起始變更。
 
 #### 用途 — 一致的導覽(3.2.3) {#purpose-consistent-navigation}
@@ -1120,7 +1120,7 @@ John Smith's publications
 ### 一致的識別(3.2.4)  {#consistent-identification}
 
 * 成功標準3.2.4
-* A級
+* A 級
 * 一致的識別：一組網頁內具有相同功能的元件，都會以一致的方式識別。
 
 #### 用途 — 一致的識別(3.2.4) {#purpose-consistent-identification}
@@ -1149,7 +1149,7 @@ John Smith's publications
 ### 錯誤識別(3.3.1)  {#error-identification}
 
 * 成功標準3.3.1
-* A級
+* A 級
 * 錯誤識別：如果自動偵測到輸入錯誤，則會識別發生錯誤的專案，並以文字向使用者說明錯誤。
 
 #### 用途 — 錯誤識別(3.3.1) {#purpose-error-identification}
@@ -1178,7 +1178,7 @@ John Smith's publications
 ### 標籤或指示(3.3.2) {#labels-or-instructions}
 
 * 成功標準3.3.2
-* A級
+* A 級
 * 標籤或指示：內容需要使用者輸入時，會提供標籤或指示。
 
 #### 用途 — 標籤或指示(3.3.2) {#purpose-labels-or-instructions}
@@ -1199,15 +1199,15 @@ John Smith's publications
 
 ###### 表單欄位群組 {#groups-of-form-fields}
 
-在WKND專案中，如果有一組相關控制項，例如&#x200B;**無線電群組**，則可能需要群組的標題和個別控制項。 在AEM中新增一組選項按鈕時，「標題 **」欄位會提供此群組標題，而個別標題會指定為選項按鈕(** Items **&#x200B;**)。
+在WKND專案中，如果有一組相關控制項，例如&#x200B;**無線電群組**，則可能需要群組的標題和個別控制項。 在AEM中新增一組選項按鈕時，「標題 **」欄位會提供此群組標題，而個別標題會指定為選項按鈕(** Items ****)。
 
-不過，群組標題和選項按鈕本身之間沒有程式化關聯。範本編輯器必須將標題包住必要的`fieldset`和`legend`標籤以建立此關聯，而這只能透過編輯頁面原始碼來完成。 或者，系統管理員可以新增對這些元素的支援，以便這些元素顯示在&#x200B;**欄位屬性**&#x200B;對話方塊中(請參閱[新增對其他HTML元素和屬性的支援](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes))。
+不過，群組標題和選項按鈕本身之間沒有程式化關聯。範本編輯器必須將標題包住必要的`fieldset`和`legend`標籤以建立此關聯，而這只能透過編輯頁面原始碼來完成。 或者，系統管理員可以新增對這些元素的支援，以便這些元素顯示在&#x200B;**欄位屬性**&#x200B;對話方塊中（請參閱[新增對其他HTML元素和屬性的支援](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)）。
 
 ###### Forms的其他注意事項 {#additional-considerations-for-forms}
 
 如果要以特定格式輸入資料，請在標籤文字中清楚說明。 例如，如果日期必須以`DD-MM-YYYY`格式輸入，請在標籤中特別指明這一點。 這表示當熒幕助讀程式的使用者遇到該欄位時，會自動公告標籤，以及關於格式的其他資訊。
 
-如果表單欄位的輸入是必填的，請使用標籤中的必要字詞來清楚說明。AEM在需要欄位時新增星號，但最好將字詞加入標 `required`簽本身(在編輯對話方塊的「 **Title** 」欄位中)。
+如果表單欄位的輸入是必填的，請使用標籤中的必要字詞來清楚說明。AEM在需要欄位時新增星號，但最好將字詞`required`加入標簽 (在編輯對話方塊的「 **Title** 」欄位中)。
 
 標籤的位置也很重要，因為它有助於他們找到適當的欄位。 當使用者面對複雜表單時，這尤其重要。 遵循以下慣例：
 
@@ -1226,7 +1226,7 @@ John Smith's publications
 ### 錯誤建議(3.3.3)  {#error-suggestion}
 
 * 成功標準3.3.3
-* AA級
+* AA 級
 * 鍵盤：如果自動偵測到輸入錯誤且知道有關更正的建議，則會向使用者提供建議，除非這會危及內容的安全性或用途。
 
 #### 用途 — 錯誤建議(3.3.3) {#purpose-error-suggestion}
@@ -1249,7 +1249,7 @@ John Smith's publications
 ### 錯誤預防（法律、金融、資料） (3.3.4)  {#error-prevention-legal-financial-data}
 
 * 成功標準3.3.4
-* AA級
+* AA 級
 * 錯誤預防（法律、財務、資料）：對於造成使用者發生法律承諾或財務交易的網頁、在資料儲存系統中修改或刪除使用者可控資料的網頁，或提交使用者測試回應的網頁，以下至少一項為真：
 
    * 可反轉
@@ -1289,7 +1289,7 @@ John Smith's publications
 ### 剖析(4.1.1)  {#parsing}
 
 * 成功標準4.1.1
-* A級
+* A 級
 * 剖析：在使用標籤語言實作的內容中，元素具有完整的開始和結束標籤，元素根據其規格進行巢狀，元素不包含重複屬性，並且任何ID都是唯一的，除非規格允許這些功能。
 
 #### 用途 — 剖析(4.1.1) {#purpose-parsing}
@@ -1310,7 +1310,7 @@ John Smith's publications
 ### 名稱、角色、值(4.1.2)  {#name-role-value}
 
 * 成功標準4.1.2
-* A級
+* A 級
 * 名稱、角色、值：對於所有使用者介面元件（包含但不限於：表單元素、連結和指令碼產生的元件），名稱和角色能以程式設計方式決定；使用者可設定的狀態、屬性和值能以程式設計方式設定；使用者代理程式可收到這些專案的變更通知，包括輔助技術。
 
 #### 用途 — 名稱、角色、值(4.1.2) {#purpose-ame-role-value}

@@ -3,9 +3,9 @@ title: AEM Headless 翻譯快速入門
 description: 了解如何組織 Headless 內容以及 AEM 翻譯工具的運作原理。
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin,Developer,User,Leader
 exl-id: beebb7b6-5ed8-4cec-84cf-fa90b2ef711a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 89%
@@ -63,7 +63,7 @@ AEM 的內容，無論是 Headless 網頁還是傳統網頁，都是由其結構
 >
 >在 Headless 專案一開始就為翻譯進行規劃。儘早與專案經理和內容架構師密切合作。
 >
->可能需要一位具獨立角色的國際化專案經理，其職責是定義哪些內容應該翻譯，哪些內容不應該翻譯，以及哪些已翻譯內容可以由區域或本地內容製作者修改。
+>可能需要一位具獨立人物誌的國際化專案經理，其職責是定義哪些內容應該翻譯，哪些內容不應該翻譯，以及哪些已翻譯內容可以由區域或本地內容製作者修改。
 
 ## AEM 如何儲存 Headless 內容 {#headless-content-in-aem}
 
@@ -88,7 +88,6 @@ AEM 的內容，無論是 Headless 網頁還是傳統網頁，都是由其結構
 1. **內容片段模型編輯器**&#x200B;開啟。
    1. 左欄包含模型的欄位。我們對此欄感興趣。
    1. 左欄包含可新增至模型的欄位。此欄我們可以忽略。
-
       ![內容片段模型編輯器](assets/content-fragment-model-editor.png)
 1. 按一下模型的其中一個欄位。 AEM 會標記該欄位，該欄位的詳細資料會顯示在右欄中。
    ![內容片段模型編輯器詳細資料](assets/content-fragment-model-editor-detail.png)
@@ -192,8 +191,8 @@ AEM 的內容，無論是 Headless 網頁還是傳統網頁，都是由其結構
 
 * [AEM 基本處理](/help/sites-authoring/basic-handling.md) - 了解 AEM UI 的基本知識，以便能夠輕鬆導覽和執行基本任務，例如尋找您的內容。
 * [識別要翻譯的內容](/help/sites-administering/tc-rules.md) - 了解翻譯規則如何識別需要翻譯的內容。
-* [設定翻譯整合框架](/help/sites-administering/tc-tic.md) - 了解如何設定翻譯整合框架以與協力廠商翻譯服務整合。
+* [設定翻譯整合框架](/help/sites-administering/tc-tic.md) - 了解如何設定翻譯整合框架以與第三方翻譯服務整合。
 * [管理翻譯專案](/help/sites-administering/tc-manage.md) - 了解如何在 AEM 中建立和管理機器和人工翻譯專案。
 * [AEM as a Headless CMS 簡介](/help/sites-developing/headless/introduction.md)
-* [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
-* [AEM 中的 Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hant)
+* [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM 中的 Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

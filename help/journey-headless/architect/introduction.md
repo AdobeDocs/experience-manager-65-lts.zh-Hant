@@ -3,9 +3,9 @@ title: Adobe Experience Manager Headless內容架構者歷程
 description: 介紹Adobe Experience Manager強大且有彈性的無周邊功能，以及如何為您的專案建立內容的模型。
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
+role: Admin,Developer
 exl-id: cb64e012-7001-47a3-b038-8f8f6891c6a0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 83%
@@ -51,7 +51,7 @@ ht-degree: 83%
 
 當我們談論 Headless CMS 時，CMS 管理內容並繼續將其傳遞給取用者。然而，透過僅將&#x200B;**內容**&#x200B;以標準方式傳遞，Headless CMS 會省略最後輸出呈現作業，將內容的&#x200B;**展示**&#x200B;作業留給取用內容的服務執行。
 
-![&#x200B; Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
+![ Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
 取用內容的服務，無論是 AR 體驗、網路商店、行動體驗、漸進式網頁應用程式 (PWA) 等，都從 Headless CMS 取用內容並提供自己的呈現操作。它們負責為您的內容提供自己的頭。
 
@@ -85,5 +85,5 @@ Adobe Experience Manager (AEM)可以選擇使用AEM GraphQL API存取您的內�
    * [了解 CMS Headless 開發](/help/journey-headless/developer/learn-about.md)
    * [了解如何建立內容模型](/help/journey-headless/developer/model-your-content.md)
 * [AEM as a Headless CMS 簡介](/help/sites-developing/headless/introduction.md)
-* [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
-* [AEM 中的 Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hant)
+* [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM 中的 Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

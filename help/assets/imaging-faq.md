@@ -9,7 +9,7 @@ feature: Asset Management,Renditions
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9f95a54d-6c5e-44c1-965e-631ec7487308
-source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '3306'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 關於智慧型影像 {#what-is-smart-imaging}
 
-智慧型影像技術可套用Adobe AI功能，並與現有的「影像預設集」搭配使用。 它會根據使用者端瀏覽器功能自動最佳化影像格式、大小和品質，藉此增強影像傳送效能。
+智慧型影像技術可套用Adobe AI功能，並搭配現有的「影像預設集」運作。 它會根據使用者端瀏覽器功能自動最佳化影像格式、大小和品質，藉此增強影像傳送效能。
 
 現在，透過改良的智慧型影像處理（現在同時支援AVIF和WebP），取得LCP （最大內容繪製）更好的Google Core Web Vital分數。
 
@@ -88,7 +88,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 您可以將`bfc=off`附加至影像的URL以關閉智慧型影像。
 
-另請參閱Dynamic Media影像提供與轉譯API中的[bfc](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)。
+另請參閱Dynamic Media影像提供與轉譯API中的[bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)。
 
 ### 關於裝置畫素比(dpr)最佳化 {#dpr}
 
@@ -140,7 +140,7 @@ DPR和網路頻寬值是根據偵測到的套件式CDN使用者端值。 這些�
 
 +++智慧型影像是否有任何相關的授權成本？
 
-不行。智慧型影像包含於您現有的授權中。 此規則適用於Dynamic Media Classic或Experience Manager - Dynamic Media (內部部署、AMS和Experience Manager as a Cloud Service)。
+不行。智慧型影像包含於您現有的授權中。 此規則適用於Dynamic Media Classic或Experience Manager - Dynamic Media （內部部署、AMS和Experience Manager as a Cloud Service）。
 
 >[!NOTE]
 >
@@ -255,7 +255,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
       * 列出所有相關網域，例如&#x200B;*`company.com`*&#x200B;或&#x200B;*`mycompany.scene7.com`*
       * 智慧型影像支援一般和自訂網域。
-      * 若要識別您的網域，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)並登入您的公司帳戶。
+      * 若要識別您的網域，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)並登入您的公司帳戶。
 
          1. 瀏覽至&#x200B;**[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**。
          1. 尋找&#x200B;**[!UICONTROL 發佈的伺服器名稱]**&#x200B;欄位以確認您的網域。
@@ -327,7 +327,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 * 智慧型影像處理功能適用於本公司。
 * 正值表示轉換成功。 在這種情況下，會傳回新的WebP影像。
-* 負值表示轉換不成功。 在這種情況下，會傳回原始要求的影像(如果未指定，則預設為JPEG)。
+* 負值表示轉換不成功。 在這種情況下，會傳回原始要求的影像（如果未指定，則預設為JPEG）。
 * 正值會顯示要求的影像與新影像之間的位元組差異。 在上述範例中，儲存的位元組為`75048`或一個影像約75 KB。
 * 負值表示要求的影像小於新影像。 會顯示負數大小差異，但提供的影像僅為原始要求的影像。
 

@@ -7,9 +7,9 @@ topic-tags: projects
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 53400e3d-542f-4abc-9909-45eb11b0cfcc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 2%
@@ -37,7 +37,7 @@ ht-degree: 2%
 請依照下列步驟建立專案。
 
 1. 在&#x200B;**專案**&#x200B;主控台中，按一下&#x200B;**建立**&#x200B;以開啟&#x200B;**建立專案**&#x200B;精靈。
-1. 選取範本並按一下[下一步] **&#x200B;**。 您可以在[這裡](/help/sites-authoring/projects.md#project-templates)進一步瞭解標準專案範本。
+1. 選取範本並按一下[下一步] ****。 您可以在[這裡](/help/sites-authoring/projects.md#project-templates)進一步瞭解標準專案範本。
 
    ![建立專案精靈](assets/create-project-wizard.png)
 
@@ -107,7 +107,7 @@ Assets會顯示在邊欄中。 完成後，使用邊欄選擇器返回正常檢�
 
 ### 檢視非作用中專案 {#viewing-active-inactive-projects}
 
-若要在作用中和[非作用中專案之間切換，請在&#x200B;**專案**&#x200B;主控台中按一下&#x200B;**切換作用中專案**&#x200B;圖示。](#making-projects-inactive-or-active)
+若要在作用中和[非作用中專案之間切換，請在](#making-projects-inactive-or-active)專案&#x200B;**主控台中按一下**&#x200B;切換作用中專案&#x200B;**圖示。**
 
 ![切換使用中的專案圖示](assets/projects-toggle-active.png)
 
@@ -125,7 +125,7 @@ Assets會顯示在邊欄中。 完成後，使用邊欄選擇器返回正常檢�
 
    ![建立資料夾](assets/project-create-folder.png)
 
-1. 提供資料夾標題，然後按一下[建立]。**&#x200B;**
+1. 提供資料夾標題，然後按一下[建立]。****
 
 1. 資料夾會新增至主控台。
 
@@ -133,7 +133,7 @@ Assets會顯示在邊欄中。 完成後，使用邊欄選擇器返回正常檢�
 
 ### 停用專案 {#making-projects-inactive-or-active}
 
-如果專案已完成，您可能想要將其標示為非使用中，但仍要保留有關專案的資訊。 [非使用中的專案現在預設會在&#x200B;**專案**&#x200B;主控台中顯示](#viewing-active-inactive-projects)。
+如果專案已完成，您可能想要將其標示為非使用中，但仍要保留有關專案的資訊。 [非使用中的專案現在預設會在](#viewing-active-inactive-projects)專案&#x200B;**主控台中顯示**。
 
 若要停用專案，請執行下列步驟。
 

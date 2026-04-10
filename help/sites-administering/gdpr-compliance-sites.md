@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
-role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
+role: Admin,Developer,Leader,User
 exl-id: 826dafb8-db6c-4fe4-8b3d-edf7215dc571
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 54%
@@ -26,7 +26,7 @@ ht-degree: 54%
 
 AEM Sites已準備好協助客戶履行GDPR法規遵循義務。 本頁將指導客戶完成在AEM Sites中處理GDPR請求的程式。 它描述了儲存私人資料的位置，以及如何以手動方式或使用程式碼移除它們。
 
-如需進一步資訊，請參閱Adobe隱私權中心[&#128279;](https://www.adobe.com/privacy/general-data-protection-regulation.html)的GDPR頁面。
+如需進一步資訊，請參閱Adobe隱私權中心[的](https://www.adobe.com/privacy/general-data-protection-regulation.html)GDPR頁面。
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ AEM有[Cookie選擇退出服務](/help/sites-developing/cookie-optout.md)，可�
 
 AEM Sites包括與Analytics增強型分析的選擇性整合，後者使用Adobe Analytics隨選服務中的功能。
 
-有關管理與Adobe Analytics相關的GDPR資料主體請求的進一步資訊，請參閱[Adobe Analytics和GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html?lang=zh-Hant)。
+有關管理與Adobe Analytics相關的GDPR資料主體請求的進一步資訊，請參閱[Adobe Analytics和GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html)。
 
 ## 目標增強型Personalization {#enhanced-personalization-by-target}
 

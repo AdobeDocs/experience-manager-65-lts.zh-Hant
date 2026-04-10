@@ -3,11 +3,11 @@ title: 效能調整 [!DNL Assets]。
 description: 有關 [!DNL Experience Manager] 組態、硬體、軟體及網路元件變更的建議與指引，以移除瓶頸並最佳化 [!DNL Experience Manager Assets]的效能。
 contentOwner: AG
 mini-toc-levels: 1
-role: Architect, Admin
+role: Developer,Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 43079a69-cd12-4853-9fff-96f9d177987a
-source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 0%
@@ -309,4 +309,4 @@ Adobe建議啟用HTTPS，因為許多公司都有會偵聽HTTP流量的防火牆
 * 設定工作流程和版本清除。
 * 使用最新Service Pack和Hotfix最佳化索引。 請向Adobe客戶支援洽詢可能提供的任何其他索引最佳化。
 * 使用guessTotal來最佳化查詢效能。
-* 如果您設定[!DNL Experience Manager]從檔案內容偵測檔案型別(在&#x200B;**[!UICONTROL AEM Web Console]**&#x200B;中啟用&#x200B;**[!UICONTROL Day CQ DAM Mime Type Service]**)，請在非尖峰時段大量上傳許多檔案，因為它耗用大量資源。
+* 如果您設定[!DNL Experience Manager]從檔案內容偵測檔案型別（在&#x200B;**[!UICONTROL AEM Web Console]**&#x200B;中啟用&#x200B;**[!UICONTROL Day CQ DAM Mime Type Service]**），請在非尖峰時段大量上傳許多檔案，因為它耗用大量資源。

@@ -1,11 +1,11 @@
 ---
 title: 適用於AEM 6.5 Sites的Headless開發
-description: 瞭解AEM 6.5強大的Headless功能(例如內容模型、內容片段和GraphQL API)如何搭配運作，讓您集中管理您的體驗並跨管道提供這些體驗。
+description: 瞭解AEM 6.5強大的Headless功能（例如內容模型、內容片段和GraphQL API）如何搭配運作，讓您集中管理您的體驗並跨管道提供這些體驗。
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: 4eb42d3a-f869-4831-9aaf-58e7272bd1fe
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 35%
@@ -14,7 +14,7 @@ ht-degree: 35%
 
 # 適用於AEM 6.5 Sites的Headless開發 {#headless-development}
 
-瞭解AEM 6.5強大的Headless功能(例如內容模型、內容片段和GraphQL API)如何搭配運作，讓您集中管理您的體驗並跨管道提供這些體驗。
+瞭解AEM 6.5強大的Headless功能（例如內容模型、內容片段和GraphQL API）如何搭配運作，讓您集中管理您的體驗並跨管道提供這些體驗。
 
 ## 概觀 {#overview}
 
@@ -47,7 +47,7 @@ AEM 6.5是適用於Headless實作模式的彈性工具，提供三種強大的�
 1. 傳送的內容API
    * AEM GraphQL API 支援內容片段傳遞。
    * AEM Assets REST API 支援內容片段 CRUD 作業。
-   * 透過[內容片段核心元件的JSON匯出，也可以進行直接內容傳送。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hant)
+   * 透過[內容片段核心元件的JSON匯出，也可以進行直接內容傳送。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 ## 使用 AEM Headless 的第一步 {#first-steps}
 
@@ -56,6 +56,6 @@ AEM 6.5是適用於Headless實作模式的彈性工具，提供三種強大的�
 | 資源 | 說明 | 類型 | 客群 | 預估時間 |
 |---|---|---|---|---|
 | [Headless 開發人員歷程](/help/journey-headless/developer/overview.md) | **對於剛開始使用AEM和Headless**&#x200B;技術的使用者，從這裡開始全面瞭解AEM及其Headless功能，從Headless的理論直到您的第一個Headless專案。 | 指南 | **剛接觸 AEM 和無周邊技術** 的開發人員 | 1 小時 |
-| [Headless快速入門手冊](/help/sites-developing/headless/getting-started/introduction.md) | 對於需要扼要介紹關鍵 AEM 無周邊功能的&#x200B;**有經驗 AEM 使用者**，請查看此快速入門概述。 | 快速入門 | **具有 AEM 經驗**&#x200B;的開發人員、管理員 | 20 分鐘 |
-| [開始使用AEM Headless實作教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=zh-Hant) | **如果您偏好實作方法並且熟悉AEM**，本教學課程將直接深入探討如何建立簡單的Headless專案。 | 教學課程 | 開發人員 | 2 小時 |
-| [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant) | 此資源集合是供&#x200B;**新**&#x200B;和&#x200B;**經驗豐富的**&#x200B;開發人員使用。 | 資源集合 | 開發人員 | |
+| [Headless快速入門手冊](/help/sites-developing/headless/getting-started/introduction.md) | 對於需要扼要介紹關鍵 AEM 無周邊功能的&#x200B;**有經驗 AEM 使用者**，請查看此快速入門概觀。 | 快速開始 | **具有 AEM 經驗**&#x200B;的開發人員、管理員 | 20 分鐘 |
+| [開始使用AEM Headless實作教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | **如果您偏好實作方法並且熟悉AEM**，本教學課程將直接深入探討如何建立簡單的Headless專案。 | 教學課程 | 開發人員 | 2 小時 |
+| [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html) | 此資源集合是供&#x200B;**新**&#x200B;和&#x200B;**經驗豐富的**&#x200B;開發人員使用。 | 資源集合 | 開發人員 | |

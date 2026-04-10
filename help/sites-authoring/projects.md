@@ -3,9 +3,9 @@ title: 專案
 description: 專案可讓您將資源分組到一個實體中，其共用的共用環境可讓您輕鬆管理專案。
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Projects
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: c5b4ffe5-b722-4452-8450-1e1089e3ffba
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 27%
@@ -236,4 +236,4 @@ ht-degree: 27%
 * [管理專案](/help/sites-authoring/touch-ui-managing-projects.md)
 * [使用任務](/help/sites-authoring/task-content.md)
 * [使用專案工作流程](/help/sites-authoring/projects-with-workflows.md)
-* [Creative Project與PIM整合](/help/sites-authoring/managing-product-information.md)
+* [Creative專案與PIM整合](/help/sites-authoring/managing-product-information.md)

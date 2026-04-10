@@ -10,9 +10,9 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 0c20efb1-9b01-41ef-b38d-261fb4b0ff91
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '6662'
+source-wordcount: '6654'
 ht-degree: 0%
 
 ---
@@ -336,7 +336,7 @@ while (isSupportedPath(path)) {
 >
 >如果已經設定`RequirementHandler`，而且目標包含在由支援的路徑所定義的樹狀結構中（請參閱設定選項區段），則上述對指定目標節點的修改只會反映在Apache Sling驗證程式上。
 >
->如需詳細資訊，請參閱[指派Mixin節點型別]&#x200B;(https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.10.3指派Mixin節點型別)和[新增節點及設定屬性]&#x200B;(https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.4新增節點及設定屬性)
+>如需詳細資訊，請參閱[指派Mixin節點型別]（https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.10.3指派Mixin節點型別）和[新增節點及設定屬性]（https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.4新增節點及設定屬性）
 
 #### 新增驗證需求 {#adding-a-new-auth-requirement}
 
@@ -520,7 +520,7 @@ while (isSupported(node)) {
    <td>Apache Jackrabbit Oak CUG設定</td>
   </tr>
   <tr>
-   <td>描述</td>
+   <td>說明</td>
    <td>專門用於設定和評估CUG許可權的授權設定。</td>
   </tr>
   <tr>
@@ -537,7 +537,7 @@ while (isSupported(node)) {
    <td><code>ConfigurationPolicy.REQUIRE</code></td>
   </tr>
   <tr>
-   <td>參考</td>
+   <td>參照</td>
    <td><code>CugExclude (ReferenceCardinality.OPTIONAL_UNARY)</code></td>
   </tr>
  </tbody>
@@ -552,7 +552,7 @@ while (isSupported(node)) {
    <td>Apache Jackrabbit Oak CUG排除清單</td>
   </tr>
   <tr>
-   <td>描述</td>
+   <td>說明</td>
    <td>可讓您從CUG評估中排除具有已設定名稱的主參與者。</td>
   </tr>
   <tr>
@@ -567,7 +567,7 @@ while (isSupported(node)) {
    <td><code>ConfigurationPolicy.REQUIRE</code></td>
   </tr>
   <tr>
-   <td>參考</td>
+   <td>參照</td>
    <td>不適用</td>
   </tr>
  </tbody>
@@ -624,7 +624,7 @@ while (isSupported(node)) {
    <td>-</td>
   </tr>
   <tr>
-   <td>描述</td>
+   <td>說明</td>
    <td>針對影響驗證需求（透過<code>granite:AuthenticationRequirement</code> mixin型別）的內容變更註冊觀察者的驗證需求專用OSGi服務，以及透過的登入路徑會公開給<code>LoginSelectorHandler</code>。 </td>
   </tr>
   <tr>
@@ -636,7 +636,7 @@ while (isSupported(node)) {
    <td><code>ConfigurationPolicy.OPTIONAL</code></td>
   </tr>
   <tr>
-   <td>參考</td>
+   <td>參照</td>
    <td>
     <ul>
      <li><code>RequirementHandler (ReferenceCardinality.MANDATORY_UNARY)</code></li>
@@ -650,10 +650,10 @@ while (isSupported(node)) {
 
 | 標籤 | Adobe Granite驗證需求和登入路徑處理常式 |
 |---|---|
-| 描述 | 更新Apache Sling驗證需求和相關聯登入路徑之對應排除的`RequirementHandler`實作。 |
+| 說明 | 更新Apache Sling驗證需求和相關聯登入路徑之對應排除的`RequirementHandler`實作。 |
 | 組態屬性 | `supportedPaths` |
 | 設定原則 | `ConfigurationPolicy.REQUIRE` |
-| 參考 | 不適用 |
+| 參照 | 不適用 |
 
 #### 設定選項 {#configuration-options-1}
 
@@ -667,7 +667,7 @@ CUG重寫的驗證相關部分只隨附與Adobe Granite驗證需求和登入路�
    <td>屬性</td>
    <td>類型</td>
    <td>預設值</td>
-   <td>描述</td>
+   <td>說明</td>
   </tr>
   <tr>
    <td><p>標籤=支援的路徑</p> <p>名稱= 'supportedPaths'</p> </td>
@@ -688,7 +688,7 @@ AEM的新安裝預設會將新的實施用於CUG功能的授權和驗證相關�
 |---|---|
 | 支援的路徑`/content` | CUGpolicies的存取控制管理已啟用。 |
 | CUG評估啟用FALSE | 已停用許可權評估。 CUG政策無效。 |
-| 等級 | 200 | 請參閱Oak檔案。 |
+| 排名\|200 | 請參閱Oak檔案。 |
 
 >[!NOTE]
 >
@@ -700,7 +700,7 @@ AEM的新安裝預設會將新的實施用於CUG功能的授權和驗證相關�
 |---|---|
 | 支援的路徑`/content` | 在設定的路徑下方啟用CUG原則的存取控制管理。 |
 | CUG評估啟用TRUE | 已針對設定的路徑啟用許可權評估。 CUG原則會在`Session.save()`生效。 |
-| 等級 | 200 | 請參閱Oak檔案。 |
+| 排名\|200 | 請參閱Oak檔案。 |
 
 | **「Apache Jackrabbit Oak CUG排除清單」** | **說明** |
 |---|---|
@@ -708,7 +708,7 @@ AEM的新安裝預設會將新的實施用於CUG功能的授權和驗證相關�
 
 | **&quot;Adobe Granite驗證需求和登入路徑處理常式&quot;** | **說明** |
 |---|---|
-| 支援的路徑`/content` | 由`granite:AuthenticationRequired` mixin型別在存放庫中定義的驗證需求於`Session.save()`在`/content`以下生效。 Sling驗證器已更新。 在支援的路徑之外新增mixin型別會被忽略。 |
+| 支援的路徑`/content` | 由`granite:AuthenticationRequired` mixin型別在存放庫中定義的驗證需求於`/content`在`Session.save()`以下生效。 Sling驗證器已更新。 在支援的路徑之外新增mixin型別會被忽略。 |
 
 ## 停用CUG授權與驗證需求 {#disabling-cug-authorization-and-authentication-requirement}
 
@@ -753,7 +753,7 @@ AEM的新安裝預設會將新的實施用於CUG功能的授權和驗證相關�
 
 ### Adobe Granite驗證處理常式 {#adobe-granite-authentication-handler}
 
-`com.adobe.granite.auth.authhandler`套件組合隨附的驗證處理常式&#x200B;**Adobe Granite HTTP Header Authentication Handler**&#x200B;包含相同模組所定義`CugSupport`介面的參考。 在特定情況下，它可用來計算「範圍」，並歸入使用處理常式設定的範圍。
+**套件組合隨附的驗證處理常式** Adobe Granite HTTP Header Authentication Handler`com.adobe.granite.auth.authhandler`包含相同模組所定義`CugSupport`介面的參考。 在特定情況下，它可用來計算「範圍」，並歸入使用處理常式設定的範圍。
 
 此設定已經過調整，以使`CugSupport`的參考成為選用，以便在指定設定決定重新啟用已棄用的實作時，確保最大的回溯相容性。 使用實作的安裝將不會再從CUG實作中擷取領域，但將一律顯示使用&#x200B;**Adobe Granite HTTP標頭驗證處理常式**&#x200B;定義的領域。
 
@@ -802,7 +802,7 @@ CUG的&#x200B;**專用存取控制內容**
 
 在JCR節點建立CUG原則，定義要接受受限讀取存取的子樹狀結構。 這可能是個AEM頁面，以防CUG可能影響整個樹狀結構。
 
-將CUG原則僅置於指定頁面下方的jcr：content節點會限制對指定頁面內容s.str的存取，但不會影響任何同級頁面或子頁面。 這可能是有效的使用案例，並且可以使用存放庫編輯器來完成，該編輯器可讓您套用精細存取內容。 然而，它與以前的實作不同，在以前的實作中，在jcr：content節點上放置cq：cugEnabled屬性會在內部重新對應至頁面節點。 不再執行此對應。
+將CUG原則僅放置在位於指定頁面下方的jcr:content節點上，只會限制對指定頁面內容s.str的存取，而不會對任何同級頁面或子頁面生效。 這可能是有效的使用案例，並且可以使用存放庫編輯器來完成，該編輯器可讓您套用精細存取內容。 不過，它與先前實作不同，在先前實作中，將cq:cugEnabled屬性放置在jcr:content節點上，已在內部重新對應到頁面節點。 不再執行此對應。
 
 使用CUG原則進行&#x200B;**許可權評估**
 
@@ -817,7 +817,7 @@ CUG授權模型可讓您個別開啟存取控制管理和許可權評估：
 * 如果模組有一或多個可建立CUG的支援路徑，則會啟用存取控制管理
 * 只有同時核取選項&#x200B;**CUG Evaluation Enabled**&#x200B;時，才會啟用許可權評估。
 
-在新的AEM預設設定CUG原則評估中，它僅在「發佈」執行模式中啟用。 如需詳細資訊，請參閱AEM 6.3[&#128279;](#default-configuration-since-aem)之後的預設設定。 這可透過比較給定路徑的有效原則與內容中儲存的原則來驗證。 只有啟用CUG的許可權評估時，才會顯示有效原則。
+在新的AEM預設設定CUG原則評估中，它僅在「發佈」執行模式中啟用。 如需詳細資訊，請參閱AEM 6.3[之後的](#default-configuration-since-aem)預設設定。 這可透過比較給定路徑的有效原則與內容中儲存的原則來驗證。 只有啟用CUG的許可權評估時，才會顯示有效原則。
 
 如上所述，CUG存取控制原則現在一律會儲存在內容中，但是只有在Apache Jackrabbit Oak **CUG組態的系統主控台中開啟**&#x200B;啟用CUG評估&#x200B;**時，才會強制執行這些原則所產生的有效許可權評估。**&#x200B;依預設，它僅以&#39;publish&#39;執行模式啟用。
 
@@ -843,13 +843,13 @@ mixin型別定義了一個稱為`granite:loginPath`的選擇性屬性，基本�
 
 在JCR節點建立驗證需求，定義要強制登入的子樹狀結構。 這可能是個AEM頁面，以防CUG可能影響整個樹狀結構，以及新實作的UI，因此會在頁面節點上新增驗證需求mixin型別。
 
-將CUG原則僅放置在位於指定頁面下方的jcr：content節點上，只會限制對內容的存取。 但是，它不會影響頁面節點本身或任何子頁面。
+僅將CUG原則置於指定頁面下方的jcr:content節點只會限制內容的存取權。 但是，它不會影響頁面節點本身或任何子頁面。
 
-這可能是有效的案例，並且可在存放庫編輯器中讓您將mixin放置在任何節點上。 不過，此行為與之前的實施相反，也就是在jcr：content節點上放置cq：cugEnabled或cq：cugLoginPage屬性最終會在內部重新對應至頁面節點。 不再執行此對應。
+這可能是有效的案例，並且可在存放庫編輯器中讓您將mixin放置在任何節點上。 不過，此行為與之前的實作不同，也就是將cq:cugEnabled或cq:cugLoginPage屬性放置在jcr:content節點上，最終在內部重新對應到頁面節點。 不再執行此對應。
 
 #### 已設定的支援路徑 {#configured-supported-paths}
 
-`granite:AuthenticationRequired` mixin型別和granite：loginPath屬性都只會在以&#x200B;**Adobe Granite驗證需求和登入路徑處理常式**&#x200B;出現的&#x200B;**支援路徑**&#x200B;組態選項集定義的範圍內接受。 如果未指定路徑，則會完全停用驗證需求功能。 在這種情況下，將mixin型別或屬性新增或設定到給定JCR節點時會生效。
+`granite:AuthenticationRequired` mixin型別和Granite:loginPath屬性都只能在&#x200B;**Adobe Granite驗證需求和登入路徑處理常式**&#x200B;的&#x200B;**支援路徑**&#x200B;組態選項集所定義的範圍內接受。 如果未指定路徑，則會完全停用驗證需求功能。 在這種情況下，將mixin型別或屬性新增或設定到給定JCR節點時會生效。
 
 ### JCR內容、OSGi服務和設定的對應 {#mapping-of-jcr-content-osgi-services-and-configurations}
 
@@ -880,4 +880,4 @@ Adobe提供了移轉至新CUG實作的工具。 若要使用，請執行下列�
 
 >[!NOTE]
 >
->如果您遇到問題，可以在`com.day.cq.auth.impl.cug`上的&#x200B;**DEBUG**&#x200B;層級設定特定記錄器，以取得移轉工具的輸出。 請參閱[記錄](/help/sites-deploying/configure-logging.md)以瞭解如何執行此動作的詳細資訊。
+>如果您遇到問題，可以在&#x200B;**上的** DEBUG`com.day.cq.auth.impl.cug`層級設定特定記錄器，以取得移轉工具的輸出。 請參閱[記錄](/help/sites-deploying/configure-logging.md)以瞭解如何執行此動作的詳細資訊。

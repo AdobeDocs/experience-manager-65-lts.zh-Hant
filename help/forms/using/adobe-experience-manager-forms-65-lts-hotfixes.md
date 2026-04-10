@@ -3,14 +3,14 @@ title: Adobe Experience Manager Forms 6.5 LTS SP1 Hotfix
 description: 提供如何下載和安裝AEM Forms 6.5 LTS的Hotfix的相關資訊。
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
-source-git-commit: ff5992fb29c9413cc60e1f0f14c52b1eeff3c3de
+role: User,Admin,Developer
+exl-id: e485100f-3e16-4fd4-a8ce-af771d765dd1
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 1%
 
 ---
-
 
 # Adobe Experience Manager Forms 6.5 LTS Hotfix{#aem-form-hotfix}
 
@@ -27,7 +27,7 @@ ht-degree: 1%
   <tbody>
   <tr>
     <td><strong>日期</strong></td>
-    <td><strong>Hotfix下載連結(AEM Software Distribution連結)</strong></td>
+    <td><strong>Hotfix下載連結（AEM Software Distribution連結）</strong></td>
     <td><strong>已修正的問題</strong></td>
   </tr>
   <tr>

@@ -3,9 +3,9 @@ title: 製作
 description: 在Adobe Experience Manager 6.5 LTS中製作和發佈的概念。
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 314a6c65-9b90-4f4c-9e4a-d551dbb646e9
-source-git-commit: 71ea867e240d76a2a881f6e7d65b83979b558f46
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 1%
@@ -81,4 +81,4 @@ AEM提供您兩個環境：
 
 #### Dispatcher {#dispatcher}
 
-為了最佳化網站訪客的效能，**[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)**&#x200B;實作負載平衡和快取。
+為了最佳化網站訪客的效能，**[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)**&#x200B;實作負載平衡和快取。

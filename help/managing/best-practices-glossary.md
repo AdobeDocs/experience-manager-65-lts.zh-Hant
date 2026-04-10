@@ -3,9 +3,9 @@ title: 字彙表
 description: 此辭彙表會列出「專案檢查清單」中所有「交付專案」檔案的詳細資料（按字母順序）。
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
+role: Admin,Developer,Leader
 exl-id: e6542ba9-1182-4b81-b251-537747b89e4c
-source-git-commit: fb979ab973476212aeed9ce86d3251eb1aedcb8c
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '6926'
 ht-degree: 0%
@@ -687,7 +687,7 @@ AEM和高階解決方案設計的可行性研究結果。 這些指標應與KPI�
 * 詳細程度
 * 為每個活動記錄的資訊
 
-### 維護任務(AEM專屬)已測試並啟用 {#maintenance-tasks-aem-specific-tested-and-enabled}
+### 維護任務（AEM專屬）已測試並啟用 {#maintenance-tasks-aem-specific-tested-and-enabled}
 
 測試及啟用AEM維護任務，例如：
 

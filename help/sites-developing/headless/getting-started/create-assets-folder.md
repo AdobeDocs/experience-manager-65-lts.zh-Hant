@@ -3,9 +3,9 @@ title: 建立Assets資料夾Headless快速入門手冊
 description: 使用 AEM 內容片段模型定義內容片段的結構，這是 Headless 內容的基礎。
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: 4b23daf6-ea08-4cc6-b91d-0b4b029df3a5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 73%

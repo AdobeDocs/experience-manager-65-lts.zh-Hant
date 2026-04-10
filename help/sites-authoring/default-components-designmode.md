@@ -3,9 +3,9 @@ title: 在設計模式中設定預設元件
 description: 在設計模式中設定Adobe Experience Manager元件。
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 679ec753-1beb-49d2-9ed3-ee9abdd5f1a9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 1%
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如需有關`parsys`的詳細資訊，請參閱[開發元件](/help/sites-developing/components.md)和[使用範本和元件的准則](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components)。
+>如需有關[的詳細資訊，請參閱](/help/sites-developing/components.md)開發元件[和](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components)使用範本和元件的准則`parsys`。
 
 >[!CAUTION]
 >

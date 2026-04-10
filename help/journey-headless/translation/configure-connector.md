@@ -3,9 +3,9 @@ title: 設定翻譯整合
 description: 了解如何將 AEM 連接到翻譯服務。
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin,Developer,User,Leader
 exl-id: 8f8f0e13-19ab-4324-a4de-98f0fbfe3882
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 92%
@@ -35,7 +35,7 @@ ht-degree: 92%
 
 ## 翻譯整合框架 {#tif}
 
-AEM 的翻譯整合框架 (TIF) 整合協力廠商翻譯服務以協調 AEM 內容的翻譯工作。它涉及三個基本步驟。
+AEM 的翻譯整合框架 (TIF) 整合第三方翻譯服務以協調 AEM 內容的翻譯工作。它涉及三個基本步驟。
 
 1. 連接到您的翻譯服務提供者。
 1. 建立翻譯整合框架設定。
@@ -79,14 +79,14 @@ AEM 的翻譯整合框架 (TIF) 整合協力廠商翻譯服務以協調 AEM 內�
 
    ![翻譯設定位置](assets/translation-configuration-location.png)
 
-1. 在欄位中提供下列資訊，然後按一下[建立]。**&#x200B;**
+1. 在欄位中提供下列資訊，然後按一下[建立]。****
    1. 在下拉選單中選取&#x200B;**設定類型**。從清單中選取&#x200B;**翻譯整合**。
    1. 輸入設定的&#x200B;**標題**。**標題**&#x200B;會識別&#x200B;**雲端服務**&#x200B;主控台和頁面屬性下拉清單中的設定。
    1. 或者，輸入&#x200B;**名稱**&#x200B;以用於儲存設定的存放庫節點。
 
    ![建立翻譯設定](assets/create-translation-configuration.png)
 
-1. 按一下[建立]&#x200B;**&#x200B;**，就會顯示[編輯組態]&#x200B;**&#x200B;**&#x200B;視窗，您可以在其中設定組態屬性。
+1. 按一下[建立]****，就會顯示[編輯組態]****&#x200B;視窗，您可以在其中設定組態屬性。
 
 1. 請記住，內容片段以資產形式儲存在 AEM 中。按一下「**Assets**」標籤。
 
@@ -139,5 +139,5 @@ AEM 是一種靈活而強大的工具，透過多個連接器和多個設定，�
 
 雖然建議您檢閱文件「[設定翻譯規則](translation-rules.md)」以繼續 Headless 翻譯歷程的下一個部分，但下列是一些其他選用資源，深入探究了本文件提到的一些概念，不過這些資源並非繼續 Headless 歷程的必要條件。
 
-* [設定翻譯整合框架](/help/sites-administering/tc-tic.md) - 檢視所選翻譯連接器清單，了解如何設定翻譯整合框架以與協力廠商翻譯服務整合。
+* [設定翻譯整合框架](/help/sites-administering/tc-tic.md) - 檢視所選翻譯連接器清單，了解如何設定翻譯整合框架以與第三方翻譯服務整合。
 * [連接到 Microsoft Translator](/help/sites-administering/tc-msconf.md) - AEM 提供 Microsoft Translator 試用版帳戶用於測試目的。

@@ -11,16 +11,16 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ae001541-ae7f-42ce-8236-5fbb6ddb4c1f
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '7192'
+source-wordcount: '7168'
 ht-degree: 0%
 
 ---
 
 # 正在設定watched資料夾端點 {#configuring-watched-folder-endpoints}
 
-管理員可以設定網路資料夾，稱為&#x200B;*watched資料夾*，這樣當使用者將檔案(例如PDF檔案)放入watched資料夾時，就會叫用已設定的服務作業並操作檔案。 服務執行指定的作業後，會將修改的檔案儲存在指定的輸出資料夾中。
+管理員可以設定網路資料夾，稱為&#x200B;*watched資料夾*，這樣當使用者將檔案（例如PDF檔案）放入watched資料夾時，就會叫用已設定的服務作業並操作檔案。 服務執行指定的作業後，會將修改的檔案儲存在指定的輸出資料夾中。
 
 ## 正在設定Watched資料夾服務 {#configuring-the-watched-folder-service}
 
@@ -160,9 +160,9 @@ Watched資料夾服務可處理端點的建立、更新及刪除。 管理員建
 * 具有特定名稱的檔案；例如，資料。&amp;amp；ast；會排除名為&#x200B;*data1*、*data2*&#x200B;等檔案和資料夾。
 * 在名稱和副檔名中有複合運算式的檔案，如下列範例所示：
 
-   * 資料[0-9][0-9][0-9]。[d][aA]&#39;連線埠&#39;
-   * &amp;amp；ast；。[d][Aa]&#39;連線埠&#39;
-   * &amp;amp；ast；。[Xx][毫米][Ll]
+   * 資料`[0-9][0-9][0-9]`。`[dD][aA]`&#39;連線埠&#39;
+   * &amp;amp；ast；。`[dD][Aa]`&#39;連線埠&#39;
+   * &amp;amp；ast；.`[Xx][Mm][Ll]`
 
 如需檔案模式的詳細資訊，請參閱[關於檔案模式](configuring-watched-folder-endpoints.md#about-file-patterns)。
 
@@ -176,9 +176,9 @@ Watched資料夾服務可處理端點的建立、更新及刪除。 管理員建
 * 具有特定名稱的檔案；例如，資料。&amp;amp；ast；會包含名為&#x200B;*data1*、*data2*&#x200B;等等的檔案和資料夾。
 * 在名稱和副檔名中有複合運算式的檔案，如下列範例所示：
 
-   * 資料[0-9][0-9][0-9]。[d][aA]&#39;連線埠&#39;
-   * &amp;amp；ast；。[d][Aa]&#39;連線埠&#39;
-   * &amp;amp；ast；。[Xx][毫米][Ll]
+   * 資料`[0-9][0-9][0-9]`。`[dD][aA]`&#39;連線埠&#39;
+   * &amp;amp；ast；。`[dD][Aa]`&#39;連線埠&#39;
+   * &amp;amp；ast；.`[Xx][Mm][Ll]`
 
 如需檔案模式的詳細資訊，請參閱[關於檔案模式](configuring-watched-folder-endpoints.md#about-file-patterns)。
 
@@ -248,9 +248,9 @@ Watched資料夾輸出可以是單一檔案、檔案清單或檔案地圖。 然
 * 具有特定名稱的檔案。 例如，資料。&amp;amp；ast；
 * 在名稱和副檔名中有複合運算式的檔案，如下列範例所示：
 
-   * 資料[0-9][0-9][0-9]。[d][aA]&#39;連線埠&#39;
-   * &amp;amp；ast；。[d][Aa]&#39;連線埠&#39;
-   * &amp;amp；ast；。[Xx][毫米][Ll]
+   * 資料`[0-9][0-9][0-9].[dD][aA]`&#39;連線埠&#39;
+   * &amp;amp；ast；。`[dD][Aa]`&#39;連線埠&#39;
+   * &amp;amp；ast；.`[Xx][Mm][Ll]`
 
 管理員可以定義儲存結果的輸出資料夾的檔案模式。 對於輸出資料夾（結果、保留和失敗），管理員可以指定下列任一檔案模式：
 

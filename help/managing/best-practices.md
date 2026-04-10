@@ -3,9 +3,9 @@ title: 管理專案 — 最佳實務檢查清單
 description: 管理專案以實施Adobe Experience Manager (AEM)需要計畫和瞭解。 專案檢查清單旨在作為專案傳送的一組最佳實務。 它們會引導您完成專案生命週期的所有階段，並提供您狀態的高層級監控。
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
+role: Admin,Developer,Leader
 exl-id: 8f8883d8-4e2b-4ba0-bd83-414a96e7d382
-source-git-commit: 58c2f666ef6fd89fc42f5d969d1ef1626e45fe45
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '3212'
 ht-degree: 0%
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## 按角色顯示狀態 {#status-by-role}
 
-[角色狀態&#x200B;**]工作表顯示**&#x200B;階段&#x200B;[**與**&#x200B;角色&#x200B;**之&lbrace;2**&#x200B;健康狀態&#x200B;**](#projectheartbeat)、&lbrace;品質及&#x200B;**&#x200B;[完整性](#phases-and-milestones)**&#x200B;的詳細劃分。**&#x200B;[&#128279;](#persona)**
+[角色狀態&#x200B;**]工作表顯示**&#x200B;階段&#x200B;[**與**&#x200B;角色&#x200B;**之{2**健康狀態**](#projectheartbeat)、{品質及&#x200B;**[完整性](#phases-and-milestones)**&#x200B;的詳細劃分。**[](#persona)**
 
 ## 階段和里程碑 {#phases-and-milestones}
 
@@ -183,7 +183,7 @@ ht-degree: 0%
 
    * 每個環境的程式；例如，部署和維護需求
    * 維護活動（Datastore GC、TarPM最佳化等）
-   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)快取
+   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)快取
    * [叢集](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)發佈/Authorshare
    * 使用者端的效能（JS精簡、concat、css指令集、http請求總數及其他）
 
@@ -203,7 +203,7 @@ ht-degree: 0%
    * 範本/元件及其關係的劃分
    * 所需自訂的高層級細節（特定覆蓋圖將於稍後顯示）
    * 設計解決方案所需的工作流程（例如內容建立、核准、發佈、轉換、匯入和匯出）
-   * 任何複雜模組(例如MSM、Commerce、協力廠商整合)的特別考量
+   * 任何複雜模組（例如MSM、Commerce、協力廠商整合）的特別考量
 
 * **系統整合**
 
@@ -234,7 +234,7 @@ ht-degree: 0%
 
   在開發之前，應設定部署、發行、測試和報告問題所需的所有支援流程。
 
-  另請參閱[Adobe支援入口網站](https://experienceleague.adobe.com/zh-hant?support-solution=General&support-tab=home#support)。
+  另請參閱[Adobe支援入口網站](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)。
 
 ### 作業計畫與作業 {#operations-planning-and-operations}
 
@@ -515,7 +515,7 @@ ht-degree: 0%
    * 確保符合業務和效能KPI
    * 將成功標準和定義納入考量
 
-* 與架構師緊密合作(尤其是在草擬AEM的開發策略時)以定義範本與元件之間的關係、第三方應用程式的整合策略及任何專業功能等方面。
+* 與架構師緊密合作（尤其是在草擬AEM的開發策略時）以定義範本與元件之間的關係、第三方應用程式的整合策略及任何專業功能等方面。
 
 ### 品質銷售機會 {#quality-lead}
 
@@ -623,8 +623,8 @@ ht-degree: 0%
 
       * [開發 — 基本知識](/help/sites-developing/the-basics.md)
       * [MSM概念](/help/sites-administering/msm.md)
-      * [HTML範本語言(HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hant)
+      * [HTML範本語言(HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 * 相關檔案
 
-   * Adobe Experience Cloud - [規劃Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html?lang=zh-Hant)
+   * Adobe Experience Cloud - [規劃Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)

@@ -3,9 +3,9 @@ title: 設定翻譯規則
 description: 了解如何定義翻譯規則以識別要翻譯的內容。
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin,Developer,User,Leader
 exl-id: 94534336-1e1f-40eb-8364-9358c1420616
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 91%
@@ -69,7 +69,7 @@ ht-degree: 91%
 1. 使用路徑瀏覽器選取所需的路徑，然後按一下&#x200B;**確認**&#x200B;按鈕以儲存。 請記住，內容片段 (其包含 Headless 內容) 通常位於 `/content/dam/<your-project>` 下。
    ![選取路徑](assets/select-context.png)
 1. AEM 儲存設定。
-1. 選取您建立的內容，然後按一下[編輯]。**&#x200B;** 這將開啟&#x200B;**翻譯規則編輯器** 以設定屬性。
+1. 選取您建立的內容，然後按一下[編輯]。**** 這將開啟&#x200B;**翻譯規則編輯器** 以設定屬性。
    ![翻譯規則編輯器](assets/translation-rules-editor.png)
 1. 依預設，所有設定都繼承自父路徑，在此案例中為 `/content/dam`。取消核取選項&#x200B;**從`/content/dam`**&#x200B;繼承以新增其他欄位到組態。
 1. 取消勾選後，在清單的&#x200B;**一般**&#x200B;部分下，新增您[先前識別為翻譯欄位](getting-started.md#content-models)之內容片段模型的屬性名稱。
@@ -77,8 +77,7 @@ ht-degree: 91%
    1. 選項&#x200B;**翻譯**&#x200B;和&#x200B;**繼承**&#x200B;會自動勾選。
    1. 按一下&#x200B;**新增**。
    1. 對必須翻譯的所有欄位重複這些步驟。
-   1. 按一下「**儲存**」。
-
+   1. 按一下&#x200B;**儲存**。
       ![新增屬性](assets/add-property.png)
 
 您現在已經設定翻譯規則。

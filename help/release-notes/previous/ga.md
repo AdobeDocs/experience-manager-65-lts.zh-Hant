@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  6.5 LTS 版發行說明'
 description: 尋找 Adobe Experience Manager 6.5 LTS 的最新版本資訊。
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: dfda31ac-765b-401d-98d0-c19f0de22aab
-source-git-commit: eda8fc347ee8c68c1022495cbe8d48175c819be3
-workflow-type: ht
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+workflow-type: tm+mt
 source-wordcount: '1068'
 ht-degree: 100%
 
@@ -50,7 +50,7 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 
 ## 安裝與更新 {#install-update}
 
-如需設定需求，請參閱[安裝指示](/help/sites-deploying/custom-standalone-install.md)。
+如需關於設定需求的資訊，請參閱[安裝指示](/help/sites-deploying/custom-standalone-install.md)。
 
 如需詳細說明，請參閱[升級文件](/help/sites-deploying/upgrade.md)。
 

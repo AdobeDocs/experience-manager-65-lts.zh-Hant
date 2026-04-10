@@ -11,7 +11,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 9889b0fe-f39c-42dc-bc7b-8743d68e7503
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 4%
@@ -121,7 +121,7 @@ module.exports = {
 
 ### AEM 專案原型 {#aem-project-archetype}
 
-任何 AEM 專案都應使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)，它支援使用 React 或 Angular 的 SPA 專案並使用 SPA SDK。
+任何 AEM 專案都應使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用 React 或 Angular 的 SPA 專案並使用 SPA SDK。
 
 ## 應用程式結構 {#application-structure}
 
@@ -194,7 +194,7 @@ MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppP
 
 在此範例中，`AppPage`類別會擴充`Page`，其中包含之後可以使用的內部內容方法。
 
-`Page`會擷取頁面模型的JSON表示法，並處理內容以包裝/裝飾頁面的每個元素。 在[SPA Blueprint](/help/sites-developing/spa-blueprint.md#main-pars-header-1694932501)檔案中可以找到`Page`的更多詳細資料。
+`Page`會擷取頁面模型的JSON表示法，並處理內容以包裝/裝飾頁面的每個元素。 在`Page`SPA Blueprint[檔案中可以找到](/help/sites-developing/spa-blueprint.md#main-pars-header-1694932501)的更多詳細資料。
 
 ### Image.js {#image-js}
 
@@ -278,7 +278,7 @@ export default MapTo('my-react-app/react/components/structure/page')(PageClass, 
 
 ## 後續步驟 {#next-steps}
 
-如需建立您自己的SPA的逐步指南，請參閱[AEM SPA Editor快速入門 — WKND事件教學課程](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)。
+如需建立您自己的SPA的逐步指南，請參閱[AEM SPA Editor快速入門 — WKND事件教學課程](https://helpx.adobe.com/tw/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)。
 
 若要進一步瞭解如何組織自己以開發AEM的SPA，請參閱文章[為AEM開發SPA](/help/sites-developing/spa-architecture.md)。
 

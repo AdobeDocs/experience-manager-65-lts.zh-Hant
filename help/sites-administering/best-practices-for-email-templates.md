@@ -11,7 +11,7 @@ feature: Integration
 role: Admin
 exl-id: 34678cae-3c7f-4c9f-b7b6-c1dd4e0758ad
 index: false
-source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 >
 >本文適用於已棄用的AEM電子郵件元件基礎元件。
 >
->建議使用者使用現代[核心元件電子郵件元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=zh-Hant)
+>建議使用者使用現代[核心元件電子郵件元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 本檔案說明產生完善開發的電子郵件行銷活動範本的電子郵件設計相關最佳實務。
 
@@ -60,7 +60,7 @@ AEM中提供的示範行銷活動會遵循所有這些最佳實務。 每個最�
    <td><strong>實施</strong></td>
   </tr>
   <tr>
-   <td><p>指定檔案型別，以確保轉譯的一致性。</p> <p>在開頭新增DOCTYPE (HTML或XHTML)</p> </td>
+   <td><p>指定檔案型別，以確保轉譯的一致性。</p> <p>在開頭新增DOCTYPE （HTML或XHTML）</p> </td>
    <td><p>可透過設計變更<i>"/etc/designs/default/jcr：content/campaign_newsletterpage"</i>中的<i>cq：doctype</i>屬性進行設定</p> <p>預設值為「XHTML」：</p> <p>&lt;！DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional/EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>可變更為「HTML_5」：</p> <p>&lt;！DOCTYPE HTML&gt;</p> </td>
   </tr>
   <tr>

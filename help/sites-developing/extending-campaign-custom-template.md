@@ -10,7 +10,7 @@ feature: Developing
 role: Developer
 exl-id: 59a79455-c108-4f4b-93c1-d8c6f23aec88
 index: false
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 2%
@@ -81,7 +81,7 @@ ht-degree: 2%
 
    在範本( `/apps/geometrixx-outdoors/templates/campaign_profile/jcr:content`)中，您會看到下列預設值：
 
-   | **acMapping** | mapRecipient (適用於Adobe Campaign 6.1)、設定檔(適用於Adobe Campaign Standard) |
+   | **acMapping** | mapRecipient （適用於Adobe Campaign 6.1）、設定檔（適用於Adobe Campaign Standard） |
    |---|---|
    | **acTemplateId** | 郵件 |
 

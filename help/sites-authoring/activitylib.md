@@ -8,11 +8,11 @@ topic-tags: personalization
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: b5fc6cf5-fffd-4ee9-91d4-d10e532c3a11
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1936'
 ht-degree: 11%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 11%
 
 >[!CAUTION]
 >
->保護發佈執行個體上的活動設定節點&#x200B;**cq：ActivitySettings**，使其無法正常使用者存取。 活動設定節點應該只能由處理與Adobe Target的活動同步的服務存取。
+>保護發佈執行個體上的活動設定節點&#x200B;**cq:ActivitySettings**，使其無法正常使用者存取。 活動設定節點應該只能由處理與Adobe Target的活動同步的服務存取。
 >
 >如需詳細資訊，請參閱[與Adobe Target整合的必要條件](/help/sites-administering/target-requirements.md#securingtheactivitysettings)。
 
@@ -76,17 +76,17 @@ ht-degree: 11%
 
 新增活動或編輯現有活動，以將您的行銷工作聚焦於特定對象。 建立/編輯活動時，請指定下列資訊：
 
-* **&#x200B;**&#x200B;名稱：活動的名稱。
-* **&#x200B;**&#x200B;定位引擎：AEM [&#128279;](/help/sites-authoring/personalization.md#aem) 或 [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) ，做為目標內容的引擎。
+* **** 名稱：活動的名稱。
+* **** 定位引擎：AEM [](/help/sites-authoring/personalization.md#aem) 或 [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) ，做為目標內容的引擎。
 
-* **&#x200B;**&#x200B;選擇目標配置： (僅限Adobe Target) 此活動應用來連線至Adobe Target的雲端設定。只有在為「定位引擎」選取Adobe Target時，才會顯示此選項。
-* **活動型別： &#x200B;** 活動型別 — A/B測試或體驗鎖定目標
-* **&#x200B;**&#x200B;目標：(可選) 活動的說明。
-* **&#x200B;**&#x200B;體驗：客群名稱與您所定位之行銷區段之間的對應。
-* **&#x200B;**&#x200B;流量百分比：如果選取A/B測試，您可以變更每個體驗的流量 (百分比)。
-* **&#x200B;**&#x200B;持續時間：套用活動的時段。
-* **&#x200B;**&#x200B;優先順序：活動的相對優先順序。當活動提供相同使用者區段的內容時，優先順序較高的活動優先。
-* **&#x200B;**&#x200B;目標量度：如果選取Adobe target作為定位引擎，您可以將成功度量新增至活動。需要一個成功度量。
+* **** 選擇目標配置： (僅限Adobe Target) 此活動應用來連線至Adobe Target的雲端設定。只有在為「定位引擎」選取Adobe Target時，才會顯示此選項。
+* **活動型別： **活動型別 — A/B測試或體驗鎖定目標
+* **** 目標：(可選) 活動的說明。
+* **** 體驗：客群名稱與您所定位之行銷區段之間的對應。
+* **** 流量百分比：如果選取A/B測試，您可以變更每個體驗的流量 (百分比)。
+* **** 持續時間：套用活動的時段。
+* **** 優先順序：活動的相對優先順序。當活動提供相同使用者區段的內容時，優先順序較高的活動優先。
+* **** 目標量度：如果選取Adobe target作為定位引擎，您可以將成功度量新增至活動。需要一個成功度量。
 
 >[!NOTE]
 >
@@ -96,8 +96,8 @@ ht-degree: 11%
 
 若要新增活動：
 
-1. 按一下您要建立活動的品牌，按一下&#x200B;**「建立」**，然後按一下&#x200B;**「建立活動」**。 如果您正在編輯，請選取活動，然後按一下[編輯]。**&#x200B;**
-1. 提供下列資訊，然後按一下[下一步] **&#x200B;**：
+1. 按一下您要建立活動的品牌，按一下&#x200B;**「建立」**，然後按一下&#x200B;**「建立活動」**。 如果您正在編輯，請選取活動，然後按一下[編輯]。****
+1. 提供下列資訊，然後按一下[下一步] ****：
 
    * 活動的名稱。
    * 要使用的定位引擎。 預設會選取ContextHub (AEM)。 如果您需要使用Adobe Target，請在目標內容編輯器中建立活動。
@@ -108,7 +108,7 @@ ht-degree: 11%
 1. 新增一或多個體驗至活動。按一下&#x200B;**新增體驗**。
 1. 如果您使用AEM目標定位或Adobe Target體驗目標定位：
 
-   1. 按一下&#x200B;**選取對象**&#x200B;並選取您的體驗鎖定目標的區段。
+   1. 按一下**選取對象**並選取您的體驗鎖定目標的區段。
    1. 按一下&#x200B;**新增體驗**，輸入名稱，然後按一下&#x200B;**確定**。
 
    1. 按一下「**下一步**」。
@@ -133,7 +133,7 @@ ht-degree: 11%
 
 1. 若要指定活動的優先順序，請使用滑桿來選取&#x200B;**低**、**正常**&#x200B;或&#x200B;**高**。
 1. 如果您使用Adobe Target作為目標定位引擎，請選取您要透過此活動測量的內容。 請參閱[設定活動和設定目標](/help/sites-authoring/content-targeting-touch.md)，以取得有關可用成功量度的詳細資訊。 請至少選取一個目標。
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
    >[!NOTE]
    >

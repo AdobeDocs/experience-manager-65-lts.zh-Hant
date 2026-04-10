@@ -3,9 +3,9 @@ title: 翻譯內容
 description: 使用翻譯連接器和規則來翻譯您的 Headless 內容。
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin,Developer,User,Leader
 exl-id: 13d11e2b-5a3f-4987-a653-14e0790fbbd0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2115'
 ht-degree: 71%
@@ -87,7 +87,7 @@ ht-degree: 71%
    ![建立專案資料夾](assets/create-project-folder.png)
 
 1. 按一下資料夾以開啟資料夾。
-1. 在您的新專案資料夾中，按一下[建立&#x200B;**] > [專案**]。**&#x200B;**
+1. 在您的新專案資料夾中，按一下[建立&#x200B;**] > [專案**]。****
 1. 專案是以範本為基礎。按一下&#x200B;**翻譯專案**&#x200B;範本以選取它，然後按一下&#x200B;**下一步**。
 
    ![選取翻譯專案範本](assets/select-translation-project-template.png)
@@ -96,7 +96,7 @@ ht-degree: 71%
 
    ![專案基本索引標籤](assets/project-basic-tab.png)
 
-1. 在&#x200B;**進階**&#x200B;索引標籤上，使用&#x200B;**目標語言**&#x200B;下拉式清單來選取內容應翻譯成哪些語言。 按一下&#x200B;**建立**。
+1. 在&#x200B;**進階**&#x200B;索引標籤上，使用&#x200B;**目標語言**&#x200B;下拉式清單來選取內容應翻譯成哪些語言。 按一下「**建立**」。
 
    ![專案進階標籤](assets/project-advanced-tab.png)
 
@@ -133,7 +133,7 @@ ht-degree: 71%
 若要查看此專案包含之 Headless 內容的詳細資料：
 
 1. 按一下&#x200B;**翻譯工作**&#x200B;卡片底部的省略符號按鈕。
-1. **翻譯工作**&#x200B;視窗列出工作的所有項目。
+1. **翻譯工作**視窗列出工作的所有項目。
    ![翻譯工作詳細資料](assets/translation-job-detail.png)
 1. 按一下某一行可檢視該行的詳細資訊，請記住，一行可能表示要翻譯的多個內容專案。
 1. 按一下條列專案的選取核取方塊，即可檢視其他選項，例如，從工作中刪除專案，或在內容片段或Assets主控台中檢視專案的選項。

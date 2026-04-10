@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: personalization
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: ce6ebfff-3a1d-4c9f-aa50-23d1c3afc852
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 0%
@@ -64,6 +64,6 @@ ht-degree: 0%
 1. 開啟您建立的&#x200B;**促銷活動**&#x200B;頁面。
 1. 按一下「**建立頁面**」並輸入頁面的標題（例如，「男性」）來建立您區段的體驗，然後選取「**體驗**」範本。
 1. 開啟已建立的體驗頁面。
-1. 按一下[編輯]&#x200B;**&#x200B;**，然後在[區段]下方按一下[新增專案]&#x200B;**&#x200B;**。
+1. 按一下[編輯]****，然後在[區段]下方按一下[新增專案]****。
 1. 輸入男性區段的路徑，例如&#x200B;**/etc/segmentation/ac-segments/male**，然後按一下&#x200B;**確定**。 應該會出現下列訊息： *體驗目標為：男性*
 1. 重複上述步驟以建立所有區段的體驗，例如女性目標。

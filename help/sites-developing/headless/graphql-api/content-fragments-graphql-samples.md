@@ -5,10 +5,10 @@ feature: Content Fragments,GraphQL API
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 exl-id: 9a953caa-47d3-4e06-a27d-2a0c3fc72597
-source-git-commit: c2947923fb83b57bc0e1c068af52558dd0a04867
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
 source-wordcount: '1577'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 
@@ -1717,22 +1717,22 @@ query {
 
 | 名稱 | 名字 | 獎項 |
 |--- |--- |--- |
-| Lincoln |  Abe | |
-| Smith | Adam |   |
-| Slade |  刀具 |  Gameblitz<br>Gamestar |
-| Marsh |  Duke |   |   |
-|  Smith |  Joe |   |
-| Croft |  Lara | Gamestar |
-| Caulfield |  最大 |  Gameblitz |
-|  工作 |  Steve |   |
+| Lincoln | Abe | |
+| Smith | Adam | |
+| Slade | Cutter | Gameblitz<br>Gamestar |
+| Marsh | Duke | |
+| Smith | Joe | |
+| Croft | Lara | Gamestar |
+| Caulfield | 最大值 | Gameblitz |
+| 工作 | Steve | |
 
 #### 獎項 {#fragment-award}
 
 | 快速鍵/ID | 標題 |
 |--- |--- |
 | GB | Gameblitz |
-|  GS | Gamestar |
-|  OSC | Oscar |
+| GS | Gamestar |
+| OSC | Oscar |
 
 #### 城市 {#fragment-city}
 

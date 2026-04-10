@@ -6,10 +6,10 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 9c8dff52-3860-4f71-a0d9-993574f1d654
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -46,9 +46,9 @@ RemotePage元件會從應用程式產生的`asset-manifest.json`擷取所有必�
 
 ## 限制 {#limitations}
 
-* RemotePage元件預期實作會提供資產資訊清單，就像這裡所提供的[一樣。](https://github.com/shellscape/webpack-manifest-plugin)然而，RemotePage元件僅經過測試可用於React架構（以及透過remote-page-next元件的Next.js），因此不支援從其他架構(例如Angular)從遠端載入應用程式。
+* RemotePage元件預期實作會提供資產資訊清單，就像這裡所提供的[一樣。](https://github.com/shellscape/webpack-manifest-plugin)然而，RemotePage元件僅經過測試可用於React架構（以及透過remote-page-next元件的Next.js），因此不支援從其他架構（例如Angular）從遠端載入應用程式。
 * 在AEM中執行遠端轉譯時，在應用程式的根HTML檔案中定義的內部CSS和根DOM節點上的內嵌CSS將不可用。
 
-## 技術細節 {#technical-details}
+## 技術詳細資訊 {#technical-details}
 
 如同其他的AEM SPA專案，RemotePage元件是開放原始碼。 如需RemotePage元件的完整技術詳細資訊，[請參閱GitHub存放庫。](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)

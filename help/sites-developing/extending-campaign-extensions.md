@@ -10,7 +10,7 @@ feature: Developing
 role: Developer
 exl-id: 7cdce721-ca00-43ac-a543-85bfad382821
 index: false
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 2%
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 ## 範例1：AEM至Adobe Campaign {#example-aem-to-adobe-campaign}
 
-AEM與Campaign之間的標準整合是以JSON和JSSP (JavaScript伺服器頁面)為基礎。 這些JSSP檔案可在Campaign主控台中找到，且全部以&#x200B;**aec** (Adobe Experience Cloud)開頭。
+AEM與Campaign之間的標準整合是以JSON和JSSP （JavaScript伺服器頁面）為基礎。 這些JSSP檔案可在Campaign主控台中找到，且全部以&#x200B;**aec** (Adobe Experience Cloud)開頭。
 
 ![chlimage_1-15](assets/chlimage_1-15a.png)
 

@@ -3,9 +3,9 @@ title: 檢視頁面分析資料，以評估頁面內容的成效
 description: 使用頁面分析資料來評估其頁面內容的成效
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: b47591ac-10ff-4b87-b75d-68ed635ceca8
-source-git-commit: 87f0e0530b14c8cb7d25ee139ec89d75551fb16e
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 4%
@@ -63,7 +63,7 @@ analytics-administrators使用者群組的成員可以設定Sites主控台，讓
 
    ![spad-03](assets/spad-03.png)
 
-1. 選取您要在Sites主控台中公開給作者的量度，然後按一下[新增]。**&#x200B;**
+1. 選取您要在Sites主控台中公開給作者的量度，然後按一下[新增]。****
 
    顯示的欄是從Adobe Analytics中擷取的。
 
@@ -84,4 +84,4 @@ analytics-administrators使用者群組的成員可以設定Sites主控台，讓
 >
 >由於Adobe Analytics API中的安全性變更，AEM中包含的Activity Map版本已無法再使用。
 >
->現在應該使用Adobe Analytics[提供的](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=zh-Hant)ActivityMap外掛程式。
+>現在應該使用Adobe Analytics[提供的](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)ActivityMap外掛程式。

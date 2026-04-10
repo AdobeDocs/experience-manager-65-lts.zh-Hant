@@ -8,10 +8,10 @@ topic-tags: personalization
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 20de763d-dd07-4ba6-a54d-a2b3b9b7e1ec
 index: false
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2857'
 ht-degree: 6%
@@ -155,7 +155,7 @@ ht-degree: 6%
 新增如何使用連結的其他資訊。
 
 * **LinkType**
-在下拉式清單中，選取&#x200B;**自訂URL**&#x200B;和&#x200B;**最適化檔案**。 此為必填欄位。 如果您選取「自訂URL」，可提供連結URL。 如果您選取「最適化檔案」，則可以提供檔案路徑。
+在下拉式清單中，選取**自訂URL**&#x200B;和&#x200B;**最適化檔案**。 此為必填欄位。 如果您選取「自訂URL」，可提供連結URL。 如果您選取「最適化檔案」，則可以提供檔案路徑。
 
 * **其他URL引數**
 新增任何其他URL引數。 按一下「新增專案」以新增多個專案。
@@ -279,7 +279,7 @@ Dynamic Media Classic (Scene7)影像範本為圖層式影像檔案，其中的�
 
 * 核取方塊 (行銷活動)
 * 日期欄位（行銷活動）和日期欄位/HTML5 （行銷活動）
-* 加密的主要金鑰 (行銷活動)
+* 加密的主索引鍵 (行銷活動)
 * 錯誤顯示 (行銷活動)
 * 隱藏調和索引鍵 (行銷活動)
 * 數值欄位 (行銷活動)
@@ -396,7 +396,7 @@ Adobe Campaign元件具有所有元件中通用的設定（加密的主要金鑰
 
 除了大部分Adobe Campaign元件通用的[設定](#settings-common-to-most-components)之外，您還可以設定下列專案：
 
-* **限制 — 限制**&#x200B;下拉式清單
+* **限制 — 限制**下拉式清單
 您可以選取 — **無**&#x200B;或&#x200B;**日期 —**&#x200B;來新增日期限制或無限制。 如果您選取日期，使用者在欄位中輸入的答案必須為日期格式。
 
 * **限制訊息**&#x200B;此外，您可以新增限制訊息，讓使用者知道如何正確格式化他們的回答。
@@ -406,9 +406,9 @@ Adobe Campaign元件具有所有元件中通用的設定（加密的主要金鑰
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
-### 加密的主要金鑰 (行銷活動) {#encrypted-primary-key-campaign}
+### 加密的主索引鍵 (行銷活動) {#encrypted-primary-key-campaign}
 
-此元件定義將包含Adobe Campaign設定檔識別碼的URL引數名稱(分別為&#x200B;**主要資源識別碼**&#x200B;或Adobe Campaign Standard中的&#x200B;**加密主金鑰**&#x200B;和6.1)。
+此元件定義將包含Adobe Campaign設定檔識別碼的URL引數名稱（分別為&#x200B;**主要資源識別碼**&#x200B;或Adobe Campaign Standard中的&#x200B;**加密主金鑰**&#x200B;和6.1）。
 
 顯示和修改Adobe Campaign設定檔資料&#x200B;**的每個表單都必須**&#x200B;包含加密的主要金鑰元件。
 
@@ -448,7 +448,7 @@ Adobe Campaign元件具有所有元件中通用的設定（加密的主要金鑰
 
 除了大部分Adobe Campaign元件通用的[設定](#settings-common-to-most-components)之外，您還可以設定下列專案：
 
-* **限制 — 限制**&#x200B;下拉式清單
+* **限制 — 限制**下拉式清單
 您可以選取 — **無**&#x200B;或&#x200B;**數值 —**&#x200B;來新增數值或無限制的限制。 如果您選取數字，使用者在欄位中輸入的答案必須是數字。
 
 * **限制訊息**&#x200B;此外，您可以新增限制訊息，讓使用者知道如何正確格式化他們的回答。
@@ -474,13 +474,13 @@ Adobe Campaign元件具有所有元件中通用的設定（加密的主要金鑰
 
 使用&#x200B;**訂閱檢查清單（行銷活動）**&#x200B;元件來修改與Adobe Campaign設定檔相關聯的訂閱。
 
-當新增到表單時，此元件將所有可用的訂閱顯示為核取方塊，並允許使用者選取所需的訂閱。 使用者提交表單時，此元件會根據表單動作型別(**Adobe Campaign：訂閱服務**&#x200B;或&#x200B;**Adobe Campaign：取消訂閱服務**)，讓使用者訂閱或取消訂閱選取的服務。
+當新增到表單時，此元件將所有可用的訂閱顯示為核取方塊，並允許使用者選取所需的訂閱。 使用者提交表單時，此元件會根據表單動作型別（**Adobe Campaign：訂閱服務**&#x200B;或&#x200B;**Adobe Campaign：取消訂閱服務**），讓使用者訂閱或取消訂閱選取的服務。
 
 >[!NOTE]
 >
 >元件不會檢查使用者已訂閱/取消訂閱的服務。
 
-您可以[在訂閱檢查清單（行銷活動）元件中設定大部分Adobe Campaign元件通用的設定](#settings-common-to-most-components)。 (此元件沒有可用的Adobe Campaign設定。)
+您可以[在訂閱檢查清單（行銷活動）元件中設定大部分Adobe Campaign元件通用的設定](#settings-common-to-most-components)。 （此元件沒有可用的Adobe Campaign設定。）
 
 下列範例顯示正在顯示的訂閱檢查清單（行銷活動）元件。
 
@@ -492,7 +492,7 @@ Adobe Campaign元件具有所有元件中通用的設定（加密的主要金鑰
 
 除了大部分Adobe Campaign元件通用的[設定](#settings-common-to-most-components)之外，您還可以設定下列專案：
 
-* **限制 — 限制**&#x200B;下拉式清單
+* **限制 — 限制**下拉式清單
 您可以選取 — **無、** **電子郵件**&#x200B;或&#x200B;**名稱** （無變音） — 新增電子郵件地址、名稱或無限制的限制。 如果您選取電子郵件，使用者在欄位中輸入的答案必須是電子郵件地址。 如果您選取名稱，則它必須是名稱（不允許變音）。
 
 * **限制訊息**&#x200B;此外，您可以新增限制訊息，讓使用者知道如何正確格式化他們的回答。

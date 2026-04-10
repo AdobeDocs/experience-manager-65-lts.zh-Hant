@@ -3,9 +3,9 @@ title: 了解 Headless 內容以及如何在 AEM 中翻譯
 description: 了解 Headless 概念、它們如何對應到 AEM 以及 AEM 翻譯理論。
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin,Developer,User,Leader
 exl-id: b81293da-772a-4ff1-8606-cec92d8cbd72
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 98%
@@ -48,7 +48,7 @@ ht-degree: 98%
 
 當我們談論 Headless CMS 時，CMS 管理內容並繼續將其傳遞給取用者。然而，透過僅將&#x200B;**內容**&#x200B;以標準方式傳遞，Headless CMS 會省略最後輸出呈現作業，將內容的&#x200B;**展示**&#x200B;作業留給取用內容的服務執行。
 
-![&#x200B; Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
+![ Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
 取用內容的服務，無論是 AR 體驗、網路商店、行動體驗、漸進式網頁應用程式 (PWA) 等，都從 Headless CMS 取用內容並提供自己的呈現操作。它們負責為您的內容提供自己的頭。
 
@@ -82,5 +82,5 @@ AEM 的強大功能使其能夠以 Headless 方式、全堆疊方式或同時以
 
 * [MSM 和翻譯](/help/sites-administering/msm-and-translation.md) - 詳細說明 AEM 多網站管理員以及它如何與其翻譯工具一起工作
 * [AEM as a Headless CMS 簡介](/help/sites-developing/headless/introduction.md)
-* [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
-* [AEM 中的 Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hant)
+* [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM 中的 Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

@@ -3,9 +3,9 @@ title: 檢查清單 — 進一步參考
 description: 進一步瞭解詳細說明和/或擴大「管理專案 — 最佳實務檢查清單」涵蓋的檔案和原則。
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
+role: Admin,Developer,Leader
 exl-id: 15d9c2ac-0b13-4839-a873-bc884ee69132
-source-git-commit: 2efe81437790352d674bdb0e9cc9ff524fd00487
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '3695'
 ht-degree: 1%
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ### AEM的功能 {#features-within-aem}
 
-實作AEM （特別是第一次）時，請檢閱AEM[的](https://business.adobe.com/tw/products/experience-manager/adobe-experience-manager.html)功能和工作流程，以確定您想要或需要的區域。
+實作AEM （特別是第一次）時，請檢閱AEM[的](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)功能和工作流程，以確定您想要或需要的區域。
 
 請考量您使用的AEM功能及其對您設計的影響；例如：
 
@@ -269,7 +269,7 @@ AEM可以與其他Adobe產品、協力廠商服務或兩者整合。 這些工�
 
 * 在發佈時測量（沒有製作環境和/或CFC額外負荷）
 * 在伺服器上測量（沒有網路負荷）
-* 未快取(無AEM輸出快取，無Dispatcher快取)
+* 未快取（無AEM輸出快取，無Dispatcher快取）
 * 僅適用於具有許多相依性的複雜專案(HTML、JS、PDF、...)
 * 系統上沒有其他載入
 
@@ -519,7 +519,7 @@ AEM可以與其他Adobe產品、協力廠商服務或兩者整合。 這些工�
      <li><a href="/help/sites-developing/developer-mode.md">開發人員模式</a></li>
      <li><a href="/help/sites-developing/hobbes.md">測試主控台</a></li>
      <li><a href="/help/sites-administering/operations-dashboard.md">操作控制面板</a></li>
-     <li><a href="/help/sites-authoring/content-insights.md">內容分析</a></li>
+     <li><a href="/help/sites-authoring/content-insights.md">內容洞察</a></li>
      <li><a href="/help/sites-authoring/author-environment-tools.md#content-tree">內容樹狀結構</a></li>
     </ul> </td>
   </tr>
@@ -532,7 +532,7 @@ AEM可以與其他Adobe產品、協力廠商服務或兩者整合。 這些工�
    <td><a href="https://www.selenium.dev/">Selenium</a>是Open Source測試工具。 測試會直接在瀏覽器中執行 — 模擬使用者的工作方式。</td>
   </tr>
   <tr>
-   <td>Microsoft®專案</td>
+   <td>®專案</td>
    <td>常用的專案管理工具。</td>
   </tr>
   <tr>

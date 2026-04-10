@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: personalization
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Multi Site Manager
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 058f0019-68c2-4769-b49d-c1e251196ff1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2838'
 ht-degree: 5%
@@ -115,7 +115,7 @@ ht-degree: 5%
 
 ![chlimage_1-274](assets/chlimage_1-274.png)
 
-行銷人員想要將這些變更轉出至歐洲區域，並透過點選或按一下「**轉出頁面**」來轉出[即時副本](/help/sites-administering/msm-livecopy.md)。 重新整理標籤後，Great Britain網站會有新影像，因為Europe區域繼承自主區域（轉出後）。
+行銷人員想要將這些變更轉出至歐洲區域，並透過點選或按一下「[轉出頁面](/help/sites-administering/msm-livecopy.md)」來轉出&#x200B;**即時副本**。 重新整理標籤後，Great Britain網站會有新影像，因為Europe區域繼承自主區域（轉出後）。
 
 ![chlimage_1-275](assets/chlimage_1-275.png)
 
@@ -156,18 +156,18 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->當您按一下品牌&#x200B;**的名稱直到您建立其他區域為止**&#x200B;時，預設會收合名為「主版區域」的預設區域。 然後，當您在「活動」或「產品建議」控制台中選 **取品牌** 時，您會看到「 **區域**&#x200B;**&#x200B;** 」控制台。
+>當您按一下品牌&#x200B;**的名稱直到您建立其他區域為止**&#x200B;時，預設會收合名為「主版區域」的預設區域。 然後，當您在「活動」或「產品建議」控制台中選 **取品牌** 時，您會看到「 **區域****** 」控制台。
 
 若要建立區域：
 
-1. 導覽至「 **個人化** >活動 **&#x200B;**&#x200B;」或「選 **件** 」，然後導覽至您的品牌。
+1. 導覽至「 **個人化** >活動 **** 」或「選 **件** 」，然後導覽至您的品牌。
 1. 按一下&#x200B;**建立區域**。
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
 1. 按一下&#x200B;**區域**&#x200B;圖示，然後按一下&#x200B;**下一步**。
 1. 在&#x200B;**標題**&#x200B;欄位中輸入新區域的名稱。 選擇性地選取標籤。
-1. 按一下&#x200B;**建立**。
+1. 按一下「**建立**」。
 
    AEM會重新導向至品牌視窗，並列出所有已建立的區域。 如果「主版區域」之外還有其他區域，您可以直接在「品牌主控台」中建立區域。
 
@@ -179,7 +179,7 @@ ht-degree: 5%
 
 若要建立區域作為LiveCopy：
 
-1. 導覽至「 **個人化** >活動 **&#x200B;**&#x200B;」或「 **產品建議** 」，然後導覽至您的品牌。
+1. 導覽至「 **個人化** >活動 **** 」或「 **產品建議** 」，然後導覽至您的品牌。
 1. 按一下&#x200B;**建立區域作為即時副本**。
 
    ![chlimage_1-279](assets/chlimage_1-279.png)
@@ -202,7 +202,7 @@ ht-degree: 5%
    >
    >將頁面轉出至即時副本，且為Blueprint頁面設定的區域同時也是為頁面即時副本設定的區域的Blueprint時，LiveAction **personalizationContentRollout**&#x200B;會觸發同步的subRollout，此為&#x200B;**標準轉出設定**&#x200B;的一部分。
 
-1. 按一下&#x200B;**建立**。
+1. 按一下「**建立**」。
 
    AEM會重新導向至品牌視窗，並列出所有已建立的區域。 如果「主版區域」之外還有其他區域，則可直接從品牌視窗建立區域。
 
@@ -271,7 +271,7 @@ ht-degree: 5%
 1. 導覽至您要從主版分離即時副本的頁面，然後在模式下拉式選單中按一下&#x200B;**鎖定目標**。
 1. 如果您的頁面連結至即時副本區域，您會看到繼承狀態。 按一下&#x200B;**開始鎖定目標**。
 1. 從工 **具列的下拉式選單中選取「分離即時副本** 」。AEM會確認您要分離即時副本。
-1. 按一下「分離&#x200B;**&#x200B;**」，將即時副本與活動分離。 分離後，有關繼承的下拉式功能表不再顯示。 活動現在是本機活動。
+1. 按一下「分離&#x200B;****」，將即時副本與活動分離。 分離後，有關繼承的下拉式功能表不再顯示。 活動現在是本機活動。
 
    ![chlimage_1-287](assets/chlimage_1-287.png)
 

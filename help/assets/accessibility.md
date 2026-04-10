@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager Assets]的可存取功能與介面'
 description: 瞭解 [!DNL Adobe Experience Manager] 6.5 LTS [!DNL Assets] 中的協助工具功能如何協助殘障使用者。
 feature: Asset Management
-role: User, Architect, Leader
+role: User,Developer,Leader
 solution: Experience Manager, Experience Manager Assets
 exl-id: f9540bfb-1c4f-41f0-9caa-ef9265225648
-source-git-commit: 55a82f12f0ddd952e720bed374e5bd3515648419
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1882'
 ht-degree: 0%
@@ -219,7 +219,7 @@ Review CQ-4282133 before adding - Close option in a coral-dialog was not accessi
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; [!DNL Dynamic Media]](/help/assets/accessibility-dm.md)中的協助工具功能。
+>* [ [!DNL Dynamic Media]](/help/assets/accessibility-dm.md)中的協助工具功能。
 >* [每個Service Pack版本](/help/release-notes/release-notes.md)中完成的增強功能的發行說明。
 >* [[!DNL Adobe Experience Manager] 協助工具指引](/help/managing/web-accessibility.md)。
 >* [Adobe解決方案的一致性報告(ACR)和VPAT清單](https://www.adobe.com/accessibility/compliance.html)。

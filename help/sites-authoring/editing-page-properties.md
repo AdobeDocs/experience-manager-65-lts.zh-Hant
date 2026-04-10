@@ -3,10 +3,10 @@ title: 編輯頁面屬性
 description: 在Adobe Experience Manager中定義頁面的必要屬性。
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 5148afb9-f447-4475-a15c-1fa345325711
 mini-toc-levels: 2
-source-git-commit: 4817296c00e094a65744a896d798e429d3ab6c7d
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2477'
 ht-degree: 3%
@@ -41,7 +41,7 @@ ht-degree: 3%
 
 #### 品牌元素 {#branding}
 
-藉由將品牌概要附加至每個頁面標題，跨頁面套用一致的品牌識別。 此功能需要使用2.14.0版或更新版本的[核心元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)的頁面元件
+藉由將品牌概要附加至每個頁面標題，跨頁面套用一致的品牌識別。 此功能需要使用2.14.0版或更新版本的[核心元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)的頁面元件
 
 * **覆寫** — 檢查以在此頁面上定義品牌概要。
    * 此值由任何子頁面繼承，除非它們也設定了&#x200B;**覆寫**&#x200B;值。
@@ -85,7 +85,7 @@ ht-degree: 3%
 
 輸入此頁面的虛名URL，此URL可讓您使用較短和/或較具表現力的URL。
 
-例如，如果網站`http://example.com,`的虛名URL設定為`welcome`至由路徑`/v1.0/startpage`識別的頁面，則`http://example.com/welcome`將是`http://example.com/content/v1.0/startpage`的虛名URL
+例如，如果網站`welcome`的虛名URL設定為`/v1.0/startpage`至由路徑`http://example.com,`識別的頁面，則`http://example.com/welcome`將是`http://example.com/content/v1.0/startpage`的虛名URL
 
 >[!CAUTION]
 >
@@ -95,7 +95,7 @@ ht-degree: 3%
 >* 不支援規則運算式模式。
 >* 不應設為現有頁面。
 
-設定Dispatcher以啟用對虛名URL的存取權。 如需詳細資訊，請參閱[啟用對虛名URL的存取權](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hant#enabling-access-to-vanity-urls-vanity-urls)。
+設定Dispatcher以啟用對虛名URL的存取權。 如需詳細資訊，請參閱[啟用對虛名URL的存取權](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls)。
 
 * **新增** — 點選或按一下以新增虛名URL。
 * **移除** — 點選或按一下以移除虛名URL。
@@ -110,7 +110,7 @@ ht-degree: 3%
 * **重新導向** — 指出此頁面應該自動重新導向的頁面
 * **設計** — 指出要用於此頁面的[設計](/help/sites-developing/designer.md)。
 * **別名** — 指定要用於此頁面的別名
-   * 例如，如果您為頁面`/content/wknd/us/en/magazine/members-only`定義別名`private`，則也可以透過`/content/wknd/us/en/magazine/private`存取此頁面
+   * 例如，如果您為頁面`private`定義別名`/content/wknd/us/en/magazine/members-only`，則也可以透過`/content/wknd/us/en/magazine/private`存取此頁面
    * 建立別名會設定頁面節點上的`sling:alias`屬性，這只會影響資源，而不會影響存放庫路徑。
    * 無法發佈編輯器中以別名存取的頁面。 編輯器中的[發佈選項](/help/sites-authoring/publishing-pages.md)僅適用於透過實際路徑存取的頁面。
    * 如需詳細資訊，請參閱SEO和URL管理最佳實務下的[本地化頁面名稱](/help/managing/seo-and-url-management.md#localized-page-names)。
@@ -148,7 +148,7 @@ ht-degree: 3%
 
 * **標準URL** — 用於覆寫頁面的標準URL
    * 如果保留為空白，頁面的URL將是其標準URL。
-* **Robots標籤** — 使用下拉式清單來選取Robots標籤，以控制搜尋引擎編目程式的行為
+* **Robots標籤** — 使用下拉式清單來選取Robots標籤，以控制搜尋引擎爬蟲的行為
    * 有些選項會相互衝突，以較寬鬆的選項優先。
 * **產生Sitemap** — 選取時，會為此頁面及其子系產生`sitemap.xml`。
 
@@ -186,7 +186,7 @@ ht-degree: 3%
 * **ContextHub路徑** — 選取[ContextHub設定](/help/sites-developing/ch-configuring.md)
 * **區段路徑** — 選取[區段路徑](/help/sites-administering/segmentation.md)。
 
-#### 定位組態 {#targeting}
+#### 目標選擇組態 {#targeting}
 
 選取[品牌以指定目標定位的範圍。](/help/sites-authoring/target-adobe-campaign.md)
 
@@ -304,7 +304,7 @@ ht-degree: 3%
 >
 >您也可以為Assets大量編輯屬性。 兩者相似，但有幾處不同。 如需詳細資訊，請參閱[編輯多個Assets的屬性](/help/assets/metadata.md)。
 >
->還有[大量編輯器](/help/sites-administering/bulk-editor.md)。 此編輯器可讓您使用GQL (Google查詢語言)從多個頁面搜尋內容，然後直接使用大量編輯器編輯內容，再將變更儲存到原始頁面。
+>還有[大量編輯器](/help/sites-administering/bulk-editor.md)。 此編輯器可讓您使用GQL （Google查詢語言）從多個頁面搜尋內容，然後直接使用大量編輯器編輯內容，再將變更儲存到原始頁面。
 
 您可以選取多個頁面以透過各種方法進行大量編輯，包括：
 
@@ -334,7 +334,7 @@ ht-degree: 3%
 
       * 您可以選取/取消選取（如有必要）
 
-   * 標籤
+   * 索引標籤
 
       * 和檢視單一頁面屬性時一樣，屬性會依索引標籤排序。
 

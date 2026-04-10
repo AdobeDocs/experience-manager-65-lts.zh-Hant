@@ -2,11 +2,11 @@
 title: 使用Apache Tika偵測MIME型別的資產
 description: 啟用Apache Tika以協助 [!DNL Experience Manager Assets] 在上傳作業期間從內容資料流偵測資產的MIME型別，而非副檔名。
 contentOwner: AG
-role: Admin, Architect
+role: Admin,Developer
 feature: Metadata,Developer Tools,Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 4c953b8b-ae50-4c02-889a-78b02b4ba975
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 4%
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 如果您使用[!DNL Apache Tika]上傳資產，[!DNL Assets]會在上傳作業期間從內容資料流偵測其MIME型別，而非副檔名。
 
-此功能預設為停用。 若要啟用此功能，請從[!UICONTROL 設定管理員]設定&#x200B;**[!UICONTROL Day CQ DAM Mime Type]**&#x200B;服務。
+此功能預設為停用。 若要啟用此功能，請從&#x200B;**[!UICONTROL 設定管理員]**&#x200B;設定[!UICONTROL Day CQ DAM Mime Type]服務。
 
 >[!NOTE]
 >
