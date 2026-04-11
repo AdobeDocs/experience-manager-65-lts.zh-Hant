@@ -772,7 +772,7 @@ ht-degree: 23%
       + [Designer快速入門教學課程](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
       + [Designer範例](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
       + [Designer基本指令碼](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_tw)
-      + [Designer指令碼參考](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
+      + [Designer指令碼參考](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_tw)
       + [Designer FormCalc參考](https://www.adobe.com/go/learn_aemforms_formCalc_65_tw)
       + [在HTML5 Forms中使用手寫簽名](/help/forms/using/scribble-signature.md)
       + [在 Designer 中變更頁面零內容](/help/forms/using/changing-page-zero-content-designer.md)
