@@ -9,9 +9,9 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 893d04cb-3a71-4400-9ca4-62ad46aacfdd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4c6423d295aa93f6f7048a5ac919b551f3f305d7
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1872'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 無論您在重新建構內容時套用存取控制，還是為新的服務使用者執行此動作時，都必須儘可能套用最嚴格的ACL。 使用所有可能的存取控制工具：
 
-* 例如，不要在`/apps`上套用`jcr:read`，而只將其套用至`/apps/*/components/*/analytics`
+* 例如，不要在`jcr:read`上套用`/apps`，而只將其套用至`/apps/*/components/*/analytics`
 
 * 使用[限制](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html)
 
@@ -109,37 +109,49 @@ ht-degree: 0%
 1. 識別您服務的必要許可權，牢記最小許可權原則。
 1. 檢查是否有使用者可以使用您所需的確切許可權設定。 如果沒有任何現有使用者符合您的需求，請建立系統服務使用者。 需要RTC才能建立服務使用者。 有時候，建立多個子服務使用者（例如，一個用於寫入，一個用於讀取）以進一步劃分存取權是有意義的。
 1. 為您的使用者設定及測試ACE。
-1. 為您的服務和`user/sub-users`新增`service-user`對應
+1. 為您的服務和`service-user`新增`user/sub-users`對應
 
 1. 讓您的套件組合可以使用服務使用者sling功能：更新至`org.apache.sling.api`的最新版本。
 
-1. 以`loginService`或`getServiceResourceResolver` API取代程式碼中的`admin-session`。
+1. 以`admin-session`或`loginService` API取代程式碼中的`getServiceResourceResolver`。
 
 ## 建立服務使用者 {#creating-a-new-service-user}
 
 在您確認AEM服務使用者清單中的任何使用者都不適用於您的使用案例，且對應的RTC問題已核准後，請將新使用者新增至預設內容。
 
-建議的方法是建立服務使用者，以使用位於&#x200B;*https://&lt;server>：&lt;port>/crx/explorer/index.jsp*&#x200B;的存放庫總管
+>[!IMPORTANT]
+>
+>CRX Explorer (`/crx/explorer/index.jsp`)在AEM 6.5 LTS環境中無法使用，且不得用於建立服務使用者。 透過CRX Explorer建立的現有服務使用者可繼續運作。 若為新服務使用者，請使用下述其中一種方法。
 
-目標是取得有效的`jcr:uuid`屬性，這是透過內容套件安裝建立使用者的必要屬性。
+>[!NOTE]
+>
+>在JCR節點層級沒有與服務使用者相關聯的mixin型別。 這表示系統使用者節點沒有直接附加的存取控制原則。 存取控制則改為單獨管理，例如，透過RepoInit ACL陳述式或存放庫層級ACL設定。
 
-您可以透過下列方式建立服務使用者：
+### 使用Sling存放庫初始化(RepoInit) {#creating-service-user-repoinit}
 
-1. 前往位於&#x200B;*https://&lt;server>：&lt;port>/crx/explorer/index.jsp*&#x200B;的存放庫總管
-1. 按一下畫面左上角的&#x200B;**登入**&#x200B;連結，以管理員身分登入。
-1. 接下來，建立您的系統使用者並為其命名。 若要將使用者建立為系統使用者，請將中繼路徑設為`system`並根據您的需求新增可選的子資料夾：
+建議的方法是使用[Sling存放庫初始化(RepoInit)](https://sling.apache.org/documentation/bundles/repository-initialization.html)來建立服務使用者。 RepoInit可讓您使用簡單的指令碼語言，以宣告方式定義服務使用者及其ACL。
 
-   ![chlimage_1-102](assets/chlimage_1-102a.png)
+若要使用RepoInit建立服務使用者，請將`scripts`屬性新增到`org.apache.sling.jcr.repoinit.RepositoryInitializer`的OSGi設定：
 
-1. 確認您的系統使用者節點如下所示：
+```
+create service user my-service-user with path system/cq
 
-   ![chlimage_1-103](assets/chlimage_1-103a.png)
+set ACL for my-service-user
+    allow jcr:read on /content
+end
+```
 
-   >[!NOTE]
-   >
-   >沒有與服務使用者相關聯的mixin型別。 這表示系統使用者沒有存取控制原則。
+`with path system/cq`指示詞將服務使用者放在存放庫的`/home/users/system/cq`之下。 您可以選擇符合專案組織結構的路徑（例如，`system/myproject`）。 如果中間路徑節點不存在，請使用`with forced path`自動建立它們。
 
-將對應的.content.xml新增至套件組合的內容時，請確定您已設定`rep:authorizableId`，且主要型別為`rep:SystemUser`。 它應如下所示：
+建議使用此方法，因為它：
+
+* 將服務使用者和許可權定義為程式碼，使其受版本控制且可重現
+* 在存放庫初始化期間自動處理建立
+* 適用於AEM 6.5 LTS和AEM as a Cloud Service環境，但Sling版本之間可能存在細微語法差異 — 請參閱Target平台的RepoInit檔案
+
+### 使用內容封裝 {#creating-service-user-content-package}
+
+您也可以在內容封裝中加入`.content.xml`，以建立服務使用者。 確定您已設定`rep:authorizableId`，且主要型別為`rep:SystemUser`。 內容套件安裝期間，使用者必須正確建立有效的`jcr:uuid`屬性。 您可以使用標準UUID v4產生器來產生UUID （例如`uuidgen`命令列工具或任何線上UUID產生器）。 `.content.xml`應如下所示：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -157,7 +169,7 @@ ht-degree: 0%
 1. 在套件的src/main/resources資料夾下方建立子資料夾SLING-INF/content
 1. 在此資料夾中，建立名為org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.modified-&lt;您工廠設定的某些唯一名稱>.xml的檔案，其中包含您工廠設定的內容（包括所有子服務使用者對應）。 範例：
 
-1. 在您的套件組合的`src/main/resources`資料夾底下建立`SLING-INF/content`資料夾；
+1. 在您的套件組合的`SLING-INF/content`資料夾底下建立`src/main/resources`資料夾；
 1. 在此資料夾中，建立包含您工廠組態內容的檔案`named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-<a unique name for your factory configuration>.xml`，包含所有子服務使用者對應。
 
    為了方便說明，請取得名為`org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-com.adobe.granite.auth.saml.xml`的檔案：
@@ -179,7 +191,7 @@ ht-degree: 0%
    </node>
    ```
 
-1. 參考您套件組合`pom.xml`中`maven-bundle-plugin`的組態中的Sling初始內容。 範例：
+1. 參考您套件組合`maven-bundle-plugin`中`pom.xml`的組態中的Sling初始內容。 範例：
 
    ```xml
    <Sling-Initial-Content>
@@ -231,7 +243,7 @@ JSP無法使用`loginService()`，因為沒有關聯的服務。 不過，JSP中
 
    **缺點：**&#x200B;需要強大的服務使用者彈性化，這很容易導致許可權提升。 規避安全性模式。
 
-1. 傳遞事件裝載中`Subject`的序列化，並根據該主題建立`ResourceResolver`。 其中一個範例是在`ResourceResolverFactory`中使用JAAS `doAsPrivileged`。
+1. 傳遞事件裝載中`Subject`的序列化，並根據該主題建立`ResourceResolver`。 其中一個範例是在`doAsPrivileged`中使用JAAS `ResourceResolverFactory`。
 
    **優點：**&#x200B;從安全性觀點來清除實作。 它可避免重新驗證，並以原始許可權操作。 安全性相關程式碼對事件的取用者而言是透明的。
 
