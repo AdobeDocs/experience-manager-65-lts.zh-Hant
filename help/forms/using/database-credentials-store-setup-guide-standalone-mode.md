@@ -4,13 +4,13 @@ description: 在獨立模式下，尋找JBoss/Red Hat EAP上AEM Forms JEE的資�
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: f093f39fb535209297940cff13a99c7631812152
+exl-id: f6e29287-a558-43ad-8465-ebf167c79c63
+source-git-commit: b4abf61e0d30396e78ecebf228114ad2bde30633
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
-
 
 # Database Credential Store安裝指南（獨立模式）
 
@@ -55,9 +55,9 @@ ht-degree: 0%
 3. **您已決定認證存放區的安全密碼**
 
 4. **您知道要使用哪個資料庫組態檔：**
-   - `lc_oracle.xml` (適用於Oracle資料庫)
+   - `lc_oracle.xml` （適用於Oracle資料庫）
    - `lc_mysql.xml` （適用於MySQL資料庫）
-   - `lc_mssql.xml` (適用於Microsoft SQL Server資料庫)
+   - `lc_mssql.xml` （適用於Microsoft SQL Server資料庫）
 
 ## 設定步驟
 
@@ -67,9 +67,9 @@ ht-degree: 0%
 
 #### 在Windows上：
 
-**指令碼位置：** `create-elytron-cred-standalone.bat`
+**指令碼：** `create-elytron-cred-standalone.bat`
 
-`batch cd path\to\script\location create-elytron-cred-standalone.bat`
+從`create-elytron-cred-standalone.bat`軟體發佈入口網站[下載](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip)指令碼。
 
 **指令碼會提示您輸入：**
 1. **JBOSS_HOME路徑** （例如`C:\Adobe\Adobe_Experience_Manager_Forms\jboss`）
@@ -91,9 +91,9 @@ ht-degree: 0%
 
 #### 在Linux上：
 
-**指令碼位置：** `create-elytron-cred-standalone.sh`
+**指令碼** `create-elytron-cred-standalone.sh`
 
-`bash cd /path/to/script/location chmod +x create-elytron-cred-standalone.sh./create-elytron-cred-standalone.sh`
+從`create-elytron-cred-standalone.sh`軟體發佈入口網站[下載](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip)指令碼。
 
 **指令碼會提示您輸入：**
 
@@ -296,4 +296,3 @@ ERROR: Configuration file not found
 
 - 變數： `-DCS_PASS=password`
 - 檔案： `standalone.conf.bat` (Windows)或`standalone.conf` (Linux)
-
