@@ -1,14 +1,14 @@
 ---
 title: Adobe Experience Manager 6.5 LTS、SP2最新發行說明
-description: 尋找 Adobe Experience Manager 6.5 LTS Service Pack 2 的最新版本資訊。
+description: 尋找Adobe Experience Manager 6.5 LTS Service Pack 2的最新發行資訊。
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 4c1f1b9a7b6667c58760b5e427cdd82bf197f297
+source-git-commit: c04d683015576ab4aa59427f2ac1ec53fbb1d8f4
 workflow-type: tm+mt
-source-wordcount: '7102'
-ht-degree: 17%
+source-wordcount: '7427'
+ht-degree: 14%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 17%
 
 <!-- UPDATE EACH RELEASE -->
 
-[!DNL Experience Manager] 6.5 LTS，SP2包含新功能、客戶要求的重要增強功能和錯誤修正。 其中也包括自 2025 年 3 月首次推出 6.5 LTS 版本以來針對效能、穩定性與安全性所發佈的增強功能。[在 6.5 LTS 上安裝此 Service Pack](#install-update)。
+[!DNL Experience Manager] 6.5 LTS，SP2包含新功能、客戶要求的重要增強功能和錯誤修正。 其中也包括自 2025 年 3 月首次推出 6.5 LTS 版本以來針對效能、穩定性與安全性所發佈的增強功能。 [在 6.5 LTS 上安裝此 Service Pack](#install-update)。
 
 ## 主要功能和增強功能
 
@@ -47,7 +47,7 @@ AEM 6.5 LTS SP2現在包含適用於[內容片段及模型管理](https://develo
 
 **AEM Forms 6.5 LTS SP2**&#x200B;包含的內容
 
-* 支援RDBMK與JBOSS EAP 8.0  已新增。
+* 支援RDBMK與JBoss® EAP 8.0  已新增。
 
 * 視覺規則編輯器中的增強使用者體驗。 此更新包括：
 
@@ -57,7 +57,7 @@ AEM 6.5 LTS SP2現在包含適用於[內容片段及模型管理](https://develo
 
    * 在規則儲存作業失敗時提供清楚的回饋(FORMS-21261)
 
-* 新增執行階段應用程式設計介面(API)，在AEM Forms中切換舊版可延伸標籤語言(XML)匯出模式，取代-Dcom.adobe.fd.forms.export.legacy引數。 此增強功能可讓使用者更有效率地切換匯出模式，提高工作流程彈性。 (FORMS-23115)
+* 新增執行階段應用程式設計介面(API)，以切換AEM Forms中舊版可延伸標籤語言(XML)匯出模式，取代`Dcom.adobe.fd.forms.export.legacy`引數。 此增強功能可讓使用者更有效率地切換匯出模式，提高工作流程彈性。 (FORMS-23115)
 
 * 新增對最適化Forms中名稱空間標籤的JavaScript物件標籤法(JSON)的支援。 此增強功能可讓使用者更有效地處理JSON資料結構，進而改善資料整合與處理功能。 (FORMS-22519)
 
@@ -67,13 +67,13 @@ AEM 6.5 LTS SP2現在包含適用於[內容片段及模型管理](https://develo
 
 <!-- UPDATE THE EACH RELEASE -->
 
-## 6.5 LTS Service Pack 2 的已修正問題 {#fixed-issues}
+## 已修正6.5 LTS、Service Pack 2中的問題 {#fixed-issues}
 
 ### [!DNL Sites]{#sites-65-LTS-SP2}
 
 #### 協助工具 {#sites-accessibility-65-lts-sp2}
 
-* 當作者在編輯期間將專案暫留在元件瀏覽器中時，文字元件遺失鍵盤焦點。 這會中斷輸入，並觸發WCAG 3.2.1下的協助工具失敗。此修正可防止暫留樣式移動焦點，並使文字元件在元件瀏覽器互動期間維持焦點。 (SITES-35370)
+* 當作者在編輯期間將專案暫留在元件瀏覽器中時，文字元件遺失鍵盤焦點。 這會中斷輸入，並觸發WCAG 3.2.1下的協助工具失敗。 此修正可防止暫留樣式移動焦點，並使文字元件在元件瀏覽器互動期間維持焦點。 (SITES-35370)
 * 修正說明RTF欄位中使用Tab鍵封鎖向前導覽的焦點管理。 使用者在RTE中卡住，因為元件依賴非標準鍵盤命令來轉移焦點，這會中斷預期的對話方塊導覽。 此變更會強制標準鍵盤互動，並保留整個對話方塊的邏輯Tab排序。 (SITES-35228)
 * 修正Sites編輯器中，在頁面製作期間中斷預期行為並導致不一致的元件互動的問題。 作者遇到不可靠的UI回應，干擾了標準編輯任務並降低工作流程效率。 此更新會精簡基礎的編輯器邏輯，並還原受影響元件間穩定、可預測的互動。 (SITES-35227)
 * 一種回歸，中斷頁面編輯器中的資產選擇器，並阻止其在特定頁面編輯情景中載入。 作者現在可以在編輯頁面時選擇或瀏覽資產時，正常開啟和使用資產選擇器。 此變更會還原對載入失敗中斷的資產選擇工作流程的一致存取權。 (SITES-35226)
@@ -114,7 +114,7 @@ AEM 6.5 LTS SP2現在包含適用於[內容片段及模型管理](https://develo
 * 修正「使用者偏好設定」強制回應視窗中色票導覽期間不正確的NVDA意見。 NVDA現在會讀取接收焦點的色票標籤，如此可移除誤導性的色彩輸出。 色票集現在支援一致的鍵盤導覽和清除選取範圍感知功能。 (SITES-24739)
 * 減少`Spin`控制項的詳細NVDA輸出。 移除重複輸入標籤的重複群組標籤，因此NVDA會朗讀一次控制項名稱。 鍵盤和熒幕助讀程式導覽功能現在可提供單一清楚的宣告。 (SITES-24725)
 * 「轉盤」對話方塊現在會將焦點置於對話方塊標題上，而非「專案」索引標籤。 取消並Esc將焦點還原至啟動對話方塊的控制項，這會減少詳細的NVDA輸出。 (SITES-24716)
-* 連結選取對話方塊現在會將程式設計標籤與最後層級樹狀結構專案的熒幕標籤對齊。 箭頭鍵導覽會針對每個專案觸發可靠的熒幕助讀程式宣告，並移除誤導性的標籤輸出。 (SITES-24710)
+* 現在，「連結選取」對話方塊會將程式化標籤與熒幕上的標籤對齊，以利最後層級的樹狀結構專案。 箭頭鍵導覽會針對每個專案觸發可靠的熒幕助讀程式宣告，並移除誤導性的標籤輸出。 (SITES-24710)
 * 現在，在320-px檢視區下，「連結開啟選取專案」對話方塊會正確重排。 內容不再超出模組或截斷，且模組不再顯示水準卷軸。 (SITES-24709)
 * 現在，在「關閉」或「取消」之後，「連結開啟選取範圍」對話方塊的鍵盤焦點會恢復至對話方塊觸發程式。 焦點不再跳至連結輸入，讓熒幕助讀程式內容保持穩定，並減少額外的導覽。 (SITES-24707)
 * 影像模組對話方塊現在會依照邏輯焦點順序顯示。 取消後，焦點不再略過先前的控制項或落在頁面里程碑上，使用者在退出後會重新獲得對「設定」按鈕的焦點。 (SITES-24693)
@@ -180,7 +180,7 @@ Headless事件支援缺少6.5 LTS中內容片段和模型的必要OSGi事件。 
 
 #### [!DNL Content Fragments] - REST API{#sites-restapi-65-lts-sp2}
 
-AEM Headless需要專用的發行分支，以避免相依性和套裝版本與主線組建衝突。 此更新新增了版本/6.5lts Headless分支，並對齊相依性集和套件版本。 Jenkins現在可以完全建置Headless程式碼基底，而不會發生版本衝突。 (SITES-36585)
+AEM Headless需要專用的發行分支，以避免相依性和套裝版本與主線組建衝突。 此更新新增`release/6.5lts`個Headless分支，並對齊相依性集和套件版本。 Jenkins現在可以完全建置Headless程式碼基底，而不會發生版本衝突。 (SITES-36585)
 
 <!-- #### Component console{#sites-component-console-65-lts-sp2} -->
 
@@ -247,7 +247,7 @@ AEM Headless需要專用的發行分支，以避免相依性和套裝版本與�
 #### 通用編輯器 {#sites-universal-editor-65-lts-sp2}
 
 * OSGi預設設定已設為`preview=true`，並強制通用編輯器在預覽模式下啟動。 此更新會更正預設值並恢復標準的生產專案行為。 除非管理員明確啟用預覽模式，否則通用編輯器現在會在生產模式中開啟。 (SITES-37193)
-* 在Dev和Stage環境中，「通用編輯器開啟」命令現在預設為「預覽」模式。 該命令新增preview=true，可保持作者檢查與預覽上下文一致，並避免意外的「生產」開啟。 (SITES-33839)
+* 在Dev和Stage環境中，「通用編輯器開啟」命令現在預設為「預覽」模式。 該命令新增`preview=true`，可保持作者檢查與預覽內容一致，並避免意外的「生產」開啟。 (SITES-33839)
 
 ### [!DNL Assets]{#assets-65-lts-sp2}
 
@@ -266,36 +266,20 @@ Assets Relate現在適用於包含空格的檔案名稱。 更新關聯使用者
 
 ### [!DNL Forms]{#forms-65-lts-sp2}
 
-
-#### Forms
-
-* Forms-23971：使用者遇到表單資料模型(FDM)編輯器的「資料Source /輸入關鍵字」功能問題。 這會影響搜尋及選取資料來源的能力。
-
-* Forms-23754：在行動裝置上，最適化Forms中的表格元件會在頂端呈現隱藏的標題，導致熒幕閱讀器誤判內容。 這會影響依賴熒幕助讀程式進行導覽的使用者。
-
-* Forms-23632：使用者遇到以核心元件為基礎的最適化Forms參考標籤為granite:InternalArea的資源型別問題，這影響了內部部署Forms附加元件中的多個granite元件的功能。
-
-* Forms-23457：升級至AEM 6.5 LTS SP1後，表單提交失敗。 使用者遇到遺失com.adobe.cq.social.commons.CollabUtil造成JSP編譯錯誤和電子郵件動作失敗的問題。
-
-* Forms-23426：使用者遇到了hCaptcha無法正確在Foundation元件式的最適化Forms中翻譯的問題。 這會影響非英語使用者準確完成表單的能力。
-
-* Forms-22633：使用者遇到表單提交失敗的SAXParseException：「prolog中不允許內容」(HTTP 500)。 發生此問題的原因是預填資料XML中有null值，導致伺服器端XML剖析失敗。
-
-* Forms-22101：由於表單的索引標籤導覽標籤無效（非清單元素會呈現為清單的直接子項，而僅允許清單專案），Adaptive Forms未通過Web內容協助工具准則(WCAG)稽核的使用者。 這會導致表單無法傳遞協助工具驗證程式，以及必須符合法律或內部法規遵循要求的受影響組織。
-
-* Forms-21989：使用者遇到記錄檔案(DoR) /提交PDF的協助工具問題，空白表單欄位未標籤為表單元素。 這會對熒幕助讀程式造成困難，影響殘障使用者有效導覽和完成表單的能力。
-
-* Forms-21925：使用者遇到在表單載入期間子面板內元件的註腳未顯示的問題。 當具有註腳的專案是頁面上的最後一個元件時，就會發生此問題。
-
-* Forms-21814：使用者在AEM Forms編輯器中選取元件時遇到問題。 在標籤之間導覽並返回第一個標籤時，某些容器會變成無法選取，導致無法輕鬆識別和互動。
-
-* Forms-20679：使用者在Adaptive Forms儀表板中遇到安全性弱點。 具體來說，在startpointcontrol.js檔案中發現跨網站指令碼(XSS)問題，這可能允許執行惡意指令碼。
-
-* Forms-24687：在JBoss EAP 8上的AEM Forms 6.5 LTS叢集部署中，domain/configuration/domain_oracle.xml、domain_mysql.xml和domain_mssql.xml檔案不再包含重複的`<security>`標籤，這些標籤造成無效的XML且無法啟動網域控制站。
-
-* Forms-24689：在Turnkey模式中，現在會在全新安裝和升級期間正確套用資料庫連線埠更新。 在全新安裝模式中，使用者可以從所有可用的連線埠中進行選取，而在升級模式中，在升級過程中會正確參考lc_turnkey.xml中更新的資料庫連線埠。
-
-* Forms-24688：在Linux上設定JBoss EAP 8.0時，在Windows上修改的Shell指令碼不會因為CRLF行結尾而造成`/bin/sh^M: bad interpreter or $'\r': command not found`錯誤。
+* 使用者遇到表單資料模型(FDM)編輯器`Data Source / Enter Keyword`功能的問題。 此問題會影響搜尋和選取資料來源的能力。 (FORMS-23971)
+* 在行動裝置上，最適化Forms中的表格元件會在頂端呈現隱藏的標題，導致熒幕閱讀器誤判內容。 這會影響依賴熒幕助讀程式進行導覽的使用者。 (FORMS-23754)
+* 使用者遇到以核心元件為基礎的最適化Forms參考標籤為granite:InternalArea的資源型別的問題，這會影響內部部署Forms附加元件中的多個granite元件的功能。 (FORMS-23632)
+* 升級至AEM 6.5 LTS SP1後，表單提交失敗。 使用者遇到遺失com.adobe.cq.social.commons.CollabUtil造成JSP編譯錯誤和電子郵件動作失敗的問題。 (FORMS-23457)
+* 使用者遇到驗證碼問題，無法在基於Foundation Components的最適化Forms中正確翻譯。 這會影響非英語使用者準確完成表單的能力。 (FORMS-23426)
+* 使用者遇到表單提交失敗，出現SAXParseException：「prolog中不允許內容」(HTTP 500)。 發生此問題的原因是預填資料XML中有null值，導致伺服器端XML剖析失敗。 (FORMS-22633)
+* Adaptive Forms未能通過網頁內容可及性指引(WCAG)稽核的使用者。 原因是表單的索引標籤導覽標示無效。 也就是說，非清單元素會呈現為清單的直接子項，而僅允許清單專案。 此問題會導致表單無法通過協助工具驗證程式，以及必須符合法律或內部法規遵循要求的受影響組織。 (FORMS-22101)
+* 使用者遇到記錄檔案(DoR) /提交PDF的協助工具問題，空白表單欄位未標籤為表單元素。 這會對熒幕助讀程式造成困難，影響殘障使用者有效導覽和完成表單的能力。 (FORMS-21989)
+* 使用者遇到在表單載入期間子面板內元件的註腳未顯示的問題。 當具有註腳的專案是頁面上的最後一個元件時，就會發生此問題。 (FORMS-21925)
+* 使用者在AEM Forms編輯器中選取元件時發生問題。 在標籤之間導覽並返回第一個標籤時，某些容器會變成無法選取，導致無法輕鬆識別和互動。 (FORMS-21814)
+* 使用者在Adaptive Forms儀表板中遇到安全性弱點。 具體來說，在startpointcontrol.js檔案中發現跨網站指令碼(XSS)問題，這可能允許執行惡意指令碼。 (FORMS-20679)
+* 在JBoss® EAP 8上的AEM Forms 6.5 LTS叢集部署中，`domain/configuration/domain_oracle.xml`、`domain_mysql.xml`和`domain_mssql.xml`檔案不再包含重複的`<security>`標籤，導致無效的XML並阻止網域控制站啟動。 (FORMS-24687)
+* 在Turnkey模式中，現在會在全新安裝和升級期間正確套用資料庫連線埠更新。 在全新安裝模式中，使用者可以從所有可用的連線埠中進行選取，而在升級模式中，在升級過程中會正確參考lc_turnkey.xml中更新的資料庫連線埠。 (FORMS-24689)
+* 在Linux®上設定JBoss® EAP 8.0時，在Windows上修改的Shell指令碼不會因為CRLF行結尾而造成`/bin/sh^M: bad interpreter or $'\r': command not found`錯誤。 (FORMS-24688)
 
 <!--
 #### Forms JEE 
@@ -322,11 +306,11 @@ Assets Relate現在適用於包含空格的檔案名稱。 更新關聯使用者
 
 #### Apache Felix {#foundation-apachefelix-65-lts-sp2}
 
-* Sling Resource Access Security現在會在1.1.2版上執行。多個ResourceAccessGateHandler服務註冊時，ResourceAccessSecurityImpl在初始化期間不再擲回ClassCastException。 初始化現在會可靠完成，並避免在有多個處理常式的環境中啟動失敗。 (NPR-42750)
+* Sling Resource Access Security現在會在1.1.2版上執行。 多個ResourceAccessGateHandler服務註冊時，ResourceAccessSecurityImpl在初始化期間不再擲回ClassCastException。 初始化現在會可靠完成，並避免在有多個處理常式的環境中啟動失敗。 (NPR-42750)
 * JMX主控台和Web主控台現在會傳送主控台CSS資源的`Content-Type: text/css header`。 嚴格的MIME檢查不再封鎖樣式表載入，因此`/system/console/jmx` UI會以一般樣式呈現。 (GRANITE-63677)
-* AEM現在會避免在產生的`contributor`中對`WEB-INF/resources/provisioning/model.txt`群組使用重複的ACL專案。 WAR輸出現在包含一個一致的ACL區塊，以防止在檢閱期間混淆許可權差異。 (GRANITE-63269)
+* AEM現在會避免在產生的`WEB-INF/resources/provisioning/model.txt`中對`contributor`群組使用重複的ACL專案。 WAR輸出現在包含一個一致的ACL區塊，以防止在檢閱期間混淆許可權差異。 (GRANITE-63269)
 * 在套件重新整理作業期間，AEM不再清除還原序列化防火牆封鎖清單和允許清單設定。 更新篩選器註冊邏輯可讓作用中的防火牆執行個體與儲存的設定保持一致，因此保護功能不會重新啟動而維持啟用狀態。 (GRANITE-61382)
-* Felix Web主控台在`NullPointerException`存取期間不再擲回間歇性`/system/console`錯誤。 更新的ServiceTracker處理可防止null追蹤器狀態。 在重複請求和自動驗證期間，主控台登入和導覽會保持穩定。 (GRANITE-61042)
+* Felix Web主控台在`/system/console`存取期間不再擲回間歇性`NullPointerException`錯誤。 更新的ServiceTracker處理可防止null追蹤器狀態。 在重複請求和自動驗證期間，主控台登入和導覽會保持穩定。 (GRANITE-61042)
 
 <!--
 #### Campaign{#foundation-campaign-65-lts-sp2}
@@ -356,8 +340,6 @@ Expression Security Validator現在會處理空白或Null的OSGi設定值。 它
 #### Jetty{#foundation-jetty-65-lts-sp2}
 
 #### Localization{#foundation-localization-65-lts-sp2} 
-
-
 
 #### Omnisearch{#foundation-omnisearch-65-lts-sp2}
 
@@ -404,7 +386,7 @@ AEM now prevents NullPointerException errors when a logged-in user lacks read ac
 
 #### Sling{#foundation-sling-65-lts-sp2}
 
-AEM現在包含Sling Engine 2.16.6。此變更可消除安全性工具標示的XSS違規，並改善核心演算的安全性和穩定性。 (NPR-43105)
+AEM現在包含Sling Engine 2.16.6。 此變更可消除安全性工具標示的XSS違規，並改善核心演算的安全性和穩定性。 (NPR-43105)
 
 <!--
 #### Translation{#foundation-translation-65-lts-sp2}
@@ -432,12 +414,12 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 ### Java™ 支援  {#java-support}
 
 * Java™ 17 和 Java™ 21 的支援。
-* 為實現最佳效能，請使用其他值覆寫預設的 GC 值。如需詳細資訊，請參閱[安裝與更新](/help/sites-deploying/custom-standalone-install.md)區段。
+* 為實現最佳效能，請使用其他值覆寫預設的 GC 值。 如需詳細資訊，請參閱[安裝與更新](/help/sites-deploying/custom-standalone-install.md)區段。
 * 若是 Oracle 尚未正式推出，Adobe 會分發 Java™ 17 和 Java™ 21 維護更新供客戶在 AEM 相關專案中使用。
 
 ### Uberjar 封裝 {#uber-jar-packaging}
 
-適用於AEM 6.5 LTS SP2的UberJar使用AEM 6.5 LTS UberJar 6.6.2版。您可以從Maven中央存放庫擷取對應的UberJar成品。 與AEM 6.5不同，AEM 6.5 LTS將公用API和已過時的API分隔成兩個不同的成品。
+適用於AEM 6.5 LTS SP2的UberJar使用AEM 6.5 LTS UberJar 6.6.2版。 您可以從Maven中央存放庫擷取對應的UberJar成品。 與AEM 6.5不同，AEM 6.5 LTS將公用API和已過時的API分隔成兩個不同的成品。
 
 若要針對公開API進行編譯，請使用下列專案：
 
@@ -468,7 +450,7 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 ### 升級 {#upgrade}
 
 * 如需升級程序的詳細資訊，請參閱[升級文件](/help/sites-deploying/upgrade.md)。
-* 如需詳細的升級指示，請參閱JEE上的[AEM Forms 6.5 LTS SP1升級指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* 如需詳細的升級指示，請參閱JEE上的[AEM Forms 6.5 LTS SP1升級指南](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### AEM 6.5 LTS Service Pack 升級的最佳做法
 
@@ -477,8 +459,8 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 **環境**
 適用於：安裝Service Pack 2 (SP2)的AEM 6.5 LTS （內部部署）客戶。 SP2會以Quickstart JAR的形式提供。
 
-**這很重要的原因**
-適用於AEM 6.5 LTS的SP2會以Quickstart JAR形式出貨，而非透過「封裝管理員」安裝的ZIP。 內部部署客戶的升級方式是取代 Quickstart JAR，將檔案解壓縮然後重新啟動。此方法與 Adobe 的就地升級程序一致。
+**為什麼此升級實務很重要**
+適用於AEM 6.5 LTS的SP2會以Quickstart JAR形式出貨，而非透過「封裝管理員」安裝的ZIP。 內部部署客戶的升級方式是取代 Quickstart JAR，將檔案解壓縮然後重新啟動。 此方法與 Adobe 的就地升級程序一致。
 
 **建議的升級流程 (作者或發佈)**
 
@@ -499,7 +481,7 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 
 **良好的操作規範**
 
-* 進入生產前，在低階/測試環境中執行升級。
+* 在生產前在低層/測試環境中執行升級。
 * 開始之前，請先進行完整、可還原的備份（儲存庫加上任何外部資料存放區）。
 * 審閱 Adobe 的就地升級指引和技術要求 (LTS 建議使用 Java 17/21)。
 
@@ -520,7 +502,7 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 
 >[!NOTE]
 >
-> 對於全新的 AEM 6.5 LTS 安裝，必須獨立安裝索引定義。如需更多詳細資訊，請參閱[此文章](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions)。
+> 對於全新的 AEM 6.5 LTS 安裝，必須獨立安裝索引定義。 如需更多詳細資訊，請參閱[此文章](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions)。
 
 ## 安裝並更新 AEM Forms 附加元件 {#install-update-aem-forms-add-on}
 
@@ -550,20 +532,20 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 
 ### 已棄用功能 {#deprecated-features}
 
-此區段列出 Adobe 在 AEM 6.5 LTS 中已棄用的特點與功能。通常，在未來版本中移除某些功能之前，Adobe 會先將棄用該功能並提供替代方案。
+此區段列出 Adobe 在 AEM 6.5 LTS 中已棄用的特點與功能。 通常，在未來版本中移除某些功能之前，Adobe 會先將棄用該功能並提供替代方案。
 
-建議客戶檢查其目前的部署中是否使用這些特點/功能，並規劃變更其實施方案，改用所提供的替代方案。
+建議客戶檢視是否在目前部署中使用了棄用的功能。 制定計畫以變更其實作，使用提供的替代方案。
 
 | 區域 | 功能 | 替代方案 | 版本 (SP) |
 | --- | --- | --- | --- |
 | 快速入門 | Mongo API | Mongo API現已過時，並計畫在未來版本中移除。 | 6.5 TS SP2 |
 | Sites | AEM Assets REST API中的內容片段支援 | AEM 6.5 LTS SP2為內容片段和模型管理提供現代化的OpenAPI，因此AEM Assets REST API中較舊的內容片段支援端點現已棄用。<br>Adobe打算在生命週期結束宣告前保留這些較舊的端點。 Adobe不打算為已棄用的端點提供進一步的增強功能。 | 6.5 LTS SP2 |
-| Sites | [SPA 編輯器](/help/sites-developing/spa-overview.md) | AEM 中用於管理 Headless 內容的首選編輯器為：<br>- [通用編輯器](/help/sites-developing/universal-editor/introduction.md)，用於視覺化編輯。<br>- [內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md)，用於表單型編輯。 | 6.5 LTS 正式發佈版 |
-| [!DNL Foundation] | 支援 com.adobe.granite.oauth.server | Adobe IMS 整合  |  |
+| Sites | [SPA 編輯器](/help/sites-developing/spa-overview.md) | 在AEM中管理Headless內容的偏好編輯器是： <br>- [用於視覺化編輯的通用編輯器](/help/sites-developing/universal-editor/introduction.md)。<br>- [用於表單式編輯的內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md)。 | 6.5 LTS 正式發佈版 |
+| [!DNL Foundation] | 支援 com.adobe.granite.oauth.server | Adobe IMS 整合 |  |
 
 ### 已移除的功能 {#removed-features}
 
-此區段列出 AEM 6.5 LTS 已移除的特點和功能。先前的版本已將這些功能標記為已棄用。
+此區段列出 AEM 6.5 LTS 已移除的特點和功能。 先前的版本已將這些功能標記為已棄用。
 
 * 針對CRX存放庫持續性的RDBMK支援已移除。
 * 在叢集環境中，MongoMK現在是存放庫持續存在的唯一支援選項。
@@ -571,7 +553,7 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 | 區域 | 功能 | 替代方案 | 版本 (SP) |
 | --- | --- | --- | --- |
 | Commerce | 不支援 AEM CIF Classic。 | 移轉至 [AEM CIF](/help/commerce/cif/migration.md)。 | 6.5 LTS 正式發佈版 |
-| 解決方案 | 不支援 Social/Communities。 | 無可用的替代方案。 | 6.5 LTS 正式發佈版 |
+| 解決方案 | 不支援社交/社群。 | 無可用的替代方案。 | 6.5 LTS 正式發佈版 |
 | Screens | 不支援 Screens。 | 無可用的替代方案。 | 6.5 LTS 正式發佈版 |
 | Assets | 不支援 `dam-pim` 及 `dam-rating`，因為搭售方案需依賴 Social。 | 無可用的替代方案。 | 6.5 LTS 正式發佈版 |
 | Assets | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` 已移除。 | 使用已新增的替代 API `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()`。 | 6.5 LTS 正式發佈版 |
@@ -594,13 +576,10 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 
 ### AEM Forms
 
-* **FORMS-24690：**&#x200B;在Configuration Manager中，未選取模組或僅選取有限元件時，在AEM Forms 6.5 LTS JEE Turnkey自訂模式中的啟動程式期間，資料庫初始化會失敗。 失敗是因為遺失相依性(xalan-2.7.2.jar)，導致錯誤。 將JAR檔案新增至adobe-livecycle-jboss.ear\lib即可解決問題。
-
-* **FORMS-24894：**&#x200B;在JBoss EAP 8上執行的Forms JEE LTS部署中，Reader擴充功能UI可能會失敗，並出現內部伺服器錯誤。
-
-* **FORMS-24892：**&#x200B;在JBoss上執行的Forms JEE LTS上，電子郵件相關功能可能會失敗。 嘗試使用電子郵件功能時，伺服器可能會記錄類似`Error IMAPProvider not a subtype`的錯誤。
-
-* **FORMS-24741：**&#x200B;在Linux平台上，Forms JEE LTS需要先正確設定`OSFileSetIntendedFor`中的`LFS_Foundation.properties`屬性，才能執行Configuration Manager。 如果未更新，則可能無法針對Linux適當地量身打造設定，這可能會導致執行階段或部署問題。 若要解決此問題，請在執行安裝程式之後和執行Configuration Manager之前，瀏覽至`configurationManager/config/solcomp/`，開啟`LFS_Foundation.properties`，設定`OSFileSetIntendedFor=Linux`，儲存檔案，然後執行Configuration Manager。
+* 在Configuration Manager中，未選取模組或僅選取有限元件時，在AEM Forms 6.5 LTS JEE全包自訂模式中的Bootstrap期間，資料庫初始化會失敗。 失敗是因為遺失相依性(xalan-2.7.2.jar)，導致錯誤。 將JAR檔案新增至adobe-livecycle-jboss.ear\lib即可解決問題。 (FORMS-24690)
+* 在JBoss® EAP 8上執行的Forms JEE LTS部署中，Reader擴充功能UI可能會因內部伺服器錯誤而失敗。 (FORMS-24894)
+* 在JBoss®上執行的Forms JEE LTS上，電子郵件相關功能可能會失敗。 嘗試使用電子郵件功能時，伺服器可能會記錄類似`Error IMAPProvider not a subtype`的錯誤。 (FORMS-24892)
+* 在Linux®平台上，Forms JEE LTS要求在執行組態管理員之前，必須正確設定`LFS_Foundation.properties`中的`OSFileSetIntendedFor`屬性。 如果未更新，設定可能無法針對Linux®適當地量身打造，這可能會導致執行階段或部署問題。 若要解決此問題，請在執行安裝程式之後和執行Configuration Manager之前，瀏覽至`configurationManager/config/solcomp/`，開啟`LFS_Foundation.properties`，設定`OSFileSetIntendedFor=Linux`，儲存檔案，然後執行Configuration Manager。 (FORMS-24741)
 
 ### 離線壓縮後線上壓縮期間存放庫損毀(GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
@@ -608,11 +587,11 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 
 若要解決此問題，請從[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-65388-1.0.zip)安裝Hotfix。 由於Hotfix包含低階`oak-segment-tar`套件組合，所以執行個體會在安裝後重新啟動。
 
-規劃套用執行個體時的停機時間。 若要進行離線壓縮，請使用對應的[Oak-run jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar) （也可在Software Distribution上取得）。
+規劃套用執行個體時的停機時間。 若要離線壓縮，請使用對應的[`oak-run` jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar) （也可在Software Distribution中使用）。
 
 >[!NOTE]
 >
-> * 對於任何Oak-run作業，請使用[Oak-run 1.88.1-B006 jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar)。
+> * 對於任何`oak-run`作業，請使用[`oak-run` 1.88.1-B006 jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar)。
 >
 > * 設定系統屬性`oak.compaction.legacy=true`以啟動AEM。
 
@@ -635,7 +614,7 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 >
 > 這項問題僅出現在 AEM 6.5 LTS GA 版本。
 
-在 AEM 部署中啟用僅限 SSL 功能時，有一項已知問題會影響 Dispatcher 和 AEM 實例之間的連線。啟用此功能後，健康情況檢查可能會失敗，且 Dispatcher 和 AEM 實例之間的通訊可能會中斷。當客戶嘗試透過 `https + IP` 從 Dispatcher 連線至 AEM 執行個體時，特別容易發生此問題。此問題與 SNI (伺服器名稱指示) 驗證問題有關。
+在 AEM 部署中啟用僅限 SSL 功能時，有一項已知問題會影響 Dispatcher 和 AEM 實例之間的連線。 啟用此功能後，健康情況檢查可能會失敗，且 Dispatcher 和 AEM 實例之間的通訊可能會中斷。 當客戶嘗試透過 `https + IP` 從 Dispatcher 連線至 AEM 執行個體時，特別容易發生此問題。 此問題與 SNI (伺服器名稱指示) 驗證問題有關。
 
 **影響**
 
@@ -653,19 +632,19 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 
 **解決方案**
 
-如果您遇到此問題，請聯絡Adobe客戶支援。 可以使用 Hotfix [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) 解決此問題。在套用必要的 Hotfix 之前，請勿嘗試啟用僅限 SSL 功能。
+如果您遇到此問題，請聯絡Adobe客戶支援。 可以使用 Hotfix [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) 解決此問題。 在套用必要的 Hotfix 之前，請勿嘗試啟用僅限 SSL 功能。
 
 ## 包含的 OSGi 套件和內容套件{#osgi-bundles-and-content-packages-included}
 
-以下文字文件列出在此 [!DNL Experience Manager] 6.5 LTS Service Pack 1 版本中所包含的 OSGi 套件與內容套件：
+下列文字檔案列出此[!DNL Experience Manager] 6.5 LTS Service Pack 2發行版本中包含的OSGi套件組合和內容套件： <!-- UPDATE FOR EACH NEW RELEASE -->
 
-* [&#x200B; Experience Manager 6.5 LTS Service Pack 1 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [Experience Manager 6.5 LTS Service Pack 1 中包含的內容套件清單](/help/release-notes/assets/65lts_sp1_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [包含在Experience Manager 6.5 LTS Service Pack 2](/help/release-notes/assets/65lts_sp2_bundles.txt)中的OSGi套件組合清單<!-- UPDATE FOR EACH NEW RELEASE -->
+* [Experience Manager 6.5 LTS Service Pack 2](/help/release-notes/assets/65lts_sp2_packages.txt)中包含的內容套件清單<!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## 受限制的網站{#restricted-sites}
 
-這些網站僅供客戶使用。若您是客戶並且需要存取權，請聯絡您的 Adobe 客戶經理。
+這些網站僅供客戶使用。 若您是客戶並且需要存取權，請聯絡您的 Adobe 客戶經理。
 
-* [在 licensing.adobe.com 下載產品](https://licensing.adobe.com/)
-* [聯絡 Adobe 客戶支援](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience)。
+* [產品下載網址為licensing.adobe.com](https://licensing.adobe.com/)
+* [聯絡 Adobe 客戶支援](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience)。
 
