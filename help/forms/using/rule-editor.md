@@ -9,29 +9,30 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2c0a5185-7759-447a-b4c6-36feaa4a23d3
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '6615'
+source-wordcount: '6822'
 ht-degree: 2%
 
 ---
 
 # 調適型表單規則編輯器{#adaptive-forms-rule-editor}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
 ## 套用至 {#applies-to}
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=zh-Hant)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html)上的[AEM Forms 。
 
 ## 概觀 {#overview}
 
 Adobe Experience Manager Forms中的規則編輯器功能可讓表單業務使用者和開發人員在調適型表單物件上編寫規則。 這些規則會根據預設條件、使用者輸入及使用者對表單的動作，定義要在表單物件上觸發的動作。 它有助於進一步簡化表單填寫體驗，確保準確性和速度。
 
 規則編輯器提供直覺式且簡化的使用者介面來撰寫規則。 規則編輯器為所有使用者提供一個視覺化編輯器。 此外，規則編輯器僅針對表單超級使用者提供程式碼編輯器，以便編寫規則和指令碼。
-<!-- Some of the key actions that you can perform on adaptive form objects using rules are:
+<!--
+Some of the key actions that you can perform on adaptive form objects using rules are:
 
 * Show or hide an object
 * Enable or disable an object
@@ -39,7 +40,8 @@ Adobe Experience Manager Forms中的規則編輯器功能可讓表單業務使�
 * Validate the value of an object
 * Execute functions to compute the value of an object
 * Invoke a form data model service and perform an operation
-* Set property of an object -->
+* Set property of an object
+-->
 
 規則編輯器取代了AEM 6.1 Forms及舊版中的指令碼功能。 不過，您現有的指令碼會保留在新規則編輯器中。 如需在規則編輯器中使用現有指令碼的詳細資訊，請參閱[規則編輯器對現有指令碼的影響](#impact-of-rule-editor-on-existing-scripts)。
 
@@ -119,7 +121,7 @@ Adobe Experience Manager Forms中的規則編輯器功能可讓表單業務使�
 `Then, do the following:`
 
 物件B上的動作2；
-和
+AND
 物件C上的動作3；
 
 _
@@ -201,7 +203,7 @@ _
 
 ### 設定值 {#set-value-of}
 
-**[!UICONTROL 規則型別的]**&#x200B;設定值可讓您依據指定的條件是否符合，來設定表單物件的值。 值可以設定為另一個物件的值、常值字串、從數學運算式或函式衍生的值、另一個物件的屬性值，或表單資料模型服務的輸出。 同樣地，您可以檢查元件、字串、屬性或衍生自函式或數學運算式的值的條件。
+]**規則型別的**[!UICONTROL &#x200B;設定值可讓您依據指定的條件是否符合，來設定表單物件的值。 值可以設定為另一個物件的值、常值字串、從數學運算式或函式衍生的值、另一個物件的屬性值，或表單資料模型服務的輸出。 同樣地，您可以檢查元件、字串、屬性或衍生自函式或數學運算式的值的條件。
 
 規則型別的「設定值」不適用於所有表單物件，例如面板和工具列按鈕。 標準的「設定值」規則具有以下結構：
 
@@ -221,7 +223,7 @@ _
 
 
 
-下列範例以`dependentid`欄位中的值作為輸入，並將`Relation`欄位的值設定為`Relation`表單資料模型服務的`getDependent`引數的輸出。
+下列範例以`dependentid`欄位中的值作為輸入，並將`Relation`欄位的值設定為`getDependent`表單資料模型服務的`Relation`引數的輸出。
 
 ![set-value-web-service](assets/set-value-web-service.png)
 
@@ -411,7 +413,7 @@ AEM Forms會追蹤您上次用來撰寫規則的規則編輯器模式。 當您�
 
 ### F.完成和取消按鈕 {#f-done-and-cancel-buttons}
 
-「**[!UICONTROL 完成]**」按鈕用於儲存規則。您可以儲存不完整的規則。 但是，不完整內容無效，因此不會執行。 當您下次從相同表單物件啟動規則編輯器時，會列出表單物件上已儲存的規則。 您可以在該檢視中管理現有規則。 如需詳細資訊，請參閱[管理規則](#manage-rules)。
+「**[!UICONTROL 完成]**」按鈕用於儲存規則。 您可以儲存不完整的規則。 但是，不完整內容無效，因此不會執行。 當您下次從相同表單物件啟動規則編輯器時，會列出表單物件上已儲存的規則。 您可以在該檢視中管理現有規則。 如需詳細資訊，請參閱[管理規則](#manage-rules)。
 
 「**[!UICONTROL 取消]**」按鈕會放棄您對規則所做的任何變更並關閉規則編輯器。
 
@@ -490,7 +492,7 @@ AEM Forms會追蹤您上次用來撰寫規則的規則編輯器模式。 當您�
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. 選取「**[!UICONTROL 選取選項]**」，並選取「**[!UICONTROL 數學運算式]**」。開啟用於編寫數學運算式的欄位。
+1. 選取「**[!UICONTROL 選取選項]**」，並選取「**[!UICONTROL 數學運算式]**」。 開啟用於編寫數學運算式的欄位。
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
@@ -508,7 +510,7 @@ AEM Forms會追蹤您上次用來撰寫規則的規則編輯器模式。 當您�
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13.png)
 
-   在擴展運算式欄位中，從「**選取運算子**」欄位選取「**除以**」以及從「**選取選項**」欄位選取「**數字**」。然後在數字欄位中指定&#x200B;**2**。
+   在擴展運算式欄位中，從「**選取運算子**」欄位選取「**除以**」以及從「**選取選項**」欄位選取「**數字**」。 然後在數字欄位中指定&#x200B;**2**。
 
    ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14.png)
 
@@ -550,7 +552,7 @@ AEM Forms會追蹤您上次用來撰寫規則的規則編輯器模式。 當您�
 
 新增至表單超級使用者群組的使用者可使用程式碼編輯器。 規則編輯器會自動為您使用視覺化編輯器建立的任何規則產生JavaScript程式碼。 您可以從視覺化編輯器切換到程式碼編輯器以檢視產生的程式碼。 不過，如果您在程式碼編輯器中修改規則程式碼，則無法切換回視覺化編輯器。 如果您偏好在程式碼編輯器中而不是視覺化編輯器中撰寫規則，您可以在程式碼編輯器中重新撰寫規則。 視覺化程式碼編輯器切換器可協助您在兩種模式之間切換。
 
-程式碼編輯器JavaScript是適用性表單的運算式語言。 所有運算式都是有效的JavaScript運算式，並使用適用性表單指令碼模型API。 這些運算式會傳回某些型別的值。 如需最適化表單類別、事件、物件和公用API的完整清單，請參閱[最適化表單的JavaScript資料庫API參考](https://helpx.adobe.com/tw/experience-manager/6-5/forms/javascript-api/index.html)。
+程式碼編輯器JavaScript是適用性表單的運算式語言。 所有運算式都是有效的JavaScript運算式，並使用適用性表單指令碼模型API。 這些運算式會傳回某些型別的值。 如需最適化表單類別、事件、物件和公用API的完整清單，請參閱[最適化表單的JavaScript資料庫API參考](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)。
 
 如需有關在程式碼編輯器中編寫規則的准則的詳細資訊，請參閱[最適化表單運算式](/help/forms/using/adaptive-form-expressions.md)。
 
@@ -622,7 +624,7 @@ AEM Forms會追蹤您上次用來撰寫規則的規則編輯器模式。 當您�
 
   使用@this可參照寫入規則的最適化表單元件。
 
-  以下範例是根據欄位值。 在以下範例中，規則會隱藏表單中的欄位。 `this`的`this.value`部分參考寫入規則的基礎調適型表單元件。
+  以下範例是根據欄位值。 在以下範例中，規則會隱藏表單中的欄位。 `this.value`的`this`部分參考寫入規則的基礎調適型表單元件。
 
   ```
      /**
@@ -845,7 +847,7 @@ var c = {
 
 在貸款申請表單中，您想要擷取貸款申請人是否為現有客戶。 根據使用者提供的資訊，客戶ID欄位應顯示或隱藏。 此外，如果使用者是現有客戶，您想要將焦點設定在客戶ID欄位。 貸款申請表單包含下列元件：
 
-* 選項按鈕&#x200B;**您是Geometrixx現有客戶嗎？**，提供「是」和「否」選項。 「是」的值為&#x200B;**0**，「否」的值為&#x200B;**1**。
+* 選項按鈕&#x200B;**您是現有的Geometrixx客戶嗎？**，它提供「是」和「否」選項。 「是」的值為&#x200B;**0**，「否」的值為&#x200B;**1**。
 
 * 用於指定客戶ID的文字欄位&#x200B;**Geometrixx客戶ID**。
 

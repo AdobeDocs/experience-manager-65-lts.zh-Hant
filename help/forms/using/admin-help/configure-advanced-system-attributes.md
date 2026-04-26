@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f1a68461-c66a-4ea4-902b-644c620ea3f6
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 1%
@@ -31,9 +31,9 @@ ht-degree: 1%
    >
    >您不應該將工作階段逾時限制設定在10分鐘以下，因為系統可能無法正常運作。 建議值為10-120 （分鐘）。
 
-   **判斷提示臨界值（秒）：**&#x200B;因叢集中AEM表單應用程式伺服器之間的系統時間差異，而延遲的緩衝時間。 AEM表單會根據此屬性中指定的時間量（以秒為單位），將使用者的登入時間回溯。 有效值為`0`到`3600`。 預設值為`60`。 此設定會更新組態檔中的`SAML/Producer/assertionThresholdInSeconds`專案金鑰。
+   **判斷提示臨界值（秒）：**&#x200B;因叢集中AEM表單應用程式伺服器之間的系統時間差異，而延遲的緩衝時間。 AEM表單會根據此屬性中指定的時間量（以秒為單位），將使用者的登入時間回溯。 有效值為`0`到`3600`。 預設值為 `60`。 此設定會更新組態檔中的`SAML/Producer/assertionThresholdInSeconds`專案金鑰。
 
-   **宣告的最大允許續約次數：**&#x200B;使用者工作階段不需登入即可透明續約的最大次數。 有效值為`0`到`9999`。 值為`0`表示斷言不會更新。 預設值為 10。此設定會更新組態檔中的`SAML/Producer/maxAssertionRenewalCount`專案金鑰。
+   **宣告的最大允許續約次數：**&#x200B;使用者工作階段不需登入即可透明續約的最大次數。 有效值為`0`到`9999`。 值為`0`表示斷言不會更新。 預設值為 10。 此設定會更新組態檔中的`SAML/Producer/maxAssertionRenewalCount`專案金鑰。
 
 1. （選擇性）變更下列任何目錄同步處理屬性：
 
@@ -45,7 +45,7 @@ ht-degree: 1%
 
 1. （選擇性）變更下列屬性，然後按一下&#x200B;**[!UICONTROL 確定]**：
 
-   **使用者管理員事件稽核：**&#x200B;選取此選項可啟用目錄同步化事件和驗證事件（例如成功、失敗和鎖定）的稽核。 依預設，除非您安裝需要稽核的元件(例如Rights Management)，否則不會選取此選項。 此設定會更新組態檔中的`APSAuditService`專案金鑰。
+   **使用者管理員事件稽核：**&#x200B;選取此選項可啟用目錄同步化事件和驗證事件（例如成功、失敗和鎖定）的稽核。 依預設，除非您安裝需要稽核的元件（例如Rights Management），否則不會選取此選項。 此設定會更新組態檔中的`APSAuditService`專案金鑰。
 
    **自動建立動態群組：**&#x200B;啟用根據電子郵件網域自動建立動態群組。 （請參閱[建立動態群組](/help/forms/using/admin-help/creating-configuring-groups.md#create-a-dynamic-group)。）
 

@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 70b2d1aa-6fcd-461d-b628-e82ddf266f48
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1488'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Forms服務可轉譯已套用使用許可權的表單。 使用許可權與Acrob
 
 >[!NOTE]
 >
->當您指定下列使用許可權時，無法預先填入XML資料的表單： `enableComments`、`enableCommentsOnline`、`enableEmbeddedFiles`或`enableDigitalSignatures`。 (請參閱[使用可流動配置預先填入Forms](/help/forms/developing/prepopulating-forms-flowable-layouts.md)。)
+>當您指定下列使用許可權時，無法預先填入XML資料的表單： `enableComments`、`enableCommentsOnline`、`enableEmbeddedFiles`或`enableDigitalSignatures`。 （請參閱[使用可流動配置預先填入Forms](/help/forms/developing/prepopulating-forms-flowable-layouts.md)。）
 
 >[!NOTE]
 >
@@ -134,7 +134,7 @@ Forms服務轉譯啟用許可權的表單時，會傳回您必須寫入使用者
 
 **另請參閱**
 
-[快速入門(SOAP模式)：使用Java API轉譯已啟用許可權的表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API轉譯已啟用許可權的表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

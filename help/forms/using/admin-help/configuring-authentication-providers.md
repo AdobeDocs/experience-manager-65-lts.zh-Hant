@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 14f006f8-8751-4713-ba5a-590ce479fbb4
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1592'
+source-wordcount: '1614'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ ht-degree: 0%
 如果您要設定企業或混合網域的驗證，並選取SAML驗證，則可使用下列設定。 如需其他SAML設定的相關資訊，請參閱[設定SAML服務提供者設定](/help/forms/using/admin-help/configure-saml-service-provider-settings.md#configure-saml-service-provider-settings)。
 
 **請選取SAML身分提供者中繼資料
-要匯入的檔案：**&#x200B;按一下[瀏覽]選取從IDP產生的SAML識別提供者中繼資料檔案，然後按一下[匯入]。 會顯示來自IDP的詳細資訊。
+要匯入的檔案：**&#x200B;按一下[瀏覽]以選取從IDP產生的SAML識別提供者中繼資料檔案，然後按一下[匯入]。 會顯示來自IDP的詳細資訊。
 
 **標題：** EntityID所代表之URL的別名。 企業及本機使用者的登入頁面上也會顯示標題。
 
@@ -152,7 +152,7 @@ ht-degree: 0%
 
 ### 為網域啟用即時布建 {#enable-just-in-time-provisioning-for-a-domain}
 
-1. 編寫實作IdentityCreator和AssignmentProvider介面的服務容器。 (請參閱[使用AEM表單進行程式設計](https://www.adobe.com/go/learn_aemforms_programming_63)。)
+1. 編寫實作IdentityCreator和AssignmentProvider介面的服務容器。 （請參閱[使用AEM表單進行程式設計](https://www.adobe.com/go/learn_aemforms_programming_63)。）
 1. 將服務容器部署至Forms伺服器。
 1. 在管理控制檯中，按一下「設定>使用者管理>網域管理」。
 

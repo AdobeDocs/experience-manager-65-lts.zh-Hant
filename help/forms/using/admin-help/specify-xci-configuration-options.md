@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5fb6e6cc-6af7-4cf5-804b-bb3030079383
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 1%
@@ -37,4 +37,4 @@ ht-degree: 1%
 
 1. 在管理主控台中，按一下&#x200B;**服務** >輸出。
 1. 選取或取消選取使用系統預設XCI選項核取方塊。 選取此選項時，Output會使用封包、建立者、製作者和compressObjectStream設定的預設值。 取消選取此選項時，輸出使用自訂XCI檔案中指定的值。
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。

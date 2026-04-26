@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: cd0a9205-5ccc-420b-9245-98f8bd7d6c9f
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1690'
+source-wordcount: '1715'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 透過將`RenderAtClient`執行階段選項設定為`true`，設定使用者端轉譯執行階段選項以在使用者端轉譯表單。 這會導致表單傳送至產生表單的使用者端裝置。 如果`RenderAtClient`是`auto` （預設值），則表單設計會決定是否在使用者端轉譯表單。 表單設計必須是具有可流動配置的表單設計。
 
-您可以設定的選擇性執行階段選項是`SeedPDF`選項。 `SeedPDF`選項結合了PDF容器(種子PDF檔案)與表單設計和XML資料。 表單設計和XML資料都會傳送到Acrobat或Adobe Reader，以轉譯表單。 當使用者端電腦沒有表單中使用的字型時，例如當一般使用者未授權使用表單擁有者授權使用的字型時，可以使用`SeedPDF`選項。
+您可以設定的選擇性執行階段選項是`SeedPDF`選項。 `SeedPDF`選項結合了PDF容器（種子PDF檔案）與表單設計和XML資料。 表單設計和XML資料都會傳送到Acrobat或Adobe Reader，以轉譯表單。 當使用者端電腦沒有表單中使用的字型時，例如當一般使用者未授權使用表單擁有者授權使用的字型時，可以使用`SeedPDF`選項。
 
 您可以使用Designer建立簡單的動態PDF檔案，以作為種子PDF檔案。 若要執行此工作，必須執行下列步驟：
 
@@ -133,7 +133,7 @@ Forms服務會建立您必須寫入使用者端網頁瀏覽器的表單資料流
 
 **另請參閱**
 
-[快速入門(SOAP模式)：使用Java API在使用者端轉譯表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API在使用者端轉譯表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -162,7 +162,7 @@ Forms服務會建立您必須寫入使用者端網頁瀏覽器的表單資料流
    叫用`FormsService`物件的`renderPDFForm`方法，並傳遞下列值：
 
    * 字串值，指定表單設計名稱，包括副檔名。 如果您參照的表單設計屬於Forms應用程式的一部分，請確定您指定完整路徑，例如`Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`。
-   * 包含要與表單合併之資料的`BLOB`物件。 如果您不想合併資料，請傳遞`null`。 (請參閱[使用可流動配置預先填入Forms](/help/forms/developing/prepopulating-forms-flowable-layouts.md)。)
+   * 包含要與表單合併之資料的`BLOB`物件。 如果您不想合併資料，請傳遞`null`。 （請參閱[使用可流動配置預先填入Forms](/help/forms/developing/prepopulating-forms-flowable-layouts.md)。）
    * `PDFFormRenderSpec`物件，儲存在使用者端轉譯表單所需的執行階段選項。
    * 包含Forms服務所需URI值的`URLSpec`物件。
    * 儲存檔案附件的`java.util.HashMap`物件。 這是選用引數，如果您不想將檔案附加至表單，可以指定`null`。

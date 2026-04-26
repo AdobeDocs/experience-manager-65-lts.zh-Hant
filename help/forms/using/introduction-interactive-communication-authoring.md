@@ -9,9 +9,9 @@ feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 595f8d31-f297-48be-8ead-f171a60891b8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1318'
+source-wordcount: '1316'
 ht-degree: 10%
 
 ---
@@ -40,9 +40,11 @@ ht-degree: 10%
 
 **A.**&#x200B;頻道瀏覽器&#x200B;**B.**&#x200B;內容瀏覽器&#x200B;**C.**&#x200B;屬性瀏覽器&#x200B;**D.**&#x200B;資產瀏覽器&#x200B;**E.**&#x200B;元件瀏覽器&#x200B;**F.**&#x200B;資料來源瀏覽器 — 資料模型&#x200B;**G.**&#x200B;資料來源瀏覽器 — 主要內容
 
-<!-- Click to enlarge
+<!--
+Click to enlarge
 
-![sidebar-comps-3](assets/sidebar-comps-3.png)-->
+![sidebar-comps-3](assets/sidebar-comps-3.png)
+-->
 
 側邊欄包含下列專案：
 
@@ -55,7 +57,7 @@ Channel瀏覽器可協助您在互動式通訊的列印與網頁通道之間切�
 
 * **屬性瀏覽器**
 
-  可讓您編輯元件的屬性。屬性會根據元件而變更。 例如，若要檢視檔案容器的屬性：
+  可讓您編輯元件的屬性。 屬性會根據元件而變更。 例如，若要檢視檔案容器的屬性：
 選取元件，然後選取![欄位層級](assets/field-level.png) > **檔案容器**，然後選取![cmppr](assets/cmppr.png)。
 
 * **Assets瀏覽器**
@@ -98,7 +100,7 @@ Channel瀏覽器可協助您在互動式通訊的列印與網頁通道之間切�
 
 ![元件工具列標籤](do-not-localize/component_toolbar_labels_new.png)
 
-選取元件時，您會看到可讓您使用元件的工具列。 您可以選擇剪下、貼上、移動和指定元件屬性。您的選項有：
+選取元件時，您會看到可讓您使用元件的工具列。 您可以選擇剪下、貼上、移動和指定元件屬性。 您的選項有：
 
 A.**設定**：當您選取&#x200B;**設定**&#x200B;時，元件屬性會顯示在側邊欄中。
 
@@ -124,7 +126,7 @@ K： **面板中的群組物件：**&#x200B;可讓您將面板中的元件群組
 
 L. **新增子面板** （僅適用於面板）：可讓您新增子面板至面板。
 
-M： **新增面板工具列** （僅適用於面板）：可讓您新增面板元件的工具列。 您接著可以在工具列上執行進一步的動作。
+M： **新增面板工具列** （僅適用於面板）:Lets您新增了面板元件的工具列。 您接著可以在工具列上執行進一步的動作。
 
 此外，工具列上的&#x200B;**取代**&#x200B;選項可讓您以替代元件取代現有元件。 選項不適用於面板元件。
 

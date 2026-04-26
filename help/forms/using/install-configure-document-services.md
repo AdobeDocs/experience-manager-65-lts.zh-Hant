@@ -6,9 +6,9 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
-source-git-commit: 29b6cd70a59e3a90cd081ba09c98bd015a7426fc
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '10247'
+source-wordcount: '10681'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ AEM Forms提供了一組OSGi服務，用於完成不同的檔案層級作業，�
 
 * **組合器服務：**&#x200B;可讓您組合、重新排列及擴充PDF和XDP檔案，並取得有關PDF檔案的資訊。 它還有助於將PDF檔案轉換和驗證為PDF/A標準，將PDF forms、XML表單和PDF forms轉換為PDF/A-1b、PDF/A-2b和PDFA/A-3b。 如需詳細資訊，請參閱[組合器服務](/help/forms/using/assembler-service.md)。
 
-* **ConvertPDF服務：**&#x200B;可讓您將PDF檔案轉換為PostScript或影像檔案(JPEG、JPEG 2000、PNG和TIFF)。 如需詳細資訊，請參閱[ConvertPDF服務](/help/forms/using/using-convertpdf-service.md)。
+* **ConvertPDF服務：**&#x200B;可讓您將PDF檔案轉換為PostScript或影像檔案（JPEG、JPEG 2000、PNG和TIFF）。 如需詳細資訊，請參閱[ConvertPDF服務](/help/forms/using/using-convertpdf-service.md)。
 
 * **條碼式Forms服務：**&#x200B;可讓您從條碼的電子影像擷取資料。 此服務接受包含一或多個條碼作為輸入的TIFF和PDF檔案，並擷取條碼資料。 如需詳細資訊，請參閱[條碼式Forms服務](/help/forms/using/using-barcoded-forms-service.md)。
 
@@ -55,7 +55,7 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 >
 >雖然AEM Forms可讓您從單一伺服器設定並執行所有功能，但您應執行容量規劃、負載平衡，並為生產環境中的特定功能設定專用伺服器。 例如，在使用PDF Generator服務每天轉換數千頁頁面及多個調適型表單來擷取資料的環境中，請為PDF Generator服務和調適型表單功能設定個別的AEM Forms伺服器。 它有助於提供最佳效能，並獨立擴充伺服器。
 
-## 系統需求 {#system-requirements}
+## 系統要求 {#system-requirements}
 
 開始安裝及設定AEM Forms檔案服務前，請確定：
 
@@ -69,17 +69,17 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 
 * 符合記憶體需求。 AEM Forms附加元件套件需要：
 
-   * Microsoft® Windows安裝專用的15 GB暫存空間。
+   * ® Windows安裝專用的15 GB暫存空間。
    * UNIX安裝需要6 GB的暫存空間。
 
-* 已安裝在Microsoft®Windows和Linux®上執行PDF產生器轉換所需的使用者端軟體：
+* 已安裝在®Windows和Linux®上執行PDF產生器轉換所需的使用者端軟體：
 
-   * **Microsoft® Windows**：安裝&#x200B;**Microsoft® Office**&#x200B;或&#x200B;**Apache OpenOffice**
+   * **® Windows**：安裝&#x200B;**Microsoft® Office**&#x200B;或&#x200B;**Apache OpenOffice**
    * **Linux®**：安裝&#x200B;**Apache OpenOffice**
 
 >[!NOTE]
 >
->* 在Microsoft® Windows上，PDF Generator支援WebKit、Acrobat WebCapture和WebToPDF轉換路由，將HTML檔案轉換為PDF檔案。
+>* 在® Windows上，PDF Generator支援WebKit、Acrobat WebCapture和WebToPDF轉換路由，將HTML檔案轉換為PDF檔案。
 >* 在UNIX作業系統上，PDF Generator支援WebKit和WebToPDF轉換路徑，可將HTML檔案轉換為PDF檔案。
 >
 
@@ -163,13 +163,13 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
  </tbody>
 </table>
 
-* **(僅限PDF Generator**)安裝32位元版本的libcurl、libcrypto和libssl程式庫，並建立下列symlink。 符號連結指向個別程式庫的最新版本：
+* **（僅限PDF Generator**）安裝32位元版本的libcurl、libcrypto和libssl程式庫，並建立下列symlink。 符號連結指向個別程式庫的最新版本：
 
    * /usr/lib/libcurl.so
    * /usr/lib/libcrypto.so
    * /usr/lib/libssl.so
 
-* **(僅限PDF Generator)** PDF Generator服務支援WebKit和WebToPDF路由，以便將HTML檔案轉換為PDF檔案。 若要啟用WebToPDF路由的轉換，請安裝下列的64位元程式庫。 一般而言，這些程式庫已經安裝。 如果缺少任何程式庫，請手動安裝：
+* **（僅限PDF Generator）** PDF Generator服務支援WebKit和WebToPDF路由，以便將HTML檔案轉換為PDF檔案。 若要啟用WebToPDF路由的轉換，請安裝下列的64位元程式庫。 一般而言，這些程式庫已經安裝。 如果缺少任何程式庫，請手動安裝：
 
    * linux-gate.so.1
    * libz.so.1
@@ -191,15 +191,15 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 
 ### 安裝Adobe Acrobat和協力廠商應用程式 {#install-adobe-acrobat-and-third-party-applications}
 
-如果您要使用PDF Generator服務將原生檔案格式(例如Microsoft®Word、Microsoft®Excel、Microsoft®PowerPoint、OpenOffice、WordPerfect X7和Adobe Acrobat)轉換為PDF檔案，請確定這些應用程式已安裝在AEM Forms伺服器上。
+如果您要使用PDF Generator服務將原生檔案格式（例如Microsoft®Word、Microsoft®Excel、Microsoft®PowerPoint、OpenOffice、WordPerfect X7和Adobe Acrobat）轉換為PDF檔案，請確定這些應用程式已安裝在AEM Forms伺服器上。
 
 >[!NOTE]
 >
 >* 如果您的AEM Forms伺服器處於離線或安全的環境，且網際網路無法用來啟用Adobe Acrobat，請參閱[離線啟用](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en)，取得啟用此類Adobe Acrobat執行個體的指示。
->* Adobe Acrobat、Microsoft®Word、Excel和Powerpoint僅適用於Microsoft®Windows。 如果您使用UNIX作業系統，請安裝OpenOffice，將RTF文字檔和支援的Microsoft® Office檔案轉換成PDF檔案。
+>* Adobe Acrobat、Microsoft®Word、Excel和Powerpoint僅適用於Microsoft®Windows。 如果您使用UNIX作業系統，請安裝OpenOffice，將RTF文字檔和支援的® Office檔案轉換成PDF檔案。
 >* 關閉在安裝Adobe Acrobat和協力廠商軟體後，針對所有設定為使用PDF Generator服務的使用者顯示的所有對話方塊。
 >* 至少啟動一次所有已安裝的軟體。 關閉所有設定要使用PDF Generator服務之使用者的所有對話方塊。
->* [檢查Adobe Acrobat序號的到期日](https://helpx.adobe.com/tw/enterprise/kb/volume-license-expiration-check.html)並設定更新授權的日期，或[根據到期日](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)移轉您的序號。
+>* [檢查Adobe Acrobat序號的到期日](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html)並設定更新授權的日期，或[根據到期日](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)移轉您的序號。
 
 安裝Acrobat後，請開啟Microsoft® Word。 在&#x200B;**Acrobat**&#x200B;標籤上，按一下&#x200B;**建立PDF**，並將電腦上可用的.doc或.docx檔案轉換成PDF檔案。 如果轉換成功，AEM Forms就可以將Acrobat與PDF Generator服務搭配使用。
 
@@ -212,13 +212,15 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 * 熟悉[Adobe Admin Console](https://helpx.adobe.com/in/enterprise/admin-guide.html)
 * 瞭解您的[AEM Forms部署架構](/help/forms/using/aem-forms-architecture-deployment.md)
 * Adobe Admin Console和執行AEM Forms之伺服器的管理許可權。
-* 具有Adobe [Admin Console](https://helpx.adobe.com/in/enterprise/using/admin-roles.html)之[管理員存取權](https://adminconsole.adobe.com)的使用者。 一般而言，您組織的管理員已經有具有管理員存取權的使用者。 您可以觀看此[教學影片](https://www.youtube.com/watch?v=xO2T0I6SvsU&list=PLHRegP5ZOj7CpijZyD8pB9rIMJkvO6FnI&t=81s)，瞭解新增管理員的步驟。
+* 具有Adobe [Admin Console](https://adminconsole.adobe.com)之[管理員存取權](https://helpx.adobe.com/in/enterprise/using/admin-roles.html)的使用者。 一般而言，您組織的管理員已經有具有管理員存取權的使用者。 您可以觀看此[教學影片](https://www.youtube.com/watch?v=xO2T0I6SvsU&list=PLHRegP5ZOj7CpijZyD8pB9rIMJkvO6FnI&t=81s)，瞭解新增管理員的步驟。
 * 在Adobe Admin Console中具有[部署管理員](https://helpx.adobe.com/in/enterprise/global-admin-console/manage-administrators.html)角色的使用者帳戶。 相同的[教學影片](https://www.youtube.com/watch?v=xO2T0I6SvsU&list=PLHRegP5ZOj7CpijZyD8pB9rIMJkvO6FnI&t=81s)示範如何新增部署管理員。
 * 執行AEM Forms的電腦上的本機系統管理員許可權
 * Windows 64位元作業系統
 * 穩定的網際網路連線以進行授權啟用
-<!-- Backup solution for existing Acrobat settings
- Supported version of Adobe Acrobat (see [Adobe documentation](https://helpx.adobe.com/acrobat/kb/acrobat-dc-compatibility-with-windows-macos.html) for details) -->
+<!--
+Backup solution for existing Acrobat settings
+ Supported version of Adobe Acrobat (see [Adobe documentation](https://helpx.adobe.com/acrobat/kb/acrobat-dc-compatibility-with-windows-macos.html) for details)
+-->
 
 
 #### 實作工作流程和時間表
@@ -227,12 +229,12 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 
 | 步驟 | 估計時間 | 先決條件 |
 |------|----------------|---------------|
-| 1.在Admin Console中建立FRL套件) | 15-20 分鐘 | [Admin Console存取權](https://helpx.adobe.com/in/enterprise/admin-guide.html) |
-| 2.授予下載許可權 | 5-10 分鐘 | [Admin Console存取權](https://helpx.adobe.com/in/enterprise/global-admin-console/manage-administrators.html) |
-| 3.解除安裝先前的Acrobat | 10-15 分鐘 | 伺服器管理員存取權 |
-| 4.下載並安裝Adobe Acrobat Pro | 10-15 分鐘 | 伺服器管理員存取權 |
-| 5.下載及部署FRL套件 | 20-30 分鐘 | 伺服器管理員存取權 |
-| 6.確認安裝 | 5-10 分鐘 | 伺服器存取 |
+| &#x200B;1. 在Admin Console中建立FRL套件) | 15-20 分鐘 | [Admin Console存取權](https://helpx.adobe.com/in/enterprise/admin-guide.html) |
+| &#x200B;2. 授予下載許可權 | 5-10 分鐘 | [Admin Console存取權](https://helpx.adobe.com/in/enterprise/global-admin-console/manage-administrators.html) |
+| &#x200B;3. 解除安裝先前的Acrobat | 10-15 分鐘 | 伺服器管理員存取權 |
+| &#x200B;4. 下載並安裝Adobe Acrobat Pro | 10-15 分鐘 | 伺服器管理員存取權 |
+| &#x200B;5. 下載和部署FRL套件 | 20-30 分鐘 | 伺服器管理員存取權 |
+| &#x200B;6. 驗證安裝 | 5-10 分鐘 | 伺服器存取 |
 
 <!-- ![Workflow diagram showing the FRL implementation process](/help/forms/using/assets/frl.svg) -->
 
@@ -300,10 +302,10 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 2. 尋找或建立使用者帳戶以授予下載許可權。
 3. 按一下使用者的名稱以開啟其設定檔。
 4. 按一下使用者&#x200B;**編輯管理許可權**&#x200B;旁的圖示。
-5. 將&#x200B;**部署管理員**&#x200B;角色指派給使用者。 其他管理員角色也可以運作，但部署管理員是建議的角色。 按一下「**儲存**」。
+5. 將&#x200B;**部署管理員**&#x200B;角色指派給使用者。 其他管理員角色也可以運作，但部署管理員是建議的角色。 按一下&#x200B;**儲存**。
 
 
-##### 部署FRL套件(AEM Forms伺服器)
+##### 部署FRL套件（AEM Forms伺服器）
 
 下列步驟會在AEM Forms伺服器上執行，並擁有該電腦的&#x200B;*本機系統管理員*&#x200B;許可權。
 
@@ -338,9 +340,9 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 
 ###### 步驟7：下載FRL套件
 
-1. 使用您在步驟3中提供的[使用者帳戶](https://adminconsole.adobe.com/)登入&#x200B;*Adobe Admin Console*。
+1. 使用您在步驟3中提供的&#x200B;*使用者帳戶*&#x200B;登入[Adobe Admin Console](https://adminconsole.adobe.com/)。
 1. 瀏覽至&#x200B;**封裝**&#x200B;標籤。
-1. 找到您在步驟2建立的FRL套件(命名為「Acrobat FRL AEM Forms」或您的自訂套件名稱)。
+1. 找到您在步驟2建立的FRL套件（命名為「Acrobat FRL AEM Forms」或您的自訂套件名稱）。
 1. 按一下&#x200B;**下載**&#x200B;將封裝下載至伺服器。
 
 ###### 步驟8：部署套件
@@ -450,10 +452,10 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 2. 尋找或建立使用者帳戶以授予下載許可權。
 3. 按一下使用者的名稱以開啟其設定檔。
 4. 按一下使用者&#x200B;**編輯管理許可權**&#x200B;旁的圖示。
-5. 將&#x200B;**部署管理員**&#x200B;角色指派給使用者。 其他管理員角色也可以運作，但部署管理員是建議的角色。 按一下「**儲存**」。
+5. 將&#x200B;**部署管理員**&#x200B;角色指派給使用者。 其他管理員角色也可以運作，但部署管理員是建議的角色。 按一下&#x200B;**儲存**。
 
 
-##### 部署FRL套件(AEM Forms伺服器)
+##### 部署FRL套件（AEM Forms伺服器）
 
 下列步驟會在AEM Forms伺服器上執行，並擁有該電腦的&#x200B;*本機系統管理員*&#x200B;許可權。
 
@@ -488,9 +490,9 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 
 ###### 步驟7：下載FRL套件
 
-1. 使用您在步驟3中提供的[使用者帳戶](https://adminconsole.adobe.com/)登入&#x200B;*Adobe Admin Console*。
+1. 使用您在步驟3中提供的&#x200B;*使用者帳戶*&#x200B;登入[Adobe Admin Console](https://adminconsole.adobe.com/)。
 1. 瀏覽至&#x200B;**封裝**&#x200B;標籤。
-1. 找到您在步驟2建立的FRL套件(命名為「Acrobat FRL AEM Forms」或您的自訂套件名稱)。
+1. 找到您在步驟2建立的FRL套件（命名為「Acrobat FRL AEM Forms」或您的自訂套件名稱）。
 1. 按一下&#x200B;**下載**&#x200B;將封裝下載至伺服器。
 
 ###### 步驟8：部署套件
@@ -541,7 +543,7 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 
 完成所有程式後，請執行快速動作測試以確認安裝有效：
 
-1. 從互動式使用者工作階段中的命令列主控台啟動AEM Forms伺服器。 (登入伺服器並從命令列手動啟動AEM Forms。)
+1. 從互動式使用者工作階段中的命令列主控台啟動AEM Forms伺服器。 （登入伺服器並從命令列手動啟動AEM Forms。）
 2. 啟動伺服器後，讓使用者工作階段保持作用中。 請勿登出電腦，因為這會終止伺服器程式。 您可以安全地關閉遠端案頭(RDP)視窗而不登出；只要工作階段保持作用中狀態，伺服器就會繼續執行。
 3. 為了提高可靠性，請設定啟動工作或排程工作，以在使用者登入時自動啟動AEM Forms伺服器。
 
@@ -606,10 +608,10 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 2. 尋找或建立使用者帳戶以授予下載許可權。
 3. 按一下使用者的名稱以開啟其設定檔。
 4. 按一下使用者&#x200B;**編輯管理許可權**&#x200B;旁的圖示。
-5. 將&#x200B;**部署管理員**&#x200B;角色指派給使用者。 其他管理員角色也可以運作，但部署管理員是建議的角色。 按一下「**儲存**」。
+5. 將&#x200B;**部署管理員**&#x200B;角色指派給使用者。 其他管理員角色也可以運作，但部署管理員是建議的角色。 按一下&#x200B;**儲存**。
 
 
-##### 部署FRL套件(AEM Forms伺服器)
+##### 部署FRL套件（AEM Forms伺服器）
 
 下列步驟會在AEM Forms伺服器上執行，並擁有該電腦的&#x200B;*本機系統管理員*&#x200B;許可權。
 
@@ -644,9 +646,9 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 
 ###### 步驟7：下載FRL套件
 
-1. 使用您在步驟3中提供的[使用者帳戶](https://adminconsole.adobe.com/)登入&#x200B;*Adobe Admin Console*。
+1. 使用您在步驟3中提供的&#x200B;*使用者帳戶*&#x200B;登入[Adobe Admin Console](https://adminconsole.adobe.com/)。
 1. 瀏覽至&#x200B;**封裝**&#x200B;標籤。
-1. 找到您在步驟2建立的FRL套件(命名為「Acrobat FRL AEM Forms」或您的自訂套件名稱)。
+1. 找到您在步驟2建立的FRL套件（命名為「Acrobat FRL AEM Forms」或您的自訂套件名稱）。
 1. 按一下&#x200B;**下載**&#x200B;將封裝下載至伺服器。
 
 ###### 步驟8：部署套件
@@ -763,10 +765,10 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 2. 尋找或建立使用者帳戶以授予下載許可權。
 3. 按一下使用者的名稱以開啟其設定檔。
 4. 按一下使用者&#x200B;**編輯管理許可權**&#x200B;旁的圖示。
-5. 將&#x200B;**部署管理員**&#x200B;角色指派給使用者。 其他管理員角色也可以運作，但部署管理員是建議的角色。 按一下「**儲存**」。
+5. 將&#x200B;**部署管理員**&#x200B;角色指派給使用者。 其他管理員角色也可以運作，但部署管理員是建議的角色。 按一下&#x200B;**儲存**。
 
 
-##### 部署FRL套件(AEM Forms伺服器)
+##### 部署FRL套件（AEM Forms伺服器）
 
 下列步驟會在AEM Forms伺服器上執行，並擁有該電腦的&#x200B;*本機系統管理員*&#x200B;許可權。
 
@@ -801,9 +803,9 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 
 ###### 步驟7：下載FRL套件
 
-1. 使用您在步驟3中提供的[使用者帳戶](https://adminconsole.adobe.com/)登入&#x200B;*Adobe Admin Console*。
+1. 使用您在步驟3中提供的&#x200B;*使用者帳戶*&#x200B;登入[Adobe Admin Console](https://adminconsole.adobe.com/)。
 1. 瀏覽至&#x200B;**封裝**&#x200B;標籤。
-1. 找到您在步驟2建立的FRL套件(命名為「Acrobat FRL AEM Forms」或您的自訂套件名稱)。
+1. 找到您在步驟2建立的FRL套件（命名為「Acrobat FRL AEM Forms」或您的自訂套件名稱）。
 1. 按一下&#x200B;**下載**&#x200B;將封裝下載至伺服器。
 
 ###### 步驟8：部署套件
@@ -854,7 +856,7 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 
 完成所有程式後，請執行快速動作測試以確認安裝有效：
 
-1. 從互動式使用者工作階段中的命令列主控台啟動AEM Forms伺服器。 (登入伺服器並從命令列手動啟動AEM Forms。)
+1. 從互動式使用者工作階段中的命令列主控台啟動AEM Forms伺服器。 （登入伺服器並從命令列手動啟動AEM Forms。）
 2. 啟動伺服器後，讓使用者工作階段保持作用中。 請勿登出電腦，因為這會終止伺服器程式。 您可以安全地關閉遠端案頭(RDP)視窗而不登出；只要工作階段保持作用中狀態，伺服器就會繼續執行。
 3. 為了提高可靠性，請設定啟動工作或排程工作，以在使用者登入時自動啟動AEM Forms伺服器。
 
@@ -916,19 +918,19 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 >* 所有環境變數和各自的路徑都區分大小寫。
 >* JAVA_HOME和Acrobat_PATH （僅限Windows）是強制的環境變數。
 >* 環境變數OpenOffice_PATH設定為安裝資料夾，而非可執行檔的路徑。
->* 請勿為Microsoft® Office應用程式（例如Word、PowerPoint、Excel和Project）或AutoCAD設定環境變數。 如果這些應用程式已安裝在伺服器上，則產生PDF服務會自動啟動這些應用程式。
+>* 請勿為® Office應用程式（例如Word、PowerPoint、Excel和Project）或AutoCAD設定環境變數。 如果這些應用程式已安裝在伺服器上，則產生PDF服務會自動啟動這些應用程式。
 >* 在UNIX平台上，以/root格式安裝OpenOffice。 如果OpenOffice未安裝為root，則PDF Generator服務無法將OpenOffice檔案轉換為PDF檔案。 如果您需要以非根使用者身分安裝及執行OpenOffice，請向非根使用者提供sudo許可權。
 >* 如果您在UNIX平台使用OpenOffice，請執行以下命令來設定路徑變數：
 >
 >  `export OpenOffice_PATH=/opt/openoffice.org4`
 
-### (僅適用於IBM® WebSphere®)設定IBM® SSL通訊端提供者 {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
+### （僅適用於® WebSphere®）設定IBM® SSL通訊端提供者 {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
 
-執行以下步驟來設定IBM® SSL通訊端提供者：
+執行以下步驟來設定® SSL通訊端提供者：
 
 1. 建立java.security檔案的復本。 檔案的預設位置為`[WebSphere_installation_directory]\Appserver\java_[version]\jre\lib\security`。
 1. 開啟複製的java.security檔案進行編輯。
-1. 變更預設的SSL通訊端工廠以使用JSSE2工廠，而非預設的IBM® WebSphere®工廠：
+1. 變更預設的SSL通訊端工廠以使用JSSE2工廠，而非預設的® WebSphere®工廠：
 
    **預設內容：**
 
@@ -955,13 +957,13 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 
    `-Djava.security.properties= [path of newly created Java.security file].`
 
-### （僅限Windows）設定Microsoft® Office的檔案封鎖設定 {#configure-the-file-block-settings-for-microsoft-office}
+### （僅限Windows）設定® Office的檔案封鎖設定 {#configure-the-file-block-settings-for-microsoft-office}
 
-變更Microsoft® Office信任中心設定，讓PDF Generator服務能夠轉換使用舊版Microsoft® Office建立的檔案。
+變更® Office信任中心設定，讓PDF Generator服務能夠轉換使用舊版Microsoft® Office建立的檔案。
 
-1. 開啟Microsoft® Office應用程式。 例如，Microsoft® Word。 瀏覽至&#x200B;**[!UICONTROL 檔案]**> **[!UICONTROL 選項]**。 「選項」對話方塊隨即顯示。
+1. 開啟® Office應用程式。 例如，® Word。 瀏覽至&#x200B;**[!UICONTROL 檔案]**> **[!UICONTROL 選項]**。 「選項」對話方塊隨即顯示。
 
-1. 按一下[信任中心]&#x200B;**&#x200B;**，然後按一下[信任中心設定]&#x200B;**&#x200B;**。
+1. 按一下[信任中心]****，然後按一下[信任中心設定]****。
 1. 在&#x200B;**[!UICONTROL 信任中心設定]**&#x200B;中，按一下&#x200B;**[!UICONTROL 檔案封鎖設定]**。
 1. 在&#x200B;**[!UICONTROL 檔案型別]**&#x200B;清單中，取消選取&#x200B;**[!UICONTROL 開啟]**，該檔案型別應該允許PDF Generator服務轉換成PDF檔案。
 
@@ -969,7 +971,7 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 
 用來啟動應用程式伺服器的使用者帳戶需要&#x200B;**取代處理序層級權杖**&#x200B;許可權。 本機系統帳戶預設具有&#x200B;**取代處理序層級權杖**&#x200B;許可權。 對於以Local Administrators群組的使用者執行的伺服器，必須明確授與許可權。 執行以下步驟來授與許可權：
 
-1. 開啟Microsoft® Windows的群組原則編輯器。 若要開啟群組原則編輯器，請按一下[開始] **&#x200B;**，在[開始搜尋]方塊中輸入&#x200B;**gpedit.msc**，然後按一下[群組原則編輯器] **[!UICONTROL 。]**
+1. 開啟® Windows的群組原則編輯器。 若要開啟群組原則編輯器，請按一下[開始] ****，在[開始搜尋]方塊中輸入&#x200B;**gpedit.msc**，然後按一下[群組原則編輯器] **[!UICONTROL 。]**
 1. 瀏覽至&#x200B;**[!UICONTROL 本機電腦原則]** > **[!UICONTROL 電腦組態]** > **[!UICONTROL Windows設定]** > **[!UICONTROL 安全性設定]** > **[!UICONTROL 本機原則]** > **[!UICONTROL 使用者許可權指派]**，並編輯&#x200B;**[!UICONTROL 取代處理序層級權杖]**&#x200B;原則並包含Administrators群組。
 1. 將使用者新增至「取代程式層級權杖」專案。
 
@@ -996,9 +998,9 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 1. 將滑桿調整為「永不通知」等級。 完成後，關閉命令視窗並關閉「系統組態」視窗。
 1. 確認UAC的登入設定設為0 （零）。 執行以下步驟以進行驗證：
 
-   1. Microsoft®建議您在修改登入之前先備份登入。 如需詳細步驟，請參閱[如何在Windows](https://support.microsoft.com/en-us/help/322756)中備份及還原登入。
-   1. 開啟Microsoft® Windows登入編輯器。 若要開啟登入編輯程式，請前往[開始] > [執行]，輸入regedit，然後按一下[確定]。
-   1. 瀏覽至`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`。 請確定EnableLUA的值設為0 （零）。
+   1. ®建議您在修改登入之前先備份登入。 如需詳細步驟，請參閱[如何在Windows](https://support.microsoft.com/en-us/help/322756)中備份及還原登入。
+   1. 開啟® Windows登入編輯器。 若要開啟登入編輯程式，請前往[開始] > [執行]，輸入regedit，然後按一下[確定]。
+   1. 導覽至 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`。 請確定EnableLUA的值設為0 （零）。
    1. 請確定&#x200B;**EnableLUA**&#x200B;的值設為0 （零）。 如果值不是0，請將值變更為0。 關閉登錄編輯程式。
 
 1. 重新啟動電腦。
@@ -1047,7 +1049,7 @@ PDF Generator服務提供將HTML檔案轉換為PDF檔案的WebKit、WebCapture�
 
 AEM Forms附加元件套件是部署至AEM的應用程式。 此套件包含AEM Forms Document Services和其他AEM Forms功能。 執行以下步驟來安裝套件：
 
-1. 開啟 [Software Distribution](https://experience.adobe.com/downloads)。您需要 Adobe ID 才能登入 Software Distribution。
+1. 開啟 [Software Distribution](https://experience.adobe.com/downloads)。 您需要 Adobe ID 才能登入 Software Distribution。
 1. 選取標題功能表中可用的&#x200B;**[!UICONTROL Adobe Experience Manager]**。
 1. 在&#x200B;**[!UICONTROL 篩選器]**&#x200B;區段中：
    1. 從&#x200B;**[!UICONTROL 解決方案]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Forms]**。
@@ -1056,9 +1058,9 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 此套件包含AEM 
 1. 開啟[封裝管理員](/help/sites-administering/package-manager.md)，然後按一下&#x200B;**[!UICONTROL 上傳封裝]**&#x200B;以上傳封裝。
 1. 選取封裝並按一下&#x200B;**[!UICONTROL 安裝]**。
 
-   您也可以透過[AEM Forms發行版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hant)文章中列出的直接連結來下載套件。
+   您也可以透過[AEM Forms發行版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)文章中列出的直接連結來下載套件。
 
-1. 安裝套件後，系統會提示您重新啟動AEM執行個體。 **不要立即停止伺服器。**&#x200B;在停止AEM Forms伺服器之前，請等候直到ServiceEvent REGISTERED和ServiceEvent UNREGISTERED訊息停止出現在`[AEM-Installation-Directory]/crx-quickstart/logs/error`.log檔案中，而且記錄檔穩定。
+1. 安裝套件後，系統會提示您重新啟動AEM執行個體。 **不要立即停止伺服器。** 在停止AEM Forms伺服器之前，請等候直到ServiceEvent REGISTERED和ServiceEvent UNREGISTERED訊息停止出現在`[AEM-Installation-Directory]/crx-quickstart/logs/error`.log檔案中，而且記錄檔穩定。
 
 ## 安裝後設定 {#post-installation-configurations}
 
@@ -1074,7 +1076,7 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 此套件包含AEM 
    sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*
    ```
 
-1. (僅限AIX®)將以下屬性新增到sling.properties檔案：
+1. （僅限AIX®）將以下屬性新增到sling.properties檔案：
 
    ```shell
    sling.bootdelegation.xerces=org.apache.xerces.*
@@ -1085,7 +1087,7 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 此套件包含AEM 
 ### 設定字型管理員服務  {#configuring-the-font-manager-service}
 
 1. 以系統管理員身分登入[AEM Configuration Manager](http://localhost:4502/system/console/configMgr)。
-1. 找到並開啟&#x200B;**[!UICONTROL CQ-DAM-Handler-Gibson字型管理員]**&#x200B;服務。 指定System Fonts、Adobe Server Fonts和Customer Fonts目錄的路徑。 按一下「**[!UICONTROL 儲存]**」。
+1. 找到並開啟&#x200B;**[!UICONTROL CQ-DAM-Handler-Gibson字型管理員]**&#x200B;服務。 指定System Fonts、Adobe Server Fonts和Customer Fonts目錄的路徑。 按一下&#x200B;**[!UICONTROL 儲存]**。
 
    >[!NOTE]
    >
@@ -1099,7 +1101,7 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 此套件包含AEM 
 
 1. 開啟[AEM Forms PDF Generator設定](http://localhost:4502/libs/fd/pdfg/config/ui.html)頁面。
 
-1. 在&#x200B;**[!UICONTROL 使用者帳戶]**&#x200B;索引標籤中，提供本機使用者帳戶的認證，然後按一下&#x200B;**[!UICONTROL 提交]**。 如果Microsoft®Windows提示，請允許使用者存取。 成功新增後，設定的使用者會顯示在&#x200B;**[!UICONTROL 使用者帳戶]**&#x200B;索引標籤的&#x200B;**[!UICONTROL 您的使用者帳戶]**&#x200B;區段下。
+1. 在&#x200B;**[!UICONTROL 使用者帳戶]**&#x200B;索引標籤中，提供本機使用者帳戶的認證，然後按一下&#x200B;**[!UICONTROL 提交]**。 如果®Windows提示，請允許使用者存取。 成功新增後，設定的使用者會顯示在&#x200B;**[!UICONTROL 使用者帳戶]**&#x200B;索引標籤的&#x200B;**[!UICONTROL 您的使用者帳戶]**&#x200B;區段下。
 
 ### 設定逾時設定 {#configure-the-time-out-settings}
 
@@ -1140,9 +1142,9 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 此套件包含AEM 
 
 ### （僅限Windows）為PDF Generator服務設定Acrobat {#configure-acrobat-for-the-pdf-generator-service}
 
-在Microsoft® Windows上，PDF Generator服務會使用Adobe Acrobat將支援的檔案格式轉換為PDF檔案。 執行以下步驟，為PDF Generator服務設定Adobe Acrobat：
+在® Windows上，PDF Generator服務會使用Adobe Acrobat將支援的檔案格式轉換為PDF檔案。 執行以下步驟，為PDF Generator服務設定Adobe Acrobat：
 
-1. 開啟Acrobat並選取&#x200B;**[!UICONTROL 編輯]**> **[!UICONTROL 偏好設定]**> **[!UICONTROL 更新程式]**。 在[檢查更新]中，取消選取[自動安裝更新]&#x200B;**&#x200B;**，然後按一下[確定]&#x200B;**&#x200B;**。 關閉Acrobat。
+1. 開啟Acrobat並選取&#x200B;**[!UICONTROL 編輯]**> **[!UICONTROL 偏好設定]**> **[!UICONTROL 更新程式]**。 在[檢查更新]中，取消選取[自動安裝更新]****，然後按一下[確定]****。 關閉Acrobat。
 1. 連按兩下您系統上的PDF檔案。 當Acrobat首次啟動時，會顯示登入、歡迎畫面和EULA的對話方塊。 為所有設定要使用PDF Generator的使用者關閉這些對話方塊。
 1. 執行PDF Generator公用程式批次檔案，為PDF Generator服務設定Acrobat：
 
@@ -1194,7 +1196,7 @@ DocAssurance服務可套用使用許可權至PDF檔案。 若要套用使用許�
 執行以下步驟來設定憑證：
 
 1. 以管理員身分登入AEM作者執行個體。 移至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 安全性]** > **[!UICONTROL 使用者]**。
-1. 按一下使用者帳戶的&#x200B;**[!UICONTROL 名稱]**&#x200B;欄位。 **[!UICONTROL 編輯使用者設定]**&#x200B;頁面隨即開啟。 在AEM編寫執行個體上，憑證位於KeyStore中。 如果您先前尚未建立KeyStore，請按一下[建立KeyStore] **&#x200B;**，並設定KeyStore的新密碼。 如果伺服器已包含KeyStore，請略過此步驟。  如果您使用Adobe的Reader擴充功能憑證，Keystore檔案密碼一律與私密金鑰密碼相同。
+1. 按一下使用者帳戶的&#x200B;**[!UICONTROL 名稱]**&#x200B;欄位。 **[!UICONTROL 編輯使用者設定]**&#x200B;頁面隨即開啟。 在AEM編寫執行個體上，憑證位於KeyStore中。 如果您先前尚未建立KeyStore，請按一下[建立KeyStore] ****，並設定KeyStore的新密碼。 如果伺服器已包含KeyStore，請略過此步驟。  如果您使用Adobe的Reader擴充功能憑證，Keystore檔案密碼一律與私密金鑰密碼相同。
 1. 在&#x200B;**[!UICONTROL 編輯使用者設定]**&#x200B;頁面上，選取&#x200B;**[!UICONTROL KeyStore]**&#x200B;索引標籤。 展開&#x200B;**[!UICONTROL 從金鑰庫檔案新增私密金鑰]**&#x200B;選項並提供別名。 別名可用來執行Reader擴充功能作業。
 1. 若要上傳憑證檔案，請按一下&#x200B;**[!UICONTROL 選取金鑰存放區檔案]**，然後上傳&lt;filename>.pfx檔案。
 
@@ -1240,11 +1242,11 @@ DocAssurance服務可套用使用許可權至PDF檔案。 若要套用使用許�
  </tbody>
 </table>
 
-### （僅限Windows）設定Microsoft®專案的登入專案 {#configure-registry-entry-for-microsoft-project}
+### （僅限Windows）設定®專案的登入專案 {#configure-registry-entry-for-microsoft-project}
 
 在電腦上安裝AEM Forms附加元件和Microsoft® Project後，請在64位元位置註冊Microsoft® Project的專案。 它有助於執行Project到PDFG的轉換測試。 下列是列出登入輸入程式的步驟：
 
-1. 開啟Microsoft® Windows登入編輯器(regedit)，若要開啟登入編輯器，請前往[開始] > [執行]，輸入regedit，然後按一下[確定]。
+1. 開啟® Windows登入編輯器(regedit)，若要開啟登入編輯器，請前往[開始] > [執行]，輸入regedit，然後按一下[確定]。
 1. 導覽至`Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat PDFMaker\<version>\Office\SupportedApp`，並建立新的&#x200B;**二進位值**&#x200B;登入並將它重新命名為&#x200B;**專案**。
 1. 將已建立之二進位登入的資料值修改成01，然後按一下確定。
 1. 關閉登入專案。
@@ -1252,13 +1254,13 @@ DocAssurance服務可套用使用許可權至PDF檔案。 若要套用使用許�
 
 ## 已知問題和疑難排解 {#known-issues-and-troubleshooting}
 
-* 如果壓縮的輸入檔案包含檔案名稱中含有雙位元組字元的HTML檔案，PDFHTML轉換便會失敗。 為了避免此問題，命名HTML檔案時請勿使用雙位元組字元。
+* 如果壓縮的輸入檔案包含檔案名稱中含有雙位元組字元的HTML檔案，PDF轉換便會失敗。 為了避免此問題，命名HTML檔案時請勿使用雙位元組字元。
 
 * 在基於UNIX的作業系統上，執行下列操作以尋找任何遺漏的程式庫：
 
 1. 導覽至 `[crx-repository]/bedrock/svcnative/HtmlToPdfSvc/bin/`。
 
-1. HTML執行以下命令，列出WebToPDF轉換為PDF所需的所有程式庫。
+1. 執行以下命令，列出WebToPDF轉換為PDF所需的所有程式庫。
 
    `ldd phantomjs`
 
@@ -1284,7 +1286,7 @@ DocAssurance服務可套用使用許可權至PDF檔案。 若要套用使用許�
    >
    >* 如果系統整備工具報告pdfgen.api檔案在Acrobat外掛程式資料夾中無法使用，則將pdfgen.api檔案從`[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32`目錄複製到`[Acrobat_root]\Acrobat\plug_ins`目錄。
 
-1. 瀏覽至`[Path_of_reports_folder]`。 開啟SystemReadinessTool.html檔案。 驗證報告並修正上述問題。
+1. 導覽至 `[Path_of_reports_folder]`。 開啟SystemReadinessTool.html檔案。 驗證報告並修正上述問題。
 
 ### 設定SRT工具的選項 {#srt-configuration}
 
@@ -1328,7 +1330,7 @@ DocAssurance服務可套用使用許可權至PDF檔案。 若要套用使用許�
 
 +++ Adobe Acrobat
 
-* 確保只安裝[支援的Microsoft® Office （32位元）和Adobe Acrobat版本](/help/sites-deploying/technical-requirements.md)，並取消開啟對話方塊。
+* 確保只安裝[支援的® Office （32位元）和Adobe Acrobat版本](/help/sites-deploying/technical-requirements.md)，並取消開啟對話方塊。
 * 請確定Adobe Acrobat更新服務已停用。
 * 確定[Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service)批次檔案是以管理員許可權執行。
 * 確認已在PDF Generator設定UI中新增PDF使用者。
@@ -1339,14 +1341,14 @@ DocAssurance服務可套用使用許可權至PDF檔案。 若要套用使用許�
 
 +++OpenOffice
 
-**Microsoft® Windows**
+**® Windows**
 
 * 請確認已安裝32位元[支援的Microsoft Office版本](/help/sites-deploying/technical-requirements.md)，並取消所有應用程式的開啟對話方塊。
 * 確認已在PDF Generator設定UI中新增PDF使用者。
 * 請確定PDF Generator使用者是系統管理員群組的成員，並且已為該使用者設定了[取代處理序層級權杖](#grant-the-replace-a-process-level-token-privilege)許可權。
 * 請確認已在PDF Generator UI中設定使用者，並執行下列動作：
    1. 使用PDF Generator使用者登入Microsoft® Windows。
-   1. 開啟Microsoft® Office或OpenOffice應用程式並取消所有對話方塊。
+   1. 開啟® Office或OpenOffice應用程式並取消所有對話方塊。
    1. 將AdobePDF設為預設印表機。
    1. 將Acrobat設為PDF檔案的預設程式。
    1. 在Microsoft Office應用程式中使用選項「檔案>列印和Acrobat功能區」來執行手動轉換，並取消所有對話方塊。
@@ -1390,10 +1392,10 @@ DocAssurance服務可套用使用許可權至PDF檔案。 若要套用使用許�
 * 確定電腦上有Ghost弱點修正Glibc。 使用您的預設封裝管理員來更新至最新版本的glibc。 其中包括Ghost弱點修正。
 * 確保系統上已安裝32位元lib curl、libcrypto和libssl程式庫的最新版本。 同時建立指向個別程式庫最新版本（32位元）的符號連結`/usr/lib/libcurl.so` (或libcurl.a (AIX®))、`/usr/lib/libcrypto.so` (或libcrypto.a (AIX®)和`/usr/lib/libssl.so` (或libssl.a (AIX®))。
 
-* 對IBM® SSL通訊端提供者執行以下步驟：
+* 對® SSL通訊端提供者執行以下步驟：
    1. 將java.security檔案從`<WAS_Installed_JAVA>\jre\lib\security`複製到AEM Forms伺服器上的任何位置。 預設位置為「預設位置」= `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`。
 
-   1. 編輯複製位置的java.security檔案，並變更預設的SSL通訊端工廠與JSSE2工廠(使用JSSE2工廠而非WebSphere®)。
+   1. 編輯複製位置的java.security檔案，並變更預設的SSL通訊端工廠與JSSE2工廠（使用JSSE2工廠而非WebSphere®）。
 
       變更下列預設JSSE通訊端處理站：
 
@@ -1405,7 +1407,7 @@ DocAssurance服務可套用使用許可權至PDF檔案。 若要套用使用許�
       ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
       ```
 
-      替換為
+      包含
 
       ```
       ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
@@ -1419,13 +1421,13 @@ DocAssurance服務可套用使用許可權至PDF檔案。 若要套用使用許�
 
 +++ 無法新增PDF Generator (PDFG)使用者
 
-* 請確定Windows上已安裝Microsoft® Visual C++ 2012 x86和Microsoft® Visual C++ 2013 x86 （32位元）可轉散發套件。
+* 請確定Windows上已安裝® Visual C++ 2012 x86和Microsoft® Visual C++ 2013 x86 （32位元）可轉散發套件。
 
 +++
 
 +++自動化測試失敗
 
-* 對於Microsoft® Office和OpenOffice，請手動執行至少一個轉換（以每位使用者的身分），以確保轉換期間不會彈出任何對話方塊。 如果出現任何對話方塊，則將其關閉。 自動轉換期間不應出現這類對話方塊。
+* 對於® Office和OpenOffice，請手動執行至少一個轉換（以每位使用者的身分），以確保轉換期間不會彈出任何對話方塊。 如果出現任何對話方塊，則將其關閉。 自動轉換期間不應出現這類對話方塊。
 
 * 在OSGi環境的AEM Forms上執行自動化之前，請確定測試套件已安裝且作用中。
 
@@ -1433,19 +1435,19 @@ DocAssurance服務可套用使用許可權至PDF檔案。 若要套用使用許�
 
 +++多個使用者轉換失敗
 
-* 驗證伺服器記錄以檢查特定使用者的轉換是否失敗。（程式總管可以協助您檢查不同使用者的執行程式）
+* 驗證伺服器記錄以檢查特定使用者的轉換是否失敗。（程式總管可協助您檢查不同使用者的執行程式）
 
 * 請確定為PDF Generator設定的使用者擁有本機管理員許可權。
 
 * 確保PDF Generator使用者擁有對LC臨時和PDFG臨時使用者的讀取、寫入和執行許可權。
 
-* 對於Microsoft® Office和OpenOffice，請手動執行至少一個轉換（以每位使用者的身分），以確保轉換期間不會彈出任何對話方塊。 如果出現任何對話方塊，則將其關閉。 自動轉換期間不應出現這類對話方塊。
+* 對於® Office和OpenOffice，請手動執行至少一個轉換（以每位使用者的身分），以確保轉換期間不會彈出任何對話方塊。 如果出現任何對話方塊，則將其關閉。 自動轉換期間不應出現這類對話方塊。
 
 * 執行範例轉換。
 
 +++
 
-+++AEM Forms伺服器上安裝的Adobe Acrobat授權過期
++++AEM Forms伺服器上安裝的Adobe Acrobat授權到期
 
 * 如果您已有Adobe Acrobat的授權且已過期，請[下載最新版的Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html)，並移轉您的序號。 在[移轉您的序號](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)之前。
 
@@ -1453,16 +1455,16 @@ DocAssurance服務可套用使用許可權至PDF檔案。 若要套用使用許�
 
          &quot;&#39;
          
-         adobe_prtk —tool=VolumeSerialize —generate —serial=&lt;serialnum> [—leid=&lt;LEID>] [—regsuppress=ss] [—eulasuppress] [—locales=xx_XX格式或ALL>的有限地區設定清單] [—provfile=&lt;prov.xml>的絕對路徑]
+         adobe_prtk —tool=VolumeSerialize —generate —serial=&lt;serialnum> [—leid=&lt;LEID>] [—regsuppress=ss] [—eulasuppress] [—locales=limited list of locales in xx_XX format or ALL>] [—provfile=&lt;Absolute path to prov.xml>]
          
          &quot;&#39;
      
    * 磁碟區序列化套件（使用prov.xml檔案和新的序列重新序列化現有的安裝）：以管理員身分從PRTK安裝資料夾執行下列命令，以序列化並啟動使用者端機器上已部署的套件：
 
-         &grave;&grave;
+         ``
          adobe_prtk —tool=VolumeSerialize —provfile=C:\prov.xml -stream
          
-         &grave;&grave;
+         ``
      
 * 若是大規模安裝，請使用[Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html)移除舊版Reader和Acrobat。 自訂安裝程式，並將其部署至組織的所有電腦。
 

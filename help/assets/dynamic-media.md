@@ -9,22 +9,24 @@ role: User, Admin
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 195c097b-787a-44a2-aa4f-a9f8ccf93e3d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '429'
 ht-degree: 10%
 
 ---
 
 # 使用 Dynamic Media {#working-with-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/tw/products/experience-manager/assets/dynamic-media.html)可協助提供豐富的視覺銷售和行銷資產（隨選即用），並根據網路、行動及社交網站的消費自動調整。 使用一組主要來源資產，軟體會透過其全球性、可擴充、效能最佳化的網路，即時產生並傳送多種多樣的豐富內容。
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)可協助提供豐富的視覺銷售和行銷資產（隨選即用），並根據網路、行動及社交網站的消費自動調整。 使用一組主要來源資產，軟體會透過其全球性、可擴充、效能最佳化的網路，即時產生並傳送多種多樣的豐富內容。
 
 此軟體提供互動式檢視體驗，包括縮放、360度旋轉和視訊。 它以獨特方式整合Adobe Experience Manager數位資產管理(Assets)解決方案的工作流程，以簡化及簡化數位行銷活動管理流程。
 
-<!-- >ARTICLE IS MISSING. GIVES 404 [!NOTE]
+<!--
+>ARTICLE IS MISSING. GIVES 404 [!NOTE]
 >
->A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
+>A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html).
+-->
 
 ## 您可以使用軟體做什麼 {#what-you-can-do-with-dynamic-media}
 

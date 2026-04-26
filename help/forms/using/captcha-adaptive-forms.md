@@ -9,10 +9,10 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 300fcbdc-d884-409b-9011-89cdf2706535
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1841'
-ht-degree: 7%
+source-wordcount: '1968'
+ht-degree: 10%
 
 ---
 
@@ -22,12 +22,12 @@ ht-degree: 7%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/captcha-adaptive-forms.html?lang=zh-Hant)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/captcha-adaptive-forms.html)上的[AEM Forms 。
 
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
-CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異）是一種常用於線上交易的程式，以區分人和自動化程式或機器人。 這會帶來挑戰，並評估使用者的回應，以判斷其是否為人類或機器人與網站互動。它可防止使用者在測試失敗時繼續進行，並透過防止機器人張貼垃圾郵件或惡意目的來確保線上交易的安全。
+CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異）是一種常用於線上交易的程式，以區分人和自動化程式或機器人。 它會提出質詢並評估使用者的回應，以判斷與網站互動的是真人還是機器人。 它可防止使用者在測試失敗時繼續操作，並透過防止機器人發佈垃圾郵件或惡意目的來確保線上交易的安全。
 
 AEM Forms支援最適化表單中的驗證碼。 您可以使用Google的reCAPTCHA服務來實作CAPTCHA。
 
@@ -47,12 +47,12 @@ AEM Forms使用者可以使用Google的reCAPTCHA服務，以最適化表單實�
 
 ### 設定 reCAPTCHA Enterprise  {#steps-to-implement-reCAPTCHA-enterprise-in-forms}
 
-1. 建立已啟用[reCAPTCHA Enterprise API](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin)的[reCAPTCHA Enterprise專案](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-recaptcha-enterprise-api)。
+1. 建立已啟用[reCAPTCHA Enterprise API](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-recaptcha-enterprise-api)的[reCAPTCHA Enterprise專案](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin)。
 1. [取得](https://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed)專案識別碼。
-1. 為網站[建立](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key)API金鑰[和](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key)網站金鑰。
+1. 為網站](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key)建立[API金鑰](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key)和[網站金鑰。
 1. 建立雲端服務的設定容器。
 
-   1. 移至&#x200B;**[!UICONTROL 工具>一般>設定瀏覽器]**。 如需詳細資訊，請參閱[設定瀏覽器](/help/sites-administering/configurations.md)檔案。
+   1. 前往&#x200B;**[!UICONTROL 工具 > 一般 > 設定瀏覽器]**。 如需詳細資訊，請參閱[設定瀏覽器](/help/sites-administering/configurations.md)檔案。
    1. 請執行以下操作來啟用雲端設定的全域資料夾，或跳過此步驟來建立和設定雲端服務設定的另一個資料夾。
       1. 在組態瀏覽器中，選取&#x200B;**[!UICONTROL 全域]**&#x200B;資料夾，然後選取&#x200B;**[!UICONTROL 屬性]**。
       1. 在[組態內容]對話方塊中，啟用&#x200B;**[!UICONTROL 雲端組態]**。
@@ -77,7 +77,7 @@ AEM Forms使用者可以使用Google的reCAPTCHA服務，以最適化表單實�
 
    1. 在「編輯元件」(Edit Component)對話方塊中，指定名稱、專案ID、網站金鑰、API金鑰（在步驟2和3中取得）、選取金鑰型別，然後輸入臨界值分數。 選取&#x200B;**[!UICONTROL 儲存設定]**，然後選取&#x200B;**[!UICONTROL 確定]**&#x200B;以完成設定。
 
-reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 請參閱在最適化表單[中使用驗證碼](#using-reCAPTCHA)。
+reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 請參閱在最適化表單](#using-reCAPTCHA)中使用驗證碼[。
 
 ![reCAPTCHA Enterprise](/help/forms/using/assets/recaptcha1-enterprise.png)
 
@@ -86,7 +86,7 @@ reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 請�
 
 1. 從Google取得[reCAPTCHA API金鑰組](https://www.google.com/recaptcha/admin)。 它包含&#x200B;**網站金鑰**&#x200B;和&#x200B;**秘密金鑰**。
 1. 建立雲端服務的設定容器。
-   1. 移至&#x200B;**[!UICONTROL 工具>一般>設定瀏覽器]**。 如需詳細資訊，請參閱[設定瀏覽器](/help/sites-administering/configurations.md)檔案。
+   1. 前往&#x200B;**[!UICONTROL 工具 > 一般 > 設定瀏覽器]**。 如需詳細資訊，請參閱[設定瀏覽器](/help/sites-administering/configurations.md)檔案。
    1. 請執行以下操作來啟用雲端設定的全域資料夾，或跳過此步驟來建立和設定雲端服務設定的另一個資料夾。
 
       1. 在組態瀏覽器中，選取&#x200B;**[!UICONTROL 全域]**&#x200B;資料夾，然後選取&#x200B;**[!UICONTROL 屬性]**。
@@ -132,7 +132,7 @@ reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 請�
 
 1. 選取您新增的Captcha元件，並選取![cmppr](assets/cmppr.png)以編輯其屬性。
 1. 指定驗證碼介面工具集的標題。 預設值為&#x200B;**驗證碼**。 如果您不想顯示標題，請選取&#x200B;**隱藏標題**。
-1. 從&#x200B;**Captcha服務**&#x200B;下拉式清單中，選取&#x200B;**reCAPTCHA**&#x200B;以啟用reCAPTCHA服務(若您已依照Google[的](#google-reCAPTCHA)reCAPTCHA服務說明進行設定)。
+1. 從&#x200B;**Captcha服務**&#x200B;下拉式清單中，選取&#x200B;**reCAPTCHA**&#x200B;以啟用reCAPTCHA服務（若您已依照Google](#google-reCAPTCHA)的[reCAPTCHA服務說明進行設定）。
 1. 從「設定」下拉式清單中選取設定。
 1. **如果選取的組態具有版本reCAPTCHA Enterprise**：
    1. 您可以選取具有&#x200B;**金鑰型別**&#x200B;的reCAPTCHA雲端組態做為&#x200B;**核取方塊**。 在核取方塊索引鍵中，如果驗證碼驗證失敗，自訂的錯誤訊息會顯示為內嵌訊息。 您可以選取&#x200B;**[!UICONTROL Normal]**&#x200B;和&#x200B;**[!UICONTROL Compact]**&#x200B;的大小。
@@ -343,4 +343,5 @@ public interface GuideCaptchaValidator {
 
 `captchaPropertyNodePath` Refers to the resource path of the CAPTCHA component in the Sling repository. Use this property to include details specific to the CAPTCHA component. For example, `captchaPropertyNodePath` includes information for the reCAPTCHA cloud configuration configured on the CAPTCHA component. The cloud configuration information provides **[!UICONTROL Site Key]** and **[!UICONTROL Secret Key]** settings for implementing the reCAPTCHA service.
 
-`userResponseToken` Refers to the `g_reCAPTCHA_response` that gets generated after solving a CAPTCHA in a form. -->
+`userResponseToken` Refers to the `g_reCAPTCHA_response` that gets generated after solving a CAPTCHA in a form.
+-->

@@ -12,9 +12,9 @@ feature: Adaptive Forms, Document Services
 hide: true
 hidefromtoc: true
 exl-id: 40fbbef6-3a2e-455d-81a3-23c7e322c0fb
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2519'
+source-wordcount: '2561'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ ht-degree: 0%
  </Bookmarks>
 ```
 
-在此書籤XML檔案中，請注意定義使用者按一下書籤時所執行動作的「動作」元素。 在「動作」元素底下是Launch元素，它會啟動應用程式（例如NotePad）並開啟檔案(例如PDF檔案)。 若要開啟PDF檔案，您必須使用指定要開啟的檔案的「檔案」元素。 例如，在本節指定的書籤XML檔案中，開啟的檔案名稱為LoanDetails.pdf。
+在此書籤XML檔案中，請注意定義使用者按一下書籤時所執行動作的「動作」元素。 在「動作」元素底下是Launch元素，它會啟動應用程式（例如NotePad）並開啟檔案（例如PDF檔案）。 若要開啟PDF檔案，您必須使用指定要開啟的檔案的「檔案」元素。 例如，在本節指定的書籤XML檔案中，開啟的檔案名稱為LoanDetails.pdf。
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->閱讀本節之前，建議您先熟悉使用Assembler服務組合PDF檔案。 本節不討論概念，例如建立包含輸入檔案的集合物件，或學習如何從傳回的集合物件中擷取結果。 (請參閱[以程式設計方式組合PDF檔案](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents)。)
+>閱讀本節之前，建議您先熟悉使用Assembler服務組合PDF檔案。 本節不討論概念，例如建立包含輸入檔案的集合物件，或學習如何從傳回的集合物件中擷取結果。 （請參閱[以程式設計方式組合PDF檔案](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents)。）
 
 >[!NOTE]
 >
@@ -118,8 +118,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (如果AEM Forms部署在JBoss上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss上，則為必要)
+* adobe-utilities.jar （如果AEM Forms部署在JBoss上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss上，則為必要）
 
 如果將AEM Forms部署在JBoss以外的受支援J2EE應用程式伺服器上，則必須將adobe-utilities.jar和jbossall-client.jar檔案取代為特定於AEM Forms部署所在J2EE應用程式伺服器的JAR檔案。 如需有關所有AEM Forms JAR檔案位置的資訊，請參閱[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
@@ -164,7 +164,7 @@ ht-degree: 0%
 
 **儲存包含書籤的PDF檔案**
 
-從傳回的地圖物件中擷取結果，並儲存對應的PDF檔案。 (請參閱[以程式設計方式組合PDF檔案](/help/forms/developing/programmatically-assembling-pdf-documents.md)中的「擷取結果」。)
+從傳回的地圖物件中擷取結果，並儲存對應的PDF檔案。 （請參閱[以程式設計方式組合PDF檔案](/help/forms/developing/programmatically-assembling-pdf-documents.md)中的「擷取結果」。）
 
 **另請參閱**
 
@@ -235,12 +235,12 @@ ht-degree: 0%
    若要取得新建立的PDF檔案，請執行下列動作：
 
    * 叫用`AssemblerResult`物件的`getDocuments`方法。 這會傳回`java.util.Map`物件。
-   * 逐一檢視`java.util.Map`物件，直到找到結果`com.adobe.idp.Document`物件為止。 (您可以使用DDX檔案中指定的PDF結果元素來取得檔案。)
+   * 逐一檢視`java.util.Map`物件，直到找到結果`com.adobe.idp.Document`物件為止。 （您可以使用DDX檔案中指定的PDF結果元素來取得檔案。）
    * 叫用`com.adobe.idp.Document`物件的`copyToFile`方法來擷取PDF檔案。
 
 **另請參閱**
 
-[快速入門(SOAP模式)：使用Java API以書籤組合PDF檔案](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API以書籤組合PDF檔案](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -301,7 +301,7 @@ ht-degree: 0%
    * 針對每個輸入PDF檔案和書籤XML檔案，建立`MyMapOf_xsd_string_To_xsd_anyType_Item`物件。
    * 將代表索引鍵名稱的字串值指派給`MyMapOf_xsd_string_To_xsd_anyType_Item`物件的`key`欄位。 此值必須符合DDX檔案中指定的PDF來源元素的值。
    * 將儲存PDF檔案的`BLOB`物件指派給`MyMapOf_xsd_string_To_xsd_anyType_Item`物件的`value`欄位。
-   * 將`MyMapOf_xsd_string_To_xsd_anyType_Item`物件新增至`MyMapOf_xsd_string_To_xsd_anyType`物件。 叫用`MyMapOf_xsd_string_To_xsd_anyType`物件的`Add`方法並傳遞`MyMapOf_xsd_string_To_xsd_anyType`物件。 (針對每個輸入的PDF檔案和書籤XML檔案執行此工作。)
+   * 將`MyMapOf_xsd_string_To_xsd_anyType_Item`物件新增至`MyMapOf_xsd_string_To_xsd_anyType`物件。 叫用`MyMapOf_xsd_string_To_xsd_anyType`物件的`Add`方法並傳遞`MyMapOf_xsd_string_To_xsd_anyType`物件。 （針對每個輸入的PDF檔案和書籤XML檔案執行此工作。）
 
 1. 設定執行階段選項。
 

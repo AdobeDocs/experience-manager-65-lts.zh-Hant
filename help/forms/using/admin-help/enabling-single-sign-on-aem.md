@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ba02f9b1-209e-42f2-b1df-2ed64fc9fdbc
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1739'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ AEM表單提供兩種啟用單一登入(SSO)的方式 — HTTP標題和SPNEGO。
 >JEE上的AEM Forms不支援在多個子網域環境中使用Kerberos/SPNEGO來設定SSO。
 
 1. 決定要使用哪個網域來啟用SSO。 AEM Forms Server和使用者必須屬於相同的Windows網域或受信任的網域。
-1. 在Active Directory中，建立代表AEM Forms伺服器的使用者。 （請參閱[建立使用者帳戶](enabling-single-sign-on-aem.md#create-a-user-account)。）如果您要設定多個網域來使用SPNEGO，請確定每個使用者的密碼不同。 如果密碼不同，SPNEGO SSO將無法運作。
+1. 在Active Directory中，建立代表AEM Forms伺服器的使用者。 （請參閱[建立使用者帳戶](enabling-single-sign-on-aem.md#create-a-user-account)。） 如果您要設定多個網域來使用SPNEGO，請確定每個使用者的密碼不同。 如果密碼不同，SPNEGO SSO將無法運作。
 1. 對應服務主體名稱。 (請參閱[對應服務主要名稱(SPN)](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn)。)
 1. 設定網域控制站。 （請參閱[防止Kerberos完整性檢查失敗](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures)。）
 1. 新增或編輯企業網域，如[新增網域](/help/forms/using/admin-help/adding-domains.md#adding-domains)或[編輯及轉換現有網域](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains)中所述。 當您建立或編輯企業網域時，請執行下列工作：
@@ -157,7 +157,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 
 若要讓SPNEGO式驗證能夠運作，使用者端電腦必須是建立使用者帳戶的網域的一部分。 您也必須設定使用者端瀏覽器以允許以SPNEGO為基礎的驗證。 此外，需要SPNEGO式驗證的網站必須是受信任的網站。
 
-如果使用電腦名稱(例如https://lcserver:8080)存取伺服器，則Internet Explorer不需要任何設定。 如果您輸入的URL不含任何點(「。」)，Internet Explorer會將網站視為近端內部網路網站。 如果您使用網站的完整名稱，則必須將網站新增為信任的網站。
+如果使用電腦名稱（例如https://lcserver:8080）存取伺服器，則Internet Explorer不需要任何設定。 如果您輸入的URL不含任何點(「。」)，Internet Explorer會將網站視為近端內部網路網站。 如果您使用網站的完整名稱，則必須將網站新增為信任的網站。
 
 **設定Internet Explorer 6.x**
 
@@ -171,7 +171,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 
 1. 在瀏覽器URL方塊中，輸入`about:config`
 
-   這時會出現about：config - Mozilla Firefox對話方塊。
+   會出現關於:config - Mozilla Firefox對話方塊。
 
 1. 在篩選方塊中，輸入`negotiate`
 1. 在顯示的清單中，按一下network.negotiate-auth.trusted-uri，然後輸入下列適合您環境的命令：

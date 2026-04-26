@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services
 hide: true
 hidefromtoc: true
 exl-id: 310d0566-673a-4b78-9f0d-86f56c495105
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1910'
+source-wordcount: '1934'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->閱讀本節之前，建議您先熟悉使用Assembler服務組合PDF檔案。 本節不討論概念，例如建立包含輸入檔案的集合物件，或從傳回的集合物件中擷取結果。 (請參閱[以程式設計方式組合PDF檔案](/help/forms/developing/programmatically-assembling-pdf-documents.md)。)
+>閱讀本節之前，建議您先熟悉使用Assembler服務組合PDF檔案。 本節不討論概念，例如建立包含輸入檔案的集合物件，或從傳回的集合物件中擷取結果。 （請參閱[以程式設計方式組合PDF檔案](/help/forms/developing/programmatically-assembling-pdf-documents.md)。）
 
 >[!NOTE]
 >
@@ -83,8 +83,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (如果AEM Forms部署在JBoss上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss上，則為必要)
+* adobe-utilities.jar （如果AEM Forms部署在JBoss上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss上，則為必要）
 
 如果將AEM Forms部署在JBoss以外的受支援J2EE應用程式伺服器上，則必須將adobe-utilities.jar和jbossall-client.jar檔案取代為部署AEM Forms之J2EE應用程式伺服器專屬的JAR檔案。 如需有關所有AEM Forms JAR檔案位置的資訊，請參閱[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
@@ -177,7 +177,7 @@ Assembler服務會傳回包含工作結果的集合物件。 您可以擷取產�
 
 **另請參閱**
 
-[快速入門(SOAP模式)：使用Java API組合具有Bates編號的PDF檔案](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API組合具有Bates編號的PDF檔案](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -225,9 +225,9 @@ Assembler服務會傳回包含工作結果的集合物件。 您可以擷取產�
    * 以位元組陣列的內容指派物件的`MTOM`屬性，填入`BLOB`物件。
    * 建立`MyMapOf_xsd_string_To_xsd_anyType`物件。 此集合物件是用來儲存輸入PDF檔案。
    * 針對每個輸入PDF檔案，建立`MyMapOf_xsd_string_To_xsd_anyType_Item`物件。 例如，如果使用兩個輸入PDF檔案，請建立兩個`MyMapOf_xsd_string_To_xsd_anyType_Item`物件。
-   * 將代表索引鍵名稱的字串值指派給`MyMapOf_xsd_string_To_xsd_anyType_Item`物件的`key`欄位。 此值必須符合DDX檔案中指定的PDF來源元素的值。 (針對每個輸入PDF檔案執行此工作。)
-   * 將儲存PDF檔案的`BLOB`物件指派給`MyMapOf_xsd_string_To_xsd_anyType_Item`物件的`value`欄位。 (針對每個輸入PDF檔案執行此工作。)
-   * 將`MyMapOf_xsd_string_To_xsd_anyType_Item`物件新增至`MyMapOf_xsd_string_To_xsd_anyType`物件。 叫用`MyMapOf_xsd_string_To_xsd_anyType`物件的`Add`方法並傳遞`MyMapOf_xsd_string_To_xsd_anyType`物件。 (針對每個輸入PDF檔案執行此工作。)
+   * 將代表索引鍵名稱的字串值指派給`MyMapOf_xsd_string_To_xsd_anyType_Item`物件的`key`欄位。 此值必須符合DDX檔案中指定的PDF來源元素的值。 （針對每個輸入PDF檔案執行此工作。）
+   * 將儲存PDF檔案的`BLOB`物件指派給`MyMapOf_xsd_string_To_xsd_anyType_Item`物件的`value`欄位。 （針對每個輸入PDF檔案執行此工作。）
+   * 將`MyMapOf_xsd_string_To_xsd_anyType_Item`物件新增至`MyMapOf_xsd_string_To_xsd_anyType`物件。 叫用`MyMapOf_xsd_string_To_xsd_anyType`物件的`Add`方法並傳遞`MyMapOf_xsd_string_To_xsd_anyType`物件。 （針對每個輸入PDF檔案執行此工作。）
 
 1. 設定初始Bates數字值。
 

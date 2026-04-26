@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: c97a8651-aca7-42e3-bcd0-71d089c3e753
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Java™編輯器，例如[Eclipse](https://www.eclipse.org/)或[Netbeans IDE](ht
 
 中級
 
-JEE上的AEM Forms可讓開發人員建立自訂ASC (Acrobat服務容器)，以建立豐富的現成功能。 建立這類元件可插入JEE執行階段環境的AEM Forms，並達到預期目的。 本文會說明如何建立自訂ZIP服務，可用來將檔案清單壓縮成.zip檔案，並將.zip解壓縮成檔案清單。
+JEE上的AEM Forms可讓開發人員建立自訂ASC （Acrobat服務容器），以建立豐富的現成功能。 建立這類元件可插入JEE執行階段環境的AEM Forms，並達到預期目的。 本文會說明如何建立自訂ZIP服務，可用來將檔案清單壓縮成.zip檔案，並將.zip解壓縮成檔案清單。
 
 ## 建立自訂ASC元件 {#create-custom-dsc-component}
 

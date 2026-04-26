@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Assets
 role: User, Admin
 feature: Collaboration,Dynamic Media Classic
 exl-id: ee098fae-cc6f-4c6e-8475-1737134543df
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1111'
 ht-degree: 0%
 
 ---
@@ -24,13 +24,16 @@ Experience League的Dynamic Media電子報可協助您快速熟悉Dynamic Media�
 
 此一站式商店已封存的電子報中，您可以找到重要的知識建構資源，例如操作說明影片和解決方案概述。 此外也介紹了影像預設集、檢視器預設集和視訊設定檔等主要功能。
 
-<!-- ## Get inspired - Stay informed
+<!--
+## Get inspired - Stay informed
 
-[Sign up](https://www.adobe.com/subscription/dynamic-media-newsletter.html) to receive the Dynamic Media Newsletter on a monthly basis in your inbox. -->
+[Sign up](https://www.adobe.com/subscription/dynamic-media-newsletter.html) to receive the Dynamic Media Newsletter on a monthly basis in your inbox.
+-->
 
 ## Dynamic Media電子報封存
 
-<!-- * **[May 2020, Issue 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
+<!--
+* **[May 2020, Issue 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
 
     In this issue:
 
@@ -43,9 +46,10 @@ Experience League的Dynamic Media電子報可協助您快速熟悉Dynamic Media�
     * Look what's new in Experience Manager Innovation.
     * Build your Experience Manager skills *live* with the Adobe pros.
     * Connect with the Adobe Experience Manager Community.
-    * Fast-track your Adobe expertise with Adobe Experience League. -->
+    * Fast-track your Adobe expertise with Adobe Experience League.
+-->
 
-* **[2020年4月，第3期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2020_April.html?lang=zh-Hant)**
+* **[2020年4月，第3期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2020_April.html)**
 
   在本期中：
 
@@ -56,7 +60,7 @@ Experience League的Dynamic Media電子報可協助您快速熟悉Dynamic Media�
    * 進一步瞭解Adobe的免費Dynamic Media Classic稽核。
    * 與Adobe客戶解決方案的資深方案經理`Jon Monroe`會面。
 
-* **[2020年2月第2期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html?lang=zh-Hant)**
+* **[2020年2月第2期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
   在本期中：
 
@@ -67,7 +71,7 @@ Experience League的Dynamic Media電子報可協助您快速熟悉Dynamic Media�
    * 瞭解Dynamic Media Classic的全新使用者介面。
    * 與Adobe Experience Cloud的Adobe客戶團隊的`Georgia Myers`會面。
 
-* **[2020年1月，問題1](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_01_2020_Jan.html?lang=zh-Hant)**
+* **[2020年1月，問題1](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_01_2020_Jan.html)**
 
   在本期中：
 
@@ -77,7 +81,7 @@ Experience League的Dynamic Media電子報可協助您快速熟悉Dynamic Media�
    * 您選擇DAM (Digital Asset Manager)的指南，不但能滿足您目前的需求，也能讓您準備好迎接未來豐富媒體中的新功能。
    * 認識`Mark Dean`，數位媒體專家。
 
-* **[2019年11月，第11期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_11_2019_Nov.html?lang=zh-Hant)**
+* **[2019年11月，第11期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_11_2019_Nov.html)**
 
   在本期中：
 
@@ -87,7 +91,7 @@ Experience League的Dynamic Media電子報可協助您快速熟悉Dynamic Media�
    * 與同事共用電子報，以建立團隊專業知識。
    * 認識Dynamic Media資深產品經理`Apoorva Gupta`。
 
-* **[2019年10月，第10期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_10_2019_Oct.html?lang=zh-Hant)**
+* **[2019年10月，第10期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_10_2019_Oct.html)**
 
   在本期中：
 
@@ -98,7 +102,7 @@ Experience League的Dynamic Media電子報可協助您快速熟悉Dynamic Media�
    * 認識`Nick Peters`，Adobe Experience Manager網站可靠性工程經理。
    * 在Experience League中快速上手Dynamic Media和Dynamic Media Classic。
 
-* **[2019年9月，第09期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_09_2019_Sept.html?lang=zh-Hant)**
+* **[2019年9月，第09期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_09_2019_Sept.html)**
 
   在本期中：
 
@@ -109,7 +113,7 @@ Experience League的Dynamic Media電子報可協助您快速熟悉Dynamic Media�
    * 認識Experience Manager Assets資深產品行銷經理`Bridget Roman`。
    * 在Experience League中快速上手Dynamic Media和Dynamic Media Classic。
 
-* **[2019年8月，第08期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_08_2019_Aug.html?lang=zh-Hant)**
+* **[2019年8月，第08期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_08_2019_Aug.html)**
 
   在本期中：
 
@@ -119,7 +123,7 @@ Experience League的Dynamic Media電子報可協助您快速熟悉Dynamic Media�
    * 快速瞭解即將於今年9月推出的強大整合，其可讓您分析訪客如何與您的多媒體互動。
    * 與Dynamic Media技術支援wiz開會`PieterJan Pieper`。
 
-* **[2019年7月，第07期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_07_2019_July.html?lang=zh-Hant)**
+* **[2019年7月，第07期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_07_2019_July.html)**
 
   在本期中：
 
@@ -130,7 +134,7 @@ Experience League的Dynamic Media電子報可協助您快速熟悉Dynamic Media�
    * 新增360度影片和自訂影片縮圖至您的網站。
    * 與Experience Manager Assets中Dynamic Media的主要解決方案顧問`Andrew Hathaway`會面。
 
-* **[2019年6月，第06期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_06_2019_June.html?lang=zh-Hant)**
+* **[2019年6月，第06期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_06_2019_June.html)**
 
   在本期中：
 
@@ -141,7 +145,7 @@ Experience League的Dynamic Media電子報可協助您快速熟悉Dynamic Media�
    * 瞭解影像的AI驅動智慧型裁切。
    * `Alex Thiers`是Dynamic Media和Dynamic Media Classic許多強大功能和創新背後的推動力量之一。
 
-* **[2019年5月，問題05](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_05_2019_May.html?lang=zh-Hant)**
+* **[2019年5月，問題05](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_05_2019_May.html)**
 
   在本期中：
 
@@ -151,7 +155,7 @@ Experience League的Dynamic Media電子報可協助您快速熟悉Dynamic Media�
    * 若要更新您的多媒體策略，請閱讀三部分部落格系列。
    * 瞭解AI驅動的視訊智慧型裁切。
 
-* **[2019年4月，第04期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2019_April.html?lang=zh-Hant)**
+* **[2019年4月，第04期](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2019_April.html)**
 
   歡迎收看Dynamic Media電子報的就職發行。 Adobe的新每月電子報充滿了新聞、事件和資源。 內容適用於Experience Manager Assets和Adobe Dynamic Media Classic中的Dynamic Media使用者。
 

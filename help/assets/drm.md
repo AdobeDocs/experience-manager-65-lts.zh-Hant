@@ -7,9 +7,9 @@ feature: DRM,Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5870209f-9e0c-4e60-a083-e46edb707ae7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1440'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 8%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=en) |
 | AEM 6.5 | 本文章 |
 
 數位資產通常與指定使用條款與期間的授權相關聯。 因為[!DNL Adobe Experience Manager Assets]已與[!DNL Experience Manager]平台完全整合，您可以有效率地管理資產到期資訊與資產狀態。 您也可以將授權資訊與資產建立關聯。
@@ -76,7 +76,7 @@ ht-degree: 8%
 1. 開啟[!DNL Experience Manager]組態管理員。
 1. 選擇&#x200B;**[!UICONTROL Adobe CQ DAM到期通知]**。 依預設，已選取&#x200B;**[!UICONTROL 以時間為基礎的排程器]**，排程工作以在特定時間檢查資產是否已過期的子資產。 工作完成後，具有過期子資產和參考資產的資產會在搜尋結果中顯示為過期。
 
-1. 要定期運行作業，請清除「基於時 **[!UICONTROL 間的調度程式規則]** 」欄位，並在「定期調度程式」欄位中以秒為單 **[!UICONTROL 位修改時間]** 。例如，範例運算式`0 0 0 * * ?`會在00小時觸發工作。
+1. 要定期運行作業，請清除「基於時 **[!UICONTROL 間的調度程式規則]** 」欄位，並在「定期調度程式」欄位中以秒為單 **[!UICONTROL 位修改時間]** 。 例如，範例運算式`0 0 0 * * ?`會在00小時觸發工作。
 1. 選取&#x200B;**[!UICONTROL 傳送電子郵件]**&#x200B;以在資產過期時接收電子郵件。
 
    >[!NOTE]
@@ -85,7 +85,7 @@ ht-degree: 8%
 
 1. 在&#x200B;**[!UICONTROL 以秒為單位的先前通知]**&#x200B;欄位中，指定當您要接收有關資產到期的通知時，資產到期之前的時間（以秒為單位）。 資產建立者會在資產到期前收到訊息，通知您資產將在指定時間後到期。 資產過期後，您會收到另一則通知，確認資產已過期。 此外，過期資產也會停用。
 
-1. 按一下「**[!UICONTROL 儲存]**」。
+1. 按一下&#x200B;**[!UICONTROL 儲存]**。
 
 ## 資產狀態 {#asset-states}
 
@@ -127,7 +127,7 @@ ht-degree: 8%
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
-1. 若要根據資產的過期狀態來搜尋資產，請在「搜尋」面 **[!UICONTROL 板中選取「過期狀態]** 」，然後選擇適當的選項。
+1. 若要根據資產的過期狀態來搜尋資產，請在「搜尋」面板中選取 **[!UICONTROL 「過期狀態]** 」，然後選擇適當的選項。
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
@@ -139,7 +139,7 @@ ht-degree: 8%
 
 此功能強制接受授權合約，然後才能從[!DNL Adobe Experience Manager Assets]下載授權資產。
 
-如果您選取受保護的資產並按一下[下載]，系統會將您重新導向至授權頁面，讓您接受授權合約。 **&#x200B;**&#x200B;如果您不接受授權合約，將無法使用&#x200B;**[!UICONTROL 下載]**&#x200B;選項。
+如果您選取受保護的資產並按一下[下載]，系統會將您重新導向至授權頁面，讓您接受授權合約。 ****&#x200B;如果您不接受授權合約，將無法使用&#x200B;**[!UICONTROL 下載]**&#x200B;選項。
 
 如果選取範圍包含多個受保護的資產，請一次選取一個資產、接受授權合約，然後繼續下載資產。
 

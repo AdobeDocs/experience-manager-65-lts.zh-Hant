@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: e4b02c17-dcd1-424b-9aee-579a8346b4d7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2358'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Forms服務可讓您自訂以HTML表單呈現的工具列。 您可以自訂工�
 
 >[!NOTE]
 >
->此URI位置位於adobe-forms-core.jar檔案中，該檔案位於adobe-forms-dsc.jar檔案中。 adobe-forms-dsc.jar檔案位於C:\Adobe\Adobe_Experience_Manager_forms\資料夾中(C:\是安裝目錄)。 您可以使用檔案擷取工具（例如Win RAR）來開啟Adobe。
+>此URI位置位於adobe-forms-core.jar檔案中，該檔案位於adobe-forms-dsc.jar檔案中。 adobe-forms-dsc.jar檔案位於C:\Adobe\Adobe_Experience_Manager_forms\資料夾中（C:\是安裝目錄）。 您可以使用檔案擷取工具（例如Win RAR）來開啟Adobe。
 
 您可以從此位置複製fscmenu.xml，修改它以符合您的要求，然後將其置於自訂URI位置。 接下來，使用Forms Service API，從指定位置使用fscmenu.xml檔案設定導致Forms服務的執行階段選項。 這些動作會導致Forms服務轉譯具有自訂工具列的HTML表單。
 
@@ -56,7 +56,7 @@ fscCSS是與特定節點關聯的樣式表。 CSS檔案中的樣式會指定工�
 >
 >不建議您混合參照這些檔案的方式。 也就是說，應該使用`FSToolBarURI`關鍵字或絕對位置來參照所有URI。
 
-您可以開啟adobe-forms-&lt;appserver>.ear檔案來取得JS和CSS檔案。 在此檔案中，開啟adobe-forms-res.war。 所有這些檔案都在WAR檔案中。 adobe-forms-&lt;appserver>.ear檔案位於AEM forms安裝資料夾中(C:\為安裝目錄)。 您可以使用檔案擷取工具（例如WinRAR）開啟adobe-forms-&lt;appserver>.ear。
+您可以開啟adobe-forms-&lt;appserver>.ear檔案來取得JS和CSS檔案。 在此檔案中，開啟adobe-forms-res.war。 所有這些檔案都在WAR檔案中。 adobe-forms-&lt;appserver>.ear檔案位於AEM forms安裝資料夾中（C:\為安裝目錄）。 您可以使用檔案擷取工具（例如WinRAR）開啟adobe-forms-&lt;appserver>.ear。
 
 下列XML語法顯示範例fscmenu.xml檔案。
 
@@ -101,7 +101,7 @@ fscCSS是與特定節點關聯的樣式表。 CSS檔案中的樣式會指定工�
 
 * 變更`fscJS`、`fscCSS`、`fscVCSS`、`fscIECSS`屬性的值（在fscmenu.xml檔案中），以使用本節中說明的其中一個方法（例如，`fscJS="FSToolBarURI/scripts/fscmenu.js"`）來反映參考檔案的自訂位置。
 * 必須指定所有CSS和JS檔案。 如果未修改任何檔案，請在自訂位置提供預設檔案。 您可以依照本節所述開啟各種檔案來取得預設檔案。
-* 允許為任何檔案提供絕對參照(例如，https://www.example.com/scripts/custom-vertical-fscmenu.css)。
+* 允許為任何檔案提供絕對參照（例如，https://www.example.com/scripts/custom-vertical-fscmenu.css）。
 * `div#fscmenu`節點所需的JS和CSS檔案對於工具列功能是必要的。 個別`ul#fscmenuItem`節點可能有或沒有支援的JS或CSS檔案。
 
 **正在變更本機值**
@@ -155,7 +155,7 @@ fscCSS是與特定節點關聯的樣式表。 CSS檔案中的樣式會指定工�
 
 >[!NOTE]
 >
->您必須先瞭解HTML表單的呈現方式，才能呈現使用自訂工具列的HTML表單。 (請參閱[將Forms轉譯為HTML](/help/forms/developing/rendering-forms-html.md)。)
+>您必須先瞭解HTML表單的呈現方式，才能呈現使用自訂工具列的HTML表單。 （請參閱[將Forms轉譯為HTML](/help/forms/developing/rendering-forms-html.md)。）
 
 如需Forms服務的詳細資訊，請參閱[AEM Forms服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
@@ -259,7 +259,7 @@ Forms服務轉譯HTML表單時，會傳回您必須寫入使用者端網頁瀏�
 
 **另請參閱**
 
-[快速入門(SOAP模式)：使用Java API透過自訂工具列轉譯HTML表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API透過自訂工具列轉譯HTML表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

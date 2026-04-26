@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 8aeacdb7-68a7-476f-a725-f9ad7406cc9c
-source-git-commit: 02b9eb98d1fdf1b090166a6ae7c0a4379487d2e1
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 *認證*&#x200B;包含簽署或識別檔案所需的私密金鑰資訊。 *憑證*&#x200B;是您設定為信任的公開金鑰資訊。 AEM forms將憑證和認證用於多種用途：
 
 * Acrobat Reader DC擴充功能會使用認證來啟用PDF檔案中的Adobe Reader使用許可權。 （請參閱[設定認證以搭配Acrobat Reader DC擴充功能使用](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)。）
-* 您可以設定Rights Management顯示憑證，以僅供來自受信任發行者的Acrobat使用。 (請參閱[設定Rights Management顯示設定](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings)。)一般名稱(CN)必須存在於憑證中。
+* 您可以設定Rights Management顯示憑證，以僅供來自受信任發行者的Acrobat使用。 （請參閱[設定Rights Management顯示設定](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings)。） 一般名稱(CN)必須存在於憑證中。
 * 簽章服務會存取憑證和認證。 如需簽名服務的詳細資訊，請參閱[服務參考](https://www.adobe.com/go/learn_aemforms_services_65)。
 
 **正在產生配對金鑰**

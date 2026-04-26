@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 716d8eb2-2010-4d55-b8fe-bd4f6f256a4d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 1%
+source-wordcount: '184'
+ht-degree: 2%
 
 ---
 
@@ -35,6 +35,6 @@ ht-degree: 1%
 1. 如果問題仍未解決，請從備份中從CRX存放庫還原，或如果備份無法使用，重建CRX存放庫。
 
 
-## 套用至 {#applies-to}
+## 適用於 {#applies-to}
 
 此解決方案適用於JEE叢集上的AEM Forms 。

@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 997637d5-1627-4102-8b7c-a0cfd871a7b2
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1064'
 ht-degree: 0%
 
 ---
@@ -37,18 +37,18 @@ Adobe Experience Manager (AEM)可讓您將頁面匯出為包含影像、`.js`和
 
 1. 選取&#x200B;**進階**&#x200B;標籤。
 
-1. 展開&#x200B;**匯出**&#x200B;欄位以選取匯出範本。
-為您的網站選取所需的範本，然後確認&#x200B;**確定**。
+1. 展開&#x200B;**匯出**欄位以選取匯出範本。
+為您的網站選取所需的範本，然後確認**確定**。
 
 1. 選取&#x200B;**儲存並關閉**&#x200B;以關閉頁面屬性對話方塊。
 
 1. 要求匯出頁面，在URL中將尾碼`html`取代為`export.zip`。
 
    例如：
-   * localhost：4502/content/we-retail/language-masters/en.html
+   * localhost:4502/content/we-retail/language-masters/en.html
 
    存取方式：
-   * localhost：4502/content/we-retail/language-masters/en.export.zip
+   * localhost:4502/content/we-retail/language-masters/en.export.zip
 
 1. 將封存檔案下載至您的檔案系統。
 
@@ -110,7 +110,8 @@ Adobe Experience Manager (AEM)可讓您將頁面匯出為包含影像、`.js`和
 
 範本包含節點結構，因為它使用[Content Sync架構](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/package-summary.html)。 每個節點都有`type`屬性，定義了zip檔案建立過程中的特定動作。
 
-<!-- For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
+<!--
+For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
 
 下列節點可用來建置匯出範本：
@@ -180,7 +181,8 @@ As you may have noticed in the node structure, the **Geometrixx** page export te
 
 若要符合某些特定需求，請實作[自訂更新處理常式](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/handler/package-summary.html)。
 
-<!-- To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
+<!--
+To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## 以程式匯出頁面 {#programmatically-exporting-a-page}

@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: bc621086-8128-4836-a580-dca99f61c439
-source-git-commit: d894bb145d70fba819cc8452056e9e46112e69d9
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ ht-degree: 0%
 
 主要或變體體驗片段（或兩者）會使用以下專案：
 
-* `sling:resourceType` ： `/libs/cq/experience-fragments/components/xfpage`
+* `sling:resourceType` : `/libs/cq/experience-fragments/components/xfpage`
 
 由於沒有`/libs/cq/experience-fragments/components/xfpage/xfpage.html`，因此它會回覆成以下內容：
 
-* `sling:resourceSuperType` ： `wcm/foundation/components/page`
+* `sling:resourceSuperType` : `wcm/foundation/components/page`
 
 ## 純HTML轉譯 {#the-plain-html-rendition}
 
@@ -121,7 +121,8 @@ ht-degree: 0%
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
 -->
 
-<!-- >[!NOTE]
+<!--
+>[!NOTE]
 >
 >[Allowed templates](/help/sites-authoring/experience-fragments.md#configuring-allowed-templates) can be configured in the Experience Fragments console.
 -->
@@ -149,7 +150,7 @@ ht-degree: 0%
 * 新增元件，
 * 然後以HTML格式或JSON格式將其匯出為Adobe Target選件。
 
-可在AEM[的作者執行個體上](/help/sites-administering/experience-fragments-target.md#Prerequisites)啟用此功能。 它需要有效的Adobe Target設定，以及Link Externalizer設定。
+可在AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites)的作者執行個體上[啟用此功能。 它需要有效的Adobe Target設定，以及Link Externalizer設定。
 
 Link Externalizer是用來判斷建立Target選件的HTML版本時所需的URL，然後傳送至Adobe Target。 Adobe Target需要公開存取Target HTML選件中的所有連結。 在使用體驗片段和這些連結參照的任何資源之前，先發佈這些體驗片段和資源。
 

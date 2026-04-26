@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 2938a1c6-c8fc-420a-8fad-bb39e5a7936b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2029'
+source-wordcount: '2131'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ GDS是用來儲存處理程式中所使用之長期檔案的目錄。 長效檔�
 
 非同步作業引動的輸入檔案也儲存在GDS中，並且必須可用於處理請求。 因此，您必須考量裝載GDS的檔案系統的可靠性，並採用獨立磁碟備援陣列(RAID)或其他適合您品質和服務等級需求的技術。
 
-GDS的位置是在AEM表單安裝過程中或之後使用管理控制檯確定的。 除了保留GDS的高可用性位置之外，您還可以啟用檔案的資料庫儲存。 當資料庫用於檔案儲存體[&#128279;](files-back-recover.md#backup-options-when-database-is-used-for-document-storage)時，請參閱備份選項。
+GDS的位置是在AEM表單安裝過程中或之後使用管理控制檯確定的。 除了保留GDS的高可用性位置之外，您還可以啟用檔案的資料庫儲存。 當資料庫用於檔案儲存體](files-back-recover.md#backup-options-when-database-is-used-for-document-storage)時，請參閱[備份選項。
 
 ### GDS位置 {#gds-location}
 
@@ -79,7 +79,7 @@ forms manager可簡化更新、管理和淘汰表單的程式。
 
 ### AEM Forms Workspace {#html-workspace}
 
-AEM Forms Workspace符合(JEE上的AEM Forms已棄用) Flex Workspace的功能，並新增擴充和整合Workspace的新功能，使其更人性化。
+AEM Forms Workspace符合（JEE上的AEM Forms已棄用） Flex Workspace的功能，並新增擴充和整合Workspace的新功能，使其更人性化。
 
 >[!NOTE]
 >
@@ -97,7 +97,7 @@ AEM Forms資料庫會儲存內容，例如表單成品、服務設定、處理�
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES （已淘汰）是隨LiveCycle安裝的內容管理系統。 它可讓使用者設計、管理、監控及最佳化以人為中心的流程。 內容服務（已棄用）支援將於2014年12月31日終止。 請參閱[Adobe產品生命週期檔案](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)。
+>® LiveCycle® Content Services ES （已淘汰）是隨LiveCycle安裝的內容管理系統。 它可讓使用者設計、管理、監控及最佳化以人為中心的流程。 內容服務（已棄用）支援將於2014年12月31日終止。 請參閱[Adobe產品生命週期檔案](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)。
 
 ### DB2 {#db2}
 
@@ -116,7 +116,7 @@ DB2具有將資料庫備份至Tivoli Storage Manager的內建功能。 使用Tiv
 
 ### Oracle {#oracle}
 
-使用快照集備份，或設定Oracle資料庫以歸檔記錄模式執行。 (請參閱[Oracle備份：簡介](https://www.databasedesign-resource.com/oracle-backup.md)。)如需有關備份和復原Oracle資料庫的詳細資訊，請前往下列網站：
+使用快照集備份，或設定Oracle資料庫以歸檔記錄模式執行。 （請參閱[Oracle備份：簡介](https://www.databasedesign-resource.com/oracle-backup.md)。） 如需有關備份和復原Oracle資料庫的詳細資訊，請前往下列網站：
 
 [Oracle備份與復原：](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html)詳細說明備份與復原的概念，以及使用Recovery Manager (RMAN)進行備份、復原與報告的最常用技術，並提供有關如何規劃備份與復原策略的詳細資訊。
 
@@ -137,7 +137,7 @@ SQL Server還提供兩種備份與復原工具：
 
 ### MySQL {#mysql}
 
-使用MySQLAdmin或修改Windows中的INI檔案，設定MySQL資料庫以二進位記錄模式執行。 （請參閱[MySQL二進位記錄](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html)。）InnoBase軟體也提供MySQL的熱備份工具。 （請參閱[Innobase熱備份](https://www.innodb.com/hot-backup/features.md)。）
+使用MySQLAdmin或修改Windows中的INI檔案，設定MySQL資料庫以二進位記錄模式執行。 （請參閱[MySQL二進位記錄](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html)。） InnoBase軟體也提供MySQL的熱備份工具。 （請參閱[Innobase熱備份](https://www.innodb.com/hot-backup/features.md)。）
 
 >[!NOTE]
 >

@@ -7,10 +7,10 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,AEM Forms on OSGi
 exl-id: 4b316ade-4431-41fc-bb8a-7262a17fb456
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 4%
+source-wordcount: '1627'
+ht-degree: 5%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 企業會從多個表單、後端系統和其他資料來源收集及處理資料。 資料的處理涉及稽核和核准程式、重複任務和資料封存。 例如，檢閱表單並將其轉換為PDF檔案。 當以手動方式完成時，重複性的工作會耗費大量的時間和資源。
 
-您可以在OSGi[&#128279;](../../forms/using/aem-forms-workflow.md)上使用以Forms為中心的工作流程，快速建立最適化表單式工作流程。 這些工作流程可協助您自動執行稽核與核准工作流程、業務流程工作流程及其他重複式工作。 這些工作流程還有助於處理檔案(建立、彙編、散發和封存PDF檔案、新增數位簽名以限制對檔案的存取、解碼條碼式表單等)，以及將Adobe Sign簽名工作流程用於表單和檔案。
+您可以在OSGi](../../forms/using/aem-forms-workflow.md)上使用[以Forms為中心的工作流程，快速建立最適化表單式工作流程。 這些工作流程可協助您自動執行稽核與核准工作流程、業務流程工作流程及其他重複式工作。 這些工作流程還有助於處理檔案（建立、彙編、散發和封存PDF檔案、新增數位簽名以限制對檔案的存取、解碼條碼式表單等），以及將Adobe Sign簽名工作流程用於表單和檔案。
 
 設定後，這些工作流程可以手動觸發，以完成定義的流程，或在使用者提交表單或互動式通訊時以程式設計方式執行。 此功能包含在AEM Forms附加元件套件中。
 
@@ -28,7 +28,8 @@ AEM Forms是功能強大的企業級平台。 OSGi上的Forms中心工作流程�
 
 >[!NOTE]
 >
->透過OSGi上的Forms中心工作流程，您可以在OSGi棧疊<!--, without having to install the full-fledged Process Management capability on JEE stack-->.<!-- See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE to learn the difference and similarities in the capabilities.--><!--After the comparison, If you choose to install the Process Management capability on JEE stack, see [Install or Upgrade AEM Forms on JEE](/help/forms/using/introduction-aem-forms.md) for detailed information about installing and configuring JEE stack and the Process Management capabilities.-->上快速建置和部署各種工作的工作流程
+>透過OSGi上的Forms工作流程，您可以在OSGi棧疊<!--, without having to install the full-fledged Process Management capability on JEE stack-->上快速建置和部署各種工作的工作流程。
+><!-- See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE to learn the difference and similarities in the capabilities.-->><!--After the comparison, If you choose to install the Process Management capability on JEE stack, see [Install or Upgrade AEM Forms on JEE](/help/forms/using/introduction-aem-forms.md) for detailed information about installing and configuring JEE stack and the Process Management capabilities.-->
 
 ## 部署拓撲 {#deployment-topology}
 
@@ -40,7 +41,7 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 您只需要至少�
 
 OSGi上的AEM Forms Forms中心工作流程會在AEM Forms的作者執行個體上執行AEM收件匣和AEM工作流程模型建立UI。
 
-## 系統需求 {#system-requirements}
+## 系統要求 {#system-requirements}
 
 >[!NOTE]
 >
@@ -98,7 +99,7 @@ OSGi上的AEM Forms Forms中心工作流程會在AEM Forms的作者執行個體�
 
 AEM Forms附加元件套件是部署至AEM的應用程式。 此套件包含有關OSGi和其他功能的Forms中心工作流程。 執行以下步驟來安裝附加套件：
 
-1. 開啟 [Software Distribution](https://experience.adobe.com/downloads)。您需要 Adobe ID 才能登入 Software Distribution。
+1. 開啟 [Software Distribution](https://experience.adobe.com/downloads)。 您需要 Adobe ID 才能登入 Software Distribution。
 1. 選取標題功能表中可用的&#x200B;**[!UICONTROL Adobe Experience Manager]**。
 1. 在&#x200B;**[!UICONTROL 篩選器]**&#x200B;區段中：
    1. 從&#x200B;**[!UICONTROL 解決方案]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Forms]**。
@@ -107,9 +108,9 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 此套件包含有�
 1. 開啟[封裝管理員](/help/sites-administering/package-manager.md)，然後按一下&#x200B;**[!UICONTROL 上傳封裝]**&#x200B;以上傳封裝。
 1. 選取封裝並按一下&#x200B;**[!UICONTROL 安裝]**。
 
-   您也可以透過[AEM Forms發行版本](https://helpx.adobe.com/tw/aem-forms/kb/aem-forms-releases.html)文章中列出的直接連結來下載套件。
+   您也可以透過[AEM Forms發行版本](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)文章中列出的直接連結來下載套件。
 
-1. 安裝套件後，系統會提示您重新啟動AEM執行個體。 **不要立即重新啟動伺服器。**&#x200B;在停止AEM Forms伺服器之前，請等候直到ServiceEvent REGISTERED和ServiceEvent UNREGISTERED訊息停止出現在[AEM-Installation-Directory]/crx-quickstart/logs/error.log檔案中，而且記錄檔穩定。
+1. 安裝套件後，系統會提示您重新啟動AEM執行個體。 **不要立即重新啟動伺服器。** 在停止AEM Forms伺服器之前，請等候ServiceEvent REGISTERED和ServiceEvent UNREGISTERED訊息停止出現在[AEM-Installation-Directory]/crx-quickstart/logs/error.log檔案中，而且記錄檔穩定。
 
    >[!NOTE]
    >
@@ -152,9 +153,9 @@ AEM Forms有一些必要和選用的設定。 強制設定包括設定BouncyCast
 
 ### 選用的安裝後設定 {#optional-post-installation-configurations}
 
-#### 設定Dispatcher {#configure-dispatcher}
+#### 設定 Dispatcher {#configure-dispatcher}
 
-Dispatcher是適用於AEM的快取與負載平衡工具。 AEM Dispatcher也有助於保護AEM伺服器不受攻擊。 您可以搭配使用Dispatcher與企業級網頁伺服器，以提高AEM執行個體的安全性。 如果您使用[Dispatcher](https://helpx.adobe.com/tw/experience-manager/dispatcher/using/dispatcher-configuration.html)，請針對AEM Forms執行下列設定：
+Dispatcher是適用於AEM的快取與負載平衡工具。 AEM Dispatcher也有助於保護AEM伺服器不受攻擊。 您可以搭配使用Dispatcher與企業級網頁伺服器，以提高AEM執行個體的安全性。 如果您使用[Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)，請針對AEM Forms執行下列設定：
 
 1. 設定AEM Forms的存取權：
 
@@ -162,7 +163,7 @@ Dispatcher是適用於AEM的快取與負載平衡工具。 AEM Dispatcher也有�
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   儲存並關閉檔案。 如需有關篩選器的詳細資訊，請參閱[Dispatcher檔案](https://helpx.adobe.com/tw/experience-manager/dispatcher/using/dispatcher-configuration.html)。
+   儲存並關閉檔案。 如需有關篩選器的詳細資訊，請參閱[Dispatcher檔案](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)。
 
 1. 設定反向連結篩選服務：
 
@@ -172,13 +173,13 @@ Dispatcher是適用於AEM的快取與負載平衡工具。 AEM Dispatcher也有�
 
 快取是縮短資料存取時間、減少延遲，以及改善輸入/輸出(I/O)速度的機制。 調適型表單快取只會儲存調適型表單的HTML內容和JSON結構，不會儲存任何預先填入的資料。 這有助於減少轉譯最適化表單所需的時間。
 
-* 在使用最適化表單快取時，請使用[AEM Dispatcher](https://helpx.adobe.com/tw/experience-manager/dispatcher/using/dispatcher-configuration.html)來快取最適化表單的使用者端資料庫(CSS和JavaScript)。
+* 在使用最適化表單快取時，請使用[AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)來快取最適化表單的使用者端資料庫（CSS和JavaScript）。
 * 開發自訂元件時，請停用用於開發的伺服器上的最適化表單快取。
 
 執行以下步驟來設定調適型表單快取：
 
 1. 前往`https://'[server]:[port]'/system/console/configMgr`的AEM Web主控台設定管理員。
-1. 按一下&#x200B;**[!UICONTROL 最適化表單和互動式通訊Web Channel設定]**&#x200B;以編輯其設定值。 在編輯設定值對話方塊中，指定AEM Forms伺服器執行個體可在&#x200B;**Number of Adaptive Forms**&#x200B;欄位中快取的表單或檔案數目上限。 預設值為 100。按一下「**儲存**」。
+1. 按一下&#x200B;**[!UICONTROL 最適化表單和互動式通訊Web Channel設定]**&#x200B;以編輯其設定值。 在編輯設定值對話方塊中，指定AEM Forms伺服器執行個體可在&#x200B;**Number of Adaptive Forms**&#x200B;欄位中快取的表單或檔案數目上限。 預設值為 100。 按一下&#x200B;**儲存**。
 
    >[!NOTE]
    >
@@ -188,7 +189,7 @@ Dispatcher是適用於AEM的快取與負載平衡工具。 AEM Dispatcher也有�
 
 Adobe Sign可啟用最適化表單的電子簽章工作流程。 電子簽名有助於改善處理法律、銷售、薪資、人力資源管理及許多領域文件的工作流程。
 
-在OSGi上的典型Adobe Sign和Forms中心工作流程中，使用者會填寫最適化表單來&#x200B;**申請服務**。 例如，信用卡申請表和市民福利表單。當使用者填寫、提交和簽署申請表單時，核准/拒絕工作流程就會開始。 服務提供者在AEM收件匣中檢閱應用程式，並使用Adobe Sign以電子方式簽署應用程式。 若要啟用類似的電子簽章工作流程，您可以整合Adobe Sign與AEM Forms。
+在OSGi上的典型Adobe Sign和Forms中心工作流程中，使用者會填寫最適化表單來&#x200B;**申請服務**。 例如，信用卡申請表和市民福利表單。 當使用者填寫、提交和簽署申請表單時，核准/拒絕工作流程就會開始。 服務提供者在AEM收件匣中檢閱應用程式，並使用Adobe Sign以電子方式簽署應用程式。 若要啟用類似的電子簽章工作流程，您可以整合Adobe Sign與AEM Forms。
 
 若要使用Adobe Sign與AEM Forms，[將Adobe Sign與AEM Forms整合](../../forms/using/adobe-sign-integration-adaptive-forms.md)。
 

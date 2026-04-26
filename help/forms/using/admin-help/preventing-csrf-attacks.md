@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 00f52303-66c3-4865-a74b-eda0e6949193
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 在SOAP和REST端點上允許Null反向連結。 在所有URI登入頁面（例如/adminui和/contentspace）及其對應的對應資源上也允許Null反向連結。 例如， /contentspace的對應servlet是/contentspace/faces/jsp/login.jsp，這應該是Null反向連結例外狀況。 只有當您為網頁應用程式啟用GET篩選時，才需要此例外。 您的應用程式可以指定是否允許空的反向連結。 請參閱[強化AEM表單及安全性](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html)中的「防止跨網站要求偽造攻擊」。
 
-**允許的反向連結例外狀況：**&#x200B;允許的反向連結例外狀況是允許的反向連結清單的子清單，會封鎖其要求。 允許的「參考例外」專屬於Web應用程式。 如果不允許允許的反向連結子集呼叫特定的Web應用程式，您可以透過「允許的反向連結例外」將反向連結加入封鎖清單。 在web.xml檔案中為您的應用程式指定允許的反向連結例外。 (請參閱說明和教學課程頁面上的AEM表單強化與安全性中的「防止跨網站請求偽造攻擊」。)
+**允許的反向連結例外狀況：**&#x200B;允許的反向連結例外狀況是允許的反向連結清單的子清單，會封鎖其要求。 允許的「參考例外」專屬於Web應用程式。 如果不允許允許的反向連結子集呼叫特定的Web應用程式，您可以透過「允許的反向連結例外」將反向連結加入封鎖清單。 在web.xml檔案中為您的應用程式指定允許的反向連結例外。 （請參閱說明和教學課程頁面上的AEM表單強化與安全性中的「防止跨網站請求偽造攻擊」。）
 
 ## 允許的反向連結如何運作 {#how-allowed-referers-work}
 
@@ -70,7 +70,7 @@ AEM Forms提供反向連結篩選功能，可協助防止CSRF攻擊。 反向連
 
 當您執行Configuration Manager時，預設主機和IP位址或Forms伺服器會新增至「允許的反向連結」清單中。 您可以在管理控制檯中編輯此清單。
 
-1. 在管理控制檯中，按一下「設定>使用者管理>設定>設定允許的反向連結URL」。允許的反向連結清單會顯示在頁面底部。
+1. 在管理控制檯中，按一下「設定>使用者管理>設定>設定允許的反向連結URL」。 允許的反向連結清單會顯示在頁面底部。
 1. 若要新增允許的反向連結：
 
    * 在允許的反向連結方塊中輸入主機名稱或IP位址。 若要一次新增多個允許的反向連結，請在新行中輸入每個主機名稱或IP位址。

@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 198016d7-0fb5-47e6-91ed-f2f0c98b2224
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 1%
@@ -24,7 +24,7 @@ ht-degree: 1%
 > 
 > 確保使用者具有存取管理員控制檯的管理員許可權。
 
-Forms可讓您指定其可用於轉譯的自訂XCI檔案。 (請參閱[為Forms設定位置](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms)。)依預設，Forms會覆寫XCI檔案中指定的某些選項，包括下列專案：
+Forms可讓您指定其可用於轉譯的自訂XCI檔案。 （請參閱[設定Forms的位置](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms)。） 依預設，Forms會覆寫XCI檔案中指定的某些選項，包括下列專案：
 
 * `config/present/xdp/packets`
 * `config/present/pdf/creator`
@@ -35,4 +35,4 @@ Forms可讓您指定其可用於轉譯的自訂XCI檔案。 (請參閱[為Forms�
 
 1. 在管理控制檯中，按一下&#x200B;**服務** > **Forms**。
 1. 選取或取消選取使用系統預設XCI選項核取方塊。 選取此選項時，Forms會使用封包、建立者、製作者和compressObjectStream設定的預設值。 取消選取此選項時，Forms會使用自訂XCI檔案中指定的值。
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。

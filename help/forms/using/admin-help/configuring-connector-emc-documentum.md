@@ -11,9 +11,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: a9eae40f-531f-4354-ade0-853e84dd88d9
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1037'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Connector for EMC Documentum可讓AEM Forms與EMC Documentum通訊。 如需其�
 
 >[!NOTE]
 >
->若要選取列出的儲存區域服務提供者以外的儲存區域服務提供者，請在「應用程式與服務>服務管理」中設定RepositoryService。<!-- Fix broken link (See Managing Services) -->。
+>若要選取列出的儲存區域服務提供者以外的儲存區域服務提供者，請在「應用程式與服務>服務管理」中設定RepositoryService。 <!-- Fix broken link (See Managing Services) -->.
 
 1. 在管理控制檯中，按一下「服務」>「EMC Documentum聯結器」>「組態設定」。
 1. 在「存放庫服務提供者資訊」區域中，選取替代的存放庫服務提供者。

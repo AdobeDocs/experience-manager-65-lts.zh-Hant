@@ -11,9 +11,9 @@ feature: Adaptive Forms,Document Services
 hide: true
 hidefromtoc: true
 exl-id: 04700c18-c5fe-45c3-b9ad-16d4b427d65e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1779'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->閱讀本節之前，建議您先熟悉使用Assembler服務組合PDF檔案。 (請參閱[以程式設計方式組合PDF檔案](/help/forms/developing/programmatically-assembling-pdf-documents.md)。)
+>閱讀本節之前，建議您先熟悉使用Assembler服務組合PDF檔案。 （請參閱[以程式設計方式組合PDF檔案](/help/forms/developing/programmatically-assembling-pdf-documents.md)。）
 
 >[!NOTE]
 >
@@ -78,8 +78,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (如果AEM Forms部署在JBoss上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss上，則為必要)
+* adobe-utilities.jar （如果AEM Forms部署在JBoss上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss上，則為必要）
 
 如果將AEM Forms部署在受支援的J2EE應用程式伺服器（不是JBoss）上，則必須將adobe-utilities.jar和jbossall-client.jar取代為特定於已部署AEM Forms之J2EE應用程式伺服器的JAR檔案。
 
@@ -170,7 +170,7 @@ ht-degree: 0%
 
 [以程式設計方式分解PDF檔案](#programmatically-disassembling-pdf-documents)
 
-[快速入門(SOAP模式)：使用Java API分解PDF檔案](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API分解PDF檔案](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

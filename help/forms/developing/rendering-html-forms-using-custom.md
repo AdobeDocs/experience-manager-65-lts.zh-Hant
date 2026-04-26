@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: b70404ee-21dc-4c0b-a66f-c37a6f29f98e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1682'
+source-wordcount: '1693'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Forms服務會以無訊息方式剖析自訂CSS檔案。 也就是說，Forms服
 
 >[!NOTE]
 >
->呈現使用自訂CSS檔案的HTML表單前，請務必充分瞭解如何呈現HTML表單。 (請參閱[將Forms轉譯為HTML](/help/forms/developing/rendering-forms-html.md)。)
+>呈現使用自訂CSS檔案的HTML表單前，請務必充分瞭解如何呈現HTML表單。 （請參閱[將Forms轉譯為HTML](/help/forms/developing/rendering-forms-html.md)。）
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ Forms服務轉譯HTML表單時，會傳回您必須寫入使用者端網頁瀏�
 
 [使用自訂CSS檔案轉譯HTML Forms](#rendering-html-forms-using-custom-css-files)
 
-[快速入門(SOAP模式)：透過Java API呈現使用CSS檔案的HTML表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api)
+[快速入門（SOAP模式）：透過Java API呈現使用CSS檔案的HTML表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -169,7 +169,7 @@ Forms服務轉譯HTML表單時，會傳回您必須寫入使用者端網頁瀏�
 
    * 字串值，指定表單設計名稱，包括副檔名。 如果您參照的表單設計屬於Forms應用程式的一部分，請確定您指定完整路徑，例如`Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`。
    * 指定HTML喜好設定型別的`TransformTo`列舉值。 例如，若要呈現與適用於Internet Explorer 5.0或更新版本的動態HTML相容的HTML表單，請指定`TransformTo.MSDHTML`。
-   * 包含要與表單合併之資料的`BLOB`物件。 如果您不想合併資料，請傳遞`null`。 (請參閱[使用可流動配置預先填入Forms](/help/forms/developing/prepopulating-forms-flowable-layouts.md)。)
+   * 包含要與表單合併之資料的`BLOB`物件。 如果您不想合併資料，請傳遞`null`。 （請參閱[使用可流動配置預先填入Forms](/help/forms/developing/prepopulating-forms-flowable-layouts.md)。）
    * 儲存HTML執行階段選項的`HTMLRenderSpec`物件。
    * 字串值，指定`HTTP_USER_AGENT`標頭值，例如`Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。 如果您不想設定此值，可以傳遞空字串。
    * `URLSpec`物件儲存轉譯HTML表單所需的URI值。

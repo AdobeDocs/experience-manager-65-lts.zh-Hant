@@ -11,9 +11,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: e449c6f6-7b75-47ab-9abd-8031b7b151e5
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '6201'
+source-wordcount: '6236'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 0%
  <thead>
   <tr>
    <th><p>步驟</p></th>
-   <th><p>描述</p></th>
+   <th><p>說明</p></th>
   </tr>
  </thead>
  <tbody>
@@ -205,7 +205,7 @@ ht-degree: 0%
 
 [步驟摘要](users.md#summary-of-steps)
 
-[快速入門(SOAP模式)：使用Java API新增使用者](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API新增使用者](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -338,7 +338,7 @@ ht-degree: 0%
 
 [快速入門（EJB模式）：使用Java API刪除使用者](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
 
-[快速入門(SOAP模式)：使用Java API刪除使用者](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API刪除使用者](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -405,8 +405,8 @@ ht-degree: 0%
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (如果AEM Forms部署在JBoss上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss上，則為必要)
+* adobe-utilities.jar （如果AEM Forms部署在JBoss上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss上，則為必要）
 
 如需關於這些JAR檔案位置的資訊，請參閱[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
@@ -571,7 +571,7 @@ ht-degree: 0%
 
 1. 包含專案檔案。
 
-   * 建立使用「目錄管理員」WSDL的Microsoft .NET使用者端元件。 (請參閱[使用Base64編碼叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)。)
+   * 建立使用「目錄管理員」WSDL的Microsoft .NET使用者端元件。 （請參閱[使用Base64編碼叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)。）
    * 參考Microsoft .NET使用者端元件。 （請參閱[建立使用Base64編碼的.NET使用者端元件](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)。）
 
 1. 建立DirectoryManagerService使用者端。
@@ -670,7 +670,7 @@ ht-degree: 0%
 
 [步驟摘要](users.md#summary-of-steps)
 
-[快速入門(SOAP模式)：使用Java API管理角色和許可權](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API管理角色和許可權](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -691,7 +691,7 @@ ht-degree: 0%
 1. 建立AuthorizationManagerService使用者端。
 
    * 使用預設建構函式建立`AuthorizationManagerServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`AuthorizationManagerServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/AuthorizationManagerService?blob=mtom`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`AuthorizationManagerServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/AuthorizationManagerService?blob=mtom`）。 您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。
    * 取得`AuthorizationManagerServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
@@ -739,7 +739,7 @@ ht-degree: 0%
  <thead>
   <tr>
    <th><p>步驟</p></th>
-   <th><p>描述</p></th>
+   <th><p>說明</p></th>
   </tr>
  </thead>
  <tbody>
@@ -830,8 +830,8 @@ ht-degree: 0%
 
 1. 包含專案檔案。
 
-   * 建立使用Authentication Manager WSDL的Microsoft .NET使用者端元件。 (請參閱[使用Base64編碼叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)。)
-   * 參考Microsoft .NET使用者端元件。 (請參閱[使用Base64編碼叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)中的「參考.NET使用者端元件」。)
+   * 建立使用Authentication Manager WSDL的Microsoft .NET使用者端元件。 （請參閱[使用Base64編碼叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)。）
+   * 參考Microsoft .NET使用者端元件。 （請參閱[使用Base64編碼叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)中的「參考.NET使用者端元件」。）
 
 1. 建立AuthenticationManagerService使用者端。
 
@@ -865,7 +865,7 @@ ht-degree: 0%
  <thead>
   <tr>
    <th><p>步驟</p></th>
-   <th><p>描述</p></th>
+   <th><p>說明</p></th>
   </tr>
  </thead>
  <tbody>

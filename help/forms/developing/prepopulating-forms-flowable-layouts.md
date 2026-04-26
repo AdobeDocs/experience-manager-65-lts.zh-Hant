@@ -11,9 +11,9 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 8de9682f-8332-4f6e-ac4b-295fca82a424
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3478'
+source-wordcount: '3513'
 ht-degree: 0%
 
 ---
@@ -32,14 +32,14 @@ ht-degree: 0%
 
 以下兩個XML資料來源可以預先填入表單：
 
-* XDP資料來源是符合XFA語法的XML (或是預先填入使用Acrobat建立的表單的XFDF資料)。
+* XDP資料來源是符合XFA語法的XML （或是預先填入使用Acrobat建立的表單的XFDF資料）。
 * 任意XML資料來源，包含符合表單欄位名稱的名稱/值組（本節中的範例使用任意XML資料來源）。
 
 要預先填入的每個表單欄位都必須有XML元素。 XML元素名稱必須符合欄位名稱。 如果XML元素未對應至表單欄位，或XML元素名稱不符合欄位名稱，則會忽略該元素。 只要指定所有XML元素，就不需要比對XML元素的顯示順序。
 
 預先填入已包含資料的表單時，您必須指定已在XML資料來源中顯示的資料。 假設包含10個欄位的表單有4個欄位中的資料。 接下來，假設您要預先填入其餘六個欄位。 在此情況下，您必須在XML資料來源中指定10個XML元素，用於預先填入表單。 如果您只指定六個元素，則原始的四個欄位為空白。
 
-例如，您可以預先填入表單，如範例確認表單。 (請參閱[呈現互動式PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)中的「確認表單」。)
+例如，您可以預先填入表單，如範例確認表單。 （請參閱[呈現互動式PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)中的「確認表單」。）
 
 若要預先填入範例確認表單，您必須建立包含三個XML元素（符合表單中的三個欄位）的XML資料來源。 此表單包含下列三個欄位： `FirstName`、`LastName`和`Amount`。 第一步是建立包含符合表單設計中欄位的XML元素的XML資料來源。 下一步是將資料值指派給XML元素，如下列XML程式碼所示。
 
@@ -71,7 +71,7 @@ ht-degree: 0%
  <thead>
   <tr>
    <th><p>步驟</p></th>
-   <th><p>描述</p></th>
+   <th><p>說明</p></th>
   </tr>
  </thead>
  <tbody>
@@ -104,7 +104,7 @@ ht-degree: 0%
 
 ### 表單設計考量事項 {#form-design-considerations}
 
-具有可流動版面的Forms是根據在Designer中建立的表單設計。 表單設計會指定一組配置、顯示和資料擷取規則，包括根據使用者輸入計算值。 將資料輸入表單時會套用規則。 新增至表單的欄位是表單設計內的子表單。 例如，在上圖所示的採購單表單中，每一行都是子表單。 如需建立包含子表單的表單設計相關資訊，請參閱[建立具有流程配置之採購單表單](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9_tw)。
+具有可流動版面的Forms是根據在Designer中建立的表單設計。 表單設計會指定一組配置、顯示和資料擷取規則，包括根據使用者輸入計算值。 將資料輸入表單時會套用規則。 新增至表單的欄位是表單設計內的子表單。 例如，在上圖所示的採購單表單中，每一行都是子表單。 如需建立包含子表單的表單設計相關資訊，請參閱[建立具有流程配置之採購單表單](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9)。
 
 ### 瞭解資料子群組 {#understanding-data-subgroups}
 
@@ -264,7 +264,7 @@ XML資料來源可用來預先填入具有固定版面配置和可流動版面�
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
 
-   * 重複表單靜態部分中顯示之每個欄位的最後一個子步驟（在XML資料來源圖表中，這些欄位顯示在A節中），將所有剩餘的元素新增至標頭元素。（請參閱[瞭解資料子群組](#understanding-data-subgroups)。）
+   * 針對出現在表單靜態部分中的每個欄位（在XML資料來源圖表中，這些欄位顯示在A節中），重複最後一個子步驟，將所有剩餘的元素新增到標題元素中。 （請參閱[瞭解資料子群組](#understanding-data-subgroups)。）
    * 呼叫`Document`物件的`createElement`方法，以建立XML資料來源的詳細資料專案。 將代表元素名稱的字串值傳遞至`createElement`方法。 將傳回值轉換為`Element`。 接著，呼叫`root`物件的`appendChild`方法，將詳細專案附加至根專案，然後將詳細專案物件作為引數傳遞。 附加至詳細資訊元素的XML元素會對應至表單的動態部分。 下列幾行程式碼會顯示此應用程式邏輯：
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
@@ -308,7 +308,7 @@ XML資料來源可用來預先填入具有固定版面配置和可流動版面�
 
 **另請參閱**
 
-[快速入門(SOAP模式)：使用Java API以可流動的版面配置預先填入Forms](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API以可流動的版面配置預先填入Forms](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -340,7 +340,7 @@ XML資料來源可用來預先填入具有固定版面配置和可流動版面�
 
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
-   * 重複表單靜態部分中顯示之每個欄位的最後一個子步驟（在XML資料來源圖表中，這些欄位顯示在A節中），將所有剩餘的元素新增至標頭元素。（請參閱[瞭解資料子群組](#understanding-data-subgroups)。）
+   * 針對出現在表單靜態部分中的每個欄位（在XML資料來源圖表中，這些欄位顯示在A節中），重複最後一個子步驟，將所有剩餘的元素新增到標題元素中。 （請參閱[瞭解資料子群組](#understanding-data-subgroups)。）
    * 呼叫`Document`物件的`createElement`方法，以建立XML資料來源的詳細資料專案。 將代表元素名稱的字串值傳遞至`createElement`方法。 將傳回值轉換為`Element`。 接著，呼叫`root`物件的`appendChild`方法，將詳細專案附加至根專案，然後將詳細專案物件作為引數傳遞。 附加至詳細資訊元素的XML元素會對應至表單的動態部分。 下列幾行程式碼會顯示此應用程式邏輯：
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`

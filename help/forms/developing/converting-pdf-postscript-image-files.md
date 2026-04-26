@@ -1,6 +1,6 @@
 ---
 title: 將PDF轉換為Postscript和Image檔案
-description: 使用轉換PDF服務，透過Java API和網站服務API將PDF檔案轉換成PostScript和多種影像格式(JPEG、JPEG 2000、PNG和TIFF)。
+description: 使用轉換PDF服務，透過Java API和網站服務API將PDF檔案轉換成PostScript和多種影像格式（JPEG、JPEG 2000、PNG和TIFF）。
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 509b9e53-9af4-4916-afba-2db358ec0764
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2774'
+source-wordcount: '2820'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 **關於轉換PDF服務**
 
-轉換PDF服務會將PDF檔案轉換為PostScript和多種影像格式(JPEG、JPEG 2000、PNG和TIFF)。 將PDF檔案轉換為PostScript對於任何PostScript印表機上的自動伺服器式列印都很有用。 在不支援PDF檔案的內容管理系統中封存檔案時，將PDF檔案轉換為多頁TIFF檔案是可行的。
+轉換PDF服務會將PDF檔案轉換為PostScript和多種影像格式（JPEG、JPEG 2000、PNG和TIFF）。 將PDF檔案轉換為PostScript對於任何PostScript印表機上的自動伺服器式列印都很有用。 在不支援PDF檔案的內容管理系統中封存檔案時，將PDF檔案轉換為多頁TIFF檔案是可行的。
 
 您可以使用轉換PDF服務完成這些工作：
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 您必須先建立轉換PDF服務使用者端，才能以程式設計方式執行轉換PDF服務作業。 如果您使用Java API，請建立`ConvertPdfServiceClient`物件。 如果您使用網站服務API，請建立`ConvertPDFServiceService`物件。
 
-本節使用AEM Forms中介紹的Web服務功能。 若要存取新功能，您必須使用`lc_version`屬性建構您的Proxy物件。 (請參閱[使用Web服務叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)中的「使用Web服務存取新功能」。)
+本節使用AEM Forms中介紹的Web服務功能。 若要存取新功能，您必須使用`lc_version`屬性建構您的Proxy物件。 （請參閱[使用Web服務叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)中的「使用Web服務存取新功能」。）
 
 **參考PDF檔案以轉換為PostScript檔案**
 
@@ -72,9 +72,9 @@ ht-degree: 0%
 
 將PDF檔案轉換為PostScript檔案時，您可以定義執行階段選項，以指定所建立的PostScript型別。 例如，您可以定義層級3的PostScript檔案。
 
-一般而言，產生的PostScript檔案會反映輸入PDF檔案的大小。 如果您選取`ShrinkToFit`選項(縮減PostScript檔案的輸出以符合頁面)，您不會看到輸入PDF檔案與產生的PostScript檔案之間的差異。 `ShrinkToFit`選項只有在您選擇在比輸入PDF檔案小的頁面大小上列印時才生效。 若要選取較小的頁面大小，請定義`PageSize`選項。 此外，建議您將`RotateAndCenter`選項設為`true`，以取得正確的PostScript輸出。
+一般而言，產生的PostScript檔案會反映輸入PDF檔案的大小。 如果您選取`ShrinkToFit`選項（縮減PostScript檔案的輸出以符合頁面），您不會看到輸入PDF檔案與產生的PostScript檔案之間的差異。 `ShrinkToFit`選項只有在您選擇在比輸入PDF檔案小的頁面大小上列印時才生效。 若要選取較小的頁面大小，請定義`PageSize`選項。 此外，建議您將`RotateAndCenter`選項設為`true`，以取得正確的PostScript輸出。
 
-同樣地，如果您選取`ExpandToFit`選項(會擴充PostScript檔案的輸出以符合頁面)，則只有在您選取在大於輸入PDF檔案的頁面大小上列印時，才會生效。 若要選取較大的頁面大小，請定義`PageSize`選項。 此外，建議您將`RotateAndCenter`選項設為`true`，以取得正確的PostScript輸出。
+同樣地，如果您選取`ExpandToFit`選項（會擴充PostScript檔案的輸出以符合頁面），則只有在您選取在大於輸入PDF檔案的頁面大小上列印時，才會生效。 若要選取較大的頁面大小，請定義`PageSize`選項。 此外，建議您將`RotateAndCenter`選項設為`true`，以取得正確的PostScript輸出。
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ ht-degree: 0%
 
 [步驟摘要](converting-pdf-postscript-image-files.md#summary-of-steps)
 
-[快速入門(SOAP模式)：使用Java API將PDF檔案轉換為PostScript](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API將PDF檔案轉換為PostScript](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -162,7 +162,7 @@ ht-degree: 0%
 1. 建立轉換PDF使用者端。
 
    * 使用預設建構函式建立`ConvertPdfServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`ConvertPdfServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`）。您不需要使用`lc_version`屬性。 但是，請指定`?blob=mtom`。
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`ConvertPdfServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`）。 您不需要使用`lc_version`屬性。 但是，請指定`?blob=mtom`。
    * 取得`ConvertPdfServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
@@ -240,7 +240,7 @@ ht-degree: 0%
 
 **擷取要轉換的PDF檔案**
 
-擷取PDF檔案以轉換為影像。 您無法將互動式PDF檔案轉換為影像。 如果嘗試這麼做，會發生例外狀況。 若要將互動式PDF檔案轉換為影像檔案，您必須先將PDF檔案平面化，才能進行轉換。 (請參閱[將PDF檔案平面化](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents)。)
+擷取PDF檔案以轉換為影像。 您無法將互動式PDF檔案轉換為影像。 如果嘗試這麼做，會發生例外狀況。 若要將互動式PDF檔案轉換為影像檔案，您必須先將PDF檔案平面化，才能進行轉換。 （請參閱[將PDF檔案平面化](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents)。）
 
 **設定執行階段選項**
 
@@ -306,7 +306,7 @@ ht-degree: 0%
 
 **另請參閱**
 
-[快速入門(SOAP模式)：使用Java API將PDF檔案轉換為JPEG檔案](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API將PDF檔案轉換為JPEG檔案](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
 ### 使用Web服務API將PDF檔案轉換為影像檔案 {#convert-a-pdf-document-to-image-files-using-the-web-service-api}
 
@@ -323,7 +323,7 @@ ht-degree: 0%
 1. 建立轉換PDF使用者端。
 
    * 使用預設建構函式建立`ConvertPdfServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`ConvertPdfServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`）。您不需要使用`lc_version`屬性。 但是，請指定`?blob=mtom`。
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`ConvertPdfServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`）。 您不需要使用`lc_version`屬性。 但是，請指定`?blob=mtom`。
    * 取得`ConvertPdfServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：

@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services
 hide: true
 hidefromtoc: true
 exl-id: d9884c3e-47d2-400a-98c3-13cc37be6786
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '1676'
 ht-degree: 0%
 
 ---
@@ -74,8 +74,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (如果AEM Forms部署在JBoss上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss上，則為必要)
+* adobe-utilities.jar （如果AEM Forms部署在JBoss上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss上，則為必要）
 
 如果將AEM Forms部署在JBoss以外的受支援J2EE應用程式伺服器上，則必須將adobe-utilities.jar和jbossall-client.jar檔案取代為特定於AEM Forms部署所在J2EE應用程式伺服器的JAR檔案。 如需有關所有AEM Forms JAR檔案位置的資訊，請參閱[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
@@ -154,7 +154,7 @@ ht-degree: 0%
 
 **另請參閱**
 
-[快速入門(SOAP模式)：使用Java API組合已加密的PDF檔案](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API組合已加密的PDF檔案](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
 
 ## 使用網站服務API彙編加密的PDF檔案 {#assemble-an-encrypted-pdf-document-using-the-web-service-api}
 

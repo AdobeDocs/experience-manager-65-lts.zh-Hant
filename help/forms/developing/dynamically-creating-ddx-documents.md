@@ -12,9 +12,9 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 3508d2d1-e05a-4733-b682-4b022348147a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2153'
+source-wordcount: '2183'
 ht-degree: 0%
 
 ---
@@ -69,8 +69,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (如果AEM Forms部署在JBoss上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss上，則為必要)
+* adobe-utilities.jar （如果AEM Forms部署在JBoss上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss上，則為必要）
 
 **建立PDF組合器使用者端**
 
@@ -131,7 +131,6 @@ ht-degree: 0%
    * 呼叫`DocumentBuilderFactory`物件的`newDocumentBuilder`方法，以建立Java `DocumentBuilder`物件。
    * 呼叫`DocumentBuilder`物件的`newDocument`方法以例項化`org.w3c.dom.Document`物件。
    * 呼叫`org.w3c.dom.Document`物件的`createElement`方法，以建立DDX檔案的根專案。 此方法會建立代表根專案的`Element`物件。 將代表元素名稱的字串值傳遞至`createElement`方法。 將傳回值轉換為`Element`。 接著，呼叫子專案的`setAttribute`方法，以設定其值。 最後，呼叫標頭專案的`appendChild`方法，將專案附加至標頭專案，並將子專案物件作為引數傳遞。 下列幾行程式碼會顯示此應用程式邏輯：
-
      ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
 
    * 呼叫`Document`物件的`createElement`方法，以建立`PDFsFromBookmarks`專案。 將代表元素名稱的字串值傳遞至`createElement`方法。 將傳回值轉換為`Element`。 呼叫其`setAttribute`方法，以設定`PDFsFromBookmarks`專案的值。 呼叫DDX專案的`appendChild`方法，將`PDFsFromBookmarks`專案附加至`DDX`專案。 將`PDFsFromBookmarks`專案物件傳遞為引數。 下列幾行程式碼會顯示此應用程式邏輯：
@@ -189,7 +188,7 @@ ht-degree: 0%
 
 **另請參閱**
 
-[快速入門(SOAP模式)：使用Java API動態建立DDX檔案](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API動態建立DDX檔案](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

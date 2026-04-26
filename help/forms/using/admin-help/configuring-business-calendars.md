@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 23fab14d-3658-4fd3-88c1-fc71f1ac0400
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1938'
 ht-degree: 0%
 
 ---
@@ -48,9 +48,9 @@ AEM Forms提供預設商務行事曆（名為&#x200B;*內建行事曆*），將�
 
    指派商務行事曆金鑰給使用者的方式取決於您是使用企業、本機或混合式網域。 如需設定網域的詳細資訊，請參閱[新增網域](/help/forms/using/admin-help/adding-domains.md#adding-domains)。
 
-   如果您使用本機或混合式網域，有關使用者的資訊只會儲存在「使用者管理」資料庫中。 若要為這些使用者設定商務行事曆索引鍵，請在「使用者管理」中新增或編輯使用者時，於「商務行事曆索引鍵」欄位中輸入字串。 （請參閱[新增及設定使用者](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users)。）然後將商務行事曆金鑰（字串）對應至表單工作流程中的商務行事曆。 （請參閱[將使用者和群組對應至商務行事曆](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)。）
+   如果您使用本機或混合式網域，有關使用者的資訊只會儲存在「使用者管理」資料庫中。 若要為這些使用者設定商務行事曆索引鍵，請在「使用者管理」中新增或編輯使用者時，於「商務行事曆索引鍵」欄位中輸入字串。 （請參閱[新增及設定使用者](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users)。） 然後，將商務行事曆索引鍵（字串）對應至表單工作流程中的商務行事曆。 （請參閱[將使用者和群組對應至商務行事曆](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)。）
 
-   如果您使用企業網域，有關使用者的資訊會儲存在協力廠商儲存系統中，例如「使用者管理」與「使用者管理」資料庫同步的LDAP目錄。 這可讓您將商務行事曆索引鍵對應到LDAP目錄中的欄位。 例如，如果目錄中的每個使用者記錄都包含「國家/地區」欄位，而您想要根據使用者所在的國家/地區來指派商務行事曆，請在指定目錄的使用者設定時，在「商務行事曆索引鍵」欄位中指定「國家/地區」欄位名稱。 （請參閱[設定目錄](/help/forms/using/admin-help/configuring-directories.md#configuring-directories)。）然後您可以將商務行事曆金鑰（在LDAP目錄中為「國家/地區」欄位定義的值）對應至表單工作流程中的商務行事曆。 （請參閱[將使用者和群組對應至商務行事曆](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)。）
+   如果您使用企業網域，有關使用者的資訊會儲存在協力廠商儲存系統中，例如「使用者管理」與「使用者管理」資料庫同步的LDAP目錄。 這可讓您將商務行事曆索引鍵對應到LDAP目錄中的欄位。 例如，如果目錄中的每個使用者記錄都包含「國家/地區」欄位，而您想要根據使用者所在的國家/地區來指派商務行事曆，請在指定目錄的使用者設定時，在「商務行事曆索引鍵」欄位中指定「國家/地區」欄位名稱。 （請參閱[設定目錄](/help/forms/using/admin-help/configuring-directories.md#configuring-directories)。） 然後，您可以將商務行事曆索引鍵（在LDAP目錄中為「國家/地區」欄位定義的值）對應至表單工作流程中的商務行事曆。 （請參閱[將使用者和群組對應至商務行事曆](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)。）
 
 1. 在表單工作流程中，為共用相同非營業日的每一組使用者定義一個行事曆。 （請參閱[建立或更新商務行事曆](configuring-business-calendars.md#create-or-update-a-business-calendar)。）
 1. 在表單工作流程中，對應每個行事曆的業務行事曆索引鍵或群組成員資格。 （請參閱[將使用者和群組對應至商務行事曆](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)。）
@@ -79,7 +79,7 @@ AEM Forms提供預設商務行事曆（名為&#x200B;*內建行事曆*），將�
 
    如果您選取此選項，在指定時間範圍之前發生的事件會移至時間範圍的開頭，而在時間範圍之後發生的事件則會移至下一個營業日的開始時間。
 
-   例如，假設某個使用者在星期二凌晨2:00被指派一項任務，而該任務的提醒已設定為兩個工作天。 如果沒有營業時間，提醒將會在星期四凌晨2:00發生。 如果營業時間設為上午8:00至下午5:00，則提醒會推送至星期四上午8:00。 若沒有營業時間，若在星期二下午6:00建立提醒事件，則會在星期四營業時間之後進行提醒。 若營業時間設定為上午8:00至下午5:00，提醒將會在星期五上午8:00進行。
+   例如，假設某個星期二凌晨2:00為使用者指派任務，而該任務的提醒設為兩個工作天。 若沒有營業時間，提醒將會在星期四凌晨2:00發生。 如果營業時間設為上午8:00至下午5:00，則提醒會推送到星期四上午8:00。 若沒有營業時間，若於星期二下午6:00建立提醒事件，則會在星期四營業時間後進行提醒。 若營業時間設定為上午8:00至下午5:00，則提醒會在星期五上午8:00發生。
 
 1. 在左側的行事曆中，連按兩下任何其他非工作日，例如假日。 您無法選取過去的天數。 您選取的非營業日會出現在右側的清單中，而日期會在一行中出現兩次。 在左側選取日期，以輸入非營業日的名稱或說明。
 

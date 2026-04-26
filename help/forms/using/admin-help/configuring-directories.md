@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 2c0dd472-9697-4b96-b3fa-3c50883bf425
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3253'
+source-wordcount: '3275'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 ### 使用者設定 {#user-settings}
 
-**唯一識別碼：** （必要）用來識別使用者的唯一且常數屬性。 使用非DN屬性當作唯一識別碼，因為使用者的DN若移至組織的其他部分，可能會變更。 此設定取決於目錄伺服器。 值為objectGUID （適用於Active Directory 2003）、nsuniqueID (適用於Sun™ One)和guid （適用於eDirectory）。
+**唯一識別碼：** （必要）用來識別使用者的唯一且常數屬性。 使用非DN屬性當作唯一識別碼，因為使用者的DN若移至組織的其他部分，可能會變更。 此設定取決於目錄伺服器。 值為objectGUID （適用於Active Directory 2003）、nsuniqueID （適用於Sun™ One）和guid （適用於eDirectory）。
 
 >[!NOTE]
 >
@@ -129,7 +129,7 @@ ht-degree: 0%
 >
 >請勿在此設定中加入使用者的DN。 若要同步特定使用者，請使用「搜尋篩選」設定。
 
-雖然Base DN是Administration Console中的必要設定，但某些目錄伺服器(例如IBM Domino Enterprise Server)可能需要空的BaseDN。 若要指定空的基本DN，請匯出config.xml檔案，編輯config.xml檔案中的設定，然後重新匯入它。 （請參閱[匯入及匯出組態檔](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file)。）
+雖然Base DN是Administration Console中的必要設定，但某些目錄伺服器（例如IBM Domino Enterprise Server）可能需要空的BaseDN。 若要指定空的基本DN，請匯出config.xml檔案，編輯config.xml檔案中的設定，然後重新匯入它。 （請參閱[匯入及匯出組態檔](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file)。）
 
 **搜尋篩選器：** （必要）用來尋找與使用者相關之記錄的搜尋篩選器。 您可以執行一級搜尋或子級搜尋。 （請參閱搜尋篩選器語法或RFC 2254。） 如需Microsoft AD架構的其他資訊，請參閱Active Directory架構。
 
@@ -185,7 +185,7 @@ ht-degree: 0%
 
 **基底DN：** （必要）目錄的基礎辨別名稱。
 
-雖然Base DN是Administration Console中的必要設定，但某些目錄伺服器(例如IBM Domino Enterprise Server)需要空的BaseDN。 若要指定空的基本DN，請匯出config.xml檔案，編輯config.xml檔案中的設定，然後重新匯入它。 （請參閱[匯入及匯出組態檔](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file)。）
+雖然Base DN是Administration Console中的必要設定，但某些目錄伺服器（例如IBM Domino Enterprise Server）需要空的BaseDN。 若要指定空的基本DN，請匯出config.xml檔案，編輯config.xml檔案中的設定，然後重新匯入它。 （請參閱[匯入及匯出組態檔](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file)。）
 
 **搜尋篩選器：** （必要）用來尋找與群組關聯之記錄的搜尋篩選器。 您可以執行一級搜尋或子級搜尋。
 
@@ -284,7 +284,7 @@ LDAP通訊協定提供使用要求控制項，以分頁方式查詢大型資料�
 
    >[!NOTE]
    >
-   >根據慣例，vlvIndex專案名稱也設為`lcuser`，但您可以為其指定不同的名稱。 在vlvindex工具中使用相同的名稱。 （請參閱[建立VLV &#x200B;](configuring-directories.md#create-the-directory-server-index-for-vlv)*的目錄伺服器索引。）*
+   >根據慣例，vlvIndex專案名稱也設為`lcuser`，但您可以為其指定不同的名稱。 在vlvindex工具中使用相同的名稱。 （請參閱[建立VLV ](configuring-directories.md#create-the-directory-server-index-for-vlv)*的目錄伺服器索引。）*
 
 1. 使用Sun ONE Server隨附的`ldapmodify`工具，分別使用群組的基本DN、搜尋篩選和排序欄位，為群組建立類似的專案：
 

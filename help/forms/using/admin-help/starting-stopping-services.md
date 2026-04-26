@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a4ff69d2-a429-49b9-ba48-9dd56ccdf23e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 0%
@@ -31,7 +31,7 @@ AEM表單中有兩種型別的服務：
 
 ## 啟動或停止與AEM表單模組相關聯的服務 {#start-or-stop-the-services-associated-with-aem-forms-modules}
 
-AEM表單模組(例如Forms、Rights Management、輸出)可作為服務運作。 有時候，您可能需要停止或啟動這些AEM表單模組的服務。 例如，在變更服務的設定後，您必須停止AEM表單服務，然後重新啟動。
+AEM表單模組（例如Forms、Rights Management、輸出）可作為服務運作。 有時候，您可能需要停止或啟動這些AEM表單模組的服務。 例如，在變更服務的設定後，您必須停止AEM表單服務，然後重新啟動。
 
 >[!NOTE]
 >

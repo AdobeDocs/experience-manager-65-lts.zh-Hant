@@ -9,9 +9,9 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 23ffbaa6-1bd9-48c3-afa3-19737bb15de0
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1480'
+source-wordcount: '1547'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html?lang=zh-Hant)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html)上的[AEM Forms 。
 
 ## 架構 {#architecture}
 
@@ -38,7 +38,7 @@ AEM Forms的架構包括下列元件：
 
    * **製作前端**：用於製作和管理表單的表單製作和表單管理使用者介面。
    * **表單轉譯與提交前端**：使用者對面的介面，可供AEM Forms的一般使用者（例如，存取政府網站的公民）使用。 此功能提供表單轉譯（在網頁瀏覽器中顯示表單）和提交功能。
-   * **REST API**： JSP和servlet會匯出表單服務的子集，以供HTTP型使用者端(例如Forms行動SDK)遠端使用。
+   * **REST API**： JSP和servlet會匯出表單服務的子集，以供HTTP型使用者端（例如Forms行動SDK）遠端使用。
 
 **OSGi上的AEM Forms：** OSGi環境上的AEM Forms是標準的AEM Author或AEM Publish ，且已在其上部署AEM Forms套件。 您可以在[單一伺服器環境、伺服器陣列和叢集設定](/help/sites-deploying/recommended-deploys.md)中的OSGi上執行AEM Forms。 叢集設定僅適用於AEM Author執行個體。
 
@@ -58,7 +58,8 @@ AEM Forms on JEE also includes provides following supporting services to the AEM
 
 AEM Forms製作使用者介面不支援建立記錄檔案(DOR)、PDF forms和HTML5 Forms。 這類資產是使用獨立的Forms Designer應用程式來設計，並個別上傳至AEM Forms Manager。<!--Alternatively, for AEM Forms on JEE, forms can be designed as application (in AEM Forms Workbench) assets and deployed into AEM Forms on JEE server.-->
 
-OSGi <!--and AEM Forms on JEE both-->上的AEM Forms具有工作流程功能。 您可以在OSGi.<!--, without having to install the full-fledged Process Management capability of AEM Forms on JEE. There is some difference in the [features of Form-centric workflow on AEM Forms on OSGi and Process Management capability of AEM Forms on JEE](capabilities-osgi-jee-workflows.md). The development and management of Form-centric workflows on AEM Forms on OSGi uses the familiar AEM Workflow and AEM Inbox capabilities.-->上的AEM表單上，快速建置和部署各種工作的基本工作流程
+OSGi <!--and AEM Forms on JEE both-->上的AEM Forms具有工作流程功能。 您可以在OSGi上的AEM表單中，快速建立及部署各種工作的基本工作流程。
+<!--, without having to install the full-fledged Process Management capability of AEM Forms on JEE. There is some difference in the [features of Form-centric workflow on AEM Forms on OSGi and Process Management capability of AEM Forms on JEE](capabilities-osgi-jee-workflows.md). The development and management of Form-centric workflows on AEM Forms on OSGi uses the familiar AEM Workflow and AEM Inbox capabilities.-->
 
 ## 術語 {#terminologies}
 
@@ -66,9 +67,9 @@ OSGi <!--and AEM Forms on JEE both-->上的AEM Forms具有工作流程功能。 
 
 ![aem_forms_-_recommendedtopology](assets/aem_forms_-_recommendedtopology.png)
 
-**作者：**&#x200B;作者執行個體是以標準作者執行模式執行的AEM Forms伺服器。 <!--It can be AEM Forms on JEE or AEM Forms on OSGi environment.-->專為內部使用者、表單和互動式通訊設計人員以及開發人員所設計。 可啟用下列功能：
+**作者：**&#x200B;作者執行個體是以標準作者執行模式執行的AEM Forms伺服器。<!--It can be AEM Forms on JEE or AEM Forms on OSGi environment.--> 此範本適用於內部使用者、表單和互動式通訊設計人員以及開發人員。 可啟用下列功能：
 
-* **製作及管理表單與互動式通訊：**&#x200B;設計人員和開發人員可以建立和編輯最適化表單與互動式通訊、上傳外部建立的其他型別的表單(例如在Adobe Forms Designer中建立的表單)，以及使用Forms Manager主控台管理這些資產。
+* **製作及管理表單與互動式通訊：**&#x200B;設計人員和開發人員可以建立和編輯最適化表單與互動式通訊、上傳外部建立的其他型別的表單（例如在Adobe Forms Designer中建立的表單），以及使用Forms Manager主控台管理這些資產。
 * **表單與互動式通訊發佈：**&#x200B;裝載於製作執行個體的Assets可以發佈至發佈執行個體，以執行執行階段作業。 資產發佈使用AEM的復寫功能。 Adobe建議在所有作者執行個體上設定復寫代理程式，以手動方式將發佈的表單推播到處理執行個體，並在處理執行個體上設定另一個復寫代理程式，且啟用&#x200B;*接收時*&#x200B;觸發程式，以自動將收到的表單復寫到發佈執行個體。
 
 **發佈：**&#x200B;發佈執行個體是以標準發佈執行模式執行的AEM Forms伺服器。 發佈例項適用於表單式應用程式的一般使用者，例如存取公開網站及提交表單的使用者。 可啟用下列功能：
@@ -140,7 +141,7 @@ You can make the following changes/customizations to the above-suggested topolog
 
 ### 資料擷取、互動式通訊、OSGi功能表單導向工作流程的拓撲 {#topology-for-data-capture-interactive-communication-form-centric-workflow-on-osgi-capabilities}
 
-計畫使用AEM Forms資料擷取功能(例如最適化表單、HTML5 Forms、PDF forms)的AEM Forms客戶，可擁有類似於以下顯示的拓撲。 在OSGi功能上使用互動式通訊和Forms為中心的工作流程時(例如，使用AEM收件匣和AEM Forms應用程式進行業務流程工作流程)，也建議使用此拓撲。
+計畫使用AEM Forms資料擷取功能（例如最適化表單、HTML5 Forms、PDF forms）的AEM Forms客戶，可擁有類似於以下顯示的拓撲。 在OSGi功能上使用互動式通訊和Forms為中心的工作流程時（例如，使用AEM收件匣和AEM Forms應用程式進行業務流程工作流程），也建議使用此拓撲。
 
 ![interactive-use-cases-af-cm-osgi-workflow](assets/interactive-use-cases-af-cm-osgi-workflow.png)
 

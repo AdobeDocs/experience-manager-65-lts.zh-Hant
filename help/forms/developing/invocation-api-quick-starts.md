@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 7e1b29b3-aaab-4e99-bf6e-1f085a71d293
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1272'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 3%
 <table>
  <thead>
   <tr>
-   <th><p>描述</p></th>
+   <th><p>說明</p></th>
    <th><p>遠端API</p></th>
    <th><p>Java API</p></th>
    <th><p>網站服務API</p></th>
@@ -36,15 +36,15 @@ ht-degree: 3%
  <tbody>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#invoking_human_centric_long_lived_processes">叫用以人為中心的長期流程</a></p></td>
-   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#invoking-a-long-lived-process-using-remoting">使用(AEM表單已棄用) AEM Forms Remoting叫用長效程式</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#invoking-a-long-lived-process-using-remoting">使用（AEM表單已棄用） AEM Forms Remoting叫用長效程式</a></p></td>
    <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#quick_start_invoking_a_long_lived_process_using_the_invocation_api">快速入門：使用叫用API叫用長效程式</a></p></td>
    <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#quick_start_invoking_a_long_lived_process_using_the_web_service_api">快速入門：使用Web服務API叫用長期程式</a></p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking_a_short_lived_process_using_the_invocation_api">使用叫用API叫用短期程式</a></p></td>
-   <td><p>不適用</p></td>
+   <td><p>N/A</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_short_lived_process_using_the_invocation_api">快速入門：使用叫用API叫用短期流程</a></p></td>
-   <td><p>不適用</p></td>
+   <td><p>N/A</p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding">使用Base64編碼叫用AEM Forms</a> （Java Web服務Proxy）</p></td>
@@ -89,20 +89,20 @@ ht-degree: 3%
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_dime_in_a_java_project">快速入門：在Java專案中使用DIME叫用服務</a></p></td>
   </tr>
   <tr>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting">叫用AEM Forms (AEM表單已棄用) AEM Forms Remoting</a></p></td>
-   <td><p><a href="invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting">快速入門：透過使用傳遞不安全的檔案來叫用短期流程(AEM表單已棄用) AEM Forms Remoting</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting">叫用AEM Forms （AEM表單已棄用） AEM Forms Remoting</a></p></td>
+   <td><p><a href="invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting">快速入門：透過使用傳遞不安全的檔案來叫用短期流程（AEM表單已棄用） AEM Forms Remoting</a></p></td>
    <td><p>N/A</p></td>
    <td><p>N/A</p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#passing_secure_documents_to_invoke_processes_using_remoting">使用遠端功能傳遞安全檔案以叫用程式</a></p></td>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting">快速入門：透過使用傳遞安全檔案來叫用短期流程(AEM表單已棄用) AEM Forms Remoting</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting">快速入門：透過使用傳遞安全檔案來叫用短期流程（AEM表單已棄用） AEM Forms Remoting</a></p></td>
    <td><p>N/A</p></td>
    <td><p>N/A</p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking_custom_component_services_using_remoting">使用遠端功能叫用自訂元件服務</a></p></td>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-the-customer-custom-service-using-remoting">快速入門：使用(AEM表單已棄用) AEM Forms Remoting叫用客戶自訂服務</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-the-customer-custom-service-using-remoting">快速入門：使用（AEM表單已棄用） AEM Forms Remoting叫用客戶自訂服務</a></p></td>
    <td><p>N/A</p></td>
    <td><p>N/A</p></td>
   </tr>
@@ -231,7 +231,7 @@ AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SO
 
 ## 快速入門：在Microsoft .NET專案中使用base64叫用服務 {#quick-start-invoking-a-service-using-base64-in-a-microsoft-net-project}
 
-下列C#程式碼範例使用Base64編碼從Microsoft .NET專案叫用名為`MyApplication/EncryptDocument`的處理序。 (請參閱[使用Base64編碼叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)。)
+下列C#程式碼範例使用Base64編碼從Microsoft .NET專案叫用名為`MyApplication/EncryptDocument`的處理序。 （請參閱[使用Base64編碼叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)。）
 
 以名為&#x200B;*Loan.pdf*&#x200B;的PDF檔案為基礎的不安全PDF檔案會傳遞至AEM Forms處理序。 程式會傳回密碼加密的PDF檔案，並儲存為名為&#x200B;*EncryptedPDF.pdf*&#x200B;的PDF檔案。
 
@@ -312,7 +312,7 @@ AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SO
 
 ## 快速入門：使用Java Proxy檔案和Base64編碼叫用服務 {#quick-start-invoking-a-service-using-java-proxy-files-and-base64-encoding}
 
-以下Java程式碼範例會使用以JAX-WS和Base64編碼建立的Java Proxy檔案，叫用名為`MyApplication/EncryptDocument`的處理序。 (請參閱[使用Base64編碼叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)。)
+以下Java程式碼範例會使用以JAX-WS和Base64編碼建立的Java Proxy檔案，叫用名為`MyApplication/EncryptDocument`的處理序。 （請參閱[使用Base64編碼叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)。）
 
 以名為&#x200B;*Loan.pdf*&#x200B;的PDF檔案為基礎的不安全PDF檔案會傳遞至AEM Forms處理序。 程式會傳回密碼加密的PDF檔案，並儲存為名為&#x200B;*EncryptedDocument.pdf*&#x200B;的PDF檔案。
 
@@ -396,9 +396,9 @@ AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SO
  
 ```
 
-## 快速入門：透過使用傳遞不安全的檔案來叫用短期流程(AEM表單已棄用) AEM Forms Remoting {#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting}
+## 快速入門：透過使用傳遞不安全的檔案來叫用短期流程（AEM表單已棄用） AEM Forms Remoting {#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting}
 
-下列Flex程式碼範例會叫用名為`MyApplication/EncryptDocument`的短期程式。 (請參閱[使用叫用AEM Forms (AEM Forms已棄用) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)。)
+下列Flex程式碼範例會叫用名為`MyApplication/EncryptDocument`的短期程式。 (請參閱[使用叫用AEM Forms （AEM Forms已棄用） AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)。)
 
 >[!NOTE]
 >
@@ -555,7 +555,7 @@ AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SO
 
 ## 快速入門：在.NET專案中使用DIME叫用服務 {#quick-start-invoking-a-service-using-dime-in-a-net-project}
 
-下列C#程式碼範例使用Dime從Microsoft .NET專案叫用名為`MyApplication/EncryptDocument`的處理序。 (請參閱[使用Base64編碼叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)。)
+下列C#程式碼範例使用Dime從Microsoft .NET專案叫用名為`MyApplication/EncryptDocument`的處理序。 （請參閱[使用Base64編碼叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)。）
 
 以名為&#x200B;*map.pdf*&#x200B;的PDF檔案為基礎的不安全PDF檔案，已使用DIME傳遞至AEM Forms處理序。 此程式會傳回密碼加密的PDF檔案，並儲存為名為&#x200B;*mapEncrypt.pdf*&#x200B;的PDF檔案。
 
@@ -660,7 +660,7 @@ AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SO
 
 ## 快速入門：在Java專案中使用DIME叫用服務 {#quick-start-invoking-a-service-using-dime-in-a-java-project}
 
-下列Java程式碼範例使用DIME叫用名為`MyApplication/EncryptDocument`的處理序。 (請參閱[使用DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime)叫用AEM Forms。)
+下列Java程式碼範例使用DIME叫用名為`MyApplication/EncryptDocument`的處理序。 （請參閱[使用DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime)叫用AEM Forms。）
 
 以名為&#x200B;*Loan.pdf*&#x200B;的PDF檔案為基礎的不安全PDF檔案，已使用DIME傳遞至AEM Forms處理序。 程式會傳回密碼加密的PDF檔案，並儲存為名為&#x200B;*EncryptLoan.pdf*&#x200B;的PDF檔案。
 
@@ -761,7 +761,7 @@ AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SO
 
 ## 快速入門：在Java專案中透過HTTP使用BLOB資料叫用服務 {#quick-start-invoking-a-service-using-blob-data-over-http-in-a-java-project}
 
-下列Java程式碼範例會使用HTTP上的資料叫用名為`MyApplication/EncryptDocument`的處理序。 (請參閱[透過HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http)使用BLOB資料叫用AEM Forms。)
+下列Java程式碼範例會使用HTTP上的資料叫用名為`MyApplication/EncryptDocument`的處理序。 （請參閱[透過HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http)使用BLOB資料叫用AEM Forms。）
 
 以名為&#x200B;*Loan.pdf*&#x200B;的PDF檔案為依據的不安全PDF檔案，是透過HTTP使用SOAP傳遞至AEM Forms程式。 PDF檔案位於下列URL： `https://'[server]:[port]'/FormsQS`。 程式會傳回密碼加密的PDF檔案，並儲存為名為&#x200B;*EncryptedDocument.pdf*&#x200B;的PDF檔案。
 
@@ -836,7 +836,7 @@ AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SO
 
 ## 快速入門：在.NET專案中透過HTTP使用BLOB資料叫用服務 {#quick-start-invoking-a-service-using-blob-data-over-http-in-a-net-project}
 
-下列C#程式碼範例會透過HTTP使用資料，從Microsoft .NET專案叫用名為`MyApplication/EncryptDocument`的處理序。 (請參閱[透過HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http)使用BLOB資料叫用AEM Forms。)
+下列C#程式碼範例會透過HTTP使用資料，從Microsoft .NET專案叫用名為`MyApplication/EncryptDocument`的處理序。 （請參閱[透過HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http)使用BLOB資料叫用AEM Forms。）
 
 以名為&#x200B;*Loan.pdf*&#x200B;的PDF檔案為依據的不安全PDF檔案，是透過HTTP使用BLOB傳遞至AEM Forms處理序。 程式會傳回密碼加密的PDF檔案，並儲存為名為&#x200B;*EncryptedPDF.pdf*&#x200B;的PDF檔案。
 
@@ -936,7 +936,7 @@ AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SO
 
 ## 快速入門：在.NET專案中使用MTOM叫用服務 {#quick-start-invoking-a-service-using-mtom-in-a-net-project}
 
-下列C#程式碼範例使用MTOM從Microsoft .NET專案叫用名為`MyApplication/EncryptDocument`的處理序。 (請參閱[使用MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)叫用AEM Forms。)
+下列C#程式碼範例使用MTOM從Microsoft .NET專案叫用名為`MyApplication/EncryptDocument`的處理序。 （請參閱[使用MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)叫用AEM Forms。）
 
 以名為&#x200B;*loan.pdf*&#x200B;的PDF檔案為基礎的不安全PDF檔案，已使用MTOM傳遞至AEM Forms處理序。 程式會傳回密碼加密的PDF檔案，並儲存為名為&#x200B;*EncryptedDocument.pdf*&#x200B;的PDF檔案。
 
@@ -1026,7 +1026,7 @@ AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SO
 
 ## 快速入門：在Java專案中使用SwaRef叫用服務 {#quick-start-invoking-a-service-using-swaref-in-a-java-project}
 
-下列Java程式碼範例從Java專案叫用名為`MyApplication/EncryptDocument`的處理序。 此Java專案使用以JAX-WS和SwaRef作為編碼型別建立的Proxy類別。 (請參閱[使用SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)叫用AEM Forms。)
+下列Java程式碼範例從Java專案叫用名為`MyApplication/EncryptDocument`的處理序。 此Java專案使用以JAX-WS和SwaRef作為編碼型別建立的Proxy類別。 （請參閱[使用SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)叫用AEM Forms。）
 
 以名為&#x200B;*Loan.pdf*&#x200B;的PDF檔案為依據的不安全PDF檔案，已使用SwaRef傳遞至AEM Forms處理序。 加密的PDF檔案會儲存為名為&#x200B;*EncryptedDocument.pdf*&#x200B;的PDF檔案。
 

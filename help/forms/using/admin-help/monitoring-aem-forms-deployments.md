@@ -11,16 +11,16 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: aa02139f-7e47-4979-9560-5d270c36080b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
 
 # 監控AEM表單部署 {#monitoring-aem-forms-deployments}
 
-您可以從系統層級和內部層級監控AEM表單部署。 您可以使用HP OpenView、IBM®Tivoli和CA UniCenter等專業管理工具，以及名為&#x200B;*JConsole*&#x200B;的協力廠商JMX監視器，專門監視Java™活動。 監控策略的實作可改善AEM表單部署的可用性、可靠性和效能。
+您可以從系統層級和內部層級監控AEM表單部署。 您可以使用HP OpenView、®Tivoli和CA UniCenter等專業管理工具，以及名為&#x200B;*JConsole*&#x200B;的協力廠商JMX監視器，專門監視Java™活動。 監控策略的實作可改善AEM表單部署的可用性、可靠性和效能。
 
 <!-- For more information about monitoring AEM forms deployments, see [A technical guide for monitoring AEM forms deployments](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf). This URL is 404. No suitable replacement URL was found after a search. Do not make this link live if it is dead! -->
 
@@ -146,7 +146,7 @@ AEM Forms提供兩個註冊的MBean，以提供導覽和統計資訊。 這些�
     -Djavax.management.builder.initial= -Dcom.sun.management.jmxremote
    ```
 
-1. 在/opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties檔案(或&lt;Your Websphere JRE>/ lib/management/management.properties)中新增或取消註解下列三行：
+1. 在/opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties檔案（或&lt;Your Websphere JRE>/ lib/management/management.properties）中新增或取消註解下列三行：
 
    ```shell
     com.sun.management.jmxremote.port=9999 //any port you like, but make sure you use this port when you connect

@@ -8,9 +8,9 @@ solution: Experience Manager, Experience Manager Forms
 hide: true
 hidefromtoc: true
 exl-id: 2bcd650f-c729-43b1-b7a7-9463a47ae25e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '805'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ JEE上的AEM Forms提供數個API來提交、處理和轉譯檔案。 有些API�
 
 -->
 
-以下是JEE計費API清單。 在OSGi[&#128279;](/help/forms/using/transaction-reports-billable-apis.md)上尋找AEM Forms的可記帳API清單。
+以下是JEE計費API清單。 在OSGi](/help/forms/using/transaction-reports-billable-apis.md)上尋找AEM Forms的[可記帳API清單。
 
 ## 可記帳檔案服務API {#billable-document-services-apis}
 
@@ -147,7 +147,7 @@ JEE上的AEM Forms提供數個API來提交、處理和轉譯檔案。 有些API�
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/tw/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">render</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">render</a></td>
    <td>Invokes the specified render method to generate a document of record using provided parameters.</td>
    <td>Documents Processed</td>
    <td> </td>
@@ -199,7 +199,8 @@ JEE上的AEM Forms提供數個API來提交、處理和轉譯檔案。 有些API�
  </tbody>
 </table>
 
-<!-- ### Forms Service {#forms-service}
+<!--
+### Forms Service {#forms-service}
 
 <table>
  <tbody>
@@ -210,13 +211,13 @@ JEE上的AEM Forms提供數個API來提交、處理和轉譯檔案。 有些API�
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/tw/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
    <td>Renders PDF Form from XDP templates. The XDP templates are created in Forms Designer.</td>
    <td>Documents Processed</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/tw/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td>
    <td>Extracts data from a PDF Form or XDP templates</td>
    <td>Documents Processed</td>
    <td> </td>
@@ -369,7 +370,8 @@ JEE上的AEM Forms提供數個API來提交、處理和轉譯檔案。 有些API�
 
 -->
 
-<!--### HTML5 Forms {#html-forms}
+<!--
+### HTML5 Forms {#html-forms}
 
 <table>
  <tbody>
@@ -390,7 +392,7 @@ JEE上的AEM Forms提供數個API來提交、處理和轉譯檔案。 有些API�
 
 -->
 
-### Forms {#form-set}
+### 表單 {#form-set}
 
 <table>
  <tbody>
@@ -442,7 +444,8 @@ JEE上的AEM Forms提供數個API來提交、處理和轉譯檔案。 有些API�
  </tbody>
 </table>
 
-<!-- ## Billable Interactive Communication and Form-centric AEM Workflows on OSGi APIs {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
+<!--
+## Billable Interactive Communication and Form-centric AEM Workflows on OSGi APIs {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
 
 Assign task and document services steps of Form-centric AEM Workflows on OSGi and all the renditions of interactive communication and are accounted as transactions. Previewing an interactive communication on the author instance and previewing on the publish instance using Agent UI are not accounted as transactions. If a workflow step accounts a transaction and the workflow fails to complete, the transaction count is not reversed.
 
@@ -480,7 +483,7 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/tw/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convert to PDF)</td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convert to PDF)</td>
    <td>Generates the PDF version of an interactive communication.</td>
    <td>Documents Rendered</td>
    <td>

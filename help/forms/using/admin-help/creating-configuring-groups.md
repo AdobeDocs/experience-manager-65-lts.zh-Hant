@@ -11,9 +11,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: e8824453-8891-40e0-9948-c0c0f0fdce62
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1590'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 有兩種不同型別的群組可供使用。 您可以手動建立群組，並將使用者和其他群組新增至群組。 您也可以建立動態群組，以自動包含符合指定規則集的所有使用者。
 
-如果使用者屬於許多群組（例如500個或更多）或群組巢狀結構較深（例如30個層級），回應時間可能會變慢。 如果您遇到此問題，可以設定AEM表單以從特定網域預先擷取資訊。 (請參閱[設定AEM表單以預先擷取網域資訊](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information)。)
+如果使用者屬於許多群組（例如500個或更多）或群組巢狀結構較深（例如30個層級），回應時間可能會變慢。 如果您遇到此問題，可以設定AEM表單以從特定網域預先擷取資訊。 （請參閱[設定AEM表單以預先擷取網域資訊](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information)。）
 
 ## 手動建立群組 {#create-a-group-manually}
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 使用下列兩種方法之一來建立動態群組：
 
-* 啟用根據電子郵件網域(例如@adobe.com)自動建立動態群組。 啟用此功能後，「使用者管理」會為AEM表單資料庫中的每個唯一電子郵件網域建立動態群組。 使用cron運算式來指定「使用者管理」在AEM表單資料庫中搜尋新電子郵件網域的頻率。 這些動態群組會新增至DefaultDom本機網域，並命名為「具有&#x200B;*`[email domain]`*&#x200B;郵件識別碼的所有使用者」。
+* 啟用根據電子郵件網域（例如@adobe.com）自動建立動態群組。 啟用此功能後，「使用者管理」會為AEM表單資料庫中的每個唯一電子郵件網域建立動態群組。 使用cron運算式來指定「使用者管理」在AEM表單資料庫中搜尋新電子郵件網域的頻率。 這些動態群組會新增至DefaultDom本機網域，並命名為「具有&#x200B;*`[email domain]`*&#x200B;郵件識別碼的所有使用者」。
 * 根據指定的條件建立動態群組，包括使用者的電子郵件網域、說明、正式名稱和網域名稱。 若要屬於動態群組，使用者必須符合所有指定的條件。 若要設定「或」條件，請建立兩個個別的動態群組，並將它們新增至本機群組。 例如，使用該方法建立屬於@adobe.com電子郵件網域或其正式名稱包含ou=adobe.com的使用者群組。 不過，使用者不一定必須同時符合兩個條件。
 
 動態群組僅包含使用者。 它不能包含其他群組。 但是，動態群組可以屬於父群組。

@@ -11,9 +11,9 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: 5d0ba475-06be-47fd-8ea2-9160c2d86b07
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1135'
 ht-degree: 1%
 
 ---
@@ -48,11 +48,11 @@ ht-degree: 1%
  </thead>
  <tbody>
   <tr>
-   <td><p>IBM® AIX® 7.2</p> </td>
-   <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">IBM® AIX®安全性優點</a></p> </td>
+   <td><p>® AIX® 7.2</p> </td>
+   <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">® AIX®安全性優點</a></p> </td>
   </tr>
   <tr>
-   <td><p>Microsoft® Windows Server® 2016 </p> </td>
+   <td><p>® Windows Server® 2016 </p> </td>
    <td><p><a href="https://cloudblogs.microsoft.com/windowsserver/2017/08/22/now-available-windows-server-2016-security-guide/">Windows Server 2016安全性指南</a></p> </td>
   </tr>
   <tr>
@@ -101,7 +101,7 @@ ht-degree: 1%
    <td><p>在<a href="https://docs.oracle.com/">https://docs.oracle.com/</a>搜尋瞭解WebLogic安全性。</p> </td>
   </tr>
   <tr>
-   <td><p>IBM® WebSphere®</p> </td>
+   <td><p>® WebSphere®</p> </td>
    <td><p><a href="https://www.ibm.com/developerworks/websphere/zones/was/security/" target="_blank">保護應用程式及其環境</a></p> </td>
   </tr>
   <tr>
@@ -131,11 +131,11 @@ ht-degree: 1%
  </thead>
  <tbody>
   <tr>
-   <td><p>IBM® DB2® 11.1</p> </td>
+   <td><p>® DB2® 11.1</p> </td>
    <td><p><a href="https://www-01.ibm.com/software/data/db2/library/">DB2®產品系列庫</a></p> </td>
   </tr>
   <tr>
-   <td><p>Microsoft® SQL Server 2016</p> </td>
+   <td><p>® SQL Server 2016</p> </td>
    <td>在Web上搜尋「SQL Server 2016：安全性」</td>
   </tr>
   <tr>
@@ -143,7 +143,7 @@ ht-degree: 1%
    <td><p><a href="https://dev.mysql.com/doc/refman/5.0/en/security.html">MySQL 5.0一般安全性問題</a></p> <p><a href="https://dev.mysql.com/doc/refman/5.1/en/security.html">MySQL 5.1一般安全性問題</a></p> </td>
   </tr>
   <tr>
-   <td><p>Oracle® 12c</p> </td>
+   <td><p>® 12c</p> </td>
    <td><p>請參閱<a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle 12g檔案</a>中的「安全性」一章</p> </td>
   </tr>
  </tbody>
@@ -216,7 +216,7 @@ JBoss® Application Server使用8080作為預設HTTP連線埠。 JBoss®也有�
 
    叢集安裝： [JBoss® root]/domain/configuration/domain.xml
 
-1. 將&#x200B;**&lt;socket-binding>**&#x200B;標籤中&#x200B;**連線埠**&#x200B;屬性的值變更為自訂連線埠號碼。 例如，下列使用連線埠8090：
+1. 將&#x200B;**&lt;socket-binding>**&#x200B;標籤中的&#x200B;**連線埠**&#x200B;屬性值變更為自訂連線埠號碼。 例如，下列使用連線埠8090：
 
    &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 
@@ -249,7 +249,7 @@ lc_[資料庫].xml檔案不應包含純文字格式的密碼。 請洽詢您的�
 >
 >JEE JBoss®上的AEM Forms全金安裝程式會加密資料庫密碼。
 
-IBM® WebSphere® Application Server和Oracle WebLogic Server預設可能會加密資料來源密碼。 不過，您應透過應用程式伺服器檔案確認，以確保確實發生這種情況。
+® WebSphere® Application Server和Oracle WebLogic Server預設可能會加密資料來源密碼。 不過，您應透過應用程式伺服器檔案確認，以確保確實發生這種情況。
 
 ### 保護儲存在信任存放區中的私密金鑰 {#protecting-the-private-key-stored-in-trust-store}
 

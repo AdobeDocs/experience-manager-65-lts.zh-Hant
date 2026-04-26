@@ -11,9 +11,9 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 4a911fe6-2939-4c8c-b486-7575c759857d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '9036'
+source-wordcount: '9089'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 **關於存放庫服務**
 
-存放庫服務提供給AEM Forms的資源儲存和管理服務。 當開發人員建立&#x200B;*AEM Forms*&#x200B;應用程式時，他們可以在存放庫中部署資產，而不是在檔案系統中。 資產可包括任何型別的附屬資料，包括XML表單、PDF forms (包括Acrobat表單)、表單片段、影像、設定檔、原則、SWF檔案、DDX檔案、XML結構描述、WSDL檔案和測試資料。
+存放庫服務提供給AEM Forms的資源儲存和管理服務。 當開發人員建立&#x200B;*AEM Forms*&#x200B;應用程式時，他們可以在存放庫中部署資產，而不是在檔案系統中。 資產可包括任何型別的附屬資料，包括XML表單、PDF forms （包括Acrobat表單）、表單片段、影像、設定檔、原則、SWF檔案、DDX檔案、XML結構描述、WSDL檔案和測試資料。
 
 例如，請考量下列名為&#x200B;*Applications/FormsApplication*&#x200B;的Forms應用程式：
 
@@ -48,7 +48,7 @@ AEM Forms存放庫中的資源路徑為：
 
 >[!NOTE]
 >
->您可以使用網頁瀏覽器瀏覽AEM Forms存放庫。 若要瀏覽存放庫，請在網頁瀏覽器`https://[server name]:[server port]/repository`中輸入下列URL。 您可以使用網頁瀏覽器來驗證與「使用AEM Forms存放庫」區段關聯的快速入門結果。 例如，如果您將內容新增至AEM Forms存放庫，即可在網頁瀏覽器中檢視內容。 (請參閱[快速入門(SOAP模式)：使用Java API寫入資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)。)
+>您可以使用網頁瀏覽器瀏覽AEM Forms存放庫。 若要瀏覽存放庫，請在網頁瀏覽器`https://[server name]:[server port]/repository`中輸入下列URL。 您可以使用網頁瀏覽器來驗證與「使用AEM Forms存放庫」區段關聯的快速入門結果。 例如，如果您將內容新增至AEM Forms存放庫，即可在網頁瀏覽器中檢視內容。 (請參閱[快速入門（SOAP模式）：使用Java API寫入資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)。)
 
 存放庫API提供數個操作，可用於儲存和擷取存放庫中的資訊。 例如，當處理應用程式時需要資源時，您可以取得資源清單或擷取儲存於儲存庫中的特定資源。
 
@@ -165,7 +165,7 @@ AEM Forms存放庫中的資源路徑為：
 
 [建立資料夾](aem-forms-repository.md#creating-folders)
 
-[快速入門(SOAP模式)：使用Java API建立資料夾](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API建立資料夾](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -311,7 +311,7 @@ AEM Forms存放庫中的資源路徑為：
 
 [寫入資源](aem-forms-repository.md#writing-resources)
 
-[快速入門(SOAP模式)：使用Java API撰寫資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API撰寫資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -437,7 +437,7 @@ AEM Forms存放庫中的資源路徑為：
 
 [列出資源](aem-forms-repository.md#listing-resources)。
 
-[快速入門(SOAP模式)：使用Java API列出資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API列出資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -552,7 +552,7 @@ AEM Forms存放庫中的資源路徑為：
 
 [正在讀取資源](aem-forms-repository.md#reading-resources)
 
-[快速入門(SOAP模式)：使用Java API讀取資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-reading-a-resource-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API讀取資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-reading-a-resource-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -668,7 +668,7 @@ AEM Forms存放庫中的資源路徑為：
 
 [更新資源](aem-forms-repository.md#updating-resources)
 
-[快速入門(SOAP模式)：使用Java API更新資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-updating-a-resource-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API更新資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-updating-a-resource-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -848,7 +848,7 @@ AEM Forms存放庫中的資源路徑為：
 
 [搜尋資源](aem-forms-repository.md#searching-for-resources)
 
-[快速入門(SOAP模式)：使用Java API搜尋資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API搜尋資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -944,7 +944,7 @@ AEM Forms存放庫中的資源路徑為：
 
 [建立資源關係](aem-forms-repository.md#creating-resource-relationships)
 
-[快速入門(SOAP模式)：使用Java API建立資源之間的關係](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API建立資源之間的關係](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1096,7 +1096,7 @@ AEM Forms存放庫中的資源路徑為：
 
 [鎖定資源](aem-forms-repository.md#locking-resources)
 
-[快速入門(SOAP模式)：使用Java API鎖定資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API鎖定資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1155,7 +1155,7 @@ AEM Forms存放庫中的資源路徑為：
 
 >[!NOTE]
 >
->在搭配ECM存放庫(EMC Documentum Content Server和IBM FileNet P8 Content Manager)使用`com.adobe.repository.bindings.dsc.client.ResourceRepositoryClient.deleteResources()`方法時，如果刪除其中一個指定資源失敗，則不會復原交易，這表示無法刪除已刪除的檔案。
+>在搭配ECM存放庫（EMC Documentum Content Server和IBM FileNet P8 Content Manager）使用`com.adobe.repository.bindings.dsc.client.ResourceRepositoryClient.deleteResources()`方法時，如果刪除其中一個指定資源失敗，則不會復原交易，這表示無法刪除已刪除的檔案。
 
 >[!NOTE]
 >
@@ -1222,7 +1222,7 @@ AEM Forms存放庫中的資源路徑為：
 
 [刪除資源](aem-forms-repository.md#deleting-resources)
 
-[快速入門(SOAP模式)：使用Java API搜尋資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API搜尋資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

@@ -5,9 +5,9 @@ role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: be7c294c-149b-4825-8376-573f9e2987e2
-source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1896'
+source-wordcount: '1980'
 ht-degree: 19%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 19%
 
 * [與Adobe Developer Console](#integrate-adobe-io)整合。
 * [訓練智慧內容服務](#training-the-smart-content-service)。
-* 安裝最新的[[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=zh-Hant)。
+* 安裝最新的[[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)。
 
 >[!IMPORTANT]
 >
@@ -49,30 +49,30 @@ ht-degree: 19%
 
 ### 建立Adobe Developer Console整合 {#create-adobe-io-integration}
 
-若要使用Smart Content Service API，請在Adobe Developer Console中建立整合，以取得[!UICONTROL 中雲端設定的]Assets智慧標籤服務設定[!UICONTROL 的]API金鑰[!UICONTROL &#x200B; (產生於Adobe Developer Console整合的]使用者端識別碼[!UICONTROL 欄位中)、]組織識別碼[!UICONTROL 以及]使用者端密碼[!DNL Experience Manager]。
+若要使用Smart Content Service API，請在Adobe Developer Console中建立整合，以取得[!DNL Experience Manager]中雲端設定的[!UICONTROL Assets智慧標籤服務設定]的[!UICONTROL API金鑰] （產生於Adobe Developer Console整合的[!UICONTROL 使用者端識別碼]欄位中）、[!UICONTROL 組織識別碼]以及[!UICONTROL 使用者端密碼]。
 
 1. 存取瀏覽器中的[https://developer.adobe.com](https://developer.adobe.com/)。 選取適當的帳戶，並確認關聯的組織角色是系統&#x200B;**管理員**。
 
-1. 以任何所需的名稱建立專案。按一下&#x200B;**[!UICONTROL 「新增 API」]**。
+1. 以任何所需的名稱建立專案。 按一下&#x200B;**[!UICONTROL 「新增 API」]**。
 
-1. 在&#x200B;**[!UICONTROL 新增 API]** 頁面上選取&#x200B;**[!UICONTROL 「Experience Cloud」]**，然後選取&#x200B;**[!UICONTROL 「智慧內容」]**。按一下&#x200B;**[!UICONTROL 下一步]**。
+1. 在&#x200B;**[!UICONTROL 新增 API]** 頁面上選取&#x200B;**[!UICONTROL 「Experience Cloud」]**，然後選取&#x200B;**[!UICONTROL 「智慧內容」]**。 按一下&#x200B;**[!UICONTROL 下一步]**。
 
-1. 選取&#x200B;**[!UICONTROL OAuth伺服器對伺服器]**。 按一下&#x200B;**[!UICONTROL 下一步]**。
+1. 選取&#x200B;**[!UICONTROL OAuth伺服器對伺服器]**。 按一下「**[!UICONTROL 下一步]**」。
 如需如何執行此設定的詳細資訊，請參閱Developer Console檔案（視您的需求而定）：
 
    * 概觀：
       * [伺服器對伺服器驗證](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
 
    * 建立新的 OAuth 認證：
-      * [OAuth 伺服器對伺服器認證實作指南](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
+      * [OAuth伺服器對伺服器認證實作指南](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
    * 將現有 JWT 認證移轉到 OAuth 認證：
-      * [從服務帳戶 (JWT) 認證移轉至 OAuth 伺服器對伺服器認證](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
+      * [從服務帳戶(JWT)認證移轉至OAuth伺服器對伺服器認證](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
 
 
-1. 在&#x200B;**[!UICONTROL 選取產品設定檔]**&#x200B;頁面中，選取&#x200B;**[!UICONTROL 智慧內容服務]**。 按一下&#x200B;**[!UICONTROL 儲存設定的API]**。
+1. 在&#x200B;**[!UICONTROL 選取產品設定檔]**&#x200B;頁面中，選取&#x200B;**[!UICONTROL 智慧內容服務]**。 按一下&#x200B;**[!UICONTROL 「儲存已設定的 API」]**。
 
-   此時會出現一個頁面，顯示更多關於設定的資訊。請保持此頁面開啟，以複製這些值，並將其新增至[!UICONTROL 中雲端設定的]Assets智慧標籤服務設定[!DNL Experience Manager]，以設定智慧標籤。
+   此時會出現一個頁面，顯示更多關於設定的資訊。 請保持此頁面開啟，以複製這些值，並將其新增至[!DNL Experience Manager]中雲端設定的[!UICONTROL Assets智慧標籤服務設定]，以設定智慧標籤。
 
    ![Developer Console 的 OAuth 認證](assets/ims-configuration-developer-console.png)
 
@@ -118,7 +118,7 @@ ht-degree: 19%
    | -------- | ---------------------------- |
    | 標題 | 新增設定IMS帳戶的標題。 |
    | 相關的 Adobe IMS 設定 | 從下拉式清單中選擇組態。 |
-   | 服務 URL | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`。例如 `https://smartcontent.adobe.io/apac`。您可以將`na`、`emea`或`apac`指定為代管Experience Manager作者執行個體的地區。 |
+   | 服務 URL | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`. 例如 `https://smartcontent.adobe.io/apac`。 您可以將`na`、`emea`或`apac`指定為代管Experience Manager作者執行個體的地區。 |
 
    >[!NOTE]
    >
@@ -131,18 +131,19 @@ ht-degree: 19%
 
 完成設定後，您可以使用JMX MBean來驗證設定。 若要進行驗證，請按照以下步驟操作。
 
-1. 在[!DNL Experience Manager]存取您的`https://[aem_server]:[port]`伺服器。
+1. 在`https://[aem_server]:[port]`存取您的[!DNL Experience Manager]伺服器。
 
 1. 移至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 作業]** > **[!UICONTROL 網頁主控台]**&#x200B;以開啟OSGi主控台。 按一下&#x200B;**[!UICONTROL 主要] > [!UICONTROL JMX]**。
 
 <!--
-1. Click `com.day.cq.dam.similaritysearch.internal.impl`. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.-->
+1. Click `com.day.cq.dam.similaritysearch.internal.impl`. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.
+-->
 
 1. 按一下「`com.day.cq.dam.similaritysearch.internal.impl (SCS)`」。
 
    ![Mbean視窗](assets/mbean.png)
 
-1. 按一下 `validateConfigs()`。在&#x200B;**[!UICONTROL 驗證組態]**&#x200B;對話方塊中，按一下&#x200B;**[!UICONTROL 叫用]**。
+1. 按一下 `validateConfigs()`。 在&#x200B;**[!UICONTROL 驗證組態]**&#x200B;對話方塊中，按一下&#x200B;**[!UICONTROL 叫用]**。
 
 驗證結果會顯示在相同的對話方塊中。
 
@@ -154,7 +155,7 @@ ht-degree: 19%
 
 1. 按一下工具列中的&#x200B;**[!UICONTROL 「編輯」]**。
 
-1. 展開「側面板」以顯示步驟。拖 **[!UICONTROL 曳DAM Workflow]**  (DAM工作流程) 區段中可用的智慧型標籤資產步驟，並將其置於&#x200B;**[!UICONTROL 「處理縮 圖」]**&#x200B;步驟之後 。
+1. 展開「側面板」以顯示步驟。 拖 **[!UICONTROL 曳DAM Workflow]**  (DAM工作流程) 區段中可用的智慧型標籤資產步驟，並將其置於&#x200B;**[!UICONTROL 「處理縮 圖」]**&#x200B;步驟之後 。
 
    ![在「DAM 更新資產」工作流程中，在處理縮圖步驟之後新增智慧標記資產步驟](assets/smart-tag-in-dam-update-asset-workflow.png)
 
@@ -162,7 +163,7 @@ ht-degree: 19%
 
    ![設定DAM更新資產工作流程並新增智慧標籤步驟](assets/smart-tag-step-properties-workflow1.png)
 
-1. 在「參 **[!UICONTROL 數]** 」頁籤中，如果希望工作流完成，即使自動標籤步驟失敗，請選擇「忽略錯誤 **&#x200B;**&#x200B;」。
+1. 在「參 **[!UICONTROL 數]** 」頁籤中，如果希望工作流完成，即使自動標籤步驟失敗，請選擇「忽略錯誤 **** 」。
 
    此外，若無論是否對資料夾啟用智慧標籤，都要在資產上傳時標籤資產，請選取&#x200B;**[!UICONTROL 忽略智慧標籤旗標]**。
 
@@ -188,7 +189,7 @@ ht-degree: 19%
 
 為達到最佳效果，訓練集中的影像需符合下列准則：
 
-**&#x200B;**&#x200B;數量和大小：每個標籤至少30個影像。長邊至少500像素。
+**** 數量和大小：每個標籤至少30個影像。 長邊至少500像素。
 
 **Coherence**：用於特定標籤的影像在視覺上類似。
 
@@ -208,7 +209,7 @@ ht-degree: 19%
 
 ![說明性影像，以示範訓練准則](/help/assets/assets/do-not-localize/distraction.png)
 
-**&#x200B;**&#x200B;完整性：如果影像符合多個標籤的資格，請先新增所有適用的標籤，再加入影像以進行訓練。例如，對於標籤（例如`raincoat`和`model-side-view`），請先在符合資格的資產上新增兩個標籤，然後再加入以進行訓練。
+**** 完整性：如果影像符合多個標籤的資格，請先新增所有適用的標籤，再加入影像以進行訓練。 例如，對於標籤（例如`raincoat`和`model-side-view`），請先在符合資格的資產上新增兩個標籤，然後再加入以進行訓練。
 
 ![說明性影像，以示範訓練准則](/help/assets/assets/do-not-localize/completeness.png)
 
@@ -246,15 +247,15 @@ ht-degree: 19%
 1. 在[!DNL Experience Manager]介面中，移至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 報表]**。
 1. 在&#x200B;**[!UICONTROL 資產報表]**&#x200B;頁面中，按一下&#x200B;**[!UICONTROL 建立]**。
 1. 選取「**[!UICONTROL 智慧標籤培訓]**」報表，然後從工具列按一下「**[!UICONTROL 下一步]**」。
-1. 指定報表的標題和說明。在「 **[!UICONTROL 排程報表]**」下，保 **[!UICONTROL 留「現在]** 」選項。如果您想要排程報表以供稍後使用，請選 **[!UICONTROL 取]** 「稍後」並指定日期和時間。然後，從工具列按一下&#x200B;**[!UICONTROL 建立]**。
-1. 在「資 **[!UICONTROL 產報表]** 」頁面中，選取您產生的報表。若要檢視報表，請按一下工具列中的&#x200B;**[!UICONTROL 檢視]**。
+1. 指定報表的標題和說明。 在「 **[!UICONTROL 排程報表]**」下，保 **[!UICONTROL 留「現在]** 」選項。 如果您想要排程報表以供稍後使用，請選 **[!UICONTROL 取]** 「稍後」並指定日期和時間。 然後，從工具列按一下&#x200B;**[!UICONTROL 建立]**。
+1. 在「資 **[!UICONTROL 產報表]** 」頁面中，選取您產生的報表。 若要檢視報表，請按一下工具列中的&#x200B;**[!UICONTROL 檢視]**。
 1. 檢閱報告的詳細資訊。
 
-   報表會顯示您所訓練之標籤的訓練狀態。「培訓狀態」欄 **[!UICONTROL 中的綠色]** ，表示智慧型內容服務已接受標籤的培訓。黃色表示服務未針對特定標籤進行完整訓練。在這種情況下，請使用特定標籤新增更多影像，並執行培訓工作流程，以完全在標籤上訓練服務。
+   報表會顯示您所訓練之標籤的訓練狀態。 「培訓狀態」欄 **[!UICONTROL 中的綠色]** ，表示智慧型內容服務已接受標籤的培訓。 黃色表示服務未針對特定標籤進行完整訓練。 在這種情況下，請使用特定標籤新增更多影像，並執行培訓工作流程，以完全在標籤上訓練服務。
 
    如果您在此報告中未看到您的標籤，請再次執行這些標籤的培訓工作流程。
 
-1. 若要下載報表，請從清單中選取報表，然後按一下工具列中的[下載]。 **&#x200B;**&#x200B;報表會下載為Microsoft Excel試算表。
+1. 若要下載報表，請從清單中選取報表，然後按一下工具列中的[下載]。 ****&#x200B;報表會下載為Microsoft Excel試算表。
 
 ## 限制 {#limitations}
 
@@ -270,4 +271,4 @@ ht-degree: 19%
 >
 >* [智慧標籤概觀及訓練方式](enhanced-smart-tags.md)
 >* [疑難排解OAuth憑證的智慧標籤](config-oauth.md)
->* [有關智慧標籤的教學影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=zh-Hant)
+>* [有關智慧標籤的教學影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

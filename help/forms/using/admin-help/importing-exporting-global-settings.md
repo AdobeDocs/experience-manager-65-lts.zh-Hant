@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f5b45667-87df-4069-8f08-2b6daf4bad1e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1219'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ For additional information on JGroups and Workspace, see [JGroups and AEM forms 
 
 **server_debugLevel：**&#x200B;請勿變更此設定。
 
-**client_pollingInterval：**&#x200B;設定(JEE上已棄用的AEM表單) Flex Workspace上使用的輪詢間隔（以秒為單位），以偵測新的和修改的工作。 預設值為3秒。 這在AEM Forms Workspace中無法運作。
+**client_pollingInterval：**&#x200B;設定（JEE上已棄用的AEM表單） Flex Workspace上使用的輪詢間隔（以秒為單位），以偵測新的和修改的工作。 預設值為3秒。 這在AEM Forms Workspace中無法運作。
 
 **client_systemContext_name：**&#x200B;指定要在AEM Forms Workspace中工作附件的「新增者」欄位（在「附件」索引標籤中）中顯示的自訂名稱（例如「公民」）。
 
@@ -146,4 +146,4 @@ For additional information on JGroups and Workspace, see [JGroups and AEM forms 
 >
 >對於示範應用程式，預設顯示名稱為&#x200B;**公民**。 對於您建立的自訂應用程式，預設顯示名稱為&#x200B;**系統內容帳戶**。
 >
->**client_idleTimeout：**&#x200B;當使用者在特定時間內保持非使用中時，AEM Forms Workspace工作階段就會過期。 若要啟用此功能，請將專案新增至全域設定&lt;client_idleTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout>。 您可以指定值0來停用閒置逾時。 時間長度以秒為單位指定。
+>**client_idleTimeout：**&#x200B;當使用者在特定時間內保持非使用中時，AEM Forms Workspace工作階段就會過期。 若要啟用此功能，請在全域設定中新增專案&lt;client_idleTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout>。 您可以指定值0來停用閒置逾時。 時間長度以秒為單位指定。

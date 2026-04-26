@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c499432d-6aa4-481f-821d-bd2f9b7a911d
-source-git-commit: 90f1b2ca07bec5a3be6c312a5f048abaa088df16
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '532'
 ht-degree: 1%
 
 ---
@@ -44,13 +44,13 @@ ht-degree: 1%
 
 * 透過Felix詳細目錄主控台&#x200B;**：**
 
-1. 瀏覽至&#x200B;*https://serveraddress:serverport/system/console/configMgr*&#x200B;以移至AEM Web Console
+1. 瀏覽至&#x200B;*https://serveraddress:serverport/system/console/configMgr*，前往AEM Web Console
 1. 選取&#x200B;**狀態 — 模式偵測器**，如下圖所示：
 
    ![熒幕擷圖–2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **透過互動式文字或一般JSON介面**
-* **透過反應式JSON行介面，**&#x200B;可在每行產生個別的JSON檔案。
+* **透過反應式JSON行介面，**可在每行產生個別的JSON檔案。
 
 以下詳細說明了這兩種方法：
 
@@ -111,7 +111,7 @@ curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-det
     "code": "ECU",
     "type": "extraneous.content.usage",
     "detective": "ContentAccessDetector",
-    "moreInfo": "https://www.adobe.com/go/aem6_ECU_tw"
+    "moreInfo": "https://www.adobe.com/go/aem6_ECU"
   },
   "item": {
     "id": "a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f",
@@ -215,7 +215,7 @@ curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-det
 * Sling資源型別和超級型別（具有搜尋路徑內容覆蓋圖）使用量
 * Oak索引的定義（相容性）
 * VLT封裝（使用過量）
-* rep：User節點相容性（在OAuth設定的內容中）
+* rep:User節點相容性（在OAuth設定的內容中）
 
 >[!NOTE]
 >

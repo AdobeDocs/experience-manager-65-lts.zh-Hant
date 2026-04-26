@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 3fe5421e-e97e-43c4-b34b-b84bf189a779
-source-git-commit: 425b3fae2658d78b0885f5034ff4c61da625d9d4
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1205'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,10 @@ AEM升級程式需要謹慎處理規劃、分析和執行階段，並為每個�
 >
 >所有支援的6.5 Service Pack都能升級至AEM 6.5 LTS。
 
-請務必確保您執行的是支援的作業系統、Java™執行階段、httpd和Dispatcher版本。 如需詳細資訊，請參閱AEM 6.5 LTS [的](/help/sites-deploying/technical-requirements.md)技術需求。 升級這些元件必須在升級計畫中考量，並應於升級AEM前進行。
+請務必確保您執行的是支援的作業系統、Java™執行階段、httpd和Dispatcher版本。 如需詳細資訊，請參閱AEM 6.5 LTS ](/help/sites-deploying/technical-requirements.md)的[技術需求。 升級這些元件必須在升級計畫中考量，並應於升級AEM前進行。
 
-<!-- Alexandru: drafting for now
+<!--
+Alexandru: drafting for now
 
 ## Upgrade Scope and Requirements {#upgrade-scope-requirements}
 
@@ -89,13 +90,15 @@ Below you will find a list of areas that are impacted in a typical AEM Upgrade p
  </tbody>
 </table>
 
-It is important to ensure that you are running a supported operating system, Java&trade; runtime, httpd, and Dispatcher version. For more information, see the [AEM 6.5 Technical Requirements page](/help/sites-deploying/technical-requirements.md). Upgrading these components must be accounted for in your project plan and should take place before upgrading AEM. -->
+It is important to ensure that you are running a supported operating system, Java&trade; runtime, httpd, and Dispatcher version. For more information, see the [AEM 6.5 Technical Requirements page](/help/sites-deploying/technical-requirements.md). Upgrading these components must be accounted for in your project plan and should take place before upgrading AEM.
+-->
 
 ## 升級階段 {#upgrade-phases}
 
 規劃和執行AEM升級需要做許多工作。 為了釐清此流程的不同工作，Adobe已將規劃和執行作業劃分為不同的階段。 在以下各節中，每個階段都會產生一個交付專案，通常用於升級的未來階段。
 
-<!-- Alexandru:drafting for now
+<!--
+Alexandru:drafting for now
 
 ### Planning for Author Training {#planning-for-author-training}
 
@@ -103,7 +106,8 @@ With any new release, there are potential changes to the UI and user workflows t
 
 ![unu_cropped](assets/unu_cropped.png)
 
-New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/release-notes/release-notes.md). Make sure to note any changes to UIs or product features that are commonly used in your organization. As you look through the new features, also take note of any that can be of value to your organization. After looking through what has changed in AEM 6.5, develop a training plan for your authors. This could involve using freely available resources like the help feature videos or formal training offered through [Adobe Digital Learning Services](https://learning.adobe.com/). -->
+New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/release-notes/release-notes.md). Make sure to note any changes to UIs or product features that are commonly used in your organization. As you look through the new features, also take note of any that can be of value to your organization. After looking through what has changed in AEM 6.5, develop a training plan for your authors. This could involve using freely available resources like the help feature videos or formal training offered through [Adobe Digital Learning Services](https://learning.adobe.com/).
+-->
 
 ### 建立測試計畫 {#creating-a-test-plan}
 
@@ -115,15 +119,17 @@ New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/rel
 
 由於Adobe客戶在其AEM環境中套用的自訂專案和性質多種多樣，因此請務必花一些時間預先判斷升級時應期望的整體工作量等級。 適用於AEM 6.5 LTS的[AEM Analyzer](/help/sites-deploying/aem-analyzer.md)可協助您評估升級的複雜性。
 
-適用於AEM 6.5 LTS[的](/help/sites-deploying/pattern-detector.md)AEM Analyzer應可讓您在升級期間，針對大多數情況提供相當準確的估計值。 不過，若是較複雜的自訂與部署有不相容的變更，您可以根據[執行就地升級](/help/sites-deploying/in-place-upgrade.md)中的指示，將開發執行個體升級至AEM 6.5 LTS。 完成後，請在此環境中執行一些高階煙霧測試。 本練習的目標不是要徹底完成測試案例詳細目錄並產生正式的缺陷詳細目錄，而是要提供升級AEM 6.5 LTS相容性程式碼所需的工作量粗略估計。 結合[AEM Analyzer](/help/sites-deploying/aem-analyzer.md)和上一節中決定的架構變更時，可以為專案管理團隊提供粗略的估計，以計畫升級。
+適用於AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md)的[AEM Analyzer應可讓您在升級期間，針對大多數情況提供相當準確的估計值。 不過，若是較複雜的自訂與部署有不相容的變更，您可以根據[執行就地升級](/help/sites-deploying/in-place-upgrade.md)中的指示，將開發執行個體升級至AEM 6.5 LTS。 完成後，請在此環境中執行一些高階煙霧測試。 本練習的目標不是要徹底完成測試案例詳細目錄並產生正式的缺陷詳細目錄，而是要提供升級AEM 6.5 LTS相容性程式碼所需的工作量粗略估計。 結合[AEM Analyzer](/help/sites-deploying/aem-analyzer.md)和上一節中決定的架構變更時，可以為專案管理團隊提供粗略的估計，以計畫升級。
 
 ### 建立升級和回覆Runbook {#building-the-upgrade-and-rollback-runbook}
 
 雖然Adobe已記錄升級AEM執行個體的程式，但每個客戶的網路配置、部署架構和自訂都需要微調和量身打造此方法。 因此，Adobe鼓勵您檢閱所有提供的檔案，並用於通知升級特定的Runbook，其中會概述您將在環境中遵循的特定升級和復原程式。
 
-<!--Alexandru:drafting for now
+<!--
+Alexandru:drafting for now
 
-![runbook-diagram](assets/runbook-diagram.png) -->
+![runbook-diagram](assets/runbook-diagram.png)
+-->
 
 Adobe已在[升級程式](/help/sites-deploying/upgrade-procedure.md)中提供升級和復原程式，以及在執行[就地升級](/help/sites-deploying/in-place-upgrade.md)中套用升級的逐步指示。 您應該檢閱這些指示，並搭配系統架構、自訂和停機時間容許度加以考慮，以決定升級期間要執行的適當切換和復原程式。 在草擬您的自訂Runbook時，應包含架構或伺服器大小的任何變更。
 
@@ -131,9 +137,11 @@ Adobe已在[升級程式](/help/sites-deploying/upgrade-procedure.md)中提供�
 
 先前練習的輸出可用於建立升級計畫，涵蓋測試或開發工作的預期時間表以及實際升級執行。
 
-<!--Alexandru: drafting for now
+<!--
+Alexandru: drafting for now
 
-![develop-project-plan](assets/develop-project-plan.png) -->
+![develop-project-plan](assets/develop-project-plan.png)
+-->
 
 完整的專案計畫應包括：
 
@@ -150,9 +158,11 @@ Adobe已在[升級程式](/help/sites-deploying/upgrade-procedure.md)中提供�
 
 Adobe已提供[升級程式碼和自訂](/help/sites-deploying/upgrading-code-and-customizations.md)以與AEM 6.5 LTS相容的程式。 在執行此反複處理程式時，應視需要變更Runbook。
 
-<!--Alexandru: drafting for now
+<!--
+Alexandru: drafting for now
 
-![patru_cropped](assets/patru_cropped.png) -->
+![patru_cropped](assets/patru_cropped.png)
+-->
 
 開發和測試過程通常是反複的過程。 發現需要調整升級流程的問題時，請務必將其新增到您的自訂升級Runbook。 在反複測試和修正之後，程式碼庫應該會經過完整驗證，並準備好部署到中繼環境。
 
@@ -160,9 +170,11 @@ Adobe已提供[升級程式碼和自訂](/help/sites-deploying/upgrading-code-an
 
 Adobe建議在程式碼基底獲得組織的QA團隊認證後，進行最後一輪測試。 這輪測試將需要在中繼環境中驗證您的Runbook，然後進行多輪使用者接受、效能和安全性測試。
 
-<!--Alexandru: drafting for now
+<!--
+Alexandru: drafting for now
 
-![cinci_cropped](assets/cinci_cropped.png) -->
+![cinci_cropped](assets/cinci_cropped.png)
+-->
 
 此步驟非常重要，因為這是您唯一能夠針對生產環境驗證Runbook中的步驟的時間。 升級環境後，請務必讓使用者有時間登入並完成在日常活動中使用系統時所做的活動。 在上線之前，找出並修正這些區域的問題，可協助避免代價高昂的生產中斷。
 

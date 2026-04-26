@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 2f34b48a-0b95-4994-ac4f-616620a5b211
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1523'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 >
 >和AEM表單實作的任何其他方面一樣，您的備份與復原策略必須在開發或中繼環境中開發及測試，之後才用於生產環境，以確保整個解決方案如預期般運作且不會遺失資料。
 
-Adobe Experience Manager (AEM)是AEM表單不可或缺的一部分。 因此，您需要備份AEM以及與AEM表單同步備份，因為通訊管理解決方案和服務（例如表單管理員）都是以AEM表單的AEM部分中所儲存的資料為基礎。為了防止任何資料遺失，AEM表單特定資料必須以確保GDS和AEM （儲存庫）與資料庫參考相互關聯的方式進行備份。資料庫、GDS、AEM和內容儲存根目錄必須還原到與原始檔案具有相同DNS名稱的電腦。
+Adobe Experience Manager (AEM)是AEM表單不可或缺的一部分。 因此，您需要備份AEM以及與AEM表單同步備份，因為通訊管理解決方案和服務（例如表單管理員）都以AEM表單的AEM部分中儲存的資料為基礎。為避免資料遺失，必須備份AEM表單特定資料，以確保GDS和AEM （存放庫）與資料庫參考關聯。資料庫、GDS、AEM和內容儲存根目錄必須還原至與原始檔案具有相同DNS名稱的電腦。
 
 ## 備份型別 {#types-of-backups}
 
@@ -83,13 +83,13 @@ AEM Forms備份策略包含兩種型別的備份：
 1. 以維護模式啟動系統。
 1. 請務必在維護模式下將表單管理員與AEM表單同步：
 
-   1. 移至https://&lt;*伺服器*>：&lt;*連線埠*>/lc/fm並使用管理員/密碼認證登入。
+   1. 前往https://&lt;*server*>：&lt;*port*>/lc/fm並使用管理員/密碼憑證登入。
    1. 按一下右上角的使用者名稱（此案例中為「超級管理員」）。
    1. 按一下&#x200B;**管理選項**。
    1. 按一下&#x200B;**開始**，從存放庫同步資產。
 
-1. 在叢集環境中，主要節點(就AEM而言)應在次要節點之前。
-1. 在驗證系統的正常作業之前，請確定沒有從內部或外部來源(例如Web、SOAP或EJB程式啟動器)啟動任何程式。
+1. 在叢集環境中，主要節點（就AEM而言）應在次要節點之前。
+1. 在驗證系統的正常作業之前，請確定沒有從內部或外部來源（例如Web、SOAP或EJB程式啟動器）啟動任何程式。
 
 如果主要AEM表單資料庫已移動或變更，請檢閱與您的應用程式伺服器相關的安裝指南，以取得更新AEM表單資料來源IDP_DS和EDC_DS的資料庫連線資訊的相關資訊。
 
@@ -111,6 +111,6 @@ AEM Forms備份策略包含兩種型別的備份：
 
 >[!NOTE]
 >
->只有在這種情況下，您才應該使用此指令碼來變更GDS位置。 若要在AEM表單執行時變更GDS位置，請使用管理主控台。 (請參閱[設定一般AEM表單設定](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*。) *
+>只有在這種情況下，您才應該使用此指令碼來變更GDS位置。 若要在AEM表單執行時變更GDS位置，請使用管理主控台。 （請參閱[設定一般AEM表單設定](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*。） *
 
 設定GDS路徑後，請以維護模式啟動Forms伺服器，然後使用管理主控台更新新節點的剩餘檔案系統路徑。 確認所有必要的設定均已更新後，請重新啟動並測試AEM表單。

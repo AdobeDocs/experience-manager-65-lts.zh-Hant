@@ -8,10 +8,10 @@ role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 88dc81aa-f8b2-403e-bd87-ea224ac2d0c2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '568'
-ht-degree: 9%
+source-wordcount: '595'
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 9%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=en) |
 | AEM 6.5 | 本文章 |
 
 Experience Manager支援3D資產的製作程式功能，包括上傳、傳送和互動式預覽。
@@ -68,7 +68,7 @@ Experience Manager支援3D資產的製作程式功能，包括上傳、傳送和
 
 1. 在頁面的右上角，從「檢視」下拉式清單中選取「**[!UICONTROL 卡片檢視]**」，然後導覽至您要預覽的3D資產。
 
-   ![選擇3D卡片](/help/assets/assets-dm/3d-card-select.png)
+   選取![張3D卡片](/help/assets/assets-dm/3d-card-select.png)
    _在「卡片檢視」中，選取您要預覽之3D資產的卡片。_
 
 1. 選取3D資產的卡片。
@@ -77,7 +77,7 @@ Experience Manager支援3D資產的製作程式功能，包括上傳、傳送和
    _資產詳細資料檢視頁面中的3D資產互動式預覽。_
 1. 在3D資產的資產詳細資料檢視頁面上，執行下列任一項作業：
 
-   | 檢視 | 描述 | 滑鼠動作 | 觸控熒幕動作 |
+   | 檢視 | 說明 | 滑鼠動作 | 觸控熒幕動作 |
    | --- | --- | --- | --- |
    | **轉動相機** | 使檢視畫面在 3D 場景和物件周圍環繞 | 按一下左鍵+拖曳。 | 單指按下+拖曳。 |
    | **平移相機** | 向左、向右、向上或向下平移檢視。 | 按一下滑鼠右鍵+拖曳。 | 雙指按下+拖曳。 |

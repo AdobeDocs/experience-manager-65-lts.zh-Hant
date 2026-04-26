@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ff4dce07-725e-4750-9e95-4261b50580bd
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '118'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,6 @@ ht-degree: 0%
 
 (WebSphere)下列記錄檔位於`[appserver root]/profiles/default/logs/[appserver name]`目錄中：
 
-* SystemErr.log
+* SystemEr.log
 * SystemOut.log
 * StartServer.log

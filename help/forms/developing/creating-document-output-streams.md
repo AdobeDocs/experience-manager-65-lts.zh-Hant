@@ -1,6 +1,6 @@
 ---
 title: 建立檔案輸出資料流
-description: 使用「輸出」服務將檔案轉換成PDF (包括PDF/A檔案)、PostScript、印表機控制語言(PCL)和Zebra - ZPL、Intermec - IPL、Datamax - DPL和TecToshiba - TPCL標籤格式。
+description: 使用「輸出」服務將檔案轉換成PDF （包括PDF/A檔案）、PostScript、印表機控制語言(PCL)和Zebra - ZPL、Intermec - IPL、Datamax - DPL和TecToshiba - TPCL標籤格式。
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: a90ccd28-00ae-4317-bfda-c39acbdb835b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '18860'
+source-wordcount: '19156'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 **關於輸出服務**
 
-「輸出」服務可讓您將檔案輸出為PDF (包括PDF/A檔案)、PostScript、印表機控制語言(PCL)和以下標籤格式：
+「輸出」服務可讓您將檔案輸出為PDF （包括PDF/A檔案）、PostScript、印表機控制語言(PCL)和以下標籤格式：
 
 * 斑馬 — ZPL
 * Intermec - IPL
@@ -77,9 +77,9 @@ ht-degree: 0%
 
 您可以使用輸出服務，根據您提供的表單設計和XML表單資料來建立PDF檔案。 輸出服務建立的PDF檔案不是互動式PDF檔案；使用者無法輸入或修改表單資料。
 
-如果要建立用於長期儲存的PDF檔案，建議您建立PDF/A檔案。 (請參閱[建立PDF/A檔案](creating-document-output-streams.md#creating-pdf-a-documents)。)
+如果要建立用於長期儲存的PDF檔案，建議您建立PDF/A檔案。 （請參閱[建立PDF/A檔案](creating-document-output-streams.md#creating-pdf-a-documents)。）
 
-若要建立可讓使用者輸入資料的互動式PDF表單，請使用Forms服務。 (請參閱[呈現互動式PDF forms](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)。)
+若要建立可讓使用者輸入資料的互動式PDF表單，請使用Forms服務。 （請參閱[呈現互動式PDF forms](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)。）
 
 >[!NOTE]
 >
@@ -106,8 +106,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (如果AEM Forms部署在JBoss上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss上，則為必要)
+* adobe-utilities.jar （如果AEM Forms部署在JBoss上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss上，則為必要）
 
 如果將AEM Forms部署在受支援的J2EE應用程式伺服器（不是JBoss）上，則必須將adobe-utilities.jar和jbossall-client.jar檔案取代為特定於AEM Forms部署所在之J2EE應用程式伺服器的JAR檔案。
 
@@ -166,13 +166,13 @@ ht-degree: 0%
 
 **設定演算執行階段選項**
 
-建立PDF檔案時，您可以設定演算執行階段選項。 雖然這些選項並非必要專案(不像必要之PDF執行階段選項)，但您可以執行工作，例如改善輸出服務的效能。 例如，您可以快取Output服務用來改善其效能的表單設計。
+建立PDF檔案時，您可以設定演算執行階段選項。 雖然這些選項並非必要專案（不像必要之PDF執行階段選項），但您可以執行工作，例如改善輸出服務的效能。 例如，您可以快取Output服務用來改善其效能的表單設計。
 
 如果您使用已標籤的Acrobat表單作為輸入，則無法使用輸出服務Java或Web服務API來關閉已標籤的設定。 如果您嘗試以程式設計方式將此選項設為`false`，結果仍會標籤PDF檔案。
 
 >[!NOTE]
 >
->如果您未指定呈現執行階段選項，則會使用預設值。 如需有關演算執行階段選項的資訊，請參閱`RenderOptionsSpec`類別參考。 (請參閱[AEM Forms API參考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en))。
+>如果您未指定呈現執行階段選項，則會使用預設值。 如需有關演算執行階段選項的資訊，請參閱`RenderOptionsSpec`類別參考。 （請參閱[AEM Forms API參考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)）。
 
 **產生PDF檔案**
 
@@ -240,11 +240,11 @@ Output服務執行作業之後，會傳回各種資料專案，例如指定作�
 
    >[!NOTE]
    >
-   >如果輸入檔案是PDF表單(在Acrobat中建立的表單)或已簽署或認證的Acrobat檔案，則您無法使用`RenderOptionsSpec`物件的`setPdfVersion`方法設定檔案的版本。 輸出PDF檔案會保留原始PDF版本。 同樣地，如果輸入檔案是Adobe PDF表單或已簽署或認證的XFA檔案，則您無法透過叫用`RenderOptionsSpec`物件的`setTaggedPDF`方法來設定已標籤的Acrobat選項。
+   >如果輸入檔案是PDF表單（在Acrobat中建立的表單）或已簽署或認證的Acrobat檔案，則您無法使用`RenderOptionsSpec`物件的`setPdfVersion`方法設定檔案的版本。 輸出PDF檔案會保留原始PDF版本。 同樣地，如果輸入檔案是Adobe PDF表單或已簽署或認證的XFA檔案，則您無法透過叫用`RenderOptionsSpec`物件的`setTaggedPDF`方法來設定已標籤的Acrobat選項。
 
    >[!NOTE]
    >
-   >如果輸入的PDF檔案經過認證或數位簽署，則您無法使用`RenderOptionsSpec`物件的`setLinearizedPDF`方法來設定線性化PDF選項。 (請參閱[數位簽署PDF檔案&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*。)*
+   >如果輸入的PDF檔案經過認證或數位簽署，則您無法使用`RenderOptionsSpec`物件的`setLinearizedPDF`方法來設定線性化PDF選項。 （請參閱[數位簽署PDF檔案&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*。）*
 
 1. 產生PDF檔案。
 
@@ -285,7 +285,7 @@ Output服務執行作業之後，會傳回各種資料專案，例如指定作�
 
 [快速入門（EJB模式）：使用Java API建立PDF檔案](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
 
-[快速入門(SOAP模式)：使用Java API建立PDF檔案](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API建立PDF檔案](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -306,7 +306,7 @@ Output服務執行作業之後，會傳回各種資料專案，例如指定作�
 1. 建立輸出使用者端物件。
 
    * 使用預設建構函式建立`OutputServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`OutputServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/OutputService?blob=mtom`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。 但是，請指定`?blob=mtom`以使用MTOM。
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`OutputServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/OutputService?blob=mtom`）。 您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。 但是，請指定`?blob=mtom`以使用MTOM。
    * 取得`OutputServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
@@ -336,11 +336,11 @@ Output服務執行作業之後，會傳回各種資料專案，例如指定作�
 
    >[!NOTE]
    >
-   >如果輸入檔案是PDF表單(在Acrobat中建立的表單)或已簽署或認證的Acrobat檔案，則您無法使用`RenderOptionsSpec`物件的`setPdfVersion`方法設定檔案的版本。 輸出PDF檔案會保留原始PDF版本。 同樣地，如果輸入檔案是Adobe PDF表單或已簽署或認證的XFA檔案，您就無法透過叫用`RenderOptionsSpec`物件的`setTaggedPDF`*方法來設定已標籤的Acrobat選項。*
+   >如果輸入檔案是PDF表單（在Acrobat中建立的表單）或已簽署或認證的Acrobat檔案，則您無法使用`RenderOptionsSpec`物件的`setPdfVersion`方法設定檔案的版本。 輸出PDF檔案會保留原始PDF版本。 同樣地，如果輸入檔案是Adobe PDF表單或已簽署或認證的XFA檔案，您就無法透過叫用`RenderOptionsSpec`物件的`setTaggedPDF`*方法來設定已標籤的Acrobat選項。*
 
    >[!NOTE]
    >
-   >如果輸入的PDF檔案經過認證或數位簽署，則您無法使用`RenderOptionsSpec`物件的`linearizedPDF`成員來設定線性化PDF選項。 (請參閱[數位簽署PDF檔案&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*。)*
+   >如果輸入的PDF檔案經過認證或數位簽署，則您無法使用`RenderOptionsSpec`物件的`linearizedPDF`成員來設定線性化PDF選項。 （請參閱[數位簽署PDF檔案&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*。）*
 
 1. 產生PDF檔案。
 
@@ -373,11 +373,11 @@ Output服務執行作業之後，會傳回各種資料專案，例如指定作�
 
    另請參閱
 
-[步驟摘要](creating-document-output-streams.md#summary-of-steps)
+   [步驟摘要](creating-document-output-streams.md#summary-of-steps)
 
-[使用MTOM叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+   [使用MTOM叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+   [使用SwaRef叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
    >[!NOTE]
    >
@@ -385,13 +385,13 @@ Output服務執行作業之後，會傳回各種資料專案，例如指定作�
 
 ## 建立PDF/A檔案 {#creating-pdf-a-documents}
 
-您可以使用輸出服務來建立PDF/A檔案。 由於PDF/A是用於長期儲存檔案內容的封存格式，因此所有字型全都內嵌且檔案都未壓縮。 因此，PDF/A 文件通常比標準 PDF 文件大。此外，PDF/A檔案不包含音訊和視訊內容。 如同其他輸出服務工作，您提供表單設計和資料以與表單設計合併，以建立PDF/A檔案。
+您可以使用輸出服務來建立PDF/A檔案。 由於PDF/A是用於長期儲存檔案內容的封存格式，因此所有字型全都內嵌且檔案都未壓縮。 因此，PDF/A 文件通常比標準 PDF 文件大。 此外，PDF/A檔案不包含音訊和視訊內容。 如同其他輸出服務工作，您提供表單設計和資料以與表單設計合併，以建立PDF/A檔案。
 
-PDF/A-1規格包含兩個一致性層級，即a和b。兩者之間的主要差異在於邏輯結構（協助工具）支援，合規性層級b不需要此支援。無論合規性層級為何，PDF/A-1都會指定所有字型都內嵌在產生的PDF/A檔案中。
+PDF/A-1規格包含兩個一致性層級，即a和b。 兩者之間的主要差異在於邏輯結構（協助工具）支援，這是符合性層級b所不需要的。 無論符合程度為何，PDF/A-1會指定所有字型都內嵌在產生的PDF/A檔案中。
 
 雖然PDF/A是封存PDF檔案的標準，但若標準PDF檔案符合貴公司的需求，則不強制使用PDF/A進行封存。 PDF/A標準的目的是建立可長期儲存的PDF檔案，並符合檔案儲存需求。 例如，URL無法內嵌於PDF/A中，因為隨著時間過去，URL可能會失效。
 
-您的組織必須評估自己的需求、您打算保留檔案的時間長度、檔案大小考量，並決定自己的封存策略。 您可以使用DocConverter服務，以程式設計方式判斷PDF檔案是否符合PDF/A標準。 (請參閱[以程式設計方式決定PDF/A合規性](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy)。)
+您的組織必須評估自己的需求、您打算保留檔案的時間長度、檔案大小考量，並決定自己的封存策略。 您可以使用DocConverter服務，以程式設計方式判斷PDF檔案是否符合PDF/A標準。 （請參閱[以程式設計方式決定PDF/A合規性](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy)。）
 
 PDF/A檔案必須使用表單設計中指定的字型，且字型無法被取代。 因此，如果主機作業系統(OS)無法使用位於PDF檔案中的字型，則會發生例外狀況。
 
@@ -428,8 +428,8 @@ PDF/A檔案必須使用表單設計中指定的字型，且字型無法被取代
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (如果AEM Forms部署在JBoss上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss上，則為必要)
+* adobe-utilities.jar （如果AEM Forms部署在JBoss上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss上，則為必要）
 
 如果將AEM Forms部署在受支援的J2EE應用程式伺服器（不是JBoss）上，則必須將adobe-utilities.jar和jbossall-client.jar檔案取代為特定於AEM Forms部署所在之J2EE應用程式伺服器的JAR檔案。
 
@@ -543,7 +543,7 @@ Output服務執行作業之後，會傳回各種資料專案，例如指定作�
 
 [步驟摘要](creating-document-output-streams.md#summary-of-steps)
 
-[快速入門(SOAP模式)：使用Java API建立PDF/A檔案](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API建立PDF/A檔案](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -564,7 +564,7 @@ Output服務執行作業之後，會傳回各種資料專案，例如指定作�
 1. 建立輸出使用者端物件。
 
    * 使用預設建構函式建立`OutputServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`OutputServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/OutputService?blob=mtom`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。 但是，請指定`?blob=mtom`以使用MTOM。
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`OutputServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/OutputService?blob=mtom`）。 您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。 但是，請指定`?blob=mtom`以使用MTOM。
    * 取得`OutputServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
@@ -739,7 +739,7 @@ Output服務會根據通常儲存為XDP檔案並在Designer中建立的表單設
 
 [快速入門（EJB模式）：使用Java API將檔案傳遞至「輸出服務」](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
-[快速入門(SOAP模式)：使用Java API將檔案傳遞至輸出服務](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API將檔案傳遞至輸出服務](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -837,7 +837,7 @@ Output服務會根據通常儲存為XDP檔案並在Designer中建立的表單設
 
 [快速入門（EJB模式）：使用Java API根據應用程式XDP檔案建立PDF檔案](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api) （示範如何以參考方式傳遞XDP檔案的位置）。
 
-[快速入門（EJB模式）：使用Java API將AEM Forms存放庫中的檔案傳遞至輸出服務](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) (顯示如何以程式設計方式從AEM Forms存放庫擷取XDP檔案，並將其傳遞至`com.adobe.idp.Document`執行個體中的輸出服務)。 （本節將討論如何執行此工作）
+[快速入門（EJB模式）：使用Java API將AEM Forms存放庫中的檔案傳遞至輸出服務](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) （顯示如何以程式設計方式從AEM Forms存放庫擷取XDP檔案，並將其傳遞至`com.adobe.idp.Document`執行個體中的輸出服務）。 （本節將討論如何執行此工作）
 
 >[!NOTE]
 >
@@ -907,7 +907,7 @@ ResourceRepositoryClient
 
 1. 從AEM Forms存放庫擷取表單設計。
 
-   叫用`ResourceRepositoryClient`物件的`readResourceContent`方法，並將指定URI位置的字串值傳遞給XDP檔案。 例如 `/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`。此值為必填。 此方法會傳回代表XDP檔案的`com.adobe.idp.Document`執行個體。
+   叫用`ResourceRepositoryClient`物件的`readResourceContent`方法，並將指定URI位置的字串值傳遞給XDP檔案。 例如 `/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`。 此值為必填。 此方法會傳回代表XDP檔案的`com.adobe.idp.Document`執行個體。
 
 1. 呈現非互動式PDF表單。
 
@@ -1055,7 +1055,7 @@ ResourceRepositoryClient
 
 [快速入門（EJB模式）：使用Java API根據片段建立PDF檔案](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
-[快速入門(SOAP模式)：使用Java API根據片段建立PDF檔案](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API根據片段建立PDF檔案](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1088,7 +1088,7 @@ ResourceRepositoryClient
 1. 建立Output and Assembler Client物件。
 
    * 使用預設建構函式建立`OutputServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`OutputServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/OutputService?blob=mtom`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。 但是，請指定`?blob=mtom`以使用MTOM。
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`OutputServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/OutputService?blob=mtom`）。 您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。 但是，請指定`?blob=mtom`以使用MTOM。
    * 取得`OutputServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
@@ -1183,10 +1183,10 @@ ResourceRepositoryClient
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (如果AEM Forms部署在JBoss上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss上，則為必要)
+* adobe-utilities.jar （如果AEM Forms部署在JBoss上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss上，則為必要）
 
-如果將AEM Forms部署在受支援的J2EE應用程式伺服器（不是JBoss）上，則必須將adobe-utilities.jar和jbossall-client.jar檔案取代為特定於AEM Forms部署所在之J2EE應用程式伺服器的JAR檔案。 (請參閱[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。)
+如果將AEM Forms部署在受支援的J2EE應用程式伺服器（不是JBoss）上，則必須將adobe-utilities.jar和jbossall-client.jar檔案取代為特定於AEM Forms部署所在之J2EE應用程式伺服器的JAR檔案。 （請參閱[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。）
 
 **建立輸出使用者端物件**
 
@@ -1275,7 +1275,7 @@ Output服務執行作業之後，會傳回指定作業是否成功的各種資�
 
 [步驟摘要](creating-document-output-streams.md#summary-of-steps)
 
-[快速入門(SOAP模式)：使用Java API列印至檔案](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-printing-to-a-file-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API列印至檔案](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-printing-to-a-file-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1296,7 +1296,7 @@ Output服務執行作業之後，會傳回指定作業是否成功的各種資�
 1. 建立輸出使用者端物件。
 
    * 使用預設建構函式建立`OutputServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`OutputServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/OutputService?blob=mtom`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。 但是，請指定`?blob=mtom`以使用MTOM。
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`OutputServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/OutputService?blob=mtom`）。 您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。 但是，請指定`?blob=mtom`以使用MTOM。
    * 取得`OutputServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
@@ -1388,8 +1388,8 @@ Output服務執行作業之後，會傳回指定作業是否成功的各種資�
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (如果AEM Forms部署在JBoss上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss上，則為必要)
+* adobe-utilities.jar （如果AEM Forms部署在JBoss上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss上，則為必要）
 
 如果將AEM Forms部署在受支援的J2EE應用程式伺服器（不是JBoss）上，則必須將adobe-utilities.jar和jbossall-client.jar檔案取代為特定於AEM Forms部署所在之J2EE應用程式伺服器的JAR檔案。
 
@@ -1428,7 +1428,7 @@ Output服務執行作業之後，會傳回指定作業是否成功的各種資�
  <thead>
   <tr>
    <th><p>列印格式 </p></th>
-   <th><p>描述</p></th>
+   <th><p>說明</p></th>
   </tr>
  </thead>
  <tbody>
@@ -1582,7 +1582,7 @@ Output服務執行作業之後，會傳回指定作業是否成功的各種資�
 1. 建立輸出使用者端物件。
 
    * 使用預設建構函式建立`OutputServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`OutputServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/OutputService?blob=mtom`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。 但是，請指定`?blob=mtom`以使用MTOM。
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`OutputServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/OutputService?blob=mtom`）。 您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。 但是，請指定`?blob=mtom`以使用MTOM。
    * 取得`OutputServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
@@ -1728,8 +1728,8 @@ Output服務可以為XML資料來源內的每個記錄建立個別的檔案，�
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (如果AEM Forms部署在JBoss上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss上，則為必要)
+* adobe-utilities.jar （如果AEM Forms部署在JBoss上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss上，則為必要）
 
 如果將AEM Forms部署在受支援的J2EE應用程式伺服器（不是JBoss）上，則必須將adobe-utilities.jar和jbossall-client.jar檔案取代為特定於AEM Forms部署所在之J2EE應用程式伺服器的JAR檔案。
 
@@ -1825,7 +1825,7 @@ Output服務執行作業之後，會傳回指定作業是否成功的XML資料�
 1. 設定PDF執行階段選項
 
    * 使用物件的建構函式建立`PDFOutputOptionsSpec`物件。
-   * 透過叫用`PDFOutputOptionsSpec`物件的`setGenerateManyFiles`方法來設定[許多檔案]選項。 例如，傳遞值`true`以指示輸出服務為XML資料來源中的每個記錄建立個別的PDF檔案。 (如果您傳遞`false`，輸出服務會產生包含所有記錄的單一PDF檔案)。
+   * 透過叫用`PDFOutputOptionsSpec`物件的`setGenerateManyFiles`方法來設定[許多檔案]選項。 例如，傳遞值`true`以指示輸出服務為XML資料來源中的每個記錄建立個別的PDF檔案。 （如果您傳遞`false`，輸出服務會產生包含所有記錄的單一PDF檔案）。
    * 透過叫用`PDFOutputOptionsSpec`物件的`setFileUri`方法並傳遞字串值來設定檔案URI選項，該字串值指定輸出服務產生的檔案位置。 檔案URI選項是相對於主控AEM Forms的J2EE應用程式伺服器，而非使用者端電腦。
    * 透過叫用`OutputOptionsSpec`物件的`setRecordName`方法並傳遞字串值來設定「記錄名稱」選項，該字串值指定資料來源中用於分隔資料記錄的XML元素名稱。 (例如，請考量本節前面顯示的XML資料來源。 分隔資料記錄的XML元素名稱為LoanRecord)。
 
@@ -1877,7 +1877,7 @@ Output服務執行作業之後，會傳回指定作業是否成功的XML資料�
 1. 建立輸出使用者端物件。
 
    * 使用預設建構函式建立`OutputServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`OutputServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/OutputService?blob=mtom`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。 但是，請指定`?blob=mtom`以使用MTOM。
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`OutputServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/OutputService?blob=mtom`）。 您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。 但是，請指定`?blob=mtom`以使用MTOM。
    * 取得`OutputServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
@@ -1898,7 +1898,7 @@ Output服務執行作業之後，會傳回指定作業是否成功的XML資料�
 1. 設定PDF執行階段選項。
 
    * 使用物件的建構函式建立`PDFOutputOptionsSpec`物件。
-   * 為`OutputOptionsSpec`物件的`generateManyFiles`資料成員指派布林值，以設定[許多檔案]選項。 例如，將值`true`指派給此資料成員，以指示輸出服務為XML資料來源中的每個記錄建立個別的PDF檔案。 (如果您將`false`指派給此資料成員，則輸出服務會產生包含所有記錄的單一PDF)。
+   * 為`OutputOptionsSpec`物件的`generateManyFiles`資料成員指派布林值，以設定[許多檔案]選項。 例如，將值`true`指派給此資料成員，以指示輸出服務為XML資料來源中的每個記錄建立個別的PDF檔案。 （如果您將`false`指派給此資料成員，則輸出服務會產生包含所有記錄的單一PDF）。
    * 指定字串值來設定檔案URI選項，該字串值指定輸出服務產生給`OutputOptionsSpec`物件的`fileURI`資料成員的檔案位置。 檔案URI選項是相對於主控AEM Forms的J2EE應用程式伺服器，而非使用者端電腦。
    * 指定字串值來設定記錄名稱選項，該字串值指定資料來源中的XML元素名稱，該資料來源可將資料記錄分隔至`OutputOptionsSpec`物件的`recordName`資料成員。
    * 指定整數值，指定輸出服務產生給`OutputOptionsSpec`物件的`copies`資料成員的復本數目，以設定復本選項。
@@ -1971,8 +1971,8 @@ Output服務執行作業之後，會傳回指定作業是否成功的XML資料�
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (如果AEM Forms部署在JBoss上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss上，則為必要)
+* adobe-utilities.jar （如果AEM Forms部署在JBoss上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss上，則為必要）
 
 如果將AEM Forms部署在受支援的J2EE應用程式伺服器（不是JBoss）上，則您必須將adobe-utilities.jar和jbossall-client.jar取代為特定於已部署AEM Forms之J2EE應用程式伺服器的JAR檔案。
 
@@ -2002,7 +2002,7 @@ Output服務執行作業之後，會傳回指定作業是否成功的XML資料�
 
 **設定演算執行階段選項**
 
-建立PDF檔案時，您可以設定呈現執行階段選項。 雖然這些選項並非必要專案(不同於PDF執行階段選項)，但您可以執行改善輸出服務效能等工作。 例如，您可以快取Output服務用來改善效能的表單設計。
+建立PDF檔案時，您可以設定呈現執行階段選項。 雖然這些選項並非必要專案（不同於PDF執行階段選項），但您可以執行改善輸出服務效能等工作。 例如，您可以快取Output服務用來改善效能的表單設計。
 
 **產生PDF檔案**
 
@@ -2088,7 +2088,7 @@ Output服務執行作業之後，會傳回指定作業是否成功的XML資料�
 
 [快速入門（EJB模式）：使用Java API建立搜尋規則](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
 
-[快速入門(SOAP模式)：使用Java API建立搜尋規則](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API建立搜尋規則](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -2109,7 +2109,7 @@ Output服務執行作業之後，會傳回指定作業是否成功的XML資料�
 1. 建立輸出使用者端物件。
 
    * 使用預設建構函式建立`OutputServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`OutputServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/OutputService?blob=mtom`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。 但是，請指定`?blob=mtom`以使用MTOM。
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`OutputServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/OutputService?blob=mtom`）。 您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。 但是，請指定`?blob=mtom`以使用MTOM。
    * 取得`OutputServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
@@ -2228,8 +2228,8 @@ Output服務執行作業之後，會傳回指定作業是否成功的XML資料�
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (如果AEM Forms部署在JBoss上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss上，則為必要)
+* adobe-utilities.jar （如果AEM Forms部署在JBoss上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss上，則為必要）
 
 如果將AEM Forms部署在受支援的J2EE應用程式伺服器（不是JBoss）上，則必須將adobe-utilities.jar和jbossall-client.jar檔案取代為特定於AEM Forms部署所在之J2EE應用程式伺服器的JAR檔案。 如需有關所有AEM Forms JAR檔案位置的資訊，請參閱[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
@@ -2302,7 +2302,7 @@ Output服務執行作業之後，會傳回指定作業是否成功的XML資料�
 
 [快速入門（EJB模式）：使用Java API轉換PDF檔案](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
-[快速入門(SOAP模式)：使用Java API轉換PDF檔案](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API轉換PDF檔案](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -2323,7 +2323,7 @@ Output服務執行作業之後，會傳回指定作業是否成功的XML資料�
 1. 建立輸出使用者端物件。
 
    * 使用預設建構函式建立`OutputServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`OutputServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/OutputService?blob=mtom`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。 但是，請指定`?blob=mtom`以使用MTOM。
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`OutputServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/OutputService?blob=mtom`）。 您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。 但是，請指定`?blob=mtom`以使用MTOM。
    * 取得`OutputServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：

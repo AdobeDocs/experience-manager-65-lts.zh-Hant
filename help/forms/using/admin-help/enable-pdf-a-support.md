@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 6eb93270-bea0-4409-8e80-4d040be41eab
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '120'
+source-wordcount: '122'
 ht-degree: 0%
 
 ---
@@ -29,4 +29,4 @@ PDF Generator支援從Microsoft Excel、Microsoft PowerPoint和Microsoft Word檔
 1. 在Administration Console中，按一下「服務> PDF Generator >檔案型別設定」 。
 1. 按一下「新增」或選取現有的檔案型別設定。
 1. 按一下Microsoft Excel、Microsoft PowerPoint或Microsoft Word，然後選取「建立PDF/A-1a相容的檔案」並儲存變更。
-1. 在原生應用程式(例如Microsoft Word)中，按一下Adobe PDF >變更轉換設定，然後選取PDF/A-1b。
+1. 在原生應用程式（例如Microsoft Word）中，按一下Adobe PDF >變更轉換設定，然後選取PDF/A-1b。

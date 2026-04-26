@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f7279bba-b889-4431-9cfd-79e140d46e05
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3943'
+source-wordcount: '3986'
 ht-degree: 0%
 
 ---
@@ -226,9 +226,9 @@ Caused by: com.ibm.ejs.container.UnknownLocalException: nested exception is: com
 
 引用：
 
-* [透過JBoss®叢集的高可用性企業服務](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
+* [透過JBoss®叢集提供高可用性企業服務](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
 
-* [Oracle WebLogic伺服器使用叢集](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
+* [Oracle WebLogic Server-Using叢集](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
 
 ### 如何檢查JBoss®是否正確叢集？ {#check-jboss-clustering}
 
@@ -297,7 +297,7 @@ Caused by: java.sql.SQLException: ORA-00060: deadlock detected while waiting for
 
 若要讓叢集順利運作，所有叢集節點的時鐘都必須密切同步。 這無法以手動方式完成，且必須由定期執行之某種形式的時間同步服務完成。 所有節點的時鐘必須彼此位於一秒內。 最佳實務不僅要求同步叢集節點，還要求負載平衡器、資料庫伺服器、GDS NAS伺服器以及任何其他元件。
 
-Windows時間同步處理趨向於網域控制站。 UNIX®系統可使用NTP同步至不同的時間來源。 如果可能的話，最好是讓所有系統(包括JEE節點上的AEM Forms和其他系統元件)都同步至相同的來源。
+Windows時間同步處理趨向於網域控制站。 UNIX®系統可使用NTP同步至不同的時間來源。 如果可能的話，最好是讓所有系統（包括JEE節點上的AEM Forms和其他系統元件）都同步至相同的來源。
 
 即使是在最暫時的測試環境中，手動設定節點的時鐘仍是不夠的。 手動設定時鐘無法提供足夠的精確同步處理，而且兩個節點上的時鐘不可避免地會彼此相對漂移，即使在一天的時間段內也是如此。 使用中的時間同步機制是可靠叢集操作的關鍵。
 

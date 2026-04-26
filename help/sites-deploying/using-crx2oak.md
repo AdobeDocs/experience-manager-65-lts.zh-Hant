@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 542967b2-e2cf-40d1-a805-456dc6e671a9
-source-git-commit: e13340d0ab84d68a2e7c676787909380d2f516a0
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1175'
-ht-degree: 0%
+source-wordcount: '1217'
+ht-degree: 1%
 
 ---
 
@@ -142,7 +142,7 @@ CRX2Oak的開放原始碼版本可透過Oak-upgrade取得。 支援所有功能�
 * `--fail-on-error`：如果無法從來源存放庫讀取節點，強制移轉失敗。
 * `--ldap`：將LDAP使用者從CQ 5.x執行個體移轉至Oak型執行個體。 為了讓此功能發揮作用，Oak設定中的身分提供者必須命名為ldap。 如需詳細資訊，請參閱[LDAP檔案](/help/sites-administering/ldap-config.md)。
 
-* `--ldap-config:`將此用於使用多個LDAP伺服器驗證的CQ 5.x存放庫的`--ldap`引數。 您可以使用它指向CQ 5.x `ldap_login.conf`或`jaas.conf`組態檔。 格式為`--ldapconfig=path/to/ldap_login.conf`。
+* `--ldap-config:`將此用於使用多個LDAP伺服器驗證的CQ 5.x存放庫的`--ldap`引數。 您可以使用它指向CQ 5.x `ldap_login.conf`或`jaas.conf`組態檔。 格式為 `--ldapconfig=path/to/ldap_login.conf`。
 
 ### 版本存放區選項 {#version-store-options}
 

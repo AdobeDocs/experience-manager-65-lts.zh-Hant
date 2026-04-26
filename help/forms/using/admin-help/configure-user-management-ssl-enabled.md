@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a97cb5a6-4097-4f2e-b932-cb858bd5681a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
    `keytool -import -alias`*別名* `-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
 
-1. 出現提示時，輸入密碼。 （Java預設密碼為`changeit`。）系統會顯示訊息，說明憑證已成功匯入。
+1. 出現提示時，輸入密碼。 （Java的預設密碼為`changeit`。） 系統會顯示訊息，指出憑證已成功匯入。
 1. 出現提示時，請輸入`Yes`以信任憑證。
 1. 在「使用者管理」中啟用SSL，並在設定目錄設定時，為SSL選項選取「是」，然後相應地變更連線埠設定。 預設連線埠號碼為636。
 

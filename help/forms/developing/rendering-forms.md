@@ -12,9 +12,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 3f1f9ecb-be62-4428-8db8-23c57081b0f7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Forms服務可讓您建立互動式資料擷取使用者端應用程式，以驗
 
 根據使用者端應用程式的型別，您可以將表單寫入使用者端網頁瀏覽器，或將表單儲存為PDF檔案。 網頁式應用程式可將表單寫入網頁瀏覽器。 案頭應用程式可將表單儲存為PDF檔案。 為了示範如何寫出至網頁瀏覽器和PDF檔案，*呈現Forms*&#x200B;區段中的快速入門會以下列方式組織：
 
-* Java API強型別(SOAP模式)範例為Java servlet。
+* Java API強型別（SOAP模式）範例為Java servlet。
 * Web服務(Java Base64)範例是Java servlet。
 * Web服務(MTOM)範例是主控台應用程式（並非所有快速啟動都有MTOM範例）。
 
@@ -41,20 +41,20 @@ Forms服務可讓您建立互動式資料擷取使用者端應用程式，以驗
 
 您可以使用下列兩種方式之一，將表單設計（XDP檔案）或PDF檔案傳遞到Forms服務：
 
-* 您可以使用URL值來參考表單設計。 此方法涉及使用`URLSpec`物件。 使用`URLSpec`物件的`setContentRootURI`方法將內容根傳遞至Forms服務。 表單設計名稱( `formQuery`)會以個別引數傳遞。 這兩個值會串連在一起，以取得表單設計的絕對參照。 (*呈現Forms*&#x200B;區段中的大部分快速入門都使用此方法。)
+* 您可以使用URL值來參考表單設計。 此方法涉及使用`URLSpec`物件。 使用`URLSpec`物件的`setContentRootURI`方法將內容根傳遞至Forms服務。 表單設計名稱( `formQuery`)會以個別引數傳遞。 這兩個值會串連在一起，以取得表單設計的絕對參照。 （*呈現Forms*&#x200B;區段中的大部分快速入門都使用此方法。）
 * 您可以將包含表單設計的`com.adobe.idp.Document`傳遞給Forms服務。 名為`renderPDFForm2`和`renderHTMLForm2`的兩個新方法接受包含表單設計的`com.adobe.idp.Document`物件。 (請參閱[將檔案傳遞至Forms服務](/help/forms/developing/passing-documents-forms-service.md)
 
 您可以使用Forms服務完成這些工作：
 
-* 呈現互動式PDF forms。 (請參閱[呈現互動式PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)。)
-* 在使用者端轉譯表單。 (請參閱[在使用者端轉譯Forms](/help/forms/developing/rendering-forms-client.md)。)
-* 根據片段轉譯表單。 (請參閱[根據片段呈現Forms](/help/forms/developing/rendering-forms-based-fragments.md)。)
-* 轉譯啟用許可權的表單。 (請參閱[轉譯啟用許可權的Forms](/help/forms/developing/rendering-rights-enabled-forms.md)。)
-* 將表單轉譯為HTML。 (請參閱[將Forms轉譯為HTML](/help/forms/developing/rendering-forms-html.md)。)
-* 使用自訂CSS檔案呈現HTML Forms ([使用自訂CSS檔案呈現HTML Forms &#x200B;](/help/forms/developing/rendering-html-forms-using-custom.md)。)
-* 處理提交的表單。 (請參閱[處理已提交的Forms](/help/forms/developing/handling-submitted-forms.md)。)
-* 使用已提交的XML資料建立PDF檔案。 (請參閱[使用已提交的XML資料建立PDF檔案](/help/forms/developing/creating-pdf-documents-submitted-xml.md)。)
-* 預先填入表單。 (請參閱[使用可流動配置預先填入Forms](/help/forms/developing/prepopulating-forms-flowable-layouts.md)。)
+* 呈現互動式PDF forms。 （請參閱[呈現互動式PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)。）
+* 在使用者端轉譯表單。 （請參閱[在使用者端轉譯Forms](/help/forms/developing/rendering-forms-client.md)。）
+* 根據片段轉譯表單。 （請參閱[根據片段呈現Forms](/help/forms/developing/rendering-forms-based-fragments.md)。）
+* 轉譯啟用許可權的表單。 （請參閱[轉譯啟用許可權的Forms](/help/forms/developing/rendering-rights-enabled-forms.md)。）
+* 將表單轉譯為HTML。 （請參閱[將Forms轉譯為HTML](/help/forms/developing/rendering-forms-html.md)。）
+* 使用自訂CSS檔案呈現HTML Forms （[使用自訂CSS檔案呈現HTML Forms ](/help/forms/developing/rendering-html-forms-using-custom.md)。）
+* 處理提交的表單。 （請參閱[處理已提交的Forms](/help/forms/developing/handling-submitted-forms.md)。）
+* 使用已提交的XML資料建立PDF檔案。 （請參閱[使用已提交的XML資料建立PDF檔案](/help/forms/developing/creating-pdf-documents-submitted-xml.md)。）
+* 預先填入表單。 （請參閱[使用可流動配置預先填入Forms](/help/forms/developing/prepopulating-forms-flowable-layouts.md)。）
 * 傳遞檔案。 (請參閱[將檔案傳遞至Forms服務](/help/forms/developing/passing-documents-forms-service.md)
 * 計算表單資料。 （請參閱[計算表單資料](/help/forms/developing/calculating-form-data.md)。）
-* 最佳化應用程式。 (請參閱[最佳化Forms服務的效能](/help/forms/developing/optimizing-performance-forms-service.md)。)
+* 最佳化應用程式。 （請參閱[最佳化Forms服務的效能](/help/forms/developing/optimizing-performance-forms-service.md)。）

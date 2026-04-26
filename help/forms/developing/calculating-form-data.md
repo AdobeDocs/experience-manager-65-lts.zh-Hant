@@ -12,9 +12,9 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 071a6ccb-8204-4cbc-a39b-143da52c16f7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1870'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Forms服務可以計算使用者在表單中輸入的值並顯示結果。 若�
 * 使用者可存取名為StartLoan.html的HTML頁面，其作用為網頁應用程式的起始頁面。 此頁面會叫用名為`GetLoanForm`的Java Servlet。
 * `GetLoanForm` servlet轉譯貸款表單。 此表單包含指令碼、互動欄位、計算按鈕和提交按鈕。
 * 使用者在表單的欄位中輸入值，然後按一下計算按鈕。 表單會傳送至`CalculateData` Java Servlet，並在其中執行指令碼。 表單會傳回給使用者，並在表單中顯示計算結果。
-* 使用者繼續輸入和計算值，直到顯示滿意的結果為止。 滿意後，使用者按一下「提交」按鈕處理表單。 表單會傳送給另一個名為`ProcessForm`的Java Servlet，負責擷取提交的資料。 (請參閱[處理已提交的Forms](/help/forms/developing/rendering-forms.md#handling-submitted-forms)。)
+* 使用者繼續輸入和計算值，直到顯示滿意的結果為止。 滿意後，使用者按一下「提交」按鈕處理表單。 表單會傳送給另一個名為`ProcessForm`的Java Servlet，負責擷取提交的資料。 （請參閱[處理已提交的Forms](/help/forms/developing/rendering-forms.md#handling-submitted-forms)。）
 
 
 下圖顯示應用程式的邏輯流程。
@@ -45,7 +45,7 @@ Forms服務可以計算使用者在表單中輸入的值並顯示結果。 若�
  <thead>
   <tr>
    <th><p>步驟</p></th>
-   <th><p>描述</p></th>
+   <th><p>說明</p></th>
   </tr>
  </thead>
  <tbody>
@@ -78,7 +78,7 @@ Forms服務可以計算使用者在表單中輸入的值並顯示結果。 若�
 
 ![cf_cf_caldata](assets/cf_cf_caldata.png)
 
-**A.**&#x200B;名為NumericField1 **B.**&#x200B;名為NumericField2 **C.**&#x200B;名為NumericField3的欄位
+**A.** 名為NumericField1 **B.**&#x200B;的欄位 名為NumericField2 **C.**&#x200B;的欄位 名為NumericField3的欄位
 
 此表單設計中指令碼的語法如下：
 
@@ -115,7 +115,7 @@ Forms服務可以計算使用者在表單中輸入的值並顯示結果。 若�
 
 **擷取包含計算指令碼的表單**
 
-您可以使用Forms服務使用者端API建立應用程式邏輯，以處理包含已設定要在伺服器上執行的指令碼的表單。 此程式與處理提交的表單類似。 (請參閱[處理已提交的Forms](/help/forms/developing/handling-submitted-forms.md)。)
+您可以使用Forms服務使用者端API建立應用程式邏輯，以處理包含已設定要在伺服器上執行的指令碼的表單。 此程式與處理提交的表單類似。 （請參閱[處理已提交的Forms](/help/forms/developing/handling-submitted-forms.md)。）
 
 確認與提交的表單關聯的處理狀態為`1` `(Calculate)`，這表示Forms服務正在表單資料上執行計算作業，且結果必須寫回使用者。 在此情況下，會自動執行設定為要在伺服器上執行的指令碼。
 
@@ -130,7 +130,7 @@ Forms服務可以計算使用者在表單中輸入的值並顯示結果。 若�
 [使用網站服務API計算表單資料](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
 [正在設定連線內容](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 [Forms服務API快速啟動](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
-[演算互動式PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[呈現互動式PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)
 [建立轉譯Forms的網頁應用程式](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## 使用Java API計算表單資料 {#calculate-form-data-using-the-java-api}

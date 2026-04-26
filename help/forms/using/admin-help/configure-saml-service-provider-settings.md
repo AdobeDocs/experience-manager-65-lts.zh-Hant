@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0f1b39e7-5de5-4b54-b622-61774ce839db
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 如需SAML的說明，請參閱[安全性宣告標籤語言(SAML) V2.0技術概覽](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html)。
 
 1. 在管理控制檯中，按一下「設定>使用者管理>設定> SAML服務提供者設定」。
-1. 在「服務提供者實體ID」方塊中，輸入唯一ID以用作AEM表單服務提供者實作的識別碼。 您也可以在設定IDP時指定這個唯一ID （例如，`um.lc.com`）。您也可以使用用來存取AEM表單的URL （例如，`https://AEMformsserver`）。
+1. 在「服務提供者實體ID」方塊中，輸入唯一ID以用作AEM表單服務提供者實作的識別碼。 您也可以在設定IDP時指定此唯一ID （例如，`um.lc.com`）。 您也可以使用用來存取AEM表單的URL （例如，`https://AEMformsserver`）。
 1. 在服務提供者基本URL方塊中，輸入您Forms伺服器的基本URL （例如，`https://AEMformsserver:8080`）。
 1. （選用）若要讓AEM表單傳送已簽署的驗證要求給IDP，請執行以下工作：
 

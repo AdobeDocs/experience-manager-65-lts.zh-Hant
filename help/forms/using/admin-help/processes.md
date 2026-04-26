@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 6459abd5-6341-4c28-a747-bde9a91e3a88
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '1643'
 ht-degree: 0%
@@ -132,7 +132,7 @@ ht-degree: 0%
 
 **處理序識別碼：**&#x200B;當處理序具現化時（亦即，當使用者或自動化步驟起始處理序時），表單工作流程所指派的正整數。 您可以使用此識別碼在整個生命週期中追蹤流程例項。
 
-**處理程式名稱 — 版本：**&#x200B;處理程式名稱(如Designer所定義)。
+**處理程式名稱 — 版本：**&#x200B;處理程式名稱（如Designer所定義）。
 
 **狀態：**&#x200B;指出處理序執行個體是否正常執行、變更狀態或停止。 （請參閱關於流程例證狀態。）
 

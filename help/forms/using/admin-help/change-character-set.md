@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1d614736-5897-4fd3-9ca4-94b115139ba3
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 1%
@@ -33,4 +33,4 @@ ht-degree: 1%
 
    字元集必須是有效的正式名稱。 預設值為ISO-8859-1。
 
-1. 按一下「**[!UICONTROL 儲存]**」。
+1. 按一下&#x200B;**[!UICONTROL 儲存]**。

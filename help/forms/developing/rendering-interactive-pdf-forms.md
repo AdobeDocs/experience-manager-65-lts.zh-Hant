@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: de61c579-50ed-423b-adca-60329f3f0b89
-source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2455'
+source-wordcount: '2471'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Forms服務會將互動式PDF forms轉譯給使用者端裝置（通常為網頁
  <thead>
   <tr>
    <th><p>步驟</p></th>
-   <th><p>描述</p></th>
+   <th><p>說明</p></th>
   </tr>
  </thead>
  <tbody>
@@ -51,7 +51,7 @@ Forms服務會將互動式PDF forms轉譯給使用者端裝置（通常為網頁
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p><code>GetLoanForm</code> Java Servlet使用Forms服務使用者端API將貸款表單轉譯給使用者端網頁瀏覽器。 (請參閱<a href="#render-an-interactive-pdf-form-using-the-java-api">使用Java API演算互動式PDF表單</a>。)</p></td>
+   <td><p><code>GetLoanForm</code> Java Servlet使用Forms服務使用者端API將貸款表單轉譯給使用者端網頁瀏覽器。 （請參閱<a href="#render-an-interactive-pdf-form-using-the-java-api">使用Java API演算互動式PDF表單</a>。）</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
@@ -59,11 +59,11 @@ Forms服務會將互動式PDF forms轉譯給使用者端裝置（通常為網頁
   </tr>
   <tr>
    <td><p>4</p></td>
-   <td><p><code>HandleData</code> Java Servlet使用Forms服務使用者端API來處理表單提交作業並擷取表單資料。 然後，資料會儲存在企業資料庫中。 (請參閱<a href="/help/forms/developing/handling-submitted-forms.md#handling-submitted-forms">處理已提交的Forms</a>。)</p></td>
+   <td><p><code>HandleData</code> Java Servlet使用Forms服務使用者端API來處理表單提交作業並擷取表單資料。 然後，資料會儲存在企業資料庫中。 （請參閱<a href="/help/forms/developing/handling-submitted-forms.md#handling-submitted-forms">處理已提交的Forms</a>。）</p></td>
   </tr>
   <tr>
    <td><p>5</p></td>
-   <td><p>確認表單會轉譯回網頁瀏覽器。 如使用者的名字和姓氏等資料會在呈現之前與表單合併。 (請參閱<a href="/help/forms/developing/prepopulating-forms-flowable-layouts.md">使用可流動配置預先填入Forms</a>。)</p></td>
+   <td><p>確認表單會轉譯回網頁瀏覽器。 如使用者的名字和姓氏等資料會在呈現之前與表單合併。 （請參閱<a href="/help/forms/developing/prepopulating-forms-flowable-layouts.md">使用可流動配置預先填入Forms</a>。）</p></td>
   </tr>
  </tbody>
 </table>
@@ -80,7 +80,7 @@ Forms服務會將互動式PDF forms轉譯給使用者端裝置（通常為網頁
 
 ![ri_ri_confirm](assets/ri_ri_confirm.png)
 
-`HandleData` Java Servlet會使用使用者的名字和姓氏以及金額預先填入此表單。 預先填入表單後，會傳送給使用者端網頁瀏覽器。 (請參閱[使用可流動版面配置預先填入Forms](/help/forms/developing/prepopulating-forms-flowable-layouts.md))
+`HandleData` Java Servlet會使用使用者的名字和姓氏以及金額預先填入此表單。 預先填入表單後，會傳送給使用者端網頁瀏覽器。 （請參閱[使用可流動版面配置預先填入Forms](/help/forms/developing/prepopulating-forms-flowable-layouts.md)）
 
 **Java Servlet**
 
@@ -158,11 +158,11 @@ Forms應用程式中的資源路徑為：
 
 >[!NOTE]
 >
->您也可以將`com.adobe.idp.Document`執行個體傳遞至Forms服務，而不需指定URL值來參照XDP檔案。 `com.adobe.idp.Document`執行個體包含表單設計。 (請參閱[將檔案傳遞至Forms服務](/help/forms/developing/passing-documents-forms-service.md)。)
+>您也可以將`com.adobe.idp.Document`執行個體傳遞至Forms服務，而不需指定URL值來參照XDP檔案。 `com.adobe.idp.Document`執行個體包含表單設計。 （請參閱[將檔案傳遞至Forms服務](/help/forms/developing/passing-documents-forms-service.md)。）
 
 **附加檔案至表單**
 
-您可以將檔案附加至表單。 當您轉譯含有檔案附件的PDF表單時，使用者可以使用檔案附件窗格在Acrobat中擷取檔案附件。 您可以將不同的檔案型別附加至表單（例如文字檔案）或二進位檔案(例如JPG檔案)。
+您可以將檔案附加至表單。 當您轉譯含有檔案附件的PDF表單時，使用者可以使用檔案附件窗格在Acrobat中擷取檔案附件。 您可以將不同的檔案型別附加至表單（例如文字檔案）或二進位檔案（例如JPG檔案）。
 
 >[!NOTE]
 >
@@ -191,7 +191,7 @@ Forms應用程式中的資源路徑為：
 1. 建立Forms使用者端API物件
 
    * 建立包含連線屬性的`ServiceClientFactory`物件。
-   * 使用它的建構函式並傳遞`FormsServiceClient`物件來建立`ServiceClientFactory`物件。
+   * 使用它的建構函式並傳遞`ServiceClientFactory`物件來建立`FormsServiceClient`物件。
 
 1. 指定URI值
 
@@ -227,11 +227,11 @@ Forms應用程式中的資源路徑為：
 
 1. 將表單資料流寫入使用者端網頁瀏覽器
 
-   * 呼叫`com.adobe.idp.Document`物件的`FormsResult`方法，以建立`getOutputContent`物件。
-   * 透過叫用物件的`com.adobe.idp.Document`方法，取得`getContentType`物件的內容型別。
-   * 透過叫用其`javax.servlet.http.HttpServletResponse`方法並傳遞`setContentType`物件的內容型別來設定`com.adobe.idp.Document`物件的內容型別。
-   * 呼叫`javax.servlet.ServletOutputStream`物件的`javax.servlet.http.HttpServletResponse`方法，建立用來將表單資料流寫入使用者端網頁瀏覽器的`getOutputStream`物件。
-   * 呼叫`java.io.InputStream`物件的`com.adobe.idp.Document`方法，以建立`getInputStream`物件。
+   * 呼叫`FormsResult`物件的`getOutputContent`方法，以建立`com.adobe.idp.Document`物件。
+   * 透過叫用物件的`getContentType`方法，取得`com.adobe.idp.Document`物件的內容型別。
+   * 透過叫用其`setContentType`方法並傳遞`com.adobe.idp.Document`物件的內容型別來設定`javax.servlet.http.HttpServletResponse`物件的內容型別。
+   * 呼叫`javax.servlet.http.HttpServletResponse`物件的`getOutputStream`方法，建立用來將表單資料流寫入使用者端網頁瀏覽器的`javax.servlet.ServletOutputStream`物件。
+   * 呼叫`com.adobe.idp.Document`物件的`getInputStream`方法，以建立`java.io.InputStream`物件。
    * 呼叫`InputStream`物件的`read`方法，並將位元組陣列作為引數傳遞，以建立位元組陣列並以表單資料串流填入。
    * 叫用`javax.servlet.ServletOutputStream`物件的`write`方法，將表單資料流傳送至使用者端網頁瀏覽器。 將位元組陣列傳遞至`write`方法。
 
@@ -286,11 +286,11 @@ Forms應用程式中的資源路徑為：
 
 1. 將表單資料流寫入使用者端網頁瀏覽器
 
-   * 取得`FormResult`物件之`com.adobe.idp.services.holders.FormsResultHolder`資料成員的值，以建立`value`物件。
-   * 呼叫`BLOB`物件的`FormsResult`方法，建立包含表單資料的`getOutputContent`物件。
-   * 透過叫用物件的`BLOB`方法，取得`getContentType`物件的內容型別。
-   * 透過叫用其`javax.servlet.http.HttpServletResponse`方法並傳遞`setContentType`物件的內容型別來設定`BLOB`物件的內容型別。
-   * 呼叫`javax.servlet.ServletOutputStream`物件的`javax.servlet.http.HttpServletResponse`方法，建立用來將表單資料流寫入使用者端網頁瀏覽器的`getOutputStream`物件。
+   * 取得`com.adobe.idp.services.holders.FormsResultHolder`物件之`value`資料成員的值，以建立`FormResult`物件。
+   * 呼叫`FormsResult`物件的`getOutputContent`方法，建立包含表單資料的`BLOB`物件。
+   * 透過叫用物件的`getContentType`方法，取得`BLOB`物件的內容型別。
+   * 透過叫用其`setContentType`方法並傳遞`BLOB`物件的內容型別來設定`javax.servlet.http.HttpServletResponse`物件的內容型別。
+   * 呼叫`javax.servlet.http.HttpServletResponse`物件的`getOutputStream`方法，建立用來將表單資料流寫入使用者端網頁瀏覽器的`javax.servlet.ServletOutputStream`物件。
    * 建立位元組陣列，並透過叫用`BLOB`物件的`getBinaryData`方法來填入該陣列。 此工作會將`FormsResult`物件的內容指派給位元組陣列。
    * 叫用`javax.servlet.http.HttpServletResponse`物件的`write`方法，將表單資料流傳送至使用者端網頁瀏覽器。 將位元組陣列傳遞至`write`方法。
 

@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5ac3350d-8819-4b33-b1a1-9e686b6abd9e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 **TaskManager：**&#x200B;讓Workspace使用者可以叫用服務。
 
-**遠端處理：**&#x200B;啟用以Flex建置的應用程式來叫用服務，使用(AEM表單已棄用) AEM表單遠端處理。 系統會自動為每個啟用的服務建立遠端端點。 會建立與端點同名的Flex目的地，而Flex使用者端可建立指向此目的地的遠端物件，以叫用相關服務的作業。
+**遠端處理：**&#x200B;啟用以Flex建置的應用程式來叫用服務，使用（AEM表單已棄用） AEM表單遠端處理。 系統會自動為每個啟用的服務建立遠端端點。 會建立與端點同名的Flex目的地，而Flex使用者端可建立指向此目的地的遠端物件，以叫用相關服務的作業。
 
 **SOAP：**&#x200B;啟用使用AEM表單程式設計API開發的使用者端應用程式，以使用SOAP模式叫用服務。 系統會自動為每個已啟用的服務建立SOAP端點。
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 **EJB：**&#x200B;讓使用AEM表單程式設計API開發的使用者端應用程式，能夠使用Enterprise JavaBeans (EJB)模式呼叫服務。 系統會自動為每個已啟動的服務建立EJB端點。
 
-**WSDL：**&#x200B;讓使用AEM表單程式設計API開發的使用者端應用程式，能夠使用Web服務定義語言(WSDL)來呼叫服務。 「核心組態」頁面包含一個選項，可為AEM表單中的所有服務啟用WSDL產生。 (請參閱設定一般AEM表單設定)。
+**WSDL：**&#x200B;讓使用AEM表單程式設計API開發的使用者端應用程式，能夠使用Web服務定義語言(WSDL)來呼叫服務。 「核心組態」頁面包含一個選項，可為AEM表單中的所有服務啟用WSDL產生。 （請參閱設定一般AEM表單設定）。
 
 可以設定在Workbench中建立的&#x200B;**REST：**&#x200B;處理序，以便您可以透過代表性狀態轉移(REST)要求叫用它們。 從HTML頁面傳送REST要求。 也就是說，您可以使用REST要求，直接從網頁叫用AEM表單程式。
 

@@ -10,9 +10,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: 9d4681c0b184cc7769a8da20a4c50d420e1137c7
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '6185'
+source-wordcount: '6249'
 ht-degree: 0%
 
 ---
@@ -28,14 +28,14 @@ ht-degree: 0%
 您可以在「檔案型別設定」頁面執行下列工作：
 
 * [建立或編輯檔案型別設定](#create-or-edit-file-type-settings)
-* 指定預設使用的檔案型別設定(請參閱[匯入和匯出PDF Generator組態檔](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md))
+* 指定預設使用的檔案型別設定（請參閱[匯入和匯出PDF Generator組態檔](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)）
 * [變更預設設定](/help/forms/using/admin-help/configuring-file-type-settings.md#change-the-default-settings)
 * [啟用PDF/A支援](/help/forms/using/admin-help/enable-pdf-a-support.md)
 * [刪除檔案型別設定](/help/forms/using/admin-help/enable-pdf-a-support.md)
 
 >[!NOTE]
 >
->遞補轉換程式(例如Acrobat for HTML到PDF的轉換、Microsoft PowerPoint、Microsoft Word和Microsoft Excel)無法提供檔案型別設定。
+>遞補轉換程式（例如Acrobat for HTML到PDF的轉換、Microsoft PowerPoint、Microsoft Word和Microsoft Excel）無法提供檔案型別設定。
 
 ## 建立或編輯檔案型別設定 {#create-or-edit-file-type-settings}
 
@@ -54,35 +54,35 @@ ht-degree: 0%
 
 1. 完成以下章節中的必要資訊：
 
-[匯入和匯出PDF Generator組態檔](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+   [匯入和匯出PDF Generator組態檔](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
 
-[Adobe PDF匯出設定（僅限Windows）](#adobe-pdf-export-settings-windows-only)
+   [Adobe PDF匯出設定（僅限Windows）](#adobe-pdf-export-settings-windows-only)
 
-[HTML對PDF設定](#html-to-pdf-settings)
+   [HTML對PDF設定](#html-to-pdf-settings)
 
-[將Flash影片新增至PDF設定](#flash-videos-to-pdf-settings)
+   [將Flash影片新增至PDF設定](#flash-videos-to-pdf-settings)
 
-[XPS至PDF設定](#xps-to-pdf-settings)
+   [XPS至PDF設定](#xps-to-pdf-settings)
 
-[PDF optimizer設定](/help/forms/using/admin-help/configuring-file-type-settings.md)
+   [PDF optimizer設定](/help/forms/using/admin-help/configuring-file-type-settings.md)
 
-[Microsoft Excel設定（僅限Windows）](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-excel-settings-windows-only)
+   [Microsoft Excel設定（僅限Windows）](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-excel-settings-windows-only)
 
-[Microsoft PowerPoint設定（僅限Windows）](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-powerpoint-settings-windows-only)
+   [Microsoft PowerPoint設定（僅限Windows）](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-powerpoint-settings-windows-only)
 
-[Microsoft專案設定（僅限Windows）](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-project-settings-windows-only)
+   [Microsoft專案設定（僅限Windows）](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-project-settings-windows-only)
 
-[Microsoft Word設定（僅限Windows）](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-word-settings-windows-only)
+   [Microsoft Word設定（僅限Windows）](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-word-settings-windows-only)
 
-[Microsoft Visio設定（僅限Windows）](#visio)
+   [Microsoft Visio設定（僅限Windows）](#visio)
 
-[Microsoft Publisher設定（僅限Windows）](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-publisher-settings-windows-only)
+   [Microsoft Publisher設定（僅限Windows）](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-publisher-settings-windows-only)
 
-[AutoCAD設定（僅限Windows）](/help/forms/using/admin-help/configuring-file-type-settings.md#autocad-settings-windows-only)
+   [AutoCAD設定（僅限Windows）](/help/forms/using/admin-help/configuring-file-type-settings.md#autocad-settings-windows-only)
 
-[OpenOffice設定](/help/forms/using/admin-help/configuring-file-type-settings.md#openoffice-settings)
+   [OpenOffice設定](/help/forms/using/admin-help/configuring-file-type-settings.md#openoffice-settings)
 
-[其他應用程式的設定（僅限Windows）](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
+   [其他應用程式的設定（僅限Windows）](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
 
    若要移至其他區段，請按一下該區段在網頁上的連結，或使用「**[!UICONTROL 下一個]**」或「**[!UICONTROL 上一個]**」按鈕。
 
@@ -104,7 +104,7 @@ ht-degree: 0%
 
    **[!UICONTROL 檔案型別設定]**：原始預設為標準。
 
-1. 按一下「**[!UICONTROL 儲存]**」。
+1. 按一下&#x200B;**[!UICONTROL 儲存]**。
 
 ## 刪除檔案型別設定 {#delete-a-file-type-setting}
 
@@ -128,7 +128,7 @@ ht-degree: 0%
 
 **使用OCR：**&#x200B;指定是否將OCR （光學字元辨識）套用至PDF。 OCR軟體可讓您搜尋、更正及複製PDF中的文字。
 
-***注意&#x200B;**： OCR PDF (可搜尋的PDF)功能僅在Microsoft Windows上支援。*
+***注意&#x200B;**： OCR PDF （可搜尋的PDF）功能僅在Microsoft Windows上支援。*
 
 **主要OCR語言：**&#x200B;指定OCR引擎用來識別字元的語言。
 
@@ -222,7 +222,7 @@ Adobe PDF匯出設定區段中的「匯出檔案型別」設定可用來將PDF�
 
 ## 將Flash影片新增至PDF設定 {#flash-videos-to-pdf-settings}
 
-PDF Generator支援提交Adobe Flash視訊(SWF或FLV檔案)的功能，並建立內嵌有Adobe Flash視訊的PDF檔案。 此轉換不需要在Forms伺服器上安裝Adobe Flash Player。 如需存取此選項的說明，請參閱[建立或編輯檔案型別設定](configuring-file-type-settings.md#create-or-edit-file-type-settings)。
+PDF Generator支援提交Adobe Flash視訊（SWF或FLV檔案）的功能，並建立內嵌有Adobe Flash視訊的PDF檔案。 此轉換不需要在Forms伺服器上安裝Adobe Flash Player。 如需存取此選項的說明，請參閱[建立或編輯檔案型別設定](configuring-file-type-settings.md#create-or-edit-file-type-settings)。
 
 **副檔名：**&#x200B;可轉換的副檔名清單（以逗號分隔）。
 
@@ -257,7 +257,7 @@ PDF Generator支援縮減PDF檔案大小的功能。 是否使用這些設定或
 
    * 如有需要，請從&#x200B;**字型來源**&#x200B;下拉式功能表中選取不同的字型目錄。 此下拉式功能表會列出&#x200B;**首頁>設定>核心系統>核心組態**&#x200B;中指定的字型目錄。
    * 從&#x200B;**可用的字型**&#x200B;清單中選取一或多個字型，然後按一下&#x200B;**新增**。 這些字型已新增至&#x200B;**要取消內嵌**&#x200B;的字型清單。
-   * 如果要取消嵌入Forms伺服器上不存在的某些字型，請在&#x200B;**新增字型以取消嵌入**&#x200B;方塊中輸入這些字型的名稱。 按一下&#x200B;**新增**。
+   * 如果要取消嵌入Forms伺服器上不存在的某些字型，請在&#x200B;**新增字型以取消嵌入**&#x200B;方塊中輸入這些字型的名稱。 按一下&#x200B;**「新增」**。
 
    >[!NOTE]
    >
@@ -267,7 +267,7 @@ PDF Generator支援縮減PDF檔案大小的功能。 是否使用這些設定或
 
    >[!NOTE]
    >
-   >*如果您使用此選項搭配&#x200B;**取消嵌入某些字型**，則&#x200B;**新增字型至取消嵌入**&#x200B;清單中的字型仍會完全取消嵌入。*
+   >*如果您使用此選項搭配&#x200B;**取消嵌入某些字型**，則&#x200B;**新增字型至取消嵌入**清單中的字型仍會完全取消嵌入。*
 
    >[!NOTE]
    >
@@ -319,7 +319,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 下表顯示常見的印表機型別及其以dpi計量的解析度、以每英吋線數(lpi)計量的預設熒幕線條數，以及以每英吋畫素數(ppi)計量的影像重新取樣解析度。 例如，如果您要列印到600 dpi雷射印表機，您應該輸入170作為重新取樣影像的解析度。
 
-**影像**&#x200B;選取「影像」以指定色彩、灰階與單色影像的壓縮與重新取樣選項。 您可能想要嘗試這些選項，以找出檔案大小與影像品質之間的適當平衡。彩色與灰階影像的解析度設定應該是1.5到2倍於列印檔案時的網線數。 單色影像的解析度應與輸出裝置相同，但以高於1500 dpi的解析度儲存單色影像時，會增加檔案大小，但不會明顯改善影像品質。 需要放大的影像（例如地圖）可能需要更高的解析度。
+**影像**&#x200B;選取「影像」以指定色彩、灰階與單色影像的壓縮與重新取樣選項。 您可能會想要嘗試使用這些選項，以找出檔案大小和影像品質之間的適當平衡。彩色與灰階影像的解析度設定應為列印檔案時網線的1.5至2倍。 單色影像的解析度應與輸出裝置相同，但以高於1500 dpi的解析度儲存單色影像時，會增加檔案大小，但不會明顯改善影像品質。 需要放大的影像（例如地圖）可能需要更高的解析度。
 
 >[!NOTE]
 >
@@ -378,13 +378,13 @@ NOTE to WRITER: Unfinished sentence above.
 * **捨棄所有物件資料**：從PDF移除所有物件。
 * **捨棄外部交叉參照**：移除其他檔案的連結。 跳至PDF內其他位置的連結不會移除。
 * **捨棄隱藏的圖層內容並平面化可見的圖層**：減少檔案大小。 最佳化的檔案看起來像原始的PDF，但不包含圖層資訊。
-* **捨棄檔案資訊和中繼資料**：移除檔案資訊字典和所有中繼資料串流中的資訊。 (使用「另存新檔」命令，將中繼資料串流還原為PDF的復本。)
-* **捨棄檔案附件**：移除所有檔案附件，包括新增至PDF作為註解的附件。 (PDF Optimizer不會最佳化附加檔案)。
+* **捨棄檔案資訊和中繼資料**：移除檔案資訊字典和所有中繼資料串流中的資訊。 （使用「另存新檔」命令，將中繼資料串流還原為PDF的復本。）
+* **捨棄檔案附件**：移除所有檔案附件，包括新增至PDF作為註解的附件。 （PDF Optimizer不會最佳化附加檔案）。
 * **捨棄其他應用程式的私人資料**：從PDF檔案中移除僅對建立檔案的應用程式有用的資訊。 此設定不會影響PDF的功能，但會減少檔案大小。
 
 ### 清除 {#clean-up}
 
-選取&#x200B;**清除**&#x200B;以移除檔案中不必要的專案。
+選取&#x200B;**清除**以移除檔案中不必要的專案。
 這些專案包括已過時或不必要用於檔案預期用途的元素。 移除某些元素可能會嚴重影響PDF的功能。 依預設，只會選取不影響功能的元素。 如果您不確定移除其他選項的影響，請使用預設選取專案。
 
 **壓縮**
@@ -416,9 +416,9 @@ NOTE to WRITER: Unfinished sentence above.
 
 **嘗試以OpenOffice作為遞補轉換器**：選取此選項且使用Microsoft Excel的轉換失敗或達到指定的逾時限制時，PDF Generator會嘗試使用OpenOffice進行轉換。 如果使用OpenOffice的轉換失敗或達到指定的逾時限制，則會將例外寫入記錄檔。
 
-**副檔名**：指定此應用程式所接受的檔案型別副檔名（以逗號分隔）。 預設值為`xls,xlsx`。 請勿在擴充功能前加上句點或空格。
+**副檔名**：指定此應用程式所接受的檔案型別副檔名（以逗號分隔）。 預設為 `xls,xlsx`。 請勿在擴充功能前加上句點或空格。
 
-**建立PDF/A-1a相容檔案**：強制使用PDF/A-1b：2005 RGB Adobe PDF設定。
+**建立符合PDF/A-1a的檔案**：強制使用PDF/A-1b:2005 RGB Adobe PDF設定。
 
 **將書籤新增至Adobe PDF**：將Excel工作表名稱轉換為書籤。 依預設，會選取此選項。
 
@@ -472,17 +472,17 @@ NOTE to WRITER: Unfinished sentence above.
 
 **[!UICONTROL 將隱藏的幻燈片轉換成PDF頁面]**：轉換隱藏的幻燈片。
 
-**[!UICONTROL 建立PDF/A-1a相容檔案]**：強制使用PDF/A-1b：2005 RGB Adobe PDF設定。 產生PDF檔案時，有些PowerPoint功能不會轉換。 如果PowerPoint轉變在Acrobat中沒有同等轉變，則會取代類似的轉變。 如果同一幻燈片中有多個動畫效果，則使用單一效果。 轉換頁面切換效果與專案符號外掛程式。
+**[!UICONTROL 建立符合PDF/A-1a的檔案]**：強制使用PDF/A-1b:2005 RGB Adobe PDF設定。 產生PDF檔案時，有些PowerPoint功能不會轉換。 如果PowerPoint轉變在Acrobat中沒有同等轉變，則會取代類似的轉變。 如果同一幻燈片中有多個動畫效果，則使用單一效果。 轉換頁面切換效果與專案符號外掛程式。
 
 ## Microsoft專案設定（僅限Windows） {#microsoft-project-settings-windows-only}
 
 這些選項決定Microsoft專案檔案的轉換方式。 如需有關存取這些選項的指示，請參閱[建立或編輯檔案型別設定](#create-or-edit-file-type-settings)。
 
-1. **[!UICONTROL 副檔名：]**&#x200B;指定此應用程式所接受的檔案型別副檔名（以逗號分隔）。 預設值為`mpp`。 請勿在擴充功能前加上句點或空格。
+1. **[!UICONTROL 副檔名：]**&#x200B;指定此應用程式所接受的檔案型別副檔名（以逗號分隔）。 預設為 `mpp`。 請勿在擴充功能前加上句點或空格。
 
 1. **[!UICONTROL 轉換檔案資訊]**：從來源檔案的[內容]對話方塊新增檔案資訊，包括標題、主旨、作者、關鍵字、經理、公司、類別和註解。 依預設，會選取此選項。
 1. **[!UICONTROL 將Source檔案附加至Adobe PDF]**：將來源檔案作為附件新增至PDF檔案。
-1. **[!UICONTROL 建立PDF/A-1a相容檔案]**：強制使用PDF/A-1b：2005 RGB Adobe PDF設定。
+1. **[!UICONTROL 建立符合PDF/A-1a的檔案]**：強制使用PDF/A-1b:2005 RGB Adobe PDF設定。
 1. **[!UICONTROL 自動執行巨集]**：在轉換檔案之前先執行Microsoft專案檔案中的任何巨集（例如插入目前時間的巨集）。
 
 ## Microsoft Word設定（僅限Windows） {#microsoft-word-settings-windows-only}
@@ -491,7 +491,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 **[!UICONTROL 嘗試以OpenOffice作為遞補轉換器]**：選取此選項且使用Microsoft Word的轉換失敗或達到指定的逾時限制時，PDF Generator會嘗試使用OpenOffice進行轉換。 如果使用OpenOffice的轉換失敗或達到指定的逾時限制，則會將例外寫入記錄檔。
 
-**[!UICONTROL 副檔名]**：指定此應用程式所接受的檔案型別副檔名（以逗號分隔）。 預設值為`doc,docx,rtf,txt`。 請勿在擴充功能前加上句點或空格。
+**[!UICONTROL 副檔名]**：指定此應用程式所接受的檔案型別副檔名（以逗號分隔）。 預設為 `doc,docx,rtf,txt`。 請勿在擴充功能前加上句點或空格。
 
 **[!UICONTROL 轉換檔案資訊]**：從來源檔案的[內容]對話方塊新增檔案資訊，包括標題、主旨、作者、關鍵字、經理、公司、類別和註解。 依預設，會選取此選項。
 
@@ -503,7 +503,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 **[!UICONTROL 啟用協助工具並使用已標籤的Adobe PDF重排]**：將標籤內嵌至PDF檔案。 依預設，會選取此選項。
 
-**[!UICONTROL 建立PDF/A-1a相容檔案]**：如果選取，會強制使用PDF/A-1b：2005 RGB Adobe PDF設定。
+**[!UICONTROL 建立PDF/A-1a相容檔案]**：如果選取，強制使用PDF/A-1b:2005 RGB Adobe PDF設定。
 
 **[!UICONTROL 自動執行巨集]**：在轉換檔案之前先執行Word檔案中的任何巨集（例如插入目前時間的巨集）。
 
@@ -545,7 +545,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 **在Adobe Acrobat中檢視時開啟圖層面板**：如果Visio圖層未平面化，會開啟一個視窗，您可以在其中指定使用Acrobat開啟時，PDF檔案中保留的圖層。 依預設，會選取此選項。
 
-**建立PDF/A-1b相容檔案**：強制使用Adobe PDF設定PDF/A-1b：2005 (RGB)。
+**建立PDF/A-1b相容檔案**：強制使用Adobe PDF設定PDF/A-1b:2005 (RGB)。
 
 **將評論轉換為Adobe PDF評論**：將Visio註解轉換為PDF評論。
 
@@ -553,13 +553,13 @@ NOTE to WRITER: Unfinished sentence above.
 
 這些選項決定Microsoft Publisher檔案的轉換方式。 如需有關存取這些選項的指示，請參閱[建立或編輯檔案型別設定](#create-or-edit-file-type-settings)。
 
-**[!UICONTROL 副檔名]**：指定此應用程式所接受的檔案型別副檔名（以逗號分隔）。 預設值為`pub`。 請勿在擴充功能前加上句點或空格。
+**[!UICONTROL 副檔名]**：指定此應用程式所接受的檔案型別副檔名（以逗號分隔）。 預設為 `pub`。 請勿在擴充功能前加上句點或空格。
 
 ## AutoCAD設定（僅限Windows） {#autocad-settings-windows-only}
 
 這些選項決定AutoCAD檔案的轉換方式。 如需有關存取這些選項的指示，請參閱[建立或編輯檔案型別設定](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings)。
 
-**[!UICONTROL 副檔名]**：指定此應用程式所接受的檔案型別副檔名（以逗號分隔）。 預設值為`dwg`。 請勿在擴充功能前加上句點或空格。
+**[!UICONTROL 副檔名]**：指定此應用程式所接受的檔案型別副檔名（以逗號分隔）。 預設為 `dwg`。 請勿在擴充功能前加上句點或空格。
 
 **[!UICONTROL 轉換檔案資訊]**：從來源檔案的[內容]對話方塊新增檔案資訊，包括標題、主旨、作者、關鍵字、經理、公司、類別和註解。 依預設，會選取此選項。
 
@@ -593,7 +593,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 **試用PDFMaker做為遞補轉換器**：選取此選項且使用OpenOffice的轉換失敗或達到指定的逾時限制時，PDF Generator會嘗試使用PDFMaker進行轉換。 如果使用PDFMaker的轉換失敗或達到指定的逾時限制，則會將例外寫入記錄檔。
 
-**副檔名**：指定此應用程式可接受的檔案型別副檔名（以逗號分隔）。 預設值為`odt,odp,ods,odg,odf,sxw,sxi,sxd`。 請勿在擴充功能前加上句點或空格。
+**副檔名**：指定此應用程式可接受的檔案型別副檔名（以逗號分隔）。 預設為 `odt,odp,ods,odg,odf,sxw,sxi,sxd`。 請勿在擴充功能前加上句點或空格。
 
 **範圍**：轉換所有頁面，或指定特定頁面或頁面範圍。 如果未定義頁面範圍，則會轉換所有頁面。 若要匯出一定範圍的頁面，請使用格式3-6。 若要匯出單一頁面，請使用格式7；9；11。 您可以使用3-6；8；10；12等格式匯出頁面範圍和單一頁面的組合。
 

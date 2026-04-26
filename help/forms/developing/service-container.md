@@ -11,9 +11,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: fea20b34-2f66-460e-8b1c-4e55842bc789
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
@@ -30,25 +30,25 @@ ht-degree: 0%
  <thead>
   <tr>
    <th><p>引動方法</p></th>
-   <th><p>描述</p></th>
+   <th><p>說明</p></th>
   </tr>
  </thead>
  <tbody>
   <tr>
    <td><p>遠端整合</p></td>
-   <td><p>遠端整合可讓Flex使用者端叫用服務作業。 (請參閱<a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting">使用AEM Forms (AEM表單已棄用) AEM Forms Remoting</a>叫用。)</p></td>
+   <td><p>遠端整合可讓Flex使用者端叫用服務作業。 (請參閱<a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting">使用AEM Forms （AEM表單已棄用） AEM Forms Remoting</a>叫用。)</p></td>
   </tr>
   <tr>
    <td><p>Java API</p></td>
-   <td><p>Java API可以叫用AEM Forms服務。 Java API會整理至使用者端程式庫和Java叫用API。 (請參閱<a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api">使用Java API叫用AEM Forms</a>。)</p></td>
+   <td><p>Java API可以叫用AEM Forms服務。 Java API會整理至使用者端程式庫和Java叫用API。 （請參閱<a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api">使用Java API叫用AEM Forms</a>。）</p></td>
   </tr>
   <tr>
    <td><p>網站服務</p></td>
-   <td><p>AEM Forms支援SOAP/HTTP等Web服務標準。 服務可以公開為Web服務，WSDL遵循W3C定義的Web服務標準。</p><p>您可以從任何Web服務棧疊叫用服務，包括.NET Framework和Sun™ Web服務SDK。 (請參閱<a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services">使用Web服務叫用AEM Forms</a>。)</p></td>
+   <td><p>AEM Forms支援SOAP/HTTP等Web服務標準。 服務可以公開為Web服務，WSDL遵循W3C定義的Web服務標準。</p><p>您可以從任何Web服務棧疊叫用服務，包括.NET Framework和Sun™ Web服務SDK。 （請參閱<a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services">使用Web服務叫用AEM Forms</a>。）</p></td>
   </tr>
   <tr>
    <td><p>REST要求</p></td>
-   <td><p>AEM Forms支援REST要求。 可以直接從HTML頁面叫用服務。 (請參閱<a href="/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests">使用REST要求叫用AEM Forms</a>。)</p></td>
+   <td><p>AEM Forms支援REST要求。 可以直接從HTML頁面叫用服務。 （請參閱<a href="/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests">使用REST要求叫用AEM Forms</a>。）</p></td>
   </tr>
  </tbody>
 </table>
@@ -66,7 +66,7 @@ ht-degree: 0%
 * 將呼叫要求路由到適當的服務（要呼叫的服務名稱是呼叫要求的一部分）。
 * 執行工作，例如判斷呼叫者是否有許可權呼叫指定的服務作業。 叫用要求必須包含有效的AEM表單使用者名稱和密碼。
 
-  有不同的方式可以將呼叫要求傳送至服務。 此外，也有不同的方式可將所需的輸入值傳送至服務。 例如，假設您使用Java API來叫用需要PDF檔案的服務。 對應的Java方法包含一個接受PDF檔案的引數。 在此情況下，引數的資料型別為`com.adobe.idp.Document`。 (請參閱[使用Java API傳遞資料至AEM Forms服務](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)。)
+  有不同的方式可以將呼叫要求傳送至服務。 此外，也有不同的方式可將所需的輸入值傳送至服務。 例如，假設您使用Java API來叫用需要PDF檔案的服務。 對應的Java方法包含一個接受PDF檔案的引數。 在此情況下，引數的資料型別為`com.adobe.idp.Document`。 （請參閱[使用Java API傳遞資料至AEM Forms服務](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)。）
 
   如果您使用watched資料夾叫用服務，則在您將檔案放在設定的watched資料夾中時，會傳送叫用要求。 如果您使用電子郵件叫用服務，當電子郵件訊息到達設定的收件匣時，就會傳送叫用要求給服務。
 
@@ -88,7 +88,7 @@ ht-degree: 0%
 
 [瞭解AEM Forms流程](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)
 
-[使用AEM Forms (AEM表單已棄用) AEM Forms Remoting叫用](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
+[使用AEM Forms （AEM表單已棄用） AEM Forms Remoting叫用](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 
 [使用Java API叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 

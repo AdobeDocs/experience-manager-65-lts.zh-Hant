@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 8bb1dd68-51ec-4458-9ff8-bfe6fb0b67fd
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1036'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES （已淘汰）是隨LiveCycle安裝的內容管理系統。 它可讓使用者設計、管理、監控及最佳化以人為中心的流程。 內容服務（已棄用）支援將於2014年12月31日終止。 請參閱[Adobe產品生命週期檔案](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)。
+>® LiveCycle® Content Services ES （已淘汰）是隨LiveCycle安裝的內容管理系統。 它可讓使用者設計、管理、監控及最佳化以人為中心的流程。 內容服務（已棄用）支援將於2014年12月31日終止。 請參閱[Adobe產品生命週期檔案](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)。
 
 ## 啟用差異目錄同步處理 {#enable-delta-directory-synchronization}
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 1. 在管理控制檯中，按一下「設定」>「使用者管理」>「組態」>「設定進階系統屬性」。
 1. 在Synch Finisher Cron運算式下，輸入cron運算式，代表「使用者管理」重試同步失敗的時間間隔。 cron運算式的使用是根據Quartz開放原始碼工作排程系統1.4.0版。
 
-   預設值為0 0/13 &amp;amp；ast； ？ &amp;amp；ast； ，這表示每13分鐘進行一次檢查。
+   預設值為0 0/13 &amp;ast； ？ &amp;ast； ，這表示每13分鐘進行一次檢查。
 
 ## 手動同步目錄 {#manually-synchronize-directories}
 

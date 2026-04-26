@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 2823d38e-f544-408e-9437-3d0fc622dc34
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '257'
 ht-degree: 1%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 1%
 1. 在Administration Console中，按一下「服務」 > 「表單」。
 1. 在「表單輸出」下的「輸出型別」清單中，選取下列選項之一：
 
-   **完整HTML：**&#x200B;若要在完整HTML標籤(完整的HTML頁面)中轉譯表單。 此值為預設值。
+   **完整HTML：**&#x200B;若要在完整HTML標籤（完整的HTML頁面）中轉譯表單。 此值為預設值。
 
-   **表單內文：**&#x200B;若要在`<BODY>`標籤內轉譯表單(不是完整的HTML頁面)。
+   **表單內文：**&#x200B;若要在`<BODY>`標籤內轉譯表單（不是完整的HTML頁面）。
 
 1. 按一下「儲存」。
 

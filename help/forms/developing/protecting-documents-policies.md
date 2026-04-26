@@ -11,9 +11,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 0664e8f8-fad4-40e6-871e-24bba642fb4f
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '15394'
+source-wordcount: '15601'
 ht-degree: 0%
 
 ---
@@ -154,17 +154,17 @@ Document Security服務也會保護其他檔案型別，例如Microsoft Word檔�
 必須將下列JAR檔案新增至專案的類別路徑：
 
 * adobe-rightsmanagement-client.jar
-* namespace.jar (如果AEM Forms部署在JBoss上)
-* jaxb-api.jar (如果AEM Forms部署在JBoss上)
-* jaxb-impl.jar (如果AEM Forms部署在JBoss上)
-* jaxb-libs.jar (如果AEM Forms部署在JBoss上)
-* jaxb-xjc.jar (如果AEM Forms部署在JBoss上)
-* relaxngDatatype.jar (如果AEM Forms部署在JBoss上)
-* xsdlib.jar (如果AEM Forms部署在JBoss上)
+* namespace.jar （如果AEM Forms部署在JBoss上）
+* jaxb-api.jar （如果AEM Forms部署在JBoss上）
+* jaxb-impl.jar （如果AEM Forms部署在JBoss上）
+* jaxb-libs.jar （如果AEM Forms部署在JBoss上）
+* jaxb-xjc.jar （如果AEM Forms部署在JBoss上）
+* relaxngDatatype.jar （如果AEM Forms部署在JBoss上）
+* xsdlib.jar （如果AEM Forms部署在JBoss上）
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-utilities.jar
-* jbossall-client.jar (如果AEM Forms未部署在JBoss上，請使用其他JAR檔案)
+* jbossall-client.jar （如果AEM Forms未部署在JBoss上，請使用其他JAR檔案）
 
 如需關於這些JAR檔案位置的資訊，請參閱[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
@@ -264,7 +264,7 @@ Document Security服務也會保護其他檔案型別，例如Microsoft Word檔�
 
 如需使用Document Security服務的程式碼範例，請參閱以下內容：
 
-* 「快速入門(SOAP模式)：使用Java API建立原則」
+* 「快速入門（SOAP模式）：使用Java API建立原則」
 
 ### 使用Web服務API建立原則 {#create-a-policy-using-the-web-service-api}
 
@@ -281,7 +281,7 @@ Document Security服務也會保護其他檔案型別，例如Microsoft Word檔�
 1. 建立Document Security Client API物件。
 
    * 使用預設建構函式建立`DocumentSecurityServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`DocumentSecurityServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`DocumentSecurityServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。 您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
    * 取得`RightsManagementServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
@@ -404,7 +404,7 @@ Document Security服務也會保護其他檔案型別，例如Microsoft Word檔�
 
 **程式碼範例**
 
-如需使用Document Security服務的程式碼範例，請參閱快速入門(SOAP模式)：使用Java API修改原則一節。
+如需使用Document Security服務的程式碼範例，請參閱快速入門（SOAP模式）：使用Java API修改原則一節。
 
 ### 使用Web服務API修改現有原則 {#modify-existing-policies-using-the-web-service-api}
 
@@ -421,7 +421,7 @@ Document Security服務也會保護其他檔案型別，例如Microsoft Word檔�
 1. 建立Document Security Client API物件。
 
    * 使用預設建構函式建立`RightsManagementServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`RightsManagementServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`RightsManagementServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。 您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
    * 取得`RightsManagementServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
@@ -507,7 +507,7 @@ Document Security服務也會保護其他檔案型別，例如Microsoft Word檔�
 
 如需使用Document Security服務的程式碼範例，請參閱下列快速入門：
 
-* 「快速入門(SOAP模式)：使用Java API刪除原則」
+* 「快速入門（SOAP模式）：使用Java API刪除原則」
 
 ### 使用Web服務API刪除原則 {#delete-policies-using-the-web-service-api}
 
@@ -524,7 +524,7 @@ Document Security服務也會保護其他檔案型別，例如Microsoft Word檔�
 1. 建立Document Security Client API物件。
 
    * 使用預設建構函式建立`RightsManagementServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`RightsManagementServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`RightsManagementServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。 您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
    * 取得`RightsManagementServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
@@ -643,7 +643,7 @@ Document Security服務將原則套用至PDF檔案後，您可以將受原則保
 如需使用Document Security服務的程式碼範例，請參閱下列快速入門：
 
 * 「快速入門（EJB模式）：使用Java API將原則套用至PDF檔案」
-* 「快速入門(SOAP模式)：使用Java API將原則套用至PDF檔案」
+* 「快速入門（SOAP模式）：使用Java API將原則套用至PDF檔案」
 
 **另請參閱**
 
@@ -666,7 +666,7 @@ Document Security服務將原則套用至PDF檔案後，您可以將受原則保
 1. 建立Document Security Client API物件。
 
    * 使用預設建構函式建立`RightsManagementServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`RightsManagementServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至Forms服務（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`RightsManagementServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至Forms服務（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。 您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
    * 取得`RightsManagementServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
@@ -794,7 +794,7 @@ Document Security服務從PDF檔案中移除原則後，您可以將不安全的
 
 如需使用Document Security服務的程式碼範例，請參閱下列快速入門：
 
-* 「快速入門(SOAP模式)：使用Java API從PDF檔案中移除原則」
+* 「快速入門（SOAP模式）：使用Java API從PDF檔案中移除原則」
 
 ### 使用Web服務API移除原則 {#remove-a-policy-using-the-web-service-api}
 
@@ -811,7 +811,7 @@ Document Security服務從PDF檔案中移除原則後，您可以將不安全的
 1. 建立Document Security Client API物件。
 
    * 使用預設建構函式建立`DocumentSecurityServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`DocumentSecurityServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`DocumentSecurityServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。 您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
    * 取得`DocumentSecurityServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
@@ -937,7 +937,7 @@ Document Security服務從PDF檔案中移除原則後，您可以將不安全的
 
 如需使用Document Security服務的程式碼範例，請參閱下列快速入門：
 
-* 「快速入門(SOAP模式)：使用Java API撤銷檔案」
+* 「快速入門（SOAP模式）：使用Java API撤銷檔案」
 
 ### 使用Web服務API撤銷檔案的存取權 {#revoke-access-to-documents-using-the-web-service-api}
 
@@ -954,7 +954,7 @@ Document Security服務從PDF檔案中移除原則後，您可以將不安全的
 1. 建立Document Security使用者端API物件
 
    * 使用預設建構函式建立`DocumentSecurityServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`DocumentSecurityServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`DocumentSecurityServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。 您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
    * 取得`DocumentSecurityServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
@@ -1069,7 +1069,7 @@ Document Security服務從PDF檔案中移除原則後，您可以將不安全的
 
 如需使用Document Security服務的程式碼範例，請參閱下列快速入門：
 
-* 「快速入門(SOAP模式)：使用網站服務API恢復對已撤銷檔案的存取權」
+* 「快速入門（SOAP模式）：使用網站服務API恢復對已撤銷檔案的存取權」
 
 ### 使用網站服務API恢復對已撤銷檔案的存取 {#reinstate-access-to-revoked-documents-using-the-web-service-api}
 
@@ -1086,7 +1086,7 @@ Document Security服務從PDF檔案中移除原則後，您可以將不安全的
 1. 建立Document Security Client API物件。
 
    * 使用預設建構函式建立`DocumentSecurityServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`DocumentSecurityServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`DocumentSecurityServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。 您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
    * 取得`DocumentSecurityServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
@@ -1203,7 +1203,7 @@ Document Security服務從PDF檔案中移除原則後，您可以將不安全的
 
 如需使用Document Security服務的程式碼範例，請參閱下列快速入門：
 
-* 「快速入門(SOAP模式)：使用Java API檢查受原則保護的PDF檔案」
+* 「快速入門（SOAP模式）：使用Java API檢查受原則保護的PDF檔案」
 
 ### 使用網站服務API檢查受原則保護的PDF檔案 {#inspect-policy-protected-pdf-documents-using-the-web-service-api}
 
@@ -1220,7 +1220,7 @@ Document Security服務從PDF檔案中移除原則後，您可以將不安全的
 1. 建立Document Security Client API物件。
 
    * 使用預設建構函式建立`RightsManagementServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`RightsManagementServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`RightsManagementServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。 您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
    * 取得`RightsManagementServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
@@ -1423,7 +1423,7 @@ Document Security服務從PDF檔案中移除原則後，您可以將不安全的
 
 如需使用Document Security服務的程式碼範例，請參閱下列快速入門：
 
-* 「快速入門(SOAP模式)：使用Java API建立浮水印」
+* 「快速入門（SOAP模式）：使用Java API建立浮水印」
 
 ### 使用網站服務API建立浮水印 {#create-watermarks-using-the-web-service-api}
 
@@ -1440,7 +1440,7 @@ Document Security服務從PDF檔案中移除原則後，您可以將不安全的
 1. 建立Document Security Client API物件。
 
    * 使用預設建構函式建立`RightsManagementServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`RightsManagementServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`RightsManagementServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。 您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
    * 取得`RightsManagementServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
@@ -1570,7 +1570,7 @@ Document Security服務從PDF檔案中移除原則後，您可以將不安全的
 
 **程式碼範例**
 
-如需使用Document Security服務的程式碼範例，請參閱快速入門(SOAP模式)：使用Java API修改浮水印一節。
+如需使用Document Security服務的程式碼範例，請參閱快速入門（SOAP模式）：使用Java API修改浮水印一節。
 
 ### 使用網站服務API修改浮水印 {#modify-watermarks-using-the-web-service-api}
 
@@ -1587,7 +1587,7 @@ Document Security服務從PDF檔案中移除原則後，您可以將不安全的
 1. 建立Document Security Client API物件。
 
    * 使用預設建構函式建立`DocumentSecurityServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`RightsManagementServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/DocumentSecurityService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`RightsManagementServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/DocumentSecurityService?WSDL`）。 您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
    * 取得`DocumentSecurityServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
@@ -1715,7 +1715,7 @@ Rights Management服務會在特定動作發生時加以追蹤，例如將原則
 1. 建立Rights Management使用者端API物件
 
    * 使用預設建構函式建立`DocumentSecurityServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`DocumentSecurityServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`DocumentSecurityServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。 您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
    * 取得`DocumentSecurityServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
@@ -2042,7 +2042,7 @@ Document Security服務將原則套用至Word檔案後，您就可以將受原�
 
 如需使用Document Security服務的程式碼範例，請參閱下列快速入門：
 
-* 「快速入門(SOAP模式)：使用Java API將原則套用至Word檔案」
+* 「快速入門（SOAP模式）：使用Java API將原則套用至Word檔案」
 
 ### 使用網站服務API將原則套用至Word檔案 {#apply-a-policy-to-a-word-document-using-the-web-service-api}
 
@@ -2059,7 +2059,7 @@ Document Security服務將原則套用至Word檔案後，您就可以將受原�
 1. 建立Document Security Client API物件。
 
    * 使用預設建構函式建立`DocumentSecurityServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`DocumentSecurityServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/DocumentSecurityService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`DocumentSecurityServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/DocumentSecurityService?WSDL`）。 您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
    * 取得`DocumentSecurityServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
@@ -2186,7 +2186,7 @@ Document Security服務將原則套用至Word檔案後，您就可以將受原�
 
 如需使用Document Security服務的程式碼範例，請參閱下列快速入門：
 
-* 「快速入門(SOAP模式)：使用Java API從Word檔案中移除原則」
+* 「快速入門（SOAP模式）：使用Java API從Word檔案中移除原則」
 
 ### 使用網站服務API從Word檔案中移除一項原則 {#remove-a-policy-from-a-word-document-using-the-web-service-api}
 
@@ -2203,7 +2203,7 @@ Document Security服務將原則套用至Word檔案後，您就可以將受原�
 1. 建立Document Security使用者端API物件
 
    * 使用預設建構函式建立`RightsManagementServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`RightsManagementServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`RightsManagementServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。 您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。)
    * 取得`RightsManagementServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：

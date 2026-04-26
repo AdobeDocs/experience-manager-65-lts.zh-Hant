@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: cbcb9301-48c9-4394-b8c0-766eed76101d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1555'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ GDS位置的備份頻率取決於AEM Forms的使用方式以及可用的備份�
 將AEM Forms置於安全備份（快照）模式或滾動備份（連續涵蓋範圍）模式。 在設定AEM Forms進入任一備份模式之前，請確定下列事項：
 
 * 驗證系統版本，並記錄上次執行完整系統映像備份後套用的修補程式或更新。
-* 如果您使用滾動或快照模式備份，請確定您的資料庫已設定正確的記錄檔設定，以允許進行資料庫的熱備份。 (請參閱[AEM Forms資料庫](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database)。)
+* 如果您使用滾動或快照模式備份，請確定您的資料庫已設定正確的記錄檔設定，以允許進行資料庫的熱備份。 （請參閱[AEM Forms資料庫](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database)。）
 
 除此之外，請遵循下列備份/還原程式准則。
 
@@ -60,16 +60,16 @@ GDS位置的備份頻率取決於AEM Forms的使用方式以及可用的備份�
    * 請確認製作與發佈執行個體的備份已同步處理，以便同時啟動。 雖然您可以在執行備份時繼續使用製作和發佈執行個體，但建議不要在備份期間發佈任何資產，以避免任何未擷取的變更。 請等待製作和發佈執行個體的備份結束，然後再發佈新資產。
    * 製作節點的完整備份包括Forms Manager和AEM Forms Workspace資料的備份。
    * Workbench開發人員可繼續在本機處理其程式。 他們不應在備份階段部署任何新程式。
-   * 每個備份工作階段長度（用於滾動備份模式）的決定應依據備份AEM Forms中的所有資料(DB、GDS、AEM存放庫和任何其他自訂資料)所花的總時間。
+   * 每個備份工作階段長度（用於滾動備份模式）的決定應依據備份AEM Forms中的所有資料（DB、GDS、AEM存放庫和任何其他自訂資料）所花的總時間。
 
 備份AEM Forms資料庫，包括任何交易記錄。 請參閱[AEM Forms資料庫](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database)。
 
 如需詳細資訊，請參閱適用於您資料庫的知識庫文章：
 <!-- The four URLs below are all 404s; checked July 19, 2023 -->
 * [適用於AEM Forms的Oracle備份與復原](https://www.adobe.com/go/kb403624)
-* 適用於AEM Forms的[MySQL備份與復原](https://www.adobe.com/go/kb403625)
-* [Microsoft® SQL Server Backup and Recovery for AEM Forms](https://www.adobe.com/go/kb403623)
-* 適用於AEM Forms的[DB2®備份與復原](https://www.adobe.com/go/kb403626)
+* [適用於AEM Forms的MySQL備份與復原](https://www.adobe.com/go/kb403625)
+* [適用於AEM Forms的Microsoft® SQL Server備份與復原](https://www.adobe.com/go/kb403623)
+* [DB2® AEM Forms的備份與復原](https://www.adobe.com/go/kb403626)
 
 這些文章提供基本資料庫功能的相關指引，以供您備份及復原資料。 這些指南並非特定廠商的資料庫備份與復原功能的完整技術指南。 這些命令概述為AEM Forms應用程式資料建立可靠資料庫備份策略所需的命令。
 

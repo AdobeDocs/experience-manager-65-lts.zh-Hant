@@ -11,9 +11,9 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 42c85231-9e65-4c3c-8b86-3efdaa577161
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '5333'
+source-wordcount: '5557'
 ht-degree: 0%
 
 ---
@@ -274,7 +274,7 @@ Java API支援下列功能：
    <td>
     <ul>
      <li><p>如果AEM Forms部署在WebSphere Application Server上，請包含這些JAR檔案。</p> </li>
-     <li><p>(Web服務呼叫需要com.ibm.ws.webservices.thinclient_6.1.0.jar)。</p> </li>
+     <li><p>（Web服務呼叫需要com.ibm.ws.webservices.thinclient_6.1.0.jar）。</p> </li>
     </ul> </td>
    <td><p>WebSphere特定的lib目錄(<em>[WAS_HOME]</em>/runtime)</p> <p>如果您將使用者端應用程式部署在同一J2EE應用程式伺服器上，則不需要包含這些檔案。</p> </td>
   </tr>
@@ -430,7 +430,7 @@ Java API支援下列功能：
 
 * **DSC_DEFAULT_SOAP_ENDPOINT**：如果您使用SOAP連線模式，此值代表叫用要求傳送到的端點。 若要從遠端叫用AEM Forms，請指定部署AEM Forms的J2EE應用程式伺服器名稱。 如果您的使用者端應用程式位於相同的J2EE應用程式伺服器上，您可以指定`localhost` （例如，`http://localhost:8080`）。
 
-   * 如果J2EE應用程式是JBoss，則通訊埠值`8080`適用。 如果J2EE應用程式伺服器是IBM® WebSphere®，請使用連線埠`9080`。 同樣地，如果J2EE應用程式伺服器是WebLogic，請使用連線埠`7001`。 (這些值是預設的連線埠值。 如果您變更連線埠值，請使用適用的連線埠號碼。)
+   * 如果J2EE應用程式是JBoss，則通訊埠值`8080`適用。 如果J2EE應用程式伺服器是® WebSphere®，請使用連線埠`9080`。 同樣地，如果J2EE應用程式伺服器是WebLogic，請使用連線埠`7001`。 (這些值是預設的連線埠值。 如果您變更連線埠值，請使用適用的連線埠號碼。)
 
 * **DSC_TRANSPORT_PROTOCOL**：如果您使用EJB連線模式，請為此值指定`ServiceClientFactoryProperties.DSC_EJB_PROTOCOL`。 如果您使用SOAP連線模式，請指定`ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`。
 * **DSC_SERVER_TYPE**：指定部署AEM Forms的J2EE應用程式伺服器。 有效值為`JBoss`、`WebSphere`、`WebLogic`。
@@ -442,7 +442,7 @@ Java API支援下列功能：
 
   >[!NOTE]
   >
-  >您可以使用`DSC_SERVER_TYPE`類別的靜態成員，而不使用字串來設定`ServiceClientFactoryProperties`連線屬性。 可以使用下列值： `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`、`ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`或`ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`。
+  >您可以使用`ServiceClientFactoryProperties`類別的靜態成員，而不使用字串來設定`DSC_SERVER_TYPE`連線屬性。 可以使用下列值： `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`、`ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`或`ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`。
 
 * **DSC_CREDENTIAL_USERNAME：**&#x200B;指定AEM表單使用者名稱。 使用者若要成功叫用AEM Forms服務，他們需要服務使用者角色。 使用者也可以擁有其他包含「服務啟動」許可權的角色。 否則，當他們嘗試叫用服務時，會擲回例外狀況。 如果停用服務安全性，則不需要指定此連線屬性。
 * **DSC_CREDENTIAL_PASSWORD：**&#x200B;指定對應的密碼值。 如果停用服務安全性，則不需要指定此連線屬性。
@@ -474,7 +474,7 @@ Java API支援下列功能：
 1. 若要設定`DSC_SERVER_TYPE`連線屬性，請叫用`java.util.Properties`物件的`setProperty`方法，並傳遞下列值：
 
    * `ServiceClientFactoryProperties.DSC_SERVER_TYPE`列舉值
-   * 字串值，指定代管AEM Forms的J2EE應用程式伺服器(例如，如果AEM Forms部署在JBoss上，請指定`JBoss`)。
+   * 字串值，指定代管AEM Forms的J2EE應用程式伺服器（例如，如果AEM Forms部署在JBoss上，請指定`JBoss`）。
 
       1. 若要設定`DSC_CREDENTIAL_USERNAME`連線屬性，請叫用`java.util.Properties`物件的`setProperty`方法，並傳遞下列值：
 
@@ -572,7 +572,7 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
 
 **使用內容物件來叫用AEM Forms**
 
-您可以使用`com.adobe.idp.Context`物件來叫用具有已驗證使用者的AEM Forms服務（`com.adobe.idp.Context`物件代表已驗證的使用者）。 使用`com.adobe.idp.Context`物件時，您不需要設定`DSC_CREDENTIAL_USERNAME`或`DSC_CREDENTIAL_PASSWORD`屬性。 您可以使用`com.adobe.idp.Context`物件的`AuthenticationManagerServiceClient`方法在驗證使用者時取得`authenticate`物件。
+您可以使用`com.adobe.idp.Context`物件來叫用具有已驗證使用者的AEM Forms服務（`com.adobe.idp.Context`物件代表已驗證的使用者）。 使用`com.adobe.idp.Context`物件時，您不需要設定`DSC_CREDENTIAL_USERNAME`或`DSC_CREDENTIAL_PASSWORD`屬性。 您可以使用`AuthenticationManagerServiceClient`物件的`authenticate`方法在驗證使用者時取得`com.adobe.idp.Context`物件。
 
 `authenticate`方法傳回包含驗證結果的`AuthResult`物件。 您可以透過叫用它的建構函式來建立`com.adobe.idp.Context`物件。 接著叫用`com.adobe.idp.Context`物件的`initPrincipal`方法並傳遞`AuthResult`物件，如下列程式碼所示：
 
@@ -581,9 +581,9 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
  myCtx.initPrincipal(authResult);
 ```
 
-您可以叫用`DSC_CREDENTIAL_USERNAME`物件的`DSC_CREDENTIAL_PASSWORD`方法並傳遞`ServiceClientFactory`物件，而不設定`setContext`或`com.adobe.idp.Context`屬性。 使用AEM表單使用者叫用服務時，請確定他們具有叫用AEM Forms服務所需的名為`Services User`的角色。
+您可以叫用`ServiceClientFactory`物件的`setContext`方法並傳遞`com.adobe.idp.Context`物件，而不設定`DSC_CREDENTIAL_USERNAME`或`DSC_CREDENTIAL_PASSWORD`屬性。 使用AEM表單使用者叫用服務時，請確定他們具有叫用AEM Forms服務所需的名為`Services User`的角色。
 
-下列程式碼範例說明如何在用來建立`com.adobe.idp.Context`物件的連線設定中使用`EncryptionServiceClient`物件。
+下列程式碼範例說明如何在用來建立`EncryptionServiceClient`物件的連線設定中使用`com.adobe.idp.Context`物件。
 
 ```java
  //Authenticate a user and use the Context object within connection settings
@@ -793,9 +793,9 @@ AEM Forms服務不接受PDF檔案做為其他資料型別，例如`java.io.Input
 
 #### 根據檔案建立檔案 {#creating-a-document-based-on-a-file}
 
-下列程式碼範例會根據名為`com.adobe.idp.Document`map.pdf *的PDF檔案來建立*&#x200B;物件。 此檔案位於C硬碟的根目錄。 此建構函式會嘗試使用副檔名來設定`com.adobe.idp.Document`物件的MIME內容型別。
+下列程式碼範例會根據名為&#x200B;*map.pdf*&#x200B;的PDF檔案來建立`com.adobe.idp.Document`物件。 此檔案位於C硬碟的根目錄。 此建構函式會嘗試使用副檔名來設定`com.adobe.idp.Document`物件的MIME內容型別。
 
-接受`com.adobe.idp.Document`物件的`java.io.File`建構函式也接受布林引數。 透過將此引數設定為`true`，`com.adobe.idp.Document`物件會刪除檔案。 此動作表示您將檔案傳遞至`com.adobe.idp.Document`建構函式後，不必移除檔案。
+接受`java.io.File`物件的`com.adobe.idp.Document`建構函式也接受布林引數。 透過將此引數設定為`true`，`com.adobe.idp.Document`物件會刪除檔案。 此動作表示您將檔案傳遞至`com.adobe.idp.Document`建構函式後，不必移除檔案。
 
 將此引數設定為`false`表示您保留此檔案的所有權。 將此引數設定為`true`會更有效率。 原因在於`com.adobe.idp.Document`物件可以直接將檔案移至本機Managed區域，而非複製檔案（速度較慢）。
 
@@ -809,7 +809,7 @@ AEM Forms服務不接受PDF檔案做為其他資料型別，例如`java.io.Input
 
 #### 根據InputStream物件建立檔案 {#creating-a-document-based-on-an-inputstream-object}
 
-下列Java程式碼範例會建立以`com.adobe.idp.Document`物件為基礎的`java.io.InputStream`物件。
+下列Java程式碼範例會建立以`java.io.InputStream`物件為基礎的`com.adobe.idp.Document`物件。
 
 **根據InputStream物件建立檔案**
 
@@ -821,7 +821,7 @@ AEM Forms服務不接受PDF檔案做為其他資料型別，例如`java.io.Input
 
 #### 根據可從URL存取的內容建立檔案 {#creating-a-document-based-on-content-accessible-from-an-url}
 
-以下Java程式碼範例會根據名為`com.adobe.idp.Document`map.pdf *的PDF檔案來建立*&#x200B;物件。 此檔案位於名為`WebApp`的Web應用程式中，該應用程式正在`localhost`上執行。 此建構函式會嘗試使用URL通訊協定傳回的內容型別來設定`com.adobe.idp.Document`物件的MIME內容型別。
+以下Java程式碼範例會根據名為&#x200B;*map.pdf*&#x200B;的PDF檔案來建立`com.adobe.idp.Document`物件。 此檔案位於名為`WebApp`的Web應用程式中，該應用程式正在`localhost`上執行。 此建構函式會嘗試使用URL通訊協定傳回的內容型別來設定`com.adobe.idp.Document`物件的MIME內容型別。
 
 提供給`com.adobe.idp.Document`物件的URL一律會在建立原始`com.adobe.idp.Document`物件的一側讀取，如以下範例所示：
 
@@ -883,7 +883,7 @@ c：/temp/input.pdf檔案必須位於使用者端電腦上（而非伺服器電�
 
 ### 決定檔案的內容型別 {#determining-the-content-type-of-a-document}
 
-呼叫`com.adobe.idp.Document`物件的`com.adobe.idp.Document`方法，判斷`getContentType`物件的MIME型別。 此方法會傳回字串值，指定`com.adobe.idp.Document`物件的內容型別。 下表說明AEM Forms傳回的不同內容型別。
+呼叫`com.adobe.idp.Document`物件的`getContentType`方法，判斷`com.adobe.idp.Document`物件的MIME型別。 此方法會傳回字串值，指定`com.adobe.idp.Document`物件的內容型別。 下表說明AEM Forms傳回的不同內容型別。
 
 <table>
  <thead>
@@ -962,11 +962,11 @@ AEM Forms服務作業可使用服務的強型別API （稱為Java使用者端程
 
 若要執行服務作業，請叫用屬於Java物件的方法。 Java使用者端程式庫所包含的方法，通常會將服務操作對應到一。 使用Java使用者端程式庫時，請設定必要的連線屬性。 （請參閱[設定連線屬性](invoking-aem-forms-using-java.md#setting-connection-properties)。）
 
-在您設定連線屬性之後，請建立`ServiceClientFactory`物件，用來具現化Java物件，讓您叫用服務。 每個具有Java使用者端程式庫的服務都有對應的使用者端物件。 例如，若要叫用存放庫服務，請使用它的建構函式並傳遞`ResourceRepositoryClient`物件來建立`ServiceClientFactory`物件。 `ServiceClientFactory`物件負責維護呼叫AEM Forms服務所需的連線設定。
+在您設定連線屬性之後，請建立`ServiceClientFactory`物件，用來具現化Java物件，讓您叫用服務。 每個具有Java使用者端程式庫的服務都有對應的使用者端物件。 例如，若要叫用存放庫服務，請使用它的建構函式並傳遞`ServiceClientFactory`物件來建立`ResourceRepositoryClient`物件。 `ServiceClientFactory`物件負責維護呼叫AEM Forms服務所需的連線設定。
 
 雖然取得`ServiceClientFactory`通常很快，但在第一次使用工廠時會產生一些額外負荷。 此物件已針對重複使用而最佳化，因此，當您建立多個Java使用者端物件時，請儘可能使用相同的`ServiceClientFactory`物件。 也就是說，請勿為您建立的每個使用者端程式庫物件建立個別的`ServiceClientFactory`物件。
 
-有一個使用者管理員設定可控制影響`com.adobe.idp.Context`物件的`ServiceClientFactory`物件內SAML宣告的存留期。 此設定會控制整個AEM Forms的所有驗證內容存留期，包括使用Java API執行的所有叫用。 根據預設，可以使用`ServiceCleintFactory`物件的時段為兩個小時。
+有一個使用者管理員設定可控制影響`ServiceClientFactory`物件的`com.adobe.idp.Context`物件內SAML宣告的存留期。 此設定會控制整個AEM Forms的所有驗證內容存留期，包括使用Java API執行的所有叫用。 根據預設，可以使用`ServiceCleintFactory`物件的時段為兩個小時。
 
 >[!NOTE]
 >
@@ -976,10 +976,10 @@ AEM Forms服務作業可使用服務的強型別API （稱為Java使用者端程
 
 1. 在您的Java專案的類別路徑中包含使用者端JAR檔案，例如adobe-repository-client.jar。 如需這些檔案位置的相關資訊，請參閱[包含AEM Forms Java程式庫檔案](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 1. 設定呼叫服務所需的連線屬性。
-1. 呼叫`ServiceClientFactory`物件的靜態`ServiceClientFactory`方法，並傳遞包含連線屬性的`createInstance`物件，以建立`java.util.Properties`物件。
-1. 使用它的建構函式並傳遞`ResourceRepositoryClient`物件來建立`ServiceClientFactory`物件。 使用`ResourceRepositoryClient`物件以叫用存放庫服務作業。
+1. 呼叫`ServiceClientFactory`物件的靜態`createInstance`方法，並傳遞包含連線屬性的`java.util.Properties`物件，以建立`ServiceClientFactory`物件。
+1. 使用它的建構函式並傳遞`ServiceClientFactory`物件來建立`ResourceRepositoryClient`物件。 使用`ResourceRepositoryClient`物件以叫用存放庫服務作業。
 1. 使用建構函式建立`RepositoryInfomodelFactoryBean`物件並傳遞`null`。 此物件可讓您建立`Resource`物件，以代表已新增至存放庫的內容。
-1. 呼叫`Resource`物件的`RepositoryInfomodelFactoryBean`方法，並傳遞下列值以建立`newImage`物件：
+1. 呼叫`RepositoryInfomodelFactoryBean`物件的`newImage`方法，並傳遞下列值以建立`Resource`物件：
 
    * 指定`new Id()`的唯一識別碼值。
    * 藉由指定`new Lid()`來指定唯一的UUID值。
@@ -987,11 +987,11 @@ AEM Forms服務作業可使用服務的強型別API （稱為Java使用者端程
 
    將傳回值轉換為`Resource`。
 
-1. 呼叫`ResourceContent`物件的`RepositoryInfomodelFactoryBean`方法，並將傳回值轉型為`newImage`，以建立`ResourceContent`物件。 此物件代表新增至存放庫的內容。
-1. 傳遞儲存XDP檔案以新增至儲存庫的`com.adobe.idp.Document`物件，以建立`java.io.FileInputStream`物件。 （請參閱[根據InputStream物件建立檔案](invoking-aem-forms-using-java.md#creating-a-document-based-on-an-inputstream-object)。）
-1. 呼叫`com.adobe.idp.Document`物件的`ResourceContent`方法，將`ResourceContent`物件的內容新增至`setDataDocument`物件。 傳遞`com.adobe.idp.Document`物件。
+1. 呼叫`RepositoryInfomodelFactoryBean`物件的`newImage`方法，並將傳回值轉型為`ResourceContent`，以建立`ResourceContent`物件。 此物件代表新增至存放庫的內容。
+1. 傳遞儲存XDP檔案以新增至儲存庫的`java.io.FileInputStream`物件，以建立`com.adobe.idp.Document`物件。 （請參閱[根據InputStream物件建立檔案](invoking-aem-forms-using-java.md#creating-a-document-based-on-an-inputstream-object)。）
+1. 呼叫`ResourceContent`物件的`setDataDocument`方法，將`com.adobe.idp.Document`物件的內容新增至`ResourceContent`物件。 傳遞`com.adobe.idp.Document`物件。
 1. 呼叫`ResourceContent`物件的`setMimeType`方法並傳遞`application/vnd.adobe.xdp+xml`，以將XDP檔案的MIME型別設定為加入儲存庫。
-1. 呼叫`ResourceContent`物件的`Resource`方法並傳遞`Resource`物件，將`setContent`物件的內容新增至`ResourceContent`物件。
+1. 呼叫`Resource`物件的`setContent`方法並傳遞`ResourceContent`物件，將`ResourceContent`物件的內容新增至`Resource`物件。
 1. 叫用`Resource`物件的`setDescription`方法並傳遞代表資源說明的字串值，以新增資源的說明。
 1. 叫用`ResourceRepositoryClient`物件的`writeResource`方法並傳遞下列值，以將表單設計加入儲存庫：
 
@@ -1022,16 +1022,16 @@ AEM Forms服務作業可使用服務的強型別API （稱為Java使用者端程
 
 叫用此程式時，會執行下列動作：
 
-1. 取得傳遞至程式的不安全PDF檔案。 此動作是以`SetValue`作業為基礎。 此處理序的輸入引數是名為`document`的`inDoc`處理序變數。
+1. 取得傳遞至程式的不安全PDF檔案。 此動作是以`SetValue`作業為基礎。 此處理序的輸入引數是名為`inDoc`的`document`處理序變數。
 1. 使用密碼加密PDF檔案。 此動作是以`PasswordEncryptPDF`作業為基礎。 密碼加密的PDF檔案在名為`outDoc`的程式變數中傳回。
 
 ### 使用Java叫用API叫用MyApplication/EncryptDocument短期程式 {#invoke-the-myapplication-encryptdocument-short-lived-process-using-the-java-invocation-api}
 
 使用Java叫用API叫用`MyApplication/EncryptDocument`短期處理序：
 
-1. 在您的Java專案的類別路徑中包含使用者端JAR檔案，例如adobe-livecycle-client.jar。 (請參閱[包含AEM Forms Java程式庫檔案](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。)
+1. 在您的Java專案的類別路徑中包含使用者端JAR檔案，例如adobe-livecycle-client.jar。 （請參閱[包含AEM Forms Java程式庫檔案](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。）
 1. 建立包含連線屬性的`ServiceClientFactory`物件。 （請參閱[設定連線屬性](invoking-aem-forms-using-java.md#setting-connection-properties)。）
-1. 使用它的建構函式並傳遞`ServiceClient`物件來建立`ServiceClientFactory`物件。 `ServiceClient`物件可讓您叫用服務作業。 它會處理如尋找、分派及路由呼叫要求等工作。
+1. 使用它的建構函式並傳遞`ServiceClientFactory`物件來建立`ServiceClient`物件。 `ServiceClient`物件可讓您叫用服務作業。 它會處理如尋找、分派及路由呼叫要求等工作。
 1. 使用物件的建構函式建立`java.util.HashMap`物件。
 1. 叫用每個輸入引數的`java.util.HashMap`物件的`put`方法，以傳遞至長效處理序。 由於`MyApplication/EncryptDocument`短期處理程式需要一個型別`Document`的輸入引數，因此您只需要叫用`put`方法一次，如下列範例所示。
 
@@ -1043,7 +1043,7 @@ AEM Forms服務作業可使用服務的強型別API （稱為Java使用者端程
     params.put("inDoc", inDoc);
    ```
 
-1. 呼叫`InvocationRequest`物件的`ServiceClientFactory`方法，並傳遞下列值以建立`createInvocationRequest`物件：
+1. 呼叫`ServiceClientFactory`物件的`createInvocationRequest`方法，並傳遞下列值以建立`InvocationRequest`物件：
 
    * 字串值，指定要叫用的長效處理序名稱。 若要叫用`MyApplication/EncryptDocument`處理序，請指定`MyApplication/EncryptDocument`。
    * 代表處理作業名稱的字串值。 一般而言，短期處理程式操作的名稱是`invoke`。
@@ -1064,7 +1064,7 @@ AEM Forms服務作業可使用服務的強型別API （稱為Java使用者端程
    ```
 
 1. 建立`java.io.File`物件，並確定副檔名為.pdf。
-1. 叫用`com.adobe.idp.Document`物件的`copyToFile`方法，將`com.adobe.idp.Document`物件的內容複製到檔案。 確定您使用的是`com.adobe.idp.Document`方法傳回的`getOutputParameter`物件。
+1. 叫用`com.adobe.idp.Document`物件的`copyToFile`方法，將`com.adobe.idp.Document`物件的內容複製到檔案。 確定您使用的是`getOutputParameter`方法傳回的`com.adobe.idp.Document`物件。
 
 **另請參閱**
 

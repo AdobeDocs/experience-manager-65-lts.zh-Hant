@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services
 hide: true
 hidefromtoc: true
 exl-id: fc5ea2a6-79b4-436e-b5bc-c4beaf3619ee
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1763'
+source-wordcount: '1819'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->閱讀本節之前，建議您先熟悉使用Assembler服務組合PDF檔案。 本節不討論概念，例如建立包含輸入檔案的集合物件，或學習如何從傳回的集合物件中擷取結果。 (請參閱[以程式設計方式組合PDF檔案](/help/forms/developing/programmatically-assembling-pdf-documents.md)。)
+>閱讀本節之前，建議您先熟悉使用Assembler服務組合PDF檔案。 本節不討論概念，例如建立包含輸入檔案的集合物件，或學習如何從傳回的集合物件中擷取結果。 （請參閱[以程式設計方式組合PDF檔案](/help/forms/developing/programmatically-assembling-pdf-documents.md)。）
 
 >[!NOTE]
 >
@@ -76,8 +76,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (如果AEM Forms部署在JBoss上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss上，則為必要)
+* adobe-utilities.jar （如果AEM Forms部署在JBoss上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss上，則為必要）
 
 如果將AEM Forms部署在JBoss以外的受支援J2EE應用程式伺服器上，則必須將adobe-utilities.jar和jbossall-client.jar檔案取代為特定於AEM Forms部署所在J2EE應用程式伺服器的JAR檔案。
 
@@ -156,7 +156,7 @@ ht-degree: 0%
    * 建立`java.io.File`物件，並確定副檔名為.pdf。
    * 叫用`Document`物件的`copyToFile`方法，將`Document`物件的內容複製到檔案。 請確定您使用的是`invokeOneDocument`方法傳回的`Document`物件。
 
-* 「快速入門(SOAP模式)：使用Java API彙編非互動式PDF檔案」
+* 「快速入門（SOAP模式）：使用Java API彙編非互動式PDF檔案」
 
 ## 使用網站服務API組合非互動式PDF檔案 {#assemble-a-non-interactive-pdf-document-using-the-web-service-api}
 

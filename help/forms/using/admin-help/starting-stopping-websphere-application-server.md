@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 20cd6efb-edcf-4c87-b0f5-bdec5a0f6280
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 1. 輸入以下命令，將&#x200B;*server_name*&#x200B;取代為WebSphere Application Server的名稱：
 
    * (Windows) `serverStatus.bat`*伺服器名稱*
-   * (Linux、UNIX) 。/ `serverStatus.sh`*伺服器名稱*
+   * (Linux， UNIX) ./ `serverStatus.sh`*伺服器名稱*
 
 ## 啟動WebSphere Application Server {#start-websphere-application-server}
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 1. 輸入以下命令，將&#x200B;*server_name*&#x200B;取代為WebSphere Application Server的名稱：
 
    * (Windows) `startServer.bat`*伺服器名稱*
-   * (Linux、UNIX) 。/ `startServer.sh`*伺服器名稱*
+   * (Linux， UNIX) ./ `startServer.sh`*伺服器名稱*
 
 ## 停止WebSphere Application Server {#stop-websphere-application-server}
 
@@ -44,4 +44,4 @@ ht-degree: 0%
 1. 輸入以下命令，將&#x200B;*server_name*&#x200B;取代為WebSphere Application Server的名稱：
 
    * (Windows) `stopServer.bat`*伺服器名稱*
-   * (Linux、UNIX) 。/ `stopServer.sh`*伺服器名稱*
+   * (Linux， UNIX) ./ `stopServer.sh`*伺服器名稱*

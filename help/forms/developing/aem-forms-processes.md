@@ -11,9 +11,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 228185f0-deef-4d49-a5b9-0c19411e30c2
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
@@ -64,8 +64,8 @@ ht-degree: 0%
 
    *使用AEM表單進行程式設計*&#x200B;說明以下以程式設計方式叫用此短期程式：
 
-   * [使用AEM Forms Remoting傳遞不安全的檔案，以叫用短期程式](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (使用Flex應用程式)
-   * [使用叫用API](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (Java™叫用API)叫用短期處理程式
+   * [使用AEM Forms Remoting傳遞不安全的檔案，以叫用短期程式](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) （使用Flex應用程式）
+   * [使用叫用API](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) （Java™叫用API）叫用短期處理程式
    * [使用Base64編碼叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) （Web服務範例）
    * [使用MTOM叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) （Web服務範例）
    * [使用SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)叫用AEM Forms （Web服務範例）

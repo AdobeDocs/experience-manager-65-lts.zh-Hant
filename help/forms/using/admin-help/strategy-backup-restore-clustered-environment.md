@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0fe9b02a-96b4-462f-a940-a2d6084ed0a4
-source-git-commit: 1b7e0c532ab46346059de01cee4a1adecf3a0a13
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ ht-degree: 0%
    1. 刪除節點上的檔案clusterNode/revision.log 。
    1. 刪除節點上的.lock （如果存在）。
    1. 刪除節點上的repository/system.id （如果存在）。
-   1. 刪除節點上的檔案&amp;amp；&amp;amp；&amp;ast；/listener.properties （如果存在）。
+   1. 刪除節點上的檔案&amp;ast；&amp;ast；/listener.properties （如果存在）。
    1. 還原個別叢集節點的repository/cluster_node.id。
 
 >[!NOTE]
@@ -161,7 +161,7 @@ ht-degree: 0%
    1. 刪除所有叢集節點上的檔案clusterNode/revision.log 。
    1. 刪除所有叢集節點上的.lock （如果存在）。
    1. 刪除repository/system.id所有叢集節點（如果存在）。
-   1. 刪除所有叢集節點上的檔案&amp;amp；&amp;amp；&amp;ast；/listener.properties （如果存在）。
+   1. 刪除所有叢集節點上的檔案&amp;ast；&amp;ast；/listener.properties （如果存在）。
    1. 還原個別叢集節點的repository/cluster_node.id。
 
 >[!NOTE]

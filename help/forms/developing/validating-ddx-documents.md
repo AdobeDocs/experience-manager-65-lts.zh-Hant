@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 4efc6e82-f577-4881-9c9d-30e1fe2cdb9d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1542'
 ht-degree: 0%
 
 ---
@@ -53,8 +53,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (如果AEM Forms部署在JBoss上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss上，則為必要)
+* adobe-utilities.jar （如果AEM Forms部署在JBoss上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss上，則為必要）
 
 如果將AEM Forms部署在JBoss以外的受支援J2EE應用程式伺服器上，則必須將adobe-utilities.jar和jbossall-client.jar檔案取代為特定於AEM Forms部署所在J2EE應用程式伺服器的JAR檔案。
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 **執行驗證**
 
-建立Assembler服務使用者端、參考DDX檔案並設定執行階段選項之後，您可以叫用`invokeDDX`作業來驗證DDX檔案。 驗證DDX檔案時，您可以傳遞`null`作為對應引數(此引數通常會儲存組合器執行DDX檔案中指定的作業所需的PDF檔案)。
+建立Assembler服務使用者端、參考DDX檔案並設定執行階段選項之後，您可以叫用`invokeDDX`作業來驗證DDX檔案。 驗證DDX檔案時，您可以傳遞`null`作為對應引數（此引數通常會儲存組合器執行DDX檔案中指定的作業所需的PDF檔案）。
 
 如果驗證失敗，則會擲回例外狀況，而記錄檔會包含詳細資訊，說明為何可從`OperationException`執行個體取得DDX檔案無效。 一旦通過基本的XML剖析和結構描述檢查，就會根據DDX規格執行驗證。 DDX檔案中的所有錯誤都在記錄中指定。
 
@@ -140,7 +140,7 @@ ht-degree: 0%
 
 [驗證DDX檔案](#validating-ddx-documents)
 
-[快速入門(SOAP模式)：使用Java API驗證DDX檔案](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api) (SOAP模式)
+[快速入門（SOAP模式）：使用Java API驗證DDX檔案](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api) （SOAP模式）
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

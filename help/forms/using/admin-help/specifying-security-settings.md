@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 75257aa3-9917-4145-ab8c-88965f01d0f6
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 1%
@@ -30,4 +30,4 @@ Forms可讓您控制是否解析XML輸入中的外部實體。 預設會解決�
 
 1. 在管理控制檯中，按一下&#x200B;**[!UICONTROL 服務> Forms]**。
 1. 清除「解析外部圖元」核取方塊。
-1. 按一下「**[!UICONTROL 儲存]**」。
+1. 按一下&#x200B;**[!UICONTROL 儲存]**。

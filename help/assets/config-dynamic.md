@@ -6,9 +6,9 @@ role: User, Admin
 feature: Configuration,Hybrid Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 6252e61f-44b5-4931-80a0-426c6883092e
-source-git-commit: 846b45f6ab83599eb709573a77422f2aba1ef047
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '7607'
+source-wordcount: '8118'
 ht-degree: 1%
 
 ---
@@ -24,25 +24,14 @@ ht-degree: 1%
 >* SSL 3.0
 >* TLS (傳輸層安全性) 1.0 和 1.1
 >* TLS 1.2 中的以下弱密碼：
-> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
-> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
-> `TLS_RSA_WITH_AES_256_GCM_SHA384`
-> `TLS_RSA_WITH_AES_256_CBC_SHA256`
-> `TLS_RSA_WITH_AES_256_CBC_SHA`
-> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
-> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
-> `TLS_RSA_WITH_AES_128_GCM_SHA256`
-> `TLS_RSA_WITH_AES_128_CBC_SHA256`
-> `TLS_RSA_WITH_AES_128_CBC_SHA`
-> `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
-> `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
-> `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
-> `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
+> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`> `TLS_RSA_WITH_AES_256_GCM_SHA384`> `TLS_RSA_WITH_AES_256_CBC_SHA256`> `TLS_RSA_WITH_AES_256_CBC_SHA`> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`> `TLS_RSA_WITH_AES_128_GCM_SHA256`> `TLS_RSA_WITH_AES_128_CBC_SHA256`> `TLS_RSA_WITH_AES_128_CBC_SHA`> `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`> `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`> `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`> `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
 >
 > 另請參閱[Dynamic Media限制](/help/assets/limitations.md)。
 
-<!-- FOR ABOVE - CQDOC-19433 (original ticket)
-and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
+<!--
+FOR ABOVE - CQDOC-19433 (original ticket)
+and CQDOC-19792 (removed as per this ticket December 5, 2022)
+-->
 
 
 必須啟用並設定Dynamic Media-Hybrid才能使用。 根據您的使用案例，Dynamic Media有數個[支援的設定](#supported-dynamic-media-configurations)。
@@ -163,7 +152,7 @@ and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
 
 ## 啟用Dynamic Media {#enabling-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/tw/products/experience-manager/assets/dynamic-media.html)預設為停用。 若要利用Dynamic Media功能，您必須使用`dynamicmedia`執行模式來啟用Dynamic Media，就像使用`publish`執行模式一樣。 啟用之前，請務必檢閱[技術需求](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on)。
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)預設為停用。 若要利用Dynamic Media功能，您必須使用`dynamicmedia`執行模式來啟用Dynamic Media，就像使用`publish`執行模式一樣。 啟用之前，請務必檢閱[技術需求](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on)。
 
 >[!NOTE]
 >
@@ -206,9 +195,9 @@ and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
    >
    >影像伺服器記錄檔名稱的範例： `ImageServer-57346-2020-07-25.log`
    >
-   >* s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - s7access記錄檔會記錄透過`/is/image`和`/is/content`向Dynamic Media提出的每個要求。
+   >* s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - s7access記錄會記錄透過`/is/image`和`/is/content`向Dynamic Media提出的每個請求。
    >
-   >這些記錄檔僅在啟用Dynamic Media時使用。 它們未包含在從&#x200B;**頁面產生的**&#x200B;下載完整`system/console/status-Bundlelist`套件中；如果您有Dynamic Media問題，在呼叫客戶支援時，請將這兩個記錄附加至問題。
+   >這些記錄檔僅在啟用Dynamic Media時使用。 它們未包含在從`system/console/status-Bundlelist`頁面產生的&#x200B;**下載完整**&#x200B;套件中；如果您有Dynamic Media問題，在呼叫客戶支援時，請將這兩個記錄附加至問題。
 
 ### 如果您已將Experience Manager安裝至其他連線埠或內容路徑…… {#if-you-installed-aem-to-a-different-port-or-context-path}
 
@@ -220,7 +209,7 @@ and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
 
 在Experience Manager中：
 
-* **Externalizer**&#x200B;中的[自我網域](/help/sites-developing/externalizer.md)用來擷取連線埠號碼和內容路徑。
+* [Externalizer](/help/sites-developing/externalizer.md)中的&#x200B;**自我網域**&#x200B;用來擷取連線埠號碼和內容路徑。
 * 如果未設定任何&#x200B;**自我網域**，則會從Jetty HTTP服務擷取連線埠號碼和內容路徑。
 
 在Experience Manager QuickStart WAR部署中，無法衍生連線埠號碼和內容路徑，因此您必須設定&#x200B;**自我網域**。 請參閱[外部化器檔案](/help/sites-developing/externalizer.md)，瞭解如何設定&#x200B;**自我網域**。
@@ -308,7 +297,7 @@ Dynamic Media影像傳遞的運作方式是從Experience Manager Author發佈影
    * 選取&#x200B;**[!UICONTROL KeyStore檔案]**。 導覽至Adobe提供給您的KeyStore檔案，選取該檔案，然後選取&#x200B;**[!UICONTROL 開啟]**。
    * 在&#x200B;**[!UICONTROL KeyStore檔案密碼]**&#x200B;欄位中，輸入KeyStore檔案密碼。 此密碼&#x200B;**不是**&#x200B;您在步驟5中建立的KeyStore密碼，而是Adobe在布建期間傳送給您的歡迎電子郵件中提供的KeyStore檔案密碼。 如果您沒有收到KeyStore檔案密碼，請聯絡Adobe客戶支援。
    * 在&#x200B;**[!UICONTROL 私密金鑰密碼]**&#x200B;欄位中，輸入私密金鑰密碼（可以是上一步驟中提供的相同私密金鑰密碼）。 Adobe會在布建期間傳送給您的歡迎電子郵件中提供私密金鑰密碼。 如果您沒有收到私密金鑰密碼，請聯絡Adobe客戶支援。
-   * 在&#x200B;**[!UICONTROL 私密金鑰別名]**&#x200B;欄位中輸入私密金鑰別名。 例如 `*companyname*-alias`。Adobe在布建期間傳送給您的歡迎電子郵件中提供私人金鑰別名。 如果您沒有收到私密金鑰別名，請聯絡Adobe客戶支援。
+   * 在&#x200B;**[!UICONTROL 私密金鑰別名]**&#x200B;欄位中輸入私密金鑰別名。 例如 `*companyname*-alias`。 Adobe在布建期間傳送給您的歡迎電子郵件中提供私人金鑰別名。 如果您沒有收到私密金鑰別名，請聯絡Adobe客戶支援。
 
    ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
@@ -326,7 +315,7 @@ Dynamic Media影像傳遞的運作方式是從Experience Manager Author發佈影
    * **[!UICONTROL 已啟用]** — 選取此核取方塊以啟用復寫代理程式。
    * **[!UICONTROL 地區]** — 設定為適當的地區：北美、歐洲或亞洲
    * **[!UICONTROL 租使用者識別碼]** — 這個值是您要發佈至復寫服務的公司/租使用者的名稱。 此值是Adobe在布建期間傳送給您的歡迎電子郵件中提供的租使用者ID。 如果您沒有收到這項資訊，請聯絡Adobe客戶支援。
-   * **[!UICONTROL 金鑰存放區別名]** — 這個值與在&#x200B;**設定驗證**&#x200B;中產生金鑰時設定的[新別名](#setting-up-authentication)值相同；例如`replication`。 （請參閱[設定驗證](#setting-up-authentication)中的步驟7。）
+   * **[!UICONTROL 金鑰存放區別名]** — 這個值與在[設定驗證](#setting-up-authentication)中產生金鑰時設定的&#x200B;**新別名**&#x200B;值相同；例如`replication`。 （請參閱[設定驗證](#setting-up-authentication)中的步驟7。）
    * **[!UICONTROL 金鑰庫密碼]** — 在您點選&#x200B;**[!UICONTROL 建立KeyStore]**&#x200B;時所建立的KeyStore密碼。 Adobe未提供此密碼。 請參閱[設定驗證](#setting-up-authentication)的步驟5。
 
    下圖顯示含有範例資料的復寫代理程式：
@@ -502,7 +491,7 @@ Adobe建議您執行設定的端對端測試。
 
 **測試您的設定：**
 
-1. 上傳影像資產。 (在Assets中，導覽至「**[!UICONTROL 建立]** > **[!UICONTROL 檔案]**」並選取檔案。)
+1. 上傳影像資產。 （在Assets中，導覽至「**[!UICONTROL 建立]** > **[!UICONTROL 檔案]**」並選取檔案。）
 1. 等待工作流程完成。
 1. 發佈影像資產。 （請選取資產並選取&#x200B;**[!UICONTROL 快速發佈]**。）
 1. 透過開啟影像並點選&#x200B;**[!UICONTROL 轉譯]**，導覽至該影像的轉譯。
@@ -548,7 +537,7 @@ Dynamic Media Cloud Service支援影像和視訊、視訊分析和視訊編碼�
 **開始使用：**&#x200B;完成下列三個工作以設定視訊報告。
 
 1. 在第一個作者節點上設定Dynamic Media設定（6.3以前版本）後，請建立Video Analytics預設套件。 此初始工作很重要，因為它可讓新設定繼續使用相同的報表套裝。
-1. 將Video Analytics預設集套件安裝至您設定Dynamic Media設定（6.3以前版本）的任何&#x200B;***新***&#x200B;作者節點&#x200B;**&#x200B;**&#x200B;**。
+1. 將Video Analytics預設集套件安裝至您設定Dynamic Media設定（6.3以前版本）的任何&#x200B;***新***&#x200B;作者節點&#x200B;******。
 1. 驗證及偵錯套件安裝。
 
 ### 設定第一個「作者」節點後，建立Video Analytics預設套件 {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
@@ -605,7 +594,7 @@ Dynamic Media Cloud Service支援影像和視訊、視訊分析和視訊編碼�
      ```
 
    * **透過Experience Manager中的視訊報告工具檢查視訊分析預設集**
-導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 視訊報告]**
+導覽至**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 視訊報告]**
 
      `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
@@ -638,7 +627,7 @@ Dynamic Media Cloud Service支援影像和視訊、視訊分析和視訊編碼�
 * `reportSuite`
 * `trackingServer`
 * `trackingNamespace`
-* `marketingCloudOrgId` (不在舊版Experience Manager中)
+* `marketingCloudOrgId` （不在舊版Experience Manager中）
 
 Experience Manager 6.4和更新版本將此預設集儲存在`/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
@@ -762,7 +751,7 @@ Experience Manager 6.4和更新版本將此預設集儲存在`/conf/global/setti
 
 1. 找到&#x200B;**[!UICONTROL 篩選影像]**，用滑鼠右鍵按一下該影像，然後選取&#x200B;**[!UICONTROL 複製]**。
 1. 在左側資料夾樹狀結構中，瀏覽至`/etc/replication/agents.author/publish`
-1. 找到`jcr:content`，用滑鼠右鍵按一下它，然後移至&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL 建立節點]**。 輸入型別`damRenditionFilters`的名稱`nt:unstructured`。
+1. 找到`jcr:content`，用滑鼠右鍵按一下它，然後移至&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL 建立節點]**。 輸入型別`nt:unstructured`的名稱`damRenditionFilters`。
 1. 找到`damRenditionFilters`，用滑鼠右鍵按一下它，然後選取&#x200B;**[!UICONTROL 貼上]**。
 
 這些步驟會設定Experience Manager發佈執行個體，將影像傳送至您的非生產環境。 此篩選器也會將原始影像和靜態轉譯排除在復寫之外，因為發佈執行個體上不需要這些原始影像和靜態轉譯。
@@ -771,7 +760,7 @@ Experience Manager 6.4和更新版本將此預設集儲存在`/conf/global/setti
 >
 >如果作者中有許多不同的篩選器，每個代理程式都需要指派不同的使用者。 granite程式碼會強制每個使用者一個篩選器的模型。 每個篩選器設定一律會有不同的使用者。
 >
->您在伺服器上使用多個篩選器嗎？ 例如，一個篩選器用於復寫至發佈，第二個篩選器用於s7delivery。 若是如此，您必須確定這兩個篩選器在&#x200B;**節點中指派了不同的** userId`jcr:content`。 請參閱下列影像：
+>您在伺服器上使用多個篩選器嗎？ 例如，一個篩選器用於復寫至發佈，第二個篩選器用於s7delivery。 若是如此，您必須確定這兩個篩選器在`jcr:content`節點中指派了不同的&#x200B;**userId**。 請參閱下列影像：
 
 ![image-2018-01-16-10-26-28-465](assets/image-2018-01-16-10-26-28-465.png)
 
@@ -790,7 +779,7 @@ Experience Manager 6.4和更新版本將此預設集儲存在`/conf/global/setti
 
    ![chlimage_1-512](assets/chlimage_1-512.png)
 
-   請注意，資產`dc:format`的`Fiji Red.jpg`是`image/jpeg`。
+   請注意，資產`Fiji Red.jpg`的`dc:format`是`image/jpeg`。
 
    若要將此篩選套用至所有影像，無論其格式為何，請將值設為`image/*`，其中`*`為套用至任何格式之所有影像的規則運算式。
 
@@ -812,7 +801,7 @@ Experience Manager 6.4和更新版本將此預設集儲存在`/conf/global/setti
 
    ![chlimage_1-513](assets/chlimage_1-4.png)
 
-   以上例為例，如果您只想復寫PTIFF (金字塔TIFF)，則可以輸入`+cqdam,*`，其中包含所有以`cqdam`開頭的轉譯。 在此範例中，該轉譯為`cqdam.pyramid.tiff`。
+   以上例為例，如果您只想復寫PTIFF （金字塔TIFF），則可以輸入`+cqdam,*`，其中包含所有以`cqdam`開頭的轉譯。 在此範例中，該轉譯為`cqdam.pyramid.tiff`。
 
    如果您只想復寫原始檔案，請輸入`+original`。
 
@@ -822,9 +811,9 @@ Experience Manager 6.4和更新版本將此預設集儲存在`/conf/global/setti
 
 >[!NOTE]
 >
->Dynamic Media在啟用[後立即運作](#enabling-dynamic-media)。 不過，您可以選擇設定Dynamic Media影像伺服器，以符合特定規格或需求，進而微調您的安裝。
+>Dynamic Media在啟用](#enabling-dynamic-media)後立即運作[。 不過，您可以選擇設定Dynamic Media影像伺服器，以符合特定規格或需求，進而微調您的安裝。
 
-**先決條件** - *在*&#x200B;您設定Dynamic Media影像伺服器之前，請確定Windows®的VM包含Microsoft® Visual C++程式庫的安裝。 需要程式庫才能執行Dynamic Media影像伺服器。 您可以[在這裡](https://www.microsoft.com/en-us/download/details.aspx?id=26999)下載Microsoft® Visual C++ 2010可轉散發套件(x64)。
+**先決條件** - *在*&#x200B;您設定Dynamic Media影像伺服器之前，請確定Windows®的VM包含Microsoft® Visual C++程式庫的安裝。 需要程式庫才能執行Dynamic Media影像伺服器。 您可以[在這裡](https://www.microsoft.com/en-us/download/details.aspx?id=26999)下載® Visual C++ 2010可轉散發套件(x64)。
 
 若要設定Dynamic Media影像伺服器設定：
 
@@ -846,7 +835,7 @@ Experience Manager 6.4和更新版本將此預設集儲存在`/conf/global/setti
    | 屬性 | 預設值 | 說明 |
    | --- | --- | --- |
    | `TcpPort.name` | *`empty`* | 用來與ImageServer處理序通訊的連線埠號碼。 預設會自動偵測自由連線埠。 |
-   | `AllowRemoteAccess.name` | *`empty`* | 允許或不允許遠端存取ImageServer處理序。 如果為false，則影像伺服器僅會在localhost上接聽。<br>指向本機主機的預設外部器設定必須指定特定VM執行個體的實際網域或IP位址。 原因在於localhost指向VM的父系。<br>VM的網域或IP位址必須有主機檔案專案，才能自行解析。 |
+   | `AllowRemoteAccess.name` | *`empty`* | 允許或不允許遠端存取ImageServer處理序。 如果為false，則影像伺服器僅在localhost上接聽。<br> 指向本機主機的預設Externalizer設定必須指定特定VM執行處理的實際網域或IP位址。 原因在於localhost指向VM的父系。<br>VM的網域或IP位址必須有主機檔案專案，才能自行解析。 |
    | `MaxRenderRgnPixels` | 16兆帕 | 已轉譯的大小上限（百萬畫素）。 |
    | `MaxMessageSize` | 16 MB | 傳遞的訊息大小上限（以MB為單位）。 |
    | `RandomAccessUrlTimeout` | 20 | 逾時值：影像伺服器等待JCR回應範圍磚要求的秒數。 |
@@ -869,7 +858,7 @@ Experience Manager 6.4和更新版本將此預設集儲存在`/conf/global/setti
 
 ### 預設資訊清單設定 {#default-manifest-settings}
 
-預設資訊清單可讓您設定用來產生Dynamic Media傳送回應的預設值。 您可以微調品質(JPEG品質、解析度、重新取樣模式)、快取（有效期），以及防止轉譯過大影像(defaultpix、defaultthumbpix、maxpix)。
+預設資訊清單可讓您設定用來產生Dynamic Media傳送回應的預設值。 您可以微調品質（JPEG品質、解析度、重新取樣模式）、快取（有效期），以及防止轉譯過大影像(defaultpix、defaultthumbpix、maxpix)。
 
 預設資訊清單組態的位置是從&#x200B;**[!UICONTROL Adobe CQ Scene7 PlatformServer]**&#x200B;套件組合的&#x200B;**[!UICONTROL 目錄根]**&#x200B;預設值取得。 根據預設，此值位於&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 一般]** > **[!UICONTROL CRXDE Lite]**&#x200B;中的以下路徑
 
@@ -889,21 +878,21 @@ Experience Manager 6.4和更新版本將此預設集儲存在`/conf/global/setti
 
 | 屬性 | 預設值 | 說明 |
 | --- | --- | --- |
-| `bkgcolor` | `FFFFFF` | 預設背景顏色。 RGB值，用來對不包含實際影像資料的回覆影像的任何區域進行填色。 另請參閱影像伺服API中的[BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html?lang=zh-Hant#image-serving-api)。 |
-| `defaultpix` | `300,300` | 預設檢視大小。 如果要求未明確以wid=、hei=或scl=指定檢視大小，伺服器會將回覆影像限製為不得大於此寬度與高度。<br>指定為兩個大於或等於0的整數，以逗號分隔。 寬度和高度（畫素）。 任一或兩個值都可以設為0，以保持不受限制。 不適用於巢狀/內嵌請求。<br>另請參閱影像伺服API中的[DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html?lang=zh-Hant#image-serving-api)。<br>不過，您通常是使用檢視器預設集或影像預設集來傳送資產。 Defaultpix僅適用於未使用檢視器預設集或影像預設集的資產。 |
-| `defaultthumbpix` | `100,100` | 預設縮圖大小。 用於縮圖要求(`req=tmb`)，而不是attribute：：DefaultPix。<br>伺服器限制回覆影像不得大於此寬度與高度。 如果縮圖要求(`req=tmb`)未明確指定大小，且未使用`wid=`、`hei=`或`scl=`明確指定檢視大小，則此動作為true。<br>指定為兩個大於或等於0的整數，以逗號分隔。 寬度和高度（畫素）。 任一或兩個值都可以設為0，以保持不受限制。<br>不適用於巢狀/內嵌要求。<br>另請參閱影像伺服API中的[DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html?lang=zh-Hant#image-serving-api)。 |
-| `expiration` | `36000000` | 預設使用者端快取存留時間。 提供預設過期時間間隔，以防止特定目錄記錄未包含有效的目錄：：過期值。<br>實數，0或更大。 從產生回覆資料到到期為止的毫秒數。 設為0可一律使回覆影像立即過期，以有效停用使用者端快取。 預設情況下，此值會設為10小時，這表示如果發佈新影像，則舊影像需要10小時才能離開使用者的快取。 如果您需要及早清除快取，請聯絡客戶支援。<br>另請參閱影像伺服API中的[有效期](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html?lang=zh-Hant)。 |
-| `jpegquality` | `80` | 預設JPEG編碼屬性。 指定JPEG回覆影像的預設屬性。<br>整數與旗標，以逗號分隔。 第一個值在1到100的範圍內，並定義品質。 第二個值可以是0 （正常行為），或1 (停用JPEG編碼器採用的RGB色度向下取樣)。<br>另請參閱「影像伺服API」中的[JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html?lang=zh-Hant#image-serving-api)。 |
-| `maxpix` | `2000,2000` | 回覆影像大小限制。 傳回給使用者端的最大回覆影像寬度和高度。<br>如果要求造成回覆影像的寬度或高度大於attribute：：MaxPix，伺服器會傳回錯誤。<br>另請參閱影像伺服API中的[MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=zh-Hant#image-serving-api)。 |
-| `resmode` | `SHARP2` | 預設重新取樣模式。 指定用來縮放影像資料的預設重新取樣與內插屬性。<br>在要求中未指定`resMode=`時使用。<br>允許的值包括`BILIN`、`BICUB`或`SHARP2`。<br>列舉。 設定`bilin`為2，`bicub`為3，或`sharp2`內插模式為4。 使用`sharp2`以獲得最佳結果。<br>另請參閱影像伺服API中的[ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html?lang=zh-Hant#image-serving-api)。 |
-| `resolution` | `72` | 預設物件解析度。 提供預設的物件解析度，以防止特定目錄記錄未包含有效的catalog：：Resolution值。<br>實數，大於0。 通常以每英吋的畫素表示，但也可以使用其他單位，例如每米的畫素。<br>另請參閱影像伺服API中的[解析度](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html?lang=zh-Hant#image-serving-api)。 |
+| `bkgcolor` | `FFFFFF` | 預設背景顏色。 RGB值，用來對不包含實際影像資料的回覆影像的任何區域進行填色。 另請參閱影像伺服API中的[BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html#image-serving-api)。 |
+| `defaultpix` | `300,300` | 預設檢視大小。 如果要求未使用wid=、hei=或scl=明確指定檢視大小，則伺服器會將回覆影像限製為不得大於此寬度與高度。<br>指定為兩個大於或等於0的整數，並以逗號分隔。 寬度和高度（畫素）。 任一或兩個值都可以設為0，以保持不受限制。 不適用於巢狀/內嵌請求。<br>另請參閱「影像伺服API」中的[DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api)。<br>不過，您通常是使用檢視器預設集或影像預設集來傳遞資產。 Defaultpix僅適用於未使用檢視器預設集或影像預設集的資產。 |
+| `defaultthumbpix` | `100,100` | 預設縮圖大小。 用於縮圖要求(`req=tmb`)，而不是attribute：：DefaultPix。<br>伺服器限制回覆影像不得大於此寬度與高度。 如果縮圖要求(`req=tmb`)未明確指定大小，且未使用`wid=`、`hei=`或`scl=`明確指定檢視大小，則此動作為true。<br>指定為兩個整數（0或更大，以逗號分隔）。 寬度和高度（畫素）。 任一或兩個值都可以設為0，以保持不受限制。<br>不適用於巢狀/內嵌要求。<br>另請參閱影像伺服API中的[DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api)。 |
+| `expiration` | `36000000` | 預設使用者端快取存留時間。 提供預設過期時間間隔，以防止特定目錄記錄未包含有效的目錄：：過期值。<br>實數，0或更大。 從產生回覆資料到到期為止的毫秒數。 設為0可一律使回覆影像立即過期，以有效停用使用者端快取。 預設情況下，此值會設為10小時，這表示如果發佈新影像，則舊影像需要10小時才能離開使用者的快取。 如果您需要及早清除快取，請聯絡客戶支援。<br>另請參閱影像伺服API中的[有效期](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html)。 |
+| `jpegquality` | `80` | 預設JPEG編碼屬性。 指定JPEG回覆影像的預設屬性。<br>整數與旗標，以逗號分隔。 第一個值在1到100的範圍內，並定義品質。 第二個值可以是0 （正常行為），或1 （停用JPEG編碼器採用的RGB色度向下取樣）。<br>另請參閱「影像伺服API」中的[JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api)。 |
+| `maxpix` | `2000,2000` | 回覆影像大小限制。 傳回給使用者端的最大回覆影像寬度和高度。<br>如果要求造成回覆影像的寬度或高度大於attribute：：MaxPix，伺服器會傳回錯誤。<br>另請參閱「影像伺服API」中的[MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html#image-serving-api)。 |
+| `resmode` | `SHARP2` | 預設重新取樣模式。 指定用來縮放影像資料的預設重新取樣與內插屬性。<br>在要求中未指定`resMode=`時使用。<br>允許的值包括`BILIN`、`BICUB`或`SHARP2`。<br>列舉。 設定`bilin`為2，`bicub`為3，或`sharp2`內插模式為4。 使用`sharp2`以獲得最佳結果。<br>另請參閱影像伺服API中的[ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api)。 |
+| `resolution` | `72` | 預設物件解析度。 提供預設的物件解析度，以防止特定目錄記錄未包含有效的catalog：：Resolution值。<br>實數，大於0。 通常以每英吋的畫素表示，但也可以使用其他單位，例如每米的畫素。<br>另請參閱影像伺服API中的[解析度](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api)。 |
 | `thumbnailtime` | `1%,11%,21%,31%,41%,51%,61%,71%,81%,91%` | 這些值代表視訊播放時間的快照，並傳遞至[encoding.com](https://www.encoding.com/)。 如需詳細資訊，請參閱[關於視訊縮圖](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode)。 |
 
 ## 設定Dynamic Media色彩管理 {#configuring-dynamic-media-color-management}
 
 Dynamic Media色彩管理可讓您校正資產色彩，以便預覽。
 
-透過色彩校正，擷取的資產會保留其色域(RGB、CMYK、灰色)並在產生的金字塔TIFF轉譯中內嵌色彩設定檔。 當您請求動態轉譯時，影像顏色會校正到目標色域中。 您可以在JCR的Dynamic Media發佈設定中設定輸出色彩設定檔。
+透過色彩校正，擷取的資產會保留其色域（RGB、CMYK、灰色）並在產生的金字塔TIFF轉譯中內嵌色彩設定檔。 當您請求動態轉譯時，影像顏色會校正到目標色域中。 您可以在JCR的Dynamic Media發佈設定中設定輸出色彩設定檔。
 
 Adobe的色彩管理使用ICC （國際色彩聯盟）設定檔，這是由ICC定義的格式。
 
@@ -911,13 +900,13 @@ Adobe的色彩管理使用ICC （國際色彩聯盟）設定檔，這是由ICC�
 
 進階使用案例可以使用手動設定`icc=`修飾元來明確選取輸出色彩設定檔：
 
-* `icc` - [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html?lang=zh-Hant](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html?lang=zh-Hant)
+* `icc` - [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html)
 
-* `iccEmbed` - [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html?lang=zh-Hant](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html?lang=zh-Hant)
+* `iccEmbed` - [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
 >
->您必須安裝Software Distribution[的](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445)Feature Pack 12445，才能使用標準的Adobe色彩設定檔集。 所有Feature Pack和Service Pack都可在[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)取得。 Feature Pack 12445提供Adobe的色彩設定檔。
+>您必須安裝Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445)的[Feature Pack 12445，才能使用標準的Adobe色彩設定檔集。 所有Feature Pack和Service Pack都可在[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)取得。 Feature Pack 12445提供Adobe的色彩設定檔。
 
 
 ### 安裝Feature Pack 12445 {#installing-feature-pack}
@@ -928,7 +917,7 @@ Adobe的色彩管理使用ICC （國際色彩聯盟）設定檔，這是由ICC�
 
 1. 瀏覽至[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)並下載`cq-6.3.0-featurepack-12445`。
 
-   如需在[中使用套件的詳細資訊，請參閱](/help/sites-administering/package-manager.md)如何使用套件[!DNL Adobe Experience Manager]。
+   如需在[!DNL Adobe Experience Manager]中使用套件的詳細資訊，請參閱[如何使用套件](/help/sites-administering/package-manager.md)。
 
 1. 安裝Feature Pack。
 
@@ -961,58 +950,58 @@ Adobe的色彩管理使用ICC （國際色彩聯盟）設定檔，這是由ICC�
    <td><strong>說明</strong></td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=zh-Hant">iccprofilergb</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html">iccprofilergb</a></td>
    <td>字串</td>
    <td>&lt;empty&gt;</td>
    <td>預設RGB色彩設定檔的名稱。</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=zh-Hant">iccprofilecmyk</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html">iccprofilecmyk</a></td>
    <td>字串</td>
    <td>&lt;empty&gt;</td>
    <td>預設CMYK色彩設定檔的名稱。</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=zh-Hant">iccprofilegray</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html">iccprofilegray</a></td>
    <td>字串</td>
    <td>&lt;empty&gt;</td>
    <td>預設灰階色彩設定檔的名稱。</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html?lang=zh-Hant">iccprofilesrcrgb</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html">iccprofilesrcrgb</a></td>
    <td>字串</td>
    <td>&lt;empty&gt;</td>
    <td>用於沒有內嵌色彩設定檔的RGB影像的預設RGB色彩設定檔名稱</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html?lang=zh-Hant">iccprofilescmyk</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html">iccprofilescmyk</a></td>
    <td>字串</td>
    <td>&lt;empty&gt;</td>
    <td>用於沒有內嵌色彩設定檔的CMYK影像的預設CMYK色彩設定檔名稱。</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html?lang=zh-Hant">iccprofilesrcgray</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html">iccprofilesrcgray</a></td>
    <td>字串</td>
    <td>&lt;empty&gt;</td>
    <td>用於沒有內嵌色彩設定檔的CMYK影像的預設灰階色彩設定檔名稱。</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html?lang=zh-Hant">iccblackpointcompensation</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html">iccblackpointcompensation</a></td>
    <td>布林值</td>
    <td>真</td>
    <td>指定在色彩校正期間是否進行黑點補償。 Adobe建議開啟此設定。</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html?lang=zh-Hant">iccdither</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html">iccdither</a></td>
    <td>布林值</td>
    <td>假</td>
    <td>指定色彩校正期間是否執行遞色。</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html?lang=zh-Hant">iccrenderintent</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html">iccrenderintent</a></td>
    <td>字串</td>
    <td>相對值</td>
-   <td><p>指定演算色彩比對方式。 可接受的值為： <strong>感應式、相對、飽和度、絕對。 </strong><i></i>Adobe建議使用<strong>相對</strong><i></i>作為預設值。</p> </td>
+   <td><p>指定演算色彩比對方式。 可接受的值為： <strong>感應式、相對、飽和度、絕對。</strong><i></i>Adobe建議使用<strong>相對</strong><i></i>作為預設值。</p> </td>
   </tr>
  </tbody>
 </table>
@@ -1225,28 +1214,28 @@ Adobe的色彩管理使用ICC （國際色彩聯盟）設定檔，這是由ICC�
   </tr>
   <tr>
    <td>複製檢視器URL</td>
-   <td><p>「複製URL」對話方塊會顯示類似以下的URL （URL僅供示範之用）：</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&contentRoot=%2F</code></p> <p>其中<code>PUBLISHNODE</code>參考一般Experience Manager發佈節點，<code>IMAGESERVICEPUBLISHNODE</code>參考影像服務URL。</p> <p>另請參閱<a href="/help/assets/delivering-dynamic-media-assets.md">傳遞Dynamic Media Assets</a>。</p> </td>
+   <td><p>「複製URL」對話方塊會顯示類似以下的URL （URL僅供示範之用）：</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>其中<code>PUBLISHNODE</code>參考一般Experience Manager發佈節點，<code>IMAGESERVICEPUBLISHNODE</code>參考影像服務URL。</p> <p>另請參閱<a href="/help/assets/delivering-dynamic-media-assets.md">傳遞Dynamic Media Assets</a>。</p> </td>
   </tr>
   <tr>
    <td>複製檢視器的內嵌程式碼</td>
    <td><p>複製內嵌程式碼對話方塊會顯示類似下列的程式碼片段（程式碼範例僅供示範之用）：</p> <p><code class="code">&lt;style type="text/css"&gt;
-       &#x200B;#s7basiczoom_div.s7basiczoomviewer&lbrace;
+       #s7basiczoom_div.s7basiczoomviewer{
        width:100%;
        height:auto;
-       &rbrace;
+       }
        &lt;/style&gt;
        &lt;script
        type="text/javascript" src="https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/js/BasicZoomViewer.js"&gt;&lt;/script&gt;
        &lt;div id="s7basiczoom_div"&gt;&lt;/div&gt;
        &lt;script type="text/javascript"&gt;
-       var s7basiczoomviewer = new s7viewers.BasicZoomViewer(&lbrace;
+       var s7basiczoomviewer = new s7viewers.BasicZoomViewer({
        "containerId" : "s7basiczoom_div",
-       "params" : &lbrace;
+       "params" : {
        "serverurl" : "https://IMAGESERVICEPUBLISHNODE/is/image/",
        "contenturl" : "https://PUBLISHNODE/",
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
-       "asset" : "/content/dam/path/to/Image.jpg" &rbrace;
-       &rbrace;).init();
+       "asset" : "/content/dam/path/to/Image.jpg" }
+       }).init();
        &lt;/script&gt;</code></p> <p>其中<code>PUBLISHNODE</code>參考一般Experience Manager發佈節點，<code>IMAGESERVICEPUBLISHNODE</code>參考影像服務URL。</p> <p>另請參閱<a href="/help/assets/delivering-dynamic-media-assets.md">傳遞Dynamic Media Assets</a>。</p> </td>
   </tr>
  </tbody>

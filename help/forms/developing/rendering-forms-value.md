@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 8ad8cf67-3e90-4790-a063-099134b377a3
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1848'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Forms服務也可以解析表單設計內連結內容的位置。 例如，從�
 
 >[!NOTE]
 >
->雖然您可以依值呈現不同型別的表單(例如，包含使用許可權的HTML表單或表單)，本節將討論呈現互動式PDF forms。
+>雖然您可以依值呈現不同型別的表單（例如，包含使用許可權的HTML表單或表單），本節將討論呈現互動式PDF forms。
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Forms服務也可以解析表單設計內連結內容的位置。 例如，從�
 
 [依值呈現Forms](/help/forms/developing/rendering-forms.md)
 
-[快速入門(SOAP模式)：使用Java API依值轉譯](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API依值轉譯](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

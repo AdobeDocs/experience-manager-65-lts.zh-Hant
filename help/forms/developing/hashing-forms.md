@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 3fa1b6c9-fe73-4d76-aa72-20ce3e502941
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1234'
 ht-degree: 0%
 
 ---
@@ -120,9 +120,9 @@ if (soHASHING_SHA256.hex_sha256(this.rawValue) == passwd_man_hashed.rawValue){
 
 ## 歸因 {#attributions}
 
-* [Ronald Rivest](https://en.wikipedia.org/wiki/Ron_Rivest)
+* [羅納德·里韋斯特](https://en.wikipedia.org/wiki/Ron_Rivest)
 * [NIST](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
-* [雜湊衝突](https://en.wikipedia.org/wiki/Hash_collision)
-* [彩虹資料表](https://en.wikipedia.org/wiki/Rainbow_table)
+* [雜湊碰撞](https://en.wikipedia.org/wiki/Hash_collision)
+* [彩虹表](https://en.wikipedia.org/wiki/Rainbow_table)
 * [JavaScript MD5專案首頁](https://pajhome.org.uk/crypt/md5/)
-* [jsSHA2專案首頁](https://anmar.eu.org/projects/jssha2/)
+* [jssha2專案首頁](https://anmar.eu.org/projects/jssha2/)

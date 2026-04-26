@@ -7,9 +7,9 @@ feature: Asset Reports,Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 434a081a-f9e4-4a0d-8468-55b4ab5a6287
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1171'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 8%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=en) |
 | AEM 6.5 | 本文章 |
 
 資產報告可讓您評估[!DNL Adobe Experience Manager Assets]部署的公用程式。 透過[!DNL Assets]，您可以為您的數位資產產生各種報告。 這些報表提供關於您系統使用情況、使用者如何與資產互動，以及哪些資產已下載和共用的有用資訊。
@@ -97,7 +97,7 @@ ht-degree: 8%
 
    ![檔案報告的詳細資訊頁面](assets/files_report.png)
 
-   「**[!UICONTROL 連結共用]**」報表會顯示資產的URL，這些資產是從[!DNL Assets]內與外部使用者共用的。 它包含共用資產之使用者的電子郵件ID、共用資產之使用者的電子郵件ID、連結的共用日期和過期日。欄無法自訂。
+   「**[!UICONTROL 連結共用]**」報表會顯示資產的URL，這些資產是從[!DNL Assets]內與外部使用者共用的。 它包含共用資產之使用者的電子郵件ID、共用資產之使用者的電子郵件ID、連結的共用日期和過期日。 欄無法自訂。
 
    **[!UICONTROL 連結共用]**&#x200B;報告不包含子資料夾和轉譯的選項，因為它只會發佈顯示在`/var/dam/share`下的共用URL。
 
@@ -114,12 +114,12 @@ ht-degree: 8%
    ![選取或取消選取報告欄](assets/custom_columns.png)
 
 1. 從工具列按一下&#x200B;**[!UICONTROL 「建立]**」。 訊息會通知已啟動報表產生作業。
-1. 在[!UICONTROL 資產報表]頁面上，報表產生狀態是以報表工作的目前狀態為基礎，例如[!UICONTROL 成功]、[!UICONTROL 失敗]、[!UICONTROL 已排入佇列]或[!UICONTROL 已排程]。 相同的狀態會顯示在通知收件匣中。若要檢視報告頁面，請按一下報告連結。 或者，選取報告，然後按一下工具列中的&#x200B;**[!UICONTROL 檢視]**。
+1. 在[!UICONTROL 資產報表]頁面上，報表產生狀態是以報表工作的目前狀態為基礎，例如[!UICONTROL 成功]、[!UICONTROL 失敗]、[!UICONTROL 已排入佇列]或[!UICONTROL 已排程]。 通知收件匣中會顯示相同的狀態。若要檢視報表頁面，請按一下報表連結。 或者，選取報告，然後按一下工具列中的&#x200B;**[!UICONTROL 檢視]**。
 
    <!--![A generated report](assets/report_page.png)-->
    [報告狀態](assets/report-status.JPG)
 
-   按一下工具列中的「下載&#x200B;**&#x200B;**」，以CSV格式下載報表。
+   按一下工具列中的「下載&#x200B;****」，以CSV格式下載報表。
 
 ## 新增自訂欄 {#add-custom-columns}
 
@@ -147,9 +147,9 @@ ht-degree: 8%
 
 1. 使用屬性路徑選擇器，在CRXDE中的`jcr:content`節點下新增屬性路徑。 或者，在屬性路徑欄位中輸入路徑。
 
-   ![從jcr：content](assets/property_picker.png)中的路徑對應屬性路徑
+   ![從jcr:content](assets/property_picker.png)中的路徑對應屬性路徑
 
-   若要新增更多自訂欄，請按一下[新增] **&#x200B;**&#x200B;並重複步驟5和6。
+   若要新增更多自訂欄，請按一下[新增] ****&#x200B;並重複步驟5和6。
 
 1. 從工具列按一下&#x200B;**[!UICONTROL 「建立]**」。 訊息會通知已啟動報表產生作業。
 

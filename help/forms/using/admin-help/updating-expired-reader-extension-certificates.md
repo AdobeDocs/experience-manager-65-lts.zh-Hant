@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 83dbd00e-28ad-4a2e-ac22-3658fb6f639b
-source-git-commit: 7a1bbcb84a0be301bba4473f30ca4a8d9ea3f906
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 0%
+source-wordcount: '1152'
+ht-degree: 2%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 擁有Adobe Experience Manager Forms Managed Services或內部部署企業基本授權的Adobe (AEM Forms)客戶有權使用Acrobat Reader DC Extensions服務。 此服務可讓組織透過擴充具有其他使用許可權的PDF功能，輕鬆共用互動式Acrobat Reader檔案。 此服務會將使用許可權新增至PDF檔案，並啟動使用Adobe Acrobat Reader開啟PDF檔案時無法使用的功能，例如新增註解至檔案、填寫表單及儲存檔案。 協力廠商使用者不需要其他軟體或外掛程式即可使用啟用許可權的檔案。 已新增使用許可權的PDF檔案稱為許可權啟用檔案。 在Acrobat Reader中開啟許可權啟用PDF檔案的使用者可執行為該檔案啟用的操作。
 
-Adobe使用公開金鑰基礎架構(PKI)來核發數位憑證，以用於授權和功能啟用。 Adobe已在憑證授權單位&#x200B;**Adobe根CA**&#x200B;下發行憑證，該憑證設定於2023年1月7日到期。 憑證到期不會影響使用由&#x200B;**PDF根CA**&#x200B;型憑證（舊憑證）所發行的生產憑證所延伸的Adobe檔案。 所有PDF檔案(在2023年1月7日之前使用舊憑證擴充的Reader，包括客戶下載的檔案)仍可使用套用至這些檔案的所有使用權利，且不需要任何更新。
+Adobe使用公開金鑰基礎架構(PKI)來核發數位憑證，以用於授權和功能啟用。 Adobe已在憑證授權單位&#x200B;**Adobe根CA**&#x200B;下發行憑證，該憑證設定於2023年1月7日到期。 憑證到期不會影響使用由&#x200B;**PDF根CA**&#x200B;型憑證（舊憑證）所發行的生產憑證所延伸的Adobe檔案。 所有PDF檔案（在2023年1月7日之前使用舊憑證擴充的Reader，包括客戶下載的檔案）仍可使用套用至這些檔案的所有使用權利，且不需要任何更新。
 
-新的憑證授權單位&#x200B;**Adobe根CA G2**&#x200B;以及基於新憑證授權單位的憑證現在可供使用。 在2023年1月7日或之前，開始使用新憑證(以&#x200B;**Adobe根CA G2**&#x200B;為基礎的憑證)來Reader擴充您的新PDF檔案。  您可以[從Adobe授權網站](https://licensing.adobe.com/)或Adobe支援取得新憑證。
+新的憑證授權單位&#x200B;**Adobe根CA G2**&#x200B;以及基於新憑證授權單位的憑證現在可供使用。 在2023年1月7日或之前，開始使用新憑證（以&#x200B;**Adobe根CA G2**&#x200B;為基礎的憑證）來Reader擴充您的新PDF檔案。  您可以[從Adobe授權網站](https://licensing.adobe.com/)或Adobe支援取得新憑證。
 
 ## 常見問題
 
@@ -34,7 +34,7 @@ A.根據對情況的重新評估，所有使用舊版「PDF根CA」在2023年1�
 
 **Q.如果我有其他問題，應該聯絡誰？**
 
-A.您可以聯絡[Adobe支援](https://experienceleague.adobe.com/zh-hant?support-solution=Experience+Manager#support)或提出支援票證。
+A.您可以聯絡[Adobe支援](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support)或提出支援票證。
 
 **Q.如果在2023年1月7日之前未更新憑證，會發生什麼情況？**
 
@@ -42,11 +42,11 @@ A.所有使用舊版&#39;Adobe根CA&#39;在2023年1月7日之前發行的生產�
 
 **Q.新憑證的描述是否與舊憑證有所差異？**
 
-A.新Acrobat Reader擴充功能憑證的說明將&#x200B;**G3-P24**&#x200B;稱為程式名稱。 在舊憑證的描述(以「Adobe根CA」為基礎的憑證)中，**P24**&#x200B;被提為程式名稱。
+A.新Acrobat Reader擴充功能憑證的說明將&#x200B;**G3-P24**&#x200B;稱為程式名稱。 在舊憑證的描述（以「Adobe根CA」為基礎的憑證）中，**P24**&#x200B;被提為程式名稱。
 
 **Q.如何取得最新的憑證？**
 
-A.所有已取得授權的Forms客戶（具有使用中授權）都可以從[Adobe授權網站](https://licensing.adobe.com/)下載新憑證(以「Adobe根CA G2」為基礎的憑證)。 如果您在Adobe授權網站上找不到憑證，請連絡[Adobe支援](https://experienceleague.adobe.com/zh-hant?support-solution=Experience+Manager&lang=en#support)或提出支援票證。
+A.所有已取得授權的Forms客戶（具有使用中授權）都可以從[Adobe授權網站](https://licensing.adobe.com/)下載新憑證（以「Adobe根CA G2」為基礎的憑證）。 如果您在Adobe授權網站上找不到憑證，請連絡[Adobe支援](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=en#support)或提出支援票證。
 
 **Q.使用由「Adobe根CA」（舊憑證授權單位）發行的憑證擴充的PDF檔案在2023年1月7日之後是否繼續運作？**
 
@@ -81,7 +81,7 @@ A.您可以使用[getDocumentUsageRights](/help/forms/developing/acrobat-reader-
 A.在Microsoft Windows上，若要變更憑證密碼，請使用Microsoft管理主控台(MMC)安裝憑證，並選取&#x200B;**將金鑰標示為可匯出**。 安裝後，使用私密金鑰匯出憑證，然後為PFX檔案使用另一個密碼。
 
 
-<!-- 
+<!--
 ## Applying the certificates {#obtaning-and-applying-the-certificates} 
 
 You can choose one of the following paths to apply latest certificates:
@@ -190,4 +190,5 @@ Remove usage rights from existing rights-enabled PDF documents before applying u
 
 #### Apply the usage rights to PDF documents 
 
-To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html?lang=zh-Hant).  -->
+To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html).
+-->

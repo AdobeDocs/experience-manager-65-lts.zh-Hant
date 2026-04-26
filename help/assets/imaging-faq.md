@@ -9,10 +9,10 @@ feature: Asset Management,Renditions
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9f95a54d-6c5e-44c1-965e-631ec7487308
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3306'
-ht-degree: 0%
+source-wordcount: '3487'
+ht-degree: 2%
 
 ---
 
@@ -59,12 +59,14 @@ ht-degree: 0%
 
 另請參閱[使用下一代影像格式（WebP和AVIF）的影像最佳化](https://blog.developer.adobe.com/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 
-<!-- HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
+<!--
+HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
 
 * Large variety of devices with different form factors and high-resolution displays.
 * Constrained network bandwidth.
 
-In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
+In terms of images, the goal is to serve the best quality images as efficiently as possible.
+-->
 
 ## 智慧型影像處理的優點 {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -88,7 +90,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 您可以將`bfc=off`附加至影像的URL以關閉智慧型影像。
 
-另請參閱Dynamic Media影像提供與轉譯API中的[bfc](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)。
+另請參閱Dynamic Media影像提供與轉譯API中的[bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)。
 
 ### 關於裝置畫素比(dpr)最佳化 {#dpr}
 
@@ -140,7 +142,7 @@ DPR和網路頻寬值是根據偵測到的套件式CDN使用者端值。 這些�
 
 +++智慧型影像是否有任何相關的授權成本？
 
-不行。智慧型影像包含於您現有的授權中。 此規則適用於Dynamic Media Classic或Experience Manager - Dynamic Media （內部部署、AMS和Experience Manager as a Cloud Service）。
+不行。 智慧型影像包含於您現有的授權中。 此規則適用於Dynamic Media Classic或Experience Manager - Dynamic Media （內部部署、AMS和Experience Manager as a Cloud Service）。
 
 >[!NOTE]
 >
@@ -203,7 +205,8 @@ No. Smart Imaging works seamlessly with your existing image URLs and image prese
 
 In case you must configure a new custom domain to use Smart Imaging, the URLs must be updated to reflect this custom domain.
 
-To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging) -->
+To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging)
+-->
 
 <!-- OLD As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
@@ -255,7 +258,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
       * 列出所有相關網域，例如&#x200B;*`company.com`*&#x200B;或&#x200B;*`mycompany.scene7.com`*
       * 智慧型影像支援一般和自訂網域。
-      * 若要識別您的網域，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)並登入您的公司帳戶。
+      * 若要識別您的網域，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)並登入您的公司帳戶。
 
          1. 瀏覽至&#x200B;**[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**。
          1. 尋找&#x200B;**[!UICONTROL 發佈的伺服器名稱]**&#x200B;欄位以確認您的網域。
@@ -337,8 +340,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 >
 >如果`X-Adobe-Smart-Imaging`的值為–1，而且WebP仍在傳遞，則智慧型影像處理為作用中。 但是，由於快取已過時，因此未計算大小優勢。 您可以在影像的URL中使用`cache=update` （僅一次）來修正此問題。
 >使用修飾元的範例：
->`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
->若要讓整個快取失效，您必須建立支援案例。
+>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`>若要讓整個快取失效，您必須建立支援案例。
 
 +++
 
@@ -350,7 +352,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++智慧型影像處理是否可因任何要求而關閉？
 
-可以。您可以新增下列任何修飾元來關閉智慧型影像：
+可以。 您可以新增下列任何修飾元來關閉智慧型影像：
 
 * `bfc=off`以關閉瀏覽器格式轉換。 另請參閱[瀏覽器格式轉換](#bfc)。
 * `dpr=off`以關閉裝置畫素比例。 另請參閱[裝置畫素比例](#dpr)。

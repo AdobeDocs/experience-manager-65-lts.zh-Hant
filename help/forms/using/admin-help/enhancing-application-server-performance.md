@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 6bd234fb-28ad-405f-a018-bdf4fa412839
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1882'
+source-wordcount: '1904'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ AEM forms使用AEM forms存放庫作為其資料來源。 AEM表單存放庫會�
 * 增加AEM表單的預設檔案最大內嵌大小，使其大於大多數檔案的大小。
 * 若要處理大型檔案，請指定位於高速磁碟系統或RAM磁碟上的儲存目錄。
 
-最大內嵌大小和儲存目錄(AEM表單暫存檔目錄和GDS目錄)是在管理控制檯中設定的。
+最大內嵌大小和儲存目錄（AEM表單暫存檔目錄和GDS目錄）是在管理控制檯中設定的。
 
 ### 檔案大小和最大內嵌大小 {#document-size-and-maximum-inline-size}
 
@@ -112,7 +112,7 @@ AEM forms使用AEM forms存放庫作為其資料來源。 AEM表單存放庫會�
 
    >[!NOTE]
    >
-   >對於JEE環境上的AEM Forms和JEE環境中包含的OSGi套件組合上的AEM Forms AEM Forms，檔案最大內嵌大小屬性的值必須相同。 此步驟僅針對JEE環境上的AEM Forms更新值，而非針對JEE環境上的OSGi套件組合中的AEM Forms更新AEM Forms。
+   >對於JEE環境上的AEM Forms和JEE環境中包含的OSGi套件組合上的AEM Forms，檔案最大內嵌大小屬性的值必須相同。 此步驟僅針對JEE環境上的AEM Forms更新值，而非針對JEE環境上的OSGi套件組合中的AEM Forms更新AEM Forms。
 
 1. 使用下列系統屬性重新啟動應用程式伺服器：
 
@@ -120,7 +120,7 @@ AEM forms使用AEM forms存放庫作為其資料來源。 AEM表單存放庫會�
 
    >[!NOTE]
    >
-   >上述系統屬性會覆寫針對JEE環境上的AEM Forms以及JEE環境上的OSGi套件組合中包含的AEM FormsAEM Forms設定的Document Max Inline Size屬性值。
+   >上述系統屬性會覆寫針對JEE環境上的AEM Forms以及JEE環境上的OSGi套件組合中包含的AEM Forms設定的Document Max Inline Size屬性值。
 
 >[!NOTE]
 >

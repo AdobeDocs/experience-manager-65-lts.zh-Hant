@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a2586a1e-0e7f-4ea4-87ec-fbd82df3ec4c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '10836'
+source-wordcount: '10923'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ## 稽核工作流程服務設定 {#audit-workflow-service-settings}
 
-Workbench提供在執行階段執行處理序執行個體時加以記錄，然後播放它們以觀察處理序行為的功能。 （請參閱[Workbench說明](https://www.adobe.com/go/learn_aemforms_workbench_63)。）若要節省Forms伺服器的檔案系統空間，您可以限制儲存的處理程式記錄資料量。 您可以設定Audit Workflow Service ( `AuditWorkflowService`)的下列屬性：
+Workbench提供在執行階段執行處理序執行個體時加以記錄，然後播放它們以觀察處理序行為的功能。 （請參閱[Workbench說明](https://www.adobe.com/go/learn_aemforms_workbench_63)。） 為了節省Forms伺服器檔案系統的空間，您可以限制儲存的程式記錄資料量。 您可以設定Audit Workflow Service ( `AuditWorkflowService`)的下列屬性：
 
 **maxNumberOfRecordingInstances：**&#x200B;儲存的錄製數目上限。 當儲存最大記錄數時，建立新記錄時將從檔案系統中移除最舊的記錄。 如果您想要建立許多錄製，而且您想要自動移除舊的錄製，則此屬性很有用。 預設值為 50。
 
@@ -52,7 +52,7 @@ Workbench提供在執行階段執行處理序執行個體時加以記錄，然�
 
 ## 條碼式表單服務設定 {#barcoded-forms-service-settings}
 
-條碼式表單服務`(BarcodedFormsService)`會從掃描的影像中擷取條碼資料。 此服務接受條碼式(TIFF或PDF)作為輸入，並擷取由條碼編碼之資料的電腦表示法。
+條碼式表單服務`(BarcodedFormsService)`會從掃描的影像中擷取條碼資料。 此服務接受條碼式（TIFF或PDF）作為輸入，並擷取由條碼編碼之資料的電腦表示法。
 
 條碼式表單服務可使用下列設定。
 
@@ -76,11 +76,11 @@ Workbench提供在執行階段執行處理序執行個體時加以記錄，然�
 
 中央移轉Bridge服務( `CentralMigrationBridge`)會叫用Adobe Central Pro Output Server （中央）功能的子集，包括JFMERGE、JFTRANS和XMLIMPORT命令。 中央移轉Bridge服務作業可讓您在AEM表單中重複使用下列中央資產：
 
-* 範本設計(&amp;amp；ast；.ifd)
-* 輸出範本(&amp;amp；ast；.mdf)
-* 資料檔案（&amp;amp；ast；.dat檔案）
-* 序言檔案（&amp;amp；ast；.pre檔案）
-* 資料定義檔案(&amp;amp；ast；.tdf)
+* 範本設計(&amp;ast；.ifd)
+* 輸出範本(&amp;ast；.mdf)
+* 資料檔案（&amp;ast；.dat檔案）
+* 序言檔案（&amp;ast；.pre檔案）
+* 資料定義檔案(&amp;ast；.tdf)
 
 下列設定適用於中央移轉Bridge服務。
 
@@ -116,7 +116,7 @@ IBM FileNet的內容存放庫聯結器可讓您建立與儲存在IBM FileNet存�
 
 ## 轉換PDF服務設定 {#convert-pdf-service-settings}
 
-轉換PDF服務( `ConvertPdfService`)會將PDF檔案轉換為PostScript和多種影像格式(JPEG、JPEG 2000、PNG和TIFF)。 將PDF檔案轉換為PostScript對於任何PostScript印表機上的自動伺服器式列印都很有用。 在不支援PDF檔案的內容管理系統中封存檔案時，將PDF檔案轉換為多頁TIFF檔案是可行的。
+轉換PDF服務( `ConvertPdfService`)會將PDF檔案轉換為PostScript和多種影像格式（JPEG、JPEG 2000、PNG和TIFF）。 將PDF檔案轉換為PostScript對於任何PostScript印表機上的自動伺服器式列印都很有用。 在不支援PDF檔案的內容管理系統中封存檔案時，將PDF檔案轉換為多頁TIFF檔案是可行的。
 
 轉換PDF服務可使用下列設定。
 
@@ -164,7 +164,7 @@ Distiller服務( `DistillerService`)透過網路將PostScript、Encapsulated Pos
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES （已淘汰）是隨LiveCycle安裝的內容管理系統。 它可讓使用者設計、管理、監控及最佳化以人為中心的流程。 內容服務（已棄用）支援將於2014年12月31日終止。 請參閱[Adobe產品生命週期檔案](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)。
+>® LiveCycle® Content Services ES （已淘汰）是隨LiveCycle安裝的內容管理系統。 它可讓使用者設計、管理、監控及最佳化以人為中心的流程。 內容服務（已棄用）支援將於2014年12月31日終止。 請參閱[Adobe產品生命週期檔案](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)。
 
 檔案管理服務(`DocumentManagementService`)可讓處理程式使用內容服務（已棄用）所提供的內容管理功能。 檔案管理作業提供在內容管理系統中維護空間與內容所需的基本工作。 這類工作的範例包括複製、刪除、移動、擷取和儲存內容、建立空間和關聯，以及取得和設定內容屬性。
 
@@ -528,7 +528,7 @@ PDFG清理掃描秒數的預設值為`43200` （12小時）。 工作到期秒�
 
 ## 遠端服務設定 {#remoting-service-settings}
 
-大部分服務都已設定完成，因此您可透過AEM Forms Remoting (AEM表單已棄用)存取這些服務。 如需(AEM表單已棄用) AEM表單遠端處理的相關資訊，請參閱[使用AEM表單程式設計](https://adobe.com/go/learn_aemforms_programming_63)。
+大部分服務都已設定完成，因此您可透過AEM Forms Remoting （AEM表單已棄用）存取這些服務。 如需（AEM表單已棄用） AEM表單遠端處理的相關資訊，請參閱[使用AEM表單程式設計](https://adobe.com/go/learn_aemforms_programming_63)。
 
 下列設定可供遠端服務使用。
 
@@ -538,9 +538,9 @@ PDFG清理掃描秒數的預設值為`43200` （12小時）。 工作到期秒�
 
 ## 存放庫服務設定 {#repository-service-settings}
 
-存放庫服務( `RepositoryService`)為AEM表單提供資源儲存和管理服務。 開發人員建立應用程式時，可以將資產部署在存放庫中，而不是部署在檔案系統上。 資產可包括任何型別的附屬資料，包括XML表單、PDF forms (包括Acrobat表單)、表單片段、影像、設定檔、原則、SWF檔案、DDX檔案、XML結構描述、WSDL檔案和測試資料。
+存放庫服務( `RepositoryService`)為AEM表單提供資源儲存和管理服務。 開發人員建立應用程式時，可以將資產部署在存放庫中，而不是部署在檔案系統上。 資產可包括任何型別的附屬資料，包括XML表單、PDF forms （包括Acrobat表單）、表單片段、影像、設定檔、原則、SWF檔案、DDX檔案、XML結構描述、WSDL檔案和測試資料。
 
-您可以使用AEM表單隨附的預設存放庫，或使用協力廠商存放庫(EMC Documentum Content Server、IBM FileNet Content Manager或IBM Content Manager)。
+您可以使用AEM表單隨附的預設存放庫，或使用協力廠商存放庫（EMC Documentum Content Server、IBM FileNet Content Manager或IBM Content Manager）。
 
 存放庫提供者服務是一種服務委派，充當提供者服務的介面。 這可讓您連線至通用API，而不需知道哪個提供者服務正在實作儲存功能。 儲存區域提供者服務提供儲存區域服務資源的資料庫儲存空間。
 
@@ -576,7 +576,7 @@ PDFG清理掃描秒數的預設值為`43200` （12小時）。 工作到期秒�
 **撤銷封存資訊的大小上限：**&#x200B;撤銷封存資訊的大小上限（以KB為單位）。 AEM forms會嘗試在不超過限制的情況下儲存儘可能多的撤銷資訊。 預設值為10 KB。
 
 **支援從發行前組建建立的簽章
-Adobe產品：**&#x200B;選取此選項時，使用Adobe產品發行前版本建立的簽名將可正確驗證。 預設值為false。
+Adobe產品：**&#x200B;選取此選項時，使用Adobe產品的發行前版本建立的簽名將可正確驗證。 預設值為false。
 
 **驗證時間選項：**&#x200B;指定簽署者憑證的驗證時間。 預設值為安全時間或目前時間。
 
@@ -584,7 +584,7 @@ Adobe產品：**&#x200B;選取此選項時，使用Adobe產品發行前版本建
 驗證：**&#x200B;指定是否使用以簽章封存的撤銷資訊進行撤銷檢查。 預設值為true。
 
 **使用儲存在檔案中的驗證資訊
-簽章驗證：**&#x200B;選取此選項時，會使用檔案中內嵌的驗證資訊（包括撤銷和時間戳記資訊）來驗證簽章。 預設值為true。
+簽章驗證：**&#x200B;選取此選項時，會使用內嵌在檔案中的驗證資訊（包括撤銷和時間戳記資訊）來驗證簽章。 預設值為true。
 
 **允許的巢狀驗證工作階段數上限：**&#x200B;允許的巢狀驗證工作階段數上限。 當OCSP或CRL憑證設定不正確時，AEM Forms會在驗證OCSP或CRL簽署者憑證時使用此值來防止無限回圈。 預設值為 10。
 
@@ -654,7 +654,7 @@ Adobe產品：**&#x200B;選取此選項時，使用Adobe產品發行前版本建
 
 **撤銷檢查樣式：**&#x200B;指定撤銷檢查樣式，用來從觀察到的撤銷狀態判斷CRL提供者憑證的信任狀態。 預設值為BestEffort。
 
-**CRL查閱的LDAP伺服器：**&#x200B;用來取得CRL的LDAP伺服器(如www.ldap.com)。 CRL的所有DN型查詢都將導向此伺服器。 無預設值。
+**CRL查閱的LDAP伺服器：**&#x200B;用來取得CRL的LDAP伺服器（如www.ldap.com）。 CRL的所有DN型查詢都將導向此伺服器。 無預設值。
 
 **上線：**&#x200B;指定是否要上線以擷取CRL。 若為false，則僅會查閱快取的CRL （位於本機磁碟上或內嵌簽名的CRL）。 預設值為true。
 
@@ -698,7 +698,7 @@ Adobe產品：**&#x200B;選取此選項時，使用Adobe產品發行前版本建
 
 ## Watched資料夾服務設定 {#watched-folder-service-settings}
 
-Watched資料夾服務(`WatchedFolder`)會設定所有watched資料夾端點通用的屬性。 它也會提供watched資料夾端點的預設值。 （請參閱[設定Watched資料夾端點](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints)。）外部使用者端應用程式不會叫用它，或在Workbench中建立的程式中使用它。
+Watched資料夾服務(`WatchedFolder`)會設定所有watched資料夾端點通用的屬性。 它也會提供watched資料夾端點的預設值。 （請參閱[設定watched資料夾端點](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints)。） 外部使用者端應用程式不會叫用它，也不會用於Workbench中建立的程式。
 
 下列設定適用於Watched資料夾服務。
 
@@ -706,7 +706,7 @@ Watched資料夾服務(`WatchedFolder`)會設定所有watched資料夾端點通�
 
 **重複計數：**&#x200B;輪詢輸入目錄的次數。 如果未在端點設定中指定此值，則使用預設的重複計數。 值為–1表示無限掃描目錄。 預設值為 -1。
 
-**重複間隔：**&#x200B;每個輪詢之間的預設秒數。 除非在watched資料夾端點設定中指定不同的值，否則此值會用作重複間隔。 預設值為 5。如需詳細資訊，請參閱「批次大小」設定的說明。
+**重複間隔：**&#x200B;每個輪詢之間的預設秒數。 除非在watched資料夾端點設定中指定不同的值，否則此值會用作重複間隔。 預設值為 5。 如需詳細資訊，請參閱「批次大小」設定的說明。
 
 **非同步：**&#x200B;將呼叫型別識別為非同步或同步。 暫時和同步處理程式只能同步叫用。 預設值為非同步。
 

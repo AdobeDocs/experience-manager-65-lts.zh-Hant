@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: e64a3b6f-7248-4426-9f13-f703eab3632d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1734'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Process Reporting服務會依排程從AEM Forms資料庫發佈資料至Process R
 
 這項作業相當耗用資源，且可能影響AEM Forms伺服器的效能。 建議您在AEM Forms伺服器忙碌時段以外排程此專案。
 
-根據預設，資料的發佈排程為每天2:00 am執行。
+根據預設，資料的發佈排程為每天凌晨2:00執行。
 
 若要變更發佈排程，請執行下列步驟：
 
@@ -55,10 +55,10 @@ Process Reporting服務會依排程從AEM Forms資料庫發佈資料至Process R
 >如果您在叢集上執行AEM Forms實作，請在叢集的每個節點上執行下列步驟。
 
 1. 停止AEM Forms伺服器執行個體。
-1. &#x200B;URL
+1. &#x200B;
 
    * （適用於Windows）在編輯器中開啟`[JBoss root]/bin/run.conf.bat`檔案。
-   * (適用於Linux®、AIX®和Solaris™) `[JBoss root]/bin/run.conf.sh`檔案在編輯器中。
+   * （適用於Linux®、AIX®和Solaris™） `[JBoss root]/bin/run.conf.sh`檔案在編輯器中。
 
 1. 新增JVM引數`-Dreporting.publisher.cron = <expression>.`
 
@@ -73,7 +73,7 @@ Process Reporting服務會依排程從AEM Forms資料庫發佈資料至Process R
 1. 停止AEM Forms伺服器執行個體。
 1. 登入WebSphere®管理主控台。 在導覽樹狀結構中，按一下&#x200B;**伺服器** > **應用程式伺服器**，然後在右窗格中按一下伺服器名稱。
 
-1. 在[伺服器基礎結構]下，按一下&lbrack;™0&rbrace;Java&rbrace;和[處理程式管理]&#x200B;**> [處理程式定義]**&#x200B;**。**
+1. 在[伺服器基礎結構]下，按一下[™0}Java}和[處理程式管理]**> [處理程式定義]****。**
 
 1. 在[其他內容]下，按一下[**Java™ Virtual Machine**]。
 
@@ -83,11 +83,11 @@ Process Reporting服務會依排程從AEM Forms資料庫發佈資料至Process R
 
    * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
-1. 按一下[套用]&#x200B;**&#x200B;**，按一下[確定]，然後按一下[直接儲存至主組態]&#x200B;**。**
+1. 按一下[套用]****，按一下[確定]，然後按一下[直接儲存至主組態]**。**
 1. 重新啟動AEM Forms伺服器執行個體。
 1. 停止AEM Forms伺服器執行個體。
 1. 登入WebLogic管理主控台。 WebLogic管理主控台的預設位址是`https://[hostname]:[port]/console`。
-1. 在[變更中心]下，按一下[鎖定與編輯]。**&#x200B;**
+1. 在[變更中心]下，按一下[鎖定與編輯]。****
 1. 在[網域結構]下，按一下[環境&#x200B;**] > [伺服器**] **，然後在右窗格中按一下[受管理的伺服器名稱]。**
 1. 在下一個畫面中，按一下&#x200B;**組態**&#x200B;標籤> **伺服器啟動**&#x200B;標籤。
 1. 在[引數]方塊中，新增JVM引數`-Dreporting.publisher.cron = <expression>`。
@@ -96,7 +96,7 @@ Process Reporting服務會依排程從AEM Forms資料庫發佈資料至Process R
 
    `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
-1. 按一下[儲存]&#x200B;**&#x200B;**，然後按一下[啟動變更]&#x200B;**&#x200B;**。
+1. 按一下[儲存]****，然後按一下[啟動變更]****。
 1. 重新啟動AEM Forms伺服器執行個體。
 
 ![processdatapublisherservice](assets/processdatapublisherservice.png)
@@ -132,7 +132,7 @@ ProcessDataStorageProvider服務會從ProcessDataPublisher服務接收處理作�
 
    `Default`: `/yyyy/mm/dd/hh/mi/ss`
 
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
 ### ReportConfiguration服務 {#reportconfiguration-service}
 

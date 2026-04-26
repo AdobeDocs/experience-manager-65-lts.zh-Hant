@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 054d31c3-bd58-4596-8c06-4909d75e9569
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 0%
+source-wordcount: '792'
+ht-degree: 1%
 
 ---
 
@@ -199,15 +199,15 @@ ht-degree: 0%
 
    * 完整資料庫備份(nsrnmddbf.bat)：
 
-     `NetWorker_database_module_root` `-s`*&lt;NetWorker_Server_Name>* `-U` `[username]` `-P`*[密碼&#x200B;]*`-l full`*&lt;資料庫名稱>*
+     `NetWorker_database_module_root` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P`*[密碼&#x200B;]*`-l full`*&lt;database_name>*
 
    * 增量資料庫備份(nsrnmddbi.bat)：
 
-     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker伺服器名稱>* `-U` `[username]` `-P` `[password]` `-l 1 -R`*&lt;資料庫名稱>*
+     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
 
    * 資料庫記錄備份(nsrnmddbl.bat)：
 
-     `[NetWorker_database_module_root]` `-s` `<NetWorker_Server_Name>` `-U` `[username]` `-P` `[password]` `-l incr -R`*&lt;資料庫名稱>*
+     `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;資料庫名稱>*
 
      其中：
 
@@ -237,7 +237,7 @@ ht-degree: 0%
 
 ## 備份EMC Documentum Content Server {#back-up-the-emc-documentum-content-server}
 
-完成AEM表單資料的完整備份後，請執行以下工作。 (請參閱[備份AEM表單資料](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data)。)
+完成AEM表單資料的完整備份後，請執行以下工作。 （請參閱[備份AEM表單資料](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data)。）
 
 >[!NOTE]
 >
@@ -252,7 +252,7 @@ ht-degree: 0%
 
 ## 還原EMC Documentum Content Server {#restore-the-emc-documentum-content-server}
 
-還原AEM表單資料之前，請執行以下工作。 (請參閱[復原AEM表單資料](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data)。)
+還原AEM表單資料之前，請執行以下工作。 （請參閱[復原AEM表單資料](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data)。）
 
 >[!NOTE]
 >

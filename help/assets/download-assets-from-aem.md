@@ -7,10 +7,10 @@ feature: Asset Management,Asset Distribution
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 89b14351-c689-42a6-bd89-cc258f601898
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 2%
+source-wordcount: '923'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/download-assets-from-aem.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/download-assets-from-aem.html?lang=en) |
 | AEM 6.5 | 本文章 |
 
 您可以下載資產，包括靜態和動態轉譯。 或者，您可以直接從[!DNL Adobe Experience Manager Assets]傳送包含資產連結的電子郵件。 下載的資產會整合在ZIP檔案中。 壓縮的ZIP檔案中，匯出作業的檔案大小上限為1 GB。 每個匯出作業最多允許500個總資產。
@@ -46,12 +46,12 @@ OLD content of the above NOTE, changed wrt CQDOC-18661.
 1. 在工具列上，按一下&#x200B;**[!UICONTROL 下載]**。
 1. 在「下載」對話方塊中，選取您想要的下載選項。
 
-   | 匯出或下載選項 | 描述 |
+   | 匯出或下載選項 | 說明 |
    |---|---|
    | **[!UICONTROL 為每個資產建立個別的資料夾]** | 選取此選項，將您下載的每個資產（包括巢狀內嵌於資產上層資料夾下的子資料夾中的資產）納入本機電腦上的一個資料夾中。 未選取此選項時，預設會忽略資料夾階層，並將所有資產下載至本機電腦中的一個資料夾。 |
-   | **[!UICONTROL 電子郵件]** | 會傳送電子郵件通知給使用者。 標準電子郵件範本可在下列位置取得：<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> 您部署期間自訂的範本可在下列位置使用： <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>您可以將租使用者特定的自訂範本儲存在下列位置：<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
+   | **[!UICONTROL 電子郵件]** | 會傳送電子郵件通知給使用者。 標準電子郵件範本可在下列位置取得：<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> 您部署期間自訂的範本可在下列位置使用： <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>您可以將租使用者特定的自訂範本儲存在下列位置：<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
    | **[!UICONTROL 資產]** | 選取此選項即可以原始格式下載資產，不含任何轉譯。<br>如果原始資產有子資產，則可以使用子資產選項。 |
-   | **[!UICONTROL 轉譯]** | 轉譯是資產的二進位表示法。 Assets具有主要表示方式，即上傳檔案的主要表示方式。 它們可以有任意數量的表示。 <br>使用此選項，您可以選取要下載的轉譯。 可用的轉譯取決於您選取的資產。 如果資產有任何轉譯，則可使用此選項。 |
+   | **[!UICONTROL 轉譯]** | 轉譯是資產的二進位表示法。 Assets具有主要表示方式，即上傳檔案的主要表示方式。 它們可以有任意數量的表示。<br> 使用此選項，您可以選取要下載的轉譯。 可用的轉譯取決於您選取的資產。 如果資產有任何轉譯，則可使用此選項。 |
    | **[!UICONTROL 智慧型裁切]** | 選取此選項，即可從AEM下載所選資產的所有智慧型裁切轉譯。 已建立包含「智慧型裁切」轉譯的zip檔案，並下載至您的本機電腦。 |
    | **[!UICONTROL 動態轉譯]** | 選取此選項可即時產生一系列替代轉譯。 選取此選項時，您也可以從[影像預設集](image-presets.md)清單中選取要動態建立的轉譯。 <br>此外，您可以選取大小與測量單位、格式、色域、解析度，以及任何選用的影像修飾元，例如反轉影像。 只有在您已啟用[!DNL Dynamic Media]時，才能使用此選項。 |
 
@@ -80,13 +80,13 @@ OLD content of the above NOTE, changed wrt CQDOC-18661.
 
 可透過更新Dispatcher設定以封鎖任何資產下載請求，在[!DNL Experience Manager]發佈執行個體上停用`Asset Download Servlet`。 此servlet也可以直接透過OSGi主控台手動停用。
 
-1. 若要透過Dispatcher設定封鎖資產下載請求，請編輯`dispatcher.any`設定並將規則新增到[篩選區段](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hant#defining-a-filter)。`/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. 若要透過Dispatcher設定封鎖資產下載請求，請編輯`dispatcher.any`設定並將規則新增到[篩選區段](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)。`/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. 若要停用Publish執行個體上的OSGi元件，請存取位於`http://[aem_server]:[port]/system/console/components`的OSGi主控台。 找到`com.day.cq.dam.core.impl.servlet.AssetDownloadServlet`並按一下&#x200B;**[!UICONTROL 停用]**。
 
 >[!MORELIKETHIS]
 >
->* [使用Brand Portal下載資產](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=zh-Hant)
+>* [使用Brand Portal下載資產](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
 >* [下載DRM保護的資產](drm.md)。
->* 在Win或Mac案頭上[使用Experience Manager案頭應用程式下載資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hant#download-assets)。
->* [使用支援的Adobe Assets應用程式中的Adobe Creative Cloud Link下載資產](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html)。
+>* 在Win或Mac案頭上[使用Experience Manager案頭應用程式下載資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)。
+>* [使用支援的Adobe Assets應用程式中的Adobe Creative Cloud Link下載資產](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)。

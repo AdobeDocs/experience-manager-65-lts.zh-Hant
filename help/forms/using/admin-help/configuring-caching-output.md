@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: d6390e32-d348-42f2-84d0-9c83aff9ee3a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1463'
 ht-degree: 0%
 
 ---
@@ -107,9 +107,9 @@ Output服務會快取下列專案：
 
 Output服務一律會在磁碟上快取表單設計。 如果表單設計儲存在伺服器上，則這些檔案會被視為磁碟快取。 Output服務也會根據&#x200B;**在記憶體範本快取**&#x200B;區域中的設定，在記憶體中快取表單設計。 如果您變更這些設定，請重新啟動Output服務以使變更生效。 若要重新啟動此服務，請使用Workbench，或參閱[啟動或停止與AEM表單模組](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules)相關的服務以取得指示。
 
-**範本組態快取大小：**&#x200B;要保留在記憶體中的範本組態物件數目上限。 預設值為 100。建議您將此值設定為大於或等於「範本快取大小」值。 此設定不會影響磁碟快取。
+**範本組態快取大小：**&#x200B;要保留在記憶體中的範本組態物件數目上限。 預設值為 100。 建議您將此值設定為大於或等於「範本快取大小」值。 此設定不會影響磁碟快取。
 
-**範本快取大小：**&#x200B;要保留在記憶體中的範本內容物件數目上限。 預設值為 100。此設定不會影響磁碟快取。
+**範本快取大小：**&#x200B;要保留在記憶體中的範本內容物件數目上限。 預設值為 100。 此設定不會影響磁碟快取。
 
 **已啟用：**&#x200B;預設會選取此核取方塊，表示記憶體中快取了表單範本。 未選取此選項時，表單範本只會快取在磁碟上。
 

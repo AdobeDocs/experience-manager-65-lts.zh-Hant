@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: e78860dc-9375-465c-b1fa-2a4827ca8dce
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '210'
 ht-degree: 5%
 
 ---
@@ -32,4 +32,4 @@ ht-degree: 5%
 1. 在管理控制檯中，按一下&#x200B;**[!UICONTROL 設定>使用者管理>網域管理]**。
 1. 在最大連續驗證失敗數方塊中，輸入在鎖定帳戶之前，使用者連續嘗試登入失敗的次數。 預設值為 20。
 1. 在「解除鎖定帳戶之後（分鐘）」方塊中，輸入使用者帳戶被鎖定的分鐘數。 在指定的分鐘數後，使用者可以嘗試再次登入。 預設值為 30。
-1. 按一下「**[!UICONTROL 儲存]**」。
+1. 按一下&#x200B;**[!UICONTROL 儲存]**。

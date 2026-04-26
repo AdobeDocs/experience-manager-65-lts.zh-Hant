@@ -11,9 +11,9 @@ feature: Adaptive Forms,Document Security
 hide: true
 hidefromtoc: true
 exl-id: 6c384e25-f53f-44aa-9043-b9f9f659f987
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1783'
+source-wordcount: '1794'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,13 @@ ht-degree: 0%
 
 **本檔案中的範例和範例僅適用於JEE環境上的AEM Forms。**
 
-您可以使用Flash Builder建立使用者端應用程式，該應用程式會使用HTTP權杖執行單一登入(SSO)驗證。 例如，假設您使用Flash Builder建立網頁式應用程式。 接下來，假設應用程式包含不同的檢視，每個檢視會叫用不同的AEM Forms操作。 您可以建立登入頁面，讓使用者只驗證一次，而不需驗證每次Forms作業的使用者。 一經驗證，使用者即可叫用多項作業，而無須再次驗證。 例如，如果使用者已登入Workspace (或其他Forms應用程式)，則使用者不需要再次驗證。
+您可以使用Flash Builder建立使用者端應用程式，該應用程式會使用HTTP權杖執行單一登入(SSO)驗證。 例如，假設您使用Flash Builder建立網頁式應用程式。 接下來，假設應用程式包含不同的檢視，每個檢視會叫用不同的AEM Forms操作。 您可以建立登入頁面，讓使用者只驗證一次，而不需驗證每次Forms作業的使用者。 一經驗證，使用者即可叫用多項作業，而無須再次驗證。 例如，如果使用者已登入Workspace （或其他Forms應用程式），則使用者不需要再次驗證。
 
 雖然使用者端應用程式包含執行SSO驗證所需的應用程式邏輯，但AEM Forms user Management會執行實際的使用者驗證。 若要使用HTTP權杖驗證使用者，使用者端應用程式會叫用Authentication Manager服務的`authenticateWithHTTPToken`作業。 「使用者管理」能使用HTTP權杖驗證使用者。 對於後續對AEM Forms的遠端處理或Web服務呼叫，您不必傳遞認證以進行驗證。
 
 >[!NOTE]
 >
->閱讀本節之前，建議您熟悉使用遠端功能叫用AEM Forms 。 (請參閱[使用AEM Forms Remoting叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)。)
+>閱讀本節之前，建議您熟悉使用遠端功能叫用AEM Forms 。 （請參閱[使用AEM Forms Remoting叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)。）
 
 在使用者使用SSO進行驗證後，會叫用下列名為`MyApplication/EncryptDocument`的AEM Forms短期處理程式。 （如需此處理序的相關資訊，例如其輸入和輸出值，請參閱[短期處理序範例](/help/forms/developing/aem-forms-processes.md)。）
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 **登入程式**
 
-當使用者端應用程式啟動時，您可以向`/um/login`安全性servlet發出POST要求。 例如 `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`。當請求到達User Manager安全性servlet時，它會執行以下步驟：
+當使用者端應用程式啟動時，您可以向`/um/login`安全性servlet發出POST要求。 例如 `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`。 當請求到達User Manager安全性servlet時，它會執行以下步驟：
 
 1. 它會尋找名為`lcAuthToken`的Cookie。 如果使用者已登入其他Forms應用程式，則會顯示此Cookie。 如果找到Cookie，則會驗證其內容。
 1. 如果啟用以標頭為基礎的SSO，則servlet會尋找已設定的標頭以判斷使用者的身分。
@@ -130,7 +130,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->請注意，有兩個名為um和views的套件。 建立使用者端應用程式時，請確定您將檔案放在適當的套件中。 此外，請確定您將adobe-remoting-provider.swc檔案新增至專案的類別路徑。 (請參閱[包含AEM Forms Flex程式庫檔案](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)。)
+>請注意，有兩個名為um和views的套件。 建立使用者端應用程式時，請確定您將檔案放在適當的套件中。 此外，請確定您將adobe-remoting-provider.swc檔案新增至專案的類別路徑。 （請參閱[包含AEM Forms Flex程式庫檔案](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)。）
 
 ### 建立SSOStandalone.mxml檔案 {#creating-the-ssostandalone-mxml-file}
 

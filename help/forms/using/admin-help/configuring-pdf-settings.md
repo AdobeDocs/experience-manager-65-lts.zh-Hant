@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 41a8a4b0-cb39-40a6-82b6-085f2c635e0c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '7415'
+source-wordcount: '7478'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ Adobe PDF設定頁面會顯示您可以為來源指定的轉換設定，以便�
 
 在Adobe PDF設定頁面上，您可以執行下列工作：
 
-* 檢視預先定義的PDF設定。 (請參閱[關於預先定義的PDF設定](configuring-pdf-settings.md#about-the-predefined-pdf-settings)。)
-* 建立PDF設定或編輯您先前建立的設定。 (請參閱[新增或編輯PDF設定](configuring-pdf-settings.md#add-or-edit-pdf-settings)。)
+* 檢視預先定義的PDF設定。 （請參閱[關於預先定義的PDF設定](configuring-pdf-settings.md#about-the-predefined-pdf-settings)。）
+* 建立PDF設定或編輯您先前建立的設定。 （請參閱[新增或編輯PDF設定](configuring-pdf-settings.md#add-or-edit-pdf-settings)。）
 * 指定預設的PDF設定。 （請參閱[變更預設設定](/help/forms/using/admin-help/configuring-file-type-settings.md#change-the-default-settings)）
-* 將PDF設定檔案上傳至伺服器。 (請參閱[上傳PDF設定](configuring-pdf-settings.md#upload-pdf-settings)。)
-* 刪除自訂的PDF設定。 (請參閱[刪除PDF設定](configuring-pdf-settings.md#delete-pdf-settings)。)
+* 將PDF設定檔案上傳至伺服器。 （請參閱[上傳PDF設定](configuring-pdf-settings.md#upload-pdf-settings)。）
+* 刪除自訂的PDF設定。 （請參閱[刪除PDF設定](configuring-pdf-settings.md#delete-pdf-settings)。）
 * 上傳和下載prolog和epilog檔案。 （請參閱[上傳和下載prolog和epilog檔案](configuring-pdf-settings.md#uploading-and-downloading-prologue-and-epilogue-files)。）
 
 Adobe PDF設定僅適用於PDFMaker型轉換。 這些包含下列轉換：
@@ -95,19 +95,19 @@ PDF設定會精確決定檔案的轉換方式，以及其產生的PDF結構和�
 1. 按一下「新增」或按一下現有設定的名稱。
 1. 在「新增/編輯Adobe PDF設定」頁面上，完成以下區段中的必要資訊：
 
-[一般選項](configuring-pdf-settings.md#general-options)
+   [一般選項](configuring-pdf-settings.md#general-options)
 
-[影像選項](configuring-pdf-settings.md#images-options)
+   [影像選項](configuring-pdf-settings.md#images-options)
 
-[字型選項](configuring-pdf-settings.md#fonts-options)
+   [字型選項](configuring-pdf-settings.md#fonts-options)
 
-[色彩選項](configuring-pdf-settings.md#color-options)
+   [色彩選項](configuring-pdf-settings.md#color-options)
 
-[進階選項](configuring-pdf-settings.md#advanced-options)
+   [進階選項](configuring-pdf-settings.md#advanced-options)
 
-[標準報告與法規遵循選項](configuring-pdf-settings.md#standards-reporting-and-compliance-options)
+   [標準報告與法規遵循選項](configuring-pdf-settings.md#standards-reporting-and-compliance-options)
 
-[初始檢視選項](configuring-pdf-settings.md#initial-view-options)
+   [初始檢視選項](configuring-pdf-settings.md#initial-view-options)
 
    若要移至另一個區段，請在網頁上按一下該區段的連結，或使用「下一個」和「上一個」按鈕。
 
@@ -153,15 +153,15 @@ PDF設定會精確決定檔案的轉換方式，以及其產生的PDF結構和�
   </tr>
   <tr>
    <td><p>不能包含使用即時透明效果的圖稿。 在轉換為PDF 1.3之前，必須將任何透明度平面化。</p> </td>
-   <td><p>支援在圖稿中使用即時透明度。 (Acrobat Distiller功能會將透明度平面化。)</p> </td>
-   <td><p>支援在圖稿中使用即時透明度。 (Acrobat Distiller功能會將透明度平面化。)</p> </td>
-   <td><p>支援在圖稿中使用即時透明度。 (Acrobat Distiller功能會將透明度平面化。)</p> </td>
+   <td><p>支援在圖稿中使用即時透明度。 （Acrobat Distiller功能會將透明度平面化。）</p> </td>
+   <td><p>支援在圖稿中使用即時透明度。 （Acrobat Distiller功能會將透明度平面化。）</p> </td>
+   <td><p>支援在圖稿中使用即時透明度。 （Acrobat Distiller功能會將透明度平面化。）</p> </td>
   </tr>
   <tr>
    <td><p>不支援圖層。</p> </td>
    <td><p>不支援圖層。</p> </td>
-   <td><p>從支援產生分層PDF檔案的應用程式(例如Adobe Illustrator® CS或Adobe InDesign® CS和更新版本)建立PDF檔案時，保留圖層。</p> </td>
-   <td><p>當您從支援產生分層PDF檔案的應用程式(例如Illustrator CS或InDesign CS和更新版本)建立PDF檔案時，保留圖層。</p> </td>
+   <td><p>從支援產生分層PDF檔案的應用程式（例如Adobe Illustrator® CS或Adobe InDesign® CS和更新版本）建立PDF檔案時，保留圖層。</p> </td>
+   <td><p>當您從支援產生分層PDF檔案的應用程式（例如Illustrator CS或InDesign CS和更新版本）建立PDF檔案時，保留圖層。</p> </td>
   </tr>
   <tr>
    <td><p>支援8種色彩的DeviceN色域。</p> </td>
@@ -170,7 +170,7 @@ PDF設定會精確決定檔案的轉換方式，以及其產生的PDF結構和�
    <td><p>支援DeviceN色域，最多可包含31種著色劑。</p> </td>
   </tr>
   <tr>
-   <td><p>可以嵌入多位元組字型。 (Distiller會在內嵌時轉換字型。)</p> </td>
+   <td><p>可以嵌入多位元組字型。 （Distiller會在內嵌時轉換字型。）</p> </td>
    <td><p>可以嵌入多位元組字型。</p> </td>
    <td><p>可以嵌入多位元組字型。</p> </td>
    <td><p>可以嵌入多位元組字型。</p> </td>
@@ -330,7 +330,7 @@ PDF設定會精確決定檔案的轉換方式，以及其產生的PDF結構和�
 
 ### Adobe Color設定 {#adobe-color-settings}
 
-**設定檔：**&#x200B;此清單包含主要圖形應用程式(例如Adobe Photoshop和Adobe Illustrator)也使用的色彩設定清單。 您選取的色彩設定會決定此頁面上的其他Adobe色彩設定。 例如，如果您選取「無」以外的設定，則所有選項（裝置相關資料除外）都會預先定義並變暗。 只有在「設定檔案」中選取「無」時，才能編輯「色彩管理原則」和「工作空間」設定。
+**設定檔：**&#x200B;此清單包含主要圖形應用程式（例如Adobe Photoshop和Adobe Illustrator）也使用的色彩設定清單。 您選取的色彩設定會決定此頁面上的其他Adobe色彩設定。 例如，如果您選取「無」以外的設定，則所有選項（裝置相關資料除外）都會預先定義並變暗。 只有在「設定檔案」中選取「無」時，才能編輯「色彩管理原則」和「工作空間」設定。
 
 ### 色彩管理原則 {#color-management-policies}
 
@@ -338,9 +338,9 @@ PDF設定會精確決定檔案的轉換方式，以及其產生的PDF結構和�
 
 **保持色彩不變：**&#x200B;保持與裝置相關的色彩不變，並將與裝置無關的色彩保留為PDF中最近的對等色彩。 此選項對於已校準其所有裝置、使用該資訊指定檔案中的顏色，且僅輸出到這些裝置的印刷廠非常有用。
 
-**Tag Everything for Color Management：**&#x200B;擷取檔案並校正影像中的顏色時，會嵌入國際顏色聯盟設定檔，如果您選取Acrobat 4 (PDF 1.3)或更新版本的相容性，這會使產生的PDF檔案中的顏色與裝置無關。 不過，檔案(RGB、灰階和CMYK)中與裝置相關的色彩空間會轉換為與裝置無關的色彩空間（CalRGB、CalGray和LAB）。
+**Tag Everything for Color Management：**&#x200B;擷取檔案並校正影像中的顏色時，會嵌入國際顏色聯盟設定檔，如果您選取Acrobat 4 (PDF 1.3)或更新版本的相容性，這會使產生的PDF檔案中的顏色與裝置無關。 不過，檔案（RGB、灰階和CMYK）中與裝置相關的色彩空間會轉換為與裝置無關的色彩空間（CalRGB、CalGray和LAB）。
 
-**僅標籤影像以進行色彩管理：**&#x200B;當您選取Acrobat 4 (PDF 1.3)相容性來擷取檔案時，僅將ICC設定檔嵌入影像，而非文字或圖形。 此選項可防止黑色文字發生任何色彩位移。 不過，影像中相依裝置的色彩空間(RGB、灰階和CMYK)會轉換為與裝置無關的色彩空間（CalRGB、CalGray和LAB）。 不會轉換文字和圖形。
+**僅標籤影像以進行色彩管理：**&#x200B;當您選取Acrobat 4 (PDF 1.3)相容性來擷取檔案時，僅將ICC設定檔嵌入影像，而非文字或圖形。 此選項可防止黑色文字發生任何色彩位移。 不過，影像中相依裝置的色彩空間（RGB、灰階和CMYK）會轉換為與裝置無關的色彩空間（CalRGB、CalGray和LAB）。 不會轉換文字和圖形。
 
 **將所有顏色轉換為sRGB或將所有顏色轉換為
 CMYK：**&#x200B;校正檔案中的顏色，使顏色裝置獨立，類似於「顏色管理」的「標籤一切」。 如果您選取Acrobat 4 (PDF 1.3)或更新版本的相容性並轉換為sRGB，則CMYK和RGB影像會轉換為sRGB。
@@ -367,7 +367,7 @@ CMYK：**&#x200B;校正檔案中的顏色，使顏色裝置獨立，類似於「
 
 對於「色彩管理原則」下的清單中的所有值（除了「保持色彩不變」以外），從「工作區」區域的清單中選取，以指定哪些ICC設定檔用於定義及校正所提取PDF檔案中的灰階、RGB和CMYK色彩空間。 提供下列選項：
 
-**灰色：**&#x200B;定義檔案中所有灰階影像的色域。 只有當您選擇「標籤所有專案」進行「色彩管理」或「僅標籤影像」進行「色彩管理」時，才可使用此選項。 灰階影像的預設ICC設定檔為「灰階伽馬2.2」。您也可以選取「無」來防止轉換灰階影像。
+**灰色：**&#x200B;定義檔案中所有灰階影像的色域。 只有當您選擇「標籤所有專案」進行「色彩管理」或「僅標籤影像」進行「色彩管理」時，才可使用此選項。 灰階影像的預設ICC設定檔為「灰階伽馬2.2」。 您也可以選取「無」來防止轉換灰階影像。
 
 **RGB：**&#x200B;定義檔案中所有RGB影像的色域。 預設值sRGB IEC61966-2.1通常是個不錯的選擇，因為它正在成為業界標準，而且許多輸出裝置都認可它。 您也可以選取「無」來防止RGB影像轉換。
 
@@ -381,11 +381,11 @@ CMYK：**&#x200B;校正檔案中的顏色，使顏色裝置獨立，類似於「
 
 ### 裝置相關資料 {#device-dependent-data}
 
-如果您使用使用使用高階檔案和圖形應用程式(例如Adobe Illustrator和Adobe InDesign)建立的檔案，則這些選項適用。 如需詳細資訊，請參閱應用程式隨附的檔案。
+如果您使用使用使用高階檔案和圖形應用程式（例如Adobe Illustrator和Adobe InDesign）建立的檔案，則這些選項適用。 如需詳細資訊，請參閱應用程式隨附的檔案。
 
 轉換函式用於藝術效果，以及針對特定輸出裝置的規格進行調整。 例如，要在特定網片輸出機上輸出的檔案可能包含轉移函式，以補償印表機固有的點增益。
 
-**保留在「移除顏色」和「產生黑色」之下：**&#x200B;保留這些設定(如果它們存在於PostScript檔案中)。 「產生黑色」會計算當您嘗試重現特定顏色時，要使用的黑色數量。 去除底色(UCR)會減少青色、洋紅色和黃色元件的數量，以補償黑色層代增加的黑色數量。 由於它使用的油墨較少，因此UCR通常用於新聞紙及無塗層原紙。
+**保留在「移除顏色」和「產生黑色」之下：**&#x200B;保留這些設定（如果它們存在於PostScript檔案中）。 「產生黑色」會計算當您嘗試重現特定顏色時，要使用的黑色數量。 去除底色(UCR)會減少青色、洋紅色和黃色元件的數量，以補償黑色層代增加的黑色數量。 由於它使用的油墨較少，因此UCR通常用於新聞紙及無塗層原紙。
 
 **找到轉移函式時：**&#x200B;決定找到轉移函式時該怎麼做：
 
@@ -397,13 +397,13 @@ CMYK：**&#x200B;校正檔案中的顏色，使顏色裝置獨立，類似於「
 
 **保留半色調資訊：**&#x200B;在檔案中保留任何半色調資訊。 半色調資訊是由控制紙張上特定位置的油墨半色調裝置儲存量的點所組成。 改變點的大小和密度，會建立灰色或連續顏色變化的錯覺。 對於CMYK影像，會使用四個半色調網屏，列印過程中使用的每個油墨各一個半色調網屏。
 
-在傳統的印刷製作中，半色調是透過在影片和影像之間放置半色調網屏，然後曝光影片來製作。 電子等效物(例如Adobe Photoshop中的等效物)可讓使用者在製作底片或紙張輸出之前指定半色調網屏屬性。 半色調資訊適用於特定輸出裝置。
+在傳統的印刷製作中，半色調是透過在影片和影像之間放置半色調網屏，然後曝光影片來製作。 電子等效物（例如Adobe Photoshop中的等效物）可讓使用者在製作底片或紙張輸出之前指定半色調網屏屬性。 半色調資訊適用於特定輸出裝置。
 
 ## 進階選項 {#advanced-options}
 
 進階選項可指定要保留在PDF檔案中的檔案結構化慣例(DSC)註解，以及如何設定影響PostScript轉換的其他選項。 在PostScript檔案中，DSC註解包含檔案的相關資訊（例如原始應用程式、建立日期和頁面方向）。 它們也提供檔案中頁面說明的結構（例如prolog區段的開始和結束陳述式）。 DSC註解在檔案要列印或列印時很有用。 如需有關存取進階選項的指示，請參閱[新增或編輯PDF設定](configuring-pdf-settings.md#add-or-edit-pdf-settings)。
 
-使用進階選項時，瞭解PostScript語言以及如何將其翻譯為PDF會很有幫助。 (請參閱[Adobe PostScript 3](https://www.adobe.com/products/postscript/main.html)。)
+使用進階選項時，瞭解PostScript語言以及如何將其翻譯為PDF會很有幫助。 （請參閱[Adobe PostScript 3](https://www.adobe.com/products/postscript/main.html)。）
 
 **允許PostScript檔案覆寫Adobe PDF設定：**&#x200B;使用儲存在PostScript檔案中的設定，而非目前的Adobe PDF設定檔案。 在處理PostScript檔案之前，您可以在檔案中放置引數，以控制下列方面：
 
@@ -449,7 +449,7 @@ PDF Generator可以檢查PostScript檔案中的檔案內容，以確保這些內
 
 符合PDF/X標準的檔案主要用於標準化格式，以交換高解析度列印生產的PDF檔案。 除非您正在建立用於列印生產的PDF檔案，否則您可以忽略PDF/X合規性標準。
 
-符合PDF/A的檔案主要用於封存。 由於目標是長期儲存，因此檔案必須只包含在整個檔案預期生命週期中開啟和檢視所需的內容。 例如，符合PDF/A規範的檔案只能包含文字、點陣影像和向量物件；不能包含加密和指令碼。 此外，所有字型都必須嵌入，這樣檔案才能在建立時開啟和檢視。 換句話說，與PDF/A相容的檔案比適用於高階生產的PDF/X檔案更薄&#x200B;*1&rbrace;。*
+符合PDF/A的檔案主要用於封存。 由於目標是長期儲存，因此檔案必須只包含在整個檔案預期生命週期中開啟和檢視所需的內容。 例如，符合PDF/A規範的檔案只能包含文字、點陣影像和向量物件；不能包含加密和指令碼。 此外，所有字型都必須嵌入，這樣檔案才能在建立時開啟和檢視。 換句話說，與PDF/A相容的檔案比適用於高階生產的PDF/X檔案更薄&#x200B;*1}。*
 
 >[!NOTE]
 >
@@ -471,7 +471,7 @@ PDF Generator可以檢查PostScript檔案中的檔案內容，以確保這些內
 
 **繼續：**&#x200B;建立PDF檔案。
 
-**取消工作：**&#x200B;只有當PDF檔案符合所選報表選項的PDF/X要求，且在其他方面有效時，才會建立PostScript檔案。 如果同時選取PDF/X報表選項，且PostScript檔案僅符合一組PDF/X條件(例如PDF/X-3)，則PDF Generator會建立相容的檔案。
+**取消工作：**&#x200B;只有當PDF檔案符合所選報表選項的PDF/X要求，且在其他方面有效時，才會建立PostScript檔案。 如果同時選取PDF/X報表選項，且PostScript檔案僅符合一組PDF/X條件（例如PDF/X-3），則PDF Generator會建立相容的檔案。
 
 **若未指定TrimBox或ArtBox：**&#x200B;當[標準報告及規範]頁面上的[規範標準]設定為[無]以外的選項時，即可使用。
 

@@ -11,9 +11,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: b3a0eb20-5b85-45a3-a416-a16a9f44acc5
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1100'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,8 @@ ht-degree: 0%
 
 認證包含簽署或識別檔案所需的私密金鑰資訊。 憑證是您設定為信任的公開金鑰資訊。 AEM Forms將憑證和認證用於多種用途：
 
-* Acrobat Reader DC擴充功能會使用認證來啟用PDF檔案中的Adobe Reader使用許可權。 (請參閱[將使用許可權套用至PDF檔案](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)。)
-* 簽章服務會在執行作業(例如數位簽署PDF檔案)時存取憑證和認證。 (請參閱[數位簽署PDF檔案](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)。)
+* Acrobat Reader DC擴充功能會使用認證來啟用PDF檔案中的Adobe Reader使用許可權。 （請參閱[將使用許可權套用至PDF檔案](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)。）
+* 簽章服務會在執行作業（例如數位簽署PDF檔案）時存取憑證和認證。 （請參閱[數位簽署PDF檔案](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)。）
 
 您可以使用信任管理員Java API，以程式設計方式與認證服務互動。 您可以執行下列工作：
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 ## 使用信任管理員API匯入認證 {#importing-credentials-by-using-the-trust-manager-api}
 
-您可以使用信任管理員API，以程式設計方式將認證匯入AEM Forms。 例如，您可以匯入用來簽署PDF檔案的認證。 (請參閱[數位簽署PDF檔案](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents))。
+您可以使用信任管理員API，以程式設計方式將認證匯入AEM Forms。 例如，您可以匯入用來簽署PDF檔案的認證。 （請參閱[數位簽署PDF檔案](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)）。
 
 匯入認證時，您需指定認證的別名。 別名可用來執行需要認證的Forms作業。 匯入後，可在管理主控台中檢視認證，如下圖所示。 請注意，認證的別名是&#x200B;*安全*。
 
@@ -68,8 +68,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-truststore-client.jar
-* adobe-utilities.jar (如果AEM Forms部署在JBoss上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss上，則為必要)
+* adobe-utilities.jar （如果AEM Forms部署在JBoss上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss上，則為必要）
 
 如需關於這些JAR檔案位置的資訊，請參閱[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
@@ -129,7 +129,7 @@ ht-degree: 0%
 
 [使用信任管理員API匯入認證](credentials.md#importing-credentials-by-using-the-trust-manager-api)
 
-[快速入門(SOAP模式)：使用Java API匯入認證](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API匯入認證](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -158,8 +158,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-truststore-client.jar
-* adobe-utilities.jar (如果AEM Forms部署在JBoss上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss上，則為必要)
+* adobe-utilities.jar （如果AEM Forms部署在JBoss上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss上，則為必要）
 
 如需關於這些JAR檔案位置的資訊，請參閱[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
@@ -202,7 +202,7 @@ ht-degree: 0%
 
 [使用信任管理員API刪除認證](credentials.md#deleting-credentials-by-using-the-trust-manager-api)
 
-[快速入門(SOAP模式)：使用Java API刪除認證](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API刪除認證](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

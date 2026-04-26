@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: e8faf76e-5287-4b0c-b440-f348443287f3
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '4725'
+source-wordcount: '4769'
 ht-degree: 0%
 
 ---
@@ -42,9 +42,9 @@ Document Security提供下列型別的原則。
 
 當您第一次安裝Document Security時，它包含一個共用原則，名為&#x200B;*限制到所有主體*。 將此原則套用至檔案時，任何能登入Document Security的使用者都可以存取該檔案。 此原則位於名為&#x200B;*全域原則集*&#x200B;的原則集中。 預設不會啟用此原則。 如果符合貴組織的需求，則可將其啟用。
 
-**Microsoft® Outlook自動產生的原則**
+**® Outlook自動產生的原則**
 
-使用Acrobat，您可以將原則套用至您在Microsoft® Outlook中作為電子郵件附件傳送的檔案。 在Outlook中，您可以使用現有原則來保護檔案。 或者，您可以使用Acrobat透過預設機密性設定產生並套用至附加至電子郵件訊息之檔案的自動產生原則。 (請參閱&#x200B;*[Acrobat說明](https://help.adobe.com/en_US/acrobat/pro/using/index.html)*。)
+使用Acrobat，您可以將原則套用至您在Microsoft® Outlook中作為電子郵件附件傳送的檔案。 在Outlook中，您可以使用現有原則來保護檔案。 或者，您可以使用Acrobat透過預設機密性設定產生並套用至附加至電子郵件訊息之檔案的自動產生原則。 （請參閱&#x200B;*[Acrobat說明](https://help.adobe.com/en_US/acrobat/pro/using/index.html)*。）
 
 >[!NOTE]
 >
@@ -400,7 +400,7 @@ Document Security提供下列型別的原則。
 
 >[!NOTE]
 >
->使用使用者端應用程式從檔案中移除原則。 (請參閱Acrobat說明或適當的Acrobat Reader DC擴充功能說明)。
+>使用使用者端應用程式從檔案中移除原則。 （請參閱Acrobat說明或適當的Acrobat Reader DC擴充功能說明）。
 
 ## 排序原則清單 {#sort-the-policy-list}
 

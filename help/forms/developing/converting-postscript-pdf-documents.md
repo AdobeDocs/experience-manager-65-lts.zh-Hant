@@ -11,9 +11,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 39d793ca-5909-428e-9f6e-08d587f828c0
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1323'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 關於Distiller服務 {#about-the-distiller-service}
 
-Distiller®服務可透過網路將PostScript®、Encapsulated PostScript (EPS)和PRN檔案轉換為精簡、可靠且更安全的PDF檔案。 Distiller服務通常用於將大量列印檔案轉換為電子檔案，例如發票和結算單。 將檔案轉換為PDF也可讓企業傳送檔案的紙本和電子版本給客戶。
+®服務可透過網路將PostScript®、Encapsulated PostScript (EPS)和PRN檔案轉換為精簡、可靠且更安全的PDF檔案。 Distiller服務通常用於將大量列印檔案轉換為電子檔案，例如發票和結算單。 將檔案轉換為PDF也可讓企業傳送檔案的紙本和電子版本給客戶。
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ Distiller®服務可透過網路將PostScript®、Encapsulated PostScript (EPS)�
 
 [步驟摘要](converting-postscript-pdf-documents.md#summary-of-steps)
 
-[快速入門(SOAP模式)：使用Java API將PostScript檔案轉換為PDF檔案](/help/forms/developing/distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API將PostScript檔案轉換為PDF檔案](/help/forms/developing/distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -152,7 +152,7 @@ Distiller®服務可透過網路將PostScript®、Encapsulated PostScript (EPS)�
 1. 建立Distiller服務使用者端。
 
    * 使用預設建構函式建立`DistillerServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`DistillerServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/DistillerService?blob=mtom`）。您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。 但是，請指定`?blob=mtom`以使用MTOM。
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`DistillerServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如，`http://localhost:8080/soap/services/DistillerService?blob=mtom`）。 您不需要使用`lc_version`屬性。 當您建立服務參考時，會使用此屬性。 但是，請指定`?blob=mtom`以使用MTOM。
    * 取得`DistillerServiceClient.Endpoint.Binding`欄位的值，以建立`System.ServiceModel.BasicHttpBinding`物件。 將傳回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
@@ -194,7 +194,8 @@ Distiller®服務可透過網路將PostScript®、Encapsulated PostScript (EPS)�
 
 [步驟摘要](converting-postscript-pdf-documents.md#summary-of-steps)
 
-<!-- UNRESOLVED LINKS
+<!--
+UNRESOLVED LINKS
 [Quick Start (MTOM): Converting a PostScript file to a PDF document using the web service API](unresolvedlink-lc-qs-distiller-di.xml#ws624e3cba99b79e12e69a9941333732bac8-7f01.2)
 
 [Quick Start (SwaRef): Converting a PostScript file to a PDF document using the web service API](unresolvedlink-lc-qs-distiller-di.xml#ws624e3cba99b79e12e69a9941333732bac8-7eff.2)

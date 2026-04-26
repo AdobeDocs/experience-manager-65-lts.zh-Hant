@@ -11,10 +11,10 @@ role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9eba1e3f-9251-445e-b791-2be0a92aebd1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 40%
+source-wordcount: '432'
+ht-degree: 43%
 
 ---
 
@@ -22,10 +22,10 @@ ht-degree: 40%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=zh-Hant) |
 | AEM 6.5 | 本文章 |
 
-身為Adobe Experience Manager (AEM) Assets管理員，您可以將資產和資料夾發佈至AEM Assets Brand Portal執行個體（或排程發佈工作流程在之後的日期/時間）。 不過，您必須先使用 Brand Portal 設定 AEM Assets。如需詳細資訊，請參閱[使用 Brand Portal 設定 AEM Assets](/help/assets/configure-aem-assets-with-brand-portal.md)。
+身為Adobe Experience Manager (AEM) Assets管理員，您可以將資產和資料夾發佈至AEM Assets Brand Portal執行個體（或排程發佈工作流程在之後的日期/時間）。 不過，您必須先使用 Brand Portal 設定 AEM Assets。 如需詳細資訊，請參閱[使用 Brand Portal 設定 AEM Assets](/help/assets/configure-aem-assets-with-brand-portal.md)。
 
 複製成功後，您可以將資產、資料夾和集合發佈到Brand Portal。 若要將資產發佈至Brand Portal，請執行下列步驟：
 
@@ -47,7 +47,7 @@ ht-degree: 40%
 
 若要將所選資產發佈至 Brand Portal，請執行下列其中一項操作：
 
-* 在工具列中選取&#x200B;**[!UICONTROL 快速發佈]**。然後在功能表中選取&#x200B;**[!UICONTROL 發佈至Brand Portal]**。
+* 在工具列中選取&#x200B;**[!UICONTROL 快速發佈]**。 然後在功能表中選取&#x200B;**[!UICONTROL 發佈至Brand Portal]**。
 
 * 在工具列中選取&#x200B;**[!UICONTROL 管理出版物]**。
 
@@ -55,7 +55,7 @@ ht-degree: 40%
 
    2. 在&#x200B;**[!UICONTROL 範圍]**&#x200B;內，確認您的選取專案並按一下&#x200B;**[!UICONTROL 發佈至Brand Portal]**。
 
-系統會顯示訊息，指出資產已排入佇列，等候發佈至 Brand Portal。登入 Brand Portal 介面可查看已發佈的資產。
+系統會顯示訊息，指出資產已排入佇列，等候發佈至 Brand Portal。 登入 Brand Portal 介面可查看已發佈的資產。
 
 ## 稍後發佈資產 {#publish-to-bp-later}
 
@@ -67,11 +67,11 @@ ht-degree: 40%
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
 
-1. 選取&#x200B;**[!UICONTROL 啟用日期]**&#x200B;並指定時間。按一下&#x200B;**[!UICONTROL 下一步]**。
+1. 選取&#x200B;**[!UICONTROL 啟用日期]**&#x200B;並指定時間。 按一下&#x200B;**[!UICONTROL 下一步]**。
 
-1. 選取&#x200B;**啟用日期**&#x200B;並指定時間。按一下&#x200B;**下一步**。
+1. 選取&#x200B;**啟用日期**&#x200B;並指定時間。 按一下&#x200B;**下一步**。
 
-1. 在&#x200B;**[!UICONTROL 工作流程]**&#x200B;中指定&#x200B;**[!UICONTROL 工作流程標題]**。按一下&#x200B;**[!UICONTROL 稍後發佈]**。
+1. 在&#x200B;**[!UICONTROL 工作流程]**&#x200B;中指定&#x200B;**[!UICONTROL 工作流程標題]**。 按一下&#x200B;**[!UICONTROL 稍後發佈]**。
 
    ![publishworkflow](assets/publishworkflow.png)
 
@@ -87,6 +87,6 @@ ht-degree: 40%
 
 1. 切換到清單檢視![清單檢視](assets/list-view.svg)以檢視資產目前的發佈狀態。
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
 ![產生的報告狀態](assets/report-status.JPG)

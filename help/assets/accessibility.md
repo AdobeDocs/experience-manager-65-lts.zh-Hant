@@ -5,10 +5,10 @@ feature: Asset Management
 role: User,Developer,Leader
 solution: Experience Manager, Experience Manager Assets
 exl-id: f9540bfb-1c4f-41f0-9caa-ef9265225648
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1882'
-ht-degree: 0%
+source-wordcount: '1933'
+ht-degree: 1%
 
 ---
 
@@ -43,7 +43,7 @@ Possible topics to cover in this article are below.
 
 若要閱讀包含詳細相容性層級的報表，請參閱[協助工具相容性報表](https://www.adobe.com/accessibility/compliance.html) (ACR)頁面。
 
-若要瞭解[!DNL Dynamic Media]的存取方式，請參閱[中的 [!DNL Dynamic Media]](/help/assets/accessibility-dm.md)存取功能。
+若要瞭解[!DNL Dynamic Media]的存取方式，請參閱 [!DNL Dynamic Media]](/help/assets/accessibility-dm.md)中的[存取功能。
 
 ## 輔助技術 {#at-support}
 
@@ -68,7 +68,8 @@ Possible topics to cover in this article are below.
 
 許多可使用指標點選或操作的使用者介面元素，也可以使用鍵盤來配合。 使用鍵盤時，使用者可專注於UI元素並採取適當的動作。 使用者可以直接使用鍵盤快速鍵來觸發命令或動作，而無需專注於UI元素並使用鍵盤來觸發。 例如，使用者可在使用者介面的左側開啟資產的時間軸。 使用鍵盤瀏覽至使用者介面控制項，並選取`Return`，然後選取`Alt + 2`鍵盤快速鍵。
 
-<!-- TBD items:
+<!--
+TBD items:
 
 * The option to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
 * How to open and browse through the profile popup dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into 'basic handling' info aka article to 'understand and use the workspace'. What about setting preferences and impersonating a user?
@@ -78,14 +79,14 @@ Possible topics to cover in this article are below.
 
 ### [!DNL Assets]中的鍵盤快速鍵 {#keyboard-shortcuts}
 
-[!DNL Assets]中的下列動作可搭配列出的鍵盤快速鍵使用。 大部分套用至[!DNL Experience Manager]主控台的鍵盤快速鍵也套用至[!DNL Assets]。 請參閱主控台[的](/help/sites-authoring/keyboard-shortcuts.md#keyboard-shortcuts)鍵盤快速鍵。 瞭解如何[啟用或停用鍵盤快速鍵](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)。
+[!DNL Assets]中的下列動作可搭配列出的鍵盤快速鍵使用。 大部分套用至[!DNL Experience Manager]主控台的鍵盤快速鍵也套用至[!DNL Assets]。 請參閱主控台](/help/sites-authoring/keyboard-shortcuts.md#keyboard-shortcuts)的[鍵盤快速鍵。 瞭解如何[啟用或停用鍵盤快速鍵](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)。
 
 | 使用者介面或情境 | 鍵盤快速鍵 | 動作 |
 |---|---|---|
 | [!DNL Assets]使用者介面中的資料行檢視 | 向上鍵與向下鍵 | 導覽至相同階層內的檔案和資料夾。 |
 | [!DNL Assets]使用者介面中的資料行檢視 | 左右方向鍵 | 導覽至目前資料夾上方或下方的檔案和資料夾。 |
 | 瀏覽[!DNL Assets]中的資料夾 | `/` | 開啟Omnisearch方塊以叫用搜尋。 |
-| [!DNL Assets]主控台 | &amp;amp；抑音符號； | 切換邊欄 |
+| [!DNL Assets]主控台 | &amp;grave； | 切換邊欄 |
 | [!DNL Assets]主控台 | `Alt + 1` | 開啟內容樹狀結構。 |
 | [!DNL Assets]主控台 | `Alt + 2` | 開啟[!UICONTROL 導覽]左側邊欄。 |
 | [!DNL Assets]主控台 | `Alt + 3` | 顯示選取資產的[!UICONTROL 時間表]。 |
@@ -111,7 +112,8 @@ Possible topics to cover in this article are below.
 
 如果使用者從功能表展開說明或使用者設定檔選項，熒幕助讀程式會朗讀適當的選項或狀態。 如果使用者展開使用者設定檔選項，則可使用鍵盤選取可用的選項。 例如，管理員可以模擬其他使用者。 如果使用者從[!UICONTROL 說明]選項中搜尋字串，解說員會宣佈「搜尋說明」以表示搜尋正在進行中。
 
-<!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
+<!--
+TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
 ![Keyboard navigation of top options in [!DNL Experience Manager] user interface](assets/keyboard-navigation-in-aem.gif)
 
@@ -122,7 +124,8 @@ Possible topics to cover in this article are below.
 
 在[!DNL Assets]使用者介面中，使用者可以使用鍵盤來瀏覽DAM存放庫中的數位資產，以及預覽或下載資產。 使用者也可以檢視產生的轉譯、切換檢視，以及檢閱時間軸、版本記錄、註釋和參照。 此外，使用者還可以檢視及管理中繼資料。
 
-<!-- TBD: Not sure about the following list items mean:
+<!--
+TBD: Not sure about the following list items mean:
 
 In [!DNL Experience Manager] header section, when navigating in browse mode, screen reader now announces,
   
@@ -146,9 +149,10 @@ Review CQ-4282133 before adding - Close option in a coral-dialog was not accessi
 * 使用`Esc`鍵從縮圖檢視中移除快速動作圖示並不會從最後一個焦點專案移除鍵盤焦點。
 * 選取資產後，選取`Alt + 4`鍵盤快速鍵會開啟左側邊欄中的[!UICONTROL 參考]清單。 使用`Tab`鍵，使用者可以瀏覽非零參考專案。 僅瀏覽非零參照專案，可節省工作量和按鍵動作。
 * 資產時間軸中提供資產上的註解。 若使用鍵盤或鍵盤快速鍵存取左側邊欄，即可存取。
-* [!UICONTROL 中的]檢視設定[!DNL Experience Manager]可使用鍵盤存取。 使用者可以使用方向鍵瀏覽可用的卡片大小，並選取和Tab鍵瀏覽，以瀏覽和設定現有「檢視設定」檢視中的其他元素。
+* [!DNL Experience Manager]中的[!UICONTROL 檢視設定]可使用鍵盤存取。 使用者可以使用方向鍵瀏覽可用的卡片大小，並選取和Tab鍵瀏覽，以瀏覽和設定現有「檢視設定」檢視中的其他元素。
 
-<!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
+<!--
+TBD: Gradually, as more enhancements are done in these categories, add more content.
 
 ## Add and upload digital assets {#upload}
 
@@ -191,7 +195,8 @@ Review CQ-4282133 before adding - Close option in a coral-dialog was not accessi
 
 ## 共用資產 {#share-assets}
 
-<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
+<!--
+TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
 -->
 
 共用資產時，下列功能可改善協助工具：
@@ -219,7 +224,7 @@ Review CQ-4282133 before adding - Close option in a coral-dialog was not accessi
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; [!DNL Dynamic Media]](/help/assets/accessibility-dm.md)中的協助工具功能。
+>* [ [!DNL Dynamic Media]](/help/assets/accessibility-dm.md)中的協助工具功能。
 >* [每個Service Pack版本](/help/release-notes/release-notes.md)中完成的增強功能的發行說明。
 >* [[!DNL Adobe Experience Manager] 協助工具指引](/help/managing/web-accessibility.md)。
 >* [Adobe解決方案的一致性報告(ACR)和VPAT清單](https://www.adobe.com/accessibility/compliance.html)。

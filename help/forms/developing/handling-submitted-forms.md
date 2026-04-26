@@ -12,9 +12,9 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 31a10544-0be7-4ef7-ba0f-c37099d36bcb
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2894'
+source-wordcount: '2915'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 讓使用者能夠填寫互動式表單的網頁式應用程式，需要資料提交回伺服器。 使用Forms服務，您可以擷取使用者在互動式表單中輸入的資料。 擷取資料後，您可以處理資料以符合業務需求。 例如，您可以將資料儲存在資料庫中、將資料傳送至其他應用程式、將資料傳送至其他服務、將資料合併至表單設計、在網頁瀏覽器中顯示資料等等。
 
-表單資料會以XML或PDF資料(在Designer中設定的選項)提交至Forms服務。 以XML形式提交的表單可讓您擷取個別欄位資料值。 也就是說，您可以擷取使用者在表單中輸入的每個表單欄位的值。 以PDF資料形式提交的表單為二進位資料，而非XML資料。 您可以將表單儲存為PDF檔案，或將表單傳送至其他服務。 如果您想從以XML格式提交的表單中擷取資料，然後使用表單資料來建立PDF檔案，請叫用其他AEM Forms作業。 (請參閱[使用已提交的XML資料建立PDF檔案](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
+表單資料會以XML或PDF資料（在Designer中設定的選項）提交至Forms服務。 以XML形式提交的表單可讓您擷取個別欄位資料值。 也就是說，您可以擷取使用者在表單中輸入的每個表單欄位的值。 以PDF資料形式提交的表單為二進位資料，而非XML資料。 您可以將表單儲存為PDF檔案，或將表單傳送至其他服務。 如果您想從以XML格式提交的表單中擷取資料，然後使用表單資料來建立PDF檔案，請叫用其他AEM Forms作業。 （請參閱[使用已提交的XML資料建立PDF檔案](/help/forms/developing/creating-pdf-documents-submitted-xml.md)）
 
 下圖顯示從網頁瀏覽器中顯示的互動式表單提交至名為`HandleData`的Java Servlet的資料。
 
@@ -37,7 +37,7 @@ ht-degree: 0%
  <thead>
   <tr>
    <th><p>步驟</p></th>
-   <th><p>描述</p></th>
+   <th><p>說明</p></th>
   </tr>
  </thead>
  <tbody>
@@ -85,7 +85,7 @@ ht-degree: 0%
  <thead>
   <tr>
    <th><p>步驟</p></th>
-   <th><p>描述</p></th>
+   <th><p>說明</p></th>
   </tr>
  </thead>
  <tbody>
@@ -220,7 +220,7 @@ Forms服務會傳回下列值，指出是否已完成資料處理：
 
       * 包含表單資料的`com.adobe.idp.Document`物件。
       * 字串值，指定包含所有相關HTTP標頭的環境變數。 指定要處理的內容型別。 若要處理XML資料，請為此引數指定下列字串值： `CONTENT_TYPE=text/xml`。 若要處理PDF資料，請為此引數指定下列字串值： `CONTENT_TYPE=application/pdf`。
-      * 字串值，指定`HTTP_USER_AGENT`標頭值，例如。 `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。此引數值為選用。
+      * 字串值，指定`HTTP_USER_AGENT`標頭值，例如。 `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. 此引數值為選用。
       * 儲存執行階段選項的`RenderOptionsSpec`物件。
 
      `processFormSubmission`方法傳回包含表單提交結果的`FormsResult`物件。
@@ -255,11 +255,11 @@ Forms服務會傳回下列值，指出是否已完成資料處理：
 
 **另請參閱**
 
-[快速入門(SOAP模式)：使用Java API處理以XML格式提交的PDF forms](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API處理以XML格式提交的PDF forms](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
 
-[快速入門(SOAP模式)：使用Java API處理以XML格式提交的HTML表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API處理以XML格式提交的HTML表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 
-[快速入門(SOAP模式)：使用Java API處理以PDF形式提交的PDF forms](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API處理以PDF形式提交的PDF forms](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

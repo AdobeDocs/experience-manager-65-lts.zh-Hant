@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5e9e0371-018a-496f-aad4-04ff21391d51
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1355'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ AEM forms Digital Signatures可使用HSM上儲存的憑證來套用伺服器端�
 
 1. 在管理控制檯中，按一下「設定」>「信任存放區管理」>「HSM認證」，然後按一下「新增」。
 1. 在「設定檔名稱」方塊中，輸入用於識別別名的字串。 此值會用作某些數位簽名作業（例如「簽名欄位」作業）的屬性。
-1. 在「PKCS11程式庫」方塊中，輸入伺服器上HSM使用者端程式庫的完整路徑。 例如 `c:\Program Files\LunaSA\cryptoki.dll`。在叢集環境中，叢集內所有伺服器的這個路徑必須相同。
+1. 在「PKCS11程式庫」方塊中，輸入伺服器上HSM使用者端程式庫的完整路徑。 例如 `c:\Program Files\LunaSA\cryptoki.dll`。 在叢集環境中，叢集內所有伺服器的這個路徑必須相同。
 1. 按一下「測試HSM連線」。 如果AEM Forms可連線至HSM裝置，系統會顯示訊息，指出HSM可供使用。 按一下「下一步」。
 1. 使用「權杖名稱」、「插槽ID」或「插槽清單索引」來識別認證儲存在HSM上的位置。
 
@@ -53,13 +53,13 @@ AEM forms Digital Signatures可使用HSM上儲存的憑證來套用伺服器端�
 
 1. 在管理控制檯中，按一下「設定」>「信任存放區管理」>「HSM認證」，然後按一下「新增」。
 1. 在「設定檔名稱」方塊中，輸入用於識別別名的字串。 此值會用作某些數位簽名作業（例如「簽名欄位」作業）的屬性。
-1. 在「PKCS11程式庫」方塊中，輸入伺服器上HSM使用者端程式庫的完整路徑。 例如 `c:\Program Files\LunaSA\cryptoki.dll`。在叢集環境中，叢集內所有伺服器的這個路徑必須相同。
+1. 在「PKCS11程式庫」方塊中，輸入伺服器上HSM使用者端程式庫的完整路徑。 例如 `c:\Program Files\LunaSA\cryptoki.dll`。 在叢集環境中，叢集內所有伺服器的這個路徑必須相同。
 1. 選取「建立離線設定檔」核取方塊。 按一下「下一步」。
 1. 在HSM裝置清單中，選取儲存認證的HSM裝置製造商。
 1. 在「槽型別」清單中，選取「槽標識」、「槽索引」或「Token名稱」，並在「槽資訊」方塊中指定一個值。 AEM forms會使用這些設定來決定認證儲存在HSM上的位置。
 
    * **Token名稱：**&#x200B;對應到資料分割名稱（例如HSMPART1）。
-   * **位置識別碼：**&#x200B;位置識別碼是與位置對應的整數，而位置識別碼又與分割區相對應。 例如，使用者端(Forms伺服器)會先在HSMPART1資料分割中註冊。 這會將插槽1對應至此使用者端的HSMPART1磁碟分割。 由於HSMPART1是第一個登入的磁碟分割，因此插槽ID為1，而您會將Slot Info設為1。
+   * **位置識別碼：**&#x200B;位置識別碼是與位置對應的整數，而位置識別碼又與分割區相對應。 例如，使用者端（Forms伺服器）會先在HSMPART1資料分割中註冊。 這會將插槽1對應至此使用者端的HSMPART1磁碟分割。 由於HSMPART1是第一個登入的磁碟分割，因此插槽ID為1，而您會將Slot Info設為1。
 
      插槽ID是依使用者端而設定。 如果您將第二部電腦註冊到不同的磁碟分割（例如，同一個HSM裝置上的HSMPART2），則插槽1會與該使用者端的HSMPART2磁碟分割相關聯。
 
@@ -109,4 +109,4 @@ AEM Forms使用以Web服務為基礎的IPC/RPC機制。 此機制可讓AEM表單
 此機制不支援線上建立HSM設定檔或狀態檢查。 但是，有兩種方法可建立HSM設定檔並執行狀態檢查：
 
 * 透過傳遞簽署者的憑證來建立AEM表單使用者端認證。 請依照[在Windows 64位元平台上使用Sun JDK設定AEM Forms ES的HSM支援](https://kb2.adobe.com/cps/808/cpsid_80835.html)中的步驟操作。 Web服務位置會以Credential屬性的形式傳入。 也支援使用憑證或憑證SHA-1十六進位來建立離線HSM設定檔。 不過，如果您已從舊版AEM表單升級至AEM表單，請進行使用者端變更，因為認證包含憑證和Web服務資訊。
-* 在Signature服務的管理主控台中指定Web服務位置。 （請參閱[簽章服務設定](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings)。）在此處，使用者端僅攜帶信任存放區中HSM設定檔的別名。 即使您從舊版AEM表單升級至AEM表單，您仍可順暢地使用此選項，不需變更任何使用者端。 此選項不支援使用憑證SHA-1的HSM設定檔。
+* 在Signature服務的管理主控台中指定Web服務位置。 （請參閱[簽章服務設定](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings)。） 在此處，使用者端僅攜帶信任存放區中HSM設定檔的別名。 即使您從舊版AEM表單升級至AEM表單，您仍可順暢地使用此選項，不需變更任何使用者端。 此選項不支援使用憑證SHA-1的HSM設定檔。

@@ -11,9 +11,9 @@ feature: Adaptive Forms, APIs & Integrations, Barcoded Forms
 hide: true
 hidefromtoc: true
 exl-id: 71dc8036-f9a3-4e00-bce1-3f162428053d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1934'
 ht-degree: 0%
 
 ---
@@ -58,9 +58,9 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-barcodedforms-client.jar
-* adobe-utilities.jar (如果AEM Forms部署在JBoss上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss上，則為必要)
-* xercesImpl.jar (位於&lt;安裝目錄>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
+* adobe-utilities.jar （如果AEM Forms部署在JBoss上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss上，則為必要）
+* xercesImpl.jar （位於&lt;安裝目錄>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty）
 
 如果將AEM Forms部署在受支援的J2EE應用程式伺服器（不是JBOSS）上，則您必須將adobe-utilities.jar和jbossall-client.jar取代為特定於已部署AEM Forms之J2EE應用程式伺服器的JAR檔案。 如需有關所有AEM Forms JAR檔案位置的資訊，請參閱[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
@@ -166,7 +166,7 @@ ht-degree: 0%
 
 **另請參閱**
 
-[快速入門(SOAP模式)：使用Java API將條碼式表單資料解碼](/help/forms/developing/barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API將條碼式表單資料解碼](/help/forms/developing/barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

@@ -9,9 +9,9 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: f1dbf625f1cb42feaede7acb0dee073ac78ebab3
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2999'
+source-wordcount: '3174'
 ht-degree: 3%
 
 ---
@@ -44,7 +44,7 @@ JEE伺服器上的AEM Forms可使用任何支援的作業系統、應用程式�
 
 - **修補程式安裝程式准則**：使用修補程式安裝程式進行更新時，必須確認基礎完整安裝程式版本不超過兩個發行版本舊。 例如，在安裝Service Pack 6.5.19.0期間，請確定基礎完整安裝程式版本為6.5.18.0或6.5.12.0。
 
-- **修補程式升級支援**：您可以繼續升級至最新的Service Pack，直到您同時升級至最新支援的平台。 例如，假設您轉換至6.5.12.0支援的平台組合，就可以從Service Pack 6.5.19.0升級至6.5.19.0。
+- **修補程式升級支援**：您可以繼續升級至最新的Service Pack，直到您同時升級至最新支援的平台。 例如，假設您轉換至6.5.19.0支援的平台組合，就可以從Service Pack 6.5.12.0升級至6.5.19.0。
 
 ### 建議的設定 {#recommendedconfigurations}
 
@@ -58,7 +58,7 @@ Adobe建議使用這些設定，並在標準軟體維護合約中提供完整或
   </tr>
   <tr>
    <td>A：支援<br /> </td>
-   <td>Adobe 為此設定提供完整的支援和維護。Adobe 品質保證流程涵蓋此設定。</td>
+   <td>Adobe 為此設定提供完整的支援和維護。 Adobe 品質保證流程涵蓋此設定。</td>
   </tr>
   <tr>
    <td>R：限制支援</td>
@@ -76,7 +76,7 @@ Adobe建議使用這些設定，並在標準軟體維護合約中提供完整或
 | 支援程度 | 說明 |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | E：預期可運作 | 此設定預期可運作，且沒有相反的報告。 |
-| Z：不支援 | 不支援此設定。Adobe不會就設定是否運作發表任何宣告，也不支援此設定。 |
+| Z：不支援 | 不支援此設定。 Adobe不會就設定是否運作發表任何宣告，也不支援此設定。 |
 
 >[!NOTE]
 >
@@ -92,7 +92,7 @@ Adobe Experience Manager Forms需要由Java™開發套件(JDK)散發提供的Ja
 <table>
  <tbody>
   <tr>
-   <th><p><strong>Platform</strong></p> </th>
+   <th><p><strong>平台</strong></p> </th>
    <th><p><strong>支援程度</strong></p> </th>
    <th><p><strong>支援的修補程式定義</strong></p> </th>
   </tr>
@@ -119,7 +119,7 @@ Adobe Experience Manager Forms需要由Java™開發套件(JDK)散發提供的Ja
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Platform</strong></p> </td>
+   <td><p><strong>平台</strong></p> </td>
    <td><p><strong> 說明</strong></p> </td>
    <td><p><strong>支援程度</strong></p> </td>
   </tr>
@@ -180,7 +180,7 @@ Adobe Experience Manager Forms需要由Java™開發套件(JDK)散發提供的Ja
  <tbody>
   <tr>
    <th>資料庫 </th>
-   <th><p><strong>Platform</strong></p> </th>
+   <th><p><strong>平台</strong></p> </th>
    <th><p><strong>支援的修補程式定義</strong></p> </th>
   </tr>
   <tr>
@@ -206,7 +206,7 @@ Adobe Experience Manager Forms需要由Java™開發套件(JDK)散發提供的Ja
 <table>
  <tbody>
   <tr>
-   <td><p><strong> Platform</strong></p> </td>
+   <td><p><strong> 平台</strong></p> </td>
    <td><p><strong>支援程度</strong></p> </td>
    <td><p><strong>支援的修補程式定義</strong></p> </td>
   </tr>
@@ -225,7 +225,7 @@ Adobe Experience Manager Forms需要由Java™開發套件(JDK)散發提供的Ja
 <table>
  <tbody>
   <tr>
-   <th><p><strong> Platform</strong></p> </th>
+   <th><p><strong> 平台</strong></p> </th>
    <th><p><strong>支援層級</strong></p> </th>
    <th><p><strong>支援的修補程式定義</strong></p> </th>
   </tr>
@@ -377,7 +377,7 @@ AEM Forms應用程式現在支援Apache Cordova。 以下是支援的平台特�
    <th><p><strong>支援的格式可轉換成PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/tw/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a>最新版本</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a>最新版本</td>
    <td>XPS、影像格式(BMP、GIF、JPEG、JPG、TIF、TIFF、PNG、JPF、JPX、JP2、J2K、J2C、JPC)、HTML和HTM</td>
   </tr>
 
@@ -407,8 +407,10 @@ AEM Forms應用程式現在支援Apache Cordova。 以下是支援的平台特�
 >- 只有Windows支援OCR PDF、最佳化PDF和Export PDF功能。
 >- PDF Generator服務不支援Microsoft® Windows 11
 
-<!-- Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
->- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.-->
+<!--
+Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
+>- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.
+-->
 
 ### 協助工具支援的例外情況 {#exceptions-to-accessibility-support}
 
@@ -454,8 +456,8 @@ AEM Forms應用程式現在支援Apache Cordova。 以下是支援的平台特�
 
 如需其他需求，請參閱：
 
-- [JEE部署上單一伺服器AEM Forms的系統需求](https://www.adobe.com/go/learn_aemforms_sysreq_single_65_tw)
-- JEE部署上叢集AEM Forms的[系統需求](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65_tw)
+- [JEE部署中單一伺服器AEM Forms的系統需求](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
+- [JEE部署上叢集AEM Forms的系統需求](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
 ### Adobe Acrobat與Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -484,7 +486,7 @@ AEM Forms應用程式現在支援Apache Cordova。 以下是支援的平台特�
 <table>
  <tbody>
   <tr>
-   <th><p><strong>Platform</strong></p> </th>
+   <th><p><strong>平台</strong></p> </th>
    <th><p><strong>支援的修補程式定義</strong></p> </th>
   </tr>
   <tr>
@@ -614,7 +616,7 @@ AEM Forms應用程式適用於下列平台：
 
 ### ® Office適用的Adobe Document Security Extension {#adobe-rights-management-extension-for-microsoft-office}
 
-按一下[這裡](https://www.adobe.com/tw/products/livecycle/rightsmanagement/extension/downloads.html)檢視® Office適用的Adobe Document Security Extension的系統需求。
+按一下[這裡](https://www.adobe.com/products/livecycle/rightsmanagement/extension/downloads.html)檢視® Office適用的Adobe Document Security Extension的系統需求。
 
 ### 使用者端支援的例外 {#exceptions-to-client-support}
 
@@ -622,7 +624,7 @@ AEM Forms應用程式適用於下列平台：
 
 ## 協力廠商修補支援政策 {#third-party-patch-support-policy}
 
-JEE版AEM Forms的協力廠商軟體需求記錄在各自產品檔案的「系統需求」一節。 從[https://adobe.com/go/learn_aemforms_documentation_65_tw](https://adobe.com/go/learn_aemforms_documentation_65_tw)存取所有檔案。
+JEE版AEM Forms的協力廠商軟體需求記錄在各自產品檔案的「系統需求」一節。 從[https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65)存取所有檔案。
 
 JEE上的AEM Forms第三方參考平台會說明在JEE上AEM Forms開發和發行期間第三方基礎架構的特定修補程式層級，以及該JEE上AEM Forms版本支援之基礎架構的最低修補程式/Service Pack層級。
 
@@ -652,7 +654,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/tw/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -735,7 +737,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/tw/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -804,7 +806,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
-| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/tw/support/programs/eol-matrix.html)|
+| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/support/programs/eol-matrix.html)|
 |  | Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)| |
 |  | | Microsoft&reg; Windows Server 2016 (64-bit)|
 |  | | Microsoft&reg; Office 2016 |

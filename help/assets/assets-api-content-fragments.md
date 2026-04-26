@@ -6,10 +6,10 @@ role: Developer
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: c1f80437-275a-48b6-99b9-bec070577da0
-source-git-commit: e799e9c99a12cad108ae2c035797e5887a2f4ef1
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 22%
+source-wordcount: '2064'
+ht-degree: 23%
 
 ---
 
@@ -43,13 +43,13 @@ ht-degree: 22%
 >
 >Assets HTTP API目前的實作是以[REST](https://en.wikipedia.org/wiki/Representational_state_transfer)架構樣式為基礎。
 
-[Assets REST API](/help/assets/mac-api-assets.md)可讓Adobe Experience Manager的開發人員透過CRUD作業（建立、讀取、更新、刪除），直接透過HTTP API存取內容(儲存在AEM中)。
+[Assets REST API](/help/assets/mac-api-assets.md)可讓Adobe Experience Manager的開發人員透過CRUD作業（建立、讀取、更新、刪除），直接透過HTTP API存取內容（儲存在AEM中）。
 
-此API可讓您藉由向Adobe Experience Manager前端應用程式提供內容服務，以將JavaScript當作Headless CMS （內容管理系統）來運作。 或任何可執行HTTP要求及處理JSON回應的其他應用程式。
+此API可讓您藉由向Adobe Experience Manager前端應用程式提供內容服務，以將JavaScript當作Headless CMS （內容管理系統）來運作。 或者任何其他可以執行 HTTP 要求並處理 JSON 回應的應用程式。
 
 例如，單頁應用程式(SPA)，以框架為基礎或自訂，需要透過HTTP API提供的內容，通常為JSON格式。
 
-雖然[AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)提供非常完整、彈性且可自訂的API，可為此提供所需的讀取作業，並可自訂其JSON輸出，但這些元件確實需要AEM WCM （網頁內容管理）專門知識才能實作，因為它們必須託管在基於專用AEM範本的頁面中。 並非所有SPA開發組織都能直接存取這些知識。
+雖然[AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)提供非常完整、彈性且可自訂的API，可為此提供所需的讀取作業，並可自訂其JSON輸出，但這些元件確實需要AEM WCM （網頁內容管理）專門知識才能實作，因為它們必須託管在基於專用AEM範本的頁面中。 並非所有SPA開發組織都能直接存取這些知識。
 
 此時可使用Assets REST API。 它可讓開發人員直接存取資產（例如影像和內容片段），而不需要先將資產內嵌在頁面中，並以序列化JSON格式傳送其內容。
 
@@ -130,7 +130,7 @@ HTTP 方法決定要執行的操作：
   </tr>
   <tr>
    <td>存取</td>
-   <td><p>可直接存取。</p> <p>使用對應至<code>/api/assets </code> （在存放庫中）的<code>/content/dam</code>端點。</p> 
+   <td><p>可直接存取。</p> <p>使用對應至<code>/content/dam</code> （在存放庫中）的<code>/api/assets </code>端點。</p> 
    <p>範例路徑如下所示： <code>/api/assets/wknd/en/adventures/cycling-tuscany.json</code></p>
    </td>
     <td><p>需要透過AEM頁面上的AEM元件參考。</p> <p>使用<code>.model</code>選取器建立JSON表示方式。</p> <p>範例路徑如下所示：<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
@@ -162,8 +162,8 @@ HTTP 方法決定要執行的操作：
 >
 >如需進一步詳細資訊，請參閱：
 >
->* [CORS/AEM 說明](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=zh-Hant)
->* [影片 - 使用 AEM 開發 CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=zh-Hant)
+>* [CORS/AEM 說明](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [影片 - 使用 AEM 開發 CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 在有特定驗證需求的環境中，建議使用OAuth。
@@ -179,7 +179,7 @@ HTTP 方法決定要執行的操作：
 
 ### 分頁 {#paging}
 
-Assets REST API支援透過URL引數分頁(針對GET請求)：
+Assets REST API支援透過URL引數分頁（針對GET請求）：
 
 * `offset` — 要擷取的第一個（子項）實體數目
 * `limit` — 傳回的實體數上限
@@ -282,7 +282,7 @@ Assets可以有多個轉譯。 這些通常會顯示為子實體，其中一個�
 
 `http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
-回應是序列化的 JSON，其內容結構與內容片段中的一樣。參考是以參考 URL 的形式傳遞。
+回應是序列化的 JSON，其內容結構與內容片段中的一樣。 參考是以參考 URL 的形式傳遞。
 
 可能有兩種類型的讀取操作：
 
@@ -295,7 +295,7 @@ Assets可以有多個轉譯。 這些通常會顯示為子實體，其中一個�
 
 `POST /{cfParentPath}/{cfName}`
 
-內文必須包含要建立的內容片段的 JSON 表示，包括應在內容片段元素上設定的任何初始內容。必須設定 `cq:model` 屬性，並且它必須指向有效的內容片段模型。未這麼做會導致錯誤。也必須加上標頭 `Content-Type`，其設定為 `application/json`。
+內文必須包含要建立的內容片段的 JSON 表示，包括應在內容片段元素上設定的任何初始內容。 必須設定 `cq:model` 屬性，並且它必須指向有效的內容片段模型。 未這麼做會導致錯誤。 也必須加上標頭 `Content-Type`，其設定為 `application/json`。
 
 ### 更新 {#update}
 
@@ -394,7 +394,7 @@ Assets可以有多個轉譯。 這些通常會顯示為子實體，其中一個�
 
 如需詳細的API參考資料，請參閱此處：
 
-* [Adobe Experience Manager Assets API - 內容片段](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API — 內容片段](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
    * [可用功能](/help/assets/mac-api-assets.md#assets)
@@ -404,4 +404,4 @@ Assets可以有多個轉譯。 這些通常會顯示為子實體，其中一個�
 如需進一步詳細資訊，請參閱：
 
 * [Assets HTTP API檔案](/help/assets/mac-api-assets.md)
-* [AEM Gem工作階段： OAuth](https://helpx.adobe.com/tw/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [AEM Gem工作階段： OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)

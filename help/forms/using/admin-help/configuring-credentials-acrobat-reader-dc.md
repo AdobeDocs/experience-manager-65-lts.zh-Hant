@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 040a4db1-45e1-4501-8117-d2d41d4a73ea
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 0%
+source-wordcount: '583'
+ht-degree: 2%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您也可以以程式設計方式匯入和刪除認證。 (請參閱[使用AEM表單進行程式設計](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)。)
+>您也可以以程式設計方式匯入和刪除認證。 （請參閱[使用AEM表單進行程式設計](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)。）
 
 ## 匯入Acrobat Reader DC Extensions認證 {#import-a-acrobat-reader-dc-extensions-credential}
 

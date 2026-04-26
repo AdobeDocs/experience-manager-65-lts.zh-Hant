@@ -8,16 +8,17 @@ feature: Transaction Reports
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 05c15b83-046e-4a11-904a-f45bd0b621df
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
 
 # OSGi上AEM Forms的交易報告 {#transaction-reports-overview}
 
-<!--## Introduction {#introduction}
+<!--
+## Introduction {#introduction}
 
 Transaction reports in AEM Forms let you keep a count of all transactions taken place since a specified date on your AEM Forms deployment. The objective is to provide information about product usage and help business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
@@ -25,7 +26,8 @@ Transaction reports in AEM Forms let you keep a count of all transactions taken 
 * Rendition of a print or a web version of an interactive communication
 * Conversion of a document from one file format to another
 
-For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis.md).-->
+For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis.md).
+-->
 
 交易記錄預設為停用。 您可以從AEM Web主控台[啟用交易錄製](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports)。 您可以檢視關於作者、處理或發佈執行個體的交易報告。 檢視所有交易彙總之作者或處理執行個體的交易報告。 在發佈執行個體上檢視交易報告，以取得僅在該發佈執行個體上發生的所有交易的計數，該發佈執行個體是執行報告的來源。
 

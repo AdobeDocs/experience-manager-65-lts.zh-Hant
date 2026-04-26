@@ -13,9 +13,9 @@ feature: Adaptive Forms,Document Services
 hide: true
 hidefromtoc: true
 exl-id: 2ba6faf9-7b30-42b1-854b-9fada1e12a4a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1859'
+source-wordcount: '1886'
 ht-degree: 0%
 
 ---
@@ -107,8 +107,8 @@ DDX檔案包含指定結果名稱的XDP `result`標籤。 在此情況下，值�
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (如果AEM Forms部署在JBoss上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss上，則為必要)
+* adobe-utilities.jar （如果AEM Forms部署在JBoss上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss上，則為必要）
 
 **建立PDF組合器使用者端**
 
@@ -207,7 +207,7 @@ DDX檔案包含指定結果名稱的XDP `result`標籤。 在此情況下，值�
 **另請參閱**
 
 [組合多個XDP片段](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
-[快速入門(SOAP模式)：使用Java API組合多個XDP片段](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API組合多個XDP片段](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 [正在設定連線內容](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 

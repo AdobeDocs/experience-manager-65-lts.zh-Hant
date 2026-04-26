@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 55f5d3bb-2a6f-4fac-9d33-7b39e4ca317f
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 3%
+source-wordcount: '272'
+ht-degree: 4%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 ## 問題 {#issue}
 
-當使用者嘗試在Microsoft® Windows Server上將Word或Excel檔案轉換成PDF時，會發生下列錯誤：
+當使用者嘗試在® Windows Server上將Word或Excel檔案轉換成PDF時，會發生下列錯誤：
 
 *來自主要轉換器的錯誤訊息：*
 *ALC-PDG-015-003 — 系統無法開啟輸入檔。 再次提交您的檔案或連絡您的系統管理員。*
@@ -33,13 +33,13 @@ ht-degree: 3%
 1. 將滑桿調整為「永不通知」等級。 完成後，關閉命令視窗並關閉「系統組態」視窗。
 1. 確認UAC的登入設定設為0 （零）。 執行以下步驟以進行驗證：
 
-   1. Microsoft®建議您在修改登入之前先備份登入。 如需詳細步驟，請參閱[如何在Windows](https://support.microsoft.com/en-us/help/322756)中備份及還原登入。
-   1. 開啟Microsoft® Windows登入編輯器。 若要開啟登入編輯程式，請前往[開始] > [執行]，輸入regedit，然後按一下[確定]。
-   1. 瀏覽至`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`。 請確定EnableLUA的值設為0 （零）。
+   1. ®建議您在修改登入之前先備份登入。 如需詳細步驟，請參閱[如何在Windows](https://support.microsoft.com/en-us/help/322756)中備份及還原登入。
+   1. 開啟® Windows登入編輯器。 若要開啟登入編輯程式，請前往[開始] > [執行]，輸入regedit，然後按一下[確定]。
+   1. 導覽至 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`。 請確定EnableLUA的值設為0 （零）。
    1. 請確定&#x200B;**EnableLUA**&#x200B;的值設為0 （零）。 如果值不是0，請將值變更為0。 關閉登錄編輯程式。
 
 1. 重新啟動電腦。
 
-## 套用至 {#appliesto}
+## 適用於 {#appliesto}
 
 此解決方案適用於JEE伺服器上的AEM Forms和OSGi伺服器上的AEM Forms 。

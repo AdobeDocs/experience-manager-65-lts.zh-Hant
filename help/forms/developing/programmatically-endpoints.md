@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 6a0c7dbf-02ae-4211-a5c7-941eb353a403
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '10799'
+source-wordcount: '10888'
 ht-degree: 1%
 
 ---
@@ -129,7 +129,7 @@ ht-degree: 1%
 1. 建立EndpointRegistry使用者端物件。
 
    * 建立包含連線屬性的`ServiceClientFactory`物件。
-   * 使用它的建構函式並傳遞`EndpointRegistryClient`物件來建立`ServiceClientFactory`物件。
+   * 使用它的建構函式並傳遞`ServiceClientFactory`物件來建立`EndpointRegistryClient`物件。
 
 1. 設定EJB端點屬性。
 
@@ -146,7 +146,7 @@ ht-degree: 1%
 
 1. 啟用端點。
 
-   啟用端點，方法是叫用`EndpointRegistryClient`物件的enable方法並傳遞`Endpoint`方法傳回的`createEndpoint`物件。
+   啟用端點，方法是叫用`EndpointRegistryClient`物件的enable方法並傳遞`createEndpoint`方法傳回的`Endpoint`物件。
 
 **另請參閱**
 
@@ -234,7 +234,7 @@ ht-degree: 1%
 1. 建立EndpointRegistry使用者端物件。
 
    * 建立包含連線屬性的`ServiceClientFactory`物件。
-   * 使用它的建構函式並傳遞`EndpointRegistryClient`物件來建立`ServiceClientFactory`物件。
+   * 使用它的建構函式並傳遞`ServiceClientFactory`物件來建立`EndpointRegistryClient`物件。
 
 1. 設定SOAP端點屬性。
 
@@ -251,7 +251,7 @@ ht-degree: 1%
 
 1. 啟用端點。
 
-   透過叫用`EndpointRegistryClient`物件的enable方法啟用端點，並傳遞`Endpoint`方法傳回的`createEndpoint`物件。
+   透過叫用`EndpointRegistryClient`物件的enable方法啟用端點，並傳遞`createEndpoint`方法傳回的`Endpoint`物件。
 
 **另請參閱**
 
@@ -333,10 +333,10 @@ ht-degree: 1%
 * **userName**：從Watched資料夾叫用目標服務時使用的使用者名稱。 此值為必填。 預設值為SuperAdmin。
 * **domainName**：使用者的網域。 此值為必填。 預設值為DefaultDom。
 * **batchSize**：每次掃描要擷取的檔案或資料夾數目。 使用此值可防止系統過載；一次掃描太多檔案可能會導致當機。 預設值為 2。
-* **waitTime**：建立資料夾或檔案後，掃描資料夾或檔案前的等待時間（以毫秒為單位）。 例如，如果等待時間為36,000,000毫秒（一小時），且檔案是在一分鐘前建立的，則系統會在59分鐘或更長時間後擷取此檔案。 此屬性對於確保檔案或資料夾完全複製到輸入資料夾非常有用。 例如，如果您有大型檔案要處理，且檔案下載需要10分鐘，請將等待時間設為10&amp;amp；ast；60&amp;amp；ast；1000毫秒。 此設定可防止watched資料夾在等待十分鐘後掃描檔案。 預設值為 0。
+* **waitTime**：建立資料夾或檔案後，掃描資料夾或檔案前的等待時間（以毫秒為單位）。 例如，如果等待時間為36,000,000毫秒（一小時），且檔案是在一分鐘前建立的，則系統會在59分鐘或更長時間後擷取此檔案。 此屬性對於確保檔案或資料夾完全複製到輸入資料夾非常有用。 例如，如果您有大型檔案要處理，且檔案下載需要10分鐘，請將等待時間設定為10&amp;ast；60 &amp;ast；1000毫秒。 此設定可防止watched資料夾在等待十分鐘後掃描檔案。 預設值為 0。
 * **excludeFilePattern**： watched資料夾用來判斷要掃描和擷取哪些檔案和資料夾的模式。 任何具有此模式的檔案或資料夾都不會掃描以進行處理。 當輸入是包含多個檔案的資料夾時，此設定非常有用。 資料夾的內容可以複製到一個資料夾中，該資料夾的名稱將由watched資料夾擷取。 此步驟可防止watched資料夾在資料夾完全複製到輸入資料夾之前擷取資料夾進行處理。 例如，如果excludeFilePattern值為`data*`，則不會擷取符合`data*`的所有檔案和資料夾。 這包括名為`data1`、`data2`等等的檔案和資料夾。 此外，模式可附加萬用字元模式，以指定檔案模式。 Watched資料夾會修改規則運算式，以支援`*.*`和`*.pdf`等萬用字元模式。 規則運算式不支援這些萬用字元模式。
-* **includeFilePattern**： watched資料夾用來判斷要掃描和擷取哪些資料夾和檔案的模式。 例如，如果此值為`*`，則會擷取符合`input*`的所有檔案和資料夾。 這包括名為`input1`、`input2`等等的檔案和資料夾。 預設值為`*`。 此值表示所有檔案和資料夾。 此外，模式可附加萬用字元模式，以指定檔案模式。 Watched資料夾會修改規則運算式，以支援`*.*`和`*.pdf`等萬用字元模式。 規則運算式不支援這些萬用字元模式。 此值為必填。
-* **resultFolderName**：儲儲存存結果的資料夾。 此位置可以是絕對或相對目錄路徑。 如果結果未出現在此資料夾中，請檢查失敗資料夾。 唯讀檔案不會處理，且會儲存在失敗資料夾中。 預設值為`result/%Y/%M/%D/`。 這是watched資料夾內的結果資料夾。
+* **includeFilePattern**： watched資料夾用來判斷要掃描和擷取哪些資料夾和檔案的模式。 例如，如果此值為`*`，則會擷取符合`input*`的所有檔案和資料夾。 這包括名為`input1`、`input2`等等的檔案和資料夾。 預設值為 `*`。 此值表示所有檔案和資料夾。 此外，模式可附加萬用字元模式，以指定檔案模式。 Watched資料夾會修改規則運算式，以支援`*.*`和`*.pdf`等萬用字元模式。 規則運算式不支援這些萬用字元模式。 此值為必填。
+* **resultFolderName**：儲儲存存結果的資料夾。 此位置可以是絕對或相對目錄路徑。 如果結果未出現在此資料夾中，請檢查失敗資料夾。 唯讀檔案不會處理，且會儲存在失敗資料夾中。 預設值為 `result/%Y/%M/%D/`。 這是watched資料夾內的結果資料夾。
 * **preserveFolderName**：在成功掃描和擷取之後，儲存檔案的位置。 此位置可以是絕對、相對或Null目錄路徑。 預設值為 `preserve/%Y/%M/%D/`。
 * **failureFolderName**：儲存失敗檔案的資料夾。 此位置永遠是相對於watched資料夾。 唯讀檔案不會處理，且會儲存在失敗資料夾中。 預設值為 `failure/%Y/%M/%D/`。
 * **preserveOnFailure**：如果服務執行作業失敗，則保留輸入檔案。 預設值為true。
@@ -402,7 +402,7 @@ ht-degree: 1%
 1. 建立EndpointRegistry使用者端物件。
 
    * 建立包含連線屬性的`ServiceClientFactory`物件。
-   * 使用它的建構函式並傳遞`EndpointRegistryClient`物件來建立`ServiceClientFactory`物件。
+   * 使用它的建構函式並傳遞`ServiceClientFactory`物件來建立`EndpointRegistryClient`物件。
 
 1. 設定Watched資料夾端點屬性。
 
@@ -431,7 +431,7 @@ ht-degree: 1%
    * 字串值，指定輸入引數的名稱。 例如，EncryptDocument服務的輸入引數名稱是`InDoc`。
    * 字串值，指定輸入引數的資料型別。 例如，`InDoc`輸入引數的資料型別是`com.adobe.idp.Document`。
    * 字串值，指定對應型別。 例如，您可以指定`variable`。
-   * 字串值，指定對應型別值。 例如，您可以指定&amp;amp；ast；.pdf作為檔案模式。
+   * 字串值，指定對應型別值。 例如，您可以指定&amp;ast；.pdf作為檔案模式。
 
    >[!NOTE]
    >
@@ -451,7 +451,7 @@ ht-degree: 1%
 
 1. 啟用端點。
 
-   啟用端點，方法是叫用`EndpointRegistryClient`物件的`enable`方法，並傳遞`Endpoint`方法傳回的`createEndpoint`物件。
+   啟用端點，方法是叫用`EndpointRegistryClient`物件的`enable`方法，並傳遞`createEndpoint`方法傳回的`Endpoint`物件。
 
 **另請參閱**
 
@@ -568,7 +568,7 @@ ht-degree: 1%
 * **userName**：從電子郵件叫用目標服務時使用的使用者名稱。 預設值為 `SuperAdmin`。
 * **domainName**：必要的設定值。 預設值為 `DefaultDom`。
 * **domainPattern**：指定提供者接受的傳入電子郵件的網域模式。 例如，如果使用`adobe.com`，則只會處理來自adobe.com的電子郵件，而會忽略來自其他網域的電子郵件。
-* **filePattern**：指定提供者接受的傳入檔案附件模式。 這包括具有特定副檔名(&amp;amp；ast；.dat、&amp;amp；ast；.xml)的檔案、具有特定名稱（資料）的檔案，以及具有名稱與副檔名複合運算式的檔案(&amp;amp；ast；)。`[dD][aA]`&#39;連線埠&#39;)。 預設值為 `*`。
+* **filePattern**：指定提供者接受的傳入檔案附件模式。 這包括具有特定副檔名的檔案(&amp;ast；.dat、&amp;ast；.xml)、具有特定名稱（資料）的檔案，以及具有複合運算式的檔案名稱和副檔名(&amp;ast；.`[dD][aA]`&#39;port&#39;)。 預設值為 `*`。
 * **recipientSuccessfulJob**：傳送訊息以指示成功工作的電子郵件地址。 依預設，成功的工作訊息一律會傳送給寄件者。 如果您輸入`sender`，電子郵件結果會傳送給寄件者。 最多可支援100個收件者。 使用電子郵件地址指定其他收件者，每個收件者之間以逗號分隔。 若要關閉此選項，請將此值留空。 某些情況下，您可能想要觸發程式，而不想收到結果的電子郵件通知。 預設值為 `sender`。
 * **recipientFailedJob**：傳送訊息以指出工作失敗的電子郵件地址。 依預設，失敗的工作訊息一律會傳送給寄件者。 如果您輸入`sender`，電子郵件結果會傳送給寄件者。 最多可支援100個收件者。 使用電子郵件地址指定其他收件者，每個收件者之間以逗號分隔。 若要關閉此選項，請將此值留空。 預設值為 `sender`。
 * **收件匣主機**：要掃描的電子郵件提供者的收件匣主機名稱或IP位址。
@@ -647,7 +647,7 @@ ht-degree: 1%
 1. 建立EndpointRegistry使用者端物件。
 
    * 建立包含連線屬性的`ServiceClientFactory`物件。
-   * 使用它的建構函式並傳遞`EndpointRegistryClient`物件來建立`ServiceClientFactory`物件。
+   * 使用它的建構函式並傳遞`ServiceClientFactory`物件來建立`EndpointRegistryClient`物件。
 
 1. 設定電子郵件端點屬性。
 
@@ -676,7 +676,7 @@ ht-degree: 1%
    * 字串值，指定輸入引數的名稱。 例如，EncryptDocument服務的輸入引數名稱是`InDoc`。
    * 字串值，指定輸入引數的資料型別。 例如，`InDoc`輸入引數的資料型別是`com.adobe.idp.Document`。
    * 字串值，指定對應型別。 例如，您可以指定`variable`。
-   * 字串值，指定對應型別值。 例如，您可以指定&amp;amp；ast；.pdf作為檔案模式。
+   * 字串值，指定對應型別值。 例如，您可以指定&amp;ast；.pdf作為檔案模式。
 
    >[!NOTE]
    >
@@ -696,7 +696,7 @@ ht-degree: 1%
 
 1. 啟用端點。
 
-   啟用端點，方法是叫用`EndpointRegistryClient`物件的`enable`方法，並傳遞`Endpoint`方法傳回的`createEndpoint`物件。
+   啟用端點，方法是叫用`EndpointRegistryClient`物件的`enable`方法，並傳遞`createEndpoint`方法傳回的`Endpoint`物件。
 
 **另請參閱**
 
@@ -803,7 +803,7 @@ ht-degree: 1%
 * **描述**：指定端點的描述。
 * **名稱**：指定端點的名稱。
 * **服務識別碼值**：指定端點所屬的服務。 例如，若要將Remoting端點新增至本節中介紹的處理序（在Workbench中啟動某個處理序時，該處理序就會變成服務），請指定`EncryptDocument`。
-* **作業名稱**：指定使用端點叫用的作業名稱。 建立遠端端點時，請指定萬用字元(&amp;amp；ast；)。
+* **作業名稱**：指定使用端點叫用的作業名稱。 建立遠端端點時，請指定萬用字元(&amp;ast；)。
 
 **建立遠端端點**
 
@@ -832,7 +832,7 @@ ht-degree: 1%
 1. 建立EndpointRegistry使用者端物件。
 
    * 建立包含連線屬性的`ServiceClientFactory`物件。
-   * 使用它的建構函式並傳遞`EndpointRegistryClient`物件來建立`ServiceClientFactory`物件。
+   * 使用它的建構函式並傳遞`ServiceClientFactory`物件來建立`EndpointRegistryClient`物件。
 
 1. 設定遠端端點屬性。
 
@@ -841,7 +841,7 @@ ht-degree: 1%
    * 透過叫用`CreateEndpointInfo`物件的`setDescription`方法並傳遞描述端點的字串值來指定端點的描述。
    * 透過叫用`CreateEndpointInfo`物件的`setName`方法並傳遞指定名稱的字串值來指定端點的名稱。
    * 透過叫用`CreateEndpointInfo`物件的`setServiceId`方法並傳遞指定服務名稱的字串值，來指定端點所屬的服務。
-   * 指定由`CreateEndpointInfo`物件的`setOperationName`方法呼叫的作業，並傳遞指定作業名稱的字串值。 對於遠端端點，請指定萬用字元(&amp;amp；ast；)。
+   * 指定由`CreateEndpointInfo`物件的`setOperationName`方法呼叫的作業，並傳遞指定作業名稱的字串值。 對於遠端端點，請指定萬用字元(&amp;ast；)。
 
 1. 建立遠端端點。
 
@@ -849,7 +849,7 @@ ht-degree: 1%
 
 1. 啟用端點。
 
-   啟用端點，方法是叫用`EndpointRegistryClient`物件的`enable`方法，並傳遞`Endpoint`方法傳回的`createEndpoint`物件。
+   啟用端點，方法是叫用`EndpointRegistryClient`物件的`enable`方法，並傳遞`createEndpoint`方法傳回的`Endpoint`物件。
 
 **另請參閱**
 
@@ -943,7 +943,7 @@ ht-degree: 1%
 1. 建立EndpointRegistry使用者端物件。
 
    * 建立包含連線屬性的`ServiceClientFactory`物件。
-   * 使用它的建構函式並傳遞`EndpointRegistryClient`物件來建立`ServiceClientFactory`物件。
+   * 使用它的建構函式並傳遞`ServiceClientFactory`物件來建立`EndpointRegistryClient`物件。
 
 1. 為端點建立類別。
 
@@ -970,7 +970,7 @@ ht-degree: 1%
 
 1. 啟用端點。
 
-   啟用端點，方法是叫用`EndpointRegistryClient`物件的`enable`方法，並傳遞`Endpoint`方法傳回的`createEndpoint`物件。
+   啟用端點，方法是叫用`EndpointRegistryClient`物件的`enable`方法，並傳遞`createEndpoint`方法傳回的`Endpoint`物件。
 
 **另請參閱**
 
@@ -1055,7 +1055,7 @@ ht-degree: 1%
 1. 建立EndpointRegistry使用者端物件。
 
    * 建立包含連線屬性的`ServiceClientFactory`物件。
-   * 使用它的建構函式並傳遞`EndpointRegistryClient`物件來建立`ServiceClientFactory`物件。
+   * 使用它的建構函式並傳遞`ServiceClientFactory`物件來建立`EndpointRegistryClient`物件。
 
 1. 擷取要修改的端點。
 
@@ -1149,7 +1149,7 @@ ht-degree: 1%
 1. 建立EndpointRegistry使用者端物件。
 
    * 建立包含連線屬性的`ServiceClientFactory`物件。
-   * 使用它的建構函式並傳遞`EndpointRegistryClient`物件來建立`ServiceClientFactory`物件。
+   * 使用它的建構函式並傳遞`ServiceClientFactory`物件來建立`EndpointRegistryClient`物件。
 
 1. 擷取端點以移除。
 
@@ -1246,7 +1246,7 @@ ht-degree: 1%
 1. 建立ConnectorRegistry使用者端物件。
 
    * 建立包含連線屬性的`ServiceClientFactory`物件。
-   * 使用它的建構函式並傳遞`ConnectorRegistryClient`物件來建立`ServiceClientFactory`物件。
+   * 使用它的建構函式並傳遞`ServiceClientFactory`物件來建立`ConnectorRegistryClient`物件。
 
 1. 指定聯結器型別。
 

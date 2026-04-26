@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: b8e413e0-1387-46c7-891a-85d5fc61288b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -22,17 +22,19 @@ ht-degree: 0%
 
 ## 預設主畫面 {#default-home-screen}
 
-依預設，首頁畫面會顯示所有表單，包括起點和任務(如果連線的伺服器已啟用AEM Forms Workflow)，以及關聯的縮圖。 您可以在AEM Forms伺服器中指定縮圖。
+依預設，首頁畫面會顯示所有表單，包括起點和任務（如果連線的伺服器已啟用AEM Forms Workflow），以及關聯的縮圖。 您可以在AEM Forms伺服器中指定縮圖。
 
 下圖會在預設的Home畫面上以重要元件的標註進行註解。
 
 ![Forms應用程式主畫面](assets/home-screen-1.png)
 
-<!--Click to enlarge
+<!--
+Click to enlarge
 
-![home-screen-1-1](assets/home-screen-1-1.png)-->
+![home-screen-1-1](assets/home-screen-1-1.png)
+-->
 
-1. **功能表按鈕**：選取&#x200B;**功能表**&#x200B;按鈕以瀏覽至[工作]、[Forms]、[寄件匣]和[設定]。 如果您的AEM Forms應用程式已連線至AEM Forms JEE伺服器，您會看到「工作」選項。 「工作」選項也會儲存從處理序中的工作建立的草稿。 若為AEM Forms OSGi伺服器，會隱藏工作選項。 Outbox會在與伺服器同步之前儲存已儲存的表單和草稿。 當應用程式與伺服器[&#128279;](../../forms/using/sync-app.md)進行同步處理時，「寄件匣」中所有儲存的表單和草稿都會上傳至AEM Forms伺服器。 如需設定的詳細資訊，請參閱[更新一般設定](../../forms/using/update-general-settings.md)。
+1. **功能表按鈕**：選取&#x200B;**功能表**&#x200B;按鈕以瀏覽至[工作]、[Forms]、[寄件匣]和[設定]。 如果您的AEM Forms應用程式已連線至AEM Forms JEE伺服器，您會看到「工作」選項。 「工作」選項也會儲存從處理序中的工作建立的草稿。 若為AEM Forms OSGi伺服器，會隱藏工作選項。 Outbox會在與伺服器同步之前儲存已儲存的表單和草稿。 當應用程式與伺服器](../../forms/using/sync-app.md)進行[同步處理時，「寄件匣」中所有儲存的表單和草稿都會上傳至AEM Forms伺服器。 如需設定的詳細資訊，請參閱[更新一般設定](../../forms/using/update-general-settings.md)。
 1. **任務或表單**：選取您想要使用的列出任務或表單。
 1. **水準省略符號**：表示表單有可用的動作。 點選省略符號會顯示作者提供的動作和說明。 當您選取省略符號時，**刪除草稿**&#x200B;和&#x200B;**完成**&#x200B;選項會顯示。
 1. **重新整理圖示**：選取重新整理圖示，即可將您的應用程式與AEM Forms伺服器同步。

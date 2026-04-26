@@ -10,10 +10,10 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: e95f382b-ae89-46d5-b109-ea3257b6b046
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 0%
+source-wordcount: '468'
+ht-degree: 1%
 
 ---
 
@@ -91,14 +91,15 @@ ht-degree: 0%
 
   如有特殊需求，可插入自訂CugExclude實作。
 
-* 實作LoginPathProvider的OSGi元件會公開與LoginSelectorHandler相符的登入路徑。 它具有對RequirementHandler的強制參照，用於註冊觀察者，該觀察者會偵聽透過granite：AuthenticationRequired mixin型別儲存在內容中的已變更驗證需求。
+* 實作LoginPathProvider的OSGi元件會公開與LoginSelectorHandler相符的登入路徑。 它強制參考RequirementHandler，用於註冊觀察者，該觀察者會偵聽透過granite:AuthenticationRequired mixin型別儲存在內容中的已變更驗證需求。
 * 實作RequirementHandler的OSGi元件會通知SlingAuthenticator授權需求的變更。
 
   由於此元件的設定原則為REQUIRE，因此只有在指定一組支援的路徑時，才會啟動它。
 
   啟用服務會啟動RequirementService。
 
-<!-- nested tables not supported - text above is the table>
+<!--
+nested tables not supported - text above is the table>
 <table>
  <tbody>
   <tr>

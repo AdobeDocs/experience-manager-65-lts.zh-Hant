@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services
 hide: true
 hidefromtoc: true
 exl-id: a64f0bd4-8d5c-485d-b620-608bfe33a72f
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2105'
+source-wordcount: '2139'
 ht-degree: 0%
 
 ---
@@ -84,8 +84,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (如果AEM Forms部署在JBoss上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss上，則為必要)
+* adobe-utilities.jar （如果AEM Forms部署在JBoss上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss上，則為必要）
 
 如果將AEM Forms部署在JBoss以外的受支援J2EE應用程式伺服器上，則必須將adobe-utilities.jar和jbossall-client.jar檔案取代為部署AEM Forms之J2EE應用程式伺服器專屬的JAR檔案。
 
@@ -126,7 +126,7 @@ Assembler服務傳回`java.util.Map`物件，此物件可從`AssemblerResult`物
   <tr>
    <th><p>索引鍵值</p></th>
    <th><p>物件類型</p></th>
-   <th><p>描述</p></th>
+   <th><p>說明</p></th>
   </tr>
  </thead>
  <tbody>
@@ -204,7 +204,7 @@ Assembler服務傳回`java.util.Map`物件，此物件可從`AssemblerResult`物
    若要取得新建立的PDF檔案，請執行下列動作：
 
    * 叫用`AssemblerResult`物件的`getDocuments`方法。 這會傳回`java.util.Map`物件。
-   * 逐一檢視`java.util.Map`物件，直到找到結果`com.adobe.idp.Document`物件為止。 (您可以使用DDX檔案中指定的PDF結果元素來取得檔案。)
+   * 逐一檢視`java.util.Map`物件，直到找到結果`com.adobe.idp.Document`物件為止。 （您可以使用DDX檔案中指定的PDF結果元素來取得檔案。）
    * 叫用`com.adobe.idp.Document`物件的`copyToFile`方法來擷取PDF檔案。
 
    >[!NOTE]
@@ -213,7 +213,7 @@ Assembler服務傳回`java.util.Map`物件，此物件可從`AssemblerResult`物
 
 **另請參閱**
 
-[快速入門(SOAP模式)：使用Java API組合PDF檔案](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API組合PDF檔案](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -261,9 +261,9 @@ Assembler服務傳回`java.util.Map`物件，此物件可從`AssemblerResult`物
    * 以位元組陣列的內容指派其`MTOM`欄位，填入`BLOB`物件。
    * 建立`MyMapOf_xsd_string_To_xsd_anyType`物件。 此集合物件是用來儲存輸入PDF檔案。
    * 針對每個輸入PDF檔案，建立`MyMapOf_xsd_string_To_xsd_anyType_Item`物件。 例如，如果使用兩個輸入PDF檔案，請建立兩個`MyMapOf_xsd_string_To_xsd_anyType_Item`物件。
-   * 將代表索引鍵名稱的字串值指派給`MyMapOf_xsd_string_To_xsd_anyType_Item`物件的`key`欄位。 此值必須符合DDX檔案中指定的PDF來源元素的值。 (針對每個輸入PDF檔案執行此工作。)
-   * 將儲存PDF檔案的`BLOB`物件指派給`MyMapOf_xsd_string_To_xsd_anyType_Item`物件的`value`欄位。 (針對每個輸入PDF檔案執行此工作。)
-   * 將`MyMapOf_xsd_string_To_xsd_anyType_Item`物件新增至`MyMapOf_xsd_string_To_xsd_anyType`物件。 叫用`MyMapOf_xsd_string_To_xsd_anyType`物件的`Add`方法並傳遞`MyMapOf_xsd_string_To_xsd_anyType`物件。 (針對每個輸入PDF檔案執行此工作。)
+   * 將代表索引鍵名稱的字串值指派給`MyMapOf_xsd_string_To_xsd_anyType_Item`物件的`key`欄位。 此值必須符合DDX檔案中指定的PDF來源元素的值。 （針對每個輸入PDF檔案執行此工作。）
+   * 將儲存PDF檔案的`BLOB`物件指派給`MyMapOf_xsd_string_To_xsd_anyType_Item`物件的`value`欄位。 （針對每個輸入PDF檔案執行此工作。）
+   * 將`MyMapOf_xsd_string_To_xsd_anyType_Item`物件新增至`MyMapOf_xsd_string_To_xsd_anyType`物件。 叫用`MyMapOf_xsd_string_To_xsd_anyType`物件的`Add`方法並傳遞`MyMapOf_xsd_string_To_xsd_anyType`物件。 （針對每個輸入PDF檔案執行此工作。）
 
 1. 設定執行階段選項。
 

@@ -7,9 +7,9 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 5e1f1f3c-a2f3-4bf1-ba96-a02f8b16c180
-source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1165'
 ht-degree: 0%
 
 ---
@@ -217,7 +217,7 @@ public class InviteExternalUsersSample implements InvitedUserProvider
 
 ![邀請使用者](assets/ci_ci_InviteUsers.png)
 
-A.元件所需的外部JAR檔案B. JAVA檔案
+A.元件B所需的外部JAR檔案。 JAVA檔案
 
 將邀請外部使用者處理常式封裝到JAR檔案中。 在上圖中，請注意已列出.JAVA檔案。 封裝成JAR檔案後，也必須指定對應的.CLASS檔案。 如果沒有.CLASS檔案，授權處理常式將無法運作。
 
@@ -248,7 +248,7 @@ A.元件所需的外部JAR檔案B. JAVA檔案
 1. 從管理主控台首頁，按一下&#x200B;**[!UICONTROL 設定]** > **[!UICONTROL 使用者管理]** > **[!UICONTROL 網域管理]**。
 1. 按一下&#x200B;**[!UICONTROL 新增本機網域]**。 在下列頁面中，建立名稱與識別碼值為`EDC_EXTERNAL_REGISTERED`的網域。 儲存您的變更。
 1. 從管理主控台首頁，按一下&#x200B;**[!UICONTROL 服務]** > **[!UICONTROL Rights Management]** > **[!UICONTROL 受邀和本機使用者]**。 出現「**[!UICONTROL 新增受邀使用者]**」頁面。
-1. 輸入電子郵件地址（由於目前的邀請外部使用者處理常式並不會實際傳送電子郵件訊息，因此電子郵件地址不一定有效）。 按一下&#x200B;**[!UICONTROL 確定]**。 使用者受邀加入系統。
+1. 輸入電子郵件地址（由於目前的邀請外部使用者處理常式並不會實際傳送電子郵件訊息，因此電子郵件地址不一定有效）。 按一下&#x200B;**[!UICONTROL 「確定」]**。 使用者受邀加入系統。
 1. 從管理主控台首頁，按一下&#x200B;**[!UICONTROL 設定]** > **[!UICONTROL 使用者管理]** > **[!UICONTROL 使用者和群組]**。
 1. 在&#x200B;**[!UICONTROL 尋找]**&#x200B;欄位中，輸入您指定的電子郵件地址。 按一下&#x200B;**[!UICONTROL 尋找]**。 您邀請的使用者會顯示為本機`EDC_EXTERNAL_REGISTERED`網域中的使用者。
 

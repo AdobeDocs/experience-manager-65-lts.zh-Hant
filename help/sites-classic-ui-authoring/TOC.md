@@ -8,17 +8,17 @@ breadcrumb-title: 使用手冊
 user-guide-title: AEM 6.5 LTS
 role: user
 hide: true
-source-git-commit: 96d94c843d1912abd91577b3373e38bd9fd9ed6c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 26%
+source-wordcount: '262'
+ht-degree: 29%
 
 ---
 
 
 # Adobe Experience Manager Classic UI檔案 {#classic-ui}
 
-+ 傳統UI編寫簡介{#introduction}
++ 傳統UI編寫簡介 {#introduction}
    + [作者的首要步驟](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)
    + [在傳統UI中製作](/help/sites-classic-ui-authoring/classicui.md)
    + [使用作者環境](/help/sites-classic-ui-authoring/author-env.md)
@@ -28,7 +28,7 @@ ht-degree: 26%
    + [搜尋](/help/sites-classic-ui-authoring/author-env-search.md)
    + [您的收件匣](/help/sites-classic-ui-authoring/author-env-inbox.md)
    + [主控台的鍵盤快速鍵](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)
-+ 製作{#authoring}
++ 製作 {#authoring}
    + [製作頁面](/help/sites-classic-ui-authoring/classic-page-author.md)
    + [製作 — 環境與工具](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md)
    + [建立及組織頁面](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md)
@@ -41,7 +41,7 @@ ht-degree: 26%
    + [建立可存取的內容 (符合 WCAG 2.0)](/help/sites-classic-ui-authoring/classic-page-author-accessible-content.md)
    + [用於頁面編寫的元件](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
    + [編輯頁面時的鍵盤快速鍵](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)
-+ 網站和頁面功能{#siteandpage}
++ 網站和頁面功能 {#siteandpage}
    + [使用內容片段編寫頁面](/help/sites-classic-ui-authoring/classic-page-author-content-fragments.md)
    + [回應式版面](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md)
    + [使用頁面版本](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md)
@@ -77,7 +77,7 @@ ht-degree: 26%
    + [Adobe Campaign元件](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
    + [鎖定您的Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
    + [在AEM中建立Adobe Campaign Forms](/help/sites-classic-ui-authoring/classic-personalization-ac-forms.md)
-+ 在傳統UI中進行Assets製作 {#assets}
++ 在傳統UI中編寫Assets {#assets}
    + [使用資產](/help/sites-classic-ui-authoring/classicui-assets.md)
    + [傳送Dynamic Media Assets](/help/sites-classic-ui-authoring/dynamic-media-assets-delivering.md)
    + [將Dynamic Media Assets新增至頁面](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)

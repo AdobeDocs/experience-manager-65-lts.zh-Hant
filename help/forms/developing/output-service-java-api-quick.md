@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: a85333ac-427f-4730-b6d6-04c4b9419883
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1302'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -22,27 +22,27 @@ ht-degree: 0%
 
 Java API快速入門(SOAP)適用於輸出服務。
 
-[快速入門(SOAP模式)：使用Java API建立PDF檔案](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API建立PDF檔案](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
 
-[快速入門(SOAP模式)：使用Java API根據應用程式XDP檔案建立PDF檔案](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API根據應用程式XDP檔案建立PDF檔案](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api)
 
-[快速入門(SOAP模式)：使用Java API建立PDF/A檔案](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API建立PDF/A檔案](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
 
-[快速入門(SOAP模式)：使用Java API將檔案傳遞至輸出服務](output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API將檔案傳遞至輸出服務](output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
-[快速入門(SOAP模式)：使用Java API將AEM Forms存放庫中的檔案傳遞至輸出服務](output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API將AEM Forms存放庫中的檔案傳遞至輸出服務](output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
 
-[快速入門(SOAP模式)：使用Java API根據片段建立PDF檔案](#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API根據片段建立PDF檔案](#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
-[快速入門(SOAP模式)：使用Java API列印至檔案](#quick-start-soap-mode-printing-to-a-file-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API列印至檔案](#quick-start-soap-mode-printing-to-a-file-using-the-java-api)
 
-[快速入門(SOAP模式)：使用Java API傳送列印資料流至網路印表機](output-service-java-api-quick.md#quick-start-soap-mode-sending-a-print-stream-to-a-network-printer-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API傳送列印資料流至網路印表機](output-service-java-api-quick.md#quick-start-soap-mode-sending-a-print-stream-to-a-network-printer-using-the-java-api)
 
-[快速入門(SOAP模式)：使用Java API建立多個PDF檔案](output-service-java-api-quick.md#quick-start-soap-mode-creating-multiple-pdf-files-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API建立多個PDF檔案](output-service-java-api-quick.md#quick-start-soap-mode-creating-multiple-pdf-files-using-the-java-api)
 
-[快速入門(SOAP模式)：使用Java API建立搜尋規則](output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API建立搜尋規則](output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
 
-[快速入門(SOAP模式)：使用Java API轉換PDF檔案](output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API轉換PDF檔案](output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
 AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SOAP。
 
@@ -50,9 +50,9 @@ AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SO
 >
 >使用AEM表單進行程式設計的快速入門是以Forms伺服器作業系統為基礎。 不過，如果您使用其他作業系統（例如UNIX），請將Windows特定路徑取代為適用作業系統支援的路徑。 同樣地，如果您使用其他J2EE應用程式伺服器，請確定您指定有效的連線屬性。 請參閱[設定連線內容](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
 
-## 快速入門(SOAP模式)：使用Java API建立PDF檔案 {#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api}
+## 快速入門（SOAP模式）：使用Java API建立PDF檔案 {#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api}
 
-以下Java程式碼範例會建立名為&#x200B;*Loan.pdf*&#x200B;的PDF檔案。 此PDF檔案是以名為&#x200B;*Loan.xdp*&#x200B;的表單設計和名為&#x200B;*Loan.xml*&#x200B;的XML資料檔案為基礎。 *Loan.pdf*&#x200B;會寫入到裝載AEM Forms的J2EE應用程式伺服器上的C:\Adobe資料夾，而非使用者端電腦。 (請參閱[建立PDF檔案](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents)。)
+以下Java程式碼範例會建立名為&#x200B;*Loan.pdf*&#x200B;的PDF檔案。 此PDF檔案是以名為&#x200B;*Loan.xdp*&#x200B;的表單設計和名為&#x200B;*Loan.xml*&#x200B;的XML資料檔案為基礎。 *Loan.pdf*&#x200B;會寫入到裝載AEM Forms的J2EE應用程式伺服器上的C:\Adobe資料夾，而非使用者端電腦。 （請參閱[建立PDF檔案](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents)。）
 
 ```java
  /*
@@ -168,9 +168,9 @@ AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SO
  
 ```
 
-## 快速入門(SOAP模式)：使用Java API根據應用程式XDP檔案建立PDF檔案 {#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api}
+## 快速入門（SOAP模式）：使用Java API根據應用程式XDP檔案建立PDF檔案 {#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api}
 
-以下Java程式碼範例會建立名為&#x200B;*Loan.pdf*&#x200B;的PDF檔案。 此PDF檔案是以名為&#x200B;*Loan.xdp*&#x200B;的表單設計和名為&#x200B;*Loan.xml*&#x200B;的XML資料檔案為基礎。 XDP檔案已部署為名為`Applications/FormsApplication`的AEM Forms應用程式的一部分。 請注意，URI路徑是`repository:///Applications/FormsApplication/1.0/FormsFolder/`。 *Loan.pdf*&#x200B;會寫入到裝載AEM Forms的J2EE應用程式伺服器上的C:\Adobe資料夾，而非使用者端電腦。 (請參閱[建立PDF檔案](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents)。)
+以下Java程式碼範例會建立名為&#x200B;*Loan.pdf*&#x200B;的PDF檔案。 此PDF檔案是以名為&#x200B;*Loan.xdp*&#x200B;的表單設計和名為&#x200B;*Loan.xml*&#x200B;的XML資料檔案為基礎。 XDP檔案已部署為名為`Applications/FormsApplication`的AEM Forms應用程式的一部分。 請注意，URI路徑是`repository:///Applications/FormsApplication/1.0/FormsFolder/`。 *Loan.pdf*&#x200B;會寫入到裝載AEM Forms的J2EE應用程式伺服器上的C:\Adobe資料夾，而非使用者端電腦。 （請參閱[建立PDF檔案](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents)。）
 
 >[!NOTE]
 >
@@ -291,7 +291,7 @@ AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SO
  
 ```
 
-## 快速入門(SOAP模式)：使用Java API將存放庫中的檔案傳遞至輸出服務 {#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api}
+## 快速入門（SOAP模式）：使用Java API將存放庫中的檔案傳遞至輸出服務 {#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api}
 
 下列Java程式碼會從存放庫擷取XDP檔案，並將其傳遞至`com.adobe.idp.Document`執行個體中的輸出服務。 XDP檔案已部署為名為`Applications/FormsApplication`的AEM Forms應用程式的一部分。 請注意，URI路徑是`repository:///Applications/FormsApplication/1.0/FormsFolder/`。
 
@@ -443,9 +443,9 @@ AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SO
  
 ```
 
-## 快速入門(SOAP模式)：使用Java API建立PDF檔案 {#quick_start_soap_mode_creating_a_pdf_document_using_the_java_api-1}
+## 快速入門（SOAP模式）：使用Java API建立PDF檔案 {#quick_start_soap_mode_creating_a_pdf_document_using_the_java_api-1}
 
-以下Java程式碼範例會建立名為&#x200B;*Loan.pdf*&#x200B;的PDF檔案。 此PDF檔案是以名為&#x200B;*Loan.xdp*&#x200B;的表單設計和名為&#x200B;*Loan.xml*&#x200B;的XML資料檔案為基礎。 *Loan.pdf*&#x200B;會寫入到裝載AEM Forms的J2EE應用程式伺服器上的C:\Adobe資料夾，而非使用者端電腦。 (請參閱[建立PDF檔案](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents)。)
+以下Java程式碼範例會建立名為&#x200B;*Loan.pdf*&#x200B;的PDF檔案。 此PDF檔案是以名為&#x200B;*Loan.xdp*&#x200B;的表單設計和名為&#x200B;*Loan.xml*&#x200B;的XML資料檔案為基礎。 *Loan.pdf*&#x200B;會寫入到裝載AEM Forms的J2EE應用程式伺服器上的C:\Adobe資料夾，而非使用者端電腦。 （請參閱[建立PDF檔案](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents)。）
 
 ```java
  /*
@@ -553,9 +553,9 @@ AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SO
  }
 ```
 
-## 快速入門(SOAP模式)：使用Java API建立PDF/A檔案 {#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api}
+## 快速入門（SOAP模式）：使用Java API建立PDF/A檔案 {#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api}
 
-以下Java程式碼範例會建立名為&#x200B;*LoanArchive.pdf*&#x200B;的PDF/A檔案。 此PDF檔案是以名為&#x200B;*Loan.xdp*&#x200B;的表單設計和名為&#x200B;*Loan.xml*&#x200B;的XML資料檔案為基礎。 *LoanArchive.pdf*&#x200B;會寫入位於裝載AEM Forms之J2EE應用程式伺服器上的C:\Adobe資料夾，而非使用者端電腦。 (請參閱[建立PDF/A檔案](/help/forms/developing/creating-document-output-streams.md#creating-pdf-a-documents)。)
+以下Java程式碼範例會建立名為&#x200B;*LoanArchive.pdf*&#x200B;的PDF/A檔案。 此PDF檔案是以名為&#x200B;*Loan.xdp*&#x200B;的表單設計和名為&#x200B;*Loan.xml*&#x200B;的XML資料檔案為基礎。 *LoanArchive.pdf*&#x200B;會寫入位於裝載AEM Forms之J2EE應用程式伺服器上的C:\Adobe資料夾，而非使用者端電腦。 （請參閱[建立PDF/A檔案](/help/forms/developing/creating-document-output-streams.md#creating-pdf-a-documents)。）
 
 ```java
  /*
@@ -671,7 +671,7 @@ AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SO
  
 ```
 
-## 快速入門(SOAP模式)：使用Java API將檔案傳遞至輸出服務 {#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api}
+## 快速入門（SOAP模式）：使用Java API將檔案傳遞至輸出服務 {#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api}
 
 下列Java快速入門會從Content Services擷取檔案&#x200B;*Loan.xdp*。 此XDP檔案在`space /Company Home/Form Designs`中。 已在`com.adobe.idp.Document`執行個體中傳回XDP檔案。 `com.adobe.idp.Document`執行個體傳遞至輸出服務。 非互動式表單會在使用者端電腦上儲存為名為*Loan.pdf *的PDF檔案。 由於已設定「檔案URI」選項，PDF檔案*Loan.pdf *也會儲存在託管AEM Forms的J2EE應用程式伺服器上。 （請參閱[將Content Services ES2中的檔案傳遞至輸出服務](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)。）
 
@@ -810,9 +810,9 @@ AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SO
  
 ```
 
-## 快速入門(SOAP模式)：使用Java API根據片段建立PDF檔案 {#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api}
+## 快速入門（SOAP模式）：使用Java API根據片段建立PDF檔案 {#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api}
 
-以下Java程式碼範例會根據由Assembler服務組裝的表單設計來建立PDF檔案。 組合器服務將多個XDP檔案中的片段組合成單一表單設計。 叫用Assembler服務的應用程式邏輯位於名為`GetFormDesign`的使用者定義方法中。 非互動式表單會在使用者端電腦上儲存為名為*Loan.pdf *的PDF檔案。 (請參閱[使用片段建立PDF檔案](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments)。)
+以下Java程式碼範例會根據由Assembler服務組裝的表單設計來建立PDF檔案。 組合器服務將多個XDP檔案中的片段組合成單一表單設計。 叫用Assembler服務的應用程式邏輯位於名為`GetFormDesign`的使用者定義方法中。 非互動式表單會在使用者端電腦上儲存為名為*Loan.pdf *的PDF檔案。 （請參閱[使用片段建立PDF檔案](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments)。）
 
 ```java
  /*
@@ -1018,7 +1018,7 @@ AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SO
  
 ```
 
-## 快速入門(SOAP模式)：使用Java API列印至檔案 {#quick-start-soap-mode-printing-to-a-file-using-the-java-api}
+## 快速入門（SOAP模式）：使用Java API列印至檔案 {#quick-start-soap-mode-printing-to-a-file-using-the-java-api}
 
 下列Java程式碼範例會將輸出資料流列印至名為&#x200B;*MortgageForm.ps*&#x200B;的PostScript檔案。 （請參閱[列印至檔案](/help/forms/developing/creating-document-output-streams.md#printing-to-files)。）
 
@@ -1130,7 +1130,7 @@ AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SO
  
 ```
 
-## 快速入門(SOAP模式)：使用Java API傳送列印資料流至網路印表機 {#quick-start-soap-mode-sending-a-print-stream-to-a-network-printer-using-the-java-api}
+## 快速入門（SOAP模式）：使用Java API傳送列印資料流至網路印表機 {#quick-start-soap-mode-sending-a-print-stream-to-a-network-printer-using-the-java-api}
 
 下列Java程式碼範例將PostScript列印資料流傳送至名為&#x200B;*\\Printer1\Printer*&#x200B;的網路印表機。 會將兩份資料傳送至印表機。 （請參閱[傳送列印資料流至印表機](/help/forms/developing/creating-document-output-streams.md#sending-print-streams-to-printers)。）
 
@@ -1255,7 +1255,7 @@ AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SO
  
 ```
 
-## 快速入門(SOAP模式)：使用Java API建立多個PDF檔案 {#quick-start-soap-mode-creating-multiple-pdf-files-using-the-java-api}
+## 快速入門（SOAP模式）：使用Java API建立多個PDF檔案 {#quick-start-soap-mode-creating-multiple-pdf-files-using-the-java-api}
 
 下列Java程式碼會針對名為&#x200B;*Loan_data_batch.xml*&#x200B;的XML資料檔案中的每個資料記錄，建立多個PDF檔案。 檔案會寫入C:\Adobe目錄。 PDF檔案會寫入位於託管AEM Forms的J2EE應用程式伺服器上的C:\Adobe資料夾，而非使用者端電腦。 （請參閱[建立多個輸出檔案](/help/forms/developing/creating-document-output-streams.md#creating-multiple-output-files)。）
 
@@ -1376,7 +1376,7 @@ AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SO
  
 ```
 
-## 快速入門(SOAP模式)：使用Java API建立搜尋規則 {#quick-start-soap-mode-creating-search-rules-using-the-java-api}
+## 快速入門（SOAP模式）：使用Java API建立搜尋規則 {#quick-start-soap-mode-creating-search-rules-using-the-java-api}
 
 以下Java程式碼範例會建立兩個文字模式，供Output服務搜尋。 第一個文字模式為「按揭」。 如果找到，Output服務會使用名為&#x200B;*Mortgage.xdp*&#x200B;的表單設計。 第二個文字模式是Automobile。 如果找到，Output服務會使用名為&#x200B;*AutomobileLoan.xdp*&#x200B;的表單設計。 如果找不到文字模式，Output服務會使用名為* Loan.xdp的預設表單設計。 *（請參閱[建立搜尋規則](/help/forms/developing/creating-document-output-streams.md#creating-search-rules)。）
 
@@ -1508,9 +1508,9 @@ AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SO
  
 ```
 
-## 快速入門(SOAP模式)：使用Java API轉換PDF檔案 {#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api}
+## 快速入門（SOAP模式）：使用Java API轉換PDF檔案 {#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api}
 
-下列Java程式碼範例將名為&#x200B;*Loan.pdf*&#x200B;的互動式PDF檔案轉換為名為&#x200B;*NonInteractiveLoan.pdf*&#x200B;的非互動式PDF檔案。 (請參閱[將PDF檔案平面化](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents)。)
+下列Java程式碼範例將名為&#x200B;*Loan.pdf*&#x200B;的互動式PDF檔案轉換為名為&#x200B;*NonInteractiveLoan.pdf*&#x200B;的非互動式PDF檔案。 （請參閱[將PDF檔案平面化](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents)。）
 
 ```java
  /*

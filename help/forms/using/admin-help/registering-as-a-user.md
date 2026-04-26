@@ -10,10 +10,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 60307c55-50b2-4f23-bc46-58732fee19fc
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 3%
+source-wordcount: '706'
+ht-degree: 6%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 3%
 如果您是受邀使用者，並且收到來自Document Security的電子郵件註冊訊息，則可以使用訊息中的URL進行註冊，以開啟線上註冊頁面。 註冊後，您將收到關於啟用帳戶的第二次通知。
 
 1. 開啟Document Security註冊電子郵件。 該訊息包含的URL是Document Security中「外部使用者註冊」頁面的連結。
-1. 按一下URL或將其複製並貼到瀏覽器中。 將會顯示「外部使用者註冊」頁面。
+1. 請按一下 URL，或將其複製貼到您的瀏覽器。 將會顯示「外部使用者註冊」頁面。
 1. 在適當的方塊中輸入您的姓名、電話號碼、地址、組織和密碼，然後在「確認密碼」方塊中重新輸入您的密碼。 您的密碼可以是八個字元的任意組合。
 1. 按一下「儲存」。 系統會顯示感謝訊息，通知您檢視電子郵件中的啟用電子郵件訊息。 現在啟用您的帳戶以完成註冊程式。
 
@@ -52,7 +52,7 @@ ht-degree: 3%
 在管理員停用或刪除您的帳戶之前，該帳戶會一直保持活動狀態。
 
 1. 開啟Document Security註冊確認電子郵件。
-1. 按一下訊息中顯示的URL。 此時會顯示Document Security啟用頁面。
+1. 按一下訊息中顯示的 URL。 此時會顯示Document Security啟用頁面。
 1. 按一下這裡以移至登入頁面。
 1. 在「使用者名稱」方框中，輸入您在Document Security下已註冊的電子郵件地址。 此電子郵件地址是您預設的Document Security使用者名稱。
 1. 在「密碼」方塊中，輸入您註冊時建立的密碼，然後按一下「登入」。

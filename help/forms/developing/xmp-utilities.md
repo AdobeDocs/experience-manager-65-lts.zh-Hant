@@ -11,9 +11,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 6deed56a-2e87-4444-8fb5-1d06b0792a5e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1401'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,8 @@ XMP公用程式服務可以從XMP檔案中擷取和儲存PDF中繼資料，並�
 
 您可以使用XMP公用程式服務完成這些工作：
 
-* 將中繼資料匯入PDF檔案。 (請參閱[將中繼資料匯入PDF檔案](xmp-utilities.md#importing-metadata-into-pdf-documents)。)
-* 從PDF檔案匯出中繼資料。 (請參閱[從PDF檔案匯出中繼資料](xmp-utilities.md#exporting-metadata-from-pdf-documents)。)
+* 將中繼資料匯入PDF檔案。 （請參閱[將中繼資料匯入PDF檔案](xmp-utilities.md#importing-metadata-into-pdf-documents)。）
+* 從PDF檔案匯出中繼資料。 （請參閱[從PDF檔案匯出中繼資料](xmp-utilities.md#exporting-metadata-from-pdf-documents)。）
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ XMP公用程式服務可以從XMP檔案中擷取和儲存PDF中繼資料，並�
 
 ![ww_ww_metadatadalog](assets/ww_ww_metadatadialog.png)
 
-若要以程式設計方式將中繼資料匯入PDF檔案，您可以使用指定中繼資料值的現有XML檔案，也可以使用型別`XMPUtilityMetadata`的物件。 (請參閱[AEM Forms API參考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。)
+若要以程式設計方式將中繼資料匯入PDF檔案，您可以使用指定中繼資料值的現有XML檔案，也可以使用型別`XMPUtilityMetadata`的物件。 （請參閱[AEM Forms API參考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。）
 
 >[!NOTE]
 >
@@ -194,7 +194,7 @@ XMP公用程式服務可以從XMP檔案中擷取和儲存PDF中繼資料，並�
 
 1. 包含專案檔案
 
-   * 建立使用Microsoft公用程式服務WSDL檔案的XMP .NET使用者端元件。 (請參閱[使用Base64編碼叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)。)
+   * 建立使用Microsoft公用程式服務WSDL檔案的XMP .NET使用者端元件。 （請參閱[使用Base64編碼叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)。）
    * 參考Microsoft .NET使用者端元件。 （請參閱[建立使用Base64編碼的.NET使用者端元件](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)。）
 
 1. 建立XMPUtilityService使用者端

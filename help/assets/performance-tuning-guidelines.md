@@ -7,9 +7,9 @@ role: Developer,Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 43079a69-cd12-4853-9fff-96f9d177987a
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2770'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ mkfs -q /dev/ram1 800000
 
 在Windows作業系統上，使用協力廠商驅動程式來建立RAM磁碟機，或只使用高效能儲存裝置（例如SSD）。
 
-一旦高效能暫存磁碟區準備就緒，請設定JVM引數`-Djava.io.tmpdir`。 例如，您可以將下列JVM引數新增至`CQ_JVM_OPTS`的`bin/start`指令碼中的[!DNL Experience Manager]變數：
+一旦高效能暫存磁碟區準備就緒，請設定JVM引數`-Djava.io.tmpdir`。 例如，您可以將下列JVM引數新增至[!DNL Experience Manager]的`bin/start`指令碼中的`CQ_JVM_OPTS`變數：
 
 `-Djava.io.tmpdir=/mnt/aem-tmp`
 
@@ -57,7 +57,8 @@ mkfs -q /dev/ram1 800000
 
 Adobe建議將[!DNL Experience Manager Assets]部署在Java 8上，以獲得最佳效能。
 
-<!-- TBD: Link to the latest official word around Java.
+<!--
+TBD: Link to the latest official word around Java.
 -->
 
 ### JVM引數 {#jvm-parameters}
@@ -130,7 +131,7 @@ Adobe建議啟用HTTPS，因為許多公司都有會偵聽HTTP流量的防火牆
 
 儘可能將[!UICONTROL DAM更新資產]工作流程設定為暫時性。 設定可大幅減少處理工作流程所需的間接成本，因為在此情況下，工作流程不需要通過正常的追蹤和封存程式。
 
-1. 在`/miscadmin`的[!DNL Experience Manager]部署中導覽至`https://[aem_server]:[port]/miscadmin`。
+1. 在`https://[aem_server]:[port]/miscadmin`的[!DNL Experience Manager]部署中導覽至`/miscadmin`。
 
 1. 展開&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流程]** > **[!UICONTROL 模型]** > **[!UICONTROL dam]**。
 
@@ -186,7 +187,7 @@ Adobe建議啟用HTTPS，因為許多公司都有會偵聽HTTP流量的防火牆
 
 #### ImageMagick {#imagemagick}
 
-如果您自訂[!UICONTROL DAM更新資產]工作流程，以使用ImageMagick產生轉譯，Adobe建議您修改位於`policy.xml`的`/etc/ImageMagick/`檔案。 依預設，ImageMagick會使用OS磁碟區上的整個可用磁碟空間，以及可用的記憶體。 在`policymap`的`policy.xml`區段內進行下列設定變更以限制這些資源。
+如果您自訂[!UICONTROL DAM更新資產]工作流程，以使用ImageMagick產生轉譯，Adobe建議您修改位於`/etc/ImageMagick/`的`policy.xml`檔案。 依預設，ImageMagick會使用OS磁碟區上的整個可用磁碟空間，以及可用的記憶體。 在`policy.xml`的`policymap`區段內進行下列設定變更以限制這些資源。
 
 ```xml
 <policymap>
@@ -253,8 +254,8 @@ Adobe建議啟用HTTPS，因為許多公司都有會偵聽HTTP流量的防火牆
 
 1. 開啟CRXDe `/crx/de/index.jsp`並以管理使用者身分登入。
 1. 瀏覽至`/oak:index/lucene`。
-1. 新增值為`String[]`、`excludedPaths`和`/var`的`/etc/workflow/instances`屬性`/etc/replication`。
-1. 瀏覽至`/oak:index/damAssetLucene`。 新增值為`String[]`的`includedPaths`屬性`/content/dam`。 儲存變更。
+1. 新增值為`/var`、`/etc/workflow/instances`和`/etc/replication`的`String[]`屬性`excludedPaths`。
+1. 瀏覽至`/oak:index/damAssetLucene`。 新增值為`/content/dam`的`String[]`屬性`includedPaths`。 儲存變更。
 
 如果您的使用者不需要進行資產的全文搜尋，例如在PDF檔案中搜尋文字，然後停用它。 您可以停用全文檢索索引來改善索引效能。 若要停用[!DNL Apache Lucene]文字擷取，請執行下列步驟：
 

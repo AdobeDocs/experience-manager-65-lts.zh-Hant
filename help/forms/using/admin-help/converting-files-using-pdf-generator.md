@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1d2adc53-498f-43f5-b664-0b9dd864b9a1
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1222'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 0%
 
    * 如果您要上傳設定檔案，請在方塊中輸入其路徑和名稱，或按一下「瀏覽」以尋找並選取檔案。
 
-1. （選用）在「XMP中繼資料檔案」下，輸入XMP檔案的路徑和名稱，或按一下「瀏覽」以尋找並選取檔案。 XMP檔案可用來包含標準中繼資料資訊。 (請參閱[關於XMP檔案](converting-files-using-pdf-generator.md#about-xmp-files)。)
+1. （選用）在「XMP中繼資料檔案」下，輸入XMP檔案的路徑和名稱，或按一下「瀏覽」以尋找並選取檔案。 XMP檔案可用來包含標準中繼資料資訊。 （請參閱[關於XMP檔案](converting-files-using-pdf-generator.md#about-xmp-files)。）
 1. 按一下「建立」。 建立檔案時，會出現指向該檔案的連結。 如果在轉換期間發生錯誤，則會出現警告。 如果您要建立Postscript檔案，警告也包含記錄檔的連結。
 1. 按一下PDF檔案的連結。 檔案會在Acrobat中開啟。
 
@@ -53,7 +53,7 @@ PDF Generator在Acrobat 5.0或更新版本中建立的PDF檔案包含XML格式�
 
 檔案中繼資料包含（但不限於）也顯示在Acrobat中「檔案內容」對話方塊的「說明」標籤上的資訊。 在「說明」標籤上進行的變更會反映在檔案中繼資料中。 可使用協力廠商產品來擴充及修改檔案中繼資料。
 
-Adobe可延伸中繼資料平台(XMP)為Adobe應用程式提供通用XML架構，可標準化跨發佈工作流程的檔案中繼資料的建立、處理和交換。 您可以以XMP格式儲存和匯入檔案中繼資料XML原始程式碼，以便在不同檔案之間共用中繼資料。 如需XMP檔案的詳細資訊，請參閱[可延伸中繼資料平台(XMP)](https://www.adobe.com/tw/products/xmp/)和[Adobe XMP開發人員中心](https://www.adobe.com/devnet/xmp.html)。
+Adobe可延伸中繼資料平台(XMP)為Adobe應用程式提供通用XML架構，可標準化跨發佈工作流程的檔案中繼資料的建立、處理和交換。 您可以以XMP格式儲存和匯入檔案中繼資料XML原始程式碼，以便在不同檔案之間共用中繼資料。 如需XMP檔案的詳細資訊，請參閱[可延伸中繼資料平台(XMP)](https://www.adobe.com/products/xmp/)和[Adobe XMP開發人員中心](https://www.adobe.com/devnet/xmp.html)。
 
 您可以在Acrobat中建立XMP檔案。
 
@@ -103,7 +103,7 @@ Adobe可延伸中繼資料平台(XMP)為Adobe應用程式提供通用XML架構�
 
    * 若要使用現有的設定檔案，請選取「上傳設定檔案」，然後按一下「瀏覽」移至檔案位置。
 
-1. 若要上傳XMP檔案，請按一下「瀏覽」並前往檔案位置。 XMP檔案可用來包含標準中繼資料資訊。 (請參閱[關於XMP檔案](converting-files-using-pdf-generator.md#about-xmp-files)。)
+1. 若要上傳XMP檔案，請按一下「瀏覽」並前往檔案位置。 XMP檔案可用來包含標準中繼資料資訊。 （請參閱[關於XMP檔案](converting-files-using-pdf-generator.md#about-xmp-files)。）
 1. 按一下「建立」。 建立檔案時，會顯示PDF檔案的連結。
 1. 按一下連結，即可在Acrobat中檢視PDF檔案。
 
@@ -118,7 +118,7 @@ Adobe可延伸中繼資料平台(XMP)為Adobe應用程式提供通用XML架構�
 
    轉換檔案時顯示的轉換時間可能大於您在此指定的值。 「轉換時間」包括等候執行緒或程式所花的時間、轉換檔案所花的時間，以及遞補轉換器所花的時間（如果適用）。 時間。 「指定逾時」值只是轉換檔案所花的時間。
 
-1. （選擇性）在&#x200B;**指定自訂預檢設定檔**&#x200B;選項中，按一下[瀏覽]，然後選取[自訂預檢設定檔](https://helpx.adobe.com/tw/acrobat/using/preflight-profiles-acrobat-pro.html)。 將檔案轉換為PDF封存(PDF/A)格式時，才會使用預檢設定檔。
+1. （選擇性）在&#x200B;**指定自訂預檢設定檔**&#x200B;選項中，按一下[瀏覽]，然後選取[自訂預檢設定檔](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html)。 將檔案轉換為PDF封存(PDF/A)格式時，才會使用預檢設定檔。
 1. 按一下「匯出」。 轉換完成後，會出現指向匯出檔案的連結。
 1. 按一下連結以檢視轉換的檔案。
 

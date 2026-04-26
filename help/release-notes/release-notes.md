@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 560d505465362d33f2864f13e9b75921b83ba5e4
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
 source-wordcount: '7427'
 ht-degree: 13%
@@ -262,7 +262,8 @@ Assets Relate現在適用於包含空格的檔案名稱。 更新關聯使用者
 <!-- #### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-65-lts-sp2} -->
 
 <!--
-#### Forms Designer-->
+#### Forms Designer
+-->
 
 ### [!DNL Forms]{#forms-65-lts-sp2}
 
@@ -382,7 +383,8 @@ AEM 6.5 LTS Service Pack 2需要S3 Connector 1.60.10或更新版本。 S3資料�
 <!--
 #### Security{#foundation-security-65-lts-sp2}
 
-AEM now prevents NullPointerException errors when a logged-in user lacks read access for some groups and opens the Groups tab. The tab now hides groups without access and renders group membership details without a blank or unresponsive UI. (NPR-43311) -->
+AEM now prevents NullPointerException errors when a logged-in user lacks read access for some groups and opens the Groups tab. The tab now hides groups without access and renders group membership details without a blank or unresponsive UI. (NPR-43311)
+-->
 
 #### Sling{#foundation-sling-65-lts-sp2}
 
@@ -450,7 +452,7 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 ### 升級 {#upgrade}
 
 * 如需升級程序的詳細資訊，請參閱[升級文件](/help/sites-deploying/upgrade.md)。
-* 如需詳細的升級指示，請參閱JEE上的[AEM Forms 6.5 LTS SP1升級指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* 如需詳細的升級指示，請參閱JEE上的[AEM Forms 6.5 LTS SP1升級指南](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### AEM 6.5 LTS Service Pack 升級的最佳做法
 
@@ -646,5 +648,5 @@ Adobe會持續檢討並發展產品功能，以透過更新或取代舊功能為
 這些網站僅供客戶使用。 若您是客戶並且需要存取權，請聯絡您的 Adobe 客戶經理。
 
 * [產品下載網址為licensing.adobe.com](https://licensing.adobe.com/)
-* [聯絡 Adobe 客戶支援](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience)。
+* [聯絡 Adobe 客戶支援](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience)。
 

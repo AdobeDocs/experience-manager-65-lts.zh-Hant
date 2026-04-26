@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 11a7278e-efaa-402c-8add-5280bf5a156a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2481'
+source-wordcount: '2507'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 您可以設定在Workbench中建立的程式，以便透過代表性狀態轉移(REST)請求叫用它們。 從HTML頁面傳送REST要求。 也就是說，您可以使用REST要求，直接從網頁叫用Forms程式。 例如，您可以開啟網頁的新例項。 接著，您可以叫用Forms程式，並載入轉譯的PDF檔案，其中包含以HTTP POST請求傳送的資料。
 
-有兩種型別的HTML使用者端。 第一個HTML使用者端是以JavaScript撰寫的AJAX使用者端。 第二個使用者端是包含提交按鈕的HTML表單。 以HTML為基礎的使用者端應用程式並非唯一可能的REST使用者端。 任何支援HTTP要求的使用者端應用程式都可以使用REST叫用來叫用服務。 例如，您可以使用PDF表單中的REST叫用來叫用服務。 (請參閱[從Acrobat](#rest-invocation-examples)叫用MyApplication/EncryptDocument程式。)
+有兩種型別的HTML使用者端。 第一個HTML使用者端是以JavaScript撰寫的AJAX使用者端。 第二個使用者端是包含提交按鈕的HTML表單。 以HTML為基礎的使用者端應用程式並非唯一可能的REST使用者端。 任何支援HTTP要求的使用者端應用程式都可以使用REST叫用來叫用服務。 例如，您可以使用PDF表單中的REST叫用來叫用服務。 （請參閱[從Acrobat](#rest-invocation-examples)叫用MyApplication/EncryptDocument程式。）
 
 使用REST要求時，建議您不要直接叫用Forms服務。 而是叫用在Workbench中建立的程式。 當建立要用於REST呼叫的處理程式時，請使用程式化的起點。 在此情況下，REST端點會自動新增。 如需有關在Workbench中建立程式的資訊，請參閱[使用Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)。
 
@@ -187,7 +187,7 @@ ht-degree: 0%
 
 **傳遞布林值給處理序**
 
-下列HTML範例將兩個`Boolean`值傳遞至名為`RestTest2`的AEM Forms處理序。 叫用方法的名稱是`invoke`，而版本是1.0。請注意，已使用HTML Post方法。
+下列HTML範例將兩個`Boolean`值傳遞至名為`RestTest2`的AEM Forms處理序。 叫用方法的名稱是`invoke`，而版本是1.0。 請注意，已使用HTML Post方法。
 
 ```html
  <html>
@@ -317,7 +317,7 @@ ht-degree: 0%
 
 **從Acrobat叫用MyApplication/EncryptDocument程式** {#invoke-process-acrobat}
 
-您可以使用REST要求，從Acrobat叫用Forms程式。 例如，您可以叫用&#x200B;*MyApplication/EncryptDocument*&#x200B;程式。 若要從Acrobat叫用Forms程式，請在Designer內的XDP檔案上放置提交按鈕。 (請參閱[Designer說明](https://www.adobe.com/go/learn_aemforms_designer_63)。)
+您可以使用REST要求，從Acrobat叫用Forms程式。 例如，您可以叫用&#x200B;*MyApplication/EncryptDocument*&#x200B;程式。 若要從Acrobat叫用Forms程式，請在Designer內的XDP檔案上放置提交按鈕。 （請參閱[Designer說明](https://www.adobe.com/go/learn_aemforms_designer_63)。）
 
 在按鈕的&#x200B;*送出至URL*&#x200B;欄位中指定要叫用處理序的URL，如下圖所示。
 

@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 46b3ac33-9c02-4c53-91d5-44ba49ab5c36
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
@@ -28,17 +28,17 @@ PDF Generator可讓您為特定型別的檔案啟用多執行緒檔案轉換。 
 
 >[!NOTE]
 >
->Microsoft® Word 2003和PowerPoint 2003不支援多執行緒檔案轉換。 若要啟用多執行緒檔案轉換，請升級至Microsoft® Word 2007和PowerPoint 2007或Microsoft®Word 2010和PowerPoint 2010。
+>® Word 2003和PowerPoint 2003不支援多執行緒檔案轉換。 若要啟用多執行緒檔案轉換，請升級至® Word 2007和PowerPoint 2007或Microsoft®Word 2010和PowerPoint 2010。
 
 >[!NOTE]
 >
->Microsoft® Excel、Microsoft® Visio、Microsoft® Project或Microsoft® Publisher不支援多執行緒檔案轉換。
+>® Excel、Microsoft® Visio、Microsoft® Project或Microsoft® Publisher不支援多執行緒檔案轉換。
 
 OpenOffice或PDFMaker的每個例項都是使用個別的使用者帳戶啟動。 您新增的每個使用者帳戶都必須是Forms Server電腦上具有系統管理許可權的有效使用者。 在叢集環境中，叢集的所有節點都必須有相同的使用者集。
 
 您可以在管理主控台的「使用者帳戶」頁面中，指定要用於多執行緒檔案轉換的使用者帳戶。 您可以新增帳戶、刪除帳戶或變更帳戶密碼。 如果您是在Windows Server 2003或Windows Server 2008上執行PDF Generator，請至少新增三個具有系統管理員許可權的使用者帳戶。
 
-在Windows Server 2003或2008上新增OpenOffice、Microsoft® Word或Microsoft® PowerPoint的使用者，或在Linux®或Sun™ Solaris™上新增OpenOffice的使用者時，請關閉所有使用者的初始啟動對話方塊。
+在Windows Server 2003或2008上新增OpenOffice、® Word或Microsoft® PowerPoint的使用者，或在Linux®或Sun™ Solaris™上新增OpenOffice的使用者時，請關閉所有使用者的初始啟動對話方塊。
 
 ### 新增取代程式層級權杖的權利 {#add-the-right-to-replace-the-process-level-token}
 
@@ -48,9 +48,9 @@ OpenOffice或PDFMaker的每個例項都是使用個別的使用者帳戶啟動�
 1. 按一下[本機電腦原則] > [電腦組態] > [Windows設定] > [安全性設定] > [本機原則] > [使用者許可權指派]。 編輯&#x200B;*取代處理序層級權杖*&#x200B;原則以包含Administrators群組。
 1. 將使用者新增至「取代程式層級權杖」專案。
 
-### Windows Server 2008上的OpenOffice、Microsoft®Word和Microsoft®PowerPoint需要其他設定 {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
+### Windows Server 2008上的OpenOffice、®Word和Microsoft®PowerPoint需要其他設定 {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
 
-如果您在Windows Server 2008上執行OpenOffice、Microsoft®Word或Microsoft®PowerPoint，請為每個新增的使用者停用UAC。
+如果您在Windows Server 2008上執行OpenOffice、®Word或Microsoft®PowerPoint，請為每個新增的使用者停用UAC。
 
 1. 按一下「控制面板>使用者帳戶>開啟或關閉使用者帳戶控制」 。
 1. 取消選取「使用使用者帳戶控制(UAC)協助保護您的電腦」方塊，然後按一下「確定」。
@@ -60,7 +60,7 @@ OpenOffice或PDFMaker的每個例項都是使用個別的使用者帳戶啟動�
 
 1. 新增使用者帳戶。 （請參閱[新增使用者帳戶](enabling-multi-threaded-file-conversions.md#add-a-user-account)。）
 1. 接下來，您必須變更/etc/sudoers檔案。 此檔案的預設許可權為440。 將此檔案的許可權變更為可寫入。
-1. 在/etc/sudoers檔案中新增其他使用者(除了執行Forms伺服器的管理員之外)的專案。 例如，如果您以名為lcadm的使用者和名為myhost的伺服器身分執行AEM表單，並且想要模擬user1和user2，請將下列專案新增到/etc/sudoers：
+1. 在/etc/sudoers檔案中新增其他使用者（除了執行Forms伺服器的管理員之外）的專案。 例如，如果您以名為lcadm的使用者和名為myhost的伺服器身分執行AEM表單，並且想要模擬user1和user2，請將下列專案新增到/etc/sudoers：
 
    ```shell
     lcadm myhost=(user1) NOPASSWD: ALL

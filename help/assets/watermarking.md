@@ -7,9 +7,9 @@ feature: Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 6c8b4ff5-28ac-4655-b310-4f0b0417bd63
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '333'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=en) |
 | AEM 6.5 | 本文章 |
 
 [!DNL Adobe Experience Manager Assets]可讓您為資產新增數位浮水印，協助使用者驗證資產的真實性和版權所有權。 [!DNL Experience Manager Assets]支援在PNG和JPEG檔案中當作浮水印使用的文字。

@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 54e7132d-3009-4a83-9f03-55bb2c41ae90
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1774'
+source-wordcount: '1801'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Administration Console中的「核心組態」頁面提供有助於改善系統�
 
 
 1. 在管理控制檯中，選取&#x200B;**[!UICONTROL 設定>核心系統設定>設定]**。
-1. 在[核心組態]頁面上，視需要變更選項並選取[確定]。**&#x200B;** 如需選項的詳細資訊，請參閱[核心組態選項](configure-general-aem-forms-settings.md#core-configurations-options)。
+1. 在[核心組態]頁面上，視需要變更選項並選取[確定]。**** 如需選項的詳細資訊，請參閱[核心組態選項](configure-general-aem-forms-settings.md#core-configurations-options)。
 
 
 ## 核心設定選項 {#core-configurations-options}
@@ -49,7 +49,7 @@ Administration Console中的「核心組態」頁面提供有助於改善系統�
 
 **全域檔案儲存根目錄** *ndash；全域檔案儲存(GDS)根目錄用於下列用途：
 
-* 儲存長期檔案。 長效檔案沒有到期時間，而且會持續存在，直到被移除為止(例如，工作流程流程流程中使用的PDF檔案)。 長效檔案是整體系統狀態的關鍵部分。 如果其中的部分或全部檔案遺失或損毀，Forms伺服器可能會變得不穩定。 因此，此目錄必須儲存在RAID裝置上。
+* 儲存長期檔案。 長效檔案沒有到期時間，而且會持續存在，直到被移除為止（例如，工作流程流程流程中使用的PDF檔案）。 長效檔案是整體系統狀態的關鍵部分。 如果其中的部分或全部檔案遺失或損毀，Forms伺服器可能會變得不穩定。 因此，此目錄必須儲存在RAID裝置上。
 * 正在儲存處理期間所需的臨時檔案。
 
 >[!NOTE]
@@ -103,7 +103,7 @@ Administration Console中的「核心組態」頁面提供有助於改善系統�
 
 **啟用FIPS** *ndash；選取此選項以啟用FIPS模式。 Federal Information Processing Standard (FIPS) 140-2是美國政府定義的密碼學標準。 在FIPS模式下執行時，AEM Forms會使用RSA BSAFE Crypto-C 2.1加密模組，將資料保護限製為FIPS 140-2核准的演演算法。
 
-FIPS模式不支援在Adobe Acrobat® 7.0之前的版本中使用的加密演演算法。如果啟用了FIPS模式，而您使用密碼來加密PDF，並將相容性等級設定為Acrobat 5，則加密嘗試將失敗，並出現錯誤。
+FIPS模式不支援在® 7.0之前的版本中使用的加密演演算法。 如果啟用了FIPS模式，而您使用密碼來加密PDF，並將相容性等級設定為Acrobat 5，則加密嘗試將失敗，並出現錯誤。
 
 一般而言，啟用FIPS時，Assembler服務不會將密碼加密套用至任何檔案。 如果嘗試進行此動作，系統會擲回FIPSModeException，指出「FIPS模式不允許密碼加密」。 此外，當基礎檔案使用密碼加密時，FIPS模式中不支援Document Description XML (DDX) PDFsFromBookmarks元素。
 

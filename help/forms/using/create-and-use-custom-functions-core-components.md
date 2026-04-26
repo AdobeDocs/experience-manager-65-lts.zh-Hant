@@ -6,10 +6,10 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
 exl-id: 5f6106a9-64a6-45aa-a31d-2075d1e911bf
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3394'
-ht-degree: 1%
+source-wordcount: '3508'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions)上的[AEM Forms 。
 
 ## 簡介
 
@@ -61,8 +61,8 @@ AEM Forms 6.5包含JavaScript函式，可讓您使用規則編輯器定義複雜
 
 >[!NOTE]
 >`[functionName]`是函式的名稱。 不允許空格。
->&#x200B;>`<Function Name>` 是Adaptive Forms規則編輯器中函式的顯示名稱。
->&#x200B;>如果函式名稱與函式本身的名稱相同，您可以在語法中省略`[functionName]`。
+>`<Function Name>` 是Adaptive Forms規則編輯器中函式的顯示名稱。
+>如果函式名稱與函式本身的名稱相同，您可以在語法中省略`[functionName]`。
 
 #### 參數
 
@@ -356,7 +356,7 @@ var c = {
 
 ### 使用AEM專案原型建立使用者端程式庫{#create-client-library-archetype}
 
-您可以使用AEM專案原型[，將使用者端程式庫新增至已建立的專案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/using#getting-started)，以新增自訂函式。
+您可以使用AEM專案原型](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started)，將使用者端程式庫新增至已建立的專案[，以新增自訂函式。
 如果您有現有的專案<!--and have already the project structure as shown in the image below,-->，您可以直接將[自訂函式](#create-add-custom-function)新增到您的本機專案。
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
@@ -438,7 +438,7 @@ var c = {
 
 **在filter.xml中包含新資料夾**：
 
-1. 導覽至`/ui.apps/src/main/content/META-INF/vault/filter.xml`AEMaaCS專案目錄[中的]檔案。
+1. 導覽至[AEMaaCS專案目錄]中的`/ui.apps/src/main/content/META-INF/vault/filter.xml`檔案。
 
 1. 開啟檔案，並在結尾新增下列行：
 
@@ -457,7 +457,7 @@ var c = {
 
 
 1. 登入`http://server:port/crx/de/index.jsp#`。
-1. 在 `/apps` 檔案夾中建立一個檔案夾。例如，建立名為`experience-league`的資料夾。
+1. 在 `/apps` 檔案夾中建立一個檔案夾。 例如，建立名為`experience-league`的資料夾。
 1. 儲存您的變更。
 1. 導覽至建立的資料夾，並建立型別為`cq:ClientLibraryFolder`的節點作為`clientlibs`。
 1. 導覽至新建立的`clientlibs`資料夾並新增`allowProxy`和`categories`屬性：
@@ -470,9 +470,9 @@ var c = {
 
 1. 儲存您的變更。
 
-1. 在`js`資料夾下建立名為`clientlibs`的資料夾。
-1. 在`functions.js`資料夾下建立名為`js`的JavaScript檔案。
-1. 在`js.txt`資料夾下建立名為`clientlibs`的檔案。
+1. 在`clientlibs`資料夾下建立名為`js`的資料夾。
+1. 在`js`資料夾下建立名為`functions.js`的JavaScript檔案。
+1. 在`clientlibs`資料夾下建立名為`js.txt`的檔案。
 1. 儲存您的變更。
 已建立的檔案夾結構如下所示：
 
@@ -533,11 +533,11 @@ var c = {
 
 ![正在新增自訂函式使用者端程式庫](/help/forms/using//assets/calculateage-customfunction.png)
 
-現在，讓我們瞭解如何在AEM Forms 6.5[中使用](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)規則編輯器的Invoke服務來設定和使用自訂函式
+現在，讓我們瞭解如何在AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)中使用[規則編輯器的Invoke服務來設定和使用自訂函式
 
 ## 在最適化表單中使用自訂函式 {#use-custom-functions}
 
-在最適化表單中，您可以在規則編輯器[中使用](/help/forms/using/rule-editor-core-components.md)自訂函式。
+在最適化表單中，您可以在規則編輯器](/help/forms/using/rule-editor-core-components.md)中使用[自訂函式。
 讓我們將下列程式碼新增至JavaScript檔案（`Function.js`檔案），以根據出生日期(YYYY-MM-DD)計算年齡。 建立自訂函式為`calculateAge()`，它以出生日期作為輸入並傳回年齡：
 
 ```javascript
@@ -573,7 +573,7 @@ var c = {
 
 >[!NOTE]
 >
-> 您可以參考下列[自訂函式](/help/forms/using/assets/customfunctions.zip)資料夾。 使用[封裝管理員](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager)下載此資料夾，並將其安裝在您的AEM執行個體中。
+> 您可以參考下列[自訂函式](/help/forms/using/assets/customfunctions.zip)資料夾。 使用[封裝管理員](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager)下載此資料夾，並將其安裝在您的AEM執行個體中。
 
 ### 支援自訂函式中的非同步函式 {#support-of-async-functions}
 
@@ -610,7 +610,7 @@ var c = {
 }
 ```
 
-在上述範例中，asyncFunction函式是`asynchronous function`。 它透過向`GET`發出`https://petstore.swagger.io/v2/store/inventory`請求來執行非同步操作。 它會使用`await`等待回應、使用`response.json()`將回應本文剖析為JSON，然後傳回資料。 `callAsyncFunction`函式是同步自訂函式，會叫用`asyncFunction`函式並在主控台中顯示回應資料。 雖然`callAsyncFunction`函式是同步的，但它會呼叫非同步asyncFunction函式，並以`then`和`catch`陳述式處理其結果。
+在上述範例中，asyncFunction函式是`asynchronous function`。 它透過向`https://petstore.swagger.io/v2/store/inventory`發出`GET`請求來執行非同步操作。 它會使用`await`等待回應、使用`response.json()`將回應本文剖析為JSON，然後傳回資料。 `callAsyncFunction`函式是同步自訂函式，會叫用`asyncFunction`函式並在主控台中顯示回應資料。 雖然`callAsyncFunction`函式是同步的，但它會呼叫非同步asyncFunction函式，並以`then`和`catch`陳述式處理其結果。
 
 若要檢視其運作情況，讓我們新增按鈕，並為按鈕建立規則，此規則會在按鈕按一下時叫用非同步函式。
 
@@ -634,7 +634,8 @@ var c = {
 >
 > `param {scope} globals`必須是最後一個引數，且不會顯示在調適型表單的規則編輯器中。
 
-<!-- Let us look at the following code snippet:
+<!--
+Let us look at the following code snippet:
 
 ```JavaScript
    
@@ -654,7 +655,8 @@ var c = {
     }
 ```
 
-In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
+In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form.
+-->
 
 讓我們瞭解自訂函式如何透過使用不同使用案例的`Contact Us`表單來使用欄位和全域物件。
 
@@ -690,11 +692,11 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 在此範例中，在按一下按鈕時就會進行`personaldetails`面板的驗證。 如果在面板中未偵測到任何錯誤，則按一下按鈕時，另一個面板（`feedback`面板）會變成可見。
 
-讓我們為`Next`按鈕建立規則，以驗證`personaldetails`面板，並讓使用者按一下`feedback`按鈕時顯示`Next`面板。
+讓我們為`Next`按鈕建立規則，以驗證`personaldetails`面板，並讓使用者按一下`Next`按鈕時顯示`feedback`面板。
 
 ![設定屬性](/help/forms/using/assets/custom-function-set-property.png)
 
-請參閱下圖以示範，按一下`personaldetails`按鈕後，`Next`面板在哪裡驗證。 如果`personaldetails`中的所有欄位都已驗證，`feedback`面板就會顯示出來。
+請參閱下圖以示範，按一下`Next`按鈕後，`personaldetails`面板在哪裡驗證。 如果`personaldetails`中的所有欄位都已驗證，`feedback`面板就會顯示出來。
 
 ![設定屬性表單預覽](/help/forms/using/assets/set-property-form-preview.png)
 
@@ -765,7 +767,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 >
 > 如果未在`reset()`函式中傳遞引數，則會驗證表單。
 
-在此範例中，按一下`personaldetails`按鈕時，`Clear`面板會重設。 下一步是為`Clear`按鈕建立規則，以在按鈕點選時重設面板。
+在此範例中，按一下`Clear`按鈕時，`personaldetails`面板會重設。 下一步是為`Clear`按鈕建立規則，以在按鈕點選時重設面板。
 
 ![清除按鈕](/help/forms/using/assets/custom-function-reset-field.png)
 
@@ -973,7 +975,7 @@ In case, the custom submit action fails to perform as expected in existing AEM p
 
 ## 自訂函式的快取支援
 
-Adaptive Forms會在規則編輯器中擷取自訂函式清單時，實作自訂函式的快取，以增強回應時間。 在`Fetched following custom functions list from cache`檔案中會顯示訊息為`error.log`。
+Adaptive Forms會在規則編輯器中擷取自訂函式清單時，實作自訂函式的快取，以增強回應時間。 在`error.log`檔案中會顯示訊息為`Fetched following custom functions list from cache`。
 
 具有快取支援的![自訂函式](/help/forms/using/assets/custom-function-cache-error.png)
 
@@ -983,16 +985,16 @@ Adaptive Forms會在規則編輯器中擷取自訂函式清單時，實作自訂
 
 * 使用者需要確定[核心元件和規格版本已設定為最新版本](https://github.com/adobe/aem-core-forms-components/tree/release/650)。 不過，對於現有的AEM專案和表單，還有其他要遵循的步驟：
 
-   * 對於AEM專案，使用者應使用`submitForm('custom:submitSuccess', 'custom:submitError')`取代`submitForm()`的所有執行個體並部署專案。
+   * 對於AEM專案，使用者應使用`submitForm()`取代`submitForm('custom:submitSuccess', 'custom:submitError')`的所有執行個體並部署專案。
 
-   * 針對現有表單，如果自訂提交處理常式無法正常運作，使用者需要使用規則編輯器在`submitForm`提交&#x200B;**按鈕上開啟並儲存**&#x200B;規則。 此動作將表單中`submitForm('custom:submitSuccess', 'custom:submitError')`的現有規則取代為`submitForm()`。
+   * 針對現有表單，如果自訂提交處理常式無法正常運作，使用者需要使用規則編輯器在&#x200B;**提交**&#x200B;按鈕上開啟並儲存`submitForm`規則。 此動作將表單中`submitForm('custom:submitSuccess', 'custom:submitError')`的現有規則取代為`submitForm()`。
 
 
 * 如果包含自訂函式程式碼的JavaScript檔案發生錯誤，則自訂函式不會列在最適化表單的規則編輯器中。 若要檢查自訂函式清單，您可以導覽至`error.log`檔案以找出錯誤。 發生錯誤時，自訂函式清單會顯示為空白：
 
   ![錯誤記錄檔](/help/forms/using/assets/custom-function-list-error-file.png)
 
-  如果沒有錯誤，則會擷取自訂函式並出現在`error.log`檔案中。 在`Fetched following custom functions list`檔案中顯示為`error.log`的訊息：
+  如果沒有錯誤，則會擷取自訂函式並出現在`error.log`檔案中。 在`error.log`檔案中顯示為`Fetched following custom functions list`的訊息：
 
   使用適當的自訂函式![錯誤記錄檔](/help/forms/using/assets/custom-function-list-fetched-in-error.png)
 

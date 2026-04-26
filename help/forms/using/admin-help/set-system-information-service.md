@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: e31614a9-d670-4d22-88ba-8953797f6e14
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 0%
@@ -30,4 +30,4 @@ ht-degree: 0%
 1. 導覽至「服務>應用程式及服務>服務管理」。
 1. 在[服務管理]頁面上，按一下&#x200B;**SystemInfo**&#x200B;服務。
 1. 在[端點]索引標籤上的清單中，選取[REST]，然後按一下[**新增**]。
-1. 在[新增REST端點]畫面上，按一下[新增&#x200B;**&#x200B;**]。
+1. 在[新增REST端點]畫面上，按一下[新增&#x200B;****]。

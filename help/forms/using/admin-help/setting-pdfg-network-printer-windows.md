@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 6e9c42d9-fb1d-432b-95b9-6e21706b2a3e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 PDFG網路印表機可讓使用者從任何支援列印的應用程式產生PDF檔案。 使用者安裝PDFG網路印表機後，名為&#x200B;*PDF產生器*&#x200B;的新印表機會出現在Windows控制檯的「印表機」區段中。 如果已有同名的印表機存在，系統會提示使用者提供其他名稱。
 
-從任何應用程式列印到這台印表機都會將檔案以PostScript格式傳送到PDF Generator，會將PostScript檔案轉換為PDF。 它會將PDFPDF檔案作為電子郵件訊息的附件傳送給使用者，將PDF Generator檔案轉送給指定的AEM表單服務或程式，或執行這兩種動作，端視您的設定而定。
+從任何應用程式列印到這台印表機都會將檔案以PostScript格式傳送到PDF Generator，會將PostScript檔案轉換為PDF。 它會將PDF檔案作為電子郵件訊息的附件傳送給使用者，將PDF Generator檔案轉送給指定的AEM表單服務或程式，或執行這兩種動作，端視您的設定而定。
 
 設定PDFG網路印表機時，必須執行下列步驟：
 

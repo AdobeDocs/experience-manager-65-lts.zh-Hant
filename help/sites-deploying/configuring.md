@@ -5,9 +5,9 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 338ea82e-c248-4118-9d42-e268d6396e65
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2116'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Adobe Experience Manager (AEM)已安裝所有引數的預設設定，允許其�
 
 AEM有許多方面可供設定：
 
-* 某些是每個專案安裝通常都設定的[&#128279;](#primary-configuration-considerations)，必須檢閱以確認它們是否適用於您的專案。
+* 某些是每個專案安裝通常都設定的[](#primary-configuration-considerations)，必須檢閱以確認它們是否適用於您的專案。
 * [其他組態](#further-configuration-considerations)可能為通用組態，但不是必要組態；與功能或系統效能與穩定性相關。
 * 只有AEM的特定選用功能才需要其他功能（這些功能會與適當的功能一併記錄）。
 
@@ -79,7 +79,7 @@ AEM有許多方面可供設定：
 
 ### IPv4和IPv6 {#ipv-and-ipv}
 
-AEM的所有元素(例如存放庫和Dispatcher)都可以安裝在IPv4和IPv6網路中。
+AEM的所有元素（例如存放庫和Dispatcher）都可以安裝在IPv4和IPv6網路中。
 
 操作是順暢的，因為不需要特殊設定，當需要時，您只需使用適合您網路型別的格式來指定IP位址。
 
@@ -176,7 +176,7 @@ LDAP驗證會在存放庫層級進行，因此會直接由存放庫處理。 如
 
 Dispatcher是Adobe Experience Manager的快取或/及負載平衡工具。 它可以搭配企業級網頁伺服器使用。
 
-如需完整詳細資訊，請參閱[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)，特別是[設定Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hant)以取得進一步的設定詳細資料。
+如需完整詳細資訊，請參閱[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)，特別是[設定Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html)以取得進一步的設定詳細資料。
 
 ### 設定AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
@@ -202,9 +202,11 @@ Dispatcher是Adobe Experience Manager的快取或/及負載平衡工具。 它�
 
 如需詳細資訊，請參閱[設定效能](/help/sites-deploying/configuring-performance.md#configuring-for-performance)。
 
-<!--delete ### Scaling {#scaling}
+<!--
+delete ### Scaling {#scaling}
 
-Scaling a CQ installation correctly depends greatly on the details of your particular use case. A detailed discussion of solution patterns for various situations can be found in [Scaling CQ](/help/sites-deploying/scaling.md).-->
+Scaling a CQ installation correctly depends greatly on the details of your particular use case. A detailed discussion of solution patterns for various situations can be found in [Scaling CQ](/help/sites-deploying/scaling.md).
+-->
 
 ### 共用的資料存放區 {#shared-data-store}
 

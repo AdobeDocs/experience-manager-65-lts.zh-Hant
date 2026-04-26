@@ -1,6 +1,6 @@
 ---
 title: 將Forms轉譯為HTML
-description: 使用Forms服務將表單轉譯為HTML，以回應來自網頁瀏覽器的HTTP請求。 您可以使用Java&amp；trade； API和Web Service API將表單轉譯為HTML。
+description: 使用Forms服務將表單轉譯為HTML，以回應來自網頁瀏覽器的HTTP請求。 您可以使用Java&trade； API和Web Service API將表單轉譯為HTML。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: f1e6adca-0591-4974-9c12-66706aa35247
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '4099'
+source-wordcount: '4149'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Forms服務會回應網頁瀏覽器的HTTP請求，將表單轉譯為HTML。 將
 
 將表單設計轉譯為HTML表單時，面板不受任何特定頁面大小的限制。 如果您有動態子表單，應該將它們巢狀內嵌在面板子表單中。 動態子表單可擴充至無限數量的HTML頁面。
 
-將表單轉譯為HTML表單時，頁面大小(對轉譯為PDF的表單進行分頁所必需)沒有任何意義。 由於具有可流動配置的表單可展開至無限數量的HTML頁面，請務必避免主版頁面上的頁尾。 主版頁面內容區域下方的頁尾可能會覆寫流經頁面邊界的HTML內容。
+將表單轉譯為HTML表單時，頁面大小（對轉譯為PDF的表單進行分頁所必需）沒有任何意義。 由於具有可流動配置的表單可展開至無限數量的HTML頁面，請務必避免主版頁面上的頁尾。 主版頁面內容區域下方的頁尾可能會覆寫流經頁面邊界的HTML內容。
 
 您必須使用`xfa.host.pageUp`和`xfa.host.pageDown`方法，明確地在面板間移動。 若要變更頁面，請將表單傳送至Forms服務，並讓Forms服務將表單轉譯回使用者端裝置（通常為網頁瀏覽器）。
 
@@ -77,7 +77,7 @@ Forms服務會回應網頁瀏覽器的HTTP請求，將表單轉譯為HTML。 將
 
 **`.fsc-ds-popup-bg`**：未使用此樣式表屬性。
 
-**。`fsc-ds-popup-btn`**：未使用此樣式表屬性。
+**.`fsc-ds-popup-btn`**：未使用此樣式表屬性。
 
 ## 執行指令碼 {#running-scripts}
 
@@ -85,13 +85,13 @@ Forms服務會回應網頁瀏覽器的HTTP請求，將表單轉譯為HTML。 將
 
 Forms服務可在表單轉譯時執行指令碼。 因此，您可以連線至資料庫或使用者端可能無法使用的Web服務，預先填入含有資料的表單。 您也可以將按鈕的`Click`事件設定為在伺服器上執行，讓使用者端將資料往返至伺服器。 這可讓使用者端在使用者與表單互動時，執行可能需要伺服器資源的指令碼，例如企業資料庫。 對於HTML表單，formcalc指令碼只能在伺服器上執行。 因此，您必須將這些指令碼標示為在`server`或`both`執行。
 
-您可以呼叫`xfa.host.pageUp`和`xfa.host.pageDown`方法，設計可在頁面（面板）之間移動的表單。 此指令碼放置在按鈕的`Click`事件中，`runAt`屬性設定為`Both`。 您選擇「`Both`」的原因是，Adobe Reader或Acrobat (針對呈現為PDF的表單)無需前往伺服器即可變更頁面，而HTML表單可以透過將資料舍入至伺服器來變更頁面。 也就是說，表單會傳送至Forms服務，而表單會轉譯為HTML，並顯示新頁面。
+您可以呼叫`xfa.host.pageUp`和`xfa.host.pageDown`方法，設計可在頁面（面板）之間移動的表單。 此指令碼放置在按鈕的`Click`事件中，`runAt`屬性設定為`Both`。 您選擇「`Both`」的原因是，Adobe Reader或Acrobat （針對呈現為PDF的表單）無需前往伺服器即可變更頁面，而HTML表單可以透過將資料舍入至伺服器來變更頁面。 也就是說，表單會傳送至Forms服務，而表單會轉譯為HTML，並顯示新頁面。
 
 建議您不要將指令碼變數和表單欄位命名為相同的名稱，例如專案。 有些網頁瀏覽器（例如Internet Explorer）可能無法初始化與表單欄位同名的變數，進而造成指令碼錯誤。 建議您將表單欄位和指令碼變數命名為不同名稱。
 
-在轉譯同時包含頁面導覽功能和表單指令碼的HTML表單時（例如，假設指令碼在每次轉譯表單時都會從資料庫擷取欄位資料），請確定表單指令碼採用form：calculate事件，而不是form：readyevent。
+在轉譯同時包含頁面導覽功能與表單指令碼的HTML表單時（例如，假設指令碼在每次轉譯表單時都會從資料庫擷取欄位資料），請確定表單指令碼為form:calculate事件，而非form:readyevent。
 
-form：ready事件形式的表單指令碼在表單的初始轉譯期間只會執行一次，而不會在後續的頁面擷取中執行。 相反地，form：calculate事件會針對每個轉譯了表單的頁面導覽執行。
+表單:ready事件中的表單指令碼只會在表單的初始轉譯期間執行一次，而不會在後續的頁面擷取中執行。 相反地，針對每個呈現表單的頁面導覽執行form:calculate事件。
 
 >[!NOTE]
 >
@@ -135,7 +135,7 @@ XFA子集會定義對應至HTML事件的XFA事件。 計算及驗證事件的時
 
 在網頁瀏覽器中，驗證事件僅在退出欄位或提交表單時執行。 您可以使用`xfa.form.execValidate`方法強制驗證事件。
 
-在網頁瀏覽器中顯示的Forms (相對於Adobe Reader或Acrobat)符合XFA Null測試（錯誤或警告）的強制欄位。
+在網頁瀏覽器中顯示的Forms （相對於Adobe Reader或Acrobat）符合XFA Null測試（錯誤或警告）的強制欄位。
 
 * 如果Null測試產生錯誤，而您結束欄位卻未指定值，則會顯示訊息方塊，而且您會在按一下「確定」後重新定位至欄位。
 * 如果Null測試產生警告，而您結束欄位時未指定值，系統會提示您按一下「確定」或「取消」，讓您選擇繼續但不指定值或返回欄位以輸入值。
@@ -184,7 +184,7 @@ XFA子集會定義對應至HTML事件的XFA事件。 計算及驗證事件的時
 
 ## 呈現符合協助工具指南的XHTML表單 {#rendering-an-accessibility-guidelines-compliant-xhtml-form}
 
-您可以呈現符合協助工具准則的完整HTML表單。 也就是說，表單會在完整的HTML標籤中呈現，而不是在body標籤中呈現HTML表單(不是完整的HTML頁面)。
+您可以呈現符合協助工具准則的完整HTML表單。 也就是說，表單會在完整的HTML標籤中呈現，而不是在body標籤中呈現HTML表單（不是完整的HTML頁面）。
 
 ## 驗證表單資料 {#validating-form-data}
 
@@ -284,7 +284,7 @@ Forms服務轉譯HTML表單時，會傳回您必須寫入使用者端網頁瀏�
 
    >[!NOTE]
    >
-   >當`StandAlone`選項為`true`，`ApplicationWebRoot`參考到裝載Forms的J2EE應用程式伺服器以外的伺服器時，AEM Forms無法在HTML中成功轉譯（`ApplicationWebRoot`值是使用傳遞至`FormsServiceClient`物件的`(Deprecated) renderHTMLForm`方法的`URLSpec`物件指定的）。 當`ApplicationWebRoot`是另一個來自主控AEM Forms的伺服器時，管理主控台中的Web根URI值需要設定為表單的Web應用程式URI值。 若要這麼做，請登入管理主控台，按一下「服務> Forms」，然後將Web根URI設為https://server-name:port/FormServer。 然後，儲存您的設定。
+   >當`StandAlone`選項為`true`，`ApplicationWebRoot`參考到裝載Forms的J2EE應用程式伺服器以外的伺服器時，AEM Forms無法在HTML中成功轉譯（`ApplicationWebRoot`值是使用傳遞至`FormsServiceClient`物件的`(Deprecated) renderHTMLForm`方法的`URLSpec`物件指定的）。 當`ApplicationWebRoot`是另一個來自主控AEM Forms的伺服器時，管理主控台中的Web根URI值需要設定為表單的Web應用程式URI值。 若要完成此操作，請登入管理主控台，按一下[服務] > [Forms]，並將Web根URI設定為https://server-name:port/FormServer。 然後，儲存您的設定。
 
 1. 呈現HTML表單
 
@@ -314,7 +314,7 @@ Forms服務轉譯HTML表單時，會傳回您必須寫入使用者端網頁瀏�
 
 [將Forms轉譯為HTML](#rendering-forms-as-html)
 
-[快速入門(SOAP模式)：使用Java API轉譯HTML表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API轉譯HTML表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -342,7 +342,7 @@ Forms服務轉譯HTML表單時，會傳回您必須寫入使用者端網頁瀏�
 
    >[!NOTE]
    >
-   >當`StandAlone`選項為`true`，`ApplicationWebRoot`參考到裝載Forms的J2EE應用程式伺服器以外的伺服器時，AEM Forms無法在HTML中成功轉譯（`ApplicationWebRoot`值是使用傳遞至`FormsServiceClient`物件的`(Deprecated) renderHTMLForm`方法的`URLSpec`物件指定的）。 當`ApplicationWebRoot`是另一個來自主控AEM Forms的伺服器時，管理主控台中的Web根URI值需要設定為表單的Web應用程式URI值。 若要這麼做，請登入管理主控台，按一下「服務> Forms」，然後將Web根URI設為https://server-name:port/FormServer。 然後，儲存您的設定。
+   >當`StandAlone`選項為`true`，`ApplicationWebRoot`參考到裝載Forms的J2EE應用程式伺服器以外的伺服器時，AEM Forms無法在HTML中成功轉譯（`ApplicationWebRoot`值是使用傳遞至`FormsServiceClient`物件的`(Deprecated) renderHTMLForm`方法的`URLSpec`物件指定的）。 當`ApplicationWebRoot`是另一個來自主控AEM Forms的伺服器時，管理主控台中的Web根URI值需要設定為表單的Web應用程式URI值。 若要完成此操作，請登入管理主控台，按一下[服務] > [Forms]，並將Web根URI設定為https://server-name:port/FormServer。 然後，儲存您的設定。
 
 1. 呈現HTML表單
 
@@ -350,7 +350,7 @@ Forms服務轉譯HTML表單時，會傳回您必須寫入使用者端網頁瀏�
 
    * 字串值，指定表單設計名稱，包括副檔名。 如果您參照的表單設計屬於Forms應用程式的一部分，請確定您指定完整路徑，例如`Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`。
    * 指定HTML喜好設定型別的`TransformTo`列舉值。 例如，若要呈現與適用於Internet Explorer 5.0或更新版本的動態HTML相容的HTML表單，請指定`TransformTo.MSDHTML`。
-   * 包含要與表單合併之資料的`BLOB`物件。 如果您不想合併資料，請傳遞`null`。 (請參閱[使用可流動配置預先填入Forms](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts)。)
+   * 包含要與表單合併之資料的`BLOB`物件。 如果您不想合併資料，請傳遞`null`。 （請參閱[使用可流動配置預先填入Forms](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts)。）
    * 儲存HTML執行階段選項的`HTMLRenderSpec`物件。
    * 字串值，指定`HTTP_USER_AGENT`標頭值；例如`Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。 如果您不想設定此值，可以傳遞空字串。
    * `URLSpec`物件儲存轉譯HTML表單所需的URI值。 （請參閱[指定URI值](/help/forms/developing/rendering-interactive-pdf-forms.md)。）

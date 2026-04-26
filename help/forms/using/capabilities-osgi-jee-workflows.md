@@ -8,10 +8,10 @@ hidefromtoc: true
 feature: Adaptive Forms,AEM Forms on OSGi
 role: User, Developer
 exl-id: d0f54236-5dc2-4c64-87c5-85e5e85e8cf7
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 20%
+source-wordcount: '959'
+ht-degree: 19%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 20%
 
 ## AEM收件匣和HTML Workspace {#aem-inbox-and-html-workspace}
 
-您可以使用AEM收件匣在OSGi上執行和監視以Forms為中心的AEM工作流程。 而HTML Workspace可讓您執行並監視AEM Forms JEE工作流程。 下表可協助您瞭解AEM收件匣(適用於OSGi上的Forms中心AEM工作流程)和HTML Workspace (適用於AEM Forms JEE工作流程)中提供的各種重要動作。
+您可以使用AEM收件匣在OSGi上執行和監視以Forms為中心的AEM工作流程。 而HTML Workspace可讓您執行並監視AEM Forms JEE工作流程。 下表可協助您瞭解AEM收件匣（適用於OSGi上的Forms中心AEM工作流程）和HTML Workspace （適用於AEM Forms JEE工作流程）中提供的各種重要動作。
 
 <table>
  <tbody>
@@ -103,7 +103,7 @@ ht-degree: 20%
 
 ## OSGi和AEM Forms JEE工作流程上的表單中心AEM工作流程 {#form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
-OSGi和AEM Forms JEE Workflows (JEE程式管理上的AEM Forms)以表單為中心的AEM工作流程有一組不同的功能。 下表可協助您瞭解OSGi表單中心AEM工作流程和JEE工作流程中AEM Forms的重要功能：
+OSGi和AEM Forms JEE Workflows （JEE程式管理上的AEM Forms）以表單為中心的AEM工作流程有一組不同的功能。 下表可協助您瞭解OSGi表單中心AEM工作流程和JEE工作流程中AEM Forms的重要功能：
 
 <table>
  <tbody>
@@ -113,7 +113,7 @@ OSGi和AEM Forms JEE Workflows (JEE程式管理上的AEM Forms)以表單為中�
    <td>AEM Forms JEE工作流程</td>
   </tr>
   <tr>
-   <td>調適型表單</td>
+   <td>自適應表單</td>
    <td>支援</td>
    <td>支援<br /> </td>
   </tr>
@@ -123,7 +123,7 @@ OSGi和AEM Forms JEE Workflows (JEE程式管理上的AEM Forms)以表單為中�
    <td>支援</td>
   </tr>
   <tr>
-   <td>草寫簽名</td>
+   <td>手寫簽名</td>
    <td>支援</td>
    <td>支援<br /> </td>
   </tr>
@@ -198,7 +198,7 @@ OSGi和AEM Forms JEE Workflows (JEE程式管理上的AEM Forms)以表單為中�
    <td>支援</td>
   </tr>
   <tr>
-   <td>用戶頭像</td>
+   <td>使用者顯示圖片</td>
    <td>支援</td>
    <td>支援</td>
   </tr>

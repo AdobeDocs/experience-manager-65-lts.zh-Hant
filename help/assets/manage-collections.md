@@ -8,9 +8,9 @@ feature: Collections,Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5b91d368-aa22-4f13-9c2c-6be831470609
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2183'
+source-wordcount: '2199'
 ht-degree: 14%
 
 ---
@@ -19,14 +19,14 @@ ht-degree: 14%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=en) |
 | AEM 6.5 | 本文章 |
 
-集合是[!DNL Adobe Experience Manager Assets]中的一組資產。 使用集合在使用者之間共用資產。集合可以是靜態集合或基於搜尋結果的動態集合。
+集合是[!DNL Adobe Experience Manager Assets]中的一組資產。 使用集合在使用者之間共用資產。 集合可以是靜態集合或基於搜尋結果的動態集合。
 
-和檔案夾不同，集合可包含來自不同位置的資產。您可以與獲指派不同許可權層級（包括檢視、編輯等）的各種使用者共用集合。
+和檔案夾不同，集合可包含來自不同位置的資產。 您可以與獲指派不同許可權層級（包括檢視、編輯等）的各種使用者共用集合。
 
-您可以和使用者共用多個集合。每個集合都包含資產的參考資料。資產的參考完整性會跨越集合來維護。
+您可以和使用者共用多個集合。 每個集合都包含資產的參考資料。 資產的參考完整性會跨越集合來維護。
 
 根據集合整理資產的方式，集合有下列型別：
 
@@ -49,14 +49,14 @@ ht-degree: 14%
 1. 導覽至&#x200B;**[!UICONTROL 集合]**&#x200B;主控台。
 1. 從工具列中按一下&#x200B;**[!UICONTROL 建立]**。
 1. 在&#x200B;**[!UICONTROL 建立集合]**&#x200B;頁面中，輸入集合的標題和選擇性說明。
-1. 新增成員至系列並指派適當的權限。或者，選取「 **[!UICONTROL 公用系列]** 」，讓所有使用者都能存取系列。
+1. 新增成員至系列並指派適當的權限。 或者，選取「 **[!UICONTROL 公用系列]** 」，讓所有使用者都能存取系列。
 
    >[!NOTE]
    >
    >若要讓成員與其他使用者共用集合，請在路徑`home/users`提供`dam-users`群組讀取許可權。 將許可權授與位於`/content/dam/collections`位置的使用者，讓使用者可以在彈出式清單中檢視集合。 或者，讓使用者成為`dam-users`群組的一部分。
 
 1. （選用）為集合新增縮圖影像。
-1. 按一下[建立]&#x200B;**&#x200B;**，然後按一下[確定]&#x200B;**關閉對話方塊。**&#x200B;具有指定標題和屬性的系列會在「系列」主控台中開啟。
+1. 按一下[建立]****，然後按一下[確定]]**關閉對話方塊。**[!UICONTROL &#x200B;具有指定標題和屬性的系列會在「系列」主控台中開啟。
 
    >[!NOTE]
    >
@@ -69,7 +69,7 @@ ht-degree: 14%
 您可以從[!DNL Assets]使用者介面將資產拖曳至集合。 您也可以建立收藏集的副本，並將資產拖曳至該處。
 
 1. 從[!DNL Assets]使用者介面中，選取您要新增至集合的資產。
-1. 將資產拖曳至集合&#x200B;**區域中的**&#x200B;拖放位置。 或者，按一下工具列中的&#x200B;**[!UICONTROL To Collection]**。
+1. 將資產拖曳至集合&#x200B;]**區域中的**[!UICONTROL &#x200B;拖放位置。 或者，按一下工具列中的&#x200B;**[!UICONTROL To Collection]**。
 
    ![drop_in_collection](assets/drop_in_collection.png)
 
@@ -77,7 +77,7 @@ ht-degree: 14%
 
    如果您想要將資產新增至現有的集合，請從頁面中選取資產，然後按一下&#x200B;**[!UICONTROL 新增]**。 依預設，會選取最近更新的系列。
 
-1. 在「建 **[!UICONTROL 立新系列]** 」對話方塊中，指定系列的名稱。如果您希望系列可供所有使用者存取，請選取「公用 **[!UICONTROL 系列」]**。
+1. 在「建 **[!UICONTROL 立新系列]** 」對話方塊中，指定系列的名稱。 如果您希望系列可供所有使用者存取，請選取「公用 **[!UICONTROL 系列」]**。
 1. 按一下&#x200B;**[!UICONTROL 繼續]**&#x200B;以建立集合。
 
 ### 建立智慧型集合 {#creating-a-smart-collection}
@@ -104,20 +104,20 @@ ht-degree: 14%
    >
    >如果您選取&#x200B;**[!UICONTROL 公用]**，在您建立智慧型集合之後，擁有擁有者角色的所有人都可以使用該集合。 如果您取消&#x200B;**[!UICONTROL 公用]**&#x200B;選項，DAM使用者群組將不再與智慧型集合相關聯。
 
-1. 按一下[儲存]&#x200B;**[!UICONTROL 以建立智慧型集合，然後關閉訊息方塊以完成程式。]**
+1. 按一下[儲存]**[!UICONTROL 以建立智慧型集合，然後關閉訊息方塊以完成程式。]**
 
    新的智慧型系列也會新增至&#x200B;**[!UICONTROL 已儲存的搜尋]**&#x200B;清單。
 
    ![集合清單](assets/collection_listing.png)
 
-   **[!UICONTROL 建立智慧選擇]**&#x200B;選項的標籤變更為&#x200B;**[!UICONTROL 編輯智慧選擇]**。 要編輯智慧系列的設定，請從「檔案和文 **[!UICONTROL 件夾]** 」列 **[!UICONTROL 表中選擇「檔案]** 」。按一下&#x200B;**[!UICONTROL 編輯智慧選擇]** ![編輯智慧集合](assets/do-not-localize/edit-smart-collection.png)選項。
+   **[!UICONTROL 建立智慧選擇]**&#x200B;選項的標籤變更為&#x200B;**[!UICONTROL 編輯智慧選擇]**。 要編輯智慧系列的設定，請從「檔案和文 **[!UICONTROL 件夾]** 」列 **[!UICONTROL 表中選擇「檔案]** 」。 按一下&#x200B;**[!UICONTROL 編輯智慧選擇]** ![編輯智慧集合](assets/do-not-localize/edit-smart-collection.png)選項。
 
 ## 將資產新增至集合 {#adding-assets-to-a-collection}
 
 您可以將資產新增至包含參照資產或資料夾清單的集合。 智慧型集合會使用搜尋查詢來填入資產。 因此，資產和資料夾的靜態參考不適用於它們。
 
 1. 在[!DNL A]資產使用者介面中，選取資產並按一下工具列中的&#x200B;**[!UICONTROL 至集合]** ![新增至集合](assets/do-not-localize/add-to-collection.png)。
-或者，您可以將資產拖曳至介面上的&#x200B;**[!UICONTROL 拖放集合]**&#x200B;區域。 當區域的標籤變更為&#x200B;**[!UICONTROL 拖放以新增]**&#x200B;時，新增資產。
+或者，您可以將資產拖曳至介面上的**[!UICONTROL 拖放集合]**&#x200B;區域。 當區域的標籤變更為&#x200B;**[!UICONTROL 拖放以新增]**&#x200B;時，新增資產。
 
 1. 在&#x200B;**[!UICONTROL 新增至集合]**&#x200B;頁面中，選取您要新增資產的集合。
 
@@ -130,7 +130,7 @@ ht-degree: 14%
 1. 在[!DNL Assets]使用者介面中，按一下工具列中的搜尋選項![搜尋選項](assets/do-not-localize/search_icon.png)。
 1. 將游標放在Omnisearch方塊中，選取`Return`鍵。
 1. 在[!DNL Experience Manager]介面中，開啟「篩選器」面板。
-1. 從「保 **[!UICONTROL 存的搜索]** 」清單中，選擇要修改的智慧系列。「搜尋」面板會顯示為儲存的搜尋設定的篩選器。
+1. 從「保 **[!UICONTROL 存的搜索]** 」清單中，選擇要修改的智慧系列。 「搜尋」面板會顯示為儲存的搜尋設定的篩選器。
 
    ![select_smart_collection](assets/select_smart_collection.png)
 
@@ -141,7 +141,7 @@ ht-degree: 14%
 
    ![edit_smart_collectiondialog](assets/edit_smart_collectiondialog.png)
 
-1. 按一下「**[!UICONTROL 儲存]**」。**[!UICONTROL 編輯智慧型集合]**&#x200B;對話方塊就會顯示。
+1. 按一下「**[!UICONTROL 儲存]**」。 **[!UICONTROL 編輯智慧型集合]**&#x200B;對話方塊就會顯示。
 1. 按一下&#x200B;**[!UICONTROL 覆寫]**，以已編輯的集合取代原始的智慧型集合。 或者，選取「**[!UICONTROL 另存新檔]**」以個別儲存編輯的集合。
 1. 在確認對話方塊中，按一下&#x200B;**[!UICONTROL 儲存]**&#x200B;以完成程式。
 
@@ -150,8 +150,8 @@ ht-degree: 14%
 收藏集中繼資料包含有關收藏集的資料，包括新增的任何標籤。
 
 1. 從[!UICONTROL 集合]主控台，選取集合，然後按一下工具列中的&#x200B;**[!UICONTROL 屬性]**。
-1. 在「系列 **[!UICONTROL 中繼資料]** 」頁面中，從「基本」和「進階」標籤檢視系 **[!UICONTROL 列中繼資]** 料 **&#x200B;**&#x200B;。
-1. 視需要修改中繼資料。 若要儲存變更，請按一下工具列中的[儲存並關閉]。**&#x200B;**
+1. 在「系列 **[!UICONTROL 中繼資料]** 」頁面中，從「基本」和「進階」標籤檢視系 **[!UICONTROL 列中繼資]** 料 **** 。
+1. 視需要修改中繼資料。 若要儲存變更，請按一下工具列中的[儲存並關閉]。****
 
 ## 大量編輯多個集合的中繼資料 {#editing-collection-metadata-in-bulk}
 
@@ -159,7 +159,7 @@ ht-degree: 14%
 
 1. 在「集合」控制檯中，選取兩個或多個集合。
 1. 在工具列中按一下&#x200B;**[!UICONTROL 屬性]**。
-1. 在「系 **[!UICONTROL 列中繼資料]** 」頁面中，視需要編輯「基本」和「進階」標籤下的中繼資料 **&#x200B;**&#x200B;**&#x200B;** 。
+1. 在「系 **[!UICONTROL 列中繼資料]** 」頁面中，視需要編輯「基本」和「進階」標籤下的中繼資料 ******** 。
 1. 若要檢視特定集合的中繼資料屬性，請取消選取集合清單中剩餘的集合。 中繼資料編輯器欄位會填入特定集合的中繼資料。
 
    >[!NOTE]
@@ -168,7 +168,7 @@ ht-degree: 14%
    >* 在清單頂端，選取&#x200B;**[!UICONTROL 標題]**&#x200B;附近的核取方塊，以在選取集合與清除清單之間切換。
 
 1. 按一下工具列中的&#x200B;**[!UICONTROL 儲存並關閉]**，然後關閉確認對話方塊。
-1. 若要將新的中繼資料附加至現有的中繼資料，請選取&#x200B;**[!UICONTROL 附加模式]**。 如果您未選取此選項，新的中繼資料會取代欄位中現有的中繼資料。按一下「**[!UICONTROL 提交]**」。
+1. 若要將新的中繼資料附加至現有的中繼資料，請選取&#x200B;**[!UICONTROL 附加模式]**。 如果您未選取此選項，新的中繼資料會取代欄位中現有的中繼資料。 按一下「**[!UICONTROL 提交]**」。
 
    >[!NOTE]
    >
@@ -178,7 +178,7 @@ ht-degree: 14%
 
 >[!TIP]
 >
->大量編輯方法適用於集合中可用的資產。 對於跨資料夾可用的資產，或符合共同條件的資產，可在搜尋[&#128279;](/help/assets/search-assets.md#metadataupdates)後大量更新中繼資料。
+>大量編輯方法適用於集合中可用的資產。 對於跨資料夾可用的資產，或符合共同條件的資產，可在搜尋](/help/assets/search-assets.md#metadataupdates)後[大量更新中繼資料。
 
 ## 搜尋集合 {#searching-collections}
 
@@ -186,7 +186,7 @@ ht-degree: 14%
 
 如果您從最上層搜尋集合，搜尋結果中只會傳回個別集合。 已排除集合中的[!DNL Assets]個或資料夾。 在所有其他情況下（例如，在個別集合或資料夾階層中），所有相關的資產、資料夾和集合都會傳回。
 
-## 在集合中搜尋 {#searching-within-collections}
+## 在集合內搜尋 {#searching-within-collections}
 
 在「系列」控制檯中，按一下某個系列以開啟它。
 
@@ -197,7 +197,7 @@ ht-degree: 14%
 您可以編輯收藏集設定（例如標題和說明），或將成員新增至收藏集。
 
 1. 選取集合，然後按一下工具列中的&#x200B;**[!UICONTROL 設定]**。 或者，使用集合縮圖中的&#x200B;**[!UICONTROL 設定]**&#x200B;快速動作。
-1. 修改「系列設定」頁面中 **[!UICONTROL 的系列設定]** 。例如，如[新增集合](#creating-a-collection)中所述，修改集合標題、說明、成員和許可權。
+1. 修改「系列設定」頁面中 **[!UICONTROL 的系列設定]** 。 例如，如[新增集合](#creating-a-collection)中所述，修改集合標題、說明、成員和許可權。
 
 1. 若要儲存變更，請按一下&#x200B;**[!UICONTROL 儲存]**。
 
@@ -233,7 +233,7 @@ ht-degree: 14%
    >
    >預設會在&#x200B;**[!UICONTROL 新增至集合]**&#x200B;頁面中選取最近更新的集合。
 
-1. 按一下&#x200B;**[!UICONTROL 「新增」]**。訊息會確認此集合已新增至&#x200B;**[!UICONTROL 選取目的地]**&#x200B;頁面中的目標集合。 關閉訊息以完成程式。
+1. 按一下&#x200B;**[!UICONTROL 「新增」]**。 訊息會確認此集合已新增至&#x200B;**[!UICONTROL 選取目的地]**&#x200B;頁面中的目標集合。 關閉訊息以完成程式。
 
 >[!NOTE]
 >
@@ -241,11 +241,11 @@ ht-degree: 14%
 
 ## 已儲存搜尋 {#saved-searches}
 
-在[!DNL Assets]使用者介面中，您可以根據特定規則、搜尋准則或自訂搜尋Facet來搜尋或篩選資產。 如果您將這些項目儲存為「 **[!UICONTROL 已儲存的搜尋]**」，您稍後可從「篩選」面板的「已儲存的搜尋 **&#x200B;**&#x200B;」清單中存取。建立儲存的搜尋也會建立智慧型系列。
+在[!DNL Assets]使用者介面中，您可以根據特定規則、搜尋准則或自訂搜尋Facet來搜尋或篩選資產。 如果您將這些項目儲存為「 **[!UICONTROL 已儲存的搜尋]**」，您稍後可從「篩選」面板的「已儲存的搜尋 **** 」清單中存取。 建立儲存的搜尋也會建立智慧型系列。
 
 ![saved_searches_list](assets/saved_searches_list.png)
 
-儲存的搜尋會在您建立智慧型系列時建立。智慧型系列會自動新增至「已儲 **[!UICONTROL 存的搜尋]** 」清單。集合的[!UICONTROL 已儲存搜尋]查詢儲存在CRXDE中相對位置`/content/dam/collections/`的`dam:query`屬性中。 您可以儲存的搜尋以及清單中顯示的已儲存搜尋沒有限制。
+儲存的搜尋會在您建立智慧型系列時建立。 智慧型系列會自動新增至「已儲 **[!UICONTROL 存的搜尋]** 」清單。 集合的[!UICONTROL 已儲存搜尋]查詢儲存在CRXDE中相對位置`/content/dam/collections/`的`dam:query`屬性中。 您可以儲存的搜尋以及清單中顯示的已儲存搜尋沒有限制。
 
 >[!NOTE]
 >
@@ -270,7 +270,7 @@ ht-degree: 14%
 
 1. 開啟&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 集合]**。 若要在特定集合上執行工作流程，請選取該工作流程。
 1. 開啟&#x200B;**[!UICONTROL 時間表]**&#x200B;邊欄。 按一下![V形向上](assets/do-not-localize/chevron-up-icon.png)，然後按一下&#x200B;**[!UICONTROL 開始工作流程]**。
-1. 在「開 **[!UICONTROL 始工作流]** 」部分，從清單中選擇工作流模型。例如，選取「 **[!UICONTROL DAM更新資產」模型]** 。
+1. 在「開 **[!UICONTROL 始工作流]** 」部分，從清單中選擇工作流模型。 例如，選取「 **[!UICONTROL DAM更新資產」模型]** 。
 1. 輸入工作流程的標題，然後按一下&#x200B;**[!UICONTROL 開始]**。
 1. 在對話方塊中，按一下&#x200B;**[!UICONTROL 繼續]**。 工作流程會處理所選集合中的所有資產。
 

@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 3af4361d-ff30-46db-ac88-64bfae8f63a4
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2189'
+source-wordcount: '2204'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Forms服務可以轉譯以您使用Designer建立的片段為基礎的表單。 
 
 **轉譯表單**
 
-以片段為基礎的表單能以與非片段表單相同的方式轉譯。 也就是說，您可以將表單轉譯為PDF、HTML或表單參考線（已棄用）。 本節中的範例將以片段為基礎的表單轉譯為互動式PDF表單。 (請參閱[呈現互動式PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)。)
+以片段為基礎的表單能以與非片段表單相同的方式轉譯。 也就是說，您可以將表單轉譯為PDF、HTML或表單參考線（已棄用）。 本節中的範例將以片段為基礎的表單轉譯為互動式PDF表單。 （請參閱[呈現互動式PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)。）
 
 **將表單資料流寫入使用者端網頁瀏覽器**
 
@@ -151,7 +151,7 @@ Forms服務轉譯表單時，會傳回您必須寫入使用者端網頁瀏覽器
 
 [根據片段轉譯Forms](#rendering-forms-based-on-fragments)
 
-[快速入門(SOAP模式)：使用Java API根據片段轉譯表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API根據片段轉譯表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

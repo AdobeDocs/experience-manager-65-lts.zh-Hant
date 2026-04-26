@@ -7,10 +7,10 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: bf5c2dff-db68-4e82-8217-ff35069dcb81
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3607'
-ht-degree: 7%
+source-wordcount: '3651'
+ht-degree: 8%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=en) |
 | AEM 6.5 | 本文章 |
 
 組織會提出中繼資料模型，藉以強化資產探索、使用、互通性等。 正確的中繼資料應用程式對於維護中繼資料驅動的工作流程和流程至關重要。 若要遵循組織範圍的中繼資料策略和標準，您可以使用可協助DAM使用者調整的中繼資料結構。 [!DNL Adobe Experience Manager]可讓您以簡單靈活的方法建立、維護和套用中繼資料結構。
@@ -50,7 +50,7 @@ ht-degree: 7%
 | [!UICONTROL 預設] | | 資產的基本中繼資料結構表單。 |
 | | 下列子表單繼承[!UICONTROL 預設]表單的屬性： | |
 | | <ul><li>[!UICONTROL dm_video]</li></ul> | Dynamic Media影片的結構描述表單。 |
-| | <ul><li>[!UICONTROL 影像]</li></ul> | 具有MIME型別（例如`image/jpeg`和`image/png`）之影像的結構描述表單。 <br> [!UICONTROL 影像]表單有下列子表單範本： <ul><li> [!UICONTROL jpeg]：子型別為[!UICONTROL jpeg]之資產的結構描述表單。</li> <li>[!UICONTROL tiff]：具有子型別TIFF之資產的結構描述表單。</li></ul> |
+| | <ul><li>[!UICONTROL 影像]</li></ul> | 具有MIME型別（例如`image/jpeg`和`image/png`）之影像的結構描述表單。<br> [!UICONTROL 影像]表單有下列子表單範本： <ul><li> [!UICONTROL jpeg]：子型別為[!UICONTROL jpeg]之資產的結構描述表單。</li> <li>[!UICONTROL tiff]：具有子型別TIFF之資產的結構描述表單。</li></ul> |
 | | <ul><li>[!UICONTROL 應用程式]</li></ul> | 具有MIME型別（例如`application/pdf`和`application/zip`）之資產的結構描述表單。 <br>[!UICONTROL pdf]：具有子型別PDF之資產的結構描述表單。 |
 | | <ul><li>[!UICONTROL 影片]</li></ul> | 具有MIME型別（例如`video/avi`和`video/mp4`）之視訊資產的結構描述表單。 |
 | [!UICONTROL 集合] | | 集合的結構表單。 |
@@ -66,7 +66,7 @@ ht-degree: 7%
 
 若要新增中繼資料結構表單，請執行下列步驟：
 
-1. 若要新增自訂範本至清單，請按一下工具列中的[建立]。**&#x200B;**
+1. 若要新增自訂範本至清單，請按一下工具列中的[建立]。****
 
    >[!NOTE]
    >
@@ -135,7 +135,7 @@ ht-degree: 7%
 >
 >[!UICONTROL 隱藏欄位]元件不包含這些屬性。 而是包含屬性，例如「名稱」、「值」、「欄位標籤」和「說明」。 每當儲存資產時，「隱藏欄位」元件的值都會以POST引數的形式傳送。 它不會儲存為資產的中繼資料。
 
-如果您選取「必 **[!UICONTROL 要]** 」選項，可以搜尋遺失必要中繼資料的資產。從「篩 **[!UICONTROL 選器]** 」面板中，展開「中繼資料 **[!UICONTROL 驗證謂語]** 」並選取「 **[!UICONTROL 無效]** 」選項。搜尋結果會顯示遺失您透過結構表單設定之必要中繼資料的資產。
+如果您選取「必 **[!UICONTROL 要]** 」選項，可以搜尋遺失必要中繼資料的資產。 從「篩 **[!UICONTROL 選器]** 」面板中，展開「中繼資料 **[!UICONTROL 驗證謂語]** 」並選取「 **[!UICONTROL 無效]** 」選項。 搜尋結果會顯示遺失您透過結構表單設定之必要中繼資料的資產。
 
 在篩選器面板的中繼資料驗證述詞中選取![選項](assets/invalid-metadata-predicate.png)
 
@@ -151,11 +151,11 @@ ht-degree: 7%
 
 ### 指定JSON檔案中的屬性 {#specify-properties-in-json-file}
 
-您不必在「設定」標籤中指定選項的屬 **[!UICONTROL 性]** ，而是可以透過指定對應的索引鍵值配對，來定義JSON檔案中的選項。在「 **[!UICONTROL JSON路徑」欄位中指定JSON檔案的]** 路徑。
+您不必在「設定」標籤中指定選項的屬 **[!UICONTROL 性]** ，而是可以透過指定對應的索引鍵值配對，來定義JSON檔案中的選項。 在「 **[!UICONTROL JSON路徑」欄位中指定JSON檔案的]** 路徑。
 
 #### 在結構表單中新增或刪除索引標籤 {#adding-deleting-a-tab-in-the-schema-form}
 
-結構描述編輯器可讓您新增或刪除標籤。預設結構描述表單包含&#x200B;**[!UICONTROL Basic]**、**[!UICONTROL Advanced]**、**[!UICONTROL IPTC]**&#x200B;和&#x200B;**[!UICONTROL IPTC擴充功能]**&#x200B;標籤。
+結構描述編輯器可讓您新增或刪除標籤。 預設結構描述表單包含&#x200B;**[!UICONTROL Basic]**、**[!UICONTROL Advanced]**、**[!UICONTROL IPTC]**&#x200B;和&#x200B;**[!UICONTROL IPTC擴充功能]**&#x200B;標籤。
 
 按一下`+`在結構表單上新增索引標籤。 依預設，新索引標籤的名稱為`Unnamed-1`。 您可以從&#x200B;**[!UICONTROL 設定]**&#x200B;標籤修改名稱。 按一下`X`以刪除索引標籤。
 
@@ -232,8 +232,8 @@ ht-degree: 7%
 
    ![select_dependentfield](assets/select_dependentfield.png)
 
-1. 在&#x200B;**[!UICONTROL 需求]**&#x200B;底下，根據新規則&#x200B;**[!UICONTROL 選項選擇]**&#x200B;必要。
-1. 按一下&#x200B;**[!UICONTROL 新增規則]**&#x200B;並選擇&#x200B;**[!UICONTROL 資產型別]**&#x200B;欄位以建立相依性。 也選擇要在其上建立相關性的欄位值。在這種情況下，請選擇「 **[!UICONTROL 視訊」]**。按一下「**[!UICONTROL 完成]**」以儲存變更。
+1. 在&#x200B;**[!UICONTROL 需求]**&#x200B;底下，根據新規則&#x200B;]**選項選擇**[!UICONTROL &#x200B;必要。
+1. 按一下&#x200B;**[!UICONTROL 新增規則]**&#x200B;並選擇&#x200B;**[!UICONTROL 資產型別]**&#x200B;欄位以建立相依性。 也選擇要在其上建立相關性的欄位值。 在這種情況下，請選擇「 **[!UICONTROL 視訊」]**。 按一下「**[!UICONTROL 完成]**」以儲存變更。
 
    ![define_rule](assets/define_rule.png)
 
@@ -243,7 +243,7 @@ ht-degree: 7%
 
 1. 在「可 **[!UICONTROL 見性]**」下，選擇「可 **[!UICONTROL 見」，根據新規則選項]** 。
 
-1. 按一下&#x200B;**[!UICONTROL 新增規則]**&#x200B;並選擇&#x200B;**[!UICONTROL 資產型別]**&#x200B;欄位以建立相依性。 也選擇要在其上建立相關性的欄位值。在這種情況下，請選擇「 **[!UICONTROL 視訊」]**。按一下「**[!UICONTROL 完成]**」以儲存變更。
+1. 按一下&#x200B;**[!UICONTROL 新增規則]**&#x200B;並選擇&#x200B;**[!UICONTROL 資產型別]**&#x200B;欄位以建立相依性。 也選擇要在其上建立相關性的欄位值。 在這種情況下，請選擇「 **[!UICONTROL 視訊」]**。 按一下「**[!UICONTROL 完成]**」以儲存變更。
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
@@ -257,7 +257,7 @@ ht-degree: 7%
 
 1. 同樣地，在「資產型別」欄位中的「視訊」值與其他欄位（例如「轉碼器」和「持續時間」）之間建立相依性。
 1. 重複這些步驟，在[!UICONTROL 資產型別]欄位和[!UICONTROL 頁面計數]和[!UICONTROL 作者]等欄位中，建立檔案資產（PDF和Word）之間的相依性。
-1. 按一下「**[!UICONTROL 儲存]**」。將中繼資料結構套用至資料夾。
+1. 按一下「**[!UICONTROL 儲存]**」。 將中繼資料結構套用至資料夾。
 
 1. 導覽至您套用中繼資料結構的資料夾，並開啟資產的屬性頁面。 視您在「資產型別」欄位中的選擇而定，會顯示相關的階層式中繼資料欄位。
 
@@ -290,7 +290,7 @@ ht-degree: 7%
 
 #### 針對各種MIME型別使用現有結構描述範本 {#use-an-existing-schema-template-for-various-mime-types}
 
-您可以將現有的範本用於不同的MIME型別。 例如，使用MIME型別`image/jpeg`之資產的`image/png`表單。
+您可以將現有的範本用於不同的MIME型別。 例如，使用MIME型別`image/png`之資產的`image/jpeg`表單。
 
 在這種情況下，請在CRX存放庫中的`/etc/dam/metadataeditor/mimetypemappings`建立節點。 指定節點名稱並定義下列屬性：
 
@@ -340,10 +340,10 @@ ht-degree: 7%
 
    *圖：文字欄位已新增至中繼資料結構描述表單編輯器。*
 
-1. 按一下「**[!UICONTROL 儲存]**」。修改後的表單會列在&#x200B;**[!UICONTROL 中繼資料結構Forms]**&#x200B;頁面中。
-1. 按一下工具列中的「套用至資料夾」**&#x200B;**，將自訂中繼資料套用至資料夾。
+1. 按一下「**[!UICONTROL 儲存]**」。 修改後的表單會列在&#x200B;**[!UICONTROL 中繼資料結構Forms]**&#x200B;頁面中。
+1. 按一下工具列中的「套用至資料夾」****，將自訂中繼資料套用至資料夾。
 
-1. 選取要套用修改的結構描述的資料夾，然後按一下[套用]。**&#x200B;**
+1. 選取要套用修改的結構描述的資料夾，然後按一下[套用]。****
 
    ![選取要套用中繼資料結構描述的資料夾](assets/metadata-schema-select-folder.png)
 
@@ -368,7 +368,7 @@ ht-degree: 7%
 
    *圖：中繼資料結構描述表單編輯器中的必要欄位。*
 
-1. 按一下「**[!UICONTROL 儲存]**」。修改後的表單會列在&#x200B;**[!UICONTROL 中繼資料結構Forms]**&#x200B;頁面中。 選取表單，然後從工具列按一下&#x200B;**[!UICONTROL 套用至資料夾]**，將自訂中繼資料套用至資料夾。
+1. 按一下「**[!UICONTROL 儲存]**」。 修改後的表單會列在&#x200B;**[!UICONTROL 中繼資料結構Forms]**&#x200B;頁面中。 選取表單，然後從工具列按一下&#x200B;**[!UICONTROL 套用至資料夾]**，將自訂中繼資料套用至資料夾。
 
 1. 導覽至資料夾，然後上傳部分資產，其中遺失您新增至自訂表單之必要欄位的中繼資料。 資產卡片檢視中會顯示訊息，指出必填欄位缺少中繼資料。
 
@@ -380,5 +380,6 @@ ht-degree: 7%
    >
    >中繼資料驗證檢查需要大量資源，可能會影響系統效能。 相應地排程檢查。 如果伺服器無法應付負載，請嘗試停用此工作。
 
-<!-- TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
+<!--
+TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
 -->

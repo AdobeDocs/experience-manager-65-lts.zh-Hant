@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 72c31f40-d1b0-47ae-bdeb-e9b92c3d27e1
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '10278'
+source-wordcount: '10334'
 ht-degree: 0%
 
 ---
@@ -136,7 +136,7 @@ AEM forms提供您可針對環境自訂的設定範例。 執行下列步驟：
 
 document security提供在離線（無需網際網路或網路連線）使用受原則保護檔案的功能。 此功能需要原則允許離線存取，如[指定使用者和群組的檔案許可權](/help/forms/using/admin-help/creating-policies.md#specify-the-document-permissions-for-users-and-groups)中所述。 在離線使用具有此原則的檔案之前，收件者必須線上上時開啟檔案，並在出現提示時按一下[是]，啟用離線存取。 收件者可能也會被要求驗證其身分。 然後，收件者便可以在原則所指定的離線租期期間離線使用檔案。
 
-離線租賃期結束時，收件者必須透過線上開啟檔案，或使用Acrobat或Acrobat Reader DC擴充功能功能表指令進行同步，再次與Document Security同步。 (請參閱&#x200B;*Acrobat說明*&#x200B;或適當的&#x200B;*Acrobat Reader DC擴充功能說明*。)
+離線租賃期結束時，收件者必須透過線上開啟檔案，或使用Acrobat或Acrobat Reader DC擴充功能功能表指令進行同步，再次與Document Security同步。 （請參閱&#x200B;*Acrobat說明*&#x200B;或適當的&#x200B;*Acrobat Reader DC擴充功能說明*。）
 
 因為允許離線存取的檔案需要在離線儲存檔案的電腦上快取關鍵資料，所以如果未經授權的使用者可以取得關鍵資料，檔案可能會受到危害。 為了補償這種可能性，提供了排程和手動金鑰變換選項，您可以配置以防止未經授權的人使用金鑰存取檔案。
 
@@ -473,7 +473,7 @@ Document Security可追蹤在受保護檔案上可能執行的各種自訂事件
 * Acrobat和Adobe Reader 10舊版不支援下列浮水印功能：
 
    * PDF浮水印
-   * 浮水印中的多個元素(文字/PDF)
+   * 浮水印中的多個元素（文字/PDF）
    * 進階選項，例如頁面範圍或顯示選項
    * 文字格式選項，例如指定的字型、字型名稱和顏色。 不過，舊版Acrobat和Reader將會以預設字型和顏色顯示文字內容。
 
@@ -524,7 +524,7 @@ Document Security可追蹤在受保護檔案上可能執行的各種自訂事件
 
    選取您要讓浮水印顯示的位置。 依預設，浮水印會同時出現在軟復本（線上）和硬復本（列印）上。
 
-1. 按一下[浮水印元素]下的[新增&#x200B;**&#x200B;**]，視需要新增更多浮水印元素。
+1. 按一下[浮水印元素]下的[新增&#x200B;****]，視需要新增更多浮水印元素。
 1. 按一下「確定」。
 
 ### 編輯動態浮水印範本 {#edit-a-dynamic-watermark-template}
@@ -561,7 +561,7 @@ Document Security可追蹤在受保護檔案上可能執行的各種自訂事件
 
 註冊電子郵件包含「註冊」頁面的連結，以及有關如何註冊的資訊。 受邀使用者註冊後，Document Security會發出一封包含啟動頁面連結的啟動電子郵件。 啟用後，帳戶將維持有效，直到您停用或刪除帳戶為止。
 
-如果您啟用內建註冊，您只需指定一次SMTP伺服器、註冊電子郵件詳細資訊、存取功能以及重設密碼電子郵件資訊。 啟用內建註冊之前，請確保您已在「使用者管理」中建立本機網域，並將「Document Security邀請使用者」角色指派給組織中的適當使用者和群組。 （請參閱[新增本機網域](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain)和[建立和設定角色](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)。）如果您不使用內建註冊，則必須使用AEM表單SDK建立您自己的使用者註冊系統。 請參閱[使用AEM forms程式設計](/help/forms/developing/introducing-java-api-soap-quick.md)中「為AEM forms開發SPI」的說明。 如果您未使用「內建註冊」選項，建議您在啟動電子郵件及使用者端登入畫面中設定訊息，通知使用者如何連絡管理員以取得新密碼或其他資訊。
+如果您啟用內建註冊，您只需指定一次SMTP伺服器、註冊電子郵件詳細資訊、存取功能以及重設密碼電子郵件資訊。 啟用內建註冊之前，請確保您已在「使用者管理」中建立本機網域，並將「Document Security邀請使用者」角色指派給組織中的適當使用者和群組。 （請參閱[新增本機網域](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain)和[建立和設定角色](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)。） 如果您未使用內建註冊，則必須使用AEM forms SDK建立自己的使用者註冊系統。 請參閱[使用AEM forms程式設計](/help/forms/developing/introducing-java-api-soap-quick.md)中「為AEM forms開發SPI」的說明。 如果您未使用「內建註冊」選項，建議您在啟動電子郵件及使用者端登入畫面中設定訊息，通知使用者如何連絡管理員以取得新密碼或其他資訊。
 
 **啟用並設定受邀使用者註冊**
 
@@ -586,9 +586,9 @@ Document Security可追蹤在受保護檔案上可能執行的各種自訂事件
 
 下列設定位於「受邀使用者註冊」頁面的「電子郵件限制篩選」區域中。
 
-**排除：**&#x200B;輸入要排除的使用者或群組的電子郵件地址。 若要排除多個使用者或群組，請在新行中輸入每個電子郵件地址。 若要排除屬於特定網域的所有使用者，請輸入萬用字元和網域名稱。 例如，若要排除example.com網域中的所有使用者，請輸入&amp;amp；ast；.example.com。
+**排除：**&#x200B;輸入要排除的使用者或群組的電子郵件地址。 若要排除多個使用者或群組，請在新行中輸入每個電子郵件地址。 若要排除屬於特定網域的所有使用者，請輸入萬用字元和網域名稱。 例如，若要排除example.com網域中的所有使用者，請輸入&amp;ast；.example.com。
 
-**包含：**&#x200B;輸入要包含的使用者或群組的電子郵件地址。 若要包含多個使用者或群組，請在新行中輸入每個電子郵件地址。 若要包含屬於特定網域的所有使用者，請輸入萬用字元和網域名稱。 例如，若要在example.com網域中包含所有使用者，請輸入&amp;amp；ast；.example.com。
+**包含：**&#x200B;輸入要包含的使用者或群組的電子郵件地址。 若要包含多個使用者或群組，請在新行中輸入每個電子郵件地址。 若要包含屬於特定網域的所有使用者，請輸入萬用字元和網域名稱。 例如，若要在example.com網域中包含所有使用者，請輸入&amp;ast；.example.com。
 
 ### 伺服器和註冊帳戶引數 {#server-and-registration-account-parameters}
 

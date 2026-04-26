@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: de5663b1-2b4c-4f8e-8547-cb892a4d7d56
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -24,19 +24,19 @@ ht-degree: 0%
 
 Java™ API快速入門(SOAP)適用於備份和還原服務API。
 
-[快速入門：使用Java進入備份模式](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
+[快速入門：使用Java™ API (SOAP)進入備份模式](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
 
-[快速入門：使用Java離開備份模式](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
+[快速入門：使用Java™ API(SOAP)離開備份模式](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
 AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SOAP。
 
 >[!NOTE]
 >
->使用AEM Forms進行程式設計的快速入門是以Forms作業系統為基礎。 不過，如果您使用其他作業系統(例如UNIX®)，請將Windows特定路徑取代為適用作業系統支援的路徑。 同樣地，如果您使用其他J2EE應用程式伺服器，請確定您指定有效的連線屬性。 請參閱[設定連線內容](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
+>使用AEM Forms進行程式設計的快速入門是以Forms作業系統為基礎。 不過，如果您使用其他作業系統（例如UNIX®），請將Windows特定路徑取代為適用作業系統支援的路徑。 同樣地，如果您使用其他J2EE應用程式伺服器，請確定您指定有效的連線屬性。 請參閱[設定連線內容](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
 
-## 快速入門(SOAP模式)：使用Java™ API進入備份模式 {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
+## 快速入門（SOAP模式）：使用Java™ API進入備份模式 {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
-下列Java™程式碼範例會以唯一標籤進入備份模式兩小時。 備份時間過期或明確退出備份模式後，Forms伺服器會返回從全域檔案儲存體清除檔案。 (請參閱[在Forms伺服器](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server)上進入備份模式。)
+下列Java™程式碼範例會以唯一標籤進入備份模式兩小時。 備份時間過期或明確退出備份模式後，Forms伺服器會返回從全域檔案儲存體清除檔案。 （請參閱[在Forms伺服器](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server)上進入備份模式。）
 
 ```java
  /*
@@ -149,9 +149,9 @@ AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SO
  
 ```
 
-## 快速入門(SOAP模式)：使用Java™ API離開備份模式 {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
+## 快速入門（SOAP模式）：使用Java™ API離開備份模式 {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-下列Java™程式碼範例明確導致Forms伺服器離開備份模式，並返回從全域檔案儲存體清除檔案。 (請參閱[在Forms伺服器](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)上離開備份模式。)
+下列Java™程式碼範例明確導致Forms伺服器離開備份模式，並返回從全域檔案儲存體清除檔案。 （請參閱[在Forms伺服器](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)上離開備份模式。）
 
 ```java
  /*

@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ca919915-c37b-4793-b5e2-21a464c5dcdf
-source-git-commit: 253e2b5a39fd4c2fe7ab9aeaafb72930b4aa39ff
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '948'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ Acrobat Reader DC Extensions憑證的「易記」名稱是說明憑證屬性的�
 
 **部署型別：**&#x200B;表示憑證的預期用途，例如生產。 該值可以是「評估」或「生產」。 如需與每個憑證型別相關聯的部署型別清單，請參閱憑證設定檔區段表格中的部署型別欄。
 
-**使用許可權版本：**&#x200B;說明憑證可以使用的使用許可權演演算法版本，例如V6.1。此版本不表示Acrobat或Acrobat Reader DC擴充功能的版本。
+**使用許可權版本：**&#x200B;說明憑證可以使用的使用許可權演演算法版本，例如V6.1。 此版本不表示Acrobat或Acrobat Reader DC擴充功能的版本。
 
 **設定檔代碼：**&#x200B;設定檔代碼是完整憑證屬性的簡短描述，例如P8。 如需與每種檔案型別相關聯的設定檔程式碼清單，請參閱「憑證設定檔」區段表格中的設定檔程式碼欄。
 
@@ -54,7 +54,7 @@ Acrobat Reader DC Extensions憑證的「易記」名稱是說明憑證屬性的�
   <tr>
    <th><p>設定檔代碼</p></th>
    <th><p>類型</p></th>
-   <th><p>有效期限</p></th>
+   <th><p>有效期</p></th>
    <th><p>部署型別</p></th>
   </tr>
  </thead>

@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Forms
 hide: true
 hidefromtoc: true
 exl-id: 68935045-89b1-4219-b111-88a4600200df
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '95'
 ht-degree: 1%
 
 ---
@@ -26,4 +26,4 @@ ht-degree: 1%
 
 若要重新啟動AEM SDK，請移至使用中命令視窗並按`Ctrl + C`命令以重新啟動SDK。
 
-建議您使用&#39;Ctrl + C&#39;命令重新啟動SDK。 使用替代方法重新啟動AEM SDK (例如停止Java™程式)，可能會導致AEM開發環境不一致。
+建議您使用&#39;Ctrl + C&#39;命令重新啟動SDK。 使用替代方法重新啟動AEM SDK （例如停止Java™程式），可能會導致AEM開發環境不一致。

@@ -12,16 +12,16 @@ feature: Adaptive Forms,Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: bda74b30-28c4-490f-86c3-9c6fce14d79d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2118'
 ht-degree: 2%
 
 ---
 
 # 判斷檔案是否符合PDF/A標準 {#determining-whether-documents-are-pdf-a-compliant}
 
-您可以使用Assembler服務來判斷PDF檔案是否符合PDF/A標準。 PDF/A檔案是一種旨在長期儲存檔案內容的封存格式。 字體內嵌在文件中，檔案未壓縮。因此，PDF/A 文件通常比標準 PDF 文件大。此外，PDF/A 文件不包含音訊和視訊內容。
+您可以使用Assembler服務來判斷PDF檔案是否符合PDF/A標準。 PDF/A檔案是一種旨在長期儲存檔案內容的封存格式。 字體嵌入在文件中，檔案未壓縮。 因此，PDF/A 文件通常比標準 PDF 文件大。 此外，PDF/A 文件不包含音訊和視訊內容。
 
 PDF/A-1規格包含兩個一致性層級，即A和B。兩個層級之間的主要差異在於邏輯結構（協助工具）支援，合規性層級B不需要此支援。無論合規性層級為何，PDF/A-1都會指定所有字型都內嵌在產生的PDF/A檔案中。 目前，驗證（和轉換）中僅支援PDF/A-1b。
 
@@ -73,8 +73,8 @@ Assembler服務會傳回指定輸入PDF檔案在包含`PDFAConformance`元素的
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (如果AEM Forms部署在JBoss上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss上，則為必要)
+* adobe-utilities.jar （如果AEM Forms部署在JBoss上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss上，則為必要）
 
 如果將AEM Forms部署在JBoss以外的受支援J2EE應用程式伺服器上，則必須將adobe-utilities.jar和jbossall-client.jar檔案取代為特定於AEM Forms部署所在J2EE應用程式伺服器的JAR檔案。 如需有關所有AEM Forms JAR檔案位置的資訊，請參閱[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
@@ -173,7 +173,7 @@ Assembler服務傳回的XML檔案會指定輸入PDF檔案是否符合PDF/A標準
 
 **另請參閱**
 
-[快速入門(SOAP模式)：使用Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api) (SOAP模式)判斷檔案是否符合PDF/A標準
+[快速入門（SOAP模式）：使用Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api) （SOAP模式）判斷檔案是否符合PDF/A標準
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

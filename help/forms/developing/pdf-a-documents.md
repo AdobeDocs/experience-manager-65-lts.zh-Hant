@@ -11,9 +11,9 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 387f917c-eae3-4326-88f4-3b77cb9e4d46
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2331'
+source-wordcount: '2382'
 ht-degree: 1%
 
 ---
@@ -24,8 +24,8 @@ ht-degree: 1%
 
 DocConverter服務可以將PDF檔案轉換為PDA/A檔案。 您可以使用此服務完成這些工作：
 
-* 將PDF檔案轉換為PDF/A檔案。 (請參閱[將檔案轉換為PDF/A檔案](pdf-a-documents.md#converting-documents-to-pdf-a-documents)。)
-* 判斷PDF檔案是否為PDF/A檔案。 (請參閱[以程式設計方式決定PDF/A合規性](pdf-a-documents.md#programmatically-determining-pdf-a-compliancy)。)
+* 將PDF檔案轉換為PDF/A檔案。 （請參閱[將檔案轉換為PDF/A檔案](pdf-a-documents.md#converting-documents-to-pdf-a-documents)。）
+* 判斷PDF檔案是否為PDF/A檔案。 （請參閱[以程式設計方式決定PDF/A合規性](pdf-a-documents.md#programmatically-determining-pdf-a-compliancy)。）
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ DocConverter服務可以將PDF檔案轉換為PDA/A檔案。 您可以使用此�
 
 ## 將檔案轉換為PDF/A檔案 {#converting-documents-to-pdf-a-documents}
 
-您可以使用DocConverter服務將PDF檔案轉換為PDF/A檔案。 由於PDF/A是用於長期儲存檔案內容的封存格式，因此所有字型全都內嵌且檔案都未壓縮。 因此，PDF/A 文件通常比標準 PDF 文件大。此外，PDF/A檔案不包含音訊和視訊內容。 將PDF檔案轉換為PDF/A檔案之前，請確定PDF檔案不是PDF/A檔案。
+您可以使用DocConverter服務將PDF檔案轉換為PDF/A檔案。 由於PDF/A是用於長期儲存檔案內容的封存格式，因此所有字型全都內嵌且檔案都未壓縮。 因此，PDF/A 文件通常比標準 PDF 文件大。 此外，PDF/A 文件不包含音訊和視訊內容。 將PDF檔案轉換為PDF/A檔案之前，請確定PDF檔案不是PDF/A檔案。
 
 PDF/A-1規格包含兩個一致性層級，即A和B。兩者之間的主要差異在於邏輯結構（協助工具）支援，合規性層級B不需要此支援。無論合規性層級為何，PDF/A-1都會指定所有字型都內嵌在產生的PDF/A檔案中。 目前，驗證（和轉換）中僅支援PDF/A-1b。
 
@@ -63,8 +63,8 @@ PDF/A-1規格包含兩個一致性層級，即A和B。兩者之間的主要差�
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-docconverter-client.jar
-* adobe-utilities.jar (如果將AEM Forms部署在JBoss Application Server上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss Application Server上，則為必要)
+* adobe-utilities.jar （如果將AEM Forms部署在JBoss Application Server上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss Application Server上，則為必要）
 
 如需關於這些JAR檔案位置的資訊，請參閱[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
@@ -74,7 +74,7 @@ PDF/A-1規格包含兩個一致性層級，即A和B。兩者之間的主要差�
 
 **參考PDF檔案以轉換為PDF/A檔案**
 
-擷取PDF檔案以轉換為PDF/A檔案。 如果您嘗試將PDF檔案(例如Acrobat表單)轉換為PDF/A檔案，則會造成例外狀況。
+擷取PDF檔案以轉換為PDF/A檔案。 如果您嘗試將PDF檔案（例如Acrobat表單）轉換為PDF/A檔案，則會造成例外狀況。
 
 **設定追蹤資訊**
 
@@ -142,7 +142,7 @@ PDF/A-1規格包含兩個一致性層級，即A和B。兩者之間的主要差�
 
 [使用PDF/A檔案](pdf-a-documents.md#working-with-pdf-a-documents)
 
-[快速入門(SOAP模式)：使用Java API將檔案轉換為PDF/A檔案](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API將檔案轉換為PDF/A檔案](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -227,8 +227,8 @@ PDF/A-1規格包含兩個一致性層級，即A和B。兩者之間的主要差�
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-docconverter-client.jar
-* adobe-utilities.jar (如果將AEM Forms部署在JBoss Application Server上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss Application Server上，則為必要)
+* adobe-utilities.jar （如果將AEM Forms部署在JBoss Application Server上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss Application Server上，則為必要）
 
 如需關於這些JAR檔案位置的資訊，請參閱[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
@@ -295,7 +295,7 @@ PDF/A-1規格包含兩個一致性層級，即A和B。兩者之間的主要差�
 
 [使用PDF/A檔案](pdf-a-documents.md#working-with-pdf-a-documents)
 
-[快速入門(SOAP模式)：使用Java API判斷PDF/A合規性](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API判斷PDF/A合規性](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

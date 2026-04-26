@@ -6,9 +6,9 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e3972784-9ded-4da8-b90c-ec2da9c3297a
-source-git-commit: 863ec2b6d8a6e22705c2f48a4f7bbb76fa34f7c7
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '802'
 ht-degree: 6%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=en) |
 | AEM 6.5 LTS | 本文章 |
 
 [!DNL Adobe Experience Manager Assets]中的這個XMP回寫功能會將中繼資料變更復寫至原始資產的轉譯。 當您從Assets內變更資產的中繼資料或上傳資產時，變更最初會儲存在資產階層中的中繼資料節點中。
@@ -28,11 +28,11 @@ XMP回寫功能可讓您將中繼資料變更傳播至資產的所有或特定�
 
 ![中繼資料](assets/metadata.png)
 
-在此案例中，[!DNL Experience Manager Assets]會針對儲存在資產階層中的資產中繼資料，將變更儲存在&#x200B;**[!UICONTROL 引數中的]** Title`dc:title`屬性。
+在此案例中，[!DNL Experience Manager Assets]會針對儲存在資產階層中的資產中繼資料，將變更儲存在`dc:title`引數中的&#x200B;**[!UICONTROL Title]**&#x200B;屬性。
 
 ![metadata_stored](assets/metadata_stored.png)
 
-但是，[!DNL Experience Manager Assets]不會自動將任何中繼資料變更傳播到資產的轉譯。 請參閱如何啟用XMP回寫[。](#enable-xmp-writeback)
+但是，[!DNL Experience Manager Assets]不會自動將任何中繼資料變更傳播到資產的轉譯。 請參閱如何啟用XMP回寫](#enable-xmp-writeback)。[
 
 ## 啟用XMP回寫 {#enable-xmp-writeback}
 
@@ -81,7 +81,7 @@ XMP回寫功能可讓您將中繼資料變更傳播至資產的所有或特定�
 
 >[!NOTE]
 >
->篩選僅適用於資產二進位檔中衍生自XMP來源的屬性。 對於衍生自非XMP來源(例如EXIF和IPTC格式)的屬性，篩選無法運作。 例如，建立資產的日期儲存在EXIF TIFF中名為`CreateDate`的屬性中。 Experience Manager將此值儲存在名為`exif:DateTimeOriginal`的中繼資料欄位中。 由於來源是非XMP來源，因此篩選在此屬性上無法運作。
+>篩選僅適用於資產二進位檔中衍生自XMP來源的屬性。 對於衍生自非XMP來源（例如EXIF和IPTC格式）的屬性，篩選無法運作。 例如，建立資產的日期儲存在EXIF TIFF中名為`CreateDate`的屬性中。 Experience Manager將此值儲存在名為`exif:DateTimeOriginal`的中繼資料欄位中。 由於來源是非XMP來源，因此篩選在此屬性上無法運作。
 
 1. 若要開啟[組態管理員]，請存取`https://[aem_server]:[port]/system/console/configMgr`。
 1. 開啟&#x200B;**[!UICONTROL Adobe CQ DAM XmpFilter]**&#x200B;設定。

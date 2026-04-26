@@ -12,9 +12,9 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 63ddfd09-17b5-48b4-b7ee-961f2bdd2ae2
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1442'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 0%
 * **線性化PDF**：已組織線性化PDF檔案，以在網路環境中啟用有效的增量存取。 PDF檔案在所有方面都是有效的PDF，且與所有現有檢視器和其他PDF應用程式相容。 也就是說，線性PDF可在下載時進行檢視。
 * 此選項無法改善使用者端上轉譯PDF表單時的效能。
 * **GuideRSL選項**：啟用使用執行階段共用程式庫產生表單指南（已棄用）。 這表示第一個要求會下載較小的SWF檔案，以及儲存在瀏覽器快取中的較大共用程式庫。 如需詳細資訊，請參閱Flex檔案中的RSL 。
-* 您也可以在使用者端上呈現表單，以改善Forms服務的效能。 (請參閱[在使用者端轉譯Forms](/help/forms/developing/rendering-forms-client.md)。)
+* 您也可以在使用者端上呈現表單，以改善Forms服務的效能。 （請參閱[在使用者端轉譯Forms](/help/forms/developing/rendering-forms-client.md)。）
 
 **轉譯表單**
 
@@ -124,7 +124,7 @@ Forms服務轉譯表單後，會傳回您必須寫入使用者端網頁瀏覽器
 
 **另請參閱**
 
-[快速入門(SOAP模式)：使用Java API最佳化效能](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API最佳化效能](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

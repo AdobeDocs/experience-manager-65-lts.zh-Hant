@@ -7,9 +7,9 @@ feature: Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: bea51406-a033-4db1-ba1d-8596891cd12d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '475'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/check-out-and-submit-assets.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/check-out-and-submit-assets.html?lang=en) |
 | AEM 6.5 | 本文章 |
 
 [!DNL Adobe Experience Manager Assets]可讓您簽出要編輯的資產，並在完成變更後重新簽入。 出庫資產後，只有您可以編輯、註釋、發佈、移動或刪除資產。 取出資產會鎖定資產。 在您將該資產簽回[!DNL Assets]之前，其他使用者無法對該資產執行任何這些操作。 但是，他們仍可變更已鎖定資產的中繼資料。
@@ -70,5 +70,5 @@ ht-degree: 5%
 
 >[!MORELIKETHIS]
 >
->* [了解籤入和簽出 [!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hant#how-app-works2)
->* [視訊教學課程，以了解籤入和簽出 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html?lang=zh-Hant)
+>* [了解籤入和簽出 [!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#how-app-works2)
+>* [視訊教學課程，以了解籤入和簽出 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)

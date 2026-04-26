@@ -9,9 +9,9 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 30038003-e307-46d1-b5f9-624d98a672a7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1504'
 ht-degree: 4%
 
 ---
@@ -26,7 +26,7 @@ Adobe Experience Manager包含100多項Dynamic Media影像傳送命令，用於�
 
 * JPG或PNG是提供高品質影像，且大小與重量皆可管理的最佳選擇。
 * 如果URL中未提供格式命令，則「動態媒體影像傳送」預設為JPG以進行傳送。
-* JPG會以10:1的比例壓縮，且通常會產生較小的影像檔案大小。 PNG會以大約2:1的比例壓縮，除非有時影像包含白色背景時。 不過，PNG檔案通常比JPG檔案大。
+* JPG會以10:1的比率壓縮，且通常會產生較小的影像檔案大小。 PNG會以大約2:1的比率壓縮，除非有時影像包含白色背景時。 不過，PNG檔案通常比JPG檔案大。
 * JPG使用有失真壓縮，這表示壓縮期間會捨棄圖片元素（畫素）。 另一方面，PNG使用無失真壓縮。
 * JPG通常會以比合成影像更好的逼真度壓縮像片影像，以銳利邊緣和對比度。
 * 如果您的影像包含透明度，請使用PNG，因為JPG不支援透明度。
@@ -46,10 +46,12 @@ Adobe Experience Manager包含100多項Dynamic Media影像傳送命令，用於�
 
 影像銳利化是控制網站上影像的最複雜方面，也會造成許多錯誤。 請參考下列實用資源，以花時間進一步瞭解銳利化和遮色片銳利化在Experience Manager中的運作方式：
 
-最佳實務白皮書[在Adobe Dynamic Media Classic中銳利化影像](/help/assets/assets/sharpening_images.pdf) (亦適用於Experience Manager)。
+最佳實務白皮書[在Adobe Dynamic Media Classic中銳利化影像](/help/assets/assets/sharpening_images.pdf) （亦適用於Experience Manager）。
 
-<!-- To be reviewed and updated: Broken link.
-See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
+<!--
+To be reviewed and updated: Broken link.
+See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
+-->
 
 有了Experience Manager，您可以在內嵌和/或傳送時銳利化影像。 不過，通常只會使用一種方法或另一種方法來銳利化影像，但不會同時使用兩者。 在URL上傳送影像時銳利化，通常能提供最佳結果。
 
@@ -67,7 +69,7 @@ See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photosh
 
       * **[!UICONTROL *臨界值&#x200B;*]**（0-255，效果敏感度。）
 
-            此參數可決定銳化像素與周圍區域的差異程度，之後才會被視為邊緣像素，濾鏡會銳化這些像素。**[!UICONTROL threshold]**&#x200B;參數有助於避免色彩相似的區域過度銳利化，例如膚色。例如，閾值為12會忽略膚色亮度的微小變化，以避免加上「雜訊」，同時仍會加上邊緣對比度至高對比區域，例如睫毛與皮膚相遇的區域。
+            此參數可決定銳化像素與周圍區域的差異程度，之後才會被視為邊緣像素，濾鏡會銳化這些像素。 **[!UICONTROL threshold]**參數有助於避免色彩相似的區域過度銳利化，例如膚色。 例如，閾值為12會忽略膚色亮度的微小變化，以避免加上「雜訊」，同時仍會加上邊緣對比度至高對比區域，例如睫毛與皮膚相遇的區域。
         
         如需如何設定這三個引數的詳細資訊，包括篩選使用的最佳實務，請參閱下列資源：
 
@@ -88,7 +90,7 @@ See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photosh
 
 將單色引數設定保留為0。
 
-### JPEG壓縮(`&qlt=`)的最佳作法 {#best-practices-for-jpeg-compression-qlt}
+### JPEG壓縮的最佳作法(`&qlt=`) {#best-practices-for-jpeg-compression-qlt}
 
 * 此引數會控制JPG編碼品質。 較高的值表示影像品質較高，但檔案大小較大；或者，較低的值表示影像品質較低，但檔案大小較小。 此引數的範圍為0至100。
 * 若要最佳化品質，請勿將引數值設為100。 設定90或95與100之間的差異幾乎無法察覺，但100卻不必要地增加了影像檔案的大小。 因此，若要最佳化品質但避免影像檔案變得太大，請將`qlt= value`設為90或95。
@@ -118,7 +120,7 @@ JPG壓縮的最佳作法是使用`&qlt=85,0`。
 
 此設定組合可在大多數情況下提供絕佳的結果。
 
-如果影像需要進一步最佳化，請從半徑設定為0.2或0.3開始，逐步微調銳利化（不銳利化遮色片）引數。然後，逐漸將數量從1.75增加到最大值4 (相當於Photoshop中的400%)。 檢查是否達到所需結果。
+如果影像需要進一步最佳化，請從半徑設定為0.2或0.3開始，逐步微調銳利化（不銳利化遮色片）引數。 然後，逐漸將數量從1.75增加到最大值4 （相當於Photoshop中的400%）。 檢查是否達到所需結果。
 
 如果銳利化結果仍然不令人滿意，請以小數點為增量增加半徑。 對於每個小數點增量，請在1.75處重新啟動該數量，並逐漸將其增加到4。 重複此程式，直到您達到想要的結果為止。 雖然上述值是經過創意工作室驗證的方法，但請記住，您可以從其他值開始，並遵循其他策略。 結果是否令您滿意是主觀問題，因此結構化的實驗是關鍵。
 
@@ -126,4 +128,4 @@ JPG壓縮的最佳作法是使用`&qlt=85,0`。
 
 * 請直接在URL上即時嘗試並測試不同的引數。
 * 如需參考最佳做法，請記得您可以將「動態媒體影像伺服」命令群組至影像預設集。 影像預設集基本上是含有自訂預設集名稱（例如`$thumb_low$`和`&product_high$`）的URL命令巨集。 URL路徑中的自訂預設集名稱會呼叫這些預設集。 這類功能可協助您針對網站上不同的影像使用模式管理命令和品質設定，並縮短URL的整體長度。
-* Experience Manager也提供更進階的方式來調整影像品質，例如在擷取時套用銳利化影像。 若是進階使用案例，其中有多種選項可調整及最佳化演算結果，則[Adobe Professional Services](https://business.adobe.com/tw/customers/consulting-services/main.html)可協助您提供自訂的深入分析和最佳作法。
+* Experience Manager也提供更進階的方式來調整影像品質，例如在擷取時套用銳利化影像。 若是進階使用案例，其中有多種選項可調整及最佳化演算結果，[Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html)可協助您使用自訂的insight及最佳實務。

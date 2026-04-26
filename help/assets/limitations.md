@@ -9,9 +9,9 @@ feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5aa07827-8483-4a99-9197-a17485226a13
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '350'
 ht-degree: 8%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 8%
 | 資產 — 限制型別 | 最佳實務 | 強加的限制 |
 | --- | --- | --- |
 | **影像** — 每個影像的智慧型裁切數目 | 5 | 100 |
-| **所有集合** — 每個集合的重複資產數目 | 無重複專案 | 20‡ |
+| **所有集合** — 每個集合的重複資產數目 | 無重複項目 | 20‡ |
 | **所有集合** — 每個集合的資產數量上限 | 每組5至10個影像 | 1000 |
 | **迴轉集** — 每個2D集的列/欄數上限 | 每組12至18個影像 | 1000 |
 | **PDF** — 要視為擷取的PDF最大頁數 |  | 100 （適用於所有PDF） |
@@ -56,8 +56,10 @@ Dynamic Media不支援下列Web瀏覽器和作業系統組合。
 
 ## 終止支援Secure Socket Layer 2.0和3.0以及Transport Layer Security 1.0和1.1 {#tls}
 
-<!-- CQDOC-19433 (original ticket)
-and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
+<!--
+CQDOC-19433 (original ticket)
+and CQDOC-19792 (removed as per this ticket December 5, 2022)
+-->
 
 自2024年4月30日起，Adobe Dynamic Media將停止支援下列專案：
 

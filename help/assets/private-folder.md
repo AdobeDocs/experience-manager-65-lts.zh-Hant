@@ -7,10 +7,10 @@ feature: Collaboration
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: adcf1276-f4c3-4c32-a830-cc968185dca3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 4%
+source-wordcount: '603'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/private-folder.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/private-folder.html?lang=en) |
 | AEM 6.5 | 本文章 |
 
 您可以在[!DNL Adobe Experience Manager Assets]使用者介面中建立您專屬的私人資料夾。 您可以與其他使用者共用此私人資料夾，並為他們指派各種許可權。 根據您指派的許可權層級，使用者可以在資料夾上執行各種工作，例如，檢視資料夾內的資產或編輯資產。
@@ -31,13 +31,13 @@ ht-degree: 4%
 
 若要建立和共用私人資料夾：
 
-1. 在[!DNL Assets]主控台中，按一下工具列中的[建立] **&#x200B;**，然後從功能表中選擇[資料夾] **&#x200B;**。
+1. 在[!DNL Assets]主控台中，按一下工具列中的[建立] ****，然後從功能表中選擇[資料夾] ****。
 
    ![建立資產資料夾](assets/Create-folder.png)
 
 1. 在&#x200B;**[!UICONTROL 建立資料夾]**&#x200B;對話方塊中，輸入資料夾的標題和名稱（選擇性），並選取&#x200B;**[!UICONTROL 私人]**&#x200B;選項。
 
-1. 按一下「**[!UICONTROL 建立]**」。已建立私人資料夾。
+1. 按一下「**[!UICONTROL 建立]**」。 已建立私人資料夾。
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 
@@ -61,7 +61,7 @@ ht-degree: 4%
    >
    >私人資料夾至少有一個成員具有`Owner`角色。 因此，管理員無法從私人資料夾中移除所有擁有者成員。 但是，若要從私人資料夾中移除現有的擁有者（以及管理員本身），管理員必須新增其他使用者作為擁有者。
 
-1. 按一下「**[!UICONTROL 儲存]**」。根據您指派的角色，當使用者登入[!DNL Assets]時，會指派一組許可權給使用者處理您的私人資料夾。
+1. 按一下「**[!UICONTROL 儲存]**」。 根據您指派的角色，當使用者登入[!DNL Assets]時，會指派一組許可權給使用者處理您的私人資料夾。
 1. 按一下&#x200B;**[!UICONTROL 確定]**&#x200B;關閉確認訊息。
 1. 共用資料夾的使用者會收到共用通知。 使用使用者的認證登入[!DNL Assets]以檢視通知。
 

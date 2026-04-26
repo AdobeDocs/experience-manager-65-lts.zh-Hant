@@ -12,9 +12,9 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 66736a58-b2ef-404e-b94c-9bc407828359
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1334'
 ht-degree: 0%
 
 ---
@@ -138,7 +138,7 @@ ht-degree: 0%
    * 字串值，指定新增內容的存放區。 預設存放區為`SpacesStore`。 此值為必要引數。
    * 字串值，指定新增內容的空間完整路徑（例如`/Company Home/Test Directory`）。 此值為必要引數。
    * 代表新內容的節點名稱（例如，`MortgageForm.pdf`）。 此值為必要引數。
-   * 字串值，指定節點型別。 若要新增內容(例如PDF檔案)，請指定`{https://www.alfresco.org/model/content/1.0}content`。 此值為必要引數。
+   * 字串值，指定節點型別。 若要新增內容（例如PDF檔案），請指定`{https://www.alfresco.org/model/content/1.0}content`。 此值為必要引數。
    * 代表內容的`com.adobe.idp.Document`物件。 此值為必要引數。
    * 字串值，指定編碼值（例如，`UTF-8`）。 此值為必要引數。
    * 指定如何處理版本資訊的`UpdateVersionType`列舉值(例如，`UpdateVersionType.INCREMENT_MAJOR_VERSION`以遞增內容版本。 )此值是必要引數。

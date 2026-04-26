@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Forms
 hide: true
 hidefromtoc: true
 exl-id: e2d1b548-ce30-471b-b01c-ce37b737aeb5
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
@@ -37,9 +37,11 @@ ht-degree: 0%
    1. 新增邏輯，讓您可以將交易計數儲存在某個整數變數中，例如`transaction_count`。
    1. 作業成功時，新增`InvocationContextStack.recordTransactionCount(transaction_count)`。
 
-<!--For example, you can set count for your custom component by importing class `"com.adobe.idp.dsc.InvocationContextStack"` in the code available at `adobe-livecycle-client.jar`  and determine the transaction count basis API input/result and add (In this case we add count is equal to 3):
+<!--
+For example, you can set count for your custom component by importing class `"com.adobe.idp.dsc.InvocationContextStack"` in the code available at `adobe-livecycle-client.jar`  and determine the transaction count basis API input/result and add (In this case we add count is equal to 3):
 `InvocationContextStack.recordTransactionCount(<count>).` to 
-`InvocationContextStack.recordTransactionCount(3)`.-->
+`InvocationContextStack.recordTransactionCount(3)`.
+-->
 
 ## 相關文章
 

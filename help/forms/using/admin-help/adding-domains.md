@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 70b0472e-2547-4887-b761-b200dc7b714a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 1. 在管理控制檯中，按一下「設定>使用者管理>網域管理」。
 1. 按一下新增企業網域。
 1. 在ID方塊中，輸入網域的唯一識別碼，並在Name方塊中，輸入網域的描述性名稱。 （請參閱[網域名稱和ID的重要考量](adding-domains.md#important-considerations-for-domain-names-and-ids)。）
-1. 指定是否啟用帳戶鎖定。 （請參閱[設定帳戶鎖定設定](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings)。）依預設，會選取[啟用帳戶鎖定]。
+1. 指定是否啟用帳戶鎖定。 （請參閱[設定帳戶鎖定設定](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings)。） 依預設，會選取[啟用帳戶鎖定]。
 1. 按一下「新增驗證」，然後在「驗證提供者」清單中選取提供者，視您的組織所使用的驗證機制而定。 可能的值包括LDAP、Kerberos、SAML或自訂驗證提供者。
 
    如果您選取LDAP，則可以使用目錄組態中指定的LDAP伺服器，也可以選擇不同的LDAP伺服器來用於驗證。 如果您選擇不同的伺服器，您的使用者必須存在於兩個LDAP伺服器上。
@@ -41,7 +41,7 @@ ht-degree: 0%
 1. 在管理控制檯中，按一下「設定>使用者管理>網域管理」。
 1. 按一下「新增本機網域」。
 1. 在ID方塊中，輸入網域的唯一識別碼，並在Name方塊中，輸入網域的描述性名稱。 （請參閱[網域名稱和ID的重要考量](adding-domains.md#important-considerations-for-domain-names-and-ids)。）
-1. 指定是否啟用帳戶鎖定，然後按一下[確定]。 （請參閱[設定帳戶鎖定設定](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings)。）依預設，會選取[啟用帳戶鎖定]。
+1. 指定是否啟用帳戶鎖定，然後按一下[確定]。 （請參閱[設定帳戶鎖定設定](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings)。） 依預設，會選取[啟用帳戶鎖定]。
 
 ## 新增混合式網域 {#add-a-hybrid-domain}
 

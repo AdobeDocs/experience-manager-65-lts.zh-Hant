@@ -11,9 +11,9 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 06869949-4a71-4d8a-9431-b94df13985e9
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2549'
+source-wordcount: '2577'
 ht-degree: 1%
 
 ---
@@ -29,9 +29,9 @@ PDF公用程式服務可以在PDF和XDP檔案格式之間轉換、設定和擷�
 您可以使用PDF公用程式服務完成這些工作：
 
 * 將PDF檔案轉換為XDP檔案。
-* 將XDP檔案轉換為PDF檔案。 (請參閱[將XDP檔案轉換為PDF檔案](pdf-utilities.md#converting-xdp-documents-into-pdf-documents)。)
-* 擷取PDF檔案屬性。 (請參閱[擷取PDF檔案屬性](pdf-utilities.md#retrieving-pdf-document-properties)。)
-* 儲存PDF檔案並將其最佳化，以快速進行網頁檢視。 (請參閱[設定PDF檔案儲存模式](pdf-utilities.md#setting-pdf-document-save-modes)。)
+* 將XDP檔案轉換為PDF檔案。 （請參閱[將XDP檔案轉換為PDF檔案](pdf-utilities.md#converting-xdp-documents-into-pdf-documents)。）
+* 擷取PDF檔案屬性。 （請參閱[擷取PDF檔案屬性](pdf-utilities.md#retrieving-pdf-document-properties)。）
+* 儲存PDF檔案並將其最佳化，以快速進行網頁檢視。 （請參閱[設定PDF檔案儲存模式](pdf-utilities.md#setting-pdf-document-save-modes)。）
 
 >[!NOTE]
 >

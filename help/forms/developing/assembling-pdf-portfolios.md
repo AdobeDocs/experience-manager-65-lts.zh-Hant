@@ -12,9 +12,9 @@ feature: Adaptive Forms, Document Services
 hide: true
 hidefromtoc: true
 exl-id: 43460ac1-a152-4a0d-943f-1b3ed007f089
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '1842'
 ht-degree: 0%
 
 ---
@@ -84,8 +84,8 @@ DXX檔案必須包含具有巢狀`Navigator`標籤的`Portfolio`標籤。 請注
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (如果AEM Forms部署在JBoss上，則為必要)
-* jbossall-client.jar (如果AEM Forms部署在JBoss上，則為必要)
+* adobe-utilities.jar （如果AEM Forms部署在JBoss上，則為必要）
+* jbossall-client.jar （如果AEM Forms部署在JBoss上，則為必要）
 
 **建立PDF組合器使用者端**
 
@@ -186,7 +186,7 @@ PDF Portfolio會在集合物件中傳回。 逐一檢視集合物件，並將PDF
 
 **另請參閱**
 
-[快速入門(SOAP模式)：使用Java API組合PDF產品組合](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API組合PDF產品組合](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -235,8 +235,8 @@ PDF Portfolio會在集合物件中傳回。 逐一檢視集合物件，並將PDF
    * 建立`MyMapOf_xsd_string_To_xsd_anyType`物件。 此集合物件用於儲存建立PDF Portfolio所需的輸入檔案。
    * 針對每個輸入檔案，建立`MyMapOf_xsd_string_To_xsd_anyType_Item`物件。
    * 將代表索引鍵名稱的字串值指派給`MyMapOf_xsd_string_To_xsd_anyType_Item`物件的`key`欄位。 此值必須符合DDX檔案中指定的元素值。 （針對每個輸入檔案執行此工作。）
-   * 將儲存輸入檔案的`BLOB`物件指派給`MyMapOf_xsd_string_To_xsd_anyType_Item`物件的`value`欄位。 (針對每個輸入PDF檔案執行此工作。)
-   * 將`MyMapOf_xsd_string_To_xsd_anyType_Item`物件新增至`MyMapOf_xsd_string_To_xsd_anyType`物件。 叫用`MyMapOf_xsd_string_To_xsd_anyType`物件的`Add`方法並傳遞`MyMapOf_xsd_string_To_xsd_anyType`物件。 (針對每個輸入PDF檔案執行此工作。)
+   * 將儲存輸入檔案的`BLOB`物件指派給`MyMapOf_xsd_string_To_xsd_anyType_Item`物件的`value`欄位。 （針對每個輸入PDF檔案執行此工作。）
+   * 將`MyMapOf_xsd_string_To_xsd_anyType_Item`物件新增至`MyMapOf_xsd_string_To_xsd_anyType`物件。 叫用`MyMapOf_xsd_string_To_xsd_anyType`物件的`Add`方法並傳遞`MyMapOf_xsd_string_To_xsd_anyType`物件。 （針對每個輸入PDF檔案執行此工作。）
 
 1. 設定執行階段選項。
 

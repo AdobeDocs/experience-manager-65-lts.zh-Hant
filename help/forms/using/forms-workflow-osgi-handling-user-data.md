@@ -1,6 +1,6 @@
 ---
-title: OSGi上以Forms為中心的工作流程 | 處理使用者資料
-description: OSGi上以Forms為中心的工作流程 | 處理使用者資料
+title: OSGi上的Forms中心工作流程|處理使用者資料
+description: OSGi上的Forms中心工作流程|處理使用者資料
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin,User
@@ -9,14 +9,14 @@ feature: Adaptive Forms,AEM Forms on OSGi
 hide: true
 hidefromtoc: true
 exl-id: a817fa19-ae22-4c77-8a8e-6c4deed10d67
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 1%
+source-wordcount: '1032'
+ht-degree: 0%
 
 ---
 
-# OSGi上以Forms為中心的工作流程 | 處理使用者資料 {#forms-centric-workflows-on-osgi-handling-user-data}
+# OSGi上的Forms中心工作流程|處理使用者資料 {#forms-centric-workflows-on-osgi-handling-user-data}
 
 以Forms為中心的AEM工作流程可讓您自動執行以Forms為中心的真實商業流程。 工作流程由一系列步驟組成，這些步驟會以關聯工作流程模型中指定的順序執行。 每個步驟都會執行特定動作，例如將任務指派給使用者或傳送電子郵件訊息。 工作流程可與存放庫中的資產、使用者帳戶和服務互動。 因此，工作流程可以協調涉及Experience Manager任何層面的複雜活動。
 
@@ -53,7 +53,7 @@ ht-degree: 1%
    <td>/etc/workflow/instances/[server_id]/[date]/[workflow-instance]/</td>
   </tr>
   <tr>
-   <td><strong>總額</strong></td>
+   <td><strong>承載</strong></td>
    <td>/var/fd/dashboard/payload/[server_id]/[date]/<br /> [payload-id]/</td>
    <td>/etc/fd/dashboard/payload/[server_id]/[date]/<br /> [payload-id]/</td>
   </tr>
@@ -63,7 +63,7 @@ ht-degree: 1%
    <td>/etc/fd/dashboard/instances/[server_id]/<br /> [日期]/[workflow-instance]/draft/[workitem]/</td>
   </tr>
   <tr>
-   <td><strong>記錄</strong></td>
+   <td><strong>歷史記錄</strong></td>
    <td>/var/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow_instance]/history/</td>
    <td>/etc/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow_instance]/history/</td>
   </tr>
@@ -159,5 +159,5 @@ ht-degree: 1%
 您也可以使用API來存取及移除節點和屬性。 如需詳細資訊，請參閱下列檔案。
 
 * [如何以程式設計方式存取AEM JCR](/help/sites-developing/access-jcr.md)
-* [正在移除節點和屬性](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
-* [API參考](https://helpx.adobe.com/tw/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
+* [移除節點和屬性](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
+* [API參考](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)

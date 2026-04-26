@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a42d1094-293e-4f1a-a8f7-376dc8d34807
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1457'
 ht-degree: 0%
 
 ---
@@ -167,7 +167,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->若要移除包含儲存在協力廠商存放庫(EMC Documentum Content Server、IBM FileNet Content Manager或IBM Content Manager)中的資產的封存，您也必須使用Workbench從存放庫中刪除資產檔案。
+>若要移除包含儲存在協力廠商存放庫（EMC Documentum Content Server、IBM FileNet Content Manager或IBM Content Manager）中的資產的封存，您也必須使用Workbench從存放庫中刪除資產檔案。
 
 1. 在Administration Console中，按一下「服務>應用程式和服務>封存管理」。
 1. 在「歸檔管理」頁面上，選取要移除的歸檔核取方塊，然後按一下移除。

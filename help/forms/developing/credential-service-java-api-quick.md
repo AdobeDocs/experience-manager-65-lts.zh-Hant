@@ -1,6 +1,6 @@
 ---
-title: 認證服務Java&amp；trade； API QuickStart(SOAP)
-description: 瞭解如何使用Java&amp；trade； API快速入門(SOAP)在AEM Forms中匯入和刪除認證。
+title: 認證服務Java&trade； API QuickStart(SOAP)
+description: 瞭解如何使用Java&trade； API快速入門(SOAP)在AEM Forms中匯入和刪除認證。
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 7314fbae-05af-423d-92c8-f8c608048956
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -22,21 +22,21 @@ ht-degree: 0%
 
 Java™ API快速入門(SOAP)可用於認證服務。
 
-[快速入門(SOAP模式)：使用Java匯入認證](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
+[快速入門（SOAP模式）：使用Java™ API匯入認證](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
-[快速入門(SOAP模式)：使用Java刪除認證](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[快速入門（SOAP模式）：使用Java™ API刪除認證](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
 AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SOAP。
 
 >[!NOTE]
 >
->使用AEM表單進行程式設計的快速入門是根據在JBoss®和Windows作業系統上部署的Forms伺服器。 不過，如果您使用其他作業系統(例如UNIX®)，請將Windows特定路徑取代為適用作業系統支援的路徑。 同樣地，如果您使用其他J2EE應用程式伺服器，請確定您指定有效的連線屬性。 請參閱[設定連線內容](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
+>使用AEM表單進行程式設計的快速入門是根據在JBoss®和Windows作業系統上部署的Forms伺服器。 不過，如果您使用其他作業系統（例如UNIX®），請將Windows特定路徑取代為適用作業系統支援的路徑。 同樣地，如果您使用其他J2EE應用程式伺服器，請確定您指定有效的連線屬性。 請參閱[設定連線內容](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
 
 >[!NOTE]
 >
 >您無法使用Web服務執行認證服務作業。
 
-## 快速入門(SOAP模式)：使用Java™ API匯入認證 {#quick-start-soap-mode-importing-credentials-using-the-java-api}
+## 快速入門（SOAP模式）：使用Java™ API匯入認證 {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
 下列程式碼範例會根據名為&#x200B;*cred.p12*&#x200B;的檔案匯入認證。 用來匯入認證的別名值為`Secure`。 （請參閱[使用信任管理員API匯入認證](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)。）
 
@@ -137,7 +137,7 @@ AEM Forms作業可使用AEM Forms強型別API執行，且連線模式應設為SO
  
 ```
 
-## 快速入門(SOAP模式)：使用Java™ API刪除認證 {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
+## 快速入門（SOAP模式）：使用Java™ API刪除認證 {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
 下列程式碼範例會根據別名值&#x200B;*secure*&#x200B;刪除認證。 （請參閱[使用信任管理員API](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api)刪除認證。）
 

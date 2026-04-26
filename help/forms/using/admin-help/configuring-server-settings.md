@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: da8031f2-26ab-41e2-bf54-7032727ca192
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2643'
+source-wordcount: '2665'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 0%
 >
 >AEM Forms版本已棄用Flex Workspace。
 
-依預設，AEM表單傳送的電子郵件會包含連結至(JEE不建議使用AEM表單) Flex Workspace。 您可以設定AEM表單以傳送包含AEM Forms Workspace連結的電子郵件。 若要進一步瞭解AEM Forms Workspace優於(JEE上的AEM Forms已棄用) Flex Workspace，請參閱[此](/help/forms/using/features-html-workspace-available-flex.md)文章。
+依預設，AEM表單傳送的電子郵件會包含連結至（JEE不建議使用AEM表單） Flex Workspace。 您可以設定AEM表單以傳送包含AEM Forms Workspace連結的電子郵件。 若要進一步瞭解AEM Forms Workspace優於（JEE上的AEM Forms已棄用） Flex Workspace，請參閱[此](/help/forms/using/features-html-workspace-available-flex.md)文章。
 
 1. 在管理控制檯中，按一下首頁>服務>表單工作流程>伺服器設定>任務通知。
 1. 開啟任務指派範本。
