@@ -24,7 +24,7 @@ ht-degree: 2%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html)上的[AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html)上的AEM Forms 。
 
 ## 概觀 {#overview}
 
@@ -203,7 +203,7 @@ _
 
 ### 設定值 {#set-value-of}
 
-]**規則型別的**[!UICONTROL &#x200B;設定值可讓您依據指定的條件是否符合，來設定表單物件的值。 值可以設定為另一個物件的值、常值字串、從數學運算式或函式衍生的值、另一個物件的屬性值，或表單資料模型服務的輸出。 同樣地，您可以檢查元件、字串、屬性或衍生自函式或數學運算式的值的條件。
+**規則型別的**&#x200B;設定值可讓您依據指定的條件是否符合，來設定表單物件的值。 值可以設定為另一個物件的值、常值字串、從數學運算式或函式衍生的值、另一個物件的屬性值，或表單資料模型服務的輸出。 同樣地，您可以檢查元件、字串、屬性或衍生自函式或數學運算式的值的條件。
 
 規則型別的「設定值」不適用於所有表單物件，例如面板和工具列按鈕。 標準的「設定值」規則具有以下結構：
 

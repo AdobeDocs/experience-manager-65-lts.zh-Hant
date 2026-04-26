@@ -46,7 +46,7 @@ CRX QueryBuilder REST介面透過Java API和REST API公開Asset Share Query Buil
 
 ## 使用Query Builder API建立服務  {#creating-a-service-using-query-builder-api-nbsp}
 
-使用Query Builder API建立服務的先決條件是[使用Query Builder API建立和部署CQ OSGI組合](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)和[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en)。
+使用Query Builder API建立服務的先決條件是[使用Query Builder API建立和部署CQ OSGI組合](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)和[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en)。
 
 1. 建立包含適當註解的OSGi服務。 若要存取QueryBuilder，請使用：
 
@@ -62,7 +62,7 @@ CRX QueryBuilder REST介面透過Java API和REST API公開Asset Share Query Buil
     predicateGroup.setAllRequired(true);
    ```
 
-1. 新增述詞至新建立的predicateGroup。 幾個有用的述詞結構是： 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)中的[JcrBoolPropertyPredicateEvaluator、5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)中的[JcrPropertyPredicateEvaluator、5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)中的[RangePropertyPredicateEvaluator、5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)中的[DateRangePredicateEvaluator和5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)中的[TypePredicateEvaluator。
+1. 新增述詞至新建立的predicateGroup。 幾個有用的述詞結構是： 5.3[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)中的[JcrBoolPropertyPredicateEvaluator、5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)中的[JcrPropertyPredicateEvaluator、5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)中的[RangePropertyPredicateEvaluator、5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)中的[DateRangePredicateEvaluator和5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)中的TypePredicateEvaluator。
 
    對於靜態報表，則是以硬式編碼撰寫述詞，而對於動態報表，則是從請求擷取述詞。
 

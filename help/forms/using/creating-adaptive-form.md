@@ -21,7 +21,7 @@ ht-degree: 10%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html)上的[AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html)上的AEM Forms 。
 
 ## 建立最適化表單 {#strong-create-an-adaptive-form-strong}
 
@@ -57,9 +57,9 @@ ht-degree: 10%
 
 1. 選擇 **[!UICONTROL 建立]**。 系統隨即建立最適化表單，並顯示對話方塊以開啟表單進行編輯。
 
-   完成指定所有屬性之後，請按一下[建立]。**** 系統隨即建立最適化表單，並顯示對話方塊以開啟表單進行編輯。
+   完成指定所有屬性之後，請按一下[建立]。**&#x200B;** 系統隨即建立最適化表單，並顯示對話方塊以開啟表單進行編輯。
 
-   完成指定所有屬性之後，請按一下[建立]。**** 系統隨即建立最適化表單，並顯示對話方塊以開啟表單進行編輯。
+   完成指定所有屬性之後，請按一下[建立]。**&#x200B;** 系統隨即建立最適化表單，並顯示對話方塊以開啟表單進行編輯。
 
 1. 選取&#x200B;**[!UICONTROL 開啟]**&#x200B;以在新索引標籤中開啟新建立的表單。 表單會開啟以進行編輯，並顯示範本中可用的內容。 也會顯示側邊欄，以便您根據需求自訂新建立的表單。
 
@@ -204,7 +204,7 @@ XML和JSON結構描述代表組織中後端系統產生或使用資料的結構�
 
 1. （僅限事件式自動儲存）執行下列步驟，設定事件式自動儲存的選項。
 
-   1. 在此事件&#x200B;]**之後的**[!UICONTROL &#x200B;自動儲存方塊中，指定[GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)事件。 每次運算式評估為TRUE時，都會儲存表單。
+   1. 在此事件&#x200B;**之後的**&#x200B;自動儲存方塊中，指定[GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)事件。 每次運算式評估為TRUE時，都會儲存表單。
 
 1. （選擇性）若要自動儲存匿名使用者的內容，請選取&#x200B;**[!UICONTROL 啟用匿名使用者的自動儲存]**&#x200B;選項，然後按一下&#x200B;**[!UICONTROL 確定]**。
 

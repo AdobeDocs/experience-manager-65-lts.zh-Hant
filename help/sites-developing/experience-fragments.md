@@ -150,7 +150,7 @@ ht-degree: 0%
 * 新增元件，
 * 然後以HTML格式或JSON格式將其匯出為Adobe Target選件。
 
-可在AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites)的作者執行個體上[啟用此功能。 它需要有效的Adobe Target設定，以及Link Externalizer設定。
+可在AEM[&#128279;](/help/sites-administering/experience-fragments-target.md#Prerequisites)的作者執行個體上啟用此功能。 它需要有效的Adobe Target設定，以及Link Externalizer設定。
 
 Link Externalizer是用來判斷建立Target選件的HTML版本時所需的URL，然後傳送至Adobe Target。 Adobe Target需要公開存取Target HTML選件中的所有連結。 在使用體驗片段和這些連結參照的任何資源之前，先發佈這些體驗片段和資源。
 
