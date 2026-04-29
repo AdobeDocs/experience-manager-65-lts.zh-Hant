@@ -8,38 +8,38 @@ feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin,Developer,User
 exl-id: 6dbc943b-3bca-4926-896d-f1471a49a70f
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '943'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
 # 關於 Experience Hub {#aem-experience-hub}
 
-Experience Hub推出管理Adobe Experience Manager內容、資產和網站的集中式起點。 Experience Hub的設計目的是提供個人化體驗，可讓您根據自己的角色和目標，順暢地在AEM生態系統中導覽。 它以指南的方式提供關鍵的深入解析和建議的動作，協助您有效率地達成目標。 Experience Hub擁有清晰、以人物為導向的版面配置，可確保快速存取基本工具，並支援所有AEM功能中精簡而有效的體驗。
+Experience Hub 推出一個集中化的起點，用於在 Adobe Experience Manager 中管理內容、資產和網站。 Experience Hub 旨在提供個人化體驗，可讓您根據自己的角色和目標順暢地導覽 AEM 生態系統。 它以指南的方式提供關鍵的深入解析和建議的動作，協助您有效率地達成目標。 Experience Hub 具備以人物誌為導向的清晰版面，確保快速存取基本工具，有助於在所有 AEM 功能中提供簡化且有效的體驗。
 
-觀看重新構想的AEM Experience Hub工作區快速導覽（2分鐘39秒）。
+觀看重新設計的 AEM Experience Hub 工作區之快速導覽 (2 分鐘 39 秒)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3475203/?captions=chi_hant&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community.
 -->
 
-## Experience Hub特寫 {#aem-experience-hub-about}
+## Experience Hub 特寫 {#aem-experience-hub-about}
 
-1. 若要開始使用，請按一下[Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home)以開啟其首頁。
+1. 若要開始使用，請按一下[「Adobe Experience Cloud」](https://experience.adobe.com/#/@foundationinternal/home)以開啟其首頁。
 
-   ![Adobe Experience Cloud首頁](/help/assets/assets-experience-hub/experience-cloud-experiencemanager-ams.png)
+   ![Adobe Experience Cloud 首頁](/help/assets/assets-experience-hub/experience-cloud-experiencemanager-ams.png)
 
-1. 在&#x200B;**快速存取**&#x200B;群組中，按一下&#x200B;[**Experience Manager**](https://experience.adobe.com)。
-1. 第一次存取時，系統會指派&#x200B;**內容作者**&#x200B;預設集（在頁面右上角附近顯示）。 它可控制您所看到的Widget、導覽專案及內容。
+1. 在&#x200B;**快速存取**&#x200B;分組中，按一下&#x200B;[**「Experience Manager」**](https://experience.adobe.com)。
+1. 第一次存取時，系統會指派&#x200B;**內容作者**&#x200B;預設集 (可見於頁面近右上角處)。 其可控制您所看到的小工具、導覽項目及內容。
 
    您可以隨時變更此預設集。
 
    ![預設集下拉式清單顯示已選取的內容作者](/help/assets/assets-experience-hub/experience-hub-role-selection.png)
 
-Adobe Experience Manager頁面已更新為增強型導覽和互動式Widget。 之前收集的解決方案卡片提供了對類似以下工具的存取：
+Adobe Experience Manager 頁面已重新整理為增強型導覽和互動式小工具。 之前收集的解決方案卡片提供了如下所示工具的存取：
 
 * 通用編輯器
 * Cloud Manager
@@ -50,100 +50,100 @@ Adobe Experience Manager頁面已更新為增強型導覽和互動式Widget。 �
 
 >[!IMPORTANT]
 >
->顯示的Widget、工具和成品取決於使用者角色、權益和AEM部署型別（AEM as a Cloud Service或Managed Services 6.5/6.5 LTS）。
+>顯示的小工具、工具和成品取決於使用者人物誌、權益和 AEM 部署類型 (AEM as a Cloud Service 或 Managed Services 6.5/6.5 LTS)。
 
-這些解決方案現在移至&#x200B;**工具**&#x200B;或&#x200B;**服務**&#x200B;下的主要導覽。 此外，新導覽元素可讓您快速存取已啟用解決方案專屬的關鍵Adobe Experience Manager功能。 這類解決方案包括Assets、Sites、Forms、內容片段、啟動等。
+這些解決方案現在移至&#x200B;**「工具」**&#x200B;或&#x200B;**「服務」**&#x200B;下的主導覽。 此外，新導覽元素可讓您快速存取專屬於已啟用解決方案的關鍵 Adobe Experience Manager 功能。 這類解決方案包括 Assets、Sites、Forms、內容片段、啟動等。
 
-![Experience Hub環境](/help/assets/assets-experience-hub/experience-hub-author-environments-ams.png)
+![Experience Hub 環境](/help/assets/assets-experience-hub/experience-hub-author-environments-ams.png)
 
-這些功能適用於您可以存取的主要生產環境。 或者，您可以選取特定環境，以利您存取多個AEM執行個體時使用。
+這些功能適用於您可以存取的主要生產環境。 或者，您可以針對性選取特定環境，以利您擁有多個 AEM 執行個體的存取權時使用。
 
 ![生產和中繼環境](/help/assets/assets-experience-hub/experience-hub-prod-stage-ams.png)
 
-作為Adobe Experience Manager的中央樞紐，Experience Hub頁面會展開並包含為每個使用者角色量身打造的其他介面工具和動作。 可完全自訂的頁面，可讓您選擇熒幕的最佳版面配置。 Widget可經過篩選，因此只有選取的元件會顯示在首頁面上，確保提供個人化體驗。
+作為 Adobe Experience Manager 的中樞，Experience Hub 頁面會展開以提供為每個使用者角色量身打造的其他小工具和動作。 可完全自訂的頁面，讓您能選擇螢幕的最佳版面。 小工具可經過篩選，讓只有選取的小工具顯示在主要頁面上，確保提供個人化體驗。
 
-![Experience Hub自訂](/help/assets/assets-experience-hub/experience-hub-custom-ams.png)
+![Experience Hub 自訂](/help/assets/assets-experience-hub/experience-hub-custom-ams.png)
 
-Widget也可以在頁面上調整大小和重新定位，以更符合您的需求和偏好設定。
+小工具也可以在頁面上調整大小和重新定位，以更符合您的需求和偏好設定。
 
-![Experience Hub Widget](/help/assets/assets-experience-hub/experience-hub-custom-widgets-ams.png)
+![Experience Hub 小工具](/help/assets/assets-experience-hub/experience-hub-custom-widgets-ams.png)
 
-**製作環境**&#x200B;區段會顯示您可以存取的所有AEM環境。 解決方案和頁面有特定的捷徑可供使用，也可讓您在清單頂端釘選您要顯示的特定環境。
+**「製作環境」**&#x200B;區段會顯示您可以存取的所有 AEM 環境。 解決方案和頁面有特定的快速鍵可供使用，也可讓您在清單頂端釘選您要顯示的特定環境。
 
-下圖中的&#x200B;**最近**&#x200B;區段列出您最近在AEM中造訪的頁面。 根據您的租使用者授權，Widget可能包含「方案」、「管道執行」、「Assets」、「頁面編輯器」和「表單編輯器」等專案。
+下圖中的&#x200B;**「最新」**&#x200B;區段列出您最近在 AEM 中造訪的頁面。 根據您的租用戶授權，小工具可能包含「方案」、「管道執行」、「資產」、「頁面編輯器」和「表單編輯器」等項目。
 
-頁面左上角附近的&#x200B;**快速鍵**&#x200B;提供可設定的快速鍵清單，協助您開始日常工作。 此清單可自訂，每個動作都會以選取的AEM環境為目標。
+頁面左上角附近的&#x200B;**快速鍵**&#x200B;提供可設定的快速鍵清單，協助您開始日常任務。 此清單可自訂，每個動作都會以選取的 AEM 環境為目標。
 
 ![製作環境](/help/assets/assets-experience-hub/experience-hub-recents-ams.png)
 
-![Experience Hub快速鍵](/help/assets/assets-experience-hub/experience-hub-quick-shortcuts-ams.png)
+![Experience Hub 快速鍵](/help/assets/assets-experience-hub/experience-hub-quick-shortcuts-ams.png)
 
-如果不存在生產AEM Cloud Service或Managed Services環境，選擇選項會顯示為暗灰色（無法使用）。
+如果不存在生產 AEM Cloud Service 或 Managed Services 環境，選擇選項會變暗 (無法使用)。
 
-![無生產環境的Experience Hub](/help/assets/assets-experience-hub/experience-hub-no-prod-environs-ams.png)
+![無生產環境的 Experience Hub](/help/assets/assets-experience-hub/experience-hub-no-prod-environs-ams.png)
 
 ## 常見問題集 (FAQ) {#faq}
 
-+++**Adobe Experience Hub在Adobe Experience Manager中的主要用途為何？**
++++**Adobe Experience Manager 中 Adobe Experience Hub 的主要用途是什麼？**
 
-Adobe Experience Hub可作為Adobe Experience Manager中管理內容、資產和網站的集中式起點，根據使用者角色和目標提供個人化體驗。
-
-+++
-
-+++**Experience Hub如何適應不同的使用者角色？**
-
-Experience Hub會為作者、資產管理員、管理員和IT人員顯示角色型檢視和快速動作。 每個角色都能快速存取所需的工具和功能。
+Adobe Experience Hub 可作為 Adobe Experience Manager 中管理內容、資產和網站的集中式起點，根據使用者角色和目標提供個人化體驗。
 
 +++
 
-+++**Experience Hub的導覽和配置有哪些功能？**
++++**Experience Hub 如何適應不同的使用者角色？**
 
-Experience Hub使用統一的左側導覽來組織核心AEM功能、可自訂的Widget和快速動作。 此版面可建立井然有序、有效率的工作區。
-
-+++
-
-+++**使用者如何個人化其Experience Hub工作區？**
-
-使用者可以新增、移除、調整及重新排列Widget，以及自訂快速動作，以根據他們的需求和偏好量身打造工作區。
+Experience Hub 會為作者、資產庫管理員、管理員和 IT 人員顯示角色型檢視和快速動作。 每個角色都能快速存取所需的工具和功能。
 
 +++
 
-+++**使用Experience Hub可快速執行哪些型別的動作？**
++++**Experience Hub 的導覽和版面有哪些功能？**
 
-Experience Hub為建立內容、上傳資產或管理團隊存取權等重要工作提供根據使用者角色量身打造的一鍵式捷徑。
-
-+++
-
-+++**Experience Hub如何協助導覽至不同的AEM功能？**
-
-Experience Hub在&#x200B;**工具**&#x200B;或&#x200B;**服務**&#x200B;下的主要導覽功能可讓您快速存取AEM功能，例如Assets、網站、Forms、內容片段和啟動。
+Experience Hub 使用統一的左側導覽來組織核心 AEM 功能、可自訂的小工具和快速動作。 此版面可建立井然有序和有效率的工作區。
 
 +++
 
-+++**Experience Hub中Widget的意義為何？**
++++**使用者如何個人化其 Experience Hub 工作區？**
 
-Experience Hub中的Widget是可自訂的元素，可協助使用者有效率地管理工作，例如追蹤最近的活動以及隨時瞭解產品更新。
-
-+++
-
-+++**使用者如何使用Experience Hub管理多個AEM環境？**
-
-使用者可以選擇要鎖定的環境，並釘選我的最愛，以將它們保持在頂端。 捷徑會開啟這些環境中的解決方案和頁面。
+使用者可以新增、移除、調整和重新排列小工具，以及自訂快速動作以根據其需求和偏好設定量身打造工作區。
 
 +++
 
-+++**AI助理在AEM中扮演什麼角色？**
++++**使用 Experience Hub 可快速執行哪些類型的動作？**
 
-AEM中的AI助理提供給已完成先決條件條件並在組織內提供其他支援和深入分析的使用者。
+Experience Hub 為建立內容、上傳資產或管理團隊存取權等重要任務提供根據使用者角色量身打造的一鍵式快速鍵。
 
 +++
 
-+++**如果沒有生產AEM Cloud Service或Managed Services環境存在，會發生什麼事？**
++++**Experience Hub 如何協助導覽至不同的 AEM 功能？**
 
-如果沒有生產環境，Experience Hub中的選取選項會以灰色顯示且無法使用。
+Experience Hub 在&#x200B;**「工具」**&#x200B;或&#x200B;**「服務」**&#x200B;下的主導覽可讓您快速存取 AEM 功能，例如 Assets、Sites、Forms、內容片段和啟動。
+
++++
+
++++**小工具在 Experience Hub 中的重要性為何？**
+
+Experience Hub 中的小工具是可自訂的元素，可協助使用者有效率地管理工作，例如追蹤最近的活動以及隨時了解產品更新。
+
++++
+
++++**使用者可以如何使用 Experience Hub 管理多個 AEM 環境？**
+
+使用者可以選擇目標環境，並釘選為我的最愛，以將其保持在頂端。 快速鍵會開啟這些環境中的解決方案和頁面。
+
++++
+
++++**AI 助理在 AEM 中扮演什麼角色？**
+
+AEM 中的 AI 助理適用於已滿足先決條件，並在組織內提供其他支援和洞察的使用者。
+
++++
+
++++**如果生產 AEM Cloud Service 或 Managed Services 環境不存在，會發生什麼事？**
+
+如果生產環境不存在，Experience Hub 中的選取選項會轉暗並且無法使用。
 
 +++
 
 ## AEM 中的 AI 助理
 
-對於具有[已完成必要條件](/help/ai-assistant-in-aem.md#get-access)的客戶，其組織的使用者可以使用AEM中的AI助理。 請參閱 [AEM 中的 AI 助理](/help/ai-assistant-in-aem.md)。
+對於已[滿足先決條件](/help/ai-assistant-in-aem.md#get-access)的客戶，AEM 中的 AI 助理適用於其組織的使用者。 請參閱 [AEM 中的 AI 助理](/help/ai-assistant-in-aem.md)。
