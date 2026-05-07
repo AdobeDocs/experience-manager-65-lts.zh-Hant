@@ -1,5 +1,5 @@
 ---
-title: Forms JEE工作流程|處理使用者資料
+title: Forms JEE工作流程 |處理使用者資料
 description: 瞭解如何使用AEM Forms JEE工作流程來設計、建立和管理業務流程。
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -7,16 +7,15 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 hide: true
-hidefromtoc: true
 exl-id: 622c4899-f75f-4b47-a6c0-f94c8427e977
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1403'
 ht-degree: 0%
 
 ---
 
-# Forms JEE工作流程|處理使用者資料 {#forms-jee-workflows-handling-user-data}
+# Forms JEE工作流程 |處理使用者資料 {#forms-jee-workflows-handling-user-data}
 
 AEM Forms JEE工作流程提供設計、建立和管理業務流程的工具。 工作流程處理包含一系列以指定順序執行的步驟。 每個步驟都會執行特定動作，例如將任務指派給使用者或傳送電子郵件訊息。 程式可與資產、使用者帳戶和服務互動，並可使用下列任何方法觸發：
 

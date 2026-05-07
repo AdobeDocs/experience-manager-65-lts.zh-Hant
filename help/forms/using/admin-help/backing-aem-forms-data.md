@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: cbcb9301-48c9-4394-b8c0-766eed76101d
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 0%
@@ -51,7 +50,7 @@ GDS位置的備份頻率取決於AEM Forms的使用方式以及可用的備份�
 
 * 使用可用的作業系統或協力廠商備份公用程式來備份GDS目錄。 （請參閱[GDS位置](/help/forms/using/admin-help/files-back-recover.md#gds-location)。）
 * （選擇性）使用可用的作業系統或協力廠商的備份與公用程式來備份「內容儲存根目錄」。 (請參閱[內容儲存根目錄位置（獨立環境）](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment)或[內容儲存根目錄位置（叢集環境）](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment)。)
-* 備份   製作和發佈執行個體( crx -repository backup)。
+* 備份作者和發佈執行個體( crx -repository backup)。
 
   若要備份Correspondence Management Solution環境，請依照[備份與還原](/help/sites-administering/backup-and-restore.md)中所述，對製作與發佈執行個體執行步驟。
 
