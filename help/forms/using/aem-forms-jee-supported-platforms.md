@@ -9,9 +9,9 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+source-git-commit: 30ac3d2e81e859244684339a028d7d9db470eefe
 workflow-type: tm+mt
-source-wordcount: '3174'
+source-wordcount: '3180'
 ht-degree: 3%
 
 ---
@@ -398,6 +398,7 @@ AEM Forms應用程式現在支援Apache Cordova。 以下是支援的平台特�
 
 >[!NOTE]
 >
+>- PDF Generator支援Microsoft® Office 2024。
 >- PDF Generator僅支援英文、法文、德文和日文版本的支援作業系統和應用程式。
 >- PDF Generator需要Adobe Acrobat Pro DC （32位元）來執行轉換。
 >- PDF Generator僅支援32位元版本的Microsoft® Office Professional Plus及其他轉換所需的軟體。
