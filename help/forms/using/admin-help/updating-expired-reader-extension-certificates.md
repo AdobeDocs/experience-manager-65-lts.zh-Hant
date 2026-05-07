@@ -33,7 +33,7 @@ A.根據對情況的重新評估，所有使用舊版「PDF根CA」在2023年1�
 
 **Q.如果我有其他問題，應該聯絡誰？**
 
-A.您可以聯絡[Adobe支援](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support)或提出支援票證。
+A.您可以聯絡[Adobe支援](https://experienceleague.adobe.com/zh-hant?support-solution=Experience+Manager#support)或提出支援票證。
 
 **Q.如果在2023年1月7日之前未更新憑證，會發生什麼情況？**
 
@@ -45,7 +45,7 @@ A.新Acrobat Reader擴充功能憑證的說明將&#x200B;**G3-P24**&#x200B;稱�
 
 **Q.如何取得最新的憑證？**
 
-A.所有已取得授權的Forms客戶（具有使用中授權）都可以從[Adobe授權網站](https://licensing.adobe.com/)下載新憑證（以「Adobe根CA G2」為基礎的憑證）。 如果您在Adobe授權網站上找不到憑證，請連絡[Adobe支援](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=en#support)或提出支援票證。
+A.所有已取得授權的Forms客戶（具有使用中授權）都可以從[Adobe授權網站](https://licensing.adobe.com/)下載新憑證（以「Adobe根CA G2」為基礎的憑證）。 如果您在Adobe授權網站上找不到憑證，請連絡[Adobe支援](https://experienceleague.adobe.com/zh-hant?support-solution=Experience+Manager&lang=en#support)或提出支援票證。
 
 **Q.使用由「Adobe根CA」（舊憑證授權單位）發行的憑證擴充的PDF檔案在2023年1月7日之後是否繼續運作？**
 
@@ -189,5 +189,5 @@ Remove usage rights from existing rights-enabled PDF documents before applying u
 
 #### Apply the usage rights to PDF documents 
 
-To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html).
+To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html?lang=zh-Hant).
 -->
