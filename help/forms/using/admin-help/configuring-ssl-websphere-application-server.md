@@ -5,9 +5,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Document Security
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 0caac293-98b4-4e73-9440-f1db68c94054
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 0%
@@ -55,11 +54,11 @@ ht-degree: 0%
 1. 按一下&#x200B;**使用者**，用滑鼠右鍵按一下您建立的使用者並選取&#x200B;**內容**。
 1. 按一下&#x200B;**的**&#x200B;成員標籤，然後按一下&#x200B;**新增**。
 1. 在[輸入要選取的物件名稱]方塊中，輸入`Administrators`，按一下[檢查名稱]以確保群組名稱正確。
-1. 按一下[確定]&#x200B;**&#x200B;**，然後再按一下[確定]&#x200B;**&#x200B;**。
+1. 按一下[確定]****，然後再按一下[確定]****。
 1. 選取&#x200B;**開始>控制檯>系統管理工具>本機安全性原則>本機原則**。
 1. 按一下「使用者許可權指派」，然後以滑鼠右鍵按一下「作為作業系統的一部分」，並選取「屬性」。
 1. 按一下&#x200B;**新增使用者或群組**。
-1. 在[輸入要選取的物件名稱]方塊中，輸入您在步驟4中建立的使用者名稱，按一下[檢查名稱]，確定名稱正確，然後按一下[確定]。**&#x200B;**。**&#x200B;**
+1. 在[輸入要選取的物件名稱]方塊中，輸入您在步驟4中建立的使用者名稱，按一下[檢查名稱]，確定名稱正確，然後按一下[確定]。****。****
 1. 按一下&#x200B;**確定**，關閉作為作業系統內容對話方塊一部分的動作。
 
 ### 設定WebSphere以使用新建立的使用者作為管理員 {#configure-websphere-to-use-the-newly-created-user-as-administrator}

@@ -5,9 +5,8 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
-hidefromtoc: true
 exl-id: 96e44da3-da89-4671-a4fb-19ce1b9a38c4
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
@@ -54,7 +53,7 @@ ht-degree: 0%
 
 ## 設定方法 {#how-to-set-up}
 
-可以使用封裝管理員將6.5 **的** AEM 6.4相容性套件安裝為封裝。 您可以從Software Distribution[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=20&package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64)網站下載6.5的AEM 6.4 Compatibility Pack。
+可以使用封裝管理員將6.5 **的** AEM 6.4相容性套件安裝為封裝。 您可以從Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=20&package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64)網站下載6.5的[AEM 6.4 Compatibility Pack。
 
 安裝相容性套件後，即可使用OSGI組態中的交換器來啟用或停用路由，如下所示：
 

@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: f38ae7f8-75db-4031-a2a8-782ca3b42fc7
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 0%
@@ -60,7 +59,7 @@ ht-degree: 0%
 
 1. 在管理控制檯中，按一下&#x200B;**[!UICONTROL 設定>信任存放區管理>憑證]**。
 1. 按一下要匯出的憑證的別名。 顯示&#x200B;**[!UICONTROL 憑證詳細資料]**&#x200B;頁面。
-1. 按一下[匯出]&#x200B;**&#x200B;**，依照指示匯出憑證，然後按一下[確定]&#x200B;**。**
+1. 按一下[匯出]****，依照指示匯出憑證，然後按一下[確定]]**。**[!UICONTROL 
 
 ## 編輯憑證的信任設定和信任存放區型別 {#edit-a-certificate-s-trust-settings-and-trust-store-type}
 
@@ -69,9 +68,9 @@ ht-degree: 0%
 1. 按一下&#x200B;**[!UICONTROL 更新憑證]**。
 1. 若要變更憑證的別名，請在「別名」方塊中鍵入新名稱。
 1. 若要更新憑證的信任存放區型別，請選取適當的信任存放區型別。
-1. 若要更新原則限制，請在[憑證原則]方塊中輸入原則資訊，然後按一下[確定]。**&#x200B;**
+1. 若要更新原則限制，請在[憑證原則]方塊中輸入原則資訊，然後按一下[確定]。****
 
 ## 刪除憑證 {#delete-a-certificate}
 
 1. 在管理控制檯中，按一下&#x200B;**[!UICONTROL 設定>信任存放區管理>憑證]**。
-1. 選取要刪除之憑證的核取方塊，按一下[刪除]，然後按一下[確定]。**&#x200B;**，再按一下[確定]。**&#x200B;**
+1. 選取要刪除之憑證的核取方塊，按一下[刪除]，然後按一下[確定]。****，再按一下[確定]。]****[!UICONTROL 

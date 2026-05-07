@@ -5,12 +5,11 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 hide: true
-hidefromtoc: true
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: 2278a4df-2584-4a15-9aaf-bbfc0487b72a
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 0%
@@ -48,7 +47,7 @@ JEE服務上的AEM Forms一律至少需要SOAP存取權。 這些服務通常是
 1. 若要停用所有EJB端點，請選取清單中每個端點旁的核取方塊，然後按一下&#x200B;**停用**。
 1. 按一下&#x200B;**下一步**，然後針對所有EJB端點重複前一個步驟。 在停用端點之前，請確定EJB列在「提供者」資料欄中。
 1. 從&#x200B;**提供者**&#x200B;清單中選取&#x200B;**SOAP**，然後按一下&#x200B;**篩選器**。
-1. 若要移除SOAP端點，請選取清單中每個端點旁的核取方塊，然後按一下[移除]。**&#x200B;** 請勿移除下列端點：
+1. 若要移除SOAP端點，請選取清單中每個端點旁的核取方塊，然後按一下[移除]。**** 請勿移除下列端點：
 
    * AuthenticationManagerService
    * 目錄管理員服務
@@ -78,7 +77,7 @@ JEE服務上的AEM Forms一律至少需要SOAP存取權。 這些服務通常是
 
 1. 按一下&#x200B;**服務>應用程式及服務>服務管理**。
 1. 按一下要停用的服務名稱（例如AuthenticationManagerService）。
-1. 按一下[安全性]索引標籤&#x200B;**，取消選取[允許匿名存取]**&#x200B;**，然後按一下[儲存]**&#x200B;**。**
+1. 按一下[安全性]索引標籤&#x200B;**，取消選取[允許匿名存取]****，然後按一下[儲存]****。**
 1. 完成下列服務的步驟3和4：
 
    * AuthenticationManagerService
@@ -120,7 +119,7 @@ JEE服務上的AEM Forms一律至少需要SOAP存取權。 這些服務通常是
    ```
 
 1. 按一下&#x200B;**設定>使用者管理>組態>匯入及匯出組態檔**。
-1. 按一下「匯出&#x200B;**&#x200B;**」，使用現有的AEM Forms設定產生config.xml檔案。
+1. 按一下「匯出&#x200B;****」，使用現有的AEM Forms設定產生config.xml檔案。
 1. 在編輯器中開啟XML檔案，並找出下列專案：
 
    `<entry key="assertionValidityInMinutes" value="120"/>`
@@ -128,4 +127,4 @@ JEE服務上的AEM Forms一律至少需要SOAP存取權。 這些服務通常是
 1. 將值變更為大於5 （分鐘）的任何數字並儲存檔案。
 1. 在管理控制檯中，瀏覽到「匯入和匯出組態檔」頁面。
 1. 輸入修改的config.xml檔案的路徑，或按一下「瀏覽」瀏覽至該檔案。
-1. 按一下[匯入]&#x200B;**&#x200B;**&#x200B;上傳修改過的config.xml檔案，然後按一下[確定]&#x200B;**&#x200B;**。
+1. 按一下[匯入]****&#x200B;上傳修改過的config.xml檔案，然後按一下[確定]****。

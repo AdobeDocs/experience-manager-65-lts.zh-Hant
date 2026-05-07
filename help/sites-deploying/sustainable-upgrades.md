@@ -5,9 +5,8 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
-hidefromtoc: true
 exl-id: 5a93918b-3b5f-49e0-9283-86776f9d8fb4
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 0%
@@ -86,7 +85,7 @@ AEM一直使用覆蓋和Sling Resource Merger的原則來允許客戶擴充和�
 
 AEM 6.5隨附健康情況檢查，如果以與內容分類不一致的方式使用覆蓋或參考內容，會提醒客戶。
 
-**&#x200B; Sling/Granite Content Access Check**&#x200B;是新的健康狀態檢查，可監視存放庫，以檢視客戶程式碼是否不適當地存取AEM中受保護的節點。
+** Sling/Granite Content Access Check**是新的健康狀態檢查，可監視存放庫，以檢視客戶程式碼是否不適當地存取AEM中受保護的節點。
 
 這會掃描&#x200B;**/應用程式**，通常需要幾秒鐘才能完成。
 

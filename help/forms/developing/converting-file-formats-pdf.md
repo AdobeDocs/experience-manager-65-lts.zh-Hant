@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services
 hide: true
-hidefromtoc: true
 exl-id: c6e007e9-6050-4d86-a32e-0bd942d48f27
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '7942'
 ht-degree: 0%
@@ -922,11 +921,11 @@ AppMon使用標準的Win32 API與協力廠商應用程式互動，以傳輸UI事
 **在Windows XP環境中建立系統變數**
 
 1. 選取&#x200B;**控制檯>系統**。
-1. 在[系統內容]對話方塊中，按一下[進階]索引標籤&#x200B;**&#x200B;**，然後按一下[環境變數]&#x200B;**&#x200B;**。
+1. 在[系統內容]對話方塊中，按一下[進階]索引標籤&#x200B;****，然後按一下[環境變數]****。
 1. 在「環境變數」對話方塊的「系統變數」下，按一下「**新增**」。
 1. 在「新增系統變數」對話方塊的&#x200B;**變數名稱**&#x200B;方塊中，輸入使用格式`[applicationname]_PATH`的名稱。
 1. 在&#x200B;**變數值**&#x200B;方塊中，輸入應用程式可執行檔的完整路徑與檔案名稱，然後按一下&#x200B;**確定**。 例如，型別： `c:\windows\Notepad.exe`
-1. 在[環境變數]對話方塊中，按一下[確定]。**&#x200B;**
+1. 在[環境變數]對話方塊中，按一下[確定]。****
 
 **從命令列建立系統變數**
 

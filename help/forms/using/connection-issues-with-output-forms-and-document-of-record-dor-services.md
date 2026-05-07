@@ -8,9 +8,8 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 hide: true
-hidefromtoc: true
 exl-id: c84ba536-a78d-4cf9-a480-59cb18e41076
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 1%
@@ -28,7 +27,7 @@ ht-degree: 1%
 若要解決問題：
 
 1. 停止AEM 6.5 Forms執行個體。
-1. 在安裝Microsoft 6.5 Forms的電腦上，下載並安裝適用於Visual Studio 2015、2017、2019和2022[&#128279;](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022)的64位元版AEM Visual C++可轉散發套件。
+1. 在安裝Microsoft 6.5 Forms的電腦上，下載並安裝適用於Visual Studio 2015、2017、2019和2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022)的[64位元版AEM Visual C++可轉散發套件。
 1. 重新啟動AEM Forms伺服器。
 
    >[!NOTE]

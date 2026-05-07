@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 7380be9a-7f5c-46df-97f8-6309daa2a566
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1650'
 ht-degree: 0%
@@ -151,7 +150,7 @@ ht-degree: 0%
    ![task_search_result](assets/task_search_result.png)
 
 1. 按一下左上角的邊欄按鈕![lc_pr_rail_button](assets/lc_pr_rail_button.png)以摺疊&#x200B;**我的篩選器**&#x200B;窗格，並展開&#x200B;**報表**&#x200B;面板的可用空間。
-1. 使用&#x200B;**報表**&#x200B;面板右上角的選項，對查詢結果執行操作。
+1. 使用**報表**面板右上角的選項，對查詢結果執行操作。
 
    * **重新整理**：以存放裝置中的最新資料重新整理報告
 

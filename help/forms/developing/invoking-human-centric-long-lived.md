@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, APIs & Integrations, AEM Forms on JEE
 hide: true
-hidefromtoc: true
 exl-id: 1cc7b91e-c2f1-4831-b8cd-1399e7dd821e
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '3762'
 ht-degree: 0%
@@ -128,13 +127,13 @@ Java servlet會執行下列工作：
 
 1. 在[專案總管]視窗中，用滑鼠右鍵按一下`InvokePreLoanProcess`專案，然後選取&#x200B;**新增** > **其他**。
 1. 展開&#x200B;**Web**&#x200B;資料夾，選取&#x200B;**Servlet**，然後按一下&#x200B;**下一步**。
-1. 在[建立Servlet]對話方塊中，輸入`SubmitXML`作為Servlet的名稱，然後按一下[完成]。**&#x200B;**
+1. 在[建立Servlet]對話方塊中，輸入`SubmitXML`作為Servlet的名稱，然後按一下[完成]。****
 
 **新增HTML頁面至您的專案**
 
 1. 在[專案總管]視窗中，用滑鼠右鍵按一下`InvokePreLoanProcess`專案，然後選取&#x200B;**新增** > **其他**。
 1. 展開&#x200B;**Web**&#x200B;資料夾，選取&#x200B;**HTML**，然後按一下&#x200B;**下一步**。
-1. 在[新增HTML]對話方塊中，輸入檔案名稱`index.html`，然後按一下[完成]。**&#x200B;**。
+1. 在[新增HTML]對話方塊中，輸入檔案名稱`index.html`，然後按一下[完成]。****。
 
 >[!NOTE]
 >

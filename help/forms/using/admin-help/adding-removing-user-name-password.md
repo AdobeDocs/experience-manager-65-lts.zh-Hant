@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 hide: true
-hidefromtoc: true
 exl-id: d4809a55-aff5-41ac-b75e-81e3a6bf47ca
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -36,4 +35,4 @@ ht-degree: 0%
 ## 刪除使用者名稱和密碼認證 {#delete-a-user-name-and-password-credential}
 
 1. 在管理控制檯中，按一下&#x200B;**[!UICONTROL 設定>信任存放區管理>使用者和密碼認證]**。
-1. 選取您要刪除的認證核取方塊，按一下[刪除]，然後按一下[確定]。**&#x200B;**。**&#x200B;**
+1. 選取您要刪除的認證核取方塊，按一下[刪除]，然後按一下[確定]。****。****

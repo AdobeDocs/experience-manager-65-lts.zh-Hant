@@ -9,9 +9,8 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 72c31f40-d1b0-47ae-bdeb-e9b92c3d27e1
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '10334'
 ht-degree: 0%
@@ -524,7 +523,7 @@ Document Security可追蹤在受保護檔案上可能執行的各種自訂事件
 
    選取您要讓浮水印顯示的位置。 依預設，浮水印會同時出現在軟復本（線上）和硬復本（列印）上。
 
-1. 按一下[浮水印元素]下的[新增&#x200B;**&#x200B;**]，視需要新增更多浮水印元素。
+1. 按一下[浮水印元素]下的[新增&#x200B;****]，視需要新增更多浮水印元素。
 1. 按一下「確定」。
 
 ### 編輯動態浮水印範本 {#edit-a-dynamic-watermark-template}
