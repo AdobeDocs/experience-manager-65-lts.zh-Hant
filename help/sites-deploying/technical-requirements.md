@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+source-git-commit: 551f915c2fa91a3b099ce5636ae5b7f4439c8236
 workflow-type: tm+mt
-source-wordcount: '2870'
+source-wordcount: '3086'
 ht-degree: 5%
 
 ---
@@ -61,7 +61,7 @@ Adobe會推薦這些設定，並在標準軟體維護合約中提供完整支援
   </tr>
   <tr>
    <td><strong>A：支援</strong></td>
-   <td>Adobe 為此設定提供完整的支援和維護。Adobe 品質保證流程涵蓋此設定。</td>
+   <td>Adobe 為此設定提供完整的支援和維護。 Adobe 品質保證流程涵蓋此設定。</td>
   </tr>
   <tr>
    <td><strong>R：限制支援</strong></td>
@@ -74,7 +74,7 @@ Adobe會推薦這些設定，並在標準軟體維護合約中提供完整支援
 
 | 支援程度 | 說明 |
 |---|---|
-| **Z：不支援** | 不支援此設定。Adobe 不會說明此設定是否適用，且不支援此設定。 |
+| **Z：不支援** | 不支援此設定。 Adobe 不會說明此設定是否適用，且不支援此設定。 |
 
 ## 受支援平台 {#supported-platforms}
 
@@ -95,7 +95,7 @@ Adobe Experience Manager可搭配下列版本的Java™虛擬機器器運作：
 | ® Semeru J9 VM — 組建17.0.13.0 | A：支援的`[2]` | |
 | ® Semeru J9 VM — 組建21.0.6.0 | A：支援的`[2]` | |
 
-1. Oracle已改用Oracle Java™ SE產品的「長期支援」(LTS)模型。 Java™ 9、Java™ 10、Java™ 12、Java™ 13、Java™ 14、Java™ 15m Java™ 16是Oracle的非LTS版本（請參閱[Oracle Java™ SE支援藍圖](https://www.oracle.com/technetwork/java/eol-135779.html)）。 若要在生產環境中部署AEM，Adobe僅支援Java™的LTS版本。 Adobe直接為所有使用Oracle Java™ SE技術的AEM客戶支援Oracle Java™ SE JDK的支援和發佈，包括LTS版本的所有維護更新。 請參閱Adobe Experience Manager[的](assets/Java_Policy_for_Adobe_Experience_Manager.pdf)Java™支援原則。
+1. Oracle已改用Oracle Java™ SE產品的「長期支援」(LTS)模型。 Java™ 9、Java™ 10、Java™ 12、Java™ 13、Java™ 14、Java™ 15m Java™ 16是Oracle的非LTS版本（請參閱[Oracle Java™ SE支援藍圖](https://www.oracle.com/technetwork/java/eol-135779.html)）。 若要在生產環境中部署AEM，Adobe僅支援Java™的LTS版本。 Adobe直接為所有使用Oracle Java™ SE技術的AEM客戶支援Oracle Java™ SE JDK的支援和發佈，包括LTS版本的所有維護更新。 請參閱Adobe Experience Manager[&#128279;](assets/Java_Policy_for_Adobe_Experience_Manager.pdf)的Java™支援原則。
    **此版本支援Oracle Java™ 17和Oracle Java™ 21。**
 
 1. ® JRE僅與WebSphere®應用程式伺服器一起受支援。
@@ -138,7 +138,7 @@ Adobe Experience Manager可搭配下列版本的Java™虛擬機器器運作：
 
 Adobe Experience Manager能以獨立伺服器（快速入門JAR檔案）或協力廠商應用程式伺服器（WAR檔案）中的Web應用程式來執行。
 
-需要的最低Servlet API版本是Servlet 3.1。此外，AEM Forms支援jar適用的Jakarta servlet 5，WAR可部署在實作Jakarta servlet API 5/6的應用程式伺服器中。
+需要的最低Servlet API版本是Servlet 3.1。 此外，AEM Forms支援jar適用的Jakarta servlet 5，WAR可部署在實作Jakarta servlet API 5/6的應用程式伺服器中。
 
 | Platform | 支援程度 |
 |---|---|
@@ -408,6 +408,7 @@ AEM Dynamic Media預設為停用。 請參閱此處[啟用Dynamic Media](/help/a
 
 >[!NOTE]
 >
+>* PDF Generator支援Microsoft® Office 2024。
 >* PDF Generator僅支援英文、法文、德文和日文版本的支援作業系統和應用程式。
 >* PDF Generator需要Adobe Acrobat Pro DC （32位元）來執行轉換。
 >* PDF Generator僅支援32位元版本的Microsoft® Office Professional Plus及其他轉換所需的軟體。
@@ -448,6 +449,6 @@ AEM Dynamic Media預設為停用。 請參閱此處[啟用Dynamic Media](/help/a
 
 ### AEM Assets在Linux上處理中繼資料密集的資產的需求® {#assetsonlinux}
 
-XMPFilesProcessor處理需要程式庫GLIBC_2.14才能運作。 使用包含GLIBC_2.14的Linux®核心，例如Linux®核心版本3.1.x。它可改善處理包含大量中繼資料的資產（例如PSD檔案）的效能。 使用舊版GLIBC會導致以`com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`開頭的記錄發生錯誤。
+XMPFilesProcessor處理需要程式庫GLIBC_2.14才能運作。 使用包含GLIBC_2.14的Linux®核心，例如Linux®核心版本3.1.x。 它可改善處理包含大量中繼資料的資產（例如PSD檔案）的效能。 使用舊版GLIBC會導致以`com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`開頭的記錄發生錯誤。
 
 如需任何與支援的格式或平台版本相關的查詢，請連絡[AEM Forms支援](https://business.adobe.com/in/support/main.html)
