@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6aca9496869f6673661a650438a7fc1beb212097
+source-git-commit: eab6902e5bdb58f626e7b79f91d27447b31d6830
 workflow-type: tm+mt
-source-wordcount: '7603'
+source-wordcount: '7581'
 ht-degree: 97%
 
 ---
@@ -281,6 +281,8 @@ Assets 「相關」現在適用於包含空格的檔案名稱。 更新「相關
 * 在 JBoss® EAP 8 上的 AEM Forms 6.5 LTS 叢集部署中，`domain/configuration/domain_oracle.xml`、`domain_mysql.xml` 和 `domain_mssql.xml` 檔案不再包含重複的 `<security>` 標記，導致無效的 XML 並使網域資料控管者無法啟動。 (FORMS-24687)
 * 在 Turnkey 模式中，現在會於全新安裝和升級期間正確套用資料庫連接埠更新。 在全新安裝模式中，使用者可以從所有可用的連接埠中進行選取，而在升級模式中，在升級過程中會正確參照 lc_turnkey.xml 中更新的資料庫連接埠。 (FORMS-24689)
 * 在 Linux® 上設定 JBoss® EAP 8.0 時，於 Windows 上修改的 Shell 指令碼不會因為 CRLF 行結尾而造成 `/bin/sh^M: bad interpreter or $'\r': command not found` 錯誤。 (FORMS-24688)
+* 在 JBoss® EAP 8 上執行的 Forms JEE LTS 部署中，Reader 擴充功能使用者介面可能會因內部伺服器錯誤而失敗。 (FORMS-24894)
+* 在Linux®上，當Forms JEE LTS Configuration Manager在`configurationManager/config/solcomp/LFS_Foundation.properties`中執行時包含未設定或不正確的`OSFileSetIntendedFor`值時，使用者遇到執行階段或部署問題，導致無法針對Linux®正確自訂設定。 在安裝之後以及執行Configuration Manager之前，請在該檔案中設定`OSFileSetIntendedFor=Linux`。 (FORMS-24741)
 
 <!--
 #### Forms JEE 
@@ -578,9 +580,7 @@ Adobe 會持續審閱或演進產品功能，藉由更新或取代舊版功能�
 ### AEM Forms
 
 * 在 Configuration Manager 中，未選取模組或僅選取有限元件時，在 AEM Forms 6.5 LTS JEE Turnkey 自訂模式中的 Bootstrap 期間，資料庫初始化會失敗。 失敗是因為遺失相依性 (xalan-2.7.2.jar)，導致錯誤。 將 JAR 檔案新增至 adobe-livecycle-jboss.ear\lib 即可解決問題。 (FORMS-24690)
-* 在 JBoss® EAP 8 上執行的 Forms JEE LTS 部署中，Reader 擴充功能使用者介面可能會因內部伺服器錯誤而失敗。 (FORMS-24894)
 * 在 JBoss® 上執行的 Forms JEE LTS 上，電子郵件相關功能可能會失敗。 嘗試使用電子郵件功能時，伺服器可能會記錄類似 `Error IMAPProvider not a subtype` 的錯誤。 (FORMS-24892)
-* 在 Linux® 平台上，Forms JEE LTS 要求在執行 Configuration Manager 之前，必須正確設定 `LFS_Foundation.properties` 中的 `OSFileSetIntendedFor` 屬性。 如果未更新，設定可能無法針對 Linux® 適當地量身打造，這可能會導致執行階段或部署問題。 若要解決此問題，請在執行安裝程式之後和執行 Configuration Manager 之前，導覽至「`configurationManager/config/solcomp/`」，開啟「`LFS_Foundation.properties`」，設定「`OSFileSetIntendedFor=Linux`」，儲存檔案，然後執行 Configuration Manager。 (FORMS-24741)
 
 ### 離線壓縮後線上壓縮期間存放庫損毀 (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
