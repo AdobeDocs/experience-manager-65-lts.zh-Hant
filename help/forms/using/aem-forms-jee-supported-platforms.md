@@ -9,9 +9,9 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: 30ac3d2e81e859244684339a028d7d9db470eefe
+source-git-commit: eb4c7e2afa28c5bd5bdf9c38fe44143a71abd1fc
 workflow-type: tm+mt
-source-wordcount: '3180'
+source-wordcount: '3184'
 ht-degree: 3%
 
 ---
@@ -382,12 +382,12 @@ AEM Forms應用程式現在支援Apache Cordova。 以下是支援的平台特�
   </tr>
 
 <tr>
-   <td>® Office 2021 Professional Plus、零售及大量授權</td>
+   <td>® Office 2024 Professional Plus、零售及大量授權</td>
    <td>DOC、DOCX、XLS、XLSX、PPT、PPTX、RTF和TXT</td>
   </tr>
   <tr>
    <td>
-    <strong>OpenOffice 4.1.15</strong>   </td>
+   OpenOffice 4.1.15 </td>
    <td>
     ODT、ODP、ODS、ODG、ODF、SXW、SXI、SXC、SXD、XLS、XLSX、DOC、DOCX、PPT、PPTX、影像格式(BMP、GIF、JPEG、JPG、TIF、TIFF、PNG、JPF、JPX、JP2、J2K、J2C、JPC)、HTML、HTM、RTF、TXT<br>
 
@@ -398,16 +398,15 @@ AEM Forms應用程式現在支援Apache Cordova。 以下是支援的平台特�
 
 >[!NOTE]
 >
->- PDF Generator支援Microsoft® Office 2024。
 >- PDF Generator僅支援英文、法文、德文和日文版本的支援作業系統和應用程式。
->- PDF Generator需要Adobe Acrobat Pro DC （32位元）來執行轉換。
->- PDF Generator僅支援32位元版本的Microsoft® Office Professional Plus及其他轉換所需的軟體。
->- 如果® Office安裝由於任何原因（例如磁碟區授權安裝無法在指定期間內找到KMS主機）而停用或取消授權，轉換可能會失敗，直到安裝重新授權並重新啟用。
+>- PDF Generator需要32位元Adobe Acrobat Pro DC和Microsoft® Office Professional Plus來執行轉換。
+>- ® Office Professional Plus安裝可能會使用零售或MAK/KMS/AD型大量授權。
+>- 如果® Office安裝因任何原因而停用或取消授權（例如磁碟區授權安裝無法在指定期間內找到KMS主機），轉換可能會失敗，直到安裝重新授權並重新啟用為止。
 >- PDF Generator不支援Microsoft® Office 365。
 >- Windows和Linux®均支援OpenOffice適用的PDF Generator轉換。
 >- 只有Windows支援OCR PDF、最佳化PDF和Export PDF功能。
->- PDF Generator服務不支援Microsoft® Windows 11
-
+>- PDF Generator不支援Microsoft® Windows 11。
+>- ® Office 2021 Professional Plus支援已過時。
 <!--
 Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.
