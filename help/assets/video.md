@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+source-git-commit: 15ab0f87fc3ae9a0e2116bb837a8cb60a6f984a1
 workflow-type: tm+mt
-source-wordcount: '10812'
+source-wordcount: '10723'
 ht-degree: 2%
 
 ---
@@ -811,20 +811,20 @@ Dynamic Media會將註解檔案轉換為JSON （JavaScript物件標籤法）格�
    有許多網站提供免費和優質的工具與服務，讓您在Dynamic Media外部用來製作WebVTT標題/標題檔案。<!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
    <!--
-[WebVTT標題製作器](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
+   [WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
-為達到最佳效果，請在Internet Explorer 9或以上版本、Google Chrome或Safari中使用工具。
+   For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
 
-在工具的&#x200B;**[!UICONTROL 輸入視訊檔案URL]**&#x200B;欄位中，貼上視訊檔案的複製URL，然後按一下&#x200B;**[!UICONTROL 載入]**。 請參閱[取得資產的URL](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)，以取得視訊檔案本身的URL，然後您可將它貼到&#x200B;**[!UICONTROL 輸入視訊檔案的URL欄位]**中。 然後，Internet Explorer、Chrome或Safari就可以原生播放視訊。
--->
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.
+   -->
 
-依照網站上的熒幕指示製作及儲存您的WebVTT檔案。 完成後，複製註解檔案內容並貼到純文字編輯器中，以`.vtt`副檔名儲存。
+   依照網站上的熒幕指示製作及儲存您的WebVTT檔案。 完成後，複製註解檔案內容並貼到純文字編輯器中，以`.vtt`副檔名儲存。
 
->[!NOTE]
->
->為了全球支援多種語言的視訊標題，WebVTT標準要求您為要支援的每種語言建立個別的`.vtt`檔案和呼叫。
+   >[!NOTE]
+   >
+   >為了全球支援多種語言的視訊標題，WebVTT標準要求您為要支援的每種語言建立個別的`.vtt`檔案和呼叫。
 
-一般來說，您會想要將註解`.vtt`檔案的名稱與視訊檔案的名稱相同，並附加語言地區設定，例如 — EN、-FR或 — DE。 如此一來，即可協助您使用現有的網頁內容管理系統，自動化視訊URL的產生作業。
+   一般來說，您會想要將註解`.vtt`檔案的名稱與視訊檔案的名稱相同，並附加語言地區設定，例如 — EN、-FR或 — DE。 如此一來，即可協助您使用現有的網頁內容管理系統，自動化視訊URL的產生作業。
 
 1. 在Experience Manager中，將WebVTT標題檔案上傳至DAM。
 1. 導覽至&#x200B;*已發佈*&#x200B;視訊資產，您要將其與您上傳的註解檔案建立關聯。
