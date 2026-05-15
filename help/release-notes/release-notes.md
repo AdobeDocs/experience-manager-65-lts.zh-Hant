@@ -6,9 +6,9 @@ feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: eab6902e5bdb58f626e7b79f91d27447b31d6830
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7581'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -282,7 +282,7 @@ Assets 「相關」現在適用於包含空格的檔案名稱。 更新「相關
 * 在 Turnkey 模式中，現在會於全新安裝和升級期間正確套用資料庫連接埠更新。 在全新安裝模式中，使用者可以從所有可用的連接埠中進行選取，而在升級模式中，在升級過程中會正確參照 lc_turnkey.xml 中更新的資料庫連接埠。 (FORMS-24689)
 * 在 Linux® 上設定 JBoss® EAP 8.0 時，於 Windows 上修改的 Shell 指令碼不會因為 CRLF 行結尾而造成 `/bin/sh^M: bad interpreter or $'\r': command not found` 錯誤。 (FORMS-24688)
 * 在 JBoss® EAP 8 上執行的 Forms JEE LTS 部署中，Reader 擴充功能使用者介面可能會因內部伺服器錯誤而失敗。 (FORMS-24894)
-* 在Linux®上，當Forms JEE LTS Configuration Manager在`configurationManager/config/solcomp/LFS_Foundation.properties`中執行時包含未設定或不正確的`OSFileSetIntendedFor`值時，使用者遇到執行階段或部署問題，導致無法針對Linux®正確自訂設定。 在安裝之後以及執行Configuration Manager之前，請在該檔案中設定`OSFileSetIntendedFor=Linux`。 (FORMS-24741)
+* 在 Linux® 上，當 Forms JEE LTS Configuration Manager 在 `configurationManager/config/solcomp/LFS_Foundation.properties` 中包含未設定或不正確的 `OSFileSetIntendedFor` 值時，使用者會遇到執行階段或部署問題，導致無法正確地針對 Linux® 進行設定。在完成安裝之後，且執行 Configuration Manager 之前，請於該檔案中設定 `OSFileSetIntendedFor=Linux`。(FORMS-24741)
 
 <!--
 #### Forms JEE 
