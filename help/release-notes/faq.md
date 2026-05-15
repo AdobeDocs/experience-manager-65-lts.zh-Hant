@@ -22,7 +22,7 @@ Adobe 始終致力於確保其提供之應用程式的安全性和穩定性。 A
 
 ## 我是內部部署客戶，如果我不升級至 AEM 6.5 LTS 會發生什麼事？
 
-AEM 6.5 LTS 包含重要的安全性和穩定性更新，包括對於 Oracle Java 17 和 Java 21 的支援。 建議貴組織計畫升級至6.5 LTS。 Adobe將繼續支援AEM 6.5，直到2027年2月28日。 如需詳細資訊，請檢視[藍圖](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem65)。
+AEM 6.5 LTS 包含重要的安全性和穩定性更新，包括對於 Oracle Java 17 和 Java 21 的支援。 建議貴組織計畫升級至6.5 LTS。 Adobe將繼續支援AEM 6.5，直到2027年2月28日。 如需詳細資訊，請檢視[藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem65)。
 
 ## 若升級至 AEM 6.5 LTS，我現有的自訂和整合功能會受到影響嗎？
 
