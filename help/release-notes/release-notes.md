@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: eab6902e5bdb58f626e7b79f91d27447b31d6830
+source-git-commit: 02b7915e1e5554d29577e46960c072d46bcc8b0c
 workflow-type: tm+mt
-source-wordcount: '7581'
-ht-degree: 97%
+source-wordcount: '7695'
+ht-degree: 98%
 
 ---
 
@@ -282,7 +282,7 @@ Assets 「相關」現在適用於包含空格的檔案名稱。 更新「相關
 * 在 Turnkey 模式中，現在會於全新安裝和升級期間正確套用資料庫連接埠更新。 在全新安裝模式中，使用者可以從所有可用的連接埠中進行選取，而在升級模式中，在升級過程中會正確參照 lc_turnkey.xml 中更新的資料庫連接埠。 (FORMS-24689)
 * 在 Linux® 上設定 JBoss® EAP 8.0 時，於 Windows 上修改的 Shell 指令碼不會因為 CRLF 行結尾而造成 `/bin/sh^M: bad interpreter or $'\r': command not found` 錯誤。 (FORMS-24688)
 * 在 JBoss® EAP 8 上執行的 Forms JEE LTS 部署中，Reader 擴充功能使用者介面可能會因內部伺服器錯誤而失敗。 (FORMS-24894)
-* 在Linux®上，當Forms JEE LTS Configuration Manager在`configurationManager/config/solcomp/LFS_Foundation.properties`中執行時包含未設定或不正確的`OSFileSetIntendedFor`值時，使用者遇到執行階段或部署問題，導致無法針對Linux®正確自訂設定。 在安裝之後以及執行Configuration Manager之前，請在該檔案中設定`OSFileSetIntendedFor=Linux`。 (FORMS-24741)
+* 在 Linux® 上，當 Forms JEE LTS Configuration Manager 在 `configurationManager/config/solcomp/LFS_Foundation.properties` 中包含未設定或不正確的 `OSFileSetIntendedFor` 值時，使用者會遇到執行階段或部署問題，導致無法正確地針對 Linux® 進行設定。 在完成安裝之後，且執行 Configuration Manager 之前，請於該檔案中設定 `OSFileSetIntendedFor=Linux`。 (FORMS-24741)
 
 <!--
 #### Forms JEE 
@@ -596,17 +596,27 @@ Adobe 會持續審閱或演進產品功能，藉由更新或取代舊版功能�
 >
 > * 設定系統屬性 `oak.compaction.legacy=true` 以啟動 AEM。
 
-### Sling-Initial-Content (SP2)不再支援JSON註解 {#json-comments-no-longer-supported-in-sling-initial-content}
+### AEM 6.5 LTS SP2中缺少`com.adobe.granite.apicontroller`套件(GRANITE-67640) {#missing-apicontroller-bundle-granite-67640}
 
-此問題會影響OSGi套件組合開發人員，以及部署搭配JSON檔案使用`Sling-Initial-Content`之套件組合的管理員。
+AEM 6.5 LTS SP2中缺少`com.adobe.granite.apicontroller`套件。 此套件組合會控制OSGi套件組合解析的方式，並可防止套件組合解析為其他套件，這對於限制公開的API很有用。
 
-從AEM 6.5 LTS SP2開始，`Sling-Initial-Content`套件組合中使用的JSON檔案不再接受註解（`//`或`/* */`）。 較早的AEM發行版本接受註解，因為`javax.json`提供者對此比較寬大。 AEM 6.5 LTS SP2將`org.apache.sling.jcr.contentloader`升級至2.6.0版，並將JSON剖析器切換為`jakarta.json`。 雖然[JSON規格(RFC 8259)](https://datatracker.ietf.org/doc/html/rfc8259)並未定義註解的語法，但由於`javax.json`提供者的寬大處理，舊版AEM已接受註解。 `jakarta.json`提供者不提供此延伸。
+從[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-67640-1.0.zip)安裝Hotfix以使用此功能。
 
-失敗為無訊息：內容節點無法在套件啟動時載入，且安裝程式未顯示任何錯誤。 如果在升級至SP2後意外遺失內容，請檢查OSGi安裝程式記錄檔中的JSON剖析錯誤。 若要識別受影響的組合，請在`Sling-Initial-Content`資訊清單標題下列出的JSON檔案中搜尋`//`或`/* */`。
+>[!NOTE]
+>
+> 安裝Hotfix之後，請驗證所有已安裝套裝的套件組合狀態，以確保`com.adobe.granite.apicontroller`的預設設定未引入可能會影響現有自訂實作的意外解決限制。
+
+### Sling-Initial-Content (SP2) 中已不再支援 JSON 註解 {#json-comments-no-longer-supported-in-sling-initial-content}
+
+此問題會影響 OSGi 組合包開發人員和管理員，其部署了使用 `Sling-Initial-Content` 與 JSON 檔案的組合包。
+
+從 AEM 6.5 LTS SP2 開始，`Sling-Initial-Content` 組合包中使用的 JSON 檔案已不再接受註解 (`//` 或 `/* */`)。 較舊的 AEM 版本可接受註解，因為 `javax.json` 提供者對此較為寬容。 AEM 6.5 LTS SP2 將 `org.apache.sling.jcr.contentloader` 升級至 2.6.0 版，並將 JSON 剖析器切換為 `jakarta.json`。 雖然 [JSON 規格 (RFC 8259)](https://datatracker.ietf.org/doc/html/rfc8259) 並未定義註解的語法，但由於 `javax.json` 提供者的寬容，較舊的 AEM 版本可以接受註解。 `jakarta.json` 提供者並未提供此擴充功能。
+
+此失敗是無訊息的：組合包啟用時無法載入內容節點，且安裝程式不會顯示任何錯誤。 如果在升級至 SP2 後意外遺失內容，請檢查 OSGi 安裝程式記錄中的 JSON 剖析錯誤。 若要識別受影響的組合包，請在 `Sling-Initial-Content` 資訊清單標頭下方列出的 JSON 檔案內搜尋 `//` 或 `/* */`。
 
 >[!CAUTION]
 >
-> 移除`Sling-Initial-Content`套件組合中JSON檔案的所有註解，以避免在升級至AEM 6.5 LTS SP2後內容載入失敗。
+> 請在您的 `Sling-Initial-Content` 組合包中移除 JSON 檔案的所有註解，以免在升級至 AEM 6.5 LTS SP2 後內容載入失敗。
 
 ### 安裝 Sites Headless API 必要的 Oak 索引{#site-headless-api}
 

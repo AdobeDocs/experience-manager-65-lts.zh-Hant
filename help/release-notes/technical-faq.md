@@ -6,9 +6,9 @@ feature: Release Information
 role: User,Admin,Developer
 exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
 source-git-commit: 89016492c069d61c18f9bf83bfb896cd78fb20fd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '308'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -26,13 +26,13 @@ ht-degree: 75%
 
 如需關於 Felix Health Check 框架的詳細文件，請參閱 [Felix 文件](https://github.com/apache/felix-dev/blob/master/healthcheck/README.md)。
 
-### AEM Groovy Console支援
+### AEM Groovy 主控台支援
 
-由於缺少Guava相依性，AEM 6.5中使用的AEM Groovy Console版本可能無法在AEM 6.5 LTS中運作。 新支援的AEM Groovy Console版本為[19.0.8](https://github.com/orbinson/aem-groovy-console/releases/download/19.0.8/aem-groovy-console-all-19.0.8.zip)。
+AEM 6.5 中所使用的 AEM Groovy 主控台版本因為缺少 guava 相依性，可能無法在 AEM 6.5 LTS 中運作。新支援的 AEM Groovy 主控台版本為 [19.0.8](https://github.com/orbinson/aem-groovy-console/releases/download/19.0.8/aem-groovy-console-all-19.0.8.zip)。
 
-#### AEM Groovy Console所需的其他設定
+#### AEM Groovy 主控台所需的其他設定
 
-如果您使用AEM Groovy Console，您必須明確為`com.adobe.granite.apicontroller.FilterResolverHookFactory`新增下列OSGi設定。 將`aem-groovy-console-bundle`新增至`org.apache.sling.distribution.api`金鑰的允許套件組合清單，擴充平台預設值：
+如果您在使用 AEM Groovy 主控台，必須針對 `com.adobe.granite.apicontroller.FilterResolverHookFactory` 明確新增下列 OSGi 設定。將 `aem-groovy-console-bundle` 新增至 `org.apache.sling.distribution.api` 金鑰的允許組合包清單，擴充平台預設值：
 
 ```
 "org.apache.sling.distribution.api": "com.adobe.*,com.day.*,org.apache.sling.*,aem-groovy-console-bundle"
