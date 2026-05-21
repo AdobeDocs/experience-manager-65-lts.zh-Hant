@@ -1,17 +1,13 @@
 ---
 title: 工作流程最佳實務
 description: 瞭解在Adobe Experience Manager中使用工作流程的最佳實務。
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: extending-aem
-content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: f7d67e71-3148-4b27-a61e-ff64d3bf9b72
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 887d76effd8af7ff4d061fb15d5a3572b51af20c
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1948'
 ht-degree: 1%
 
 ---
@@ -32,13 +28,13 @@ ht-degree: 1%
 
 若要最佳化高擷取負載，您可以將[工作流程定義為暫時性](/help/sites-developing/workflows.md#transient-workflows)。
 
-當工作流程為暫時性時，與中間工作步驟相關的執行階段資料在執行時不會儲存在JCR中（會儲存輸出轉譯）。
+當工作流程是暫時性的，與中間工作步驟相關的執行階段資料在執行時不會儲存在JCR中（會儲存輸出轉譯）。
 
 優點包括：
 
-* 工作流程處理時間減少；最多10%。
+* 最多可減少10%的工作流程處理時間。
 * 大幅減少存放庫的成長。
-* 清除時不再需要執行CRUD工作流程。
+* 不再需要清除CRUD工作流程。
 * 此外，它還減少了要壓縮的TAR檔案數量。
 
 >[!CAUTION]
@@ -240,17 +236,17 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 儲存工作階段：
 
-* 在工作流程程式內，如果使用`WorkflowSession`來修改存放庫，則不要明確儲存工作階段 — 工作流程將在完成時儲存工作階段。
+* 在工作流程處理序內，若正使用`WorkflowSession`修改存放庫，則不要明確儲存工作階段 — 工作流程會在完成時儲存工作階段。
 * 不應從工作流程步驟中呼叫`Session.Save`：
 
-   * 建議調整工作流程jcr工作階段；那麼`save`不是必要的，因為工作流程引擎會在工作流程執行完成後自動儲存工作階段。
-   * 不建議流程步驟建立自己的jcr工作階段。
+   * 建議調整工作流程JCR工作階段；則不需要使用`save`，因為工作流程引擎會在工作流程執行完成後自動儲存工作階段。
+   * 不建議流程步驟建立自己的JCR工作階段。
 
 * 透過消除不必要的節省，您可以減少額外負荷，進而讓工作流程更有效率。
 
 >[!CAUTION]
 >
->儘管有此處提供的建議，但如果您確實建立了自己的jcr工作階段，則必須將其儲存。
+>儘管有此處提供的建議，但如果您確實建立了自己的JCR工作階段，則必須將其儲存。
 
 ### 將啟動器的數量/範圍最小化 {#minimize-the-number-scope-of-launchers}
 
@@ -278,7 +274,7 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 工作流程可能會產生大量額外負荷，例如在記憶體中建立的物件和存放庫中追蹤的節點兩方面都是如此。 因此，與其啟動其他工作流程，不如讓工作流程在內部進行其處理。
 
-此情況的範例是在一組內容上實作業務流程，然後啟用該內容的工作流程。 最好建立自訂工作流程來啟動每個節點，而不是為每個需要發佈的內容節點啟動&#x200B;**啟動內容**&#x200B;模型。 此方法需要額外的開發工作，但在執行時比為每個啟用啟動個別的工作流程例項更有效率。
+此情況的範例是在一組內容上實作業務流程，然後啟用該內容的工作流程。 最好建立自訂工作流程來啟動每個節點，而不是為每個需要發佈的內容節點啟動&#x200B;**啟動內容**&#x200B;模型。 此方法需要額外的開發工作，但執行時比為每個啟用啟動個別的工作流程例項更有效率。
 
 另一個範例是處理數個節點的工作流程，建立工作流程封裝，然後啟動所述封裝。 與其建立封裝，然後以封裝作為裝載啟動單獨的工作流程，您可以在建立封裝的步驟中變更工作流程的裝載，然後呼叫步驟以在相同工作流程模型中啟動封裝。
 
@@ -286,13 +282,13 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 設計工作流程模型時，您可以選擇啟用工作流程步驟上的處理常式。 或者，您可以將程式碼新增至工作流程步驟，以決定下一個要執行的步驟，然後再執行它。
 
-建議使用處理常式進階，因為它可提供較出色的效能。
+建議您使用處理常式進階，因為處理常式可提供較佳的效能。
 
 ### 工作流程階段 {#workflow-stages}
 
 您可以定義[工作流程階段](/help/sites-developing/workflows.md#workflow-stages)，然後將任務/步驟指派給特定工作流程階段。
 
-當您從&#x200B;**收件匣**&#x200B;[&#128279;](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions)&#x200B;按一下工作專案的&#x200B;**工作流程資訊**&#x200B;索引標籤時，此資訊可用來顯示工作流程的進度。 可以編輯現有的工作流程模型以新增階段。
+當您從&#x200B;**收件匣**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions)&#x200B;按一下工作專案的&#x200B;[**工作流程資訊**&#x200B;索引標籤時，此資訊可用來顯示工作流程的進度。 可以編輯現有的工作流程模型以新增階段。
 
 ### 啟動頁面處理步驟 {#activate-page-process-step}
 
