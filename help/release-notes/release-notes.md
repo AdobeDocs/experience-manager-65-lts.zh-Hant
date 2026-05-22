@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 02b7915e1e5554d29577e46960c072d46bcc8b0c
+source-git-commit: c87fd907f2e9b91cc7013be5c12c867fb71dbbe1
 workflow-type: tm+mt
-source-wordcount: '7695'
+source-wordcount: '7679'
 ht-degree: 98%
 
 ---
@@ -659,10 +659,10 @@ AEM 6.5 LTS SP2中缺少`com.adobe.granite.apicontroller`套件。 此套件組�
 
 ## 包含的 OSGi 套件和內容套件{#osgi-bundles-and-content-packages-included}
 
-以下文字文件列出在此 [!DNL Experience Manager] 6.5 LTS Service Pack 2 版本中所包含的 OSGi 套件與內容套件：<!-- UPDATE FOR EACH NEW RELEASE -->
+下列zip檔案包含列出此Experience Manager 6.5 LTS Service Pack版本中包含的OSGi套件組合和內容套件的文字檔案：
 
-* [Experience Manager 6.5 LTS Service Pack 2 包含的 OSGi 套件清單](/help/release-notes/assets/65lts_sp2_bundles.txt)<!-- UPDATE FOR EACH NEW RELEASE -->
-* [Experience Manager 6.5 LTS Service Pack 2 中包含的內容套件清單](/help/release-notes/assets/65lts_sp2_packages.txt)<!-- UPDATE FOR EACH NEW RELEASE -->
+* [OSGi組合](/help/release-notes/assets/65lts_sp2_bundles.zip)
+* [內容封裝](/help/release-notes/assets/65lts_sp2_packages.zip)
 
 ## 受限制的網站{#restricted-sites}
 
