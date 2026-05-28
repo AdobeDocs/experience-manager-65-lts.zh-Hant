@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5 LTS檔案瞭解其運作方式，以及軟體可為您做什麼。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: c77ad85cf736ee660bfaa662d428a7f7e83a12ff
 workflow-type: tm+mt
-source-wordcount: '7693'
+source-wordcount: '7695'
 ht-degree: 23%
 
 ---
@@ -1412,6 +1412,7 @@ ht-degree: 23%
          + [程式碼陷阱](/help/sites-developing/code-pitfalls.md)
          + [OSGI套件組合](/help/sites-developing/osgi-bundles.md)
          + [JCR整合](/help/sites-developing/jcr-integration.md)
+         + [自訂名稱空間](/help/sites-developing/custom-namespaces.md)
          + [程式碼範例](/help/sites-developing/code-samples.md)
          + [疑難排解緩慢查詢](/help/sites-developing/troubleshooting-slow-queries.md)
    + 部署中 {#deploying}
