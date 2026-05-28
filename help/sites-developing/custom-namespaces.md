@@ -4,7 +4,7 @@ description: 瞭解如何定義自訂名稱空間並將其部署到AEM 6.5 LTS�
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,JCR
 role: Developer
-source-git-commit: 31d67c5b9bff651077df5a497e5c318b86a48158
+source-git-commit: 475a77e8e4ff0ecd19a939fd3b3c9294adf24997
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 8%
@@ -29,11 +29,11 @@ ht-degree: 8%
 
 自訂名稱空間在[Sling存放庫初始化(repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html)指令碼中受到管理，並在您專案的組態套件（例如，`ui.config`）中部署為OSGi組態。
 
-## 資源
+## 資源 {#resources}
 
 + [Sling存放庫初始化(repoinit)檔案](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios)
 
-## 代碼
+## 代碼 {#code}
 
 下列程式碼可用來設定`wknd`名稱空間。
 

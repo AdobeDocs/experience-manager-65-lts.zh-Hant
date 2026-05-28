@@ -1,17 +1,13 @@
 ---
 title: AEM中主控台的鍵盤快速鍵
 description: 使用這些鍵盤快速鍵可節省編寫時的時間。
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: bff562ff-bf0e-4f56-afd2-77907ec01e2c
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: 2e9786117c4a8b3026f7f3109b5a49ce188b119a
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '386'
 ht-degree: 4%
 
 ---
@@ -40,7 +36,7 @@ AEM提供各種鍵盤快速鍵。 有些適用於使用主控台，有些則適�
 | 主控台 | `?` | 鍵盤快速鍵說明 |
 |  | `/` | 叫用[搜尋](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | 切換要檢視的[邊欄選擇器](/help/sites-authoring/basic-handling.md#rail-selector)選項 |
-|  | ``` ` ``` | 隱藏邊欄 |
+|  | `` ` `` | 隱藏邊欄 |
 |  | `e` | 編輯 |
 |  | `p` | 屬性 |
 |  | `m` | 移動 |
