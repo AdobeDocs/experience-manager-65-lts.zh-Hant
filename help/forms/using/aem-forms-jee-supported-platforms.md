@@ -9,9 +9,9 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: eb4c7e2afa28c5bd5bdf9c38fe44143a71abd1fc
+source-git-commit: aed08dbb5afd7aefb07716ff5dbbff7265c208e5
 workflow-type: tm+mt
-source-wordcount: '3184'
+source-wordcount: '3156'
 ht-degree: 3%
 
 ---
@@ -80,10 +80,10 @@ Adobe建議使用這些設定，並在標準軟體維護合約中提供完整或
 
 >[!NOTE]
 >
->為協助AEM Forms客戶降低擁有成本、簡化部署架構，並匯入最新的開發棧疊，Adobe Experience Manager企業平台正從應用程式伺服器式部署轉向獨立的OSGi式部署。 Adobe透過縮減的基礎架構元件矩陣，持續支援AEM Forms JEE棧疊。
->若為新安裝，建議在可行的情況下，將AEM Forms部署於現代OSGi棧疊上，以使用有關回應式Adaptive Forms的最新創新，用於行動、多頻道互動式通訊和使用表單資料模型的後端資料整合。
+>為協助AEM Forms客戶降低擁有成本、簡化部署架構，並匯入最新的開發棧疊，Adobe Experience Manager企業平台正從應用程式伺服器式部署轉向獨立的OSGi式部署。Adobe透過縮減的基礎架構元件矩陣，持續支援AEM Forms JEE棧疊。
+>若為新安裝，建議在可行情況下，將AEM Forms部署於現代OSGi棧疊上，以使用有關回應式Adaptive Forms的最新創新，用於行動、多頻道互動式通訊和使用表單資料模型的後端資料整合。
 >
->Adobe可辨識現有使用者必須繼續在JEE棧疊上部署AEM Forms。 在這種情況下，Adobe需要在支援的基礎架構上部署AEM Forms JEE，如本檔案所述。 如果您要升級至AEM 6.5 Forzms並使用舊版AEM Forms上不支援的平台，請聯絡Adobe支援以取得升級至支援平台的協助。
+>Adobe可辨識現有使用者必須繼續在JEE棧疊上部署AEM Forms。 在這種情況下，Adobe需要在支援的基礎架構上部署AEM Forms JEE，如本檔案所述。 如果您要升級至AEM 6.5 Forms，並在先前的AEM Forms版本中使用不支援的平台，您可以聯絡Adobe支援以取得升級至支援平台的協助。
 
 ### Java™虛擬機器器(JVM) {#java-virtual-machines-jvm}
 
@@ -92,7 +92,7 @@ Adobe Experience Manager Forms需要由Java™開發套件(JDK)散發提供的Ja
 <table>
  <tbody>
   <tr>
-   <th><p><strong>平台</strong></p> </th>
+   <th><p><strong>Platform</strong></p> </th>
    <th><p><strong>支援程度</strong></p> </th>
    <th><p><strong>支援的修補程式定義</strong></p> </th>
   </tr>
@@ -119,7 +119,7 @@ Adobe Experience Manager Forms需要由Java™開發套件(JDK)散發提供的Ja
 <table>
  <tbody>
   <tr>
-   <td><p><strong>平台</strong></p> </td>
+   <td><p><strong>Platform</strong></p> </td>
    <td><p><strong> 說明</strong></p> </td>
    <td><p><strong>支援程度</strong></p> </td>
   </tr>
@@ -180,7 +180,7 @@ Adobe Experience Manager Forms需要由Java™開發套件(JDK)散發提供的Ja
  <tbody>
   <tr>
    <th>資料庫 </th>
-   <th><p><strong>平台</strong></p> </th>
+   <th><p><strong>Platform</strong></p> </th>
    <th><p><strong>支援的修補程式定義</strong></p> </th>
   </tr>
   <tr>
@@ -206,7 +206,7 @@ Adobe Experience Manager Forms需要由Java™開發套件(JDK)散發提供的Ja
 <table>
  <tbody>
   <tr>
-   <td><p><strong> 平台</strong></p> </td>
+   <td><p><strong> Platform</strong></p> </td>
    <td><p><strong>支援程度</strong></p> </td>
    <td><p><strong>支援的修補程式定義</strong></p> </td>
   </tr>
@@ -225,7 +225,7 @@ Adobe Experience Manager Forms需要由Java™開發套件(JDK)散發提供的Ja
 <table>
  <tbody>
   <tr>
-   <th><p><strong> 平台</strong></p> </th>
+   <th><p><strong> Platform</strong></p> </th>
    <th><p><strong>支援層級</strong></p> </th>
    <th><p><strong>支援的修補程式定義</strong></p> </th>
   </tr>
@@ -272,6 +272,11 @@ Adobe Experience Manager Forms需要由Java™開發套件(JDK)散發提供的Ja
   </tr>
   <tr>
    <td><p>® Windows® 10 64位元</p> </td>
+   <td>E：預期可運作</td>
+   <td><p>Service Pack和重要更新</p> </td>
+  </tr>
+  <tr>
+   <td><p>® Windows® 11 64位元</p> </td>
    <td>E：預期可運作</td>
    <td><p>Service Pack和重要更新</p> </td>
   </tr>
@@ -486,11 +491,15 @@ Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visi
 <table>
  <tbody>
   <tr>
-   <th><p><strong>平台</strong></p> </th>
+   <th><p><strong>Platform</strong></p> </th>
    <th><p><strong>支援的修補程式定義</strong></p> </th>
   </tr>
   <tr>
    <td><p>® Windows® 10 (Enterprise、Pro、Basic)</p> <p>32位元或64位元版本</p> <p> </p> </td>
+   <td>Service Pack和重要更新</td>
+  </tr>
+  <tr>
+   <td><p>® Windows® 11 (Enterprise、Pro、Basic)</p> <p>64位元版本</p> <p> </p> </td>
    <td>Service Pack和重要更新</td>
   </tr>
   <tr>
