@@ -11,7 +11,7 @@ role: Developer
 exl-id: fe3735ff-5c9b-4eb8-bf1d-f2189ec7e26f
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '3251'
+source-wordcount: '3366'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Java™ Content Repository (JCR)標準[JSR 283](https://developer.adobe.com/expe
 
 規格領先者為Adobe Research （瑞士） AG。
 
-[JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)套件，javax.jcr。&amp;amp；ast；用於直接存取及操作存放庫內容。
+[JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)套件javax.jcr.&amp;ast；用於直接存取及操控存放庫內容。
 
 ## Experience Server (CRX)和Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -54,7 +54,7 @@ Experience Server提供AEM所建置的Experience Services （可用來建置自�
 
 ## Sling請求處理 {#sling-request-processing}
 
-### Sling簡介 {#introduction-to-sling}
+### Sling 簡介 {#introduction-to-sling}
 
 AEM是使用[Sling](https://sling.apache.org/index.html)建置的，這是以REST原則為基礎的Web應用程式架構，可讓您輕鬆開發內容導向的應用程式。 Sling使用JCR存放庫（例如Apache Jackrabbit），或如果有AEM，則使用CRX內容存放庫作為其資料存放區。 Sling已對Apache Software Foundation有所貢獻 — 如需詳細資訊，請參閱Apache 。
 
@@ -160,7 +160,7 @@ Sling也可讓JCR節點以外的專案成為資源，但這是進階功能。
 * 當需要方法(GET、POST)時，會根據HTTP規格以大寫指定，例如jobs.POST.esp （請參閱下文）
 * 支援各種指令碼引擎：
 
-   * HTL (HTML範本語言 — Adobe Experience Manager偏好並建議的HTML伺服器端範本系統)： `.html`
+   * HTL （HTML範本語言 — Adobe Experience Manager偏好並建議的HTML伺服器端範本系統）： `.html`
    * ECMAScript (JavaScript)頁面（伺服器端執行）： `.esp, .ecma`
    * Java™ Server Pages （伺服器端執行）： `.jsp`
    * Java™ Servlet編譯器（伺服器端執行）： `.java`
@@ -172,11 +172,11 @@ Sling也可讓JCR節點以外的專案成為資源，但這是進階功能。
 
 在上述範例中，如果`sling:resourceType`為`hr/jobs`，則適用於：
 
-* GET/HEAD請求和以.html結尾的URL （預設請求型別、預設格式）
+* GET/HEAD要求，以及以.html結尾的URL （預設要求型別、預設格式）
 
-  指令碼為/apps/hr/jobs/jobs.esp；sling：resourceType的最後一個區段會形成檔案名稱。
+  指令碼為/apps/hr/jobs/jobs.esp；sling:resourceType的最後一個區段會形成檔案名稱。
 
-* POST請求(除GET/HEAD外的所有請求型別，方法名稱必須為大寫)
+* POST要求（除GET/HEAD以外的所有要求型別，方法名稱必須為大寫）
 
   指令碼名稱會使用POST。
 
@@ -196,7 +196,7 @@ Sling也可讓JCR節點以外的專案成為資源，但這是進階功能。
 
   指令碼為`/apps/hr/jobs/jobs.print.esp`；選取器已新增至指令碼名稱。
 
-* 如果未定義sling：resourceType，則：
+* 如果未定義sling:resourceType，則：
 
    * 內容路徑可用來搜尋適當的指令碼（如果路徑型ResourceTypeProvider為作用中）。
 
@@ -246,20 +246,20 @@ Sling也可讓JCR節點以外的專案成為資源，但這是進階功能。
    * a
    * b
 
-      * sling：resourceSuperType = a
+      * sling:resourceSuperType = a
 
    * c
 
-      * sling：resourceSuperType = b
+      * sling:resourceSuperType = b
 
    * x
 
-      * sling：resourceType = c
+      * sling:resourceType = c
 
    * y
 
-      * sling：resourceType = c
-      * sling：resourceSuperType = a
+      * sling:resourceType = c
+      * sling:resourceSuperType = a
 
 下列專案的型別階層：
 
@@ -278,22 +278,22 @@ Sling也可讓JCR節點以外的專案成為資源，但這是進階功能。
 
 * 自動處理GET以外的http方法，包括：
 
-   * POST、PUT、DELETE會以Sling預設實作處理
-   * sling：resourceType位置中的`POST.jsp`指令碼
+   * POST、PUT、DELETE，由Sling預設實作處理
+   * sling:resourceType位置中的`POST.jsp`指令碼
 
 * 您的程式碼架構已不像原來那麼乾淨和結構清晰；這對於大規模開發至關重要
 
 ### Sling API {#sling-api}
 
-這會使用Sling API套件org.apache.sling。&amp;amp；ast；和標籤程式庫。
+這會使用Sling API套件、org.apache.sling.&amp;ast；和標籤程式庫。
 
-### 使用sling：include參照現有元素 {#referencing-existing-elements-using-sling-include}
+### 使用sling:include {#referencing-existing-elements-using-sling-include}參考現有元素
 
 最後考量是需要參考指令碼中的現有元素。
 
 更複雜的指令碼（彙總指令碼）必須存取多個資源（例如導覽、側欄、頁尾、清單元素），並加入&#x200B;*資源*&#x200B;以執行此操作。
 
-若要這麼做，請使用sling：include(&quot;/&lt;path>/&lt;resource>&quot;)命令。 這實際上包括參考資源的定義，如以下陳述式所示，該陳述式參考用於轉譯影像的現有定義：
+若要這麼做，請使用sling:include(&quot;/&lt;path>/&lt;resource>&quot;)命令。 這實際上包括參考資源的定義，如以下陳述式所示，該陳述式參考用於轉譯影像的現有定義：
 
 ```xml
 %><sling:include resourceType="geometrixx/components/image/img"/><%
@@ -301,7 +301,7 @@ Sling也可讓JCR節點以外的專案成為資源，但這是進階功能。
 
 ## OSGI {#osgi}
 
-OSGi定義用於開發和部署模組化應用程式和程式庫的架構(也稱為Java™適用的動態模組系統)。 OSGi容器可讓您將應用程式分成個別模組（這些模組是含有其他中繼資訊的jar檔案，在OSGi術語中稱為套裝），並透過以下方式管理它們之間的交叉相依性：
+OSGi定義用於開發和部署模組化應用程式和程式庫的架構（也稱為Java™適用的動態模組系統）。 OSGi容器可讓您將應用程式分成個別模組（這些模組是含有其他中繼資訊的jar檔案，在OSGi術語中稱為套裝），並透過以下方式管理它們之間的交叉相依性：
 
 * 在容器內實作的服務
 * 容器與應用程式之間的合約
@@ -342,7 +342,7 @@ OSGi定義用於開發和部署模組化應用程式和程式庫的架構(也稱
 
 節點會定義內容結構，其屬性會儲存實際內容和中繼資料。
 
-內容節點會驅動轉譯。 Sling從傳入要求取得內容節點。 此節點的屬性sling：resourceType指向要使用的Sling演算元件。
+內容節點會驅動轉譯。 Sling從傳入要求取得內容節點。 此節點的屬性sling:resourceType指向要使用的Sling演算元件。
 
 在Sling環境中，JCR名稱節點也稱為資源。
 
@@ -385,7 +385,7 @@ AEM是使用Widget的ExtJS資料庫開發的。
 
 **頁面**&#x200B;頁面是範本的「執行個體」。
 
-頁面具有cq：Page型別的階層節點和cq：PageContent型別的內容節點。 內容節點的屬性sling：resourceType指向用於轉譯頁面的頁面元件。
+頁面具有cq:Page型別的階層節點和cq:PageContent型別的內容節點。 內容節點的屬性sling:resourceType指向用於轉譯頁面的頁面元件。
 
 例如，若要取得目前頁面的名稱，您可以在指令碼中使用下列程式碼：
 
@@ -447,7 +447,7 @@ pageManager是頁面管理員物件，myResource是資源物件。 如需頁面�
 
 ## Dispatcher {#the-dispatcher}
 
-Dispatcher是Adobe的快取和/或負載平衡工具。 您可以在[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)下找到進一步資訊。
+Dispatcher是Adobe的快取和/或負載平衡工具。 您可以在[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)下找到進一步資訊。
 
 ## FileVault （來源修訂系統） {#filevault-source-revision-system}
 

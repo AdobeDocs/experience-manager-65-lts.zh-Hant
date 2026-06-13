@@ -12,7 +12,7 @@ role: Admin
 exl-id: e51842b5-fa91-42d2-a490-5a7e867dada7
 source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ AEM 6.5 LTS可以設定為使用MongoDB儲存體執行，請遵循以下程式�
 1. 在安裝目錄中建立名為`crx-quickstart\install`的資料夾。
 1. 建立組態檔，使用您要在`crx-quickstart\install`目錄中使用的組態名稱來設定節點存放區。
 
-   檔案節點存放區(這是AEM的MongoDB儲存體實作的基礎)使用名為`org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`的檔案
+   檔案節點存放區（這是AEM的MongoDB儲存體實作的基礎）使用名為`org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`的檔案
 
 1. 編輯檔案並設定組態選項。 下列選項可供使用：
 

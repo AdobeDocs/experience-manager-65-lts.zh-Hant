@@ -11,14 +11,14 @@ role: Developer
 exl-id: 364eebca-b4cf-470b-994e-9e56ec68597b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 45%
+source-wordcount: '620'
+ht-degree: 47%
 
 ---
 
 # 元件概觀{#components-overview}
 
-此頁面概述了 Adobe Experience Manager (AEM) 元件，例如那些[用於頁面編寫](/help/sites-authoring/default-components-foundation.md)的元件。
+此頁面概觀了 Adobe Experience Manager (AEM) 元件，例如那些[用於頁面編寫](/help/sites-authoring/default-components-foundation.md) 的元件。
 
 ## 元件有哪些？ {#what-exactly-is-a-component}
 
@@ -31,7 +31,7 @@ ht-degree: 45%
 * 具有標準化的使用者介面。
 * 具有可以設定的編輯行為。
 * 使用根據Granite UI元件的子元素建置的對話方塊
-* 使用[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hant) （建議）或JSP開發。
+* 使用[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) （建議）或JSP開發。
 * 可以開發以建立擴充預設功能的自訂元件。
 
 因為元件是模組化的，所以您可以：
@@ -63,7 +63,7 @@ AEM隨附各種[現成可用的元件](/help/sites-authoring/default-components.
 
 有兩組Adobe提供的AEM元件可供使用：
 
-* [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
+* [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [基礎元件](/help/sites-authoring/default-components-foundation.md)
 
 **核心元件**&#x200B;已與AEM 6.3搭配使用，並提供有彈性且功能豐富的撰寫功能。 [We.Retail參考網站](/help/sites-developing/we-retail.md)說明如何使用核心元件，並代表目前元件開發的最佳實務。
@@ -72,7 +72,7 @@ AEM隨附各種[現成可用的元件](/help/sites-authoring/default-components.
 
 >[!NOTE]
 >
->[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)代表目前元件設計與開發的最佳實務，可作為參考實作。
+>[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)代表目前元件設計與開發的最佳實務，可作為參考實作。
 >
 >[AEM現代化工具](modernization-tools.md)可協助移轉至核心元件。
 
@@ -105,7 +105,7 @@ AEM隨附各種[現成可用的元件](/help/sites-authoring/default-components.
 * [內容片段的元件](/help/sites-developing/components-content-fragments.md)
 * [取得JSON格式的頁面資訊](/help/sites-developing/pageinfo.md)
 * [國際化元件](/help/sites-developing/i18n.md)
-* [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
+* [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [使用隱藏條件](/help/sites-developing/hide-conditions.md)
 * 傳統 UI
 

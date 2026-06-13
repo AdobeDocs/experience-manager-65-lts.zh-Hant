@@ -12,7 +12,7 @@ role: Developer
 exl-id: efa4b828-0807-40ac-81a0-1090cac9a257
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2969'
+source-wordcount: '2996'
 ht-degree: 0%
 
 ---
@@ -302,7 +302,7 @@ Personalization.ui使用者端程式庫資料夾(/etc/clientlibs/foundation/pers
 
 若要使用genericstore元件呈現存放區資料，您必須執行下列動作：
 
-* 將personalization：storeRendererTag標籤新增至元件JSP指令碼，以識別工作階段存放區的名稱。
+* 將個人化:storeRendererTag標籤新增至元件JSP指令碼，以識別工作階段存放區的名稱。
 * 在工作階段存放區類別上實作轉譯器方法。
 
 #### 識別一般存放區工作階段存放區 {#identifying-the-genericstore-session-store}
@@ -490,9 +490,9 @@ window.CQMobileSlider["geometrixx-outdoors"] = {
 
 建立CQ應用程式並新增地理位置元件。
 
-1. 在網頁瀏覽器([https://localhost:4502/crx/de](https://localhost:4502/crx/de))中開啟CRXDE Lite。
+1. 在網頁瀏覽器中開啟CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))。
 1. 以滑鼠右鍵按一下`/apps`資料夾，然後按一下「建立>建立資料夾」。 指定`myapp`的名稱，然後按一下[確定]。
-1. 同樣地，在`myapp`底下，建立名為`contextstores`的資料夾。 」
+1. 同樣地，在`myapp`底下，建立名為`contextstores`的資料夾。 &quot;
 1. 以滑鼠右鍵按一下`/apps/myapp/contextstores`資料夾，然後按一下「建立>建立元件」。 指定下列屬性值，然後按下一步：
 
    * 標籤： geoloc
@@ -518,7 +518,7 @@ window.CQMobileSlider["geometrixx-outdoors"] = {
 1. 以滑鼠右鍵按一下`/apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items`節點，然後按一下「建立>建立節點」。 指定下列屬性值，然後按一下「確定」：
 
    * 名稱：靜態
-   * 型別： cq：Widget
+   * 型別： cq:Widget
 
 1. 將下列屬性新增至節點：
 
@@ -626,5 +626,5 @@ window.CQMobileSlider["geometrixx-outdoors"] = {
 
 若要使用自訂的使用者端內容，請編輯屬性
 `path`
-使用者端內容元件的設計樣式中（如頁面範本中所包含）。 例如，作為的標準位置：
+使用者端內容元件的設計樣式中（如頁面範本中所包含）。例如，作為的標準位置：
 `/libs/cq/personalization/components/clientcontext/design_dialog/items/path`

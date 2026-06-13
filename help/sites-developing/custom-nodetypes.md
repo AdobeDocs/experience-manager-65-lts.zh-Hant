@@ -11,7 +11,7 @@ role: Developer
 exl-id: 255f52f3-aff4-432c-a541-3ce03e626742
 source-git-commit: 9bc1cad84bb14b7513ede1fff2c1a37768dac442
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1735'
 ht-degree: 5%
 
 ---
@@ -247,7 +247,7 @@ ht-degree: 5%
 * `@prop allowedChildren` — 規則運算式模式，用來決定允許做為子元件的元件路徑。
 * `@node virtual` — 包含反映用於元件拖放之虛擬元件的子節點。
 * `@prop componentGroup` — 元件群組的名稱，用於元件拖放。
-* `@node cq:infoProviders` — 包含子節點，每個子節點都有參照`className`的屬性`PageInfoProvider`。
+* `@node cq:infoProviders` — 包含子節點，每個子節點都有參照`PageInfoProvider`的屬性`className`。
 
 **定義**
 
