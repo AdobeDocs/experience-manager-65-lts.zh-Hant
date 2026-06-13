@@ -12,7 +12,7 @@ role: Admin, User, Developer
 exl-id: 39be83b0-c003-4e6c-baca-95166f654bc7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1790'
 ht-degree: 0%
 
 ---
@@ -182,7 +182,7 @@ HTML範本自訂的最上層步驟為：
 
 此範本主要用於自訂，因為它提供產生以下內容的功能：
 
-* 出貨、偵錯和開發設定檔的CRX套件(在[CRX套件](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)中提到)。
+* 出貨、偵錯和開發設定檔的CRX套件（在[CRX套件](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)中提到）。
 * 自訂程式碼的縮製版本（用於語意變更）。
 
 #### WS內容 {#ws-content}
@@ -239,7 +239,7 @@ CRX套件可部署在CRX™存放庫上。 它在`[LC root]\crx-repository\insta
 
 | **設定檔** | **說明** | **使用狀況** |
 |---|---|---|
-| 出貨設定檔 | 此設定檔會使用縮制來建立儘可能最小的CRX套件。 此套件最有效率。 所有JavaScript™檔案會合併並縮製為單一JS檔案。 | 當JS檔案中不需要進一步語意變更時，使用此設定檔。 |
+| 出貨設定檔 | 此設定檔會使用縮制來建立儘可能最小的CRX套件。 此套件最有效率。 所有™檔案會合併並縮製為單一JS檔案。 | 當JS檔案中不需要進一步語意變更時，使用此設定檔。 |
 | 偵錯設定檔 | 此設定檔會建立中等效率的CRX套件。 套件的大小略大於使用「出貨」設定檔建立的套件。 此套件已將大部分JavaScript檔案合併為單一JS檔案。 | 使用此設定檔進行偵錯。 |
 | 開發設定檔 | 此設定檔會建立最大可能大小的CRX套件。 所有JavaScript檔案都可單獨使用，就像在SDK套件中一樣。 | 在合併語意變更時使用此設定檔。 |
 

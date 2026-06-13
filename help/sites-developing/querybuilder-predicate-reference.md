@@ -11,7 +11,7 @@ role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
 source-git-commit: a85b54d5a7c3b00f95f439941a390dcfee883187
 workflow-type: tm+mt
-source-wordcount: '2291'
+source-wordcount: '2354'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 1%
 
 #### 屬性 {#properties}
 
-* **boolproperty**
+* **布林屬性**
 屬性的相對路徑，例如`myFeatureEnabled`或`jcr:content/myFeatureEnabled`。
 
 * **值**
@@ -112,7 +112,7 @@ ht-degree: 1%
 ### `daterange` {#daterange}
 
 比對JCR DATE屬性與日期和時間間隔。 使用ISO8601
-日期和時間格式( `YYYY-MM-DDTHH:mm:ss.SSSZ`)，並允許部分表示，如`YYYY-MM-DD`。 或者，時間戳記也可以提供為UTC時區(UNIX®時間格式)自1970年以來的毫秒數。
+日期和時間格式( `YYYY-MM-DDTHH:mm:ss.SSSZ`)，並允許部分表示，如`YYYY-MM-DD`。 或者，時間戳記也可以提供為UTC時區（UNIX®時間格式）自1970年以來的毫秒數。
 
 您可以尋找兩個時間戳記之間的任何專案，或比指定日期新或舊的專案，也可以選擇介於包含間隔和開啟間隔之間的專案。
 
@@ -205,7 +205,7 @@ group.2_group.path=/content/dam/geometrixx
 group.2_group.type=dam:Asset
 ```
 
-在&#x200B;**的頁面中或**&#x200B;的資產中搜尋字詞&quot;`/content/geometrixx/en`Management`/content/dam/geometrixx`&quot;。
+在`/content/geometrixx/en`的頁面中或`/content/dam/geometrixx`的資產中搜尋字詞&quot;**Management**&quot;。
 
 概念`fulltext AND ( (path AND type) OR (path AND type) )`。 此類OR聯結需要良好的索引來提升效能。
 
@@ -346,7 +346,7 @@ group.2_group.type=dam:Asset
 
 * **平坦**
 
-  僅搜尋直接子系（例如在`/*`中附加&quot; `xpath`&quot;） (僅在&#39;`exact`&#39;不是true （選用）時使用)。
+  僅搜尋直接子系（例如在`xpath`中附加&quot; `/*`&quot;） (僅在&#39;`exact`&#39;不是true （選用）時使用)。
 
 * **self**
 
@@ -382,7 +382,7 @@ group.2_group.type=dam:Asset
 
 * **深度**
 
-  屬性與相對路徑可以存在的下層萬用字元層級。 例如，`property=size depth=2`會檢查節點和大小、節點/&amp;amp；ast；/size以及節點/&amp;amp；ast；/&amp;amp；ast；/size。
+  屬性與相對路徑可以存在的下層萬用字元層級。 例如，`property=size depth=2`會檢查節點和大小、 node/&amp;ast；/size以及node/&amp;ast；/&amp;ast；/size。
 
 ### `rangeproperty` {#rangeproperty}
 
@@ -420,7 +420,7 @@ group.2_group.type=dam:Asset
 
 ### `relativedaterange` {#relativedaterange}
 
-使用相對於目前伺服器時間的時間位移，以比對`JCR DATE`屬性與日期及時間間隔。 您可以使用毫秒值或bugzilla語法`lowerBound`來指定`upperBound`和`1s 2m 3h 4d 5w 6M 7y`。 前置詞為&quot; `-`&quot;，表示目前時間之前的負位移。 如果您只指定`lowerBound`或`upperBound`，則另一個預設為0，表示目前時間。
+使用相對於目前伺服器時間的時間位移，以比對`JCR DATE`屬性與日期及時間間隔。 您可以使用毫秒值或bugzilla語法`1s 2m 3h 4d 5w 6M 7y`來指定`lowerBound`和`upperBound`。 前置詞為&quot; `-`&quot;，表示目前時間之前的負位移。 如果您只指定`lowerBound`或`upperBound`，則另一個預設為0，表示目前時間。
 
 例如：
 

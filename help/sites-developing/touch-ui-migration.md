@@ -12,14 +12,14 @@ role: Developer
 exl-id: e9b26de3-6e14-4187-8f25-6e56ee3092a7
 source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 3%
+source-wordcount: '683'
+ht-degree: 7%
 
 ---
 
 # 移轉至Touch UI{#migration-to-the-touch-ui}
 
-從6.0版開始，Adobe Experience Manager (AEM)推出了稱為&#x200B;*觸控式UI*&#x200B;的新使用者介面（也簡稱為&#x200B;*觸控式UI*）。 這會與Adobe Experience Cloud及整體Adobe使用者介面指導方針一致。 這已成為AEM中的標準UI，具有稱為&#x200B;*傳統UI*&#x200B;的舊版案頭導向介面。
+從6.0版開始，Adobe Experience Manager (AEM)推出了稱為&#x200B;*觸控式UI*&#x200B;的新使用者介面（也簡稱為&#x200B;*觸控式UI*）。 這會與Adobe Experience Cloud和整體Adobe使用者介面指導方針一致。 這已成為AEM中的標準UI，具有稱為&#x200B;*傳統UI*&#x200B;的舊版案頭導向介面。
 
 如果您已搭配傳統UI使用AEM，請採取行動移轉您的執行個體。 本頁旨在提供個別資源的連結，以發揮跳板的作用。
 
@@ -131,7 +131,7 @@ ht-degree: 3%
 雖然移轉至Touch UI並無直接關係，但建議您同時考量下列相關問題，因為這也是建議做法：
 
 * [範本](/help/sites-developing/templates.md) - [可編輯的範本](/help/sites-developing/page-templates-editable.md)
-* [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)
+* [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hant)
 
 >[!NOTE]

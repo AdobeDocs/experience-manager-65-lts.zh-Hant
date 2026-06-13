@@ -8,7 +8,7 @@ role: Admin, User, Developer
 exl-id: 5b3beaa6-ca0a-454e-85ee-c3653dd423fe
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2189'
+source-wordcount: '2174'
 ht-degree: 10%
 
 ---
@@ -479,7 +479,7 @@ ht-degree: 10%
 8. 在CRXDE中建立資料夾結構，例如`/apps/[fontslibrary]/[customlibrary(clientlibrary)]`。
 9. 移至新建立的`clientlibs`資料夾並新增`allowProxy`和`categories`屬性。
 10. 瀏覽至`/apps/[fontslibrary]/[customlibrary(clientlibrary)]`並建立css資料夾。
-11. 移至已建立的CSS資料夾並建立檔案。 例如，將檔案建立為`fonts.css`並貼上內嵌程式碼以及URL。
+11. 移至已建立的CSS資料夾並建立檔案。例如，將檔案建立為`fonts.css`並貼上內嵌程式碼以及URL。
     ![資料夾結構](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. 儲存變更。
 

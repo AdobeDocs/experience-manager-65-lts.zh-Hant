@@ -11,7 +11,7 @@ role: User, Developer
 exl-id: c5092e61-c3f9-4770-91be-247e6a02cdb4
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '807'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ AEM Forms提供AEM Forms應用程式的完整原始碼。 來源包含建立自�
 
 若要取得AEM Forms應用程式來源，請執行以下步驟：
 
-1. 開啟 [Software Distribution](https://experience.adobe.com/downloads)。您需要 Adobe ID 才能登入 Software Distribution。
+1. 開啟 [Software Distribution](https://experience.adobe.com/downloads)。 您需要 Adobe ID 才能登入 Software Distribution。
 1. 選取標題功能表中可用的&#x200B;**[!UICONTROL Adobe Experience Manager]**。
 1. 在&#x200B;**[!UICONTROL 篩選器]**&#x200B;區段中：
    1. 從&#x200B;**[!UICONTROL 解決方案]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Forms]**。

@@ -11,14 +11,14 @@ role: Developer
 exl-id: 364eebca-b4cf-470b-994e-9e56ec68597b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 45%
+source-wordcount: '620'
+ht-degree: 47%
 
 ---
 
 # 元件概觀{#components-overview}
 
-此頁面概述了 Adobe Experience Manager (AEM) 元件，例如那些[用於頁面編寫](/help/sites-authoring/default-components-foundation.md)的元件。
+此頁面概觀了 Adobe Experience Manager (AEM) 元件，例如那些[用於頁面編寫](/help/sites-authoring/default-components-foundation.md) 的元件。
 
 ## 元件有哪些？ {#what-exactly-is-a-component}
 
@@ -72,7 +72,7 @@ AEM隨附各種[現成可用的元件](/help/sites-authoring/default-components.
 
 >[!NOTE]
 >
->[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)代表目前元件設計與開發的最佳實務，可作為參考實作。
+>[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)代表目前元件設計與開發的最佳實務，可作為參考實作。
 >
 >[AEM現代化工具](modernization-tools.md)可協助移轉至核心元件。
 

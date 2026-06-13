@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: a1791374-d05c-4f60-b178-152a7bc06c45
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3215'
+source-wordcount: '3164'
 ht-degree: 52%
 
 ---
@@ -91,7 +91,7 @@ Click to enlarge
 
    * **資料模型物件**
 讓您檢視表單模型階層。
-它可讓您將表單模型元素拖放到最適化表單上。 新增的元素會自動轉換為表單元件，同時保留其原始屬性。 當表單使用 XML 結構描述、JSON 結構描述或 XDP 範本時，您可以看到資料模型物件。
+它可讓您將表單模型元素拖放到最適化表單上。新增的元素會自動轉換為表單元件，同時保留其原始屬性。當表單使用XML結構描述、JSON結構描述或XDP範本時，您可以看到資料模型物件。
 
 * **屬性瀏覽器**
 
@@ -159,7 +159,7 @@ Click to enlarge
   </tr>
   <tr>
    <td>檔案附件</td>
-   <td><p>新增按鈕，此按鈕可讓使用者瀏覽支援文件並將其附加到表單。 您可以將多個檔案附加至「檔案」附件元件。 您也可以在元件的屬性瀏覽器中，為附件指定&#x200B;**[!UICONTROL 檔案大小上限]**&#x200B;和&#x200B;**[!UICONTROL 支援的檔案型別]**。 </p> <p><strong> 注意： </strong><ul> <li> 元件不支援附加檔案名稱(.)開頭為字元，且包含\ / ： * ？ 「 &lt; &gt; | ； % $」，或包含保留給Windows作業系統（如nul、prn、con、lpt或com）的特殊檔案名稱。 </li> <li> 若要將多個檔案附加至Apple Safari瀏覽器中開啟的檔案附件元件，請逐一選取並附加檔案。 您無法一次選取並附加多個檔案。</li> <li>「檔案附件」元件支援為Adobe Sign啟用的調適型表單中預先定義的檔案格式集。 如需詳細資訊，請參閱<a href="https://helpx.adobe.com/tw/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">支援的檔案格式</a>。 </li></ul></p> </td>
+   <td><p>新增按鈕，此按鈕可讓使用者瀏覽支援文件並將其附加到表單。 您可以將多個檔案附加至「檔案」附件元件。 您也可以在元件的屬性瀏覽器中，為附件指定&#x200B;**[!UICONTROL 檔案大小上限]**&#x200B;和&#x200B;**[!UICONTROL 支援的檔案型別]**。 </p> <p><strong> 注意： </strong><ul> <li> 元件不支援附加檔案名稱(.)開頭為字元，且包含\ / ： * ？ 「 &lt; &gt; | ； % $，或包含保留給Windows作業系統（如nul、prn、con、lpt或com）的特殊檔案名稱。 </li> <li> 若要將多個檔案附加至Apple Safari瀏覽器中開啟的檔案附件元件，請逐一選取並附加檔案。 您無法一次選取並附加多個檔案。</li> <li>「檔案附件」元件支援為Adobe Sign啟用的調適型表單中預先定義的檔案格式集。 如需詳細資訊，請參閱<a href="https://helpx.adobe.com/tw/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">支援的檔案格式</a>。 </li></ul></p> </td>
   </tr>
   <tr>
    <td>檔案附件清單</td>

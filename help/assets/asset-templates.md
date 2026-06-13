@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 8584d5ea-6ef2-4e81-8b18-5aa2d4226ea6
 source-git-commit: 9ed889c74a886e1b41c379dac77bb570ef5c2c39
 workflow-type: tm+mt
-source-wordcount: '1557'
+source-wordcount: '1570'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 1%
    ![chlimage_1-104](assets/chlimage_1-309.png)
 
 1. （選擇性）按一下&#x200B;**[!UICONTROL 標籤]**，然後為手冊選取一或多個標籤。 按一下&#x200B;**[!UICONTROL 確認]**&#x200B;以確認您的選擇。
-1. 按一下「**[!UICONTROL 建立]**」。對話方塊會確認已建立新手冊。 按一下&#x200B;**[!UICONTROL 開啟]**，以編輯模式開啟手冊。
+1. 按一下「**[!UICONTROL 建立]**」。 對話方塊會確認已建立新手冊。 按一下&#x200B;**[!UICONTROL 開啟]**，以編輯模式開啟手冊。
 
    <!--![chlimage_1-106](assets/.png) -->
 
@@ -174,4 +174,4 @@ ht-degree: 1%
 
 ## 最佳作法和限制 {#best-practices-limitations-tips}
 
-* [!DNL InDesign]中的[!DNL Experience Manager]編輯器在標籤層級運作，且單一標籤下的所有文字都視為單一實體。 若要在編輯時保留文字格式和樣式，請分別標籤每個段落（或使用不同樣式的文字）。
+* [!DNL Experience Manager]中的[!DNL InDesign]編輯器在標籤層級運作，且單一標籤下的所有文字都視為單一實體。 若要在編輯時保留文字格式和樣式，請分別標籤每個段落（或使用不同樣式的文字）。

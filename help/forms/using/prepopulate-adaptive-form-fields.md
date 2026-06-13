@@ -11,20 +11,20 @@ role: User, Developer
 exl-id: 69734a2b-7f9d-4661-a1e9-3bf6e362c272
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2213'
+source-wordcount: '2298'
 ht-degree: 2%
 
 ---
 
 # 預填自適應表單欄位{#prefill-adaptive-form-fields}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
 ## 套用至 {#applies-to}
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html?lang=zh-Hant)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html?lang=zh-Hant)上的AEM Forms 。
 
 ## 簡介 {#introduction}
 
@@ -139,7 +139,7 @@ Prefill-Submit-Data-ContentPackage.zip
 
 >[!NOTE]
 >
->建議不要在繫結面板(具有非空白`bindRef`且已透過從Sidekick或「資料來源」索引標籤拖曳元件而建立的面板)中使用未繫結欄位。 這可能會導致這些未繫結欄位的資料遺失。 此外，建議整個表單中的欄位名稱必須是唯一的，尤其是未繫結的欄位。
+>建議不要在繫結面板（具有非空白`bindRef`且已透過從Sidekick或「資料來源」索引標籤拖曳元件而建立的面板）中使用未繫結欄位。 這可能會導致這些未繫結欄位的資料遺失。 此外，建議整個表單中的欄位名稱必須是唯一的，尤其是未繫結的欄位。
 
 #### 不含afData和afBoundData包裝函式的範例 {#an-example-without-afdata-and-afbounddata-wrapper}
 
@@ -204,11 +204,11 @@ Prefill-Submit-Data-ContentPackage.zip
 
 >[!NOTE]
 >
->不建議在繫結面板(具有非空白bindRef的面板，這些面板是從Sidekick或「資料來源」索引標籤拖曳元件而建立的)中使用未繫結欄位，因為這可能會造成未繫結欄位的資料遺失。**&#x200B;** 建議在表單中設定唯一的欄位名稱，尤其是未繫結欄位。
+>不建議在繫結面板（具有非空白bindRef的面板，這些面板是從Sidekick或「資料來源」索引標籤拖曳元件而建立的）中使用未繫結欄位，因為這可能會造成未繫結欄位的資料遺失。**&#x200B;** 建議在表單中設定唯一的欄位名稱，尤其是未繫結欄位。
 
 ### 無表單模型的最適化表單 {#adaptive-form-with-no-form-model}
 
-針對沒有表單模型的最適化表單，所有欄位的資料都在`<data>`的`<afUnboundData> tag`標籤下。
+針對沒有表單模型的最適化表單，所有欄位的資料都在`<afUnboundData> tag`的`<data>`標籤下。
 
 此外，請注意下列事項：
 
@@ -314,7 +314,7 @@ https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=servic
 
 ### 在slingRequest中設定資料屬性 {#setting-data-attribute-in-slingrequest}
 
-您也可以在`data`中設定`slingRequest`屬性，其中`data`屬性是包含XML或JSON的字串，如下列範常式式碼所示（範例為XML）：
+您也可以在`slingRequest`中設定`data`屬性，其中`data`屬性是包含XML或JSON的字串，如下列範常式式碼所示（範例為XML）：
 
 ```javascript
 <%

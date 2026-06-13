@@ -7,7 +7,7 @@ role: Developer
 exl-id: eb75efb8-c59a-4d51-af54-942cca178f2e
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '1910'
+source-wordcount: '1999'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 0%
    * 表單資料模型 — 指定表單資料模型路徑。
    * ArrayList — 指定集合的子型別。
 
-1. 指定變數的選擇性說明，並選取方塊核心取記號所指示的![儲存圖示。](assets/Done_Icon.png)以儲存變更。 變數會顯示在左窗格中可用的清單中。
+1. 指定變數的選擇性描述，並選取方塊核心取記號所指示的![儲存圖示。](assets/Done_Icon.png) 以儲存變更。 變數會顯示在左窗格中可用的清單中。
 
 建立變數時，請考量下列作法：
 
@@ -83,10 +83,10 @@ ht-degree: 0%
 若要在變數之間新增對應，請執行下列動作：
 
 1. 在工作流程編輯頁面上，選取工作流程模型Sidekick中可用的步驟圖示。
-1. 將&#x200B;**設定變數**&#x200B;步驟拖放到工作流程編輯器中，選取該步驟，然後選取扳手所指示的![設定圖示。](assets/configure_icon.png) （設定）。
+1. 將&#x200B;**設定變數**&#x200B;步驟拖放到工作流程編輯器中，選取該步驟，然後選取扳手指示的![設定圖示。](assets/configure_icon.png) （設定）。
 1. 在[設定變數]對話方塊中，選取&#x200B;**[!UICONTROL 對應]** > **[!UICONTROL 新增對應]**。
 1. 在&#x200B;**對應變數**&#x200B;區段中，選取要儲存資料的變數、選取對應模式，然後指定要在變數中儲存的值。 對應模式會因變數型別而異。
-1. 對應更多變數，以便做出有意義的運算式。 選取方塊內勾選記號所指示的![儲存圖示。](assets/Done_Icon.png)以儲存變更。
+1. 對應更多變數，以便做出有意義的運算式。 選取方塊內勾選記號所指示的![儲存圖示。](assets/Done_Icon.png) 以儲存變更。
 
 ### 範例1：查詢XML變數以設定字串變數的值 {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -231,8 +231,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## 編輯變數 {#edit-a-variable}
 
 1. 在編輯工作流程頁面上，選取工作流程模型Sidekick中可用的「變數」圖示。 左窗格中的變數區段會顯示所有現有的變數。
-1. 選取鉛筆符號所指示的![編輯圖示。您要編輯的變數名稱旁的](assets/edit.png) （編輯）圖示。
-1. 編輯變數資訊，並選取核取記號所指示的![儲存圖示。](assets/Done_Icon.png)以儲存變更。 您無法編輯變數的&#x200B;**[!UICONTROL Name]**&#x200B;和&#x200B;**[!UICONTROL Type]**&#x200B;欄位。
+1. 選取鉛筆符號所指示的![編輯圖示。](assets/edit.png) （編輯）圖示加以選取，並位於您要編輯的變數名稱旁。
+1. 編輯變數資訊，並選取核取記號指示的![儲存圖示。](assets/Done_Icon.png) 以儲存變更。 您無法編輯變數的&#x200B;**[!UICONTROL Name]**&#x200B;和&#x200B;**[!UICONTROL Type]**&#x200B;欄位。
 
 ## 刪除變數 {#delete-a-variable}
 
@@ -242,4 +242,4 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 1. 在編輯工作流程頁面上，選取工作流程模型Sidekick中可用的「變數」圖示。 左窗格中的變數區段會顯示所有現有的變數。
 1. 選取您要刪除之變數名稱旁的刪除圖示。
-1. 選取核取記號符號所指示的![完成圖示。](assets/Done_Icon.png)以確認並刪除變數。
+1. 選取核取記號符號表示的![完成圖示。](assets/Done_Icon.png) 以確認並刪除變數。

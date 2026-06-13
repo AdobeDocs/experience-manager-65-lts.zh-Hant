@@ -9,7 +9,7 @@ role: Admin, User, Developer
 exl-id: 8591214f-9c11-4cd3-b2a1-c83040507b20
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '658'
 ht-degree: 2%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 2%
      <li>記帳日期</li>
      <li>帳單期間</li>
     </ul> <p> </p> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>客戶詳細資料</td>
@@ -92,7 +92,7 @@ ht-degree: 2%
      <li>州代碼</li>
      <li>連線數目</li>
     </ul> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>帳單摘要</td>
@@ -106,7 +106,7 @@ ht-degree: 2%
      <li>應付金額</li>
      <li>到期日期</li>
     </ul> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>費用摘要</td>
@@ -124,7 +124,7 @@ ht-degree: 2%
      <li>應付帳款總計（使用費用計算欄位）</li>
     </ul> <p>表格 — 用料表</p> </td>
    <td>無欄位</td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>分項通話 — 傳出</td>
@@ -138,20 +138,20 @@ ht-degree: 2%
     </ul> </td>
    <td><p>所有值</p> <p>表格 — 呼叫</p> </td>
    <td>無欄位</td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>立即付款</td>
-   <td>—</td>
-   <td>—</td>
-   <td>—</td>
+   <td>--</td>
+   <td>--</td>
+   <td>--</td>
    <td>Paynow</td>
   </tr>
   <tr>
    <td>增值服務</td>
-   <td>—</td>
-   <td>—</td>
-   <td>—</td>
+   <td>--</td>
+   <td>--</td>
+   <td>--</td>
    <td>ValueAddedServices</td>
   </tr>
  </tbody>
