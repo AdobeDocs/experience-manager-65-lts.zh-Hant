@@ -9,7 +9,7 @@ role: User, Developer
 exl-id: c2e9200f-a4b7-46fc-9dde-425329e5365d
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '953'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ AEM Forms提供AEM Forms應用程式的完整原始碼。 來源包含建立自�
 
 若要取得AEM Forms應用程式來源，請執行以下步驟：
 
-1. 開啟 [Software Distribution](https://experience.adobe.com/downloads)。您需要 Adobe ID 才能登入 Software Distribution。
+1. 開啟 [Software Distribution](https://experience.adobe.com/downloads)。 您需要 Adobe ID 才能登入 Software Distribution。
 1. 選取標題功能表中可用的&#x200B;**[!UICONTROL Adobe Experience Manager]**。
 1. 在&#x200B;**[!UICONTROL 篩選器]**&#x200B;區段中：
    1. 從&#x200B;**[!UICONTROL 解決方案]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Forms]**。
@@ -80,7 +80,7 @@ AEM Forms提供AEM Forms應用程式的完整原始碼。 來源包含建立自�
 
    ![重新鎖定目標 — 解決方案](assets/retarget-solution.png)
 
-1. 在[建立應用程式封裝]精靈中，選取您是否要上傳應用程式至Windows市集，然後按一下[下一步]&#x200B;**&#x200B;**。
+1. 在[建立應用程式封裝]精靈中，選取您是否要上傳應用程式至Windows市集，然後按一下[下一步]****。
 
    ![createapppackageswizard1](assets/createapppackageswizard1.png)
 

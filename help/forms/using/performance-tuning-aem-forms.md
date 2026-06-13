@@ -11,7 +11,7 @@ feature: Adaptive Forms
 exl-id: 4009c85e-cb8a-4bed-a6ff-7c76fe78a47f
 source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 您可以使用AEM Forms Web組態主控台中的&#x200B;**行動Forms組態**&#x200B;元件，來設定和控制AEM的快取策略：
 
-* (OSGi上的AEM Forms) `https://'[server]:[port]'/system/console/configMgr`
+* （OSGi上的AEM Forms） `https://'[server]:[port]'/system/console/configMgr`
 
 <!--
 * (AEM Forms on JEE) `https://'[server]:[port]'/lc/system/console/configMgr`
@@ -105,7 +105,7 @@ Apache可以使用HTTP通訊協定與CRX通訊。 這些設定是使用HTTP進�
 
 1. 啟用壓縮。 在`APACHE_HOME/conf/httpd.conf`組態檔中新增下列組態。
 
-   適用於HTML5表單的&#x200B;**&#x200B;**
+   適用於HTML5表單的&#x200B;****
 
    ```xml
    <Location /content/xfaforms>

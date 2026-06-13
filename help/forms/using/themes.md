@@ -11,24 +11,24 @@ role: User, Developer
 exl-id: 6f68090f-4ded-42c3-a074-3a18b27e754d
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '6095'
-ht-degree: 2%
+source-wordcount: '5975'
+ht-degree: 3%
 
 ---
 
 # 建立和使用主題 {#creating-and-using-themes}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
 ## 套用至 {#applies-to}
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html?lang=zh-Hant)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html)上的[AEM Forms 。
 
 ## 簡介 {#introduction}
 
-您可以建立並套用主題，使最適化表單或互動式通訊風格化。 主題包含元件和面板的樣式詳細資訊。 樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。當您套用主題時，指定的樣式會反映在相應的元件上。 主題可獨立管理，不需參考最適化表單或互動式通訊。
+您可以建立並套用主題，使最適化表單或互動式通訊風格化。 主題包含元件和面板的樣式詳細資訊。 樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。 當您套用主題時，指定的樣式會反映在相應的元件上。 主題可獨立管理，不需參考最適化表單或互動式通訊。
 
 您可以：
 
@@ -68,7 +68,7 @@ ht-degree: 2%
 
 1. 在[主題]頁面中，**選取**&#x200B;主題，然後按一下&#x200B;**下載**。 隨即顯示包含主題詳細資訊的對話方塊。
 
-1. 按一下&#x200B;**下載**。 主題會下載為zip檔案。
+1. 按一下「**下載**」。 主題會下載為zip檔案。
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ ht-degree: 2%
 1. 按一下&#x200B;**Adobe Experience Manager**，按一下&#x200B;**Forms**，然後按一下&#x200B;**主題**。
 
 1. 在「佈景主題」頁面中，按一下&#x200B;**建立>檔案上傳**。
-1. 在[檔案上傳]提示中，瀏覽並選取您電腦上的主題封裝，然後按一下[上傳]。**&#x200B;**
+1. 在[檔案上傳]提示中，瀏覽並選取您電腦上的主題封裝，然後按一下[上傳]。****
 上傳的主題可在主題頁面中使用。
 
 ## 主題的中繼資料 {#metadata-of-a-theme}
@@ -122,7 +122,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>4.</td>
-   <td>已建立</td>
+   <td>建立時間</td>
    <td>否</td>
    <td>佈景主題建立日期</td>
   </tr>
@@ -146,7 +146,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>8.</td>
-   <td>準時發佈</td>
+   <td>發佈開啟時間</td>
    <td>是</td>
    <td>自動發佈佈景主題的時間。</td>
   </tr>
@@ -181,7 +181,7 @@ ht-degree: 2%
      <li>「/etc」中儲存與此主題相對應的clientlibs的使用者定義存放庫路徑。</li>
      <li>預設值 — '/etc/clientlibs/fd/themes' +主題資產的相對路徑。</li>
      <li>如果該位置不存在，則會自動產生資料夾階層。</li>
-     <li>此值變更時，clientlib節點結構會移至輸入的新位置。<br /> <em><strong>注意：</strong>如果您變更預設的clientlib位置，請在CRXDE存放庫中指派新位置中的<code>crx:replicate</code>、<code>rep:write</code>、<code>rep:glob:*</code>、<code>rep:itemNames::</code>、<code>js.txt</code>、<code>jcr:read</code>給<code>forms-users</code>和<code>crx:replicate</code>、<code>jcr:read</code>給<code>fd-service</code>。 同時為<code>deny jcr:addChildNodes</code>新增<code>forms-user</code></em>以附加另一個ACL</li>
+     <li>此值變更時，clientlib節點結構會移至輸入的新位置。<br /> <em><strong>注意：</strong>如果您變更預設clientlib位置，請在CRXDE存放庫中指派新位置的<code>crx:replicate</code>、<code>rep:write</code>、<code>rep:glob:*</code>、<code>rep:itemNames::</code>、<code>js.txt</code>、<code>jcr:read</code>給<code>forms-users</code>和<code>crx:replicate</code>、<code>jcr:read</code>給<code>fd-service</code>。 同時為<code>forms-user</code></em>新增<code>deny jcr:addChildNodes</code>以附加另一個ACL</li>
     </ul> </td>
   </tr>
   <tr>
@@ -207,7 +207,7 @@ AEM Forms隨附主題編輯器。 這是對業務使用者和網頁設計人員/
 
 主題編輯器分為兩個面板：
 
-* **畫布** — 顯示在右側。 它會顯示最適化表單或互動式通訊的範例，其中所有樣式變更都會立即反映。 您也可以直接從畫布中選取物件，以查詢與物件相關聯的樣式，並編輯這些樣式。 上方的裝置解析度尺標可控制畫布。 從尺標選取解析度中斷點，會顯示範例表單的預覽或個別解析度的互動式通訊。 畫布的詳細討論如下[&#128279;](../../forms/using/themes.md#using-canvas)。
+* **畫布** — 顯示在右側。 它會顯示最適化表單或互動式通訊的範例，其中所有樣式變更都會立即反映。 您也可以直接從畫布中選取物件，以查詢與物件相關聯的樣式，並編輯這些樣式。 上方的裝置解析度尺標可控制畫布。 從尺標選取解析度中斷點，會顯示範例表單的預覽或個別解析度的互動式通訊。 畫布的詳細討論如下[](../../forms/using/themes.md#using-canvas)。
 
 * **側欄** — 顯示在左側。 它有下列專案：
 
@@ -231,9 +231,9 @@ AEM Forms隨附主題編輯器。 這是對業務使用者和網頁設計人員/
 
    * **檢視CSS**：可讓您檢視所選元件的CSS
 
-  此外，在側邊欄中，底部會顯示箭頭。 按一下箭頭時，您會取得兩個其他選項： **模擬成功**&#x200B;和&#x200B;**模擬錯誤。**&#x200B;這些選項以及上述選項將在以下[詳細討論](../../forms/using/themes.md#using-rail)。
+  此外，在側邊欄中，底部會顯示箭頭。 按一下箭頭時，您會取得兩個其他選項： **模擬成功**&#x200B;和&#x200B;**模擬錯誤。** 這些選項以及上述選項將在以下[詳細討論](../../forms/using/themes.md#using-rail)。
 
-[![主題編輯器，反白顯示邊欄和畫布。](assets/themes.png)](assets/themes-1.png) **A.**&#x200B;側欄&#x200B;**B.**&#x200B;畫布
+[![反白顯示邊欄和畫布的主題編輯器。](assets/themes.png)](assets/themes-1.png) **A.**&#x200B;側欄&#x200B;**B.**&#x200B;畫布
 
 ### 設定元件樣式 {#styling-components}
 
@@ -307,7 +307,7 @@ AEM Forms中的主題支援您的表單和互動式通訊中面板版面配置�
 當您提供樣式的自訂名稱時，該樣式會繫結至主題，且無法再用於其他主題。 若要刪除已儲存的樣式：
 
 1. 在「畫布」工具列上，按一下&#x200B;**主題選項** ![主題選項](assets/theme-options.png) > **管理樣式**。
-1. 在[管理樣式]對話方塊中，選取已儲存的樣式，按一下[刪除]。**&#x200B;**
+1. 在[管理樣式]對話方塊中，選取已儲存的樣式，按一下[刪除]。****
 
    ![刪除儲存的樣式](assets/manage-styles.png)
 
@@ -428,7 +428,7 @@ AEM Forms中的主題支援您的表單和互動式通訊中面板版面配置�
    <td><p>進階</p> </td>
    <td><p>可讓您新增：</p>
     <ul>
-     <li><code>::before</code>和<code>::after</code>虛擬元素的屬性，可在選取器中的預設內容之後或之前新增內容，並設定其樣式。<br />請參閱<a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">CSS Pseudo元素</a>。</li>
+     <li><code>::before</code>和<code>::after</code>虛擬元素的屬性，可在選取器中的預設內容之後或之前新增內容，並設定其樣式。<br /> 請參閱<a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">CSS Pseudo元素</a>。</li>
      <li>自訂CSS程式碼內嵌至元件並寫入自訂選取器。 </li>
     </ul> <p>新增自訂CSS程式碼時，它會覆寫您使用側邊欄中的選項新增的自訂。 </p> </td>
   </tr>
@@ -461,7 +461,7 @@ AEM Forms中的主題支援您的表單和互動式通訊中面板版面配置�
 
 1. 選取&#x200B;**數值方塊Widget**。
 1. 側欄標題會變更為數值方塊Widget，並顯示自訂其外觀的選項。
-在側邊欄中使用&#x200B;**Dimension和位置**&#x200B;選項來自訂元件的大小。 確定狀態為&#x200B;**預設**。
+在側邊欄中使用**Dimension和位置**&#x200B;選項來自訂元件的大小。確定狀態為&#x200B;**預設**。
 
 不要選取&#x200B;**數值方塊Widget**，請在元件工具列中選取&#x200B;**欄位Widget**，然後執行上述步驟。 當您選取&#x200B;**欄位Widget**&#x200B;選項的維度時，除了數值方塊之外，其他所有文字方塊的大小都相同。
 
@@ -501,7 +501,7 @@ AEM Forms中的主題支援您的表單和互動式通訊中面板版面配置�
 執行以下步驟，在AEM中設定Adobe Fonts：
 
 1. 在作者執行個體中，按一下「![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager >工具![hammer](assets/hammer.png) >部署>雲端服務」。
-1. 在&#x200B;**雲端服務**&#x200B;頁面上，瀏覽並開啟&#x200B;**Adobe Fonts**&#x200B;選項。 開啟設定資料夾，然後按一下[建立]。**&#x200B;**
+1. 在&#x200B;**雲端服務**&#x200B;頁面上，瀏覽並開啟&#x200B;**Adobe Fonts**&#x200B;選項。 開啟設定資料夾，然後按一下[建立]。****
 1. 在&#x200B;**建立組態**&#x200B;對話方塊中，指定組態的標題，然後按一下&#x200B;**建立**。
 
    系統會將您重新導向至設定頁面。
@@ -647,12 +647,12 @@ AEM Forms中的主題支援您的表單和互動式通訊中面板版面配置�
      基礎使用者端資料庫包含樣式資訊。 若要在主題的使用者端資料庫中使用樣式資訊。
 
       1. 導覽至&#x200B;**Experience Manager > Forms >主題**。
-      1. 在[佈景主題]頁面中，選取佈景主題，然後按一下[檢視內容]。**&#x200B;**
+      1. 在[佈景主題]頁面中，選取佈景主題，然後按一下[檢視內容]。****
       1. 在開啟的[內容]頁面中，按一下[**進階**]。
       1. 在「進階」標籤的「使用者端程式庫位置」欄位中，瀏覽並選取您要使用的使用者端程式庫。
       1. 按一下&#x200B;**儲存**。
 
-     您在使用者端資料庫中指定的樣式會匯入到使用它的主題中。 例如，您可在使用者端資料庫中指定文字方塊、數值方塊和切換的樣式。 在主題中匯入使用者端資料庫時，會匯入文字方塊、數值方塊和切換的樣式。 然後，您可以使用主題編輯器來設定其他元件的樣式。
+     您在使用者端資料庫中指定的樣式會匯入到使用它的主題中。例如，您可在使用者端資料庫中指定文字方塊、數值方塊和切換的樣式。在主題中匯入使用者端資料庫時，會匯入文字方塊、數值方塊和切換的樣式。然後，您可以使用主題編輯器來設定其他元件的樣式。
 您也可以建立佈景主題、建立佈景主題復本，然後針對類似使用案例修改複製佈景主題中提供的樣式。
 請參閱[使用主題取得特定外觀](#specific-af-appearance)
 

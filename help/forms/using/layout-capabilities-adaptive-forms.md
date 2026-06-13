@@ -11,20 +11,20 @@ role: User, Developer
 exl-id: 23ca3bff-1a7e-48cc-83b7-b2ec8545cd00
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 4%
+source-wordcount: '1246'
+ht-degree: 9%
 
 ---
 
 # 調適型表單的版面配置功能{#layout-capabilities-of-adaptive-forms}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
 ## 套用至 {#applies-to}
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/layout-capabilities-adaptive-forms.html?lang=zh-Hant)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/layout-capabilities-adaptive-forms.html)上的[AEM Forms 。
 
 
 Adobe Experience Manager (AEM)可讓您建立簡單易用的調適型表單，為使用者提供動態體驗。 表單版面配置會控制專案或元件在調適型表單中的顯示方式。
@@ -67,7 +67,7 @@ Adobe Experience Manager (AEM)可讓您建立簡單易用的調適型表單，�
 
 調適型表單中的面板配置清單
 
-### Responsive — 全部於單頁無需導覽 {#responsive-everything-on-one-page-without-navigation-br}
+### 可回應 - 頁面上的所有東西，不含導覽 {#responsive-everything-on-one-page-without-navigation-br}
 
 使用此面板佈局可建立回應式佈局，此佈局會根據裝置的熒幕大小進行調整，而無需任何專門的導覽。
 
@@ -99,7 +99,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 使用精靈的表單
 
-### 摺疊式功能表設計的配置 {#layout-for-accordion-design}
+### 折疊設計的版面 {#layout-for-accordion-design}
 
 使用此版面，您可以將`Panel adaptive form`元件放置在具有摺疊式功能表樣式導覽的面板中。 使用此版面，您也可以建立可重複的面板。 可重複面板可讓您視需要動態新增或移除面板。 您可以定義面板重複的最小和最大次數。 此外，面板的標題可以根據面板專案中提供的資訊動態決定。
 
@@ -109,7 +109,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 使用摺疊式佈局建立的可重複面板
 
-### 索引標籤版面配置 — 索引標籤顯示在左側 {#tabbed-layout-tabs-appear-on-the-left}
+### 有標籤的配置 - 標籤出現在左側 {#tabbed-layout-tabs-appear-on-the-left}
 
 使用此配置，您可以將`Panel adaptive form`元件放置在具有索引標籤導覽的面板中。 標籤會放置在面板內容的左側。
 
@@ -117,7 +117,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 出現在面板左側的索引標籤
 
-### 索引標籤版面配置 — 索引標籤顯示在頂端 {#tabbed-layout-tabs-appear-on-the-top}
+### 有標籤的配置 - 標籤出現在最上方 {#tabbed-layout-tabs-appear-on-the-top}
 
 使用此配置，您可以將`Panel adaptive form`元件放置在含有索引標籤導覽的面板中。 索引標籤會放置在面板內容的頂端。
 
@@ -139,7 +139,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 使用行動版面配置時，點選![aem6forms_form_menu](assets/aem6forms_form_menu.png)圖示即可使用表單功能表來存取各種表單面板。
 
-### 在表單標題中使用面板標題的佈局 {#layout-with-panel-titles-in-the-form-header}
+### 表單標頭中有面板標題的版面 {#layout-with-panel-titles-in-the-form-header}
 
 如名稱所建議，此版面會顯示面板標題以及導覽功能表和導覽列。 此版面配置也提供用於導覽的「下一個」和「上一個」圖示。
 
@@ -147,7 +147,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 行動版面配置與表單標題中的面板標題
 
-### 在表單標題中不使用面板標題進行佈局 {#layout-without-panel-titles-in-the-form-header}
+### 表單標頭中無面板標題的版面 {#layout-without-panel-titles-in-the-form-header}
 
 如名稱所建議，此版面只會顯示導覽功能表與導覽列，而不會顯示面板標題。 此版面配置也提供用於導覽的「下一個」和「上一個」圖示。
 
@@ -175,7 +175,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 工具列的預設檢視
 
-### 行動工具列的固定版面配置 {#mobile-fixed-layout-for-toolbar}
+### 工具列的行動版固定配置 {#mobile-fixed-layout-for-toolbar}
 
 選取此配置以提供案頭和行動裝置的替代配置。
 
@@ -185,4 +185,4 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![工具列的行動固定版面配置](assets/toolbar_layout_mobile_fixed.png)
 
-行動工具列的固定版面配置
+工具列的行動版固定配置

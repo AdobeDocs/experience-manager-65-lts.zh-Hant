@@ -1,5 +1,5 @@
 ---
-title: 最佳化HTML5表單
+title: 最佳化 HTML5 表單
 description: 您可以最佳化HTML5表單的輸出大小。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ role: Admin, User, Developer
 exl-id: 1ab2fe5d-5fac-4a11-8d27-7c7607f98653
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 0%
+source-wordcount: '284'
+ht-degree: 2%
 
 ---
 
-# 最佳化HTML5表單 {#optimizing-html-forms}
+# 最佳化 HTML5 表單 {#optimizing-html-forms}
 
 HTML5表單會以HTML5格式轉譯表單。 根據表單的表單大小和影像等因素，產生的輸出可能會很大。 為了最佳化資料傳輸，建議使用伺服請求的網頁伺服器來壓縮HTML回應。 此方法可減少回應大小、網路流量，以及在伺服器和使用者端電腦之間串流資料所需的時間。
 
@@ -83,4 +83,4 @@ Apache可以使用HTTP或AJP通訊協定與JBoss通訊。
    </Location>
    ```
 
-1. 若要存取AEM伺服器，請使用https://[Apache_server]：80。
+1. 若要存取AEM伺服器，請使用https://[Apache_server]:80。

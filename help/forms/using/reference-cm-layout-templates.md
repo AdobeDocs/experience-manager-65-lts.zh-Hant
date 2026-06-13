@@ -10,7 +10,7 @@ role: Admin, User, Developer
 exl-id: 17e1310f-f82d-42ee-a7cb-9bc141f23aee
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 在「通訊管理」中，信函範本包含典型的表單欄位、版面配置功能（如頁首和頁尾）以及用於置入內容的空白「目標區域」。
 
-通訊管理在[AEM Forms附加元件套件](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hant)中提供信件範本。 您可以根據品牌和業務需求在Designer中自訂範本。 此套件包含下列範本：
+通訊管理在[AEM Forms附加元件套件](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)中提供信件範本。 您可以根據品牌和業務需求在Designer中自訂範本。 此套件包含下列範本：
 
 * Classic
 * Classic簡單

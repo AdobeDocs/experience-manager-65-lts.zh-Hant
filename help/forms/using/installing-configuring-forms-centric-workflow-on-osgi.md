@@ -20,7 +20,7 @@ ht-degree: 5%
 
 企業會從多個表單、後端系統和其他資料來源收集及處理資料。 資料的處理涉及稽核和核准程式、重複任務和資料封存。 例如，檢閱表單並將其轉換為PDF檔案。 當以手動方式完成時，重複性的工作會耗費大量的時間和資源。
 
-您可以在OSGi[&#128279;](../../forms/using/aem-forms-workflow.md)上使用以Forms為中心的工作流程，快速建立最適化表單式工作流程。 這些工作流程可協助您自動執行稽核與核准工作流程、業務流程工作流程及其他重複式工作。 這些工作流程還有助於處理檔案（建立、彙編、散發和封存PDF檔案、新增數位簽名以限制對檔案的存取、解碼條碼式表單等），以及將Adobe Sign簽名工作流程用於表單和檔案。
+您可以在OSGi](../../forms/using/aem-forms-workflow.md)上使用[以Forms為中心的工作流程，快速建立最適化表單式工作流程。 這些工作流程可協助您自動執行稽核與核准工作流程、業務流程工作流程及其他重複式工作。 這些工作流程還有助於處理檔案（建立、彙編、散發和封存PDF檔案、新增數位簽名以限制對檔案的存取、解碼條碼式表單等），以及將Adobe Sign簽名工作流程用於表單和檔案。
 
 設定後，這些工作流程可以手動觸發，以完成定義的流程，或在使用者提交表單或互動式通訊時以程式設計方式執行。 此功能包含在AEM Forms附加元件套件中。
 
@@ -112,7 +112,7 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 此套件包含有�
 1. 開啟[封裝管理員](/help/sites-administering/package-manager.md)，然後按一下&#x200B;**[!UICONTROL 上傳封裝]**&#x200B;以上傳封裝。
 1. 選取封裝並按一下&#x200B;**[!UICONTROL 安裝]**。
 
-   您也可以透過[AEM Forms發行版本](https://helpx.adobe.com/tw/aem-forms/kb/aem-forms-releases.html)文章中列出的直接連結來下載套件。
+   您也可以透過[AEM Forms發行版本](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)文章中列出的直接連結來下載套件。
 
 1. 安裝套件後，系統會提示您重新啟動AEM執行個體。 **不要立即重新啟動伺服器。** 在停止AEM Forms伺服器之前，請等候ServiceEvent REGISTERED和ServiceEvent UNREGISTERED訊息停止出現在[AEM-Installation-Directory]/crx-quickstart/logs/error.log檔案中，而且記錄檔穩定。
 
@@ -159,7 +159,7 @@ AEM Forms有一些必要和選用的設定。 強制設定包括設定BouncyCast
 
 #### 設定 Dispatcher {#configure-dispatcher}
 
-Dispatcher是適用於AEM的快取與負載平衡工具。 AEM Dispatcher也有助於保護AEM伺服器不受攻擊。 您可以搭配使用Dispatcher與企業級網頁伺服器，以提高AEM執行個體的安全性。 如果您使用[Dispatcher](https://helpx.adobe.com/tw/experience-manager/dispatcher/using/dispatcher-configuration.html)，請針對AEM Forms執行下列設定：
+Dispatcher是適用於AEM的快取與負載平衡工具。 AEM Dispatcher也有助於保護AEM伺服器不受攻擊。 您可以搭配使用Dispatcher與企業級網頁伺服器，以提高AEM執行個體的安全性。 如果您使用[Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)，請針對AEM Forms執行下列設定：
 
 1. 設定AEM Forms的存取權：
 
@@ -167,7 +167,7 @@ Dispatcher是適用於AEM的快取與負載平衡工具。 AEM Dispatcher也有�
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   儲存並關閉檔案。 如需有關篩選器的詳細資訊，請參閱[Dispatcher檔案](https://helpx.adobe.com/tw/experience-manager/dispatcher/using/dispatcher-configuration.html)。
+   儲存並關閉檔案。 如需有關篩選器的詳細資訊，請參閱[Dispatcher檔案](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)。
 
 1. 設定反向連結篩選服務：
 
@@ -177,7 +177,7 @@ Dispatcher是適用於AEM的快取與負載平衡工具。 AEM Dispatcher也有�
 
 快取是縮短資料存取時間、減少延遲，以及改善輸入/輸出(I/O)速度的機制。 調適型表單快取只會儲存調適型表單的HTML內容和JSON結構，不會儲存任何預先填入的資料。 這有助於減少轉譯最適化表單所需的時間。
 
-* 在使用最適化表單快取時，請使用[AEM Dispatcher](https://helpx.adobe.com/tw/experience-manager/dispatcher/using/dispatcher-configuration.html)來快取最適化表單的使用者端資料庫（CSS和JavaScript）。
+* 在使用最適化表單快取時，請使用[AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)來快取最適化表單的使用者端資料庫（CSS和JavaScript）。
 * 開發自訂元件時，請停用用於開發的伺服器上的最適化表單快取。
 
 執行以下步驟來設定調適型表單快取：

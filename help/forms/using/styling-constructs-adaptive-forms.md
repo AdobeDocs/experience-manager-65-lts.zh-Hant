@@ -10,14 +10,14 @@ role: User, Developer
 exl-id: 0ecfd918-2c68-4085-8c6e-440499b84fc1
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2352'
-ht-degree: 5%
+source-wordcount: '2378'
+ht-degree: 6%
 
 ---
 
 # 調適型表單的樣式建構{#styling-constructs-for-adaptive-forms}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
 ## 先決條件 {#prerequisites}
 
@@ -25,7 +25,7 @@ CSS和LESS架構的相關知識。
 
 ## 可自訂的專案 {#what-can-be-customized}
 
-本文列出可公開使用的調適型表單css類別。 您可以使用這些類別來設定最適化表單中各種元件的樣式。 製作元件的樣式（例如顯示警告的對話方塊和狀態列）超出本文範圍。 只有在無法使用[主題編輯器](https://helpx.adobe.com/tw/experience-manager/6-3/forms/using/themes.html)來設定元件樣式時，才使用這些樣式建構來建立樣式（使用CSS或更少）。
+本文列出可公開使用的調適型表單css類別。 您可以使用這些類別來設定最適化表單中各種元件的樣式。 製作元件的樣式（例如顯示警告的對話方塊和狀態列）超出本文範圍。 只有在無法使用[主題編輯器](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html)來設定元件樣式時，才使用這些樣式建構來建立樣式（使用CSS或更少）。
 
 ## 在調適型表單中自訂樣式 {#customizing-styles-in-adaptive-forms}
 
@@ -121,7 +121,7 @@ LESS框架簡化了使用案例，進而能夠在最適化表單中自訂樣式�
  <tbody>
   <tr>
    <td><p><strong>變數 </strong></p> </td>
-   <td><p><strong>描述</strong></p> </td>
+   <td><p><strong>說明</strong></p> </td>
   </tr>
   <tr>
    <td><p><code>field-padding</code><strong></strong></p> </td>
@@ -155,7 +155,7 @@ LESS框架簡化了使用案例，進而能夠在最適化表單中自訂樣式�
  <tbody>
   <tr>
    <td><p><strong>變數 </strong></p> </td>
-   <td><p><strong>描述</strong></p> </td>
+   <td><p><strong>說明</strong></p> </td>
   </tr>
   <tr>
    <td><p><code>label-font-color</code></p> </td>
@@ -199,7 +199,7 @@ LESS框架簡化了使用案例，進而能夠在最適化表單中自訂樣式�
  <tbody>
   <tr>
    <td><p><strong>變數 <code></code></strong></p> </td>
-   <td><p><strong>描述</strong></p> </td>
+   <td><p><strong>說明</strong></p> </td>
   </tr>
   <tr>
    <td><p><code>widgets-bg-color</code></p> </td>
@@ -296,7 +296,7 @@ LESS框架簡化了使用案例，進而能夠在最適化表單中自訂樣式�
  <tbody>
   <tr>
    <td><p><strong>變數 </strong></p> </td>
-   <td><p><strong>描述</strong></p> </td>
+   <td><p><strong>說明</strong></p> </td>
   </tr>
   <tr>
    <td><p><code>widgets-help-long-bg-color</code></p> </td>
@@ -337,7 +337,7 @@ LESS框架簡化了使用案例，進而能夠在最適化表單中自訂樣式�
  <tbody>
   <tr>
    <td><p><strong>變數 </strong></p> </td>
-   <td><p><strong>描述</strong></p> </td>
+   <td><p><strong>說明</strong></p> </td>
   </tr>
   <tr>
    <td><code>tnc-unvisited</code></td>
@@ -376,7 +376,7 @@ LESS框架簡化了使用案例，進而能夠在最適化表單中自訂樣式�
  <tbody>
   <tr>
    <td><p><strong>CSS 類別</strong></p> </td>
-   <td><p><strong>描述</strong></p> </td>
+   <td><p><strong>說明</strong></p> </td>
   </tr>
   <tr>
    <td><p><code>iconButton-icon</code></p> </td>
@@ -393,7 +393,7 @@ LESS框架簡化了使用案例，進而能夠在最適化表單中自訂樣式�
  <tbody>
   <tr>
    <td><p><strong>變數 <code></code></strong></p> </td>
-   <td><p><strong>描述</strong></p> </td>
+   <td><p><strong>說明</strong></p> </td>
   </tr>
   <tr>
    <td><p><code>button-border-size</code></p> </td>
@@ -495,7 +495,7 @@ LESS框架簡化了使用案例，進而能夠在最適化表單中自訂樣式�
  <tbody>
   <tr>
    <td><p><strong>變數 </strong></p> </td>
-   <td><p><strong>描述</strong></p> </td>
+   <td><p><strong>說明</strong></p> </td>
   </tr>
   <tr>
    <td><p><code>questionmark-font-color</code></p> </td>
@@ -516,7 +516,7 @@ LESS框架簡化了使用案例，進而能夠在最適化表單中自訂樣式�
  <tbody>
   <tr>
    <td><p><strong>變數 </strong></p> </td>
-   <td><p><strong>描述</strong></p> </td>
+   <td><p><strong>說明</strong></p> </td>
   </tr>
   <tr>
    <td><p><code>table-header-bg-color</code></p> </td>
@@ -541,7 +541,7 @@ LESS框架簡化了使用案例，進而能夠在最適化表單中自訂樣式�
  <tbody>
   <tr>
    <td><p><strong>變數 </strong></p> </td>
-   <td><p><strong>描述</strong></p> </td>
+   <td><p><strong>說明</strong></p> </td>
   </tr>
   <tr>
    <td><p><code>fileItemPadding</code></p> </td>
@@ -561,7 +561,7 @@ LESS框架簡化了使用案例，進而能夠在最適化表單中自訂樣式�
   </tr>
   <tr>
    <td><p><code>filePreviewIconColor</code></p> </td>
-   <td><p>小工具中預覽圖示(Bootstrap圖示)的顏色</p> </td>
+   <td><p>小工具中預覽圖示（Bootstrap圖示）的顏色</p> </td>
   </tr>
   <tr>
    <td><p><code>fileItemCommentHeight</code></p> </td>
@@ -695,7 +695,7 @@ LESS框架簡化了使用案例，進而能夠在最適化表單中自訂樣式�
  <tbody>
   <tr>
    <td><p><strong>CSS 類別</strong></p> </td>
-   <td><p><strong>描述</strong></p> </td>
+   <td><p><strong>說明</strong></p> </td>
   </tr>
   <tr>
    <td><p><code>nested_true</code></p> </td>
@@ -727,7 +727,7 @@ guideNavIcon類別會提供預設圖示，供定位點導覽器（左側和頂�
  <tbody>
   <tr>
    <td><p><strong>變數 </strong></p> </td>
-   <td><p><strong>描述</strong></p> </td>
+   <td><p><strong>說明</strong></p> </td>
   </tr>
   <tr>
    <td><p><strong>標籤導覽器</strong></p> </td>
@@ -905,7 +905,7 @@ guideNavIcon類別會提供預設圖示，供定位點導覽器（左側和頂�
  <tbody>
   <tr>
    <td><p><strong>變數 </strong></p> </td>
-   <td><p><strong>描述</strong></p> </td>
+   <td><p><strong>說明</strong></p> </td>
   </tr>
   <tr>
    <td><p><code>panel-background-color</code></p> </td>
@@ -965,7 +965,7 @@ guideNavIcon類別會提供預設圖示，供定位點導覽器（左側和頂�
  <tbody>
   <tr>
    <td><p><strong>變數 </strong></p> </td>
-   <td><p><strong>描述</strong></p> </td>
+   <td><p><strong>說明</strong></p> </td>
   </tr>
   <tr>
    <td><p><code>headerbar-background-color</code></p> </td>
@@ -999,7 +999,7 @@ guideNavIcon類別會提供預設圖示，供定位點導覽器（左側和頂�
  <tbody>
   <tr>
    <td><p><strong>變數 </strong></p> </td>
-   <td><p><strong>描述</strong></p> </td>
+   <td><p><strong>說明</strong></p> </td>
   </tr>
   <tr>
    <td><p><code>scrollIndicatorBottom</code></p> </td>
@@ -1037,7 +1037,7 @@ guideNavIcon類別會提供預設圖示，供定位點導覽器（左側和頂�
  <tbody>
   <tr>
    <td><p><strong>變數 </strong></p> </td>
-   <td><p><strong>描述</strong></p> </td>
+   <td><p><strong>說明</strong></p> </td>
   </tr>
   <tr>
    <td><p><code>mobileToolbarBottom</code></p> </td>
@@ -1082,7 +1082,7 @@ guideNavIcon類別會提供預設圖示，供定位點導覽器（左側和頂�
  <tbody>
   <tr>
    <td><p><strong>變數 </strong></p> </td>
-   <td><p><strong>描述</strong></p> </td>
+   <td><p><strong>說明</strong></p> </td>
   </tr>
   <tr>
    <td><p><code>button-focus-bg-color</code></p> </td>

@@ -7,8 +7,8 @@ feature: Interactive Communication,Correspondence Management
 exl-id: d03965e1-4fa3-414c-80b6-c9fca281bee4
 source-git-commit: bd33420307a7be6664b6bbb52677af66edaa9c0e
 workflow-type: tm+mt
-source-wordcount: '1381'
-ht-degree: 1%
+source-wordcount: '1450'
+ht-degree: 4%
 
 ---
 
@@ -32,7 +32,7 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 您只需要至少�
 
 AEM Forms互動式通訊會在AEM Forms的製作例項上執行管理、製作和代理程式使用者介面。 發佈執行個體會託管互動式通訊的最終版本，以供一般使用者使用。
 
-## 系統需求 {#system-requirements}
+## 系統要求 {#system-requirements}
 
 開始安裝及設定AEM Forms的互動式通訊與通訊管理功能之前，請確定：
 
@@ -48,7 +48,7 @@ AEM Forms互動式通訊會在AEM Forms的製作例項上執行管理、製作�
 
 * 符合記憶體需求。 AEM Forms附加元件套件需要：
 
-   * Microsoft® Windows安裝專用的15 GB暫存空間。
+   * ® Windows安裝專用的15 GB暫存空間。
    * UNIX安裝需要6 GB的暫存空間。
 
 * UNIX系統的額外需求：如果您使用的是UNIX作業系統，請從個別作業系統的安裝媒體安裝下列套件。
@@ -86,7 +86,7 @@ AEM Forms互動式通訊會在AEM Forms的製作例項上執行管理、製作�
 
 AEM Forms附加元件套件是部署至AEM的應用程式。 此套件包含AEM Forms互動式通訊、通訊管理和其他功能。 執行以下步驟來安裝附加套件：
 
-1. 開啟 [Software Distribution](https://experience.adobe.com/downloads)。您需要 Adobe ID 才能登入 Software Distribution。
+1. 開啟 [Software Distribution](https://experience.adobe.com/downloads)。 您需要 Adobe ID 才能登入 Software Distribution。
 1. 選取標題功能表中可用的&#x200B;**[!UICONTROL Adobe Experience Manager]**。
 1. 在&#x200B;**[!UICONTROL 篩選器]**&#x200B;區段中：
    1. 從&#x200B;**[!UICONTROL 解決方案]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Forms]**。
@@ -95,9 +95,9 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 此套件包含AEM 
 1. 開啟[封裝管理員](/help/sites-administering/package-manager.md)，然後按一下&#x200B;**[!UICONTROL 上傳封裝]**&#x200B;以上傳封裝。
 1. 選取封裝並按一下&#x200B;**[!UICONTROL 安裝]**。
 
-   您也可以透過[AEM Forms發行版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hant)文章中列出的直接連結來下載套件。
+   您也可以透過[AEM Forms發行版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)文章中列出的直接連結來下載套件。
 
-1. 安裝套件後，系統會提示您重新啟動AEM執行個體。 **不要立即重新啟動伺服器。**&#x200B;在停止AEM Forms伺服器之前，請等候直到ServiceEvent REGISTERED和ServiceEvent UNREGISTERED訊息停止出現在[AEM-Installation-Directory]/crx-quickstart/logs/error.log檔案中，而且記錄檔穩定。
+1. 安裝套件後，系統會提示您重新啟動AEM執行個體。 **不要立即重新啟動伺服器。** 在停止AEM Forms伺服器之前，請等候ServiceEvent REGISTERED和ServiceEvent UNREGISTERED訊息停止出現在[AEM-Installation-Directory]/crx-quickstart/logs/error.log檔案中，而且記錄檔穩定。
 
    >[!NOTE]
    >
@@ -151,7 +151,7 @@ AEMFD相容性套件可讓您在AEM 6.5 Forms上使用AEM 6.4 Forms、AEM 6.3 Fo
 * 資料字典
 * 最適化表單已棄用的範本和頁面
 
-#### 設定Dispatcher {#configure-dispatcher}
+#### 設定 Dispatcher {#configure-dispatcher}
 
 Dispatcher是Adobe Experience Manager的快取與負載平衡工具，用於企業級網頁伺服器。 如果您使用[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hant)，請針對AEM Forms執行下列設定：
 
@@ -165,13 +165,13 @@ Dispatcher是Adobe Experience Manager的快取與負載平衡工具，用於企�
 
 1. 設定反向連結篩選服務：
 
-   以管理員身分登入Apache Felix設定管理員。 組態管理員的預設URL為https://&#39;server&#39;：[連線埠號碼]/system/console/configMgr。 在&#x200B;**設定**&#x200B;功能表中，選取&#x200B;**Apache Sling反向連結篩選器**&#x200B;選項。 在「允許主機」欄位中，輸入Dispatcher的主機名稱，以允許其作為反向連結，然後按一下「儲存」**&#x200B;**。 專案的格式為https://&#39;[伺服器]：[連線埠]&#39;。
+   以管理員身分登入Apache Felix設定管理員。 組態管理員的預設URL為https://&#39;server&#39;：[連線埠號碼]/system/console/configMgr。 在&#x200B;**設定**&#x200B;功能表中，選取&#x200B;**Apache Sling反向連結篩選器**&#x200B;選項。 在「允許主機」欄位中，輸入Dispatcher的主機名稱，以允許其作為反向連結，然後按一下「儲存」****。 專案的格式為https://&#39;[伺服器]：[連線埠]&#39;。
 
-#### 整合Adobe Target {#integrate-adobe-target}
+#### 整合 Adobe Target {#integrate-adobe-target}
 
 如果互動式通訊提供的體驗不吸引人，您的客戶可能會捨棄互動式通訊。 雖然這會讓客戶感到挫折，但也會提高貴組織的支援數量和成本。 識別並提供適當的客戶體驗以提高轉換率，這既重要又具有挑戰性。 AEM表單擁有此問題的關鍵所在。
 
-AEM forms與Adobe Experience Cloud解決方案Adobe Target整合，跨多個數位頻道提供個人化及吸引人的客戶體驗。 若要使用Adobe Target來個人化互動式通訊，[將Adobe Target與AEM Forms整合](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms)。
+AEM Forms與Adobe Target （Adobe Experience Cloud解決方案）整合，跨多個數位頻道提供個人化及吸引人的客戶體驗。 若要使用Adobe Target來個人化互動式通訊，[將Adobe Target與AEM Forms整合](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms)。
 
 #### 設定表單資料模型的SSL通訊  {#configure-ssl-communcation-for-form-data-model}
 

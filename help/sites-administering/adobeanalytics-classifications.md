@@ -11,7 +11,7 @@ role: Admin
 exl-id: f564bda3-4141-40b3-8c08-140d4da92e2c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '619'
 ht-degree: 4%
 
 ---
@@ -105,7 +105,7 @@ Adobe分類會以排程方式將分類資料匯出至[Adobe Analytics](/help/sit
  <tbody>
   <tr>
    <td><strong>屬性路徑</strong></td>
-   <td><strong>描述</strong></td>
+   <td><strong>說明</strong></td>
   </tr>
   <tr>
    <td>轉換器</td>

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 exl-id: 9c516c90-1b1d-406a-b42d-909aae8bb634
 source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '848'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html?lang=zh-Hant)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html)上的[AEM Forms 。
 
 ## 關於地區字典 {#about-locale-dictionaries}
 
@@ -36,12 +36,12 @@ ht-degree: 1%
 
 有兩種方法可識別最適化表單的地區設定。 轉譯適用性表單時，會透過識別要求的地區設定：
 
-* 正在檢視最適化表單URL中的`[local]`選取器。 URL 的格式是：`http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled`。使用`[local]`選擇器可允許快取最適化表單。
+* 正在檢視最適化表單URL中的`[local]`選取器。 URL 的格式是：`http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled`。 使用`[local]`選擇器可允許快取最適化表單。
 
 * 依指定順序檢視下列引數：
 
    * 要求引數`afAcceptLang`
-若要覆寫使用者的瀏覽器地區設定，您可以傳遞`afAcceptLang`要求引數以強制地區設定。 例如，以下URL被強制以日文地區設定呈現表單：
+若要覆寫使用者的瀏覽器地區設定，您可以傳遞`afAcceptLang`要求引數以強制地區設定。例如，以下URL被強制以日文地區設定呈現表單：
      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
    * 使用`Accept-Language`標頭在請求中指定之使用者的瀏覽器地區設定。
@@ -83,9 +83,9 @@ AEM Forms目前支援英文(en)、西班牙文(es)、法文(fr)、義大利文(i
 
 ### 為地區設定新增XFA使用者端資料庫 {#add-xfa-client-library-for-a-locale-br}
 
-在`cq:ClientLibraryFolder`底下使用類別`etc/<folderHierarchy>`建立型別`xfaforms.I18N.<locale>`的節點，並將下列檔案新增到使用者端程式庫：
+在`etc/<folderHierarchy>`底下使用類別`xfaforms.I18N.<locale>`建立型別`cq:ClientLibraryFolder`的節點，並將下列檔案新增到使用者端程式庫：
 
-* **I18N.js**&#x200B;定義了`xfalib.locale.Strings`中定義的`<locale>`的`/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`。
+* **I18N.js**&#x200B;定義了`/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`中定義的`<locale>`的`xfalib.locale.Strings`。
 
 * **js.txt**&#x200B;包含下列專案：
 
@@ -97,12 +97,12 @@ I18N.js
 
 ### 為地區設定新增最適化表單使用者端資料庫 {#add-adaptive-form-client-library-for-a-locale-br}
 
-在`cq:ClientLibraryFolder`下建立型別`etc/<folderHierarchy>`的節點，類別為`guides.I18N.<locale>`，相依性為`xfaforms.3rdparty`、`xfaforms.I18N.<locale>`和`guide.common`。 」
+在`etc/<folderHierarchy>`下建立型別`cq:ClientLibraryFolder`的節點，類別為`guides.I18N.<locale>`，相依性為`xfaforms.3rdparty`、`xfaforms.I18N.<locale>`和`guide.common`。 &quot;
 
 將下列檔案新增至使用者端資源庫：
 
-* **i18n.js**&#x200B;定義了`guidelib.i18n`，並根據`datePatterns`地區設定集規格`timePatterns`中描述的XFA規格，為`dateTimeSymbols`具有「calendarSymbols」、`numberPatterns`、`numberSymbols`、`currencySymbols`、`typefaces`、`<locale>`、[、](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf)的模式。 您也可以在`/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`中檢視其他支援地區設定的定義方式。
-* **LogMessages.js**&#x200B;定義了`guidelib.i18n.strings`中定義的`guidelib.i18n.LogMessages`的`<locale>`和`/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`。
+* **i18n.js**&#x200B;定義了`guidelib.i18n`，並根據[地區設定集規格](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf)中描述的XFA規格，為`<locale>`具有「calendarSymbols」、`datePatterns`、`timePatterns`、`dateTimeSymbols`、`numberPatterns`、`numberSymbols`、`currencySymbols`、`typefaces`的模式。 您也可以在`/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`中檢視其他支援地區設定的定義方式。
+* **LogMessages.js**&#x200B;定義了`/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`中定義的`<locale>`的`guidelib.i18n.strings`和`guidelib.i18n.LogMessages`。
 * **js.txt**&#x200B;包含下列專案：
 
 ```text
@@ -114,12 +114,12 @@ LogMessages.js
 
 只有在您新增的`<locale>`不屬於`en`、`de`、`es`、`fr`、`it`、`pt-br`、`zh-cn`、`zh-tw`、`ja`、`ko-kr`時，才執行此步驟。
 
-1. 在`nt:unstructured`下建立`languages`節點`etc` （如果尚未存在）。
+1. 在`etc`下建立`nt:unstructured`節點`languages` （如果尚未存在）。
 
 1. 將多值字串屬性`languages`新增至節點（如果尚未存在）。
 1. 新增`<locale>`預設地區設定值`de`、`es`、`fr`、`it`、`pt-br`、`zh-cn`、`zh-tw`、`ja`、`ko-kr` （如果尚未存在）。
 
-1. 將`<locale>`新增至`languages`的`/etc/languages`屬性值。
+1. 將`<locale>`新增至`/etc/languages`的`languages`屬性值。
 
 `<locale>`將顯示在`https://'[server]:[port]'/libs/cq/i18n/translator.html`。
 

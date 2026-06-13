@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: f823d240-88c7-4357-9dbb-6cc069451721
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1046'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 您可以使用條碼Forms服務完成下列工作：
 
-* 從條碼影像擷取條碼資料(TIFF或PDF)。 資料會儲存為分隔文字。
+* 從條碼影像擷取條碼資料（TIFF或PDF）。 資料會儲存為分隔文字。
 * 將分隔文字資料轉換為XML （XDP或XFDF）。 XML資料比分隔文字更容易剖析。 此外，XDP或XFDF格式的資料也可作為AEM Forms中其他服務的輸入。
 
 條碼Forms服務會針對影像中的每個條碼，找出條碼、解碼並擷取資料。 此服務會傳回XML檔案內容元素中的條碼資料（必要時使用實體編碼）。 例如，下清單單掃描TIFF影像包含兩個條碼：
@@ -94,7 +94,7 @@ ht-degree: 0%
 
 ### 使用條碼式表單的工作流程 {#workflows-that-use-barcoded-forms}
 
-表單作者可使用Designer建立互動式條碼式表單。 (請參閱[Designer說明](https://www.adobe.com/go/learn_aemforms_designer_63)。)當使用者使用Adobe Reader或Acrobat填寫條碼表單時，條碼會自動更新以編碼表單資料。
+表單作者可使用Designer建立互動式條碼式表單。 （請參閱[Designer說明](https://www.adobe.com/go/learn_aemforms_designer_63)。） 當使用者使用Adobe Reader或Acrobat填寫條碼表單時，條碼會自動更新以編碼表單資料。
 
 條碼式Forms服務適合將紙張上的資料轉換為電子格式。 例如，當條碼式表單填寫並列印時，可掃描列印的復本並用作條碼式Forms服務的輸入。
 
@@ -137,9 +137,9 @@ Watched資料夾端點通常用於啟動使用條碼Forms服務的應用程式�
 
 條碼式Forms服務提供下列兩個API：
 
-* **[解碼](https://helpx.adobe.com/tw/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**：解碼輸入PDF檔案或tiff影像中可用的所有條碼。 它會傳回另一個XML檔案，其中包含從輸入檔案或影像中可用的所有條碼擷取的資料。
+* **[解碼](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**：解碼輸入PDF檔案或tiff影像中可用的所有條碼。 它會傳回另一個XML檔案，其中包含從輸入檔案或影像中可用的所有條碼擷取的資料。
 
-* **[extractToXML](https://helpx.adobe.com/tw/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**：將使用解碼API解碼的資料轉換為XML資料。 此XML資料可與XFA表單合併。 它會傳回XML檔案清單，每個條碼各一個。
+* **[extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**：將使用解碼API解碼的資料轉換為XML資料。 此XML資料可與XFA表單合併。 它會傳回XML檔案清單，每個條碼各一個。
 
 ### 搭配JSP或Servlet使用BCF服務 {#using-bcf-service-with-a-jsp-or-servlets}
 
