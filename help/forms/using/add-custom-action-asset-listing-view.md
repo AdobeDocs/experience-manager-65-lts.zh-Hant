@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: a27c4469-6430-4a68-ba2c-7fb0ddebb263
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 3%
+source-wordcount: '1381'
+ht-degree: 5%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 3%
 
    1. 請確定「覆蓋節點」對話方塊是否具備下列值：
 
-      **路徑：** /libs/fd/cm/ma/gui/content/cmassets/jcr：content/body/content/header/items/selection/items
+      **路徑：** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
 
       **位置：** /apps/
 
@@ -70,7 +70,7 @@ ht-degree: 3%
 
       ![重疊節點](assets/2_createnodedownloadflatpdf.png)
 
-   1. 按一下&#x200B;**確定**。 資料夾結構會在apps資料夾中建立。
+   1. 按一下&#x200B;**「確定」**。 資料夾結構會在apps資料夾中建立。
 
       按一下&#x200B;**「儲存全部」**。
 
@@ -82,7 +82,7 @@ ht-degree: 3%
 
       **名稱：** downloadFlatPDF （或您要指定給此屬性的名稱）
 
-      **型別：** nt：unstructured
+      **型別：** nt:unstructured
 
    1. 按一下您已建立的新節點（此處downloadFlatPDF）。 CRX會顯示節點的屬性。
 
@@ -152,7 +152,7 @@ ht-degree: 3%
 
       **符合節點型別：已選取**
 
-   1. 按一下&#x200B;**確定**。 資料夾結構會在apps資料夾中建立。 按一下&#x200B;**「儲存全部」**。
+   1. 按一下&#x200B;**「確定」**。 資料夾結構會在apps資料夾中建立。 按一下&#x200B;**「儲存全部」**。
 
 1. 在js資料夾中，建立名為formaction.js的檔案，其中包含按鈕的動作處理程式碼，使用下列步驟：
 
@@ -242,7 +242,7 @@ ht-degree: 3%
 
       **符合節點型別：已選取**
 
-   1. 按一下&#x200B;**確定**。 資料夾結構會在apps資料夾中建立。
+   1. 按一下&#x200B;**「確定」**。 資料夾結構會在apps資料夾中建立。
 
    1. 按一下&#x200B;**「儲存全部」**。
 
@@ -254,7 +254,7 @@ ht-degree: 3%
 
       **名稱：** letterpdfdownloader (或您要指定給此屬性的名稱 — 必須是唯一的。 如果您在此處使用不同的名稱，請在formaction.js檔案的ACTION_URL變數中指定相同的名稱。)
 
-      **型別：** nt：unstructured
+      **型別：** nt:unstructured
 
    1. 按一下您已建立的新節點（此處downloadFlatPDF）。 CRX會顯示節點的屬性。
 

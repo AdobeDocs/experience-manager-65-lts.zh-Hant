@@ -7,8 +7,8 @@ role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: c87fd907f2e9b91cc7013be5c12c867fb71dbbe1
 workflow-type: tm+mt
-source-wordcount: '7679'
-ht-degree: 98%
+source-wordcount: '7660'
+ht-degree: 97%
 
 ---
 
@@ -155,7 +155,7 @@ Sites 主控台清單視圖設定未反映清單視圖中顯示的欄。 對話�
 
 * 在最近的使用者介面樣式變更後，內容片段 RTE 出現版面和視覺問題。 Service Pack 2 會精簡 RTE 樣式，使工具列和可編輯區域能正確轉譯並保持可讀性。 內容片段編輯器現在的外觀與行為已與頁面編輯器保持一致。 (SITES-38684)
 * 從 Polaris 資產選擇器中移除 IMS 範圍，導致內容片段與交付端點的整合功能失效。 作者在開啟遠端資產選擇器並選取資產時會遇到失敗。 此更新重新新增了必要的 IMS 範圍，並恢復穩定的交付層級存取權限。 (SITES-35837)
-* 「關聯內容」面板不再顯示硬式編碼的「未定義」預留位置。 內容片段編輯器現在會透過本地化資源解析該文字，因此編輯者將看到已翻譯的使用者介面文字。 (SITES-33675)
+* 「關聯內容」面板不再呈現硬式編碼的「未定義」預留位置。內容片段編輯器現在會透過本地化資源解析該文字，因此編輯器可以看到翻譯過的UI文字。(SITES-33675)
   <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
 * 內容片段編輯器現在會跨不同環境顯示已翻譯的「一般」標籤。 編輯器已替換未本地化的標籤文字，並從標籤標題中移除內部識別碼。 (SITES-30715)
 * 內容片段編輯器現在會顯示已翻譯的允許資產類型名稱。 當作者設定內容參照限制時，選擇器清單不再混用內部字串與僅限英文的標籤。 (SITES-29699)

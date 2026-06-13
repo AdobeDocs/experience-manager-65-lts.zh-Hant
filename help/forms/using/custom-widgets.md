@@ -1,5 +1,5 @@
 ---
-title: 在HTML5表單中建立自訂外觀
+title: 在 HTML5 表單中建立自訂外觀
 description: 您可以將自訂Widget插入Mobile Forms。 您可以擴充現有的jQuery Widget或開發您自己的自訂Widget。
 contentOwner: robhagat
 content-type: reference
@@ -13,11 +13,11 @@ exl-id: 7d9fadf8-c48a-424e-8b71-18ffd0328a13
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '635'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# 在HTML5表單中建立自訂外觀{#create-custom-appearances-in-html-forms}
+# 在 HTML5 表單中建立自訂外觀{#create-custom-appearances-in-html-forms}
 
 您可以將自訂Widget插入Mobile Forms。 您可以擴充現有的jQuery Widget，或使用外觀架構開發您自己的自訂Widget。 XFA引擎使用各種Widget，如需詳細資訊，請參閱[最適化和HTML5表單的外觀架構](/help/forms/using/introduction-widgets.md)。
 
@@ -39,7 +39,7 @@ HTML5 forms提供Widget架構的實作，您可以擴充此實作來建立新的
  <tbody>
   <tr>
    <td>函式/類別</td>
-   <td>描述</td>
+   <td>說明</td>
   </tr>
   <tr>
    <td>轉譯</td>
@@ -47,7 +47,7 @@ HTML5 forms提供Widget架構的實作，您可以擴充此實作來建立新的
   </tr>
   <tr>
    <td>getEventMap</td>
-   <td>傳回對應以將HTML事件轉換為XFA事件。 <br /> {<br /> blur： XFA_EXIT_EVENT，<br /> }<br />此範例顯示模糊是HTML事件，而XFA_EXIT_EVENT是相對應的XFA事件。 </td>
+   <td>傳回對應以將HTML事件轉換為XFA事件。<br /> {<br /> blur： XFA_EXIT_EVENT，<br /> }<br />此範例顯示模糊是HTML事件，且XFA_EXIT_EVENT對應於XFA事件。 </td>
   </tr>
   <tr>
    <td>getOptionsMap</td>
@@ -101,8 +101,8 @@ Widget設定是以JSON物件（索引鍵值配對的集合）形式提供，其�
 
 其中，「identifier」是jQuery CSS選取器，代表特定欄位、特定型別的一組欄位或所有欄位。 以下列出不同情況下識別碼的值：
 
-| 識別碼型別 | 識別碼 | 描述 |
+| 識別碼型別 | 識別碼 | 說明 |
 |---|---|---|
 | 具有名稱fieldname的特定欄位 | 識別碼：&quot;div.fieldname&quot; | 所有名為「fieldname」的欄位都會使用Widget轉譯。 |
-| &#39;type&#39;型別的所有欄位（其中type為NumericField、DateField等）： | 識別碼： &quot;div.type&quot; | 對於Timefield和DateTimeField，型別是textfield，因為這些欄位不受支援。 |
+| 「type」型別的所有欄位（其中type為NumericField、DateField等）： | 識別碼： &quot;div.type&quot; | 對於Timefield和DateTimeField，型別是textfield，因為這些欄位不受支援。 |
 | 所有欄位 | 識別碼： &quot;div.field&quot; |  |

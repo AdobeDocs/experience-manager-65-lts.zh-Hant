@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 5b91d368-aa22-4f13-9c2c-6be831470609
 source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2199'
-ht-degree: 14%
+source-wordcount: '2170'
+ht-degree: 15%
 
 ---
 
@@ -117,7 +117,7 @@ ht-degree: 14%
 您可以將資產新增至包含參照資產或資料夾清單的集合。 智慧型集合會使用搜尋查詢來填入資產。 因此，資產和資料夾的靜態參考不適用於它們。
 
 1. 在[!DNL A]資產使用者介面中，選取資產並按一下工具列中的&#x200B;**[!UICONTROL 至集合]** ![新增至集合](assets/do-not-localize/add-to-collection.png)。
-或者，您可以將資產拖曳至介面上的&#x200B;**[!UICONTROL 拖放集合]**&#x200B;區域。 當區域的標籤變更為&#x200B;**[!UICONTROL 拖放以新增]**&#x200B;時，新增資產。
+或者，您可以將資產拖曳至介面上的&#x200B;**[!UICONTROL 拖放集合]**&#x200B;區域。當區域的標籤變更為&#x200B;**[!UICONTROL 拖放以新增]**&#x200B;時新增資產。
 
 1. 在&#x200B;**[!UICONTROL 新增至集合]**&#x200B;頁面中，選取您要新增資產的集合。
 

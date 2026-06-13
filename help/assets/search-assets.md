@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 3511e07b-f6d0-435a-aa80-55357d3dccf5
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '5797'
+source-wordcount: '5754'
 ht-degree: 5%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 5%
 
 *圖：瞭解[!DNL Experience Manager Assets]搜尋結果介面。*
 
-**A.**&#x200B;將搜尋儲存為智慧型集合。 **B.**&#x200B;篩選或述詞以縮小搜尋結果。 **C.**&#x200B;顯示檔案、資料夾或兩者。 **D.** 按一下「篩選器」以開啟或關閉左側邊欄。 **E.**&#x200B;搜尋位置是DAM。**F.**&#x200B;具有使用者提供的搜尋關鍵字的Omnisearch欄位。 **G.**&#x200B;選取載入的搜尋結果。 **小時**&#x200B;搜尋結果總數中顯示的搜尋結果數目。 **我**&#x200B;關閉搜尋。 **J.**&#x200B;在卡片檢視和清單檢視之間切換。
+**A.**&#x200B;將搜尋儲存為智慧型集合。 **B.**&#x200B;篩選或述詞以縮小搜尋結果。 **C.**&#x200B;顯示檔案、資料夾或兩者。 **D.** 按一下「篩選器」以開啟或關閉左側邊欄。 **E.**&#x200B;搜尋位置為DAM。**F.** Omnisearch欄位包含使用者提供的搜尋關鍵字。 **G.**&#x200B;選取載入的搜尋結果。 **小時**&#x200B;搜尋結果總數中顯示的搜尋結果數目。 **我**&#x200B;關閉搜尋。 **J.**&#x200B;在卡片檢視和清單檢視之間切換。
 
 ### 動態搜尋Facet {#dynamicfacets}
 
@@ -87,7 +87,7 @@ ht-degree: 5%
 * `woman-running`
 
 但是，查詢`woman -running`傳回的中繼資料中不含`running`的資產。
-使用智慧標籤會新增額外的`OR`子句，以尋找任何搜尋詞作為套用的智慧標籤。 使用智慧標籤以`woman`或`running`標籤的資產也會出現在這類搜尋查詢中。 所以搜尋結果是，
+使用智慧標籤會新增額外的`OR`子句，以尋找任何搜尋詞作為套用的智慧標籤。使用智慧標籤以`woman`或`running`標籤的資產也會出現在這類搜尋查詢中。所以搜尋結果是，
 
 * Assets的中繼資料中有`woman`和`running`個關鍵字（預設行為）。
 

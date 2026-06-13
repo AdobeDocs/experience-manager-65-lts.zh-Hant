@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 16ab2e64-9c12-43ae-a8d2-f71e63899c68
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 7%
+source-wordcount: '2751'
+ht-degree: 8%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 7%
 * 資產的說明。
 * 指派給資產的標籤。
 
-更多中繼資料可協助您進一步將資產分類，且隨著數位資訊量成長，將有所幫助。 您可以僅根據檔案名稱管理數百個檔案。 然而，此方法並不能調整規模。隨著相關人數和管理的資產數量增加，此方法尚嫌不足。
+更多中繼資料可協助您進一步將資產分類，且隨著數位資訊量成長，將有所幫助。 您可以僅根據檔案名稱管理數百個檔案。 然而，此方法並不能調整規模。 隨著相關人數和管理的資產數量增加，此方法尚嫌不足。
 
 隨著中繼資料增加，數位資產的價值也會成長，這是因為資產會變得
 
@@ -87,9 +87,9 @@ ID3標籤是專為MP3檔案格式所設計。 格式的其他資訊：
 
 ### Exif {#exif}
 
-可交換影像檔案格式(Exif)是數位攝影中最常用的中繼資料格式。 它提供一種以多種檔案格式(例如JPEG、TIFF、RIFF和WAV)內嵌中繼資料屬性的固定辭彙的方法。 Exif會將中繼資料儲存為中繼資料名稱和中繼資料值的配對。 這些中繼資料名稱 — 值組也稱為標籤，不要與[!DNL Experience Manager]中的標籤混淆。 現代數位相機可建立Exif中繼資料，而現代圖形軟體則支援這些中繼資料。 Exif格式是中繼資料管理（尤其是影像）的最低通用分母。
+可交換影像檔案格式(Exif)是數位攝影中最常用的中繼資料格式。 它提供一種以多種檔案格式（例如JPEG、TIFF、RIFF和WAV）內嵌中繼資料屬性的固定辭彙的方法。 Exif會將中繼資料儲存為中繼資料名稱和中繼資料值的配對。 這些中繼資料名稱 — 值組也稱為標籤，不要與[!DNL Experience Manager]中的標籤混淆。 現代數位相機可建立Exif中繼資料，而現代圖形軟體則支援這些中繼資料。 Exif格式是中繼資料管理（尤其是影像）的最低通用分母。
 
-Exif的一個主要限制是一些常見的影像檔案格式(例如BMP、GIF或PNG)不支援它。
+Exif的一個主要限制是一些常見的影像檔案格式（例如BMP、GIF或PNG）不支援它。
 
 Exif定義的中繼資料欄位通常屬於技術性質，在描述性中繼資料管理中的用途有限。 因此，[!DNL Experience Manager Assets]提供Exif屬性對應至[通用中繼資料結構描述](metadata-schemas.md)和[XMP](xmp-writeback.md)的功能。
 
@@ -145,7 +145,7 @@ Exif定義的中繼資料欄位通常屬於技術性質，在描述性中繼資�
 * Exif — 攝影機的技術資訊，包括GPS位置。
 * CRS - [!DNL Camera Raw]結構描述。
 * `iptc4xmpCore`和`iptc4xmpExt`。
-* TIFF — 影像中繼資料(不僅適用於TIFF影像)。
+* TIFF — 影像中繼資料（不僅適用於TIFF影像）。
 
 ### 列印特定中繼資料 {#print-specific-metadata}
 
@@ -156,7 +156,7 @@ Exif定義的中繼資料欄位通常屬於技術性質，在描述性中繼資�
 
 ### 多媒體專屬中繼資料 {#multimedia-specific-metadata}
 
-* `xmpDM` - [!DNL Dynamic Media]。
+* `xmpDM` - [!DNL Dynamic Media].
 * `xmpMM` — 媒體管理。
 
 ## 中繼資料結構描述參考 {#metadata-schemata-reference}
@@ -226,7 +226,7 @@ XMP中的中繼資料包含一組屬性。 這些屬性一律與
 
 ### XMP生態系統 {#xmp-ecosystem}
 
-XMP定義了 [中繼資料](https://en.wikipedia.org/wiki/Metadata) 模型，可與任何已定義的中繼資料項目集搭配使用。XMP也定義了基本屬性的特定結構 [&#128279;](https://en.wikipedia.org/wiki/XML_schema) ，這些基本屬性可用於記錄資源在經過多個處理步驟 (從被拍攝、掃描或創作為文字) 、通過照片編輯步驟(如 [&#128279;](https://en.wikipedia.org/wiki/Image_scanner) [&#128279;](https://en.wikipedia.org/wiki/Cropping_%28image%29) or color adjustment)到組合成最終影像時的歷史記錄。XMP可讓每個軟體程式或裝置沿途將其資訊新增至數位資源，然後再保留在最終數位檔案中。
+XMP定義了 [中繼資料](https://en.wikipedia.org/wiki/Metadata) 模型，可與任何已定義的中繼資料項目集搭配使用。 XMP也定義了基本屬性的特定結構 [&#128279;](https://en.wikipedia.org/wiki/XML_schema) ，這些基本屬性可用於記錄資源在經過多個處理步驟 (從被拍攝、掃描或創作為文字) 、通過照片編輯步驟(如 [&#128279;](https://en.wikipedia.org/wiki/Image_scanner) [&#128279;](https://en.wikipedia.org/wiki/Cropping_%28image%29) or color adjustment)到組合成最終影像時的歷史記錄。 XMP可讓每個軟體程式或裝置沿途將其資訊新增至數位資源，然後再保留在最終數位檔案中。
 
 XMP最常是使用 [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://en.wikipedia.org/wiki/Resource_Description_Framework) (RDF)的子集進行序列化和儲存，該子集又以 [XML表示](https://en.wikipedia.org/wiki/XML)。
 
@@ -254,7 +254,7 @@ XMP標準可擴充，可讓您將自訂的中繼資料型別新增到XMP資料�
 XMP結構描述是通用XML名稱空間中的一組屬性名稱，包括
 資料型別和描述性資訊。 XMP結構描述是由其XML名稱空間URI識別。 使用名稱空間可防止不同結構描述中名稱相同但含義不同的屬性之間發生衝突。
 
-例如，兩個獨立設計結構描述中的`Creator`屬性可能代表建立資產的人，也可能代表建立資產的應用程式(例如Adobe Photoshop)。
+例如，兩個獨立設計結構描述中的`Creator`屬性可能代表建立資產的人，也可能代表建立資產的應用程式（例如Adobe Photoshop）。
 
 #### 屬性和值 {#properties-and-values}
 
@@ -271,7 +271,7 @@ XMP可讓您將`xml:lang`屬性新增至文字屬性，以指定文字的語言�
 
 ## 使用IPTC中繼資料 {#support-for-iptc-metadata}
 
-瞭解[!DNL Adobe Experience Manager Assets]如何透過[!DNL Adobe Bridge]和其他[!DNL Adobe Creative Cloud]應用程式支援IPTC中繼資料、創意評分和關鍵字新增至資產。
+瞭解[!DNL Adobe Experience Manager Assets]如何透過[!DNL Adobe Bridge]和其他[!DNL Adobe Creative Cloud]應用程式支援IPTC中繼資料、Creative評等和新增至資產的關鍵字。
 
 [!DNL Adobe Experience Manager Assets]支援廣泛用來描述資產的IPTC中繼資料標準。 如此一來，[!DNL Assets]就能提升各方（包括攝影師、創意代理商、圖書館、博物館等）對其影像的接受度。
 
@@ -290,13 +290,13 @@ XMP可讓您將`xml:lang`屬性新增至文字屬性，以指定文字的語言�
 1. 視需要編輯IPTC擴充功能中繼資料屬性。
 1. 按一下&#x200B;**[!UICONTROL 儲存並關閉]**&#x200B;以儲存變更。
 
-### 創意評等支援 {#creative-rating-support}
+### Creative評等支援 {#creative-rating-support}
 
-除了顯示個別使用者評分和彙總評分之外，「屬性」頁面現在還會顯示透過Adobe Bridge和其他創意應用程式指派給資產的評分
+屬性頁面除了顯示個別使用者評等和彙總評等之外，現在還會顯示透過Adobe Bridge和其他Creative應用程式指派給資產的評等
 
 這些評等可在「進階」標 **[!UICONTROL 簽的「創作評分]** 」區段 **[!UICONTROL 下取得]** 。
 
-此評等是唯讀屬性，範圍為1至5。 您可以從搜尋面板根據資產的創意評等來搜尋資產。
+此評等是唯讀屬性，範圍為1至5。 您可以從搜尋面板根據資產的Creative評等來搜尋資產。
 
 但是，此屬性目前未編列索引，以避免與使用者進行的自訂變更發生任何衝突。
 

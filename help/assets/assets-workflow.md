@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 06785380-07cc-4c8b-b11c-6005471bd058
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '970'
 ht-degree: 2%
 
 ---
@@ -78,7 +78,7 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
    ![開始工作流程](assets/start-workflow.png)
 
 1. （選用）指定工作流程的標題，可用來參考工作流程例項。
-1. 按一 **[!UICONTROL 下「開始]** 」，然後按一 **[!UICONTROL 下對話方塊中的「確認]** 」。工作流程會在您選取的所有資產上執行。
+1. 按一 **[!UICONTROL 下「開始]** 」，然後按一 **[!UICONTROL 下對話方塊中的「確認]** 」。 工作流程會在您選取的所有資產上執行。
 
 ## 將工作流程套用至多個資料夾 {#applying-a-workflow-to-multiple-folders}
 

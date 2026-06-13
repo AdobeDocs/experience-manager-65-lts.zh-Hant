@@ -10,7 +10,7 @@ exl-id: 43fb8af8-9750-44c1-8e02-34b25b92fd65
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
 source-wordcount: '2007'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
@@ -28,7 +28,7 @@ Scope of metadata articles:
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
 
-[!DNL Adobe Experience Manager Assets]保留每個資產的中繼資料。 它可讓您更輕鬆地分類及組織資產，並協助尋找特定資產的人。 有了使用資產保留和管理中繼資料的功能，您可以根據資產的中繼資料自動組織和處理資產。 [!DNL Adobe Experience Manager Assets]可讓管理員設定和自訂中繼資料功能，以修改預設的Adobe方案。
+[!DNL Adobe Experience Manager Assets] 會保留每個資產的後設資料。 這樣便可以更輕鬆地完成資產分類和組織，並協助使用者尋找特定的資產。 藉助保留和管理資產後設資料的功能，您可以根據資產的後設資料自動組織和處理資產。 [!DNL Adobe Experience Manager Assets]可讓管理員設定和自訂中繼資料功能，以修改預設的Adobe方案。
 
 ## 編輯中繼資料結構 {#metadata-schema}
 

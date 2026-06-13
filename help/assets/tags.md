@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 3aea14f7-052d-4f23-b65d-e648623146e7
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '6929'
+source-wordcount: '6920'
 ht-degree: 7%
 
 ---
@@ -125,7 +125,7 @@ Experience Platform Tags中的下列設定範例示範如何在檢視器載入�
 
 ### 關於適用於音訊和視訊的Adobe Analytics {#about-adobe-analytics-for-audio-and-video}
 
-訂閱Experience Cloud帳戶以使用Adobe Analytics進行音訊和視訊時，即足以在&#x200B;*Dynamic Media檢視器*&#x200B;擴充功能設定中啟用視訊追蹤。 視訊量度可在Adobe Analytics中使用。 視訊追蹤取決於Adobe Media Analytics for Audio and Video擴充功能的存在。
+訂閱Experience Cloud帳戶以使用Adobe Analytics for Audio and Video時，就足以在&#x200B;*Dynamic Media檢視器*&#x200B;擴充功能設定中啟用視訊追蹤。 視訊量度可在Adobe Analytics中使用。 視訊追蹤取決於Adobe Media Analytics for Audio and Video擴充功能的存在。
 
 請參閱[擴充功能的安裝及設定](#installing-and-setup-of-extensions)。
 
@@ -755,7 +755,7 @@ Experience Manager設定包含下列兩個主要步驟：
    * **[!UICONTROL 授權伺服器]** — 返回您先前開啟的整合詳細資訊頁面。 選取&#x200B;**[!UICONTROL JWT]**&#x200B;索引標籤。 複製伺服器名稱（不含路徑），如下方反白所示。
 
    返回&#x200B;**[!UICONTROL 帳戶]**&#x200B;頁面，然後將名稱貼到個別欄位。
-例如， `https://ims-na1.adobelogin.com/`
+例如，`https://ims-na1.adobelogin.com/`
 （伺服器名稱僅供範例使用）
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)

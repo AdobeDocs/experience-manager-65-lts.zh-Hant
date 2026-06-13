@@ -13,8 +13,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: bb860b28-19ee-4b1c-b420-3f61528156f0
 source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
 workflow-type: tm+mt
-source-wordcount: '4396'
-ht-degree: 7%
+source-wordcount: '4537'
+ht-degree: 8%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->依預設，當您在資產的詳細資料檢視中選取「檢視器」時，系統會顯示15個檢視器預設集。 您可以提高此限制。請參 [閱增加顯示的檢視器預設集數目](#increasing-the-number-of-viewer-presets-that-display)。
+>依預設，當您在資產的詳細資料檢視中選取「檢視器」時，系統會顯示15個檢視器預設集。 您可以提高此限制。 請參 [閱增加顯示的檢視器預設集數目](#increasing-the-number-of-viewer-presets-that-display)。
 
 ### 檢視器支援回應式設計網頁 {#viewer-support-for-responsive-designed-web-pages}
 
@@ -69,8 +69,8 @@ Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統�
 * 桌上型
 * Apple iPhone
 * Apple iPad
-* Android™智慧型手機
-* Android™平板電腦
+* ™智慧型手機
+* ™平板電腦
 * 對於視訊，為[BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678)和[Windows Phone](https://learn.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)提供MP4播放的額外支援。
 
 ### 檢視器預設集的豐富媒體型別 {#rich-media-types-for-viewer-presets}
@@ -139,8 +139,8 @@ Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統�
    <td><strong>垂直縮放</strong></td>
    <td><p>垂直縮放檢視器可讓您最大化產品影像檢視體驗，讓使用者獲得產品的最佳表示方式。 色票的垂直位置會執行下列動作：</p>
     <ul>
-     <li>確保色票「位於摺頁上方」。<br/>若使用水準色票，視使用者的案頭熒幕大小而定，直到使用者向下捲動頁面才會顯示這些色票。 將色票垂直放置在檢視器中，可確保無論使用者的熒幕大小如何，都能看見色票。</li>
-     <li>將主要影像大小最大化。<br />使用水準色票時，必須保留頁面上的空間，以確保可看見這些色票。 此定位縮小了主要影像的大小。 然而，若是垂直色票版面配置，您就不需要配置此空間。 因此，您可以將主要影像大小最大化。</li>
+     <li>確保色票「在摺頁上方」。<br/> 使用水準色票時，除非使用者向下捲動頁面，否則不會顯示水準色票（視使用者的案頭熒幕大小而定）。 將色票垂直放置在檢視器中，可確保無論使用者的熒幕大小如何，都能看見色票。</li>
+     <li>將主要影像大小最大化。<br /> 使用水準色票時，必須在頁面上保留空間，以確保可看見色票。 此定位縮小了主要影像的大小。 然而，若是垂直色票版面配置，您就不需要配置此空間。 因此，您可以將主要影像大小最大化。</li>
     </ul> </td>
   </tr>
   <tr>
@@ -361,14 +361,14 @@ Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統�
   <tr>
    <td><p><strong>捏緊開啟</strong></p> </td>
    <td><p>不適用</p> </td>
-   <td><p>放大(僅限iOS和Android™ 3x)</p> </td>
-   <td><p>放大(僅限iOS和Android™ 3x)</p> </td>
+   <td><p>放大（僅限iOS和Android™ 3x）</p> </td>
+   <td><p>放大（僅限iOS和Android™ 3x）</p> </td>
   </tr>
   <tr>
    <td><p><strong>捏合關閉</strong></p> </td>
    <td><p>不適用</p> </td>
-   <td><p>縮小(僅限iOS和Android™ 3x)</p> </td>
-   <td><p>縮小(僅限iOS和Android™ 3x)</p> </td>
+   <td><p>縮小（僅限iOS和Android™ 3x）</p> </td>
+   <td><p>縮小（僅限iOS和Android™ 3x）</p> </td>
   </tr>
   <tr>
    <td><p><strong>撥動</strong></p> </td>
@@ -446,7 +446,7 @@ Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統�
 
      匯入CSS檔案時，視覺編輯器會檢查CSS是否使用正確的檢視器標籤。 例如，如果您要建立縮放檢視器，所有您匯入的CSS規則必須使用父檢視器元素上定義的檢視器類別名稱`.s7mixedmediaviewer`來定義。
 
-     只要為指定檢視器正確定義CSS標籤，您就可以匯入任意的手工製作CSS。 ([檢視器參考指南](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources)的任何「自訂&#x200B;*&lt;檢視器名稱>*&#x200B;檢視器」說明主題中都會說明CSS標籤。 例如，如果您想要閱讀有關縮放檢視器的CSS標籤，請參閱[自訂縮放檢視器](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer)。)但是，視覺化編輯器可能不瞭解某些CSS值。 在這種情況下，視覺化編輯器會嘗試覆寫錯誤，讓CSS仍可運作。
+     只要為指定檢視器正確定義CSS標籤，您就可以匯入任意的手工製作CSS。 ([檢視器參考指南](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources)的任何「自訂&#x200B;*&lt;檢視器名稱>*&#x200B;檢視器」說明主題中都會說明CSS標籤。 例如，如果您想要閱讀有關縮放檢視器的CSS標籤，請參閱[自訂縮放檢視器](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer)。 不過，視覺化編輯器可能並不瞭解某些CSS值。 在這種情況下，視覺化編輯器會嘗試覆寫錯誤，讓CSS仍可運作。
 
    >[!NOTE]
    >
@@ -458,7 +458,7 @@ Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統�
    >對於按鈕圖稿，請選擇2x影像並上傳高解析度圖稿。 使用互動式影像和可購物橫幅時，您也可以選取各種現成的熱點按鈕。
 
 1. （選擇性）在[編輯檢視器預設集]頁面頂端附近，選取&#x200B;**[!UICONTROL Desktop]**、**[!UICONTROL Tablet]**&#x200B;或&#x200B;**[!UICONTROL Phone]**，為不同的裝置和熒幕型別定義獨特的視覺樣式。
-1. 在[檢視器預設集編輯器]頁面上，選取&#x200B;**[!UICONTROL 行為]**&#x200B;標籤。 或者，您可以在檢視器中選取任何視覺元素，以選取它進行設定。
+1. 在[檢視器預設集編輯器]頁面上，選取&#x200B;**[!UICONTROL 行為]**&#x200B;標籤。或者，您可以在檢視器中選取任何視覺元素，以選取它進行設定。
 例如，對於*VideoPlayer*&#x200B;型別，在&#x200B;**[!UICONTROL 修飾元]** > **[!UICONTROL 播放]**&#x200B;底下，您可以從下列三個最適化位元速率串流選項中選取：
 
    * **[!UICONTROL 破折號]** — 視訊資料流僅以破折號顯示。 不過，在Safari / iOS裝置上，您必須選取&#x200B;**[!UICONTROL hls]**&#x200B;做為型別。
@@ -472,7 +472,7 @@ Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統�
 
    視覺化編輯器中的許多元件都有與之相關的詳細說明。 展開元件以顯示其相關引數時，這些說明會顯示在藍色方塊中。
 
-   有些檢視器類型具有可讓您在「 **[!UICONTROL IS Command」 (IS命令) 文字欄位中指定「Image Serving]** 」 (影像伺服) 命令的元件。如需您可使用的指令清單，請參 [閱影像伺服API參考](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home)。
+   有些檢視器類型具有可讓您在「 **[!UICONTROL IS Command」 (IS命令) 文字欄位中指定「Image Serving]** 」 (影像伺服) 命令的元件。 如需您可使用的指令清單，請參 [閱影像伺服API參考](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home)。
 
    >[!NOTE]
    >
@@ -500,7 +500,7 @@ Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統�
  <tbody>
   <tr>
    <td><strong>顯示模式</strong></td>
-   <td><strong>描述</strong></td>
+   <td><strong>說明</strong></td>
   </tr>
   <tr>
    <td>區段</td>
@@ -519,17 +519,17 @@ Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統�
 
 當您建立或編輯互動式視訊檢視器預設集時，可從「行為」標籤存取「自動捲動」。 在[行為]索引標籤中，從&#x200B;**[!UICONTROL 選取的元件]**&#x200B;下拉式功能表中選取&#x200B;**[!UICONTROL InteractiveSwatches]**。 「自動捲動」(Auto Scroll)複選框列在「IS命令」(IS Command)文本欄位下。
 
-如果您在檢視器預設集中停用「自動捲動 **&#x200B;**&#x200B;」 (清除核取方塊)，當使用者播放視訊時，面板只會顯示整個視訊長度的第一個縮圖影像。不過，使用者可視需要使用向上和向下箭頭圖示手動捲動縮圖。
+如果您在檢視器預設集中停用「自動捲動 **&#x200B;**&#x200B;」 (清除核取方塊)，當使用者播放視訊時，面板只會顯示整個視訊長度的第一個縮圖影像。 不過，使用者可視需要使用向上和向下箭頭圖示手動捲動縮圖。
 
-當您在檢視器預設集中啟用 (選取) 「自動捲動 **&#x200B;**&#x200B;」時，在視訊播放期間，指派給視訊區段的縮圖影像會在區段開始時捲動至檢視中。但是，有些例項會顯示區段中某些縮圖的長度，是其前後縮圖的兩倍。發生此行為是因為區段中的縮圖數目大於面板中顯示的數目，且不可平均分割。
+當您在檢視器預設集中啟用 (選取) 「自動捲動 **&#x200B;**&#x200B;」時，在視訊播放期間，指派給視訊區段的縮圖影像會在區段開始時捲動至檢視中。 但是，有些例項會顯示區段中某些縮圖的長度，是其前後縮圖的兩倍。 發生此行為是因為區段中的縮圖數目大於面板中顯示的數目，且不可平均分割。
 
 舉例說明，假設您有一個30秒的視訊區段。 此外，30秒內總共會顯示九張縮圖。 您瀏覽器的大小調整方式，使顯示面板中有四個可見的縮圖位置。 30秒的視訊時間區段分為三個子區段。 下表顯示指定時間子區段顯示之縮圖的劃分：
 
 | **視訊子區段** | **子區段時間（以秒為單位）** | **在面板中可見的縮圖** |
 |---|---|---|
-| 1 | 0-10 | 1、2、3、4 |
-| 2 | 10-20 | 4， 5， 6， 7 |
-| 3 | 20-30 | 6、7、8、9 |
+| 1 | 0-10 | 1, 2, 3, 4 |
+| 2 | 10-20 | 4, 5, 6, 7 |
+| 3 | 20-30 | 6, 7, 8, 9 |
 
 視訊子區段3的延伸範圍不會超出指派給它的縮圖。 也請注意，在面板中顯示的縮圖4、6和7比其他縮圖長兩倍。
 

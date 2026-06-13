@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 52325c53-324f-4dd0-93c0-cb8a78a38d6b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1506'
 ht-degree: 15%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 15%
 
 混合媒體集可讓您在單一簡報中提供影像、影像集、迴轉集及視訊的混合。
 
-混合媒體集由橫幅指定，並加上單字 **[!UICONTROL MixedMediaSet]**。此外，如果「混合媒體集」已發佈，則會顯示「鉛筆」圖示所指示的發佈日期(以 **[!UICONTROL World]** 圖示指示)與上次修改日期(以 **&#x200B;**&#x200B;Pencil圖示表示)。
+混合媒體集由橫幅指定，並加上單字 **[!UICONTROL MixedMediaSet]**。 此外，如果「混合媒體集」已發佈，則會顯示「鉛筆」圖示所指示的發佈日期(以 **[!UICONTROL World]** 圖示指示)與上次修改日期(以 **&#x200B;**&#x200B;Pencil圖示表示)。
 
 ![chlimage_1-137](assets/chlimage_1-348.png)
 
@@ -35,7 +35,7 @@ ht-degree: 15%
 
 1. [上傳您的資產](#uploading-assets)。
 
-   首先，上傳混合媒體集的影像和視訊。如有必要，請建立 [影像集](/help/assets/image-sets.md) [和回轉集](/help/assets/spin-sets.md)。因為使用者可以在混合媒體集檢視器中放大影像，所以請謹慎選擇影像。 請確定影像在最大尺寸中至少為2000像素。
+   首先，上傳混合媒體集的影像和視訊。 如有必要，請建立 [影像集](/help/assets/image-sets.md) [和回轉集](/help/assets/spin-sets.md)。 因為使用者可以在混合媒體集檢視器中放大影像，所以請謹慎選擇影像。 請確定影像在最大尺寸中至少為2000像素。
 
    如需混合媒體集支援的格式清單，請參閱[Dynamic Media — 支援的光柵影像格式](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media)。
 
@@ -47,7 +47,7 @@ ht-degree: 15%
 
 1. 視需要設定[混合媒體檢視器預設集](/help/assets/managing-viewer-presets.md)。
 
-   管理員可以建立或修改混合媒體集檢視器預設集。若要檢視您的混合媒體與檢視器預設集，請選取混合媒體集，然後在左側導軌下拉式選單中選取「檢 **[!UICONTROL 視器]**」。
+   管理員可以建立或修改混合媒體集檢視器預設集。 若要檢視您的混合媒體與檢視器預設集，請選取混合媒體集，然後在左側導軌下拉式選單中選取「檢 **[!UICONTROL 視器]**」。
 
    若要建立或編輯檢視器預設集，請參閱&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 檢視器預設集]**。
 
@@ -77,7 +77,7 @@ ht-degree: 15%
 
 ## 上傳資產 {#uploading-assets}
 
-首先，上傳混合媒體集的影像和視訊。因為使用者可以在混合媒體集檢視器中放大影像，所以請謹慎選擇影像。 請確定影像在最大尺寸中至少為2000像素。
+首先，上傳混合媒體集的影像和視訊。 因為使用者可以在混合媒體集檢視器中放大影像，所以請謹慎選擇影像。 請確定影像在最大尺寸中至少為2000像素。
 
 此外，如果您想要將迴轉集或影像集新增至混合媒體集，也請建立這些集合。
 
@@ -91,7 +91,7 @@ ht-degree: 15%
 
 **建立混合媒體集：**
 
-1. 在Assets中，導覽至您要建立混合媒體集的位置，然後選取「**[!UICONTROL 建立]**」，然後選取「**[!UICONTROL 混合媒體集]**」。 您也可以從包含資產的資料夾內建立資產集。顯示混合媒體集編輯器。
+1. 在Assets中，導覽至您要建立混合媒體集的位置，然後選取「**[!UICONTROL 建立]**」，然後選取「**[!UICONTROL 混合媒體集]**」。 您也可以從包含資產的資料夾內建立資產集。 顯示混合媒體集編輯器。
 
    ![chlimage_1-138](assets/chlimage_1-349.png)
 
@@ -105,7 +105,7 @@ ht-degree: 15%
 
 1. 選取「資產選擇器」，即可選取要納入混合媒體集的資產。 選取它們，然後選取&#x200B;**[!UICONTROL 選取]**。
 
-   使用「資產選擇器」，您可以輸入關鍵字並點選「回報」來搜尋 **[!UICONTROL 資產]**。您也可以套用篩選條件來調整搜尋結果。您可以依路徑、系列、檔案類型和標籤來篩選。選取篩選，然後從工具列選取&#x200B;**[!UICONTROL 篩選]**&#x200B;圖示。 通過選擇「視圖」圖 **[!UICONTROL 標]** ，然後選擇「清單視圖」、「列 **[!UICONTROL 視圖」]**&#x200B;或「卡片視圖 **[!UICONTROL 」來更]**&#x200B;**&#x200B;**&#x200B;改視圖。
+   使用「資產選擇器」，您可以輸入關鍵字並點選「回報」來搜尋 **[!UICONTROL 資產]**。 您也可以套用篩選條件來調整搜尋結果。 您可以依路徑、系列、檔案類型和標籤來篩選。 選取篩選，然後從工具列選取&#x200B;**[!UICONTROL 篩選]**&#x200B;圖示。 通過選擇「視圖」圖 **[!UICONTROL 標]** ，然後選擇「清單視圖」、「列 **[!UICONTROL 視圖」]**&#x200B;或「卡片視圖 **[!UICONTROL 」來更]**&#x200B;**&#x200B;**&#x200B;改視圖。
 
    請參閱[使用選取器](/help/assets/working-with-selectors.md)。
 
@@ -123,7 +123,7 @@ ht-degree: 15%
 
 1. 若要刪除資產，請選取對應的核取方塊，然後選取&#x200B;**[!UICONTROL 刪除資產]**。
 1. 若要套用預設集，請選取右上角的&#x200B;**[!UICONTROL 預設集]**，然後選取要套用至資產的預設集。
-1. 選取&#x200B;**[!UICONTROL 儲存]**。您新建立的混合媒體集會顯示在您建立的資料夾中。
+1. 選取&#x200B;**[!UICONTROL 儲存]**。 您新建立的混合媒體集會顯示在您建立的資料夾中。
 
 ## 編輯混合媒體集 {#editing-mixed-media-sets}
 
