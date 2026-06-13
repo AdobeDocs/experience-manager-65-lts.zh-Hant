@@ -11,7 +11,7 @@ role: Admin
 exl-id: eef69d02-2e88-4f44-98bb-d98fa297e3a2
 source-git-commit: ffb467630ee061bce5a9cab4e8a311e70b2aeb38
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
@@ -142,4 +142,4 @@ NotSoSerial代理程式不包含在應用程式伺服器的AEM標準散發中。
 
 ## 其他考量 {#other-considerations}
 
-如果您正在IBM® JVM上執行，請檢閱位於[此位置](https://www.ibm.com/docs/en/sdk-java-technology/8?topic=documentation-java-attach-api)的Java™ Attach API支援檔案。
+如果您正在® JVM上執行，請檢閱位於[此位置](https://www.ibm.com/docs/en/sdk-java-technology/8?topic=documentation-java-attach-api)的Java™ Attach API支援檔案。

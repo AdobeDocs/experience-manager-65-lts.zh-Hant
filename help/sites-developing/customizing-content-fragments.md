@@ -10,8 +10,8 @@ role: Developer
 exl-id: 705bffea-ef70-40b5-81d8-b130d3908073
 source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
-source-wordcount: '2687'
-ht-degree: 1%
+source-wordcount: '2826'
+ht-degree: 2%
 
 ---
 
@@ -82,7 +82,6 @@ ht-degree: 1%
 * 所有內容都儲存在資產的`jcr:content/data`節點下：
 
    * 元素資料儲存在主子節點下：
-
      `jcr:content/data/master`
 
    * 變數會儲存在子節點下，其中包含變數的名稱：
@@ -91,7 +90,7 @@ ht-degree: 1%
    * 每個元素的資料都會儲存在個別子節點中，作為具有元素名稱的屬性：
 例如，專案`text`的內容儲存為`jcr:content/data/master`上的屬性`text`
 
-* 中繼資料和關聯內容儲存在`jcr:content/metadata`下方
+* 中繼資料和相關內容儲存在下方 `jcr:content/metadata`
 除了標題和說明（不被視為傳統中繼資料，且儲存在`jcr:content`中）
 
 #### 將簡單內容片段對應至Assets {#mapping-simple-content-fragments-to-assets}
@@ -415,7 +414,7 @@ ht-degree: 1%
 
 控制編輯工作階段的需求如下：
 
-* 編輯內容片段可跨越多個檢視(= HTML頁面)，這應該是原子性的。
+* 編輯內容片段可跨越多個檢視（= HTML頁面），這應該是原子性的。
 * 編輯也應為&#x200B;*transactional*；在編輯工作階段結束時，必須認可（儲存）或回覆（取消）變更。
 * Edge案例應正確處理；這包括使用者手動輸入URL或使用全域導覽離開頁面的情況。
 * 應提供定期自動儲存（每x分鐘）以防止資料遺失。

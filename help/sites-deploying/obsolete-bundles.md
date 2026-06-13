@@ -11,7 +11,7 @@ role: Admin
 exl-id: 29f1d07b-925b-4612-aa1b-34c387a5765f
 source-git-commit: b93a65226587936010c3dd53312c66e15f73cf2a
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 0%
 * com.adobe.cq.social.cq-social-messaging-impl
 * com.adobe.cq.social.cq-social-moderation-spamdetector-core
 * com.adobe.cq.social.cq-social-moderation
-* com.adobe.cq.social.cq-social-ms-provider
+* com.adobe.cq.social.cq-social-ms-offer
 * com.adobe.cq.social.cq-social-notifications-api
 * com.adobe.cq.social.cq-social-notifications-channels-web
 * com.adobe.cq.social.cq-social-notifications-impl
@@ -101,5 +101,5 @@ ht-degree: 0%
 * org.apache.sling.atom.taglib
 * com.github.jknack.handlebars
 * com.adobe.granite.osgi.wrapper.guava
-* com.adobe.cq.core.wcm.components.core (可取代為[AEM 6.5 LTS相容版本](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/versions))
-* com.adobe.cq.core.wcm.components.extension.contentfragment.bundle (可由AEM 6.5 LTS相容版本取代)
+* com.adobe.cq.core.wcm.components.core （可取代為[AEM 6.5 LTS相容版本](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/versions)）
+* com.adobe.cq.core.wcm.components.extension.contentfragment.bundle （可由AEM 6.5 LTS相容版本取代）
