@@ -11,7 +11,7 @@ role: Admin, User
 exl-id: 7ec29926-a5f6-4080-a981-597f9632f6e8
 source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1556'
 ht-degree: 1%
 
 ---
@@ -94,7 +94,7 @@ AEM [!DNL Forms]信函是安全、個人化和互動式通訊。 您可以使用
 
 AEM工具面板包含各種元件的工具。 若要瀏覽至AEM Forms專用工具，請按一下Experience Manager標誌![adobeexperiencemanager](assets/adobeexperiencemanager.png) >工具![hammer](assets/hammer.png) > **[!UICONTROL Forms]**。 會顯示執行下列功能的工具：
 
-* **設定Watched資料夾：**&#x200B;管理員可以設定網路資料夾（稱為watched資料夾），這樣當使用者將檔案(例如PDF檔案)放入watched資料夾時，就會啟動預先設定的作業並操控檔案。 如需詳細資訊，請參閱[建立並設定watched資料夾](/help/forms/using/creating-configure-watched-folder.md)。
+* **設定Watched資料夾：**&#x200B;管理員可以設定網路資料夾（稱為watched資料夾），這樣當使用者將檔案（例如PDF檔案）放入watched資料夾時，就會啟動預先設定的作業並操控檔案。 如需詳細資訊，請參閱[建立並設定watched資料夾](/help/forms/using/creating-configure-watched-folder.md)。
 * **設定Forms App離線服務：** AEM [!DNL Forms] App離線服務會快取表單中所使用資源的路徑或URL。 快取表單中使用的資源的路徑或URL可改善伺服器端效能。 若要設定AEM Forms應用程式的伺服器端離線元件，請參閱[在離線模式下工作](/help/forms/using/work-offline-mode.md)。
 
   ![AEM Forms工具](assets/aem_forms_tools_new.png)

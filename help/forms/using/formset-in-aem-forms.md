@@ -1,5 +1,5 @@
 ---
-title: AEM Forms中的表單集
+title: AEM Forms 的表單集
 description: 本文介紹表單集，並說明如何將HTML5表單彙整在一起，以建立表單集。 本文也說明如何將xml資料預填至表單集，以及如何在程式管理中使用表單集。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ role: Admin, User, Developer
 exl-id: 29339930-2c0c-46d8-84ad-92b1e8384422
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2804'
+source-wordcount: '2816'
 ht-degree: 0%
 
 ---
 
-# AEM Forms中的表單集{#form-set-in-aem-forms}
+# AEM Forms 的表單集{#form-set-in-aem-forms}
 
 ## 概觀 {#overview}
 
@@ -48,7 +48,7 @@ AEM Forms應用程式也支援表單集，可讓您的欄位員工離線建立�
    * Title：指定檔案的標題。 標題可協助您識別AEM Forms使用者介面中設定的表單。
    * 說明：指定檔案的詳細資訊。
    * 標籤：指定可唯一識別表單集的標籤。 標籤有助於搜尋表單集。 若要建立標籤，請在「標籤」方塊中鍵入新標簽名稱。
-   * 提交URL：指定針對表單集的獨立轉譯(非AEM Forms應用程式使用案例)發佈已提交資料的URL。 資料會透過下列請求引數，以multipart/formdata形式提交至此端點：
+   * 提交URL：指定針對表單集的獨立轉譯（非AEM Forms應用程式使用案例）發佈已提交資料的URL。 資料會透過下列請求引數，以multipart/formdata形式提交至此端點：
    * dataXML：此引數包含已提交表單集資料的XML表示法。 如果表單集中的所有表單都使用共同綱要，則會根據該綱要產生XML。 否則，XML根標籤會針對表單集中每個已填入的表單，包含一個子標籤，其中包含表單附件的資料。
    * formsetPath： CRXDE中已提交之表單集的路徑。
    * HTML演算設定檔：您可以設定某些選項，例如浮動欄位、附件和草稿支援（適用於獨立表單集轉譯），以自訂表單集的外觀、行為和互動。 您可以自訂或擴充現有設定檔，以變更任何HTML表單設定檔設定。
@@ -289,7 +289,7 @@ prefillXML： O
 
 子樹狀結構會指出表單集中表單的資料。 只有在表單集元素不存在時，預填XML中的元素才為選用
 
-### XDP：XDP {#xdp-xdp}
+### XDP:XDP {#xdp-xdp}
 
 `parent elements: fs_data/null`
 
@@ -303,7 +303,7 @@ prefillXML： O
 
 此標籤代表HTML5 Form XML的開頭。 如果預填XML中存在或沒有預填XML，則會將此內容新增到提交XML中。 此標籤可從預填XML中移除。
 
-### XFA：資料集 {#xfa-datasets}
+### XFA:DATASETS {#xfa-datasets}
 
 `parent elements: xdp:xdp`
 
@@ -315,7 +315,7 @@ prefillXML： O
 
 `children: xfa:data`
 
-### XFA：DATA {#xfa-data}
+### XFA:DATA {#xfa-data}
 
 `parent elements: xfa:datasets`
 
@@ -373,11 +373,11 @@ AEM Forms應用程式可讓現場工作者將其行動裝置與AEM Forms伺服�
   </tr>
   <tr>
    <td>多個資料模式</td>
-   <td>num{zz，zzz} | num{z，zzz，zzz}</td>
+   <td>num{zz，zzz} |數字{z，zzz，zzz}</td>
   </tr>
   <tr>
    <td>速記模式 </td>
-   <td><p>num.integer{},</p> <p>num.decimal{},</p> <p>數字。%{}，或</p> <p>num.currency{}</p> </td>
+   <td><p>num.integer{}，</p> <p>num.decimal{}，</p> <p>數字。%{}，或</p> <p>num.currency{}</p> </td>
   </tr>
  </tbody>
 </table>
