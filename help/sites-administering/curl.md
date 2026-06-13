@@ -11,7 +11,7 @@ role: Developer
 exl-id: 45d49917-d20f-470c-bf95-6e701de67a11
 source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '865'
 ht-degree: 3%
 
 ---
@@ -75,7 +75,7 @@ cURL命令可建置供AEM中的大部分作業使用，例如觸發工作流程�
 
 >[!NOTE]
 >
->下列範例假設AEM正在連線埠`localhost`上的`4502`上執行，並使用密碼為`admin`的使用者`admin`。 其他的命令預留位置設定在角括弧中。
+>下列範例假設AEM正在連線埠`4502`上的`localhost`上執行，並使用密碼為`admin`的使用者`admin`。 其他的命令預留位置設定在角括弧中。
 
 ### 封裝管理 {#package-management}
 
@@ -310,7 +310,7 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 >[!NOTE]
 >
->下列範例假設AEM正在連線埠`localhost`上的`4502`上執行，並使用密碼為`admin`的使用者`admin`。 其他的命令預留位置設定在角括弧中。
+>下列範例假設AEM正在連線埠`4502`上的`localhost`上執行，並使用密碼為`admin`的使用者`admin`。 其他的命令預留位置設定在角括弧中。
 
 ### 頁面管理 {#page-management}
 

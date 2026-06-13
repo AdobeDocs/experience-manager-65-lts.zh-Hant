@@ -18,7 +18,7 @@ ht-degree: 8%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=en) |
 | AEM 6.5 | 本文章 |
 
 組織會提出中繼資料模型，藉以強化資產探索、使用、互通性等。 正確的中繼資料應用程式對於維護中繼資料驅動的工作流程和流程至關重要。 若要遵循組織範圍的中繼資料策略和標準，您可以使用可協助DAM使用者調整的中繼資料結構。 [!DNL Adobe Experience Manager]可讓您以簡單靈活的方法建立、維護和套用中繼資料結構。
@@ -66,7 +66,7 @@ ht-degree: 8%
 
 若要新增中繼資料結構表單，請執行下列步驟：
 
-1. 若要新增自訂範本至清單，請按一下工具列中的[建立]。**&#x200B;**
+1. 若要新增自訂範本至清單，請按一下工具列中的[建立]。****
 
    >[!NOTE]
    >
@@ -232,7 +232,7 @@ ht-degree: 8%
 
    ![select_dependentfield](assets/select_dependentfield.png)
 
-1. 在&#x200B;**[!UICONTROL 需求]**&#x200B;底下，根據新規則&#x200B;**選項選擇**&#x200B;必要。
+1. 在&#x200B;**[!UICONTROL 需求]**&#x200B;底下，根據新規則&#x200B;]**選項選擇**[!UICONTROL &#x200B;必要。
 1. 按一下&#x200B;**[!UICONTROL 新增規則]**&#x200B;並選擇&#x200B;**[!UICONTROL 資產型別]**&#x200B;欄位以建立相依性。 也選擇要在其上建立相關性的欄位值。 在這種情況下，請選擇「 **[!UICONTROL 視訊」]**。 按一下「**[!UICONTROL 完成]**」以儲存變更。
 
    ![define_rule](assets/define_rule.png)
@@ -341,9 +341,9 @@ ht-degree: 8%
    *圖：文字欄位已新增至中繼資料結構描述表單編輯器。*
 
 1. 按一下「**[!UICONTROL 儲存]**」。 修改後的表單會列在&#x200B;**[!UICONTROL 中繼資料結構Forms]**&#x200B;頁面中。
-1. 按一下工具列中的「套用至資料夾」**&#x200B;**，將自訂中繼資料套用至資料夾。
+1. 按一下工具列中的「套用至資料夾」****，將自訂中繼資料套用至資料夾。
 
-1. 選取要套用修改的結構描述的資料夾，然後按一下[套用]。**&#x200B;**
+1. 選取要套用修改的結構描述的資料夾，然後按一下[套用]。****
 
    ![選取要套用中繼資料結構描述的資料夾](assets/metadata-schema-select-folder.png)
 

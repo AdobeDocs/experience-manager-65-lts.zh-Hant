@@ -9,8 +9,8 @@ role: Admin, User, Developer
 exl-id: 9c05a71b-70fa-4470-afdf-823fd5da5ad1
 source-git-commit: 51342861dd01e659999c19fbe0274e8d3cbcf8c4
 workflow-type: tm+mt
-source-wordcount: '4485'
-ht-degree: 1%
+source-wordcount: '4746'
+ht-degree: 2%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 1%
 
 ### 從軟體散發 {#from-software-distribution}
 
-1. 開啟 [Software Distribution](https://experience.adobe.com/downloads)。您需要 Adobe ID 才能登入 Software Distribution。
+1. 開啟 [Software Distribution](https://experience.adobe.com/downloads)。 您需要 Adobe ID 才能登入 Software Distribution。
 1. 選取標題功能表中可用的&#x200B;**[!UICONTROL Adobe Experience Manager]**。
 1. 在&#x200B;**[!UICONTROL 篩選器]**&#x200B;區段中：
    1. 從&#x200B;**[!UICONTROL 解決方案]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Forms]**。
@@ -94,7 +94,7 @@ ht-degree: 1%
    ![我們管理表單封裝](assets/wegov_forms_package.jpg)
 
 1. 允許安裝程式完成。
-1. 導覽至&#x200B;*https://&lt;aemserver>：&lt;port>/content/we-gov/home.html？wcmmode=disabled*，確保安裝成功。
+1. 導覽至&#x200B;*https://&lt;aemserver>：&lt;port>/content/we-gov/home.html?wcmmode=disabled*，確保安裝成功。
 
 ### 從本機ZIP檔案 {#from-a-local-zip-file}
 
@@ -111,11 +111,11 @@ ht-degree: 1%
    ![安裝WeGov Forms套件](assets/wegov_forms_package-1.jpg)
 
 1. 允許安裝程式完成。
-1. 導覽至&#x200B;*https://&lt;aemserver>：&lt;port>/content/we-gov/home.html？wcmmode=disabled*，確保安裝成功。
+1. 導覽至&#x200B;*https://&lt;aemserver>：&lt;port>/content/we-gov/home.html?wcmmode=disabled*，確保安裝成功。
 
 ### 安裝新的套件版本 {#installing-new-package-versions}
 
-若要安裝新的套件版本，請依照4.1和4.2中定義的步驟操作。即使已安裝較舊的版本，您也可以安裝較新的套件版本。 不過，Adobe建議您先解除安裝較舊的套件版本。 若要這麼做，請執行下列動作：
+若要安裝新的套件版本，請依照4.1和4.2中定義的步驟操作。 即使已安裝較舊的版本，您也可以安裝較新的套件版本。 不過，Adobe建議您先解除安裝較舊的套件版本。 若要這麼做，請執行下列動作：
 
 1. 導覽至&#x200B;*https://&lt;aemserver>：&lt;port>/crx/packmgr/index.jsp*
 1. 找出較舊的&#x200B;**we-gov-forms.pkg.all-&lt;version>.zip**&#x200B;檔案。
@@ -166,7 +166,7 @@ ht-degree: 1%
 
    ![設定SMTP](assets/configure_smtp.jpg)
 
-1. 按一下[儲存]儲存組態。**&#x200B;**
+1. 按一下[儲存]儲存組態。****
 
 ### （選用） AEM SSL設定 {#aemsslconfig}
 
@@ -227,18 +227,18 @@ ht-degree: 1%
 
 **參考：**
 
-1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [設定AEM Forms的Microsoft® Dynamics](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
+1. [® Dynamics OData設定](/help/forms/using/ms-dynamics-odata-configuration.md)
+1. [設定® Dynamics for AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
 
 #### MS® Dynamics OData雲端服務 {#ms-dynamics-odata-cloud-service}
 
 1. 瀏覽到:
 
-   https://&lt;aemserver>：&lt;port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
+   https://<aemserver>：<port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
 
    1. 確定您使用與MS® Dynamics應用程式註冊中設定的相同重新導向URL存取伺服器。
 
-1. 選取「Microsoft® Dynamics OData Cloud Service」設定。
+1. 選取「® Dynamics OData Cloud Service」設定。
 1. 按一下&#x200B;**屬性**。
 
    Microsoft OData Cloud Service的![屬性](assets/properties_odata_cloud_service.jpg)
@@ -248,7 +248,7 @@ ht-degree: 1%
 
    1. **服務根目錄：**，例如`https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
    1. **驗證型別：** OAuth 2.0
-   1. **驗證設定** (請參閱[MS® Dynamics雲端組態設定](../../forms/using/forms-install-configure-gov-reference-site.md#dynamicsconfig)以收集此資訊)：
+   1. **驗證設定** （請參閱[MS® Dynamics雲端組態設定](../../forms/using/forms-install-configure-gov-reference-site.md#dynamicsconfig)以收集此資訊）：
 
       1. 使用者端ID — 也稱為應用程式ID
       1. 用戶端密碼
@@ -276,7 +276,7 @@ ht-degree: 1%
 
    1. 此URL必須與在設定OData服務時用來存取您的AEM伺服器的URL相符。
 
-1. 在[設定]檢視中，按一下&#x200B;**金鑰**&#x200B;以檢視新金鑰(在AEM中作為使用者端密碼)。
+1. 在[設定]檢視中，按一下&#x200B;**金鑰**&#x200B;以檢視新金鑰（在AEM中作為使用者端密碼）。
 
    1. 請務必保留金鑰的副本；您稍後無法在Azure或AEM中檢視。
 
@@ -376,7 +376,7 @@ ht-degree: 1%
 
    ![We.Gov Adobe Analytics](assets/wegov_adobe_analytics.jpg)
 
-1. 若要更新框架組態，請從相同頁面按一下[We.Gov Adobe Analytics Framework (Analytics Framework)] (請參閱[啟用AEM編寫](../../forms/using/forms-install-configure-gov-reference-site.md#enableauthoring)以啟用編寫)。
+1. 若要更新框架組態，請從相同頁面按一下[We.Gov Adobe Analytics Framework (Analytics Framework)] （請參閱[啟用AEM編寫](../../forms/using/forms-install-configure-gov-reference-site.md#enableauthoring)以啟用編寫）。
 
 #### Adobe Analytics正在尋找使用者認證 {#analytics-locating-user-credentials}
 
@@ -388,7 +388,7 @@ ht-degree: 1%
    ![快速存取](assets/aftia-quick-access.jpg)
 1. 導覽至「管理員」標籤，並選取「使用者管理（舊版）」專案
    ![報告](assets/aftia-reports.jpg)
-1. 選取&#x200B;**使用者**&#x200B;索引標籤。
+1. 選取&#x200B;**使用者**索引標籤。
    ![使用者管理](assets/aftia-user-management.jpg)
 1. 從使用者清單中選取所需的使用者。
 1. 捲動至頁面底部，使用者驗證資訊會顯示在頁面底部。
@@ -483,7 +483,7 @@ ht-degree: 1%
 
 閱讀進一步指示前，請先檢閱下列內容：
 
-* [設定自動錶單轉換服務](https://experienceleague.adobe.com/zh-hant/docs/aem-forms-automated-conversion-service/using/configure-service#)
+* [設定自動錶單轉換服務](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#)
 
 #### 建立IMS設定 — 第1部分 {#creating-ims-config}
 
@@ -512,7 +512,7 @@ ht-degree: 1%
 
 1. 導覽至[Adobe Developer Console](https://developer.adobe.com/console/)。
 
-1. 按一下&#x200B;**建立整合項目**。
+1. 按一下&#x200B;**建立整合**。
 
 1. 選取&#x200B;**存取API**。
 
@@ -544,7 +544,7 @@ ht-degree: 1%
 
 1. 輸入API金鑰。
 
-1. 輸入使用者端密碼(在Adobe I/O的整合上按一下&#x200B;**公開**&#x200B;以顯示)。
+1. 輸入使用者端密碼（在Adobe I/O的整合上按一下&#x200B;**公開**&#x200B;以顯示）。
 
 1. 按一下Adobe I/O中的JWT標籤以取得JWT裝載，並將其貼到IMS設定的裝載中。
 
@@ -582,7 +582,7 @@ IMS設定完成後，您可以繼續檢閱AEM中的雲端設定。 如果設定�
 
 1. 對於此設定，兩個核取方塊值會保留空白。
 
-   若要深入瞭解這些選項，請參閱[設定雲端服務](https://experienceleague.adobe.com/zh-hant/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service)。
+   若要深入瞭解這些選項，請參閱[設定雲端服務](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service)。
 
 #### 設定雲端設定（`We.Finance` AFC生產） {#configure-cloud-configuration-wefinance}
 
@@ -612,7 +612,7 @@ IMS設定完成後，您可以繼續在AEM中建立雲端設定。
 
 1. 對於此設定，兩個核取方塊值會保留空白。
 
-   * 若要進一步瞭解這些選項，請參閱[設定雲端服務](https://experienceleague.adobe.com/zh-hant/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service)。
+   * 若要進一步瞭解這些選項，請參閱[設定雲端服務](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service)。
 
 #### 測試表單轉換（We.Gov註冊應用程式） {#test-forms-conversion}
 
@@ -652,7 +652,7 @@ IMS設定完成後，您可以繼續在AEM中建立雲端設定。
 
 #### 已知問題和注意事項 {#known-issues-notes}
 
-自動錶單轉換服務包含特定[最佳實務、已知的複雜模式](https://experienceleague.adobe.com/zh-hant/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#)和[已知問題](https://experienceleague.adobe.com/zh-hant/docs/aem-forms-automated-conversion-service/using/known-issues#)。 開始使用AEM Forms自動錶單轉換服務前，請先檢閱此資訊。
+自動錶單轉換服務包含特定[最佳實務、已知的複雜模式](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#)和[已知問題](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/known-issues#)。 開始使用AEM Forms自動錶單轉換服務前，請先檢閱此資訊。
 
 1. 如果您想要在轉換後將表單繫結到FDM，請建立具有已啟用資料繫結之產生調適型表單的表單。
 
@@ -788,7 +788,7 @@ IMS設定完成後，您可以繼續在AEM中建立雲端設定。
 
 使用者可以設定各種工作流程服務選項，包括：
 
-1. Microsoft® Dynamics專案
+1. ® Dynamics專案
 1. Adobe Sign
 1. AEM自訂通訊管理
 1. Adobe Analytics

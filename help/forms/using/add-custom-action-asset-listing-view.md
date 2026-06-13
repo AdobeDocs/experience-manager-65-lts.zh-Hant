@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: a27c4469-6430-4a68-ba2c-7fb0ddebb263
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 3%
+source-wordcount: '1381'
+ht-degree: 5%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 3%
 
    1. 請確定「覆蓋節點」對話方塊是否具備下列值：
 
-      **路徑：** /libs/fd/cm/ma/gui/content/cmassets/jcr：content/body/content/header/items/selection/items
+      **路徑：** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
 
       **位置：** /apps/
 
@@ -70,7 +70,7 @@ ht-degree: 3%
 
       ![重疊節點](assets/2_createnodedownloadflatpdf.png)
 
-   1. 按一下&#x200B;**確定**。 資料夾結構會在apps資料夾中建立。
+   1. 按一下&#x200B;**「確定」**。 資料夾結構會在apps資料夾中建立。
 
       按一下&#x200B;**「儲存全部」**。
 
@@ -78,11 +78,11 @@ ht-degree: 3%
 
    1. 用滑鼠右鍵按一下&#x200B;**專案**&#x200B;資料夾，然後選取&#x200B;**建立** > **建立節點**。
 
-   1. 確定[建立節點]對話方塊具有下列值，然後按一下[確定] **&#x200B;**：
+   1. 確定[建立節點]對話方塊具有下列值，然後按一下[確定] ****：
 
       **名稱：** downloadFlatPDF （或您要指定給此屬性的名稱）
 
-      **型別：** nt：unstructured
+      **型別：** nt:unstructured
 
    1. 按一下您已建立的新節點（此處downloadFlatPDF）。 CRX會顯示節點的屬性。
 
@@ -108,7 +108,7 @@ ht-degree: 3%
         <tr>
         <td>圖示</td>
         <td>字串</td>
-        <td>icon-download<br /> <br /> Correspondence Management顯示在命令/功能表左側的圖示。 如需其他可用的圖示和設定，請參閱<a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant" target="_blank">CoralUI圖示檔案</a>。<br /> </td>
+        <td>icon-download<br /> <br /> Correspondence Management顯示在命令/功能表左側的圖示。 如需其他可用的圖示和設定，請參閱<a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html" target="_blank">CoralUI圖示檔案</a>。<br /> </td>
         </tr>
         <tr>
         <td>jcr:primaryType</td>
@@ -152,7 +152,7 @@ ht-degree: 3%
 
       **符合節點型別：已選取**
 
-   1. 按一下&#x200B;**確定**。 資料夾結構會在apps資料夾中建立。 按一下&#x200B;**「儲存全部」**。
+   1. 按一下&#x200B;**「確定」**。 資料夾結構會在apps資料夾中建立。 按一下&#x200B;**「儲存全部」**。
 
 1. 在js資料夾中，建立名為formaction.js的檔案，其中包含按鈕的動作處理程式碼，使用下列步驟：
 
@@ -242,7 +242,7 @@ ht-degree: 3%
 
       **符合節點型別：已選取**
 
-   1. 按一下&#x200B;**確定**。 資料夾結構會在apps資料夾中建立。
+   1. 按一下&#x200B;**「確定」**。 資料夾結構會在apps資料夾中建立。
 
    1. 按一下&#x200B;**「儲存全部」**。
 
@@ -250,11 +250,11 @@ ht-degree: 3%
 
    1. 用滑鼠右鍵按一下專案資料夾，然後選取&#x200B;**建立>建立節點**。
 
-   1. 確定[建立節點]對話方塊具有下列值，然後按一下[確定] **&#x200B;**：
+   1. 確定[建立節點]對話方塊具有下列值，然後按一下[確定] ****：
 
       **名稱：** letterpdfdownloader (或您要指定給此屬性的名稱 — 必須是唯一的。 如果您在此處使用不同的名稱，請在formaction.js檔案的ACTION_URL變數中指定相同的名稱。)
 
-      **型別：** nt：unstructured
+      **型別：** nt:unstructured
 
    1. 按一下您已建立的新節點（此處downloadFlatPDF）。 CRX會顯示節點的屬性。
 
@@ -275,9 +275,9 @@ ht-degree: 3%
       將檔案命名為POST.jsp。 （檔案名稱僅需為POST.jsp。）
 
    1. 連按兩下&#x200B;**POST.jsp**&#x200B;檔案，以在CRX中開啟。
-   1. 將下列程式碼新增至POST.jsp檔案，然後按一下[儲存全部] **&#x200B;**：
+   1. 將下列程式碼新增至POST.jsp檔案，然後按一下[儲存全部] ****：
 
-      此程式碼專用於字母轉譯服務。 若是其他資產，請將該資產的Java™程式庫新增至此程式碼。 如需AEM Forms API的詳細資訊，請參閱[AEM Forms API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)。
+      此程式碼專用於字母轉譯服務。 若是其他資產，請將該資產的Java™程式庫新增至此程式碼。 如需AEM Forms API的詳細資訊，請參閱[AEM Forms API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)。
 
       如需AEM資料庫的詳細資訊，請參閱AEM [元件](/help/sites-developing/components.md)。
 

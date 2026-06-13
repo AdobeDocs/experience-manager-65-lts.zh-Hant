@@ -10,7 +10,7 @@ role: User, Developer
 exl-id: 972273ad-763f-4314-95b1-678368f99148
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3667'
+source-wordcount: '3646'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 一旦設定之後，這些工作流程就可以手動觸發，以完成定義的程式，或在使用者提交表單或[通訊管理](/help/forms/using/cm-overview.md)信函時以程式設計方式執行。 透過這項增強的AEM工作流程功能，AEM Forms提供兩種相異但相似的功能。 在部署策略中，您需要決定哪一個適合您。 檢視OSGi上的Forms中心AEM工作流程和JEE上的程式管理的[比較](capabilities-osgi-jee-workflows.md)。 此外，如需部署拓撲，請參閱[AEM Forms的架構和部署拓撲](/help/forms/using/aem-forms-architecture-deployment.md)。
 
-OSGi上的Forms中心工作流程延伸[AEM收件匣](/help/sites-authoring/inbox.md)，並為AEM工作流程編輯器提供額外元件（步驟），以新增對AEM Forms中心工作流程的支援。 延伸的AEM收件匣具有類似[AEM Forms Workspace](introduction-html-workspace.md)的功能。 除了管理以人為中心的工作流程（核准、稽核等）之外，您還可以使用AEM工作流程來自動化[檔案服務](/help/sites-developing/workflows-step-ref.md)相關的作業(例如，產生PDF)和電子簽署(Adobe Sign)檔案。
+OSGi上的Forms中心工作流程延伸[AEM收件匣](/help/sites-authoring/inbox.md)，並為AEM工作流程編輯器提供額外元件（步驟），以新增對AEM Forms中心工作流程的支援。 延伸的AEM收件匣具有類似[AEM Forms Workspace](introduction-html-workspace.md)的功能。 除了管理以人為中心的工作流程（核准、稽核等）之外，您還可以使用AEM工作流程來自動化[檔案服務](/help/sites-developing/workflows-step-ref.md)相關的作業（例如，產生PDF）和電子簽署(Adobe Sign)檔案。
 
 所有AEM Forms工作流程步驟都支援使用變數。 變數可讓工作流程步驟在執行階段跨步驟保留和傳遞中繼資料。 您可以建立不同型別的變數來儲存不同型別的資料。 您也可以建立變數集合（陣列），以儲存多個相關、相同型別資料的執行個體。 通常情況下，當您需要根據變數或變數集合持有的值來做出決定，或儲存您稍後在程式中需要的資訊時，會使用變數或變數集合。 如需有關在這些以Forms為中心的工作流程元件（步驟）中使用變數的詳細資訊，請參閱[在OSGi上以Forms為中心的工作流程 — 步驟參考](../../forms/using/aem-forms-workflow-step-reference.md)。 如需建立和管理變數的詳細資訊，請參閱[AEM工作流程中的變數](../../forms/using/variable-in-aem-workflows.md)。
 
@@ -41,10 +41,10 @@ OSGi上的Forms中心工作流程延伸[AEM收件匣](/help/sites-authoring/inbo
 
 ## 開始之前 {#before-you-start}
 
-* 工作流程是真實世界業務流程的表示法。 讓您的真實商業程式與商業程式參與者清單隨時待命。 此外，在開始建立工作流程之前，請準備好附屬資料(調適型表單、PDF檔案等)。
+* 工作流程是真實世界業務流程的表示法。 讓您的真實商業程式與商業程式參與者清單隨時待命。 此外，在開始建立工作流程之前，請準備好附屬資料（調適型表單、PDF檔案等）。
 * 一個工作流程可以有多個階段。 這些階段會顯示在AEM收件匣中，並有助於報告工作流程的進度。 將您的業務流程劃分為邏輯階段。
 * 您可以設定AEM工作流程的指派工作步驟，以傳送電子郵件通知給使用者或受指派人。 因此，[啟用電子郵件通知](#configure-email-service)。
-* 工作流程也可以使用Adobe sign進行數位簽名。 如果您打算在工作流程中使用Adobe Sign，請在工作流程中使用AEM Forms[&#128279;](../../forms/using/adobe-sign-integration-adaptive-forms.md)之前先設定它的Adobe Sign。
+* 工作流程也可以使用Adobe sign進行數位簽名。 如果您打算在工作流程中使用Adobe Sign，請在工作流程中使用AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)之前[先設定它的Adobe Sign。
 
 ## 建立工作流程模型 {#create-a-workflow-model}
 
@@ -77,8 +77,8 @@ AEM提供直覺式使用者介面，讓您使用提供的工作流程步驟建�
 1. 啟用電子郵件通知。 您可以在OSGi上設定以Forms為中心的工作流程，以傳送電子郵件通知給使用者或受指派人。 執行以下設定以啟用電子郵件通知：
 
    1. 前往`https://[server]:[port]/system/console/configMgr`的AEM設定管理員。
-   1. 開啟&#x200B;**[!UICONTROL 天CQ郵件服務]**&#x200B;設定。 指定&#x200B;**[!UICONTROL SMTP伺服器主機名稱]**、**[!UICONTROL SMTP伺服器連線埠、]**&#x200B;和&#x200B;**[!UICONTROL 「寄件者」位址]**&#x200B;欄位的值。 按一下「**[!UICONTROL 儲存]**」。
-   1. 開啟&#x200B;**[!UICONTROL Day CQ Link Externalizer]**&#x200B;設定。 在&#x200B;**[!UICONTROL 網域]**&#x200B;欄位中，指定本機、作者和發佈執行個體的實際主機名稱/IP位址和連線埠號碼。 按一下「**[!UICONTROL 儲存]**」。
+   1. 開啟&#x200B;**[!UICONTROL 天CQ郵件服務]**&#x200B;設定。 指定&#x200B;**[!UICONTROL SMTP伺服器主機名稱]**、**[!UICONTROL SMTP伺服器連線埠、]**&#x200B;和&#x200B;**[!UICONTROL 「寄件者」位址]**&#x200B;欄位的值。 按一下&#x200B;**[!UICONTROL 儲存]**。
+   1. 開啟&#x200B;**[!UICONTROL Day CQ Link Externalizer]**&#x200B;設定。 在&#x200B;**[!UICONTROL 網域]**&#x200B;欄位中，指定本機、作者和發佈執行個體的實際主機名稱/IP位址和連線埠號碼。 按一下&#x200B;**[!UICONTROL 儲存]**。
 
 1. 建立工作流程階段。 一個工作流程可以有多個階段。 這些階段會顯示在AEM收件匣中，並報告工作流程的進度。
 
@@ -152,7 +152,7 @@ AEM提供直覺式使用者介面，讓您使用提供的工作流程步驟建�
    <td>指定應用程式的名稱。 除字母、數字、連字型大小和底線以外的所有字元都會取代為連字型大小。 </td>
   </tr>
   <tr>
-   <td>描述</td>
+   <td>說明</td>
    <td>說明會顯示在AEM收件匣中。 在說明欄位中提供應用程式的詳細資訊。 例如，應用程式的用途。<br /> </td>
   </tr>
   <tr>
@@ -214,7 +214,7 @@ AEM Forms應用程式會與AEM Forms伺服器同步，可讓您變更帳戶中�
 
 ### 使用watched資料夾 {#watched}
 
-管理員（fd-administrators群組的成員）可以設定網路資料夾，以在使用者將檔案(例如PDF檔案)放入資料夾時執行預先設定的工作流程。 工作流程完成後，它可以將結果檔案儲存到指定的輸出資料夾。 此資料夾稱為[Watched資料夾](../../forms/using/watched-folder-in-aem-forms.md)。 執行以下程式來設定watched資料夾以啟動工作流程：
+管理員（fd-administrators群組的成員）可以設定網路資料夾，以在使用者將檔案（例如PDF檔案）放入資料夾時執行預先設定的工作流程。 工作流程完成後，它可以將結果檔案儲存到指定的輸出資料夾。 此資料夾稱為[Watched資料夾](../../forms/using/watched-folder-in-aem-forms.md)。 執行以下程式來設定watched資料夾以啟動工作流程：
 
 1. 在您的AEM作者執行個體上，移至![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL 設定Watched資料夾]**。 會顯示已設定的watched資料夾清單。
 1. 選取&#x200B;**[!UICONTROL 新增]**。 畫面隨即顯示欄位清單。 指定下列欄位的值，以設定工作流程的Watched資料夾：
@@ -267,8 +267,8 @@ AEM Forms應用程式會與AEM Forms伺服器同步，可讓您變更帳戶中�
 您可以使用AEM工作流程的指派任務和傳送電子郵件步驟來傳送電子郵件。 執行以下步驟，指定電子郵件伺服器和傳送電子郵件所需的其他設定：
 
 1. 前往`https://[server]:[port]/system/console/configMgr`的AEM設定管理員。
-1. 開啟&#x200B;**[!UICONTROL 天CQ郵件服務]**&#x200B;設定。 指定&#x200B;**[!UICONTROL SMTP伺服器主機名稱]**、**[!UICONTROL SMTP伺服器連線埠、]**&#x200B;和&#x200B;**[!UICONTROL 「寄件者」位址]**&#x200B;欄位的值。 按一下「**[!UICONTROL 儲存]**」。
-1. 開啟&#x200B;**[!UICONTROL Day CQ Link Externalizer]**&#x200B;設定。 在&#x200B;**[!UICONTROL 網域]**&#x200B;欄位中，指定本機、作者和發佈執行個體的實際主機名稱/IP位址和連線埠號碼。 按一下「**[!UICONTROL 儲存]**」。
+1. 開啟&#x200B;**[!UICONTROL 天CQ郵件服務]**&#x200B;設定。 指定&#x200B;**[!UICONTROL SMTP伺服器主機名稱]**、**[!UICONTROL SMTP伺服器連線埠、]**&#x200B;和&#x200B;**[!UICONTROL 「寄件者」位址]**&#x200B;欄位的值。 按一下&#x200B;**[!UICONTROL 儲存]**。
+1. 開啟&#x200B;**[!UICONTROL Day CQ Link Externalizer]**&#x200B;設定。 在&#x200B;**[!UICONTROL 網域]**&#x200B;欄位中，指定本機、作者和發佈執行個體的實際主機名稱/IP位址和連線埠號碼。 按一下&#x200B;**[!UICONTROL 儲存]**。
 
 ### 清除工作流程例項 {#purge-workflow-instances}
 
@@ -276,10 +276,10 @@ AEM Forms應用程式會與AEM Forms伺服器同步，可讓您變更帳戶中�
 
 ## 將工作流程變數的敏感資料引數化，並儲存在外部資料存放區中 {#externalize-wf-variables}
 
-從最適化表單提交至[!DNL Experience Manager]工作流程的任何資料都可以擁有您企業一般使用者的PII （個人識別資訊）或SPD （敏感個人資料）。 不過，不需要將您的資料儲存在[!DNL Adobe Experience Manager] [JCR存放庫](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html?lang=zh-Hant)中。 您可以將資訊引數化為[工作流程變數](/help/forms/using/variable-in-aem-workflows.md)，將一般使用者資料的儲存區外部化至您的受管理資料儲存區（例如Azure blob儲存區）。
+從最適化表單提交至[!DNL Experience Manager]工作流程的任何資料都可以擁有您企業一般使用者的PII （個人識別資訊）或SPD （敏感個人資料）。 不過，不需要將您的資料儲存在[!DNL Adobe Experience Manager] [JCR存放庫](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html)中。 您可以將資訊引數化為[工作流程變數](/help/forms/using/variable-in-aem-workflows.md)，將一般使用者資料的儲存區外部化至您的受管理資料儲存區（例如Azure blob儲存區）。
 
-在[!DNL Adobe Experience Manager] Forms工作流程中，資料會透過工作流程變數的一系列工作流程步驟進行處理和傳遞。 這些變數是儲存在工作流程執行個體中繼資料節點中的已命名屬性或機碼值組；例如`/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`。 這些工作流程變數可以外部化至JCR以外的個別存放庫，然後由[!DNL Adobe Experience Manager]工作流程處理。 [!DNL Adobe Experience Manager]提供API `[!UICONTROL UserMetaDataPersistenceProvider]`，以將工作流程變數儲存在受管理的外部儲存體中。 若要進一步瞭解如何在[!DNL Adobe Experience Manager]中使用客戶擁有資料存放區的工作流程變數，請參閱[管理外部資料存放區的工作流程變數](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore)。
-[!DNL Adobe]提供下列[範例](https://github.com/adobe/workflow-variable-externalizer)，以使用API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md)將變數從工作流程中繼資料對應儲存至Azure blob儲存體。 在類似的行中，您可以使用範例作為指南，使用[UserMetaDataPersistenceProvider] API將[!DNL Adobe Experience Manager]外部的任何其他資料儲存中的工作流程變數外部化並管理這些變數。
+在[!DNL Adobe Experience Manager] Forms工作流程中，資料會透過工作流程變數的一系列工作流程步驟進行處理和傳遞。這些變數是儲存在工作流程執行個體中繼資料節點中的已命名屬性或機碼值組；例如，`/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`。這些工作流程變數可以外部化至JCR以外的個別存放庫，然後由[!DNL Adobe Experience Manager]工作流程處理。[!DNL Adobe Experience Manager]提供API `[!UICONTROL UserMetaDataPersistenceProvider]`，以將工作流程變數儲存在受管理的外部儲存體中。若要進一步瞭解如何在[!DNL Adobe Experience Manager]中使用客戶擁有資料存放區的工作流程變數，請參閱[管理外部資料存放區的工作流程變數](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore)。
+[!DNL Adobe]提供下列[範例](https://github.com/adobe/workflow-variable-externalizer)，可藉由使用API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md)，將工作流程中繼資料對應中的變數儲存至Azure blob儲存體。在類似的行中，您可以使用範例作為指南，使用[UserMetaDataPersistenceProvider] API將[!DNL Adobe Experience Manager]外部的任何其他資料儲存中的工作流程變數外部化並管理這些變數。
 
 >[!NOTE]
 >
@@ -336,7 +336,7 @@ AEM Forms應用程式會與AEM Forms伺服器同步，可讓您變更帳戶中�
 
 ### 外部資料儲存的AEM工作流程准則 {#guidelines-workflows-external-data-storage}
 
-以下是使用[!DNL Adobe Experience Manager]工作流程並將資料儲存至外部資料儲存區(例如Microsoft Azure儲存伺服器)時的准則：
+以下是使用[!DNL Adobe Experience Manager]工作流程並將資料儲存至外部資料儲存區（例如Microsoft Azure儲存伺服器）時的准則：
 
 * 在工作流程模型步驟中定義輸入和輸出資料檔案及附件時，使用變數來儲存資料。 請勿選取&#x200B;**[!UICONTROL 相對於承載]**&#x200B;以及&#x200B;**[!UICONTROL 絕對路徑可用的]**&#x200B;選項。 當您[設定外部資料儲存的 [!DNL Adobe Experience Manager] 工作流程模型](#configure-aem-wf-model)後，**[!UICONTROL 相對於承載]**&#x200B;和&#x200B;**[!UICONTROL 在絕對路徑上可用]**&#x200B;選項就不會自動顯示。
 

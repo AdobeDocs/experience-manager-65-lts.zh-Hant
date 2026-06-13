@@ -7,7 +7,7 @@ role: Admin, User, Developer
 exl-id: 5e1c5e07-1848-4784-9bdc-4d3b464baebe
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2159'
+source-wordcount: '2167'
 ht-degree: 6%
 
 ---
@@ -309,7 +309,7 @@ source="myFragmentSource"/>
 
 ## 判斷檔案是否符合PDF/A標準 {#determine-whether-documents-are-pdf-a-compliant}
 
-您可以使用Assembler服務來判斷PDF檔案是否符合PDF/A標準。 PDF/A 是一種用於長期保存文件內容的封存格式。字體內嵌在文件中，檔案未壓縮。因此，PDF/A 文件通常比標準 PDF 文件大。此外，PDF/A 文件不包含音訊和視訊內容。
+您可以使用Assembler服務來判斷PDF檔案是否符合PDF/A標準。 PDF/A 是一種用於長期保存文件內容的封存格式。 字體嵌入在文件中，檔案未壓縮。 因此，PDF/A 文件通常比標準 PDF 文件大。 此外，PDF/A 文件不包含音訊和視訊內容。
 
 ## 取得有關PDF檔案的資訊 {#obtain-information-about-a-pdf-document}
 

@@ -10,7 +10,7 @@ exl-id: 43fb8af8-9750-44c1-8e02-34b25b92fd65
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
 source-wordcount: '2007'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
@@ -28,7 +28,7 @@ Scope of metadata articles:
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
 
-[!DNL Adobe Experience Manager Assets]保留每個資產的中繼資料。 它可讓您更輕鬆地分類及組織資產，並協助尋找特定資產的人。 有了使用資產保留和管理中繼資料的功能，您可以根據資產的中繼資料自動組織和處理資產。 [!DNL Adobe Experience Manager Assets]可讓管理員設定和自訂中繼資料功能，以修改預設的Adobe方案。
+[!DNL Adobe Experience Manager Assets] 會保留每個資產的後設資料。 這樣便可以更輕鬆地完成資產分類和組織，並協助使用者尋找特定的資產。 藉助保留和管理資產後設資料的功能，您可以根據資產的後設資料自動組織和處理資產。 [!DNL Adobe Experience Manager Assets]可讓管理員設定和自訂中繼資料功能，以修改預設的Adobe方案。
 
 ## 編輯中繼資料結構 {#metadata-schema}
 
@@ -120,7 +120,7 @@ Scope of metadata articles:
 
 <!--
 TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/tw/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -240,7 +240,7 @@ To apply a metadata profile globally, follow these steps:
 1. 在「資料夾中繼資料結構Forms」頁面中，選取您要套用至資料夾的結構表單。
 1. 在工具列中按一下&#x200B;**[!UICONTROL 套用至資料夾]**。
 
-1. 選取要套用結構描述的資料夾，然後按一下[套用]。**&#x200B;** 如果資料夾已套用中繼資料結構，則會出現警告訊息，告知您即將覆寫現有的中繼資料結構。 按一下&#x200B;**[!UICONTROL 覆寫]**。
+1. 選取要套用結構描述的資料夾，然後按一下[套用]。**** 如果資料夾已套用中繼資料結構，則會出現警告訊息，告知您即將覆寫現有的中繼資料結構。 按一下&#x200B;**[!UICONTROL 覆寫]**。
 1. 開啟您套用中繼資料結構的資料夾的中繼資料屬性。
 
    ![folder_properties](assets/folder_properties.png)
@@ -266,7 +266,7 @@ To apply a metadata profile globally, follow these steps:
 
 開啟配置了資料夾元資料結構描述的資料夾的屬性。 **[!UICONTROL 資料夾中繼資料]**&#x200B;索引標籤會顯示在資料夾[!UICONTROL 內容]頁面中。 要查看資料夾元資料結構表單，請選擇此頁籤。
 
-在各個欄位中輸入中繼資料值，然後按一下[儲存]儲存這些值。 **&#x200B;**&#x200B;您指定的值會儲存在CRX存放庫的資料夾節點中。
+在各個欄位中輸入中繼資料值，然後按一下[儲存]儲存這些值。 ****&#x200B;您指定的值會儲存在CRX存放庫的資料夾節點中。
 
 ![folder_metadata_properties-1](assets/folder_metadata_properties-1.png)
 
@@ -280,7 +280,7 @@ To apply a metadata profile globally, follow these steps:
 >
 >* [中繼資料概念與瞭解](metadata-concepts.md)。
 >* [編輯多個集合的中繼資料屬性](manage-collections.md#editing-collection-metadata-in-bulk)。
->* [在Experience Manager Assets中匯入和匯出中繼資料](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=zh-Hant)。
+>* [在Experience Manager Assets中匯入和匯出中繼資料](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html)。
 >* [處理中繼資料、影像和影片的設定檔](processing-profiles.md)。
 >* [組織您的數位資產以使用處理設定檔的最佳實務](/help/assets/organize-assets.md)。
 >* [XMP回寫](/help/assets/xmp-writeback.md)。
