@@ -12,8 +12,8 @@ role: Developer
 exl-id: 2a94ea8d-2919-4f30-be31-ce559493805d
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 22%
+source-wordcount: '684'
+ht-degree: 23%
 
 ---
 
@@ -64,7 +64,7 @@ Clientlibs可讓您擴充預設實作以實現新功能，同時重複使用標�
 
 >[!NOTE]
 >
->請參閱知識庫文章[疑難排解AEM TouchUI問題](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-16935)，以取得進一步的秘訣和工具。
+>請參閱知識庫文章[疑難排解AEM TouchUI問題](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935)，以取得進一步的秘訣和工具。
 
 ## 自訂主控台的預設檢視 {#customizing-the-default-view-for-a-console}
 
@@ -94,7 +94,7 @@ Clientlibs可讓您擴充預設實作以實現新功能，同時重複使用標�
 
 ### 將動作新增至工具列 {#add-new-action-to-the-toolbar}
 
-1. 您可以建置自己的元件，並包含自訂動作對應的使用者端程式庫。 例如，在下列位置執行&#x200B;**促銷至Twitter**&#x200B;動作：
+1. 您可以建置自己的元件並包含相對應的用戶端資料庫，以用於自訂動作。 例如，在下列位置執行&#x200B;**促銷至Twitter**&#x200B;動作：
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 
@@ -151,7 +151,6 @@ Clientlibs可讓您擴充預設實作以實現新功能，同時重複使用標�
 1. 選擇性：
 
    * 如果您想要插入其他資料，您必須使用撰寫[PageInforProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)
-
      `pageInfoProviderType`屬性。
 
    例如，請參閱底下的附加類別/套件（來自GitHub）。
@@ -162,4 +161,4 @@ Clientlibs可讓您擴充預設實作以實現新功能，同時重複使用標�
 
 使用主控台時，常見的使用案例是使用者必須從資源（例如頁面、元件、資產等）中進行選取時。 例如，這可以採用清單的形式，作者必須從中選擇專案。
 
-若要將清單保持為合理的大小並且和使用案例相關，可以以自訂述詞的形式實作篩選器。如需詳細資訊，請參閱[自訂頁面編寫 — 篩選資源](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources)。
+若要將清單保持為合理的大小並且和使用案例相關，可以以自訂述詞的形式實作篩選器。 如需詳細資訊，請參閱[自訂頁面編寫 — 篩選資源](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources)。

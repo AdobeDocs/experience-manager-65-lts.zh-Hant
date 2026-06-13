@@ -11,14 +11,14 @@ role: Admin
 exl-id: 8bf470d5-1824-41d6-80e4-4af1eb6df713
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '2210'
 ht-degree: 2%
 
 ---
 
 # 整合Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
-將[Adobe Dynamic Tag Management](https://business.adobe.com/tw/products/experience-platform/adobe-experience-platform.html)與AEM整合，以便您可以使用您的Dynamic Tag Management Web屬性來追蹤AEM網站。 Dynamic Tag Management可讓行銷人員管理用於收集資料的標籤，並在所有數位行銷系統間散發資料。 例如，使用Dynamic Tag Management來收集AEM網站的使用量資料，並散發資料，以便在Adobe Analytics或Adobe Target中進行分析。
+將[Adobe Dynamic Tag Management](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html)與AEM整合，以便您可以使用您的Dynamic Tag Management Web屬性來追蹤AEM網站。 Dynamic Tag Management可讓行銷人員管理用於收集資料的標籤，並在所有數位行銷系統間散發資料。 例如，使用Dynamic Tag Management來收集AEM網站的使用量資料，並散發資料，以便在Adobe Analytics或Adobe Target中進行分析。
 
 整合之前，請先建立追蹤AEM網站網域的Dynamic Tag Management [Web屬性](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties)。 必須設定Web屬性的[託管選項](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab)，以便您可以設定AEM來存取Dynamic Tag Management程式庫。
 
@@ -55,7 +55,7 @@ AEM支援在雲端中託管或在AEM上託管的動態Tag Management。
 
 ### 使用動態Tag Management部署勾點 {#using-the-dynamic-tag-management-deployment-hook}
 
-當AEM託管Dynamic Tag Management程式庫時，您可以使用Dynamic Tag Management部署勾點服務，自動將程式庫更新推送至AEM。 若對程式庫進行變更(例如編輯Dynamic Tag Management Web屬性屬性)，則會推送程式庫更新。
+當AEM託管Dynamic Tag Management程式庫時，您可以使用Dynamic Tag Management部署勾點服務，自動將程式庫更新推送至AEM。 若對程式庫進行變更（例如編輯Dynamic Tag Management Web屬性屬性），則會推送程式庫更新。
 
 若要使用部署勾點，動態Tag Management必須能夠連線至託管程式庫的AEM執行個體。 [啟用Dynamic Tag Management伺服器的AEM](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service)存取權。
 
@@ -75,7 +75,7 @@ AEM支援在雲端中託管或在AEM上託管的動態Tag Management。
 
 下表說明要設定的特性。
 
-| Web主控台屬性 | OSGi屬性 | 描述 |
+| Web主控台屬性 | OSGi屬性 | 說明 |
 |---|---|---|
 | 分段DTM IP白名單 | `dtm.staging.ip.whitelist` | 更新中繼程式庫的動態Tag Management伺服器的IP位址。 |
 | 生產DTM IP白名單 | `dtm.production.ip.whitelist` | 更新生產環境程式庫的動態Tag Management伺服器的IP位址。 |
@@ -86,7 +86,7 @@ AEM支援在雲端中託管或在AEM上託管的動態Tag Management。
 
 >[!NOTE]
 >
->當您的DTM Web屬性包含Adobe Analytics工具，而且您也使用[Content Insight](/help/sites-authoring/content-insights.md)時，請避免在頁面上包含兩個Adobe Analytics追蹤程式碼。 在您的[Adobe Analytics Cloud設定](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics)中，選取「不要包含追蹤代碼」選項。
+>當您的DTM Web屬性包含Adobe Analytics工具，而且您也在使用[Content Insight](/help/sites-authoring/content-insights.md)時，請避免在頁面上包含兩個Adobe Analytics追蹤程式碼。 在您的[Adobe Analytics Cloud設定](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics)中，選取「不要包含追蹤代碼」選項。
 
 ### 一般設定 {#general-settings}
 
@@ -97,7 +97,7 @@ AEM支援在雲端中託管或在AEM上託管的動態Tag Management。
    <th>說明</th>
   </tr>
   <tr>
-   <td>API Token</td>
+   <td>API 權杖</td>
    <td>Dynamic Tag Management使用者帳戶的API Token屬性值。 AEM使用此屬性來驗證動態Tag Management。</td>
   </tr>
   <tr>
@@ -159,11 +159,11 @@ AEM支援在雲端中託管或在AEM上託管的動態Tag Management。
   </tr>
   <tr>
    <td>啟用 Polling Importer</td>
-   <td><p>（選用）選取以定期下載及安裝動態Tag Management程式庫，確保您使用更新版本。 選取後，Dynamic Tag Management不會將HTTP POST要求傳送至部署勾點URL。</p> <p>AEM會自動為Dynamic Tag Management Web屬性設定程式庫下載屬性的部署勾點URL屬性。 選取後，屬性會設定為沒有值。 若未選取，屬性會以您動態Tag Management設定的URL進行設定。</p> <p>當Dynamic Tag Management部署勾點無法連線至AEM (例如AEM位於防火牆後)時，啟用輪詢匯入工具。</p> </td>
+   <td><p>（選用）選取以定期下載及安裝動態Tag Management程式庫，確保您使用更新版本。 選取後，Dynamic Tag Management不會將HTTP POST要求傳送至部署勾點URL。</p> <p>AEM會自動為Dynamic Tag Management Web屬性設定程式庫下載屬性的部署勾點URL屬性。 選取後，屬性會設定為沒有值。 若未選取，屬性會以您動態Tag Management設定的URL進行設定。</p> <p>當Dynamic Tag Management部署勾點無法連線至AEM （例如AEM位於防火牆後）時，啟用輪詢匯入工具。</p> </td>
   </tr>
   <tr>
    <td>排程運算式</td>
-   <td>（顯示，在選取「啟用Polling Importer」時需要。）控制何時下載Dynamic Tag Management程式庫的cron運算式。</td>
+   <td>（顯示，在選取「啟用Polling Importer」時為必要。） 控制何時下載Dynamic Tag Management程式庫的cron運算式。</td>
   </tr>
  </tbody>
 </table>

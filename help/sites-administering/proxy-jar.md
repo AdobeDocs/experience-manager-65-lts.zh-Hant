@@ -12,7 +12,7 @@ role: Developer
 exl-id: d918ddf2-aa70-4742-97d5-24a2c51f578a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1189'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ S-7-#000107 -> [Content-Length: 124 ]
 
 **尋找遺失的請求**
 
-如果您在複雜的伺服器設定中遺失要求(例如，在防火牆和Dispatcher中)，您可以使用Proxy伺服器來找出遺失要求的位置。 如果有防火牆：
+如果您在複雜的伺服器設定中遺失要求（例如，在防火牆和Dispatcher中），您可以使用Proxy伺服器來找出遺失要求的位置。 如果有防火牆：
 
 1. 在防火牆之前啟動Proxy
 1. 在防火牆之後啟動另一個Proxy
@@ -116,7 +116,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 * C表示此專案來自使用者端（這是網頁的要求）
 * 0是連線號碼（連線計數器從0開始）
 * 顯#00000位元組資料流中的位移。 這是第一個專案，所以位移為0。
-* [GET &lt;？>]是要求的內容，在範例中為其中一個HTTP標頭(url)。
+* [GET &lt;??>]是要求的內容，在範例中為其中一個HTTP標頭(url)。
 
 當連線關閉時，會記錄下列資訊：
 
@@ -143,7 +143,7 @@ S-6-Finished: 665 bytes (1.0 kb/s)
 </html>
 ```
 
-如果AEM在localhost：4303上執行，請依照以下步驟啟動Proxy伺服器：
+如果AEM在localhost:4303上執行，請依下列方式啟動Proxy伺服器：
 
 ```xml
 java -jar proxy.jar localhost 4303 4444 -logfile test.log

@@ -7,7 +7,7 @@ role: User,Admin,Developer
 exl-id: 0c3e3b6c-3c41-455e-823a-7cce50f174d4
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '13630'
+source-wordcount: '14501'
 ht-degree: 3%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 3%
 作為介紹，聯盟提供了一系列區段和支援檔案：
 
 * [WCAG 2.1的新功能](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-1)
-* [如何滿足WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)
-* [瞭解WCAG 2.1](https://www.w3.org/WAI/WCAG21/Understanding/)
-* [用於WCAG 2.1的技術](https://www.w3.org/WAI/WCAG21/Techniques/)
+* [How to Meet WCAG 2.1 (如何達成 WCAG 2.1)](https://www.w3.org/WAI/WCAG21/quickref/)
+* [Understanding WCAG 2.1 (了解 WCAG 2.1)](https://www.w3.org/WAI/WCAG21/Understanding/)
+* [Techniques for WCAG 2.1 (WCAG 2.1 的專用技術)](https://www.w3.org/WAI/WCAG21/Techniques/)
 * [WCAG檔案](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 
 此外，請參閱：
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 指引會根據三個一致性層級進行分級：A級（最低）、AA級和AAA級（最高）。 簡而言之，層級的定義如下：
 
-* **&#x200B;**&#x200B;A級：您的網站達到基本的最低協助功能等級。要達到此級別，將滿足所有A級成功標準。
+* **** A級：您的網站達到基本的最低協助功能等級。 要達到此級別，將滿足所有A級成功標準。
 * **AA級：**&#x200B;這是您努力追求的最佳無障礙環境支援等級，其中您的網站可達到基本無障礙環境支援等級，因此大部分使用者都可使用大部分的技術。 要達到此級別，將滿足所有A級和A級成功標準。
 * **等級AAA：**&#x200B;您的網站達到高水準的協助工具。 要達到此級別，將滿足所有A級、AA級和AAA級成功標準。
 
@@ -43,16 +43,16 @@ ht-degree: 3%
 >
 >本檔案將使用下列專案：
 >
->* WCAG 2.1指引[的](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance)簡短名稱。
->* WCAG 2.1指引[中使用的](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1)編號，可協助與WCAG網站交叉參照。
+>* WCAG 2.1指引](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance)的[簡短名稱。
+>* WCAG 2.1指引](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1)中使用的[編號，可協助與WCAG網站交叉參照。
 
 ## 准則1：可感知 {#principle-perceivable}
 
-[原則1：可感知 — 資訊和使用者介面元件必須以使用者可感知的方式呈現給使用者。](https://www.w3.org/TR/WCAG/#perceivable)
+[准則1：可感知 — 資訊和使用者介面元件必須以使用者可感知的方式呈現給使用者。](https://www.w3.org/TR/WCAG/#perceivable)
 
 ### 替代文字(1.1) {#text-alternatives}
 
-[指南1.1替代文字：為任何非文字內容提供替代文字，以便將其變更為人們需要的其他形式，例如大字型、盲文、語音、符號或更簡單的語言。](https://www.w3.org/TR/WCAG/#text-alternatives)
+[指引1.1替代文字：為任何非文字內容提供替代文字，以便可以變更為人們需要的其他形式，例如大字型、盲文、語音、符號或更簡單的語言。](https://www.w3.org/TR/WCAG/#text-alternatives)
 
 ### 非文字內容(1.1.1) {#non-text-content}
 
@@ -68,11 +68,11 @@ ht-degree: 3%
 
 #### 如何達到標準 — 非文字內容(1.1.1) {#how-to-meet-non-text-content}
 
-對於靜態圖形，基本要求是為圖形提供對等文字替代文字。 您可以在&#x200B;**替代文字**&#x200B;欄位中完成此作業。 檢視核心元件&#x200B;**[影像](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=zh-Hant)**。
+對於靜態圖形，基本要求是為圖形提供對等文字替代文字。 您可以在&#x200B;**替代文字**&#x200B;欄位中完成此作業。 檢視核心元件&#x200B;**[影像](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)**。
 
 >[!NOTE]
 >
->某些現成可用的核心元件（例如&#x200B;**[轉盤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=zh-Hant)**）不提供用於新增替代文字說明至個別影像的&#x200B;**替代文字**&#x200B;欄位，儘管整個元件有&#x200B;**標籤**&#x200B;欄位（**[協助工具](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=zh-Hant#accessibility-tab)**&#x200B;標籤）。
+>某些現成可用的核心元件（例如&#x200B;**[轉盤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html)**）不提供用於新增替代文字說明至個別影像的&#x200B;**替代文字**&#x200B;欄位，儘管整個元件有&#x200B;**標籤**&#x200B;欄位（**[協助工具](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html#accessibility-tab)**&#x200B;標籤）。
 >
 >當針對您的AEM執行個體實作這些版本時，您的開發團隊必須設定這些元件以支援`alt`屬性，讓作者可以將其新增至內容（請參閱[新增對其他HTML元素和屬性的支援](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)）。
 
@@ -123,7 +123,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 ### 時間型媒體(1.2) {#time-based-media}
 
-[指南1.2以時間為基礎的媒體：為以時間為基礎的媒體提供替代方案。](https://www.w3.org/TR/WCAG/#time-based-media)
+[准則1.2以時間為主的媒體：提供以時間為主的媒體替代方案。](https://www.w3.org/TR/WCAG/#time-based-media)
 
 此專案處理&#x200B;*以時間為基礎*&#x200B;的網頁內容。 這涵蓋使用者可播放的內容（例如視訊、音訊和動畫內容），並可預先錄製或即時資料流。
 
@@ -235,7 +235,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 * [如何達到成功標準1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
 
 <!--
-* [Adobe Encore](https://www.adobe.com/tw/products/encore.html) - a DVD authoring software tool
+* [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
 -->
 
 ### 註解（即時） (1.2.4)  {#captions-live}
@@ -284,7 +284,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 ### 可調整(1.3) {#adaptable}
 
-[建議1.3可調整：建立可以不同方式呈現的內容（例如，更簡單的版面），而不會遺失資訊或結構。](https://www.w3.org/TR/WCAG/#adaptable)
+[指南1.3可調整：建立能以不同方式呈現的內容（例如更簡單的版面），而不會遺失資訊或結構。](https://www.w3.org/TR/WCAG/#adaptable)
 
 本指引涵蓋支援以下人員所需的需求：
 
@@ -310,15 +310,15 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 在適用的情況下，您可以使用下列元素，確定您的網頁指定了適當的結構：
 
-* **標題：**&#x200B;只要您已啟用RTE的協助工具功能，AEM就會提供三層頁面標題。 您可以使用這些項目來識別內容的區段和子區段。標題1是標題的最高級別，標題3是最低級別。系統管理員可以配置系統以允許使用更多標題級別。
+* **標題：**&#x200B;只要您已啟用RTE的協助工具功能，AEM就會提供三層頁面標題。 您可以使用這些項目來識別內容的區段和子區段。 標題1是標題的最高級別，標題3是最低級別。 系統管理員可以配置系統以允許使用更多標題級別。
 
 * **清單**：您可以使用HTML來指定三種不同型別的清單：
-   * 元素 `<ul>` 用於無序 *列*  (項目符號) 清單。使用`<li>`元素識別個別清單專案。 在RTE中，使用&#x200B;**專案符號清單**&#x200B;圖示。
+   * 元素 `<ul>` 用於無序 *列*  (項目符號) 清單。 使用`<li>`元素識別個別清單專案。 在RTE中，使用&#x200B;**專案符號清單**&#x200B;圖示。
    * `<ol>`專案用於&#x200B;*編號的*&#x200B;清單。 使用`<li>`元素識別個別清單專案。 在RTE中，使用編號清單&#x200B;**圖示。**
 
   如果要將現有內容變更為特定清單型別，請反白適當的文字並選取適當的清單型別。 如前一個顯示段落文字輸入方式的範例一樣，適當的清單元素會自動新增至您的HTML。
 
-  在全螢幕模式中，會顯示個別 **的「項目符號清單** 」和「 **&#x200B;**&#x200B;編號清單」圖示。當未處於全螢幕模式時，單一「清單」圖示後面會提供這兩個 **選項** 。
+  在全螢幕模式中，會顯示個別 **的「項目符號清單** 」和「 **** 編號清單」圖示。 當未處於全螢幕模式時，單一「清單」圖示後面會提供這兩個 **選項** 。
 
 * **資料表**：資料表必須使用HTML資料表元素識別：
    * 一個`<table>`元素
@@ -330,7 +330,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
    * `<caption>`專案是用來為資料表提供可見的標題。 字幕預設會顯示在表格上方，但可以使用CSS適當地放置字幕。 註解會以程式設計方式與表格相關聯，因此是一種提供內容簡介的實用方法。
    * `<summary>`元素透過提供視力正常使用者可看到的摘要資訊，協助失明使用者更輕鬆地瞭解表格中呈現的資訊。 這在使用了複雜或非常規表格佈局的情況下很有用（此屬性不會顯示在瀏覽器中，只會由輔助型技術讀取）。
-   * `scope`專案的`<th>`屬性是用來指出儲存格代表特定列的標題，還是代表特定欄的標題。 在複雜的表格中使用標題和id屬性也是類似的方法，其中資料儲存格可能會與一個或多個標題相關聯。
+   * `<th>`專案的`scope`屬性是用來指出儲存格代表特定列的標題，還是代表特定欄的標題。 在複雜的表格中使用標題和id屬性也是類似的方法，其中資料儲存格可能會與一個或多個標題相關聯。
 
   >[!NOTE]
   >
@@ -339,13 +339,13 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
   若要開啟&#x200B;**表格**&#x200B;對話方塊，您可以在此選取&#x200B;**表格屬性**&#x200B;索引標籤：
 
    * 定義適當的&#x200B;**標題**。
-   * 理想情況下，請移除「寬 **度」、「邊框高度」、「邊框高度」、「邊框高度**」、「單元格間距」、「單元格間距 **」、「單元格**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;間距」的預設值。因為這些屬性可以在全局樣式表中設定。
+   * 理想情況下，請移除「寬 **度」、「邊框高度」、「邊框高度」、「邊框高度**」、「單元格間距」、「單元格間距 **」、「單元格**************&#x200B;間距」的預設值。 因為這些屬性可以在全局樣式表中設定。
 
   然後，您可以使用&#x200B;**儲存格屬性**&#x200B;來選擇儲存格是資料或標題儲存格：
 
 * **Emphasis**：使用`<strong>`或`<em>`元素來指示強調。 請勿使用標題來反白標示段落中的文字。
    * 反白您要強調的文字；
-   * 按一下&#x200B;**屬性**&#x200B;面板中顯示的`<strong>`B **圖示(**)或`<em>`I **圖示(**)（請確定已選取HTML）。
+   * 按一下&#x200B;**屬性**&#x200B;面板中顯示的&#x200B;**B**&#x200B;圖示(`<strong>`)或&#x200B;**I**&#x200B;圖示(`<em>`)（請確定已選取HTML）。
 
      >[!NOTE]
      >
@@ -618,11 +618,11 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 ## 准則2：可操作 {#principle-operable}
 
-[原則2：可操作 — 使用者介面元件和導覽必須可操作。](https://www.w3.org/TR/WCAG/#operable)
+[准則2：可操作 — 使用者介面元件和導覽必須可操作。](https://www.w3.org/TR/WCAG/#operable)
 
 ### 無障礙鍵盤(2.1) {#keyboard-accessible}
 
-[無障礙鍵盤2.1：讓所有功能都可使用鍵盤。](https://www.w3.org/TR/WCAG/#keyboard-accessible)
+[Guidelinate 2.1無障礙鍵盤：讓所有功能都可使用鍵盤。](https://www.w3.org/TR/WCAG/#keyboard-accessible)
 
 此准則涉及的是，確保使用者可以使用鍵盤存取所有功能。
 
@@ -668,7 +668,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 ### 充足的時間(2.2) {#enough-time}
 
-[指引2.2充足的時間：為使用者提供充足的時間來閱讀及使用內容。](https://www.w3.org/TR/WCAG/#enough-time)
+[指引2.2充足時間：為使用者提供充足的時間來閱讀及使用內容。](https://www.w3.org/TR/WCAG/#enough-time)
 
 此准則涉及的是，確保使用者有足夠的時間來閱讀內容並採取動作。
 
@@ -764,7 +764,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 ### 可導覽(2.4) {#navigable}
 
-[指引2.4可導覽：提供協助使用者導覽、尋找內容及判斷其所在位置的方法。](https://www.w3.org/TR/WCAG/#navigable)
+[指引2.4可導覽：提供可協助使用者導覽、尋找內容及判斷其所在位置的方法。](https://www.w3.org/TR/WCAG/#navigable)
 
 此准則涉及的是，確保內容簡單明瞭，讓使用者導覽。
 
@@ -801,7 +801,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 在AEM中建立新的HTML頁面時，您可以指定頁面標題。 請確定標題足以描述頁面內容和用途，尤其是任何不重複方面，讓訪客可快速找出內容是否符合其需求。
 
-編輯頁面時，您也可以編輯頁面標題，頁面資訊——屬 **性可**&#x200B;**存取。**
+編輯頁面時，您也可以編輯頁面標題，頁面資訊——屬 **性可****存取。**
 
 #### 更多資訊 — 頁面帶有標題(2.4.2) {#more-information-page-titled}
 
@@ -959,7 +959,7 @@ John Smith's publications
 
 ## 准則3：可理解 {#principle-understandable}
 
-[原則3：可理解 — 使用者介面的資訊和操作必須是可理解的。](https://www.w3.org/TR/WCAG/#understandable)
+[准則3：可理解 — 使用者介面的資訊和操作必須是可理解的。](https://www.w3.org/TR/WCAG/#understandable)
 
 ### 讓文字內容可讀取及理解(3.1) {#make-text-content-readable-and-understandable}
 
@@ -977,7 +977,7 @@ John Smith's publications
 
 #### 如何達到標準 — 頁面語言(3.1.1) {#how-to-meet-language-of-page}
 
-若要符合此成功標準，可以使用頁面頂端`lang`元素中的`<html>`屬性來識別網頁的預設語言。 例如：
+若要符合此成功標準，可以使用頁面頂端`<html>`元素中的`lang`屬性來識別網頁的預設語言。 例如：
 
 * 如果頁面是以英文撰寫，`<html>`元素應該寫成：
   `<html lang = "en">`
@@ -1144,7 +1144,7 @@ John Smith's publications
 
 ### 輸入協助(3.3) {#input-assistance}
 
-[建議3.3輸入協助：協助使用者避免和更正錯誤。](https://www.w3.org/TR/WCAG/#input-assistance)
+[准則3.3輸入協助：協助使用者避免和更正錯誤。](https://www.w3.org/TR/WCAG/#input-assistance)
 
 ### 錯誤識別(3.3.1)  {#error-identification}
 
@@ -1191,7 +1191,7 @@ John Smith's publications
 
 此&#x200B;**Title**&#x200B;欄位必須用於欄位元素，因為它提供可用於輔助技術的標籤。 僅在該欄位旁的文字中寫入標籤是不夠的。
 
-對於某些表單元件，也可以使用&#x200B;**隱藏標題**&#x200B;核取方塊以視覺化方式隱藏標籤。 以此方式隱藏的標籤仍適用於輔助技術，但無法顯示在螢幕上。雖然這在某些情況下是個好方法，但最好儘可能加入視覺標籤，因為有些使用者可能會看到畫面的一小部分（一次看一個欄位），並需要標籤才能正確識別欄位。
+對於某些表單元件，也可以使用&#x200B;**隱藏標題**&#x200B;核取方塊以視覺化方式隱藏標籤。 以此方式隱藏的標籤仍適用於輔助技術，但無法顯示在螢幕上。 雖然這在某些情況下是個好方法，但最好儘可能加入視覺標籤，因為有些使用者可能會看到畫面的一小部分（一次看一個欄位），並需要標籤才能正確識別欄位。
 
 ###### 影像按鈕 {#image-buttons}
 
@@ -1199,15 +1199,15 @@ John Smith's publications
 
 ###### 表單欄位群組 {#groups-of-form-fields}
 
-在WKND專案中，如果有一組相關控制項，例如&#x200B;**無線電群組**，則可能需要群組的標題和個別控制項。 在AEM中新增一組選項按鈕時，「標題 **」欄位會提供此群組標題，而個別標題會指定為選項按鈕(** Items **&#x200B;**)。
+在WKND專案中，如果有一組相關控制項，例如&#x200B;**無線電群組**，則可能需要群組的標題和個別控制項。 在AEM中新增一組選項按鈕時，「標題 **」欄位會提供此群組標題，而個別標題會指定為選項按鈕(** Items ****)。
 
-不過，群組標題和選項按鈕本身之間沒有程式化關聯。範本編輯器必須將標題包住必要的`fieldset`和`legend`標籤以建立此關聯，而這只能透過編輯頁面原始碼來完成。 或者，系統管理員可以新增對這些元素的支援，以便這些元素顯示在&#x200B;**欄位屬性**&#x200B;對話方塊中（請參閱[新增對其他HTML元素和屬性的支援](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)）。
+不過，群組標題和選項按鈕本身之間沒有程式化關聯。 範本編輯器必須將標題包住必要的`fieldset`和`legend`標籤以建立此關聯，而這只能透過編輯頁面原始碼來完成。 或者，系統管理員可以新增對這些元素的支援，以便這些元素顯示在&#x200B;**欄位屬性**&#x200B;對話方塊中（請參閱[新增對其他HTML元素和屬性的支援](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)）。
 
 ###### Forms的其他注意事項 {#additional-considerations-for-forms}
 
 如果要以特定格式輸入資料，請在標籤文字中清楚說明。 例如，如果日期必須以`DD-MM-YYYY`格式輸入，請在標籤中特別指明這一點。 這表示當熒幕助讀程式的使用者遇到該欄位時，會自動公告標籤，以及關於格式的其他資訊。
 
-如果表單欄位的輸入是必填的，請使用標籤中的必要字詞來清楚說明。AEM在需要欄位時新增星號，但最好將字詞`required`加入標簽 (在編輯對話方塊的「 **Title** 」欄位中)。
+如果表單欄位的輸入是必填的，請使用標籤中的必要字詞來清楚說明。 AEM在需要欄位時新增星號，但最好將字詞`required`加入標簽 (在編輯對話方塊的「 **Title** 」欄位中)。
 
 標籤的位置也很重要，因為它有助於他們找到適當的欄位。 當使用者面對複雜表單時，這尤其重要。 遵循以下慣例：
 
@@ -1278,11 +1278,11 @@ John Smith's publications
 
 ## 原則4：強健 {#principle-robust}
 
-[原則4：強健 — 內容必須足夠強健，以供包括輔助技術在內的各種使用者代理程式解譯。](https://www.w3.org/TR/WCAG/#robust)
+[原則4：強健 — 內容必須足夠強健，以供包括輔助技術在內的各種使用者代理程式解讀。](https://www.w3.org/TR/WCAG/#robust)
 
 ### 相容(4.1) {#compatible}
 
-[指南4.1相容性：儘可能與目前和未來的使用者代理程式相容，包括輔助技術。](https://www.w3.org/TR/WCAG/#compatible)
+[准則4.1相容：儘可能與目前和未來的使用者代理程式（包括輔助技術）相容。](https://www.w3.org/TR/WCAG/#compatible)
 
 儘可能與目前和未來的使用者代理程式相容，包括輔助技術。
 

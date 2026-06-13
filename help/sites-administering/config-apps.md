@@ -11,7 +11,7 @@ role: Admin
 exl-id: 4f36487c-45a2-4c18-b3cc-bb9284d68f49
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '154'
 ht-degree: 1%
 
 ---
@@ -25,11 +25,11 @@ Adobe Experience Manager應用程式可讓您更新應用程式OTA的內容（�
 若要設定反向連結篩選服務：
 
 * 在下列位置開啟Apache Felix主控台（**組態**）：
-* https://&lt;server>：&lt;port_number>/system/console/configMgr
+* https://<server>：<port_number>/system/console/configMgr
 * 以管理員身分登入。
 * 在&#x200B;**設定**&#x200B;功能表中，選取： *Apache Sling反向連結篩選器*
 * 勾選「允許空白」欄位，以便您可以允許空白/遺失反向連結標題。
-* 按一下[儲存]儲存變更。**&#x200B;**
+* 按一下[儲存]儲存變更。****
 
 ![chlimage_1-58](assets/chlimage_1-58a.png)
 
