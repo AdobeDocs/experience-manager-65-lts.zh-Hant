@@ -12,8 +12,8 @@ role: Admin,Developer
 exl-id: 9b957118-2a21-4e2b-a575-6518d5dba54f
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2958'
-ht-degree: 1%
+source-wordcount: '3024'
+ht-degree: 3%
 
 ---
 
@@ -142,7 +142,7 @@ AEM 6推出新的操作控制面板，旨在協助系統操作員疑難排解問
 
 ### 檢查是否有範例內容 {#check-if-example-content-is-present}
 
-所有範例內容和使用者(例如Geometrixx專案及其元件)應該先在生產系統中解除安裝並完全刪除，然後再開放存取。
+所有範例內容和使用者（例如Geometrixx專案及其元件）應該先在生產系統中解除安裝並完全刪除，然後再開放存取。
 
 >[!NOTE]
 >
@@ -255,7 +255,7 @@ AEM 6.1隨附有助於防止跨網站請求偽造攻擊的機制，稱為&#x200B
 
 ### 減少阻斷服務(DoS)攻擊 {#mitigate-denial-of-service-dos-attacks}
 
-阻斷服務(DoS)攻擊是指嘗試讓電腦資源無法提供給其目標使用者使用。 此攻擊通常是透過資源超載完成的，例如：
+阻斷服務 (DoS) 攻擊是指試圖讓電腦資源無法提供給其目標使用者使用。 此攻擊通常是透過資源超載完成的，例如：
 
 * 來自外部來源的大量請求。
 * 系統無法成功傳遞的資訊請求。
@@ -308,7 +308,7 @@ Sling是&#x200B;*以內容為中心*。 處理著重於內容，因為每個(HTT
 
      在[Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet)的設定中。 超過此限制時，演算會收合。 AEM中Sling的預設值為`1000`。
 
-   * 作為預防措施，您應該停用其他預設轉譯器(HTML、純文字、XML)。 再次設定[Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet)。
+   * 作為預防措施，您應該停用其他預設轉譯器（HTML、純文字、XML）。 再次設定[Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet)。
 
    >[!CAUTION]
    >
@@ -324,7 +324,7 @@ Sling是&#x200B;*以內容為中心*。 處理著重於內容，因為每個(HTT
 >
 >這項緩解作業只應在未使用Forms的AEM環境中執行。
 
-由於AEM沒有為`FormChooserServlet`提供立即可用的索引，在查詢中使用表單選取器可能會觸發代價高昂的存放庫周遊，通常會使AEM執行個體陷入停頓。 **&amp;amp；ast；.form的存在可偵測表單選取器。&amp;amp；ast；**&#x200B;字串在查詢中。
+由於AEM沒有為`FormChooserServlet`提供立即可用的索引，在查詢中使用表單選取器可能會觸發代價高昂的存放庫周遊，通常會使AEM執行個體陷入停頓。 查詢中存在&#x200B;**&amp;ast；.form.&amp;ast；**&#x200B;字串，可以偵測到表單選取器。
 
 若要緩解此問題，您可以執行下列步驟：
 
@@ -333,7 +333,7 @@ Sling是&#x200B;*以內容為中心*。 處理著重於內容，因為每個(HTT
 1. 搜尋&#x200B;**Day CQ WCM表單選擇器Servlet**
 1. 按一下專案之後，請在下列視窗中停用&#x200B;**進階搜尋需求**。
 
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
 **針對資產下載Servlet所引起的DoS減輕影響**
 
@@ -377,7 +377,7 @@ Sling是&#x200B;*以內容為中心*。 處理著重於內容，因為每個(HTT
 
 雖然不建議使用，但您可以停用它，以備您需要舊實作以便回溯相容於現有應用程式時使用。 若要這麼做，您必須執行下列動作：
 
-1. 移至Web主控台，並從{2&#x200B;**Apache Jackrabbit Oak SecurityProvider &#x200B;** 中的屬性 **&#x200B; requiredServicePids &#x200B;** 移除 **&#x200B; org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName}專案。**
+1. 移至Web主控台，並從{2 **Apache Jackrabbit Oak SecurityProvider**&#x200B;中的屬性&#x200B;**requiredServicePids**&#x200B;移除 **&#x200B; org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName}專案。**
 
    您也可以在OSGi設定中尋找&#x200B;**org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration** PID，以找到Oak安全性提供者。
 

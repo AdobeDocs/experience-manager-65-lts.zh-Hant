@@ -11,7 +11,7 @@ role: Admin
 exl-id: 68a4d4b2-91a3-4545-a491-2a1ec08ceec5
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2072'
+source-wordcount: '2078'
 ht-degree: 6%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 6%
 
   此設定會定義在資產瀏覽器中搜尋產品時（編輯頁面時）可用的選項。
 
-* **頁面編輯器(Dynamic Media Classic [先前的Scene7]搜尋)**：
+* **頁面編輯器（Dynamic Media Classic [先前的Scene7]搜尋）**：
 
   此設定會定義在資產瀏覽器中搜尋Scene7資源（編輯頁面時）時可用的選項。
 
@@ -117,7 +117,7 @@ ht-degree: 6%
    <td>
     <ul>
      <li>欄位標籤</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
   <tr>
@@ -134,7 +134,7 @@ ht-degree: 6%
      <li>預留位置</li>
      <li>屬性名稱*</li>
      <li>屬性深度</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
   <tr>
@@ -144,7 +144,7 @@ ht-degree: 6%
     <ul>
      <li>欄位標籤</li>
      <li>屬性名稱*</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
   <tr>
@@ -157,7 +157,7 @@ ht-degree: 6%
      <li>屬性名稱*</li>
      <li>範圍文字（從）*</li>
      <li>範圍文字（至）*</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
   <tr>
@@ -167,7 +167,7 @@ ht-degree: 6%
     <ul>
      <li>欄位標籤</li>
      <li>屬性名稱*</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
   <tr>
@@ -178,7 +178,7 @@ ht-degree: 6%
      <li>欄位標籤</li>
      <li>屬性名稱*</li>
      <li>選項路徑</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
   <tr>
@@ -188,7 +188,7 @@ ht-degree: 6%
     <ul>
      <li>屬性名稱</li>
      <li>屬性值</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
   <tr>
@@ -201,7 +201,7 @@ ht-degree: 6%
      <li>屬性名稱*</li>
      <li>單選</li>
      <li>選項路徑</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
   <tr>
@@ -213,7 +213,7 @@ ht-degree: 6%
      <li>屬性名稱*</li>
      <li>選項節點路徑<br /> </li>
      <li>單選</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
   <tr>
@@ -224,7 +224,7 @@ ht-degree: 6%
      <li>欄位標籤</li>
      <li>發佈屬性名稱</li>
      <li>LiveCopy 屬性名稱</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
   <tr>
@@ -234,7 +234,7 @@ ht-degree: 6%
     <ul>
      <li>欄位標籤</li>
      <li>新增搜尋路徑</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
   <tr>
@@ -249,7 +249,7 @@ ht-degree: 6%
     <ul>
      <li>欄位標籤</li>
      <li>屬性名稱*</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
   <tr>
@@ -259,7 +259,7 @@ ht-degree: 6%
     <ul>
      <li>欄位標籤</li>
      <li>屬性名稱</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
   <tr>
@@ -270,7 +270,7 @@ ht-degree: 6%
      <li>欄位標籤</li>
      <li>屬性名稱*</li>
      <li>選項路徑</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
   <tr>
@@ -281,18 +281,18 @@ ht-degree: 6%
      <li>欄位標籤</li>
      <li>屬性名稱*</li>
      <li>選項路徑</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>相對日期 </td>
+   <td>相對時間 </td>
    <td>根據資產的建立相對日期搜尋資產<br /> </td>
    <td>
     <ul>
      <li>欄位標籤</li>
      <li>屬性名稱*</li>
-     <li>相對日期</li>
-     <li>描述</li>
+     <li>相對時間</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
   <tr>
@@ -302,7 +302,7 @@ ht-degree: 6%
     <ul>
      <li>欄位標籤</li>
      <li>屬性名稱*</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
   <tr>
@@ -313,7 +313,7 @@ ht-degree: 6%
      <li>欄位標籤</li>
      <li>屬性名稱*</li>
      <li>選項路徑</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
   <tr>
@@ -323,7 +323,7 @@ ht-degree: 6%
     <ul>
      <li>預留位置</li>
      <li>屬性名稱*</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -385,7 +385,7 @@ ht-degree: 6%
   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **選項節點路徑**
-實際上與&#x200B;**選項路徑**&#x200B;相同，只有這個在通用述詞欄位中，其他則專用於資產。
+實際上與&#x200B;**選項路徑**&#x200B;相同，只是這個在通用述詞欄位中，另一個則專用於資產。
 
 * **單選**
 如果勾選，選項會呈現為僅允許單一選取的核取方塊。 如果錯誤地選取了，則可取消選取核取方塊。
@@ -393,7 +393,7 @@ ht-degree: 6%
 * **發佈和即時副本屬性名稱**
 網站特定述詞的發佈和即時副本核取方塊的標籤。
 
-* **設定**&#x200B;索引標籤中欄位標籤上的&amp;amp；ast；表示欄位為必填，若保留為空白，則會出現錯誤訊息。
+* **設定**&#x200B;索引標籤中欄位標籤上的&amp;ast；表示欄位為必要欄位，若保留為空白，則會出現錯誤訊息。
 
 ## 設定搜尋Forms {#configuring-your-search-forms}
 
@@ -552,7 +552,7 @@ ht-degree: 6%
   </tr>
   <tr>
    <td>預覽</td>
-   <td><code>/var/dam/content</code>節點的讀取、寫入、刪除許可權。<code>/apps</code>節點上的<br />讀取、寫入許可權。</td>
+   <td><code>/var/dam/content</code>節點的讀取、寫入、刪除許可權。<br /> <code>/apps</code>節點的讀取、寫入許可權。</td>
   </tr>
  </tbody>
 </table>

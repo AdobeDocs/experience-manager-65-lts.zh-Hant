@@ -12,7 +12,7 @@ role: Admin
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '5965'
+source-wordcount: '6331'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ AEM作者已連線至`mongod`個執行個體，每個AEM作者都連線至所有
 
 如果執行專案的不同技術團隊之間有良好的溝通，即可支援虛擬化環境。 這項支援包括執行AEM的團隊、擁有作業系統的團隊，以及管理虛擬化基礎建設的團隊。
 
-有些特定需求涵蓋MongoDB執行個體的I/O容量，這些需求必須由管理虛擬化環境的團隊管理。 如果專案使用雲端部署(例如Amazon Web Services)，則必須布建具有足夠I/O容量和一致性的執行個體，以支援MongoDB執行個體。 否則，MongoDB流程和Oak存放庫會執行不可靠且不規則。
+有些特定需求涵蓋MongoDB執行個體的I/O容量，這些需求必須由管理虛擬化環境的團隊管理。 如果專案使用雲端部署（例如Amazon Web Services），則必須布建具有足夠I/O容量和一致性的執行個體，以支援MongoDB執行個體。 否則，MongoDB流程和Oak存放庫會執行不可靠且不規則。
 
 在虛擬化環境中，MongoDB需要特定的I/O和VM設定，以確保MongoDB的儲存引擎不會受到VMWare資源配置原則的損害。 成功的實作可確保各個團隊之間沒有障礙，而且所有團隊都已註冊可提供所需的效能。
 
@@ -80,8 +80,8 @@ RAM不足會導致效能大幅降低。 工作集和資料庫的大小與應用�
 
 為了協助負載測試過程，可以假設工作集與資料庫總大小的比率如下：
 
-* SSD儲存為1:10
-* 硬碟儲存空間為1:3
+* 1:10用於SSD儲存
+* 1:3用於硬碟儲存
 
 這些比率表示SSD部署需要200 GB的RAM才能使用2 TB的資料庫。
 
@@ -125,7 +125,7 @@ MongoDB Ops Manager與MongoDB Cloud Manager是相同的軟體。 註冊後，Ops
 
 執行AEM MongoDB叢集需要作業系統層級監視。
 
-Ganglia就是這類系統的好例子，它提供超越基本健康量度(例如CPU、平均負載和可用磁碟空間)所需的資訊範圍和詳細資訊。 若要診斷問題，需要較低層級的資訊，例如平均資訊量集區層級、CPU I/O等待、FIN_WAIT2狀態的通訊端。
+Ganglia就是這類系統的好例子，它提供超越基本健康量度（例如CPU、平均負載和可用磁碟空間）所需的資訊範圍和詳細資訊。 若要診斷問題，需要較低層級的資訊，例如平均資訊量集區層級、CPU I/O等待、FIN_WAIT2狀態的通訊端。
 
 ### 記錄彙總 {#log-aggregation}
 
@@ -145,7 +145,7 @@ Ganglia就是這類系統的好例子，它提供超越基本健康量度(例如
 1. 任何AEM伺服器與任何MongoDB伺服器之間的封包延遲均小於2毫秒，沒有封包遺失，且標準分佈為1毫秒以下。
 1. 確保AEM和MongoDB伺服器之間的躍點不超過兩個
 1. 兩個MongoDB伺服器之間的躍點不超過兩個
-1. 任何核心伺服器(MongoDB或AEM或任何組合)之間都沒有高於OSI第3級的路由器。
+1. 任何核心伺服器（MongoDB或AEM或任何組合）之間都沒有高於OSI第3級的路由器。
 1. 如果使用VLAN中繼或任何形式的網路通道，就必須遵守封包延遲檢查。
 
 ### AEM設定 {#aem-configuration}
@@ -260,7 +260,7 @@ MongoDB可在數種作業系統上執行，包括各種Linux®風格、Windows�
    * andkernel.threads-64000的最大值
 
 * 確定系統已設定交換空間。 如需適當大小的詳細資訊，請參閱作業系統的檔案。
-* 請確定系統預設的TCP keepalive已正確設定。 300的值通常可為復本集和共用叢集提供更好的效能。 請參閱： [TCP keepalive時間是否會影響MongoDB部署？常見問題集中的](https://docs.mongodb.com/manual/faq/diagnostics/#faq-keepalive)以取得詳細資訊。
+* 請確定系統預設的TCP keepalive已正確設定。 300的值通常可為復本集和共用叢集提供更好的效能。 請參閱： [TCP保持連線時間是否會影響MongoDB部署？](https://docs.mongodb.com/manual/faq/diagnostics/#faq-keepalive) ，以取得詳細資訊。
 
 #### Windows {#windows}
 
@@ -606,7 +606,7 @@ echo "{nThreads:32,fileSizeMB:1000,w:true}" | mongoperf
 
 #### 過期時間過長 {#long-expires}
 
-依預設，從AEM Dispatcher傳送的內容具有Last-Modified和Etag標題，且沒有內容到期的指示。 此流程可確保使用者介面一律取得最新版本的資源。 這也表示瀏覽器會執行GET作業，檢視資源是否已變更。 因此，它可能會產生HTTP回應為304 （未修改）的多個請求，端視頁面載入而定。 對於未過期的資源，設定Expires標頭並移除Last-Modified和ETag標頭會導致快取內容。 而且，在符合Expires標頭中的日期之前，不會提出進一步的更新請求。
+依預設，從AEM Dispatcher傳送的內容具有Last-Modified和Etag標題，且沒有內容到期的指示。 此流程可確保使用者介面一律取得最新版本的資源。 這也表示瀏覽器會執行GET作業，以檢視資源是否已變更。 因此，它可能會產生HTTP回應為304 （未修改）的多個請求，端視頁面載入而定。 對於未過期的資源，設定Expires標頭並移除Last-Modified和ETag標頭會導致快取內容。 而且，在符合Expires標頭中的日期之前，不會提出進一步的更新請求。
 
 不過，使用此方法表示沒有合理的方式可讓資源在Expires標頭過期之前在瀏覽器中過期。 若要緩解此工作流程，可以將HtmlClientLibraryManager設定為使用者端程式庫使用不可變URL。
 

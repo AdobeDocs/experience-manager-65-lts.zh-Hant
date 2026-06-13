@@ -12,7 +12,7 @@ role: Admin
 exl-id: 2661bd32-82c4-4a04-bf85-6ed120a73de4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '5388'
+source-wordcount: '5443'
 ht-degree: 1%
 
 ---
@@ -60,8 +60,8 @@ AEM WCM會安裝數個使用者和群組。 在安裝後第一次存取「安全
   <tr>
    <td>使用者 ID</td>
    <td>類型</td>
-   <td>描述</td>
-   <td>推薦</td>
+   <td>說明</td>
+   <td>建議</td>
   </tr>
   <tr>
    <td><p>管理員</p> <p>預設密碼： admin</p> </td>
@@ -157,7 +157,7 @@ AEM會使用ACL來決定使用者或群組可以採取的動作以及在何處�
  <tbody>
   <tr>
    <td><strong>動作 </strong></td>
-   <td><strong>描述 </strong></td>
+   <td><strong>說明 </strong></td>
   </tr>
   <tr>
    <td>讀取</td>
@@ -232,7 +232,7 @@ AEM WCM使用存取控制清單(ACL)來組織套用至不同頁面的許可權�
 >
 >相較於舊版CQ，如果使用者必須僅修改頁面，則不應再授予&#x200B;**create**&#x200B;和&#x200B;**delete**。 請改為僅在您希望使用者能夠在現有頁面上建立、修改或刪除元件時，才授予&#x200B;**修改**&#x200B;動作。
 >
->由於回溯相容性的原因，動作測試未考慮定義&#x200B;**jcr：content**&#x200B;的節點的特殊處理。
+>由於回溯相容性的原因，動作測試未考慮定義&#x200B;**jcr:content**&#x200B;的節點的特殊處理。
 
 | **動作** | **說明** |
 |---|---|
@@ -241,7 +241,7 @@ AEM WCM使用存取控制清單(ACL)來組織套用至不同頁面的許可權�
 
 這些許可權也會套用至任何子頁面。
 
-如果許可權不是從父節點繼承，但至少有一個本機專案用於它，則下列符號會附加至核取方塊。 本機專案是在CRX 2.2介面中建立的專案(目前只能在CRX中建立萬用字元ACL)。
+如果許可權不是從父節點繼承，但至少有一個本機專案用於它，則下列符號會附加至核取方塊。 本機專案是在CRX 2.2介面中建立的專案（目前只能在CRX中建立萬用字元ACL）。
 
 對於指定路徑上的動作：
 
@@ -252,7 +252,7 @@ AEM WCM使用存取控制清單(ACL)來組織套用至不同頁面的許可權�
    <td>至少有一個本機專案（有效或無效）。 這些萬用字元ACL是在CRX中定義。</td>
   </tr>
   <tr>
-   <td>！ （驚歎號）</td>
+   <td>! （驚歎號）</td>
    <td>至少有一個專案目前沒有效果。</td>
   </tr>
  </tbody>
@@ -406,7 +406,7 @@ AEM WCM使用存取控制清單(ACL)來組織套用至不同頁面的許可權�
 
 <!-- ??? in table below. -->
 
-| 定位符號 | 描述 |
+| 標籤 | 說明 |
 |--- |--- |
 | 篩選方塊 | 篩選列出的使用者、群組或兩者的機制。 請參閱[篩選使用者和群組](#filtering-users-and-groups)。 |
 | 隱藏使用者 | 切換開關，隱藏所有列出的使用者，僅留下群組。 請參閱[隱藏使用者和群組](#hiding-users-and-groups)。 |
@@ -415,7 +415,7 @@ AEM WCM使用存取控制清單(ACL)來組織套用至不同頁面的許可權�
 | 屬性 | 列出使用者或群組的相關資訊，包括電子郵件資訊、說明和名稱資訊。 也可讓您變更使用者的密碼。 請參閱[建立使用者和群組](#creating-users-and-groups)、[修改使用者和群組內容](#modifying-user-and-group-properties)以及[變更使用者密碼](#changing-a-user-password)。 |
 | 群組 | 列出選取的使用者或群組所屬的所有群組。 您可以將選取的一或多個使用者指派給其他群組，或從群組中移除這些群組。 檢視[群組](#adding-users-or-groups-to-a-group)。 |
 | 成員 | 僅適用於群組。 列出特定群組的成員。 檢視[成員](#members-adding-users-or-groups-to-a-group)。 |
-| 權限 | 您可以將許可權配置給使用者或群組。 可讓您控制下列專案：<ul><li>與特定頁面/節點相關的許可權。 請參閱[設定許可權](#setting-permissions)。 </li><li>與建立和刪除頁面及階層修改相關的許可權。???可讓您[配置許可權](#settingprivileges)，例如階層修改，可讓您建立和刪除頁面。</li><li>根據路徑與[復寫許可權](#setting-replication-privileges)相關的許可權（通常從作者到發佈）。</li></ul> |
+| 權限 | 您可以將許可權配置給使用者或群組。 可讓您控制下列專案：<ul><li>與特定頁面/節點相關的許可權。 請參閱[設定許可權](#setting-permissions)。 </li><li>與建立和刪除頁面以及階層修改相關的許可權。 ??? 可讓您[配置許可權](#settingprivileges)，例如階層修改，讓您建立和刪除頁面，</li><li>根據路徑與[復寫許可權](#setting-replication-privileges)相關的許可權（通常從作者到發佈）。</li></ul> |
 | Impersonator | 允許其他使用者模擬帳戶。 當您需要使用者代表另一個使用者進行操作時非常有用。 請參閱[模擬使用者](#impersonating-another-user)。 |
 | 偏好設定 | 設定群組或使用者[&#128279;](#setting-user-and-group-preferences)的偏好設定。 例如，語言偏好設定。 |
 
@@ -462,7 +462,7 @@ AEM WCM使用存取控制清單(ACL)來組織套用至不同頁面的許可權�
 
    ![creategroupdialog](assets/creategroupdialog.png)
 
-1. 按一下「**建立**」。您建立的使用者或群組會出現在樹狀結構清單中。
+1. 按一下「**建立**」。 您建立的使用者或群組會出現在樹狀結構清單中。
 
 ### 刪除使用者和群組 {#deleting-users-and-groups}
 
@@ -698,7 +698,7 @@ AEM提供三種不同的方式，讓您從群組移除使用者或群組：
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
 
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
 ### 設定使用者和群組偏好設定 {#setting-user-and-group-preferences}
 
@@ -729,7 +729,7 @@ AEM提供三種不同的方式，讓您從群組移除使用者或群組：
 
 如果您計畫實作應用程式特定的許可權，下列資訊會說明實作自訂許可權所必須知道的資訊，以及如何在整個CQ中實作自訂許可權：
 
-jcr-privileges的組合會涵蓋hierarchy-modification許可權。 復寫許可權名為&#x200B;**crx：replicate**，與jcr存放庫上的其他許可權一起儲存/評估。 但是，不會在jcr層級強制執行。
+jcr-privileges的組合會涵蓋hierarchy-modification許可權。 復寫許可權名為&#x200B;**crx:replicate**，與jcr存放庫上的其他許可權一起儲存/評估。 但是，不會在jcr層級強制執行。
 
 自訂許可權的定義和註冊自2.4版起，正式屬於[Jackrabbit API](https://jackrabbit.apache.org/oak/docs/security/privilege.html)的一部分（另請參閱[JCR-2887](https://issues.apache.org/jira/browse/JCR-2887)）。 JCR存取控制管理（例如[JSR 283](https://jcp.org/en/jsr/detail?id=283)所定義）涵蓋了其他用途（第16節）。 此外，Jackrabbit API還定義了數個擴充功能。
 
