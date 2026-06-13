@@ -94,7 +94,7 @@ AEM可讓您翻譯包含各種媒體資產和集合型別的內容片段。 如�
 
    ![chlimage_1-452](assets/chlimage_1-452.png)
 
-1. 選取收藏集並將其納入內容片段中。 按一下「**[!UICONTROL 儲存]**」。
+1. 選取收藏集並將其納入內容片段中。 按一下&#x200B;**[!UICONTROL 儲存]**。
 
    ![chlimage_1-453](assets/chlimage_1-453.png)
 

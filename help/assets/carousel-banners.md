@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: d066e8ea-57f4-41a1-afcf-86950267fd50
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4563'
+source-wordcount: '4550'
 ht-degree: 3%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 3%
 
 若要使用輪播橫幅快速上手：
 
-1. [識別熱點和影像地圖變數](#identifying-hotspot-and-image-map-variables) (僅適用於使用Experience Manager Assets + Dynamic Media的客戶)
+1. [識別熱點和影像地圖變數](#identifying-hotspot-and-image-map-variables) （僅適用於使用Experience Manager Assets + Dynamic Media的客戶）
 
    首先，請識別現有Quickview實作所使用的動態變數，以便在Adobe Experience Manager Assets中的轉盤橫幅建立程式期間正確輸入熱點和影像地圖資料。
 
@@ -57,7 +57,7 @@ ht-degree: 3%
    >
    >如果您是Experience Manager Assets和Dynamic Media客戶，請手動輸入熱點和影像地圖的資料，然後將發佈的URL或內嵌程式碼與協力廠商內容管理系統整合。
 
-1. 可選：視需 [要建立轉盤集檢視器預設](/help/assets/managing-viewer-presets.md)。
+1. 可選：視需 [要建立輪播集檢視器預設](/help/assets/managing-viewer-presets.md)。
 
    如果您是管理員，可以透過建立自己的轉盤檢視器預設集來自訂轉盤的行為和外觀。 主要優點在於您可以對多個輪播重複使用此自訂檢視器預設集。 不過，使用者可以選擇在編寫轉盤時直接自訂轉盤的行為和外觀。 如果您想要針對特定輪播進行特定設計，則此方法為偏好方法。
 
@@ -69,13 +69,13 @@ ht-degree: 3%
 
    在輪播集中，使用者會瀏覽橫幅影像，並選取熱點或影像地圖以存取相關內容。
 
-   若要在Assets中建立轉盤集，請選取&#x200B;**[!UICONTROL 建立]**，然後選取&#x200B;**[!UICONTROL 轉盤集]**。 將資產新增至每張投影片並選取&#x200B;**[!UICONTROL 儲存]**。 您也可以直接在編輯器中編輯轉盤的外觀和行為。
+   若要在Assets中建立轉盤集，請選取&#x200B;**[!UICONTROL 建立]**，然後選取&#x200B;**[!UICONTROL 轉盤集]**。 將資產新增至每張投影片並選取&#x200B;**[!UICONTROL 儲存]**。 您也可以直接在編輯器中編輯輪播的外觀和行為。
 
 1. [新增熱點或影像地圖至影像橫幅](#adding-hotspots-or-image-maps-to-an-image-banner)。
 
    將一個或多個熱點或影像地圖新增至影像橫幅，並將每個熱點或影像地圖與連結、快速檢視或體驗片段等動作建立關聯。 新增熱點或影像地圖後，您可以發佈轉盤集來完成此工作。 發佈作業會建立內嵌程式碼，您可將其用於複製並套用至網站登陸頁面。
 
-   請參閱[&#x200B; （選擇性）預覽轉盤橫幅](#optional-previewing-carousel-banners) — 選擇性。 如有需要，您可以檢視轉盤集的表示方式，並測試其互動性。
+   請參閱[ （選擇性）預覽轉盤橫幅](#optional-previewing-carousel-banners) — 選擇性。 如有需要，您可以檢視轉盤集的表示方式，並測試其互動性。
 
 1. [發佈轉盤橫幅](#publishing-carousel-banners)。
 
@@ -109,7 +109,7 @@ ht-degree: 3%
 
 大部分的「快速檢視」實作都使用下列範例：
 
-* 使用者在網站上啟動使用者介面元素。例如，點選&#x200B;**[!UICONTROL 快速檢視]**&#x200B;按鈕。
+* 使用者在網站上啟動使用者介面元素。 例如，點選&#x200B;**[!UICONTROL 快速檢視]**&#x200B;按鈕。
 * 如有需要，網站會傳送Ajax請求至後端以載入快速檢視資料或內容。
 * 快速檢視資料會轉譯成內容，以備在網頁上轉譯。
 * 最後，前端程式碼會在畫面上以視覺化方式呈現此類內容。
@@ -139,10 +139,10 @@ ht-degree: 3%
    <td>在查詢字串中找到單一SKU。</td>
    <td><p>錄製的快速檢視URL包含以下專案：</p>
     <ul>
-     <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>URL中唯一的變數部分是<code>productId=</code>查詢字串引數的值，而且它顯然是SKU值。 因此，熱點或影像地圖只需要填入如下值的SKU欄位 <code>866558,</code> <code>1196184,</code> <code>1081492,</code> <code>1898294.</code></p> </td>
   </tr>
   <tr>
@@ -158,9 +158,9 @@ ht-degree: 3%
    <td>查詢字串中的SKU和類別ID。</td>
    <td><p>錄製的快速檢視URL包含以下專案：</p>
     <ul>
-     <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
     </ul> <p>在這種情況下，URL中有兩個不同的部分。 SKU儲存在<code>prodId</code>引數中，而類別識別碼儲存在<code>category=</code>引數中。</p> <p>因此，熱點/影像地圖定義是配對。 即SKU值和稱為<code>categoryId</code>的額外變數。 產生的配對如下：</p>
     <ul>
      <li><p>SKU是<strong><code>305466</code></strong>，<code>categoryId</code>是<code>1100004</code>。</p> </li>
@@ -194,9 +194,9 @@ ht-degree: 3%
 
    * 在頁面中間附近，選取&#x200B;**[!UICONTROL 點選以開啟「資產選取器」]**。
 
-   選取以選取您要納入轉盤集的資產。 選取的資產上面有核取標籤圖示。完成後，在頁面的右上角附近，選取&#x200B;**[!UICONTROL 選取]**。
+   選取以選取您要納入轉盤集的資產。 選取的資產上面有核取標籤圖示。 完成後，在頁面的右上角附近，選取&#x200B;**[!UICONTROL 選取]**。
 
-   使用「資產選擇器」，您可以輸入關鍵字並點選或按一下「退貨」來搜尋 **[!UICONTROL 資產]**。您也可以套用篩選條件來調整搜尋結果。您可以依路徑、系列、檔案類型和標籤來篩選。選取篩選，然後在工具列上選取&#x200B;**[!UICONTROL 篩選]**&#x200B;圖示。 點選「檢視」圖示並選取「欄檢視」、「卡片檢視」或「清 **[!UICONTROL 單檢視」]**, **[!UICONTROL 以變更]**&#x200B;檢視 **&#x200B;**。
+   使用「資產選擇器」，您可以輸入關鍵字並點選或按一下「退貨」來搜尋 **[!UICONTROL 資產]**。 您也可以套用篩選條件來調整搜尋結果。 您可以依路徑、系列、檔案類型和標籤來篩選。 選取篩選，然後在工具列上選取&#x200B;**[!UICONTROL 篩選]**&#x200B;圖示。 點選「檢視」圖示並選取「欄檢視」、「卡片檢視」或「清 **[!UICONTROL 單檢視」]**, **[!UICONTROL 以變更]**&#x200B;檢視 ****。
 
    如需詳細資訊，請參閱[使用選取器](/help/assets/working-with-selectors.md)。
 
@@ -225,7 +225,7 @@ ht-degree: 3%
    >
    >如需檢視器編輯器的詳細指示和詳細資訊，請參閱[轉盤橫幅的特殊考量事項](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-a-carousel-banner-viewer-preset)。
 
-   您也可以預覽轉盤橫幅的顯示方式。 檢視[&#x200B; （選擇性）預覽轉盤橫幅](#optional-previewing-carousel-banners)。
+   您也可以預覽轉盤橫幅的顯示方式。 檢視[ （選擇性）預覽轉盤橫幅](#optional-previewing-carousel-banners)。
 
 1. 完成時選取&#x200B;**[!UICONTROL 儲存]**。
 
@@ -247,7 +247,7 @@ ht-degree: 3%
 
 當您完成建立轉盤橫幅時，可以選擇性使用預覽，檢視轉盤橫幅向客戶呈現的呈現方式。
 
-檢視[&#x200B; （選擇性）預覽轉盤橫幅](#optional-previewing-carousel-banners)。
+檢視[ （選擇性）預覽轉盤橫幅](#optional-previewing-carousel-banners)。
 
 >[!NOTE]
 >
@@ -274,7 +274,7 @@ ht-degree: 3%
 
    如有必要，請將熱點或影像地圖拖曳到新位置。 視需要新增更多熱點或影像地圖。
 
-   若要刪除熱點或影像地圖，請選取&#x200B;**[!UICONTROL 動作]**&#x200B;標籤。 在「地 **[!UICONTROL 圖與熱點]** 」標題下，從「選定類型 **&#x200B;**&#x200B;」下拉菜單中，選擇要刪除的熱點或影像映射的名稱。選取功能表旁的&#x200B;**[!UICONTROL 垃圾桶]**&#x200B;圖示，然後選取&#x200B;**[!UICONTROL 刪除]**。
+   若要刪除熱點或影像地圖，請選取&#x200B;**[!UICONTROL 動作]**&#x200B;標籤。 在「地 **[!UICONTROL 圖與熱點]** 」標題下，從「選定類型 **** 」下拉菜單中，選擇要刪除的熱點或影像映射的名稱。 選取功能表旁的&#x200B;**[!UICONTROL 垃圾桶]**&#x200B;圖示，然後選取&#x200B;**[!UICONTROL 刪除]**。
 
 1. 在「名稱」文字欄位中，輸入熱點或影像對映的名稱。 此名稱也會出現在&#x200B;**[!UICONTROL 地圖與熱點]**&#x200B;下拉式清單中。 提供名稱可讓您日後決定變更熱點或影像地圖時，輕鬆識別熱點或影像地圖。
 1. 在&#x200B;**[!UICONTROL 動作]**&#x200B;索引標籤中執行下列任一項動作：
@@ -293,7 +293,6 @@ ht-degree: 3%
    * 選取&#x200B;**[!UICONTROL 超連結]**。
 
       * 如果您是Experience Manager Sites客戶，請選取「網站選擇器」圖示（資料夾）以導覽至URL。
-
         >[!NOTE]
         >
         >如果您的互動式內容有具有相對URL的連結，尤其是指向Experience Manager Sites頁面的連結，則無法採用URL型連結方法。
@@ -306,7 +305,7 @@ ht-degree: 3%
 
    * 選取&#x200B;**[!UICONTROL 體驗片段]**。
 
-      * 如果您是Experience Manager Sites客戶，請選取「搜尋」圖示（放大鏡）以開啟「體驗片段」頁面。 選取您要使用的體驗片段，然後選取頁面右上角的&#x200B;**[!UICONTROL 選取]**，即可返回熱點管理頁面。
+      * 如果您是Experience Manager Sites客戶，請選取「搜尋」圖示（放大鏡）以開啟「體驗片段」頁面。選取您要使用的體驗片段，然後選取頁面右上角的&#x200B;**[!UICONTROL 選取]**，即可返回熱點管理頁面。
 請參閱[體驗片段](/help/sites-authoring/experience-fragments.md)。
 
       * 指定體驗片段在橫幅上顯示的寬度和高度。
@@ -319,7 +318,7 @@ ht-degree: 3%
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
-   您也可以預覽轉盤橫幅的顯示方式。 請參閱[&#x200B; （選擇性）預覽轉盤橫幅](#optional-previewing-carousel-banners)。
+   您也可以預覽轉盤橫幅的顯示方式。 請參閱[ （選擇性）預覽轉盤橫幅](#optional-previewing-carousel-banners)。
 
 1. 選取「**[!UICONTROL 儲存]**」。
 1. 發佈轉盤集。 發佈作業會建立可在網站頁面上使用的內嵌程式碼或URL。 如果您是Experience Manager Sites客戶，可以將轉盤集直接新增至您的網頁。
@@ -375,7 +374,7 @@ ht-degree: 3%
 
 當您對輪播橫幅感到滿意時，可以將其發佈。
 請參閱[將視訊或影像檢視器內嵌在網頁上](/help/assets/embed-code.md)。
-請參閱[將URL連結至您的網頁應用程式](/help/assets/linking-urls-to-yourwebapplication.md)。 如果您的互動式內容有具有相對URL的連結，尤其是指向Experience Manager Sites頁面的連結，則無法採用URL型連結方法。
+請參閱[將URL連結至您的網頁應用程式](/help/assets/linking-urls-to-yourwebapplication.md)。如果您的互動式內容有具有相對URL的連結，尤其是指向Experience Manager Sites頁面的連結，則無法採用URL型連結方法。
 請參閱[將Dynamic Media Assets新增至頁面](/help/assets/adding-dynamic-media-assets-to-pages.md)。
 
 您可以從轉盤編輯器（偏好方法）或&#x200B;**[!UICONTROL 檢視器]**&#x200B;清單預覽轉盤橫幅。

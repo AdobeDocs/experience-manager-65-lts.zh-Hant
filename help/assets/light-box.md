@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 913b8c5a-c532-43a0-93ce-0b96dd5eec54
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Lightbox是一種特殊型別的集合，可讓您輕鬆存取資產。 您可�
 ## 將資產新增至Lightbox {#adding-assets-to-lightbox}
 
 1. 從[!DNL Assets]使用者介面中，選取您要新增至Lightbox的資產。
-1. 將資產拖曳至Lightbox **區域中的**&#x200B;拖放。 當拖放區域變成使用中，且標籤變更為&#x200B;**[!UICONTROL 拖放以新增]**&#x200B;時釋放。
+1. 將資產拖曳至Lightbox ]**區域中的**[!UICONTROL &#x200B;拖放。 當拖放區域變成使用中，且標籤變更為&#x200B;**[!UICONTROL 拖放以新增]**&#x200B;時釋放。
 
    ![add_to_lightbox](assets/add_to_lightbox.png)
 

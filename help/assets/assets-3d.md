@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: f27b595b-24eb-444c-a598-6f70c59ed8fc
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2354'
+source-wordcount: '2419'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ Dynamic Media支援下列3D格式。
 | GLB | 二進位GL傳輸 | model/gltf-binary | 將材質和紋理納入為單一資產。 |
 | 物件 | WaveFront 3D物件檔案 | application/x-tgif |  |
 | STL | 立體成型 | application/vnd.ms-pki.stl |  |
-| USDZ | Universal Scene說明Zip封存 | model/vnd.usdz+zip | *僅支援擷取；不提供檢視或互動。* USDZ是專有的3D格式，可由Safari和iOS裝置以原生方式檢視。 |
+| USDZ | Universal Scene說明Zip封存 | model/vnd.usdz+zip | *僅支援擷取；無法使用檢視或互動。* USDZ是專屬的3D格式，可供Safari和iOS裝置原生檢視。 |
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ Dynamic Media支援下列3D格式。
 
 在Dynamic Media中使用3D資產之前，請確定Experience Manager管理員已在Dynamic Media - Scene7模式下啟用並設定Dynamic Media雲端服務。
 
-請參閱[&#128279;](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)設定Dynamic Media - Scene7模式和[疑難排解Dynamic Media - Scene7模式](/help/assets/troubleshoot-dms7.md)中的Dynamic Media雲端服務。
+請參閱[設定Dynamic Media - Scene7模式和[疑難排解Dynamic Media - Scene7模式](/help/assets/troubleshoot-dms7.md)中的Dynamic Media雲端服務](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)。
 
 1. **上傳3D資產**
 
@@ -123,7 +123,7 @@ Dynamic Media支援下列3D格式。
 1. 選取3D資產的卡片。
 1. 在3D資產的詳細資訊檢視頁面上，執行下列任一項作業：
 
-   | 檢視 | 描述 | 滑鼠動作 | 觸控熒幕動作 |
+   | 檢視 | 說明 | 滑鼠動作 | 觸控熒幕動作 |
    | --- | --- | --- | --- |
    | **轉動相機** | 使檢視畫面在 3D 場景和物件周圍環繞 | 按一下左鍵+拖曳。 | 單指按下+拖曳。 |
    | **平移相機** | 向左、向右、向上或向下平移檢視。 | 按一下滑鼠右鍵+拖曳。 | 雙指按下+拖曳。 |
@@ -151,12 +151,12 @@ Dynamic Media支援下列3D格式。
    * 在頁面的右上角附近，選取&#x200B;**[!UICONTROL 預覽]**&#x200B;以進入&#x200B;**[!UICONTROL 預覽]**&#x200B;模式。
    * 從瀏覽器中的頁面URL刪除`/editor.html`。
 
-   顯示3D媒體元件![&#128279;](/help/assets/assets-dm/3d-asset-in-3d-media.png)內的3D資產
-以&#x200B;**[!UICONTROL 預覽]**&#x200B;模式顯示的完全互動式3D資產。
+   顯示3D媒體元件內的![3D資產](/help/assets/assets-dm/3d-asset-in-3d-media.png)
+以**[!UICONTROL 預覽]**&#x200B;模式顯示的完全互動式3D資產。
 
 1. 在&#x200B;**[!UICONTROL 預覽]**&#x200B;模式中時，請執行下列任一項動作：
 
-   | 檢視 | 描述 | 滑鼠動作 | 觸控熒幕動作 |
+   | 檢視 | 說明 | 滑鼠動作 | 觸控熒幕動作 |
    | --- | --- | --- | --- |
    | **轉動相機** | 使檢視畫面在 3D 場景和物件周圍環繞 | 按一下左鍵+拖曳。 | 單指按下+拖曳。 |
    | **平移相機** | 向左、向右、向上或向下平移檢視。 | 按一下滑鼠右鍵+拖曳。 | 雙指按下+拖曳。 |
@@ -253,7 +253,7 @@ Dynamic Media接受Dynamic Media支援的各種3D檔案格式為&#x200B;*靜態�
 
 另請參閱[取得靜態資產的URL](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)。
 
-在&#x200B;**[!UICONTROL 卡片檢視]**&#x200B;中，資產名稱正下方及其日期和時間左側會顯示一個小型全球圖示，以指出資產已發佈。 在「清 **[!UICONTROL 單檢視]**」中，「已發佈」 **&#x200B;**&#x200B;欄會指出已發佈或未發佈的資產。
+在&#x200B;**[!UICONTROL 卡片檢視]**&#x200B;中，資產名稱正下方及其日期和時間左側會顯示一個小型全球圖示，以指出資產已發佈。 在「清 **[!UICONTROL 單檢視]**」中，「已發佈」 **** 欄會指出已發佈或未發佈的資產。
 
 如果您使用Experience Manager做為WCM，請使用此發佈方法直接在網頁上新增Dynamic Media 3D資產。
 
@@ -290,6 +290,6 @@ Dynamic Media接受Dynamic Media支援的各種3D檔案格式為&#x200B;*靜態�
 
   檢視[將URL連結至您的網頁應用程式](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)。
 
-* **[!UICONTROL 內嵌]** — 當您想要使用維度檢視器檢視內嵌在網頁上的Dynamic Media 3D資產時，請使用&#x200B;**[!UICONTROL 內嵌]**。 您可將內嵌代碼複製到剪貼簿，以便貼到網頁中。**[!UICONTROL 內嵌]**&#x200B;對話方塊中不允許編輯程式碼。
+* **[!UICONTROL 內嵌]** — 當您想要使用維度檢視器檢視內嵌在網頁上的Dynamic Media 3D資產時，請使用&#x200B;**[!UICONTROL 內嵌]**。 您可將嵌入代碼複製到剪貼簿，以便貼到網頁中。 **[!UICONTROL 內嵌]**&#x200B;對話方塊中不允許編輯程式碼。
 
   請參閱[將Dynamic Media視訊、影像檢視器或維度檢視器內嵌在網頁上](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page)。

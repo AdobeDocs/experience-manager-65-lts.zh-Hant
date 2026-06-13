@@ -14,8 +14,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 1ffc31e1-9e47-40fe-93b8-cd6ef96e0674
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3792'
-ht-degree: 8%
+source-wordcount: '3901'
+ht-degree: 7%
 
 ---
 
@@ -118,7 +118,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 Experience Manager Assets內�
   <tr>
    <td><strong>程式引數</strong></td>
    <td><strong>預設設定</strong></td>
-   <td><strong>描述</strong></td>
+   <td><strong>說明</strong></td>
   </tr>
   <tr>
    <td>Mime 類型</td>
@@ -147,7 +147,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 Experience Manager Assets內�
 
 「最大寬度」和「最大高度」會限制點陣化的解析度。 例如，如果最大值保持不變，且「解析度」設定為300 ppi，則「美國信函」檔案會以186 ppi點陣化。 也就是說，檔案是1581 x 2046畫素。
 
-`Rasterize PDF/AI Image Preview Rendition`處理序元件已定義上限，以確保它不會在記憶體中建立過大的影像。 如此大型的影像可能會使提供給JVM (Java™虛擬機器器)的記憶體溢位。 務必為JVM提供足夠的記憶體來管理已設定的並行工作流程數量，讓每個工作流程都能在已設定的最大大小下建立影像。
+`Rasterize PDF/AI Image Preview Rendition`處理序元件已定義上限，以確保它不會在記憶體中建立過大的影像。 如此大型的影像可能會使提供給JVM （Java™虛擬機器器）的記憶體溢位。 務必為JVM提供足夠的記憶體來管理已設定的並行工作流程數量，讓每個工作流程都能在已設定的最大大小下建立影像。
 
 ### InDesign (INDD)檔案格式 {#indesign-indd-file-format}
 
@@ -192,9 +192,9 @@ Dynamic Media整合會使用下列指令碼：
 
 ## 設定影像縮圖大小 {#configuring-image-thumbnail-size}
 
-您可以在&#x200B;**[!UICONTROL DAM更新資產]**&#x200B;工作流程中設定這些設定，以設定縮圖的大小。 工作流程有兩個步驟，您可以在此設定影像資產的縮圖大小。 雖然(**[!UICONTROL Dynamic Media處理映像Assets]**)已用於動態映像資產，且（**[!UICONTROL 處理縮圖]**）是用於靜態縮圖產生，或當所有其他處理無法產生縮圖時，*兩者*&#x200B;必須具有相同的設定。
+您可以在&#x200B;**[!UICONTROL DAM更新資產]**&#x200B;工作流程中設定這些設定，以設定縮圖的大小。 工作流程有兩個步驟，您可以在此設定影像資產的縮圖大小。 雖然（**[!UICONTROL Dynamic Media處理映像Assets]**）已用於動態映像資產，且（**[!UICONTROL 處理縮圖]**）是用於靜態縮圖產生，或當所有其他處理無法產生縮圖時，*兩者*&#x200B;必須具有相同的設定。
 
-在「動 **[!UICONTROL 態媒體處理影像資產」步驟中]** ，影像伺服器會產生縮圖，此組態與套用至「處理縮圖」步驟的組態無關 **&#x200B;**&#x200B;。透過「處理縮圖 **[!UICONTROL 」步驟產生縮圖]** ，是建立縮圖的最慢且記憶體最耗用的方式。
+在「動 **[!UICONTROL 態媒體處理影像資產」步驟中]** ，影像伺服器會產生縮圖，此組態與套用至「處理縮圖」步驟的組態無關 **** 。 透過「處理縮圖 **[!UICONTROL 」步驟產生縮圖]** ，是建立縮圖的最慢且記憶體最耗用的方式。
 
 縮圖大小是以下列格式定義的： **`width:height:center`**，例如`80:80:false`。 寬度和高度會決定縮圖的大小（以畫素為單位）。 中心值為false或true，若設為true，表示縮圖影像大小與設定中指定的大小完全相同。 如果調整大小的影像較小，它會在縮圖內建中。
 
@@ -216,7 +216,7 @@ Dynamic Media整合會使用下列指令碼：
 
    >[!NOTE]
    >
-   >「處理縮圖」步驟中縮圖引數中 **[!UICONTROL 的值必須與「動態媒體處理影像資產」]** 步驟中的縮圖引數相符 **&#x200B;**&#x200B;。
+   >「處理縮圖」步驟中縮圖引數中 **[!UICONTROL 的值必須與「動態媒體處理影像資產」]** 步驟中的縮圖引數相符 **** 。
 
 1. 選取&#x200B;**[!UICONTROL 儲存]**&#x200B;以儲存對工作流程所做的變更。
 
@@ -231,7 +231,7 @@ Dynamic Media整合會使用下列指令碼：
 
    ![increase_decreasethenumberofimagepresetsthatdisplay](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
 
-1. 在 **[!UICONTROL limit]** 屬性中，將預設設 **&#x200B;**&#x200B;定為15的值變更為所要的數字。
+1. 在 **[!UICONTROL limit]** 屬性中，將預設設 ****&#x200B;定為15的值變更為所要的數字。
 1. 導覽至`/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist/datasource`的影像預設集資料來源
 
    ![chlimage_1-495](assets/chlimage_1-495.png)
@@ -260,19 +260,19 @@ Dynamic Media整合會使用下列指令碼：
 **若要建立Dynamic Media影像預設集：**
 
 1. 在Experience Manager中，選取Experience Manager標誌以存取全域導覽主控台，然後選取&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 影像預設集]**。
-1. 按一下「**[!UICONTROL 建立]**」。**[!UICONTROL 編輯影像預設集]**&#x200B;視窗隨即開啟。
+1. 按一下「**[!UICONTROL 建立]**」。 **[!UICONTROL 編輯影像預設集]**&#x200B;視窗隨即開啟。
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
 
    >[!NOTE]
    >
-   >若要讓此影像預設變得自適應，請擦除 **[!UICONTROL 寬度]**&#x200B;**[!UICONTROL 和高度欄]** 位中的值，並保留空白。
+   >若要讓此影像預設變得自適應，請擦除 **[!UICONTROL 寬度]****[!UICONTROL 和高度欄]** 位中的值，並保留空白。
 
-1. 視需要在「基 **[!UICONTROL 本]** 」和「 **[!UICONTROL 進階]** 」標籤中輸入值，包括名稱。這些選項在「影像預設 [集選項」中概述](#image-preset-options)。預設集會出現在左窗格中，並可與其他資產一起即時使用。
+1. 視需要在「基 **[!UICONTROL 本]** 」和「 **[!UICONTROL 進階]** 」標籤中輸入值，包括名稱。 這些選項在「影像預設 [集選項」中概述](#image-preset-options)。 預設集會出現在左窗格中，並可與其他資產一起即時使用。
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
-1. 按一下「**[!UICONTROL 儲存]**」。
+1. 按一下&#x200B;**[!UICONTROL 儲存]**。
 
 ## 建立回應式影像預設集 {#creating-a-responsive-image-preset}
 
@@ -284,7 +284,7 @@ Dynamic Media整合會使用下列指令碼：
 
 >[!NOTE]
 >
->若要在套用 **[!UICONTROL 影像預設集]** 至資產時查看 **&#x200B;**&#x200B;URL和RESS按鈕，必須發佈資產。
+>若要在套用 **[!UICONTROL 影像預設集]** 至資產時查看 **** URL和RESS按鈕，必須發佈資產。
 >
 >![chlimage_1-79](assets/chlimage_1-498.png)
 >
@@ -296,9 +296,9 @@ Dynamic Media整合會使用下列指令碼：
 
 當您建立或編輯影像預設集時，您具備本節中所述的選項。 此外，Adobe建議從下列「最佳實務」選項選擇開始：
 
-* **[!UICONTROL 格式]** （**[!UICONTROL 基本]**&#x200B;標籤） — 選取&#x200B;**[!UICONTROL JPEG]**&#x200B;或其他符合您需求的格式。 所有網頁瀏覽器都支援JPEG影像格式；它在小檔案大小和影像品質之間提供良好的平衡。但是，JPEG格式影像使用有損壓縮方案，如果壓縮設定太低，則該壓縮方案會引入不想要的影像偽影。因此，Adobe建議將壓縮品質設為75。此設定在影像品質和檔案大小之間取得良好的平衡。
+* **[!UICONTROL 格式]** （**[!UICONTROL 基本]**&#x200B;標籤） — 選取&#x200B;**[!UICONTROL JPEG]**&#x200B;或其他符合您需求的格式。 所有網頁瀏覽器都支援JPEG影像格式；它在小檔案大小和影像品質之間提供良好的平衡。 但是，JPEG格式影像使用有損壓縮方案，如果壓縮設定太低，則該壓縮方案會引入不想要的影像偽影。 因此，Adobe建議將壓縮品質設為75。 此設定在影像品質和檔案大小之間取得良好的平衡。
 
-* **[!UICONTROL 啟用簡單銳利化]** -請勿選取「啟用簡 **&#x200B;**&#x200B;單銳利化」 (此銳利化濾鏡提供的控制力比「非銳利化遮色片」設定少)。
+* **[!UICONTROL 啟用簡單銳利化]** -請勿選取「啟用簡 **** 單銳利化」 (此銳利化濾鏡提供的控制力比「非銳利化遮色片」設定少)。
 
 * **[!UICONTROL 銳利化：重新取樣模式]** — 選取&#x200B;**[!UICONTROL 銳利化2]**。
 
@@ -345,11 +345,11 @@ Dynamic Media整合會使用下列指令碼：
     </div>
     <ul>
      <li><strong>壓縮</strong> — 選取壓縮演演算法。 PDF的演演算法選項為<strong>None</strong>、<strong>Zip</strong>和<strong>Jpeg</strong>；TIFF的選項為<strong>None</strong>、<strong>LZW</strong>、<strong>Jpeg</strong>和<strong>Zip</strong>；搭配Alpha的TIFF的選項為<strong>None</strong>、<strong>LZW</strong>和<strong>Zip</strong>。</li>
-    </ul> <p>選擇<strong>PNG</strong>、<strong>PNG (含Alpha)、</strong>或<strong>EPS</strong>，不會提供其他選項。</p> </td>
+    </ul> <p>選擇<strong>PNG</strong>、<strong>PNG （含Alpha）、</strong>或<strong>EPS</strong>，不會提供其他選項。</p> </td>
   </tr>
   <tr>
    <td><strong>銳利化</strong></td>
-   <td>選取<strong>啟用簡單銳利化</strong>選項，以在所有縮放完成後套用基本銳利化濾鏡至影像。銳利化有助於彌補以不同大小顯示影像時可能產生的模糊。 </td>
+   <td>選取<strong>啟用簡單銳利化</strong>選項，以在所有縮放完成後套用基本銳利化濾鏡至影像。 銳利化有助於彌補以不同大小顯示影像時可能產生的模糊。 </td>
   </tr>
  </tbody>
 </table>
@@ -372,7 +372,7 @@ Dynamic Media整合會使用下列指令碼：
   </tr>
   <tr>
    <td><strong>渲染方法</strong></td>
-   <td>您可以覆寫預設的色彩演算比對方式。 彩現意圖決定了在目標色彩設定檔中無法重現（超出色域）的色彩會發生什麼情況。 如果演算色彩比對方式與ICC設定檔不相容，則會予以忽略。
+   <td>您可以覆寫預設的色彩演算比對方式。彩現意圖決定了在目標色彩設定檔中無法重現（超出色域）的色彩會發生什麼情況。如果演算色彩比對方式與ICC設定檔不相容，則會予以忽略。
     <ul>
      <li>選取<strong>可感知</strong>，當原始影像中的一或多個顏色超出目的地色域的色域時，將總色域從一個色域壓縮到另一個色域。</li>
      <li>選取<strong>相對色度</strong> （當目前色域中的顏色超出目標色域的色域時）。 而且，您想要將其對應到目標色域中可能最接近的顏色，而不影響其他任何顏色。 </li>
@@ -397,19 +397,19 @@ Dynamic Media整合會使用下列指令碼：
      <li>如果要微調最終縮減取樣影像的銳利化濾鏡效果，請選取<strong>不銳利化遮色片</strong>。 您可以控制效果的強度、效果的半徑（以畫素測量），以及被忽略的對比度臨界值。 此效果使用與Photoshop的「遮色片銳利化」濾鏡相同的選項。</li>
     </ul> <p>在<strong>不銳利化遮色片</strong>中，您有以下選項：</p>
     <ul>
-     <li><strong>Amount</strong> — 控制套用至邊緣畫素的對比量。 預設實數值為1.0。若是高解析度的影像，最高可增加到5.0。將「數量」視為濾鏡強度的量度。</li>
+     <li><strong>Amount</strong> — 控制套用至邊緣畫素的對比量。 預設實數值為1.0。 若是高解析度的影像，最高可增加到5.0。 將「數量」視為濾鏡強度的量度。</li>
      <li><strong>半徑</strong> — 決定邊緣畫素周圍影響銳利化的畫素數量。 對於高解析度的影像，請輸入從1到2的實數。 低值只會銳利化邊緣畫素；高值會銳利化較寬的畫素範圍。 正確的值取決於影像的大小。</li>
      <li><strong>臨界值</strong> — 決定套用遮色片銳利化調整濾鏡時要忽略的對比範圍。 換言之，此選項決定銳化畫素與周圍區域的差異程度，才會被視為邊緣畫素並予以銳化。 為避免引入雜訊，請嘗試使用2到20的整數值。 </li>
      <li><strong>套用至</strong> — 決定取消銳利化是套用至每個色彩還是亮度。</li>
     </ul>
     <div>
       銳利化的說明請參閱
-     <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/sharpening_images.pdf?lang=zh-Hant">銳利化影像</a>。
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/sharpening_images.pdf">銳利化影像</a>。
     </div> </td>
   </tr>
   <tr>
    <td><strong>重新取樣模式</strong></td>
-   <td>選取<strong>重新取樣模式</strong>選項。 這些選項會在縮減取樣影像時銳利化影像：
+   <td>選取<strong>重新取樣模式</strong>選項。這些選項會在縮減取樣影像時銳利化影像：
     <ul>
      <li><strong>雙線性式</strong> — 最快速的重新取樣方法。 會產生某些明顯的鋸齒狀不自然感。</li>
      <li><strong>雙立方式</strong> — 增加CPU使用量，但會產生較清晰的影像，且鋸齒狀不自然感比較不明顯。</li>
@@ -424,7 +424,7 @@ Dynamic Media整合會使用下列指令碼：
   </tr>
   <tr>
    <td><strong>影像修飾元</strong></td>
-   <td><p>除了UI中可用的通用影像設定之外，Dynamic Media還支援您可以在<strong>影像修飾元</strong>欄位中指定的多項進階影像修改。 這些引數定義於<a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=zh-Hant#image-serving-api">影像伺服器通訊協定命令參考</a>。</p> <p>重要：不支援API中列出的以下功能：</p>
+   <td><p>除了UI中可用的通用影像設定之外，Dynamic Media還支援您可以在<strong>影像修飾元</strong>欄位中指定的多項進階影像修改。 這些引數定義於<a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api">影像伺服器通訊協定命令參考</a>。</p> <p>重要：不支援API中列出的以下功能：</p>
     <ul>
      <li>基本範本化和文字演算命令： <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code>和 <code>textPs=</code></li>
      <li>本地化命令： <code>locale=</code>和 <code>req=xlate</code></li>
@@ -441,7 +441,7 @@ Dynamic Media整合會使用下列指令碼：
 
 ## 使用影像修飾元定義影像預設集選項 {#defining-image-preset-options-with-image-modifiers}
 
-除了「基本」和「進階」標籤中可用的選項外，您也可以定義影像修飾元，以便在定義影像預設集時提供您更多選項。 影像演算相依於[HTTP通訊協定參考](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=zh-Hant#image-serving-api)中詳細定義的影像演算API。
+除了「基本」和「進階」標籤中可用的選項外，您也可以定義影像修飾元，以便在定義影像預設集時提供您更多選項。 影像演算相依於[HTTP通訊協定參考](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api)中詳細定義的影像演算API。
 
 以下是一些您可以使用影像修飾元進行操作的基本範例。
 
@@ -449,7 +449,7 @@ Dynamic Media整合會使用下列指令碼：
 >
 >部分影像修飾元[無法在Experience Manager](#advanced-tab-options)中使用。
 
-* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html?lang=zh-Hant#image-serving-api) — 將每個顏色元件反轉成負影像效果。
+* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html#image-serving-api) — 將每個顏色元件反轉成負影像效果。
 
   ```xml
   &op_invert=1
@@ -457,7 +457,7 @@ Dynamic Media整合會使用下列指令碼：
 
   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html?lang=zh-Hant#image-serving-api) — 將模糊濾鏡套用至影像。
+* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html#image-serving-api) — 將模糊濾鏡套用至影像。
 
   ```xml
   &op_blur=7
@@ -473,7 +473,7 @@ Dynamic Media整合會使用下列指令碼：
 
   ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html?lang=zh-Hant#image-serving-api) — 減少或增加亮度。
+* [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html#image-serving-api) — 減少或增加亮度。
 
   ```xml
   &op_brightness=58
@@ -481,7 +481,7 @@ Dynamic Media整合會使用下列指令碼：
 
   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html?lang=zh-Hant#image-serving-api) — 調整影像不透明度。 可讓您減少前景不透明度。
+* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html#image-serving-api) — 調整影像不透明度。 可讓您減少前景不透明度。
 
   ```xml
   opac=29
@@ -496,7 +496,7 @@ Dynamic Media整合會使用下列指令碼：
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
 1. 選取預設集，然後按一下&#x200B;**[!UICONTROL 編輯]**。 **[!UICONTROL 編輯影像預設集]**&#x200B;視窗隨即開啟。
-1. 進行變更，然後按一下[儲存]以儲存變更，或按一下[取消]以取消變更。**[!UICONTROL 取消]**。**&#x200B;**
+1. 進行變更，然後按一下[儲存]以儲存變更，或按一下[取消]以取消變更。**[!UICONTROL 取消]**。****
 
 ## 發佈Dynamic Media影像預設集 {#publishing-image-presets}
 
@@ -516,4 +516,4 @@ Dynamic Media整合會使用下列指令碼：
 
 1. 在Experience Manager中，按一下Experience Manager標誌以存取全域導覽主控台。
 1. 選取&#x200B;**[!UICONTROL 工具]**&#x200B;圖示，然後導覽至&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 影像預設集]**。
-1. 選取預設集，然後按一下[刪除]。**&#x200B;** Dynamic Media會確認您要刪除它。 選取&#x200B;**[!UICONTROL 刪除]**&#x200B;以刪除，或選取&#x200B;**[!UICONTROL 取消]**&#x200B;以中止。
+1. 選取預設集，然後按一下[刪除]。**** Dynamic Media會確認您要刪除它。 選取&#x200B;**[!UICONTROL 刪除]**&#x200B;以刪除，或選取&#x200B;**[!UICONTROL 取消]**&#x200B;以中止。

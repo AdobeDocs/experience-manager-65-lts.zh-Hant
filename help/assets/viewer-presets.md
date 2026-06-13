@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 23c04c7e-3321-4eae-8067-ca23adefa9f6
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 16%
+source-wordcount: '211'
+ht-degree: 17%
 
 ---
 
@@ -33,8 +33,8 @@ ht-degree: 16%
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-   * URL **[!UICONTROL 和]**&#x200B;**[!UICONTROL Embed]** 按鈕會在您選取檢視器預設集後顯示。
-   * 當您在資產的「詳細資料檢視」中選取「檢視器」時，系統會顯示許多檢 **[!UICONTROL 視器預設集]**。您可以增加所檢視的預設集數目。請參閱[增加顯示的檢視器預設集數目](managing-viewer-presets.md)。
+   * URL **[!UICONTROL 和]****[!UICONTROL Embed]** 按鈕會在您選取檢視器預設集後顯示。
+   * 當您在資產的「詳細資料檢視」中選取「檢視器」時，系統會顯示許多檢 **[!UICONTROL 視器預設集]**。 您可以增加所檢視的預設集數目。 請參閱[增加顯示的檢視器預設集數目](managing-viewer-presets.md)。
 
 1. 從左窗格選取檢視器，以便將其套用至在右窗格中看到的資產。 您也可以[複製URL以與其他使用者共用](linking-urls-to-yourwebapplication.md)。
 

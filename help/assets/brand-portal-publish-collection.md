@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 1456a32e-c98f-4106-8546-799614c51a59
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '323'
 ht-degree: 30%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 30%
 
 >[!NOTE]
 >
->內容片段無法發佈至 Brand Portal。因此，如果您在AEM Author上選取內容片段，則無法使用&#x200B;**發佈至Brand Portal**&#x200B;動作。
+>內容片段無法發佈至 Brand Portal。 因此，如果您在AEM Author上選取內容片段，則無法使用&#x200B;**發佈至Brand Portal**&#x200B;動作。
 >
 >如果從AEM Author將包含內容片段的集合發佈到Brand Portal，則除了內容片段以外，資料夾的所有內容都會複製到Brand Portal介面。
 
@@ -54,4 +54,4 @@ ht-degree: 30%
 
 1. 在工具列中按一下&#x200B;**從 Brand Portal 移除**&#x200B;圖示。
 1. 在對話方塊中，按一下&#x200B;**取消發佈**。
-1. 關閉確認訊息。集合會從 Brand Portal 介面中移除。
+1. 關閉確認訊息。 集合會從 Brand Portal 介面中移除。

@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 16b03ca5-c060-4944-ad30-ad0bd350dc52
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '2001'
 ht-degree: 9%
 
 ---
@@ -57,11 +57,11 @@ ht-degree: 9%
 
    >[!NOTE]
    >
-   >您也可以透過批次集預設集自動 [建立回轉集](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)。**重要：**&#x200B;批次集是由IPS (Image Production System)建立為資產擷取的一部分，僅適用於Dynamic Media - Scene7模式。
+   >您也可以透過批次集預設集自動 [建立回轉集](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)。 **重要：**&#x200B;批次集是由IPS (Image Production System)建立為資產擷取的一部分，僅適用於Dynamic Media - Scene7模式。
 
 1. 視需要設定[迴轉集檢視器預設集](/help/assets/managing-viewer-presets.md)。
 
-   管理員可以建立或修改回轉集檢視器預設集。若要檢視含有檢視器預設集的回轉集，請選取該回轉集，然後在左側導軌下拉式選單中選取「檢 **視器**」。
+   管理員可以建立或修改回轉集檢視器預設集。 若要檢視含有檢視器預設集的回轉集，請選取該回轉集，然後在左側導軌下拉式選單中選取「檢 **視器**」。
 
    若要建立或編輯檢視器預設集，請參閱&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 檢視器預設集]**。
 
@@ -93,7 +93,7 @@ ht-degree: 9%
 
 一維「迴轉集」至少需要8-12次專案快照，二維「迴轉集」至少需要16-24次專案快照。 拍攝必須定期進行，以提供專案正在旋轉和翻轉的印象。 例如，如果一維「迴轉集」包含12個鏡頭，則每個鏡頭應將專案旋轉30° (360/12)。
 
-您可以像在Experience Manager Assets[&#128279;](/help/assets/manage-assets.md)中上傳任何其他資產一樣上傳迴轉集的影像。
+您可以像在Experience Manager Assets](/help/assets/manage-assets.md)中[上傳任何其他資產一樣上傳迴轉集的影像。
 
 如需迴轉集支援的格式清單，請參閱[Dynamic Media — 支援的光柵影像格式](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media)。
 
@@ -113,7 +113,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->您也可以透過批次集預設集自動 [建立回轉集](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)。**重要：**&#x200B;批次集是由IPS (Image Production System)建立為資產擷取的一部分，僅適用於Dynamic Media - Scene7模式。
+>您也可以透過批次集預設集自動 [建立回轉集](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)。 **重要：**&#x200B;批次集是由IPS (Image Production System)建立為資產擷取的一部分，僅適用於Dynamic Media - Scene7模式。
 >
 >請參閱[設定Dynamic Media - Scene7模式](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)中的「建立批次集預設集以自動生成影像集和迴轉集」。
 >
@@ -132,7 +132,7 @@ ht-degree: 9%
 
 **若要建立迴轉集：**
 
-1. 在Assets中，導覽至您要建立迴轉集的位置，選取&#x200B;**[!UICONTROL 建立]**，然後選取&#x200B;**[!UICONTROL 迴轉集]**。 您也可以從包含資產的資料夾內建立資產集。隨即顯示回轉集編輯器。
+1. 在Assets中，導覽至您要建立迴轉集的位置，選取&#x200B;**[!UICONTROL 建立]**，然後選取&#x200B;**[!UICONTROL 迴轉集]**。 您也可以從包含資產的資料夾內建立資產集。 隨即顯示回轉集編輯器。
 
    ![6_5_spinset-createpulldownmenu](assets/6_5_spinset-createpulldownmenu.png)
 
@@ -144,15 +144,15 @@ ht-degree: 9%
    >
    >建立迴轉集時，您可以變更迴轉集縮圖，或允許Experience Manager根據迴轉集中的資產自動選取縮圖。 若要選取縮圖，請選取&#x200B;**[!UICONTROL 變更縮圖]**&#x200B;並選取任何影像（您也可以導覽至其他資料夾以尋找影像）。 如果您已選取縮圖，然後決定要讓Experience Manager從迴轉集產生縮圖，請選取&#x200B;**[!UICONTROL 切換至自動縮圖]**。
 
-1. 執行下列任一項：
+1. 執行下列其中一項：
 
    * 在「迴轉集編輯器」頁面的左上角附近，選取&#x200B;**[!UICONTROL 新增資產]**。
 
    * 在「迴轉集編輯器」頁面中間附近，選取「**[!UICONTROL 選取」以開啟「資產選擇器」]**。
 
-   選取以選取您要納入迴轉集的資產。 選取的資產上面有核取標籤圖示。完成後，在頁面的右上角附近，選取&#x200B;**[!UICONTROL 選取]**。
+   選取以選取您要納入迴轉集的資產。 選取的資產上面有核取標籤圖示。 完成後，在頁面的右上角附近，選取&#x200B;**[!UICONTROL 選取]**。
 
-   使用「資產選擇器」，您可以輸入關鍵字並點選「回報」來搜尋 **[!UICONTROL 資產]**。您也可以套用篩選條件來調整搜尋結果。您可以依路徑、系列、檔案類型和標籤來篩選。選取篩選，然後在工具列上選取&#x200B;**[!UICONTROL 篩選]**&#x200B;圖示。 點選「檢視」圖示並選取「欄檢視」、「卡片檢視」或「清 **[!UICONTROL 單檢視」]**, **[!UICONTROL 以變更]**&#x200B;檢視 **&#x200B;**。
+   使用「資產選擇器」，您可以輸入關鍵字並點選「回報」來搜尋 **[!UICONTROL 資產]**。 您也可以套用篩選條件來調整搜尋結果。 您可以依路徑、系列、檔案類型和標籤來篩選。 選取篩選，然後在工具列上選取&#x200B;**[!UICONTROL 篩選]**&#x200B;圖示。 點選「檢視」圖示並選取「欄檢視」、「卡片檢視」或「清 **[!UICONTROL 單檢視」]**, **[!UICONTROL 以變更]**&#x200B;檢視 ****。
 
    請參閱[使用選取器](/help/assets/working-with-selectors.md)。
 
@@ -172,7 +172,7 @@ ht-degree: 9%
 
    * 若要套用預設集，在頁面右上角附近選取「**[!UICONTROL 預設集]**」，然後選取要一次套用至所有資產的預設集。
 
-1. 選取&#x200B;**[!UICONTROL 儲存]**。您新建立的「迴轉集」會顯示在您建立的資料夾中。
+1. 選取&#x200B;**[!UICONTROL 儲存]**。 您新建立的「迴轉集」會顯示在您建立的資料夾中。
 
 ## 檢視迴轉集 {#viewing-spin-sets}
 
@@ -188,7 +188,7 @@ ht-degree: 9%
 
    ![chlimage_1-156](assets/chlimage_1-384.png)
 
-1. 來自任何組的成員映像。選取&#x200B;**[!UICONTROL 集合]**&#x200B;功能表以顯示資產所屬的集合。
+1. 來自任何組的成員映像。 選取&#x200B;**[!UICONTROL 集合]**&#x200B;功能表以顯示資產所屬的集合。
 
    ![chlimage_1-157](assets/chlimage_1-385.png)
 
@@ -221,12 +221,11 @@ ht-degree: 9%
 
    * 若要重新排序影像，請將影像拖曳至新位置（選取重新排序圖示以移動專案）。
    * 若要以遞增或遞減順序排序專案，請選取欄標題。
-   * 若要新增資產或更新現有資產，請選取&#x200B;**[!UICONTROL 新增資產]**。 導覽至某個資產，選取該資產，然後選取右上角附近的&#x200B;**[!UICONTROL 選取]**。
+   * 若要新增資產或更新現有資產，請選取&#x200B;**[!UICONTROL 新增資產]**。導覽至某個資產，選取該資產，然後選取右上角附近的&#x200B;**[!UICONTROL 選取]**。
 如果您刪除Experience Manager用於縮圖的影像，改為其他影像，仍會顯示原始資產。
    * 若要刪除資產，請選取該資產，然後選取&#x200B;**[!UICONTROL 刪除資產]**。
    * 若要套用預設集，請選取「預設集」圖示並選取預設集。
    * 若要刪除整個迴轉集，請導覽至該迴轉集，選取它，然後選取&#x200B;**[!UICONTROL 刪除]**
-
    >[!NOTE]
    >
    >您可以導覽至迴轉集編輯影像，選取左側邊欄中的&#x200B;**[!UICONTROL 設定成員]**，然後選取個別資產上的「鉛筆」圖示以開啟編輯視窗。
