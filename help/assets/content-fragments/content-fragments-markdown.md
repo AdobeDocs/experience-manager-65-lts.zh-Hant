@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 5ca53958-dfcd-4058-a04c-c750ab4d9a6e
 source-git-commit: a8ff456d323e848cc0c6296670b39834682a36b9
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '523'
 ht-degree: 4%
 
 ---
@@ -92,7 +92,7 @@ ht-degree: 4%
 
 語法包括：
 
-* 驚歎號：！；
+* 驚歎號： ！；
 * 後面接著一組方括弧，其中包含影像的alt屬性文字；
 * 後面接著一組括弧（包含影像的URL或路徑），以及一個以雙引號或單引號括起來的選用標題屬性。
 
@@ -130,7 +130,7 @@ ht-degree: 4%
 
 您可以建立已排序和未排序清單。
 
-若要建立未排序清單，請在清單中的專案前使用&amp;amp；ast；符號。 例如：
+若要建立未排序清單，請使用清單中專案前的&amp;ast；符號。 例如：
 
     `* item in list`
 
@@ -182,7 +182,7 @@ ht-degree: 4%
 
 ## 反斜線逸出 {#backslash-escapes}
 
-您可以使用反斜線逸出產生在格式語法中具有特殊意義的常值字元。 例如，如果您想以星號括住單字(而非HTML &lt;em>標籤)，可以在星號前使用反斜線，如下所示：
+您可以使用反斜線逸出產生在格式語法中具有特殊意義的常值字元。 例如，如果您想以常值星號括住單字(而非HTML &lt;em> tag), you can use backslashes before the asterisks, like this:
 
     `\\*literal asterisks\\*`
 

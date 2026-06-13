@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 61a1c41a-7aec-4ffb-b622-905b3ca62c1b
 source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '4025'
-ht-degree: 14%
+source-wordcount: '4005'
+ht-degree: 15%
 
 ---
 
@@ -162,7 +162,7 @@ Experience Manager可讓您將遠端DAM部署作為來源連線至多個Experien
 
 若要在[!DNL Assets]和[!DNL Sites]部署上設定[!DNL Dynamic Media]：
 
-1. 在遠端[!DNL Assets]作者部署上啟用並設定[!DNL Dynamic Media]為全域設定。 若要設定動態媒體，請參閱[設定動態媒體](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services)。
+1. 在遠端[!DNL Assets]作者部署上啟用並設定[!DNL Dynamic Media]為全域設定。若要設定動態媒體，請參閱[設定動態媒體](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services)。
 在遠端[!DNL Assets]部署中，在[!UICONTROL Dynamic Media同步處理模式]中，選取&#x200B;**[!UICONTROL 預設啟用]**。
 
 1. 依照[設定網站與資產部署之間的連線](#configure-a-connection-between-sites-and-assets-deployments)中的說明建立連線的Assets設定。 此外，請選取&#x200B;**[!UICONTROL 為Dynamic Media連線的Assets擷取原始轉譯]**&#x200B;選項。

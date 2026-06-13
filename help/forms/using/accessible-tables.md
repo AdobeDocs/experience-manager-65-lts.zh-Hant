@@ -1,5 +1,5 @@
 ---
-title: 在HTML5表單中建立無障礙的複雜表格
+title: 在 HTML5 表單中建立無障礙的複雜表單
 description: 瞭解如何在HTML5表單中建立無障礙的表格。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ role: Admin, User, Developer
 exl-id: e6e6c08a-3bed-4713-a0e0-2a02607c7fc7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 0%
+source-wordcount: '280'
+ht-degree: 5%
 
 ---
 
-# 在HTML5表單中建立無障礙的複雜表格 {#create-accessible-complex-tables-in-html-forms}
+# 在 HTML5 表單中建立無障礙的複雜表單 {#create-accessible-complex-tables-in-html-forms}
 
 HTML5 Forms中表格的預設實作使用HTML DIV元素來轉譯表格。 轉譯涉及使用ARIA角色來滿足協助工具需求。
 

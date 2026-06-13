@@ -70,7 +70,7 @@ ht-degree: 0%
  <thead>
   <tr>
    <th><p>步驟</p></th>
-   <th><p>說明</p></th>
+   <th><p>描述</p></th>
   </tr>
  </thead>
  <tbody>

@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: 8294cbbe-f37f-41d0-b8e8-298f9413462e
 source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '1853'
+source-wordcount: '1888'
 ht-degree: 2%
 
 ---
@@ -168,7 +168,7 @@ ACMExtensionsMessages.properties檔案包含「建立通訊」使用者介面中
 >
 >您可能需要清除瀏覽器快取。
 
-1. 移至`https://[host]:'port'/system/console/bundles`。 如有必要，請以管理員身分登入。
+1. 前往 `https://[host]:'port'/system/console/bundles`。 如有必要，請以管理員身分登入。
 
 1. 找出Adobe資產撰寫器建置區塊套件。 重新啟動套件：按一下[停止]，然後按一下[啟動]。
 
@@ -190,7 +190,7 @@ ACMExtensionsMessages.properties檔案包含「建立通訊」使用者介面中
 * 啟用/停用新增的動作：覆寫actionEnabled()函式來完成。
 * 使用者按一下按鈕時實際處理動作：覆寫handleAction()函式的實作來完成。
 
-1. 移至`https://'[server]:[port]'/[ContextPath]/crx/de`。 如有必要，請以管理員身分登入。
+1. 前往 `https://'[server]:[port]'/[ContextPath]/crx/de`。 如有必要，請以管理員身分登入。
 
 1. 在apps資料夾中，在CRX的/apps分支中建立名為`js`的資料夾，其結構與下列資料夾類似：
 
@@ -328,7 +328,7 @@ ACMExtensionsMessages.properties檔案包含「建立通訊」使用者介面中
 * DSC元件jar (DSCSample.jar)
 * 傳送信件以供稽核程式LCA (SendLetterForReview.lca)
 
-下載並解壓縮components.zip檔案以取得DSCSample.jar和SendLetterForReview.lca檔案。 請依照下列程式使用這些檔案。
+下載並解壓縮components.zip檔案以取得DSCSample.jar和SendLetterForReview.lca檔案。請依照下列程式使用這些檔案。
 [取得檔案](assets/components.zip)
 
 #### 設定LiveCycle Server執行LCA程式 {#configure-the-livecycle-server-to-run-the-lca-process}

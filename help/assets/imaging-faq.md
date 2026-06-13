@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 9f95a54d-6c5e-44c1-965e-631ec7487308
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3487'
+source-wordcount: '3441'
 ht-degree: 2%
 
 ---
@@ -338,7 +338,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 >
 >**X-Adobe-Smart-Imaging = -1，正在傳遞WebP**
 >
->如果`X-Adobe-Smart-Imaging`的值為–1，而且WebP仍在傳遞，則智慧型影像處理為作用中。 但是，由於快取已過時，因此未計算大小優勢。 您可以在影像的URL中使用`cache=update` （僅一次）來修正此問題。
+>如果`X-Adobe-Smart-Imaging`的值為–1，而且WebP仍在傳遞，則智慧型影像處理為作用中。但是，由於快取已過時，因此未計算大小優勢。您可以在影像的URL中使用`cache=update` （僅限一次）來修正此問題。
 >使用修飾元的範例：
 >`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`>若要讓整個快取失效，您必須建立支援案例。
 

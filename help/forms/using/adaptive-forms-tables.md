@@ -10,20 +10,20 @@ role: User, Developer
 exl-id: f1cea461-1d16-4944-b4c0-77be81b821e7
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2473'
+source-wordcount: '2550'
 ht-degree: 2%
 
 ---
 
 # 調適型表單中的表格{#tables-in-adaptive-forms}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
 ## 套用至 {#applies-to}
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/adaptive-forms-tables.html?lang=zh-Hant)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/adaptive-forms-tables.html?lang=zh-Hant)上的AEM Forms 。
 
 
 使用表格是呈現複雜資料的一種有效、簡化且有條理的方式。 它可協助使用者輕鬆識別資訊，並以有序的列和欄排列提供輸入。 金融服務和政府組織的大部分表單都需要大型資料表才能輸入數字和執行計算。
@@ -290,7 +290,7 @@ AEM Forms的側邊欄元件瀏覽器中提供表格元件，可讓您以最適�
 
 若要在執行階段將此資料與表格合併，我們需要將包含表格的調適型表單指向停用wcmmode的絕對XML位置。 例如，如果最適化表單位於&#x200B;*https://localhost:4502/myForms/bankTransaction.html*，而資料XML檔案儲存在&#x200B;*C：/myTransactions/bankSummary.xml*，您可以在下列URL檢視含有資料的表格：
 
-*https://localhost:4502/myForms/bankTransaction.html？dataRef=file:/// C：/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
+*https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C：/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
 ![資料合併資料表](assets/data-merged-table.png)
 

@@ -6,14 +6,14 @@ role: Admin, User, Developer
 exl-id: b87629fa-85a9-4024-963a-4761bc093e62
 source-git-commit: d0529c8bce32e192cbbc7686f14825df57762363
 workflow-type: tm+mt
-source-wordcount: '5535'
+source-wordcount: '5664'
 ht-degree: 1%
 
 ---
 
 # 使用最適化表單的最佳作法 {#best-practices-for-working-with-adaptive-forms}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/introduction)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/introduction)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
 ## 概觀 {#overview}
 
@@ -66,7 +66,7 @@ Adobe Experience Manager (AEM)表單可協助您將複雜的交易轉換為簡�
    * **無**：使用此選項建立的最適化表單不使用任何表單模型。 從此類表單產生的資料 XML 具有包含欄位和對應值的單層結構。
    * **XML或JSON結構描述**： XML和JSON結構描述代表貴組織中後端系統產生或使用資料的結構。 您可以將結構描述關聯至最適化表單，並使用其元素將動態內容新增至最適化表單。 結構描述的元素可在內容瀏覽器的「資料模型物件」標籤中使用，以編寫調適型表單。 您可以拖放結構元素來建置表單。
    * **XFA表單範本**：如果您有投資以XFA為基礎的HTML5表單，這會是理想的表單模型。 它可讓您直接將XFA式表單轉換為最適化表單。 任何現有的XFA規則都會保留在關聯的調適型表單中。 產生的調適型表單支援XFA建構，例如驗證、事件、屬性和模式。
-   * **表單資料模型**：如果您想要整合您的後端系統(例如資料庫、Web服務和AEM使用者設定檔)，以預先填寫最適化表單並將提交的表單資料寫入後端系統，這會是您偏好的表單模型。 表單資料模型編輯器可讓您在可用來建立調適型表單的表單資料模型中定義及設定實體和服務。 如需詳細資訊，請參閱[AEM Forms資料整合](/help/forms/using/data-integration.md)。
+   * **表單資料模型**：如果您想要整合您的後端系統（例如資料庫、Web服務和AEM使用者設定檔），以預先填寫最適化表單並將提交的表單資料寫入後端系統，這會是您偏好的表單模型。 表單資料模型編輯器可讓您在可用來建立調適型表單的表單資料模型中定義及設定實體和服務。 如需詳細資訊，請參閱[AEM Forms資料整合](/help/forms/using/data-integration.md)。
 
 請務必謹慎選擇資料模型，不僅要符合您的需求，還要擴大您對XFA和XSD資產（如果有的話）的現有投資。 使用XSD模型建立表單範本，因為產生的XML包含結構描述所定義的每個XPATH的資料。 使用XSD模型作為表單資料模型的預設選擇也有幫助，因為它將表單設計從處理和使用資料的後端系統分離開來，並且由於表單欄位的一對一對應而改善了表單的效能。 此外，欄位的BindRef可以設為其資料值的XML格式XPATH。
 
@@ -89,7 +89,7 @@ Adobe Experience Manager (AEM)表單可協助您將複雜的交易轉換為簡�
 * 您也可以自訂特定的最適化表單元件，例如欄位和面板版面配置。
 
    * 使用AEM的[覆蓋](/help/sites-developing/overlays.md)功能來修改元件的復本。 不建議修改預設元件。
-   * 若要自訂/libs中現成可用的最適化表單元件的版面，除了[預設版面](/help/forms/using/custom-layout-components-forms.md)之外，還要[建立自訂版面元件](/help/forms/using/layout-capabilities-adaptive-forms.md)。
+   * 若要自訂/libs中現成可用的最適化表單元件的版面，除了[預設版面](/help/forms/using/layout-capabilities-adaptive-forms.md)之外，還要[建立自訂版面元件](/help/forms/using/custom-layout-components-forms.md)。
    * 透過建立自訂Widget或外觀來引入自訂互動。 不建議修改預設元件。 如需詳細資訊，請參閱[外觀架構](/help/forms/using/introduction-widgets.md)。
 
 * 如需處理PII資料的建議，請參閱[處理個人識別資訊](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p)。
@@ -279,7 +279,7 @@ AEM Forms提供[規則編輯器](/help/forms/using/rule-editor.md)，可讓您�
 需要伺服器端驗證，以防止任何在使用者端上繞過驗證的嘗試，以及資料提交和業務規則違規的任何可能危害。 伺服器端驗證會透過載入所需的使用者端程式庫在伺服器上執行。
 
 * 將函式包含在使用者端程式庫中，以驗證最適化表單中的運算式，並在最適化表單容器對話方塊中指定使用者端程式庫。 如需詳細資訊，請參閱[伺服器端重新驗證](/help/forms/using/configuring-submit-actions.md#p-server-side-revalidation-in-adaptive-form-p)。
-* 伺服器端驗證會驗證表單模型。建議您建立個別的使用者端程式庫進行驗證，不要將其與相同使用者端程式庫中的HTML樣式和DOM操作等其他專案混合。
+* 伺服器端驗證會驗證表單模型。 建議您建立個別的使用者端程式庫進行驗證，不要將其與相同使用者端程式庫中的HTML樣式和DOM操作等其他專案混合。
 
 ### 將調適型表單當地語系化 {#localizing-adaptive-forms}
 
@@ -311,7 +311,7 @@ AEM提供翻譯工作流程，您可用來將最適化表單當地語系化。 �
 * 備份您現有的使用者端程式庫、自訂程式碼和設定。
 * 在新環境中以指定的順序手動部署產品套件和修補程式。
 * 手動部署專案特定的程式碼套件和套件組合，並作為單獨的套件或套件組合部署在新的AEM伺服器上。
-* (*僅限JEE上的AEM Forms*)在Forms Workflow伺服器上手動部署LCA和DSC。
+* （*僅限JEE上的AEM Forms*）在Forms Workflow伺服器上手動部署LCA和DSC。
 * 使用[匯出 — 匯入](/help/forms/using/import-export-forms-templates.md)功能將資產移至新環境。 您也可以設定復寫代理程式並發佈資產。
 * 升級時，請以新的API和功能取代所有已棄用的API和功能。
 
@@ -326,7 +326,7 @@ AEM提供翻譯工作流程，您可用來將最適化表單當地語系化。 �
 
 * 透過網頁伺服器壓縮模組啟用HTML。 如需詳細資訊，請參閱[AEM Forms伺服器的效能調整](/help/forms/using/performance-tuning-aem-forms.md)。
 * 針對大型表單，增加每個請求設定的呼叫。 請參閱[最佳化大型與複雜表單的效能](#optimizing-performance-of-large-and-complex-forms)。
-* 建立錯誤處理常式[顯示的](/help/sites-developing/customizing-errorhandler-pages.md)自訂錯誤頁面。
+* 建立錯誤處理常式[&#128279;](/help/sites-developing/customizing-errorhandler-pages.md)顯示的自訂錯誤頁面。
 * 安全的AEM Forms伺服器。
 
    * 使用`nosamplecontent`執行模式，確保生產伺服器上未部署範例內容和範例使用者。 請參閱[在生產就緒模式下執行AEM](/help/sites-administering/production-ready.md)。

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 7576e0e3-b05a-483b-9d38-316ddf0d5816
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '788'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ HTTP/2可改善瀏覽器和伺服器的通訊方式，實現更快的資訊傳�
 
 以下網站以簡單扼要的方式說明HTTP/2及其優點：
 
-[關於HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html)的須知事項
+[關於HTTP/2您必須知道的事項](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html)
 
 ## 改用HTTP/2進行內容傳送的主要優點為何？ {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 

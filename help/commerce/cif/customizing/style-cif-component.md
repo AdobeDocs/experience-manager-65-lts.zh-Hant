@@ -12,8 +12,8 @@ role: Admin, Developer
 exl-id: 92689d52-6485-4cd5-a04f-4738096a0dba
 source-git-commit: d571dc696e42bae873cd58f2e7f321bd3002f42e
 workflow-type: tm+mt
-source-wordcount: '2338'
-ht-degree: 0%
+source-wordcount: '2684'
+ht-degree: 6%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**請隨時使用現有的專案** (根據包含CIF的AEM專案原型)並略過本節。
+>**請隨時使用現有的專案** （根據包含CIF的AEM專案原型）並略過本節。
 
 1. 執行下列git命令以複製專案：
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 1. 新增必要的OSGi設定以將您的AEM執行個體連線到Adobe Commerce執行個體，或將設定新增到新建立的專案。
 
-1. 此時，您應該有已連線至Adobe Commerce執行個體的有效店面版本。 瀏覽至`US` > `Home`頁面，網址為： [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)。
+1. 此時，您應該有已連線至Adobe Commerce執行個體的有效店面版本。 導覽至`US` > `Home`頁面： [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)。
 
    您應該會看到店面目前使用Venia佈景主題。 展開店面的「主要」功能表，應該會看到各種類別，表示與Adobe Commerce的連線正常運作。
 
@@ -88,7 +88,7 @@ ht-degree: 0%
 
    請注意，資料夾下有多個Sass (`.scss`)檔案。 這些是每個Commerce元件的Commerce特定樣式。
 
-1. 開啟檔案`_productteaser.scss`。
+1. 開啟檔案 `_productteaser.scss`。
 
 1. 更新`.item__image`規則並修改框線規則：
 
@@ -140,7 +140,7 @@ ht-degree: 0%
    >
    >原始檔控制會忽略這類檔案，因為它們應該在建置期間產生。
 
-1. 檢查檔案`ui.frontend/clientlib.config.js`。
+1. 檢查檔案 `ui.frontend/clientlib.config.js`。
 
    ```js
    /* clientlib.config.js*/
@@ -177,7 +177,7 @@ ht-degree: 0%
 
    這些使用者端程式庫不是由`ui.frontend`模組管理。 這些使用者端資料庫會包含由Adobe提供的CSS和JavaScript相依性。 這些使用者端資料庫的定義位於每個資料夾下方的`.content.xml`檔案中。
 
-   **clientlib-base** — 這是空的使用者端資料庫，僅嵌入[AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)的必要相依性。 類別是`venia.base`。
+   **clientlib-base** — 這是空的使用者端資料庫，僅嵌入[AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)的必要相依性。 類別是`venia.base`。
 
    **clientlib-cif** — 這也是一個空白的使用者端程式庫，只從[AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components)嵌入必要的相依性。 類別是`venia.cif`。
 
@@ -224,7 +224,7 @@ ht-degree: 0%
 
 1. 選取&#x200B;**頁面資訊**&#x200B;功能表，然後按一下&#x200B;**以發佈的形式檢視**：
 
-   ![以發佈的形式檢視](../assets/style-cif-component/view-as-published.png)
+   ![以發佈頁面形式檢視](../assets/style-cif-component/view-as-published.png)
 
    這樣會開啟頁面，而不載入任何AEM作者JavaScript，如同發佈網站上顯示的一樣。 請注意，該url已附加查詢引數`?wcmmode=disabled`。 開發CSS和JavaScript時，最好使用此引數來簡化頁面，而無需AEM作者採取任何動作。
 
@@ -331,7 +331,7 @@ webpack-dev-server會代理來自AEM本機執行個體的影像和部分CSS/Java
    >
    >如果您收到Sass相關錯誤，請停止伺服器並執行命令`npm rebuild node-sass`並重複上述步驟。 如果您在專案`aem-cif-guides-venia/pom.xml`中指定了不同版本的`npm`和`node`，就可能發生這種情況。
 
-1. 使用與AEM登入執行個體相同的瀏覽器，在新的索引標籤中導覽至[http://localhost:8080/](http://localhost:8080/)。 您應該會透過webpack-dev-server看到Venia首頁：
+1. 使用與AEM登入執行個體相同的瀏覽器，導覽至新標籤中的[http://localhost:8080/](http://localhost:8080/)。 您應該會透過webpack-dev-server看到Venia首頁：
 
    ![連線埠80](../assets/style-cif-component/webpack-dev-server-port80.png)上的Webpack開發伺服器
 
@@ -478,9 +478,9 @@ AEM也會嘗試快取使用者端程式庫以提高效能。 在程式碼部署�
 
 ## 其他資源 {#additional-resources}
 
-* [AEM專案原型](https://github.com/adobe/aem-project-archetype)
+* [AEM 專案原型](https://github.com/adobe/aem-project-archetype)
 * [AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components)
 * [設定本機AEM開發環境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=zh-Hant)
-* [用戶端資源庫](/help/sites-developing/clientlibs.md)
-* [開始使用AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant)
+* [用戶端程式庫](/help/sites-developing/clientlibs.md)
+* [AEM Sites快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant)
 * [使用樣式系統進行開發](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=zh-Hant)
