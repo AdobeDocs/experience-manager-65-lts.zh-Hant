@@ -44,7 +44,7 @@ Forms服務可以計算使用者在表單中輸入的值並顯示結果。 若�
  <thead>
   <tr>
    <th><p>步驟</p></th>
-   <th><p>說明</p></th>
+   <th><p>描述</p></th>
   </tr>
  </thead>
  <tbody>

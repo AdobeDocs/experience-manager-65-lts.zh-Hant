@@ -7,7 +7,7 @@ feature: Smart Imaging
 exl-id: 3b4f3624-d76d-4835-834b-e8610c2c40bd
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,8 @@ ht-degree: 0%
 
    您可以將兩個DPR指令碼合併為一個，以避免多個網路請求。
 
-   Adobe建議您在HTML頁面的&#x200B;_之前，載入這些指令碼。_ Adobe也建議您在不同的HTML標籤下使用Bootstrap應用程式，而不是使用內文元素。 這是因為`dprImageInjection.js`會在HTML頁面的Body區段頂端動態地插入影像標籤。
+   Adobe建議您在HTML頁面的&#x200B;_之前，載入這些指令碼。
+Adobe也建議您在不同的HTML標籤下使用Bootstrap應用程式，而不是使用內文元素。這是因為`dprImageInjection.js`會在HTML頁面的Body區段頂端以動態方式插入影像標籤。_
 
 ## JavaScript檔案下載 {#client-side-dpr-script}
 
