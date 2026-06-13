@@ -7,7 +7,7 @@ role: User,Admin,Developer
 exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '2468'
+source-wordcount: '2497'
 ht-degree: 2%
 
 ---
@@ -103,7 +103,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->定義頁面名稱時，一個好的經驗法則是保持頁面名稱簡短，但儘可能表達到位且容易記憶，讓讀者容易理解。 如需詳細資訊，請參閱[專案的](https://www.w3.org/Provider/Style/TITLE.html)W3C樣式指南`title`。
+>定義頁面名稱時，一個好的經驗法則是保持頁面名稱簡短，但儘可能表達到位且容易記憶，讓讀者容易理解。 如需詳細資訊，請參閱`title`專案的[W3C樣式指南](https://www.w3.org/Provider/Style/TITLE.html)。
 >
 >也請記住，某些瀏覽器（例如舊版的IE）只能接受一定長度的URL，因此還有技術原因需縮短頁面名稱。
 
@@ -130,7 +130,7 @@ ht-degree: 2%
 | 標題 | 衍生名稱 |
 |---|---|
 | Schon | schoen.html |
-| SC%&amp;&#42;c+ | sc---c-.html |
+| SC%&amp;&#42;c+ | sc—c-.html |
 
 #### 名稱 {#name}
 
@@ -175,7 +175,7 @@ AEM隨附數種現成可用的範本。 可用的範本視個別網站而定。 
 * 影片
 * 以及更多功能
 
-建立並開啟頁面後，您就可以使用[元件瀏覽器](/help/sites-authoring/editing-content.md#insertinganewparagraph)提供的元件[來](/help/sites-authoring/author-environment-tools.md#componentbrowser)新增內容。
+建立並開啟頁面後，您就可以使用[元件瀏覽器](/help/sites-authoring/author-environment-tools.md#componentbrowser)提供的元件[&#128279;](/help/sites-authoring/editing-content.md#insertinganewparagraph)來新增內容。
 
 >[!NOTE]
 >
@@ -374,7 +374,7 @@ AEM提供可更新任何內部連結的功能，這些連結會參照正在重�
 
 >[!NOTE]
 >
->如果頁面已發佈，移動頁面會自動解除發佈。依預設，移動完成時會重新發佈它，但是這可透過取消勾選&#x200B;**調整/重新發佈**&#x200B;步驟中的&#x200B;**重新發佈**&#x200B;欄位來變更。
+>如果頁面已發佈，移動頁面會自動解除發佈。 依預設，移動完成時會重新發佈它，但是這可透過取消勾選&#x200B;**調整/重新發佈**&#x200B;步驟中的&#x200B;**重新發佈**&#x200B;欄位來變更。
 
 >[!NOTE]
 >
@@ -390,7 +390,7 @@ AEM提供可更新任何內部連結的功能，這些連結會參照正在重�
 
   ![非同步頁面移動](assets/asynchronous-page-move.png)
 
-可在&#x200B;[**全域導覽** > &#x200B;](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)工具&#x200B;**>**&#x200B;作業&#x200B;**>**&#x200B;作業&#x200B;**的**&#x200B;非同步作業狀態&#x200B;**儀表板**&#x200B;中檢查非同步作業的狀態
+可在&#x200B;**全域導覽** > **工具** > **作業** > **作業**&#x200B;的&#x200B;[**非同步作業狀態**&#x200B;儀表板](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)中檢查非同步作業的狀態
 
 >[!NOTE]
 >
@@ -413,7 +413,7 @@ AEM提供可更新任何內部連結的功能，這些連結會參照正在重�
    * **刪除**&#x200B;以確認動作：
 
       * 如果頁面沒有引用，則會刪除該頁面。
-      * 如果頁面有參照，訊息方塊會通知您&#x200B;**已參照一或多個頁面。**&#x200B;您可以選取&#x200B;**強制刪除**&#x200B;或&#x200B;**取消**。
+      * 如果頁面有參考，訊息方塊會通知您&#x200B;**一個或多個頁面被參考。** 您可以選取&#x200B;**強制刪除**&#x200B;或&#x200B;**取消**。
 
 >[!NOTE]
 >

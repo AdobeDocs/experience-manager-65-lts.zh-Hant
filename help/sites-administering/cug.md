@@ -12,7 +12,7 @@ role: Admin
 exl-id: c44ecbb4-a883-4468-bddc-55964485529b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
@@ -134,8 +134,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->當Dispatcher陣列啟用工作階段管理時，不會快取陣列處理的所有頁面。 若要快取CUG以外的頁面，請在dispatcher.any中建立第二個陣列
->處理非CUG頁面的即時通訊協定。
+>當Dispatcher陣列啟用工作階段管理時，不會快取陣列處理的所有頁面。若要快取CUG以外的頁面，請在dispatcher.any>中建立第二個處理非CUG頁面的陣列。
 
 1. 定義`/directory`以設定[/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hant#enabling-secure-sessions-sessionmanagement)；例如：
 

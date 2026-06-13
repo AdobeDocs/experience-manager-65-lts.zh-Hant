@@ -7,7 +7,7 @@ role: User,Admin,Developer
 exl-id: 228c1ffb-91af-4f2e-82f8-1e570034f7ec
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '582'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 兩個頁面的來源會清楚顯示在瀏覽器視窗頂端的標題列中。
 
-標題![中顯示](assets/chlimage_1-109.png)Source
+標題![&#128279;](assets/chlimage_1-109.png)中顯示Source
 
 差異會偵測元件和HTML層級的變更。 已變更的專案會以不同的顏色反白。
 

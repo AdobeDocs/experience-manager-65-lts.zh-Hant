@@ -11,8 +11,8 @@ role: Admin
 exl-id: 1c437771-cec5-48b8-8d77-a66c269420ec
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 0%
+source-wordcount: '738'
+ht-degree: 1%
 
 ---
 
@@ -85,8 +85,7 @@ SSO驗證處理常式服務( `com.adobe.granite.auth.sso.impl.SsoAuthenticationH
 >* `disp_iis.ini`
 >* IIS
 >
->在`disp_iis.ini`集合中：
->(如需完整詳細資訊，請參閱[使用Microsoft® Internet Information Server安裝Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=zh-Hant#microsoft-internet-information-server))
+>在`disp_iis.ini`中，設定：>（如需完整詳細資訊，請參閱[使用® Internet Information Server安裝Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=zh-Hant#microsoft-internet-information-server)）
 >
 >* `servervariables=1` （將IIS伺服器變數作為要求標頭轉送給遠端執行個體）
 >* `replaceauthorization=1` (將任何名為「Authorization」的標頭（「Basic」以外的標頭取代為「Basic」的對等標頭）

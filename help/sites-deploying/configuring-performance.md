@@ -11,7 +11,7 @@ role: Admin
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
 source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '5053'
+source-wordcount: '5215'
 ht-degree: 16%
 
 ---
@@ -228,13 +228,13 @@ AEM的某些層面（和/或基礎存放庫）可設定為最佳化效能。 以
 
 #### 存放庫中的設定 {#configuration-in-the-repo}
 
-如果您使用sling[節點:OsgiConfig設定服務](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)，您必須找到現有服務的PID，例如： org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705。 您可以使用Web主控台探索PID。
+如果您使用sling:OsgiConfig節點[&#128279;](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)設定服務，您必須找到現有服務的PID，例如： org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705。 您可以使用Web主控台探索PID。
 
 設定名為`queue.maxparallel`的屬性。
 
 #### Web主控台中的設定 {#configuration-in-the-web-console}
 
-若要使用Web主控台[設定這些服務](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)，請在Apache Sling工作佇列設定服務工廠下找到現有的設定專案。
+若要使用Web主控台[&#128279;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)設定這些服務，請在Apache Sling工作佇列設定服務工廠下找到現有的設定專案。
 
 設定名為Maximum Parallel Jobs的屬性。
 
@@ -378,7 +378,7 @@ AEM的某些層面（和/或基礎存放庫）可設定為最佳化效能。 以
 
 在這兩種情況下，當預先定義的使用者數量使用系統時，您都可以定義每秒的預期交易數量。
 
-| 元件 | 測試型別 | 不行。個使用者的 | Tx/秒（預期） | Tx/秒（已測試） | 說明 |
+| 元件 | 測試型別 | 不行。 個使用者的 | Tx/秒（預期） | Tx/秒（已測試） | 說明 |
 |---|---|---|---|---|---|
 | 首頁單一使用者 | 平均 | 1 | 1 |  |  |
 |   | 尖峰 | 1 | 3 |  |  |
@@ -389,7 +389,7 @@ AEM的某些層面（和/或基礎存放庫）可設定為最佳化效能。 以
 
 組合測試元件可更密切地反映應用程式的行為。 必須再次測試平均值和尖峰狀況。
 
-| 情境 | 元件 | 不行。個使用者的 | Tx/秒（預期） | Tx/秒（已測試） | 說明 |
+| 情境 | 元件 | 不行。 個使用者的 | Tx/秒（預期） | Tx/秒（已測試） | 說明 |
 |---|---|---|---|---|---|
 | 混合平均 | 首頁 | 10 | 1 |  |  |
 |   | 搜尋 | 10 | 1 |  |  |
@@ -406,7 +406,7 @@ AEM的某些層面（和/或基礎存放庫）可設定為最佳化效能。 以
 
 在您網站推出後的前幾天，興趣可能會增加。 此情境甚至大於您正在測試的峰值。 Adobe建議您測試「上線」情境，確保系統可因應這種情況。
 
-| 情境 | 測試型別 | 不行。個使用者的 | Tx/秒（預期） | Tx/秒（已測試） | 說明 |
+| 情境 | 測試型別 | 不行。 個使用者的 | Tx/秒（預期） | Tx/秒（已測試） | 說明 |
 |---|---|---|---|---|---|
 | 正在上線尖峰 | 首頁 | 200 | 20 |  |  |
 |   | 搜尋 | 100 | 10 |  |  |
@@ -423,9 +423,9 @@ AEM的某些層面（和/或基礎存放庫）可設定為最佳化效能。 以
 
 設計這些測試時，請記得並非所有案例都會定期發生。 但是，它們對整個系統的影響很重要。
 
-| 錯誤案例 | 錯誤類型 | 不行。個使用者的 | Tx/秒（預期） | Tx/秒（已測試） | 說明 |
+| 錯誤案例 | 錯誤類型 | 不行。 個使用者的 | Tx/秒（預期） | Tx/秒（已測試） | 說明 |
 |---|---|---|---|---|---|
-| 搜尋元件超載 | 搜尋全域萬用字元（星號） | 10 | 1 |  | 只會搜尋&amp;amp；ast；&amp;amp；ast；&amp;amp；ast；。 |
+| 搜尋元件超載 | 搜尋全域萬用字元（星號） | 10 | 1 |  | 只搜尋&amp;ast；&amp;ast；&amp;ast；。 |
 |   | 停用詞 | 20 | 2 |  | 搜尋停用詞。 |
 |   | 空字串 | 10 | 1 |  | 正在搜尋空字串。 |
 |   | 特殊字元 | 10 | 1 |  | 正在搜尋特殊字元。 |
@@ -434,7 +434,7 @@ AEM的某些層面（和/或基礎存放庫）可設定為最佳化效能。 以
 
 只有在系統持續執行一段時間（小時或天）後，才會發生某些問題。 耐力測試是用來測試一段所需時間內的恆定平均負載。 然後可以分析任何效能降低。
 
-| 情境 | 測試型別 | 不行。個使用者的 | Tx/秒（預期） | Tx/秒（已測試） | 說明 |
+| 情境 | 測試型別 | 不行。 個使用者的 | Tx/秒（預期） | Tx/秒（已測試） | 說明 |
 |---|---|---|---|---|---|
 | 耐力測試（72小時） | 首頁 | 10 | 1 |  |  |
 |   | 搜尋 | 10 | 1 |  |  |
@@ -453,7 +453,7 @@ AEM的某些層面（和/或基礎存放庫）可設定為最佳化效能。 以
 
 您可利用一系列工具來協助您產生負載、監控效能及分析結果。 其中一些工具包括：
 
-* [JMeter](https://jmeter.apache.org/)
+* [Jmeter](https://jmeter.apache.org/)
 * [OpenText專業效能工程](https://www.opentext.com/products/professional-performance-engineering)。
 * [Java™互動式設定檔](https://jiprof.sourceforge.net/)
 
@@ -484,7 +484,7 @@ Dispatcher提供數個內建機制，方便您在網站運用時最佳化效能�
 
 >[!NOTE]
 >
->記住 Dispatcher 會將快取儲存在標準網頁伺服器上可能會有所幫助。知道這些資訊就表示您可以快取可以儲存為頁面並使用URL請求的所有內容。 此外，您無法儲存Cookie、工作階段資料和表單資料等其他資料。
+>記住 Dispatcher 會將快取儲存在標準網頁伺服器上可能會有所幫助。 知道這些資訊就表示您可以快取可以儲存為頁面並使用URL請求的所有內容。 此外，您無法儲存Cookie、工作階段資料和表單資料等其他資料。
 >
 >一般而言，許多快取策略與選取良好URL且不依賴這些額外資料有關。
 >
@@ -544,7 +544,7 @@ www.myCompany.com/pictures/gallery.christmas.1.html
 
 如果您允許使用者變更字體大小 (或是其他任何版面自訂內容)，請確定不同自訂內容會反映在 URL 中。
 
-例如，不會快取 Cookie，所以如果您將字體大小儲存在 Cookie (或類似機制) 中，將不會為快取頁面保留字體大小。因此，Dispatcher 會隨機傳回任何字體大小的文件。
+例如，不會快取 Cookie，所以如果您將字體大小儲存在 Cookie (或類似機制) 中，將不會為快取頁面保留字體大小。 因此，Dispatcher 會隨機傳回任何字體大小的文件。
 
 在 URL 中包含字體大小當作選擇器可避免這個問題：
 
@@ -554,7 +554,7 @@ www.myCompany.com/news/main.large.html
 
 >[!NOTE]
 >
->對於大多數版面方面，也可以使用樣式表或用戶端指令碼，或是兩者皆用。這些工具與快取搭配使用得很好。
+>對於大多數版面方面，也可以使用樣式表或用戶端指令碼，或是兩者皆用。 這些工具與快取搭配使用得很好。
 >
 >此策略對列印版本也很有用，您可以在其中使用URL，例如：
 >
@@ -579,7 +579,7 @@ www.myCompany.com/news/main.large.html
 
 #### 讓用於導覽的影像檔案失效 {#invalidating-image-files-used-for-navigation}
 
-如果您將圖片用於導覽專案，此方法基本上與標題相同，但稍微複雜一點。 將所有導覽影像與目標頁面一起儲存。如果您將兩張圖片用於一般和活躍情境，可以使用以下指令碼：
+如果您將圖片用於導覽專案，此方法基本上與標題相同，但稍微複雜一點。 將所有導覽影像與目標頁面一起儲存。 如果您將兩張圖片用於一般和活躍情境，可以使用以下指令碼：
 
 * 正常顯示頁面的指令碼。
 * 處理「.normal」請求並傳回正常圖片的指令碼。
@@ -612,7 +612,7 @@ www.myCompany.com/news/main.large.html
 
 #### 黏性連線 {#sticky-connections}
 
-[黏性連線](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant#the-benefits-of-load-balancing)可確保同一個使用者的文件都會在相同伺服器上編寫。如果使用者離開此資料夾並於稍後返回，連線仍然保持不變。若要保留所有需要網站的粘性連線的檔案，請定義一個資料夾。 試著不要將其他文件放在該資料夾中。如果您使用個人化頁面和工作階段資料，此案例會影響負載平衡。
+[黏性連線](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant#the-benefits-of-load-balancing)可確保同一個使用者的文件都會在相同伺服器上編寫。 如果使用者離開此資料夾並於稍後返回，連線仍然保持不變。 若要保留所有需要網站的粘性連線的檔案，請定義一個資料夾。 試著不要將其他文件放在該資料夾中。 如果您使用個人化頁面和工作階段資料，此案例會影響負載平衡。
 
 #### MIME 類型 {#mime-types}
 

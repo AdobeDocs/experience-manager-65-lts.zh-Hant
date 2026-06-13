@@ -13,7 +13,7 @@ exl-id: 34678cae-3c7f-4c9f-b7b6-c1dd4e0758ad
 index: false
 source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1106'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ AEM中提供的示範行銷活動會遵循所有這些最佳實務。 每個最�
 
 >[!NOTE]
 >
->所有行銷活動內容應建立於型別為`master`的`cq/personalization/components/ambitpage`頁面下。
+>所有行銷活動內容應建立於型別為`cq/personalization/components/ambitpage`的`master`頁面下。
 >
 >例如，如果您的計畫行銷活動結構類似於
 >

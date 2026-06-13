@@ -12,7 +12,7 @@ role: User,Admin,Developer
 exl-id: 281c96e2-24f8-4568-add2-67972148b406
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '2919'
+source-wordcount: '2951'
 ht-degree: 4%
 
 ---
@@ -268,7 +268,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 
 您如何[選取資源](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)取決於檢視。
 
-由於某些視窗的空間限制，工具列可能會很快變得比可用的空間長。發生此情況時，會出現其他選項。 按一下或點選省略符號（三個點或&#x200B;**...**）會開啟一個下拉式選取器，其中包含所有剩餘的動作。 例如，在Sites主控台中選取頁面 **後** :
+由於某些視窗的空間限制，工具列可能會很快變得比可用的空間長。 發生此情況時，會出現其他選項。 按一下或點選省略符號（三個點或&#x200B;**...**） 開啟一個下拉式選取器，其中包含所有剩餘的動作。 例如，在Sites主控台中選取頁面 **後** :
 
 ![動作工具列](assets/bh-12.png)
 
@@ -438,14 +438,14 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 
   ![卡片檢視 — 快速動作](assets/bh-13-1.png)
 
-* 您可以點選/按一下卡片來向下瀏覽樹狀結構（注意避免快速動作），或使用標頭[中的](/help/sites-authoring/basic-handling.md#the-header)階層連結來再次向上瀏覽。
+* 您可以點選/按一下卡片來向下瀏覽樹狀結構（注意避免快速動作），或使用標頭[&#128279;](/help/sites-authoring/basic-handling.md#the-header)中的階層連結來再次向上瀏覽。
 
 ### 清單檢視 {#list-view}
 
 ![清單檢視](assets/bh-19.png)
 
 * 清單檢視會列出目前層級中每個資源的資訊。
-* 您可以點選/按一下資源名稱，然後使用標頭[中的](/help/sites-authoring/basic-handling.md#the-header)階層連結進行備份，在樹狀結構中向下導覽。
+* 您可以點選/按一下資源名稱，然後使用標頭[&#128279;](/help/sites-authoring/basic-handling.md#the-header)中的階層連結進行備份，在樹狀結構中向下導覽。
 
 * 若要輕鬆選取清單中的所有專案，請使用清單左上方的核取方塊。
 
@@ -543,7 +543,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 
       * 並全部顯示
 
-* [新增/檢視所選專案的相關註解](#timelineaddingandviewingcomments)。 「注 **釋** 」方塊會顯示在事件清單的底部。鍵入評論後跟回車可註冊該評論。 當選取「注 **釋** 」或「 **全部顯示** 」時顯示。
+* [新增/檢視所選專案的相關註解](#timelineaddingandviewingcomments)。 「注 **釋** 」方塊會顯示在事件清單的底部。 鍵入評論後跟回車可註冊該評論。 當選取「注 **釋** 」或「 **全部顯示** 」時顯示。
 
 * 特定的主控台具有其他功能。 例如，在Sites主控台中，您可以執行以下操作：
 

@@ -11,7 +11,7 @@ role: Admin
 exl-id: c83fcf96-cc45-40a0-9a50-c60406096de1
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1298'
 ht-degree: 9%
 
 ---
@@ -26,9 +26,9 @@ ht-degree: 9%
 
 ## 必要條件和假設 {#prerequisites-and-assumptions}
 
-假設在指定頁面(AEM主控台或網頁)上發現效能問題，且可一致地重現。 在開始調查之前，必須先有測試或監控效能的方法。
+假設在指定頁面（AEM主控台或網頁）上發現效能問題，且可一致地重現。 在開始調查之前，必須先有測試或監控效能的方法。
 
-分析從步驟0開始。 目標是要判斷造成效能問題的實體(Dispatcher、外部主機或AEM)，然後判斷應調查哪些區域（伺服器或網路）。
+分析從步驟0開始。 目標是要判斷造成效能問題的實體（Dispatcher、外部主機或AEM），然後判斷應調查哪些區域（伺服器或網路）。
 
 ### 區段 1 {#section}
 
@@ -241,12 +241,12 @@ ht-degree: 9%
     <ol>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant">一般Dispatcher設定</a></li>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hant#configuring-the-dispatcher-cache-cache">設定Dispatcher快取</a></li>
-    </ol> <p>如何改善快取比率；使請求可快取(Dispatcher最佳實務)</p> <p>此外，請考慮下列設定以最佳化您的快取設定<br /> </p>
+    </ol> <p>如何改善快取比率；使請求可快取（Dispatcher最佳實務）</p> <p>此外，請考慮下列設定以最佳化您的快取設定<br /> </p>
     <ol>
      <li>為非GET的HTTP請求設定無快取規則</li>
      <li>設定查詢字串為不可快取</li>
      <li>不要快取缺少副檔名的URL</li>
-     <li>快取驗證標題(自Dispatcher 4.1.10版之後可能提供)</li>
+     <li>快取驗證標題（自Dispatcher 4.1.10版之後可能提供）</li>
     </ol> </td>
   </tr>
   <tr>
@@ -256,7 +256,7 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><strong>步驟 35</strong></td>
-   <td>設定Dispatcher</td>
+   <td>設定 Dispatcher</td>
    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hant">設定Dispatcher</a><br /> </td>
   </tr>
   <tr>

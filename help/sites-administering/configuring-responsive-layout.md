@@ -9,7 +9,7 @@ role: Admin
 exl-id: 413f15c9-5b51-4d8d-8cf0-3e98608b9d9e
 source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -135,7 +135,7 @@ AEM使用多種機制組合，為您的頁面實現回應式佈局：
 
 #### 使用XML設定中斷點 {#configuring-breakpoints-using-xml}
 
-中斷點位於`<jcr:content>`的`.context.html`區段內，在適當的範本（或內容）資料夾下。
+中斷點位於`.context.html`的`<jcr:content>`區段內，在適當的範本（或內容）資料夾下。
 
 範例定義：
 
@@ -227,7 +227,7 @@ AEM使用LESS來產生必要CSS的部分，這些需要包含在您的專案中�
 
 #### 樣式考量事項 {#styling-considerations}
 
-保持在回應式容器中的元件會根據回應式格線大小調整大小(連同其各自的HTML DOM元素)。 因此，在這些情況下，建議避免（或更新）固定寬度（包含） DOM元素的定義。
+保持在回應式容器中的元件會根據回應式格線大小調整大小（連同其各自的HTML DOM元素）。 因此，在這些情況下，建議避免（或更新）固定寬度（包含） DOM元素的定義。
 
 例如：
 
@@ -249,7 +249,7 @@ AEM使用LESS來產生必要CSS的部分，這些需要包含在您的專案中�
 
 * `afterchildedit`
 
-若要正確調整回應式格線中所包含的最適化影像內容大小並加以更新，您必須將設為`afterEdit`的`REFRESH_PAGE`接聽程式新增至每個所包含元件的`EditConfig`檔案。
+若要正確調整回應式格線中所包含的最適化影像內容大小並加以更新，您必須將設為`REFRESH_PAGE`的`afterEdit`接聽程式新增至每個所包含元件的`EditConfig`檔案。
 
 例如：
 
@@ -309,7 +309,7 @@ AEM使用LESS來產生必要CSS的部分，這些需要包含在您的專案中�
 
 當您無法避免使用巢狀回應式格點時，請確定：
 
-* 所有容器（容器、標籤、摺疊式功能表等）都有屬性`layout = responsiveGrid`。
+* 所有容器（容器、標籤、摺疊式功能表等） 擁有屬性`layout = responsiveGrid`。
 * 請勿在容器階層中混合屬性`layout = simple`。
 
 這包括頁面範本中的所有結構容器。
