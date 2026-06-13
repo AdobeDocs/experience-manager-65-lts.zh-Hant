@@ -21,7 +21,7 @@ ht-degree: 81%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/add-custom-error-handler-adaptive-forms-core-components.html)上的AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/add-custom-error-handler-adaptive-forms-core-components.html?lang=zh-Hant)上的AEM Forms 。
 
 AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。 這還可提供自訂錯誤處理常式函數的功能。 例如，您可以針對特定錯誤程式碼在後端叫用自訂的工作流程，或通知客戶服務已關閉。 處理常式是根據伺服器回應執行的用戶端函數。 當使用 API 調用外部服務時，資料會傳輸至伺服器進行驗證，伺服器會向用戶端傳回回應，其中包含有關提交成功或錯誤事件的資訊。 這項資訊可以參數傳遞至相關處理常式以執行該函數。 錯誤處理常式有助於管理和顯示遇到的錯誤或驗證問題。
 
@@ -171,7 +171,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。 這
 在最適化Forms中使用錯誤處理常式之前：
 
 * [為您的環境啟用最適化Forms核心元件](enable-adaptive-forms-core-components.md)。
-* [建立自訂函式](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.)的基本知識。
+* [建立自訂函式](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=zh-Hant#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.)的基本知識。
 * 安裝最新版的[Apache Maven](https://maven.apache.org/download.cgi)。
 
 ## 使用規則編輯器新增錯誤處理常式 {#add-error-handler-using-rule-editor}

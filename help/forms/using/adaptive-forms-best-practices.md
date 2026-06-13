@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 使用最適化表單的最佳作法 {#best-practices-for-working-with-adaptive-forms}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/introduction)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
 ## 概觀 {#overview}
 
@@ -96,7 +96,7 @@ Adobe Experience Manager (AEM)表單可協助您將複雜的交易轉換為簡�
 
 ### 建立表單範本
 
-您可以使用&#x200B;**設定瀏覽器**&#x200B;中啟用的表單範本來建立最適化表單。 若要啟用表單範本，請參閱[建立最適化表單範本](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template)。
+您可以使用&#x200B;**設定瀏覽器**&#x200B;中啟用的表單範本來建立最適化表單。 若要啟用表單範本，請參閱[建立最適化表單範本](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template)。
 
 表單範本也可以從其他作者電腦上建立的最適化表單套件上傳。 透過安裝[aemforms-references-*封裝](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)，即可使用表單範本。 建議的一些最佳實務如下：
 
@@ -320,7 +320,7 @@ AEM提供翻譯工作流程，您可用來將最適化表單當地語系化。 �
 設定AEM以改善整體效能的一些最佳實務如下：
 
 * 從Felix主控台啟用適用於JavaScript和CSS的HTML使用者端程式庫壓縮。
-* 快取`/etc.clientlibs/fd`的所有使用者端資料庫，以及AEM Dispatcher上的任何其他自訂使用者端資料庫，以提高您發佈表單的回應速度與安全性。 如需詳細資訊，請參閱[Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)。
+* 快取`/etc.clientlibs/fd`的所有使用者端資料庫，以及AEM Dispatcher上的任何其他自訂使用者端資料庫，以提高您發佈表單的回應速度與安全性。 如需詳細資訊，請參閱[Dispatcher](https://helpx.adobe.com/tw/experience-manager/dispatcher/using/dispatcher.html)。
 
 * 不要快取`/content/forms/af/`和`/content/dam/formsanddocuments/*`路徑。 如需設定最適化表單快取的詳細資訊，請參閱[快取最適化表單](/help/forms/using/configure-adaptive-forms-cache.md)。
 
