@@ -10,7 +10,7 @@ role: Admin, User, Developer
 exl-id: 1f6263f5-e4fb-44c2-a1d2-6046e9d69a48
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 概觀 {#overview}
 
-轉換PDF服務會將PDF檔案轉換為PostScript或影像檔案(JPEG、JPEG 2000、PNG和TIFF)。 將PDF檔案轉換為PostScript對於任何PostScript印表機上的自動伺服器式列印都很有用。 在不支援PDF檔案的內容管理系統中封存檔案時，將PDF檔案轉換為多頁TIFF檔案是可行的。
+轉換PDF服務會將PDF檔案轉換為PostScript或影像檔案（JPEG、JPEG 2000、PNG和TIFF）。 將PDF檔案轉換為PostScript對於任何PostScript印表機上的自動伺服器式列印都很有用。 在不支援PDF檔案的內容管理系統中封存檔案時，將PDF檔案轉換為多頁TIFF檔案是可行的。
 
 您可以使用轉換PDF服務來達成下列目標：
 

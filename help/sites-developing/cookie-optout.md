@@ -11,7 +11,7 @@ role: Developer
 exl-id: 219555d8-26e1-4047-b885-ec34084154c1
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ AEM提供的服務可讓您設定和控制Cookie在網頁中的使用方式：
 
 若要設定服務，您可以使用[網頁主控台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)或[新增OSGi設定到存放庫](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)。 下表說明任一方法所需的特性。 對於OSGi設定，服務PID為`com.adobe.granite.optout`。
 
-| 屬性名稱（Web主控台） | OSGi屬性名稱 | 描述 |
+| 屬性名稱（Web主控台） | OSGi屬性名稱 | 說明 |
 |---|---|---|
 | 選擇退出Cookie | optout.cookies | Cookie的名稱，當顯示在使用者的裝置上時，表示使用者尚未同意使用Cookie。 |
 | 選擇退出HTTP標題 | optout.headers | 表示使用者尚未同意使用Cookie的HTTP標頭名稱（如果存在）。 |
