@@ -11,8 +11,8 @@ role: Admin
 exl-id: 3ef72c05-1301-402e-94ce-49fbaf26fb98
 source-git-commit: aff6c41e13293a1c83eca226354f5c16cff18d99
 workflow-type: tm+mt
-source-wordcount: '2147'
-ht-degree: 8%
+source-wordcount: '2175'
+ht-degree: 9%
 
 ---
 
@@ -204,9 +204,9 @@ subject=<text_1>
 >
 >其中`<text_x>`可以是靜態文字和動態字串變數的混合。 `<text_x>`專案的每一行都必須以反斜線( `\`)結尾，但最後一個執行個體除外，因為反斜線的缺位代表`<text_x>`字串變數的結尾。
 >
->您可以在Properties.load() [&#128279;](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-)方法的javadocs中找到範本格式的詳細資訊。
+>您可以在Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-)方法的[javadocs中找到範本格式的詳細資訊。
 
-方法`${payload.path.open}`會顯示工作專案裝載的路徑。 例如，若為Sites中的頁面，則`payload.path.open`會類似於`/bin/wcmcommand?cmd=open&path=…`。；這沒有伺服器名稱，因此範本會在它前面加上`${host.prefix}`。
+方法`${payload.path.open}`會顯示工作專案裝載的路徑。 例如，若為Sites中的頁面，則`payload.path.open`會類似於`/bin/wcmcommand?cmd=open&path=…`.；這沒有伺服器名稱，因此範本會在它前面加上`${host.prefix}`。
 
 下列變數可用於電子郵件範本中：
 
@@ -261,7 +261,7 @@ subject=<text_1>
 
 1. 設定電子郵件服務，如[設定郵件服務](/help/sites-administering/notification.md#configuring-the-mail-service)中所述。
 1. 以管理員身分登入AEM。 按一下&#x200B;**工具** > **作業** > **網頁主控台**&#x200B;以開啟Web主控台設定。
-1. 編輯&#x200B;**Day CQ DAM資源集合Servlet**。 選取&#x200B;**傳送電子郵件**。 按一下「**儲存**」。
+1. 編輯&#x200B;**Day CQ DAM資源集合Servlet**。 選取&#x200B;**傳送電子郵件**。 按一下&#x200B;**儲存**。
 
 ## 設定OAuth {#setting-up-oauth}
 
@@ -319,7 +319,7 @@ AEM為其整合的郵件程式服務提供OAuth2支援，以允許組織遵守�
    * 使用者端ID和使用者端密碼：使用您擷取的值（如上段所述）設定這些欄位。
    * 重新整理權杖URL： `https://accounts.google.com/o/oauth2/token`
    * 重新整理Token到期日：永不
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
 <!-- clarify refresh token expiry, currently not present in the UI -->
 
@@ -350,7 +350,7 @@ AEM為其整合的郵件程式服務提供OAuth2支援，以允許組織遵守�
 ### Microsoft Outlook {#microsoft-outlook}
 
 1. 前往 [https://portal.azure.com/](https://portal.azure.com/) 並登入。
-1. 在搜尋列中搜尋 **Azure Active Directory**，然後按一下結果。或者，您可以直接瀏覽到 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+1. 在搜尋列中搜尋 **Azure Active Directory**，然後按一下結果。 或者，您可以直接瀏覽到 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. 按一下「**應用程式註冊** - **新註冊**」
 
    ![設定Microsoft Outlook時的新註冊按鈕](assets/oauth-outlook1.png)
@@ -410,7 +410,7 @@ AEM為其整合的郵件程式服務提供OAuth2支援，以允許組織遵守�
       * `https://outlook.office365.com/SMTP.Send`
    * AuthCode重新導向Url： `http://localhost:4503/services/mailer/oauth2/token`
    * 重新整理記號URL：這應該與上述記號URL的值相同
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
 設定完成後，設定應該如下所示：
 

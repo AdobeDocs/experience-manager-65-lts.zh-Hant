@@ -12,7 +12,7 @@ role: Developer
 exl-id: b60b198e-1683-4970-b9b4-f1d0178e00e1
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2117'
+source-wordcount: '2207'
 ht-degree: 1%
 
 ---
@@ -33,12 +33,12 @@ Adobe Experience Manager (AEM)提供觸控式UI，其中[回應式設計](/help/
    * 提供其他一般動作的連結；例如搜尋、說明、Experience Cloud解決方案、通知和使用者設定。
 * 左側邊欄（需要時顯示且可隱藏），其中可顯示：
    * 時間軸
-   * 參考
-   * 篩選條件
+   * 參照
+   * 篩選器
 * 導覽標頭(同樣是內容感應式，可顯示：
    * 指出您目前正在使用哪個主控台，或您的位置，或同時使用兩者
    * 左側邊欄的選取專案
-   * 導覽列
+   * 階層連結
    * 存取適當的&#x200B;**建立**&#x200B;動作
    * 檢視選取專案
 * 內容區域：
@@ -241,14 +241,14 @@ Granite UI和ExtJS （用於傳統UI）之間的差異也令人感興趣：
 | `pathfield, paragraphreference` | `granite/ui/components/foundation/form/pathbrowser` |
 | `selection` | `granite/ui/components/foundation/form/select` |
 | `sizefield` | `cq/gui/components/authoring/dialog/sizefield` |
-| `tags` | `granite/ui/components/foundation/form/autocomplete` `cq/gui/components/common/datasources/tags` |
+| `tags` | `granite/ui/components/foundation/form/autocomplete``cq/gui/components/common/datasources/tags` |
 | `textarea` | `granite/ui/components/foundation/form/textarea` |
 | `textfield` | `granite/ui/components/foundation/form/textfield` |
 
 | **節點型別** | **Granite UI資源型別** |
 |---|---|
 | `cq:WidgetCollection` | `granite/ui/components/foundation/container` |
-| `cq:TabPanel` | `granite/ui/components/foundation/container` `granite/ui/components/foundation/layouts/tabs` |
+| `cq:TabPanel` | `granite/ui/components/foundation/container``granite/ui/components/foundation/layouts/tabs` |
 | `cq:panel` | `granite/ui/components/foundation/container` |
 
 ### Granite UI管理元件 {#granite-ui-administration-components}

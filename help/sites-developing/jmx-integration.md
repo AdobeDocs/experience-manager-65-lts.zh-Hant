@@ -9,7 +9,7 @@ role: Developer
 exl-id: ca929fe7-8393-42df-983d-e2005d8434ac
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1671'
 ht-degree: 0%
 
 ---
@@ -431,7 +431,7 @@ public class WorkflowMBeanManagerImpl implements WorkflowMBeanManager {
 * Apache Felix Maven套件組合外掛程式：建立套件組合和資訊清單
 * Apache Felix Maven SCR外掛程式：建立元件描述元檔案並設定服務元件資訊清單標頭。
 
-**注意：**&#x200B;在撰寫時，maven scr外掛程式與Eclipse的m2e外掛程式不相容。 （請參閱[Felix錯誤3170](https://issues.apache.org/jira/browse/FELIX-3170)。）若要使用Eclipse IDE，請安裝Maven並使用命令列介面來執行組建。
+**注意：**&#x200B;在撰寫時，maven scr外掛程式與Eclipse的m2e外掛程式不相容。 （請參閱[Felix錯誤3170](https://issues.apache.org/jira/browse/FELIX-3170)。） 若要使用Eclipse IDE，請安裝Maven並使用命令列介面執行建置。
 
 #### 範例POM檔案 {#example-pom-file}
 
