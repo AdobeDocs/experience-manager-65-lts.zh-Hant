@@ -21,7 +21,7 @@ ht-degree: 5%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/transaction-reports-billable-apis)上的[AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/transaction-reports-billable-apis)上的AEM Forms 。
 
 AEM Forms提供多個API來提交表單、處理檔案和轉譯檔案。 有些API是以交易入帳，其他則可供自由使用。 本檔案提供在交易報表中作為交易入帳的所有API清單。 以下是一些使用計費API的常見案例：
 
