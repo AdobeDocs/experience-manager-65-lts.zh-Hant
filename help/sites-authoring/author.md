@@ -7,8 +7,8 @@ role: User,Admin,Developer
 exl-id: 314a6c65-9b90-4f4c-9e4a-d551dbb646e9
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 1%
+source-wordcount: '430'
+ht-degree: 3%
 
 ---
 
@@ -70,15 +70,15 @@ AEM提供您兩個環境：
 >不幸的是，使用的術語有時會出現重疊。 這可能發生在以下情況中：
 >
 >* **發佈/取消發佈**
->  這些是讓您的內容在發佈環境中公開使用（或不公開使用）的動作主要詞語。
+>  這些是讓您的內容在發佈環境中公開使用（或不公開使用）之動作的主要辭彙。
 >
 >* **啟用/停用**
 >  這些辭彙與發佈/取消發佈同義。
 >
 >* **復寫/復寫**
->  這些是技術術語，用於表示資料（例如頁面內容、檔案、程式碼、使用者註解）從一個環境移動到另一個環境；即在發佈或反向複製使用者註解時。
+>  這些是技術術語，用於表示資料（例如頁面內容、檔案、程式碼、使用者註解）從一個環境移動到另一個環境；亦即發佈或反向複製使用者註解時。
 >
 
 #### Dispatcher {#dispatcher}
 
-為了最佳化網站訪客的效能，**[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)**&#x200B;實作負載平衡和快取。
+為了最佳化網站訪客的效能，**[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)**&#x200B;實作負載平衡和快取。
