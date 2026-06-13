@@ -1,14 +1,14 @@
 ---
 title: AEM Forms簡介
-description: 使用此 AEM 6.5 LTS 指南建立、管理、發佈和更新數位表單。尋找有關如何進行安裝、升級和設定的說明，並了解如何編寫自適應表單。
+description: 使用此 AEM 6.5 LTS 指南建立、管理、發佈和更新數位表單。 尋找有關如何進行安裝、升級和設定的說明，並了解如何編寫自適應表單。
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: e9549ac9-0ada-4661-969a-709f0ed3b133
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 14%
+source-wordcount: '984'
+ht-degree: 17%
 
 ---
 
@@ -18,21 +18,21 @@ ht-degree: 14%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=zh-Hant)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html)上的[AEM Forms 。
 
 ## 關於AEM Forms {#about-aem-forms}
 
-Adobe Experience Manager (AEM)提供易用的解決方案，用於建立、管理、發佈和更新複雜的數位表格，同時與後端流程、商業規則和資料整合。
+Adobe Experience Manager (AEM) 是一項簡單易用的解決方案，其整合後端流程、業務規則及資料，可用來建立、管理、發佈和更新複雜的數位表單。
 
 AEM Forms結合表單製作、管理和發佈，以及通訊管理功能、檔案安全性和整合式分析，以建立吸引人的端對端體驗。 AEM Forms可在網路和行動裝置通路間運作，因此可有效整合至您的業務流程，減少紙張流程和錯誤，同時提升效率。
 
-在大型企業中，表單通常是建立一次並透過複製到內容管理系統來重複使用。讓大型的表單資料庫保持最新狀態，並讓這些表單可供探索，是一項相當艱鉅的挑戰。 AEM提供可自訂的Forms入口網站，確保客戶可透過網頁和行動裝置管道找到並存取所需的表單。
+在大型企業中，表單通常是建立一次並透過複製到內容管理系統來重複使用。 讓大型的表單資料庫保持最新狀態，並讓這些表單可供探索，是一項相當艱鉅的挑戰。 AEM提供可自訂的Forms入口網站，確保客戶可透過網頁和行動裝置管道找到並存取所需的表單。
 
 AEM Forms提供的表單管理工具不僅可讓您管理最適化表單，還可管理XFA表單、PDF forms和相關資產。 如需詳細資訊，請參閱[管理表單簡介](../../forms/using/introduction-managing-forms.md)。
 
 >[!NOTE]
 >
->調適型表單功能 (適用於 [AEM 6.5 QuickStart](/help/sites-deploying/deploy.md)) 僅用於探索和評估目的。若要供生產使用，必須獲得 AEM Forms 的有效許可；調適型表單的功能需要適當許可才可使用。
+>調適型表單功能 (適用於 [AEM 6.5 QuickStart](/help/sites-deploying/deploy.md)) 僅用於探索和評估目的。 若要供生產使用，必須獲得 AEM Forms 的有效許可；調適型表單的功能需要適當許可才可使用。
 
 ![AEM表單功能](do-not-localize/4th-draft-updated.gif)
 
@@ -102,7 +102,7 @@ AEM Forms提供Forms Workspace，此行動應用程式可將您的數位業務�
 
 ## 個人化通訊 {#personalized-communication}
 
-高效率自助服務數位體驗的一個重要組成元件是及時通訊，使用者可以從任何地方在任何裝置上存取個人化的資訊。個人化和及時的通訊可以提高轉換率和使用者滿意度。
+高效率自助服務數位體驗的一個重要組成元件是及時通訊，使用者可以從任何地方在任何裝置上存取個人化的資訊。 個人化和及時的通訊可以提高轉換率和使用者滿意度。
 
 商業使用者可以使用AEM Forms自訂檔案範本、合併後端程式的資訊，並包含互動式元件，藉此建立引人入勝的個人化使用者體驗。 直覺式使用者介面可協助非技術使用者開發商業規則，以根據查詢來決定何時產生通訊，或起始使用者產生的回應。
 

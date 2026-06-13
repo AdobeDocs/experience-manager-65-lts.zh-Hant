@@ -12,7 +12,7 @@ hide: true
 exl-id: 11a7278e-efaa-402c-8add-5280bf5a156a
 source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
-source-wordcount: '2507'
+source-wordcount: '2399'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 0%
 
   如果以HTTP POST方法叫用Froms服務，引數會在HTTP要求內文中傳遞。 如果AEM Forms服務的簽章有字串輸入引數，請求內文可包含輸入引數的文字值。 如果服務的簽章定義了多個字串引數，則請求可以遵循HTTP的`application/x-www-form-urlencoded`標籤法，以引數名稱作為表單的欄位名稱。
 
-  如果Forms服務傳回字串引數，結果會是輸出引數的文字表示法。 如果服務傳回多個字串引數，結果會產生XML檔案，以下列格式編碼輸出引數：
+  如果Forms服務傳回字串引數，結果會是輸出引數的文字表示法。如果服務傳回多個字串引數，結果會產生XML檔案，以下列格式編碼輸出引數：
   ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`
 
   >[!NOTE]
@@ -85,7 +85,7 @@ ht-degree: 0%
 * 指向檔案內容的URL （如果清單包含`com.adobe.idp.Document`個物件）
 
   下列範例是服務傳回的XML訊息，其單一輸出引數名為&#x200B;*list*，為整數清單。
-  ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`輸出map引數在產生的XML訊息中以一系列XML元素表示，對應中的每個記錄都有一個元素。 每個元素的名稱都和對應記錄的鍵相同。 每個元素的值是對應記錄值的文字表示（如果對應包含具有字串值的記錄）或指向檔案內容的URL （如果對應包含具有`com.adobe.idp.Document`值的記錄）。 以下是服務傳回的XML訊息範例，此服務具有名為`map`的單一輸出引數。 此引數值是由字母與`com.adobe.idp.Document`物件關聯的記錄所組成的對映。
+  ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`輸出map引數在產生的XML訊息中以一系列XML元素表示，對應中的每個記錄都有一個元素。每個元素的名稱都和對應記錄的鍵相同。每個元素的值是對應記錄值的文字表示（如果對應包含具有字串值的記錄）或指向檔案內容的URL （如果對應包含具有`com.adobe.idp.Document`值的記錄）。以下是服務傳回的XML訊息範例，此服務具有名為`map`的單一輸出引數。此引數值是由字母與`com.adobe.idp.Document`物件關聯的記錄所組成的對映。
   ` <result>   http://localhost:8080/DocumentManager/docm123/4567   . . .   <Z>http://localhost:8080/DocumentManager/docm987/6543</Z>  </result>  `
 
 ## 非同步叫用 {#asynchronous-invocations}

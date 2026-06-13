@@ -1,5 +1,5 @@
 ---
-title: Document Security | 處理使用者資料
+title: Document Security |處理使用者資料
 description: 瞭解AEM Forms Document Security如何讓您管理使用者資料和資料儲存，以及存取、刪除和匯出使用者資料。
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,12 +9,12 @@ feature: Document Security,Adaptive Forms
 exl-id: c619a3b8-cd06-4f5d-af20-67f3a4bfcdce
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
 
-# Document Security | 處理使用者資料 {#document-security-handling-user-data}
+# Document Security |處理使用者資料 {#document-security-handling-user-data}
 
 AEM Forms document security可讓您建立、儲存及套用預先定義的安全性設定至您的檔案。 可確保只有授權的使用者才能使用檔案。 您可以使用原則來保護檔案。 原則是包含安全性設定和授權使用者清單的資訊集合。 您可以將原則套用至一或多個檔案，並授權新增至AEM Forms JEE使用者管理中的使用者。
 
@@ -30,7 +30,7 @@ Document Security會將與受保護檔案相關的原則和資料（包括資料
  <tbody>
   <tr>
    <td>資料庫表格</td>
-   <td>描述</td>
+   <td>說明</td>
   </tr>
   <tr>
    <td><code>EdcPrincipalKeyEntity</code></td>
@@ -69,7 +69,7 @@ Document Security會將與受保護檔案相關的原則和資料（包括資料
    <td>儲存已封存原則的相關資訊。 封存的原則包含其原則XML儲存為Blob物件。</td>
   </tr>
   <tr>
-   <td><p><code>EdcPolicySetPrincipalEntity</code></p> <p><code>EdcPolicySetPrincipalEnt</code><br /> (Oracle和MS® SQL資料庫)</p> </td>
+   <td><p><code>EdcPolicySetPrincipalEntity</code></p> <p><code>EdcPolicySetPrincipalEnt</code><br /> （Oracle和MS® SQL資料庫）</p> </td>
    <td>儲存原則集和使用者之間的對應。</td>
   </tr>
   <tr>
@@ -99,7 +99,7 @@ select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_
 
 >[!NOTE]
 >
->下列命令使用My SQL和IBM® DB2®資料庫中的資料庫表格名稱。 在Oracle和MS® SQL資料庫上執行這些命令時，請將`EdcPolicySetPrincipalEntity`取代為命令中的`EdcPolicySetPrincipalEnt`。
+>下列命令使用My SQL和® DB2®資料庫中的資料庫表格名稱。 在Oracle和MS® SQL資料庫上執行這些命令時，請將`EdcPolicySetPrincipalEntity`取代為命令中的`EdcPolicySetPrincipalEnt`。
 
 ```sql
 Select * from EdcPrincipalKeyEntity where principalid = '<principal_id>';
@@ -209,5 +209,5 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
    >
    >管理員可以使用管理主控台，從&#x200B;**[!UICONTROL 服務>檔案安全性>我的原則]**&#x200B;中的其他使用者的個人原則搜尋、存取和刪除使用者資料。
 
-1. 從使用者管理資料庫刪除主體ID的資料。 如需詳細步驟，請參閱[Forms使用者管理 | 正在處理使用者資料](/help/forms/using/user-management-handling-user-data.md)。
+1. 從使用者管理資料庫刪除主體ID的資料。 如需詳細步驟，請參閱[Forms使用者管理 |正在處理使用者資料](/help/forms/using/user-management-handling-user-data.md)。
 1. 啟動AEM Forms伺服器。

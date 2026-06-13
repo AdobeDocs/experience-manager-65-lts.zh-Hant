@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: 2d05a36e-c02e-41ef-a03d-2a799aa6eab3
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1670'
 ht-degree: 0%
 
 ---
@@ -180,7 +180,7 @@ AEM Forms可讓您在文字模組中使用內嵌條件，根據與表單資料�
    ${DD_creditcard_TransactionAmount > 0.5}
    ```
 
-   否則，如果您不需要選擇性地呈現資訊（此處為交易），請刪除對話方塊中的下列專案，讓條件保持空白： `${}`。 當重複運算式視窗空白（不需要重複時沒有${}）或包含有效的重複條件時，會啟用儲存重複運算式。
+   否則，如果您不需要選擇性地呈現資訊（此處為交易），請刪除對話方塊中的下列專案，讓條件保持空白： `${}`。 當重複運算式視窗為空白（不需要重複時沒有${}）或包含有效的重複條件時，會啟用儲存重複運算式。
 
 1. 選取用於格式化動態文字的分隔符號，並選取核取標籤以儲存：
 
@@ -200,7 +200,7 @@ AEM Forms可讓您在文字模組中使用內嵌條件，根據與表單資料�
    * 根據相關資料字典建立的範例XML資料檔案，同時預覽包含範例資料的字母。
    * 附加到相關資料字典的XML資料檔案。
 
-   如需詳細資訊，請參閱[資料字典](https://helpx.adobe.com/tw/aem-forms/6-2/data-dictionary.html)。
+   如需詳細資訊，請參閱[資料字典](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html)。
 
    ![6_repeatoutputpreview](assets/6_repeatoutputpreview.png)
 
