@@ -20,7 +20,7 @@ ht-degree: 0%
 
 本頁說明Adobe Experience Manager (AEM)可用的所有xtype。
 
-在ExtJS語言中，xtype是指定給類別的符號名稱。 您可以閱讀ExtJS 2](https://docs.sencha.com/)的[總覽的「元件XTypes」段落，以取得有關什麼是xtype以及如何使用的詳細說明。
+在ExtJS語言中，xtype是指定給類別的符號名稱。 您可以閱讀ExtJS 2[&#128279;](https://docs.sencha.com/)的總覽的「元件XTypes」段落，以取得有關什麼是xtype以及如何使用的詳細說明。
 
 如需AEM中所有可用Widget的詳細資訊，請參閱[Widget API檔案](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)。
 
