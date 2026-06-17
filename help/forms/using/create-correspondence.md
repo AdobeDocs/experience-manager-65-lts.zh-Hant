@@ -10,7 +10,7 @@ role: Admin, User, Developer
 exl-id: cb6528fd-6761-412d-8413-c72049acf91d
 source-git-commit: d9eb2edf01200b575c6f99a47e5c010e3b3ca28a
 workflow-type: tm+mt
-source-wordcount: '3805'
+source-wordcount: '3848'
 ht-degree: 0%
 
 ---
@@ -133,7 +133,7 @@ ht-degree: 0%
 
    ![letterbackgroundcolor](assets/letterbackgroundcolor.png)
 
-   您可以直接選取[基本色彩]調色盤中的基本色彩`**[A]**`，或在使用滑桿`**[B]**`選擇適當的色彩陰影后選取[選取]**&#x200B;**。
+   您可以直接選取[基本色彩]調色盤中的基本色彩`**[A]**`，或在使用滑桿`**[B]**`選擇適當的色彩陰影后選取[選取]&#x200B;**&#x200B;**。
 
    或者，您也可以移至[進階]索引標籤，選取適當的[色相]、[明度]和[飽和度] `**[C]**`來建立精確色彩，然後選取[選取] `**[D]**`來套用色彩以反白顯示文字。
 
@@ -225,7 +225,7 @@ ht-degree: 0%
 
 1. 視需要在「內容」標籤中編輯內容模組。 若要將焦點置於內容階層中的相關內容模組，您可以在信函預覽中選取相關行或段落，或直接在內容階層中選取內容模組。
 
-   例如，在下圖中選取「允許我們存取……」行，並在「內容」標籤中選取對應的內容模組。
+   例如，「允許我們存取……」這一行 在下圖中選取，並在「內容」標籤中選取對應的內容模組。
 
    點選「內容」(![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png))中的「反白選取的模組」，可以停用或啟用在信函預覽中點選相關文字、段落或資料欄位時，在「內容」標籤中反白選取的內容模組的功能。
 
@@ -285,7 +285,7 @@ ht-degree: 0%
 
 在發佈執行個體上發佈信函或儲存草稿之前，請在作者和發佈執行個體上執行以下步驟，以啟用「另存為草稿」功能：
 
-依預設，*cq：lastReplicationAction*、*cq：lastreplicated*&#x200B;和&#x200B;*cq：lastReplicatedBy*&#x200B;屬性不會移轉至發佈執行個體。 若要將&#x200B;*cq：lastReplicationAction*、*cq：lastreplicated*&#x200B;和&#x200B;*cq：lastReplicatedBy*&#x200B;屬性結轉到發佈執行個體，請停用[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]元件。 若要停用元件：
+依預設，*cq:lastReplicationAction*、*cq:lastreplicated*&#x200B;和&#x200B;*cq:lastReplicatedBy*&#x200B;屬性不會移轉至發佈執行個體。 若要將&#x200B;*cq:lastReplicationAction*、*cq:lastreplicated*&#x200B;和&#x200B;*cq:lastReplicatedBy*&#x200B;屬性結轉到發佈執行個體，請停用[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]元件。 若要停用元件：
 
 1. 在作者執行個體上，開啟Adobe Experience Manager Web主控台元件主控台。 預設URL為`http://author-server:port/system/console/components`
 
@@ -377,4 +377,4 @@ AEM Forms Correspondence Management在建立通訊UI中將信件顯示為HTML。
 
 1. 前往`https://[system]:'port'/system/console/configMgr`，並在必要時以管理員身分登入。
 1. 移至&#x200B;**[!UICONTROL 通訊管理設定]** > **[!UICONTROL 轉譯型別]**&#x200B;並選取&#x200B;**HTML轉譯** （預設）或&#x200B;**PDF轉譯**。
-1. 按一下「**[!UICONTROL 儲存]**」。
+1. 按一下&#x200B;**[!UICONTROL 儲存]**。

@@ -12,7 +12,7 @@ hide: true
 exl-id: ba02f9b1-209e-42f2-b1df-2ed64fc9fdbc
 source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1719'
 ht-degree: 0%
 
 ---
@@ -187,7 +187,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 
 1. 在JEE環境中登入您的AEM Forms 。
 1. 在管理控制檯中，按一下「設定」>「使用者管理」>「網域管理」。
-1. 選取您的網域設定，例如LDAP，然後按一下它。 您可以在「目錄」中找到所有已建立的使用者和群組。 如有需要，您可以建立新的使用者或群組。
+1. 選取您的網域設定，例如LDAP，然後按一下它。您可以在「目錄」中找到所有已建立的使用者和群組。如有需要，您可以建立新的使用者或群組。
    ![網域管理頁面](/help/forms/using/assets/domain-mgmt-page.png)
 1. 按一下「驗證」，在新頁面上選取「驗證提供者」，例如LDAP。
 1. 導覽至「網域管理」頁面，選取LDAP，然後按一下「立即同步&#x200B;**」**，將目錄與您設定的驗證配置同步處理，以存取AEM。

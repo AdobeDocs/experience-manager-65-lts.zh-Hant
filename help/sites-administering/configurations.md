@@ -7,8 +7,8 @@ role: Admin
 exl-id: 73230415-078c-4933-8521-bc18e5490103
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1472'
-ht-degree: 4%
+source-wordcount: '1505'
+ht-degree: 5%
 
 ---
 
@@ -72,7 +72,7 @@ AEM管理員和作者可以將設定視為工作區。 藉由實作這些功能�
 只要在AEM中使用設定瀏覽器，即可輕鬆建立設定。
 
 1. 登入AEM as a Cloud Service，從主功能表選取&#x200B;**工具** > **一般** > **設定瀏覽器**。
-1. 按一下&#x200B;**建立**。
+1. 按一下「**建立**」。
 1. 提供設定的&#x200B;**標題**&#x200B;和&#x200B;**名稱**。
 
    ![建立設定](assets/configuration-create.png)
@@ -86,7 +86,7 @@ AEM管理員和作者可以將設定視為工作區。 藉由實作這些功能�
    * [上下文中心區段](/help/sites-administering/segmentation.md)
    * [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)
    * [可編輯的範本](/help/sites-authoring/templates.md)
-1. 按一下&#x200B;**建立**。
+1. 按一下「**建立**」。
 
 >[!TIP]
 >

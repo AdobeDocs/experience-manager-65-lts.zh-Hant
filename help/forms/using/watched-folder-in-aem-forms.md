@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: 632ecead-f57d-4b43-8a3d-f2b0b8fe1115
 source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '7136'
+source-wordcount: '7066'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 0%
 
    如需支援屬性的完整清單，請參閱[觀察資料夾屬性](#watchedfolderproperties)。
 
-1. 按一下&#x200B;**全部儲存**。 建立節點並儲存屬性之後。 `input`、`result`、`failure`、`preserve`和`stage`資料夾是在`folderPath`屬性中指定的路徑上建立的。
+1. 按一下&#x200B;**「儲存全部」**。 建立節點並儲存屬性之後。 `input`、`result`、`failure`、`preserve`和`stage`資料夾是在`folderPath`屬性中指定的路徑上建立的。
 
    掃描作業會以定義的時間間隔開始掃描Watched資料夾。
 
@@ -94,16 +94,16 @@ ht-degree: 0%
 
 * **deleteExpiredStageFileOnlyWhenThrottled （布林值，預設為true）：**&#x200B;是否只有在監視資料夾已節流時才啟動到期機制。 該機制與節流監視資料夾的相關性更高，因為啟用節流時，少量以未處理狀態延遲的檔案（由於間歇性工作/工作流程錯誤引發）可能會阻塞整個批次的處理作業。 如果此屬性保持為true （預設值），則不會為未節流的監看資料夾啟用到期機制。 如果屬性保持為false，則只要stageFileExpirationDuration屬性是正數，機制就會一律啟動。
 
-* **pollInterval （長）**：掃描Watched資料夾以進行輸入的間隔（秒）。 除非啟用「節流」設定，否則輪詢「間隔」應比處理平均作業的時間長；否則，系統可能會超載。 預設值為 5。如需詳細資訊，請參閱「批次大小」的說明。 輪詢間隔的值必須大於或等於1。
-* **excludeFilePattern （字串）**：以分號(；)分隔的模式清單，Watched資料夾會使用這些模式來決定要掃描和擷取的檔案和資料夾。 不會掃描任何具有此模式的檔案或資料夾以進行處理。 當輸入是具有多個檔案的資料夾時，此設定非常有用。 資料夾的內容可以複製到一個資料夾中，其名稱由Watched資料夾擷取。 這可防止Watched資料夾在資料夾完全複製到輸入資料夾之前擷取資料夾進行處理。 預設值為null。
+* **pollInterval （長）**：掃描Watched資料夾以進行輸入的間隔（秒）。 除非啟用「節流」設定，否則輪詢「間隔」應比處理平均作業的時間長；否則，系統可能會超載。 預設值為 5。 如需詳細資訊，請參閱「批次大小」的說明。 輪詢間隔的值必須大於或等於1。
+* **excludeFilePattern （字串）**：以分號(；)分隔的模式清單，Watched資料夾會使用這些模式來決定要掃描和擷取的檔案和資料夾。不會掃描任何具有此模式的檔案或資料夾以進行處理。當輸入是具有多個檔案的資料夾時，此設定非常有用。資料夾的內容可以複製到一個資料夾中，其名稱由Watched資料夾擷取。這可防止Watched資料夾在資料夾完全複製到輸入資料夾之前擷取資料夾進行處理。預設值為null。
 您可以使用[檔案模式](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)來排除：
 
    * 具有特定副檔名的檔案；例如，&#42;.dat、&#42;.xml、.pdf、&#42;.&#42;
    * 具有特定名稱的檔案；例如， data&#42;會排除名為data1、data2等的檔案和資料夾。
    * 在名稱和副檔名中有複合運算式的檔案，如下列範例所示：
 
-      * 資料`[0-9][0-9][0-9]`。`[dD][aA]`&#39;連線埠&#39;
-      * &#42;。`[dD][Aa]`&#39;連線埠&#39;
+      * 資料`[0-9][0-9][0-9]`.`[dD][aA]`&#39;連線埠&#39;
+      * &#42;.`[dD][Aa]`&#39;連線埠&#39;
       * &#42;.`[Xx][Mm][Ll]`
 
 如需檔案模式的詳細資訊，請參閱[關於檔案模式](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)。
@@ -111,18 +111,18 @@ ht-degree: 0%
 * **includeFilePattern （字串）**：以分號(；)分隔的模式清單，Watched資料夾會使用這些模式來決定要掃描和擷取的資料夾和檔案。 例如，如果IncludeFilePattern是輸入&#42;，則會擷取符合輸入&#42;的所有檔案和資料夾。 這包括名為input1、input2等的檔案和資料夾。 預設值為&#42;，表示所有檔案和資料夾。 您可以使用檔案模式來包含：
 
    * 具有特定副檔名的檔案；例如，&#42;.dat、&#42;.xml、.pdf、&#42;.&#42;
-   * 具有特定名稱的檔案；例如，資料。&#42;會包含名為data1、data2等的檔案和資料夾。
+   * 具有特定名稱的檔案；例如，資料。&#42; 會包含名為data1、data2等等的檔案和資料夾。
 
 * 在名稱和副檔名中有複合運算式的檔案，如下列範例所示：
 
-   * 資料`[0-9][0-9][0-9]`。`[dD][aA]`&#39;連線埠&#39;
+   * 資料`[0-9][0-9][0-9]`.`[dD][aA]`&#39;連線埠&#39;
 
-      * &#42;。`[dD][Aa]`&#39;連線埠&#39;
+      * &#42;.`[dD][Aa]`&#39;連線埠&#39;
       * &#42;.`[Xx][Mm][Ll]`
 
 如需檔案模式的詳細資訊，請參閱[關於檔案模式](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
-* **waitTime (Long)**：建立資料夾或檔案後，掃描資料夾或檔案前的等待時間（毫秒）。 例如，如果等待時間為3,600,000毫秒（一小時），且檔案是在一分鐘前建立的，則系統會在59分鐘或更長時間後擷取此檔案。 預設值為 0。此設定對於確保檔案或資料夾完全複製到輸入資料夾非常有用。 例如，如果您有大型檔案需要處理，且檔案下載需要10分鐘，請將等待時間設定為10&#42;60 &#42;1000毫秒。 這可防止Watched資料夾在檔案未滿十分鐘時掃描檔案。
+* **waitTime (Long)**：建立資料夾或檔案後，掃描資料夾或檔案前的等待時間（毫秒）。 例如，如果等待時間為3,600,000毫秒（一小時），且檔案是在一分鐘前建立的，則系統會在59分鐘或更長時間後擷取此檔案。 預設值為 0。 此設定對於確保檔案或資料夾完全複製到輸入資料夾非常有用。 例如，如果您有大型檔案需要處理，且檔案下載需要10分鐘，請將等待時間設定為10&#42;60 &#42;1000毫秒。 這可防止Watched資料夾在檔案未滿十分鐘時掃描檔案。
 * **purgeDuration (Long)**：結果資料夾中的檔案和資料夾早於此值時會被清除。 此值以天為單位測量。 此設定對於確保結果資料夾不會填滿非常有用。 值為–1天表示絕不刪除結果資料夾。 預設值為 -1。
 * **resultFolderName （字串）**：儲儲存存結果的資料夾。 如果結果未出現在此資料夾中，請檢查失敗資料夾。 唯讀檔案不會處理並儲存在失敗資料夾中。 此值可以是具有以下檔案模式的絕對或相對路徑：
 
@@ -182,7 +182,7 @@ ht-degree: 0%
 除了上面列出的Watched資料夾組態屬性之外，您也可以指定自訂組態引數。 自訂引數會傳遞至檔案處理程式碼。 這可讓程式碼根據引數的值變更其行為。 若要指定引數，請執行下列動作：
 
 1. 登入CRXDE-Lite並導覽至Watched資料夾設定節點。
-1. 新增屬性引數。&lt;property_name>至Watched資料夾設定節點。 屬性的型別只能是Boolean、Date、Decimal、Double、Long和String。 您可以指定單一和多值屬性。
+1. 將屬性引數&lt;property_name>新增至Watched Folder設定節點。 屬性的型別只能是Boolean、Date、Decimal、Double、Long和String。 您可以指定單一和多值屬性。
 
 >[!NOTE]
 >
@@ -200,7 +200,7 @@ ht-degree: 0%
 
 1. 登入CRXDE-Lite並導覽至Watched資料夾設定節點。
 
-1. 新增屬性workflow.var。&lt;variable_name>至Watched資料夾設定節點。
+1. 將屬性workflow.var.&lt;variable_name>新增至Watched資料夾設定節點。
 
    屬性的型別只能是Boolean、Date、Decimal、Double、Long和String。 也支援多值屬性。 對於多值屬性，工作流程步驟可用的值是指定型別的陣列。
 
@@ -333,7 +333,7 @@ processWorkflowContext()的引數是com.adobe.aemfd.watchfolder.workflow.api.Wor
 
 * getWorkItem：傳回WorkItem變數值。 變數會傳遞至WorkflowContextService.execute()方法。
 * getWorkflowSession：傳回WorkflowSession變數值。 變數會傳遞至WorkflowContextService.execute()方法。
-* getMetadata：傳回中繼資料變數的值。 變數會傳遞至WorkflowContextService.execute()方法。
+* getMetadata：傳回中繼資料變數的值。變數會傳遞至WorkflowContextService.execute()方法。
 * getCommittedVariables：傳回代表先前步驟所設定變數的唯讀物件對應。 如果變數未在前面的任何步驟中修改，則會傳回設定Watched資料夾時指定的預設值。
 * getCommittedResults：傳回唯讀檔案對應。 對映代表先前步驟產生的輸出檔案。
 * setVariable： WorkflowContextProcessor實作會使用變數來操控變數，這些變數代表在步驟之間流程的自訂動態資料。 變數的名稱和型別與[設定Watched資料夾](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)時指定的變數名稱相同。 若要變更變數的值，請使用非null值呼叫setVariable API。 若要移除變數，請使用null值呼叫setVariable()。
@@ -355,7 +355,7 @@ setResult API在工作流程中使用的考量事項：
 >
 >在任何其他情況下呼叫具有null內容的setResult API將會導致錯誤。
 
-下列範例已實作為工作流程步驟。 在此範例中，ECMAscript會使用變數stepCount來追蹤在目前工作流程例項中呼叫步驟的次數。
+下列範例已實作為工作流程步驟。在此範例中，ECMAscript會使用變數stepCount來追蹤在目前工作流程例項中呼叫步驟的次數。
 輸出資料夾的名稱是目前步驟編號、原始檔案名稱和outPrefix引數中指定的首碼的組合。
 
 ECMAScript會取得工作流程內容服務的參考，並建立WorkflowContextProcessor介面的實作。 WorkflowContextProcessor實作會接受輸入檔案、將檔案複製到暫存位置，並傳回代表所複製檔案的檔案。 根據布林值變數purgePrevious的值，目前步驟會刪除與目前工作流程例項中啟動步驟時相同的步驟上次產生的輸出。 最後，會叫用wfSvc.execute方法執行WorkflowContextProcessor實作。 輸出檔案的內容會儲存在Watched Folder設定節點中所提及實體路徑的結果資料夾中。
@@ -568,8 +568,8 @@ Watched資料夾可以連結在一起，因此一個Watched資料夾的結果檔
 * 具有特定名稱的檔案；例如，資料。&#42;
 * 在名稱和副檔名中有複合運算式的檔案，如下列範例所示：
 
-   * 資料`[0-9][0-9][0-9]`。`[dD][aA]`&#39;連線埠&#39;
-   * &#42;。`[dD][Aa]`&#39;連線埠&#39;
+   * 資料`[0-9][0-9][0-9]`.`[dD][aA]`&#39;連線埠&#39;
+   * &#42;.`[dD][Aa]`&#39;連線埠&#39;
    * &#42;.`[Xx][Mm][Ll]`
 
 * 管理員可以定義儲存結果的輸出資料夾的檔案模式。 對於輸出資料夾（結果、保留和失敗），管理員可以指定下列任一檔案模式：
@@ -669,8 +669,8 @@ ECMAScript會使用PDF Generator的createPDF API將Microsoft Word (.docx)檔案�
 
 1. 將下列屬性新增至節點：
 
-   * folderPath （字串）：在定義的時間間隔掃描的資料夾路徑。 資料夾必須位於共用位置，且所有伺服器都必須具備伺服器的完整存取許可權。
-inputProcessorType （字串）：要啟動的程式型別。 在本教學課程中，指定工作流程。
+   * folderPath （字串）：在定義的時間間隔掃描的資料夾路徑。資料夾必須位於共用位置，且所有伺服器都必須具備伺服器的完整存取許可權。
+inputProcessorType （字串）：要啟動的程式型別。在本教學課程中，指定工作流程。
 
    * inputProcessorId （字串）： inputProcessorId屬性的行為是根據inputProcessorType屬性的指定值而定。 在此範例中，inputProcessorType屬性的值為workflow。 因此，針對inputProcessorId屬性指定PDFG工作流程的以下路徑： /etc/workflow/models/pdfg/jcr:content/model
 

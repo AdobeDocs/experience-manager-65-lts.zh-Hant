@@ -7,7 +7,7 @@ role: Admin
 exl-id: b2e73e28-fa34-436d-8a20-848d353e3b8c
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -49,8 +49,8 @@ ht-degree: 0%
 
 #### 如何稽核AEM功能，例如，登入嘗試以及ACL或許可權變更？ {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
 
-AEM匯入了記錄管理變更的功能，以便進行更好的疑難排解和稽核。 依預設，資訊會記錄在`error.log`檔案中。 為了更輕鬆地進行監視，建議將它們重新導向到單獨的記錄檔。
-若要將輸出重新導向至個別的記錄檔，請參閱[如何稽核AEM中的使用者管理作業](/help/sites-administering/audit-user-management-operations.md)。
+AEM匯入了記錄管理變更的功能，以便進行更好的疑難排解和稽核。依預設，資訊會記錄在`error.log`檔案中。為了更輕鬆地進行監視，建議將它們重新導向到單獨的記錄檔。
+若要將輸出重新導向至個別的記錄檔，請參閱[如何在AEM中稽核使用者管理作業](/help/sites-administering/audit-user-management-operations.md)。
 
 #### 如何預設啟用SSL？ {#how-to-enable-ssl-by-default}
 
@@ -58,7 +58,7 @@ Adobe Experience Manager (AEM) 6.4隨附SSL精靈，並提供使用者介面以�
 
 若要依預設啟用SSL，請參閱預設的[SSL](/help/sites-administering/ssl-by-default.md)。
 
-#### 從行動應用程式(最好是React Native)使用AEM的內容服務時，建議使用什麼架構？ {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
+#### 從行動應用程式（最好是React Native）使用AEM的內容服務時，建議使用什麼架構？ {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
 
 內容服務以Sling模型為基礎，AEM開發人員必須為匯出的每個元件提供Sling模型pojo。
 
@@ -88,8 +88,8 @@ Adobe Experience Manager (AEM) 6.4隨附SSL精靈，並提供使用者介面以�
 
 當您透過Touch UI （**參考** > **更新語言副本**）建立語言副本時，會在新語言下建立新的DAM資料夾，並從中參考資產。
 
-這是現成組態的預設設定。 您可以在翻譯設定中設定&#x200B;**翻譯頁面Assets** = **不翻譯**。
-若為AEM 6.4，**工具** > **雲端服務** > **翻譯雲端服務**。
+這是現成組態的預設設定。您可以在翻譯設定中設定&#x200B;**翻譯頁面Assets** = **不翻譯**。
+針對AEM 6.4，**工具** > **雲端服務** > **翻譯雲端服務**。
 
 #### 如何停用造成AEM SegmentStore (AEM 6.3.1.1)指數式增長的AEM元件？ {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
 
@@ -105,7 +105,7 @@ AEM提供多種機制，可讓您自訂編寫執行個體的主控台和頁面�
 
 #### CoralUI 2和CoralUI 3型元件有何不同？ {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
-已為Coral3建立一組新的Granite UI Foundation的Sling元件，這些元件位於[/libs/granite/ui/components/coral/foundation下。](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html)一組適用於CoralUI 2元件，另一組適用於CoralUI 3元件。 新集合不會只是複製貼上舊集合，而是會加以清除（例如，精簡、移除已棄用的功能）。 因此，建議頁面僅使用以CoralUI 3為基礎或以CoralUI 2為基礎的組合。
+已針對Coral3建立一組新的Granite UI Foundation的Sling元件，這些元件位於[/libs/granite/ui/components/coral/foundation之下。](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) 一組適用於CoralUI 2元件，另一組適用於CoralUI 3元件。 新集合不會只是複製貼上舊集合，而是會加以清除（例如，精簡、移除已棄用的功能）。 因此，建議頁面僅使用以CoralUI 3為基礎或以CoralUI 2為基礎的組合。
 
 若要深入瞭解，請參閱[CoralUI 3移轉指南](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html)。
 

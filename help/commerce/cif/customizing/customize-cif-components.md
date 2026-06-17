@@ -7,8 +7,8 @@ role: Admin, Developer
 exl-id: e8f2a771-b2e3-4f3e-85a0-480f783fc313
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2305'
-ht-degree: 0%
+source-wordcount: '2662'
+ht-degree: 4%
 
 ---
 
@@ -38,7 +38,7 @@ Venia品牌最近開始使用永續性材料來製造某些產品，而企業想
 
 >[!NOTE]
 >
->**請隨時使用現有的專案** (根據包含CIF的AEM專案原型)並略過本節。
+>**請隨時使用現有的專案** （根據包含CIF的AEM專案原型）並略過本節。
 
 1. 執行下列git命令，以便複製專案：
 
@@ -55,7 +55,7 @@ Venia品牌最近開始使用永續性材料來製造某些產品，而企業想
 
 1. 新增必要的OSGi設定，以便將AEM執行個體連線至Adobe Commerce執行個體，或將設定新增至新建立的專案。
 
-1. 此時，您應該有已連線至Adobe Commerce執行個體的有效店面版本。 瀏覽至`US` > `Home`頁面，網址為： [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)。
+1. 此時，您應該有已連線至Adobe Commerce執行個體的有效店面版本。 導覽至`US` > `Home`頁面： [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)。
 
    您應該會看到店面目前使用Venia佈景主題。 展開店面的「主要」功能表，應該會看到各種類別，表示與Adobe Commerce的連線正常運作。
 
@@ -180,7 +180,7 @@ AEM中顯示的產品和產品資料儲存在Adobe Commerce中。 接下來，�
 
 ## 更新產品Teaser的Sling模型 {#updating-sling-model-product-teaser}
 
-接下來，您可以實作Sling模型來擴充產品Teaser的商業邏輯。 [Sling模型](https://sling.apache.org/documentation/bundles/models.html)是註釋導向的「POJO」(純舊的Java™物件)，可實作元件所需的任何商業邏輯。 Sling模型會搭配HTL指令碼使用作為元件的一部分。 遵循Sling模型[&#128279;](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models)的委派模式，以便您可以擴充現有產品Teaser模型的部分。
+接下來，您可以實作Sling模型來擴充產品Teaser的商業邏輯。 [Sling模型](https://sling.apache.org/documentation/bundles/models.html)是註釋導向的「POJO」（純舊的Java™物件），可實作元件所需的任何商業邏輯。 Sling模型會搭配HTL指令碼使用作為元件的一部分。 遵循Sling模型[&#128279;](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models)的委派模式，以便您可以擴充現有產品Teaser模型的部分。
 
 Sling模型已實作為Java™，且可在產生專案的&#x200B;**核心**&#x200B;模組中找到。
 
@@ -330,7 +330,7 @@ AEM元件的常見擴充功能是修改元件產生的標籤。 覆寫元件用�
 
 >[!NOTE]
 >
->如果您使用CIF產品和類別選擇器(例如此產品Teaser或CIF頁面元件)自訂元件，請務必加入元件對話方塊所需的`cif.shell.picker` clientlib。 如需詳細資訊，請參閱[CIF產品和類別選擇器的使用情形](use-cif-pickers.md)。
+>如果您使用CIF產品和類別選擇器（例如此產品Teaser或CIF頁面元件）自訂元件，請務必加入元件對話方塊所需的`cif.shell.picker` clientlib。 如需詳細資訊，請參閱[CIF產品和類別選擇器的使用情形](use-cif-pickers.md)。
 
 1. 在IDE中，導覽並展開`ui.apps`模組，並將資料夾階層展開至： `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser`並檢查`.content.xml`檔案。
 
@@ -348,7 +348,7 @@ AEM元件的常見擴充功能是修改元件產生的標籤。 覆寫元件用�
 
    此專案中產品Teaser元件的元件定義位於上面。 請注意屬性`sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`。 這是建立[Proxy元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=zh-Hant#create-proxy-components)的範例。 您可以使用`sling:resourceSuperType`繼承所有功能，而不必從AEM CIF核心元件複製和貼上所有產品Teaser HTL指令碼。
 
-1. 開啟檔案`productteaser.html`。 這是來自[CIF產品預告](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)的`productteaser.html`檔案復本
+1. 開啟檔案 `productteaser.html`。 這是來自[CIF產品預告](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)的`productteaser.html`檔案復本
 
    ```html
    <!--/* productteaser.html */-->
@@ -405,7 +405,7 @@ AEM元件的常見擴充功能是修改元件產生的標籤。 覆寫元件用�
 
    這表示Sling模型已正確部署並對應至正確的元件。
 
-1. 重新整理至&#x200B;**Venia首頁** (位於[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html))，其中已新增Product Teaser。
+1. 重新整理至&#x200B;**Venia首頁** （位於[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)，其中已新增Product Teaser）。
 
    顯示![環保訊息](../assets/customize-cif-components/eco-friendly-text-displayed.png)
 
@@ -474,7 +474,7 @@ AEM元件的常見擴充功能是修改元件產生的標籤。 覆寫元件用�
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-1. 重新整理至&#x200B;**Venia首頁** (位於[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html))，其中已新增Product Teaser。
+1. 重新整理至&#x200B;**Venia首頁** （位於[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)，其中已新增Product Teaser）。
 
    ![環保徽章最終實作](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
@@ -494,5 +494,5 @@ AEM元件的常見擴充功能是修改元件產生的標籤。 覆寫元件用�
 - [AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components)
 - [自訂AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components)
 - [自訂核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=zh-Hant)
-- [開始使用AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant)
+- [AEM Sites快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant)
 - [CIF產品和類別選擇器的使用方式](use-cif-pickers.md)

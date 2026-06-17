@@ -10,20 +10,20 @@ role: User, Developer
 exl-id: 2ac51487-42e0-4b8a-b224-2858f26e85ef
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 4%
+source-wordcount: '1192'
+ht-degree: 5%
 
 ---
 
 # 在AEM Sites單頁應用程式中內嵌最適化表單或互動式通訊{#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-single-page-application}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
 ## 概觀 {#overview}
 
 AEM Forms可讓表單開發人員在AEM Sites單頁應用程式(SPA)中順暢地內嵌最適化表單和互動式通訊。 內嵌的最適化表單和互動式通訊功能齊全，使用者無須離開頁面即可填寫和提交表單。 它有助於使用者停留在網頁上其他元素的內容中，同時與最適化表單或互動式通訊互動。
 
-在AEM Sites單頁應用程式中，您可以使用[AEM Forms SPA Container元件](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) [來新增最適化表單或互動式通訊。](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)這是適用於AEM Sites SPA的AEM Forms元件，可新增至您的網站頁面。
+在AEM Sites單頁應用程式中，您可以使用[AEM Forms SPA Container元件](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) [.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)新增最適化表單或互動式通訊 這是適用於AEM Sites SPA的AEM Forms元件，可新增至您的網站頁面。
 
 如需將最適化表單內嵌於非SPA AEM Sites的相關資訊，請參閱[將最適化表單或互動式通訊內嵌於AEM Sites頁面](/help/forms/using/embed-adaptive-form-aem-sites.md)。
 

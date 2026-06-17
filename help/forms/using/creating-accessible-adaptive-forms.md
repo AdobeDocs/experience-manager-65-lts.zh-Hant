@@ -10,14 +10,14 @@ role: User, Developer
 exl-id: 8a0b276a-6020-4f48-95ab-4e7270e42e44
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2099'
+source-wordcount: '2139'
 ht-degree: 2%
 
 ---
 
 # 建立無障礙的最適化表單{#creating-accessible-adaptive-forms}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/introduction)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文介紹使用基礎元件製作最適化Forms的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/introduction)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文介紹使用基礎元件製作最適化Forms的舊方法。</span>
 
 ## 簡介 {#introduction}
 
@@ -58,7 +58,7 @@ Ultraminary-Accessible主題是參考主題。 它有助於示範如何以最適
 
 您應該關注四個關鍵方面：鍵盤導覽、色彩對比、有意義的影像替代文字，以及讓可存取調適型表單的表單控制項適用標籤。 執行以下步驟，讓您存取現有的最適化表單：
 
-### 1.套用無障礙佈景主題並執行其他修正
+### &#x200B;1. 套用無障礙佈景主題並執行其他修正
 
 將Ultraminary-Accessible主題套用至您現有的最適化表單。 若要套用主題：
 
@@ -97,7 +97,7 @@ Ultraminary-Accessible主題是參考主題。 它有助於示範如何以最適
 
 1. 移除最適化表單中的手寫簽名欄位（如果有的話）。 設定最適化表單以使用Adobe Sign，提供順暢的數位簽名體驗。
 
-### 2.為表單控制項提供適當的標籤 {#provide-proper-labels-for-form-controls}
+### &#x200B;2. 為表單控制項提供適當的標籤 {#provide-proper-labels-for-form-controls}
 
 元件的標籤或標題可識別表單元件代表的意義。 例如，「名字」文字會告訴使用者他們必須在文字欄位中輸入名字。 為了方便熒幕閱讀程式存取，標籤會以程式設計方式與表單元件相關聯。 或者，表單控制項會設定其他協助工具資訊。
 
@@ -127,7 +127,7 @@ Ultraminary-Accessible主題是參考主題。 它有助於示範如何以最適
 >* Radio Button和Check-box只能有兩個協助工具選項，即Custom Text和Title。
 >* 對於XFA型調適型表單，協助工具選項繼承自XDP中設定的協助工具選項。 XDP的工具提示會對應至簡短說明，而標題會對應至標題。 其他選項則可正常運作。
 
-### 3.提供影像的等效文字 {#provide-text-equivalents-for-images}
+### &#x200B;3. 提供影像的對等文字 {#provide-text-equivalents-for-images}
 
 影像有助於改善部分使用者的理解。 不過，對於使用熒幕助讀程式的使用者，影像會降低表單的協助工具。 如果您選擇使用影像，請為所有影像提供文字說明。
 
@@ -137,7 +137,7 @@ Ultraminary-Accessible主題是參考主題。 它有助於示範如何以最適
 
 ![影像的替代文字](assets/image-properties.png)
 
-### 4.提供足夠的色彩對比 {#provide-sufficient-color-contrast}
+### &#x200B;4. 提供足夠的色彩對比 {#provide-sufficient-color-contrast}
 
 協助工具設計涉及考慮色彩使用的其他准則。 表單作者可以使用顏色來改善表單的外觀，方法是反白顯示各種表單元件。 不過，若色彩使用不當，可能會使有不同能力的人難以或無法閱讀表格。
 
@@ -147,7 +147,7 @@ Ultraminary-Accessible主題是參考主題。 它有助於示範如何以最適
 
 請參閱[建立最適化表單的自訂主題](/help/forms/using/creating-custom-adaptive-form-themes.md)，以取得變更最適化表單色彩對比和主題的詳細資訊。
 
-### 5.確認可使用鍵盤存取表單控制項 {#ensure-that-form-controls-are-keyboard-accessible}
+### &#x200B;5. 確保可使用鍵盤存取表單控制項 {#ensure-that-form-controls-are-keyboard-accessible}
 
 可存取的表單僅能使用鍵盤或同等輸入裝置填入。 行動力下降或視力障礙的使用者可能別無選擇，只能使用鍵盤，而許多使用滑鼠的使用者則偏好使用鍵盤輸入。 透過允許各種輸入方法，您不僅可建立無障礙的表單，還可建立更適合所有使用者偏好設定的表單。
 
@@ -155,7 +155,7 @@ AEM Forms提供下列鍵盤快速鍵。
 
 | 動作 | 鍵盤快速鍵 |
 |---|---|
-| 在表單中向前移動游標 | 定位符號 |
+| 在表單中向前移動游標 | 標籤 |
 | 在表單中向後移動游標 | Shift+Tab鍵 |
 | 移至下一個面板 | Alt+向右鍵 |
 | 移至上一個面板 | Alt+向左鍵 |
@@ -170,7 +170,7 @@ AEM Forms提供下列鍵盤快速鍵。
 |---|---|
 | <ul><li>當索引標籤焦點反白標示行事曆圖示時，顯示日期選擇器元件選項</li><li>當索引標籤焦點反白某個選項時，執行點按事件</li> | 空格或Enter |
 | 隱藏日期選擇器元件選項 | Esc 鍵 |
-| <ul><li>在日期選擇器元件中可用的選項間向前移動游標。</li><li>當日期輸入欄位作用中時，將索引標籤焦點設定在行事曆圖示上</li> | 定位符號 |
+| <ul><li>在日期選擇器元件中可用的選項間向前移動游標。</li><li>當日期輸入欄位作用中時，將索引標籤焦點設定在行事曆圖示上</li> | 標籤 |
 | 在日期選擇器元件中可用的選項間向後移動游標 | Shift+Tab鍵 |
 | <ul><li>當索引標籤焦點反白顯示日期輸入欄位時，顯示日期選擇器元件選項</li><li>在日期選擇器元件中可用的行事曆中，將游標向下移動</li> | 向下鍵 |
 | 在日期選擇器元件中可用的行事曆中，將游標向上移動 | 向上鍵 |

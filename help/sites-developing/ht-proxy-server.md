@@ -11,7 +11,7 @@ role: Developer
 exl-id: e33640ba-6039-4057-8942-b4faa9b2e250
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
@@ -218,7 +218,7 @@ Keep-alive是HTTP的一項功能，可讓使用者端重複使用伺服器的TCP
 
 **尋找遺失的請求**
 
-如果您在複雜的伺服器設定中遺失要求(例如，在防火牆和Dispatcher中)，您可以使用Proxy伺服器來找出遺失要求的位置。 如果有防火牆：
+如果您在複雜的伺服器設定中遺失要求（例如，在防火牆和Dispatcher中），您可以使用Proxy伺服器來找出遺失要求的位置。 如果有防火牆：
 
 * 在防火牆之前啟動Proxy
 * 在防火牆之後啟動另一個Proxy

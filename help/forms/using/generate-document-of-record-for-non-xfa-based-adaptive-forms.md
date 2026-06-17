@@ -7,7 +7,7 @@ role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
 source-git-commit: e91f40d1af626b3aa42c9ddb8381d73ef9a69273
 workflow-type: tm+mt
-source-wordcount: '4354'
+source-wordcount: '4296'
 ht-degree: 3%
 
 ---
@@ -426,7 +426,7 @@ ht-degree: 3%
       * 水平
       * 與自適應表單相同
      >[!NOTE]
-     > 「垂直」和「水準」對齊方式僅適用於     選項按鈕與核取方塊
+     > 「垂直」與「水準」對齊方式僅適用於「選項按鈕」與「核取方塊」
 * **[!UICONTROL 主版頁面屬性]**&#x200B;按一下以取得有關[主版頁面屬性](#master-page-properties-master-page-properties)的詳細資訊
 
 ## 在記錄檔案中套用分頁符號 {#apply-page-breaks-in-dor}

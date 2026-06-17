@@ -1,5 +1,5 @@
 ---
-title: HTML5表單的指令碼支援
+title: HTML5 表單的指令碼支援
 description: HTML5 Forms支援的JavaScript、FormCalc屬性及其他方法。
 contentOwner: robhagat
 content-type: reference
@@ -11,12 +11,12 @@ role: Admin, User, Developer
 exl-id: 4110e3d5-7242-459b-b249-637b5bf3472d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3916'
+source-wordcount: '3948'
 ht-degree: 6%
 
 ---
 
-# HTML5表單的指令碼支援 {#scripting-support-for-html-forms}
+# HTML5 表單的指令碼支援 {#scripting-support-for-html-forms}
 
 HTML5表單支援的JavaScript、FormCalc屬性和方法，如下所示：
 
@@ -77,7 +77,7 @@ HTML5表單支援的JavaScript、FormCalc屬性和方法，如下所示：
   </tr>
   <tr>
    <td>修飾元</td>
-   <td>決定當特定事件執行時，是否按住修飾元鍵(例如Microsoft® Windows®上的Ctrl)。</td>
+   <td>決定當特定事件執行時，是否按住修飾元鍵（例如® Windows®上的Ctrl）。</td>
    <td>無</td>
   </tr>
  </tbody>
@@ -548,7 +548,7 @@ HTML5表單支援的JavaScript、FormCalc屬性和方法，如下所示：
 |---|---|---|
 | instanceManager | instanceManager物件可管理表單模型物件的建立、移除和移動。 | 無 |
 
-## content {#content}
+## 內容 {#content}
 
 | **屬性** | **說明** | **例外狀況** |
 |---|---|---|
@@ -640,7 +640,7 @@ HTML5表單支援的JavaScript、FormCalc屬性和方法，如下所示：
  </tbody>
 </table>
 
-## 圖樣 {#pattern}
+## pattern {#pattern}
 
 <table>
  <tbody>
@@ -1121,7 +1121,7 @@ FormCalc是XFA專屬的語言，用於建立以電子錶單為中心的邏輯和
  <tbody>
   <tr>
    <td><strong>類別 </strong></td>
-   <td><strong>描述 </strong></td>
+   <td><strong>說明 </strong></td>
    <td><strong>範例 </strong></td>
   </tr>
   <tr>
@@ -1250,7 +1250,7 @@ FormCalc是XFA專屬的語言，用於建立以電子錶單為中心的邏輯和
  <tbody>
   <tr>
    <td><strong>API</strong></td>
-   <td><strong>描述</strong></td>
+   <td><strong>說明</strong></td>
    <td><strong>像差</strong></td>
   </tr>
   <tr>
@@ -1285,7 +1285,7 @@ FormCalc是XFA專屬的語言，用於建立以電子錶單為中心的邏輯和
   </tr>
   <tr>
    <td>app.setTimeOut()</td>
-   <td>指定JavaScript指令碼和時段。 指令碼僅會在經過句點後執行一次。此方法的傳回值必須儲存在JavaScript變數中。 否則，逾時物件會接受記憶體回收，這會導致時鐘停止。 若要取消逾時事件，請將傳回的逾時物件傳遞給clearTimeOut。</td>
+   <td>指定JavaScript指令碼和時段。 指令碼只會在經過期間後執行一次。此方法的傳回值必須儲存在JavaScript變數中。 否則，逾時物件會接受記憶體回收，這會導致時鐘停止。 若要取消逾時事件，請將傳回的逾時物件傳遞給clearTimeOut。</td>
    <td> </td>
   </tr>
   <tr>

@@ -8,7 +8,7 @@ feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '10681'
+source-wordcount: '10632'
 ht-degree: 1%
 
 ---
@@ -1091,7 +1091,7 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 此套件包含AEM 
 
    >[!NOTE]
    >
-   >您使用Adobe以外各方所提供字型的權利，受這些各方所提供且具備這些字型的授權合約所規範，且不在您使用Adobe軟體的授權範圍內。 Adobe建議您在搭配Adobe軟體使用非Adobe字型之前，檢閱並確保符合所有適用的非Adobe授權合約，尤其是在伺服器環境中使用字型的相關事項。
+   >您使用Adobe以外各方所提供字型的權利，受這些各方所提供且具備這些字型的授權合約所規範，且不在您使用Adobe軟體的授權範圍內。Adobe建議您在搭配Adobe軟體使用非Adobe字型之前，檢閱並確保符合所有適用的非Adobe授權合約，尤其是在伺服器環境中使用字型的相關事項。
    >將新字型安裝至字型資料夾時，請重新啟動AEM Forms例項。
    >
 
@@ -1188,7 +1188,7 @@ DocAssurance服務可套用使用許可權至PDF檔案。 若要套用使用許�
 
 * 憑證提供的私密金鑰密碼。
 
-* 私密金鑰別名。 您可以執行Java keytool指令來檢視「私密金鑰別名」：
+* 私密金鑰別名。您可以執行Java keytool指令來檢視「私密金鑰別名」：
   `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
 * 金鑰庫檔案密碼。 如果您使用Adobe的Reader擴充功能憑證，Keystore檔案密碼一律與私密金鑰密碼相同。
@@ -1455,7 +1455,7 @@ DocAssurance服務可套用使用許可權至PDF檔案。 若要套用使用許�
 
          &quot;&#39;
          
-         adobe_prtk —tool=VolumeSerialize —generate —serial=&lt;serialnum> [—leid=&lt;LEID>] [—regsuppress=ss] [—eulasuppress] [—locales=limited list of locales in xx_XX format or ALL>] [—provfile=&lt;Absolute path to prov.xml>]
+         adobe_prtk —tool=VolumeSerialize —generate —serial=&lt;serialnum> [—leid=&lt;LEID>] [—regsuppress=ss] [—eulasuppress] [—locales=xx_XX格式或ALL>的有限地區設定清單] [—provfile=&lt;prov.xml>的絕對路徑]
          
          &quot;&#39;
      

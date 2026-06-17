@@ -11,8 +11,8 @@ feature: Adaptive Forms,Foundation Components
 exl-id: a6793fdf-7ee8-4a54-91d8-635eb79ca702
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 1%
+source-wordcount: '928'
+ht-degree: 2%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 ### 在Dispatcher上快取最適化表單的考量事項 {#considerations}
 
-* 使用最適化表單快取時，請使用AEM [!DNL Dispatcher]來快取最適化表單的使用者端資料庫(CSS和JavaScript)。
+* 使用最適化表單快取時，請使用AEM [!DNL Dispatcher]來快取最適化表單的使用者端資料庫（CSS和JavaScript）。
 * 開發自訂元件時，在用於開發的伺服器上，停用最適化表單快取。
 * 不會快取沒有副檔名的URL。 例如，快取模式為`/content/forms/[folder-structure]/[form-name].html`的URL，而快取會忽略模式為`/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`的URL。 因此，請使用具有擴充功能的URL，以獲得快取的優點。
 * 本地化適用性表單的考量事項：

@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 9cc83733-630a-4846-bd9e-72fd76a3286d
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '2336'
-ht-degree: 0%
+source-wordcount: '2386'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +47,7 @@ AEM Forms應用程式需要AEM Forms伺服器。 使用者可以轉譯您在AEM 
 
 如果您有AEM Forms伺服器，可以將最適化表單轉譯為AEM收件匣應用程式，並在AEM Forms應用程式中執行工作。 例如，您經營一家銀行公司，而客戶填寫應用程式以使用您的服務。 應用程式與最適化表單相關聯，該表單接受來自客戶的資訊，並將其儲存為提交以進行稽核。 管理員會複查作業並核准現場工作人員的驗證請求。 您的欄位工作者會將行動裝置傳送給客戶，並驗證詳細資料。
 
-### 獨立表單或AEM Forms應用程式(含無AEM Forms工作流程的伺服器) {#standalone-forms-or-aem-forms-app-with-servers-without-aem-forms-workflow}
+### 獨立表單或AEM Forms應用程式（含無AEM Forms工作流程的伺服器） {#standalone-forms-or-aem-forms-app-with-servers-without-aem-forms-workflow}
 
 未使用AEM Forms Workflow的AEM Forms伺服器是OSGi上的AEM Forms，或是獨立的行動表單或最適化表單。 AEM Forms應用程式可與[OSGi](/help/sites-deploying/configuring-osgi.md)上的AEM Forms實作搭配使用。 您為AEM Forms應用程式啟用和發佈的Forms可在您的應用程式中使用。
 
@@ -98,7 +98,7 @@ See [AEM Forms app (previously known as Mobile Workspace)](/help/forms/using/aem
 
 行動裝置上的工作包含最適化表單、HTML5表單或表單集，也可以包含附件和[摘要URL](/help/forms/using/getting-task-variables-summary-url.md)。 依預設，指派給您的任務會放置在&#x200B;**[!UICONTROL 任務]**&#x200B;資料夾中。 處理任務時，您可以變更任務並在AEM Forms伺服器上儲存任務的草稿副本。
 
-行動裝置上的表單可為最適化表單或行動表單。 Forms資料夾中提供已在表單應用程式中啟用同步功能的Forms。 您可以同步在AEM Forms伺服器中啟用的表單，而無需AEM Forms工作流程(OSGi上的AEM Forms)。
+行動裝置上的表單可為最適化表單或行動表單。 Forms資料夾中提供已在表單應用程式中啟用同步功能的Forms。 您可以同步在AEM Forms伺服器中啟用的表單，而無需AEM Forms工作流程（OSGi上的AEM Forms）。
 
 請參閱：
 
@@ -147,7 +147,7 @@ AEM Forms應用程式支援動態調整以符合使用者輸入的最適化表�
 
 >[!NOTE]
 >
->需要AEM Forms工作流程(JEE上的AEM Forms)。
+>需要AEM Forms工作流程（JEE上的AEM Forms）。
 
 ## AEM Forms應用程式的運作方式 {#how-aem-forms-app-works}
 
@@ -186,7 +186,7 @@ AEM Forms應用程式可輕鬆根據組織的特定需求進行自訂。 應用�
 
 若要取得AEM Forms應用程式來源，請執行以下步驟：
 
-1. 開啟 [Software Distribution](https://experience.adobe.com/downloads)。您需要 Adobe ID 才能登入 Software Distribution。
+1. 開啟 [Software Distribution](https://experience.adobe.com/downloads)。 您需要 Adobe ID 才能登入 Software Distribution。
 1. 選取標題功能表中可用的&#x200B;**[!UICONTROL Adobe Experience Manager]**。
 1. 在&#x200B;**[!UICONTROL 篩選器]**&#x200B;區段中：
    1. 從&#x200B;**[!UICONTROL 解決方案]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL Forms]**。
@@ -220,6 +220,6 @@ Windows **的**：
 * **如果您從Android上的Play市集安裝舊版應用程式**
 您可以直接從Play Store升級應用程式。
 
-* **如果使用原始程式碼建置及安裝舊版應用程式(適用於iOS和Android)**：
+* **如果使用原始程式碼建置及安裝舊版應用程式（適用於iOS和Android）**：
 
   安裝新應用程式之前，請先將所有資料與AEM Forms伺服器同步。 資料同步後，請解除安裝舊版應用程式，然後安裝新應用程式。

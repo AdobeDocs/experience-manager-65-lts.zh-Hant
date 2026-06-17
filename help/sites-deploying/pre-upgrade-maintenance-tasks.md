@@ -12,8 +12,8 @@ role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
 source-git-commit: 8f7bbc3887601e10cf29e99ee54959a10c8a3f98
 workflow-type: tm+mt
-source-wordcount: '1110'
-ht-degree: 0%
+source-wordcount: '1153'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ## 索引定義 {#index-definitions}
 
-請確定您已安裝隨最新AEM 6.5 Service Pack發行的必要索引定義。 (如需詳細資訊，請參閱[AEM 6.5 servicepack發行說明](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/release-notes/release-notes))。
+請確定您已安裝隨最新AEM 6.5 Service Pack發行的必要索引定義。 （如需詳細資訊，請參閱[AEM 6.5 servicepack發行說明](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/release-notes/release-notes)）。
 
 ## 確保有足夠的磁碟空間 {#ensure-sufficient-disk-space}
 

@@ -13,15 +13,15 @@ exl-id: 9889b0fe-f39c-42dc-bc7b-8743d68e7503
 index: false
 source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 4%
+source-wordcount: '1169'
+ht-degree: 6%
 
 ---
 
 
 # 在AEM中開始使用SPA - React{#getting-started-with-spas-in-aem-react}
 
-單頁應用程式 (SPA) 可為網站使用者提供引人入勝的體驗。開發人員希望能使用SPA架構建立網站，而作者則想在AEM中為使用SPA架構建立的網站順暢地編輯內容。
+單頁應用程式 (SPA) 可為網站使用者提供引人入勝的體驗。 開發人員希望能使用SPA架構建立網站，而作者則想在AEM中為使用SPA架構建立的網站順暢地編輯內容。
 
 SPA製作功能提供全方位的解決方案，可支援AEM中的SPA。 本文介紹React架構上的簡化SPA應用程式，說明其如何組合，讓您快速啟動並執行自己的SPA。
 
@@ -194,7 +194,7 @@ MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppP
 
 在此範例中，`AppPage`類別會擴充`Page`，其中包含之後可以使用的內部內容方法。
 
-`Page`會擷取頁面模型的JSON表示法，並處理內容以包裝/裝飾頁面的每個元素。 在`Page`SPA Blueprint[檔案中可以找到](/help/sites-developing/spa-blueprint.md#main-pars-header-1694932501)的更多詳細資料。
+`Page`會擷取頁面模型的JSON表示法，並處理內容以包裝/裝飾頁面的每個元素。 在[SPA Blueprint](/help/sites-developing/spa-blueprint.md#main-pars-header-1694932501)檔案中可以找到`Page`的更多詳細資料。
 
 ### Image.js {#image-js}
 

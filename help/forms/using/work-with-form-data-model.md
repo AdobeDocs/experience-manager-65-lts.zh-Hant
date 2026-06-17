@@ -10,7 +10,7 @@ role: Admin, User, Developer
 exl-id: e95c4cc4-1800-4bd8-a3c4-c6c868a1276d
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '4168'
+source-wordcount: '4264'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html?lang=zh-Hant)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html?lang=zh-Hant)上的AEM Forms 。
 
 ![資料整合](do-not-localize/data-integeration.png)
 
@@ -114,7 +114,7 @@ ht-degree: 0%
 
    若要手動繫結子屬性與資料模型物件屬性，請選取&#x200B;**[!UICONTROL 繫結參考]**&#x200B;欄位旁的瀏覽圖示。 **[!UICONTROL 選取物件]**&#x200B;對話方塊會列出父資料模型物件的所有屬性。 選取要繫結的屬性，然後選取勾號圖示。 請注意，您只能選取與子屬性具有相同資料型別的屬性。
 
-1. 選取&#x200B;**[!UICONTROL 完成]**&#x200B;以儲存子屬性，並選取&#x200B;**[!UICONTROL 儲存]**&#x200B;以儲存表單資料模型。 子屬性現在已新增至資料模型物件。
+1. 選取&#x200B;**[!UICONTROL 完成]**&#x200B;以儲存子屬性，並選取&#x200B;**[!UICONTROL 儲存]**&#x200B;以儲存表單資料模型。子屬性現在已新增至資料模型物件。
 
 建立資料模型物件和屬性後，您可以繼續根據表單資料模型建立最適化表單和互動式通訊。 稍後，當您有可用的資料來源且已設定資料來源時，即可將表單資料模型與資料來源繫結。 繫結將會在相關的自適應表單和互動式通訊中自動更新。 如需使用表單資料模型建立最適化表單和互動式通訊的詳細資訊，請參閱[使用表單資料模型](/help/forms/using/using-form-data-model.md)。
 
@@ -191,7 +191,7 @@ ht-degree: 0%
 
 ![使用者設定檔](assets/binding_crxde_user_profile_new.png)
 
-在此範例中，請在`profile.empid`使用者的&#x200B;**[!UICONTROL 繫結值]**&#x200B;欄位中指定`grios`。
+在此範例中，請在`grios`使用者的&#x200B;**[!UICONTROL 繫結值]**&#x200B;欄位中指定`profile.empid`。
 
 ![編輯引數](assets/edit_argument_user_profile_new.png)
 
@@ -382,9 +382,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**NavigationPropertyName**&#x200B;引數的&#x200B;**預設值**&#x200B;欄位中可用的值取決於&#x200B;**傳回陣列的狀態？**&#x200B;切換按鈕。 當啟用時，它會顯示集合型別的導覽屬性。
+>**NavigationPropertyName**&#x200B;引數的&#x200B;**預設值**&#x200B;欄位中可用的值取決於&#x200B;**傳回陣列？**&#x200B;的狀態 切換按鈕。 當啟用時，它會顯示集合型別的導覽屬性。
 
-在此範例中，您也可以選擇輸出模型物件作為Person，選擇導覽屬性引數作為Friends或BestFriend （取決於&#x200B;**是否傳回陣列？）**&#x200B;已啟用或已停用)。
+在此範例中，您也可以選擇輸出模型物件作為Person，選擇導覽屬性引數作為Friends或BestFriend （取決於&#x200B;**Return陣列是？**） 啟用或停用)。
 
 ![edit-prop-nav-prop2](assets/edit-prop-nav-prop2.png)
 
@@ -469,12 +469,12 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
    <td>WSDL、Odata和資料庫</td> 
   </tr> 
   <tr> 
-   <td>最大</td> 
+   <td>maximum</td> 
    <td>指定數值的上限。 指定為上限的最大值也可以指派給輸入資料中的引數。</td> 
    <td>Swagger和WSDL</td> 
   </tr> 
   <tr> 
-   <td>最小值</td> 
+   <td>minimum</td> 
    <td>指定數值的下限。 指定為下限的最小值也可以指定給輸入資料中的引數。</td> 
    <td>Swagger和WSDL</td> 
   </tr> 
@@ -489,7 +489,7 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
    <td>Swagger和WSDL</td> 
   </tr> 
   <tr> 
-   <td>minlength</td> 
+   <td>minLength</td> 
    <td>指定字串中所含字元數的下限。 指定為下限的最小值也可以指定給輸入資料中的引數。</td> 
    <td>Swagger和WSDL</td> 
   </tr> 
@@ -499,7 +499,7 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
    <td>Swagger、WSDL、Odata和資料庫</td> 
   </tr> 
   <tr> 
-   <td>圖樣</td> 
+   <td>pattern</td> 
    <td>指定固定的字元順序。 只有在字元符合指定的模式時，才能成功驗證輸入字串。</td> 
    <td>Swagger</td> 
   </tr> 

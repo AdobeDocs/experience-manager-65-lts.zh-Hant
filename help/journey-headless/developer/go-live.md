@@ -7,8 +7,8 @@ role: Admin, Developer
 exl-id: 8837e7cd-c949-46cc-9c39-3c7a82cc1daf
 source-git-commit: 84ef35149332330e040b8d94cae151708e3c6829
 workflow-type: tm+mt
-source-wordcount: '1801'
-ht-degree: 53%
+source-wordcount: '1909'
+ht-degree: 52%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 53%
 
 ## AEM SDK {#the-aem-sdk}
 
-AEM SDK 用於建置和部署自訂程式碼。這是您在啟用Headless應用程式之前，必須開發和測試的主要工具。 它都包含下列成品：
+AEM SDK 用於建置和部署自訂程式碼。 這是您在啟用Headless應用程式之前，必須開發和測試的主要工具。 它都包含下列成品：
 
 * Quickstart jar - 這是可執行的 jar 檔案，可用於設定編寫和發佈執行個體
 * Dispatcher工具 — Windows和UNIX系統的Dispatcher模組及其相依性
@@ -57,7 +57,7 @@ AEM SDK 用於建置和部署自訂程式碼。這是您在啟用Headless應用�
 
 Git 是您用來管理原始檔控制系統和簽入對 Cloud Manager 的變更，然後將它們部署到生產執行個體的工具。
 
-AEM 使用 Apache Maven 建置從 AEM Maven 專案原型產生的專案。所有主要的 IDE 都提供對 Maven 的整合支援。
+AEM 使用 Apache Maven 建置從 AEM Maven 專案原型產生的專案。 所有主要的 IDE 都提供對 Maven 的整合支援。
 
 Node.js是JavaScript執行階段環境，用來處理AEM專案`ui.frontend`子專案的前端資產。 Node.js隨npm分佈，後者是實際的Node.js Package Manager，用於管理JavaScript相依性。
 
@@ -65,23 +65,23 @@ Node.js是JavaScript執行階段環境，用來處理AEM專案`ui.frontend`子�
 
 接下來，讓我們看看 AEM 環境的組成部分。
 
-完整的 AEM 環境由編寫、發佈和 Dispatcher 組成。這些相同的元件在本機開發執行階段中可供使用，讓您更輕鬆地在上線之前預覽程式碼和內容。
+完整的 AEM 環境由編寫、發佈和 Dispatcher 組成。 這些相同的元件在本機開發執行階段中可供使用，讓您更輕鬆地在上線之前預覽程式碼和內容。
 
 * **編寫服務**&#x200B;是內部使用者建立、管理和預覽內容的地方。
 
 * **Publish服務**&#x200B;被視為「即時」環境，通常是使用者互動的對象。 在Author服務上編輯和核准後的內容會分發（復寫）到Publish服務。 AEM Headless 應用程式最常見的部署模式是讓應用程式的生產版本連接到 AEM Publish 服務。
 
-* **Dispatcher** 是靜態 Web 伺服器，增加了 AEM Dispatcher 模組。它快取發佈執行個體產生的網頁以提升效能。
+* **Dispatcher** 是靜態 Web 伺服器，增加了 AEM Dispatcher 模組。 它快取發佈執行個體產生的網頁以提升效能。
 
 ## 本機開發工作流程 {#the-local-development-workflow}
 
-本機開發專案以 Apache Maven 為基礎建置，並使用 Git 進行原始檔控制。若要更新專案，開發人員可以使用偏好的整合式開發環境，例如 Eclipse、Visual Studio Code 或 IntelliJ 等。
+本機開發專案以 Apache Maven 為基礎建置，並使用 Git 進行原始檔控制。 若要更新專案，開發人員可以使用偏好的整合式開發環境，例如 Eclipse、Visual Studio Code 或 IntelliJ 等。
 
 若要測試Headless應用程式擷取的程式碼或內容更新，請將更新部署至本機AEM執行階段。 其中包括AEM作者和發佈服務的本機執行個體。
 
-請務必注意本機 AEM 執行階段每個元件之間的區別，因為在與您的更新最有關係的地方測試它，這一點非常重要。例如，在編寫執行個體測試內容更新或在發佈執行個體測試新程式碼。
+請務必注意本機 AEM 執行階段每個元件之間的區別，因為在與您的更新最有關係的地方測試它，這一點非常重要。 例如，在編寫執行個體測試內容更新或在發佈執行個體測試新程式碼。
 
-在生產系統中，Dispatcher 和 http Apache 伺服器一律位於 AEM 發佈執行個體的前面。它們為 AEM 系統提供快取和安全性服務，因此針對 Dispatcher 測試程式碼和內容更新是最重要的。
+在生產系統中，Dispatcher 和 http Apache 伺服器一律位於 AEM 發佈執行個體的前面。 它們為 AEM 系統提供快取和安全性服務，因此針對 Dispatcher 測試程式碼和內容更新是最重要的。
 
 ## 使用本機開發環境在本機預覽程式碼和內容 {#previewing-your-code-and-content-locally-with-the-local-development-environment}
 
@@ -112,8 +112,8 @@ Node.js是JavaScript執行階段環境，用來處理AEM專案`ui.frontend`子�
 ### 模型結構與 GraphQL 輸出 {#structure-vs-output}
 
 * 避免建立輸出超過15 KB JSON （gzip壓縮）的查詢。 長 JSON 檔案是資源密集型檔案，用戶端應用程式需要解析。
-* 避免片段階層有超過五個巢狀層。增加層數會使內容作者難以考量變更帶來的影響。
-* 使用多物件查詢，而不是在模型中使用相依性階層建立查詢模型。如此可讓您在重新建構JSON輸出時擁有更長遠的彈性，而不需進行許多內容變更。
+* 避免片段階層有超過五個巢狀層。 增加層數會使內容作者難以考量變更帶來的影響。
+* 使用多物件查詢，而不是在模型中使用相依性階層建立查詢模型。 如此可讓您在重新建構JSON輸出時擁有更長遠的彈性，而不需進行許多內容變更。
 
 ### 最大化 CDN 快取命中比例 {#maximize-cdn}
 
@@ -197,7 +197,7 @@ You can start deploying your code by using the Cloud Manager CI/CD pipeline, whi
 
 ## 歷程結束 - 還是結束了？ {#journey-ends}
 
-恭喜！您已經完成 AEM Headless 開發人員歷程！您現在應該已經了解：
+恭喜！ 您已經完成 AEM Headless 開發人員歷程！ 您現在應該已經了解：
 
 * Headless 和 Headful 內容傳遞之間的差異。
 * AEM 的 Headless 功能。
@@ -230,5 +230,5 @@ You can start deploying your code by using the Cloud Manager CI/CD pipeline, whi
    * 正在設定[CDN重寫程式](/help/sites-deploying/osgi-configuration-settings.md) （*搜尋CDN重寫程式*）
 
 * [AEM as a Headless CMS 簡介](/help/sites-developing/headless/introduction.md)
-* [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
-* [AEM 中的 Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hant)
+* [AEM開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
+* [AEM 中的無周邊教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hant)

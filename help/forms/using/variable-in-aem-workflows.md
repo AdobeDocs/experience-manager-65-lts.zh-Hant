@@ -11,7 +11,7 @@ role: User, Developer
 exl-id: 1a0d00f9-45f7-45af-ab34-d1c164980abb
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2127'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html?lang=zh-Hant)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html)上的AEM Forms 。
 
 工作流程模型中的變數是根據其資料型別儲存值的方式。 然後，您就可以在任何工作流程步驟中使用變數的名稱，來擷取儲存在變數中的值。 您也可以使用變數名稱來定義用於進行路由決定的運算式。
 
@@ -266,8 +266,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ### 使用工作流程變數將敏感的使用者資料儲存在JCR以外 {#jcr-independent-persistance}
 
-使用Forms Workflow處理的資料可能包含敏感的使用者資料，例如個人識別資訊和敏感個人資訊。 企業可以選擇將資料從JCR儲存空間儲存到由他們擁有並管理的外部資料存放區，由各種工作流程步驟處理（並使用工作流程變數傳遞）。 若要進一步瞭解如何在外部儲存空間中儲存工作流程資料，請參閱[針對客戶擁有的資料存放區使用工作流程變數](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore)。
-[!DNL Adobe Experience Manager]提供工作流程API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer)，以將工作流程變數儲存在外部Azure Blob儲存體中。 如需有關使用API的詳細資訊，請參閱[使用工作流程變數將敏感資料引數化，並儲存在外部資料存放區](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables)。
+使用Forms Workflow處理的資料可能包含敏感的使用者資料，例如個人識別資訊和敏感個人資訊。企業可以選擇將資料從JCR儲存空間儲存到由他們擁有並管理的外部資料存放區，由各種工作流程步驟處理（並使用工作流程變數傳遞）。若要進一步瞭解如何在外部儲存空間中儲存工作流程資料，請參閱[針對客戶擁有的資料存放區使用工作流程變數](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore)。
+[!DNL Adobe Experience Manager]提供工作流程API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer)，以將工作流程變數儲存在外部Azure Blob儲存體中。如需有關使用API的詳細資訊，請參閱[使用工作流程變數將敏感資料引數化，並儲存在外部資料存放區](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables)。
 
 ## 編輯變數 {#edit-a-variable}
 

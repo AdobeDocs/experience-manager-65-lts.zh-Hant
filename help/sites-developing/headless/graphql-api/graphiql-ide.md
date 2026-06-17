@@ -7,8 +7,8 @@ role: Developer
 exl-id: 81d47a8f-569a-4a7c-ba07-6f6c9258547c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 94%
+source-wordcount: '792'
+ht-degree: 91%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 94%
 >
 >GraphiQL 包含在 AEM 的所有環境中 (但只有在您配定端點時才可存取/可見)。
 >
->在先前版本，需要套件來安裝 GraphiQL IDE。如果您已安裝，現在可以將其移除。
+>在先前版本，需要套件來安裝 GraphiQL IDE。 如果您已安裝，現在可以將其移除。
 
 >[!NOTE]
 >您必須在[設定瀏覽器](/help/assets/content-fragments/content-fragments-configuration-browser.md)中[設定您的端點](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)，才能使用 GraphiQL IDE。
@@ -44,11 +44,11 @@ ht-degree: 94%
 
 ![GraphiQL 介面](assets/cfm-graphiql-interface.png "GraphiQL 介面")
 
-您可以在您的系統上使用 GraphiQL，以便您的用戶端應用程式可以使用 GET 要求來要求查詢，和用於發佈查詢。如果是用於生產，您可以[將查詢移至您的生產環境](/help/sites-developing/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production)。最初是生產編寫以使用查詢驗證新編寫的內容，最後是生產發佈以供上線取用。
+您可以在您的系統上使用 GraphiQL，以便您的用戶端應用程式可以使用 GET 要求來要求查詢，和用於發佈查詢。 如果是用於生產，您可以[將查詢移至您的生產環境](/help/sites-developing/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production)。 最初是生產編寫以使用查詢驗證新編寫的內容，最後是生產發佈以供上線取用。
 
 ## 選取您的端點 {#selecting-endpoint}
 
-第一步，您必須選取您要用於查詢的&#x200B;**[端點](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)**。此端點適合您要用於查詢的 Sites 設定。
+第一步，您必須選取您要用於查詢的&#x200B;**[端點](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)**。 此端點適合您要用於查詢的 Sites 設定。
 
 這可以從右上角的下拉清單中取得。
 
@@ -77,11 +77,11 @@ ht-degree: 94%
 
 從&#x200B;**[持續性查詢](/help/sites-developing/headless/graphql-api/persisted-queries.md)**&#x200B;面板 (最左側) 的清單中選取要更新的查詢。
 
-查詢會顯示在編輯器面板中。視需要進行變更，然後使用&#x200B;**儲存**&#x200B;將更新提交到持續性查詢。
+查詢會顯示在編輯器面板中。 視需要進行變更，然後使用&#x200B;**儲存**&#x200B;將更新提交到持續性查詢。
 
 ## 執行查詢 {#running-queries}
 
-您可以立即執行新查詢，也可以載入並執行持續性查詢。若要載入持續性查詢，請從清單中選取 - 查詢會顯示在編輯器面板中。
+您可以立即執行新查詢，也可以載入並執行持續性查詢。 若要載入持續性查詢，請從清單中選取 - 查詢會顯示在編輯器面板中。
 
 在任何一種情況下，編輯器面板顯示的查詢，都是在您執行以下操作時會執行的查詢：
 
@@ -139,11 +139,11 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 >[!NOTE]
 >
->持續性查詢快取 `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} 之定義的預設值為 2 小時 (7200 秒)。
+>持續查詢的快取`Time To Live` {&quot;cache-control&quot;：&quot;parameter&quot;:value}定義的預設值為2小時（7200秒）。
 
 ## 複製 URL 以直接存取查詢 {#copy-url}
 
-**複製 URL** 選項可讓您複製用於直接存取持續性查詢的 URL，以模擬查詢並查看結果。然後可以將其用於測試；例如，在瀏覽器中存取：
+**複製 URL** 選項可讓您複製用於直接存取持續性查詢的 URL，以模擬查詢並查看結果。 然後可以將其用於測試；例如，在瀏覽器中存取：
 
 <!--
   >[!NOTE]
@@ -187,4 +187,4 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 >[!NOTE]
 >
->在某些鍵盤上，`Control` 鍵標記為 `Ctrl`。
+>在某些鍵盤上，`Control` 鍵的標籤為 `Ctrl`。

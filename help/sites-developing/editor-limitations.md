@@ -11,14 +11,14 @@ role: Developer
 exl-id: 9f66c1c5-0fe7-47be-ad78-ef4548e4e26b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 6%
+source-wordcount: '312'
+ht-degree: 10%
 
 ---
 
 # 編輯器限制{#editor-limitations}
 
-觸控式UI中的編輯器會使用覆蓋來與受限於iframe中的內容互動。 此互動會對編輯器的使用以及開發人員造成一些限制。 本頁面會概述這些限制，並儘可能提供解決方案或因應措施。
+觸控式UI中的編輯器會使用覆蓋來與受限於iframe中的內容互動。 這個互動會對編輯器的使用以及開發人員造成一些限制。 本頁面會概述這些限制，並儘可能提供解決方案或因應措施。
 
 ## 功能限制 {#functional-limitations}
 

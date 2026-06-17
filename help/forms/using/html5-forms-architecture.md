@@ -1,5 +1,5 @@
 ---
-title: HTML5 Forms的架構
+title: HTML5 表單架構
 description: HTML5 Forms會部署為內嵌AEM執行個體中的套件，並使用RESTful Apache Sling架構透過HTTP/S公開作為REST端點的功能。
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,12 @@ role: Admin, User, Developer
 exl-id: e57d51de-9d98-4b20-8180-22fa81fad4fd
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1976'
-ht-degree: 0%
+source-wordcount: '2002'
+ht-degree: 2%
 
 ---
 
-# HTML5 Forms的架構{#architecture-of-html-forms}
+# HTML5 表單架構{#architecture-of-html-forms}
 
 ## 架構 {#architecture}
 
@@ -27,11 +27,11 @@ HTML5 Forms功能會部署為內嵌AEM執行個體中的套件，並使用RESTfu
 
 ### 使用Sling架構 {#using-sling-framework}
 
-[Apache Sling](https://sling.apache.org/)是以資源為中心。 它會使用請求URL來先解析資源。 每個資源都有&#x200B;**sling：resourceType** （或&#x200B;**sling：resourceSuperType**）屬性。 接著，會根據此屬性、要求方法和要求URL的屬性，選取sling指令碼來處理要求。 此Sling指令碼可以是JSP或servlet。 對於HTML5表單，**設定檔**&#x200B;節點會當作Sling資源，**設定檔轉譯器**&#x200B;會當作Sling指令碼，處理使用特定設定檔轉譯行動表單的請求。 **設定檔轉譯器**&#x200B;是從請求讀取引數並呼叫Forms OSGi服務的JSP。
+[Apache Sling](https://sling.apache.org/)是以資源為中心。 它會使用請求URL來先解析資源。 每個資源都有&#x200B;**sling:resourceType** （或&#x200B;**sling:resourceSuperType**）屬性。 接著，會根據此屬性、要求方法和要求URL的屬性，選取sling指令碼來處理要求。 此Sling指令碼可以是JSP或servlet。 對於HTML5表單，**設定檔**&#x200B;節點會當作Sling資源，**設定檔轉譯器**&#x200B;會當作Sling指令碼，處理使用特定設定檔轉譯行動表單的請求。 **設定檔轉譯器**&#x200B;是從請求讀取引數並呼叫Forms OSGi服務的JSP。
 
 如需REST端點和支援的要求引數的詳細資訊，請參閱[轉譯表單範本](/help/forms/using/rendering-form-template.md)。
 
-當使用者從使用者端裝置(例如iOS或Android™瀏覽器)提出請求時，Sling會先根據請求URL解析設定檔節點。 此設定檔節點會讀取&#x200B;**sling：resourceSuperType**&#x200B;和&#x200B;**sling：resourceType**，以決定可處理此表單轉譯器請求的所有可用指令碼。 接著，它會使用Sling要求選取器搭配request方法，以識別最適合處理此要求的指令碼。 請求到達設定檔轉譯器JSP後，JSP會呼叫Forms OSGi服務。
+當使用者從使用者端裝置（例如iOS或Android™瀏覽器）提出請求時，Sling會先根據請求URL解析設定檔節點。 從這個設定檔節點，它會讀取&#x200B;**sling:resourceSuperType**&#x200B;和&#x200B;**sling:resourceType**，以決定可處理此表單轉譯器請求的所有可用指令碼。 接著，它會使用Sling要求選取器搭配request方法，以識別最適合處理此要求的指令碼。 請求到達設定檔轉譯器JSP後，JSP會呼叫Forms OSGi服務。
 
 如需Sling指令碼解析的詳細資訊，請參閱[AEM Sling速查表](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)或[Apache Sling Url分解](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html)。
 
@@ -62,7 +62,7 @@ Forms OSGi服務會以兩個步驟處理請求：
 
 ### OSGi元件(adobe-lc-forms-core.jar) {#osgi-components-adobe-lc-forms-core-jar}
 
-**Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)**&#x200B;是從Felix Admin Console (https://[主機]：[連線埠]/system/console/bundles)的套件檢視中檢視時，HTML5 forms OSGi套件的顯示名稱。
+**Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)**&#x200B;是從Felix Admin Console （https://[主機]：[連線埠]/system/console/bundles）的套件檢視中檢視時，HTML5 forms OSGi套件的顯示名稱。
 
 此元件包含用於轉譯、快取管理和組態設定的OSGi元件。
 
@@ -82,7 +82,7 @@ HTML5 forms使用快取來最佳化輸送量和回應時間。 您可以設定�
  <tbody>
   <tr>
    <th>快取策略</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td>無</td>
@@ -109,7 +109,7 @@ HTML5 forms會使用LRU策略執行記憶體中的快取。 如果快取策略�
 
 組態服務可讓您調整HTML5表單的組態引數和快取設定。
 
-若要更新這些設定，請前往CQ Felix Admin Console (位於https://&lt;&#39;[server]：[連線埠]&#39;/system/console/configMgr)，搜尋並選取「行動Forms設定」。
+若要更新這些設定，請前往CQ Felix Admin Console （位於https://&lt;&#39;[伺服器]：[連線埠]&#39;/system/console/configMgr），搜尋並選取「行動Forms設定」。
 
 您可以使用設定服務來設定快取大小或停用快取。 您也可以使用「偵錯選項」引數來啟用偵錯。 如需有關除錯表單的詳細資訊，請參閱[除錯HTML5表單](/help/forms/using/debug.md)。
 
@@ -172,9 +172,9 @@ Sling套件包含與設定檔和設定檔轉譯器相關的內容。
 
 #### 設定檔轉譯器 {#profile-renderers}
 
-設定檔節點具有屬性&#x200B;**sling：resourceSuperType**，值為&#x200B;**xfaforms/profile**。 此屬性會在內部將要求轉寄給&#x200B;**/libs/xfaforms/profile**&#x200B;資料夾中設定檔節點的sling指令碼。 這些指令碼是JSP頁面，是用來組合HTML表單和必要JS/CSS成品的容器。 這些頁面包含對下列專案的參照：
+設定檔節點具有屬性&#x200B;**sling:resourceSuperType**，值為&#x200B;**xfaforms/profile**。 此屬性會在內部將要求轉寄給&#x200B;**/libs/xfaforms/profile**&#x200B;資料夾中設定檔節點的sling指令碼。 這些指令碼是JSP頁面，是用來組合HTML表單和必要JS/CSS成品的容器。 這些頁面包含對下列專案的參照：
 
-* **xfaforms.I18N。&lt;locale>**：此程式庫包含當地語系化的資料。
+* **xfaforms.I18N.&lt;locale>**：此程式庫包含當地語系化的資料。
 * **xfaforms.profile**：此程式庫包含XFA指令碼和配置引擎的實作。
 
 這些程式庫被模型化為CQ使用者端程式庫，這些程式庫會利用CQ架構JavaScript程式庫的自動串連、縮制和壓縮功能。
@@ -182,5 +182,5 @@ Sling套件包含與設定檔和設定檔轉譯器相關的內容。
 
 如上所述，設定檔轉譯器JSP透過sling include呼叫Forms服務。 此JSP也會根據管理員設定或請求引數設定各種偵錯選項。
 
-HTML5表單可讓開發人員建立設定檔和設定檔轉譯器，以自訂表單的外觀。 例如，HTML表單可讓開發人員整合現有HTML入口網站面板或&lt;div>區段中的表單。
+HTML5表單可讓開發人員建立設定檔和設定檔轉譯器，以自訂表單的外觀。例如，HTML表單可讓開發人員整合現有HTML入口網站面板或&lt;div>區段中的表單。
 如需建立自訂設定檔的詳細資訊，請參閱[建立自訂設定檔](/help/forms/using/custom-profile.md)。

@@ -12,8 +12,8 @@ role: Admin
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '5601'
-ht-degree: 0%
+source-wordcount: '5796'
+ht-degree: 1%
 
 ---
 
@@ -59,14 +59,14 @@ ht-degree: 0%
 >
 >如果沒有這項測試，備份可能會毫無用處（最壞的情況）。
 
-### 備份軟體安裝 {#backing-up-your-software-installation}
+### 備份您的軟體安裝 {#backing-up-your-software-installation}
 
-安裝或對配置進行重大更改后，請創建軟體安裝備份。
+在安裝或組態重大變更後，建立軟體安裝的備份。
 
-若要完成此任務， [請備份整個存放庫](#backing-up-your-repository) 然後：
+若要完成此工作，請[備份整個存放庫](#backing-up-your-repository)，然後：
 
 1. 停止AEM。
-1. 從檔案系統中返回整個 `<cq-installation-dir>` 。
+1. 從您的檔案系統備份整個`<cq-installation-dir>`。
 
 >[!CAUTION]
 >
@@ -141,7 +141,7 @@ CRX檔案的[備份與還原](/help/sites-administering/backup-and-restore.md)�
    * **版本數目下限**
 設定要保留的版本數目下限（針對每個節點）。 留空將不使用此設定。
 
-   * **最大版本期限**
+   * **最大版本保留時間**
 設定您想要保留的最大版本保留時間（以天為單位，針對每個節點）。 留空將不使用此設定。
 
    然後&#x200B;**儲存**。
@@ -154,7 +154,7 @@ CRX檔案的[備份與還原](/help/sites-administering/backup-and-restore.md)�
 >
 >* http://localhost:4502/etc/versioning/purge.html
 >
->如果不還原存放庫，則無法還原已清除的節點。 通過始終在清除之前執行試運行來照顧您的配置。
+>必須還原存放庫，才能還原已清除的節點。 在清除之前，請一律執行試用，以處理您的設定。
 
 #### 試用 — 分析主控台 {#analyzing-the-console}
 
@@ -174,13 +174,13 @@ CRX檔案的[備份與還原](/help/sites-administering/backup-and-restore.md)�
 此外，主控台還提供版本的實用資訊：
 
 * `V 1.0`：版本號碼。
-* `V 1.0.1`&#42;：星號表示該版本是當前（基本）版本，無法清除。
+* `V 1.0.1`&#42;：星號表示版本是目前（基礎）版本，無法清除。
 
 * `Thu Mar 15 2012 08:37:32 GMT+0100`：版本的日期。
 
-在下一個範例中：
+在下列範例中：
 
-* **[!DNL Shirts]**&#x200B;版本將被清除，因為其版本存在時間大於兩天。
+* **[!DNL Shirts]**&#x200B;版本已清除，因為其版本保留時間超過兩天。
 * **[!DNL Tonga Fashions!]**&#x200B;版本已清除，因為其版本數大於5。
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
@@ -272,7 +272,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 | 0 | 嚴重錯誤 | 動作已失敗，安裝程式無法繼續。 |
 |---|---|---|
 | 1 | 錯誤 | 動作已失敗。 安裝會繼續，但部分AEM WCM未正確安裝且無法運作。 |
-| 2 | 警告 | 作已成功，但遇到問題。 AEM WCM可能會也可能不會正常工作。 |
+| 2 | 警告 | 動作成功但發生問題。 AEM WCM可能正常運作，也可能無法正常運作。 |
 | 3 | 資訊 | 動作已成功。 |
 
 ### 建立自訂記錄檔 {#create-a-custom-log-file}
@@ -296,9 +296,9 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
    >[!NOTE]
    >
-   >雖然不是技術要求，但建議獨一無 `<identifier>` 二。
+   >雖然不是技術要求，但建議您將`<identifier>`設為唯一。
 
-1. 在此節點上設置以下屬性：
+1. 在此節點上設定下列屬性：
 
    * 名稱：`org.apache.sling.commons.log.file`
 
@@ -336,7 +336,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
    >
    >`org.apache.sling.commons.log.pattern`支援最多六個引數。
    >
-   >{0}型別`java.util.Date`的時間戳記
+   >`java.util.Date`型別{0}的時間戳記
    >
    >{1}記錄標籤
    >
@@ -346,7 +346,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
    >
    >{4}記錄層級
    >
-   >{5}記錄訊息
+   >{5}日誌訊息
    >
    >如果記錄呼叫包含`Throwable`，則會將棧疊追蹤附加至訊息。
 
@@ -431,9 +431,9 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
    >* 可使用數字指定大小限制。 如果未指定大小指標，則會將其視為位元組數，或者您可以新增其中一個大小指標 — `KB`、`MB`或`GB` （忽略大小寫）。
    >* 可將時間/日期排程指定為`java.util.SimpleDateFormat`模式。 它會定義檔案旋轉的時間段。 此外，尾碼也會附加至旋轉後的檔案（用於識別）。
    >
-   >預設值為「」。yyyy-MM-dd （用於每日日誌輪換）。
+   >預設值為&#39;.&#39;yyyy-MM-dd （用於每日記錄輪換）。
    >
-   >例如，在 2010 年 1 月 20 日午夜（或在此日期之後出現的第一條日誌消息精確時）,../logs/error.log 更名為 ../logs/error.log.2010-01-20. 1 月 21 日的記錄輸出到（新的和空的）../logs/error.log 直到在下一個日期更改時滾動。
+   >例如，在2010年1月20日午夜（或在此日期之後第一個記錄訊息發生精確時），../logs/error.log將重新命名為../logs/error.log.2010-01-20。 1月21日的記錄會輸出到（新的和空的） ../logs/error.log ，直到該日次變更時為止。
    >
    >| `'.'yyyy-MM` | 每個月初的輪換 |
    >|---|---|
@@ -510,7 +510,7 @@ OSGi事件也會產生稽核記錄，您可以從AEM Web Console的&#x200B;**組
    * 檢視代理程式是否已啟用。
    * 檢視任何復寫的目標。
    * 檢視復寫佇列是否為使用中（已啟用）。
-   * 查看佇列中是否有任何專案。
+   * 檢視佇列中是否有任何專案。
    * **重新整理**&#x200B;或&#x200B;**清除**&#x200B;以更新佇列專案的顯示。 這麼做有助於檢視進入和離開佇列的專案。
    * **檢視記錄檔**&#x200B;以存取復寫代理程式的任何動作記錄檔。
    * **測試目標執行個體的連線**。
@@ -532,13 +532,13 @@ OSGi事件也會產生稽核記錄，您可以從AEM Web Console的&#x200B;**組
 
 [效能最佳化](/help/sites-deploying/configuring-performance.md)是互動式處理序，在開發期間接收焦點。 部署後，會在特定間隔或事件後進行稽核。
 
-在收集資訊以進行優化時使用的方法也可用於持續監視。
+收集最佳化資訊時使用的方法也可用於持續監控。
 
 >[!NOTE]
 >
->還可以檢查可用於提高性能[&#128279;](/help/sites-deploying/configuring-performance.md#configuring-for-performance)的特定配置。
+>也可以檢查可改善效能[&#128279;](/help/sites-deploying/configuring-performance.md#configuring-for-performance)的特定組態。
 
-下面列出了發生的常見性能問題，以及有關如何發現和抵消這些問題的建議。
+以下列出常見的效能問題，以及如何發現和處理這些問題的建議。
 
 | 區域 | 症狀 | 若要增加容量…… | 若要減少磁碟區…… |
 |---|---|---|---|
@@ -547,7 +547,7 @@ OSGi事件也會產生稽核記錄，您可以從AEM Web Console的&#x200B;**組
 |   | 有些使用者端速度很快，有些速度很慢。 |  |  |
 | 伺服器 |  |  |  |
 | 網路 | 伺服器和使用者端的CPU使用量都偏低。 | 移除任何網路瓶頸。 | 改善/最佳化使用者端快取的設定。 |
-|   | 在伺服器上本機瀏覽的速度（相對）比較快。 | 增加網路頻寬。 | 減少網頁的「重量」(例如，減少影像數量、最佳化的HTML)。 |
+|   | 在伺服器上本機瀏覽的速度（相對）比較快。 | 增加網路頻寬。 | 減少網頁的「重量」（例如，減少影像數量、最佳化的HTML）。 |
 | Web伺服器 | 網頁伺服器上的CPU使用量很高。 | 叢集您的Web伺服器。 | 減少每頁的點選數（造訪）。 |
 |   |  | 使用硬體負載平衡器。 |  |
 | 應用程式 | 伺服器CPU使用量很高。 | 叢集您的AEM執行個體。 | 搜尋並清除CPU和記憶體雜湊（使用程式碼檢閱和計時輸出）。 |
@@ -573,7 +573,7 @@ OSGi事件也會產生稽核記錄，您可以從AEM Web Console的&#x200B;**組
    * 提出問題，例如：
 
       * 問題是否只會在特定時間發生？
-      * 問題是否僅發生在特定頁面上？
+      * 問題是否只發生在特定頁面？
       * 其他請求是否會受到影響？
 
    * 收集儘可能多的資訊，以便與您在正常情況下的系統知識進行比較：
@@ -710,7 +710,7 @@ Adobe建議將「慢」頁面與`request.log`隔離，然後個別調整這些�
 * 表示要求（向右箭頭）或回應（向左箭頭）的箭頭。
 * 對於請求，該行包含：
 
-   * 方法(通常是GET、HEAD或POST)
+   * 方法（通常是GET、HEAD或POST）
    * 請求的頁面
    * 通訊協定
 
@@ -1104,7 +1104,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * 您是否設定[版本清除](/help/sites-deploying/version-purging.md)，以及設定方式
 * 知識庫：
 
-   * [開啟太多檔案](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=zh-Hant)
+   * [開啟的檔案過多](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=zh-Hant)
 
 ### 定期效能降低 {#regular-performance-degradation}
 

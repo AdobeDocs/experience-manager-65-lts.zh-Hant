@@ -7,7 +7,7 @@ role: User
 exl-id: fb2fd382-e06a-4779-a4c5-e483ef42796d
 source-git-commit: 120c3fd005ce94021758ffbd14dd6b552de7afe9
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -32,29 +32,29 @@ ht-degree: 0%
 這分為四個窗格：
 
    * [清單](#lists)
-此窗格會顯示您已建立的清單，以及該清單中的潛在客戶數目。 您可以從此窗格直接建立清單，或匯入銷售機會以建立清單。
+此窗格會顯示您已建立的清單，以及該清單中的潛在客戶數目。您可以從此窗格直接建立清單，或匯入銷售機會以建立清單。
 選取特定清單後，您將會前往[清單](#lists)區段，顯示清單的詳細資料。
 
    * [區段](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#anoverviewofsegmentation)
-此窗格會顯示您已定義的區段。 區段可讓您為共用特定特徵的訪客集合設定特徵。
+此窗格會顯示您已定義的區段。區段可讓您為共用特定特徵的訪客集合設定特徵。
 選取特定區段會開啟區段定義頁面。
 
    * [報告](/help/sites-administering/reporting.md)
-AEM提供不同的報表，協助您分析及監控執行個體的狀態。 此MCM窗格會列出報告。
+AEM提供不同的報表，協助您分析及監控執行個體的狀態。此MCM窗格會列出報告。
 選取報告會開啟報告頁面。
 
-   * [行銷活動](#campaigns)
+   * [個行銷活動](#campaigns)
 此窗格會列出您的行銷活動體驗，例如[電子報](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters)和[Teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers)。
 
 * **[個銷售機會](#leads)**
-您可以在此處管理您的銷售機會。 您可以建立或匯入銷售機會、編輯個別銷售機會的特定詳細資訊，或在不再需要時刪除。 您也可以將潛在客戶放入不同的群組中，稱為「清單」。 **注意：** Adobe不打算進一步增強此功能。
+您可以在此處管理您的銷售機會。您可以建立或匯入銷售機會、編輯個別銷售機會的特定詳細資訊，或在不再需要時刪除。您也可以將潛在客戶放入不同的群組中，稱為「清單」。**注意：** Adobe不打算進一步增強此功能。
 建議使用[Adobe Campaign以及與AEM](/help/sites-administering/campaign.md)的整合。
 
 * **[清單](#lists)**
 您可以在此處管理您的（潛在客戶）清單。**注意：** Adobe不打算進一步增強此功能。
 建議使用[Adobe Campaign以及與AEM](/help/sites-administering/campaign.md)的整合。
 
-* **[行銷活動](#campaigns)**
+* **[個行銷活動](#campaigns)**
 您可以在此處管理您的品牌、行銷活動和體驗。
 
 ## 儀表板 {#dashboard}
@@ -63,7 +63,7 @@ AEM提供不同的報表，協助您分析及監控執行個體的狀態。 此M
 
 ![mcm_dashboard](assets/mcm_dashboard.png)
 
-### 銷售機會 {#leads}
+### 銷售線索 {#leads}
 
 >[!NOTE]
 >
@@ -109,7 +109,7 @@ AEM提供不同的報表，協助您分析及監控執行個體的狀態。 此M
 
 * **在左窗格**：
 這裡有所有品牌和行銷活動的清單。
-按一下品牌可展開清單，以在左側窗格中顯示所有相關行銷活動；此清單也會顯示每個行銷活動中存在的體驗數量。 它也會在右窗格中開啟品牌概觀。
+按一下品牌可展開清單，以在左側窗格中顯示所有相關行銷活動；此清單也會顯示每個行銷活動中存在的體驗數量。它也會在右窗格中開啟品牌概觀。
 
 * **在右窗格**：
 系統會為每個品牌顯示圖示（不會顯示歷史行銷活動）。
@@ -189,6 +189,6 @@ AEM提供不同的報表，協助您分析及監控執行個體的狀態。 此M
 
 ### 分析您的行銷活動體驗 {#analyzing-your-campaign-experiences}
 
-在MCM中，按一下&#x200B;**行銷活動**。 確定清單檢視為使用中，然後選取必要的行銷活動體驗並選取&#x200B;**分析……**。 畫面會顯示一段時間的頁面曝光圖。
+在MCM中，按一下&#x200B;**行銷活動**。 確定清單檢視為使用中，然後選取必要的行銷活動體驗並選取&#x200B;**分析……**。畫面會顯示一段時間的頁面曝光圖。
 
 ![mcm_campaignanalyze](assets/mcm_campaignanalyze.png)

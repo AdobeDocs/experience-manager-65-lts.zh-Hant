@@ -11,7 +11,7 @@ role: User, Developer
 exl-id: 3eb9c0e3-950e-4dd5-a4c9-2d8f486ea3cf
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Forms入口網站可讓您在表單清單中使用自訂中繼資料。 為資�
 
 ## 建立自訂範本 {#creating-a-nbsp-custom-template}
 
-1. 在/apps下建立sling：Folder節點
+1. 在/apps下建立sling:Folder節點
 
    新增「fpContentType」屬性。 根據您為其定義自訂範本的元件，指定適當的屬性值。
 
@@ -50,10 +50,10 @@ Forms入口網站可讓您在表單清單中使用自訂中繼資料。 為資�
 
    >[!NOTE]
    >
-   >標題可以不同於您建立的sling：Folder的節點名稱。
+   >標題可能與您建立的sling:Folder節點名稱不同。
 
    以下影像說明「搜尋和製表器」元件的組態。
-   ![正在建立sling：Folder](assets/1.png)
+   ![正在建立Sling:Folder](assets/1.png)
 
 1. 在此資料夾中建立檔案template.html，以便用作自訂範本。
 1. 寫入自訂範本並使用如下所述的自訂中繼資料。
@@ -120,8 +120,8 @@ Forms Portal提供預留位置語法，以顯示自訂/現成可用的中繼資�
 1. **本地化支援**：若要本地化任何靜態文字，請使用屬性`${localize-YOUR_TEXT}`，並讓本地化值可供使用（如果尚未存在的話）。
    *在所討論的範例中，屬性`${localize-Apply}`和`${localize-Download}`是用來當地語系化套用和下載文字。*
 
-1. **排序支援**：按一下HTML元素來排序搜尋結果。 若要在表格配置中實施排序，請在特定表格標頭上新增「data-sortKey」屬性。 此外，將其值新增為您要排序的中繼資料。
-例如，對於格線檢視中的「Title」標頭，「data-sortKey」標頭的值為「title」。 按一下標題，以便排序特定欄中的值。
+1. **排序支援**：按一下HTML元素來排序搜尋結果。若要在表格配置中實施排序，請在特定表格標頭上新增「data-sortKey」屬性。此外，將其值新增為您要排序的中繼資料。
+例如，對於格線檢視中的「Title」標頭，「data-sortKey」標頭的值為「title」。按一下標題，以便排序特定欄中的值。
 
 1. **使用組態屬性**： Search &amp; Lister元件有數個組態可供您在使用者介面上使用。 例如，若要顯示透過編輯對話方塊儲存的HTML工具提示文字，請使用`${config-htmlLinkText}`屬性。 **同樣地，對於PDF工具提示文字，請使用** `${config-pdfLinkText}`屬性。
 
@@ -150,15 +150,15 @@ Forms Portal提供預留位置語法，以顯示自訂/現成可用的中繼資�
 
 *附註：*
 
-1. 針對「草稿與提交」元件下「草稿」區段中的刪除選項，將CSS類別命名為「__FP_deleteDraft」。 此外，請包含值為&#x200B;**${draftID}**&#x200B;的屬性「draftID」，這是對應草稿的草稿ID。
+1. 針對「草稿與提交」元件下「草稿」區段中的刪除選項，將CSS類別命名為「__FP_deleteDraft」。 此外，請包含值為&#x200B;**${draftID}**&#x200B;的屬性「draftID」，這是對應草稿的草稿識別碼。
 
 1. 建立連結以開啟草稿和提交時，您可以指定&#x200B;**${path}.html**&#x200B;作為錨點標籤的&#x200B;**href**&#x200B;屬性值。
 
 ![草稿與提交節點](assets/raw-image-with-index.png)
 
-**A**。 容器元素
+**A**。容器元素
 
-**B.**&#x200B;具有固定階層的「路徑」中繼資料，以取得每個表單儲存的縮圖。
+**B.** 具有固定階層的「路徑」中繼資料，可取得針對每個表單儲存的縮圖。
 
 **C.**&#x200B;用於每個表單之範本區段的可重複資料屬性
 
@@ -171,7 +171,7 @@ Forms Portal提供預留位置語法，以顯示自訂/現成可用的中繼資�
 ## 秘訣、技巧和已知問題 {#tips-tricks-and-known-issues}
 
 1. 請勿在任何自訂範本中使用單引號(&#39;)。
-1. 對於自訂中繼資料，僅將此屬性儲存在&#x200B;**jcr：content/metadata**&#x200B;節點上。 如果您將其儲存在任何其他位置，Forms Portal將無法顯示中繼資料。
+1. 對於自訂中繼資料，僅將此屬性儲存在&#x200B;**jcr:content/metadata**&#x200B;節點上。 如果您將其儲存在任何其他位置，Forms Portal將無法顯示中繼資料。
 1. 確認任何自訂中繼資料或現有中繼資料的名稱不含冒號( ： )。 如果出現提示，您無法在使用者介面中顯示。
 1. **資料可重複**&#x200B;對&#x200B;**連結**&#x200B;元件沒有任何意義。 Adobe建議您避免在連結元件的範本中使用此屬性。
 

@@ -12,8 +12,8 @@ role: Admin
 exl-id: a39ed93e-4276-48ff-ba49-d0f630409222
 source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 1%
+source-wordcount: '1491'
+ht-degree: 6%
 
 ---
 
@@ -39,7 +39,7 @@ Adobe Analytics帳戶必須：
 
 >[!CAUTION]
 >
->提供&#x200B;**管理員**&#x200B;許可權(在Adobe Analytics內)不足以讓使用者從AEM連線至Adobe Analytics。 帳戶也必須有&#x200B;**Web服務存取**&#x200B;許可權。
+>提供&#x200B;**管理員**&#x200B;許可權（在Adobe Analytics內）不足以讓使用者從AEM連線至Adobe Analytics。 帳戶也必須有&#x200B;**Web服務存取**&#x200B;許可權。
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
@@ -84,17 +84,17 @@ Adobe Analytics [資料中心](https://experienceleague.adobe.com/docs/analytics
 
 >[!CAUTION]
 >
->由於Adobe Analytics API中的安全性變更，AEM中包含的Activity Map版本已無法再使用。
+>由於 Adobe Analytics API 中的安全性變更，AEM 中包含的 Activity Map 版本已無法再使用。
 >
->現在應該使用Adobe Analytics[提供的](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=zh-Hant)ActivityMap外掛程式。
+>現在應該使用Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=zh-Hant)提供的ActivityMap外掛程式。
 
 ## 為Activity Map進行配置 {#configuring-for-the-activity-map}
 
 >[!CAUTION]
 >
->由於Adobe Analytics API中的安全性變更，AEM中包含的Activity Map版本已無法再使用。
+>由於 Adobe Analytics API 中的安全性變更，AEM 中包含的 Activity Map 版本已無法再使用。
 >
->現在應該使用Adobe Analytics[提供的](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=zh-Hant)ActivityMap外掛程式。
+>現在應該使用Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=zh-Hant)提供的ActivityMap外掛程式。
 
 ## 建立Adobe Analytics架構 {#creating-a-adobe-analytics-framework}
 
@@ -198,17 +198,17 @@ Adobe Analytics [資料中心](https://experienceleague.adobe.com/docs/analytics
 
 * **擷取嘗試**：
 嘗試擷取佇列報表的次數。
-預設為 `6`。
+預設值為`6`。
 
 * **擷取延遲**：
 嘗試擷取已排入佇列的報表之間的毫秒數。
-預設值為`10000`。 由於是以毫秒為單位，因此會對10秒。
+預設值為`10000`。由於是以毫秒為單位，因此會對10秒。
 
 * **擷取頻率**：
 `cron`運算式，用於決定擷取Analytics報告的頻率。
 預設值為`0 0 0/12 * * ?`；這對應到每小時12次擷取。
 
-若要設定此OSGi服務，您可以使用存放庫[中的](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)網頁主控台[或](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)osgiConfig節點（服務PID為`com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`）。
+若要設定此OSGi服務，您可以使用存放庫[&#128279;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)中的[網頁主控台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)或osgiConfig節點（服務PID為`com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`）。
 
 ## 編輯Adobe Analytics設定和/或架構 {#editing-adobe-analytics-configurations-and-or-frameworks}
 
