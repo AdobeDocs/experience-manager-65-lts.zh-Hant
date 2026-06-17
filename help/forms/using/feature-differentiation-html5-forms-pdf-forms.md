@@ -1,5 +1,5 @@
 ---
-title: HTML5 forms與PDF forms的功能差異
+title: HTML5 表單和 PDF 表單之間的功能差異
 description: 瞭解HTML5 Forms和PDF forms之間的功能差異。
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,12 @@ role: Admin, User, Developer
 exl-id: adf65e7f-9984-40e8-99e3-fadce08bb44e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 2%
+source-wordcount: '450'
+ht-degree: 6%
 
 ---
 
-# HTML5 forms與PDF forms的功能差異 {#feature-differentiation-between-html-forms-and-pdf-forms}
+# HTML5 表單和 PDF 表單之間的功能差異 {#feature-differentiation-between-html-forms-and-pdf-forms}
 
 下表指定為HTML5 Forms和PDF forms提供的功能支援：
 
@@ -25,7 +25,7 @@ ht-degree: 2%
  <tbody>
   <tr>
    <th>功能</th>
-   <th>HTML5 Forms</th>
+   <th>HTML5 表單</th>
    <th>PDF</th>
   </tr>
   <tr>
@@ -55,7 +55,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>頁首/頁尾 </td>
-   <td>支援。 <br /> <br />由於HTML5行動表單不支援分頁，所以頁首和頁尾只會出現一次。 不過，您可以在版面中設定這些引數，使其顯示在行動表單預覽中的多個位置。<br /> </td>
+   <td>支援。<br /> <br /> 由於HTML5行動表單不支援分頁，所以頁首和頁尾只會出現一次。 不過，您可以在版面中設定這些引數，使其顯示在行動表單預覽中的多個位置。<br /> </td>
    <td>支援。</td>
   </tr>
   <tr>

@@ -11,7 +11,7 @@ role: Developer
 exl-id: 4a78de53-33bf-4999-ba3c-7d0bc33196a4
 source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
 workflow-type: tm+mt
-source-wordcount: '3668'
+source-wordcount: '6205'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 本頁說明Adobe Experience Manager (AEM)可用的所有xtype。
 
-在ExtJS語言中，xtype是指定給類別的符號名稱。 您可以閱讀ExtJS 2[的](https://docs.sencha.com/)總覽的「元件XTypes」段落，以取得有關什麼是xtype以及如何使用的詳細說明。
+在ExtJS語言中，xtype是指定給類別的符號名稱。 您可以閱讀ExtJS 2](https://docs.sencha.com/)的[總覽的「元件XTypes」段落，以取得有關什麼是xtype以及如何使用的詳細說明。
 
 如需AEM中所有可用Widget的詳細資訊，請參閱[Widget API檔案](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)。
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 >
 >本頁說明傳統UI中ExtJS xtypes的使用方式。
 >
->Adobe建議您使用以[Coral UI](/help/sites-developing/touch-ui-concepts.md)和[Granite UI](/help/sites-developing/touch-ui-concepts.md#coral-ui)為基礎的標準、新式、[觸控式UI](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components)。
+>Adobe建議您使用以[Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui)和[Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components)為基礎的標準、新式、[觸控式UI](/help/sites-developing/touch-ui-concepts.md)。
 
 ## xtype {#xtypes}
 
@@ -182,7 +182,7 @@ ht-degree: 0%
 
   [CQ.Ext.Component](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  所有`Ext`元件的基底類別。 元件的所有子類別都可以參與由`Ext`Container[類別提供的建立、演算和銷毀的自動化](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)元件生命週期。 建立容器時，元件可透過[專案](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)組態選項新增至容器。
+  所有`Ext`元件的基底類別。 元件的所有子類別都可以參與由[Container](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)類別提供的建立、演算和銷毀的自動化`Ext`元件生命週期。 建立容器時，元件可透過[專案](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)組態選項新增至容器。
 
 * `componentextractor`
 
@@ -344,7 +344,7 @@ ht-degree: 0%
 
 * `feedimporter`
 
-  [CQ.wcm.FeedImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+  [cq.wcm.FeedImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   FeedImporter可讓使用者匯入RSS或Atom摘要，並為每個摘要專案建立頁面。
 
@@ -476,25 +476,25 @@ ht-degree: 0%
 
 * `lvbooleancolumn`
 
-  [CQ.Ext.list.BooleanColumn](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+  [cq.Ext.list.BooleanColumn](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   呈現布林資料欄位的Column定義類別。 如需詳細資訊，請參閱[CQ.Ext.list.Column](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)的[xtype](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)組態選項。
 
 * `lvcolumn`
 
-  [CQ.Ext.list.Column](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+  [cq.Ext.list.Column](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   此類別封裝要用於[ListView](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)初始化的資料行組態資料。
 
 * `lvdatecolumn`
 
-  [CQ.Ext.list.DateColumn](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+  [cq.Ext.list.DateColumn](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   根據預設地區設定或設定的[格式](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)呈現通過日期的Column定義類別。 如需詳細資訊，請參閱[CQ.Ext.list.Column](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)的[xtype](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)組態選項。
 
 * `lvnumbercolumn`
 
-  [CQ.Ext.list.NumberColumn](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+  [cq.Ext.list.NumberColumn](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   根據[格式](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)字串呈現數值資料欄位的Column定義類別。 如需詳細資訊，請參閱[CQ.Ext.list.Column](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)的[xtype](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)組態選項。
 
@@ -578,9 +578,9 @@ ht-degree: 0%
 
 * `offlineimporter`
 
-  [CQ.wcm.OfflineImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+  [cq.wcm.OfflineImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  `OfflineImporter`是將Microsoft® Word檔案匯入並轉換成AEM頁面的工具。 此功能允許使用文書處理器離線編輯內容。
+  `OfflineImporter`是將® Word檔案匯入並轉換成AEM頁面的工具。 此功能允許使用文書處理器離線編輯內容。
 
 * `ownerdraw`
 
@@ -604,7 +604,7 @@ ht-degree: 0%
 
 * `paragraphreference`
 
-  [CQ.form.ParagraphReference](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+  [cq.form.ParagraphReference](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   段落參考欄位可讓您瀏覽頁面並選取其中一個段落。 它由觸發欄位和關聯的段落瀏覽對話方塊組成。
 
@@ -685,7 +685,7 @@ ht-degree: 0%
 
 * `richtext`
 
-  [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+  [CQ.form.Rtf](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   `RichText`提供表單欄位，用於編輯樣式文字資訊(RTF)。
 
@@ -729,7 +729,7 @@ ht-degree: 0%
 
 * `siteimporter`
 
-  [CQ.wcm.SiteImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+  [cq.wcm.SiteImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   `SiteImporter`可讓使用者匯入完整的網站並建立初始專案。
 
@@ -909,7 +909,7 @@ ht-degree: 0%
 
   `TreePanel`提供樹狀結構資料的UI表示法。
 
-  新增至[的](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)TreeNode`TreePanel`可以包含您的應用程式在其[屬性](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)屬性中所使用的中繼資料。
+  新增至`TreePanel`的[TreeNode](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)可以包含您的應用程式在其[屬性](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)屬性中所使用的中繼資料。
 
 * `trigger`
 

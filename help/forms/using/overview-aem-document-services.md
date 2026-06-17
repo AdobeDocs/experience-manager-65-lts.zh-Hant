@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 03e87c5a-c106-4b4c-9b42-8ce7a04d9c0c
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 0%
+source-wordcount: '1456'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=zh-Hant)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html)上的[AEM Forms 。
 
 
 AEM檔案服務是一組OSGi服務，用於建立、彙編和保護PDF檔案。 檔案服務包含下列服務：
@@ -59,7 +59,7 @@ Assembler服務可讓您組合、重新排列和增加PDF和XDP檔案，並取�
 除了上述功能以外，組裝程式服務也提供：
 
 * 將PDF檔案轉換為PDF/A標準。
-* 將PDF forms、XML表單(在Designer中建立)和PDF forms (在Acrobat中建立)轉換為PDF/A-1b、PDF/A-2b和PDFA/A-3b。
+* 將PDF forms、XML表單（在Designer中建立）和PDF forms （在Acrobat中建立）轉換為PDF/A-1b、PDF/A-2b和PDFA/A-3b。
 * 轉換已簽署或未簽署的PDF檔案（需要數位簽名）。
 * 驗證PDF/A檔案的合規性，並視需要轉換它。
 

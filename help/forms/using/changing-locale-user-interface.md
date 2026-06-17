@@ -12,7 +12,7 @@ role: User, Developer
 exl-id: 3f919e4d-0535-4816-8762-9c0088e47a2c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ AEM Forms工作區使用影像來顯示類別、佇列和程式的標題。 您�
 
 >[!NOTE]
 >
->尋找瀏覽器的瀏覽器語言地區設定代碼。 開啟`https://'[server]:[port]'/lc/libs/ws/Locale.html`。
+>尋找瀏覽器的瀏覽器語言地區設定代碼。 開啟 `https://'[server]:[port]'/lc/libs/ws/Locale.html`。
 
 ![collapsing_panels_image](assets/collapsing_panels_image.png)
 
@@ -80,7 +80,7 @@ AEM Forms工作區使用影像來顯示類別、佇列和程式的標題。 您�
 
 1. 執行[Workspace Customization](../../forms/using/introduction-customizing-html-workspace.md)文章中列出的所有語意變更。
 1. 導覽至&#x200B;*js/runtime/utility*&#x200B;資料夾，並開啟&#x200B;*usersession.js*&#x200B;檔案進行編輯。
-1. 找出原始程式碼區塊中列出的程式碼，並新增條件&#x200B;*lang！將&#39;nw&#39;*==入if陳述式：
+1. 找出原始程式碼區塊中列出的程式碼，並將條件&#x200B;*lang!==&#39;nw&#39;*&#x200B;新增至if陳述式：
 
    ```javascript
    // Orignal code

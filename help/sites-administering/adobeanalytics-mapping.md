@@ -12,7 +12,7 @@ role: Admin
 exl-id: d9ffc796-1c2b-4fa6-b434-fb3ee03d40b5
 source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1459'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ AEM使用慣例來命名產品相關變數和事件，這些變數和事件會�
 選取RSID時，屬於該RSID的所有變數都會新增到清單中。\
 需要`cf#`才能將Analytics變數對應到出現在不同追蹤元件上的CQ變數。 請參閱設定基本追蹤的框架。
 
-根據為框架選取的檢視，內容尋找器將由Analytics變數(在AEM檢視中)或CQ變數（在Analytics檢視中）填入。
+根據為框架選取的檢視，內容尋找器將由Analytics變數（在AEM檢視中）或CQ變數（在Analytics檢視中）填入。
 
 清單可透過下列方式操作：
 
@@ -151,7 +151,7 @@ AEM使用慣例來命名產品相關變數和事件，這些變數和事件會�
 
 1. 這是框架開啟時的預設檢視。
 1. 左側：內容尋找器(cf#)會由Adobe Analytics變數根據所選的RSID填入。
-1. Tab標頭(**AEM檢視**&#x200B;和&#x200B;**Analytics檢視**)：使用這些標頭在兩個檢視之間切換。
+1. Tab標頭（**AEM檢視**&#x200B;和&#x200B;**Analytics檢視**）：使用這些標頭在兩個檢視之間切換。
 
 1. **AEM檢視**：
 
@@ -174,7 +174,7 @@ AEM使用慣例來命名產品相關變數和事件，這些變數和事件會�
 
 1. 切換至架構上的&#x200B;**Analytics檢視**&#x200B;索引標籤，即可存取此檢視。
 1. 左側：內容尋找器(cf#)由CQ變數填入，該變數會根據CQ檢視中拖曳至框架的元件而定。
-1. Tab標頭(**AEM檢視**&#x200B;和&#x200B;**Analytics檢視**)：使用這些標頭在兩個檢視之間切換。
+1. Tab標頭（**AEM檢視**&#x200B;和&#x200B;**Analytics檢視**）：使用這些標頭在兩個檢視之間切換。
 
 1. 三個表格（流量、轉換、事件）列出所有可用的Adobe Analytics變數。 屬於選取的RSID。 此處顯示的對應應與AEM檢視中的對應相同：
 
@@ -198,8 +198,7 @@ AEM使用慣例來命名產品相關變數和事件，這些變數和事件會�
 >
 >您也可以連按兩下欄位並在其中新增文字，以內嵌填入任何表格的CQ變數欄。 這些欄位接受JavaScript作為輸入。
 >
->例如，您可以在`prop3`旁邊新增：
->     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
+>例如，您可以在`prop3`旁邊新增：> `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
 >若要傳送與其&#x200B;*sitesection*&#x200B;串連之頁面的&#x200B;*title*，請使用&#x200B;*：* （冒號），並將前置詞設為&#x200B;*Adobe*&#x200B;作為`prop3`
 >
 

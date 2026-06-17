@@ -11,8 +11,8 @@ role: Developer
 exl-id: 1fcf6de4-30b5-46cb-9c1d-109a160d5030
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 4%
+source-wordcount: '889'
+ht-degree: 6%
 
 ---
 
@@ -66,7 +66,7 @@ UI同時適用於行動裝置和案頭裝置，不過Adobe已決定使用適用�
 您可以視需要開啟/隱藏左側邊欄，以顯示：
 
 * **時間表**
-* **個參考**
+* **參照**
 * **篩選器**
 
 預設值為&#x200B;**僅內容** （隱藏邊欄）。

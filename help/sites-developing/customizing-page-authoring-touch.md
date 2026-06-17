@@ -11,8 +11,8 @@ role: Developer
 exl-id: 8d53072b-826d-4ff4-843b-09204fb5a455
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 38%
+source-wordcount: '1467'
+ht-degree: 39%
 
 ---
 
@@ -33,7 +33,7 @@ Adobe Experience Manager (AEM)提供各種機制，可讓您自訂編寫執行�
 
 * 覆蓋
 
-  覆蓋是以節點定義為基礎，可讓您以您自己的自訂功能（在`/apps`中）覆蓋標準功能（在`/libs`中）。 建立覆蓋時不需要1:1的原始復本，因為[sling資源合併器](/help/sites-developing/sling-resource-merger.md)允許繼承。
+  覆蓋是以節點定義為基礎，可讓您以您自己的自訂功能（在`/apps`中）覆蓋標準功能（在`/libs`中）。 建立覆蓋時不需要原始的1:1復本，因為[sling資源合併器](/help/sites-developing/sling-resource-merger.md)允許繼承。
 
 >[!NOTE]
 >
@@ -65,11 +65,11 @@ Adobe Experience Manager (AEM)提供各種機制，可讓您自訂編寫執行�
 
 ## 新增「新圖層」(模式) {#add-new-layer-mode}
 
-當您編輯頁面時，有各種[模式](/help/sites-authoring/author-environment-tools.md#page-modes)可使用。這些模式會使用[圖層](/help/sites-developing/touch-ui-structure.md#layer)實作。這些可容許存取相同頁面內容的不同功能類型。標準圖層包括：編輯、預覽、註釋、開發人員和鎖定目標。
+當您編輯頁面時，有各種[模式](/help/sites-authoring/author-environment-tools.md#page-modes)可使用。 這些模式會使用[圖層](/help/sites-developing/touch-ui-structure.md#layer)實作。 這些可容許存取相同頁面內容的不同功能類型。 標準圖層包括：編輯、預覽、註釋、開發人員和鎖定目標。
 
 ### 圖層範例：Live Copy 狀態 {#layer-example-live-copy-status}
 
-標準 AEM 執行個體會提供 MSM 圖層。這會存取和[多網站管理](/help/sites-administering/msm.md)相關的資料並在圖層中將其醒目顯示。
+標準 AEM 執行個體會提供 MSM 圖層。 這會存取和[多網站管理](/help/sites-administering/msm.md)相關的資料並在圖層中將其醒目顯示。
 
 若要檢視其運作情況，您可以編輯任何[We.Retail語言副本](/help/sites-developing/we-retail-globalized-site-structure.md)頁面（或任何其他即時副本頁面），並選取&#x200B;**即時副本狀態**&#x200B;模式。
 
@@ -85,29 +85,29 @@ GITHUB上的程式碼
 
 您可以在GitHub上找到此頁面的程式碼
 
-* 在GitHub上[開啟aem-authoring-new-layer-mode專案](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)
+* [在GitHub上開啟aem-authoring-new-layer-mode專案](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)
 * 將專案下載為[ZIP檔](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode/archive/master.zip)
 
 ## 將新選擇類別新增到資產瀏覽器 {#add-new-selection-category-to-asset-browser}
 
-資產瀏覽器會顯示各種類型/類別的資產 (例如影像和文件)。還可以依這些資產類別篩選資產。
+資產瀏覽器會顯示各種類型/類別的資產 (例如影像和文件)。 還可以依這些資產類別篩選資產。
 
 ### 程式碼範例 {#code-sample-1}
 
-`aem-authoring-extension-assetfinder-flickr` 是一種範例套件，會顯示如何將群組新增到資產尋找器。此範例會連接到 [Flickr](https://www.flickr.com) 的公用串流並在側邊面板中顯示它們。
+`aem-authoring-extension-assetfinder-flickr` 是一種範例套件，會顯示如何將群組新增到資產尋找器。 此範例會連接到 [Flickr](https://www.flickr.com) 的公用串流並在側邊面板中顯示它們。
 
 GITHUB上的程式碼
 
 您可以在GitHub上找到此頁面的程式碼
 
-* 在GitHub上[開啟aem-authoring-extension-assetfinder-flickr專案](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)
+* [在GitHub上開啟aem-authoring-extension-assetfinder-flickr專案](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)
 * 將專案下載為[ZIP檔](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr/archive/master.zip)
 
 ## 篩選資源 {#filtering-resources}
 
 編寫頁面時，使用者通常必須從資源（例如頁面、元件和資產）中選取。 例如，這可採取清單的形式，作者必須從中選取專案。
 
-若要將清單保持為合理的大小並且和使用案例相關，可以以自訂述詞的形式實作篩選器。例如，如果使用[`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui)元件來允許使用者選取特定資源的路徑，則顯示的路徑可依下列方式篩選：
+若要將清單保持為合理的大小並且和使用案例相關，可以以自訂述詞的形式實作篩選器。 例如，如果使用[`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui)元件來允許使用者選取特定資源的路徑，則顯示的路徑可依下列方式篩選：
 
 * 透過實作 [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/predicate/package-summary.html) 介面實作自訂述詞。
 * 指定述詞的名稱，並在使用 `pathbrowser` 時參照該名稱。
@@ -132,7 +132,7 @@ GITHUB上的程式碼
 
 您可以在GitHub上找到此頁面的程式碼
 
-* 在GitHub上[開啟aem-authoring-extension-toolbar-screenshot專案](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
+* [在GitHub上開啟aem-authoring-extension-toolbar-screens專案](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
 * 將專案下載為[ZIP檔](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot/archive/master.zip)
 
 ## 新增就地編輯器 {#add-new-in-place-editor}
@@ -160,7 +160,7 @@ GITHUB上的程式碼
 
 1. 編輯器的其他組態詳細資料可使用包含組態的`config`節點和包含必要外掛程式組態詳細資料的`plugin`節點來設定。
 
-   以下範例是為影像元件的影像裁切外掛程式定義外觀比例。 由於熒幕大小有限的可能性，裁切外觀比例已移至全熒幕編輯器，並且僅能在該處看到。
+   以下是為影像元件的影像裁切外掛程式定義外觀比例的範例。 由於熒幕大小有限的可能性，裁切外觀比例已移至全熒幕編輯器，並且僅能在該處看到。
 
    ```xml
    <cq:inplaceEditing
@@ -184,7 +184,7 @@ GITHUB上的程式碼
 
    >[!CAUTION]
    >
-   >AEM 裁切比例 (由 `ratio` 屬性設定) 的定義為&#x200B;**高度/寬度比**。這和寬度/高度比的傳統定義不同，並且是由於舊有相容性的原因完成的。如果您清楚定義了 `name` 屬性，編寫的使用者並不會看出任何差異，因為這即是 UI 中所顯示的內容。
+   >AEM 裁切比例 (由 `ratio` 屬性設定) 的定義為&#x200B;**高度/寬度比**。 這和寬度/高度比的傳統定義不同，並且是由於舊有相容性的原因完成的。 如果您清楚定義了 `name` 屬性，編寫的使用者並不會看出任何差異，因為這即是 UI 中所顯示的內容。
 
 #### 建立新的就地編輯器 {#creating-a-new-in-place-editor}
 
@@ -214,7 +214,7 @@ GITHUB上的程式碼
 
 您可以在GitHub上找到此頁面的程式碼
 
-* 在GitHub上[開啟aem-authoring-extension-inplace-editor專案](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
+* [在GitHub上開啟aem-authoring-extension-inplace-editor專案](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
 * 將專案下載為[ZIP檔](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor/archive/master.zip)
 
 #### 設定多個就地編輯器 {#configuring-multiple-in-place-editors}
@@ -233,7 +233,7 @@ GITHUB上的程式碼
 
 您可以在GitHub上找到此頁面的程式碼
 
-* 在GitHub上[開啟aem-authoring-extension-header-backtosites專案](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
+* [在GitHub上開啟aem-authoring-extension-header-backtosites專案](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
 * 將專案下載為[ZIP檔](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites/archive/master.zip)
 
 ## 自訂要求啟動工作流程 {#customizing-the-request-for-activation-workflow}

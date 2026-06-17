@@ -12,15 +12,15 @@ exl-id: 801364fc-0fde-49d0-a95f-963ed6db189b
 index: false
 source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 5%
+source-wordcount: '1020'
+ht-degree: 7%
 
 ---
 
 
 # AEM - Angular中的SPA快速入門{#getting-started-with-spas-in-aem-angular}
 
-單頁應用程式 (SPA) 可為網站使用者提供引人入勝的體驗。開發人員希望能使用SPA架構建立網站，而作者則想在AEM中為使用SPA架構建立的網站順暢地編輯內容。
+單頁應用程式 (SPA) 可為網站使用者提供引人入勝的體驗。 開發人員希望能使用SPA架構建立網站，而作者則想在AEM中為使用SPA架構建立的網站順暢地編輯內容。
 
 SPA製作功能提供全方位的解決方案，可支援AEM中的SPA。 本文介紹Angular架構上的簡化SPA應用程式，說明其如何整合，好讓您快速啟動並執行自己的SPA。
 
@@ -113,7 +113,7 @@ module.exports = {
 
 ### AEM 專案原型 {#aem-project-archetype}
 
-任何 AEM 專案都應使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)，它支援使用 React 或 Angular 的 SPA 專案並使用 SPA SDK。
+任何 AEM 專案都應使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用 React 或 Angular 的 SPA 專案並使用 SPA SDK。
 
 ## 應用程式結構 {#application-structure}
 
@@ -221,7 +221,7 @@ export class MainContentComponent {
 }
 ```
 
-`MainComponent`會擷取頁面模型的JSON表示法，並處理內容以包裝/裝飾頁面的每個元素。 在`Page`SPA Blueprint[檔案中可以找到](/help/sites-developing/spa-blueprint.md#main-pars-header-1694932501)的更多詳細資料。
+`MainComponent`會擷取頁面模型的JSON表示法，並處理內容以包裝/裝飾頁面的每個元素。 在[SPA Blueprint](/help/sites-developing/spa-blueprint.md#main-pars-header-1694932501)檔案中可以找到`Page`的更多詳細資料。
 
 ### image.component.ts {#image-component-ts}
 
