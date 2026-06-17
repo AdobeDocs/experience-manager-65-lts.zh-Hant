@@ -1,5 +1,5 @@
 ---
-title: HTML5表單常見問題集(FAQ)
+title: HTML5 表單常見問題集 (FAQ)
 description: 關於HTML5表單版面配置、指令碼支援和範圍的常見問題集(FAQ)。
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,12 @@ role: Admin, User, Developer
 exl-id: fc98390c-8517-46fc-9f15-bac5d4327c60
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2007'
-ht-degree: 0%
+source-wordcount: '1982'
+ht-degree: 1%
 
 ---
 
-# HTML5表單常見問題集(FAQ){#frequently-asked-questions-faq-for-html-forms}
+# HTML5 表單常見問題集 (FAQ){#frequently-asked-questions-faq-for-html-forms}
 
 關於HTML5表格的版面配置、指令碼支援和範圍，有一些常見問題集(FAQ)。
 
@@ -93,11 +93,11 @@ ht-degree: 0%
 
 1. 我觀察到與缺少內容或重疊內容相關的版面配置問題。 原因是什麼？
 
-   回答：如果在相同位置有「繪製文字」或「繪製影像」元素以及其他重疊元素（例如「矩形」），如果「繪製文字」內容在檔案順序中較晚出現(在「AEM Forms Designer階層」檢視中)，則不會顯示內容。 PDF支援透明分層，但HTML/瀏覽器不支援透明分層。
+   回答：如果在相同位置有「繪製文字」或「繪製影像」元素以及其他重疊元素（例如「矩形」），如果「繪製文字」內容在檔案順序中較晚出現（在「AEM Forms Designer階層」檢視中），則不會顯示內容。 PDF支援透明分層，但HTML/瀏覽器不支援透明分層。
 
 1. 為什麼HTML表單中顯示的某些字型與設計表單時所用的字型不同？
 
-   回答： HTML5 Forms不允許內嵌字型(相較於將字型內嵌於表單中的PDF forms)。 若要讓表單的HTML版本如預期般呈現，請確定這些字型在AEM Forms伺服器的CRX存放庫(AEM內容存放庫)中以及安裝AEM Designer的電腦上皆可使用。 當AEM Forms伺服器的CRX存放庫或AEM Designer安裝位置中無法使用這些字型時，表單會以備援字型呈現。
+   回答： HTML5 Forms不允許內嵌字型（相較於將字型內嵌於表單中的PDF forms）。 若要讓表單的HTML版本如預期般呈現，請確定這些字型在AEM Forms伺服器的CRX存放庫（AEM內容存放庫）中以及安裝AEM Designer的電腦上皆可使用。 當AEM Forms伺服器的CRX存放庫或AEM Designer安裝位置中無法使用這些字型時，表單會以備援字型呈現。
 
 1. HTML表單是否支援vAlign和hAlign屬性？
 
@@ -172,7 +172,7 @@ ht-degree: 0%
    答案： HTML5表單不支援浮動欄位的顯示模式。
 
 1. HTML5 Forms中「日期」欄位的格式為何？
-答案：「日期」欄位接受ISO格式YYYY-MM-DD。 如果您以其他格式指定日期，在使用者以定位點移出欄位之前，「日期欄位」不接受格式。
+答案：「日期」欄位接受ISO格式YYYY-MM-DD。如果您以其他格式指定日期，在使用者以定位點移出欄位之前，「日期欄位」不接受格式。
 
 ### 指令碼 {#scripting}
 
@@ -204,7 +204,7 @@ ht-degree: 0%
 
    1. 開啟CRXde Lite並導覽至`/content/xfaforms/profiles/default`節點。
    1. 新增字串型別的屬性`mfDataDependentFloatingField`並將屬性的值設定為`true`。
-   1. 按一下&#x200B;**全部儲存**。 現在已使用更新後的轉譯設定檔，為HTML Forms啟用浮動欄位。
+   1. 按一下&#x200B;**「儲存全部」**。 現在已使用更新後的轉譯設定檔，為HTML Forms啟用浮動欄位。
 
       >[!NOTE]
       >
@@ -212,7 +212,7 @@ ht-degree: 0%
 
 1. HTML5表單會多次執行初始化指令碼和表單就緒事件嗎？
 
-   回答：是，初始化指令碼和表單就緒事件會執行多次，在伺服器上至少執行一次，在使用者端執行一次。 建議根據某些商業邏輯（表單或欄位資料）編寫初始化或表單：ready事件等指令碼，以便根據資料和等冪狀態（如果資料相同）執行動作。
+   回答：是，初始化指令碼和表單就緒事件會執行多次，在伺服器上至少執行一次，在使用者端執行一次。 建議根據某些商業邏輯（表單或欄位資料）編寫初始化或表單:ready事件之類的指令碼，以便根據資料與等冪狀態（如果資料相同）執行動作。
 
 ### 設計XDP {#designing-xdp}
 

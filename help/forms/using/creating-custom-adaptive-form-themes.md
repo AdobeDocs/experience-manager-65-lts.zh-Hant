@@ -10,7 +10,7 @@ feature: Adaptive Forms,Foundation Components
 exl-id: e9853779-e22c-484e-8480-8e724d584ab7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -228,7 +228,7 @@ ht-degree: 0%
 
    1. **選擇性**：在自訂頁面中，視需要覆寫header.jsp、footer.jsp和body.jsp。
 
-1. 建立自訂範本（例如： `/apps/myAfCustomizations/myAfTemplates/forestTemplate`），其jcr：content指向在上一步建立的自訂頁面（例如： `myAfCustomizations/myAfPages/forestPage)`）。
+1. 建立自訂範本（例如： `/apps/myAfCustomizations/myAfTemplates/forestTemplate`），其jcr:content指向在上一步建立的自訂頁面（例如： `myAfCustomizations/myAfPages/forestPage)`）。
 
    ![CRX儲存機制快照](assets/2-1.png)
 

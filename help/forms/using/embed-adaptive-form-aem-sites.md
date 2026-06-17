@@ -10,20 +10,20 @@ role: Admin, User, Developer
 exl-id: 9d7f3c62-1b49-437c-9f61-1f0fc0156bdf
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 4%
+source-wordcount: '1188'
+ht-degree: 5%
 
 ---
 
 # 在AEM網站頁面中內嵌最適化表單或互動式通訊 {#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-page}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
 ## 套用至 {#applies-to}
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-aem-sites.html?lang=zh-Hant)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-aem-sites.html)上的[AEM Forms 。
 
 
 ## 概觀 {#overview}
@@ -42,7 +42,7 @@ AEM Forms提供可新增至網站頁面的元件。 AEM Forms容器元件可讓�
 
 ## 先決條件 {#prerequisites}
 
-若要將最適化表單或互動式通訊內嵌在使用可編輯範本的AEM網站頁面中，請確定AEM表單元件已設定為關聯範本中的允許元件。 如需詳細資訊，請參閱&#x200B;**建立頁面範本**&#x200B;中的[原則與屬性（配置容器）](/help/sites-authoring/templates.md)區段。
+若要將最適化表單或互動式通訊內嵌在使用可編輯範本的AEM網站頁面中，請確定AEM表單元件已設定為關聯範本中的允許元件。 如需詳細資訊，請參閱[建立頁面範本](/help/sites-authoring/templates.md)中的&#x200B;**原則與屬性（配置容器）**&#x200B;區段。
 
 如果網站頁面使用靜態範本，您必須在網站頁面的段落系統中進行設定。 如需詳細資訊，請參閱[在設計模式中設定元件](/help/sites-authoring/default-components-designmode.md)。
 

@@ -9,7 +9,7 @@ role: Admin, User, Developer
 exl-id: b866ff4a-251c-4402-b426-9c4d97fd181d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3982'
+source-wordcount: '4013'
 ht-degree: 2%
 
 ---
@@ -111,7 +111,7 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td><strong>字母元素</strong></td> 
-   <td><strong>描述</strong></td> 
+   <td><strong>說明</strong></td> 
    <td><strong>形成方式</strong></td> 
   </tr> 
   <tr> 
@@ -159,7 +159,7 @@ ht-degree: 2%
 
 * 企業使用者（如索賠理算員或案例工作者）修改信件內容或部分的條件。
 * 案例是說明使用Letters Solution的使用者體驗、需求和好處的敘述。
-* 案例也提供：專案所需的必要技能組合和工具。
+* 案例也提供您專案所需的:The所需技能組合和工具。
 * 規劃實施的最佳實務。 「高階實作概觀。
 
 ## 執行分析的好處 {#benefits-of-performing-the-analysis}
@@ -347,7 +347,7 @@ ht-degree: 2%
 1. 選取&#x200B;**資料庫存取**&#x200B;以授予資料庫的存取權。 如果已啟用「資料庫存取」，則在建立信函和插入附件時，宣告調整者可以存取內容資料庫。
 1. 選取&#x200B;**附件組態**&#x200B;並指定附件數目上限。
 
-1. 選取&#x200B;**儲存**。您的信件已建立並列在「信件」頁面上。
+1. 選取&#x200B;**儲存**。 您的信件已建立並列在「信件」頁面上。
 
 在「通訊管理」中建立信函範本後，一般使用者/代理程式/索賠理算員可以在CCR使用者介面中開啟信函，並透過輸入資料、設定內容和管理附件來建立通訊。 如需詳細資訊，請參閱[建立通訊](/help/forms/using/create-correspondence.md)。
 
@@ -460,7 +460,7 @@ ht-degree: 2%
    <td>否<br /> </td> 
    <td>是</td> 
    <td>否</td> 
-   <td>不適用</td> 
+   <td>N/A</td> 
    <td>不適用<br /> </td> 
   </tr> 
  </tbody> 
