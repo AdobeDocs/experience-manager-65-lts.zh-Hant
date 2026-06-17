@@ -12,7 +12,7 @@ role: Admin
 exl-id: 410691eb-27a9-4f8e-b926-01027c7f84d4
 source-git-commit: cc96a14ebaf9f895a798b5f4904f5b4769b990bb
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '323'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->您隨時可以使用[網頁主控台]&#x200B;(/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console選擇退出，或不在AEM選擇加入畫面中選取選擇加入選項。
+>您隨時可以使用[網頁主控台]&#x200B;(#opt-in-by-using-the-web-console選擇退出，或不在AEM選擇加入畫面中選取選擇加入選項。
 
 ## 使用觸控式UI選擇加入 {#opt-in-by-using-the-touch-ui}
 

@@ -11,7 +11,7 @@ role: Admin
 exl-id: 3ffa7c80-ce59-41cf-bb50-c6caf77d9baa
 source-git-commit: 09f3d38e9f9c7f882d8b03dcf86db68cb8885a08
 workflow-type: tm+mt
-source-wordcount: '4196'
+source-wordcount: '4372'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ Lucene會註冊一個JMX Bean，以提供索引內容的詳細資訊，包括每
 
 **開發期間**
 
-為`oak.queryLimitInMemory` (例如10000)和Oak設定低臨界值。 `queryLimitReads` （例如5000）並在點選UnsupportedOperationException時最佳化昂貴查詢，指出「查詢讀取超過x個節點……」
+為`oak.queryLimitInMemory` （例如10000）和Oak設定低臨界值。`queryLimitReads` （例如5000）並最佳化當點選UnsupportedOperationException說「查詢讀取超過x個節點……」時的昂貴查詢
 
 這有助於避免資源密集的查詢（亦即，不受任何索引支援或較少涵蓋範圍索引所支援）。 例如，讀取100萬個節點的查詢會導致I/O增加，並對整體應用程式效能產生負面影響。 應分析和最佳化任何因上述限制而失敗的查詢。
 
@@ -282,7 +282,7 @@ Lucene索引在Oak 1.0.9中引入，並針對AEM 6首次推出時引入的屬性
 
       * 如果現有內容不受變更影響，則只需要重新整理
 
-         * 透過設定[oak：queryIndexDefinition]@refresh=true來[重新整理](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) lucene索引
+         * 透過設定[oak:queryIndexDefinition]@refresh=true來[重新整理](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) lucene索引
 
       * 否則，[重新索引](#how-to-re-index) lucene索引
 
@@ -358,7 +358,7 @@ Lucene索引在Oak 1.0.9中引入，並針對AEM 6首次推出時引入的屬性
    * 如果這樣仍無法解決問題，且`AsyncIndexUpdate`例外狀況持續存在，則：
 
       1. [重新索引](#how-to-re-index)錯誤的索引
-      1. 同時提交[Adobe支援](https://helpx.adobe.com/tw/support.html)票證
+      1. 同時提交[Adobe支援](https://helpx.adobe.com/support.html)票證
 
 ### 如何重新索引 {#how-to-re-index}
 
@@ -396,7 +396,7 @@ Lucene索引在Oak 1.0.9中引入，並針對AEM 6首次推出時引入的屬性
 
 * 建議使用Oak文字預先擷取，在具有大量檔案（二進位檔）的存放庫上重新編列/索引Lucene索引，這些檔案包含可擷取文字（例如PDF、Word檔案、PPT、TXT等），這些文字有資格透過部署的Oak索引進行全文搜尋；例如`/oak:index/damAssetLucene`。
 * 文字預先擷取僅有利於Lucene索引的重新編列/索引，而非Oak屬性索引，因為屬性索引不會從二進位檔案中擷取文字。
-* 當對大量文字的二進位檔(PDF、Doc、TXT等)進行全文重新索引時，文字預先擷取會有很高的正面影響，而影像存放庫將不會享有相同的效率，因為影像不包含可擷取的文字。
+* 當對大量文字的二進位檔（PDF、Doc、TXT等）進行全文重新索引時，文字預先擷取會有很高的正面影響，而影像存放庫將不會享有相同的效率，因為影像不包含可擷取的文字。
 * 文字預先擷取會以特別有效率的方式執行全文檢索搜尋相關文字的擷取，並以特別有效率的方式將其公開給Oak重新編制/索引過程。
 
 #### 何時可以使用文字預先擷取？ {#when-can-text-pre-extraction-be-used}
@@ -415,7 +415,7 @@ Lucene索引在Oak 1.0.9中引入，並針對AEM 6首次推出時引入的屬性
 
 新內容新增到存放庫時，將透過非同步全文檢索索引程式（預設為每5秒一次）以自然和遞增方式索引。
 
-在AEM的正常運作中(例如，透過網頁UI或程式化擷取Assets Assets)，AEM會自動以增量方式將新的二進位內容編入全文索引。 由於資料量是增量且相對較少（大約會在5秒內保留到存放庫的資料量），AEM可在索引期間從二進位檔執行全文擷取，而不會影響整體系統效能。
+在AEM的正常運作中（例如，透過網頁UI或程式化擷取Assets），AEM會自動以增量方式將新的二進位內容編入全文索引。 由於資料量是增量且相對較少（大約會在5秒內保留到存放庫的資料量），AEM可在索引期間從二進位檔執行全文擷取，而不會影響整體系統效能。
 
 #### 使用文字預先擷取的先決條件 {#prerequisites-to-using-text-pre-extraction}
 
@@ -458,7 +458,7 @@ Lucene索引在Oak 1.0.9中引入，並針對AEM 6首次推出時引入的屬性
 
 2c。 擷取的文字會以可由Oak重新索引程式(3a)擷取的格式儲存在檔案系統中
 
-預先擷取的文字會在CSV中由二進位指紋識別。 如果二進位檔案相同，可在AEM執行個體間使用相同的預先擷取文字。 由於AEM Publish通常是AEM Author的子集，所以從AEM Author預先擷取的文字也常用來重新索引AEM Publish (假設AEM Publish具有擷取文字檔案的檔案系統存取權)。
+預先擷取的文字會在CSV中由二進位指紋識別。 如果二進位檔案相同，可在AEM執行個體間使用相同的預先擷取文字。 由於AEM Publish通常是AEM Author的子集，所以從AEM Author預先擷取的文字也常用來重新索引AEM Publish （假設AEM Publish具有擷取文字檔案的檔案系統存取權）。
 
 預先擷取的文字可以隨著時間逐漸新增至。 文字預先擷取將略過先前擷取二進位檔的擷取，因此最佳實務是保留預先擷取的文字，以防未來必須再次進行重新索引（假設擷取的內容不會太大）。 如果是，請評估在過渡期間壓縮內容（因為文字壓縮得不錯）。
 

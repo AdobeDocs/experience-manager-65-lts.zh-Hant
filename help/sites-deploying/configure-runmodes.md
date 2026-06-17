@@ -7,7 +7,7 @@ role: Admin
 exl-id: b21555f2-bc07-4653-a5da-966b9aa7ea1f
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '683'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 * `publish` + `intranet`
 
-* 視需要。.
+* 視需要。 . .
 
 每次啟動時也可以選取自訂的執行模式。
 
@@ -102,9 +102,9 @@ ht-degree: 1%
 
 如果您已經為多個執行模式定義了配置，則需要定義要在啟動時使用的配置。 有數種方法可指定要使用的執行模式；解析的順序為：
 
-1. [系統屬性(](#using-a-system-property-in-the-start-script)
-1. [&#128279;](#using-the-sling-properties-file)
-1. [&#128279;](#using-the-r-option)
+1. [系統屬性(`-D`)](#using-a-system-property-in-the-start-script)
+1. [`sling.properties`檔案](#using-the-sling-properties-file)
+1. [`-r`選項](#using-the-r-option)
 1. [檔案名稱偵測](#filename-detection-renaming-the-jar-file)
 
 當您使用應用程式伺服器時，您也可以[在web.xml](#defining-the-run-mode-in-web-xml-with-application-server)中定義執行模式。
@@ -123,7 +123,7 @@ ht-degree: 1%
 
 ### 使用 — r選項 {#using-the-r-option}
 
-啟動快速入門時，可使用`-r`選項啟動自訂執行模式。 例如，使用下列命令來啟動執行模式設為dev的AEM執行個體。&quot;
+啟動快速入門時，可使用`-r`選項啟動自訂執行模式。 例如，使用下列命令來啟動執行模式設為dev的AEM執行個體。 &quot;
 
 ```shell
 java -jar cq-56-p4545.jar -r dev

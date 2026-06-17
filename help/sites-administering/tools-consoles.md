@@ -12,7 +12,7 @@ role: Admin
 exl-id: b81d2f39-1517-49f0-9d16-bcde514cc199
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '597'
 ht-degree: 25%
 
 ---
@@ -102,7 +102,7 @@ ht-degree: 25%
   </tr>
   <tr>
    <td> </td>
-   <td>系統綜覽</td>
+   <td>系統概觀</td>
   </tr>
   <tr>
    <td> </td>
@@ -230,7 +230,7 @@ ht-degree: 25%
   </tr>
   <tr>
    <td> </td>
-   <td>拓撲</td>
+   <td>拓樸</td>
   </tr>
   <tr>
    <td> </td>
@@ -416,7 +416,7 @@ ht-degree: 25%
    <td>外部連結檢查程式。</td>
   </tr>
   <tr>
-   <td>行動</td>
+   <td>行動裝置</td>
    <td>協助您建立專為行動裝置設計的網站。</td>
   </tr>
   <tr>
@@ -440,7 +440,7 @@ ht-degree: 25%
    <td>設定使用者在建立帳戶或重設密碼時自動收到的電子郵件，並確認已重設的密碼。</td>
   </tr>
   <tr>
-   <td>Segmentation</td>
+   <td>細分</td>
    <td>網站訪客造訪網站時，有不同的興趣和目標。 瞭解這些目標並達到預期是線上行銷的重要成功因素。 區段可藉由分析和描述訪客的詳細資料來協助達成此目標。<br /> </td>
   </tr>
   <tr>

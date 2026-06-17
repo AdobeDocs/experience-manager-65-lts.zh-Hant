@@ -12,7 +12,7 @@ role: Admin
 exl-id: fcabfd44-31c2-4884-8dbd-99aa74972cfa
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '5743'
+source-wordcount: '6016'
 ht-degree: 2%
 
 ---
@@ -101,7 +101,7 @@ AEM 6中有兩種健康狀態檢查型別：
    >
    >`MBEAN_NAME`屬性定義為此健康狀態檢查產生的mbean的名稱。
 
-1. 建立健康狀態檢查之後，必須建立新的設定節點，才能在操作儀表板介面中存取它。 對於此步驟，必須知道健康狀態檢查的JMX Mbean名稱（`MBEAN_NAME`屬性）。 若要建立健康狀態檢查的設定，請開啟CRXDE並在以下路徑下新增節點（型別為&#x200B;**nt：unstructured**）： `/apps/settings/granite/operations/hc`
+1. 建立健康狀態檢查之後，必須建立新的設定節點，才能在操作儀表板介面中存取它。 對於此步驟，必須知道健康狀態檢查的JMX Mbean名稱（`MBEAN_NAME`屬性）。 若要建立健康狀態檢查的設定，請開啟CRXDE並在下列路徑下新增節點（型別為&#x200B;**nt:unstructured**）： `/apps/settings/granite/operations/hc`
 
    應在新節點上設定下列屬性：
 
@@ -158,7 +158,7 @@ AEM 6中有兩種健康狀態檢查型別：
    >
    >系統會為Apache Sling複合健康狀態檢查的每個新設定建立新的JMX Mbean。**
 
-1. 最後，已建立的複合健康狀態檢查專案必須新增至「操作控制面板」組態節點。 程式與個別健康情況檢查的程式相同：必須在`/apps/settings/granite/operations/hc`下建立型別&#x200B;**nt：unstructured**&#x200B;的節點。 節點的資源屬性是由OSGI組態中的&#x200B;**hc.mean.name**&#x200B;值所定義。
+1. 最後，已建立的複合健康狀態檢查專案必須新增至「操作控制面板」組態節點。 程式與個別健康情況檢查的程式相同：必須在`/apps/settings/granite/operations/hc`下建立型別&#x200B;**nt:unstructured**&#x200B;的節點。 節點的資源屬性是由OSGI組態中的&#x200B;**hc.mean.name**&#x200B;值所定義。
 
    例如，如果您建立了組態並將&#x200B;**hc.mbean.name**&#x200B;值設為&#x200B;**diskusage**，組態節點會如下所示：
 
@@ -190,7 +190,7 @@ AEM 6中有兩種健康狀態檢查型別：
  <tbody>
   <tr>
    <td><strong>運行狀況檢查名稱</strong></td>
-   <td><strong>描述</strong></td>
+   <td><strong>說明</strong></td>
   </tr>
   <tr>
    <td>查詢效能</td>
@@ -202,14 +202,14 @@ AEM 6中有兩種健康狀態檢查型別：
     <ul>
      <li>如果<code>queueSize</code>值超過<code>maxQueueSize</code>值（即將捨棄事件），則傳回「嚴重」狀態</li>
      <li>如果<code>queueSize</code>值超過<code>maxQueueSize * WARN_THRESHOLD</code> （預設值為0.75），則傳回警告 </li>
-    </ul> <p>每個佇列的長度上限分別來自不同的設定(Oak和AEM)，且無法透過此健康狀態檢查設定。 此健康情況檢查的MBean是<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=ObservationQueueLengthHealthCheck，type=HealthCheck</a>。</p> </td>
+    </ul> <p>每個佇列的長度上限分別來自不同的設定（Oak和AEM），且無法透過此健康狀態檢查設定。 此健康情況檢查的MBean是<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=ObservationQueueLengthHealthCheck，type=HealthCheck</a>。</p> </td>
   </tr>
   <tr>
    <td>查詢周遊限制</td>
    <td><p>查詢周遊限制會檢查<code>QueryEngineSettings</code> MBean （更具體地說，<code>LimitInMemory</code>和<code>LimitReads</code>屬性），並傳回下列狀態：</p>
     <ul>
      <li>如果其中一個限制等於或大於 <code>Integer.MAX_VALUE</code></li>
-     <li>如果其中一個限制低於10000 (Oak的建議設定)，則會傳回警告狀態</li>
+     <li>如果其中一個限制低於10000 （Oak的建議設定），則會傳回警告狀態</li>
      <li>如果無法擷取<code>QueryEngineSettings</code>或任何限制，則傳回「嚴重」狀態</li>
     </ul> <p>此健康情況檢查的Mbean是<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueryTraversalLimitsBundle%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=queryTraversalLimitsBundle，type=HealthCheck</a>。</p> </td>
   </tr>
@@ -255,7 +255,7 @@ AEM 6中有兩種健康狀態檢查型別：
     </ul> <p>此健康情況檢查的MBean是<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsystemchecks%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=systemchecks，type=HealthCheck</a>。</p> </td>
   </tr>
   <tr>
-   <td>復寫佇列</td>
+   <td>複寫佇列</td>
    <td><p>此檢查會反複執行復寫代理程式並檢視其佇列。 對於佇列頂端的專案，檢查會檢視代理程式重試復寫的次數。 如果代理程式重試的復寫超過<code>numberOfRetriesAllowed</code>引數的值，則會傳回警告。 <code>numberOfRetriesAllowed</code>引數是可設定的。 </p> <p>此健康情況檢查的MBean是<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DreplicationQueue%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=replicationQueue，type=HealthCheck</a>。</p> </td>
   </tr>
   <tr>
@@ -297,7 +297,7 @@ AEM 6中有兩種健康狀態檢查型別：
   </tr>
   <tr>
    <td>安全性檢查</td>
-   <td><p>安全性檢查是一種複合檢查，可彙總多個安全性相關檢查的結果。 這些個人健康狀態檢查可解決<a href="/help/sites-administering/security-checklist.md">安全性檢查清單檔案頁面所提供的安全性檢查清單中不同的問題。</a>當執行個體啟動時，這項檢查可用來作為安全性煙霧測試。 </p> <p>此健康情況檢查的MBean是<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=securitychecks，type=HealthCheck</a></p> </td>
+   <td><p>安全性檢查是一種複合檢查，可彙總多個安全性相關檢查的結果。 這些個人健康狀態檢查可解決<a href="/help/sites-administering/security-checklist.md">安全性檢查清單檔案頁面所提供的安全性檢查清單中不同的問題。</a> 此檢查在執行個體啟動時，可作為安全冒煙測試使用。 </p> <p>此健康情況檢查的MBean是<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=securitychecks，type=HealthCheck</a></p> </td>
   </tr>
   <tr>
    <td>作用中組合</td>
@@ -349,7 +349,7 @@ AEM 6中有兩種健康狀態檢查型別：
 
 ![chlimage_1-120](assets/chlimage_1-120.png)
 
-### 記錄訊息 {#log-messages}
+### 日誌訊息 {#log-messages}
 
 記錄訊息使用者介面預設會顯示所有ERROR訊息。 如果您想要顯示更多日誌訊息，請以適當的日誌層級設定日誌程式。
 
@@ -423,7 +423,7 @@ DATE+TIME [MaintanceLogger] Name=<MT_NAME>, Status=<MT_STATUS>, Time=<MT_TIME>, 
 
 ### 說明查詢 {#explain-query}
 
-對於任何指定的查詢，Oak會嘗試根據&#x200B;**oak：index**&#x200B;節點下儲存庫中定義的Oak索引，找出最佳執行方式。 Oak可能會根據查詢選擇不同的索引。 瞭解Oak如何執行查詢是最佳化查詢的第一步。
+對於任何特定查詢，Oak會嘗試根據&#x200B;**oak:index**&#x200B;節點下儲存庫中定義的Oak索引，找出最佳執行方式。 Oak可能會根據查詢選擇不同的索引。 瞭解Oak如何執行查詢是最佳化查詢的第一步。
 
 「說明查詢」工具可說明Oak如何執行查詢。 您可以從AEM歡迎畫面前往&#x200B;**工具 — 作業 — 診斷**&#x200B;來存取它。 然後，按一下&#x200B;**查詢效能**&#x200B;並切換到&#x200B;**說明查詢**&#x200B;索引標籤。
 
@@ -452,7 +452,7 @@ DATE+TIME [MaintanceLogger] Name=<MT_NAME>, Status=<MT_STATUS>, Time=<MT_TIME>, 
 
 Index Manager的目的是方便索引管理，例如維護索引或檢視其狀態。
 
-您可以從[歡迎畫面]前往&#x200B;**工具 — 作業 — 診斷**，然後按一下&#x200B;**索引管理員**&#x200B;按鈕來存取它。
+您可以從[歡迎畫面]前往&#x200B;**工具 — 作業 — 診斷**，然後按一下**索引管理員**按鈕來存取它。
 
 也可以直接在此URL存取： `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 
@@ -460,7 +460,7 @@ Index Manager的目的是方便索引管理，例如維護索引或檢視其狀�
 
 UI可用來篩選表格中的索引，方法是在畫面左上角的搜尋方塊中輸入篩選條件。
 
-### 下載狀態ZIP {#download-status-zip}
+### 下載狀態 ZIP {#download-status-zip}
 
 這個動作會觸發下載壓縮檔，其中包含有關系統狀態和設定的實用資訊。 封存包含執行個體設定、套件組合清單、OSGI、Sling量度和統計資料，可能會產生大型檔案。 您可以使用&#x200B;**下載狀態ZIP**&#x200B;視窗來減少大型狀態檔案的影響。 視窗可從下列位置存取： **AEM >工具>作業>診斷>下載狀態ZIP。**
 
@@ -472,7 +472,7 @@ UI可用來篩選表格中的索引，方法是在畫面左上角的搜尋方塊
 
 此動作會觸發下載zip ，其中包含系統中存在的對話串的相關資訊。 會提供每個執行緒的相關資訊，例如其狀態、類別載入器以及棧疊追蹤。
 
-### 下載棧積傾印 {#download-heap-dump}
+### 下載堆積傾印 {#download-heap-dump}
 
 您可以下載棧積的快照以便稍後分析。 此動作會觸發下載大型（數百MB）檔案。
 
@@ -495,7 +495,7 @@ UI可用來篩選表格中的索引，方法是在畫面左上角的搜尋方塊
 1. **專案清除**&#x200B;維護任務，位於&#x200B;**每週維護期間**&#x200B;功能表下；使用&#x200B;**新增**&#x200B;選項。
 1. **清除臨機任務**&#x200B;維護任務，位於&#x200B;**每週維護期間**&#x200B;功能表下；使用&#x200B;**新增**&#x200B;選項。
 
-每日維護期間的預設時間為凌晨2:00至下午5:00。設定在每週維護期間執行的工作，會在星期六上午1:00到凌晨2:00之間執行。
+每日維護期間的預設時間為上午2:00到上午5:00。設定為在每週維護期間執行的工作，會在星期六上午1:00至上午2:00之間執行。
 
 您也可以按兩個維護卡片上的齒輪圖示來設定計時：
 
@@ -543,7 +543,7 @@ UI可用來篩選表格中的索引，方法是在畫面左上角的搜尋方塊
 
 您可以排定「版本永久刪除」維護作業，以自動刪除舊版本。 此動作將手動使用[版本清除工具](/help/sites-deploying/version-purging.md)的需求降到最低。 您可以存取&#x200B;**工具>作業>維護>每週維護視窗**&#x200B;並依照下列步驟來排程及設定「版本清除」工作：
 
-1. 按一下&#x200B;**新增**。
+1. 按一下&#x200B;**「新增」**。
 1. 從下拉式功能表中選擇&#x200B;**版本清除**。
 
    ![version_purge_maintenancetask](assets/version_purge_maintenancetask.png)
@@ -555,7 +555,7 @@ UI可用來篩選表格中的索引，方法是在畫面左上角的搜尋方塊
 **使用AEM 6.4**&#x200B;時，您可以依照以下步驟停止「版本清除」維護工作：
 
 * 自動 — 如果排程的維護視窗在任務完成之前關閉，任務會自動停止。 當下一個維護視窗開啟時，它會繼續。
-* 手動 — 若要手動停止工作，請在[版本清除]維護卡上，按一下[停止] **&#x200B;**&#x200B;圖示。 在下次執行時，工作將會安全地繼續。
+* 手動 — 若要手動停止工作，請在[版本清除]維護卡上，按一下[停止] ****&#x200B;圖示。 在下次執行時，工作將會安全地繼續。
 
 >[!NOTE]
 >
@@ -593,7 +593,7 @@ See the Maintenance Window table below for additional configuration details. Ena
  <tbody>
   <tr>
    <td><strong>服務屬性名稱</strong><br /> </td>
-   <td><strong>描述</strong></td>
+   <td><strong>說明</strong></td>
    <td><strong>範例</strong><br /> </td>
    <td><strong>類型</strong></td>
   </tr>
@@ -613,19 +613,19 @@ See the Maintenance Window table below for additional configuration details. Ena
    <td>granite.maintenance.name</td>
    <td>任務的唯一名稱 — 該名稱用於引用任務，只是簡單名稱。</td>
    <td>MyMaintenanceTask</td>
-   <td>必填</td>
+   <td>必要</td>
   </tr>
   <tr>
    <td>granite.maintenance.title</td>
    <td>為此任務顯示的標題</td>
    <td>我的特殊維護任務</td>
-   <td>必填</td>
+   <td>必要</td>
   </tr>
   <tr>
    <td>job.topics</td>
-   <td>維護任務的唯一主題。<br /> Apache Sling工作處理會啟動一個與此主題完全相同的工作來執行維護工作，當工作針對此主題註冊時，就會開始執行。<br />主題必須以<i>com/adobe/granite/maintenance/job/</i>開頭</td>
+   <td>維護任務的唯一主題。<br /> Apache Sling作業處理會啟動一個與此主題完全相同的作業來執行維護任務，當針對此主題註冊任務時，它就會執行。<br /> 主題必須以<i>com/adobe/granite/maintenance/job/</i>開頭</td>
    <td>com/adobe/granite/maintenance/job/MyMaintenanceTask</td>
-   <td>必填</td>
+   <td>必要</td>
   </tr>
  </tbody>
 </table>
@@ -654,7 +654,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
 
 此動作會在/apps/granite/operations/config/maintenance/`schedule`/`taskname`新增對應的資源。 如果工作依執行模式而定，必須使用該維護工作必須啟動的執行模式值在該節點上設定屬性granite.operations.conditions.runmode。
 
-## 系統綜覽 {#system-overview}
+## 系統概觀 {#system-overview}
 
 **系統總覽儀表板**&#x200B;會顯示AEM執行個體的組態、硬體及健康狀態的高層級總覽。 系統健康狀態是透明的，所有資訊都會彙總在單一儀表板中。
 
@@ -724,7 +724,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
    <td>系統</td>
    <td>
     <ul>
-     <li>作業系統和作業系統版本(例如macOS X)</li>
+     <li>作業系統和作業系統版本（例如macOS X）</li>
      <li>系統平均負載，擷取自<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage--">OperatingSystemMXBeanusable</a></li>
      <li>磁碟空間（位於主目錄所在的分割區）</li>
      <li>最大棧積，由<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a>傳回</li>
@@ -757,7 +757,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
        <li>若為檔案資料存放區，則會顯示路徑</li>
        <li>若為S3資料存放區，會顯示S3儲存貯體的名稱</li>
        <li>如果是共用的S3資料存放區，則會顯示S3儲存貯體的名稱</li>
-       <li>對於Azure資料存放區，會顯示容器</li>
+       <li>若為Azure資料存放區，則會顯示容器</li>
       </ul> </li>
      <li>如果沒有自訂外部資料存放區，則會顯示一則訊息，指出此事實</li>
     </ul> </td>

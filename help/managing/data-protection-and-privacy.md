@@ -7,8 +7,8 @@ role: Developer,Leader,User
 exl-id: 6faf8e4f-ca2a-4d68-a354-fb0aa6c2644b
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 42%
+source-wordcount: '775'
+ht-degree: 44%
 
 ---
 
@@ -98,13 +98,13 @@ Adobe正提供各項程式，用於處理與Adobe Experience Manager的存取、
 
 ## AEM與Adobe Target和Adobe Analytics整合 {#aem-integration-with-adobe-target-adobe-analytics}
 
-這些Adobe Experience Manager整合具有資料保護和隱私權（例如GDPR或CCPA）整備服務。 來自Adobe Target或Adobe Analytics與整合相關的個人資料不會儲存在AEM中。
+這些Adobe Experience Manager整合具有資料保護和隱私權（例如GDPR或CCPA）整備服務。 來自 Adobe Target 或 Adobe Analytics 與整合相關的個人資料不會儲存在 AEM 中。
 
 如需詳細資訊，請參閱下列內容：
 
 * [Adobe Target - 隱私權概觀](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en)
 
-* [Adobe Analytics 資料隱私權工作流程](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=zh-Hant)
+* [Adobe Analytics資料隱私權工作流程](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)
 
 ## AEM Forms {#aem-forms}
 

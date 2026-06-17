@@ -7,14 +7,14 @@ role: User,Admin,Developer
 exl-id: c5b4ffe5-b722-4452-8450-1e1089e3ffba
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 27%
+source-wordcount: '1366'
+ht-degree: 31%
 
 ---
 
 # 專案 {#projects}
 
-專案可讓您將資源群組到一個實體中。共同的共用環境使您的專案容易管理。您可以與專案相關聯的資源類型在 AEM 中稱為圖磚。圖磚可能包括專案和團隊資訊、資產、工作流程和其他類型的資訊，如[專案圖磚](#project-tiles)中詳細所述。
+專案可讓您將資源群組到一個實體中。 共同的共用環境使您的專案容易管理。 您可以與專案相關聯的資源類型在 AEM 中稱為圖磚。 圖磚可能包括專案和團隊資訊、資產、工作流程和其他類型的資訊，如[專案圖磚](#project-tiles)中詳細所述。
 
 身為使用者，您可以：
 
@@ -80,7 +80,7 @@ ht-degree: 27%
 
 專案由您想要一起管理的不同資訊型別組成。 此資訊由不同的&#x200B;**圖磚**&#x200B;表示。
 
-您可以擁有下列與專案關聯的圖磚。
+您可以將以下圖磚與您的專案相關聯。
 
 * [Assets](#assets)
 * [資產集合](#asset-collections)
@@ -104,11 +104,11 @@ ht-degree: 27%
 
 ![資產圖磚](assets/project-tile-assets.png)
 
-您直接在圖磚中上傳資產。
+您直接將資產上傳到圖磚。
 
 ### 資產集合 {#asset-collections}
 
-與資產類似，您可以將[資產集合](/help/assets/manage-collections.md)直接新增到您的專案中。您在 Assets 中定義集合。
+與資產類似，您可以將[資產集合](/help/assets/manage-collections.md)直接新增到您的專案中。 您在 Assets 中定義集合。
 
 ![資產集合拼貼](assets/project-tile-asset-collection.png)
 
@@ -149,11 +149,11 @@ ht-degree: 27%
 
 ### 團隊 {#team}
 
-在此圖磚中，您可以指定專案團隊的成員。編輯時，您可以輸入團隊成員的姓名並指派使用者角色。
+在此圖磚中，您可以指定專案團隊的成員。 編輯時，您可以輸入團隊成員的姓名並指派使用者角色。
 
 ![團隊圖磚](assets/project-tile-team.png)
 
-您可以在團隊中新增和刪除團隊成員。此外，您可以編輯指派給團隊成員的[使用者角色](#userroles)。
+您可以在團隊中新增和刪除團隊成員。 此外，您可以編輯指派給團隊成員的[使用者角色](#userroles)。
 
 ### 登陸頁面 {#landing-pages}
 
@@ -189,7 +189,7 @@ ht-degree: 27%
 
 ### 任務 {#tasks}
 
-任務可讓您監控任何專案相關任務的狀態，包括工作流程。如需任務的詳細資訊，請參閱[使用任務](/help/sites-authoring/task-content.md)。
+任務可讓您監控任何專案相關任務的狀態，包括工作流程。 如需任務的詳細資訊，請參閱[使用任務](/help/sites-authoring/task-content.md)。
 
 ![任務拼貼](assets/project-tile-tasks.png)
 
@@ -209,7 +209,7 @@ ht-degree: 27%
 不同的使用者角色會在專案範本中定義，主要原因有二：
 
 1. 許可權：使用者角色屬於列出的三個類別之一：觀察者、編輯者、擁有者。 例如，攝影師或撰稿人將擁有與編輯者相同的許可權。 權限決定使用者可對專案內容進行的操作。
-1. 工作流程：工作流程會決定指派給專案中任務的使用者。 任務可以與專案角色相關聯。例如，可以將任務指派給攝影師，以便所有擁有攝影師角色的團隊成員都能取得任務。
+1. 工作流程：工作流程會決定指派給專案中任務的使用者。 任務可以與專案角色相關聯。 例如，可以將任務指派給攝影師，以便所有擁有攝影師角色的團隊成員都能取得任務。
 
 所有專案都支援下列預設角色，可讓您管理安全性及控制許可權。
 
@@ -223,11 +223,11 @@ ht-degree: 27%
 
 ### 自動群組建立 {#auto-group-creation}
 
-當您建立專案並將使用者新增至各種角色時，系統會自動建立與專案關聯的群組以管理關聯的許可權。
+當您建立專案並將使用者新增至各種角色時，系統會自動建立與專案相關的群組，以管理相關的權限。
 
-例如，名為Myproject的專案將有三個群組&#x200B;**Myproject擁有者**、**Myproject編輯者**、**Myproject觀察者**。
+例如，名為Myproject的專案會有三個群組 **Myproject Owners**、 **Myproject Editors**、 **Myproject Obsertors**。
 
-如果刪除專案，則在刪除專案時，只有選取適當的選項[，才會刪除這些群組。](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project)管理員也可以手動刪除&#x200B;**工具** > **安全性** > **群組**&#x200B;中的群組。
+如果刪除專案，則在刪除專案時，只有選取適當的選項[，才會刪除這些群組。](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) 管理員也可以手動刪除&#x200B;**工具** > **安全性** > **群組**&#x200B;中的群組。
 
 ## 其他資源 {#additional-resources}
 

@@ -12,7 +12,7 @@ role: Admin
 exl-id: c5907a0b-031f-4e3a-8a5c-5daf31eb71fc
 source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '4829'
+source-wordcount: '4969'
 ht-degree: 0%
 
 ---
@@ -252,7 +252,7 @@ CRX存放庫的相關資訊
   </tr>
   <tr>
    <td>identifier.stability</td>
-   <td>指示無法參照的節點識別碼的穩定性。 可能的值如下：
+   <td>指示無法參照的節點識別碼的穩定性。可能的值如下：
     <ul>
      <li>identifier.stability.indefinition.duration：識別碼不會變更。</li>
      <li>identifier.stability.method.duration：識別碼可以在方法呼叫之間變更。</li>
@@ -297,7 +297,7 @@ CRX存放庫的相關資訊
    <td><p>true表示jcr：score虛擬屬性可在XPath和SQL查詢中使用，該查詢包含jcrfn：contains （在XPath中）或CONTAINS （在SQL中）函式以執行全文檢索搜尋。</p> </td>
   </tr>
   <tr>
-   <td>option.simple.versioning.supported</td>
+   <td>option.simple.version.supported</td>
    <td>true表示存放庫支援簡單的版本設定。 透過簡單的版本設定，存放庫可維護節點的循序系列版本。</td>
   </tr>
   <tr>
@@ -321,7 +321,7 @@ CRX存放庫的相關資訊
    <td>true表示存放庫使用API提供寫入許可權。 false表示唯讀存取。</td>
   </tr>
   <tr>
-   <td>node.type.management.update.in.use.supported</td>
+   <td>node.type.management.update.in.use.support</td>
    <td>true表示您可以變更現有節點正在使用的節點定義。</td>
   </tr>
   <tr>
@@ -430,7 +430,7 @@ CRX存放庫的相關資訊
    <td>true表示存放庫支援同層級節點（具有相同父系的節點）具有相同名稱。</td>
   </tr>
   <tr>
-   <td>node.type.management.residual.definitions.supported</td>
+   <td>node.type.management.residence.definitions.supported</td>
    <td>true表示存放庫支援含有剩餘定義的名稱屬性。 若有支援，專案定義的名稱屬性可以是星號("*")。</td>
   </tr>
   <tr>
@@ -446,7 +446,7 @@ CRX存放庫的相關資訊
    <td>true表示option.xml.export.support為true，而query.languages的長度不為零。</td>
   </tr>
   <tr>
-   <td>option.unfiled.content.supported</td>
+   <td>option.unfield.content.supported</td>
    <td>true表示存放庫支援未歸檔的內容。 未歸檔的節點不屬於存放庫階層。</td>
   </tr>
   <tr>
@@ -454,7 +454,7 @@ CRX存放庫的相關資訊
    <td>儲存機制實施的JCR規格名稱。</td>
   </tr>
   <tr>
-   <td>option.versioning.supported</td>
+   <td>option.version.supported</td>
    <td>true表示存放庫支援完整版本設定。</td>
   </tr>
   <tr>
@@ -751,7 +751,7 @@ CRX存放庫的相關資訊
 
 * 網域： org.apache.sling
 * 型別：引擎
-* 屬性： {service=RequestProcessor}
+* 屬性: {service=RequestProcessor}
 
 ### 屬性 {#attributes-4}
 
