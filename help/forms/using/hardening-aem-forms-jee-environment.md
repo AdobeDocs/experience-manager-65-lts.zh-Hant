@@ -689,7 +689,7 @@ JEE上的AEM Forms使用反向連結篩選功能來封鎖CSRF攻擊。 本節會
 1. Forms伺服器會檢查用於叫用的HTTP方法：
 
    1. 如果是POST，Forms伺服器會執行反向連結標題檢查。
-   1. 如果是GET，則Forms伺服器會略過反向連結檢查，除非&#x200B;*CSRF_CHECK_GETS*&#x200B;設定為True，在此情況下，伺服器會執行反向連結標題檢查。 已在&#x200B;*web.xml*&#x200B;檔案中為您的應用程式指定&#x200B;*CSRF_CHECK_GETS*。
+   1. 如果是GET，則Forms伺服器會略過反向連結檢查，除非&#x200B;*CSRF_CHECK_GETS*&#x200B;設定為True，在這種情況下會執行反向連結標題檢查。 已在&#x200B;*web.xml*&#x200B;檔案中為您的應用程式指定&#x200B;*CSRF_CHECK_GETS*。
 
 1. Forms伺服器會檢查要求的URI是否存在於允許清單中：
 
@@ -751,7 +751,7 @@ addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arr
 
 您可能已建立自訂WAR檔案，以搭配AEM Forms on JEE使用來滿足您的業務需求。 若要啟用自訂WAR檔案的反向連結篩選，請在WAR的類別路徑中加入&#x200B;***adobe-usermanager-client.jar***，並在* web.xml*檔案中加入篩選專案，其引數如下：
 
-**CSRF_CHECK_GETS**&#x200B;控制GET要求上的反向連結檢查。 如果未定義此引數，預設值會設為false。 僅當您要篩選GET請求時才包含此引數。
+**CSRF_CHECK_GETS**&#x200B;控制GET要求上的反向連結檢查。 如果未定義此引數，預設值會設為false。 僅當您要篩選GET要求時才包含此引數。
 
 **CSRF_ALLOWED_REFERER_EXCEPTIONS**&#x200B;是「允許的反向連結例外」清單的識別碼。 反向連結篩選器可防止來自清單ID所識別清單中反向連結的請求，從Forms伺服器上叫用任何資源。
 
