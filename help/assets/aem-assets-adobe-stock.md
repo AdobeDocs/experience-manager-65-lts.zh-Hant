@@ -7,10 +7,10 @@ role: User, Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 33f539d2-ae00-4f43-a27a-55c1b55a6c0c
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+source-git-commit: 62ca090edf7c6200eadf27bb4edbd9c03e34de76
 workflow-type: tm+mt
-source-wordcount: '2239'
-ht-degree: 2%
+source-wordcount: '2166'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
 | AEM 6.5 LTS | 本文章 |
 
 <!--
@@ -41,7 +41,7 @@ New overview content
 
 組織可以整合其企業[!DNL Adobe Stock]計畫與[!DNL Experience Manager Assets]，以確保授權資產可廣泛用於其創意和行銷專案，並具備[!DNL Experience Manager]的強大資產管理功能。 [!DNL Experience Manager]使用者無需離開[!DNL Experience Manager]介面，即可快速尋找、預覽及授權[!DNL Experience Manager]中儲存的Adobe Stock資產。
 
-## 整合[!DNL Experience Manager]和[!DNL Adobe Stock]的必要條件 {#integrate-aem-and-adobe-stock}
+## 整合[!DNL Experience Manager]和[!DNL Adobe Stock]的必要條件
 
 [!DNL Experience Manager Assets]讓使用者能夠直接從[!DNL Experience Manager]搜尋、預覽、儲存及授權[!DNL Adobe Stock]資產。
 
@@ -65,7 +65,7 @@ Old content
 
 The integration requires an [enterprise [!DNL Adobe Stock] plan](https://stockenterprise.adobe.com/).
 
-## Integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
+## Integrate [!DNL Experience Manager] and [!DNL Adobe Stock]
 
 [!DNL Experience Manager Assets] provides users the ability to search, preview, save, and license [!DNL Adobe Stock] assets directly from [!DNL Experience Manager].
 
@@ -115,17 +115,17 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
    ![將aem資產與adobe stock整合](/help/assets/assets/create-new-project-in-adobe-dev-console.png)
 1. 按一下&#x200B;**[!UICONTROL 新增至專案]**&#x200B;並選取&#x200B;**[!UICONTROL API]**。
 1. 選取&#x200B;**[!UICONTROL Adobe Stock]**&#x200B;並按一下&#x200B;**[!UICONTROL 下一步]**。
-1. 指定&#x200B;**[!UICONTROL 認證名稱]**&#x200B;並確認已選取&#x200B;**[!UICONTROL OAuth伺服器對伺服器]**，然後按一下[下一步]&#x200B;**&#x200B;**。
-1. 選取&#x200B;**[!UICONTROL AEM Assets]** **[!UICONTROL 產品設定檔]**，然後按一下&#x200B;**[!UICONTROL 儲存設定的API]**。 系統會顯示成功訊息，確認您已在[!DNL Developer Console]中建立專案。 您的專案儀表板隨即開啟，在頂端顯示專案名稱，**[!UICONTROL API]**&#x200B;底下的&#x200B;**[!UICONTROL Adobe Stock]**&#x200B;和&#x200B;**[!UICONTROL 產品設定檔]**&#x200B;底下的&#x200B;**[!UICONTROL AEM Assets]**，以及&#x200B;**[!UICONTROL 連線的認證]**&#x200B;底下的&#x200B;**[!UICONTROL OAuth伺服器對伺服器]**&#x200B;認證卡。
+1. 指定&#x200B;**[!UICONTROL 認證名稱]**&#x200B;並確認已選取&#x200B;**[!UICONTROL OAuth伺服器對伺服器]**，然後按一下[下一步]****。
+1. 選取&#x200B;**[!UICONTROL AEM Assets]** **[!UICONTROL 產品設定檔]**，然後按一下&#x200B;**[!UICONTROL 儲存設定的API]**。系統會顯示成功訊息，確認您在[!DNL Developer Console]中建立了專案。您的專案儀表板隨即開啟，在頂端顯示專案名稱，**[!UICONTROL API]**&#x200B;底下的&#x200B;**[!UICONTROL Adobe Stock]**，**[!UICONTROL 產品設定檔]**&#x200B;底下的&#x200B;**[!UICONTROL AEM Assets]**，以及&#x200B;**[!UICONTROL 連線的認證]**&#x200B;底下的&#x200B;**[!UICONTROL OAuth伺服器對伺服器]**認證卡。
    ![整合aem assets和adobe stock](/help/assets/assets/adc-project-name.png)
-1. 選取&#x200B;**[!UICONTROL OAuth伺服器對伺服器]**&#x200B;認證卡，並顯示&#x200B;**[!UICONTROL 認證詳細資料]**。 使用您專案的[!DNL OAuth Server-to-Server]認證詳細資料，例如&#x200B;**[!UICONTROL 使用者端ID]**、**[!UICONTROL 使用者端密碼]**、**[!UICONTROL 範圍]**、**[!UICONTROL 認證名稱]**、**[!UICONTROL 技術帳戶ID]**、**[!UICONTROL 組織ID]**，將設定新增至AEM編寫執行個體[&#128279;](#add-configuration-in-the-aem-author-instance)。
+1. 選取&#x200B;**[!UICONTROL OAuth伺服器對伺服器]**&#x200B;認證卡，並顯示&#x200B;**[!UICONTROL 認證詳細資料]**。使用您專案的[!DNL OAuth Server-to-Server]認證詳細資料，例如&#x200B;**[!UICONTROL 使用者端ID]**、**[!UICONTROL 使用者端密碼]**、**[!UICONTROL 範圍]**、**[!UICONTROL 認證名稱]**、**[!UICONTROL 技術帳戶ID]**、**[!UICONTROL 組織ID]**，以在AEM編寫執行個體](#add-configuration-in-the-aem-author-instance)中新增設定[。
    ![aem assets和adobe stock](/help/assets/assets/oauth-server-server-credentials-details-page.png)
 
 ### 在[!DNL AEM]作者執行個體中新增設定 {#add-configuration-in-the-aem-author-instance}
 
 執行以下步驟，在您的[!DNL AEM]作者執行個體中新增設定：
 
-1. [在您的 [!DNL AEM] 作者執行個體中設定新的 [!DNL Adobe Stock IMS configuration] &#x200B;](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
+1. [在您的 [!DNL AEM] 作者執行個體中設定新的 [!DNL Adobe Stock IMS configuration] ](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
 1. [新增雲端設定以連線至 [!DNL Adobe Stock]](#add-cloud-configuration-to-connect-adobe-stock)
 
 #### 在您的[!DNL AEM author]執行個體中設定新的[!DNL Adobe Stock IMS configuration] {#set-up-adobe-stock-ims-configuration-in-aem-author-instance}
@@ -185,7 +185,7 @@ To integrate [!DNL Experience Manager] and [!DNL Adobe Stock], perform the follo
    In [!DNL Experience Manager], configure an [!DNL Adobe Stock] cloud service using the IMS account.
 
 
-### Create an IMS configuration {#create-an-ims-configuration}
+### Create an IMS configuration
 
 The IMS configuration authenticates your [!DNL Experience Manager Assets] author instance with the [!DNL Adobe Stock] entitlement. 
 
@@ -368,7 +368,7 @@ To configure the [!DNL Adobe Stock] cloud service:
    >
    >若要允許存取[!UICONTROL Assets]和[!DNL Adobe Stock]資產，請確定使用者允許雲端設定。
 
-1. 按一下[儲存]以更新許可權。**&#x200B;**
+1. 按一下[儲存]以更新許可權。****
 
    ![assign-user-in-user-admin](assets/aem-stock-user-admin-console.png)
 
@@ -399,7 +399,7 @@ To configure the [!DNL Adobe Stock] cloud service:
 | 管理員 | 不適用 | 全部 | 不適用 | 是 | 是 |
 | test-doc1 | DAM 使用者 | /conf/global /settings/stock/cloud-config | 是 | 是 | 是 |
 | test-doc1 | DAM 使用者 | /conf/global /settings/stock/cloud-config | 否 | 錯誤：無法載入資料 | 否 |
-| test-doc1 | DAM 使用者 | **允許**： /conf/global /settings/stock     **拒絕**： /cloud-config | Stock設定不可見 | 是 | 否 |
+| test-doc1 | DAM 使用者 | **允許**： /conf/global /settings/stock **deny**： /cloud-config | Stock設定不可見 | 是 | 否 |
 
 ## 使用和管理[!DNL Experience Manager]中的[!DNL Adobe Stock]資產 {#usemanage}
 
@@ -467,15 +467,15 @@ To configure the [!DNL Adobe Stock] cloud service:
 
 >[!MORELIKETHIS]
 >
->* [有關搭配使用 [!DNL Adobe Stock] 資產與 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=zh-Hant)的教學影片
->* [[!DNL Adobe Stock] 企業計畫說明](https://helpx.adobe.com/tw/enterprise/using/adobe-stock-enterprise.html)
->* [[!DNL Adobe Stock] 常見問題](https://helpx.adobe.com/tw/stock/faq.html)
+>* [有關搭配使用 [!DNL Adobe Stock] 資產與 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)的教學影片
+>* [[!DNL Adobe Stock] 企業計畫說明](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [[!DNL Adobe Stock] 常見問題](https://helpx.adobe.com/stock/faq.html)
 
 
 <!--
 old content
 
-### Create an IMS configuration {#create-an-ims-configuration}
+### Create an IMS configuration
 
 1. In the [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Click **[!UICONTROL Create]** and select **[!UICONTROL Cloud Solution]** > **[!UICONTROL Adobe Stock]**.
 1. Either reuse an existing certificate or select **[!UICONTROL Create new certificate]**.
