@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6795f085b5a4d1ac2836b6c6f2f4d09a5739e639
+source-git-commit: bb021c0f03e7bb3884ecada32d1888e12d5238c5
 workflow-type: tm+mt
-source-wordcount: '7708'
+source-wordcount: '7683'
 ht-degree: 97%
 
 ---
@@ -582,7 +582,6 @@ Adobe 會持續審閱或演進產品功能，藉由更新或取代舊版功能�
 ### AEM Forms
 
 * 在 Configuration Manager 中，未選取模組或僅選取有限元件時，在 AEM Forms 6.5 LTS JEE Turnkey 自訂模式中的 Bootstrap 期間，資料庫初始化會失敗。 失敗是因為遺失相依性 (xalan-2.7.2.jar)，導致錯誤。 將 JAR 檔案新增至 adobe-livecycle-jboss.ear\lib 即可解決問題。 (FORMS-24690)
-* 在 JBoss® 上執行的 Forms JEE LTS 上，電子郵件相關功能可能會失敗。 嘗試使用電子郵件功能時，伺服器會記錄錯誤： `Error IMAPProvider not a subtype`。 (FORMS-24892)
 * 在WebSphere® Liberty Profile上執行的Forms JEE LTS Service Pack 2部署中，電子郵件功能可能會失敗。 嘗試使用電子郵件功能時，伺服器會記錄錯誤： `Could not convert socket to TLS`。 (FORMS-24692)
 
 ### 離線壓縮後線上壓縮期間存放庫損毀 (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
