@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Language Copy
 role: Admin
 exl-id: 901bd212-3daf-4b1e-a7c3-afb832959913
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a0272acbf803ff40b3af9aa292ca0a4532b20a55
 workflow-type: tm+mt
-source-wordcount: '3519'
+source-wordcount: '3546'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 在準備要翻譯的內容後，您需要透過建立遺漏的語言副本來完成語言結構，並建立翻譯專案。
 
-翻譯專案使您能夠管理 AEM 內容的翻譯。翻譯專案是AEM [專案](/help/sites-authoring/projects.md)的型別，其中包含要翻譯成其他語言的資源。 這些資源是從語言主版建立的[語言副本](/help/sites-administering/tc-prep.md)的頁面和資產。
+翻譯專案使您能夠管理 AEM 內容的翻譯。 翻譯專案是AEM [專案](/help/sites-authoring/projects.md)的型別，其中包含要翻譯成其他語言的資源。 這些資源是從語言主版建立的[語言副本](/help/sites-administering/tc-prep.md)的頁面和資產。
 
 將資源新增至翻譯專案時，系統會為其建立翻譯工作。 工作會提供相關命令和狀態資訊，您可用來管理在資源上執行的人工翻譯和機器翻譯工作流程。
 
@@ -250,7 +250,7 @@ AEM會偵測是否正在為內容的初始翻譯建立翻譯專案，或更新�
 | 狀態 | 說明 |
 |---|---|
 | 草稿 | 翻譯工作尚未開始。 翻譯工作在建立時處於草稿狀態。 |
-| 已提交 | 當翻譯工作中的檔案成功傳送至翻譯服務時，檔案會具有此狀態。 發出Request Scope指令或Start指令後，可能會出現此狀態。 |
+| 已提交 | 當翻譯工作中的檔案成功傳送至翻譯服務時，檔案會具有此狀態。 在發出「要求範圍」指令或「開始」指令後，可能會出現此狀態。 |
 | 已要求範圍 | 對於人工翻譯工作流程，作業中的檔案已提交給翻譯供應商來設定範圍。 發出「要求範圍」指令後，此狀態會出現。 |
 | 範圍已完成 | 供應商已設定翻譯工作的範圍。 |
 | 已送交供翻譯 | 專案所有者已接受範圍。 此狀態表示翻譯廠商應開始翻譯工作中的檔案。 |
@@ -377,7 +377,7 @@ AEM會偵測是否正在為內容的初始翻譯建立翻譯專案，或更新�
 1. 在&#x200B;**網站**&#x200B;主控台中，導覽至您要比較的語言副本。
 1. 開啟&#x200B;**[參考](/help/sites-authoring/basic-handling.md#references)**&#x200B;面板。
 1. 在&#x200B;**復本**&#x200B;標題下，選取&#x200B;**語言復本。**
-1. 選取您的特定語言副本，然後您可以按一下&#x200B;**與主版比較**&#x200B;或&#x200B;**與上一個比較**（如果適用）。
+1. 選取您的特定語言副本，然後您可以按一下&#x200B;**與主版比較**&#x200B;或**與上一個比較**（如果適用）。
 
    ![chlimage_1-37](assets/chlimage_1-37.jpeg)
 
