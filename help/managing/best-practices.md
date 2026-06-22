@@ -234,7 +234,7 @@ ht-degree: 1%
 
   在開發之前，應設定部署、發行、測試和報告問題所需的所有支援流程。
 
-  另請參閱[Adobe支援入口網站](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)。
+  另請參閱[Adobe支援入口網站](https://experienceleague.adobe.com/zh-hant?support-solution=General&support-tab=home#support)。
 
 ### 作業計畫與作業 {#operations-planning-and-operations}
 
