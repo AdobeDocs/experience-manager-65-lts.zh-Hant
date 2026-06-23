@@ -461,7 +461,7 @@ Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visi
 
 >[!NOTE]
 >
->如需其他需求，請參閱[ JEE部署上單一伺服器AEM Forms的系統需求](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-single-server.pdf)
+>如需其他需求，請參閱[&#x200B; JEE部署上單一伺服器AEM Forms的系統需求](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-single-server.pdf)
 
 ### Adobe Acrobat與Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
