@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 0360a8eb-d4ff-4225-9be3-fa375b5da971
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b1edea6e0bc6fe2bad0d3e04390742a04cc3ca18
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1838'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## 何謂艱難的第2天 {#what-is-tough-day}
 
-「艱難第2天」應用程式可讓您對AEM執行個體的限制進行壓力測試。 您可以立即使用預設的測試套件執行此檔案，也可以根據您的測試需求進行設定。 您可以觀看[此錄製](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=zh-Hant)的應用程式簡報。
+「艱難第2天」應用程式可讓您對AEM執行個體的限制進行壓力測試。 您可以立即使用預設的測試套件執行此檔案，也可以根據您的測試需求進行設定。
 
 >[!CAUTION]
 >
