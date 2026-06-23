@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5 LTS檔案瞭解其運作方式，以及軟體可為您做什麼。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM 6.5 LTS
-source-git-commit: c77ad85cf736ee660bfaa662d428a7f7e83a12ff
+source-git-commit: 176e5aabb810f9eee0aa2f8583422f149f016a2e
 workflow-type: tm+mt
-source-wordcount: '7695'
-ht-degree: 23%
+source-wordcount: '7709'
+ht-degree: 22%
 
 ---
 
@@ -1096,6 +1096,7 @@ ht-degree: 23%
       + {hide-from-toc}[PaperCapture服務無法在PDF上執行OCR](/help/forms/using/papercapture-service-resolution.md)
       + [使用JBoss EAP 8 (Linux)的AEM Forms 6.5 LTS上指令碼執行失敗](/help/forms/using/script-execution-issues-on-aem-forms-65-lts-with-jboss-eap-8-linux.md)
       + [無法啟動JBoss網域控制站](/help/forms/using/unable-to-start-jboss-domain-controller-due-to-duplicate-security-tag.md)
+      + [緩解JEE 6.5 LTS SP2上AEM Forms的VULN-36128和VULN-36120](/help/forms/using/mitigating-vulnerabilities-vuln-36128-vuln-36120-for-aem-forms-on-jee-65-lts-sp2.md)
    + 舊版檔案 {#legacy-documentation}
       + {hide-from-toc}[在AEM Forms on JEE Workbench中使用執行指令碼服務來建置XML資料](/help/forms/developing/building-xml.md)
       + {hide-from-toc}[在JEE自訂DSC上使用AEM Forms壓縮和解壓縮檔案](/help/forms/developing/compressing-decompressing-custom-dsc.md)
@@ -1261,7 +1262,7 @@ ht-degree: 23%
                + [選擇性 - 如何使用 AEM 建立單頁應用程式](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/create-spa.html?lang=zh-Hant)
             + Headless 內容架構者歷程 {#architect}
                + [AEM Headless 內容架構者歷程概觀](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/overview.html?lang=zh-Hant)
-               + [使用 AEM 建立 Headless 的內容模型 - 簡介](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/introduction.html?lang=zh-Hant)
+               + [使用 AEM 建立 Headless 的內容模型 - 簡介](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/introduction.html)
                + [了解 AEM Headless 內容模型基本知識](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/basics.html?lang=zh-Hant)
                + [了解如何在 AEM 中建立內容片段模型](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/model-structure.html?lang=zh-Hant)
          + 快速入門指南 {#getting-started}
@@ -1274,7 +1275,7 @@ ht-degree: 23%
          + 內容片段{#content-fragments}
             + [使用內容片段和 GraphQL 的 Headless 傳遞](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-graphql.html?lang=zh-Hant)
             + [使用內容片段](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments.html?lang=zh-Hant)
-            + [為您的執行個體啟用內容片段功能](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-configuration-browser.html?lang=zh-Hant)
+            + [為您的執行個體啟用內容片段功能](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-configuration-browser.html)
             + [內容片段模型](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-models.html?lang=zh-Hant)
             + [管理內容片段](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-managing.html?lang=zh-Hant)
             + [變化 - 編寫片段內容](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-variations.html?lang=zh-Hant)

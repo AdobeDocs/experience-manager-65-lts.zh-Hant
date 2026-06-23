@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: bb021c0f03e7bb3884ecada32d1888e12d5238c5
+source-git-commit: d2484f59e701a30a9b8f62ab308b7e5993c53694
 workflow-type: tm+mt
-source-wordcount: '7683'
-ht-degree: 97%
+source-wordcount: '7743'
+ht-degree: 96%
 
 ---
 
@@ -262,10 +262,6 @@ Assets 「相關」現在適用於包含空格的檔案名稱。 更新「相關
 * 在 Dynamic Media 影片中，新增支援在「字幕與音軌」語言下拉式清單中選取阿拉伯語，讓作者可直接在 AEM 中管理阿拉伯語字幕。 (Assets‑61771)
 
 <!-- #### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-65-lts-sp2} -->
-
-<!--
-#### Forms Designer
--->
 
 ### [!DNL Forms]{#forms-65-lts-sp2}
 
@@ -583,6 +579,7 @@ Adobe 會持續審閱或演進產品功能，藉由更新或取代舊版功能�
 
 * 在 Configuration Manager 中，未選取模組或僅選取有限元件時，在 AEM Forms 6.5 LTS JEE Turnkey 自訂模式中的 Bootstrap 期間，資料庫初始化會失敗。 失敗是因為遺失相依性 (xalan-2.7.2.jar)，導致錯誤。 將 JAR 檔案新增至 adobe-livecycle-jboss.ear\lib 即可解決問題。 (FORMS-24690)
 * 在WebSphere® Liberty Profile上執行的Forms JEE LTS Service Pack 2部署中，電子郵件功能可能會失敗。 嘗試使用電子郵件功能時，伺服器會記錄錯誤： `Could not convert socket to TLS`。 (FORMS-24692)
+* 在 JBoss® 上執行的 Forms JEE LTS 上，電子郵件相關功能可能會失敗。 嘗試使用電子郵件功能時，伺服器會記錄錯誤： `Error IMAPProvider not a subtype`。 從[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-core-jboss.ear)安裝Hotfix以解決此問題。 (FORMS-24892)
 
 ### 離線壓縮後線上壓縮期間存放庫損毀 (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
