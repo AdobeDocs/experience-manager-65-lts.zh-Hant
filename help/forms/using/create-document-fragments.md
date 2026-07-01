@@ -10,7 +10,7 @@ role: Admin, User, Developer
 exl-id: 6c23092f-49ac-4133-baf0-87e4deaabeb0
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1689'
 ht-degree: 3%
 
 ---
@@ -164,7 +164,7 @@ ht-degree: 3%
    ![客戶詳細資料靜態文字](assets/customer_details_static_text_new.png)
 
 1. 將游標放在&#x200B;**行動電話號碼**&#x200B;欄位旁邊，然後按兩下&#x200B;**客戶** > **行動電話號碼**&#x200B;屬性。
-1. 將游標放在&#x200B;**備用聯絡電話號碼**&#x200B;欄位旁，然後按兩下 **&#x200B; customer** > **alternatemobilenumber**&#x200B;屬性。
+1. 將游標放在&#x200B;**備用聯絡電話號碼**&#x200B;欄位旁，然後按兩下&#x200B;**customer** > **alternatemobilenumber**屬性。
 1. 將游標置於&#x200B;**關聯性編號**&#x200B;欄位旁邊，然後按兩下&#x200B;**客戶** > **關聯性編號**&#x200B;屬性。
 1. 選取&#x200B;**變數**&#x200B;標籤，將游標放置在&#x200B;**供給位置**&#x200B;欄位旁邊，然後按兩下&#x200B;**Placessupply**&#x200B;變數。
 1. 將游標放在&#x200B;**狀態碼**&#x200B;欄位旁邊，然後按兩下&#x200B;**狀態碼**&#x200B;變數。
