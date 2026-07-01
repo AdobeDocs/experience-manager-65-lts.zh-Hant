@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: c532abc558084ee9b58e618b0fc16677f4c5b6a4
+source-git-commit: ee3cfd977ab2e7f7cadabb2719fb38ef255b6a2a
 workflow-type: tm+mt
-source-wordcount: '7743'
+source-wordcount: '7754'
 ht-degree: 96%
 
 ---
@@ -157,8 +157,7 @@ Sites 主控台清單視圖設定未反映清單視圖中顯示的欄。 對話�
 
 * 在最近的使用者介面樣式變更後，內容片段 RTE 出現版面和視覺問題。 Service Pack 2 會精簡 RTE 樣式，使工具列和可編輯區域能正確轉譯並保持可讀性。 內容片段編輯器現在的外觀與行為已與頁面編輯器保持一致。 (SITES-38684)
 * 從 Polaris 資產選擇器中移除 IMS 範圍，導致內容片段與交付端點的整合功能失效。 作者在開啟遠端資產選擇器並選取資產時會遇到失敗。 此更新重新新增了必要的 IMS 範圍，並恢復穩定的交付層級存取權限。 (SITES-35837)
-* 「關聯內容」面板不再呈現硬式編碼的「未定義」預留位置。內容片段編輯器現在會透過本地化資源解析該文字，因此編輯器可以看到翻譯過的UI文字。(SITES-33675)
-  <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
+* 「關聯內容」面板不再顯示硬式編碼的「未定義」預留位置。 內容片段編輯器現在會透過本地化資源解析該文字，因此編輯者將看到已翻譯的使用者介面文字。 (SITES-33675)  <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
 * 內容片段編輯器現在會跨不同環境顯示已翻譯的「一般」標籤。 編輯器已替換未本地化的標籤文字，並從標籤標題中移除內部識別碼。 (SITES-30715)
 * 內容片段編輯器現在會顯示已翻譯的允許資產類型名稱。 當作者設定內容參照限制時，選擇器清單不再混用內部字串與僅限英文的標籤。 (SITES-29699)
 
@@ -540,6 +539,7 @@ Adobe 會持續審閱或演進產品功能，藉由更新或取代舊版功能�
 
 | 區域 | 功能 | 替代方案 | 版本 (SP) |
 | --- | --- | --- | --- |
+| Sites | 內容片段文字摘要 | 無可用的替代方案。 | |
 | 快速入門 | Mongo API | Mongo API 現已棄用，並規劃在未來版本中移除。 | 6.5 TS SP2 |
 | Sites | AEM Assets REST API 中的內容片段支援 | AEM 6.5 LTS SP2 為內容片段和模型管理提供現代化的 OpenAPI，因此 AEM Assets REST API 中較舊的內容片段支援端點現已棄用。<br>Adobe 預計在生命週期結束公告前保留這些較舊的端點。 Adobe 未計劃針對已棄用的端點提供進一步的增強功能。 | 6.5 LTS SP2 |
 | Sites | [SPA 編輯器](/help/sites-developing/spa-overview.md) | 在 AEM 中管理無周邊內容的首選編輯器是：<br>- [通用編輯器](/help/sites-developing/universal-editor/introduction.md)，用於視覺化編輯。<br>- [內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md)，用於表單型編輯。 | 6.5 LTS 正式發佈版 |
