@@ -12,7 +12,7 @@ role: Admin
 exl-id: d50dedf3-1973-471d-b16d-f56d60325bb3
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2672'
+source-wordcount: '2681'
 ht-degree: 3%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 3%
  <tbody>
   <tr>
    <th>名稱</th>
-   <th>描述</th>
+   <th>說明</th>
    <th>觸發程序</th>
    <th>同步化動作<br /> <br />另請參閱<a href="#installed-synchronization-actions">已安裝的同步化動作</a></th>
   </tr>
@@ -131,7 +131,7 @@ ht-degree: 3%
  <tbody>
   <tr>
    <th>動作名稱</th>
-   <th>描述</th>
+   <th>說明</th>
    <th>屬性<br /> </th>
   </tr>
   <tr>
@@ -170,7 +170,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td>referencesupdate</td>
-   <td><p>在即時副本上，此同步動作會更新參照，例如連結。<br />它會搜尋即時副本頁面中指向Blueprint內資源的路徑。 找到後，它會更新路徑以指向即時副本內的相關資源（而非Blueprint）。 具有Blueprint外部目標的參考不會變更。</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">設定CQ MSM參考更新動作服務</a>以指定要排除的節點型別、段落專案和頁面屬性。 </p> </td>
+   <td><p>在即時副本上，此同步化動作會更新如連結之類的參考。<br /> 它會搜尋即時副本頁面中指向Blueprint內資源的路徑。 找到後，它會更新路徑以指向即時副本內的相關資源（而非Blueprint）。 具有Blueprint外部目標的參考不會變更。</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">設定CQ MSM參考更新動作服務</a>以指定要排除的節點型別、段落專案和頁面屬性。 </p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -229,8 +229,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td>productCreateUpdate</td>
-   <td>建立或更新目錄中的產品資源。 此動作的用途為下列其中一種情況：
-    <ul>
+   <td>建立或更新目錄中的產品資源。 此動作的用途為下列其中一種情況：<ul>
      <li>產生或轉出目錄（或目錄區段）</li>
      <li>使用者恢復產品元件的同步繼承。</li>
     </ul> </td>
@@ -243,7 +242,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td>catalogRolloutHooks</td>
-   <td>執行目錄產生特定的轉出掛接。 呼叫CatalogGenerator的executePageRolloutHooks和executeProductRolloutHooks方法。<br />請參閱AEM Javadocs中的com.adobe.cq.commerce.pim.api.CatalogGenerator 。</td>
+   <td>執行目錄產生特定的轉出掛接。 呼叫CatalogGenerator的executePageRolloutHooks和executeProductRolloutHooks方法。<br /> 請參閱AEM Javadocs中的com.adobe.cq.commerce.pim.api.CatalogGenerator 。</td>
    <td> </td>
   </tr>
   <tr>
@@ -285,7 +284,7 @@ ht-degree: 3%
  <tbody>
   <tr>
    <th>Web控制檯屬性/ OSGi屬性</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td><p>排除的節點型別</p> <p>cq.wcm.msm.action.excludednodetypes</p> </td>
@@ -340,7 +339,7 @@ ht-degree: 3%
  <tbody>
   <tr>
    <th>Web控制檯屬性/ OSGi屬性</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td><p>更新巢狀即時副本間的參考</p> <p>cq.wcm.msm.impl.action.referencesupdate.prop_updateNested</p> </td>
@@ -392,7 +391,7 @@ MSM可讓您指定一般使用的轉出設定集，並視需要覆寫特定即�
 
    ![選取的轉出設定](assets/chlimage_1-2.png)
 
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
 ### 設定Blueprint頁面的轉出設定 {#setting-the-rollout-configuration-for-a-blueprint-page}
 
@@ -410,7 +409,7 @@ Blueprint頁面的子頁面會繼承設定。 當您設定要使用的轉出設�
 
 指定轉出組態以做為系統預設值。 若要指定預設值，請設定OSGi服務：
 
-* **Day CQ WCM Live Relationship Manager**
+* **天CQ WCM即時關係管理員**
 服務PID為`com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
 使用[網頁主控台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)或[存放庫節點](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)設定服務。
