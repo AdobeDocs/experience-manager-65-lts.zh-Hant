@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: e4be0056-1e19-41a8-8d8c-be65999b562d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4118'
+source-wordcount: '4435'
 ht-degree: 1%
 
 ---
@@ -45,14 +45,11 @@ ht-degree: 1%
 
 互動影像步驟：
 
-1. **（選用）識別熱點變數** — 如果您使用Experience Manager Assets和Dynamic Media獨立，請先識別您現有Quickview實作中使用的動態變數。 之後，您就可以在建立互動式影像時輸入熱點資料。 請參閱[（選擇性）識別熱點變數](#optional-identifying-hotspot-variables)。
-不過，如果您使用Adobe Experience Manager Sites或Adobe Experience Manager電子商務，或同時使用兩者，則不需要執行此步驟。
+1. **（選用）識別熱點變數** — 如果您使用Experience Manager Assets和Dynamic Media獨立，請先識別您現有Quickview實作中使用的動態變數。 之後，您就可以在建立互動式影像時輸入熱點資料。 請參閱[（選擇性）識別熱點變數](#optional-identifying-hotspot-variables)。不過，如果您使用Adobe Experience Manager Sites或Adobe Experience Manager電子商務，或同時使用兩者，則不需要執行此步驟。
 
-1. **（選擇性）建立互動式影像檢視器預設集** — 自訂用來代表熱點的圖形影像。 如果您打算改用名為`Shoppable_Banner`的現成互動影像檢視器預設集，則不需要建立自己的互動影像檢視器預設集。
-請參閱[（選擇性）建立互動式影像檢視器預設集](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset)。
+1. **（選擇性）建立互動式影像檢視器預設集** — 自訂用來代表熱點的圖形影像。 如果您打算改用名為`Shoppable_Banner`的現成互動影像檢視器預設集，則不需要建立自己的互動影像檢視器預設集。請參閱[（選擇性）建立互動式影像檢視器預設集](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset)。
 
-1. **上傳影像橫幅** — 上傳您想要互動的影像橫幅。
-請參閱[上傳影像橫幅](#uploading-an-image-banner)。
+1. **上傳影像橫幅** — 上傳您想要互動的影像橫幅。請參閱[上傳影像橫幅](#uploading-an-image-banner)。
 
 1. **新增熱點至影像橫幅** — 新增一或多個熱點至影像橫幅，並將每個熱點與超連結、快速檢視或體驗片段等動作建立關聯。 新增熱點後，您將發佈互動式影像來完成此工作。
 
@@ -73,7 +70,7 @@ ht-degree: 1%
 >只有在下列情況為真時才需要此工作：
 >
 >* 您想要透過觸發至快速檢視將互動性新增至影像。
->* 您實作Experience Manager時，*不會*&#x200B;使用電子商務整合架構，將產品資料從任何電子商務解決方案(例如IBM®WebSphere®Commerce、Elastic Path、hybris或Intershop)提取至Experience Manager。
+>* 您實作Experience Manager時，*不會*&#x200B;使用電子商務整合架構，將產品資料從任何電子商務解決方案（例如IBM®WebSphere®Commerce、Elastic Path、hybris或Intershop）提取至Experience Manager。
 >
 >如果您的Experience Manager實作使用電子商務，您可以略過此任務並繼續下一個任務。
 
@@ -89,7 +86,7 @@ ht-degree: 1%
 
 大部分的「快速檢視」實作都使用下列範例：
 
-* 使用者在網站上啟動使用者介面元素。例如，選取「快速檢視」按鈕。
+* 使用者在網站上啟動使用者介面元素。 例如，選取「快速檢視」按鈕。
 * 如有需要，網站會傳送Ajax請求至後端以載入快速檢視資料或內容。
 * 快速檢視資料會轉譯成內容，以備在網頁上轉譯。
 * 最後，前端程式碼會在畫面上以視覺化方式呈現此類內容。
@@ -98,11 +95,9 @@ ht-degree: 1%
 
 通常您不需要使用任何專門的偵錯工具。 現代的網頁瀏覽器配備能夠執行適當工作的網頁檢查器。 以下是一些包含網頁檢查器的網頁瀏覽器範例：
 
-* 若要在Google Chrome中檢視所有傳出的HTTP要求，請按F12開啟「開發人員工具」面板，然後選取「網路」索引標籤。
-在Mac上，按Command+Option+I開啟「開發人員工具」面板，然後選取「網路」標籤。
+* 若要在Google Chrome中檢視所有傳出的HTTP要求，請按F12開啟「開發人員工具」面板，然後選取「網路」索引標籤。在Mac上，按Command+Option+I開啟「開發人員工具」面板，然後選取「網路」標籤。
 
-* 在Firefox中，您可以按F12並使用其「網路」標籤來啟動Firebug外掛程式，或使用內建的「檢查器」工具及其「網路」標籤。
-在Mac上，按Command+Option+I開啟「開發人員工具」面板，然後選取「檢測器」索引標籤。
+* 在Firefox中，您可以按F12並使用其「網路」標籤來啟動Firebug外掛程式，或使用內建的「檢查器」工具及其「網路」標籤。在Mac上，按Command+Option+I開啟「開發人員工具」面板，然後選取「檢測器」索引標籤。
 
 在瀏覽器中開啟網路監視時，會觸發頁面上的快速檢視。
 
@@ -296,8 +291,7 @@ ht-degree: 1%
 
    * 選取&#x200B;**[!UICONTROL 體驗片段]**。
 
-      * 如果您是Experience Manager Sites客戶，請選取「搜尋」圖示（放大鏡）以開啟「體驗片段」頁面。 選取您要使用的體驗片段，然後選取頁面右上角的&#x200B;**[!UICONTROL 選取]**，即可返回「熱點」管理頁面。
-請參閱[體驗片段](/help/sites-authoring/experience-fragments.md)。
+      * 如果您是Experience Manager Sites客戶，請選取「搜尋」圖示（放大鏡）以開啟「體驗片段」頁面。 選取您要使用的體驗片段，然後選取頁面右上角的&#x200B;**[!UICONTROL 選取]**，即可返回「熱點」管理頁面。請參閱[體驗片段](/help/sites-authoring/experience-fragments.md)。
 
       * 指定您希望體驗片段在橫幅上顯示的寬度和高度。
 
@@ -322,10 +316,7 @@ ht-degree: 1%
 
 您可以使用「預覽」來檢視互動式影像呈現給客戶的方式，以及測試影像的熱點以確保其如預期般運作。
 
-當您對互動式影像感到滿意時，即可發佈。
-請參閱[將視訊或影像檢視器嵌入網頁](/help/assets/embed-code.md)。
-檢視[將URL連結至您的網頁應用程式](/help/assets/linking-urls-to-yourwebapplication.md)。 如果您的互動式內容有具有相對URL的連結，尤其是指向Experience Manager Sites頁面的連結，則無法採用URL型連結方法。
-請參閱[將Dynamic Media Assets新增至頁面](/help/assets/adding-dynamic-media-assets-to-pages.md)。
+當您對互動式影像感到滿意時，即可發佈。請參閱[將視訊或影像檢視器嵌入網頁](/help/assets/embed-code.md)。檢視[將URL連結至您的網頁應用程式](/help/assets/linking-urls-to-yourwebapplication.md)。 如果您的互動式內容有具有相對URL的連結，尤其是指向Experience Manager Sites頁面的連結，則無法採用URL型連結方法。請參閱[將Dynamic Media Assets新增至頁面](/help/assets/adding-dynamic-media-assets-to-pages.md)。
 
 **若要預覽互動式影像：**
 
@@ -346,11 +337,9 @@ ht-degree: 1%
 
 如果您是獨立Experience Manager Assets客戶，可以手動將互動式影像新增至您的網站，如本節所述。
 
-1. 複製已發佈的互動影像的內嵌程式碼。
-請參閱[將視訊或影像檢視器嵌入網頁](/help/assets/embed-code.md)。
+1. 複製已發佈的互動影像的內嵌程式碼。請參閱[將視訊或影像檢視器嵌入網頁](/help/assets/embed-code.md)。
 
-1. 將複製的內嵌程式碼新增至網頁內所需的位置。
-複製的內嵌程式碼是針對回應式環境所設定，因此會自動符合指派的區域。
+1. 將複製的內嵌程式碼新增至網頁內所需的位置。複製的內嵌程式碼是針對回應式環境所設定，因此會自動符合指派的區域。
 
 **範例**
 

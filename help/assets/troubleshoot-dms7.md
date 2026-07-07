@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 469495f2-b6d3-490d-a5df-ffa07b30cc1e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1393'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
   此復寫代理位於作者上的代理下。
 
-## 一般(所有Assets) {#general-all-assets}
+## 一般（所有Assets） {#general-all-assets}
 
 以下是適用於所有資產的一些一般提示和訣竅。
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ### 同步記錄 {#synchronization-logging}
 
-同步處理錯誤和問題記錄在`error.log` (Experience Manager伺服器目錄`/crx-quickstart/logs/`)。 有足夠的記錄可判斷大部分問題的根本原因，但您可以透過Sling主控台([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog))增加`com.adobe.cq.dam.ips`封裝上DEBUG的記錄以收集更多資訊。
+同步處理錯誤和問題記錄在`error.log` （Experience Manager伺服器目錄`/crx-quickstart/logs/`）。 有充足的記錄可判斷大部分問題的根本原因，但您可以透過Sling主控台([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog))增加`com.adobe.cq.dam.ips`套件上DEBUG的記錄以收集詳細資訊。
 
 ### 移動、複製、刪除 {#move-copy-delete}
 
@@ -255,8 +255,7 @@ ht-degree: 0%
 1. 在清單中搜尋檢視器套件；它以`cq-dam-scene7-viewers-content`開頭。
 1. 選取&#x200B;**重新安裝**。
 1. 在雲端服務底下，導覽至Dynamic Media設定頁面，然後開啟Dynamic Media - S7設定的設定對話方塊。
-1. 不做任何變更，選取&#x200B;**儲存**。
-這個儲存動作會再次觸發邏輯，以建立並同步範例資產、檢視器預設集CSS和圖稿。
+1. 不做任何變更，選取&#x200B;**儲存**。這個儲存動作會再次觸發邏輯，以建立並同步範例資產、檢視器預設集CSS和圖稿。
 
 ### 問題：檢視器預設集製作中未載入影像預覽 {#image-preview-not-loading}
 

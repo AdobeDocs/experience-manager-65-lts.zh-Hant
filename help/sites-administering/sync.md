@@ -12,8 +12,8 @@ role: Admin
 exl-id: b7b1bce6-9cea-4f13-955f-f9e361f298bf
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2224'
-ht-degree: 1%
+source-wordcount: '2340'
+ht-degree: 2%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 1%
 
 * [AEM平台更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=zh-Hant)
 
-### &#x200B;1. Apache Sling散發代理程式 — 同步代理程式處理站 {#apache-sling-distribution-agent-sync-agents-factory}
+### &#x200B;1. Apache Sling散發代理程式 — 同步代理程式工廠 {#apache-sling-distribution-agent-sync-agents-factory}
 
 **啟用使用者同步**
 
@@ -98,7 +98,7 @@ ht-degree: 1%
 
 ![Apache Sling散發代理程式](assets/chlimage_1-20.png)
 
-### 2.建立授權使用者 {#createauthuser}
+### &#x200B;2. 建立授權使用者 {#createauthuser}
 
 **設定許可權**
 
@@ -152,7 +152,7 @@ ht-degree: 1%
 * [存取許可權管理](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * 疑難排解區段[在回應處理期間修改作業例外狀況](#modify-operation-exception-during-response-processing)。
 
-### &#x200B;3. Adobe Granite Distribution — 加密密碼傳輸機密提供者 {#adobegraniteencpasswrd}
+### &#x200B;3. Adobe Granite發佈 — 加密的密碼傳輸機密提供者 {#adobegraniteencpasswrd}
 
 **設定許可權**
 
@@ -198,7 +198,7 @@ ht-degree: 1%
 
 ![佇列代理程式Factory](assets/chlimage_1-23.png)
 
-### &#x200B;5. Adobe Social Sync — 觀察者工廠差異 {#diffobserver}
+### &#x200B;5. Adobe Social Sync — 差異觀察者處理站 {#diffobserver}
 
 **啟用群組同步**
 
@@ -220,7 +220,7 @@ ht-degree: 1%
 
 ![比較觀察者處理站](assets/screen-shot_2019-05-24at090809.png)
 
-### &#x200B;6. Apache Sling Distribution Trigger — 排程觸發程式Factory {#apache-sling-distribution-trigger-scheduled-triggers-factory}
+### &#x200B;6. Apache Sling散發觸發器 — 排程觸發器工廠 {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 **（選擇性）修改輪詢間隔**
 
@@ -267,20 +267,20 @@ ht-degree: 1%
 ![同步代理程式處理站](assets/chlimage_1-25.png)
 
 * **匯出工具端點**
-每個發佈執行個體都應該有一個匯出工具端點。 例如，如果有2個Publish執行個體localhost：4503和4504，則應該有兩個專案：
+每個發佈執行個體都應該有一個匯出工具端點。 例如，如果有2個Publish執行個體（localhost:4503和4504），則應該有兩個專案：
 
    * `https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse`
    * `https://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse`
 
 * **匯入工具端點**
-每個Publish執行個體都應該有Importer端點。 例如，如果有2個Publish執行個體localhost：4503和4504，則應該有兩個專案：
+每個Publish執行個體都應該有Importer端點。 例如，如果有2個Publish執行個體（localhost:4503和4504），則應該有兩個專案：
 
    * `https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync`
    * `https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync`
 
 * 選取`Save`
 
-### 8.唯一Sling ID {#unique-sling-id}
+### &#x200B;8. 唯一的Sling ID {#unique-sling-id}
 
 >[!CAUTION]
 >
@@ -303,11 +303,9 @@ ht-degree: 1%
    * 搜尋並刪除名為&#x200B;*sling.id.file*&#x200B;的檔案
 
       * 例如，在Linux®系統上：
-
         `rm -i $(find . -type f -name sling.id.file)`
 
       * 例如，在Windows系統上：
-
         `use windows explorer and search for *sling.id.file*`
 
 1. 啟動發佈執行個體
@@ -339,7 +337,7 @@ ht-degree: 1%
 
 * 原則處理：
 
-   * 若要以新節點覆寫現有的rep：policy節點，請新增第三個封裝篩選器：
+   * 若要以新節點覆寫現有的rep:policy節點，請新增第三個封裝篩選器：
 
       * `/home/users|+.*/rep:policy`
 
@@ -421,7 +419,7 @@ ht-degree: 1%
 
 ### 設定未正確新增 {#configuration-improperly-added}
 
-當使用者同步無法運作時，最常見的問題是額外的設定已新增&#x200B;**。 相反地，*existing *預設設定應該已&#x200B;*編輯*。
+當使用者同步無法運作時，最常見的問題是額外的設定已新增&#x200B;**。 相反地，*existing*&#x200B;預設設定應該已*編輯*。
 
 以下檢視已編輯的預設設定應該如何顯示在Web主控台中。 如果出現多個執行個體，應移除新增的設定。
 
@@ -461,7 +459,7 @@ ht-degree: 1%
 
 授權的使用者應對所有發佈執行個體明確具有下列許可權和限制：
 
-| **path** | **jcr：all** | **rep：glob** |
+| **path** | **jcr:all** | **代表:glob** |
 |---|---|---|
 | /home | X | &#42;/activities/&#42; |
 | /home/users | X | &#42;/activities/&#42; |
@@ -469,7 +467,7 @@ ht-degree: 1%
 
 作為`administrators`群組的成員，授權的使用者應在所有Publish執行個體上擁有下列許可權：
 
-| **path** | **jcr：all** | **jcr：read** | **rep：write** |
+| **path** | **jcr:all** | **jcr:read** | **代表:write** |
 |---|---|---|---|
 | /etc/packages/sling/distribution |  |  | X |
 | /libs/sling/distribution |  | X |  |

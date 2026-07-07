@@ -9,7 +9,7 @@ role: User, Developer
 exl-id: 2ccd8c75-e4d0-40f9-bc8f-352b408b5c62
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2010'
+source-wordcount: '2029'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ### 輸入資料 {#enter-data}
 
-1. 在「資料」標籤中，視需要輸入變數、表單資料模型屬性和列印範本(XDP)欄位的資料。 填寫標示星號(&amp;amp；ast；)的所有必要欄位，以啟用&#x200B;**提交**&#x200B;按鈕。
+1. 在「資料」標籤中，視需要輸入變數、表單資料模型屬性和列印範本(XDP)欄位的資料。 填寫所有標示星號(&amp;ast；)的必要欄位，以啟用&#x200B;**提交**&#x200B;按鈕。
 
    在互動式通訊預覽中選取資料欄位值，以反白顯示「資料」標籤中對應的資料欄位，反之亦然。
 
