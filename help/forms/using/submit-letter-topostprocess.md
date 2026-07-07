@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: b48ceb2a-9e5b-4df7-9a3e-2ed7e3849041
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
    ![設定管理員](assets/2configmanager-1.png)
 
 1. 在此頁面上，找到AEM Forms使用者端SDK設定，然後按一下以展開它。
-1. 在伺服器URL中，輸入JEE伺服器上AEM Forms的名稱、登入詳細資料，然後按一下[儲存]。**&#x200B;**
+1. 在伺服器URL中，輸入JEE伺服器上AEM Forms的名稱、登入詳細資料，然後按一下[儲存]。****
 
    ![輸入LiveCycle伺服器的名稱](assets/1cofigmanager.png)
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
    前往「Adobe Experience Manager Web主控台組態」頁面> **[!UICONTROL 通訊管理組態]**，並設定下列引數：
 
-   1. **inPDFDoc (PDF檔案引數)：** PDF檔案作為輸入。 此輸入包含轉譯字母作為輸入。 指定的引數名稱是可設定的。 您可從設定的「通訊管理」設定中進行設定。
+   1. **inPDFDoc （PDF檔案引數）：** PDF檔案作為輸入。 此輸入包含轉譯字母作為輸入。 指定的引數名稱是可設定的。 您可從設定的「通訊管理」設定中進行設定。
    1. **inXMLDoc （XML資料引數）：**&#x200B;作為輸入的XML檔案。 此輸入包含使用者以XML格式輸入的資料。
    1. **inXDPDoc （XDP檔案引數）：**&#x200B;作為輸入的XML檔案。 此輸入包含基礎配置(XDP)。
    1. **inAttachmentDocs （附件檔案引數）：**&#x200B;清單輸入引數。 此輸入包含作為輸入的所有附件。
@@ -85,7 +85,7 @@ ht-degree: 0%
   <tr>
    <td><strong>伺服器端API</strong></td>
    <td><strong>作業名稱</strong></td>
-   <td><strong>描述</strong></td>
+   <td><strong>說明</strong></td>
   </tr>
   <tr>
    <td><p>公開LetterInstanceVO</p> <p>getLetterInstance(String letterInstanceId)</p> <p>擲回ICCException； </p> </td>
