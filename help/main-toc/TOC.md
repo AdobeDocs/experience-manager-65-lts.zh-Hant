@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5 LTS檔案瞭解其運作方式，以及軟體可為您做什麼。
 breadcrumb-title: 使用手冊
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 1d825cd821609504c5e2cff7f7002bf3afe30434
+source-git-commit: 860d8acb94370142bf47d0e03c554b69c0902222
 workflow-type: tm+mt
-source-wordcount: '7710'
+source-wordcount: '7797'
 ht-degree: 22%
 
 ---
@@ -441,9 +441,13 @@ ht-degree: 22%
       + [JEE版AEM Forms的安裝和升級工作流程](/help/forms/using/aem-forms-jee-installation-upgrade-documentation.md)
       + 在JEE上安裝AEM Forms {#jee-installation}
          + [JEE上的AEM Forms支援平台](/help/forms/using/aem-forms-jee-supported-platforms.md)
+         + [準備安裝AEM Forms （單一伺服器）](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-single-server.pdf)
          + [使用JBoss Turnkey在JEE上安裝和部署AEM Forms 6.5 LTS](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-turnkey.pdf)
          + [在JEE for JBoss上安裝和部署AEM Forms](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-jboss.pdf)
-         + [準備安裝AEM Forms （單一伺服器）](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-single-server.pdf)
+         + [在JEE上安裝和部署AEM Forms for WebSphere Liberty設定檔](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-websphere.pdf)
+         + [準備安裝AEM Forms （叢集伺服器）](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-cluster.pdf)
+         + [在JBoss叢集上的JEE上設定AEM Forms](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/cluster-jboss.pdf)
+         + [在WebSphere Liberty設定檔叢集上設定JEE上的AEM Forms](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/cluster-websphere.pdf)
          + [Database Credential Store安裝指南（獨立模式）](/help/forms/using/database-credentials-store-setup-guide-standalone-mode.md)
          + [資料庫認證存放區設定（Elytron型）](/help/forms/using/database-credential-store-setup-elytron-based.md)
          + [次要節點驗證設定（Elytron型）](/help/forms/using/secondary-node-authentication-setup-elytron-based.md)
@@ -464,7 +468,6 @@ ht-degree: 22%
          + [將AEM Forms與Adobe LiveCycle連線](/help/forms/using/aem-livecycle-connector.md)
          + {hide-from-toc}[設定AEM Forms將表單資料提交至JEE上的AEM Forms](/help/forms/using/submit-form-data-livecycle-process.md)
          + [適用於AEM Forms的AEM案頭應用程式](/help/forms/using/aem-desktop-app-for-aem-forms.md)
-         + [在JBoss叢集上的JEE上設定AEM Forms](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/cluster-jboss.pdf)
    + 升級AEM Forms {#upgrade-aem-forms}
       + [可用的升級路徑](/help/forms/using/upgrade.md)
       + 在OSGi上升級AEM Forms {#aem-forms-osgi-upgrade}
@@ -473,9 +476,10 @@ ht-degree: 22%
          + [移轉 AEM Forms 資產和文件](/help/forms/using/migration-utility.md)
          + [在JBoss EAP 8 (Windows)上升級AEM 6.5 LTS](/help/forms/using/upgrading-aem-65-lts-on-jboss-eap-8.md)
       + 在JEE上升級AEM Forms {#aem-forms-jee-upgrade}
+         + [準備升級AEM Forms](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-upgrade.pdf)
          + [針對JBoss Turnkey在JEE上升級至AEM Forms 6.5 LTS](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-turnkey.pdf)
          + [在JEE上升級至JBoss適用的AEM Forms](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-jboss.pdf)
-         + [準備升級AEM Forms](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-upgrade.pdf)
+         + [升級至WebSphere Liberty設定檔的JEE版AEM Forms](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-websphere.pdf)
    + 管理AEM Forms {#manage-administer-aem-forms}
       + [OSGi群組和許可權上的AEM Forms](/help/forms/using/forms-groups-privileges-tasks.md)
       + [建立新資料夾以將表單分類](/help/forms/using/creating-new-folders-categorize-forms.md)
