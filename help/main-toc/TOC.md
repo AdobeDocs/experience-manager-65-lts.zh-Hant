@@ -243,7 +243,7 @@ ht-degree: 22%
 + Assets {#assets}
    + [關於DAM](/help/assets/assets.md)
    + [資產最佳實務](/help/assets/best-practices-for-assets.md)
-   + [ [!DNL Assets] 中的協助工具](/help/assets/accessibility.md)
+   + [&#x200B; [!DNL Assets] 中的協助工具](/help/assets/accessibility.md)
    + 使用Experience Manager Assets {#using}
       + [[!DNL Assets]首頁體驗](/help/assets/assets-home-page.md)
       + [搜尋數位資產](/help/assets/search-assets.md)
@@ -318,7 +318,7 @@ ht-degree: 22%
       + [將資產與活動資料流整合](/help/assets/extending-activity-stream.md)
       + [擴充Asset Editor](/help/assets/asseteditorx.md)
       + [[!DNL Assets] HTTP API](/help/assets/mac-api-assets.md)
-      + [ [!DNL Assets] HTTP API中的內容片段支援](/help/assets/assets-api-content-fragments.md)
+      + [&#x200B; [!DNL Assets] HTTP API中的內容片段支援](/help/assets/assets-api-content-fragments.md)
       + [用於內容片段的 GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
       + [使用 GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
       + [持續性查詢](/help/sites-developing/headless/graphql-api/persisted-queries.md)
@@ -491,7 +491,7 @@ ht-degree: 22%
       + [將資產匯入及匯出至AEM Forms](/help/forms/using/import-export-forms-templates.md)
       + [支援最適化表單本地化的全新地區設定](/help/forms/using/supporting-new-language-localization.md)
       + 處理使用者資料 {#handling-user-data}
-         + 在OSGi上{hide-from-toc}[以Forms為中心的工作流程](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
+         + {hide-from-toc}[在OSGi上以Forms為中心的工作流程](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
          + [Forms使用者管理](/help/forms/using/user-management-handling-user-data.md)
          + {hide-from-toc}[Forms JEE工作流程](/help/forms/using/forms-workflow-jee-handling-user-data.md)
          + [Forms Portal](/help/forms/using/forms-portal-handling-user-data.md)
@@ -945,7 +945,7 @@ ht-degree: 22%
          + {hide-from-toc}[正在微調健康狀態監視器效能](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md)
          + {hide-from-toc}[檢視與工作管理員相關的統計資料](/help/forms/using/admin-help/view-statistics-related-manager.md)
          + {hide-from-toc}[檢視系統資訊](/help/forms/using/admin-help/view-system-information.md)
-         + 從工作管理員資料庫{hide-from-toc}[清除記錄](/help/forms/using/admin-help/purge-records-job-manager-database.md)
+         + {hide-from-toc}[從工作管理員資料庫清除記錄](/help/forms/using/admin-help/purge-records-job-manager-database.md)
       + 維護AEM表單 {#maintain-aem-forms}
          + {hide-from-toc}[記錄檔](/help/forms/using/admin-help/log-files.md)
          + {hide-from-toc}[使用者管理](/help/forms/using/admin-help/user-management.md)
@@ -1051,7 +1051,7 @@ ht-degree: 22%
             + {hide-from-toc}[指派使用許可權](/help/forms/developing/assigning-usage-rights.md)
             + {hide-from-toc}[組裝PDF產品組合](/help/forms/developing/assembling-pdf-portfolios.md)
             + {hide-from-toc}[正在計算表單資料](/help/forms/developing/calculating-form-data.md)
-            + {hide-from-toc}[建立轉譯Forms](/help/forms/developing/creating-web-applications-renders-forms.md)的網頁應用程式
+            + {hide-from-toc}[建立轉譯Forms的網頁應用程式](/help/forms/developing/creating-web-applications-renders-forms.md)
             + {hide-from-toc}[使用SubmittedXML資料建立PDF檔案](/help/forms/developing/creating-pdf-documents-submitted-xml.md)
             + {hide-from-toc}[使用Web服務API分解PDF檔案](/help/forms/developing/disassemble-pdf-document-using-web.md)
             + {hide-from-toc}[正在判斷檔案是否符合PDF/A規範](/help/forms/developing/determining-whether-documents-pdf-a.md)
