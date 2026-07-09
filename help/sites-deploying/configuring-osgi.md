@@ -11,7 +11,7 @@ role: Admin
 exl-id: 3bf3ba2e-f5f2-428a-a1fc-36f885350f6b
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1935'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ OSGi「*」提供標準化的原語，允許使用小型、可重複使用且協
    * 包含在Web主控台中定義的設定。
    * 可以包含在內容套件中，以供在其他執行個體上使用。
 
-* [存放庫中的content-nodes (sling：osgiConfig)](#osgi-configuration-in-the-repository)
+* [存放庫中的content-nodes (sling:osgiConfig)](#osgi-configuration-in-the-repository)
 
    * 需要使用CRXDE Lite手動設定。
    * 由於`sling:OsgiConfig`節點的命名慣例，您可以將組態連結至特定的[執行模式](/help/sites-deploying/configure-runmodes.md)。 您甚至可以在同一存放庫中儲存多個執行模式的設定。
@@ -105,7 +105,7 @@ AEM中的[Web主控台](/help/sites-deploying/web-console.md)提供標準化介�
    >
    >更新會以[組態檔](#osgi-configuration-with-configuration-files)的形式儲存在存放庫中。 若要在之後找到這些檔案，以包含在內容套件中，以供其他執行個體使用，例如，記下永久性身分識別( `PID`)。
 
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
    您的變更會立即套用至執行中系統的相關OSGi設定，不需要重新啟動。
 
@@ -299,9 +299,7 @@ Web主控台不會顯示存放庫中儲存變更的位置，但可以輕鬆找�
 例如，如果執行個體是以執行模式`author,dev,emea`啟動，而`/apps/*/config.author/`和`/apps/*/config.emea.author/`都定義了設定
 `com.day.cq.wcm.core.impl.VersionManagerImpl`，已套用`/apps/*/config.emea.author/`中的組態。
 
-此規則的詳細程度位於PID層級。
-您無法在`/apps/*/config.author/`中為同一個PID定義某些屬性，也無法在`/apps/*/config.emea.author/`中為同一個PID定義更具體的屬性。
-符合執行模式數量最多的設定對整個PID有效。
+此規則的詳細程度位於PID層級。您無法在`/apps/*/config.author/`中為同一個PID定義某些屬性，也無法在`/apps/*/config.emea.author/`中為同一個PID定義更具體的屬性。符合執行模式數量最多的設定對整個PID有效。
 
 ### 標準設定 {#standard-configurations}
 

@@ -11,7 +11,7 @@ role: Admin
 exl-id: 1a533ebb-e60d-466f-a723-c8f5039c95f8
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '834'
 ht-degree: 4%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 4%
 1. 在樹狀結構中，按兩下&#x200B;**儀表板**。
 1. 按一下&#x200B;**新儀表板**。
 1. 輸入&#x200B;**Title** （例如，我的儀表板）和&#x200B;**Name**。
-1. 按一下&#x200B;**建立**。
+1. 按一下「**建立**」。
 
 ### 複製控制面板 {#cloning-a-dashboard}
 
