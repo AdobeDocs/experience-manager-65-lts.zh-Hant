@@ -11,7 +11,7 @@ role: Admin
 exl-id: 29c20cf3-1694-4d06-ab7c-688018808c44
 source-git-commit: 4087a6f44bd87e3f841feb09220a9ea34ec1dc1c
 workflow-type: tm+mt
-source-wordcount: '1765'
+source-wordcount: '1800'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ AEM中的許多效能測量（例如查詢回應時間）都可能受到系統�
 
 * **載入執行器**&#x200B;是企業級載入測試產品。 提供免費的評估版本。 如需詳細資訊，請參閱[OpenText專業效能工程](https://www.opentext.com/products/professional-performance-engineering)。
 
-* 測試行動或回應式網站時，必須使用另一組工具。 這些設定可藉由節流網路頻寬、模擬較慢的行動連線(如3G或EDGE)來運作。 使用範圍較廣的工具包括：
+* 測試行動或回應式網站時，必須使用另一組工具。 這些設定可藉由節流網路頻寬、模擬較慢的行動連線（如3G或EDGE）來運作。 使用範圍較廣的工具包括：
 
    * **[網路連結調節器](https://nshipster.com/network-link-conditioner/)** — 它提供簡單易用的UI，在網路棧疊上以相當低的層級運作。 其中包括OS X和iOS的版本；
    * [**Charles**](https://www.charlesproxy.com/) — 除了數個其他用途之外，還提供網路節流的網頁偵錯Proxy應用程式。 提供適用於Windows、OS X和Linux®的版本。
@@ -86,8 +86,7 @@ ACS AEM工具中的[Explain查詢工具](/help/sites-administering/operations-da
 
 **PageSpeed工具**
 
-Google的PageSpeed工具提供網站分析，以符合頁面效能最佳實務，此外掛程式可與Dispatcher一起安裝在Apache執行個體上，以進行其他最佳化。
-請參閱[PageSpeed工具網站](https://developers.google.com/speed)。
+Google的PageSpeed工具提供網站分析，以符合頁面效能最佳實務，此外掛程式可與Dispatcher一起安裝在Apache執行個體上，以進行其他最佳化。請參閱[PageSpeed工具網站](https://developers.google.com/speed)。
 
 ## 作者環境 {#author-environment}
 
