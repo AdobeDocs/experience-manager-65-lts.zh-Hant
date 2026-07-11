@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: 20bd6c24-ac9d-4f8d-b5c0-9b7935d4bdf8
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '699'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe Experience Manager Forms可使用儲存在HSM上的憑證或eSign，或將
 
 ## 使用AEM Forms設定HSM或etoken裝置之前 {#configurehsmetoken}
 
-* 安裝[AEM Forms附加元件](https://helpx.adobe.com/tw/aem-forms/kb/aem-forms-releases.html)套件。
+* 安裝[AEM Forms附加元件](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)套件。
 * 在與AEM伺服器相同的電腦上，安裝並設定HSM或etoken使用者端軟體。 使用者端軟體必須與HSM和Etoken裝置通訊。
 
 ## 啟用DocAssurance服務 {#configuredocassurance}
@@ -103,7 +103,7 @@ Perform the following steps to setup certificates:
 1. 開啟&#x200B;**HSM認證設定服務**，並指定下列欄位的值：
 
    * **認證別名**：指定用來識別別名的字串。 此值會用作某些數位簽名作業（例如「簽名欄位」作業）的屬性。
-   * **DLL路徑**：指定伺服器上HSM或etoken使用者端程式庫的路徑。 例如 `C:\Program Files\LunaSA\cryptoki.dll`。在叢集環境中，您必須確定叢集中的所有伺服器都必須使用相同的路徑。
+   * **DLL路徑**：指定伺服器上HSM或etoken使用者端程式庫的路徑。 例如 `C:\Program Files\LunaSA\cryptoki.dll`。 在叢集環境中，您必須確定叢集中的所有伺服器都必須使用相同的路徑。
    * **HSM Pin**：指定存取裝置金鑰所需的密碼。
    * **HSM插槽識別碼**：指定整數型別的插槽識別碼。 插槽ID是依使用者端而設定。 用於識別HSM上包含簽署/認證私密金鑰的插槽。
 
@@ -114,7 +114,7 @@ Perform the following steps to setup certificates:
    * **憑證SHA1**：為您使用的認證指定公開金鑰(.cer)檔案的SHA1值（指紋）。 請確定SHA1值中未使用空格。
    * **HSM裝置型別**：選取HSM （Luna或其他）或eToken裝置的製造商。
 
-   按一下「**儲存**」。已針對AEM Forms設定硬體安全性模組。 現在，您可以搭配AEM Forms使用硬體安全性模組，以簽署或認證檔案。
+   按一下「**儲存**」。 已針對AEM Forms設定硬體安全性模組。 現在，您可以搭配AEM Forms使用硬體安全性模組，以簽署或認證檔案。
 
 ## 使用DocAssurance Service API簽署或認證檔案，並使用儲存在裝置上的數位金鑰  {#programatically}
 

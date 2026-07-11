@@ -12,7 +12,7 @@ role: Developer
 exl-id: 5c98915c-e516-4505-9f9e-76f4509ba581
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -44,14 +44,14 @@ GITHUB上的程式碼
 
 您可以在GitHub上找到此頁面的程式碼。
 
-* 在GitHub上[開啟aem-search-custom-predicate-evaluator專案](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
+* [在GitHub上開啟aem-search-custom-predicate-evaluator專案](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
 * 將專案下載為[ZIP檔](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)
 
 ### 述詞求值器詳細資料 {#predicate-evaluator-in-detail}
 
 述詞評估器處理特定述詞的評估，這些述詞是查詢的定義限制。
 
-這會將較高層級的搜尋限制（例如「寬度> 200」）對應至符合實際內容模型的特定JCR查詢(例如，中繼資料/@width度> 200)。 或者，它可以手動篩選節點並檢查其限制。
+這會將較高層級的搜尋限制（例如「寬度> 200」）對應至符合實際內容模型的特定JCR查詢（例如，中繼資料/@width度> 200）。 或者，它可以手動篩選節點並檢查其限制。
 
 >[!NOTE]
 >
