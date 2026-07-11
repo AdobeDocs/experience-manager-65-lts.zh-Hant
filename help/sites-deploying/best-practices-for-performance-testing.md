@@ -74,7 +74,7 @@ AEM中的許多效能測量（例如查詢回應時間）都可能受到系統�
 
 觸控式UI中的&#x200B;**開發人員模式**
 
-AEM 6的觸控式UI的其中一項新功能是開發人員模式。 就像作者可以在編輯和預覽模式之間切換一樣，開發人員可以在作者UI中切換到開發人員模式。 這麼做可讓您檢視頁面上每個元件的轉譯時間，以及檢視任何錯誤的棧疊追蹤。 如需開發人員模式的詳細資訊，請參閱此[CQ Gems簡報](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html)。
+AEM 6的觸控式UI的其中一項新功能是開發人員模式。 就像作者可以在編輯和預覽模式之間切換一樣，開發人員可以在作者UI中切換到開發人員模式。 這麼做可讓您檢視頁面上每個元件的轉譯時間，以及檢視任何錯誤的棧疊追蹤。 如需開發人員模式的詳細資訊，請參閱此[CQ Gems簡報](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=zh-Hant)。
 
 **使用rlog.jar讀取要求記錄檔**
 
