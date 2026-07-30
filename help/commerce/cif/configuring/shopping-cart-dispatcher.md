@@ -4,7 +4,7 @@ description: 瞭解購物車和Adobe Experience Manager Dispatcher設定。
 exl-id: bc393a38-cc81-4533-8d46-3e5861e6cafb
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '94'
+source-wordcount: '161'
 ht-degree: 11%
 
 ---
@@ -18,5 +18,5 @@ ht-degree: 11%
 您可以從下列資源中找到有關此主題的詳細資訊：
 
 - [購物車](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart)
-- [具有AEM Proxy的Adobe Commerce Dispatcher](https://github.com/adobe/aem-core-cif-components/tree/master/dispatcher)
+- [AEM Dispatcher搭配Adobe Commerce Proxy](https://github.com/adobe/aem-core-cif-components/tree/master/dispatcher)
 - [Docker中心](https://hub.docker.com/)
