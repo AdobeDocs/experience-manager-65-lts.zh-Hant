@@ -11,14 +11,14 @@ role: User
 exl-id: 163c1f4e-7d90-44dd-84e7-9f02a9508783
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1708'
 ht-degree: 2%
 
 ---
 
 # 將 Dynamic Media 資產新增至頁面{#adding-dynamic-media-assets-to-pages}
 
-若要將動態媒體功能新增至您在網站上使用的資產，您可以直接在頁面上新增&#x200B;**[!UICONTROL 動態媒體]**&#x200B;或&#x200B;**[!UICONTROL 互動媒體]**&#x200B;元件。 進入&#x200B;**[!UICONTROL 設計]**&#x200B;模式並啟用Dynamic Media元件。 然後，您可以將這些元件新增至頁面，並新增資產至元件。Dynamic Media和互動媒體元件是智慧型的，可知道您是新增影像還是視訊，而可用的選項會據此變更。
+若要將動態媒體功能新增至您在網站上使用的資產，您可以直接在頁面上新增&#x200B;**[!UICONTROL 動態媒體]**&#x200B;或&#x200B;**[!UICONTROL 互動媒體]**&#x200B;元件。 進入&#x200B;**[!UICONTROL 設計]**&#x200B;模式並啟用Dynamic Media元件。 然後，您可以將這些元件新增至頁面，並新增資產至元件。 Dynamic Media和互動媒體元件是智慧型的，可知道您是新增影像還是視訊，而可用的選項會據此變更。
 
 如果您使用Adobe Experience Manager做為WCM，請直接將Dynamic Media資產新增至頁面。
 
@@ -83,7 +83,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->依預設，動態媒體影像元件是可調式的。如果要使其成為固定大小，請在&#x200B;**[!UICONTROL 進階]**&#x200B;索引標籤中的元件中設定它，並具有&#x200B;**[!UICONTROL 寬度]**&#x200B;和&#x200B;**[!UICONTROL 高度]**&#x200B;屬性。
+>依預設，動態媒體影像元件是可調式的。 如果要使其成為固定大小，請在&#x200B;**[!UICONTROL 進階]**&#x200B;索引標籤中的元件中設定它，並具有&#x200B;**[!UICONTROL 寬度]**&#x200B;和&#x200B;**[!UICONTROL 高度]**&#x200B;屬性。
 
 **[!UICONTROL 檢視器預設集]** — 從下拉式選單中選取現有的檢視器預設集。 如果您要尋找的檢視器預設集未顯示，您必須讓它顯示。 請參閱[管理檢視器預設集](/help/assets/managing-viewer-presets.md)。 如果您使用影像預設集，則無法選取檢視器預設集，反之亦然。
 

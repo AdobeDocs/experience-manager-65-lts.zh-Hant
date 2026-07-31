@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 16798533-855d-4f14-8edb-edba79818dbf
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 5%
+source-wordcount: '1290'
+ht-degree: 6%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 5%
 
 1. 導覽至您要複製其影像預設集URL或檢視器預設集URL的&#x200B;*已發佈*&#x200B;資產，然後選取要開啟的資產。
 
-   請記住，URL僅可在您首次發 *布資產* 後 *複製* 。此外，檢視器預設集或影像預設集也必須發佈。
+   請記住，URL僅可在您首次發 *布資產* 後 *複製* 。 此外，檢視器預設集或影像預設集也必須發佈。
 
    請參閱[發佈資產](publishing-dynamicmedia-assets.md)。
 
@@ -112,9 +112,9 @@ Dynamic Media支援靜態資產的傳送，這是除了影像和視訊之外的�
 
    * `The URL of the published static is the following:`
 
-      * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
+     * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
-        例如，`https://aem.com/is/content/adobe/image.gif`。
+       例如，`https://aem.com/is/content/adobe/image.gif`。
 
    * 選取&#x200B;**[!UICONTROL 資產]** > **[!UICONTROL 動態轉譯]**，然後選取靜態資產的動態轉譯並複製URL。
 
@@ -139,7 +139,7 @@ Dynamic Media支援靜態資產的傳送，這是除了影像和視訊之外的�
    例如，如果註冊ID為`87654321|MyCompany`，則客戶名稱將是`MyCompany`。
 
 1. 在頁面的左上角附近，選取&#x200B;**[!UICONTROL 雲端服務]**，然後選取Experience Manager標誌並導覽至&#x200B;**[!UICONTROL 一般]** > **[!UICONTROL CRXDE Lite]**。
-1. 從JCR (Java™內容存放庫)向下複製整個視訊轉譯路徑。
+1. 從JCR （Java™內容存放庫）向下複製整個視訊轉譯路徑。
 
    例如，視訊的轉譯路徑可能如下所示：
 
@@ -157,7 +157,7 @@ Dynamic Media支援靜態資產的傳送，這是除了影像和視訊之外的�
 
    此範例是已發佈視訊轉譯的完整視訊URL。
 
-## 取得最適化位元速率串流(DASH或HLS)的視訊URL {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## 取得最適化位元速率串流（DASH或HLS）的視訊URL {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. 在Experience Manager中，導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 部署]** > **[!UICONTROL 雲端]** > **[!UICONTROL 雲端服務]**。
 1. 在&#x200B;**[!UICONTROL 雲端服務]**&#x200B;頁面上，向下捲動至&#x200B;**[!UICONTROL Dynamic Media雲端服務]**&#x200B;標題，然後選取&#x200B;**[!UICONTROL 顯示設定]**。
@@ -170,7 +170,7 @@ Dynamic Media支援靜態資產的傳送，這是除了影像和視訊之外的�
 
    （以上路徑僅作為範例，並非您複製的實際路徑。）
 
-   * 在&#x200B;**[!UICONTROL 註冊ID]**&#x200B;底下，複製ID最後一部分中找到的客戶名稱。 您稍後需要這些步驟中複製的客戶名稱。
+   * 在「 **[!UICONTROL 註冊ID]**」下方，複製ID最後一部分中找到的客戶名稱。 您稍後需要這些步驟中複製的客戶名稱。
 
      例如，如果註冊ID為`87654321|demoCo`，則您複製的客戶名稱將是`demoCo`。
 

@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 37e0d7de-0f7b-475f-b508-3dd150008fee
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 2%
+source-wordcount: '1279'
+ht-degree: 1%
 
 ---
 
@@ -83,7 +83,7 @@ Dynamic Media中的下列檢視器支援快速檢視：
    檢視器使用名為`QuickViewActive`的處理常式。
 
    **範例**
-假設您在網頁上將下列範例內嵌程式碼用於互動式影像：
+   假設您在網頁上將下列範例內嵌程式碼用於互動式影像：
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -114,7 +114,7 @@ Dynamic Media中的下列檢視器支援快速檢視：
    `quickViewActivate`處理常式控制檢視器中的快速檢視。 處理常式包含用於快速檢視的變數清單和函式呼叫。 內嵌程式碼提供快速檢視中設定的SKU變數對應，以及範例`loadQuickView`函式呼叫。
 
    **變數對應**
-將網頁中使用的變數對應至Quickview中包含的SKU值和一般變數：
+   將網頁中使用的變數對應至Quickview中包含的SKU值和一般變數：
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -130,7 +130,7 @@ Dynamic Media中的下列檢視器支援快速檢視：
    ```
 
    **函式呼叫**
-處理常式也需要Quickview的函式呼叫才能運作。 假設主機頁面可存取函式。 內嵌程式碼提供範例函式呼叫：
+   處理常式也需要Quickview的函式呼叫才能運作。 假設主機頁面可存取函式。 內嵌程式碼提供範例函式呼叫：
 
    `loadQuickView(sku)`
 
@@ -147,7 +147,7 @@ Dynamic Media中的下列檢視器支援快速檢視：
    * 取消註解內嵌程式碼的setHandlers區段。
    * 對應快速檢視中包含的任何其他變數。
 
-      * 如果您正在新增其他變數，請更新`loadQuickView(sku,*var1*,*var2*)`呼叫。
+     * 如果您正在新增其他變數，請更新`loadQuickView(sku,*var1*,*var2*)`呼叫。
 
    * 在檢視器外部的頁面上建立簡單的`loadQuickView` ()函式。
 
@@ -261,7 +261,7 @@ Dynamic Media中的下列檢視器支援快速檢視：
    `*viewerInstance.*init()`
 
    **範例**
-此範例使用互動式影像檢視器。
+   此範例使用互動式影像檢視器。
 
    `s7interactiveimageviewer.init()`
 

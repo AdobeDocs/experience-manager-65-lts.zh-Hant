@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: 6c99920d-d424-4a69-b7cc-a5e99257c923
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1295'
 ht-degree: 0%
 
 ---
@@ -114,7 +114,7 @@ AEM Forms與[Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html)�
 
 >[!NOTE]
 >
->您可以透過Adobe Marketing Cloud上的Analytics帳戶，檢視詳細報表，並深入瞭解客戶及其與您表單的互動。
+>您可以從Adobe Marketing Cloud上的Analytics帳戶檢視詳細報表，並深入瞭解insight中的客戶及其與您表單的互動。
 
 #### 步驟3：分析資料點 {#step-analyze-data-points}
 
