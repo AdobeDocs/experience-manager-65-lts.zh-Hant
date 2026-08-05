@@ -22,7 +22,7 @@ ht-degree: 4%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html)上的[AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html)上的AEM Forms 。
 
 
 AEM 6.5 LTS Forms包含多項新功能和增強功能，可簡化表單和對應之建立、管理和使用者體驗。 若要瞭解AEM 6.5 LTS的所有新功能和增強功能，請參閱[新功能摘要檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts/content/release-notes/release-notes)。
