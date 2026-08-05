@@ -9,10 +9,10 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade
 exl-id: 93126750-4645-4084-a21b-5362e3cc08a9
-source-git-commit: 19c58198faab2bbacd4b02e0fd38c21c0222ee72
+source-git-commit: b93457f543c22c893edd01259af19399e2548b72
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 1%
+source-wordcount: '316'
+ht-degree: 4%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html?lang=zh-Hant)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html?lang=zh-Hant)上的AEM Forms 。
 
 
 AEM 6.5 LTS Forms包含多項新功能和增強功能，可簡化表單和對應之建立、管理和使用者體驗。 若要瞭解AEM 6.5 LTS的所有新功能和增強功能，請參閱[新功能摘要檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts/content/release-notes/release-notes)。
@@ -49,7 +49,7 @@ AEM 6.5 LTS Forms包含多項新功能和增強功能，可簡化表單和對應
 
 下圖顯示JEE上AEM Forms LTS的可用升級路徑：
 
-![JEE升級6.5](do-not-localize/jee-upgrade-6-5.png)
+![JEE升級6.5](do-not-localize/jee-upgrade-6-5.svg)
 
 您可以從下列位置執行直接升級：
 
