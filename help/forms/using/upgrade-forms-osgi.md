@@ -1,25 +1,25 @@
 ---
 title: 在OSGi上升級至AEM 6.5 Forms LTS
-description: 您可以從AEM 6.5.22.0 Forms直接升級至AEM 6.5 Forms LTS。
+description: 您可以從AEM 6.5.17.0 Forms或更新版本直接升級至AEM 6.5 Forms LTS。
 content-type: reference
 role: Admin, User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: b5db6129e83dd7a54516707bbdb8864dc709d54b
+source-git-commit: 818673651f736311d400c71bfeb635b73b25a034
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1619'
 ht-degree: 5%
 
 ---
 
 # 在OSGi上升級至AEM 6.5 Forms LTS {#upgrade-to-aem-forms-osgi}
 
-若要[從AEM 6.5升級至AEM 6.5 LTS](/help/sites-deploying/upgrade.md)，請升級至AEM 6.5.22.0 Forms或更新版本。 支援從AEM 6.5.22.0直接升級至AEM 6.5 Forms LTS。
+若要[從AEM 6.5升級至AEM 6.5 LTS](/help/sites-deploying/upgrade.md)，請升級至AEM 6.5.17.0 Forms或更新版本。 支援從AEM 6.5.17.0 （或更新版本）直接升級至AEM 6.5 Forms LTS。
 
 如果您使用AEM 6.0 Forms、AEM 6.1 Forms、AEM 6.2 Forms、AEM 6.3 Forms、AEM 6.4 Forms或AEM 6.5 Forms，則無法直接升級至AEM 6.5 Forms LTS。 如需詳細的升級路徑，請參閱[升級路徑](/help/forms/using/upgrade.md)檔案。
 
-升級至Service Pack AEM Forms 6.5.22.0後，請依照下列步驟升級至AEM 6.5 LTS Forms：
+升級至AEM Forms 6.5.17.0或更新版本後，請依照下列步驟升級至AEM 6.5 LTS Forms：
 
 1. 安裝AEM Forms附加元件套件。 步驟如下：
 
@@ -52,7 +52,7 @@ ht-degree: 5%
 
      移轉公用程式可讓舊版的最適化表單和通訊管理資產相容於AEM 6.5表單。 您可以從AEM Software Distribution下載公用程式。 如需設定及使用移轉公用程式的逐步資訊，請參閱[移轉公用程式](../../forms/using/migration-utility.md)。
 
-     如果您使用[範例將草稿與提交元件](https://helpx.adobe.com/tw/experience-manager/6-3/forms/using/integrate-draft-submission-database.html)與資料庫整合，並從舊版升級，請在執行升級後執行下列SQL查詢：
+     如果您使用[範例將草稿與提交元件](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html)與資料庫整合，並從舊版升級，請在執行升級後執行下列SQL查詢：
 
      ```sql
      UPDATE metadata m, additionalmetadatatable am
@@ -74,8 +74,8 @@ ht-degree: 5%
 
      在AEM 6.5 Forms中，jQuery的版本已更新至3.2.1，而jQuery UI版本已更新至1.12.1。 AEM表單在&#x200B;**noConflict**&#x200B;模式下使用JQuery。 因此，如果您使用任何其他jQuery版本，則執行升級時不會顯示任何問題。 不過，當您升級至AEM 6.5 Forms時：
 
-      * 確保您的自訂元件（如果有的話）與支援的jQuery版本相容。
-      * 從自訂元件移除不支援的API。 如需已移除的API清單，請參閱[升級指南](https://jquery.com/upgrade-guide/3.0/)。 例如，會移除對load()、.unload()和.error() API的支援。 使用.on()方法取代上述的API。 例如，將$(&quot;img&quot;)。load(fn)變更為$(&quot;img&quot;)。on(&quot;load&quot;， fn)。
+     * 確保您的自訂元件（如果有的話）與支援的jQuery版本相容。
+     * 從自訂元件移除不支援的API。 如需已移除的API清單，請參閱[升級指南](https://jquery.com/upgrade-guide/3.0/)。 例如，會移除對load()、.unload()和.error() API的支援。 使用.on()方法取代上述的API。 例如，將$(&quot;img&quot;)。load(fn)變更為$(&quot;img&quot;)。on(&quot;load&quot;， fn)。
 
    * **（如果從AEM 6.2 Forms或舊版升級）重新設定分析和報表**
 
@@ -87,13 +87,13 @@ ht-degree: 5%
    * **驗證復寫及反向復寫：**&#x200B;發佈、填寫及送出一些已移轉的表單。 同時驗證提交的資料。
    * **驗證對管理員和開發人員使用者介面的存取權：**&#x200B;從管理員帳戶登入AEM執行個體，並確認您擁有下列URL的存取權：
 
-      * `https://'[server]:[port]'/crx/packmgr`
-      * `https://'[server]:[port]'/crx/de`
-      * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
+     * `https://'[server]:[port]'/crx/packmgr`
+     * `https://'[server]:[port]'/crx/de`
+     * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
 
    >[!NOTE]
    >
-   >在AEM 6.4 Forms中，crx-repository的結構已變更。 如果從6.3 Forms升級至AEM 6.5 Forms，請使用變更的路徑進行重新建立的自訂。 如需已變更路徑的完整清單，請參閱[AEM中的Forms存放庫重組](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5)。
+   >在AEM 6.4 Forms中，crx-repository的結構已變更。 如果從6.3 Forms升級至AEM 6.5 Forms，請使用變更的路徑進行重新建立的自訂。 如需已變更路徑的完整清單，請參閱[AEM中的Forms存放庫重組](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5)。
 
 
 ## 在JBoss EAP 8上部署AEM (Windows)
@@ -342,7 +342,7 @@ Deployed "cq-quickstart.war" (runtime-name : "cq-quickstart.war")
 
 部署完成且AEM已完全啟動後：
 
-**AEM作者URL：**
+**AEM作者網址：**
 `http://<server-ip>:8080/cq-quickstart`
 
 **預設認證：**
@@ -396,7 +396,7 @@ Deployed "cq-quickstart.war" (runtime-name : "cq-quickstart.war")
 
 * [JBoss EAP 8檔案](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0)
 * [Adobe Experience Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=zh-Hant)
-* [AEM安裝與部署指南](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=zh-Hant)
+* [AEM安裝與部署指南](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)
 
 ### 檔案資訊
 
