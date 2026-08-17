@@ -8,18 +8,18 @@ solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Mobile Forms
 role: User, Developer
 exl-id: 9d80bc0a-f2b0-4b27-9417-639531cb8415
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1165'
 ht-degree: 2%
 
 ---
 
 # 最適化和HTML5表單的外觀架構 {#appearance-framework-for-adaptive-and-html-forms}
 
-Forms (適用性表單和HTML5表單)使用[jQuery](https://jquery.com/)、[Backbone.js](https://backbonejs.org/)和[Underscore.js](https://underscorejs.org/)資料庫的外觀和指令碼。 表單也針對表單中的所有互動式元素（例如欄位和按鈕）使用[jQuery UI](https://jqueryui.com/) **Widget**&#x200B;架構。 此架構可讓Form開發人員在Forms中使用一組豐富的可用jQuery Widget和外掛程式。 您也可以從使用者擷取資料（如leadDigits/trailDigits限制或實作圖片子句）時實作表單特定邏輯。 表單開發人員可以建立並使用自訂外觀，以改善資料擷取體驗，使其更人性化。
+Forms （適用性表單和HTML5表單）使用[jQuery](https://jquery.com/)、[Backbone.js](https://backbonejs.org/)和[Underscore.js](https://underscorejs.org/)資料庫的外觀和指令碼。 表單也針對表單中的所有互動式元素（例如欄位和按鈕）使用[jQuery UI](https://jqueryui.com/) **Widget**&#x200B;架構。 此架構可讓Form開發人員在Forms中使用一組豐富的可用jQuery Widget和外掛程式。 您也可以從使用者擷取資料（如leadDigits/trailDigits限制或實作圖片子句）時實作表單特定邏輯。 表單開發人員可以建立並使用自訂外觀，以改善資料擷取體驗，使其更人性化。
 
-本文內容適用於對jQuery和jQuery Widget有足夠瞭解的開發人員。 它提供外觀架構的深入分析，並可讓開發人員為表單欄位建立替代外觀。
+本文內容適用於對jQuery和jQuery Widget有足夠瞭解的開發人員。 它將insight提供至外觀架構中，並可讓開發人員為表單欄位建立替代外觀。
 
 外觀架構依賴各種選項、事件（觸發器）和函式來擷取使用者與表單的互動，並回應模型變更以通知一般使用者。 此外：
 
@@ -96,23 +96,23 @@ Forms (適用性表單和HTML5表單)使用[jQuery](https://jquery.com/)、[Back
  <tbody>
   <tr>
    <th>事件 </th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td>XFA_ENTER_EVENT</td>
-   <td>每當欄位成為焦點時，就會觸發此事件。 它可讓「enter」指令碼在欄位上執行。 觸發事件的語法是<br /> (Widget)。_trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td>
+   <td>每當欄位成為焦點時，就會觸發此事件。 它可讓「enter」指令碼在欄位上執行。 觸發事件的語法為<br /> (Widget)。_trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_EXIT_EVENT</td>
-   <td>只要使用者離開欄位，就會觸發此事件。 它可讓引擎設定欄位的值，並執行其「退出」指令碼。 觸發事件的語法是<br /> (Widget)。_trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td>
+   <td>只要使用者離開欄位，就會觸發此事件。 它可讓引擎設定欄位的值，並執行其「退出」指令碼。 觸發事件的語法為<br /> (Widget)。_trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_CHANGE_EVENT</td>
-   <td>此事件會觸發，以允許引擎執行在欄位上寫入的「變更」指令碼。 觸發事件的語法是<br /> (Widget)。_trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td>
+   <td>此事件會觸發，以允許引擎執行在欄位上寫入的「變更」指令碼。 觸發事件的語法為<br /> (Widget)。_trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_CLICK_EVENT</td>
-   <td>此事件在每次按一下欄位時觸發。 它可讓引擎執行在欄位上撰寫的「click」指令碼。 觸發事件的語法是<br /> (Widget)。_trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td>
+   <td>此事件在每次按一下欄位時觸發。 它可讓引擎執行在欄位上撰寫的「click」指令碼。 觸發事件的語法為<br /> (Widget)。_trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -125,7 +125,7 @@ Forms (適用性表單和HTML5表單)使用[jQuery](https://jquery.com/)、[Back
  <tbody>
   <tr>
    <th>函數</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td>焦點：函式()</td>
@@ -156,7 +156,7 @@ Forms (適用性表單和HTML5表單)使用[jQuery](https://jquery.com/)、[Back
  <tbody>
   <tr>
    <th>選項</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td>多行</td>
@@ -179,7 +179,7 @@ Forms (適用性表單和HTML5表單)使用[jQuery](https://jquery.com/)、[Back
  <tbody>
   <tr>
    <th>選項</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td>值<br /> </td>
@@ -210,7 +210,7 @@ Forms (適用性表單和HTML5表單)使用[jQuery](https://jquery.com/)、[Back
  <tbody>
   <tr>
    <th>函數</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td><p>addItem：<em>函式(itemValues)<br /> itemValues：包含顯示和儲存值<br />的物件{sDisplayVal： &lt;displayValue&gt;， sSaveVal： &lt;save Value&gt;}</em></p> </td>
@@ -229,7 +229,7 @@ Forms (適用性表單和HTML5表單)使用[jQuery](https://jquery.com/)、[Back
 
 ### NumericEdit： NumericField， DecimalField {#numericedit-numericfield-decimalfield}
 
-| 選項 | 描述 |
+| 選項 | 說明 |
 |---|---|
 | 資料型別 | 代表欄位資料型別的字串（整數/小數）。 |
 | leadDigits | 十進位數字中允許的前置位數上限。 |
@@ -243,7 +243,7 @@ Forms (適用性表單和HTML5表單)使用[jQuery](https://jquery.com/)、[Back
  <tbody>
   <tr>
    <th>選項</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td>值</td>
@@ -262,7 +262,7 @@ Forms (適用性表單和HTML5表單)使用[jQuery](https://jquery.com/)、[Back
 
 ### 日期時間編輯： （日期欄位） {#datetimeedit-datefield}
 
-| 選項 | 描述 |
+| 選項 | 說明 |
 |---|---|
 | 天 | 該欄位的本地化天數名稱。 |
 | 個月 | 該欄位的本地化月份名稱。 |

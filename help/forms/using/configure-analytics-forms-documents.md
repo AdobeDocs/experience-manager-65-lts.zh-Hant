@@ -9,16 +9,16 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
 exl-id: befc6b96-517b-4ca3-8007-2aa0fd6ed2cb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 1%
+source-wordcount: '1546'
+ht-degree: 3%
 
 ---
 
 # 使用Cloud Service Framework進行分析 {#analyticsusingcloudframework}
 
-AEM Forms與Analytics整合，可讓您擷取及追蹤已發佈表單和檔案的績效量度。 分析這些量度背後的目的是，根據使表單或檔案更易於使用所需的變更相關資料，做出明智的決定。
+AEM Forms與Analytics整合，可讓您擷取及追蹤已發佈表單和檔案的績效量度。 分析這些指標背後的目標是根據有關使表單或文件更有用所需的變更資料做出明智的決策。
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Cloud Service設定是Adobe Analytics帳戶的相關資訊。 此設定可讓Ado
 
    如果您是第一次使用，請按一下[立即設定] **&#x200B;**。
 
-1. 將標題新增到新設定（填寫名稱欄位是選擇性的）。 例如，我的分析設定。 按一下&#x200B;**建立**。
+1. 將標題新增到新設定（填寫名稱欄位是選擇性的）。 例如，我的分析設定。 按一下「**建立**」。
 
 1. 在設定頁面上開啟「編輯」面板時，請填寫欄位：
 
@@ -163,7 +163,7 @@ Adobe Analytics框架是一組Adobe Analytics變數與AEM變數之間的對應�
 1. 為下列欄位指定適當的值，然後按一下[儲存]。**&#x200B;**
 
    * **SiteCatalyst架構**：選取您在「設定追蹤的架構」區段中定義的架構/組態。
-   * **欄位時間追蹤基準線**：指定必須追蹤欄位瀏覽的持續時間（以秒為單位）。 預設值為 0。當值大於0 （零）時，會將兩個個別的追蹤事件傳送至Adobe Analytics伺服器。 第一個事件會指示Analytics伺服器停止追蹤退出欄位。 第二個事件會在指定的期間過後傳送。 第二個事件會指示Analytics伺服器開始追蹤造訪的欄位。 使用兩個不同的事件有助於準確測量在欄位上逗留的時間。 當值為0 （零）時，單一追蹤事件會傳送至Adobe Analytics伺服器。
+   * **欄位時間追蹤基準線**：指定必須追蹤欄位瀏覽的持續時間（以秒為單位）。 預設值為 0。 當值大於0 （零）時，會將兩個個別的追蹤事件傳送至Adobe Analytics伺服器。 第一個事件會指示Analytics伺服器停止追蹤退出欄位。 第二個事件會在指定的期間過後傳送。 第二個事件會指示Analytics伺服器開始追蹤造訪的欄位。 使用兩個不同的事件有助於準確測量在欄位上逗留的時間。 當值為0 （零）時，單一追蹤事件會傳送至Adobe Analytics伺服器。
 
    * **Analytics報告同步cron**：指定從Adobe Analytics擷取報告的cron運算式。 預設值為0 0 2 ？&#42; &#42;。
 

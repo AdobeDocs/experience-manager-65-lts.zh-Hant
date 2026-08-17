@@ -9,9 +9,9 @@ feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 25442753-8309-452b-881a-d33ab159d5b2
-source-git-commit: d571dc696e42bae873cd58f2e7f321bd3002f42e
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ AEM內容與Commerce製作提供一套製作工具，可協助AEM作者和行銷
 
 類別選擇器可用於元件對話方塊中，其使用方式與產品選擇器類似。
 
-以下程式碼片段可用於cq：dialog設定：
+下列程式碼片段可用於cq:dialog設定：
 
 ```xml
 <category jcr:primaryType="nt:unstructured" 

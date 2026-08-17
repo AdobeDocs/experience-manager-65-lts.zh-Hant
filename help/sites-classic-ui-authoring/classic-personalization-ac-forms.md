@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 3a39c4ba-353a-41ee-bfe6-e7eb4323f170
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1224'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ AEM可讓您建立並使用與您網站上的Adobe Campaign互動的表單。 �
 
 >[!NOTE]
 >
->當使用Adobe Campaign 6.1.x或Adobe Campaign Standard時，請確定頁面&#x200B;**jcr：content**&#x200B;節點上的&#x200B;**acMapping**&#x200B;屬性分別設為&#x200B;**mapRecipient**&#x200B;或&#x200B;**profile**
+>當使用Adobe Campaign 6.1.x或Adobe Campaign Standard時，請確定頁面&#x200B;**jcr:content**&#x200B;節點上的&#x200B;**acMapping**&#x200B;屬性分別設為&#x200B;**mapRecipient**&#x200B;或&#x200B;**profile**
 >
 
 ### 建立表單 {#creating-a-form}

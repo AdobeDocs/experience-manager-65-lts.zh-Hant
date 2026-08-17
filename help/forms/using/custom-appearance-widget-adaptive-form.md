@@ -11,7 +11,7 @@ feature: Adaptive Forms,Foundation Components
 exl-id: c8745d19-139a-4cea-982a-537bc1dd207d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1744'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ maven原型是建立自訂外觀的起點。 要使用的原型的詳細資訊�
  <tbody>
   <tr>
    <td><strong>函數</strong></td>
-   <td><strong>描述</strong></td>
+   <td><strong>說明</strong></td>
   </tr>
   <tr>
    <td><code>render</code></td>
@@ -130,9 +130,9 @@ maven原型是建立自訂外觀的起點。 要使用的原型的詳細資訊�
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
-   <td>傳回對應以將HTML事件轉換為XFA事件。 <br /> <code class="code">&lbrace;
+   <td>傳回對應以將HTML事件轉換為XFA事件。<br /> <code class="code">&lbrace;
       blur: XFA_EXIT_EVENT,
-      &rbrace;</code><br />此範例顯示<code>blur</code>是HTML事件，而<code>XFA_EXIT_EVENT</code>是相對應的XFA事件。 </td>
+      &rbrace;</code><br /> 此範例顯示<code>blur</code>是HTML事件，而<code>XFA_EXIT_EVENT</code>是相對應的XFA事件。 </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>

@@ -9,9 +9,9 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c0b285b7-3b20-4412-88b8-04de4a703f42
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '2323'
+source-wordcount: '2393'
 ht-degree: 1%
 
 ---
@@ -111,14 +111,14 @@ Apache Sling資源型探索服務會在每個執行個體上執行，以控制Ex
 * 若要將執行個體聯結至拓撲，請指定根成員的Topology Connector服務的URL。
 * 若要啟用執行個體以加入拓撲，請將執行個體新增至根成員的拓撲聯結器服務的允許清單。
 
-使用Web主控台或sling：OsgiConfig節點來設定org.apache.sling.discovery.impt.Config服務的下列屬性：
+使用Web主控台或sling:OsgiConfig節點來設定org.apache.sling.discovery.impt.Config服務的下列屬性：
 
 <table>
  <tbody>
   <tr>
    <th>屬性名稱</th>
    <th>OSGi名稱</th>
-   <th>描述</th>
+   <th>說明</th>
    <th>預設值</th>
   </tr>
   <tr>
@@ -205,10 +205,10 @@ Apache Sling資源型探索服務會在每個執行個體上執行，以控制Ex
 
 Experience Manager中安裝了數個JobConsumer實作。 這些JobConsumers註冊的主題會顯示在「解除安裝瀏覽器」中。 出現的其他主題是自訂「工作消費者」已註冊的主題。 下表說明預設的JobConsumers。
 
-| 工作主題 | 服務PID | 描述 |
+| 工作主題 | 服務PID | 說明 |
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | 隨Apache Sling安裝。 處理OSGi事件管理員產生的工作，以便回溯相容性。 |
-| com/day/cq/replication/job/&amp;amp；ast； | com.day.cq.replication.impl.AgentManagerImpl | 復製作業裝載的復寫代理程式。 |
+| com/day/cq/replication/job/&amp;ast； | com.day.cq.replication.impl.AgentManagerImpl | 復製作業裝載的復寫代理程式。 |
 
 <!--
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
@@ -224,9 +224,9 @@ Apache Sling作業取用者管理員服務提供主題允許清單和封鎖清�
 
 使用Web主控台或`sling:OsgiConfig`節點來設定下列屬性。 對於`sling:OsgiConfig`節點，工作消費者管理員服務的PID是org.apache.sling.event.impl.jobs.JobConsumerManager。
 
-| Web主控台中的屬性名稱 | OSGi ID | 描述 |
+| Web主控台中的屬性名稱 | OSGi ID | 說明 |
 |---|---|---|
-| 主題允許清單 | job.consumermanager.whitelist | 本機JobManager服務處理的主題清單。 預設值&amp;amp；ast；會傳送所有主題至已註冊的TopicConsumer服務。 |
+| 主題允許清單 | job.consumermanager.whitelist | 本機JobManager服務處理的主題清單。 預設值&amp;ast；會傳送所有主題至已註冊的TopicConsumer服務。 |
 | 主題封鎖清單 | job.consumermanager.blacklist | 本機JobManager服務未處理的主題清單。 |
 
 ## 建立解除安裝的復寫代理程式 {#creating-replication-agents-for-offloading}
@@ -289,7 +289,7 @@ Apache Sling作業取用者管理員服務提供主題允許清單和封鎖清�
 
 ### 建立反向代理程式 {#creating-the-reverse-agent}
 
-1. 在作者上建立&#x200B;**反向復寫代理**。 （請參閱復寫代理程式[&#128279;](/help/sites-deploying/replication.md)的檔案。）指定任何&#x200B;**標題**。 **名稱**&#x200B;必須遵循命名慣例。
+1. 在作者上建立&#x200B;**反向復寫代理**。 （請參閱復寫代理程式[&#128279;](/help/sites-deploying/replication.md)的檔案。） 指定任何&#x200B;**標題**。 **名稱**&#x200B;必須遵循命名慣例。
 1. 使用下列屬性建立代理程式：
 
    | 屬性 | 值 |
@@ -302,7 +302,7 @@ Apache Sling作業取用者管理員服務提供主題允許清單和封鎖清�
 
 ### 建立寄件匣代理程式 {#creating-the-outbox-agent}
 
-1. 在背景工作執行個體上建立&#x200B;**復寫代理程式**。 （請參閱復寫代理程式[&#128279;](/help/sites-deploying/replication.md)的檔案。）指定任何&#x200B;**標題**。 **名稱**&#x200B;必須是`offloading_outbox`。
+1. 在背景工作執行個體上建立&#x200B;**復寫代理程式**。 （請參閱復寫代理程式[&#128279;](/help/sites-deploying/replication.md)的檔案。） 指定任何&#x200B;**標題**。 **名稱**&#x200B;必須是`offloading_outbox`。
 1. 使用下列屬性建立代理程式。
 
    | 屬性 | 值 |

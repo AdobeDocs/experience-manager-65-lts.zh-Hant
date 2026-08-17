@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: fb24c331-55c3-4166-bd4f-c26cece902fc
 source-git-commit: 1dd093acdfa571dad9659270ddc6912ab3d5dba5
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
@@ -75,11 +75,11 @@ Adobe的Imaging Transcoding Library是專屬的影像處理解決方案，可執
 
 若要配置物件庫，請使用下列步驟建立CONF檔案以指示物件庫。 您需要管理員或根許可權。
 
-1. 從Software Distribution[下載](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg)影像轉碼程式庫套件，並使用套件管理員進行安裝。 套件與[!DNL Experience Manager] 6.5 LTS相容。
+1. 從Software Distribution[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg)下載影像轉碼程式庫套件，並使用套件管理員進行安裝。 套件與[!DNL Experience Manager] 6.5 LTS相容。
 
 1. 若要知道`com.day.cq.dam.cq-dam-switchengine`的套件組合ID，請登入網頁主控台，然後按一下&#x200B;**[!UICONTROL OSGi]** > **[!UICONTROL 套件組合]**。 或者，若要開啟套件組合主控台，請存取`https://[aem_server:[port]/system/console/bundles/` URL。 找到`com.day.cq.dam.cq-dam-switchengine`套件組合及其識別碼。
 
-1. 透過使用命令`ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`檢查資料夾（其中資料夾名稱是使用組合ID建構），確保擷取了所有必要的資料庫。 例如，如果套件識別碼為`ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/`，則命令為`588`。
+1. 透過使用命令`ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`檢查資料夾（其中資料夾名稱是使用組合ID建構），確保擷取了所有必要的資料庫。 例如，如果套件識別碼為`588`，則命令為`ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/`。
 
 1. 建立`SWitchEngineLibs.conf`檔案以連結至資料庫。
 
@@ -89,7 +89,7 @@ Adobe的Imaging Transcoding Library是專屬的影像處理解決方案，可執
    vi SWitchEngineLibs.conf
    ```
 
-1. 使用`/aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`命令將`cat SWitchEngineLibs.conf`路徑新增至conf檔案。
+1. 使用`cat SWitchEngineLibs.conf`命令將`/aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`路徑新增至conf檔案。
 
 1. 執行`ldconfig`命令以建立必要的連結和快取。
 
@@ -111,7 +111,7 @@ Adobe的Imaging Transcoding Library是專屬的影像處理解決方案，可執
 1. 從&#x200B;**[!UICONTROL 工作流程模型]**&#x200B;頁面，在編輯模式下開啟&#x200B;**[!UICONTROL DAM更新資產]**&#x200B;工作流程模型。
 
 1. 開啟&#x200B;**[!UICONTROL 處理縮圖]**&#x200B;工作流程處理步驟。 在&#x200B;**[!UICONTROL 縮圖]**&#x200B;索引標籤中，在&#x200B;**[!UICONTROL 略過MIME型別]**&#x200B;清單中，新增您要略過預設縮圖產生程式的MIME型別。
-例如，如果您想使用影像轉碼資料庫為TIFF影像建立縮圖，請在`image/tiff`略過MIME型別&#x200B;**[!UICONTROL 欄位中指定]**。
+例如，如果您想使用影像轉碼資料庫為TIFF影像建立縮圖，請在&#x200B;**[!UICONTROL 略過MIME型別]**&#x200B;欄位中指定`image/tiff`。
 
 1. 在&#x200B;**[!UICONTROL 啟用Web的影像]**&#x200B;索引標籤中，新增您要在&#x200B;**[!UICONTROL 略過清單]**&#x200B;中略過預設Web轉譯產生程式的MIME型別。 例如，如果您在上述步驟中略過MIME型別`image/tiff`，請新增`image/tiff`至略過清單。
 
