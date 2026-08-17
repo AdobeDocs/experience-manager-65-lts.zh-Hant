@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 20fd27e2-0eb7-4fab-a56a-f83816947579
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1078'
 ht-degree: 1%
 
 ---
@@ -31,13 +31,13 @@ AEM提供數個流程步驟，可用於建立工作流程模型。 您也可以�
 * 對於Java™類別處理程式，會提供完整類別名稱。
 * 對於ECMAScript程式，會提供指令碼的路徑。
 
-### 總額 {#payload}
+### 承載 {#payload}
 
 裝載是工作流程例項作用所在的實體。 裝載是由啟動工作流程執行個體的內容隱含選取。
 
 例如，如果工作流程套用至AEM頁面&#x200B;*P*，則工作流程進行時會在不同步驟之間傳遞&#x200B;*P*，每個步驟會以某種方式選擇性地對&#x200B;*P*&#x200B;執行動作。
 
-在最常見的情況下，裝載會是存放庫中的JCR節點(例如AEM頁面或資產)。 JCR節點承載會以字串形式傳遞，且是JCR路徑或JCR識別碼(UUID)。 有時有效負載可能是JCR屬性（作為JCR路徑傳遞）、URL、二進位物件或通用Java™物件。 對裝載採取動作的個別程式步驟通常會預期某種型別的裝載，或根據裝載型別採取不同的動作。 對於下述每個程式，都會說明預期的裝載型別（若有）。
+在最常見的情況下，裝載會是存放庫中的JCR節點（例如AEM頁面或資產）。 JCR節點承載會以字串形式傳遞，且是JCR路徑或JCR識別碼(UUID)。 有時有效負載可能是JCR屬性（作為JCR路徑傳遞）、URL、二進位物件或通用Java™物件。 對裝載採取動作的個別程式步驟通常會預期某種型別的裝載，或根據裝載型別採取不同的動作。 對於下述每個程式，都會說明預期的裝載型別（若有）。
 
 ### 引數 {#arguments}
 
@@ -135,7 +135,7 @@ AEM提供數個流程步驟，可用於建立工作流程模型。 您也可以�
 
 * 從資產中擷取中繼資料。
 * 建立三種指定大小的縮圖。
-* 假設資產原本不是GIF或PNG (在此情況下不會建立JPEG)，從資產建立JPEG影像。
+* 假設資產原本不是GIF或PNG （在此情況下不會建立JPEG），從資產建立JPEG影像。
 * 設定資產的上次修改日期。
 
 ```shell
@@ -208,7 +208,7 @@ com.day.cq.dam.core.process.ExtractMetadataProcess,
 此步驟在下列情況下不會產生任何影響：
 
 * 承載已鎖定
-* 裝載節點不包含jcr：content子節點
+* 裝載節點不包含jcr:content子節點
 
 ### UnlockProcess {#unlockprocess}
 
@@ -223,7 +223,7 @@ com.day.cq.dam.core.process.ExtractMetadataProcess,
 此步驟在下列情況下不會產生任何影響：
 
 * 承載已解鎖
-* 裝載節點不包含jcr：content子節點
+* 裝載節點不包含jcr:content子節點
 
 ## 版本設定流程 {#versioning-processes}
 
@@ -231,7 +231,7 @@ com.day.cq.dam.core.process.ExtractMetadataProcess,
 
 ### CreateVersionProcess {#createversionprocess}
 
-建立工作流程裝載(AEM頁面或DAM資產)的版本。
+建立工作流程裝載（AEM頁面或DAM資產）的版本。
 
 * **Java™類別**： `com.day.cq.wcm.workflow.process.CreateVersionProcess`
 

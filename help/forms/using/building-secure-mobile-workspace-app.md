@@ -8,9 +8,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 5cfb956a-454c-4bed-a410-003c716c46ed
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 1. 若要為應用程式設定iOS應用程式的套件組合識別碼，請按一下&#x200B;**[!UICONTROL 設定應用程式ID]**。
 1. 在網頁底部，選取&#x200B;**[!UICONTROL 啟用資料保護]**。 指定資料保護選項。
 
-   按一下&#x200B;**[!UICONTROL 「完成」]**。
+   按一下&#x200B;**[!UICONTROL 完成]**。
 
 1. 導覽至「布建>發佈」 ，並使用步驟3中設定的應用程式ID建立新的設定檔。
 1. 下載布建設定檔並新增至Xcode和iPad。

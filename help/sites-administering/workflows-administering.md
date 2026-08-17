@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: c86f66b3-6471-4fb6-81d6-3c0a4dcbe200
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1015'
 ht-degree: 1%
 
 ---
@@ -96,7 +96,7 @@ ht-degree: 1%
 當工作流程失敗時，AEM會提供&#x200B;**失敗**&#x200B;主控台，讓您在原始原因得到處理之後，立即調查並採取適當的動作：
 
 * **失敗詳細資料**
-開啟視窗以顯示&#x200B;**失敗訊息**、**步驟**&#x200B;和&#x200B;**失敗棧疊**。
+開啟視窗以顯示**失敗訊息**、**步驟**&#x200B;和&#x200B;**失敗棧疊**。
 
 * **開啟歷程記錄**
 顯示工作流程記錄的詳細資料。
@@ -138,7 +138,7 @@ ht-degree: 1%
   <tr>
    <th>屬性名稱（Web主控台）</th>
    <th>OSGi屬性名稱</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td>工作名稱</td>
@@ -189,7 +189,7 @@ ht-degree: 1%
 
 在工作流程模型的層級，會提供旗標，指出模型（及其執行階段執行個體）具有中繼資料的外部儲存。 針對標籤為外部儲存的模型的工作流程例項，工作流程變數不會儲存在JCR中。
 
-屬性&#x200B;*userMetadataPersistenceEnabled*&#x200B;儲存在工作流程模型的&#x200B;*jcr：content節點*&#x200B;上。 此旗標會以&#x200B;*cq：userMetaDataCustomPersistenceEnabled*&#x200B;保留在工作流程中繼資料中。
+屬性&#x200B;*userMetadataPersistenceEnabled*&#x200B;儲存在工作流程模型的&#x200B;*jcr:content節點*&#x200B;上。 此旗標會以&#x200B;*cq:userMetaDataCustomPersistenceEnabled*&#x200B;形式保留在工作流程中繼資料中。
 
 下圖說明如何在工作流程上設定標幟。
 
