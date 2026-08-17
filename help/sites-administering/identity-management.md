@@ -12,7 +12,7 @@ role: Admin
 exl-id: 70a5429a-e805-49f6-9c2c-28720d9674ae
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1219'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 * [Personalization](/help/sites-administering/personalization.md)允許訪客設定存取您網站的特定方式。
 
-登入（及登出）功能由具有&#x200B;**設定檔**&#x200B;[&#128279;](#profiles-and-user-accounts)&#x200B;的帳戶提供，該帳戶包含有關已註冊訪客（使用者）的其他資訊。 註冊和授權的實際流程可能有所不同：
+登入（及登出）功能由具有&#x200B;**設定檔**](#profiles-and-user-accounts)&#x200B;的[帳戶提供，該帳戶包含有關已註冊訪客（使用者）的其他資訊。 註冊和授權的實際流程可能有所不同：
 
 * 從網站自助註冊
 
@@ -190,7 +190,7 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
 這些存取權由下列萬用字元ACL定義：
 
-/home每個人都允許jcr：read rep：glob = &#42;/profile&#42;
+/home每個人都允許jcr:read rep:glob = &#42;/profile&#42;
 
 這允許：
 

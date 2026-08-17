@@ -7,7 +7,7 @@ role: Admin, User, Developer
 exl-id: 5454ee3d-45fb-4ed2-b2f2-1fa9e2460759
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1091'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 要啟動或觸發以Forms為中心的工作流程，有許多方式之一，就是透過AEM收件匣中的應用程式來進行。 若要讓Forms工作流程在收件匣中成為應用程式，請建立工作流程應用程式。 如需工作流程應用程式和其他啟動Forms工作流程之方法的詳細資訊，請參閱[在OSGi上啟動Forms為中心的工作流程](../../forms/using/aem-forms-workflow.md#launch)。
 
-此外，AEM收件匣會整合來自各種AEM元件(包括Forms工作流程)的通知和工作。 當觸發包含「指派」任務步驟的表單工作流程時，相關聯的應用程式會在受指派人的收件匣中列為任務。 如果受指派人是群組，則該任務會出現在所有群組成員的「收件匣」中，直到個別人員宣告或委派該任務為止。
+此外，AEM收件匣會整合來自各種AEM元件（包括Forms工作流程）的通知和工作。 當觸發包含「指派」任務步驟的表單工作流程時，相關聯的應用程式會在受指派人的收件匣中列為任務。 如果受指派人是群組，則該任務會出現在所有群組成員的「收件匣」中，直到個別人員宣告或委派該任務為止。
 
 收件匣使用者介面提供清單和行事曆檢視以檢視工作。 您也可以配置檢視設定。 您可以根據各種引數篩選任務。 如需檢視和篩選的詳細資訊，請參閱[您的收件匣](/help/sites-authoring/inbox.md)。
 
@@ -105,7 +105,7 @@ AEM收件匣只會顯示作用中的任務。 已完成的任務未出現在清�
 
    ![篩選器](assets/filter.png)
 
-1. 選取以選取工作並按一下[開啟]。**&#x200B;**
+1. 選取以選取工作並按一下[開啟]。****
 
 任務會開啟以顯示與任務相關聯的檔案或最適化表單。 對於最適化表單，任務會顯示唯讀的最適化表單或其PDF記錄檔案，如[指派任務工作流程步驟](/help/sites-developing/workflows-step-ref.md)的表單/檔案索引標籤中所設定。
 
@@ -136,7 +136,7 @@ AEM收件匣只會顯示作用中的任務。 已完成的任務未出現在清�
      | allowExplicitSharing | allowExplicitSharing | 布林值 |
 
 
-   * 透過AEM套件部署索引。 您可以使用[AEM Archetype](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/using)專案來建立可部署的AEM套件。 使用以下範常式式碼，將索引新增至AEM Archetype專案：
+   * 透過AEM套件部署索引。 您可以使用[AEM Archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using)專案來建立可部署的AEM套件。 使用以下範常式式碼，將索引新增至AEM Archetype專案：
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
