@@ -102,7 +102,7 @@ AEM 6.5 LTS Analyzer報表包含下列類別：
 
 >[!NOTE]
 >
->若要深入瞭解每個發現專案類別，請參閱[模式偵測器類別](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/aso)。
+>若要深入瞭解每個發現專案類別，請參閱[模式偵測器類別](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-pattern-detection/table-of-contents/aso)。
 
 若要瞭解重要性層級，請遵循下表：
 
