@@ -6,7 +6,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
-source-git-commit: 'null'
+source-git-commit: 6b846e456466492f4be2c1e5a1f6b3913ae4dab4
 workflow-type: tm+mt
 source-wordcount: '2098'
 ht-degree: 15%
@@ -102,7 +102,7 @@ AEM 6.5 LTS Analyzer報表包含下列類別：
 
 >[!NOTE]
 >
->若要深入瞭解每個發現專案類別，請參閱[模式偵測器類別](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-pattern-detection/table-of-contents/aso)。
+>若要深入瞭解每個發現專案類別，請參閱[模式偵測器類別](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/aso)。
 
 若要瞭解重要性層級，請遵循下表：
 
