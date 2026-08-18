@@ -6,7 +6,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
-source-git-commit: 'null'
+source-git-commit: 6b846e456466492f4be2c1e5a1f6b3913ae4dab4
 workflow-type: tm+mt
 source-wordcount: '2098'
 ht-degree: 15%
