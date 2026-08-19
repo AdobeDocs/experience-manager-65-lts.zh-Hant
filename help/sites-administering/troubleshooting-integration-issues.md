@@ -11,7 +11,7 @@ role: Admin
 exl-id: 72293e17-bf29-4b3c-81b4-cd8372694a0d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1102'
 ht-degree: 2%
 
 ---
@@ -61,14 +61,14 @@ Report Importer造成CPU/記憶體使用量過高或造成`OutOfMemoryError`個�
 
 ### 由於PollingImporter，關機需要很長的時間 {#shutdown-takes-a-long-time-due-to-the-pollingimporter}
 
-Analytics在設計時已考慮繼承機制。 通常，您會透過在頁面屬性[雲端服務](/help/sites-developing/extending-cloud-config.md)索引標籤中新增Analytics設定的參考來啟用網站的Analytics。 然後，設定會自動繼承到所有子頁面，無需再次參考，除非頁面需要不同的設定。 新增對網站的參照也會自動建立數個節點(12個適用於AEM 6.3和更早版本，或6個適用於AEM 6.4)   型別`cq;PollConfig`的（及更新版本），會具現化用來將Analytics資料匯入AEM的PollingImporters。 因此：
+Analytics在設計時已考慮繼承機制。 通常，您會透過在頁面屬性[雲端服務](/help/sites-developing/extending-cloud-config.md)索引標籤中新增Analytics設定的參考來啟用網站的Analytics。 然後，設定會自動繼承到所有子頁面，無需再次參考，除非頁面需要不同的設定。 新增對網站的參考也會自動建立`cq;PollConfig`型別的數個節點（12個適用於AEM 6.3和更早版本，或6個適用於AEM 6.4及更高版本），這些節點會具現化用來將Analytics資料匯入AEM的PollingImporters。 因此：
 
 * 有大量頁面參考Analytics會導致大量的PollingImporters。
 * 此外，複製和貼上參照Analytics設定的頁面會導致其PollingImporters重複。
 
 #### 解決方案 {#solution-1}
 
-首先，分析[error.log](/help/sites-deploying/configure-logging.md)可能會讓您深入瞭解作用中或註冊的PollingImporters數量。 例如：
+首先，分析[error.log](/help/sites-deploying/configure-logging.md)可能會提供一些有關作用中或註冊的PollingImporters數量的insight。 例如：
 
 ```
 # Count PollingImporter entries
@@ -96,15 +96,15 @@ sed -n "s/.*(aem-analytics-integration-.*).*target=\(.*\)\/jcr:content.*/\1/p" e
 
 若要修正此問題，請嘗試下列步驟：
 
-* 請確定加密的屬性可以解密(請注意，加密可能在每個AEM執行個體上使用不同的自動產生金鑰)。 如需其他詳細資料，請一併閱讀[組態屬性的Encryption Support &#x200B;](/help/sites-administering/encryption-support-for-configuration-properties.md)。
+* 請確定加密的屬性可以解密（請注意，加密可能在每個AEM執行個體上使用不同的自動產生金鑰）。 如需其他詳細資料，請一併閱讀[組態屬性的Encryption Support &#x200B;](/help/sites-administering/encryption-support-for-configuration-properties.md)。
 * 重新發佈`/etc/cloudservices/dynamictagmanagement`中找到的組態
 * 檢查`/etc/cloudservices`上的ACL。 ACL應為：
 
-   * 允許； jcr：read； webservice-support-servicelibfinder
-   * 允許； jcr：read；每個人；`rep:glob:`&amp;amp；ast；`/defaults/`&amp;amp；ast；
-   * 允許； jcr：read；每個人；`rep:glob:`&amp;amp；ast；`/defaults`
-   * 允許； jcr：read；每個人；`rep:glob:`&amp;amp；ast；`/public/`&amp;amp；ast；
-   * 允許； jcr：read；每個人；`rep:glob:`&amp;amp；ast；`/public`
+  * 允許； jcr:read； webservice-support-servicelibfinder
+  * 允許； jcr:read；每個人；`rep:glob:`&amp;ast；`/defaults/`&amp;ast；
+  * 允許； jcr:read；每個人； `rep:glob:`&amp;ast；`/defaults`
+  * 允許； jcr:read；每個人；`rep:glob:`&amp;ast；`/public/`&amp;ast；
+  * 允許； jcr:read；每個人； `rep:glob:`&amp;ast；`/public`
 
 如需有關管理ACL的詳細資訊，請閱讀[使用者管理與安全性](/help/sites-administering/security.md#permissions-in-aem)頁面。
 

@@ -11,7 +11,7 @@ role: Developer
 exl-id: d7c33a37-a675-490d-b28d-1a367ffa33e9
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 Adobe Analytics使用`s.pageName`屬性來唯一識別頁面，並為頁面所收集的資料建立關聯。 您通常會在AEM中執行下列工作，將AEM傳送給Analytics的值指派給此屬性：
 
-* 使用Analytics雲端服務架構將CQ變數對應至Analytics `s.pageName`屬性。 (請參閱[將元件資料與Adobe Analytics屬性對應](/help/sites-administering/adobeanalytics-mapping.md)。)
+* 使用Analytics雲端服務架構將CQ變數對應至Analytics `s.pageName`屬性。 （請參閱[將元件資料與Adobe Analytics屬性對應](/help/sites-administering/adobeanalytics-mapping.md)。）
 
-* 設計頁面元件，使其包含您對應至`s.pageName`屬性的CQ變數。 (請參閱[為自訂元件實作Adobe Analytics追蹤](/help/sites-developing/extending-analytics-components.md)。)
+* 設計頁面元件，使其包含您對應至`s.pageName`屬性的CQ變數。 （請參閱[為自訂元件實作Adobe Analytics追蹤](/help/sites-developing/extending-analytics-components.md)。）
 
-若要在Sites主控台和Content Insight中公開Analytics報表資料，AEM需要每個頁面的`s.pageName`屬性值。 AEM Analytics Java API定義您實作的`AnalyticsPageNameProvider`介面，以提供Sites主控台和內容深入分析的`s.pageName`屬性值。 您的`AnaltyicsPageNameProvider`服務會解析伺服器上的pageName屬性以用於報表用途，因為它可以在使用者端上使用JavaScript動態設定以用於追蹤用途。
+若要在Sites主控台和內容Insight中公開Analytics報表資料，AEM需要每個頁面的`s.pageName`屬性值。 AEM Analytics Java API定義您實作的`AnalyticsPageNameProvider`介面，以提供Sites主控台和內容深入分析的`s.pageName`屬性值。 您的`AnaltyicsPageNameProvider`服務會解析伺服器上的pageName屬性以用於報表用途，因為它可以在使用者端上使用JavaScript動態設定以用於追蹤用途。
 
 ## 預設Analytics頁面名稱提供者服務 {#the-default-analytics-page-name-provider-service}
 
@@ -75,7 +75,7 @@ Adobe Analytics使用`s.pageName`屬性來唯一識別頁面，並為頁面所�
 
 ### 實作Analytics頁面名稱提供者服務 {#implementing-an-analytics-page-name-provider-service}
 
-將`com.day.cq.analytics.sitecatalyst.AnalyticsPageNameProvider`介面實作為OSGi服務，以自訂擷取`s.pageName`屬性值的邏輯。 網站頁面分析和內容分析會使用此服務從Analytics擷取報表資料。
+將`com.day.cq.analytics.sitecatalyst.AnalyticsPageNameProvider`介面實作為OSGi服務，以自訂擷取`s.pageName`屬性值的邏輯。 網站頁面分析和內容Insight會使用此服務從Analytics擷取報表資料。
 
 AnalyticsPageNameProvider介面會定義您必須實作的兩種方法：
 

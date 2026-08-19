@@ -11,14 +11,14 @@ role: Admin
 exl-id: 456bcdf5-3d43-43d8-b243-70095e0cf58c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '868'
 ht-degree: 1%
 
 ---
 
 # 與Adobe Experience Cloud整合{#integrating-with-the-adobe-marketing-cloud}
 
-[Adobe Experience Cloud](https://business.adobe.com/tw/products/marketing-cloud/main.html)包含強大的網站分析和網站最佳化產品，可提供可操作的即時資料和深入分析，以推動成功的線上方案。 它提供整合且開放的平台，用於線上業務最佳化。 Cloud包含整合式應用程式，可收集並釋放客戶深入分析的力量，以最佳化客戶贏取、轉換和保留工作，以及內容的建立和分發。
+[Adobe Experience Cloud](https://business.adobe.com/tw/products/marketing-cloud/main.html)包含強大的網站分析和網站最佳化產品，可提供可操作的即時資料和深入分析，以推動成功的線上方案。 它提供整合且開放的平台，用於線上業務最佳化。 雲端包含整合式應用程式，可收集並釋放客戶insight的強大功能，以最佳化客戶贏取、轉換和保留工作，以及內容的建立和分發。
 
 透過Adobe Experience Manager (AEM)，您可以順暢地整合下列Adobe Experience Cloud產品：
 
