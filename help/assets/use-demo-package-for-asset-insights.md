@@ -22,11 +22,11 @@ ht-degree: 2%
 1. 使用[設定Assets Insights](configure-asset-insights.md)中的指示設定Assets Insights。
 1. 從下方下載範例Assets套件，並從CRXDE封裝管理員安裝套件。
 
-[取得檔案](assets/insightsdemo.zip)
+   [取得檔案](assets/insightsdemo.zip)
 
 1. 從下方下載包含範例網頁的ZIP檔案，並在您的本機檔案系統上解壓縮。
 
-[取得檔案](assets/demosite.zip)
+   [取得檔案](assets/demosite.zip)
 
 1. 按一下在網頁瀏覽器中開啟的網頁。
 

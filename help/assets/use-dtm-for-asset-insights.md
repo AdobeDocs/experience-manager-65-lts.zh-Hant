@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 5c0bb817-28d5-47d4-bc4c-47aaa76a8421
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 2%
+source-wordcount: '668'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ Adobe Dynamic Tag Management是可啟用您的數位行銷工具的工具。 Ado
 
 >[!CAUTION]
 >
->Adobe DTM已淘汰，改為[!DNL Adobe Experience Platform]，並將很快結束[生命週期](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)。 Adobe建議您[使用 [!DNL Adobe Experience Platform] 進行資產分析](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html?lang=zh-Hant)。
+>Adobe DTM已淘汰，改為[!DNL Adobe Experience Platform]，並將很快結束[生命週期](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)。 Adobe建議您[使用 [!DNL Adobe Experience Platform] 進行資產分析](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)。
 
 執行這些步驟，透過DTM啟用Assets Insights。
 
@@ -33,7 +33,7 @@ Adobe Dynamic Tag Management是可啟用您的數位行銷工具的工具。 Ado
 
    * 選取&#x200B;**[!UICONTROL Web屬性]**&#x200B;標籤，然後按一下&#x200B;**[!UICONTROL 新增屬性]**。
 
-   * 視需要更新欄位，然後按一下&#x200B;**[!UICONTROL 建立屬性]**。 請參閱[文件](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant)。
+   * 視需要更新欄位，然後按一下&#x200B;**[!UICONTROL 建立屬性]**。 請參閱[文件](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)。
 
    ![建立編輯Web屬性](assets/Create-edit-web-property.png)
 
@@ -52,7 +52,7 @@ Adobe Dynamic Tag Management是可啟用您的數位行銷工具的工具。 Ado
    >
    >* `AppMeasurement.js`已移除。 應透過DTM的Adobe Analytics工具提供。
    >* 對`assetAnalytics.dispatcher.init()`的呼叫已移除。 DTM的Adobe Analytics工具載入完成後，應該會呼叫函式。
-   >* 根據Assets前瞻分析頁面追蹤器的託管位置(例如Experience Manager、CDN等)，指令碼來源的來源可能需要變更。
+   >* 根據Assets前瞻分析頁面追蹤器的託管位置（例如Experience Manager、CDN等），指令碼來源的來源可能需要變更。
    >* 對於Experience Manager託管的頁面追蹤器，來源應使用Dispatcher執行個體的主機名稱指向發佈執行個體。
 
 1. 存取`https://dtm.adobe.com`。 在Web屬性中按一下&#x200B;**[!UICONTROL 概觀]**，然後按一下&#x200B;**[!UICONTROL 新增工具]**&#x200B;或開啟現有的Adobe Analytics工具。 建立工具時，您可以將&#x200B;**[!UICONTROL 組態方法]**&#x200B;設定為&#x200B;**[!UICONTROL 自動]**。
@@ -109,8 +109,8 @@ Adobe Dynamic Tag Management是可啟用您的數位行銷工具的工具。 Ado
 
    * DTM中的頁面載入規則僅包含`pagetracker.js`程式碼。 任何`assetAnalytics`欄位都視為預設值的覆寫。 預設不需要。
    * 程式碼在確定`_satellite.getToolsByType('sc')[0].getS()`已初始化且`assetAnalytics,dispatcher.init`可用之後呼叫`assetAnalytics.dispatcher.init()`。 因此，您可以略過在步驟11中新增。
-   * 如前瞻分析頁面追蹤器程式碼(**[!UICONTROL 工具> Assets >前瞻分析頁面追蹤器]**)中的評論所指示，當頁面追蹤器未建立`AppMeasurement`物件時，前三個引數（RSID、追蹤伺服器和訪客名稱空間）無關。 傳遞空字串而非醒目提示此專案。\
-     其餘引數對應至見解設定頁面(**[!UICONTROL 工具> Assets >見解設定]**)中的設定內容。
+   * 如前瞻分析頁面追蹤器程式碼（**[!UICONTROL 工具> Assets >前瞻分析頁面追蹤器]**）中的評論所指示，當頁面追蹤器未建立`AppMeasurement`物件時，前三個引數（RSID、追蹤伺服器和訪客名稱空間）無關。 傳遞空字串而非醒目提示此專案。\
+     其餘引數對應至見解設定頁面（**[!UICONTROL 工具> Assets >見解設定]**）中的設定內容。
    * 透過查詢所有可用SiteCatalyst引擎的`satelliteLib`來擷取AppMeasurement物件。 如果設定了多個標籤，請適當的變更陣列選擇器的索引。 陣列中的專案會根據DTM介面中可用的SiteCatalyst工具排序。
 
 1. 儲存並關閉程式碼編輯器視窗，然後將變更儲存在工具設定中。
