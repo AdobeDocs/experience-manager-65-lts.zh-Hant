@@ -7,9 +7,9 @@ user-guide-description: 使用Adobe Experience Manager 6.5 LTS檔案瞭解其運
 breadcrumb-title: 使用手冊
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: 6770d1b4e9b169aabc8af023d92364c1336bd9f2
+source-git-commit: da9de2298544a342a34ff91815732017c1b24299
 workflow-type: tm+mt
-source-wordcount: '7797'
+source-wordcount: '7798'
 ht-degree: 22%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 22%
 + 發行說明 {#release-notes}
   + [目前版本](/help/release-notes/release-notes.md)
   + 舊版發行說明 {#service-pack}
+    + [6.5.2](/help/release-notes/previous/6-5-2-lts.md)
     + [6.5.1](/help/release-notes/previous/6-5-1-lts.md)
     + [GA](/help/release-notes/previous/ga.md)
   + [常見問題](/help/release-notes/faq.md)
