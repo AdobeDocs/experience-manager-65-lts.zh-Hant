@@ -415,7 +415,7 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 
 若要針對公開 API 進行編譯，請使用下列內容：
 
-    ``xml
+    &grave;&grave;xml
     &lt;相依性>
     &lt;groupId>com.adobe.aem&lt;/groupId>
     &lt;artifactId>uber-jar&lt;/artifactId>
@@ -423,11 +423,11 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
     &lt;classifier>apis&lt;/classifier>
     &lt;scope>已提供&lt;/scope>
     &lt;/dependency>
-    `&#39;
+    &grave;&#39;
 
 如果您的程式碼也相依於已棄用的 API，請新增下列內容：
 
-    ``xml
+    &grave;&grave;xml
     &lt;相依性>
     &lt;groupId>com.adobe.aem&lt;/groupId>
     &lt;artifactId>uber-jar&lt;/artifactId>
@@ -435,7 +435,7 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
     &lt;classifier>deprecated-api&lt;/classifier>
     &lt;scope>已提供&lt;/scope>
     &lt;/dependency>
-    `&#39;
+    &grave;&#39;
 
 另請參閱[更新 AEM Uber Jar 版本](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version)。
 
@@ -462,9 +462,9 @@ EM 6.5 LTS 適用的 SP2 會以 Quickstart JAR 形式提供，而非透過「封
 1. 在AEM安裝目錄（`crx-quickstart/`以外）中，將先前的快速入門JAR取代為SP3 JAR。
 1. 將 JAR 解壓縮：
 
-       ``java
+       &grave;&grave;java
      java -jar cq-quickstart-6.6.x.jar -unpack
-     ``
+     &grave;&grave;
    
    (視需要調整堆積旗標。)
 
