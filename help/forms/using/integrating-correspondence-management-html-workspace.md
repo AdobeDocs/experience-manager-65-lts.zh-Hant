@@ -10,7 +10,7 @@ role: Admin, User, Developer
 exl-id: b383fa80-1643-41f3-bc6c-176727fea688
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ AEM Forms工作區支援管理表單與檔案的任務指派與完成活動。 �
    ```
 
    [取得檔案](assets/dscsample.zip)
-下載DSC：以上附加的DSCSample.zip檔案中提供範例DSC。 下載並解壓縮DSCSample.zip檔案。 在使用DSC服務之前，您必須先設定它。 請參閱[設定DSC服務](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)。
+   下載DSC：以上附加的DSCSample.zip檔案中提供範例DSC。 下載並解壓縮DSCSample.zip檔案。 在使用DSC服務之前，您必須先設定它。 請參閱[設定DSC服務](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)。
 
    在[定義活動]對話方塊中，選取適當的活動，例如getLetterInstanceInfo，然後按一下[確定]。**&#x200B;**
 

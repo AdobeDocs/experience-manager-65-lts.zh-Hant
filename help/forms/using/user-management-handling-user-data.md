@@ -1,5 +1,5 @@
 ---
-title: Forms使用者管理 | 處理使用者資料
+title: Forms使用者管理 |處理使用者資料
 description: 瞭解AEM Forms JEE使用者管理元件如何讓您建立、授權和管理需要存取AEM Forms的使用者。
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,12 +9,12 @@ feature: Adaptive Forms
 exl-id: 3f673798-7557-4cba-96b5-2f326e7e73a9
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
 
-# Forms使用者管理 | 處理使用者資料 {#forms-user-management-handling-user-data}
+# Forms使用者管理 |處理使用者資料 {#forms-user-management-handling-user-data}
 
 使用者管理是AEM Forms JEE元件，可建立、管理和授權AEM Forms使用者存取AEM Forms。 使用者管理使用網域作為取得使用者資訊的目錄。 支援的網域型別如下：
 
@@ -46,7 +46,7 @@ ht-degree: 0%
  <tbody>
   <tr>
    <td>資料庫表格</td>
-   <td>描述</td>
+   <td>說明</td>
   </tr>
   <tr>
    <td><code>EdcPrincipalEntity</code></td>
@@ -58,16 +58,16 @@ ht-degree: 0%
   </tr>
   <tr>
    <td><p><code>EdcPrincipalLocalAccountEntity</code></p> <p><code class="code">EdcPrincipalLocalAccount
-       </code>(Oracle和MS® SQL資料庫)</p> </td>
+       </code>（Oracle和MS® SQL資料庫）</p> </td>
    <td>僅儲存本機使用者的資料。</td>
   </tr>
   <tr>
    <td><p><code>EdcPrincipalEmailAliasEntity</code></p> <p><code class="code">EdcPrincipalEmailAliasEn
-       </code>(Oracle和MS® SQL資料庫)</p> </td>
+       </code>（Oracle和MS® SQL資料庫）</p> </td>
    <td>包含本機、企業和混合網域中所有使用者的專案。 它包含使用者電子郵件ID。</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code><br /> (Oracle和MS® SQL資料庫)</p> </td>
+   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code><br /> （Oracle和MS® SQL資料庫）</p> </td>
    <td>儲存使用者和群組之間的對應。</td>
   </tr>
   <tr>
@@ -79,7 +79,7 @@ ht-degree: 0%
    <td>儲存使用者和群組的主體與許可權之間的對應。</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code><br /> (Oracle和MS® SQL資料庫)</p> </td>
+   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code><br /> （Oracle和MS® SQL資料庫）</p> </td>
    <td>儲存與主體對應的舊屬性和新屬性值。<br /> </td>
   </tr>
  </tbody>
@@ -111,7 +111,7 @@ select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_
 
 >[!NOTE]
 >
->下列命令使用My SQL和IBM® DB2®資料庫中的資料庫表格名稱。 在Oracle和MS® SQL資料庫上執行這些命令時，請在命令中取代下清單格名稱：
+>下列命令使用My SQL和® DB2®資料庫中的資料庫表格名稱。 在Oracle和MS® SQL資料庫上執行這些命令時，請在命令中取代下清單格名稱：
 >
 >* 以`EdcPrincipalLocalAccount`取代`EdcPrincipalLocalAccountEntity`
 >

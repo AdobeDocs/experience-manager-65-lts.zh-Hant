@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 053efcc4-35dd-49c8-9645-ae29aa492352
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '343'
 ht-degree: 13%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 13%
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
-1. 選取回應式影像預設集。URL **[!UICONTROL 和]**&#x200B;**[!UICONTROL RESS]** 按鈕出現。
+1. 選取回應式影像預設集。 URL **[!UICONTROL 和]**&#x200B;**[!UICONTROL RESS]** 按鈕出現。
 
    ![chlimage_1-409](assets/chlimage_1-208.png)
 

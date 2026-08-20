@@ -10,7 +10,7 @@ role: Admin, User, Developer
 exl-id: e1612298-721d-499c-96c9-fd4418725106
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 PDF forms已由`PdfTaskForm View`轉譯。
 
-XDP表單轉譯為PDF時，FormsAugmenter服務會新增`FormBridge`JavaScript™。 此JavaScript™ (位於PDF表單內)有助於執行表單提交、表單儲存或離線建立表單等動作。
+XDP表單轉譯為PDF時，FormsAugmenter服務會新增`FormBridge`JavaScript™。 此™ （位於PDF表單內）有助於執行表單提交、表單儲存或離線建立表單等動作。
 
 在AEM Forms工作區中，PDFTaskForm檢視會透過位於`/lc/libs/ws/libs/ws/pdf.html`的中介HTML與`FormBridge`JavaScript通訊。 流程為：
 
@@ -86,7 +86,7 @@ Flex Forms會分別以SwfTaskForm和HtmlTaskForm檢視來轉譯。
 
 AEM Forms工作區監聽`window.global.postMessage([Message],[Payload])`
 
-[訊息]可以是指定為`SubmitMessage`的字串| `CancelMessage`| `ErrorMessage`| `runtimeMap`中的`actionEnabledMessage`。 協力廠商應用程式必須使用此介面，視需要通知AEM Forms工作區。 使用此介面是強制性的，因為AEM Forms工作區必須知道何時提交任務，才能清除任務視窗。
+[訊息]可以在`runtimeMap`中指定為`SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`的字串。 協力廠商應用程式必須使用此介面，視需要通知AEM Forms工作區。 使用此介面是強制性的，因為AEM Forms工作區必須知道何時提交任務，才能清除任務視窗。
 
 **AEM Forms工作區與協力廠商應用程式通訊**
 

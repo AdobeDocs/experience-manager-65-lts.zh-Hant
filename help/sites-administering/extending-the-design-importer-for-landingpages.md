@@ -12,7 +12,7 @@ role: Admin
 exl-id: 1121af36-b07a-4e8d-a60b-6c5b91e56f82
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3442'
+source-wordcount: '3524'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Canvas div是具有`id="cqcanvas"`的html **div**，必須插入到HTML `<body>`
 
 ### 準備HTML以包含可編輯的AEM元件 {#preparing-the-html-to-include-editable-aem-components}
 
-匯入登入頁面時，您可以選擇按原樣匯入頁面，這表示在匯入登入頁面後，您無法在AEM中編輯任何匯入的專案(您仍然可以在頁面上新增其他AEM元件)。
+匯入登入頁面時，您可以選擇按原樣匯入頁面，這表示在匯入登入頁面後，您無法在AEM中編輯任何匯入的專案（您仍然可以在頁面上新增其他AEM元件）。
 
 在匯入登入頁面之前，您可能需要轉換登入頁面的某些部分，以便這些部分是可編輯的AEM元件。 這可讓您快速編輯登入頁面的部分，即使登入頁面設計已匯入亦然。
 
@@ -114,7 +114,7 @@ Canvas div是具有`id="cqcanvas"`的html **div**，必須插入到HTML `<body>`
 
 匯入之前，請注意下列限制：
 
-### 不會保留套用至&amp;amp；lt；body>標籤的任何屬性，例如類別或id {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
+### 不會保留套用至&amp;lt；body>標籤的任何屬性，例如類別或id {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
 如果有任何屬性（例如id或類別）套用至body標籤（例如`<body id="container">`），則匯入後不會保留。 因此，匯入的設計不應與套用至`<body>`標籤的屬性有任何相依性。
 
@@ -235,9 +235,9 @@ HTML標籤可在設計封裝內的HTML中插入影像元件(foundation/component
 
 否則，不屬於影像元件div的img標籤支援絕對URL影像。
 
-### 行動號召元件 {#call-to-action-components}
+### call-to-action元件 {#call-to-action-components}
 
-您可以將部分登入頁面標示為「可編輯的行動號召元件」，這樣已匯入的行動號召元件可在匯入登入頁面後進行編輯。 AEM包含下列CTA元件：
+您可以將部分登入頁面標示為匯入為「可編輯的Call to action元件」，如此匯入的call-to-action元件可在匯入登入頁面後進行編輯。 AEM包含下列CTA元件：
 
 * 點進連結 — 可讓您新增文字連結，當按一下連結時，會將訪客導向至目標URL。
 * 圖形連結 — 可讓您新增影像，在按一下時讓訪客移至目標URL。
@@ -276,7 +276,7 @@ HTML標籤，以在匯入的zip檔案中包含點進元件。 此處href對應�
 
 #### 圖形連結 {#graphical-link}
 
-此CTA元件可用來新增登陸頁面上具有連結的任何圖形影像。 影像可以是簡單的按鈕，也可以是任何圖形影像作為背景。 按一下影像時，使用者將被帶往元件屬性中指定的目標URL。 它是「行動號召」群組的一部分。
+此CTA元件可用來新增登陸頁面上具有連結的任何圖形影像。 影像可以是簡單的按鈕，也可以是任何圖形影像作為背景。 按一下影像時，使用者將被帶往元件屬性中指定的目標URL。 它是「Call to action」群組的一部分。
 
 支援的屬性
 
@@ -316,17 +316,17 @@ HTML標籤，在匯入的zip檔案中包含圖形連結元件。 此處href對�
 >與相關聯的`css .hasbackground { background-image: pathtoimage }`
 >
 
-### 銷售機會表單 {#lead-form}
+### 銷售線索表單 {#lead-form}
 
 潛在客戶表單是用於收集訪客/潛在客戶設定檔資訊的表單。 這些資訊可儲存於以後使用，以便根據資訊進行有效的行銷。 此資訊通常包括標題、名稱、電子郵件、出生日期、地址、興趣等。 它是「CTA銷售機會表單」群組的一部分。
 
 **支援的功能**
 
 * 預先定義的銷售機會欄位 — 名字、姓氏、地址、dob、性別、關於、userId、emailId、提交按鈕在sidekick中可用。 只需在潛在客戶表單中拖放所需的元件即可。
-* 在這些元件的協助下，作者可以設計獨立的銷售機會表單，這些欄位與銷售機會表單欄位相對應。 在獨立或匯入的zip應用程式中，使用者可以使用cq：form或cta潛在客戶表單欄位、名稱來新增額外的欄位，並根據需求進行設計。
+* 在這些元件的協助下，作者可以設計獨立的銷售機會表單，這些欄位與銷售機會表單欄位相對應。 在獨立或匯入的zip應用程式中，使用者可以使用cq:form或cta潛在客戶表單欄位、名稱來新增額外的欄位，並根據需求進行設計。
 * 使用CTA潛在客戶表單的特定預先定義名稱來對應潛在客戶表單欄位，例如 — 潛在客戶表單中名字的firstName等等。
-* 未對應到潛在表單對應到cq：form元件的欄位 — 文字、單選、核取方塊、下拉式清單、隱藏、密碼。
-* 使用者可以使用「label」標籤提供標題，也可以使用樣式屬性「class」提供樣式(僅適用於CTA潛在客戶表單元件)。
+* 未對應到潛在客戶表單對應到cq:form元件的欄位 — 文字、單選、核取方塊、下拉式清單、隱藏、密碼。
+* 使用者可以使用「label」標籤提供標題，也可以使用樣式屬性「class」提供樣式（僅適用於CTA潛在客戶表單元件）。
 * 感謝頁面和訂閱清單可作為表單的隱藏引數提供（出現在index.htm中），或可從「潛在客戶表單開始」的編輯列新增/編輯
 
   &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot;/>
@@ -335,7 +335,7 @@ HTML標籤，在匯入的zip檔案中包含圖形連結元件。 此處href對�
 
 * 每個元件的編輯組態都可以提供 — 等限制。
 
-HTML標籤，在匯入的zip檔案中包含圖形連結元件。 這裡「firstName」對應到潛在客戶表單firstName，以此類推，但核取方塊除外 — 這兩個核取方塊對應到cq：form下拉式元件。
+HTML標籤，在匯入的zip檔案中包含圖形連結元件。 此處「firstName」對應至銷售機會表單firstName，以此類推，但核取方塊除外 — 這兩個核取方塊對應至cq:form下拉式元件。
 
 ```xml
 <div id="cqcanvas">
@@ -419,11 +419,11 @@ HTML標籤可在設計封裝內將Parsys元件( `foundation/components/parsys`)�
 
 ### 透過擷取匯入的HTML中定義的中繼資料來設定頁面屬性 {#setting-page-properties-by-extracting-metadata-defined-in-imported-html}
 
-設計匯入工具會擷取並保留在匯入HTML標題中宣告的下列中繼資料，做為屬性「jcr：description」：
+設計匯入工具應擷取並保留在匯入的HTML標題中宣告的下列中繼資料，做為屬性&quot;jcr:description&quot;：
 
 * &lt;meta name=&quot;description&quot; content=&quot;>
 
-HTML標籤中設定的Lang屬性應由設計匯入工具擷取並保留為屬性&quot;jcr：language&quot;
+設計匯入工具應擷取並保留HTML標籤中設定的Lang屬性，做為屬性&quot;jcr:language&quot;
 
 * &lt;html lang=&quot;en&quot;>
 
@@ -461,16 +461,16 @@ data-cq-component中的路徑應為元件的resourceType。
 |---|---|---|
 | E + F | 緊接在E元素前面的F元素 | [相鄰的同層級組合器](https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
 | E ~ F | F元素前面加上E元素 | [一般同層級組合器](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
-| E：root | E元素，檔案的根 | [結構化的虛擬類別](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E：nth-child(n) | E元素，其父項的第n個子項 | [結構化的虛擬類別](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E：nth-last-child(n) | E元素，其父項的第n個子項，從最後一個專案開始計數 | [結構化的虛擬類別](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E：nth-of-type(n) | E元素，其型別的第n個同層級 | [結構化的虛擬類別](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E：nth-last-of-type(n) | E元素，其型別的第n個同層級，從最後一個專案開始計數 | [結構化的虛擬類別](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:root | E元素，檔案的根 | [結構化的虛擬類別](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-child(n) | E元素，其父項的第n個子項 | [結構化的虛擬類別](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-last-child(n) | E元素，其父項的第n個子項，從最後一個專案開始計數 | [結構化的虛擬類別](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-of-type(n) | E元素，其型別的第n個同層級 | [結構化的虛擬類別](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-last-of-type(n) | E元素，其型別的第n個同層級，從最後一個專案開始計數 | [結構化的虛擬類別](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 
 這是因為其他html元素（例如&lt;div>標籤）會在匯入後新增至產生的Html。
 
 * 也不建議將依賴上述結構的指令碼與標籤為要轉換至AEM元件的元素搭配使用。
-* 不建議在標籤標籤上使用樣式來轉換元件，例如&lt;div data-cq-component=&quot;&amp;amp；ast；&quot;>。
+* 不建議在標籤標籤上使用樣式來進行元件轉換，例如&lt;div data-cq-component=&quot;&amp;ast；&quot;>。
 * 設計配置應遵循HTML5 Boilerplate的最佳實務。 閱讀更多資訊： [https://html5boilerplate.com/](https://html5boilerplate.com/)。
 
 ## 設定OSGI模組 {#configuring-osgi-modules}
@@ -494,7 +494,7 @@ data-cq-component中的路徑應為元件的resourceType。
   <tr>
    <td>登陸頁面設計匯入工具</td>
    <td>擷取篩選器</td>
-   <td>用於篩選擷取中檔案的規則運算式清單。 從擷取中排除符合任何指定模式的<br />個Zip專案</td>
+   <td>用於篩選擷取中檔案的規則運算式清單。<br /> 符合任何指定模式的壓縮專案會從擷取中排除</td>
   </tr>
   <tr>
    <td>登陸頁面產生器</td>
@@ -514,12 +514,12 @@ data-cq-component中的路徑應為元件的resourceType。
   <tr>
    <td>登陸頁面登入前置處理器</td>
    <td>搜尋模式 </td>
-   <td>要在封存專案內容中搜尋的模式。 此規則運算式與專案內容逐行比對。 相符時，相符的文字會以指定的取代模式取代。<br /> <br />請參閱下方關於登陸頁面專案前置處理器目前限制的附註。</td>
+   <td>要在封存專案內容中搜尋的模式。 此規則運算式與專案內容逐行比對。 相符時，相符的文字會以指定的取代模式取代。<br /> <br /> 請參閱下方關於登陸頁面登入前置處理器目前限制的附註。</td>
   </tr>
   <tr>
    <td> </td>
    <td>取代圖樣</td>
-   <td>取代找到的相符項的模式。 您可以使用$1、$2之類的規則運算式群組參考。 此外，此模式支援在匯入期間以實際值解析的關鍵字，例如{designPath}。</td>
+   <td>取代找到的相符項的模式。 您可以使用$1、$2之類的規則運算式群組參考。 此外，此模式支援在匯入期間以實際值解析的{designPath}等關鍵字。</td>
   </tr>
  </tbody>
 </table>
@@ -554,7 +554,7 @@ data-cq-component中的路徑應為元件的resourceType。
 
 ### 匯入後顯示警告 {#warnings-displayed-after-import}
 
-如果有任何警告(例如，HTML參照封裝內不存在的影像)，設計匯入工具會匯入zip，但同時在結果窗格中顯示問題/警告清單，按一下問題連結會顯示警告清單，指出設計封裝內的任何問題。 設計匯入工具攔截到並顯示警告的不同情況如下：
+如果有任何警告（例如，HTML參照封裝內不存在的影像），設計匯入工具會匯入zip，但同時在結果窗格中顯示問題/警告清單，按一下問題連結會顯示警告清單，指出設計封裝內的任何問題。 設計匯入工具攔截到並顯示警告的不同情況如下：
 
 * HTML是指不存在於套件中的影像。
 * HTML是指套件中不存在的指令碼。

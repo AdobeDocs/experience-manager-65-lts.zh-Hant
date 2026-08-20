@@ -7,7 +7,7 @@ role: Admin, User, Developer
 exl-id: 5c6fa5ae-ac28-4d92-9123-f4f1404bdc4f
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '6439'
+source-wordcount: '6510'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,7 @@ DocAssurance服務包括下列服務：
  <tbody>
   <tr>
    <th>參數</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td><code>inDoc</code></td>
@@ -263,7 +263,7 @@ public Document addSignatureField(Document inDoc,
  <tbody>
   <tr>
    <th>參數</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td><code>inDoc</code></td>
@@ -434,7 +434,7 @@ public class AddSignatureField {
  <tbody>
   <tr>
    <th>參數</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td><code>doc</code><br /> </td>
@@ -641,7 +641,7 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
  <tbody>
   <tr>
    <th>參數</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td><code>doc</code><br /> </td>
@@ -761,7 +761,7 @@ public class GetSignature {
 
 **輸入引數**
 
-| 參數 | 描述 |
+| 參數 | 說明 |
 |---|---|
 | `inDoc` | 包含PDF的檔案物件 |
 | `unlockOptions` | 包含解除鎖定加密檔案所需的引數。 只有在檔案已加密時，才需要此專案。 |
@@ -884,7 +884,7 @@ public class GetSignatureFields {
  <tbody>
   <tr>
    <th>參數</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td><code>inDoc</code></td>
@@ -1056,7 +1056,7 @@ secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
  <tbody>
   <tr>
    <th>參數</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
@@ -1433,7 +1433,7 @@ secureDocument(Document inDoc,
  <tbody>
   <tr>
    <th>參數</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
@@ -2112,7 +2112,7 @@ optionSpec.setJsScriptExecutionTimeoutInterval(100);
  <tbody>
   <tr>
    <th>參數</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td><code>credentialAlias</code><br /> </td>
@@ -2203,7 +2203,7 @@ public void getCredentialUsageRights() {
  <tbody>
   <tr>
    <th>參數</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td><code>inDocument</code><br /> </td>
@@ -2321,7 +2321,7 @@ public void getDocumentUsageRights() {
  <tbody>
   <tr>
    <th>參數</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td><code>inDocument</code><br /> </td>
@@ -2448,7 +2448,7 @@ public void removeDocumentUsageRights() {
  <tbody>
   <tr>
    <th>參數</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
@@ -2766,7 +2766,7 @@ AEM可讓您驗證PDF檔案中的數位簽名。 如果PDF檔案必須經過需�
  <tbody>
   <tr>
    <th>參數</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
@@ -3064,7 +3064,7 @@ public class VerifyEncryptedPDFDoc {
  <tbody>
   <tr>
    <th>參數</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
@@ -3185,7 +3185,7 @@ public class ClearSignatureField {
  <tbody>
   <tr>
    <th>參數</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
@@ -3304,7 +3304,7 @@ public class GetCertifyingSignatureField {
  <tbody>
   <tr>
    <th>參數</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
@@ -3420,7 +3420,7 @@ public class GetPDFEncryption {
  <tbody>
   <tr>
    <th>參數</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
@@ -3519,7 +3519,7 @@ public class GetPDFEncryption {
  <tbody>
   <tr>
    <th>參數</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
@@ -3653,7 +3653,7 @@ generatePDFOutput API會將表單設計與資料合併，以產生PDF檔案。 �
  <tbody>
   <tr>
    <th>參數</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td>uriOrFileName</td>
@@ -3760,7 +3760,7 @@ generatePDFOutput API會將表單設計與資料合併，以產生PDF檔案。 �
  <tbody>
   <tr>
    <th>參數</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td>Inputdocument<br /> </td>
@@ -4501,7 +4501,7 @@ GeneratePDFService提供的API可將各種檔案格式(如.doc、.docx、.ppt、
    <td>✖</td>
   </tr>
   <tr>
-   <td>OCR PDF (可搜尋的PDF)</td>
+   <td>OCR PDF （可搜尋的PDF）</td>
    <td><strong>✓</strong></td>
    <td>✖</td>
   </tr>
@@ -4572,7 +4572,7 @@ createPDF服務擲回下列例外：
   </tr>
   <tr>
    <td>settingsDoc</td>
-   <td>此檔案包含在產生PDF檔案時套用的設定(例如，針對Web檢視最佳化PDF檔案)，以及在建立PDF檔案後套用的設定（例如，初始檢視和安全性）。 它是選用引數。<br /> </td>
+   <td>此檔案包含在產生PDF檔案時套用的設定（例如，針對Web檢視最佳化PDF檔案），以及在建立PDF檔案後套用的設定（例如，初始檢視和安全性）。 它是選用引數。<br /> </td>
   </tr>
   <tr>
    <td>xmpDoc </td>
@@ -4774,7 +4774,7 @@ OptimizePDFResult optimizePDF(Document inputDoc, String fileTypeSettings, Docume
   </tr>
   <tr>
    <td>settingsDoc </td>
-   <td>此檔案包含在產生PDF檔案時套用的設定(例如，針對Web檢視最佳化PDF檔案)，以及在建立PDF檔案後套用的設定（例如，初始檢視和安全性）。 它是選用引數。<br /> </td>
+   <td>此檔案包含在產生PDF檔案時套用的設定（例如，針對Web檢視最佳化PDF檔案），以及在建立PDF檔案後套用的設定（例如，初始檢視和安全性）。 它是選用引數。<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -4864,7 +4864,7 @@ HtmlToPdfResult htmlToPdf2(String inputUrl, String fileTypeSettingsName, String 
   </tr>
   <tr>
    <td>settingsDoc </td>
-   <td>此檔案包含在產生PDF檔案時套用的設定(例如，針對Web檢視最佳化PDF檔案)，以及在建立PDF檔案後套用的設定（例如，初始檢視和安全性）。 它是選用引數。<br /> </td>
+   <td>此檔案包含在產生PDF檔案時套用的設定（例如，針對Web檢視最佳化PDF檔案），以及在建立PDF檔案後套用的設定（例如，初始檢視和安全性）。 它是選用引數。<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -4985,7 +4985,7 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
   </tr>
   <tr>
    <td>settingsDoc </td>
-   <td>此檔案包含在產生PDF檔案時套用的設定(例如，針對Web檢視最佳化PDF檔案)，以及在建立PDF檔案後套用的設定（例如，初始檢視和安全性）。 它是選用引數。<br /> </td>
+   <td>此檔案包含在產生PDF檔案時套用的設定（例如，針對Web檢視最佳化PDF檔案），以及在建立PDF檔案後套用的設定（例如，初始檢視和安全性）。 它是選用引數。<br /> </td>
   </tr>
   <tr>
    <td>xmpDoc </td>
@@ -5080,7 +5080,7 @@ File createPDF(File inputFile, String inputFilename, String pdfSettings, String 
  <tbody>
   <tr>
    <th>參數</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td><code>inDoc</code></td>

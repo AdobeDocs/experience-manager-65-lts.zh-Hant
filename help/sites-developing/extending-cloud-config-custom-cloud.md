@@ -11,7 +11,7 @@ role: Developer
 exl-id: 7ae41982-8438-41a6-91f9-3b3b6755a39b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '404'
 ht-degree: 11%
 
 ---
@@ -83,12 +83,12 @@ ht-degree: 11%
    * **類型**：`cq:Dialog`
    * **屬性**：
 
-      * **名稱**：`title`
-      * **類型**：`String`
-      * **值**：`Google Analytics Config`
-      * **名稱**：`xtype`
-      * **類型**：`String`
-      * **值**：`dialog`
+     * **名稱**：`title`
+     * **類型**：`String`
+     * **值**：`Google Analytics Config`
+     * **名稱**：`xtype`
+     * **類型**：`String`
+     * **值**：`dialog`
 
 1. 在`/apps/acs/analytics/components/googleanalyticspage/dialog`下建立節點：
 
@@ -96,9 +96,9 @@ ht-degree: 11%
    * **類型**：`cq:Widget`
    * **屬性**：
 
-      * **名稱**：`xtype`
-      * **類型**：`String`
-      * **值**：`tabpanel`
+     * **名稱**：`xtype`
+     * **類型**：`String`
+     * **值**：`tabpanel`
 
 1. 在`/apps/acs/analytics/components/googleanalyticspage/dialog/items`下建立節點：
 
@@ -111,9 +111,9 @@ ht-degree: 11%
    * **類型**：`cq:Panel`
    * **屬性**：
 
-      * **名稱**：`title`
-      * **類型**：`String`
-      * **值**：`Config`
+     * **名稱**：`title`
+     * **類型**：`String`
+     * **值**：`Config`
 
 1. 在`/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1`下建立節點：
 
@@ -121,23 +121,23 @@ ht-degree: 11%
    * **類型**：`nt:unstructured`
    * **屬性**：
 
-      * **名稱**：`fieldLabel`
-      * **型別**：字串
-      * **值**：帳戶識別碼
+     * **名稱**：`fieldLabel`
+     * **型別**：字串
+     * **值**：帳戶識別碼
 
-      * **名稱**：`fieldDescription`
-      * **類型**：`String`
-      * **值**：`The account ID assigned by Google. Usually in the form UA-NNNNNN-N`
+     * **名稱**：`fieldDescription`
+     * **類型**：`String`
+     * **值**：`The account ID assigned by Google. Usually in the form UA-NNNNNN-N`
 
-      * **名稱**：`name`
-      * **類型**：`String`
-      * **值**：`./accountID`
-      * **名稱**：`validateOnBlur`
-      * **類型**：`String`
-      * **值**：`true`
-      * **名稱**：`xtype`
-      * **類型**：`String`
-      * **值**：`textfield`
+     * **名稱**：`name`
+     * **類型**：`String`
+     * **值**：`./accountID`
+     * **名稱**：`validateOnBlur`
+     * **類型**：`String`
+     * **值**：`true`
+     * **名稱**：`xtype`
+     * **類型**：`String`
+     * **值**：`textfield`
 
 1. 將`/libs/cq/cloudserviceconfigs/components/configpage/body.jsp`複製到`/apps/acs/analytics/components/googleanalyticspage/body.jsp`並在第34行將`libs`變更為`apps`，並將第79行的指令碼參考設為完整路徑。
 1. 在`/apps/acs/analytics/templates/`下建立範本：
@@ -147,8 +147,8 @@ ht-degree: 11%
    * 具有&#x200B;**標題**= `Google Analytics Configuration`
    * **allowedPath** = `/etc/cloudservices/googleanalytics(/.*)?`
    * 具有&#x200B;**allowedChildren** = `/apps/acs/analytics/templates/googleanalytics`
-   * 具有&#x200B;**sling：resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` （在範本節點上，而非jcr：content節點）
-   * 使用&#x200B;**cq：designPath** = `/etc/designs/cloudservices/googleanalytics` （在jcr：content上）
+   * 具有&#x200B;**sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` （在範本節點上，而非jcr:content節點）
+   * 具有&#x200B;**cq:designPath** = `/etc/designs/cloudservices/googleanalytics` （在jcr:content）
 
 1. 建立元件： `/apps/acs/analytics/components/googleanalytics`。
 

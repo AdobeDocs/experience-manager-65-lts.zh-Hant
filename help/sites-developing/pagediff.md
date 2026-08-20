@@ -12,7 +12,7 @@ role: Developer
 exl-id: 74ac70c9-a774-4b35-b285-3feb425dac3a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '385'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 比較頁面的版本時，使用者想要比較的先前版本會由AEM在背景重新建立，以方便差異比較。 必須如此才能呈現內容[以並排比較](/help/sites-developing/pagediff.md#operation-details)。
 
-此重新建立操作由AEM內部完成，對使用者而言是透明的，不需要任何干涉。 不過，管理員檢視存放庫(例如，在CRXDE Lite中)後，會在內容結構中看到這些重新建立的版本。
+此重新建立操作由AEM內部完成，對使用者而言是透明的，不需要任何干涉。 不過，管理員檢視存放庫（例如，在CRXDE Lite中）後，會在內容結構中看到這些重新建立的版本。
 
 比較內容時，系統會在下列位置重新建立整個樹狀結構，一直到要比較的頁面為止：
 
@@ -45,19 +45,19 @@ ht-degree: 1%
 
 * 此功能使用的CSS類別未與AEM產品建立名稱空間。 如果頁面上包含其他相同名稱的自訂CSS類別或協力廠商CSS類別，差異的顯示可能會受到影響。
 
-   * `html-added`
-   * `html-removed`
-   * `cq-component-added`
-   * `cq-component-removed`
-   * `cq-component-moved`
-   * `cq-component-changed`
+  * `html-added`
+  * `html-removed`
+  * `cq-component-added`
+  * `cq-component-removed`
+  * `cq-component-moved`
+  * `cq-component-changed`
 
 * 由於diff是使用者端並在頁面載入時執行，因此使用者端diff服務執行後對DOM所做的任何調整都不會計算在內。 這可能會影響
 
-   * 使用AJAX來包含內容的元件
-   * 單頁應用程式
-   * 在使用者互動時操控DOM的JavaScript型元件。
+  * 使用AJAX來包含內容的元件
+  * 單頁應用程式
+  * 在使用者互動時操控DOM的JavaScript型元件。
 
 >[!NOTE]
 >
->頁面差異比較僅適用於具有有效cq：editConfig節點的元件。
+>頁面差異比較僅適用於具有有效cq:editConfig節點的元件。
