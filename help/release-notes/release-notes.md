@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 0ce890503d43af340b6ee3c85b1b563613627c78
+source-git-commit: d4d05cf9f295e6c3740ebf1e3559b5d117898342
 workflow-type: tm+mt
-source-wordcount: '6749'
+source-wordcount: '6752'
 ht-degree: 26%
 
 ---
@@ -415,7 +415,7 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 
 若要針對公開 API 進行編譯，請使用下列內容：
 
-    &grave;&grave;xml
+    ``xml
     &lt;相依性>
     &lt;groupId>com.adobe.aem&lt;/groupId>
     &lt;artifactId>uber-jar&lt;/artifactId>
@@ -423,11 +423,11 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
     &lt;classifier>apis&lt;/classifier>
     &lt;scope>已提供&lt;/scope>
     &lt;/dependency>
-    &grave;&#39;
+    `&#39;
 
 如果您的程式碼也相依於已棄用的 API，請新增下列內容：
 
-    &grave;&grave;xml
+    ``xml
     &lt;相依性>
     &lt;groupId>com.adobe.aem&lt;/groupId>
     &lt;artifactId>uber-jar&lt;/artifactId>
@@ -435,7 +435,7 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
     &lt;classifier>deprecated-api&lt;/classifier>
     &lt;scope>已提供&lt;/scope>
     &lt;/dependency>
-    &grave;&#39;
+    `&#39;
 
 另請參閱[更新 AEM Uber Jar 版本](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version)。
 
@@ -462,9 +462,9 @@ EM 6.5 LTS 適用的 SP2 會以 Quickstart JAR 形式提供，而非透過「封
 1. 在AEM安裝目錄（`crx-quickstart/`以外）中，將先前的快速入門JAR取代為SP3 JAR。
 1. 將 JAR 解壓縮：
 
-       &grave;&grave;java
+       ``java
      java -jar cq-quickstart-6.6.x.jar -unpack
-     &grave;&grave;
+     ``
    
    (視需要調整堆積旗標。)
 
@@ -530,7 +530,6 @@ Adobe 會持續審閱或演進產品功能，藉由更新或取代舊版功能�
 
 | 區域 | 功能 | 替代方案 | 版本 (SP) |
 | --- | --- | --- | --- |
-| Sites | 內容片段文字摘要 | 無可用的替代方案。 | |
 | 快速入門 | Mongo API | Mongo API 現已棄用，並規劃在未來版本中移除。 | 6.5 TS SP2 |
 | Sites | AEM Assets REST API 中的內容片段支援 | AEM 6.5 LTS SP2 為內容片段和模型管理提供現代化的 OpenAPI，因此 AEM Assets REST API 中較舊的內容片段支援端點現已棄用。<br>Adobe 預計在生命週期結束公告前保留這些較舊的端點。 Adobe 未計劃針對已棄用的端點提供進一步的增強功能。 | 6.5 LTS SP2 |
 | Sites | [SPA 編輯器](/help/sites-developing/spa-overview.md) | 在 AEM 中管理無周邊內容的首選編輯器是：<br>- [通用編輯器](/help/sites-developing/universal-editor/introduction.md)，用於視覺化編輯。<br>- [內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md)，用於表單型編輯。 | 6.5 LTS 正式發佈版 |
@@ -545,6 +544,7 @@ Adobe 會持續審閱或演進產品功能，藉由更新或取代舊版功能�
 
 | 區域 | 功能 | 替代方案 | 版本 (SP) |
 | --- | --- | --- | --- |
+| Sites | 內容片段文字摘要 | 無可用的替代方案。 | 6.5 LTS SP3 |
 | Commerce | 不支援 AEM CIF Classic。 | 移轉至 [AEM CIF](/help/commerce/cif/migration.md)。 | 6.5 LTS 正式發佈版 |
 | 解決方案 | 不支援 Social/Communities。 | 無可用的替代方案。 | 6.5 LTS 正式發佈版 |
 | Screens | 不支援 Screens。 | 無可用的替代方案。 | 6.5 LTS 正式發佈版 |

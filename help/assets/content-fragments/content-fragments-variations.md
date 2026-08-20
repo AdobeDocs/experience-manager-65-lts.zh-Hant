@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: a4101e70-85cd-471c-9bf9-fd09bf5fc8e8
-source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
+source-git-commit: fd7199ca5efa15df0fd014b7a0cfc52cbd7173fe
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 6%
+source-wordcount: '2078'
+ht-degree: 7%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 6%
 
 您可以從&#x200B;**變數**&#x200B;標籤執行下列動作：
 
-* [為您的片段輸入內容](#authoring-your-content)，
-* [建立和管理](#managing-variations)主要&#x200B;**內容的變數**，
+* [為您的片段輸入內容](#authoring-your-content)
+* [建立和管理&#x200B;**主要**&#x200B;內容的變數](#managing-variations)
 
 根據正在編輯的資料型別執行一系列其他動作；例如：
 
@@ -30,8 +30,6 @@ ht-degree: 6%
 * [上傳內容](#uploading-content)
 
 * [檢視索引鍵統計資料](#viewing-key-statistics) （關於多行文字）
-
-* [摘要文字](#summarizing-text)
 
 * [將變數與主要內容同步](#synchronizing-with-master)
 
@@ -51,28 +49,28 @@ ht-degree: 6%
 
 * 直接在&#x200B;**變數**&#x200B;索引標籤中對您的內容進行編輯；每種資料型別提供不同的編輯選項，例如：
 
-   * 對於&#x200B;**多行文字**&#x200B;欄位，您也可以開啟[全熒幕編輯器](#full-screen-editor)以：
+  * 對於&#x200B;**多行文字**&#x200B;欄位，您也可以開啟[全熒幕編輯器](#full-screen-editor)以：
 
-      * 選取[格式](#formats)
-      * 檢視更多編輯選項（[RTF](#rich-text)格式）
-      * 存取[個動作](#actions)的範圍
+    * 選取[格式](#formats)
+    * 檢視更多編輯選項（[RTF](#rich-text)格式）
+    * 存取[個動作](#actions)的範圍
 
-   * 對於&#x200B;**片段參考**&#x200B;欄位，[編輯內容片段](#fragment-references-edit-content-fragment)選項可用，視模型定義而定。
+  * 對於&#x200B;**片段參考**&#x200B;欄位，[編輯內容片段](#fragment-references-edit-content-fragment)選項可用，視模型定義而定。
 
 * 將&#x200B;**標籤**&#x200B;指派給目前的變數；標籤可以新增、更新及移除
 
-   * [標籤](/help/sites-authoring/tags.md)在組織您的片段時功能強大，因為這些標籤可用於內容分類和分類法。 標籤可用於尋找內容（依標籤）並套用大量作業。
+  * [標籤](/help/sites-authoring/tags.md)在組織您的片段時功能強大，因為這些標籤可用於內容分類和分類法。 標籤可用於尋找內容（依標籤）並套用大量作業。
 
-      * 搜尋標籤會傳回片段，並反白標籤變數。
-      * 變數標籤也可用來將特定內容傳遞網路(CDN)設定檔（用於CDN快取）的變數分組，而不是使用變數名稱。
+    * 搜尋標籤會傳回片段，並反白標籤變數。
+    * 變數標籤也可用來將特定內容傳遞網路(CDN)設定檔（用於CDN快取）的變數分組，而不是使用變數名稱。
 
-     例如，您可以將相關片段標籤為「聖誕節啟動」，以僅允許作為子集瀏覽這些片段，或複製這些片段以供日後在新資料夾中再次啟動時使用。
+    例如，您可以將相關片段標籤為「聖誕節啟動」，以僅允許作為子集瀏覽這些片段，或複製這些片段以供日後在新資料夾中再次啟動時使用。
 
   >[!NOTE]
   >
-  >**標籤**&#x200B;也可以新增為&#x200B;**中繼資料**&#x200B;的一部分（至[主要](/help/assets/content-fragments/content-fragments-metadata.md)變數）
+  >**標籤**&#x200B;也可以新增為[中繼資料](/help/assets/content-fragments/content-fragments-metadata.md)的一部分（至&#x200B;**主要**&#x200B;變數）
 
-* [建立和管理](#managing-variations)主版&#x200B;**內容的變數**。
+* [建立和管理&#x200B;**主版**&#x200B;內容的變數](#managing-variations)。
 
 ### 全熒幕編輯器 {#full-screen-editor}
 
@@ -101,8 +99,6 @@ ht-degree: 6%
 
 * [與主版同步](#synchronizing-with-master) （編輯變數時）
 
-* [摘要文字](#summarizing-text)
-
 ### 格式 {#formats}
 
 編輯多行文字的選項取決於所選的格式：
@@ -130,10 +126,10 @@ RTF編輯可讓您設定格式：
 * 段落樣式：段落，標題1/2/3
 * [插入資產](#inserting-assets-into-your-fragment)
 * 開啟全熒幕編輯器，下列格式選項可供使用：
-   * 搜尋
-   * 尋找/取代
-   * 拼字檢查
-   * [註解](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+  * 搜尋
+  * 尋找/取代
+  * 拼字檢查
+  * [註解](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [插入內容片段](#inserting-content-fragment-into-your-fragment)；當您的&#x200B;**多行文字**&#x200B;欄位設定為&#x200B;**允許片段參考**&#x200B;時可用。
 
 也可以從全熒幕編輯器存取[動作](#actions)。
@@ -168,7 +164,7 @@ RTF編輯可讓您設定格式：
 
 >[!CAUTION]
 >
->如果您在 **Rich Text** 和 **&#x200B;**&#x200B;Markdown之間切換，可能會在區塊引號和程式碼區塊中遇到意外的效果，因為這兩種格式在處理方式上可能會有差異。
+>如果您在 **Rich Text** 和 **** Markdown之間切換，可能會在區塊引號和程式碼區塊中遇到意外的效果，因為這兩種格式在處理方式上可能會有差異。
 
 ### 片段參考 {#fragment-references}
 
@@ -216,60 +212,6 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 ### 上傳內容 {#uploading-content}
 
 為了簡化編寫內容片段的流程，您可以上傳在外部編輯器中準備的文字，並將其直接新增到片段中。
-
-### 摘要文字 {#summarizing-text}
-
-摘要文字旨在協助使用者將其文字長度縮短至預先定義的字數，同時保留關鍵點和整體意義。
-
->[!NOTE]
->
->在更技術性的層面上，系統會根據特定演演算法，保留其評為提供&#x200B;*最佳資訊密度和唯一性比例*&#x200B;的句子。
-
->[!CAUTION]
->
->內容片段必須具備有效的語言資料夾（ISO代碼）做為祖先；這是用來決定要使用的語言模式。
->
->例如，`en/`如以下路徑：
->
->  `/content/dam/my-brand/en/path-down/my-content-fragment`
-
->[!CAUTION]
->
->英文是現成可用的。
->
->封裝共用提供其他語言作為語言模型封裝：
->
->* [法文(fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [德文(de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [義大利文(it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [西班牙文(es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
->
-
-1. 選取&#x200B;**主版**&#x200B;或必要的變數。
-1. 開啟全熒幕編輯器。
-
-1. 從工具列選取&#x200B;**摘要文字**。
-
-   ![摘要](assets/cfm-variations-05.png)
-
-1. 指定目標字數並選取&#x200B;**開始**：
-1. 原始文字會與建議的摘要並排顯示：
-
-   * 任何要刪除的句子都會以紅色醒目提示，並加上刪除線。
-   * 如果您要將任何醒目提示的句子保留在摘要內容中，請按一下該句子。
-   * 如果您要消除未反白的句子，請按一下該句子。
-
-1. 選取&#x200B;**摘要**&#x200B;以確認變更。
-
-1. 原始文字會與建議的摘要並排顯示：
-
-   * 任何要刪除的句子都會以紅色醒目提示，並加上刪除線。
-   * 如果您要將任何醒目提示的句子保留在摘要內容中，請按一下該句子。
-   * 如果您要消除未反白的句子，請按一下該句子。
-   * 顯示摘要統計資料： **實際**&#x200B;和&#x200B;**目標**-
-   * 您可以&#x200B;**預覽**&#x200B;變更。
-
-   ![摘要比較](assets/cfm-variations-06.png)
 
 ### 為內容片段加上註釋 {#annotating-a-content-fragment}
 
@@ -325,7 +267,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 若要簡化編寫內容片段的程式，您可以直接新增[Assets](/help/assets/manage-assets.md) （影像）至片段。
 
-將它們新增到片段的段落序列中，且不加任何格式；在頁面[上使用/參照](/help/sites-authoring/content-fragments.md)片段時，可以完成格式設定。
+將它們新增到片段的段落序列中，且不加任何格式；在頁面](/help/sites-authoring/content-fragments.md)上使用/參照[片段時，可以完成格式設定。
 
 >[!CAUTION]
 >
@@ -438,7 +380,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 1. 選取所需的變數。
 1. 從&#x200B;**動作**&#x200B;下拉式清單中選取&#x200B;**重新命名**。
 
-1. 在產生的對 **話方塊中** ，輸入新的「 **&#x200B;**&#x200B;標題」和/或「說明」。
+1. 在產生的對 **話方塊中** ，輸入新的「 **** 標題」和/或「說明」。
 
 1. 確認&#x200B;**重新命名**&#x200B;動作。
 
@@ -468,7 +410,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 >[!CAUTION]
 >
->同步僅可用於將更改從 *主&#x200B;**版複製**&#x200B;到變化*。
+>同步僅可用於將更改從 *主&#x200B;**版複製**到變化*。
 >
 >只同步變數的目前元素。
 >
