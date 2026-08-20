@@ -8,7 +8,7 @@ role: Admin
 exl-id: b89e2899-35b9-4105-bfa5-ca21dc6f4e14
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1289'
 ht-degree: 5%
 
 ---
@@ -137,7 +137,7 @@ Assets屬性可控制如何設定資產。 如需有關翻譯資產的詳細資�
    <td>選取以在翻譯專案中包含資產。 </td>
   </tr>
   <tr>
-   <td>翻譯中繼資料</td>
+   <td>翻譯後設資料</td>
    <td>選取以翻譯資產中繼資料。</td>
   </tr>
   <tr>

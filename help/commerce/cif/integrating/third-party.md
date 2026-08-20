@@ -8,8 +8,8 @@ role: Admin, Developer
 exl-id: 9297db4c-0105-4fec-8498-239a6d63538a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 0%
+source-wordcount: '552'
+ht-degree: 2%
 
 ---
 
@@ -31,7 +31,7 @@ Experience Manager會隨選擷取資料，因此需要產品目錄的即時API�
 
 >[!TIP]
 >
->如果沒有可用的即時API，則應使用具有API的外部產品快取進行整合。 範例[Magento開放原始碼](https://business.adobe.com/tw/products/magento/open-source.html)。
+>如果沒有可用的即時API，則應使用具有API的外部產品快取進行整合。 範例[Magento開放原始碼](https://business.adobe.com/products/magento/open-source.html)。
 
 不需要實作完整的GraphQL結構描述，只需要結構描述的物件即可啟用所需的使用案例。
 

@@ -11,7 +11,7 @@ role: Admin
 exl-id: 325089d0-9310-4219-b0e3-9645c3189d37
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '370'
 ht-degree: 3%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 3%
 
 * 多網站管理員(MSM)可讓您在多個位置使用相同的網站內容，同時允許以下變化：
 
-   * [重複使用內容：多網站管理員和 Live Copy](/help/sites-administering/msm.md)
+  * [重複使用內容：多網站管理員和 Live Copy](/help/sites-administering/msm.md)
 
 * 翻譯可讓您自動翻譯頁面內容、資產和使用者產生的內容，以建立和維護多語言網站：
 
-   * [翻譯多語言網站的內容](/help/sites-administering/translation.md)
+  * [翻譯多語言網站的內容](/help/sites-administering/translation.md)
 
 * 這兩個功能可以結合，以滿足[跨國和多語言](#multinational-and-multilingual-sites)網站的需求。
 
@@ -38,9 +38,9 @@ ht-degree: 3%
 
 * 使用[多網站管理員](/help/sites-administering/msm.md)來：
 
-   * 重複使用主要網站的內容和翻譯，為其他國家/地區和文化建立網站。
-   * 請務必將多網站管理員的使用限製為使用單一語言的內容，例如，國定網站中的英文主版>英文分支，國定網站中的法文主版>法文分支。
-   * 必要時，請分離即時副本的元素，以新增本地化詳細資訊。
+  * 重複使用主要網站的內容和翻譯，為其他國家/地區和文化建立網站。
+  * 請務必將多網站管理員的使用限製為使用單一語言的內容，例如，國定網站中的英文主版>英文分支，國定網站中的法文主版>法文分支。
+  * 必要時，請分離即時副本的元素，以新增本地化詳細資訊。
 
 下圖說明主要概念如何交集（但並未顯示所有相關層級/元素）：
 

@@ -11,7 +11,7 @@ role: Developer
 exl-id: 8f6936d0-051f-4966-84ed-87b348eab0b8
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2312'
+source-wordcount: '2344'
 ht-degree: 2%
 
 ---
@@ -178,11 +178,11 @@ Translator工具底部的搜尋列提供字串選取選項：
 * **依文字篩選：**&#x200B;符合英文字串、註解或翻譯的模式。 只有符合全部或部分圖樣的專案才會出現在表格中。
 * **變更： Any、Modified、New、Deleted：**&#x200B;顯示已變更但尚未儲存的專案。
 
-   * 任何：顯示已修改、新增或移除的專案。
-   * 已修改：顯示已變更的專案。
-   * 新增：顯示新增的專案。
-   * 已刪除：顯示要移除的專案。
-   * 多重選取專案：顯示具有所有選取之屬性的專案。
+  * 任何：顯示已修改、新增或移除的專案。
+  * 已修改：顯示已變更的專案。
+  * 新增：顯示新增的專案。
+  * 已刪除：顯示要移除的專案。
+  * 多重選取專案：顯示具有所有選取之屬性的專案。
 
 * **有註解**：顯示有註解給譯者的專案。
 * **缺少翻譯：**&#x200B;顯示至少一種語言沒有翻譯的專案。
@@ -217,7 +217,7 @@ Translator工具底部的搜尋列提供字串選取選項：
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. 按一下工具列中的[儲存] **&#x200B;**&#x200B;以認可您的變更。
+1. 按一下工具列中的[儲存] ****&#x200B;以認可您的變更。
 
    >[!NOTE]
    >
@@ -292,8 +292,8 @@ Translator工具底部的搜尋列提供字串選取選項：
    * **類型**：`Multi-String`
    * **值**：您要顯示的語言清單。 例如：
 
-      * fr
-      * es
+     * fr
+     * es
 
    >[!NOTE]
    >
@@ -303,7 +303,7 @@ Translator工具底部的搜尋列提供字串選取選項：
 
    >[!NOTE]
    >
-   >翻譯人員只會儲存字典[&#128279;](#creating-a-dictionary)中實際存在的語言的翻譯(亦即，在字典路徑（例如`/apps/myProject/i18n`）下)。
+   >翻譯人員只會儲存字典](#creating-a-dictionary)中實際[存在的語言的翻譯(亦即，在字典路徑（例如`/apps/myProject/i18n`）下)。
    >
    >請確定這些對應至格線中所顯示的語言。
 
@@ -385,4 +385,4 @@ Translator工具底部的搜尋列提供字串選取選項：
 
 >[!NOTE]
 >
->使用Dispatcher時，您需要[讓快取頁面失效](https://helpx.adobe.com/tw/experience-manager/dispatcher/using/page-invalidate.html)，才能在演算後的元件字串中加入新的字典字串。
+>使用Dispatcher時，您需要[讓快取頁面失效](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)，才能在演算後的元件字串中加入新的字典字串。

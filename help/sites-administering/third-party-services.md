@@ -11,7 +11,7 @@ role: Admin
 exl-id: a27cd5c7-c0ea-4b94-9d54-95b47671fb44
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '251'
 ht-degree: 6%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 6%
 * ExactTarget — 電子郵件行銷
 * Facebook Connect — 社交網路
 * 通用Analytics程式碼片段 — analytics
-* Microsoft®翻譯人員或其他機器翻譯提供者
+* ®翻譯人員或其他機器翻譯提供者
 * Pushwoosh連線 — 應用程式 — 推播通知
 * Salesforce — 銷售與CRM軟體
 * Twitter — 社交網路

@@ -7,7 +7,7 @@ role: Developer,Leader
 exl-id: dac9b87a-cbd2-49e3-bd4d-ebcccdec1659
 source-git-commit: a5e7c2326785d6801601eabc71647923ba854f04
 workflow-type: tm+mt
-source-wordcount: '1231'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
@@ -20,29 +20,29 @@ ht-degree: 0%
 
 * **網路速度**
 
-   * 網路延遲
-   * 可用頻寬
+  * 網路延遲
+  * 可用頻寬
 
 * **運算速度**
 
-   * 快取效率
-   * 預期流量
-   * 範本、應用程式和元件的複雜性
-   * 同時作者
-   * 製作操作的複雜性（簡單內容編輯、MSM轉出等）
+  * 快取效率
+  * 預期流量
+  * 範本、應用程式和元件的複雜性
+  * 同時作者
+  * 製作操作的複雜性（簡單內容編輯、MSM轉出等）
 
 * **I/O效能**
 
-   * 檔案或資料庫儲存的效能和效率
+  * 檔案或資料庫儲存的效能和效率
 
 * **硬碟**
 
-   * 至少比存放庫大小大兩到三倍
+  * 至少比存放庫大小大兩到三倍
 
 * **記憶體**
 
-   * 網站的大小（內容物件、頁面和使用者數量）
-   * 同時處於作用中狀態的使用者/工作階段數目
+  * 網站的大小（內容物件、頁面和使用者數量）
+  * 同時處於作用中狀態的使用者/工作階段數目
 
 ## 架構 {#architecture}
 
@@ -107,7 +107,7 @@ AEM在虛擬化環境中運作良好，但可能有些因素無法直接等同�
 預估需要多少叢集節點是根據基本需求及特定Web專案的特定使用案例而定：
 
 * 從故障安全的角度來看，必須根據叢集節點復原所需的時間，決定所有環境的嚴重故障以及故障補償時間。
-* 在擴充性方面，寫入作業的數目基本上是最重要的因素。 可以針對僅存取系統的作業建立負載平衡，以處理讀取作業；如需詳細資訊，請參閱[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)。
+* 在擴充性方面，寫入作業的數目基本上是最重要的因素。 可以針對僅存取系統的作業建立負載平衡，以處理讀取作業；如需詳細資訊，請參閱[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)。
 
 ### 硬體建議 {#hardware-recommendations}
 
