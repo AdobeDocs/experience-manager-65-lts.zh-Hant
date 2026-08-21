@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: d4d05cf9f295e6c3740ebf1e3559b5d117898342
+source-git-commit: 79f3d3211a79ce62242273df0cdecd24cd8900cf
 workflow-type: tm+mt
-source-wordcount: '6752'
+source-wordcount: '6705'
 ht-degree: 26%
 
 ---
@@ -415,27 +415,27 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 
 若要針對公開 API 進行編譯，請使用下列內容：
 
-    &grave;&grave;xml
-    &lt;相依性>
-    &lt;groupId>com.adobe.aem&lt;/groupId>
-    &lt;artifactId>uber-jar&lt;/artifactId>
-    &lt;version>6.6.3&lt;/version>
-    &lt;classifier>apis&lt;/classifier>
-    &lt;scope>已提供&lt;/scope>
-    &lt;/dependency>
-    &grave;&#39;
+```xml
+<dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.6.3</version>
+    <classifier>apis</classifier>
+    <scope>provided</scope>
+</dependency>
+```
 
 如果您的程式碼也相依於已棄用的 API，請新增下列內容：
 
-    &grave;&grave;xml
-    &lt;相依性>
-    &lt;groupId>com.adobe.aem&lt;/groupId>
-    &lt;artifactId>uber-jar&lt;/artifactId>
-    &lt;version>6.6.3&lt;/version>
-    &lt;classifier>deprecated-api&lt;/classifier>
-    &lt;scope>已提供&lt;/scope>
-    &lt;/dependency>
-    &grave;&#39;
+```xml
+<dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.6.3</version>
+    <classifier>deprecated-apis</classifier>
+    <scope>provided</scope>
+</dependency>
+```
 
 另請參閱[更新 AEM Uber Jar 版本](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version)。
 
@@ -462,10 +462,10 @@ EM 6.5 LTS 適用的 SP2 會以 Quickstart JAR 形式提供，而非透過「封
 1. 在AEM安裝目錄（`crx-quickstart/`以外）中，將先前的快速入門JAR取代為SP3 JAR。
 1. 將 JAR 解壓縮：
 
-       &grave;&grave;java
-     java -jar cq-quickstart-6.6.x.jar -unpack
-     &grave;&grave;
-   
+   ```java
+   java -jar cq-quickstart-6.6.x.jar -unpack
+   ```
+
    (視需要調整堆積旗標。)
 
 1. 根據其角色和連接埠，將解壓縮的 JAR 重新命名，例如 `cq-author-4502.jar` 或 `cq-publish-4503.jar`。
