@@ -18,7 +18,7 @@ ht-degree: 0%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference)上的[AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference)上的AEM Forms 。
 
 您可以使用工作流程模型，將商業邏輯轉換為自動化重複式處理。 模型可協助您定義並執行一系列步驟。 您也可以定義模型屬性，例如工作流程是暫時的或使用多個資源。 您可以[在模型中加入各種AEM工作流程步驟，以達成商業邏輯](/help/sites-developing/workflows-models.md#extending-aem)。
 
@@ -73,7 +73,7 @@ Forms Workflow步驟會在AEM工作流程中執行AEM Forms專屬的操作。 �
     * **選擇輸入JSON：**&#x200B;使用相對於承載或儲存在Document、JSON或表單資料模型資料型別變數中的路徑來選取輸入JSON檔案。 如果您從「型別」下拉式清單中選取「互動式通訊代理程式UI」或「互動式通訊Web Channel檔案」，即可使用此選項。
     * **選擇自訂預填服務：**&#x200B;選取預填服務以擷取資料，並預填互動式通訊Web Channel檔案或代理程式UI。
     * **使用以上選取之互動式通訊的預填服務：**&#x200B;使用此選項以使用互動式通訊下拉式清單中定義的互動式通訊的預填服務。
-    * **要求屬性對應：**&#x200B;使用[要求屬性對應]區段來定義要求屬性](../../forms/using/work-with-form-data-model.md#bindargument)的[名稱和值。 根據請求中指定的屬性名稱和值從資料來源擷取詳細資料。 您可以使用常值或String資料型別的變數來定義請求屬性值。\
+    * **要求屬性對應：**&#x200B;使用[要求屬性對應]區段來定義要求屬性[&#128279;](../../forms/using/work-with-form-data-model.md#bindargument)的名稱和值。 根據請求中指定的屬性名稱和值從資料來源擷取詳細資料。 您可以使用常值或String資料型別的變數來定義請求屬性值。\
       您必須從「型別」下拉式清單中選取「互動式通訊代理程式UI」或「互動式通訊Web Channel檔案」，才能使用預填服務和要求屬性對應選項。
 
 * **提交的資訊：**&#x200B;下列欄位可作為工作的輸出位置：
