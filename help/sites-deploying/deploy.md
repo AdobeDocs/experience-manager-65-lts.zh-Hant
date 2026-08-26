@@ -102,7 +102,7 @@ AEM伺服器是&#x200B;**Java型**，並在支援該平台的大多數作業系�
 
 ### 使用Cloud Manager的Managed Services {#managed-services-using-cloud-manager}
 
-對於Adobe Managed Services部署，AEM環境是透過[Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)部署及管理。 若要監視整個生產和非生產環境的應用程式效能和基礎結構狀況，請參閱[可觀察性深入分析](https://experienceleague.adobe.com/en/docs/ams-observability-insights/content/overview)。
+對於Adobe Managed Services部署，AEM環境是透過[Cloud Manager](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/introduction)部署及管理。 若要監視整個生產和非生產環境的應用程式效能和基礎結構狀況，請參閱[可觀察性深入分析](https://experienceleague.adobe.com/zh-hant/docs/ams-observability-insights/content/overview)。
 
 ## 快速入門 {#getting-started}
 
