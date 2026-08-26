@@ -1,18 +1,13 @@
 ---
 title: 部署和維護
 description: 瞭解如何開始安裝AEM。
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: deploying
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: add91325feaa96338526edcdde977d1f619e09d4
+source-git-commit: fc736c74bc5bd584059038ad5a54ffc814d095a2
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '1437'
 ht-degree: 4%
 
 ---
@@ -23,20 +18,20 @@ ht-degree: 4%
 
 * [基本概念](#basic-concepts)
 
-   * [什麼是AEM？](#what-is-aem)
-   * [典型部署](#typical-deployment-scenarios)
+  * [什麼是AEM？](#what-is-aem)
+  * [典型部署](#typical-deployment-scenarios)
 
-      * [內部部署](#on-premise)
-      * [使用Cloud Manager的Managed Services](#managed-services-using-cloud-manager)
+    * [內部部署](#on-premise)
+    * [使用Cloud Manager的Managed Services](#managed-services-using-cloud-manager)
 
 * [快速入門](#getting-started)
 
-   * [先決條件](#prerequisites)
-   * [取得軟體](#getting-the-software)
-   * [預設本機安裝](#default-local-install)
-   * [製作和發佈安裝](#author-and-publish-installs)
-   * [解壓縮的安裝目錄](#unpacked-install-directory)
-   * [啟動和停止](#starting-and-stopping)
+  * [先決條件](#prerequisites)
+  * [取得軟體](#getting-the-software)
+  * [預設本機安裝](#default-local-install)
+  * [製作和發佈安裝](#author-and-publish-installs)
+  * [解壓縮的安裝目錄](#unpacked-install-directory)
+  * [啟動和停止](#starting-and-stopping)
 
 熟悉這些基本知識後，您就可以在下列子頁面中找到更進階和詳細的資訊：
 
@@ -89,7 +84,7 @@ AEM伺服器是&#x200B;**Java型**，並在支援該平台的大多數作業系�
 
 這些例項在安裝軟體方面是相同的。 它們僅能透過設定來區分。 此外，大部分安裝都使用Dispatcher：
 
-* **Dispatcher**：靜態網頁伺服器(Apache httpd、Microsoft®IIS等)已透過AEM Dispatcher模組增強。 它快取發佈執行個體產生的網頁以提升效能。
+* **Dispatcher**：靜態網頁伺服器（Apache httpd、Microsoft®IIS等）已透過AEM Dispatcher模組增強。 它快取發佈執行個體產生的網頁以提升效能。
 
 此設定有許多進階選項和詳細說明，但製作者、發佈和Dispatcher的基本模式是大多數部署的核心。 讓我們從簡單的設定開始。 接著會討論進階部署選項。
 
@@ -107,7 +102,7 @@ AEM伺服器是&#x200B;**Java型**，並在支援該平台的大多數作業系�
 
 ### 使用Cloud Manager的Managed Services {#managed-services-using-cloud-manager}
 
-<i>即將宣佈。</i>
+對於Adobe Managed Services部署，AEM環境是透過[Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)部署及管理。 若要監視整個生產和非生產環境的應用程式效能和基礎結構狀況，請參閱[可觀察性深入分析](https://experienceleague.adobe.com/en/docs/ams-observability-insights/content/overview)。
 
 ## 快速入門 {#getting-started}
 
@@ -173,11 +168,11 @@ AEM需要幾分鐘來解壓縮jar檔案、自行安裝並啟動。 上述程式�
 
 **`https://localhost:4502`**
 
-作者執行個體中的結果將會自動設定為連線到&#x200B;**上的**&#x200B;發佈執行個體&#x200B;**`localhost:4503`**。
+作者執行個體中的結果將會自動設定為連線到&#x200B;**`localhost:4503`**&#x200B;上的&#x200B;**發佈執行個體**。
 
 ### 製作和發佈安裝 {#author-and-publish-installs}
 
-預設安裝（在&#x200B;**上的**&#x200B;作者&#x200B;**`localhost:4502`**&#x200B;執行個體）只需在第一次啟動`jar`檔案之前重新命名檔案即可變更。 命名模式為：
+預設安裝（在&#x200B;**`localhost:4502`**&#x200B;上的&#x200B;**作者**&#x200B;執行個體）只需在第一次啟動`jar`檔案之前重新命名檔案即可變更。 命名模式為：
 
 **`cq-<instance-type>-p<port-number>.jar`**
 
