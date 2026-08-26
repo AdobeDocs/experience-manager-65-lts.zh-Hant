@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 3d4ff4d1-aab6-47b9-9804-2a0f3438332d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 0%
+source-wordcount: '747'
+ht-degree: 4%
 
 ---
 
@@ -40,18 +40,18 @@ ht-degree: 0%
 <table>
  <tbody>
   <tr>
-   <th>定位符號</th>
+   <th>標籤</th>
    <th>設定</th>
-   <th>描述</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td>一般</td>
-   <td>總結果</td>
+   <td>結果總計</td>
    <td>指定要顯示的最大結果數量。 如果結果計數增加「結果總計」限制，元件底部會顯示<strong>更多</strong>連結。 按一下<strong>更多</strong>顯示所有表格。 </td>
   </tr>
   <tr>
    <td> </td>
-   <td>樣式型別</td>
+   <td>樣式類型</td>
    <td>指定元件的樣式。 您可以指定<strong>無樣式</strong>、<strong>預設樣式</strong>或<strong>自訂樣式</strong>來列出表單。 對於自訂樣式選項，您可以在<strong>自訂樣式路徑</strong>欄位<strong>.</strong>中指定自訂CSS檔案的路徑</td>
   </tr>
   <tr>
@@ -70,23 +70,23 @@ ht-degree: 0%
    <td>指定載入表單入口網站頁面時顯示的標籤。 您可以選擇<strong>草稿Forms標籤</strong>和<strong>已提交的Forms標籤</strong>。</td>
   </tr>
   <tr>
-   <td>草稿Forms索引標籤設定</td>
+   <td>草稿表單標籤設定</td>
    <td>自訂標題</td>
    <td>指定<strong>草稿Forms</strong>索引標籤的標題。 預設值為<strong>草稿Forms。</strong></td>
   </tr>
   <tr>
    <td> </td>
-   <td>版面配置範本</td>
+   <td>版面範本</td>
    <td>指定用於草稿Forms清單的版面。</td>
   </tr>
   <tr>
-   <td>已提交Forms索引標籤設定</td>
+   <td>已提交表單標籤設定</td>
    <td>自訂標題 </td>
    <td>指定<strong>已提交的Forms </strong>索引標籤的標題。 預設值為<strong>已提交的Forms。</strong></td>
   </tr>
   <tr>
    <td> </td>
-   <td>版面配置範本</td>
+   <td>版面範本</td>
    <td>指定用於已提交Forms<strong> </strong>清單的配置。 </td>
   </tr>
  </tbody>
@@ -100,7 +100,7 @@ Forms入口網站可讓您將資料儲存在本機AEM存放庫、遠端AEM存放
 
 Forms入口網站提供立即可用的服務(API)，將資料儲存在本機與遠端AEM Forms發佈執行個體的crx存放庫上。 您可以用自訂實作來取代預設功能，如[為草稿和提交設定儲存服務](/help/forms/using/configuring-draft-submission-storage.md)文章中所述。 如需自訂實作中所需方法在安全位置儲存內容的詳細資訊，請參閱[自訂草稿和提交資料服務](/help/forms/using/custom-draft-submission-data-services.md)以及[草稿和提交元件的自訂儲存](/help/forms/using/adding-custom-storage-provider-forms.md)。
 
-AEM Forms檔案提供將草稿與提交元件與資料庫[&#128279;](integrate-draft-submission-database.md)整合的範例。 您可以使用範例實作來開發自己的自訂實作。
+AEM Forms檔案提供將草稿與提交元件與資料庫](integrate-draft-submission-database.md)整合的[範例。 您可以使用範例實作來開發自己的自訂實作。
 
 ## 相關文章
 

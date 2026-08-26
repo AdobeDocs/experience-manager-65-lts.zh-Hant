@@ -12,7 +12,7 @@ role: User, Developer
 exl-id: c1c4ab9c-7950-41f8-a493-11e11ebcaa95
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,6 @@ ht-degree: 0%
 ### 技術規格 {#technical-specifications}
 
 * 將離線應用程式資料提交至AEM Forms伺服器的主要邏輯包含在runtime/offline/util/offline.js中。
-* 在.js中，對processOfflineSubmittedSavedTasks(...)函式的呼叫會將已儲存/已提交的工作傳送至伺服器。 它也會處理同步處理過程中的任何錯誤或衝突。 如果任務提交失敗，應用程式上的任務會標示為失敗。 此外，任務仍會保留在寄件匣中。
+* 在.js中，呼叫processOfflineSubmittedSavedTasks(...) 函式中，將已儲存/已提交的工作傳送至伺服器。 它也會處理同步處理過程中的任何錯誤或衝突。 如果任務提交失敗，應用程式上的任務會標示為失敗。 此外，任務仍會保留在寄件匣中。
 * syncSubmittedTask()和syncSavedTask()函式會針對個別工作執行作業。
 * 在使用者選擇同步處理伺服器的離線狀態或背景執行緒自動同步之後，工作清單元件會起始對processOfflineSubmittedSavedTasks()函式的呼叫。

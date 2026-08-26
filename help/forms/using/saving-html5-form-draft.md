@@ -1,5 +1,5 @@
 ---
-title: 將HTML5表單儲存為草稿
+title: 將 HTML5 表單儲存為草稿
 description: 將HTML5表單儲存為草稿，並在稍後階段繼續填寫表單。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,11 +12,11 @@ exl-id: d03ea16d-0012-4f14-982a-70e2803ea211
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '299'
-ht-degree: 5%
+ht-degree: 10%
 
 ---
 
-# 將HTML5表單儲存為草稿 {#saving-an-html-form-as-a-draft}
+# 將 HTML5 表單儲存為草稿 {#saving-an-html-form-as-a-draft}
 
 您可以將HTML5表單儲存為草稿，並在稍後階段繼續填寫表單。 Forms入口網站可讓任何使用者儲存和還原HTML5表單。 若要啟用「另存為草稿」功能，請將下列設定新增至設定檔節點：
 

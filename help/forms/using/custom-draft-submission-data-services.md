@@ -10,7 +10,7 @@ feature: Adaptive Forms,Foundation Components
 exl-id: dd04ad5a-d750-4e27-8d49-97a728791fe9
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---

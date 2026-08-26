@@ -7,7 +7,7 @@ role: User, Developer
 exl-id: 13d84b04-dab6-453f-bc0d-62a5f557c4f2
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '7613'
+source-wordcount: '7736'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference)上的[AEM Forms 。
 
 您可以使用工作流程模型，將商業邏輯轉換為自動化重複式處理。 模型可協助您定義並執行一系列步驟。 您也可以定義模型屬性，例如工作流程是暫時的或使用多個資源。 您可以[在模型中加入各種AEM工作流程步驟，以達成商業邏輯](/help/sites-developing/workflows-models.md#extending-aem)。
 
@@ -42,7 +42,7 @@ Forms Workflow步驟會在AEM工作流程中執行AEM Forms專屬的操作。 �
 * **描述：**&#x200B;說明正在工作執行的作業。 當您在共用開發環境中工作時，此資訊對於其他流程開發人員很有用。
 
 * **縮圖路徑：**&#x200B;工作縮圖的路徑。 若未指定路徑，則會針對最適化表單顯示預設縮圖，而針對記錄檔案，則會顯示預設圖示。
-* **工作流程階段：**&#x200B;一個工作流程可以有多個階段。 這些階段會顯示在AEM收件匣中。 您可以在模型屬性(Sidekick >頁面>頁面屬性>階段)中定義這些階段。
+* **工作流程階段：**&#x200B;一個工作流程可以有多個階段。 這些階段會顯示在AEM收件匣中。 您可以在模型屬性（Sidekick >頁面>頁面屬性>階段）中定義這些階段。
 * **優先順序：**&#x200B;選取的優先順序會顯示在AEM收件匣中。 可用的選項為「高」、「Medium」和「低」。 預設值為Medium。
 * **到期日：**&#x200B;指定工作被標示為逾期的天數或小時數。 如果您選取&#x200B;**關閉**，則不會將工作標示為逾期。 您也可以指定逾時處理常式，以便在工作逾期後執行特定工作。
 
@@ -66,32 +66,32 @@ Forms Workflow步驟會在AEM工作流程中執行AEM Forms專屬的操作。 �
 * **針對已完成的工作，將最適化表單轉譯為**：當工作標示為完成時，您可以將最適化表單轉譯為唯讀最適化表單或PDF檔案。 您需要啟用記錄檔案選項或表單範本式最適化表單，才能將最適化表單呈現為記錄檔案。
 * **已預先填入：**&#x200B;下列欄位可作為工作的輸入專案：
 
-   * **[!UICONTROL 使用]**&#x200B;選取輸入資料檔：輸入資料檔的路徑（.json、.xml、.doc或表單資料模型）。 您可以使用相對於承載的路徑來擷取輸入資料檔案，或擷取儲存在Document、XML或JSON資料型別變數中的檔案。 例如，檔案包含透過AEM收件匣應用程式為表單提交的資料。 範例路徑為[Payload_Directory]/workflow/data。
+  * **[!UICONTROL 使用]**&#x200B;選取輸入資料檔：輸入資料檔的路徑（.json、.xml、.doc或表單資料模型）。 您可以使用相對於承載的路徑來擷取輸入資料檔案，或擷取儲存在Document、XML或JSON資料型別變數中的檔案。 例如，檔案包含透過AEM收件匣應用程式為表單提交的資料。 範例路徑為[Payload_Directory]/workflow/data。
 
-   * **選擇輸入附件，使用：**&#x200B;此位置可用的附件已附加至與工作關聯的表單。 路徑可以是相對於承載或擷取儲存在ArrayList of Document型別變數中的附件。 範例路徑為[Payload_Directory]/attachments/。 您可以指定相對於承載放置的附件，或使用檔案型別（「陣列清單」>「檔案」）變數來指定最適化表單的輸入附件。
+  * **選擇輸入附件，使用：**&#x200B;此位置可用的附件已附加至與工作關聯的表單。 路徑可以是相對於承載或擷取儲存在ArrayList of Document型別變數中的附件。 範例路徑為[Payload_Directory]/attachments/。 您可以指定相對於承載放置的附件，或使用檔案型別（「陣列清單」>「檔案」）變數來指定最適化表單的輸入附件。
 
-      * **選擇輸入JSON：**&#x200B;使用相對於承載或儲存在Document、JSON或表單資料模型資料型別變數中的路徑來選取輸入JSON檔案。 如果您從「型別」下拉式清單中選取「互動式通訊代理程式UI」或「互動式通訊Web Channel檔案」，即可使用此選項。
-      * **選擇自訂預填服務：**&#x200B;選取預填服務以擷取資料，並預填互動式通訊Web Channel檔案或代理程式UI。
-      * **使用以上選取之互動式通訊的預填服務：**&#x200B;使用此選項以使用互動式通訊下拉式清單中定義的互動式通訊的預填服務。
-      * **要求屬性對應：**&#x200B;使用[要求屬性對應]區段來定義要求屬性[的](../../forms/using/work-with-form-data-model.md#bindargument)名稱和值。 根據請求中指定的屬性名稱和值從資料來源擷取詳細資料。 您可以使用常值或String資料型別的變數來定義請求屬性值。\
-        您必須從「型別」下拉式清單中選取「互動式通訊代理程式UI」或「互動式通訊Web Channel檔案」，才能使用預填服務和要求屬性對應選項。
+    * **選擇輸入JSON：**&#x200B;使用相對於承載或儲存在Document、JSON或表單資料模型資料型別變數中的路徑來選取輸入JSON檔案。 如果您從「型別」下拉式清單中選取「互動式通訊代理程式UI」或「互動式通訊Web Channel檔案」，即可使用此選項。
+    * **選擇自訂預填服務：**&#x200B;選取預填服務以擷取資料，並預填互動式通訊Web Channel檔案或代理程式UI。
+    * **使用以上選取之互動式通訊的預填服務：**&#x200B;使用此選項以使用互動式通訊下拉式清單中定義的互動式通訊的預填服務。
+    * **要求屬性對應：**&#x200B;使用[要求屬性對應]區段來定義要求屬性](../../forms/using/work-with-form-data-model.md#bindargument)的[名稱和值。 根據請求中指定的屬性名稱和值從資料來源擷取詳細資料。 您可以使用常值或String資料型別的變數來定義請求屬性值。\
+      您必須從「型別」下拉式清單中選取「互動式通訊代理程式UI」或「互動式通訊Web Channel檔案」，才能使用預填服務和要求屬性對應選項。
 
 * **提交的資訊：**&#x200B;下列欄位可作為工作的輸出位置：
 
-   * **儲存輸出資料檔案，使用：**&#x200B;儲存資料檔案(.json，。 xml、.doc或表單資料模型)。 資料檔案包含透過相關表單提交的資訊。 您可以使用相對於承載的路徑來儲存輸出資料檔案，或將其儲存在Document、XML或JSON資料型別的變數中。 例如，[Payload_Directory]/Workflow/data，其中資料是檔案。
-   * **儲存附件使用：**&#x200B;儲存工作所提供的表單附件。 您可以使用相對於承載的路徑來儲存附件，或將其儲存在Document資料型別陣列的變數中。
-   * **儲存記錄檔案使用：**&#x200B;儲存記錄檔案檔案的路徑。 例如，[Payload_Directory]/DocumentofRecord/credit-card.pdf。 您可以使用相對於承載的路徑來儲存記錄檔案，或將其儲存在Document資料型別的變數中。 如果您選取&#x200B;**相對於承載**&#x200B;選項，如果路徑欄位留空，則不會產生記錄檔案。 只有在從「型別」下拉式清單中選取「最適化表單」時，才能使用此選項。
+  * **儲存輸出資料檔案，使用：**&#x200B;儲存資料檔案(.json，。 xml、.doc或表單資料模型)。 資料檔案包含透過相關表單提交的資訊。 您可以使用相對於承載的路徑來儲存輸出資料檔案，或將其儲存在Document、XML或JSON資料型別的變數中。 例如，[Payload_Directory]/Workflow/data，其中資料是檔案。
+  * **儲存附件使用：**&#x200B;儲存工作所提供的表單附件。 您可以使用相對於承載的路徑來儲存附件，或將其儲存在Document資料型別陣列的變數中。
+  * **儲存記錄檔案使用：**&#x200B;儲存記錄檔案檔案的路徑。 例如，[Payload_Directory]/DocumentofRecord/credit-card.pdf。 您可以使用相對於承載的路徑來儲存記錄檔案，或將其儲存在Document資料型別的變數中。 如果您選取&#x200B;**相對於承載**&#x200B;選項，如果路徑欄位留空，則不會產生記錄檔案。 只有在從「型別」下拉式清單中選取「最適化表單」時，才能使用此選項。
 
-   * **使用以下專案儲存Web Channel資料：**&#x200B;使用相對於承載的路徑儲存Web Channel資料檔案，或將其儲存在Document、JSON或Form Data Model資料型別的變數中。 只有從「型別」下拉式清單中選取「互動式通訊代理程式UI」，才能使用此選項。
-   * **儲存PDF檔案，使用：**&#x200B;使用相對於承載的路徑儲存PDF檔案，或將其儲存在Document資料型別的變數中。 只有從「型別」下拉式清單中選取「互動式通訊代理程式UI」，才能使用此選項。
-   * **儲存配置範本，使用：**&#x200B;使用相對於承載的路徑儲存配置範本，或將其儲存在Document資料型別的變數中。 [配置範本](../../forms/using/layout-design-details.md)參考您使用Forms Designer建立的XDP檔案。 只有從「型別」下拉式清單中選取「互動式通訊代理程式UI」，才能使用此選項。
+  * **使用以下專案儲存Web Channel資料：**&#x200B;使用相對於承載的路徑儲存Web Channel資料檔案，或將其儲存在Document、JSON或Form Data Model資料型別的變數中。 只有從「型別」下拉式清單中選取「互動式通訊代理程式UI」，才能使用此選項。
+  * **儲存PDF檔案，使用：**&#x200B;使用相對於承載的路徑儲存PDF檔案，或將其儲存在Document資料型別的變數中。 只有從「型別」下拉式清單中選取「互動式通訊代理程式UI」，才能使用此選項。
+  * **儲存配置範本，使用：**&#x200B;使用相對於承載的路徑儲存配置範本，或將其儲存在Document資料型別的變數中。 [配置範本](../../forms/using/layout-design-details.md)參考您使用Forms Designer建立的XDP檔案。 只有從「型別」下拉式清單中選取「互動式通訊代理程式UI」，才能使用此選項。
 
 * **受指派人>指派選項：**&#x200B;指定將工作指派給使用者的方法。 您可以使用「參與者選擇器」指令碼動態地將任務指派給使用者或群組，或將任務指派給特定的AEM使用者或群組。
 * **參與者選擇器：**&#x200B;在[指派選項]欄位中選取&#x200B;**動態至使用者或群組**&#x200B;選項時，即可使用此選項。 您可以使用ECMAScript或服務來動態選取使用者或群組。
 
-* **參與者：**&#x200B;在&#x200B;**[!UICONTROL 參與者選擇器]**&#x200B;欄位中選取&#x200B;**com.adobe.granite.workflow.core.process.RandomParticipantChooser**&#x200B;選項時，即可使用此欄位。 欄位可讓您為RandomParticipantChooser選項選取使用者或群組。
+* **參與者：**&#x200B;在&#x200B;**參與者選擇器**&#x200B;欄位中選取&#x200B;**[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]**&#x200B;選項時，即可使用此欄位。 欄位可讓您為RandomParticipantChooser選項選取使用者或群組。
 
-* **受指派人：**&#x200B;在&#x200B;**[!UICONTROL 參與者選擇器]**&#x200B;欄位中選取&#x200B;**com.adobe.fd.workspace.step.service.VariableParticipantChooser**&#x200B;時，該欄位可供使用。 欄位可讓您選取字串資料型別的變數以定義受託人。
+* **受指派人：**&#x200B;在&#x200B;**參與者選擇器**&#x200B;欄位中選取&#x200B;**[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]**&#x200B;時，該欄位可供使用。 欄位可讓您選取字串資料型別的變數以定義受託人。
 
 * **引數：**&#x200B;在「參與者選擇器」欄位中選取RandomParticipantChoose指令碼以外的指令碼時，該欄位可供使用。 欄位可讓您針對「參與者選擇器」欄位中所選的指令碼，提供以逗號分隔的引數清單。
 
@@ -105,8 +105,8 @@ Forms Workflow步驟會在AEM工作流程中執行AEM Forms專屬的操作。 �
 * **HTML電子郵件範本**：選取通知電子郵件的電子郵件範本。 若要編輯範本，請在crx-repository中修改位於/libs/fd/dashboard/templates/email/htmlEmailTemplate.txt的檔案。
 * **允許委派給：** AEM收件匣為登入的使用者提供將指派的工作流程委派給其他使用者的選項。 您可以委派給相同群組內的工作流程使用者，或委派給其他群組的工作流程使用者。 如果任務指派給單一使用者，並且選取了&#x200B;**允許委派給受指派人群組**&#x200B;成員選項，則無法將任務委派給其他使用者或群組。
 * **共用設定：** AEM收件匣提供選項，讓您與其他使用者共用收件匣中的單一或所有工作：
-   * 選取&#x200B;**允許受指派人在收件匣**&#x200B;中明確共用選項時，使用者可以按一下工作並與其他AEM使用者共用。
-   * 選取&#x200B;**允許受分派者透過收件匣共用來共用**&#x200B;選項，且使用者共用其收件匣專案或允許其他使用者存取其收件匣專案時，只有上述選項啟用的工作才會與其他使用者共用。
+  * 選取&#x200B;**允許受指派人在收件匣**&#x200B;中明確共用選項時，使用者可以按一下工作並與其他AEM使用者共用。
+  * 選取&#x200B;**允許受分派者透過收件匣共用來共用**&#x200B;選項，且使用者共用其收件匣專案或允許其他使用者存取其收件匣專案時，只有上述選項啟用的工作才會與其他使用者共用。
 
 * **動作>預設動作：**&#x200B;現成可用的送出、儲存和重設動作。 預設會啟用所有預設動作。
 * **路由變數：**&#x200B;路由變數的名稱。 路由變數會擷取使用者在AEM收件匣中選取的自訂動作。
@@ -212,7 +212,7 @@ Forms Workflow步驟會在AEM工作流程中執行AEM Forms專屬的操作。 �
    <td>玫瑰</td> 
   </tr> 
   <tr> 
-   <td>客戶ID</td> 
+   <td>客戶 ID</td> 
    <td>1</td> 
   </tr> 
   <tr> 
@@ -256,17 +256,17 @@ Forms Workflow步驟會在AEM工作流程中執行AEM Forms專屬的操作。 �
 * **服務**：所選表單資料模型所提供的服務清單。
 * **服務輸入>使用常值、變數或工作流程中繼資料以及JSON檔案來提供輸入資料**：服務可以有多個引數。 選取選項，從工作流程中繼資料屬性、JSON物件、變數取得服務引數的值，或直接在提供的文字方塊中輸入值：
 
-   * **常值：**&#x200B;當您知道要指定的確切值時，請使用選項。 例如， srose@we.info。
-   * **變數：**&#x200B;使用選項來擷取儲存在變數中的值。
-   * **從工作流程中繼資料擷取：**&#x200B;當要使用的值儲存在工作流程中繼資料屬性時，請使用選項。 例如，emailAddress。
-   * **[!UICONTROL 相對於承載]**：使用選項來擷取儲存在相對於承載路徑中的檔案附件。 選取選項並指定包含檔案附件的資料夾名稱，或在文字方塊中指定檔案附件名稱。
+  * **常值：**&#x200B;當您知道要指定的確切值時，請使用選項。 例如， srose@we.info。
+  * **變數：**&#x200B;使用選項來擷取儲存在變數中的值。
+  * **從工作流程中繼資料擷取：**&#x200B;當要使用的值儲存在工作流程中繼資料屬性時，請使用選項。 例如，emailAddress。
+  * **[!UICONTROL 相對於承載]**：使用選項來擷取儲存在相對於承載路徑中的檔案附件。 選取選項並指定包含檔案附件的資料夾名稱，或在文字方塊中指定檔案附件名稱。
 
-     例如，如果CRX存放庫中的「相對於有效負載」資料夾在`attachment\attachment-folder`位置包含檔案附件，請在選取「`attachment\attachment-folder`相對於有效負載&#x200B;**[!UICONTROL 」選項後，在文字方塊中指定]**。
-   * **JSON點標籤法：**&#x200B;當要使用的值位於JSON檔案中時，請使用選項。 例如，insurance.customerDetails.emailAddress。 JSON Dot Notation選項僅在選取「從輸入JSON對應輸入欄位」選項時可用。
-   * **從輸入JSON對應輸入欄位：**&#x200B;指定JSON檔案的路徑，以從JSON檔案取得某些服務引數的輸入值。 JSON檔案的路徑可以是相對於裝載、絕對路徑，或者您可以使用JSON或表單資料模型型別的變數來選取輸入JSON檔案。
+    例如，如果CRX存放庫中的「相對於有效負載」資料夾在`attachment\attachment-folder`位置包含檔案附件，請在選取「**[!UICONTROL 相對於有效負載]**」選項後，在文字方塊中指定`attachment\attachment-folder`。
+  * **JSON點標籤法：**&#x200B;當要使用的值位於JSON檔案中時，請使用選項。 例如，insurance.customerDetails.emailAddress。 JSON Dot Notation選項僅在選取「從輸入JSON對應輸入欄位」選項時可用。
+  * **從輸入JSON對應輸入欄位：**&#x200B;指定JSON檔案的路徑，以從JSON檔案取得某些服務引數的輸入值。 JSON檔案的路徑可以是相對於裝載、絕對路徑，或者您可以使用JSON或表單資料模型型別的變數來選取輸入JSON檔案。
 
 * **服務輸入>使用變數或JSON檔案提供輸入資料：**&#x200B;選取選項，以從儲存在絕對路徑、相對於承載的路徑或變數中的JSON檔案取得所有引數的值。
-* **使用**&#x200B;選取輸入JSON檔案：包含所有服務引數值的JSON檔案。 JSON檔案的路徑可以是相對於承載&#x200B;**的**&#x200B;或&#x200B;**絕對路徑。**&#x200B;您也可以使用JSON或表單資料模型資料型別的變數來擷取輸入JSON檔案。
+* **使用**&#x200B;選取輸入JSON檔案：包含所有服務引數值的JSON檔案。 JSON檔案的路徑可以是相對於承載&#x200B;**的**&#x200B;或&#x200B;**絕對路徑。** 您也可以使用JSON或表單資料模型資料型別的變數來擷取輸入JSON檔案。
 
 * **JSON點標籤法：**&#x200B;將欄位保留空白，以使用指定JSON檔案的所有物件作為服務引數的輸入。 若要從指定的JSON檔案讀取特定JSON物件作為服務引數的輸入，請為JSON物件指定點標籤法。例如，如果您有和區段開頭所列出的JSON類似的JSON，請指定insurance.customerDetails以提供客戶的所有詳細資料作為服務的輸入。
 * **服務輸出>對應輸出值並將輸出值寫入變數或中繼資料：**&#x200B;選取選項，將輸出值儲存為crx-repository中工作流程執行個體中繼資料節點的屬性。 指定中繼資料屬性的名稱，並選取對應的服務輸出屬性以與中繼資料屬性對應，例如，將輸出服務傳回的phone_number與工作流程中繼資料的phone_number屬性對應。 同樣地，您可以將輸出儲存在Long資料型別的變數中。 當您選取&#x200B;**[!UICONTROL 要對映的服務輸出屬性]**&#x200B;選項的屬性時，**[!UICONTROL 將輸出儲存至]**&#x200B;選項只會填入能夠儲存所選屬性資料的變數。
@@ -296,7 +296,7 @@ Forms Workflow步驟會在AEM工作流程中執行AEM Forms專屬的操作。 �
 * **提醒電子郵件頻率：**&#x200B;您可以每日或每週傳送提醒電子郵件。 一週是從檔案指派給使用者供簽署之日開始計算。
 * **簽章程式：**&#x200B;您可以選擇以循序或平行順序簽署檔案。 依序排列，一位收件者一次收到檔案以供簽署。 第一個收件者完成簽署檔案後，檔案會傳送給第二個收件者，依此類推。 多個收件者可同時以並行順序簽署檔案。
 * **重新導向URL：**&#x200B;請指定重新導向URL。 檔案簽署後，您可以將受指派人重新導向至URL。 此URL通常包含感謝訊息或進一步說明。
-* **工作流程階段：**&#x200B;一個工作流程可以有多個階段。 這些階段會顯示在AEM收件匣中。 您可以在模型屬性(Sidekick >頁面>頁面屬性>階段)中定義這些階段。
+* **工作流程階段：**&#x200B;一個工作流程可以有多個階段。 這些階段會顯示在AEM收件匣中。 您可以在模型屬性（Sidekick >頁面>頁面屬性>階段）中定義這些階段。
 * **選取收件者：**&#x200B;指定選擇檔案收件者的方法。 您可以動態地將工作流程指派給使用者或群組，或手動新增收件者的詳細資訊。 在下拉式清單中選取手動時，您會新增收件者詳細資訊，例如電子郵件、角色和驗證方法。
 
   >[!NOTE]
@@ -427,23 +427,23 @@ AEM檔案服務是一組用於建立、彙編和保護PDF檔案的服務。 AEM 
 
 * **[!UICONTROL 印表機格式]**：指定未提供XDC檔案時用來產生輸出資料流的頁面描述語言的列印格式值。 如果您提供常值，請選取下列其中一個值：
 
-   * **[!UICONTROL 自訂PCL]**：使用選項為PCL指定自訂XDC檔案。
-   * **[!UICONTROL 自訂PostScript]**：使用選項為PostScript指定自訂XDC檔案。
-   * **[!UICONTROL 自訂ZPL]**：使用選項為ZPL指定自訂XDC檔案。
-   * **[!UICONTROL 一般色彩PCL (5c)]**：使用一般色彩PCL (5c)。
-   * **[!UICONTROL 通用PostScript層級3]**：使用通用PostScript層級3。
-   * **[!UICONTROL ZPL 300 DPI]**：使用ZPL 300 DPI。 使用zpl300.xdc。
-   * **[!UICONTROL ZPL 600 DPI]**：使用ZPL 600 DPI。 使用zpl600.xdc檔案。
-   * **[!UICONTROL 自訂IPL]**：使用選項為IPL指定自訂XDC檔案。
-   * **[!UICONTROL IPL 300 DPI]**：使用IPL 300 DPI。 使用ipl300.xdc。
-   * **[!UICONTROL IPL 400 DPI]**：使用IPL 400 DPI。 使用ipl400.xdc檔案。
-   * **[!UICONTROL 自訂TPCL]**：使用選項為TPCL指定自訂XDC檔案。
-   * **[!UICONTROL TPCL 305 DPI]**：使用TPCL 300 DPI。 使用tpcl305.xdc檔案。
-   * **[!UICONTROL PCL 600 DPI]**：使用TPCL 600 DPI。 使用tpcl600.xdc檔案。
-   * **[!UICONTROL 自訂DPL]**：使用選項來指定自訂XDC檔案DPL。
-   * **[!UICONTROL DPL300DPI]**：使用DPL 300 DPI。 使用dpl300.xdc檔案。
-   * **[!UICONTROL DPL406DPI]**：使用DPL 400 DPI。 使用dpl406.xdc。
-   * **[!UICONTROL DPL600DPI]**：使用DPL 600 DPI。 使用dpl600.xdc。
+  * **[!UICONTROL 自訂PCL]**：使用選項為PCL指定自訂XDC檔案。
+  * **[!UICONTROL 自訂PostScript]**：使用選項為PostScript指定自訂XDC檔案。
+  * **[!UICONTROL 自訂ZPL]**：使用選項為ZPL指定自訂XDC檔案。
+  * **[!UICONTROL 一般色彩PCL (5c)]**：使用一般色彩PCL (5c)。
+  * **[!UICONTROL 通用PostScript層級3]**：使用通用PostScript層級3。
+  * **[!UICONTROL ZPL 300 DPI]**：使用ZPL 300 DPI。 使用zpl300.xdc。
+  * **[!UICONTROL ZPL 600 DPI]**：使用ZPL 600 DPI。 使用zpl600.xdc檔案。
+  * **[!UICONTROL 自訂IPL]**：使用選項為IPL指定自訂XDC檔案。
+  * **[!UICONTROL IPL 300 DPI]**：使用IPL 300 DPI。 使用ipl300.xdc。
+  * **[!UICONTROL IPL 400 DPI]**：使用IPL 400 DPI。 使用ipl400.xdc檔案。
+  * **[!UICONTROL 自訂TPCL]**：使用選項為TPCL指定自訂XDC檔案。
+  * **[!UICONTROL TPCL 305 DPI]**：使用TPCL 300 DPI。 使用tpcl305.xdc檔案。
+  * **[!UICONTROL PCL 600 DPI]**：使用TPCL 600 DPI。 使用tpcl600.xdc檔案。
+  * **[!UICONTROL 自訂DPL]**：使用選項來指定自訂XDC檔案DPL。
+  * **[!UICONTROL DPL300DPI]**：使用DPL 300 DPI。 使用dpl300.xdc檔案。
+  * **[!UICONTROL DPL406DPI]**：使用DPL 400 DPI。 使用dpl406.xdc。
+  * **[!UICONTROL DPL600DPI]**：使用DPL 600 DPI。 使用dpl600.xdc。
 
 **輸出屬性**
 
@@ -451,22 +451,22 @@ AEM檔案服務是一組用於建立、彙編和保護PDF檔案的服務。 AEM 
 
 **進階屬性**
 
-* **[!UICONTROL 使用]**&#x200B;選取內容根目錄位置：內容根目錄是字串值，會指定URI、絕對參照或存放庫中的位置，以擷取表單設計所使用的相對資產。 例如，如果表單設計相對參照影像(例如../myImage.gif)，myImage.gif必須位於repository://。 預設值為repository:// ，指向存放庫的根層級。
+* **[!UICONTROL 使用]**&#x200B;選取內容根目錄位置：內容根目錄是字串值，會指定URI、絕對參照或存放庫中的位置，以擷取表單設計所使用的相對資產。 例如，如果表單設計相對參照影像（例如../myImage.gif），myImage.gif必須位於repository://。 預設值為repository:// ，指向存放庫的根層級。
 
   當您從應用程式中挑選資產時，內容根URI路徑必須具有正確結構。 例如，如果從名為SampleApp的應用程式中挑選表單，並將表單置於SampleApp/1.0/forms/Test.xdp，則內容根URI必須指定為repository://administrator@password/Applications/SampleApp/1.0/forms/或儲存庫：/Applications/SampleApp/1.0/forms/ （當authority為null）。 以這種方式指定內容根URI時，表單中所有參考資產的路徑都將針對此URI進行解析。
 
 * **[!UICONTROL 使用]**&#x200B;選取XCI檔案： XCI檔案用於描述用於表單設計元素的字型和其他屬性。 您可以相對於承載將XCI檔案保留在絕對路徑上，或使用Document資料型別的變數。
 
 * **[!UICONTROL 地區設定]**：指定用來產生PDF檔案的語言。 如果您提供常值，請從清單中選取語言或選取下列其中一個值：
-   * **要使用伺服器預設值**：
-（預設）使用AEM Forms伺服器上設定的地區設定。 地區設定設定是使用Administration Console來設定。 (請參閱[Designer說明](https://www.adobe.com/go/learn_aemforms_designer_65_tw)。)
+  * **要使用伺服器預設值**：
+    （預設）使用AEM Forms伺服器上設定的地區設定。 地區設定設定是使用Administration Console來設定。 （請參閱[Designer說明](https://www.adobe.com/go/learn_aemforms_designer_65_tw)。）
 
-   * **若要使用自訂值**：
-在常值方塊中輸入地區設定代碼，或選取包含地區設定代碼的字串變數。 如需支援地區設定代碼的完整清單，請參閱https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html。
+  * **若要使用自訂值**：
+    在常值方塊中輸入地區設定代碼，或選取包含地區設定代碼的字串變數。 如需支援地區設定代碼的完整清單，請參閱https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html。
 
 * **[!UICONTROL 副本]**：指定輸出產生之副本數目的整數值。 預設值為 1。
 
 * **[!UICONTROL 雙面列印]**：指定使用雙面或單面列印的「分頁」值。 支援PostScript和PCL的印表機使用此值。 如果您提供常值，請選取下列其中一個值：
-   * **[!UICONTROL 雙面長Edge]**：使用雙面列印，並使用長邊分頁列印。
-   * **[!UICONTROL 雙面短Edge]**：使用雙面列印，並使用短邊分頁列印。
-   * **[!UICONTROL 單面]**：使用單面列印。
+  * **[!UICONTROL 雙面長Edge]**：使用雙面列印，並使用長邊分頁列印。
+  * **[!UICONTROL 雙面短Edge]**：使用雙面列印，並使用短邊分頁列印。
+  * **[!UICONTROL 單面]**：使用單面列印。

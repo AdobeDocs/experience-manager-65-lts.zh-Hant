@@ -1,5 +1,5 @@
 ---
-title: 啟用HTML5表單的附件
+title: 啟用 HTML5 表單附件
 description: 依預設，會停用HTML5表單的附件支援。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,11 +12,11 @@ exl-id: dcc82582-0637-44ce-a2b4-68077cbc2200
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '339'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
-# 啟用HTML5表單的附件 {#enabling-attachments-for-an-html-form}
+# 啟用 HTML5 表單附件 {#enabling-attachments-for-an-html-form}
 
 您可以使用HTML5表單上傳、預覽及提交附件。 依預設，會停用附件支援。 若要啟用附件支援：
 
@@ -27,7 +27,7 @@ ht-degree: 1%
    | multiSelect | true或false （預設為true） |
    | fileSizeLimit | 以MB為單位的編號（預設為2 MB）。 例如，5。 |
    | 按鈕文字 | 快顯視窗的按鈕文字（預設為「附加」） |
-   | 接受 | 要接受的檔案型別清單（預設為「audio/&amp;amp； ast；， video/&amp;amp； ast；， image/&amp;amp； ast；， text/&amp;amp； ast；， .pdf」）（以逗號分隔） |
+   | accept | 要接受的檔案型別清單（預設為&quot;audio/&amp;ast；， video/&amp;ast；， image/&amp;ast；， text/&amp;ast；， .pdf&quot;），以逗號分隔 |
 
    例如：
 

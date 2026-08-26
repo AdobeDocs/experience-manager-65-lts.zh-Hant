@@ -1,5 +1,5 @@
 ---
-title: 通訊管理 | 處理使用者資料
+title: 通訊管理 |處理使用者資料
 description: 瞭解在Adobe Experience Manager Forms環境中通訊管理和處理使用者資料。
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,12 +9,12 @@ feature: Adaptive Forms,Form Data Model
 exl-id: 57385e88-9a3d-4d89-986b-9f254aa722ca
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
 
-# 通訊管理 | 處理使用者資料 {#correspondence-management-handling-user-data}
+# 通訊管理 |處理使用者資料 {#correspondence-management-handling-user-data}
 
 AEM Forms Correspondence Management可讓您建立、管理及簡化安全且個人化的客戶信函。 它提供直覺式使用者介面，供商業使用者使用預先核准的內容區塊和媒體元素來建立對應。 如需建立通訊的詳細資訊，請參閱[建立通訊](/help/forms/using/create-correspondence.md)。
 
@@ -58,7 +58,7 @@ AEM Forms Correspondence Management可讓您建立、管理及簡化安全且個
 
 在[letter-instance-name]節點下，會建立下列節點結構，並將每個信件執行個體的資料儲存在AEM存放庫中：
 
-| 節點 | 描述 |
+| 節點 | 說明 |
 |---|---|
 | `extendedProperties` | 儲存信件例項的中繼資料屬性。 |
 | `dataXML` | 以二進位格式儲存包含對應資料的可下載資料XML檔案。 |

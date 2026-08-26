@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: f698980d-d6f9-435d-853f-4d2827640aaf
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 1%
+source-wordcount: '604'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 Correspondence Management會公開API，以透過LetterInstanceService服務擷取信件例項。
 
-| 方法 | 描述 |
+| 方法 | 說明 |
 |--- |--- |
 | getAllLetterInstances | 根據輸入查詢引數擷取信件例項。 若要擷取所有信件例項，請將查詢引數傳入null。 |
 | getLetterInstance | 根據信件例項ID擷取指定的信件例項。 |
@@ -40,7 +40,7 @@ Correspondence Management會公開API，以透過LetterInstanceService服務擷�
 
 ### 使用getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-以下API會根據查詢物件（已提交和草稿）來尋找信件例項。 如果查詢物件為Null，則會傳回所有信件例項。 此API傳回[LetterInstanceVO](https://helpx.adobe.com/tw/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html)物件的清單，這些物件可用於擷取信件執行個體的其他資訊。
+以下API會根據查詢物件（已提交和草稿）來尋找信件例項。 如果查詢物件為Null，則會傳回所有信件例項。 此API傳回[LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html)物件的清單，這些物件可用於擷取信件執行個體的其他資訊。
 
 **語法**： `List getAllLetterInstances(Query query) throws ICCException;`
 

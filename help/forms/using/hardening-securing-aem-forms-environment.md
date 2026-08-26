@@ -8,7 +8,7 @@ feature: Document Security,Adaptive Forms
 exl-id: 0225063b-9a57-4b3f-8216-295b1f2d4db5
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1470'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ AEM Forms高度客製化，可以在許多不同的環境中運作。 部分建�
    <td>/content/forms/fp/*</td> 
   </tr>
   <tr>
-   <td>Forms Workflow附加伺服器(JEE伺服器上的AEM Forms)</td> 
+   <td>Forms Workflow附加伺服器（JEE伺服器上的AEM Forms）</td> 
    <td>/soap/sdk</td> 
   </tr>
  </tbody>
@@ -123,9 +123,9 @@ AEM Forms高度客製化，可以在許多不同的環境中運作。 部分建�
 
 依預設，發佈節點上可用的資產可供所有人存取。 已針對所有資產啟用唯讀存取權。 必須啟用匿名存取。 如果您計畫限制表單檢視並將存取權提交給已驗證的使用者，請使用通用群組來允許僅已驗證的使用者對發佈節點上可用的資產具有唯讀存取權。 下列位置/目錄包含需要強化的forms資產（已驗證身分的使用者僅能讀取存取權）：
 
-* /content/&amp;amp；ast；
-* /etc.clientlibs/fd/&amp;amp；ast；
-* /libs/fd/&amp;amp；ast；
+* /content/&amp;ast；
+* /etc.clientlibs/fd/&amp;ast；
+* /libs/fd/&amp;ast；
 
 ## 安全地處理表單資料  {#securely-handle-forms-data}
 
@@ -168,18 +168,18 @@ AEM Forms會將資料儲存至預先定義的位置和暫時資料夾。 您應�
 
 * 有不同的一組預先定義的群組，具有每個角色的特定許可權。 將使用者指派給群組。
 
-   * 表單 — 使用者群組的使用者：
+  * 表單 — 使用者群組的使用者：
 
-      * 可以建立、填寫、發佈及提交表單。
-      * 無法建立XDP型最適化表單。
-      * 沒有許可權可撰寫最適化表單的指令碼。
-      * 無法匯入XDP或任何包含XDP的封裝
+    * 可以建立、填寫、發佈及提交表單。
+    * 無法建立XDP型最適化表單。
+    * 沒有許可權可撰寫最適化表單的指令碼。
+    * 無法匯入XDP或任何包含XDP的封裝
 
-   * 表單超級使用者群組的使用者可建立、填寫、發佈及提交所有型別的表單、編寫最適化表單的指令碼，以及匯入包含XDP的套件。
-   * 範本作者和範本超級使用者的使用者可以預覽和建立範本。
-   * fdm作者的使用者可以建立和修改表單資料模型。
-   * cm-user-agent群組的使用者可以建立、預覽和發佈通訊管理信件。
-   * 工作流程編輯器群組的使用者可以建立收件匣應用程式和工作流程模型。
+  * 表單超級使用者群組的使用者可建立、填寫、發佈及提交所有型別的表單、編寫最適化表單的指令碼，以及匯入包含XDP的套件。
+  * 範本作者和範本超級使用者的使用者可以預覽和建立範本。
+  * fdm作者的使用者可以建立和修改表單資料模型。
+  * cm-user-agent群組的使用者可以建立、預覽和發佈通訊管理信件。
+  * 工作流程編輯器群組的使用者可以建立收件匣應用程式和工作流程模型。
 
 **在處理作者時：**
 
@@ -188,7 +188,7 @@ AEM Forms會將資料儲存至預先定義的位置和暫時資料夾。 您應�
 
 ## AEM Forms環境的安全內部網路元素 {#secure-intranet-elements-of-an-aem-forms-environment}
 
-一般而言，處理叢集和Forms Workflow附加元件(JEE上的AEM Forms)會在防火牆後面執行。 因此，這些被認為是安全的。 您仍然可以執行一些步驟來強化這些環境：
+一般而言，處理叢集和Forms Workflow附加元件（JEE上的AEM Forms）會在防火牆後面執行。 因此，這些被認為是安全的。 您仍然可以執行一些步驟來強化這些環境：
 
 ### 安全處理叢集 {#secure-processing-cluster}
 
