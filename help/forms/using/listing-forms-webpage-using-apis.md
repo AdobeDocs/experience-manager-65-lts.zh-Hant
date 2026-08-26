@@ -10,7 +10,7 @@ role: Admin, User, Developer
 exl-id: 2cbbcbe8-be9e-4519-b224-07e99d06263d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '693'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ AEM Forms提供REST型搜尋API，網頁開發人員可透過此API查詢及擷�
  <tbody>
   <tr>
    <td><strong>屬性名稱<br /> </strong></td>
-   <td><strong>描述<br /> </strong></td>
+   <td><strong>說明<br /> </strong></td>
   </tr>
   <tr>
    <td>func<br /> </td>

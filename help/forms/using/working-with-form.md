@@ -29,12 +29,12 @@ ht-degree: 0%
 
 若要同步多個表單，請在作者執行個體中，選取表單管理員中的多個表單，然後選取&#x200B;**與AEM Forms應用程式同步**。 表單發佈時，AEM Forms應用程式可連線至發佈伺服器並擷取表單。
 
-如果您的AFA (AEM表單應用程式) Android應用程式無法同步，請執行以下步驟來修正同步問題：
+如果您的AFA （AEM表單應用程式） Android應用程式無法同步，請執行以下步驟來修正同步問題：
 
 1. 移至&#x200B;**https://[伺服器]：[連線埠]/system/console/configMgr**。
 1. 搜尋&#x200B;**[!UICONTROL Adobe Granite權杖驗證處理常式]**，然後按一下&#x200B;**[!UICONTROL 編輯]**。
 1. 從下拉式功能表中選取登入權杖Cookie **屬性之** SameSite屬性的&#x200B;**[!UICONTROL 無]**&#x200B;選項。
-1. 按一下「**[!UICONTROL 儲存]**」。
+1. 按一下&#x200B;**[!UICONTROL 儲存]**。
 
 ![將影像與AFA Android應用程式同步](/help/forms/using/assets/afaandroid.png)
 

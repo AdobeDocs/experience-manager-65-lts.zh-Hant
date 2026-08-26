@@ -8,7 +8,7 @@ role: Admin
 exl-id: ab876224-22bd-4fd7-b609-bd5703715932
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1136'
 ht-degree: 2%
 
 ---
@@ -59,13 +59,13 @@ ht-degree: 2%
 * `path`屬性包含套用規則之分支的根節點的路徑。
 * 子項`property`元素為所有資源型別識別要翻譯的節點屬性：
 
-   * `name`屬性包含屬性名稱。
-   * 如果屬性未轉譯，則選用的`translate`屬性等於`false`。 預設值為`true`。 覆寫先前的規則時，此屬性相當實用。
+  * `name`屬性包含屬性名稱。
+  * 如果屬性未轉譯，則選用的`translate`屬性等於`false`。 預設值為`true`。 覆寫先前的規則時，此屬性相當實用。
 
 * 子項`node`元素會識別特定資源型別要翻譯的節點屬性：
 
-   * `resourceType`屬性包含解析為實作資源型別的元件的路徑。
-   * 子項`property`元素識別要翻譯的節點屬性。 以與節點規則的子`property`元素相同的方式使用此節點。
+  * `resourceType`屬性包含解析為實作資源型別的元件的路徑。
+  * 子項`property`元素識別要翻譯的節點屬性。 以與節點規則的子`property`元素相同的方式使用此節點。
 
 下列範例規則會為`/content`節點下的所有頁面轉譯所有`text`屬性的內容。 此規則適用於任何將內容儲存在`text`屬性中的元件，例如foundation Text元件和foundation Image元件。
 
@@ -189,7 +189,7 @@ translation_rules.xml檔案包含具有數個子項`node`專案的`nodelist`專�
 
 在UI中，您可以在&#x200B;**屬性**&#x200B;索引標籤中勾選/取消勾選&#x200B;**Translate**。
 
-**updateDestinationLanguage**&#x200B;此屬性用於沒有文字但有語言代碼的屬性，例如jcr：language。 使用者不會翻譯文字，而是從來源到目的地的語言地區設定。 不會傳送此類屬性以供翻譯。
+**updateDestinationLanguage**&#x200B;此屬性用於沒有文字但有語言代碼的屬性，例如jcr:language。 使用者不會翻譯文字，而是從來源到目的地的語言地區設定。 不會傳送此類屬性以供翻譯。
 
 在UI中，您可以在&#x200B;**Properties**&#x200B;索引標籤中勾選/取消勾選&#x200B;**Translate**，但針對語言代碼為值的特定屬性。
 

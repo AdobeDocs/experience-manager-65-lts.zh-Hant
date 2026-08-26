@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 03430815-6459-469c-b3dd-4cd83b9eec5f
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1675'
-ht-degree: 1%
+source-wordcount: '1711'
+ht-degree: 4%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=zh-Hant)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=zh-Hant)上的AEM Forms 。
 
 Forms入口網站元件可讓網頁開發人員在利用Adobe Experience Manager (AEM)編寫的網站上建立及自訂表單入口網站。 如需快速瞭解表單入口網站，請參閱[在入口網站上發佈表單的簡介](../../forms/using/introduction-publishing-forms.md)。
 
@@ -78,13 +78,13 @@ Document Services元件類別底下提供的Search &amp; Lister元件可用來�
    <td>設定使用AEM Forms UI上傳資產的資料夾。 預設情況下，其中會列出所有上傳的資產。 如需AEM Forms UI的詳細資訊，請參閱<a href="../../forms/using/introduction-managing-forms.md" target="_blank">管理表單簡介</a>。</td>
   </tr>
   <tr>
-   <td><p><span class="uicontrol"><strong>顯示器</strong></code></p> </td>
+   <td><p><span class="uicontrol"><strong>顯示</strong></code></p> </td>
    <td>標題文字</td>
    <td>搜尋與清單元件的標題。 預設標題為<strong>Forms入口網站。</strong></td>
   </tr>
   <tr>
    <td> </td>
-   <td>版面配置範本</td>
+   <td>版面範本</td>
    <td>資產的配置。 </td>
   </tr>
   <tr>
@@ -115,7 +115,7 @@ Document Services元件類別底下提供的Search &amp; Lister元件可用來�
   <tr>
    <td> </td>
    <td>Of 文字</td>
-   <td><p>以指定的文字（第1 <strong>頁，共</strong>51頁）取代<strong>的</strong>字。 預設值為<strong>個，共</strong>個。</p> <p>例如，如果您在此欄位中指定<strong> / </strong>，文字會變更為第1頁<strong> / </strong>51。</p> </td>
+   <td><p>以指定的文字（第1 <strong>頁，共</strong>51頁）取代</strong>的<strong>字。 預設值為<strong>個，共</strong>個。</p> <p>例如，如果您在此欄位中指定<strong> / </strong>，文字會變更為第1頁<strong> / </strong>51。</p> </td>
   </tr>
   <tr>
    <td><span class="uicontrol"><strong>表單連結</strong></code></td>
@@ -124,12 +124,12 @@ Document Services元件類別底下提供的Search &amp; Lister元件可用來�
   </tr>
   <tr>
    <td> </td>
-   <td>HTML設定檔</td>
+   <td>HTML 設定檔</td>
    <td>設定用於轉譯的HTML設定檔。 下拉式清單中會列出所有可用的設定檔。</td>
   </tr>
   <tr>
    <td> </td>
-   <td>提交URL</td>
+   <td>提交 URL</td>
    <td><p>設定表單資料提交所在的servlet。</p> <p><strong>注意：</strong> <em>表單的送出URL可以在數個位置指定，其優先順序如下：</em></p>
     <ol>
      <li><em>表單中內嵌的提交URL （在提交按鈕中）具有最高優先順序。</em></li>
@@ -140,16 +140,16 @@ Document Services元件類別底下提供的Search &amp; Lister元件可用來�
   <tr>
    <td> </td>
    <td>HTML演算動作工具提示</td>
-   <td>設定工具提示的文字，當游標停留在<img height="16" src="assets/aem6forms_panel-html.png" width="13" />上時，會顯示工具提示文字(HTML5圖示)。</td>
+   <td>設定工具提示的文字，當游標停留在<img height="16" src="assets/aem6forms_panel-html.png" width="13" />上時，會顯示工具提示文字（HTML5圖示）。</td>
   </tr>
   <tr>
    <td> </td>
    <td>PDF演算動作工具提示</td>
-   <td>設定工具提示的文字，當游標停留在<img height="16" src="assets/aem6forms_panel-pdf.png" width="14" />上時，會顯示工具提示文字(PDF圖示)。</td>
+   <td>設定工具提示的文字，當游標停留在<img height="16" src="assets/aem6forms_panel-pdf.png" width="14" />上時，會顯示工具提示文字（PDF圖示）。</td>
   </tr>
   <tr>
    <td><span class="uicontrol"><strong>樣式</strong></code></td>
-   <td>樣式型別</td>
+   <td>樣式類型</td>
    <td>可讓您指定列出表單的<strong>無樣式、預設樣式</strong>或<strong>自訂樣式</strong>。</td>
   </tr>
   <tr>
@@ -189,7 +189,7 @@ Document Services元件類別底下提供的Search &amp; Lister元件可用來�
 
 1. 選取&#x200B;**確定**
 
-#### 全文檢索述詞 {#full-text-predicate}
+#### 全文述詞 {#full-text-predicate}
 
 全文檢索述詞元件會針對表單資料（例如名稱和說明）實作全文檢索搜尋。 使用者可以搜尋任何文字字串，以傳回名稱或說明中包含文字的表單。
 

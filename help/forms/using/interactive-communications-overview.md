@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: 047437c4-f642-4b77-b5e8-ab2aa34a83e5
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 7%
+source-wordcount: '499'
+ht-degree: 8%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 7%
 
 以下是互動式通訊的主要功能：
 
-- 與表單資料模型開箱即用的整合，可輕鬆且簡化後端資料庫和其他CRM系統(例如MS® Dynamics)的存取
+- 與表單資料模型開箱即用的整合，可輕鬆且簡化後端資料庫和其他CRM系統（例如MS® Dynamics）的存取
 - 適用於列印與網路頻道的整合式撰寫介面，可自動從列印頻道產生網路頻道
 - 以易於理解的視覺格式在列印和網頁中顯示資訊的圖表
 - 檔案片段支援規則編輯器和表單資料模型
@@ -57,7 +57,7 @@ ht-degree: 7%
 1. 預覽列印和Web管道，並在必要時編輯互動式通訊。
 1. 代理程式使用代理程式UI來[準備互動式通訊](/help/forms/using/prepare-send-interactive-communication.md)，以便傳送給收件者/張貼程式。
 
-### 建置區塊 {#buildingblocks}
+### 建構區塊 {#buildingblocks}
 
 以下是建立互動式通訊所需的建置區塊：
 
@@ -123,7 +123,7 @@ ht-degree: 7%
    <td>支援</td>
   </tr>
    <tr>
-   <td>提交內容</td>
+   <td>提交</td>
    <td>支援</td>
    <td>支援</td>
   </tr>

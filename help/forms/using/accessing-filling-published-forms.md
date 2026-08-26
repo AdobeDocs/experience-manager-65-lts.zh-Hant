@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: 10764131-21e9-4c1c-b9d1-e878cc927fb6
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Forms Portal頁面範例
 
 您可以使用下列選項，在Forms Portal頁面中搜尋表單：
 
-* 全文檢索搜尋
+* 全文搜尋
 * 進階搜尋
 
 全文檢索搜尋可讓您根據指定的關鍵字尋找及列出表單。

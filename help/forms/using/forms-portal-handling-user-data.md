@@ -1,5 +1,5 @@
 ---
-title: Forms入口網站 | 處理使用者資料
+title: Forms入口網站 |處理使用者資料
 description: 瞭解如何管理AEM Forms Portal上的使用者資料，例如存取、刪除和資料存放區。
 contentOwner: vishgupt
 topic-tags: grdp
@@ -10,12 +10,12 @@ feature: Adaptive Forms
 exl-id: f9eb6e61-5669-4cb7-a528-f1c09e455a60
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
 
-# Forms入口網站 | 處理使用者資料 {#forms-portal-handling-user-data}
+# Forms入口網站 |處理使用者資料 {#forms-portal-handling-user-data}
 
 [!DNL AEM Forms]入口網站提供您可用來在[!DNL AEM Sites]頁面上列出最適化表單、HTML5表單和其他Forms資產的元件。 此外，您可以將其設定為顯示草稿，並向登入使用者提交最適化表單和HTML5表單。 如需Forms入口網站的詳細資訊，請參閱[在入口網站上發佈表單簡介](/help/forms/using/introduction-publishing-forms.md)。
 
@@ -81,7 +81,7 @@ Forms入口網站會在下列情況下儲存草稿與已提交表單的資料：
 >
 >`anonymous`使用者的所有草稿和提交內容都儲存在`/content/forms/fp/anonymous/`節點下，這會為`draft`和`submit`節點下的所有匿名使用者組織草稿和提交內容。
 
-| 節點 | 描述 |
+| 節點 | 說明 |
 |---|---|
 | `/content/forms/fp/srose/drafts` | 使用者所有草稿的容器節點資料 |
 | `/content/forms/fp/srose/drafts/attachments/` | 根據草稿識別碼組織使用者的所有附件 |

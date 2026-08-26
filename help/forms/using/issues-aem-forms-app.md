@@ -10,7 +10,7 @@ role: User, Developer
 exl-id: e63c1dc2-9843-47ca-8f3c-c49720659aa0
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ iOS適用的AEM Forms應用程式設定為在OSGi上與AEM Forms同步，僅支�
 
    如果&#x200B;**將檔案名稱設為唯一**&#x200B;設定已停用，使用者嘗試提交具有多個附件的調適型表單時，將會遇到資料遺失的問題。
 
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
 ## Workspace使用者提交的HTML5表單草稿在入口網站上不可見 {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
 
@@ -71,7 +71,7 @@ iOS適用的AEM Forms應用程式設定為在OSGi上與AEM Forms同步，僅支�
 
 1. 在&#x200B;**手動資源快取**&#x200B;索引標籤中，按一下&#x200B;**+**&#x200B;按鈕以新增CRX路徑。
 1. 在&#x200B;**新增資源**&#x200B;欄位中，輸入： /etc.clientlibs/fd/xfaforms/I18N/en_US.js並按一下&#x200B;**新增**。
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
 ## AEM Forms無法在Windows上同步 {#aem-forms-do-not-sync-on-windows}
 
@@ -99,7 +99,7 @@ iOS適用的AEM Forms應用程式設定為在OSGi上與AEM Forms同步，僅支�
 
 **解析度：**&#x200B;開啟&#x200B;**Gradle指令碼** > **Gradle-wrapper.properties**&#x200B;檔案，並編輯&#x200B;**distributionUrl**&#x200B;屬性。
 
-例如，Android Studio主控台建議將Gradle版本降級為3.5版。編輯&#x200B;**gradle-wrapper.properties**&#x200B;檔案中的&#x200B;**distributionUrl**&#x200B;版本。
+例如，Android Studio主控台建議將Gradle版本降級為3.5版。 編輯&#x200B;**gradle-wrapper.properties**&#x200B;檔案中的&#x200B;**distributionUrl**&#x200B;版本。
 
 再次選取&#x200B;**建置** > **建置APK**&#x200B;以解決錯誤並產生.apk檔案。
 
