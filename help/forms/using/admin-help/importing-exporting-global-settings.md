@@ -10,7 +10,7 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 exl-id: f5b45667-87df-4069-8f08-2b6daf4bad1e
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: d75fc7712b1428471a081508cd5d1d68ec87d9c7
 workflow-type: tm+mt
 source-wordcount: '1219'
 ht-degree: 0%
@@ -145,4 +145,4 @@ For additional information on JGroups and Workspace, see [JGroups and AEM forms 
 >
 >對於示範應用程式，預設顯示名稱為&#x200B;**公民**。 對於您建立的自訂應用程式，預設顯示名稱為&#x200B;**系統內容帳戶**。
 >
->**client_idleTimeout：**&#x200B;當使用者在特定時間內保持非使用中時，AEM Forms Workspace工作階段就會過期。 若要啟用此功能，請在全域設定中新增專案&lt;client_idleTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout>。 您可以指定值0來停用閒置逾時。 時間長度以秒為單位指定。
+>**client_idleTimeout：**&#x200B;當使用者在特定時間內保持非使用中時，AEM Forms Workspace工作階段就會過期。 若要啟用此功能，請將專案新增至全域設定&lt;client_idleTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout>。 您可以指定值0來停用閒置逾時。 時間長度以秒為單位指定。

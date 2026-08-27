@@ -10,7 +10,7 @@ role: User, Developer
 feature: Adaptive Forms
 hide: true
 exl-id: c68c602f-fa93-4e3d-9a8c-b61c3ab53000
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: d75fc7712b1428471a081508cd5d1d68ec87d9c7
 workflow-type: tm+mt
 source-wordcount: '2503'
 ht-degree: 0%
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 **AEM表單Workspace管理員：**&#x200B;可以從Administration Console的Workspace頁面檢視及修改設定
 
-***注意&#x200B;**： AEM表單版本已棄用Flex Workspace。*
+***注意&#x200B;**： Flex Workspace已針對AEM表單發行版本淘汰。*
 
 **Workspace使用者：**&#x200B;可以登入Workspace使用者應用程式
 
