@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: ebc34847-dc3d-41ed-b0d6-f004c3debcd9
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+source-git-commit: 76bd0f170b06a3f930d504b680342c954daae460
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,10 @@ ht-degree: 0%
 >[!NOTE]
 >
 >從技術角度來看，從AEM 6.5 LTS升級至AEM 6.5 LTS Service Pack的程式設計是順暢的[就地升級](/help/sites-deploying/in-place-upgrade.md)。 此程式通常不需要客戶變更任何程式碼，除非在發行說明中有特別說明。
+
+>[!IMPORTANT]
+>
+>由於安裝Service Pack會執行與其他就地升級相同的升級前清理工作，因此在`/libs`下自行安裝內容的附加元件之後可能需要重新安裝。 請參閱[重新安裝或驗證附加元件](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#reinstall-or-verify-add-ons)。
 
 本節說明如何將AEM安裝升級至AEM 6.5 LTS：
 
