@@ -5,18 +5,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
 exl-id: da8a1341-55a9-46bb-b78d-ced79e22e87e
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: 23fa46e24f25f6aa889bc209b6742773d4535cc6
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 23%
+source-wordcount: '570'
+ht-degree: 17%
 
 ---
+
 
 # 個人化和內容目標鎖定 {#personalization}
 
 ## 個人化和內容目標鎖定 {#personalization-and-content-targeting}
 
 AEM提供工具架構，用於製作目標內容和呈現個人化體驗。
+
+>[!NOTE]
+>
+>鎖定目標模式和傳統AEM鎖定目標元件會使用以ContextHub為基礎的AEM Target整合。 因此，僅依賴AEP Web SDK的頁面將不會轉譯傳統AEM鎖定目標元件。 [請參閱開發人員檔案以取得詳細資料。](/help/sites-developing/target.md)
 
 ## 目標定位模式 {#targeting-mode}
 
@@ -30,7 +35,7 @@ AEM提供工具架構，用於製作目標內容和呈現個人化體驗。
 
 活動也會識別您的頁面所使用的[目標定位引擎](/help/sites-authoring/personalization.md#targeting-engine)。
 
-使用[活動主控台](/help/sites-authoring/activitylib.md)來建立和管理您品牌的活動。 您也可以[創作目標內容](/help/sites-authoring/content-targeting-touch.md)時建立活動。
+使用[活動主控台](/help/sites-authoring/activitylib.md)來建立和管理您品牌的活動。 您也可以[創作目標內容時建立活動。](/help/sites-authoring/content-targeting-touch.md)
 
 ## 體驗 {#experiences}
 
@@ -48,7 +53,7 @@ AEM提供工具架構，用於製作目標內容和呈現個人化體驗。
 
 例如，We.Retail範例網站的女性頁面可以使用選件作為出現在頁面頂端的Teaser影像。 不同的選件會用作30歲以上女性體驗和30歲以下女性體驗的Teaser。
 
-使用[選件主控台](/help/sites-authoring/offerlib.md)建立您可在多個體驗中使用的選件。 在[編寫目標內容](/help/sites-authoring/content-targeting-touch.md)時，建立單一使用選件或從選件資料庫新增選件。
+使用[選件主控台](/help/sites-authoring/offerlib.md)建立您可在多個體驗中使用的選件。 在[編寫目標內容時，建立單一使用選件或從選件資料庫新增選件。](/help/sites-authoring/content-targeting-touch.md)
 
 ## 目標定位引擎 {#targeting-engine}
 
@@ -63,6 +68,6 @@ AEM提供內建定位引擎，可處理頁面請求並決定要顯示的內容�
 Adobe Target鎖定目標引擎會使系統在Adobe Target中追蹤從頁面瀏覽收集到的資訊。
 
 * 使用此目標定位引擎時，您可以使用從 Adobe Target 匯入的細分群體來定義體驗的客群。
-* 使用 Adobe Target 引擎的活動[會同步到 Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target)。
+* 使用Adobe Target引擎的活動已[同步至Target。](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target)
 
-如果[已整合 Adobe Target](/help/sites-administering/opt-in.md)，即可使用此引擎。
+[與Adobe Target整合後，您就可以使用此引擎。](/help/sites-administering/opt-in.md)

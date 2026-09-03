@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8b3d8d0f-10f7-4736-881d-8f1f21c69182
-source-git-commit: a037dc7cbb13abfeb8a7289baded50d3d788cbf6
+source-git-commit: 76bd0f170b06a3f930d504b680342c954daae460
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1382'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,8 @@ ht-degree: 0%
 * [啟用復寫代理](#enable-replication-agents)
 
 * [啟用自訂排程工作](#enable-custom-scheduled-jobs)
+
+* [重新安裝或驗證附加元件](#reinstall-or-verify-add-ons)
 
 * [執行測試計畫](#execute-test-plan)
 
@@ -92,6 +94,19 @@ ht-degree: 0%
 ### 啟用自訂排程工作 {#enable-custom-scheduled-jobs}
 
 此時可以啟用任何已排程的工作，做為程式碼庫的一部分。
+
+### 重新安裝或驗證附加元件 {#reinstall-or-verify-add-ons}
+
+>[!IMPORTANT]
+>
+>安裝AEM 6.5 LTS Service Pack在技術上屬於完整[就地升級](/help/sites-deploying/in-place-upgrade.md) （在套用更新之前，AEM快速入門jar已完全取代）。 因此，在任何就地升級期間執行的標準升級前清理工作，現在也會在套用Service Pack時執行。
+
+其中一項工作會移除在`/libs`下任何位置找到的陳舊`install`資料夾（`install`和執行模式變體，例如`install.author`或`install.publish`），以防止重新安裝過時的套件組合和設定。 如果您的解決方案仰賴在`/libs`底下的`install`資料夾中保留其本身OSGi套件組合或設定的附加元件，則可在套用Service Pack時移除該資料夾，即使過去在升級Service Pack時未觀察到這種情況。
+
+套用Service Pack後：
+
+* 確認所有先前安裝的附加元件仍然存在，且其OSGi套件組合和設定為作用中。 檢查`/system/console/bundles`是否有任何未啟動的組合。
+* 如果附加元件的內容遺失，請重新安裝附加元件的內容套件以還原。
 
 ### 執行測試計畫 {#execute-test-plan}
 
