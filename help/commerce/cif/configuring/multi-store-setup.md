@@ -11,7 +11,7 @@ role: Admin, Developer
 exl-id: 3a5d10d2-4ef8-4f85-942e-47ece6538acb
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '416'
 ht-degree: 2%
 
 ---
@@ -32,13 +32,13 @@ AEM CIF核心元件可用於多個AEM網站結構，而基礎GraphQL使用者端
 
 ## 設定 {#configuration}
 
-1. 根據[Adobe Commerce網站、商店和檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant)中所述的模式，設定多個商店和商店檢視
+1. 根據[Adobe Commerce網站、商店和檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)中所述的模式，設定多個商店和商店檢視
 
 2. 請確定AEM與Adobe Commerce之間的連線正常運作。
 
 3. 依照下列步驟建立CIF Cloud Service設定的子設定：
 
-   * 在AEM中，移至[工具] > [一般] > [設定瀏覽器] [&#128279;](/help/sites-administering/configurations.md#using-configuration-browser)
+   * 在AEM中，移至[工具] > [一般] > [設定瀏覽器] ](/help/sites-administering/configurations.md#using-configuration-browser)[
    * 選取您建立的基本組態
    * 使用上述第2點所述的步驟建立設定
 
@@ -46,7 +46,7 @@ AEM CIF核心元件可用於多個AEM網站結構，而基礎GraphQL使用者端
 
    >[!TIP]
    >
-   >Commerce目錄可使用ID或UID來處理。 Adobe Commerce 2.4.2匯入了UID。只有在您的Commerce後端支援2.4.2版或更新版本的GraphQL結構描述時，才會啟用此功能。
+   >Commerce目錄可使用ID或UID來處理。 Adobe Commerce 2.4.2匯入了UID。 只有在您的Commerce後端支援2.4.2版或更新版本的GraphQL結構描述時，才會啟用此功能。
 
 4. 將子設定指派至AEM網站
 
@@ -58,7 +58,7 @@ AEM CIF核心元件可用於多個AEM網站結構，而基礎GraphQL使用者端
 
 ## 其他資源
 
-* [Adobe Commerce網站、商店和檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant)
-* [AEM CIF核心元件 — 多存放區/網站組態](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
-* [使用多網站管理員](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=zh-Hant)
+* [Adobe Commerce網站、商店和檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+* [AEM CIF核心元件 — 多商店/網站設定](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
+* [使用多站點管理員](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [重複使用內容：多網站管理員和 Live Copy](/help/sites-administering/msm.md)
