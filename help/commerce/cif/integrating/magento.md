@@ -8,8 +8,8 @@ role: Admin, Developer
 exl-id: cecd9591-bff4-4b4e-a3fd-4ab4278a0b81
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 1%
+source-wordcount: '402'
+ht-degree: 3%
 
 ---
 
@@ -19,9 +19,9 @@ Experience Manager與Adobe Commerce透過Commerce integration framework (CIF)緊
 
 >[!NOTE]
 >
->最低支援的GraphQL API版本為2.3.5。只有較新版本或Adobe Commerce版本才支援某些功能。
+>最低支援的GraphQL API版本為2.3.5。 只有較新版本或Adobe Commerce版本才支援某些功能。
 
-## 架構概述 {#overview}
+## 架構概觀 {#overview}
 
 整體架構如下：
 

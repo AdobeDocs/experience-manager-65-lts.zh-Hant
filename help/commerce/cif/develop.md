@@ -11,14 +11,14 @@ role: Admin, Developer
 exl-id: 22fcdadf-12c0-4545-a854-76345806386f
 source-git-commit: 5995dda0aac101e6c0d506ac5bba786674b0735b
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 6%
+source-wordcount: '880'
+ht-degree: 14%
 
 ---
 
 # 開發AEM Commerce {#develop}
 
-根據AEM (CIF)為AEM開發Commerce integration framework Commerce專案時，會遵循與其他AEM專案相同的規則和最佳作法。 請先檢閱下列內容：
+根據Commerce integration framework (CIF)為AEM開發AEM Commerce專案會遵循與其他AEM專案相同的規則和最佳實務。 請先檢閱下列內容：
 
 - [AEM開發使用手冊](/help/sites-developing/getting-started.md)
 - [AEM核心概念](/help/sites-developing/the-basics.md)
@@ -31,9 +31,9 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->下列指示可協助您使用適用於AEM 6.5 LTS的CIF，為AEM Commerce設定本機AEM開發環境。 如果您使用AEM as a Cloud Service，請參閱[AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#)檔案。
+>下列指示可協助您使用CIF設定適用於AEM Commerce的本機AEM開發環境，並著重於AEM 6.5 LTS)。 如果您使用AEM as a Cloud Service，請參閱[AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#)檔案。
 
-適用於AEM的AEM Commerce附加元件(稱為CIF附加元件)可用於本機開發，並以AEM套件的形式提供。 可以從[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)下載它作為Feature Pack。
+適用於AEM的AEM Commerce附加元件（稱為CIF附加元件）可用於本機開發，並以AEM套件的形式提供。 可以從[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)下載它作為Feature Pack。
 
 ### 必要的軟體
 
@@ -41,7 +41,7 @@ ht-degree: 6%
 
 - 本機AEM 6.5 LTS
 - [Java 17/Java 21](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
-- [Apache Maven](https://maven.apache.org/) (3.3.9 或以上版本)
+- [Apache Maven](https://maven.apache.org/) (3.3.9 或更新版本)
 - [節點LTS](https://nodejs.org/en/)
 - [npm 6+](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
@@ -78,7 +78,7 @@ ht-degree: 6%
 
 ## 專案設定 {#project}
 
-有兩種方式可使用CIF來啟動AEM Commerce專案。
+有兩種方式可使用CIF來開始AEM Commerce專案。
 
 ### 使用AEM專案原型
 
@@ -145,7 +145,7 @@ mvn -B archetype:generate \
 
 >[!NOTE]
 >
->Venia Reference Store專案包含AEM as a Cloud Service和AEM 6.5的兩個組建設定檔。請檢查[專案readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md)，瞭解其使用方式。 若為AEM 6.5，請使用`classic`設定檔。
+>Venia Reference Store專案包含AEM as a Cloud Service和AEM 6.5的兩個組建設定檔。 請檢查[專案readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md)，瞭解其使用方式。 若為AEM 6.5，請使用`classic`設定檔。
 
 ### 將AEM連線至Commerce系統
 
@@ -153,7 +153,7 @@ mvn -B archetype:generate \
 
 由[AEM專案原型](https://github.com/adobe/aem-project-archetype)或[AEM Venia參考存放區](https://github.com/adobe/aem-cif-guides-venia)產生的專案都已包含必須調整的預設設定。
 
-將`url`中`com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json`的值取代為專案所使用的商務系統的GraphQL端點。
+將`com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json`中`url`的值取代為專案所使用的商務系統的GraphQL端點。
 
 AEM Commerce附加元件和CIF核心元件會透過AEM伺服器連線至Commerce GraphQL端點。 或者，直接從瀏覽器。 使用者端CIF核心元件和CIF附加撰寫工具預設會連線至`/api/graphql`。 如有需要，您可以透過CIF Cloud Service設定加以調整（請參閱下文）。
 
@@ -163,5 +163,5 @@ CIF附加元件提供位於`/api/graphql`的GraphQL Proxy servlet。 如果您�
 
 ## 其他資源
 
-- [AEM專案原型](https://github.com/adobe/aem-project-archetype)
+- [AEM 專案原型](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia參考存放區](https://github.com/adobe/aem-cif-guides-venia)
