@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
-source-git-commit: 8f7bbc3887601e10cf29e99ee54959a10c8a3f98
+source-git-commit: c93d78653e192d041830a84ea24fe5d3edde29e0
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1332'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,7 @@ ht-degree: 1%
 * [索引定義](#index-definitions)
 * [確保有足夠的磁碟空間](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#ensure-sufficient-disk-space)
 * [完整備份AEM](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#fully-back-up-aem)
+* [檢查過時的升級前備份](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#check-stale-pre-upgrade-backups)
 * [產生quickstart.properties檔案](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#generate-quickstart-properties)
 * [設定工作流程和稽核記錄清除](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#configure-wf-audit-purging)
 * [安裝、設定及執行升級前工作](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#install-configure-run-pre-upgrade-tasks)
@@ -47,13 +48,25 @@ ht-degree: 1%
 
 在開始升級之前，應該先完整備份AEM。 請務必備份存放庫、應用程式安裝、資料存放區和Mongo執行個體（如適用）。 如需有關備份和還原AEM執行個體的詳細資訊，請參閱[備份和還原](/help/sites-administering/backup-and-restore.md)。
 
+## 檢查過時的升級前備份 {#check-stale-pre-upgrade-backups}
+
+在升級之前，AEM會備份`/var/upgrade/PreUpgradeBackup/<timestamp>`底下的某些路徑（例如`/etc/tags`），然後在升級完成後還原這些路徑。 每個備份節點都有合併狀態屬性： `INIT`表示已建立備份，但從未合併回來，而`COMPLETED`表示已成功完成合併。
+
+如果先前升級（例如，從6.4到6.5）的備份仍處於`INIT`狀態，則最新升級（從6.5到6.5 LTS）會還原該舊的、未合併的備份。 這可能會無訊息地重新引入不再符合目前存放庫狀態的過時或過期內容，導致升級完成後發生意外問題。
+
+若要避免此情況，請在開始升級前：
+
+1. 使用CRXDE Lite (`/crx/de/index.jsp`)，檢查`/var/upgrade/PreUpgradeBackup/`下任何預先存在的節點的來源執行個體。
+2. 檢查詢到的每個備份節點的合併狀態屬性。
+3. 如果從先前的升級中發現狀態為`INIT`的節點，請先檢閱其內容並加以清除（刪除或明確合併該節點），然後再繼續進行。 這麼做可確保升級建立全新且精確的備份，而不會無訊息地還原過時資料。
+
 ## 產生quickstart.properties檔案 {#generate-quickstart-properties}
 
 從jar檔案啟動AEM時，會在`crx-quickstart/conf`下產生`quickstart.properties`檔案。 如果AEM過去僅以啟動指令碼啟動，則此檔案不存在，且升級失敗。 請確定檢查此檔案是否存在，如果不存在，請從jar檔案重新啟動AEM。
 
 ## 設定工作流程和稽核記錄清除 {#configure-wf-audit-purging}
 
-`WorkflowPurgeTask`和`com.day.cq.audit.impl.AuditLogMaintenanceTask`任務需要單獨的OSGi設定，沒有它們就無法運作。 如果它們在升級前工作執行期間失敗，遺失設定是最可能的原因。 因此，如果您不想執行OSGi設定，請務必為這些工作新增OSGi設定，或將其從升級前最佳化工作清單中完全移除。 您可以在[管理工作流程執行個體](/help/sites-administering/workflows-administering.md)找到設定工作流程清除工作的檔案，也可以在AEM 6[&#128279;](/help/sites-administering/operations-audit-log.md)中的稽核記錄維護找到稽核記錄維護工作設定。
+`WorkflowPurgeTask`和`com.day.cq.audit.impl.AuditLogMaintenanceTask`任務需要單獨的OSGi設定，沒有它們就無法運作。 如果它們在升級前工作執行期間失敗，遺失設定是最可能的原因。 因此，如果您不想執行OSGi設定，請務必為這些工作新增OSGi設定，或將其從升級前最佳化工作清單中完全移除。 您可以在[管理工作流程執行個體](/help/sites-administering/workflows-administering.md)找到設定工作流程清除工作的檔案，也可以在AEM 6](/help/sites-administering/operations-audit-log.md)中的[稽核記錄維護找到稽核記錄維護工作設定。
 
 
 ## 安裝、設定及執行升級前工作 {#install-configure-run-pre-upgrade-tasks}
