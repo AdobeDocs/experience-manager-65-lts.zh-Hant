@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 79f3d3211a79ce62242273df0cdecd24cd8900cf
+source-git-commit: aa819778006a3acb0d02772156c2af820ed353bb
 workflow-type: tm+mt
-source-wordcount: '6705'
-ht-degree: 26%
+source-wordcount: '7575'
+ht-degree: 23%
 
 ---
 
@@ -262,7 +262,7 @@ Campaign ContentServlet現在會在內容請求期間保留JSON回應內容型�
 
 
 
-#### MSM - Live Copies{#sites-msm-live-copies-65-lts-sp3}
+#### 多網站管理器 - 即時副本{#sites-msm-live-copies-65-lts-sp3}
 
 * 當作者儲存未變更的屬性時，內容片段即時副本資料夾現在會保留cq:rolloutConfigs。 作者稍後可以更新轉出設定，而不會失去現有設定。 (SITES-43729)嚴重
 
@@ -301,9 +301,57 @@ Campaign ContentServlet現在會在內容請求期間保留JSON回應內容型�
 
 
 
-<!--
 ### [!DNL Forms]{#forms-65-lts-sp3}
--->
+
+>[!NOTE]
+>
+> 適用於OSGi部署的AEM Forms 6.5 LTS Service Pack 3 (SP3)現已推出。 其中包含錯誤修正、安全性改良和增強功能。 日後將發行適用於JEE部署的&#x200B;**AEM Forms 6.5 LTS Service Pack 3 (SP3)。**
+
+#### 增強功能 {#forms-enhancements-65-lts-sp3}
+
+* Forms-24360：新增適用於Microsoft Office 2024的PDF Generator (PDFG)支援。
+* Forms-24949：在Forms 6.5 LTS上新增AEM Forms Builder Agent支援。 如此可匯入Forms Manager HTTP API和代理程式所需的Form Generative AI (GenAI) HTTP API。
+* Forms-25180：已將`daysUntilSigningDeadline`值新增至AEM Forms使用者介面，讓作者可以向收件者顯示Adobe Sign簽署截止日期前的剩餘天數。
+* Forms-25182：設定為單一使用者帳戶時，PDF Generator (PDFG)現在支援多執行緒檔案轉換。
+
+#### 已修正的問題 {#forms-fixed-issues-65-lts-sp3}
+
+* Forms-23726：在Adaptive Forms屬性中套用XML結構描述失敗，因為`xsom`資料庫衝突。 結構描述選取現在可以運作。
+* Forms-24296： Foundation元件檔案附件欄位在上傳時接受不允許的檔案型別（例如`.xsd`），並僅在提交時拒絕它們，這與其他封鎖的型別不同。 不允許的型別現在會在上傳時封鎖。
+* Forms-24603：在通訊管理信函中，包含條件的文字片段在儲存為草稿時遺失了分行符號。 草稿現在會保留原始的分行符號。
+* Forms-24783：從Open Services Gateway Initiative (OSGi)型Forms工作流程的`assignTask`步驟中捨棄檔案附件。 附件現在會透過工作指派保留。
+* Forms-24877：套用顯示模式時，「日期選擇器」行事曆圖示未顯示任何可存取的標籤，因此NVDA熒幕助讀程式僅宣告「可點按」。 圖示現在會提供描述性標籤。
+* Forms-24913： AEM Forms工作流程在Adobe Sign步驟後停滯，因為系統從未傳回簽署狀態。 工作流程現在會在簽署完成後繼續。
+* Forms-25033：鍵盤索引標籤順序已略過手寫簽名元件，導致僅限鍵盤的使用者無法存取輔助功能。 索引標籤導覽現在會到達欄位。
+* Forms-25045：繁體中文（香港）翻譯在升級後停止呈現，因此表單會回覆為預設語言。 現在，已翻譯的文字可正確轉譯。
+* Forms-25170：當起始執行個體計數為0時，呼叫`addInstance()`未顯示動態新增的面板。 新增的面板現在會立即顯示。
+* Forms-25225：伺服器端重新驗證移除了最適化Forms中片段外部的欄位翻譯，將標籤回覆為基本語言。 這些翻譯現在會保留。
+* Forms-25233：在開放服務閘道方案(OSGi)部署上，組合器服務拼接主XDP及其立即片段，但未解析巢狀片段參考，例如頁首、頁尾和可重複使用的子表單，因此它們在組合輸出中遺失。 巢狀片段現在已解析。
+* Forms-25289： Forms轉譯服務針對各個Service Pack的相同輸入傳回不同的輸出，這會影響「通訊管理」信件。 演算輸出現在是一致的。
+* Forms-25290：儲存的通訊管理信件在重新開啟時會遺失空格，並在部分位置顯示誤判的「x」。 儲存的信件內容現在會保持不變。
+* Forms-25346：Service Pack升級後，互動式通訊(IC)字母在載入進度環上凍結，而字母在預覽中載入遺失的間距。 載入和間距現在可以正常運作。
+* Forms-25431：「建立表單片段」精靈會在標題欄位中的每個按鍵時傳送網路要求。 已刪除多餘的呼叫。
+* Forms-25645：從內嵌上傳的JSON結構描述建立核心元件型最適化表單片段失敗，原因是「ALC-FMG-700-009已指定無效的表單模型」。 現在接受內嵌JSON結構描述。
+* Forms-25646：以JSON結構描述建置的核心元件為基礎的最適化表單片段，在編輯器中顯示空白的「資料來源」面板。 面板現在會列出結構描述資料來源。
+* Forms-25674：互動式通訊(IC)代理程式使用者介面會開啟至空白頁面，因此代理程式無法檢視IC內容。 代理程式使用者介面現在會呈現。
+* Forms-25686：切換建立最適化表單片段精靈中的結構描述型別選項時，沒有清除前一個選項的狀態，因此會產生結構描述不符的情況。 精靈現在會重設非使用中選項。
+* Forms-25757：套用佈景主題時沒有更新基本使用者端資料庫，因此佈景主題變更似乎沒有效果。 主題現在會更新基本使用者端資料庫。
+* Forms-25825：行動漢堡選單未回應點選，導致導覽在行動裝置上無法使用。 功能表現在會如預期般開啟。
+* Forms-26333：取消發佈表單後，「發佈」動作消失，封鎖重新發佈。 現在取消發佈後即可使用「發佈」。
+* Forms-26763：在Designer中，對靜態文字物件內的超連結進行編輯後，其粗體格式會遺失。 粗體格式現在於編輯中保留下來。
+* Forms-26817：按一下最適化表單上的「重設」 ，會清除影像元件中作者設定的影像，並留下損毀的影像，而其他欄位會正確重設。 重設現在會保留已設定的影像。
+* Forms-26852：在「代理程式」使用者介面中，日期/時間欄位會顯示比儲存值早一天的日期。 欄位現在顯示正確的日期。
+
+#### 已知問題 {#forms-known-issues-65-lts-sp3}
+
+此版本未報告任何已知問題。
+
+#### 安全性修正 {#forms-security-fixes-65-lts-sp3}
+
+此版本解決AEM Forms中的安全漏洞，包括多個跨網站指令碼(XSS)修正、伺服器端請求偽造(SSRF)修正、XML外部實體(XXE)修正，以及協力廠商程式庫更新。
+
+<!-- TODO: Add security bulletin link. Open question, pending information from Sunny Marwaha. -->
+
 
 
 
@@ -396,7 +444,6 @@ AEM郵件服務現在會在發生間歇性設定錯誤時繼續傳送電子郵�
 * 工作流程變數對話方塊現在會顯示表單資料模型、JSON、XML和檔案變數的正確控制項。 作者建立這些非原始變數時，不會再看到原始HTML標籤。 (GRANITE-67915)
 
 
-
 ## 關於 [!DNL Experience Manager Foundation] {#experience-manager-foundation}
 
 [!DNL Adobe Experience Manager] 6.5 LTS 平台是以更新版本的 OSGi 式框架 (Apache Sling 和 Apache Felix) 以及 Java™ 內容存放庫 (Apache Jackrabbit Oak 1.68.x) 為基礎進行建置。
@@ -411,7 +458,7 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 
 ### Uberjar 封裝 {#uber-jar-packaging}
 
-適用於AEM 6.5 LTS SP3的UberJar使用AEM 6.5 LTS UberJar 6.6.3版。 您可以從 Maven 中央存放庫檢索對應的 UberJar 成品。 與 AEM 6.5 不同，AEM 6.5 LTS 會將公用 API 和已棄用的 API 分隔成兩個不同的成品。
+適用於AEM 6.5 LTS SP3的UberJar使用AEM 6.5 LTS UberJar 6.6.3版。 您可以從 Maven 中央存放庫檢索對應的 UberJar 成品。 與 AEM 6.5 不同，AEM 6.5 LTS 會將公用 API 和已棄用的 API 分隔成兩個不同的成品檔。
 
 若要針對公開 API 進行編譯，請使用下列內容：
 
@@ -518,13 +565,13 @@ Adobe 會持續審閱或演進產品功能，藉由更新或取代舊版功能�
 
 為確保透明度並允許適當規劃，Adobe 會遵循 Adobe Experience Manager (AEM) 的棄用流程：
 
-* 首先宣佈棄用。 棄用的功能仍可使用，但不再有所增強。
-* 移除不早於下一個主要版本。 規劃的移除時間軸會單獨發佈通訊。
+* 首先宣佈棄用。 棄用的功能仍可使用，但不再增強。
+* 移除不早於下一個主要版本。 規劃的移除時間軸會另行傳達。
 * 至少會提供一個發行週期，讓客戶在功能移除前轉換為支援的替代方案。
 
 ### 已棄用功能 {#deprecated-features}
 
-此區段列出 Adobe 在 AEM 6.5 LTS 中已棄用的特點與功能。 通常，在未來版本中移除某些功能之前，Adobe 會先將棄用該功能並提供替代方案。
+此區段列出 Adobe 在 AEM 6.5 LTS 中已棄用的特點與功能。 通常，Adobe 會先將功能標記為已棄用，再於未來版本中移除，並提供替代方案。
 
 建議客戶檢視是否在目前的部署中使用了棄用的功能。 制定計畫，變更您的實作，以使用提供的替代方案。
 
@@ -540,7 +587,7 @@ Adobe 會持續審閱或演進產品功能，藉由更新或取代舊版功能�
 此區段列出 AEM 6.5 LTS 已移除的特點和功能。 先前的版本已將這些功能標記為已棄用。
 
 * 針對Adobe CRX存放庫持續性的RDBMK支援已移除。
-* 在叢集環境中，MongoMK 現在是存放庫持續存在的唯一支援選項。
+* 在叢集環境中，MongoMK 現在是存放庫持續性的唯一支援選項。
 
 | 區域 | 功能 | 替代方案 | 版本 (SP) |
 | --- | --- | --- | --- |
@@ -645,7 +692,7 @@ AEM 6.5 LTS SP3升級`jackson`套件。 此變更會影響使用GlobalLink翻譯
 * 健康情況檢查失敗，回應代碼為 HTTP 400。
 * Dispatcher 與 AEM 執行個體之間的流量中斷。
 * 無法透過 Dispatcher 正確地提供內容。
-* 利用 Dispatcher 設定中的 IP 位址進行 HTTPS 連線失敗。
+* 在 Dispatcher 設定中搭配 IP 位址使用 HTTPS 時，會發生連線失敗。
 * 透過 HTTPS + IP 連線時出現 HTTP 400「無效 SNI」錯誤。
 
 **受影響的環境**
