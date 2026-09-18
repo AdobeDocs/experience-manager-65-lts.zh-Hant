@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: e123b8357097747e1fbb598075c05180487dabdc
+source-git-commit: 63d8bb0652c6749164d51898119418c8b649e261
 workflow-type: tm+mt
 source-wordcount: '7277'
-ht-degree: 22%
+ht-degree: 21%
 ---
 
 # Adobe Experience Manager 6.5 LTS、SP3最新發行說明 {#release-notes}
@@ -532,7 +532,7 @@ EM 6.5 LTS 適用的 SP2 會以 Quickstart JAR 形式提供，而非透過「封
 
 >[!NOTE]
 >
-> 若您要從舊版 6.5 SP 直接升級至 LTS SP1，按照從 6.5 升級至 6.5 LTS GA 的[升級](/help/sites-deploying/upgrade.md)說明進行操作。
+> 如果您從舊的6.5 SP直接升級至LTS SP3，請依照6.5到6.5 LTS GA [升級提供的指示操作](/help/sites-deploying/upgrade.md)。
 
 
 如需詳細指示，請參閱[升級檔案](/help/sites-deploying/upgrade.md)，因為同樣的檔案適用於LTS Service Pack更新。
