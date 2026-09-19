@@ -4,13 +4,12 @@ description: 瞭解如何使用離線重新索引方法來重新索引AEM存放�
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 076db19026a0992725062ec9965ff6c1cb84333e
+exl-id: 156f245f-b185-4da4-b9c6-6d0a98405119
+source-git-commit: c89b742e24734fc67883b9dec966f59a01062a2a
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 0%
-
+source-wordcount: '1230'
+ht-degree: 1%
 ---
-
 # AEM的離線重新索引 {#offline-reindexing-for-aem}
 
 ## 簡介 {#introduction}
@@ -21,7 +20,7 @@ AEM Assets專案通常有大型資料存放區和高層級的資產上傳，重�
 
 ## 概觀 {#overview}
 
-AEM存放庫經常會因為各種原因需要重新索引，例如索引定義變更、效能最佳化或重大內容變更後。 由於資產中的文字(例如PDF檔案中的文字)會被擷取及編制索引，因此重新索引對於資產部署而言成本較高。 使用MongoMK存放庫時，資料會透過網路持續存在，進一步增加重新索引所花費的時間。 解決方案是使用Oak執行的工具執行重新索引&#x200B;**離線**，然後將預先建立的索引匯入執行中的AEM執行個體。 此方法可最大限度地縮短重新索引時間，並提供更好的資源管理。
+AEM存放庫經常會因為各種原因需要重新索引，例如索引定義變更、效能最佳化或重大內容變更後。 由於資產中的文字（例如PDF檔案中的文字）會被擷取及編制索引，因此重新索引對於資產部署而言成本較高。 使用MongoMK存放庫時，資料會透過網路持續存在，進一步增加重新索引所花費的時間。 解決方案是使用Oak執行的工具執行重新索引&#x200B;**離線**，然後將預先建立的索引匯入執行中的AEM執行個體。 此方法可最大限度地縮短重新索引時間，並提供更好的資源管理。
 
 ## 方法 {#approach}
 
@@ -38,7 +37,7 @@ AEM存放庫經常會因為各種原因需要重新索引，例如索引定義�
 
 ### 文字提取 {#text-extraction}
 
-若要在AEM中啟用完整索引，會擷取二進位檔(例如PDF)的文字，並將其新增至索引。 在索引過程中，這通常是昂貴的步驟。 文字擷取是特別建議用於重新索引資產存放庫（當它們儲存大量二進位檔時）的最佳化步驟。
+若要在AEM中啟用完整索引，會擷取二進位檔（例如PDF）的文字，並將其新增至索引。 在索引過程中，這通常是昂貴的步驟。 文字擷取是特別建議用於重新索引資產存放庫（當它們儲存大量二進位檔時）的最佳化步驟。
 
 ![offline-reindexing-upgrade-text-extraction](assets/offline-reindexing-upgrade-text-extraction.png)
 

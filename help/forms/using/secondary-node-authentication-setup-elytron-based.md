@@ -4,14 +4,12 @@ description: JBoss EAP 8使用Elytron來啟用次要節點與主要網域控制�
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: f093f39fb535209297940cff13a99c7631812152
+exl-id: 212aa75c-7f2a-4140-8051-77643065e429
+source-git-commit: c89b742e24734fc67883b9dec966f59a01062a2a
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '474'
 ht-degree: 3%
-
 ---
-
-
 # 次要節點驗證設定（Elytron型）
 
 ## 使用Elytron設定次要節點驗證
@@ -23,7 +21,7 @@ JBoss EAP 8使用&#x200B;**Elytron**&#x200B;來驗證叢集部署中&#x200B;**�
 
 ## 先決條件
 
-* 必須在&#x200B;**主要節點`secondary`**&#x200B;上建立名為&#x200B;**的**&#x200B;管理使用者。
+* 必須在&#x200B;**主要節點**&#x200B;上建立名為&#x200B;`secondary`**的**&#x200B;管理使用者。
 * 只在次要節點&#x200B;**上執行此組態**。
 * 重複叢集中&#x200B;**每個次要節點**&#x200B;的設定。
 * 主要和次要節點上的&#x200B;**JBoss必須完全停止**。
@@ -229,4 +227,3 @@ JBoss EAP 8使用&#x200B;**Elytron**&#x200B;來驗證叢集部署中&#x200B;**�
 * **選項2**&#x200B;使用自訂認證存放區密碼來啟用更強的安全性。
 * 組態必須在次要節點上完成&#x200B;**，且只能完成**。
 * 主要節點設定會在網域中自動重複使用。
-

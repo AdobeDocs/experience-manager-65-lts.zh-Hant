@@ -4,20 +4,18 @@ description: 在使用JBoss EAP 8的AEM Forms 6.5.1 LTS叢集部署中，設定�
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+exl-id: f24e7245-7b43-4b1c-ba7a-162344ef545c
+source-git-commit: c89b742e24734fc67883b9dec966f59a01062a2a
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '152'
 ht-degree: 1%
-
 ---
-
-
 # 無法啟動JBoss網域控制站
 
 ## 問題
 
-在使用&#x200B;**JBoss EAP 8**&#x200B;的&#x200B;**AEM Forms 6.5.1 LTS**&#x200B;叢集部署中，組態檔
-`<JBOSS_HOME>/domain/configuration/domain_oracle.xml` （和資料庫特定變體）可能包含&#x200B;**重複的開頭`<security>`標籤**。
+在使用&#x200B;**JBoss EAP 8**&#x200B;的&#x200B;**AEM Forms 6.5.1 LTS**叢集部署中，組態檔
+`<JBOSS_HOME>/domain/configuration/domain_oracle.xml` （和資料庫特定變體）可能包含開啟`<security>`標籤&#x200B;**的**&#x200B;重複。
 
 這會導致&#x200B;**無效的XML組態**，導致&#x200B;**JBoss網域控制站啟動失敗**，並阻礙叢集初始化成功。
 
@@ -28,9 +26,9 @@ ht-degree: 1%
 * **應用程式伺服器：** JBoss EAP 8.x
 * **組態檔：**
 
-   * `<JBOSS_HOME>/domain/configuration/domain_oracle.xml`
-   * `<JBOSS_HOME>/domain/configuration/domain_mysql.xml`
-   * `<JBOSS_HOME>/domain/configuration/domain_mssql.xml`
+  * `<JBOSS_HOME>/domain/configuration/domain_oracle.xml`
+  * `<JBOSS_HOME>/domain/configuration/domain_mysql.xml`
+  * `<JBOSS_HOME>/domain/configuration/domain_mssql.xml`
 
 ## 疑難排解步驟
 
