@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 升級前步驟 {#pre-upgrade-steps}
 
-在執行升級之前，必須完成數個步驟。 如需詳細資訊，請參閱[升級前維護工作](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。 此外，請確定您的系統符合AEM 6.5 LTS Servicepack](/help/sites-deploying/technical-requirements.md)的[需求，並參閱[升級計畫考量事項](/help/sites-deploying/upgrade-planning.md)。
+在執行升級之前，必須完成數個步驟。 如需詳細資訊，請參閱[升級前維護工作](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。 此外，請確定您的系統符合AEM 6.5 LTS Servicepack[&#128279;](/help/sites-deploying/technical-requirements.md)的需求，並參閱[升級計畫考量事項](/help/sites-deploying/upgrade-planning.md)。
 
 
 ### 移轉先決條件 {#migration-prerequisites}
