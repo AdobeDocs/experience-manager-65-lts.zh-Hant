@@ -4,13 +4,12 @@ description: 瞭解如何升級透過Tomcat部署的AEM執行個體。
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: b3c4e946a3f235fa0e3a0945f1ad692ee195e3ef
+exl-id: a9f7494e-4a09-4999-9164-c369e0989886
+source-git-commit: 60809c26ba9591bf9e30a19e25d71ceb449a162e
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '419'
 ht-degree: 0%
-
 ---
-
 # 應用程式伺服器安裝的升級步驟（Tomcat — 就地升級） {#upgrade-steps-for-application-server-installations-tomcat-inplace}
 
 >[!NOTE]
@@ -19,12 +18,12 @@ ht-degree: 0%
 
 ## 升級前步驟 {#pre-upgrade-steps}
 
-在執行升級之前，必須完成數個步驟。 如需詳細資訊，請參閱[升級前維護工作](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。 此外，請確定您的系統符合AEM 6.5 LTS Servicepack[的](/help/sites-deploying/technical-requirements.md)需求，並參閱[升級計畫考量事項](/help/sites-deploying/upgrade-planning.md)。
+在執行升級之前，必須完成數個步驟。 如需詳細資訊，請參閱[升級前維護工作](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。 此外，請確定您的系統符合AEM 6.5 LTS Servicepack[&#128279;](/help/sites-deploying/technical-requirements.md)的需求，並參閱[升級計畫考量事項](/help/sites-deploying/upgrade-planning.md)。
 
 
 ### 移轉先決條件 {#migration-prerequisites}
 
-* **最低必要的Java版本**：請確定您已在Tomcat伺服器上安裝Oracle® JRE 17/21。
+* **最低必要的Java版本**：請確定您已在Tomcat伺服器上安裝® JRE 17/21。
 * **Tomcat伺服器**： AEM 6.5 LTS及其ServicePack支援的Tomcat伺服器版本為&#x200B;**10.0.x**&#x200B;和&#x200B;**10.1.x**。
 
 ### 執行升級 {#performing-the-upgrade}
@@ -42,7 +41,7 @@ ht-degree: 0%
 
 1. 移除不再需要的檔案和資料夾。 您需要明確移除的專案包括：
 
-   * **cq-quickstart-65.war**&#x200B;檔案和來自`cq-quickstart-65`資料夾的`webapps`資料夾通常位於`<path-to-aem-server>/webapps`
+   * **cq-quickstart-65.war**&#x200B;檔案和來自`webapps`資料夾的`cq-quickstart-65`資料夾通常位於`<path-to-aem-server>/webapps`
    * `launchpad/startup`資料夾。 假設您位於伺服器資料夾中，您可以在終端機中執行以下命令來刪除它：
 
      ```shell

@@ -1,13 +1,12 @@
 ---
 title: 在JBoss EAP 8 (Windows)上升級AEM 6.5 LTS
 description: 本指南逐步說明如何使用JDK 21，將現有Adobe Experience Manager (AEM) 6.5 LTS安裝從Windows上的JBoss EAP 7.4升級為JBoss EAP 8。
-source-git-commit: 835530039678bc16a6de87b8d580be91a2026f94
+exl-id: 23389613-0d9f-4e0b-b133-c8e598dd9cc9
+source-git-commit: d713aac72e764849d53e8feb98ed85b89f27a44d
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 3%
-
+source-wordcount: '1430'
+ht-degree: 2%
 ---
-
 # 在JBoss EAP 8 (Windows)上升級AEM 6.5 LTS
 
 ## 概觀
@@ -59,8 +58,8 @@ ht-degree: 3%
 ### 備份檢查清單
 
 - [ ]現有JBoss EAP 7.4安裝目錄的完整備份
-- [ ]資料夾的`crx-repository`備份
-- [ ]資料夾的`crx-quickstart`備份
+- [ `crx-repository`資料夾的]備份
+- [ `crx-quickstart`資料夾的]備份
 - [ ]匯出所有自訂設定
 - [ ]資料庫備份（如果使用外部資料庫）
 - [ ]記錄目前的系統狀態和設定
@@ -503,7 +502,7 @@ del "C:\jboss-eap-8.0\bin\crx-repository\crx-quickstart\launchpad\sling_bootstra
 |-------|---------------|----------|
 | AEM無法啟動 | 不正確的Java版本 | 驗證`JAVA_HOME`點是否指向JDK 21 |
 | 存放庫損毀錯誤 | 不完整的存放庫副本 | 從備份還原並重新複製存放庫 |
-| OutOfMemoryError | 棧積記憶體不足 | 在`-Xmx`中增加`standalone.conf.bat` |
+| OutOfMemoryError | 棧積記憶體不足 | 在`standalone.conf.bat`中增加`-Xmx` |
 | 「已安裝」狀態的套件組合 | 缺少相依性 | 在Web主控台中檢查套件組合相依性 |
 | 連線埠8080已在使用中 | 使用連線埠的其他服務 | 停止衝突的服務或變更JBoss連線埠 |
 
@@ -551,7 +550,7 @@ del "C:\jboss-eap-8.0\bin\crx-repository\crx-quickstart\launchpad\sling_bootstra
 
 - [JBoss EAP 8移轉指南](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0/html/migration_guide/)
 - [Adobe Experience Manager 6.5升級指南](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html?lang=zh-Hant)
-- [AEM正在安裝Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=zh-Hant)
+- [AEM安裝Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=zh-Hant)
 
 ## 檔案資訊
 
