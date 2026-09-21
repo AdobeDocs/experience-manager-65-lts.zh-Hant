@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 63d8bb0652c6749164d51898119418c8b649e261
+source-git-commit: a4f151470c6042bfaaa3d8f4a3260074f007a4d9
 workflow-type: tm+mt
-source-wordcount: '7277'
+source-wordcount: '7674'
 ht-degree: 21%
 ---
 
@@ -303,14 +303,16 @@ Campaign ContentServlet現在會在內容請求期間保留JSON回應內容型�
 
 >[!NOTE]
 >
-> 適用於OSGi部署的AEM Forms 6.5 LTS Service Pack 3 (SP3)現已推出。 其中包含錯誤修正、安全性改良和增強功能。 日後將發行適用於JEE部署的&#x200B;**AEM Forms 6.5 LTS Service Pack 3 (SP3)。**
+> AEM Forms 6.5 LTS Service Pack 3 (SP3)現可供OSGi和JEE部署使用。 其中包含錯誤修正、安全性改良和增強功能。
 
 #### 增強功能 {#forms-enhancements-65-lts-sp3}
 
-* Forms-24360：新增適用於Microsoft Office 2024的PDF Generator (PDFG)支援。
+* Forms-24360：新增適用於Microsoft Office 2024的PDF Generator (PDFG)支援。 這同時適用於OSGi和JEE部署。
 * Forms-24949：在Forms 6.5 LTS上新增AEM Forms Builder Agent支援。 如此可匯入Forms Manager HTTP API和代理程式所需的Form Generative AI (GenAI) HTTP API。
 * Forms-25180：已將`daysUntilSigningDeadline`值新增至AEM Forms使用者介面，讓作者可以向收件者顯示Adobe Sign簽署截止日期前的剩餘天數。
-* Forms-25182：設定為單一使用者帳戶時，PDF Generator (PDFG)現在支援多執行緒檔案轉換。
+* Forms-25182、FORMS-25181：設定為單一使用者帳戶時，PDF Generator (PDFG)現在支援多執行緒檔案轉換。 這同時適用於OSGi和JEE部署。
+* Forms-27595：在AEM Forms Document Security中為動態浮水印新增&#x200B;**使用者設定檔說明**&#x200B;屬性，因此浮水印可包含使用者的設定檔說明。
+* 除了Oracle資料庫之外，WebSphere® Liberty Profile (WLP)現在也支援Microsoft® SQL Server。
 
 #### 已修正的問題 {#forms-fixed-issues-65-lts-sp3}
 
@@ -339,6 +341,25 @@ Campaign ContentServlet現在會在內容請求期間保留JSON回應內容型�
 * Forms-26763：在Designer中，對靜態文字物件內的超連結進行編輯後，其粗體格式會遺失。 粗體格式現在於編輯中保留下來。
 * Forms-26817：按一下最適化表單上的「重設」 ，會清除影像元件中作者設定的影像，並留下損毀的影像，而其他欄位會正確重設。 重設現在會保留已設定的影像。
 * Forms-26852：在「代理程式」使用者介面中，日期/時間欄位會顯示比儲存值早一天的日期。 欄位現在顯示正確的日期。
+* Forms-26733、FORMS-26734：將Apache Log4j更新至2.25.5版。
+
+已在6.5 LTS Service Pack 3中修正JEE上AEM Forms的下列問題：
+
+* Forms-27585：在JEE上的AEM Forms上，呼叫`submitForm()`的XFA型PDF forms未在Adobe Reader中顯示提交結果（以及當指令碼呼叫`closeDoc()`時在Acrobat中）。 現在提交結果可正確顯示。
+* Forms-25998：在JEE上的AEM Forms上，在管理控制檯中測試HSM連線時，在Java 21下註冊Hardware Security Module (HSM)私密金鑰憑證失敗，出現`IllegalAccessError`。 HSM私密金鑰憑證註冊現在可以運作。
+* Forms-24993：在JEE上的AEM Forms上，在叫用Web服務步驟中載入WSDL失敗，出現`SAXException` （「檔案過早結束」）。 WSDL現在可正確載入。
+* Forms-24518：在JEE上的AEM Forms (JBoss)上，由於舊版JSTL taglib URI，Reader擴充功能Web應用程式在全新安裝後傳回「錯誤處理請求」。 Reader擴充功能網頁應用程式現在會載入。
+* Forms-27495：在JEE上的AEM Forms上，啟用單一使用者模式時，PDF Generator未轉換Excel (`.xlsx`)檔案，轉換無限期擱置。 Excel轉換現在會在單一使用者模式下完成。
+* Forms-27098：在JEE上的AEM Forms上，以管理員身分登入`/lc`失敗，因為SOAP SDK (`/sdk`)驗證閘道。 管理員登入現在成功。
+* Forms-25869：在JEE版的AEM Forms上，PDF Generator整合更新的轉換引擎修正，以提高轉換可靠性。
+
+在JEE上&#x200B;**安裝AEM Forms 6.5 LTS SP3**
+
+若要在JEE上安裝AEM Forms 6.5 LTS SP3，請依序完成下列步驟：
+
+1. 使用應用程式伺服器的AEM Forms 6.5 LTS SP3 JEE安裝程式來安裝Service Pack （從[AEM Forms版本](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)下載），請依照JEE上的標準AEM Forms安裝程式進行。
+1. 更新至最新的AEM Forms Workbench安裝程式（可從相同[AEM Forms發行版本](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)頁面取得）。
+1. 如果您的專案使用`adobe-livecycle-client.jar` SDK使用者端資料庫，請在專案的類別路徑中更新它。 最新版本可在`<AEM_Forms_Installation_dir>/sdk/client-libs/common/adobe-livecycle-client.jar`取得。
 
 #### 已知問題 {#forms-known-issues-65-lts-sp3}
 
@@ -347,8 +368,6 @@ Campaign ContentServlet現在會在內容請求期間保留JSON回應內容型�
 #### 安全性修正 {#forms-security-fixes-65-lts-sp3}
 
 此版本解決AEM Forms中的安全漏洞，包括多個跨網站指令碼(XSS)修正、伺服器端請求偽造(SSRF)修正、XML外部實體(XXE)修正，以及協力廠商程式庫更新。
-
-<!-- TODO: Add security bulletin link. Open question, pending information from Sunny Marwaha. -->
 
 
 
