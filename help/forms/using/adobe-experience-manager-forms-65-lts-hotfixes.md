@@ -1,19 +1,21 @@
 ---
-title: Adobe Experience Manager Forms 6.5 LTS SP1 Hotfix
-description: 提供如何下載和安裝AEM Forms 6.5 LTS的Hotfix的相關資訊。
+title: Adobe Experience Manager Forms 6.5 LTS Hotfix
+description: 提供如何下載和安裝AEM Forms 6.5 LTS的Hotfix的相關資訊。 若為AEM 6.5 （非LTS），請參閱AEM 6.5 Forms Hotfix文章。
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: e485100f-3e16-4fd4-a8ce-af771d765dd1
-source-git-commit: 0ce01150bd74eeea7edb6c6127003e1aefda97a9
+source-git-commit: 989d83cfc56f7a7d4e2aea5a7ac1ca444d505859
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1137'
 ht-degree: 0%
 ---
 # Adobe Experience Manager Forms 6.5 LTS Hotfix{#aem-form-hotfix}
 
 本文列出為解決已知問題、改善系統穩定性及增強AEM Forms 6.5 LTS整體效能而實作的重大修正。
 
+
+本文適用於AEM Forms 6.5 LTS。 若為AEM 6.5 （非LTS）部署，請參閱[Adobe Experience Manager Forms Hotfix](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/release-notes/aem-forms-hotfix)。
 
 >[!NOTE]
 >
@@ -79,6 +81,7 @@ ht-degree: 0%
     <li><b>FORMS-26733， FORMS-26734</b>已將Apache Log4j更新至2.25.5版。</li>
     <li>此Hotfix也包含安全性修正。</li>
     </ul>
+    <p><strong>組建：</strong> AEMForms-6.6.0-0008</p>
     </td>
   </tr>
   <tr>

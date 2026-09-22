@@ -7,13 +7,11 @@ user-guide-description: 使用Adobe Experience Manager 6.5 LTS檔案瞭解其運
 breadcrumb-title: 使用手冊
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: da9de2298544a342a34ff91815732017c1b24299
+source-git-commit: 4df5a9888532afd86562678a76c35841ac5634b8
 workflow-type: tm+mt
-source-wordcount: '7798'
+source-wordcount: '7804'
 ht-degree: 22%
-
 ---
-
 # Adobe Experience Manager 6.5 LTS檔案 {#content}
 
 + 發行說明 {#release-notes}
@@ -119,9 +117,9 @@ ht-degree: 22%
     + 個人化 {#personalization}
       + [個人化](/help/sites-authoring/personalization.md)
       + [使用 ContextHub 資料預覽頁面](/help/sites-authoring/ch-previewing.md)
-      + [使用定位模式編寫目標內容](/help/sites-authoring/content-targeting-touch.md)
+      + [使用目標選擇模式編寫目標內容](/help/sites-authoring/content-targeting-touch.md)
       + [在多個網站中使用目標內容](/help/sites-authoring/multisite-support-targeted-content.md)
-      + [如何架構目標內容的多網站管理](/help/sites-authoring/technical-multisite-targeted.md)
+      + [目標內容的多網站管理結構](/help/sites-authoring/technical-multisite-targeted.md)
       + [管理活動](/help/sites-authoring/activitylib.md)
       + [管理客群](/help/sites-authoring/managing-audiences.md)
       + [建立和管理選件](/help/sites-authoring/offerlib.md)
@@ -136,11 +134,11 @@ ht-degree: 22%
     + Sites功能 {#introduction}
       + [MSM 和翻譯](/help/sites-administering/msm-and-translation.md)
       + [非同步作業](/help/sites-administering/asynchronous-jobs.md)
-      + [重複使用內容：多網站管理員和 Live Copy](/help/sites-administering/msm.md)
-      + [Live Copy 概觀主控台](/help/sites-administering/msm-livecopy-overview.md)
-      + [設定 Live Copy 同步](/help/sites-administering/msm-sync.md)
+      + [重複使用內容：多網站管理器和即時副本](/help/sites-administering/msm.md)
+      + [即時副本概觀主控台](/help/sites-administering/msm-livecopy-overview.md)
+      + [設定即時副本同步](/help/sites-administering/msm-sync.md)
       + [建立和同步 Live Copies](/help/sites-administering/msm-livecopy.md)
-      + [MSM 推出衝突](/help/sites-administering/msm-rollout-conflicts.md)
+      + [MSM 轉出衝突](/help/sites-administering/msm-rollout-conflicts.md)
       + [疑難排解MSM問題和常見問題](/help/sites-administering/troubleshoot-msm.md)
       + [MSM 最佳做法](/help/sites-administering/msm-best-practices.md)
       + [翻譯多語言網站的內容](/help/sites-administering/translation.md)
@@ -150,7 +148,7 @@ ht-degree: 22%
       + [使用Classic UI建立語言根](/help/sites-administering/tc-lroot-classic.md)
       + [連線到 Microsoft Translator](/help/sites-administering/tc-msconf.md)
       + [設定翻譯整合框架](/help/sites-administering/tc-tic.md)
-      + [語言複製精靈](/help/sites-administering/tc-wizard.md)
+      + [語言副本精靈](/help/sites-administering/tc-wizard.md)
       + [翻譯增強功能](/help/sites-administering/tc-enhancements.md)
       + [翻譯最佳做法](/help/sites-administering/tc-bp.md)
       + [設定和設定瀏覽器](/help/sites-administering/configurations.md)
@@ -274,7 +272,7 @@ ht-degree: 22%
     + [從Dynamic Media — 混合模式移轉至Dynamic Media - S7模式](/help/assets/migrate-from-hybrid-to-dms7.md)
     + [Dynamic Media 無障礙內容](/help/assets/accessibility-dm.md)
     + [管理 Dynamic Media 資產](/help/assets/managing-assets.md)
-    + [影像品質最佳化的最佳做法](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
+    + [最佳化影像品質的最佳做法](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
     + [管理 Dynamic Media 檢視器預設集](/help/assets/managing-viewer-presets.md)
     + [套用 Dynamic Media 檢視器預設集](/help/assets/viewer-presets.md)
     + [管理 Dynamic Media 影像預設集](/help/assets/managing-image-presets.md)
@@ -293,7 +291,7 @@ ht-degree: 22%
     + [全景影像](/help/assets/panoramic-images.md)
     + [混合媒體集](/help/assets/mixed-media-sets.md)
     + [迴轉集](/help/assets/spin-sets.md)
-    + [Dynamic Media 中的視訊](/help/assets/video.md)
+    + [Dynamic Media 中的影片](/help/assets/video.md)
     + [輪播橫幅](/help/assets/carousel-banners.md)
     + [互動式影像](/help/assets/interactive-images.md)
     + [互動式影片](/help/assets/interactive-videos.md)
@@ -378,7 +376,7 @@ ht-degree: 22%
     + [內容片段 - 刪除考量事項](/help/assets/content-fragments/content-fragments-delete.md)
     + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
     + [樹狀結構](/help/assets/content-fragments/content-fragments-structure-tree.md)
-    + [預覽 - JSON 代表](/help/assets/content-fragments/content-fragments-json-preview.md)
+    + [預覽 - JSON 表示法](/help/assets/content-fragments/content-fragments-json-preview.md)
     + [建立內容片段的翻譯專案](/help/assets/creating-translation-projects-for-content-fragments.md)
   + 管理Assets {#managing}
     + [管理數位資產](/help/assets/manage-assets.md)
@@ -521,13 +519,13 @@ ht-degree: 22%
     + [規則編輯器](/help/forms/using/rule-editor-core-components.md)
     + [在最適化表單核心元件中建立和使用自訂函式](/help/forms/using/create-and-use-custom-functions-core-components.md)
     + [針對以核心元件為基礎的最適化Forms建立並使用自訂錯誤處理常式](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
-    + [在最適化表單中新增版本設定、評論和附註](/help/forms/using/add-versioning-reviews-comments.md)
+    + [在自適應表單中新增版本設定、評論和附註](/help/forms/using/add-versioning-reviews-comments.md)
     + [比較最適化表單](/help/forms/using/compare-forms-core-components.md)
     + {hide-from-toc}[啟用功能切換](/help/forms/using/enable-feature-toggle.md)
   + 最適化Forms — 基本製作 {#adaptive-forms-basic-authoring}
     + [使用最適化表單的最佳作法](/help/forms/using/adaptive-forms-best-practices.md)
     + [建立最適化表單](/help/forms/using/creating-adaptive-form.md)
-    + [建立或新增最適化表單至 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+    + [建立或新增自適應表單至 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
     + [最適化表單片段](/help/forms/using/adaptive-form-fragments.md)
     + [設定提交動作](/help/forms/using/configuring-submit-actions.md)
     + [在最適化表單中使用驗證碼](/help/forms/using/captcha-adaptive-forms.md)
@@ -541,7 +539,7 @@ ht-degree: 22%
     + [建立無障礙的最適化表單](/help/forms/using/creating-accessible-adaptive-forms.md)
     + [建立具有可重複區段的表單](/help/forms/using/creating-forms-repeatable-sections.md)
     + [在AEM網站頁面中內嵌最適化表單或互動式通訊](/help/forms/using/embed-adaptive-form-aem-sites.md)
-    + [在外部網頁中嵌入適用性表單](/help/forms/using/embed-adaptive-form-external-web-page.md)
+    + [在外部網頁中嵌入自適應表單](/help/forms/using/embed-adaptive-form-external-web-page.md)
     + [最適化表單元件的內嵌樣式](/help/forms/using/inline-style-adaptive-forms.md)
     + [多步驟表單序列簡介](/help/forms/using/introduction-form-sequence.md)
     + [調適型表單的版面配置功能](/help/forms/using/layout-capabilities-adaptive-forms.md)
@@ -565,7 +563,7 @@ ht-degree: 22%
     + [非同步提交最適化表單](/help/forms/using/asynchronous-submissions-adaptive-forms.md)
     + [使用一組最適化表單建立最適化表單](/help/forms/using/create-adaptive-form-using-adaptive-form-set.md)
     + [最適化表單範本](/help/forms/using/template-editor.md)
-    + [最適化表單運算式](/help/forms/using/adaptive-form-expressions.md)
+    + [自適應表單運算式](/help/forms/using/adaptive-form-expressions.md)
     + [產生最適化表單的記錄檔案](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
     + [透過延遲載入改善大型表單的效能](/help/forms/using/lazy-loading-adaptive-forms.md)
     + [預填自適應表單欄位](/help/forms/using/prepopulate-adaptive-form-fields.md)
@@ -690,12 +688,12 @@ ht-degree: 22%
     + [最佳化 HTML5 表單](/help/forms/using/optimize-html5-forms.md)
     + [HTML5 表單的螢幕閱讀器](/help/forms/using/screen-readers.md)
     + [建立 HTML5 表單的自訂設定檔](/help/forms/using/custom-profile.md)
-    + [HTML5 表單從右至左的語言](/help/forms/using/right-left-languages.md)
+    + [HTML5 表單中的從右至左語言](/help/forms/using/right-left-languages.md)
     + [將 Form Bridge 與自訂入口網站進行整合以供 HTML5 表單使用](/help/forms/using/integrate-form-bridge-forms-portal.md)
     + [在 HTML5 表單中建立自訂外觀](/help/forms/using/custom-widgets.md)
     + [變更 HTML5 表單的預設樣式](/help/forms/using/changing-default-styles.md)
     + [HTML5 表單的圖片子句支援](/help/forms/using/picture-clause-support.md)
-    + [在 HTML5 表單中建立無障礙的複雜表單](/help/forms/using/accessible-tables.md)
+    + [在 HTML5 表單中建立無障礙的複雜表格](/help/forms/using/accessible-tables.md)
     + [建立 HTML5 表單的 CSS 樣式](/help/forms/using/css-styles.md)
     + [自訂 HTML5 表單的錯誤訊息](/help/forms/using/customzing-errors-html5-forms.md)
     + [將 HTML5 表單儲存為草稿](/help/forms/using/saving-html5-form-draft.md)
@@ -808,7 +806,7 @@ ht-degree: 22%
       + [交易報告](/help/forms/using/transaction-reports-overview.md)
       + [檢視及瞭解交易報表](/help/forms/using/viewing-and-understanding-transaction-reports.md)
       + [在OSGi上適用於AEM Forms的可記帳API清單](/help/forms/using/transaction-reports-billable-apis.md)
-      + [記錄自訂實施的交易](/help/forms/using/record-transaction-custom-implementation.md)
+      + [為自訂實施記錄交易](/help/forms/using/record-transaction-custom-implementation.md)
       + {hide-from-toc}[啟用和檢視交易報告](/help/forms/using/transaction-report-overview-jee.md)
       + {hide-from-toc}[JEE上AEM Forms的可記帳API清單](/help/forms/using/transaction-reports-billable-apis-jee.md)
       + {hide-from-toc}[記錄自訂元件API的交易](/help/forms/using/record-transaction-custom-component-jee.md)
@@ -1103,6 +1101,7 @@ ht-degree: 22%
     + [使用JBoss EAP 8 (Linux)的AEM Forms 6.5 LTS上指令碼執行失敗](/help/forms/using/script-execution-issues-on-aem-forms-65-lts-with-jboss-eap-8-linux.md)
     + [無法啟動JBoss網域控制站](/help/forms/using/unable-to-start-jboss-domain-controller-due-to-duplicate-security-tag.md)
     + [緩解JEE 6.5 LTS SP2上AEM Forms的伺服器端請求偽造(SSRF)漏洞](/help/forms/troubleshooting/mitigating-server-side-request-forgery-vulnerabilities-for-aem-forms-on-jee-65-lts-sp2.md)
+    + [AEM Forms會封鎖有效的HTTP請求](/help/forms/troubleshooting/aem-forms-blocks-valid-http-requests.md)
   + 舊版檔案 {#legacy-documentation}
     + {hide-from-toc}[在AEM Forms on JEE Workbench中使用執行指令碼服務來建置XML資料](/help/forms/developing/building-xml.md)
     + {hide-from-toc}[在JEE自訂DSC上使用AEM Forms壓縮和解壓縮檔案](/help/forms/developing/compressing-decompressing-custom-dsc.md)
@@ -1114,7 +1113,7 @@ ht-degree: 22%
   + AI 助理 {#ai-assistant}
     + [設定 AEM 中的 AI 助理](/help/ai-assistant-in-aem-admin.md)
     + [關於 AEM 中的 AI 助理](/help/ai-assistant-in-aem.md)
-+ Content and Commerce {#commerce}
++ 內容 and Commerce {#commerce}
   + [簡介和概觀](/help/commerce/cif/introduction.md)
   + [AEM內容和Commerce重大變更](/help/commerce/cif/changes.md)
   + 整合 {#integrations}
@@ -1150,10 +1149,10 @@ ht-degree: 22%
     + [AEM Headless 快速入門](/help/journey-headless/developer/getting-started.md)
     + [踏上使用 AEM Headless 初體驗之路](/help/journey-headless/developer/path-to-first-experience.md)
     + [如何將您的內容模型化為 AEM 內容模型](/help/journey-headless/developer/model-your-content.md)
-    + [如何透過 AEM Delivery API 存取您的內容](/help/journey-headless/developer/access-your-content.md)
+    + [如何透過 AEM 傳遞 API 存取您的內容](/help/journey-headless/developer/access-your-content.md)
     + [如何透過 AEM Assets API 更新您的內容](/help/journey-headless/developer/update-your-content.md)
     + [如何整合一切](/help/journey-headless/developer/put-it-all-together.md)
-    + [如何使用 Headless 應用程式](/help/journey-headless/developer/go-live.md)
+    + [如何讓您的無周邊應用程式上線](/help/journey-headless/developer/go-live.md)
     + [選擇性 - 如何使用 AEM 建立單頁應用程式](/help/journey-headless/developer/create-spa.md)
   + AEM Headless 內容架構師歷程 {#architect}
     + [AEM Headless 內容架構者歷程概觀](/help/journey-headless/architect/overview.md)
@@ -1165,7 +1164,7 @@ ht-degree: 22%
     + [使用 AEM 進行 Headless 編寫 - 簡介](/help/journey-headless/author/introduction.md)
     + [用 AEM 進行 Headless 編寫的基礎知識](/help/journey-headless/author/basics.md)
     + [了解如何在內容片段中使用參照](/help/journey-headless/author/references.md)
-    + [了解如何為內容片段定義中繼資料和標記](/help/journey-headless/author/metadata-tagging.md)
+    + [了解如何為內容片段定義後設資料和標記](/help/journey-headless/author/metadata-tagging.md)
   + AEM Headless 翻譯歷程 {#translation}
     + [了解 AEM 中的 Headless 翻譯](/help/journey-headless/translation/overview.md)
     + [AEM Headless 翻譯快速入門](/help/journey-headless/translation/getting-started.md)
@@ -1207,8 +1206,8 @@ ht-degree: 22%
       + [建立新的Granite UI欄位元件](/help/sites-developing/granite-ui-component.md)
       + 查詢產生器{#query-builder}
         + [為查詢產生器實作自訂述詞求值器](/help/sites-developing/implementing-custom-predicate-evaluator.md)
-        + [查詢產生器述詞參考](/help/sites-developing/querybuilder-predicate-reference.md)
-        + [查詢產生器 API](/help/sites-developing/querybuilder-api.md)
+        + [查詢建置器述詞參考](/help/sites-developing/querybuilder-predicate-reference.md)
+        + [查詢建置器 API](/help/sites-developing/querybuilder-api.md)
       + 標記{#tagging}
         + [標記](/help/sites-developing/tags.md)
         + [AEM 標記框架](/help/sites-developing/framework.md)
@@ -1251,7 +1250,7 @@ ht-degree: 22%
         + [使用和擴充Widget （傳統UI）](/help/sites-developing/widgets.md)
         + [使用xtype （傳統UI）](/help/sites-developing/xtypes.md)
         + [開發Forms (Classic UI)](/help/sites-developing/developing-forms.md)
-    + [AEM Headful 和 Headless 技術](/help/sites-developing/headful-headless.md)
+    + [AEM 中的 Headful 和 Headless](/help/sites-developing/headful-headless.md)
     + Headless 體驗管理 {#headless}
       + [Headless和AEM](/help/sites-developing/headless/introduction.md)
       + Headless 歷程 {#journeys}
@@ -1261,10 +1260,10 @@ ht-degree: 22%
           + [AEM Headless as a Cloud Service 快速入門](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/getting-started.html?lang=zh-Hant)
           + [踏上使用 AEM Headless 初體驗之路](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/path-to-first-experience.html?lang=zh-Hant)
           + [如何將您的內容模型化為 AEM 內容模型](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/model-your-content.html?lang=zh-Hant)
-          + [如何透過 AEM Delivery API 存取您的內容](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/access-your-content.html?lang=zh-Hant)
+          + [如何透過 AEM 傳遞 API 存取您的內容](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/access-your-content.html?lang=zh-Hant)
           + [如何透過 AEM Assets API 更新您的內容](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/update-your-content.html?lang=zh-Hant)
           + [如何整合一切](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/put-it-all-together.html?lang=zh-Hant)
-          + [如何使用 Headless 應用程式](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/go-live.html?lang=zh-Hant)
+          + [如何讓您的無周邊應用程式上線](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/go-live.html?lang=zh-Hant)
           + [選擇性 - 如何使用 AEM 建立單頁應用程式](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/create-spa.html?lang=zh-Hant)
         + Headless 內容架構者歷程 {#architect}
           + [AEM Headless 內容架構者歷程概觀](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/overview.html?lang=zh-Hant)
@@ -1289,7 +1288,7 @@ ht-degree: 22%
         + [使用關聯內容](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-assoc-content.html?lang=zh-Hant)
         + [中繼資料 - 片段屬性](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-metadata.html?lang=zh-Hant)
         + [樹狀結構](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-structure-tree.html?lang=zh-Hant)
-        + [預覽 - JSON 代表](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-json-preview.html?lang=zh-Hant)
+        + [預覽 - JSON 表示法](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-json-preview.html?lang=zh-Hant)
       + 傳送API{#delivery-api}
         + [Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/mac-api-assets.html?lang=zh-Hant)
         + [內容片段 REST API](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/assets-api-content-fragments.html?lang=zh-Hant)
@@ -1305,7 +1304,7 @@ ht-degree: 22%
         + [簡介](/help/sites-developing/universal-editor/introduction.md)
     + 混合式與SPA AEM開發 {#spas}
       + [使用AEM的混合式和SPA](https://business.adobe.com/tw/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-      + [停止支援 SPA 編輯器](/help/sites-developing/spa-editor-deprecation.md)
+      + [SPA 編輯器棄用](/help/sites-developing/spa-editor-deprecation.md)
       + [SPA 簡介和逐步解說](/help/sites-developing/spa-walkthrough.md)
       + [SPA WKND 教學課程](/help/sites-developing/spa-wknd.md)
       + [使用 React 快速入門](/help/sites-developing/spa-getting-started-react.md)
@@ -1359,18 +1358,18 @@ ht-degree: 22%
       + [自訂頁面屬性的檢視](/help/sites-developing/page-properties-views.md)
       + [設定頁面以大量編輯頁面屬性](/help/sites-developing/bulk-editing.md)
       + [自訂和擴充內容片段](/help/sites-developing/customizing-content-fragments.md)
-      + [轉譯專用內容片段設定元件](/help/sites-developing/content-fragments-config-components-rendering.md)
+      + [內容片段轉譯的元件設定](/help/sites-developing/content-fragments-config-components-rendering.md)
       + [體驗片段](/help/sites-developing/experience-fragments.md)
       + 擴充工作流程{#extending-workflows}
         + [開發和延伸工作流程](/help/sites-developing/workflows.md)
-        + [建立工作流模型](/help/sites-developing/workflows-models.md)
+        + [建立工作流程模型](/help/sites-developing/workflows-models.md)
         + [延伸工作流程功能](/help/sites-developing/workflows-customizing-extending.md)
         + [以程式設計方式與工作流程互動](/help/sites-developing/workflows-program-interaction.md)
         + [工作流程步驟參考](/help/sites-developing/workflows-step-ref.md)
         + [工作流程最佳實務](/help/sites-developing/workflows-best-practices.md)
         + [工作流程處理序參考](/help/sites-developing/workflows-process-ref.md)
         + [AEM工作流程中的變數](/help/sites-developing/using-variables-in-aem-workflows.md)
-      + [擴充多網站管理員](/help/sites-developing/extending-msm.md)
+      + [擴充多網站管理器](/help/sites-developing/extending-msm.md)
       + Tracking and Analytics{#extending-analytics}
         + [擴充事件追蹤](/help/sites-developing/extending-analytics.md)
         + [將Adobe Analytics追蹤新增至元件](/help/sites-developing/extending-analytics-components.md)
