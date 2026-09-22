@@ -15,7 +15,7 @@ ht-degree: 0%
 本文列出為解決已知問題、改善系統穩定性及增強AEM Forms 6.5 LTS整體效能而實作的重大修正。
 
 
-本文適用於AEM Forms 6.5 LTS。 若為AEM 6.5 （非LTS）部署，請參閱[Adobe Experience Manager Forms Hotfix](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-hotfix)。
+本文適用於AEM Forms 6.5 LTS。 若為AEM 6.5 （非LTS）部署，請參閱[Adobe Experience Manager Forms Hotfix](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/release-notes/aem-forms-hotfix)。
 
 >[!NOTE]
 >
