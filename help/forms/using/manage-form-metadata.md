@@ -36,7 +36,7 @@ ht-degree: 2%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html)上的[AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html)上的AEM Forms 。
 
 ## 概觀  {#overview-nbsp}
 
@@ -284,7 +284,7 @@ AEM Forms會公開此工具中支援之表單型別的中繼資料結構。 如�
 
 1. AEM Forms會開啟所選資產型別的中繼資料結構編輯器/表單產生器（在此案例中為調適型表單）。
 
-   最適化表單型別](assets/metadata-schema-editor-for-adaptive-form-type.png)的![中繼資料結構描述編輯器
+   最適化表單型別![&#128279;](assets/metadata-schema-editor-for-adaptive-form-type.png)的中繼資料結構描述編輯器
 
    中繼資料編輯器
 

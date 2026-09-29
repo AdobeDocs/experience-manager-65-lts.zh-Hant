@@ -40,7 +40,7 @@ ht-degree: 16%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/signing-forms-using-scribble.html)上的[AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/signing-forms-using-scribble.html)上的AEM Forms 。
 
 
 您可以使用&#x200B;**草寫簽章**&#x200B;元件和&#x200B;**簽章步驟**&#x200B;元件，在最適化表單上繪製（草寫）簽章。 簽章步驟元件會顯示最適化表單的PDF版本。 您需要啟用記錄檔案選項或表單範本式最適化表單，才能使用簽名步驟元件。

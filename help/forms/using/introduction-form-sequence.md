@@ -40,7 +40,7 @@ ht-degree: 30%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/introduction-form-sequence.html)上的[AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/introduction-form-sequence.html)上的AEM Forms 。
 
 
 最適化表單可讓表單作者輕鬆建立多步驟資料擷取體驗。 它隨附內建支援，可建立多個面板並將每個面板與不同的導覽模式建立關聯。 表單作者可以在邏輯區段將表單欄位分組，並以面板來代表群組。 面板之間的整體導覽是使用面板版面來控制。 作者可以選擇以不同的版面配置來排列面板，例如，使用「精靈」版面配置以循序方式放置，或使用「索引標籤」版面配置以臨機操作方式放置。 如需面板配置的相關資訊，請參閱[最適化表單的配置功能](../../forms/using/layout-capabilities-adaptive-forms.md)。

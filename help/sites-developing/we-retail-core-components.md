@@ -66,7 +66,7 @@ ht-degree: 7%
 
 1. 在「感謝您」頁面上，選取文字元件，然後在元件的編輯選單中按一下「取消繼承」圖示。
 
-   [`We.Retail`具有全域化網站結構](/help/sites-developing/we-retail-globalized-site-structure.md)，內容透過稱為inheritance](/help/sites-administering/msm.md)的機制從主要語言網站推送至[即時副本。 因此，必須取消繼承，才能讓使用者手動編輯文字。
+   [`We.Retail`具有全域化網站結構](/help/sites-developing/we-retail-globalized-site-structure.md)，內容透過稱為inheritance[&#128279;](/help/sites-administering/msm.md)的機制從主要語言網站推送至即時副本。 因此，必須取消繼承，才能讓使用者手動編輯文字。
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 

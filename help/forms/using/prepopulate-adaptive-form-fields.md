@@ -40,7 +40,7 @@ ht-degree: 2%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html)上的[AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html)上的AEM Forms 。
 
 ## 簡介 {#introduction}
 
@@ -220,7 +220,7 @@ Prefill-Submit-Data-ContentPackage.zip
 
 >[!NOTE]
 >
->不建議在繫結面板（具有非空白bindRef的面板，這些面板是從Sidekick或「資料來源」索引標籤拖曳元件而建立的）中使用未繫結欄位，因為這可能會造成未繫結欄位的資料遺失。**** 建議在表單中設定唯一的欄位名稱，尤其是未繫結欄位。
+>不建議在繫結面板（具有非空白bindRef的面板，這些面板是從Sidekick或「資料來源」索引標籤拖曳元件而建立的）中使用未繫結欄位，因為這可能會造成未繫結欄位的資料遺失。**&#x200B;** 建議在表單中設定唯一的欄位名稱，尤其是未繫結欄位。
 
 ### 無表單模型的最適化表單 {#adaptive-form-with-no-form-model}
 

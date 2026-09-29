@@ -86,7 +86,7 @@ https://<server>:<port>/content/page.model.selector1.selector2.json
 
 ## 範例 {#example}
 
-核心元件自核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/introduction)發行版本[1.1.0起便已支援JSON匯出，並可作為參考使用。
+核心元件自核心元件[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/introduction)發行版本1.1.0起便已支援JSON匯出，並可作為參考使用。
 
 如需範例，請參閱影像核心元件的Sling模型實作及其附註介面。
 
@@ -100,7 +100,7 @@ GITHUB上的程式碼
 
 ## 相關檔案 {#related-documentation}
 
-* Assets使用手冊](https://experienceleague.adobe.com/en/docs/experience-manager-64/assets/home#)中的[內容片段主題
+* Assets使用手冊[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-64/assets/home#)中的內容片段主題
 * [內容片段模型](/help/assets/content-fragments/content-fragments-models.md)
 * [使用內容片段製作](/help/sites-authoring/content-fragments.md)
 * [內容服務的 JSON 匯出工具](/help/sites-developing/json-exporter.md)
