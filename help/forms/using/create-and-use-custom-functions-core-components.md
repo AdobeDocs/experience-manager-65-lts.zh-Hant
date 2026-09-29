@@ -6,13 +6,23 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
 exl-id: 5f6106a9-64a6-45aa-a31d-2075d1e911bf
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3352'
+source-wordcount: '3533'
 ht-degree: 2%
-
 ---
-
 # 最適化Forms核心元件中的自訂函式
 
 本文介紹如何使用最新最適化表單核心元件建立自訂函式，這些元件具有最新功能，例如：
@@ -28,7 +38,7 @@ ht-degree: 2%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions)上的AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions)上的[AEM Forms 。
 
 ## 簡介
 
@@ -60,8 +70,8 @@ AEM Forms 6.5包含JavaScript函式，可讓您使用規則編輯器定義複雜
 * `@func [functionName] <Function Name>`
 
 >[!NOTE]
->`[functionName]`是函式的名稱。不允許空格。
->`<Function Name>`是Adaptive Forms規則編輯器中函式的顯示名稱。
+>`[functionName]`是函式的名稱。 不允許空格。
+>`<Function Name>` 是Adaptive Forms規則編輯器中函式的顯示名稱。
 >如果函式名稱與函式本身的名稱相同，您可以在語法中省略`[functionName]`。
 
 #### 參數
@@ -74,17 +84,17 @@ AEM Forms 6.5包含JavaScript函式，可讓您使用規則編輯器定義複雜
 
   `{type}`代表引數型別。 允許的引數型別包括：
 
-   * string：代表單一字串值。
-   * 數字：代表單一數值。
-   * 布林值：代表單一布林值（true或false）。
-   * string[]：代表字串值的陣列。
-   * number[]：代表數值陣列。
-   * 布林值[]：代表布林值的陣列。
-   * date：代表單一日期值。
-   * date[]：代表日期值的陣列。
-   * array：代表包含各種型別值的泛型陣列。
-   * object：代表傳遞至自訂函式的表單物件，而非直接傳遞其值。
-   * 範圍：代表全域物件，其中包含唯讀變數，例如表單例項、目標欄位例項，以及在自訂函式內執行表單修改的方法。 這會宣告為JavaScript註解中的最後一個引數，且調適型表單的規則編輯器無法看到它。 scope引數可存取表單或元件的物件，以觸發表單處理所需的規則或事件。 如需有關Globals物件及其使用方式的進一步資訊，[請按一下這裡](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)
+  * string：代表單一字串值。
+  * 數字：代表單一數值。
+  * 布林值：代表單一布林值（true或false）。
+  * string[]：代表字串值的陣列。
+  * number[]：代表數值陣列。
+  * 布林值[]：代表布林值的陣列。
+  * date：代表單一日期值。
+  * date[]：代表日期值的陣列。
+  * array：代表包含各種型別值的泛型陣列。
+  * object：代表傳遞至自訂函式的表單物件，而非直接傳遞其值。
+  * 範圍：代表全域物件，其中包含唯讀變數，例如表單例項、目標欄位例項，以及在自訂函式內執行表單修改的方法。 這會宣告為JavaScript註解中的最後一個引數，且調適型表單的規則編輯器無法看到它。 scope引數可存取表單或元件的物件，以觸發表單處理所需的規則或事件。 如需有關Globals物件及其使用方式的進一步資訊，[請按一下這裡](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)
 
 引數型別是&#x200B;**不區分大小寫**，而且引數名稱中不允許有空格。
 
@@ -356,7 +366,7 @@ var c = {
 
 ### 使用AEM專案原型建立使用者端程式庫{#create-client-library-archetype}
 
-您可以使用AEM專案原型[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/using#getting-started)，將使用者端程式庫新增至已建立的專案，以新增自訂函式。
+您可以使用AEM專案原型](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started)，將使用者端程式庫新增至已建立的專案[，以新增自訂函式。
 如果您有現有的專案<!--and have already the project structure as shown in the image below,-->，您可以直接將[自訂函式](#create-add-custom-function)新增到您的本機專案。
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
@@ -474,10 +484,10 @@ var c = {
 1. 在`js`資料夾下建立名為`functions.js`的JavaScript檔案。
 1. 在`clientlibs`資料夾下建立名為`js.txt`的檔案。
 1. 儲存您的變更。
-建立的資料夾結構如下所示：
+已建立的檔案夾結構如下所示：
 
    ![已建立的用戶端資料庫檔案夾結構](/help/forms/using/assets/clientlibrary_folderstructure.png)
-1. 連按兩下`functions.js`檔案以開啟編輯器。此檔案包含自訂函式的程式碼。
+1. 連按兩下`functions.js`檔案以開啟編輯器。 此檔案包含自訂函式的程式碼。
 將下列程式碼新增至JavaScript檔案，以根據出生日期計算年齡(YYYY-MM-DD)。
 
    ```javascript
@@ -533,12 +543,12 @@ var c = {
 
 ![正在新增自訂函式使用者端程式庫](/help/forms/using//assets/calculateage-customfunction.png)
 
-現在，讓我們瞭解如何在AEM Forms 6.5[&#128279;](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)中使用規則編輯器的Invoke服務來設定和使用自訂函式
+現在，讓我們瞭解如何在AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)中使用[規則編輯器的Invoke服務來設定和使用自訂函式
 
 ## 在最適化表單中使用自訂函式 {#use-custom-functions}
 
-在最適化表單中，您可以在規則編輯器[&#128279;](/help/forms/using/rule-editor-core-components.md)中使用自訂函式。
-讓我們將下列程式碼新增至JavaScript檔案（`Function.js`檔案），根據出生日期計算年齡(YYYY-MM-DD)。建立自訂函式為`calculateAge()`，此函式以出生日期作為輸入並傳回年齡：
+在最適化表單中，您可以在規則編輯器](/help/forms/using/rule-editor-core-components.md)中使用[自訂函式。
+讓我們將下列程式碼新增至JavaScript檔案（`Function.js`檔案），以根據出生日期(YYYY-MM-DD)計算年齡。 建立自訂函式為`calculateAge()`，它以出生日期作為輸入並傳回年齡：
 
 ```javascript
     /**
@@ -573,7 +583,7 @@ var c = {
 
 >[!NOTE]
 >
-> 您可以參考下列[自訂函式](/help/forms/using/assets/customfunctions.zip)資料夾。 使用[封裝管理員](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager)下載此資料夾，並將其安裝在您的AEM執行個體中。
+> 您可以參考下列[自訂函式](/help/forms/using/assets/customfunctions.zip)資料夾。 使用[封裝管理員](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager)下載此資料夾，並將其安裝在您的AEM執行個體中。
 
 ### 支援自訂函式中的非同步函式 {#support-of-async-functions}
 
@@ -777,7 +787,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 #### **使用案例**：在欄位層級顯示自訂訊息並將欄位標籤為無效
 
-您可以使用`markFieldAsInvalid()`函式將欄位定義為無效，並在欄位層級設定自訂錯誤訊息。`fieldIdentifier`值可以是`fieldId`、`field qualifiedName`或`field dataRef`。名稱為`option`的物件值可以是`{useId: true}`、`{useQualifiedName: true}`或`{useDataRef: true}`。
+您可以使用`markFieldAsInvalid()`函式將欄位定義為無效，並在欄位層級設定自訂錯誤訊息。 `fieldIdentifier`值可以是`fieldId`、`field qualifiedName`或`field dataRef`。 名稱為`option`的物件值可以是`{useId: true}`、`{useQualifiedName: true}`或`{useDataRef: true}`。
 用於將欄位標示為無效並設定自訂訊息的語法如下：
 
 * `globals.functions.markFieldAsInvalid(field.$id,"[custom message]",{useId: true});`
@@ -985,9 +995,9 @@ Adaptive Forms會在規則編輯器中擷取自訂函式清單時，實作自訂
 
 * 使用者需要確定[核心元件和規格版本已設定為最新版本](https://github.com/adobe/aem-core-forms-components/tree/release/650)。 不過，對於現有的AEM專案和表單，還有其他要遵循的步驟：
 
-   * 對於AEM專案，使用者應使用`submitForm()`取代`submitForm('custom:submitSuccess', 'custom:submitError')`的所有執行個體並部署專案。
+  * 對於AEM專案，使用者應使用`submitForm()`取代`submitForm('custom:submitSuccess', 'custom:submitError')`的所有執行個體並部署專案。
 
-   * 針對現有表單，如果自訂提交處理常式無法正常運作，使用者需要使用規則編輯器在&#x200B;**提交**&#x200B;按鈕上開啟並儲存`submitForm`規則。 此動作將表單中`submitForm('custom:submitSuccess', 'custom:submitError')`的現有規則取代為`submitForm()`。
+  * 針對現有表單，如果自訂提交處理常式無法正常運作，使用者需要使用規則編輯器在&#x200B;**提交**&#x200B;按鈕上開啟並儲存`submitForm`規則。 此動作將表單中`submitForm('custom:submitSuccess', 'custom:submitError')`的現有規則取代為`submitForm()`。
 
 
 * 如果包含自訂函式程式碼的JavaScript檔案發生錯誤，則自訂函式不會列在最適化表單的規則編輯器中。 若要檢查自訂函式清單，您可以導覽至`error.log`檔案以找出錯誤。 發生錯誤時，自訂函式清單會顯示為空白：
@@ -1003,9 +1013,9 @@ Adaptive Forms會在規則編輯器中擷取自訂函式清單時，實作自訂
 * `parameter type`和`return type`不支援`None`。
 
 * 自訂函式清單中不支援的函式包括：
-   * 產生器函式
-   * 非同步/等待函式
-   * 方法定義
-   * 類別方法
-   * 預設引數
-   * Rest引數
+  * 產生器函式
+  * 非同步/等待函式
+  * 方法定義
+  * 類別方法
+  * 預設引數
+  * Rest引數

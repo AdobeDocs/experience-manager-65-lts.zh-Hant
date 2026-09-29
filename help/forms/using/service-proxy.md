@@ -1,5 +1,5 @@
 ---
-title: HTML5 forms service proxy
+title: HTML5 表單服務代理
 description: HTML5 Forms Service Proxy是登入提交服務Proxy的設定。 若要設定服務Proxy，請透過要求引數submissionServiceProxy指定送出服務的URL。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,29 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: a9152ba8-3c59-4a20-b164-7a57f10d9ea4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '697'
-ht-degree: 1%
-
+source-wordcount: '705'
+ht-degree: 2%
 ---
-
-# HTML5 forms service proxy{#html-forms-service-proxy}
+# HTML5 表單服務代理{#html-forms-service-proxy}
 
 HTML5 Forms Service Proxy是登入提交服務Proxy的設定。 若要設定服務Proxy，請透過要求引數&#x200B;*submissionServiceProxy*&#x200B;指定送出服務的URL。
 

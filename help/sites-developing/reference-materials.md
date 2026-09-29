@@ -11,13 +11,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 34dbd86b-7131-405b-a963-7b332232997c
-source-git-commit: a27a4a2aa0a6b4864908fc56ff7de53208cfcf7f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 3%
-
+source-wordcount: '323'
+ht-degree: 8%
 ---
-
 # API指南 {#api-guides}
 
 Adobe Experience Manager (AEM)提供數個API來開發應用程式和延伸AEM。 下列清單提供AEM所支援API的檔案：
@@ -25,8 +34,8 @@ Adobe Experience Manager (AEM)提供數個API來開發應用程式和延伸AEM�
 * [Adobe AEM 6.5 LTS API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html)
 * [Granite UI （觸控式） API檔案](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
 * [Coral UI指南](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
-* [Widget API （傳統UI）檔案](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
-* [UI測試架構JavaScript API參考](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)
+* [Widget API (Classic UI)檔案](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+* [UI測試架構JavaScript API參考資料](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)
 * [編輯器核心JavaScript API參考](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)
 
 AEM單頁應用程式(SPA)編輯器SDK框架JavaScript API參考：
@@ -40,17 +49,17 @@ AEM傳遞與內容管理API：
 
 * 核心元件(JSON)
 
-   * [JSON匯出工具](/help/sites-developing/json-exporter.md)
-   * [為元件啟用 JSON 匯出](/help/sites-developing/json-exporter-components.md)
-   * 如需詳細資訊，請參閱開發使用手冊[&#128279;](/help/sites-developing/getting-started.md)中的元件一節
+  * [JSON匯出工具](/help/sites-developing/json-exporter.md)
+  * [為元件啟用 JSON 匯出](/help/sites-developing/json-exporter-components.md)
+  * 如需詳細資訊，請參閱開發使用手冊](/help/sites-developing/getting-started.md)中的[元件一節
 
 * **Assets**： Assets HTTP API允許在Assets上執行建立 — 讀取 — 更新 — 刪除(CRUD)作業，包括二進位、中繼資料、轉譯和註解。 請參閱[AEM Assets HTTP API](/help/assets/mac-api-assets.md)
 
-* **內容片段** (CF)： Assets HTTP API[&#128279;](/help/assets/assets-api-content-fragments.md)和AEM Assets API中的[CF支援 — 內容片段](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* **內容片段** (CF)： Assets HTTP API](/help/assets/assets-api-content-fragments.md)和[AEM Assets API中的[CF支援 — 內容片段](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 
 下列外部資源僅供參考：
 
 * [Apache Sling 11 API](https://sling.apache.org/apidocs/sling11/)
-* [Jackrabbit Oak API](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)
-* [Java內容存放庫API](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)
+* [JACKRABBIT OAK API](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)
+* [Java Content Repository API](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)
 * [Apache Jackrabbit API](https://jackrabbit.apache.org/api)

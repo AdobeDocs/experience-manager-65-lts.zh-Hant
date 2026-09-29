@@ -5,16 +5,29 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: ad86398d-0dc9-4168-b409-4d231b8d586b
-source-git-commit: 757c26274b39f5fb37a090f320493abd1af44c42
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '728'
 ht-degree: 0%
-
 ---
-
 # 啟用AEM以搜尋受Document Security保護的PDF檔案{#enable-aem-to-search-document-security-protected-pdf-documents}
 
-AEM搜尋可搜尋和找到AEM資產，並對各種常用的檔案格式(例如純文字檔、Microsoft Office檔案和PDF檔案)執行文字搜尋。 您也可以擴充原生搜尋，以便對受PDF Document Security[保護的](../../forms/using/admin-help/document-security.md)AEM檔案執行全文搜尋。 若要讓AEM能夠在這類檔案上執行全文搜尋，請執行下列步驟：
+AEM搜尋可搜尋和找到AEM資產，並對各種常用的檔案格式（例如純文字檔、Microsoft Office檔案和PDF檔案）執行文字搜尋。 您也可以擴充原生搜尋，以便對受PDF Document Security](../../forms/using/admin-help/document-security.md)保護的[AEM檔案執行全文搜尋。 若要讓AEM能夠在這類檔案上執行全文搜尋，請執行下列步驟：
 
 1. 建立安全連線
 1. 為受原則保護的PDF範例檔案建立索引
@@ -23,22 +36,22 @@ AEM搜尋可搜尋和找到AEM資產，並對各種常用的檔案格式(例如�
 
 * 如果您在OSGi上使用AEM Forms：
 
-   * 在AEM Forms伺服器上安裝[AEM Forms Document Security Indexer套件](https://helpx.adobe.com/tw/aem-forms/kb/aem-forms-releases.html)。
+  * 在AEM Forms伺服器上安裝[AEM Forms Document Security Indexer套件](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)。
 
-   * 確保JEE伺服器上的AEM Forms啟動並執行，且JEE伺服器上的對應AEM Forms已安裝Document Security。 必須使用JEE伺服器上的AEM表單，才能為受保護的檔案建立索引。
+  * 確保JEE伺服器上的AEM Forms啟動並執行，且JEE伺服器上的對應AEM Forms已安裝Document Security。 必須使用JEE伺服器上的AEM表單，才能為受保護的檔案建立索引。
 
 * 如果您在JEE伺服器上只使用AEM Forms，表示已安裝索引器套件。
 * 確認所有套件組合皆已啟動且執行中。 如果所有套件組合並非作用中，請等待直到所有套件組合都啟動並執行。
 
-   * 若為OSGi上的AEM Forms，套件組合會列在https://&#39;[server]：[port]&#39;/system/console/bundles。
-   * 若為JEE上的AEM Forms，套件組合會列在https://&#39;[server]：[port]&#39;/[context-path]/system/console/bundles。 例如， https://localhost:8080/lc/system/console/bundles。
+  * 若為OSGi上的AEM Forms，套件組合會列在https://&#39;[server]：[port]&#39;/system/console/bundles。
+  * 若為JEE上的AEM Forms，套件組合會列在https://&#39;[server]：[port]&#39;/[context-path]/system/console/bundles。 例如， https://localhost:8080/lc/system/console/bundles。
 
 * 將&#x200B;*sun.util.calendar*&#x200B;套件新增至允許清單。 若要將套件新增至允許清單，請執行下列步驟：
 
-   1. 開啟AEM Web Console。 URL是https://&#39;[伺服器]：[連線埠]&#39;/system/console/configMgr。
-   1. 找到並開啟&#x200B;**還原序列化防火牆設定**。
+  1. 開啟AEM Web Console。 URL是https://&#39;[伺服器]：[連線埠]&#39;/system/console/configMgr。
+  1. 找到並開啟&#x200B;**還原序列化防火牆設定**。
 
-   1. 將sun.util.calendar套件新增至[允許清單的類別]或[套件首碼]欄位，然後按一下[儲存]。**&#x200B;**
+  1. 將sun.util.calendar套件新增至[允許清單的類別]或[套件首碼]欄位，然後按一下[儲存]。****
 
 ### 在AEM Forms JEE和OSGi棧疊之間建立安全連線 {#establish-a-secure-connection-between-aem-forms-jee-and-osgi-stacks}
 
@@ -57,7 +70,7 @@ AEM搜尋可搜尋和找到AEM資產，並對各種常用的檔案格式(例如�
    * **使用者名稱：**&#x200B;指定AEM Forms on JEE帳戶的使用者名稱，以用於起始來自AEM伺服器的呼叫。 指定的帳戶必須具有在JEE伺服器上的AEM Forms上啟動檔案服務的許可權。
    * **密碼**：指定使用者名稱欄位中提及的AEM Forms on JEE帳戶密碼。
 
-   按一下「**儲存**」。AEM已啟用以搜尋受document security保護的PDF檔案。
+   按一下「**儲存**」。 AEM已啟用以搜尋受document security保護的PDF檔案。
 
 #### 使用相互驗證設定Adobe LiveCycle Client SDK套裝 {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
@@ -73,7 +86,7 @@ AEM搜尋可搜尋和找到AEM資產，並對各種常用的檔案格式(例如�
    * **TrustStorePassword**：指定truststore檔案的密碼。
    * **服務名稱**：將RightsManagementService新增至指定的服務清單。
 
-   按一下「**儲存**」。AEM已啟用以搜尋受document security保護的PDF檔案
+   按一下「**儲存**」。 AEM已啟用以搜尋受document security保護的PDF檔案
 
 ### 為受原則保護的PDF範例檔案建立索引 {#index-a-sample-policy-protected-pdf-document}
 

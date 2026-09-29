@@ -6,7 +6,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: deba01bd-7a8d-48cd-956d-fbe8eb8671ba
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '970'
 ht-degree: 2%
@@ -60,7 +71,7 @@ RTE提供多種元件供觸控式使用者介面和傳統使用者介面使用�
 
 ## 使用來源編輯功能 {#use-of-the-source-edit-feature}
 
-在某些情況下，內容作者會發現必須檢查並調整使用RTE建立的HTML原始碼。 例如，在RTE內建立的內容片段可能需要額外的標籤，以確保符合WCAG 2.0。 您可以使用RTE的[來源編輯](/help/sites-administering/rich-text-editor.md#aboutplugins)選項來完成此操作。 您可以在`misctools`外掛程式[&#128279;](/help/sites-administering/rich-text-editor.md#aboutplugins)上指定`sourceedit`功能。
+在某些情況下，內容作者會發現必須檢查並調整使用RTE建立的HTML原始碼。 例如，在RTE內建立的內容片段可能需要額外的標籤，以確保符合WCAG 2.0。 您可以使用RTE的[來源編輯](/help/sites-administering/rich-text-editor.md#aboutplugins)選項來完成此操作。 您可以在`misctools`外掛程式](/help/sites-administering/rich-text-editor.md#aboutplugins)上指定[`sourceedit`功能。
 
 >[!CAUTION]
 >

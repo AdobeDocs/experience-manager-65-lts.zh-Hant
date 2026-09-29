@@ -10,13 +10,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
-source-git-commit: 0fc8e7c27cbb9e24edea6d6a9f1f6e7051742b91
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '5865'
 ht-degree: 1%
-
 ---
-
 # 監控及維護您的Adobe Experience Manager執行個體{#monitoring-and-maintaining-your-aem-instance}
 
 部署AEM執行個體後，您必須監控並維護其操作、效能和完整性。
@@ -25,7 +34,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->本頁上的指引適用於自我管理（內部部署）部署。 如果您在Adobe Managed Services上執行AEM，系統會為您收集應用程式和基礎結構遙測，並可透過可觀察性深入分析使用，提供生產和非生產環境的託管檢視。 如需詳細資訊，請參閱[可觀察性深入分析](https://experienceleague.adobe.com/zh-hant/docs/ams-observability-insights/content/overview)。
+>本頁上的指引適用於自我管理（內部部署）部署。 如果您在Adobe Managed Services上執行AEM，系統會為您收集應用程式和基礎結構遙測，並可透過可觀察性深入分析使用，提供生產和非生產環境的託管檢視。 如需詳細資訊，請參閱[可觀察性深入分析](https://experienceleague.adobe.com/en/docs/ams-observability-insights/content/overview)。
 
 | 檢查 | 考量事項 | 註解/動作 |
 |---|---|---|
@@ -228,13 +237,13 @@ AEM WCM會記錄詳細的記錄。 拆開包裝並開始快速入門後，您可
   * `error.log`
     錯誤訊息（嚴重性各異）會在此處註冊。
 
-  * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=zh-Hant)
+  * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
     此記錄檔只有在啟用[!DNL Dynamic Media]時才使用。 它提供用於分析內部ImageServer處理作業行為的統計資料和分析資訊。
 
   * `request.log`
     每個存取要求都會在這裡與回應一起註冊。
 
-  * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=zh-Hant)
+  * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
     此記錄檔只有在啟用[!DNL Dynamic Media]時才使用。 s7access記錄檔會記錄透過`/is/image`和`/is/content`向[!DNL Dynamic Media]提出的每個要求。
 
   * `stderr.log`
@@ -253,7 +262,7 @@ AEM WCM會記錄詳細的記錄。 拆開包裝並開始快速入門後，您可
 
 >[!NOTE]
 >
->從&#x200B;**system/console/status-Bundlelist**&#x200B;頁面產生的&#x200B;**Download Full**&#x200B;package中不包含ImageServer和s7access記錄檔。 基於支援目的，如果您有[!DNL Dynamic Media]個問題，請在聯絡客戶支援時附加ImageServer和s7access記錄。
+>從**system/console/status-Bundlelist**頁面產生的**Download Full**package中不包含ImageServer和s7access記錄檔。 基於支援目的，如果您有[!DNL Dynamic Media]個問題，請在聯絡客戶支援時附加ImageServer和s7access記錄。
 
 ### 啟動DEBUG記錄層級 {#activating-the-debug-log-level}
 
@@ -518,7 +527,7 @@ OSGi事件也會產生稽核記錄，您可以從AEM Web Console的&#x200B;**組
    * **重新整理**&#x200B;或&#x200B;**清除**&#x200B;以更新佇列專案的顯示。 這麼做有助於檢視進入和離開佇列的專案。
    * **檢視記錄檔**&#x200B;以存取復寫代理程式的任何動作記錄檔。
    * **測試目標執行個體的連線**。
-   * 如有需要，對任何佇列專案強制重試&#x200B;**&#x200B;**。
+   * 如有需要，對任何佇列專案強制重試&#x200B;****。
 
    >[!CAUTION]
    >
@@ -540,7 +549,7 @@ OSGi事件也會產生稽核記錄，您可以從AEM Web Console的&#x200B;**組
 
 >[!NOTE]
 >
->也可以檢查可改善效能[&#128279;](/help/sites-deploying/configuring-performance.md#configuring-for-performance)的特定組態。
+>也可以檢查可改善效能](/help/sites-deploying/configuring-performance.md#configuring-for-performance)的特定[組態。
 
 以下列出常見的效能問題，以及如何發現和處理這些問題的建議。
 
@@ -1068,9 +1077,9 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 >
 >另請參閱下列文章以取得詳細資訊：
 >
->* [執行緒傾印](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=zh-Hant)
->* [分析記憶體問題](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=zh-Hant)
->* [使用內建分析工具](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=zh-Hant)進行分析
+>* [執行緒傾印](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+>* [分析記憶體問題](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+>* [使用內建分析工具](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)進行分析
 >
 
 ### CPU 100% {#cpu-at}
@@ -1090,7 +1099,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * 用於[啟動AEM](/help/sites-deploying/deploy.md#getting-started)的JVM設定
 * 知識庫：
 
-  * [分析記憶體問題](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=zh-Hant)
+  * [分析記憶體問題](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 
 ### 磁碟I/O {#disk-i-o}
 
@@ -1108,7 +1117,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * 您是否設定[版本清除](/help/sites-deploying/version-purging.md)，以及設定方式
 * 知識庫：
 
-  * [開啟的檔案過多](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=zh-Hant)
+  * [開啟的檔案過多](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
 
 ### 定期效能降低 {#regular-performance-degradation}
 

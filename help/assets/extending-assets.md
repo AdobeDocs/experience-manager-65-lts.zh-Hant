@@ -1,18 +1,27 @@
 ---
-title: 自訂並擴充 [!DNL Assets]
+title: 自訂及擴充[!DNL Assets]
 description: 瞭解您可以自訂和擴充Asset Share和Asset Editor的方式，為使用者提供量身打造的介面和功能集。
 contentOwner: AG
 role: Developer
 feature: Developer Tools
 solution: Experience Manager, Experience Manager Assets
 exl-id: d4826314-a714-47b2-bf4d-029dc47982ce
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '252'
 ht-degree: 0%
-
 ---
-
 # 自訂及擴充[!DNL Assets] {#customizing-and-extending-assets}
 
 Asset Editor是Adobe Enterprise Manager網站的使用者用來尋找、檢視及操控存放庫中數位資產的主要存取點。

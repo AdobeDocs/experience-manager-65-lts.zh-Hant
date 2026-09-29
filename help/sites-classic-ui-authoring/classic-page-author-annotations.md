@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 9fe6be3b-2fd8-4023-9388-d5e80d22895c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '770'
 ht-degree: 0%
-
 ---
-
 # 編輯頁面時的註解{#annotations-when-editing-a-page}
 
 在實際發佈之前，將內容新增至網站的頁面經常會經過討論。 為協助您執行此操作，許多與內容直接相關的元件（例如，與配置相對）可讓您新增附註。
@@ -86,18 +95,18 @@ ht-degree: 0%
 * 當您處於草繪模式時，游標會變成十字線。 您可以繪製多條不同的線條。
 * 草繪線會反映註釋顏色，可以是：
 
-   * 手繪
+  * 手繪
 
-     預設模式；放開滑鼠按鈕即可完成。
+    預設模式；放開滑鼠按鈕即可完成。
 
-   * 直：
+  * 直：
 
-     按住`ALT`並按一下開始點和結束點；按兩下即可完成。
+    按住`ALT`並按一下開始點和結束點；按兩下即可完成。
 
 * 退出草繪模式後，您可以按一下草繪線來選取該草繪。
 * 選取草繪，然後將其拖曳至所需位置來移動草繪。
 * 草圖會覆蓋內容。 這表示在草繪的四個轉角內，您無法按一下基礎段落。 例如，如果您必須編輯或存取連結。 如果這變成問題（例如，您有一個草圖涵蓋了頁面的一大部分），則請將適當的註釋最小化，因為這樣也會將所有相關草圖最小化，讓您能夠存取基礎區域。
-* 若要刪除個別素描 — 請選取所需的素描，然後按&#x200B;**Delete**&#x200B;鍵(**fn**-**Mac上的退格鍵**)。
+* 若要刪除個別素描 — 請選取所需的素描，然後按&#x200B;**Delete**&#x200B;鍵（**fn**-**Mac上的退格鍵**）。
 
 * 如果您移動或複製段落，則也會移動或複製任何相關的註釋及其草圖；它們相對於段落的位置將保持相同。
 * 如果您刪除註釋，所有附加到該註釋的草圖也會被刪除。

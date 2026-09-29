@@ -7,13 +7,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 413f15c9-5b51-4d8d-8cf0-3e98608b9d9e
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1410'
 ht-degree: 0%
-
 ---
-
 # 設定配置容器和配置模式{#configuring-layout-container-and-layout-mode}
 
 瞭解如何設定配置容器和配置模式。
@@ -22,7 +31,7 @@ ht-degree: 0%
 >
 >本檔案為網站管理員和開發人員提供回應式設計的概覽，說明如何在AEM中實現功能。
 >
->對於內容作者，如何在內容頁面上使用回應式設計功能的詳細資訊，可在內容頁面的回應式佈局檔案中取得。[&#128279;](/help/sites-authoring/responsive-layout.md)
+>對於內容作者，如何在內容頁面上使用回應式設計功能的詳細資訊，可在內容頁面的回應式佈局檔案中取得。[](/help/sites-authoring/responsive-layout.md)
 
 ## 概觀 {#overview}
 
@@ -34,20 +43,20 @@ AEM使用多種機制組合，為您的頁面實現回應式佈局：
 
   此元件提供格線段落系統，讓您在回應式格線內新增及放置元件。 它可作為您頁面的預設Parsys使用，和/或在元件瀏覽器中可供作者使用。
 
-   * 預設&#x200B;**配置容器**&#x200B;元件定義於：
+  * 預設&#x200B;**配置容器**&#x200B;元件定義於：
 
-     /libs/wcm/foundation/components/responsivegrid
+    /libs/wcm/foundation/components/responsivegrid
 
-   * 您可以定義配置容器：
+  * 您可以定義配置容器：
 
-      * 作為使用者可新增至頁面的元件。
-      * 做為頁面的預設parsys。
-      * 兩者。
+    * 作為使用者可新增至頁面的元件。
+    * 做為頁面的預設parsys。
+    * 兩者。
 
-        您可以將版面容器設為頁面的標準版面容器，同時允許使用者在此容器中新增更多版面容器；例如，實現欄控制。
+      您可以將版面容器設為頁面的標準版面容器，同時允許使用者在此容器中新增更多版面容器；例如，實現欄控制。
 
 * **[配置模式](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
-將配置容器放置到頁面上後，您就可以使用&#x200B;**配置**&#x200B;模式在回應式格線內放置內容。
+將配置容器放置到頁面上後，您就可以使用**配置**&#x200B;模式在回應式格線內放置內容。
 
 * [**模擬器**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
 這可讓您建立及編輯回應式網站，這些網站會透過以互動方式調整元件大小，根據裝置/視窗大小重新安排版面。 之後，使用者可以使用模擬器檢視內容的呈現方式。
@@ -82,13 +91,13 @@ AEM使用多種機制組合，為您的頁面實現回應式佈局：
 * 用於回應式設計。
 * 可定義：
 
-   * 在頁面範本上，設定會從中複製到使用該範本建立的任何頁面。
-   * 在頁面節點上，任何子頁面會從中繼承設定。
+  * 在頁面範本上，設定會從中複製到使用該範本建立的任何頁面。
+  * 在頁面節點上，任何子頁面會從中繼承設定。
 
 * 定義標題和寬度：
 
-   * 標題說明一般裝置群組，必要時會提供方向；例如，手機、平板電腦、桌上型電腦橫向。
-   * 寬度會定義該一般裝置群組的最大寬度（畫素）。 例如，如果中斷點電話的寬度為768，那麼就會是電話裝置所使用的配置寬度上限。
+  * 標題說明一般裝置群組，必要時會提供方向；例如，手機、平板電腦、桌上型電腦橫向。
+  * 寬度會定義該一般裝置群組的最大寬度（畫素）。 例如，如果中斷點電話的寬度為768，那麼就會是電話裝置所使用的配置寬度上限。
 
 * 使用模擬器時，會在頁面編輯器頂端顯示為標籤。
 * 繼承自父節點階層，並可隨意覆寫。
@@ -193,7 +202,7 @@ AEM使用多種機制組合，為您的頁面實現回應式佈局：
 
 AEM使用LESS來產生必要CSS的部分，這些需要包含在您的專案中。
 
-您也必須建立[使用者端程式庫](https://experienceleague.adobe.com/docs/?lang=zh-Hant)，以提供額外的設定和函式呼叫。 以下LESS擷取是您必須新增至專案的最小值範例：
+您也必須建立[使用者端程式庫](https://experienceleague.adobe.com/docs/)，以提供額外的設定和函式呼叫。 以下LESS擷取是您必須新增至專案的最小值範例：
 
 ```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -233,11 +242,11 @@ AEM使用LESS來產生必要CSS的部分，這些需要包含在您的專案中�
 
 * 之前：
 
-   * `width=100px`
+  * `width=100px`
 
 * 之後：
 
-   * `max-width=100px`
+  * `max-width=100px`
 
 #### 調整大小和調整影像法規遵循 {#resizing-and-adaptive-image-compliance}
 
@@ -297,11 +306,11 @@ AEM使用LESS來產生必要CSS的部分，這些需要包含在您的專案中�
 
    * 可用的欄數：
 
-      * `columns="{String}8"`
+     * `columns="{String}8"`
 
    * 可新增至目前元件的元件：
 
-      * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
+     * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
 
 ## 巢狀回應式格點 {#nested-responsive-grids}
 

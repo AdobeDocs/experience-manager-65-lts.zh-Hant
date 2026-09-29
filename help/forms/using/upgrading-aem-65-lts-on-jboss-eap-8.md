@@ -2,7 +2,12 @@
 title: 在JBoss EAP 8 (Windows)上升級AEM 6.5 LTS
 description: 本指南逐步說明如何使用JDK 21，將現有Adobe Experience Manager (AEM) 6.5 LTS安裝從Windows上的JBoss EAP 7.4升級為JBoss EAP 8。
 exl-id: 23389613-0d9f-4e0b-b133-c8e598dd9cc9
-source-git-commit: d713aac72e764849d53e8feb98ed85b89f27a44d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1430'
 ht-degree: 2%
@@ -21,7 +26,7 @@ ht-degree: 2%
 >
 >這是關鍵的升級程式。 請一律先在非生產環境中執行此升級，並維護完整的備份。
 >
-> **先決條件：**&#x200B;在繼續之前，必須先完成系統備份及記錄的復原計畫。
+> **先決條件：**在繼續之前，必須先完成系統備份及記錄的復原計畫。
 
 ## 升級前需求
 
@@ -549,8 +554,8 @@ del "C:\jboss-eap-8.0\bin\crx-repository\crx-quickstart\launchpad\sling_bootstra
 ## 相關檔案
 
 - [JBoss EAP 8移轉指南](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0/html/migration_guide/)
-- [Adobe Experience Manager 6.5升級指南](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html?lang=zh-Hant)
-- [AEM安裝Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=zh-Hant)
+- [Adobe Experience Manager 6.5升級指南](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html)
+- [AEM安裝Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html)
 
 ## 檔案資訊
 

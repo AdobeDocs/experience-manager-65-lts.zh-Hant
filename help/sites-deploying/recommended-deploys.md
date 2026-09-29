@@ -10,20 +10,32 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 9baa4111-831a-4b68-9ce5-82aeeb06e07f
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 0%
-
+source-wordcount: '1531'
+ht-degree: 1%
 ---
-
 # 建議的部署{#recommended-deployments}
 
 >[!NOTE]
 >
 >本頁介紹AEM的建議拓撲。 如需叢集功能以及如何設定它們的詳細資訊，請參閱[Apache Sling Discovery API檔案](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html)。
 
-從AEM 6.2開始，MicroKernels就充當持續性管理員。選擇符合您需求的部署型別，取決於執行個體的用途以及您考慮的部署型別。
+從AEM 6.2開始，MicroKernels就充當持續性管理員。 選擇符合您需求的部署型別，取決於執行個體的用途以及您考慮的部署型別。
 
 以下範例旨在指出最常見的AEM設定中，建議使用哪些功能。
 
@@ -137,7 +149,7 @@ ht-degree: 0%
 
 您可以使用這些決策矩陣來建立適合您需求的最佳部署型別。
 
-Adobe強烈建議TarMK作為客戶在所有部署案例(AEM製作和發佈執行個體皆然)中使用的預設持續性技術，但以下概述的使用案例除外。
+Adobe強烈建議TarMK作為客戶在所有部署案例（AEM製作和發佈執行個體皆然）中使用的預設持續性技術，但以下概述的使用案例除外。
 
 ### 在製作執行個體上選擇AEM MongoMK而非TarMK的例外情況 {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-author-instances}
 
@@ -178,7 +190,7 @@ Adobe強烈建議TarMK作為客戶在所有部署案例(AEM製作和發佈執行
 
 1. MongoDB部署架構和規模調整必須是專案實作的一部分，並需要熟悉AEM的Adobe Consulting或MongoDB架構師的協助；
 1. 合作夥伴或客戶團隊必須具備MongoDB專業知識，才能有信心維持及維護現有或新的MongoDB環境；
-1. 您可以選擇部署商業或開放原始碼版本的MongoDB (AEM同時支援兩者)，但必須直接從MongoDB Inc購買MongoDB維護和支援合約；
+1. 您可以選擇部署商業或開放原始碼版本的MongoDB （AEM同時支援兩者），但必須直接從MongoDB Inc購買MongoDB維護和支援合約；
 1. 整體AEM和MongoDB架構和基礎架構應由Adobe AEM Architect明確定義和驗證；
 1. 檢閱包含MongoDB的AEM部署的支援模型。
 

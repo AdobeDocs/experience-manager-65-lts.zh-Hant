@@ -9,14 +9,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: a90ccd28-00ae-4317-bfda-c39acbdb835b
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '19156'
 ht-degree: 0%
-
 ---
-
 # 建立檔案輸出資料流  {#creating-document-output-streams}
 
 **本檔案中的範例和範例僅適用於JEE環境上的AEM Forms。**
@@ -310,10 +327,10 @@ Output服務執行作業之後，會傳回各種資料專案，例如指定作�
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
 
-      * 將AEM表單使用者名稱指派給欄位`OutputServiceClient.ClientCredentials.UserName.UserName`。
-      * 將對應的密碼值指派給欄位`OutputServiceClient.ClientCredentials.UserName.Password`。
-      * 將常數值`HttpClientCredentialType.Basic`指派給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`指派給欄位`BasicHttpBindingSecurity.Security.Mode`。
+     * 將AEM表單使用者名稱指派給欄位`OutputServiceClient.ClientCredentials.UserName.UserName`。
+     * 將對應的密碼值指派給欄位`OutputServiceClient.ClientCredentials.UserName.Password`。
+     * 將常數值`HttpClientCredentialType.Basic`指派給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`指派給欄位`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 參考XML資料來源。
 
@@ -568,10 +585,10 @@ Output服務執行作業之後，會傳回各種資料專案，例如指定作�
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
 
-      * 將AEM表單使用者名稱指派給欄位`OutputServiceClient.ClientCredentials.UserName.UserName`。
-      * 將對應的密碼值指派給欄位`OutputServiceClient.ClientCredentials.UserName.Password`。
-      * 將常數值`HttpClientCredentialType.Basic`指派給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`指派給欄位`BasicHttpBindingSecurity.Security.Mode`。
+     * 將AEM表單使用者名稱指派給欄位`OutputServiceClient.ClientCredentials.UserName.UserName`。
+     * 將對應的密碼值指派給欄位`OutputServiceClient.ClientCredentials.UserName.Password`。
+     * 將常數值`HttpClientCredentialType.Basic`指派給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`指派給欄位`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 參考XML資料來源。
 
@@ -768,9 +785,9 @@ Output服務會根據通常儲存為XDP檔案並在Designer中建立的表單設
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
 
-      * 將AEM表單使用者名稱指派給欄位`OutputServiceClient.ClientCredentials.UserName.UserName`。
-      * 將對應的密碼值指派給欄位`OutputServiceClient.ClientCredentials.UserName.Password`。
-      * 將常數值`HttpClientCredentialType.Basic`指派給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 將AEM表單使用者名稱指派給欄位`OutputServiceClient.ClientCredentials.UserName.UserName`。
+     * 將對應的密碼值指派給欄位`OutputServiceClient.ClientCredentials.UserName.Password`。
+     * 將常數值`HttpClientCredentialType.Basic`指派給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
    * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`指派給欄位`BasicHttpBindingSecurity.Security.Mode`。
 
@@ -1092,9 +1109,9 @@ ResourceRepositoryClient
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
 
-      * 將AEM表單使用者名稱指派給`OutputServiceClient.ClientCredentials.UserName.UserName`欄位。
-      * 將對應的密碼值指派給`OutputServiceClient.ClientCredentials.UserName.Password`欄位。
-      * 將常數值`HttpClientCredentialType.Basic`指派給`BasicHttpBindingSecurity.Transport.ClientCredentialType`欄位。
+     * 將AEM表單使用者名稱指派給`OutputServiceClient.ClientCredentials.UserName.UserName`欄位。
+     * 將對應的密碼值指派給`OutputServiceClient.ClientCredentials.UserName.Password`欄位。
+     * 將常數值`HttpClientCredentialType.Basic`指派給`BasicHttpBindingSecurity.Transport.ClientCredentialType`欄位。
 
    * 將`BasicHttpSecurityMode.TransportCredentialOnly`常數值指派給`BasicHttpBindingSecurity.Security.Mode`欄位。
 
@@ -1300,10 +1317,10 @@ Output服務執行作業之後，會傳回指定作業是否成功的各種資�
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
 
-      * 將AEM表單使用者名稱指派給欄位`OutputServiceClient.ClientCredentials.UserName.UserName`。
-      * 將對應的密碼值指派給欄位`OutputServiceClient.ClientCredentials.UserName.Password`。
-      * 將常數值`HttpClientCredentialType.Basic`指派給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`指派給欄位`BasicHttpBindingSecurity.Security.Mode`。
+     * 將AEM表單使用者名稱指派給欄位`OutputServiceClient.ClientCredentials.UserName.UserName`。
+     * 將對應的密碼值指派給欄位`OutputServiceClient.ClientCredentials.UserName.Password`。
+     * 將常數值`HttpClientCredentialType.Basic`指派給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`指派給欄位`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 參考XML資料來源。
 
@@ -1542,12 +1559,12 @@ Output服務執行作業之後，會傳回指定作業是否成功的各種資�
 
    * 叫用`OutputClient`物件的`generatePrintedOutput`方法並傳遞下列值，以擷取要列印的檔案：
 
-      * 指定列印資料流的`PrintFormat`列舉值。 例如，若要建立PostScript列印資料流，請傳遞`PrintFormat.PostScript`。
-      * 字串值，指定表單設計的名稱。
-      * 字串值，指定相關附屬檔案（例如影像檔案）的位置。
-      * 字串值，指定要使用的XDC檔案位置。
-      * 包含列印至檔案所需之執行階段選項的`PrintedOutputOptionsSpec`物件。
-      * `com.adobe.idp.Document`物件，代表包含要與表單設計合併之表單資料的XML資料來源。
+     * 指定列印資料流的`PrintFormat`列舉值。 例如，若要建立PostScript列印資料流，請傳遞`PrintFormat.PostScript`。
+     * 字串值，指定表單設計的名稱。
+     * 字串值，指定相關附屬檔案（例如影像檔案）的位置。
+     * 字串值，指定要使用的XDC檔案位置。
+     * 包含列印至檔案所需之執行階段選項的`PrintedOutputOptionsSpec`物件。
+     * `com.adobe.idp.Document`物件，代表包含要與表單設計合併之表單資料的XML資料來源。
 
      此方法會傳回包含作業結果的`OutputResult`物件。
 
@@ -1586,10 +1603,10 @@ Output服務執行作業之後，會傳回指定作業是否成功的各種資�
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
 
-      * 將AEM表單使用者名稱指派給欄位`OutputServiceClient.ClientCredentials.UserName.UserName`。
-      * 將對應的密碼值指派給欄位`OutputServiceClient.ClientCredentials.UserName.Password`。
-      * 將常數值`HttpClientCredentialType.Basic`指派給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`指派給欄位`BasicHttpBindingSecurity.Security.Mode`。
+     * 將AEM表單使用者名稱指派給欄位`OutputServiceClient.ClientCredentials.UserName.UserName`。
+     * 將對應的密碼值指派給欄位`OutputServiceClient.ClientCredentials.UserName.Password`。
+     * 將常數值`HttpClientCredentialType.Basic`指派給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`指派給欄位`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 參考XML資料來源。
 
@@ -1611,15 +1628,15 @@ Output服務執行作業之後，會傳回指定作業是否成功的各種資�
 
    * 叫用`OutputServiceService`物件的`generatePrintedOutput`方法並傳遞下列值，以擷取要列印的檔案：
 
-      * 指定列印資料流的`PrintFormat`列舉值。 例如，若要建立PostScript列印資料流，請傳遞`PrintFormat.PostScript`。
-      * 字串值，指定表單設計的名稱。
-      * 字串值，指定相關附屬檔案（例如影像檔案）的位置。
-      * 字串值，指定要使用的XDC檔案位置。
-      * `PrintedOutputOptionsSpec`物件，其中包含傳送列印資料流至網路印表機時使用的列印執行時間選項。
-      * 包含包含表單資料之XML資料來源的`BLOB`物件。
-      * 由`generatePrintedOutput`方法填入的`BLOB`物件。 `generatePrintedOutput`方法會將描述檔案的產生中繼資料填入此物件。 （只有Web服務呼叫需要此引數值。）
-      * 由`generatePrintedOutput`方法填入的`BLOB`物件。 `generatePrintedOutput`方法會將結果資料填入此物件中。 （只有Web服務呼叫需要此引數值。）
-      * 包含作業結果的`OutputResult`物件。 （只有Web服務呼叫需要此引數值。）
+     * 指定列印資料流的`PrintFormat`列舉值。 例如，若要建立PostScript列印資料流，請傳遞`PrintFormat.PostScript`。
+     * 字串值，指定表單設計的名稱。
+     * 字串值，指定相關附屬檔案（例如影像檔案）的位置。
+     * 字串值，指定要使用的XDC檔案位置。
+     * `PrintedOutputOptionsSpec`物件，其中包含傳送列印資料流至網路印表機時使用的列印執行時間選項。
+     * 包含包含表單資料之XML資料來源的`BLOB`物件。
+     * 由`generatePrintedOutput`方法填入的`BLOB`物件。 `generatePrintedOutput`方法會將描述檔案的產生中繼資料填入此物件。 （只有Web服務呼叫需要此引數值。）
+     * 由`generatePrintedOutput`方法填入的`BLOB`物件。 `generatePrintedOutput`方法會將結果資料填入此物件中。 （只有Web服務呼叫需要此引數值。）
+     * 包含作業結果的`OutputResult`物件。 （只有Web服務呼叫需要此引數值。）
 
    * 取得`OutputResult`物件的`generatedDoc`方法的值，建立要傳送至印表機的`BLOB`物件。 此方法傳回的`BLOB`物件包含`generatePrintedOutput`方法傳回的PostScript資料。
 
@@ -1881,10 +1898,10 @@ Output服務執行作業之後，會傳回指定作業是否成功的XML資料�
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
 
-      * 將AEM表單使用者名稱指派給欄位`OutputServiceClient.ClientCredentials.UserName.UserName`。
-      * 將對應的密碼值指派給欄位`OutputServiceClient.ClientCredentials.UserName.Password`。
-      * 將常數值`HttpClientCredentialType.Basic`指派給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`指派給欄位`BasicHttpBindingSecurity.Security.Mode`。
+     * 將AEM表單使用者名稱指派給欄位`OutputServiceClient.ClientCredentials.UserName.UserName`。
+     * 將對應的密碼值指派給欄位`OutputServiceClient.ClientCredentials.UserName.Password`。
+     * 將常數值`HttpClientCredentialType.Basic`指派給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`指派給欄位`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 參考XML資料來源。
 
@@ -2113,10 +2130,10 @@ Output服務執行作業之後，會傳回指定作業是否成功的XML資料�
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
 
-      * 將AEM表單使用者名稱指派給欄位`OutputServiceClient.ClientCredentials.UserName.UserName`。
-      * 將對應的密碼值指派給欄位`OutputServiceClient.ClientCredentials.UserName.Password`。
-      * 將常數值`HttpClientCredentialType.Basic`指派給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`指派給欄位`BasicHttpBindingSecurity.Security.Mode`。
+     * 將AEM表單使用者名稱指派給欄位`OutputServiceClient.ClientCredentials.UserName.UserName`。
+     * 將對應的密碼值指派給欄位`OutputServiceClient.ClientCredentials.UserName.Password`。
+     * 將常數值`HttpClientCredentialType.Basic`指派給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`指派給欄位`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 參考XML資料來源。
 
@@ -2327,10 +2344,10 @@ Output服務執行作業之後，會傳回指定作業是否成功的XML資料�
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
 
-      * 將AEM表單使用者名稱指派給欄位`OutputServiceClient.ClientCredentials.UserName.UserName`。
-      * 將對應的密碼值指派給欄位`OutputServiceClient.ClientCredentials.UserName.Password`。
-      * 將常數值`HttpClientCredentialType.Basic`指派給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`指派給欄位`BasicHttpBindingSecurity.Security.Mode`。
+     * 將AEM表單使用者名稱指派給欄位`OutputServiceClient.ClientCredentials.UserName.UserName`。
+     * 將對應的密碼值指派給欄位`OutputServiceClient.ClientCredentials.UserName.Password`。
+     * 將常數值`HttpClientCredentialType.Basic`指派給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`指派給欄位`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 擷取互動式PDF檔案。
 

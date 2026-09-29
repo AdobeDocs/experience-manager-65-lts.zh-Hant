@@ -1,5 +1,5 @@
 ---
-title: HTML5表單的轉譯表單範本
+title: 轉譯 HTML5 表單的表單範本
 description: HTML5表單設定檔與設定檔轉譯器相關聯。 設定檔轉譯器是JSP頁面，負責呼叫HTML OSGi服務來產生表單的Forms表示法。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,20 +9,35 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 45c6a654-c726-4a45-86a9-57f4ed24b4ca
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 1%
-
+source-wordcount: '543'
+ht-degree: 3%
 ---
-
-# HTML5表單的轉譯表單範本 {#rendering-form-template-for-html-forms}
+# 轉譯 HTML5 表單的表單範本 {#rendering-form-template-for-html-forms}
 
 ## 轉譯端點 {#render-endpoint}
 
 HTML5表單具有&#x200B;**設定檔**&#x200B;的概念，此設定檔會公開為REST端點，以啟用表單範本的行動轉譯。 這些設定檔已關聯&#x200B;**設定檔轉譯器**。 這些是JSP頁面，負責呼叫HTML OSGi服務來產生Forms表單表示法。 「設定檔」節點的JCR路徑會決定轉譯器端點的URL。 指向「預設」設定檔之表單的預設轉譯端點看起來如下所示：
 
-https://&lt;*主機*>：&lt;*連線埠*>/content/xfaforms/profiles/default.html？contentRoot=&lt;*包含表單xdp*>&amp;template=&lt;*xdp*>的資料夾路徑
+https://<*主機*>：<*連線埠*>/content/xfaforms/profiles/default.html?contentRoot=<*包含表單xdp*>&template=<*xdp*&#x200B;名稱的資料夾路徑
 
 例如 `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 

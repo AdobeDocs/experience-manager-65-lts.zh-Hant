@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 5ceaa9f0-aba1-40a3-97ef-f5ade0c2a54a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '184'
 ht-degree: 1%
-
 ---
-
 # 新增圖形演算的字型{#adding-fonts-for-graphic-rendering}
 
 AEM可讓您產生結合動態擷取自內容的文字的圖形。
@@ -47,4 +56,4 @@ AEM可讓您產生結合動態擷取自內容的文字的圖形。
 
    這些字型現已可在Java API中使用。
 
-如需有關如何搭配Java API使用字型的完整詳細資訊，請參閱Java API字型類別[&#128279;](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html)的檔案。
+如需有關如何搭配Java API使用字型的完整詳細資訊，請參閱Java API字型類別](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html)的[檔案。

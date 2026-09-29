@@ -5,20 +5,36 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: caa79def-4a29-4746-9a35-c362ea1c3c0c
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 4%
-
+source-wordcount: '1007'
+ht-degree: 6%
 ---
-
 # 教學課程：建立第一個最適化表單 {#tutorial-create-your-first-adaptive-form}
 
 ## 套用至 {#applies-to}
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=zh-Hant)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html)上的[AEM Forms 。
 
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
@@ -44,7 +60,7 @@ ht-degree: 4%
 
 ### 必備條件 {#prerequisite}
 
-* 設定[AEM作者執行個體](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html?lang=zh-Hant#author-and-publish-installs)
+* 設定[AEM作者執行個體](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * 在作者執行個體上安裝[AEM Forms附加元件](../../forms/using/installing-configuring-aem-forms-osgi.md)。
 * 從資料庫提供者取得JDBC資料庫驅動程式（JAR檔案）。 教學課程中的範例是以[!DNL MySQL]資料庫為基礎，並使用[!DNL Oracle's] [MySQL JDBC資料庫驅動程式](https://dev.mysql.com/downloads/connector/j/5.1.html)。
 
@@ -100,7 +116,7 @@ ht-degree: 4%
 
 ![adaptive-form-styling](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
 
-調適型表單提供主題和[編輯器](../../forms/using/themes.md)，以便為調適型表單建立主題。 主題包含元件和面板的樣式細節，您可以重複使用不同表單中的主題。 樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。將主題套用至表單時，指定的樣式會反映至表單的對應元件。 調適型表單也支援表單專屬樣式的內嵌樣式。
+調適型表單提供主題和[編輯器](../../forms/using/themes.md)，以便為調適型表單建立主題。 主題包含元件和面板的樣式細節，您可以重複使用不同表單中的主題。 樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。 將主題套用至表單時，指定的樣式會反映至表單的對應元件。 調適型表單也支援表單專屬樣式的內嵌樣式。
 
 目標：
 
@@ -114,12 +130,12 @@ ht-degree: 4%
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
-您可以將最適化表單發佈為獨立表單（單頁應用程式）、包含在AEM [網站頁面](/help/forms/using/embed-adaptive-form-aem-sites.md)中，或使用[!DNL Site]Forms入口網站[在AEM &#x200B;](../../forms/using/introduction-publishing-forms.md)上列出。
+您可以將最適化表單發佈為獨立表單（單頁應用程式）、包含在AEM [網站頁面](/help/forms/using/embed-adaptive-form-aem-sites.md)中，或使用[Forms入口網站](../../forms/using/introduction-publishing-forms.md)在AEM [!DNL Site]上列出。
 
 目標：
 
 * 將最適化表單發佈為AEM頁面。
 * 將最適化表單內嵌到AEM [!DNL Sites]頁面中。
-* 將最適化表單內嵌於外部網頁(託管於AEM外部的非AEM網頁)中。
+* 將最適化表單內嵌於外部網頁（託管於AEM外部的非AEM網頁）中。
 
 [![請參閱指南](assets/see-the-guide-sm.png)](publish-your-adaptive-form.md)

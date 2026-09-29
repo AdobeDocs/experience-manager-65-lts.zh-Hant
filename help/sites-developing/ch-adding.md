@@ -5,13 +5,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
 exl-id: a2b32ec3-ff1b-47e0-b346-53a5db5ae27f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '925'
 ht-degree: 0%
-
 ---
-
 # 將ContextHub新增至頁面並存取存放區 {#adding-contexthub-to-pages-and-accessing-stores}
 
 將ContextHub新增至您的頁面，以啟用ContextHub功能並連結至ContextHub JavaScript資料庫。
@@ -112,7 +123,7 @@ ContextHub提供[`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-util
 >
 >ContextHub預設不會知道發佈伺服器上目前使用的登入，並且ContextHub會將此類使用者視為「匿名」。
 >
->您可以載入設定檔存放區，讓ContextHub知道登入的使用者。 請參閱GitHub[&#128279;](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js)上的範常式式碼。
+>您可以載入設定檔存放區，讓ContextHub知道登入的使用者。 請參閱GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js)上的[範常式式碼。
 
 ### ContextHub事件 {#contexthub-eventing}
 

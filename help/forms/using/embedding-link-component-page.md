@@ -9,13 +9,26 @@ solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
 exl-id: a6ae1633-63a8-4364-b298-bc569459a136
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '412'
 ht-degree: 0%
-
 ---
-
 # 將連結元件內嵌在頁面中{#embedding-link-component-in-a-page}
 
 ## 先決條件 {#prerequisites}
@@ -56,6 +69,6 @@ ht-degree: 0%
 * 如果「表單路徑」中指定的路徑指向的檔案將PDF作為其允許的轉譯格式，請確保您選擇PDF作為轉譯器型別。
 * 表單的提交URL可在數個位置指定，其優先順序如下：
 
-   1. 表單中內嵌的提交URL （在提交按鈕中）具有最高優先順序。
-   1. Forms Manager中提到的提交URL具有中優先順序。
-   1. Forms入口網站中提到的提交URL優先順序最低。
+  1. 表單中內嵌的提交URL （在提交按鈕中）具有最高優先順序。
+  1. Forms Manager中提到的提交URL具有中優先順序。
+  1. Forms入口網站中提到的提交URL優先順序最低。

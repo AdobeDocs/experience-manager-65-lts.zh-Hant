@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 8f00a86f-0fd0-480d-84a9-89a948840a0b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '788'
 ht-degree: 3%
-
 ---
-
 # 測試您的UI{#testing-your-ui}
 
 >[!NOTE]
@@ -105,7 +114,7 @@ AEM測試架構使用Hobbes.js，這是以JavaScript撰寫的測試程式庫。 
 
 如需建立您自己的測試套裝的完整詳細資訊，請參閱[Hobbes.js API檔案](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)。
 
-1. 開啟CRXDE Lite。 ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
+1. 開啟 CRXDE Lite。 ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. 用滑鼠右鍵按一下`/etc/clientlibs`資料夾，然後按一下&#x200B;**建立>建立資料夾**。 輸入名稱`myTests`並按一下&#x200B;**確定**。
 1. 以滑鼠右鍵按一下`/etc/clientlibs/myTests`資料夾，然後按一下&#x200B;**建立>建立節點**。 使用以下屬性值，然後按一下&#x200B;**確定**：
 
@@ -141,7 +150,7 @@ AEM測試架構使用Hobbes.js，這是以JavaScript撰寫的測試程式庫。 
    myTestSuite.js
    ```
 
-1. 按一下[儲存全部]&#x200B;**&#x200B;**，然後關閉`js.txt`檔案。
+1. 按一下[儲存全部]****，然後關閉`js.txt`檔案。
 1. 以滑鼠右鍵按一下`myFirstTest`節點，然後按一下&#x200B;**建立>建立檔案**。 將檔案命名為`myTestSuite.js`並按一下&#x200B;**確定**。
 1. 將下列程式碼複製到`myTestSuite.js`檔案，然後儲存檔案：
 

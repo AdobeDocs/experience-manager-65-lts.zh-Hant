@@ -9,22 +9,43 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade,AEM Forms on JEE
 hide: true
-hidefromtoc: true
+hidefromtoc: 'yes'
+removedfrom6.5.2025: 'yes'
 exl-id: 643bc966-b2d8-4626-8c25-b63c8909287e
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 94663796-0ee7-58b9-84f4-b425ebb69e83
+    internal-label: AEM Forms on JEE
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: b9cdd520-e7a7-4af9-a95f-296f28882b69
+    internal-label: AEM Forms upgrade
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 2%
-
 ---
-
 # 在JEE上升級至AEM 6.5 Forms {#upgrade-to-aem-forms-jee}
 
 JEE上的AEM 6.5.18.0 Forms提供兩種型別的安裝程式：完整安裝程式和修補程式安裝程式。
 
-**完整安裝程式**：您可以使用JEE完整安裝程式上的[AEM 6.5.18.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hant)來設定新的AEM Forms執行個體，或從JEE上的AEM 6.5.x.x Forms升級為JEE上的AEM 6.5.18.0 Forms。
+**完整安裝程式**：您可以使用JEE完整安裝程式上的[AEM 6.5.18.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)來設定新的AEM Forms執行個體，或從JEE上的AEM 6.5.x.x Forms升級為JEE上的AEM 6.5.18.0 Forms。
 
-**修補程式安裝程式**： JEE修補程式安裝程式[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hant)上的AEM 6.5.18.0適用於已使用AEM 6.5.x.x版本的客戶。 您可以使用修補程式安裝程式來升級至最新版AEM Forms。
+**修補程式安裝程式**： JEE修補程式安裝程式](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)上的[AEM 6.5.18.0適用於已使用AEM 6.5.x.x版本的客戶。 您可以使用修補程式安裝程式來升級至最新版AEM Forms。
 
 下表說明使用完整安裝程式和修補程式安裝程式的情境。
 
@@ -33,12 +54,12 @@ JEE上的AEM 6.5.18.0 Forms提供兩種型別的安裝程式：完整安裝程�
 執行以下程式，使用完整安裝程式將JEE上的現有AEM Forms 6.5.x.x升級為JEE上的AEM 6.5.18.0 Forms：
 
 1. 從[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)下載JEE安裝程式上的AEM 6.5 Forms。 您需要有效的維護與支援合約才能使用安裝程式。
-1. 請參閱[升級檢查清單與規劃](https://www.adobe.com/go/learn_aemforms_upgrade_checklist_65_tw)，瞭解如何執行檢查以確保升級成功。
-1. 請參閱[準備升級至AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65_tw)以瞭解並執行工作，確保升級正確執行並將伺服器停機時間降到最低。
+1. 請參閱[升級檢查清單與規劃](https://www.adobe.com/go/learn_aemforms_upgrade_checklist_65)，瞭解如何執行檢查以確保升級成功。
+1. 請參閱[準備升級至AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65)以瞭解並執行工作，確保升級正確執行並將伺服器停機時間降到最低。
 1. 根據您現有的環境和應用程式伺服器，選擇下列其中一份檔案並依照指示操作。
 
-   * [從AEM 6.3或AEM 6.4 Forms升級至適用於JBoss的AEM 6.5 Forms](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65_tw)
-   * [從適用於WebSphere的AEM 6.3或AEM 6.4 Forms升級至AEM 6.5 Forms](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_tw)
-   * [從AEM 6.3或AEM 6.4 Forms升級至適用於JBoss Turnkey的AEM 6.5 Forms](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_tw)
+   * [從AEM 6.3或AEM 6.4 Forms升級至適用於JBoss的AEM 6.5 Forms](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
+   * [從適用於WebSphere的AEM 6.3或AEM 6.4 Forms升級至AEM 6.5 Forms](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
+   * [從AEM 6.3或AEM 6.4 Forms升級至適用於JBoss Turnkey的AEM 6.5 Forms](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
 
 無法從LiveCycle ES2、LiveCycle ES3、AEM 6.0 Forms、AEM 6.1 Forms、AEM 6.2 Forms直接升級至AEM 6.5 Forms。 您可以對一或多個版本的LiveCycle或AEM Forms執行中繼升級，然後升級至AEM 6.5 Forms。 如需中繼版本和對應升級指示的清單，請參閱[選擇升級路徑](upgrade.md)。

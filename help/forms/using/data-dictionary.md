@@ -8,13 +8,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: b73b3adc-e12c-47a8-9342-6214128b72ff
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3826'
 ht-degree: 1%
-
 ---
-
 # 資料字典{#data-dictionary}
 
 ## 簡介 {#introduction}
@@ -61,7 +74,7 @@ ht-degree: 1%
 
    ![德文指定的資料字典屬性](do-not-localize/1_ddproperties.png)
 
-1. （選擇性）若要上傳資料字典的XSD結構描述定義，請在[資料字典結構]窗格下選取[上傳XML結構描述]。**&#x200B;**&#x200B;瀏覽至XSD檔案，選取該檔案，然後選取&#x200B;**開啟**。 系統會根據上傳的XML結構描述建立資料字典。 您需要調整資料字典中元素的顯示名稱和說明。 要執行此操作，請點選元素名稱並編輯其說明、顯示名稱和其他在右窗格欄位中的詳細資訊。
+1. （選擇性）若要上傳資料字典的XSD結構描述定義，請在[資料字典結構]窗格下選取[上傳XML結構描述]。****&#x200B;瀏覽至XSD檔案，選取該檔案，然後選取&#x200B;**開啟**。 系統會根據上傳的XML結構描述建立資料字典。 您需要調整資料字典中元素的顯示名稱和說明。 要執行此操作，請點選元素名稱並編輯其說明、顯示名稱和其他在右窗格欄位中的詳細資訊。
 
    如需有關已計算DD元素的詳細資訊，請參閱[已計算的資料字典元素](#computedddelements)。
 
@@ -199,7 +212,7 @@ ht-degree: 1%
 1. 輸入資料後，您可以在預覽含有測試資料的信函時，使用此XML檔案。
 
    您可以使用DD新增此測試資料（選取DD並選取「上傳測試資料」並上傳此xml檔案）
-因此在這之後，當您正常預覽信函時（非自訂），信函中就會使用此XML資料。 您也可以選取「自訂」，然後上傳此XML。
+   因此在這之後，當您正常預覽信函時（非自訂），信函中就會使用此XML資料。 您也可以選取「自訂」，然後上傳此XML。
 
 ## 範例 {#samples}
 

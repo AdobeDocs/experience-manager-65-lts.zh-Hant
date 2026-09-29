@@ -8,14 +8,26 @@ feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6249'
+source-wordcount: '6255'
 ht-degree: 0%
-
 ---
-
 # 正在設定檔案型別設定 {#configuring-file-type-settings}
 
 >[!NOTE]
@@ -266,7 +278,7 @@ PDF Generator支援縮減PDF檔案大小的功能。 是否使用這些設定或
 
    >[!NOTE]
    >
-   >*如果您使用此選項搭配&#x200B;**取消嵌入某些字型**，則&#x200B;**新增字型至取消嵌入**&#x200B;清單中的字型仍會完全取消嵌入。*
+   >*如果您使用此選項搭配&#x200B;**取消嵌入某些字型**，則&#x200B;**新增字型至取消嵌入**清單中的字型仍會完全取消嵌入。*
 
    >[!NOTE]
    >
@@ -383,7 +395,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 ### 清除 {#clean-up}
 
-選取&#x200B;**清除**&#x200B;以移除檔案中不必要的專案。
+選取&#x200B;**清除**以移除檔案中不必要的專案。
 這些專案包括已過時或不必要用於檔案預期用途的元素。 移除某些元素可能會嚴重影響PDF的功能。 依預設，只會選取不影響功能的元素。 如果您不確定移除其他選項的影響，請使用預設選取專案。
 
 **壓縮**
@@ -417,7 +429,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 **副檔名**：指定此應用程式所接受的檔案型別副檔名（以逗號分隔）。 預設為 `xls,xlsx`。 請勿在擴充功能前加上句點或空格。
 
-**建立符合PDF/A-1a的檔案**：強制使用PDF/A-1b:2005 RGB Adobe PDF設定。
+**建立PDF/A-1a相容檔案**：強制使用PDF/A-1b：2005 RGB Adobe PDF設定。
 
 **將書籤新增至Adobe PDF**：將Excel工作表名稱轉換為書籤。 依預設，會選取此選項。
 
@@ -471,7 +483,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 **[!UICONTROL 將隱藏的幻燈片轉換成PDF頁面]**：轉換隱藏的幻燈片。
 
-**[!UICONTROL 建立符合PDF/A-1a的檔案]**：強制使用PDF/A-1b:2005 RGB Adobe PDF設定。 產生PDF檔案時，有些PowerPoint功能不會轉換。 如果PowerPoint轉變在Acrobat中沒有同等轉變，則會取代類似的轉變。 如果同一幻燈片中有多個動畫效果，則使用單一效果。 轉換頁面切換效果與專案符號外掛程式。
+**[!UICONTROL 建立PDF/A-1a相容檔案]**：強制使用PDF/A-1b：2005 RGB Adobe PDF設定。 產生PDF檔案時，有些PowerPoint功能不會轉換。 如果PowerPoint轉變在Acrobat中沒有同等轉變，則會取代類似的轉變。 如果同一幻燈片中有多個動畫效果，則使用單一效果。 轉換頁面切換效果與專案符號外掛程式。
 
 ## Microsoft專案設定（僅限Windows） {#microsoft-project-settings-windows-only}
 
@@ -481,7 +493,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 1. **[!UICONTROL 轉換檔案資訊]**：從來源檔案的[內容]對話方塊新增檔案資訊，包括標題、主旨、作者、關鍵字、經理、公司、類別和註解。 依預設，會選取此選項。
 1. **[!UICONTROL 將Source檔案附加至Adobe PDF]**：將來源檔案作為附件新增至PDF檔案。
-1. **[!UICONTROL 建立符合PDF/A-1a的檔案]**：強制使用PDF/A-1b:2005 RGB Adobe PDF設定。
+1. **[!UICONTROL 建立PDF/A-1a相容檔案]**：強制使用PDF/A-1b：2005 RGB Adobe PDF設定。
 1. **[!UICONTROL 自動執行巨集]**：在轉換檔案之前先執行Microsoft專案檔案中的任何巨集（例如插入目前時間的巨集）。
 
 ## Microsoft Word設定（僅限Windows） {#microsoft-word-settings-windows-only}
@@ -502,7 +514,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 **[!UICONTROL 啟用協助工具並使用已標籤的Adobe PDF重排]**：將標籤內嵌至PDF檔案。 依預設，會選取此選項。
 
-**[!UICONTROL 建立PDF/A-1a相容檔案]**：如果選取，強制使用PDF/A-1b:2005 RGB Adobe PDF設定。
+**[!UICONTROL 建立PDF/A-1a相容檔案]**：如果選取，會強制使用PDF/A-1b：2005 RGB Adobe PDF設定。
 
 **[!UICONTROL 自動執行巨集]**：在轉換檔案之前先執行Word檔案中的任何巨集（例如插入目前時間的巨集）。
 
@@ -544,7 +556,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 **在Adobe Acrobat中檢視時開啟圖層面板**：如果Visio圖層未平面化，會開啟一個視窗，您可以在其中指定使用Acrobat開啟時，PDF檔案中保留的圖層。 依預設，會選取此選項。
 
-**建立PDF/A-1b相容檔案**：強制使用Adobe PDF設定PDF/A-1b:2005 (RGB)。
+**建立PDF/A-1b相容檔案**：強制使用Adobe PDF設定PDF/A-1b：2005 (RGB)。
 
 **將評論轉換為Adobe PDF評論**：將Visio註解轉換為PDF評論。
 
@@ -621,7 +633,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 ## 其他應用程式設定（僅限Windows） {#other-applications-settings-windows-only}
 
-您無法透過Administration Console變更其他應用程式的設定；它們會顯示支援檔案型別的副檔名。 如需有關存取這些設定的說明，請參閱[建立或編輯檔案型別設定](https://help.adobe.com/zh_TW/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html)。
+您無法透過Administration Console變更其他應用程式的設定；它們會顯示支援檔案型別的副檔名。 如需有關存取這些設定的說明，請參閱[建立或編輯檔案型別設定](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html)。
 
 * Corel WordPerfect： `wpd`
 * Adobe PageMaker： `pmd, pm6, p65, pm`

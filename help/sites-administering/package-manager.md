@@ -9,13 +9,22 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 exl-id: 6c0238ca-568e-4a46-a3cc-0b08a10cf324
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3568'
-ht-degree: 1%
-
+source-wordcount: '3576'
+ht-degree: 2%
 ---
-
 # 封裝管理員 {#working-with-packages}
 
 套件可讓您匯入和匯出存放庫內容。 您可以使用套件來安裝新內容、安裝新功能、在執行個體之間傳輸內容以及備份存放庫內容。
@@ -64,8 +73,8 @@ ht-degree: 1%
 * **左側導覽面板** — 此面板可讓您篩選及排序封裝清單。
 * **封裝清單** — 這是執行個體上按照左側導覽面板中的選取專案篩選和排序的封裝清單。
 * **活動記錄** — 此面板一開始會最小化，並展開以詳細說明封裝管理員的活動，例如建置或安裝封裝時。 「活動記錄」標籤中還有額外的按鈕可執行下列動作：
-   * **清除記錄檔**
-   * **顯示/隱藏**
+  * **清除記錄檔**
+  * **顯示/隱藏**
 * **工具列** — 工具列包含[左側導覽面板]和[封裝清單]的重新整理按鈕，以及搜尋、建立和上傳封裝的按鈕。
 
 ![封裝管理員UI](assets/package-manager-ui.png)
@@ -118,7 +127,7 @@ ht-degree: 1%
 
 您可以編輯各種封裝設定來定義資訊，例如封裝說明、相依性和提供者詳細資訊。
 
-**封裝設定**&#x200B;對話方塊可在[建立](#creating-a-new-package)或[編輯](#viewing-and-editing-package-information)封裝時，透過&#x200B;**編輯**&#x200B;按鈕使用。 完成任何變更後，按一下[儲存]。**&#x200B;**
+**封裝設定**&#x200B;對話方塊可在[建立](#creating-a-new-package)或[編輯](#viewing-and-editing-package-information)封裝時，透過&#x200B;**編輯**&#x200B;按鈕使用。 完成任何變更後，按一下[儲存]。****
 
 ![編輯封裝對話方塊，一般設定](assets/general-settings.png)
 
@@ -127,7 +136,7 @@ ht-degree: 1%
 | 名稱 | 封裝的名稱 |
 | 群組 | 若要組織封裝，您可以鍵入新群組的名稱或選取現有群組 |
 | 版本 | 用於版本的文字 |
-| 描述 | 套件允許格式化時使用HTML標籤的簡短說明 |
+| 說明 | 套件允許格式化時使用HTML標籤的簡短說明 |
 | 縮圖 | 隨套件清單一起出現的圖示 |
 
 #### 封裝縮圖 {#thumbnails}
@@ -174,7 +183,7 @@ Official Service Pack
 | include | 包含將包含指定目錄中符合規則運算式的所有檔案和資料夾。 包含&#x200B;**將不會**&#x200B;包含指定根路徑下的其他檔案或資料夾。 |
 | 排除 | 排除將排除符合規則運算式的所有檔案和資料夾。 |
 
-當您首次[建立封裝時，最常會定義封裝篩選器。](#creating-a-new-package)不過，它們也可在稍後編輯，之後應重新建置封裝，以根據新的篩選定義更新其內容。
+當您首次[建立封裝時，最常會定義封裝篩選器。](#creating-a-new-package) 不過，它們也可在稍後進行編輯，之後應重新建置套件，以根據新的篩選定義更新其內容。
 
 >[!TIP]
 >
@@ -243,7 +252,7 @@ Official Service Pack
 
    ![新封裝](assets/new-package.png)
 
-1. 按一下&#x200B;**編輯**&#x200B;以定義[封裝內容。完成編輯設定後，](#package-contents)按一下&#x200B;**儲存**。
+1. 按一下&#x200B;**編輯**&#x200B;以定義[封裝內容。](#package-contents) 完成編輯設定後，請按一下&#x200B;**儲存**。
 
 1. 您現在可以[建置](#building-a-package)您的封裝。
 
@@ -259,7 +268,7 @@ Official Service Pack
 
 1. 按一下&#x200B;**建置**。 對話方塊會要求您確認是否要建置封裝，因為任何現有的封裝內容都會被覆寫。
 
-1. 按一下&#x200B;**確定**。 AEM會建置套件，並在活動清單中列出新增至套件的所有內容。 完成時，AEM會顯示已建置封裝的確認，而且（當您關閉對話方塊時）會更新封裝清單資訊。
+1. 按一下&#x200B;**「確定」**。 AEM會建置套件，並在活動清單中列出新增至套件的所有內容。 完成時，AEM會顯示已建置封裝的確認，而且（當您關閉對話方塊時）會更新封裝清單資訊。
 
 ### 編輯封裝 {#edit-package}
 
@@ -311,7 +320,7 @@ Official Service Pack
 
    ![封裝內容](assets/package-contents.png)
 
-1. 若要執行安裝練習，請按一下[其他] **&#x200B;**&#x200B;> [測試安裝] **，並在活動記錄檔中報告封裝管理程式所取得的結果，如同已執行安裝一樣。**
+1. 若要執行安裝練習，請按一下[其他] **** > [測試安裝] **，並在活動記錄檔中報告封裝管理程式所取得的結果，如同已執行安裝一樣。**
 
    ![測試安裝](assets/test-install.png)
 
@@ -344,7 +353,7 @@ Package Share是一項集中式公用服務，可分發內容套件。 封裝共
    * **封裝** — 使用&#x200B;**瀏覽……**&#x200B;按鈕，從您的本機檔案系統選取所需的封裝。
    * **強制上傳** — 如果已有同名的套件，此選項會強制上傳並覆寫現有的套件。
 
-1. 按一下[確定]&#x200B;**&#x200B;**&#x200B;即可上傳選取的封裝，並相應地更新封裝清單。
+1. 按一下[確定]****&#x200B;即可上傳選取的封裝，並相應地更新封裝清單。
 
 封裝內容現在存在於AEM上，但若要讓內容可供使用，請確定[安裝封裝](#installing-packages)。
 
@@ -577,13 +586,13 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 1. 會複製套件，並在活動記錄中報告詳細資訊。
 
-## Software Distribution {#software-distribution}
+## 軟體散發 {#software-distribution}
 
 AEM套件可用來在AEM環境中建立和共用內容。
 
 [Software Distribution](https://downloads.experiencecloud.adobe.com)是一項集中式服務，旨在簡化AEM套件的搜尋和下載。
 
-如需詳細資訊，請參閱[軟體發佈檔案。](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)
+如需詳細資訊，請參閱[軟體發佈檔案。](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
 
 >[!NOTE]
 >

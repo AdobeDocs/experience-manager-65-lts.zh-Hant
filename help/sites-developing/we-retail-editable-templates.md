@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: f1141b8c-12a2-44a0-8c15-b614398b5174
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 2%
-
+source-wordcount: '495'
+ht-degree: 3%
 ---
-
 # 在We.Retail中嘗試可編輯的範本{#trying-out-editable-templates-in-we-retail}
 
 使用可編輯的範本，建立和維護範本不再是開發人員專屬的工作。 稱為範本作者的權力使用者現在可以建立範本。 開發人員仍需要設定環境、建立使用者端程式庫和建立要使用的元件，但是當這些基本功能準備就緒後，範本作者就可以彈性地建立和設定範本，而不需要開發專案。
@@ -57,10 +66,10 @@ We.Retail中的所有頁面都是以可編輯的範本為基礎，讓非開發�
    * 選取現有原則或建立容器的原則
    * 定義頁面作者使用此元件時可用的功能，例如
 
-      * 允許的貼上來源
-      * 格式化選項
-      * 允許的段落樣式
-      * 允許的特殊字元
+     * 允許的貼上來源
+     * 格式化選項
+     * 允許的段落樣式
+     * 允許的特殊字元
 
    許多以核心元件為基礎的元件，都允許透過可編輯的範本在元件層級設定選項，免除開發人員自訂的需求。
 
@@ -74,4 +83,4 @@ We.Retail中的所有頁面都是以可編輯的範本為基礎，讓非開發�
 
 如需進一步資訊，請參閱撰寫檔案[建立頁面範本](/help/sites-authoring/templates.md)或開發人員檔案頁面[範本 — 可編輯](/help/sites-developing/page-templates-editable.md)，以取得可編輯範本的完整技術細節。
 
-您可能也想要調查[核心元件](/help/sites-developing/we-retail-core-components.md)。 請參閱撰寫檔案[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)，以取得核心元件功能的概述，以及開發人員檔案[開發核心元件](https://helpx.adobe.com/tw/experience-manager/core-components/using/developing.html)，以取得技術概述。
+您可能也想要調查[核心元件](/help/sites-developing/we-retail-core-components.md)。 請參閱撰寫檔案[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)，以取得核心元件功能的概述，以及開發人員檔案[開發核心元件](https://helpx.adobe.com/experience-manager/core-components/using/developing.html)，以取得技術概述。

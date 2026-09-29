@@ -6,13 +6,22 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
 exl-id: 78c5486c-ed84-4ec8-b0b0-42d4e8611098
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 6%
-
 ---
-
 # 緩慢的內容移轉 {#lazy-content-migration}
 
 為了回溯相容性，從Adobe Experience Manager (AEM) 6.3開始的&#x200B;**/etc**&#x200B;和&#x200B;**/content**&#x200B;中的內容和設定將不會隨著升級而立即變更或轉換。 這麼做是為了確保客戶應用程式在這些結構上的相依性保持不變。 即使現成可用的AEM 6.5中的內容會在其他地方託管，與這些內容結構相關的功能仍然相同。

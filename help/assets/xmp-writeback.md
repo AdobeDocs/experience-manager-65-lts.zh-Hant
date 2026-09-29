@@ -6,18 +6,32 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e3972784-9ded-4da8-b90c-ec2da9c3297a
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: ed6971a3-2c12-4fd2-81f4-ff329c416250
+    internal-label: Metadata
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 6%
-
 ---
-
 # XMP回寫至轉譯 {#xmp-writeback-to-renditions}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=en) |
 | AEM 6.5 LTS | 本文章 |
 
 [!DNL Adobe Experience Manager Assets]中的這個XMP回寫功能會將中繼資料變更復寫至原始資產的轉譯。 當您從Assets內變更資產的中繼資料或上傳資產時，變更最初會儲存在資產階層中的中繼資料節點中。
@@ -32,7 +46,7 @@ XMP回寫功能可讓您將中繼資料變更傳播至資產的所有或特定�
 
 ![metadata_stored](assets/metadata_stored.png)
 
-但是，[!DNL Experience Manager Assets]不會自動將任何中繼資料變更傳播到資產的轉譯。 請參閱如何啟用XMP回寫[&#128279;](#enable-xmp-writeback)。
+但是，[!DNL Experience Manager Assets]不會自動將任何中繼資料變更傳播到資產的轉譯。 請參閱如何啟用XMP回寫](#enable-xmp-writeback)。[
 
 ## 啟用XMP回寫 {#enable-xmp-writeback}
 

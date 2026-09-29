@@ -5,20 +5,36 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: ea10d2e1-9f17-4757-ae2e-67447ff0ad0a
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '865'
 ht-degree: 0%
-
 ---
-
 # 設定「外出」設定 {#configure-out-of-office-settings}
 
 ## 套用至 {#applies-to}
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html?lang=zh-Hant)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html)上的[AEM Forms 。
 
 如果您計畫不在辦公室，則可以指定指定指定給您該期間之料號的變更。
 
@@ -41,8 +57,8 @@ ht-degree: 0%
 執行以下步驟來啟用您帳戶的郵件答錄機設定，並將您的收件匣專案委派給其他使用者：
 
 1. 登入您的AEM執行個體。 選取![收件匣](assets/bell.svg)圖示，然後選取&#x200B;**[!UICONTROL 全部檢視]**。 您的收件匣專案清單隨即顯示。
-1. 選取![建立](assets/viewlist.svg)按鈕旁的![檢視選擇器](assets/calendar.svg)或&#x200B;**[!UICONTROL 檢視選擇器]**&#x200B;圖示，並選取&#x200B;**[!UICONTROL 設定]**。 設定對話方塊隨即顯示。
-1. 開啟[設定]對話方塊上的[外出] **&#x200B;**&#x200B;索引標籤。
+1. 選取&#x200B;**[!UICONTROL 建立]**&#x200B;按鈕旁的![檢視選擇器](assets/viewlist.svg)或![檢視選擇器](assets/calendar.svg)圖示，並選取&#x200B;**[!UICONTROL 設定]**。 設定對話方塊隨即顯示。
+1. 開啟[設定]對話方塊上的[外出] ****&#x200B;索引標籤。
 1. 選取&#x200B;**[!UICONTROL 啟用/停用]**&#x200B;按鈕以啟用「外出」設定。
 1. 指定設定的&#x200B;**[!UICONTROL 開始時間]**&#x200B;和&#x200B;**[!UICONTROL 結束時間]**。 專案只會在指定的期間內委派。 將&#x200B;**[!UICONTROL 結束時間]**&#x200B;欄位保留空白以委派專案無限期。
 1. 選取&#x200B;**[!UICONTROL 在此期間]**&#x200B;轉寄我的專案核取方塊。 如果您未選取選項也未指定受託人，則您的專案不會轉寄給任何使用者。 雖然您離開並啟用了設定，但專案仍會保留在您的「收件匣」中。
@@ -59,14 +75,14 @@ ht-degree: 0%
    >
    >受指派人的順序很重要。 當專案被指派給已啟用休假設定的使用者時，專案會根據指定的受指派人清單以新增受指派人的順序進行評估。 當專案符合條件時，即會指派給受指派人，且不會勾選下一個受指派人。
 
-1. 選取&#x200B;**[!UICONTROL 儲存]**。此設定會在指定的開始日期和時間生效。 如果您在離開辦公室時登入，則在變更您的設定之前，不會將您視為在辦公室中。
+1. 選取&#x200B;**[!UICONTROL 儲存]**。 此設定會在指定的開始日期和時間生效。 如果您在離開辦公室時登入，則在變更您的設定之前，不會將您視為在辦公室中。
 
 現在，系統會自動將休假期間指派給您的專案指派給指定的受指派人。
 ![外出](assets/out-of-office.png)
 
 >[!NOTE]
 >
->(僅適用於以Forms為中心的工作流程專案)啟用工作流程中&#x200B;**指派任務**&#x200B;步驟的「休假中」設定&#x200B;**選項，讓**&#x200B;允許受指派人進行委派。 只有已啟用前述選項的專案才會委派給其他使用者。
+>（僅適用於以Forms為中心的工作流程專案）啟用工作流程中&#x200B;**指派任務**&#x200B;步驟的「休假中」設定&#x200B;**選項，讓**&#x200B;允許受指派人進行委派。 只有已啟用前述選項的專案才會委派給其他使用者。
 
 ## 限制 {#limitations}
 

@@ -5,13 +5,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: ece49f03-e711-439f-9c2d-6308fe2998ae
-source-git-commit: 4f2374a48687d39f7d365e09d9055edf583e2c20
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6828'
+source-wordcount: '6927'
 ht-degree: 0%
-
 ---
-
 # 文件片段{#document-fragments}
 
 ## 文件片段 {#document-fragments-1}
@@ -97,13 +110,13 @@ ht-degree: 0%
 
    ![specialcharacters-1](assets/specialcharacters-1.png)
 
-   通訊管理已內建對210個特殊字元的支援。 管理員可以透過自訂[&#128279;](/help/forms/using/custom-special-characters.md) 新增更多/自訂特殊字元的支援。
+   通訊管理已內建對210個特殊字元的支援。 管理員可以透過自訂](/help/forms/using/custom-special-characters.md) [新增更多/自訂特殊字元的支援。
 
 1. 若要在可編輯的內嵌模組中反白顯示\強調部分文字，請選取文字並選取「反白顯示顏色」。
 
    ![textbackgroundcolorapplied](assets/textbackgroundcolorapplied.png)
 
-   您可以直接選取[基本色彩]調色盤中的基本色彩`**[A]**`，或在使用滑桿`**[B]**`選擇適當的色彩陰影后選取[選取]&#x200B;**&#x200B;**。
+   您可以直接選取[基本色彩]調色盤中的基本色彩`**[A]**`，或在使用滑桿`**[B]**`選擇適當的色彩陰影后選取[選取]****。
 
    或者，您也可以移至[進階]索引標籤，選取適當的[色相]、[明度]和[飽和度] `**[C]**`來建立精確色彩，然後選取[選取] `**[D]**`來套用色彩以反白顯示文字。
 
@@ -195,10 +208,10 @@ ht-degree: 0%
 * 在文字模組中使用適當的資料字典繫結。
 * 變更文字資產時，下列規則適用於使用文字編輯器：
 
-   * **允許新增變數：**
-   * **允許移除變數：**
-   * **屬性更新：**&#x200B;允許
-   * **資料字典的變更：**&#x200B;在未使用資料字典元素之前允許。 您無法於更新時變更資料字典。
+  * **允許新增變數：**
+  * **允許移除變數：**
+  * **屬性更新：**&#x200B;允許
+  * **資料字典的變更：**&#x200B;在未使用資料字典元素之前允許。 您無法於更新時變更資料字典。
 
 ## 清單 {#list}
 
@@ -238,12 +251,12 @@ ht-degree: 0%
 
 1. 選取&#x200B;**「下一步」**。
 1. 選取&#x200B;**新增資產**。
-1. 若要將資產新增至清單，請在[選取Assets]頁面中選取資產，然後選取[完成]&#x200B;**&#x200B;**。
+1. 若要將資產新增至清單，請在[選取Assets]頁面中選取資產，然後選取[完成]****。
 
    ![選取要新增至清單的資產](assets/selectassets.png)
 
 1. 資產會新增至「清單專案」頁面。
-若要變更清單中資產的順序，請選取並按住箭頭圖示（ ![拖放](assets/dragndrop.png) ）並拖放。當使用者在「建立通訊」使用者介面中開啟信函範本時，內容會依照您在此處定義的順序進行組裝。
+若要變更清單中資產的順序，請選取並按住箭頭圖示（ ![拖放](assets/dragndrop.png) ）並拖放。 當使用者在「建立通訊」使用者介面中開啟信函範本時，內容會依照您在此處定義的順序進行組裝。
 
    ![重新排序及設定清單中的資產](assets/listitems.png)
 
@@ -276,8 +289,8 @@ ht-degree: 0%
 * 使用適當的資料字典繫結
 * 使用清單編輯器變更清單時，適用下列規則：
 
-   * 屬性更新：允許
-   * **變更資料字典：**&#x200B;允許直到沒有使用資料字典的專案與之關聯為止。 您無法於更新時變更資料字典。
+  * 屬性更新：允許
+  * **變更資料字典：**&#x200B;允許直到沒有使用資料字典的專案與之關聯為止。 您無法於更新時變更資料字典。
 
 ## 條件 {#conditions}
 
@@ -333,10 +346,10 @@ ht-degree: 0%
 * 使用適當的資料字典繫結
 * 使用條件編輯器編輯條件時，適用下列規則：
 
-   * **允許新增變數：**
-   * **允許移除變數：**
-   * **屬性更新：**&#x200B;允許
-   * **資料字典的變更：**&#x200B;在未使用資料字典元素之前允許。
+  * **允許新增變數：**
+  * **允許移除變數：**
+  * **屬性更新：**&#x200B;允許
+  * **資料字典的變更：**&#x200B;在未使用資料字典元素之前允許。
 
 ## 布局片段 {#layoutfragments}
 
@@ -368,18 +381,18 @@ ht-degree: 0%
 
 * 對於預留位置表格，您可以在建立片段時自訂以下屬性。
 
-   * 列計數
-   * 欄數
-   * 每一欄的頁首與頁尾
-   * 每欄的型別（目標區域/欄位）
-   * 每一欄的寬度比例
+  * 列計數
+  * 欄數
+  * 每一欄的頁首與頁尾
+  * 每欄的型別（目標區域/欄位）
+  * 每一欄的寬度比例
 
 * 對於非預留位置表格，您可以自訂下列屬性：
 
-   * 列計數
-   * 欄數
-   * 其他欄的頁首和頁尾
-   * 每一欄的寬度比例
+  * 列計數
+  * 欄數
+  * 其他欄的頁首和頁尾
+  * 每一欄的寬度比例
 
 您可以在信函中巢狀內嵌片段。 這表示您可以在片段中新增片段。 通訊管理解決方案支援信函內最多四個層級的巢狀結構： **信函&#x200B;*>*片段&#x200B;*>*片段&#x200B;*>*片段&#x200B;*>*片段。**
 
@@ -478,7 +491,7 @@ ht-degree: 0%
 * **動態資料表**：配置片段提供將動態資料表的欄位繫結至集合DDE的功能。 產生信函時，會根據集合DDE的大小產生表格列。
 
 DD具有收集元素Nominied_details，其具有三個原始元素的複合元素：Nominied_name、Nominied_address和Nominied_gender。
-動態XDP也有相同的標題。因此，您可以使用上述的DD欄位對應動態XDP欄位。
+動態XDP也有相同的標題。 因此，您可以使用上述的DD欄位對應動態XDP欄位。
 
 ### 範例檔案的範例：在信函中使用靜態和動態表格 {#examplewithsamplefiles}
 
@@ -502,7 +515,7 @@ DD具有收集元素Nominied_details，其具有三個原始元素的複合元�
    或者，使用此步驟附加的靜態和動態XDP。
 
    如需使用佈局片段的詳細資訊，請參閱[佈局片段](#layoutfragments)。
-如需設計版面的詳細資訊，請參閱[Designer說明](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/)。
+   如需設計版面的詳細資訊，請參閱[Designer說明](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/)。
 
    [取得檔案](assets/static.xdp.zip)
 
@@ -519,7 +532,7 @@ DD具有收集元素Nominied_details，其具有三個原始元素的複合元�
 
 1. 根據靜態XDP建立佈局片段。 屬性的「表格」標籤會顯示表格是靜態的(「組態對象」(Configuration For)欄位)。 列數(1)和欄數(3)衍生自XDP/佈局片段。
 
-   您可以在此變更欄數和列數。根據您在此畫面中選擇的內容，靜態表格的列數和欄數在以此版面配置建立的信函中保持固定。
+   您可以在此變更欄數和列數。 根據您在此畫面中選擇的內容，靜態表格的列數和欄數在以此版面配置建立的信函中保持固定。
    [![建立佈局片段熒幕](assets/statictableproperties.png)](assets/statictableproperties-1.png)
 
 1. 使用其中的佈局片段建立字母。 在信函中插入動態XDP時，請將其欄位繫結設定為資料字典的集合元素。

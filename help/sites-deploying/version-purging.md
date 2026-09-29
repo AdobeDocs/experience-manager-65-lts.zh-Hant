@@ -10,14 +10,24 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: e3ef1435-d405-482f-9eb5-f9a64ff03322
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '732'
 ht-degree: 0%
-
 ---
-
 # 版本清除{#version-purging}
 
 在標準安裝中，當您在更新內容後啟動頁面時，Adobe Experience Manager (AEM)會建立頁面或節點的版本。
@@ -39,11 +49,11 @@ AEM隨附多種機制，可協助您管理存放庫：
 這可用來當作監控和維護存放庫的一部分。
 它可讓您根據下列引數，介入以移除舊版本的節點或節點階層：
 
-   * 要保留在存放庫中的版本最大數量。
-超過此數目時，會移除最舊的版本。
+  * 要保留在存放庫中的版本最大數量。
+    超過此數目時，會移除最舊的版本。
 
-   * 任何版本保留在存放庫中的最大期限。
-當版本的使用期限超過此值時，就會從存放庫中清除該版本。
+  * 任何版本保留在存放庫中的最大期限。
+    當版本的使用期限超過此值時，就會從存放庫中清除該版本。
 
 * [版本清除維護任務](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks)。 您可以排定「版本永久刪除」維護作業，以自動刪除舊版本。 如此一來，手動使用「版本清除」工具的需求便降至最低。
 
@@ -96,34 +106,34 @@ AEM隨附多種機制，可協助您管理存放庫：
 
 * 設定：
 
-   * `maxNumberVersions` = 7
+  * `maxNumberVersions` = 7
 
-   * `maxAgeDays` = 30
+  * `maxAgeDays` = 30
 
 * 替換為：
 
-   * 在過去60天內製作了10個版本
-   * 其中三個版本是在過去30天內建立的
+  * 在過去60天內製作了10個版本
+  * 其中三個版本是在過去30天內建立的
 
 * 這表示：
 
-   * 會保留最後三個版本
+  * 會保留最後三個版本
 
 例如，在定義要保留的最大AND最小版本數以及要保留的最舊版本時：
 
 * 設定：
 
-   * `maxNumberVersions` = 3
-   * `maxAgeDays` = 30
-   * `minNumberVersions` = 3
+  * `maxNumberVersions` = 3
+  * `maxAgeDays` = 30
+  * `minNumberVersions` = 3
 
 * 替換為：
 
-   * 有5個版本是60天前製作的
+  * 有5個版本是60天前製作的
 
 * 這表示：
 
-   * 保留三個版本
+  * 保留三個版本
 
 ## 清除版本工具 {#purge-versions-tool}
 

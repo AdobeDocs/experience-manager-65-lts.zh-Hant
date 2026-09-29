@@ -5,13 +5,21 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: aced89a0-dec1-49fe-afbc-3ddf1318b900
-source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 2%
-
 ---
-
 # Commerce integration framework (CIF)附加元件的重大變更{#notable-changes}
 
 本檔案著重說明Commerce integration framework (CIF)附加元件與舊版CIF (主要稱為CIF Classic (Quickstart)和CIF開放原始碼)之間的重要差異。

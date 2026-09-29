@@ -10,13 +10,27 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 798b9ad8-47fa-432d-8887-9de63c20cfca
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2023'
+source-wordcount: '2114'
 ht-degree: 1%
-
 ---
-
 
 # SPA 藍圖{#spa-blueprint}
 
@@ -32,7 +46,7 @@ ht-degree: 1%
 >
 >下列需求與架構無關。 如果滿足這些需求，則可以提供框架特定的層，該層由模組、元件和服務組成。
 >
->**AEM中的React和Angular架構已符合這些需求。**&#x200B;只有當您想要實作其他框架以與AEM一起使用時，此藍圖中的需求才相關。
+>**AEM中的React和Angular架構已符合這些需求。** 此藍圖中的需求只有在您想要實作其他框架以與AEM一起使用時才相關。
 
 >[!CAUTION]
 >

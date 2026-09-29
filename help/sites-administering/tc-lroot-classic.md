@@ -6,13 +6,25 @@ feature: Language Copy
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c6e00da5-804f-46cf-b7a9-52e667574394
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '328'
 ht-degree: 0%
-
 ---
-
 # 使用Classic UI建立語言根{#creating-a-language-root-using-the-classic-ui}
 
 下列程式使用傳統UI建立網站的語言根。 如需詳細資訊，請參閱[建立語言根](/help/sites-administering/tc-prep.md#creating-a-language-root)。
@@ -45,7 +57,7 @@ ht-degree: 0%
 
    ![languagecopydilogdropdown](assets/languagecopydilogdropdown.png)
 
-   | 語言副本型別 | 描述 |
+   | 語言副本型別 | 說明 |
    |---|---|
    | 自動 | 使用上層頁面的行為 |
    | 忽略 | 不會建立此頁面及其子頁面的復本 |

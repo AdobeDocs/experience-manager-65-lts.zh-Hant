@@ -5,14 +5,26 @@ solution: Experience Manager, Experience Manager Forms
 feature: Document Security
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 0caac293-98b4-4e73-9440-f1db68c94054
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 0%
-
 ---
-
 # 為WebSphere Application Server設定SSL {#configuring-ssl-for-websphere-application-server}
 
 本節包含使用IBM WebSphere Application Server設定SSL的下列步驟。
@@ -54,11 +66,11 @@ ht-degree: 0%
 1. 按一下&#x200B;**使用者**，用滑鼠右鍵按一下您建立的使用者並選取&#x200B;**內容**。
 1. 按一下&#x200B;**的**&#x200B;成員標籤，然後按一下&#x200B;**新增**。
 1. 在[輸入要選取的物件名稱]方塊中，輸入`Administrators`，按一下[檢查名稱]以確保群組名稱正確。
-1. 按一下[確定]&#x200B;**&#x200B;**，然後再按一下[確定]&#x200B;**&#x200B;**。
+1. 按一下[確定]****，然後再按一下[確定]****。
 1. 選取&#x200B;**開始>控制檯>系統管理工具>本機安全性原則>本機原則**。
 1. 按一下「使用者許可權指派」，然後以滑鼠右鍵按一下「作為作業系統的一部分」，並選取「屬性」。
 1. 按一下&#x200B;**新增使用者或群組**。
-1. 在[輸入要選取的物件名稱]方塊中，輸入您在步驟4中建立的使用者名稱，按一下[檢查名稱]，確定名稱正確，然後按一下[確定]。**&#x200B;**。**&#x200B;**
+1. 在[輸入要選取的物件名稱]方塊中，輸入您在步驟4中建立的使用者名稱，按一下[檢查名稱]，確定名稱正確，然後按一下[確定]。****。****
 1. 按一下&#x200B;**確定**，關閉作為作業系統內容對話方塊一部分的動作。
 
 ### 設定WebSphere以使用新建立的使用者作為管理員 {#configure-websphere-to-use-the-newly-created-user-as-administrator}

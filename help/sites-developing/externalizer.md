@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 5beeae99-7ef4-49a0-aaad-3ab07429ebc2
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '504'
 ht-degree: 0%
-
 ---
-
 # 外部化URL{#externalizing-urls}
 
 在Adobe Experience Manager (AEM)中，**外部化程式**&#x200B;是OSGI服務，可讓您以程式設計方式將資源路徑（例如`/path/to/my/page`）轉換為外部和絕對URL （例如`https://www.mycompany.com/path/to/my/page`），方法是以預先設定的DNS為路徑加上前置詞。
@@ -51,8 +60,8 @@ ht-degree: 0%
 
    * **配置**&#x200B;是http或https，但也可以是ftp等等。
 
-      * 必要時使用https強制執行https連結
-      * 若使用者端代碼在要求外部化URL時未覆寫配置，則會使用它。
+     * 必要時使用https強制執行https連結
+     * 若使用者端代碼在要求外部化URL時未覆寫配置，則會使用它。
 
    * **server**&#x200B;是主機名稱（可以是網域名稱或ip位址）。
    * **連線埠** （選擇性）是連線埠號碼。
@@ -70,7 +79,7 @@ ht-degree: 0%
    >
    >自訂設定可讓您新增類別，例如`production`、`staging`，或甚至外部非AEM系統，例如`my-internal-webservice`。 避免在專案的程式碼基底中跨不同位置以硬式編碼撰寫這類URL，會很有用。
 
-1. 按一下[儲存]儲存變更。**&#x200B;**
+1. 按一下[儲存]儲存變更。****
 
 >[!NOTE]
 >

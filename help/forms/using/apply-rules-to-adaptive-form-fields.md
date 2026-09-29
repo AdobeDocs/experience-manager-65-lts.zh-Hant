@@ -7,13 +7,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: cb00bc09-580a-4c73-b202-d4110fa2f645
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1120'
-ht-degree: 0%
-
+source-wordcount: '1176'
+ht-degree: 1%
 ---
-
 # 教學課程：將規則套用至最適化表單欄位 {#tutorial-apply-rules-to-adaptive-form-fields}
 
 ![06-apply-rules-to-adaptive-form_main](assets/06-apply-rules-to-adaptive-form_main.png)
@@ -55,15 +71,15 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!UICONTROL THEN]**&#x200B;陳述式中，從&#x200B;**[!UICONTROL 選取動作]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL 叫用服務]**。
 1. 從&#x200B;**[!UICONTROL 選取]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL 擷取送貨地址]**&#x200B;服務。
-1. 從[表單物件]索引標籤將&#x200B;**[!UICONTROL 客戶識別碼]**&#x200B;欄位拖放到&#x200B;**[!UICONTROL 拖放物件，或在]**&#x200B;輸入&#x200B;**[!UICONTROL 方塊中選取這裡]**&#x200B;欄位。
+1. 從[表單物件]索引標籤將&#x200B;**[!UICONTROL 客戶識別碼]**&#x200B;欄位拖放到&#x200B;**[!UICONTROL 拖放物件，或在**[!UICONTROL &#x200B;輸入&#x200B;]**方塊中選取這裡]**&#x200B;欄位。
 
    ![dropobjectstoinputfield-retrievedata](assets/dropobjectstoinputfield-retrievedata.png)
 
-1. 從[表單物件]索引標籤將&#x200B;**[!UICONTROL 客戶ID、名稱、送貨地址、狀態和郵遞區號]**&#x200B;欄位拖放到&#x200B;**[!UICONTROL 放置物件，或在]**&#x200B;輸出&#x200B;**[!UICONTROL 方塊中選取這裡]**&#x200B;欄位。
+1. 從[表單物件]索引標籤將&#x200B;**[!UICONTROL 客戶ID、名稱、送貨地址、狀態和郵遞區號]**&#x200B;欄位拖放到&#x200B;**[!UICONTROL 放置物件，或在**[!UICONTROL &#x200B;輸出&#x200B;]**方塊中選取這裡]**&#x200B;欄位。
 
    ![dropobjectstooutputfield-retrievedata](assets/dropobjectstooutputfield-retrievedata.png)
 
-   選取&#x200B;**[!UICONTROL 完成]**&#x200B;以儲存規則。 在規則編輯器視窗中，選取&#x200B;**[!UICONTROL 關閉]**。
+   選取「**[!UICONTROL 完成]**」以儲存此規則。 在規則編輯器視窗中，選取&#x200B;**[!UICONTROL 關閉]**。
 
 1. 預覽最適化表單。 在&#x200B;**[!UICONTROL 客戶識別碼]**&#x200B;欄位中輸入ID。 該表單現在可以從資料庫擷取客戶詳細資訊。
 
@@ -89,14 +105,14 @@ ht-degree: 0%
 
    ![dropobjectstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
 
-1. 從&#x200B;**[!UICONTROL 表單物件]**&#x200B;索引標籤將[!UICONTROL 送貨地址、狀態和郵遞區號]欄位拖放到&#x200B;**[!UICONTROL Drop物件的對應tablename .property （例如customerdetails .shippingAddress），或在]** INPUT **[!UICONTROL 方塊中選取這裡]**&#x200B;欄位。 所有前置詞為tablename的欄位（例如，在此使用案例中為customerdetails）都會當作更新服務的輸入資料。 這些欄位中提供的所有內容都會在資料來源中更新。
+1. 從[!UICONTROL 表單物件]索引標籤將&#x200B;**[!UICONTROL 送貨地址、狀態和郵遞區號]**&#x200B;欄位拖放到&#x200B;**[!UICONTROL Drop物件的對應tablename .property （例如customerdetails .shippingAddress），或在**[!UICONTROL  INPUT ]**方塊中選取這裡]**&#x200B;欄位。 所有前置詞為tablename的欄位（例如，在此使用案例中為customerdetails）都會當作更新服務的輸入資料。 這些欄位中提供的所有內容都會在資料來源中更新。
 
    >[!NOTE]
    >
    >請勿將&#x200B;**[!UICONTROL Name]**&#x200B;和&#x200B;**[!UICONTROL 客戶ID]**&#x200B;欄位拖放至對應的tablename.property （例如customerdetails.name）。 它有助於避免錯誤地更新客戶的名稱和ID。
 
 1. 將&#x200B;**[!UICONTROL 客戶ID]**&#x200B;欄位從[!UICONTROL 表單物件]標籤拖放至&#x200B;**[!UICONTROL 輸入]**&#x200B;方塊中的ID欄位。 沒有前置字元Tablename的欄位（例如，此使用案例中的Customerdetails）會作為更新服務的搜尋引數。 此使用案例中的&#x200B;**[!UICONTROL id]**&#x200B;欄位可唯一識別&#x200B;**customerdetails**&#x200B;資料表中的記錄。
-1. 選取&#x200B;**[!UICONTROL 完成]**&#x200B;以儲存規則。 在規則編輯器視窗中，選取&#x200B;**[!UICONTROL 關閉]**。
+1. 選取「**[!UICONTROL 完成]**」以儲存此規則。 在規則編輯器視窗中，選取&#x200B;**[!UICONTROL 關閉]**。
 1. 預覽最適化表單。 擷取客戶的詳細資料、更新送貨地址並提交表單。 當您再次擷取相同客戶的詳細資料時，會顯示更新的送貨地址。
 
 ## 步驟3： （額外區段）使用程式碼編輯器執行驗證並顯示錯誤訊息 {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}
@@ -105,7 +121,7 @@ ht-degree: 0%
 
 調適型表單提供具備內建驗證的元件，例如電子郵件和數值欄位，您可將其用於常見使用案例。 針對進階使用案例，使用規則編輯器，例如在資料庫傳回零(0)筆記錄（無記錄）時，顯示錯誤訊息。
 
-下列程式說明如果表單中輸入的客戶ID不存在於資料庫中，如何建立規則以顯示錯誤訊息。 此規則也會將焦點帶到&#x200B;**[!UICONTROL 客戶ID]**&#x200B;欄位並重設。 規則使用表單資料模型服務[的](/help/forms/using/invoke-form-data-model-services.md)dataIntegrationUtils API來檢查資料庫中是否有客戶ID。
+下列程式說明如果表單中輸入的客戶ID不存在於資料庫中，如何建立規則以顯示錯誤訊息。 此規則也會將焦點帶到&#x200B;**[!UICONTROL 客戶ID]**&#x200B;欄位並重設。 規則使用表單資料模型服務](/help/forms/using/invoke-form-data-model-services.md)的[dataIntegrationUtils API來檢查資料庫中是否有客戶ID。
 
 1. 選取&#x200B;**[!UICONTROL 客戶識別碼]**&#x200B;欄位，並選取`Edit Rules`圖示。 [!UICONTROL 規則編輯器]視窗隨即開啟。
 1. 選取「**[!UICONTROL +建立]**」圖示以新增規則。 這會開啟視覺化編輯器。

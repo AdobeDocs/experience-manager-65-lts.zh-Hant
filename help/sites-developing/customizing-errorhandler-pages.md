@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 4f98853d-306f-4d11-a3d8-83122b372b2d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '545'
 ht-degree: 0%
-
 ---
-
 # 自訂錯誤處理常式顯示的頁面{#customizing-pages-shown-by-the-error-handler}
 
 Adobe Experience Manager (AEM)隨附處理HTTP錯誤的標準錯誤處理常式，例如，顯示：
@@ -72,13 +81,13 @@ HTTP 500錯誤是由伺服器端例外狀況所造成。
 * **[500內部伺服器錯誤](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
 伺服器發生非預期的情況，導致它無法完成要求。
 
-當請求處理導致例外狀況時，Apache Sling架構(AEM的建置基礎)：
+當請求處理導致例外狀況時，Apache Sling架構（AEM的建置基礎）：
 
 * 記錄例外狀況
 * 傳回：
 
-   * HTTP回應代碼500
-   * 例外狀況棧疊追蹤
+  * HTTP回應代碼500
+  * 例外狀況棧疊追蹤
 
   在回應內文中。
 

@@ -6,13 +6,22 @@ feature: Authoring
 solution: Experience Manager Sites,Experience Manager Assets
 role: Admin
 exl-id: 9bb1ff8b-5fcb-44df-8c45-2306e127410d
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 15%
-
 ---
-
 # AEM Fluid Experience功能清單{#aem-fluid-experiences-feature-list}
 
 Adobe Experience Manager Fluid Experiences運用AEM Sites、AEM Dynamic Media和AEM Assets的強大功能集，為Headless內容傳送提供強大的解決方案。
@@ -51,11 +60,11 @@ AEM Fluid Experiences可與Classic AEM區分開來，因為系統只會處理Hea
 |---|
 | [HTTP API](/help/assets/mac-api-assets.md) |
 | [結構化內容模型](/help/assets/content-fragments/content-fragments.md) |
-| [內容服務](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hant) |
+| [內容服務](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) |
 | [體驗片段](/help/sites-authoring/experience-fragments.md) |
 | 結構化內容的HTTP API （讀取） |
 | 結構化內容(CRUD)的HTTP API |
-| [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) |
+| [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) |
 | [Dynamic Media](/help/assets/dynamic-media.md) |
 
 ## 管理和整合功能 {#admin-and-integration-features}
@@ -68,7 +77,7 @@ AEM Fluid Experiences可與Classic AEM區分開來，因為系統只會處理Hea
 | [內容翻譯](/help/sites-administering/translation.md) |
 | [監視](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [備份](/help/sites-administering/backup-and-restore.md) |
-| [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=zh-Hant) |
+| [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) |
 | [PIM整合](/help/sites-authoring/managing-product-information.md) |
 | [專案和任務](/help/sites-authoring/projects.md) |
 | [工作流程](/help/sites-administering/workflows-starting.md) |
@@ -84,7 +93,7 @@ AEM Fluid Experiences可與Classic AEM區分開來，因為系統只會處理Hea
 
 ## 了解更多 {#learn-more}
 
-* [無領導者使用案例的流暢體驗](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=zh-Hant)
-* [AEM內容服務：什麼、為什麼以及如何？](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=zh-Hant)
-* [協力廠商存取常見問題集](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=zh-Hant)
-* [使用Sling API](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=zh-Hant#sling-models)
+* [無領導者使用案例的流暢體驗](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html)
+* [AEM內容服務：什麼、為什麼以及如何？](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html)
+* [協力廠商存取常見問題集](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html)
+* [使用Sling API](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)

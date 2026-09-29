@@ -8,13 +8,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f5114938-1279-4f00-9c2b-bd9ecd8eef6f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1788'
-ht-degree: 2%
-
+ht-degree: 3%
 ---
-
 # RTF 編輯器 {#rich-text-editor}
 
 RTF編輯器是將文字內容輸入至AEM的基本建置區塊。 它構成各種元件的基礎，包括：
@@ -106,7 +115,7 @@ RTF編輯器提供一系列功能，這些[取決於個別元件的組態](/help
 * 剪下(Ctrl-X)
 * 複製(Ctrl-C)
 * 貼上
-這是元件的預設貼上機制(Ctrl-V)；當現成安裝時，這設定為從Word貼上。
+這是元件的預設貼上機制(Ctrl-V)；當現成安裝時，這設定為從Word]貼上[!UICONTROL 。
 
 * 貼上成文字：將所有的樣式和格式都刪除，只貼上純文字。
 

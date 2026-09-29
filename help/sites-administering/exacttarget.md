@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: cd36d432-ad42-41be-abcf-f74ef2e42544
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '471'
 ht-degree: 2%
-
 ---
-
 # 與ExactTarget整合{#integrating-with-exacttarget}
 
 將Adobe Experience Manager (AEM)與Exact Target整合可讓您透過Exact Target管理並傳送AEM中建立的電子郵件。 它也可讓您透過AEM頁面上的AEM表單，使用Exact Target的銷售機會管理功能。
@@ -45,8 +54,8 @@ ht-degree: 2%
 
    ![chlimage_1](assets/chlimage_1.jpeg)
 
-1. 輸入使用者名稱、密碼，然後選取API端點(例如，**https://webservice.exacttarget.com/Service.asmx**)。
-1. 按一下&#x200B;**連線到ExactTarget。**&#x200B;當您成功連線時，您會看到成功對話方塊。 方塊按一下&#x200B;**確定**&#x200B;以結束視窗。
+1. 輸入使用者名稱、密碼，然後選取API端點（例如，**https://webservice.exacttarget.com/Service.asmx**）。
+1. 按一下&#x200B;**連線到ExactTarget。** 成功連線後，您會看到成功對話方塊。 方塊按一下&#x200B;**確定**&#x200B;以結束視窗。
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
@@ -66,7 +75,7 @@ ht-degree: 2%
 
 1. 在歡迎頁面上，按一下&#x200B;**工具**。 或前往`https://<hostname>:<port>/misadmin#/etc`直接導覽至該處。
 1. 依序選取&#x200B;**工具**、**雲端服務設定、**&#x200B;和&#x200B;**ExactTarget**。
-1. 按一下&#x200B;**新增**&#x200B;以開啟&#x200B;**建立頁面**&#x200B;視窗。
+1. 按一下&#x200B;**新增**&#x200B;以開啟**建立頁面**視窗。
 
    ![chlimage_1-34](assets/chlimage_1-3.jpeg)
 

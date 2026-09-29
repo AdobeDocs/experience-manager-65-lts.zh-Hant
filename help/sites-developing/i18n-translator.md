@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 8f6936d0-051f-4966-84ed-87b348eab0b8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2344'
 ht-degree: 2%
-
 ---
-
 # 使用翻譯工具來管理字典{#using-translator-to-manage-dictionaries}
 
 AEM提供主控台，用於管理元件UI中使用的各種文字翻譯。 此主控台位於
@@ -217,7 +226,7 @@ Translator工具底部的搜尋列提供字串選取選項：
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. 按一下工具列中的[儲存] **&#x200B;**&#x200B;以認可您的變更。
+1. 按一下工具列中的[儲存] ****&#x200B;以認可您的變更。
 
    >[!NOTE]
    >
@@ -303,7 +312,7 @@ Translator工具底部的搜尋列提供字串選取選項：
 
    >[!NOTE]
    >
-   >翻譯人員只會儲存字典[&#128279;](#creating-a-dictionary)中實際存在的語言的翻譯(亦即，在字典路徑（例如`/apps/myProject/i18n`）下)。
+   >翻譯人員只會儲存字典](#creating-a-dictionary)中實際[存在的語言的翻譯(亦即，在字典路徑（例如`/apps/myProject/i18n`）下)。
    >
    >請確定這些對應至格線中所顯示的語言。
 
@@ -385,4 +394,4 @@ Translator工具底部的搜尋列提供字串選取選項：
 
 >[!NOTE]
 >
->使用Dispatcher時，您需要[讓快取頁面失效](https://helpx.adobe.com/tw/experience-manager/dispatcher/using/page-invalidate.html)，才能在演算後的元件字串中加入新的字典字串。
+>使用Dispatcher時，您需要[讓快取頁面失效](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)，才能在演算後的元件字串中加入新的字典字串。

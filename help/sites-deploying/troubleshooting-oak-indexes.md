@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 6f92750a-4eaa-43cf-8f67-b1a65b1c6930
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 0%
-
+source-wordcount: '1501'
+ht-degree: 1%
 ---
-
 # 疑難排解Oak索引{#troubleshooting-oak-indexes}
 
 ## 重新索引緩慢  {#slow-re-indexing}
@@ -30,7 +39,7 @@ AEM的內部重新索引程式會收集存放庫資料並將其儲存在Oak索�
 
 初始偵測緩慢索引需要檢閱`IndexStats` JMX MBean。 在受影響的AEM執行個體上，執行下列動作：
 
-1. 開啟Web主控台，然後按一下JMX標籤或前往https://&lt;host>：&lt;port>/system/console/jmx (例如，[http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))。
+1. 開啟Web主控台，然後按一下JMX標籤或前往https://&lt;host>：&lt;port>/system/console/jmx （例如，[http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)）。
 1. 導覽至`IndexStats` Mbean。
 1. 開啟「`async`」和「`fulltext-async`」的`IndexStats` MBean。
 
@@ -42,7 +51,7 @@ AEM的內部重新索引程式會收集存放庫資料並將其儲存在Oak索�
 
 強制關閉會導致AEM在重新啟動後暫停非同步索引長達30分鐘。 而且通常需要再花15分鐘來完成第一個重新索引階段，總共大約需要45分鐘（繫結回[初始偵測](/help/sites-deploying/troubleshooting-oak-indexes.md#initial-detection)45分鐘的時間範圍）。 如果索引在強制關機後暫停：
 
-1. 首先，判斷是否以強制方式關閉AEM執行個體(AEM程式已強制終止，或發生電源故障)，然後重新啟動。
+1. 首先，判斷是否以強制方式關閉AEM執行個體（AEM程式已強制終止，或發生電源故障），然後重新啟動。
 
    * [AEM記錄](/help/sites-deploying/configure-logging.md)可為此目的檢閱。
 
@@ -55,7 +64,7 @@ AEM的內部重新索引程式會收集存放庫資料並將其儲存在Oak索�
 
 1. 定義新的獨立執行緒集區，以供Apache Sling排程器用於非同步索引：
 
-   * 在受影響的AEM執行個體上，導覽至AEM OSGi Web Console>OSGi>Configuration>Apache Sling Scheduler，或前往https://&lt;host>：&lt;port>/system/console/configMgr (例如，[http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr))
+   * 在受影響的AEM執行個體上，導覽至AEM OSGi Web Console>OSGi>Configuration>Apache Sling Scheduler，或前往https://&lt;host>：&lt;port>/system/console/configMgr （例如，[http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)）
    * 將專案新增到「允許的執行緒集區」欄位，其值為「oak」。
    * 若要儲存變更，請按一下右下角的&#x200B;**儲存**。
 
@@ -63,11 +72,11 @@ AEM的內部重新索引程式會收集存放庫資料並將其儲存在Oak索�
 
 1. 確認新的Apache Sling排程器執行緒集區已註冊，並顯示在Apache Sling排程器狀態Web主控台中。
 
-   * 導覽至AEM OSGi Web Console>Status>Sling Scheduler，或前往https://&lt;host>：&lt;port>/system/console/status-slingscheduler (例如，[http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler))
+   * 導覽至AEM OSGi Web Console>Status>Sling Scheduler，或前往https://&lt;host>：&lt;port>/system/console/status-slingscheduler （例如，[http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler)）
    * 確認下列集區專案存在：
 
-      * ApacheSlingoak
-      * ApacheSlingdefault
+     * ApacheSlingoak
+     * ApacheSlingdefault
 
    ![chlimage_1-120](assets/chlimage_1-120.png)
 
@@ -75,7 +84,7 @@ AEM的內部重新索引程式會收集存放庫資料並將其儲存在Oak索�
 
 如果在短時間內對存放庫進行了太多變更和認可，則索引可能會由於觀察佇列已滿而延遲。 首先，判斷觀察佇列是否已滿：
 
-1. 前往Web主控台，然後按一下JMX標籤，或前往https://&lt;host>：&lt;port>/system/console/jmx (例如，[http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
+1. 前往Web主控台，然後按一下JMX標籤，或前往https://&lt;host>：&lt;port>/system/console/jmx （例如，[http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)）
 1. 開啟Oak存放庫統計MBean並判斷是否有任何`ObservationQueueMaxLength`值大於10,000。
 
    * 在一般作業中，此最大值最終必須一律減少為零（尤其是在`per second`區段中），因此請確認`ObservationQueueMaxLength`的秒數量度是0。
@@ -94,7 +103,7 @@ AEM的內部重新索引程式會收集存放庫資料並將其儲存在Oak索�
 
 * 重新索引的速度很慢，以至於記錄檔案中並未報告有關已周遊節點數的顯著進度。
 
-   * 例如，如果一小時內沒有訊息，或進度太慢，需要一週或更長時間才能完成。
+  * 例如，如果一小時內沒有訊息，或進度太慢，需要一週或更長時間才能完成。
 
 * 如果索引執行緒中的記錄檔（例如，`OutOfMemoryException`）中出現重複的例外狀況，則重新索引會卡在無限回圈中。 記錄中重複一或多個相同的例外狀況，表示Oak嘗試重複為相同專案編制索引，但因相同問題而失敗。
 
@@ -105,26 +114,26 @@ AEM的內部重新索引程式會收集存放庫資料並將其儲存在Oak索�
    * 收集5分鐘的執行緒傾印，每2秒收集一次執行緒傾印。
    * [設定附加器的DEBUG層級和記錄](/help/sites-deploying/configure-logging.md)。
 
-      * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate*
-      * *org.apache.jackrabbit.oak.plugins.index.IndexUpdate*
+     * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate*
+     * *org.apache.jackrabbit.oak.plugins.index.IndexUpdate*
 
    * 從非同步`IndexStats` MBean收集資料：
 
-      * 導覽至AEM OSGi Web Console>Main>JMX>IndexStat>async
+     * 導覽至AEM OSGi Web Console>Main>JMX>IndexStat>async
 
-        或前往[http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
+       或前往[http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
 
    * 使用[oak-run.jar的主控台模式](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run)來收集* `/:async`*節點下存在的詳細資訊。
    * 使用`CheckpointManager` MBean收集存放庫查核點清單：
 
-      * AEM OSGi Web Console>Main>JMX>CheckpointManager>listCheckpoints()
+     * AEM OSGi Web Console>Main>JMX>CheckpointManager>listCheckpoints()
 
-        或前往[http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
+       或前往[http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
 
 1. 收集步驟1中概述的所有資訊後，請重新啟動AEM。
 
    * 重新啟動AEM可能會解決高並行負載（觀察佇列溢位或類似情況）時的問題。
-   * 如果重新啟動無法解決問題，請開啟[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General&support-tab=home#support)的問題，並提供在步驟1收集的所有資訊。
+   * 如果重新啟動無法解決問題，請開啟[Adobe客戶服務](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)的問題，並提供在步驟1收集的所有資訊。
 
 ## 安全地中止非同步重新索引 {#safely-aborting-asynchronous-re-indexing}
 
@@ -137,11 +146,11 @@ AEM的內部重新索引程式會收集存放庫資料並將其儲存在Oak索�
 
 1. 識別控制必須停止的重新索引通道的IndexStats MBean。
 
-   * 透過JMX主控台導覽至適當的IndexStats MBean，方法是前往AEM OSGi Web Console>Main>JMX或https://&lt;host>：&lt;port>/system/console/jmx (例如，[http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
+   * 透過JMX主控台導覽至適當的IndexStats MBean，方法是前往AEM OSGi Web Console>Main>JMX或https://&lt;host>：&lt;port>/system/console/jmx （例如，[http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)）
    * 根據您要停止的重新索引通道（`async`、`async-reindex`或`fulltext-async`）開啟IndexStats MBean
 
-      * 若要識別適當的通道，並藉此識別IndexStats MBean執行個體，請檢視Oak索引「非同步」屬性。 「非同步」屬性包含通道名稱： `async`、`async-reindex`或`fulltext-async`。
-      * 您也可以存取「非同步」欄中的AEM Index Manager來存取通道。 若要存取「索引管理員」，請瀏覽至「作業」>「診斷」>「索引管理員」。
+     * 若要識別適當的通道，並藉此識別IndexStats MBean執行個體，請檢視Oak索引「非同步」屬性。 「非同步」屬性包含通道名稱： `async`、`async-reindex`或`fulltext-async`。
+     * 您也可以存取「非同步」欄中的AEM Index Manager來存取通道。 若要存取「索引管理員」，請瀏覽至「作業」>「診斷」>「索引管理員」。
 
    ![chlimage_1-121](assets/chlimage_1-121.png)
 
@@ -150,15 +159,15 @@ AEM的內部重新索引程式會收集存放庫資料並將其儲存在Oak索�
 
    * 重新索引&#x200B;**現有**&#x200B;索引時，將重新索引屬性設定為false
 
-      * `/oak:index/someExistingIndex@reindex=false`
+     * `/oak:index/someExistingIndex@reindex=false`
 
    * 或者，對於&#x200B;**新**&#x200B;索引，可以：
 
-      * 將type屬性設定為disabled
+     * 將type屬性設定為disabled
 
-         * `/oak:index/someNewIndex@type=disabled`
+       * `/oak:index/someNewIndex@type=disabled`
 
-      * 或完全移除索引定義
+     * 或完全移除索引定義
 
    完成時將變更提交到存放庫。
 

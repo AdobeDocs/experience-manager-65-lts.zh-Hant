@@ -9,22 +9,34 @@ feature: Multi Site Manager
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: ddd50c64-0f17-4638-a57e-17ededaca27b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 25%
-
 ---
-
 # Live Copy 概觀主控台{#live-copy-overview-console}
 
 **即時副本綜覽**&#x200B;可讓您：
 
 * 檢視/管理網站上的繼承：
 
-   * 檢視Blueprint樹狀結構和對應的即時副本結構，以及其繼承狀態
-   * 變更繼承狀態；例如，暫停、繼續
-   * 檢視Blueprint和即時副本屬性
+  * 檢視Blueprint樹狀結構和對應的即時副本結構，以及其繼承狀態
+  * 變更繼承狀態；例如，暫停、繼續
+  * 檢視Blueprint和即時副本屬性
 
 * 執行轉出動作
 
@@ -79,11 +91,11 @@ ht-degree: 25%
 
 * 編輯
 
-   * 開啟Blueprint頁面以進行編輯。
+  * 開啟Blueprint頁面以進行編輯。
 
 * [推出](/help/sites-administering/msm.md#rollout-and-synchronize)
 
-   * 執行轉出以將變更從來源推送到LiveCopy。
+  * 執行轉出以將變更從來源推送到LiveCopy。
 
 ### Live Copy 頁面的動作 {#actions-for-a-live-copy-page}
 
@@ -93,31 +105,31 @@ ht-degree: 25%
 
 * 編輯
 
-   * 開啟即時副本頁面以進行編輯。
+  * 開啟即時副本頁面以進行編輯。
 
 * [關係狀態](#relationship-status)
 
-   * 檢視有關狀態和繼承的資訊。
+  * 檢視有關狀態和繼承的資訊。
 
 * [同步](/help/sites-administering/msm.md#rollout-and-synchronize)
 
-   * 同步即時副本，以將變更從來源提取到即時副本。
+  * 同步即時副本，以將變更從來源提取到即時副本。
 
 * [重設](/help/sites-administering/msm-livecopy.md#resetting-a-live-copy-page)
 
-   * 重設即時副本頁面以移除所有繼承取消，並讓頁面回到與來源頁面相同的狀態。
+  * 重設即時副本頁面以移除所有繼承取消，並讓頁面回到與來源頁面相同的狀態。
 
 * [暫停](/help/sites-administering/msm.md#suspending-and-cancelling-inheritance-and-synchronization)
 
-   * 暫時停用即時副本與其Blueprint頁面之間的即時關係。
+  * 暫時停用即時副本與其Blueprint頁面之間的即時關係。
 
 * [繼續](/help/sites-administering/msm-livecopy.md#resuming-inheritance-for-a-page)
 
-   * 「繼續」可讓您恢復暫停的關係。
+  * 「繼續」可讓您恢復暫停的關係。
 
 * [分離](/help/sites-administering/msm.md#detaching-a-live-copy)
 
-   * 永久移除即時副本與其Blueprint頁面之間的即時關係。
+  * 永久移除即時副本與其Blueprint頁面之間的即時關係。
 
 ## 關係狀態 {#relationship-status}
 

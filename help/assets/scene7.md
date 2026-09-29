@@ -10,16 +10,30 @@ role: User, Admin
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
 exl-id: 80ffa496-880a-4638-bf78-1aab0c052983
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: c12bda38-aa1a-4647-b62e-42cd4537dac6
+    internal-label: Dynamic Media Classic
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2844'
+source-wordcount: '2902'
 ht-degree: 2%
-
 ---
-
 # 將Dynamic Media Classic功能新增至頁面 {#adding-scene-features-to-your-page}
 
-[Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=zh-Hant)是託管式解決方案，可管理、增強、發佈多媒體資產，並將其傳送至Web、行動裝置、電子郵件及連線至網際網路的顯示器和列印。
+[Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html)是託管式解決方案，可管理、增強、發佈多媒體資產，並將其傳送至Web、行動裝置、電子郵件及連線至網際網路的顯示器和列印。
 
 您可以在多種檢視器中檢視在Dynamic Media Classic中發佈的Experience Manager資產：
 
@@ -139,7 +153,7 @@ Experience Manager中有以下Dynamic Media Classic元件：
 
 按下&#x200B;**[!UICONTROL +]**&#x200B;按鈕時，HTML5縮放元件會顯示較大的影像。
 
-資產底部有縮放工具。 若要放大，請選取&#x200B;**[!UICONTROL +]**；若要縮小，請選取&#x200B;**[!UICONTROL -]**。 點選&#x200B;**[!UICONTROL x]**&#x200B;或重設縮放箭頭，可讓影像回覆為匯入的原始大小。 選取對角線箭頭，使其成為全熒幕。 選取「**[!UICONTROL 編輯]**」以設定元件。 使用此元件，您可以設定所有[!UICONTROL Dynamic Media Classic]元件[&#128279;](#settings-common-to-all-scene-components)的通用設定。
+資產底部有縮放工具。 若要放大，請選取&#x200B;**[!UICONTROL +]**；若要縮小，請選取&#x200B;**[!UICONTROL -]**。 點選&#x200B;**[!UICONTROL x]**&#x200B;或重設縮放箭頭，可讓影像回覆為匯入的原始大小。 選取對角線箭頭，使其成為全熒幕。 選取「**[!UICONTROL 編輯]**」以設定元件。 使用此元件，您可以設定所有[!UICONTROL Dynamic Media Classic]元件](#settings-common-to-all-scene-components)的[通用設定。
 
 ![chlimage_1-227](/help/assets/assets/do-not-localize/chlimage_1-227.png)
 
@@ -177,13 +191,13 @@ Dynamic Media Classic **[!UICONTROL 影像]**&#x200B;元件可讓您將Dynamic M
 
 **[!UICONTROL 銳利化]** — 選取您要如何銳利化影像。 在[影像預設集最佳實務](/help/assets/managing-image-presets.md#image-preset-options)與[銳利化最佳實務](/help/assets/assets/sharpening_images.pdf)中詳細說明銳利化功能。
 
-**[!UICONTROL URL修飾元]** — 您可以提供其他Dynamic Media Classic影像命令來變更影像效果。 這些命令在[影像預設集](/help/assets/managing-image-presets.md)和[命令參考](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=zh-Hant)中有說明。
+**[!UICONTROL URL修飾元]** — 您可以提供其他Dynamic Media Classic影像命令來變更影像效果。 這些命令在[影像預設集](/help/assets/managing-image-presets.md)和[命令參考](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)中有說明。
 
 **[!UICONTROL 中斷點]** — 如果您的網站有回應，您想要調整中斷點。 中斷點必須以逗號( 、 )分隔。
 
 ### 影像範本 {#image-template}
 
-[Dynamic Media Classic影像範本](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html?lang=zh-Hant)是匯入至Dynamic Media Classic的層級Photoshop內容，其內容和屬性已引數化為變動。 **[!UICONTROL 影像範本]**&#x200B;元件可讓您在Experience Manager中匯入影像並動態變更文字。 此外，您可以將&#x200B;**[!UICONTROL 影像範本]**&#x200B;元件設定為使用使用者端內容的值，讓每位使用者都能透過個人化的方式體驗影像。
+[Dynamic Media Classic影像範本](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html)是匯入至Dynamic Media Classic的層級Photoshop內容，其內容和屬性已引數化為變動。 **[!UICONTROL 影像範本]**&#x200B;元件可讓您在Experience Manager中匯入影像並動態變更文字。 此外，您可以將&#x200B;**[!UICONTROL 影像範本]**&#x200B;元件設定為使用使用者端內容的值，讓每位使用者都能透過個人化的方式體驗影像。
 
 若要設定元件，請選取&#x200B;**[!UICONTROL 編輯]**。 您可以設定所有Dynamic Media Classic元件的[通用設定](#settings-common-to-all-scene-components)以及本節中說明的其他設定。
 
@@ -236,7 +250,7 @@ Dynamic Media Classic **[!UICONTROL 影像]**&#x200B;元件可讓您將Dynamic M
 
 ### 視訊元件 {#video-component}
 
-Dynamic Media Classic **[!UICONTROL 視訊]**&#x200B;元件(可從sidekick的Dynamic Media Classic區段取得)會使用裝置和頻寬偵測，將正確的視訊提供給每個熒幕。 此元件是HTML5視訊播放器；它是可用於跨頻道的單一檢視器。
+Dynamic Media Classic **[!UICONTROL 視訊]**&#x200B;元件（可從sidekick的Dynamic Media Classic區段取得）會使用裝置和頻寬偵測，將正確的視訊提供給每個熒幕。 此元件是HTML5視訊播放器；它是可用於跨頻道的單一檢視器。
 
 它可用於自我調整視訊集、單一MP4視訊或單一F4V視訊。
 
@@ -329,7 +343,7 @@ Dynamic Media Classic內容瀏覽器可讓您直接在Experience Manager中從Dy
 >
 >* 在傳統UI中，您也可以搜尋&#x200B;**Flash**&#x200B;和&#x200B;**FXG**。 不支援在觸控最佳化UI中篩選這些型別。
 >
->* 搜尋視訊時，您會搜尋單一轉譯。 結果會傳回原始轉譯（僅限&amp;amp；ast；.mp4）和編碼的轉譯。
+>* 搜尋視訊時，您會搜尋單一轉譯。 結果會傳回原始轉譯（僅限&amp;ast；.mp4）和編碼的轉譯。
 >* 搜尋最適化視訊集時，您將會搜尋資料夾和所有子資料夾，但前提是您已新增關鍵字至搜尋。 如果您尚未新增關鍵字，Experience Manager不會搜尋子檔案夾。
 >
 

@@ -5,13 +5,29 @@ role: User, Admin
 feature: Asset Management,Renditions
 solution: Experience Manager, Experience Manager Assets
 exl-id: b91173b4-f1d1-4aad-97d2-782bc8aeaeab
-source-git-commit: 47b82956b41c3f78bed5ae220c7e993ce29e0385
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '314'
 ht-degree: 10%
-
 ---
-
 # 傳遞 Dynamic Media 資產{#delivering-dynamic-media-assets}
 
 如何傳送Dynamic Media資產（包括影片和影像）取決於網站的實作方式。
@@ -21,9 +37,9 @@ ht-degree: 10%
 * 如果您的網站託管於Adobe Experience Manager，則您想要直接將Dynamic Media資產新增至您的頁面。
 * 如果您的網站不在Experience Manager上，您可以選擇以下任一選項：
 
-   * 將您的影片或影像內嵌在網站上。
-   * 將URL連結至您的網頁應用程式。 當您想要以快顯視窗或強制回應視窗的形式傳送視訊播放器時，請使用連結。
-   * 如果您的網站有回應，您可以[傳送最佳化的影像](/help/assets/responsive-site.md)。
+  * 將您的影片或影像內嵌在網站上。
+  * 將URL連結至您的網頁應用程式。 當您想要以快顯視窗或強制回應視窗的形式傳送視訊播放器時，請使用連結。
+  * 如果您的網站有回應，您可以[傳送最佳化的影像](/help/assets/responsive-site.md)。
 
 >[!NOTE]
 >

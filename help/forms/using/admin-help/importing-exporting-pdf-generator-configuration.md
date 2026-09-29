@@ -9,14 +9,26 @@ feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 3bd5ef75-7e35-4398-a7a3-0178a9c06db0
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
-
 ---
-
 # 匯入和匯出PDF Generator組態檔 {#importing-and-exporting-pdf-generator-configuration-files}
 
 >[!NOTE]
@@ -49,7 +61,7 @@ ht-degree: 0%
 
 1. 在Administration Console中，按一下「服務> PDF Generator >組態檔>匯入組態」 。
 1. 選取「匯入現有的組態檔」。
-1. 若要在[組態檔]方塊中指定檔案位置，請按一下[瀏覽]尋找並選取檔案，然後按一下[匯入]。**&#x200B;**
+1. 若要在[組態檔]方塊中指定檔案位置，請按一下[瀏覽]尋找並選取檔案，然後按一下[匯入]。****
 
 ## 轉換AutoCAD檔案中的所有圖層 {#convert-all-layers-within-autocad-files}
 

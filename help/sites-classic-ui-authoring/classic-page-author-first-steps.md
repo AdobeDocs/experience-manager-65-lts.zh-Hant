@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 7ac0a308-42fe-498e-abd8-37aa1bc6daca
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '412'
 ht-degree: 0%
-
 ---
-
 # 作者的首要步驟{#first-steps-for-authors}
 
 本節提供當[開始使用Adobe Experience Manager (AEM)編寫內容](/help/sites-authoring/author.md#concept-of-authoring-and-publishing)時，您將使用的主要工作概覽。
@@ -58,7 +67,7 @@ ht-degree: 0%
 
 ### 發佈頁面 {#publishing-a-page}
 
-當您完成編輯頁面後，您將會想要發佈（或啟動）您的頁面[&#128279;](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#main-pars-title-10)，以便您的網站中的訪客可以使用該頁面。
+當您完成編輯頁面後，您將會想要發佈（或啟動）您的頁面](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#main-pars-title-10)，以便您的網站中的訪客可以使用該頁面。[
 
 ## 其他動作 {#further-actions}
 

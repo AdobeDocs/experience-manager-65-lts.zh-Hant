@@ -1,17 +1,30 @@
 ---
-title: ' [!DNL Adobe Experience Manager Assets]的可存取功能與介面'
-description: 瞭解 [!DNL Adobe Experience Manager] 6.5 LTS [!DNL Assets] 中的協助工具功能如何協助殘障使用者。
+title: '[!DNL Adobe Experience Manager Assets]的可存取功能與介面'
+description: 瞭解[!DNL Adobe Experience Manager] 6.5 LTS [!DNL Assets]中的協助工具功能如何協助殘障使用者。
 feature: Asset Management
 role: User,Developer,Leader
 solution: Experience Manager, Experience Manager Assets
 exl-id: f9540bfb-1c4f-41f0-9caa-ef9265225648
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1935'
 ht-degree: 1%
-
 ---
-
 <!--
 Possible topics to cover in this article are below.
 
@@ -43,7 +56,7 @@ Possible topics to cover in this article are below.
 
 若要閱讀包含詳細相容性層級的報表，請參閱[協助工具相容性報表](https://www.adobe.com/accessibility/compliance.html) (ACR)頁面。
 
-若要瞭解[!DNL Dynamic Media]的存取方式，請參閱 [!DNL Dynamic Media][&#128279;](/help/assets/accessibility-dm.md)中的存取功能。
+若要瞭解[!DNL Dynamic Media]的存取方式，請參閱 [!DNL Dynamic Media]](/help/assets/accessibility-dm.md)中的[存取功能。
 
 ## 輔助技術 {#at-support}
 
@@ -79,7 +92,7 @@ TBD items:
 
 ### [!DNL Assets]中的鍵盤快速鍵 {#keyboard-shortcuts}
 
-[!DNL Assets]中的下列動作可搭配列出的鍵盤快速鍵使用。 大部分套用至[!DNL Experience Manager]主控台的鍵盤快速鍵也套用至[!DNL Assets]。 請參閱主控台[&#128279;](/help/sites-authoring/keyboard-shortcuts.md#keyboard-shortcuts)的鍵盤快速鍵。 瞭解如何[啟用或停用鍵盤快速鍵](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)。
+[!DNL Assets]中的下列動作可搭配列出的鍵盤快速鍵使用。 大部分套用至[!DNL Experience Manager]主控台的鍵盤快速鍵也套用至[!DNL Assets]。 請參閱主控台](/help/sites-authoring/keyboard-shortcuts.md#keyboard-shortcuts)的[鍵盤快速鍵。 瞭解如何[啟用或停用鍵盤快速鍵](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)。
 
 | 使用者介面或情境 | 鍵盤快速鍵 | 動作 |
 |---|---|---|
@@ -205,9 +218,9 @@ TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no 
 
 * 在連結共用對話方塊中，以瀏覽模式導覽時，熒幕助讀程式會：
 
-   * 載入對話方塊時，不要提供表格資訊的旁白。
-   * 導覽至列出的所有建議。
-   * 提供旁白來敘述新增電子郵件地址和搜尋欄位顯示的建議。
+  * 載入對話方塊時，不要提供表格資訊的旁白。
+  * 導覽至列出的所有建議。
+  * 提供旁白來敘述新增電子郵件地址和搜尋欄位顯示的建議。
 
 ## 無障礙檔案 {#accessible-docs}
 
@@ -224,7 +237,7 @@ TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no 
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; [!DNL Dynamic Media]](/help/assets/accessibility-dm.md)中的協助工具功能。
+>* [ [!DNL Dynamic Media]](/help/assets/accessibility-dm.md)中的協助工具功能。
 >* [每個Service Pack版本](/help/release-notes/release-notes.md)中完成的增強功能的發行說明。
 >* [[!DNL Adobe Experience Manager] 協助工具指引](/help/managing/web-accessibility.md)。
 >* [Adobe解決方案的一致性報告(ACR)和VPAT清單](https://www.adobe.com/accessibility/compliance.html)。

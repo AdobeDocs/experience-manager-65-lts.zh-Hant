@@ -9,13 +9,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User
 exl-id: 7ec29926-a5f6-4080-a981-597f9632f6e8
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 1%
-
 ---
-
 # 管理表單簡介 {#introduction-to-managing-forms}
 
 AEM [!DNL Forms]提供簡化但功能強大的使用者介面，以建立和管理表單、檔案、主題、信件、檔案片段、資料字典和相關資產。 它有助於管理表單、檔案和相關資產的完整生命週期 — 從開發人員的案頭到產品
@@ -56,8 +70,8 @@ Forms &amp; Documents提供建立互動式通訊、最適化表單、最適化�
 
 * **資料夾：** AEM [!DNL Forms]使用者介面使用資料夾來排列資產。 它支援兩種型別的資料夾：
 
-   * **一般資料夾：**&#x200B;這些資料夾用於在AEM [!DNL Forms]使用者介面中建立的資產。 這些資料夾沒有嚴格的資料夾結構。 您可以重新命名、建立子資料夾，並將最適化表單、互動式通訊、最適化表單片段、表單範本(XDP)、PDF forms、檔案和相關資產儲存在這些資料夾中。
-   * **Forms Workflow資料夾：** Forms工作流程資料夾是在Workbench程式（LiveCycle封存）移轉並與AEM [!DNL Forms]使用者介面同步時建立的。 不允許重新命名、建立子資料夾、建立互動式通訊、最適化表單片段或互動式通訊。 也不允許刪除版本資料夾或建立及上傳最適化表單、最適化表單片段或與版本資料夾同時進行的互動式通訊。
+  * **一般資料夾：**&#x200B;這些資料夾用於在AEM [!DNL Forms]使用者介面中建立的資產。 這些資料夾沒有嚴格的資料夾結構。 您可以重新命名、建立子資料夾，並將最適化表單、互動式通訊、最適化表單片段、表單範本(XDP)、PDF forms、檔案和相關資產儲存在這些資料夾中。
+  * **Forms Workflow資料夾：** Forms工作流程資料夾是在Workbench程式（LiveCycle封存）移轉並與AEM [!DNL Forms]使用者介面同步時建立的。 不允許重新命名、建立子資料夾、建立互動式通訊、最適化表單片段或互動式通訊。 也不允許刪除版本資料夾或建立及上傳最適化表單、最適化表單片段或與版本資料夾同時進行的互動式通訊。
 
   ![資料夾](assets/folders.png)
 
@@ -107,8 +121,8 @@ AEM工具面板包含各種元件的工具。 若要瀏覽至AEM Forms專用工�
 
 * **左側邊欄：**&#x200B;您可以按一下左側邊欄圖示![railleftpng](assets/railleftpng.png)，以顯示AEM [!DNL Forms]的時間軸和參考功能。
 
-   * **時間表：**&#x200B;您可以在時間表中可供檢閱的資產上新增並檢視註解。 如需詳細指示，請參閱[建立和管理表單中資產的稽核](../../forms/using/create-reviews-forms.md)。
-   * **參考資料：** AEM [!DNL Forms]資產可用於多個AEM [!DNL Forms]資產。 例如，檔案片段可用於多個字母。 參考是所選資產使用的資產（其他表單或資源）清單，也是所選資產正在使用的其他資產清單。
+  * **時間表：**&#x200B;您可以在時間表中可供檢閱的資產上新增並檢視註解。 如需詳細指示，請參閱[建立和管理表單中資產的稽核](../../forms/using/create-reviews-forms.md)。
+  * **參考資料：** AEM [!DNL Forms]資產可用於多個AEM [!DNL Forms]資產。 例如，檔案片段可用於多個字母。 參考是所選資產使用的資產（其他表單或資源）清單，也是所選資產正在使用的其他資產清單。
 
 * **階層連結：**&#x200B;階層連結代表目前主控台或資料夾的標題。 您可以按一下「階層連結」選項，在階層中較高的資料夾層級之間導覽。
 * **檢視切換器：**&#x200B;您可以按一下[檢視切換器]圖示![檢視清單](assets/viewlist.png)或![檢視卡](assets/viewcard.png)，在清單和卡片檢視之間快速切換。 如需一般使用者介面元件的詳細資訊，請參閱[製作](/help/sites-authoring/author.md)。

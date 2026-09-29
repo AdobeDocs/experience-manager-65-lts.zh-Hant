@@ -6,13 +6,25 @@ feature: Language Copy
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 3db57dbc-757d-44be-8d32-ea5bc1f02fc8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '681'
 ht-degree: 2%
-
 ---
-
 # 準備翻譯內容{#preparing-content-for-translation}
 
 多語言網站通常以多種語言提供一定數量的內容。 網站是以一種語言撰寫，然後翻譯成其他語言。 通常，多語言網站是由頁面分支組成，每個分支都包含不同語言的網站頁面。
@@ -41,7 +53,7 @@ Geometrixx示範網站範例包含數個語言分支，並會使用以下結構�
 1. 編寫語言主版的內容。
 1. 建立網站每個語言副本的語言根。 例如，Geometrixx範例網站的法文副本為/content/geometrixx/fr。
 
-準備要翻譯的內容後，您可以在語言副本和相關翻譯專案中自動建立遺失的頁面。 （請參閱[建立翻譯專案](/help/sites-administering/tc-manage.md)。）如需AEM內容翻譯程式的概述，請參閱[翻譯多語言網站的內容](/help/sites-administering/translation.md)。
+準備要翻譯的內容後，您可以在語言副本和相關翻譯專案中自動建立遺失的頁面。 （請參閱[建立翻譯專案](/help/sites-administering/tc-manage.md)。） 如需AEM內容翻譯程式的概述，請參閱[翻譯多語言網站的內容](/help/sites-administering/translation.md)。
 
 ## 建立語言根目錄 {#creating-a-language-root}
 

@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: c4ac3f14-f45a-44f6-a232-69cae483a776
-source-git-commit: dc46c3e2689df1069eea6980ef615f639db42e92
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '950'
 ht-degree: 4%
-
 ---
-
 # 製作 — 環境與工具 {#authoring-the-environment-and-tools}
 
 AEM的製作環境提供各種機制來組織和編輯您的內容。 提供的工具可從各種主控台和頁面編輯器存取。
@@ -39,7 +48,7 @@ AEM的製作環境提供各種機制來組織和編輯您的內容。 提供的�
 
 您可以從AEM中直接存取各種&#x200B;**說明**&#x200B;資源：
 
-除了從主控台工具列[存取](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help)說明外，您也可以從sidekick存取說明(使用？ 圖示)：
+除了從主控台工具列](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help)存取[說明外，您也可以從sidekick存取說明(使用？ 圖示)：
 
 ![Sidekick已摺疊](do-not-localize/sidekick-collapsed-2.png)
 
@@ -177,7 +186,7 @@ AEM會顯示直接參照所選頁面以及任何間接參照的所有頁面。 �
 
 * [藍圖](/help/sites-administering/msm-best-practices.md)
 
-在網站主控台[中可以看到其他](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console)頁面間關係。
+在網站主控台](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console)中可以看到其他[頁面間關係。
 
 ## 稽核記錄 {#audit-log}
 

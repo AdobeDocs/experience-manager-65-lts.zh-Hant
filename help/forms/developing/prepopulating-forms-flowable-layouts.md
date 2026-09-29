@@ -9,14 +9,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 8de9682f-8332-4f6e-ac4b-295fca82a424
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3513'
 ht-degree: 0%
-
 ---
-
 # 使用可流程配置預先填入Forms {#prepopulating-forms-with-flowable-layouts1}
 
 ## 使用可流程配置預先填入Forms {#prepopulating-forms-with-flowable-layouts2}
@@ -103,7 +120,7 @@ ht-degree: 0%
 
 ### 表單設計考量事項 {#form-design-considerations}
 
-具有可流動版面的Forms是根據在Designer中建立的表單設計。 表單設計會指定一組配置、顯示和資料擷取規則，包括根據使用者輸入計算值。 將資料輸入表單時會套用規則。 新增至表單的欄位是表單設計內的子表單。 例如，在上圖所示的採購單表單中，每一行都是子表單。 如需建立包含子表單的表單設計相關資訊，請參閱[建立具有流程配置之採購單表單](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9_tw)。
+具有可流動版面的Forms是根據在Designer中建立的表單設計。 表單設計會指定一組配置、顯示和資料擷取規則，包括根據使用者輸入計算值。 將資料輸入表單時會套用規則。 新增至表單的欄位是表單設計內的子表單。 例如，在上圖所示的採購單表單中，每一行都是子表單。 如需建立包含子表單的表單設計相關資訊，請參閱[建立具有流程配置之採購單表單](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9)。
 
 ### 瞭解資料子群組 {#understanding-data-subgroups}
 

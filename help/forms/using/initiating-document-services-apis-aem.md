@@ -8,13 +8,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 role: User, Developer
 exl-id: 22a7744e-0af6-4aac-a8a1-156b563c627c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1173'
 ht-degree: 0%
-
 ---
-
 # 從AEM工作流程啟動檔案服務API  {#initiate-document-services-apis-from-aem-workflow}
 
 ## 組合器 {#assembler}
@@ -30,7 +44,7 @@ AEM Forms提供自訂工作流程，可叫用下列Assembler服務API：
 
 1. 將&#x200B;**[!UICONTROL 叫用DDX]**&#x200B;工作流程步驟拖曳至Sidekick中Forms Workflow標籤下。
 1. 連按兩下新增的工作流程步驟以編輯元件。
-1. 在[編輯元件]對話方塊中，設定輸入檔案、環境選項和輸出檔案，然後按一下[確定]。**&#x200B;**
+1. 在[編輯元件]對話方塊中，設定輸入檔案、環境選項和輸出檔案，然後按一下[確定]。****
 
 #### 輸入檔案 {#input-documents}
 
@@ -38,9 +52,9 @@ AEM Forms提供自訂工作流程，可叫用下列Assembler服務API：
 
 * **DDX**：這是「呼叫DDX」工作流程步驟的必要輸入，可以從DDX輸入下拉式清單中選取下列其中一個選項來指定。
 
-   * *相對於承載*： DDX輸入檔案相對於工作流程專案的承載資料夾。
-   * *使用承載*：工作流程專案的承載已用作輸入DDX檔案。
-   * *絕對路徑*： CRX存放庫中DDX檔案的絕對路徑。
+  * *相對於承載*： DDX輸入檔案相對於工作流程專案的承載資料夾。
+  * *使用承載*：工作流程專案的承載已用作輸入DDX檔案。
+  * *絕對路徑*： CRX存放庫中DDX檔案的絕對路徑。
 
 * **從PayLoad建立對應**：選取時，裝載資料夾下的所有檔案都會新增到組合器中`invoke` API的輸入檔案對應。 每個檔案的節點名稱都會作為對應中的索引鍵。
 
@@ -71,7 +85,7 @@ AEM Forms提供自訂工作流程，可叫用下列Assembler服務API：
 1. 將&#x200B;**[!UICONTROL ConvertToPDFA]**&#x200B;工作流程步驟拖曳至Sidekick中Forms Workflow標籤下。
 
 1. 連按兩下新增的工作流程步驟以編輯元件。
-1. 在[編輯元件]對話方塊中，設定輸入檔案、轉換選項和輸出檔案，然後按一下[確定]。**&#x200B;**
+1. 在[編輯元件]對話方塊中，設定輸入檔案、轉換選項和輸出檔案，然後按一下[確定]。****
 
 #### 輸入檔案 {#input-documents-1}
 
@@ -109,7 +123,7 @@ AEM Forms提供自訂工作流程，可叫用下列Assembler服務API：
 
 1. 拖曳Sidekick中「PDF」標籤下的「呈現Forms Workflow表單」工作流程步驟。
 1. 連按兩下新增的工作流程步驟以編輯元件。
-1. 在[編輯元件]對話方塊中，設定輸入檔案、輸出檔案和其他引數，然後按一下[確定]。**&#x200B;**
+1. 在[編輯元件]對話方塊中，設定輸入檔案、輸出檔案和其他引數，然後按一下[確定]。****
 
 #### 輸入檔案 {#input-documents-2}
 
@@ -138,7 +152,7 @@ AEM Forms提供自訂工作流程，可叫用下列Assembler服務API：
 
 1. 拖曳Sidekick中「PDF」標籤下的「產生非互動式Forms Workflow輸出」工作流程。
 1. 連按兩下新增的工作流程步驟以編輯元件。
-1. 在[編輯元件]對話方塊中，設定輸入檔案、輸出檔案和其他引數，然後按一下[確定]。**&#x200B;**
+1. 在[編輯元件]對話方塊中，設定輸入檔案、輸出檔案和其他引數，然後按一下[確定]。****
 
 #### 輸入檔案 {#input-documents-3}
 

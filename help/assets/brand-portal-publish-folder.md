@@ -10,20 +10,32 @@ feature: Brand Portal
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: b67df215-6ef9-461a-bfb8-f5b5ece8451b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: e00c7c12-7035-41fe-ad76-1ec82c8c3f01
+    internal-label: Brand Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '568'
 ht-degree: 34%
-
 ---
-
 # 將資料夾發佈至Brand Portal{#publish-folders-to-brand-portal}
 
 身為Adobe Experience Manager (AEM) Assets管理員，您可以將資產和資料夾發佈至AEM Assets Brand Portal執行個體（或排程發佈工作流程在之後的日期/時間）。 不過，您必須先整合AEM Assets與Brand Portal。 如需詳細資訊，請參閱[使用 Brand Portal 設定 AEM Assets](/help/assets/configure-aem-assets-with-brand-portal.md)。
 
 發佈資產或資料夾後，Brand Portal的使用者即可使用該資產或資料夾。
 
-如果您對AEM Assets中的原始資產或資料夾進行後續修改，則在您重新發佈資產或資料夾之前，這些變更不會反映在Brand Portal中。 這項功能可確保對進行中工作所作的變更不會出現在 Brand Portal 中。Brand Portal 僅提供管理員發佈的已核准變更。
+如果您對AEM Assets中的原始資產或資料夾進行後續修改，則在您重新發佈資產或資料夾之前，這些變更不會反映在Brand Portal中。 這項功能可確保對進行中工作所作的變更不會出現在 Brand Portal 中。 Brand Portal 僅提供管理員發佈的已核准變更。
 
 ## 將資料夾發佈至Brand Portal {#publish-folders-to-brand-portal-1}
 
@@ -37,14 +49,14 @@ ht-degree: 34%
 
    若要將所選資料夾發佈至 Brand Portal，請執行下列其中一項操作：
 
-   * 在工具列中選取&#x200B;**快速發佈**。然後在功能表中選取&#x200B;**發佈至Brand Portal**。
+   * 在工具列中選取&#x200B;**快速發佈**。 然後在功能表中選取&#x200B;**發佈至Brand Portal**。
 
    * 在工具列中選取&#x200B;**管理出版物**。
 
    1. 從&#x200B;**動作**&#x200B;選取&#x200B;**發佈至Brand Portal**，從&#x200B;**排程**&#x200B;選取&#x200B;**立即**，然後按一下&#x200B;**下一步**。
    1. 在&#x200B;**範圍**&#x200B;中確認您的選取項目，然後按一下&#x200B;**發佈至 Brand Portal**。
 
-   系統會顯示訊息，指出資料夾已排入佇列，等候發佈至 Brand Portal。登入Brand Portal介面可檢視已發佈的資料夾。
+   系統會顯示訊息，指出資料夾已排入佇列，等候發佈至 Brand Portal。 登入Brand Portal介面可檢視已發佈的資料夾。
 
    **稍後發佈資料夾**
 
@@ -55,9 +67,9 @@ ht-degree: 34%
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
-   1. 選取&#x200B;**啟用日期**&#x200B;並指定時間。按一下&#x200B;**下一步**。
-   1. 在&#x200B;**範圍**&#x200B;中確認您的選取項目。按一下&#x200B;**下一步**。
-   1. 在&#x200B;**工作流程**&#x200B;底下指定「工作流程標題」。按一下&#x200B;**稍後發佈**。
+   1. 選取&#x200B;**啟用日期**&#x200B;並指定時間。 按一下&#x200B;**下一步**。
+   1. 在&#x200B;**範圍**&#x200B;中確認您的選取項目。 按一下&#x200B;**下一步**。
+   1. 在&#x200B;**工作流程**&#x200B;底下指定「工作流程標題」。 按一下&#x200B;**稍後發佈**。
 
       ![managerchedulepub](assets/manageschedulepub.png)
 
@@ -89,9 +101,9 @@ ht-degree: 34%
 
    1. 在工具列中選取&#x200B;**管理出版物**。
    1. 從&#x200B;**動作**&#x200B;選取&#x200B;**從Brand Portal取消發佈**，然後從&#x200B;**排程**&#x200B;選取&#x200B;**稍後**。
-   1. 選取&#x200B;**啟用日期**&#x200B;並指定時間。按一下&#x200B;**下一步**。
+   1. 選取&#x200B;**啟用日期**&#x200B;並指定時間。 按一下&#x200B;**下一步**。
    1. 在&#x200B;**範圍**&#x200B;中確認您的選取項目，然後按一下&#x200B;**下一步**。
-   1. 在&#x200B;**工作流程**&#x200B;中指定&#x200B;**工作流程標題**。按一下&#x200B;**稍後取消發佈。**
+   1. 在&#x200B;**工作流程**&#x200B;中指定&#x200B;**工作流程標題**。 按一下&#x200B;**稍後取消發佈。**
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 

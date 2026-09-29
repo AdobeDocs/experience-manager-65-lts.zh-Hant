@@ -9,21 +9,36 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 9a93b8f9-33cb-4aec-81e0-a1146bba955a
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 1%
-
 ---
-
 # 全域檔案儲存目錄{#global-document-storage-directory}
 
 *全域檔案儲存(GDS)*&#x200B;目錄是用來儲存處理程式中使用的長期檔案的目錄。 這些檔案包含PDF、原則和表單範本。 長效檔案是許多AEM表單部署整體狀態的重要部分。 如果部分或所有長期檔案遺失或損毀，Forms伺服器可能會變得不穩定。 非同步作業叫用的輸入檔案也儲存在GDS目錄中，而且必須可用於處理請求。 您必須考量裝載GDS目錄的檔案系統的可靠性。 根據您的品質和服務等級需求，使用獨立磁碟備援陣列(RAID)或其他技術。
 
 長效檔案可能包含敏感的使用者資訊。 使用AEM Forms API或使用者介面存取此資訊時，可能需要特殊認證。 透過作業系統妥善保護GDS目錄非常重要。 只有用於執行應用程式伺服器的管理員帳戶才應該具有對GDS目錄的讀取/寫入存取權。
 
-除了為GDS選取安全、高可用性的目錄之外，您也可以選擇啟用資料庫中的檔案儲存。 請注意，即使使用AEM Forms資料庫進行檔案儲存，AEM Forms仍需要GDS目錄。 （請參閱當資料庫用於檔案儲存[&#128279;](/help/forms/using/admin-help/files-back-recover.md#backup-options-when-database-is-used-for-document-storage)時的備份選項。）
+除了為GDS選取安全、高可用性的目錄之外，您也可以選擇啟用資料庫中的檔案儲存。 請注意，即使使用AEM Forms資料庫進行檔案儲存，AEM Forms仍需要GDS目錄。 （請參閱當資料庫用於檔案儲存](/help/forms/using/admin-help/files-back-recover.md#backup-options-when-database-is-used-for-document-storage)時的[備份選項。）
 
 AEM forms應用程式資料位於GDS目錄和AEM forms資料庫中。 下表說明資料及其位置。
 

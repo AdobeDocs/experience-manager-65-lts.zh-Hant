@@ -5,13 +5,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 2a5d3d80-2710-4bb0-ad24-9a86525c6aea
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 1%
-
+source-wordcount: '399'
+ht-degree: 3%
 ---
-
 # 元件{#components}
 
 Adobe Experience Manager (AEM)隨附多種現成可用的元件，可為網站作者提供全方位功能。 在[編輯頁面](/help/sites-authoring/editing-content.md)時，它們可供使用。 他們依稱為元件群組的主要功能區域來分組，以協助篩選。
@@ -26,7 +39,7 @@ Adobe Experience Manager (AEM)隨附多種現成可用的元件，可為網站�
 
 ## 一般使用 {#general-usage}
 
-當&#x200B;**編輯頁面**&#x200B;時，元件可在頁面編輯器側面板的[元件](/help/sites-authoring/editing-content.md)索引標籤上使用。
+當[編輯頁面](/help/sites-authoring/editing-content.md)時，元件可在頁面編輯器側面板的&#x200B;**元件**&#x200B;索引標籤上使用。
 
 您可以選取元件並將其拖曳至頁面上的所需位置。 您接著可以使用下列專案加以編輯：
 

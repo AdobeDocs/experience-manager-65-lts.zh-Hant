@@ -6,13 +6,22 @@ role: Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 110b7175-d398-40ff-886e-5817a1df0ec9
-source-git-commit: ce0da5056e0821c94eb06a05c663a3939b37f940
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3056'
-ht-degree: 0%
-
+source-wordcount: '3217'
+ht-degree: 2%
 ---
-
 # 為Adobe資產連結設定Experience Manager Assets {#adobe-asset-link}
 
 [Adobe Asset Link (AAL)](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html)可簡化創意人員與行銷人員在內容建立過程中的共同作業。 它會將Adobe Experience Manager Assets與Creative Cloud案頭應用程式Adobe InDesign、Adobe Photoshop和Adobe Illustrator連線。 Adobe Asset Link面板可讓創意人員存取及修改儲存在AEM Assets中的內容，無需離開他們最熟悉的創意應用程式。
@@ -33,7 +42,7 @@ ht-degree: 0%
 
 | Assets功能 | Experience Manager版本和支援需求 |
 |--- |--- |
-| Asset Link預設有效 | Experience Manager 6.5和6.5.2或更新版本。 </br> Experience Manager 6.4.4和6.4.6或更新版本。 </br> Adobe建議先安裝最新的[Experience Manager Service Pack (SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=zh-Hant)，再使用AAL。 |
+| Asset Link預設有效 | Experience Manager 6.5和6.5.2或更新版本。</br> Experience Manager 6.4.4和6.4.6或更新版本。</br> Adobe建議先安裝最新的[Experience Manager Service Pack (SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)，再使用AAL。 |
 | Asset Link可在安裝套件後運作 | 若是Experience Manager 6.4.0 - 6.4.3，請安裝[adobe-asset-link-support](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)套件。 |
 | Adobe Stock整合 | Experience Manager 6.4.2或更新版本 |
 | 視覺或相似性搜尋 | Experience Manager 6.5.0或更新版本 |
@@ -54,7 +63,7 @@ Adobe建議您安裝[adobe-asset-link-config](https://experience.adobe.com/#/dow
    設定下列屬性並儲存變更。
 
    * [!UICONTROL 群組對應]：除非需要，否則留空。 如需詳細資訊，請參閱[群組對應](#group-mapping)。
-   * [!UICONTROL 組織]：輸入您在Adobe Admin Console中使用的組織ID。 如需有關組織ID的詳細資訊，請參閱[建立使用者群組](https://helpx.adobe.com/tw/enterprise/using/create-aal-user-group.html)。
+   * [!UICONTROL 組織]：輸入您在Adobe Admin Console中使用的組織ID。 如需有關組織ID的詳細資訊，請參閱[建立使用者群組](https://helpx.adobe.com/enterprise/using/create-aal-user-group.html)。
 
 1. 找到&#x200B;**[!UICONTROL Adobe Granite Bearer Authentication Handler]**&#x200B;設定，然後按一下以編輯它。
 
@@ -98,13 +107,13 @@ Adobe建議您安裝[adobe-asset-link-config](https://experience.adobe.com/#/dow
 
 1. 找到具有&#x200B;**[!UICONTROL 同步處理常式名稱]** `ims`的&#x200B;**[!UICONTROL Apache Jackrabbit Oak Default Sync Handler]**&#x200B;設定，然後按一下以編輯它。
 
-   設定下列組態屬性，然後按一下[儲存]。**&#x200B;**
+   設定下列組態屬性，然後按一下[儲存]。****
 
    * [!UICONTROL 使用者到期時間與使用者成員資格到期]：時間以&#39;m&#39;為單位且後面沒有空格。 例如，`15m`持續15分鐘。 如需詳細資訊，請參閱[群組對應](#group-mapping)。
    * [!UICONTROL 使用者自動成員資格]：不變更
    * [!UICONTROL 使用者動態成員資格]： ` Deslect`
 
-1. 找到&#x200B;**[!UICONTROL Adobe Granite OAuth驗證處理常式]**&#x200B;設定，然後按一下以編輯它。 若不進行任何變更，請按一下[儲存]。**&#x200B;**
+1. 找到&#x200B;**[!UICONTROL Adobe Granite OAuth驗證處理常式]**&#x200B;設定，然後按一下以編輯它。 若不進行任何變更，請按一下[儲存]。****
 
 1. 若要調整持有者驗證處理常式的相對優先順序，請在CRXDE中導覽至`/apps/system/config`。 找到`com.adobe.granite.auth.oauth.impl.BearerAuthenticationHandler.config`並開啟其組態。 最後，新增`service.ranking=I"-10"`。 儲存變更。
 
@@ -169,7 +178,7 @@ Adobe Asset Link使用者可連線至Experience Manager，允許從主要的Crea
 
 例如，假設Adobe Asset Link使用者是Adobe IMS群組assetlink使用者成員。 在此情況下，當該Experience Manager IMS群組中的使用者首次連線到Adobe Asset Link時，會在Adobe IMS中建立名為assetlink-users的同步群組。 Adobe IMS群組中的每位新使用者首次透過Experience Manager Asset Link連線至Experience Manager時，都會新增至Adobe中的對應群組。
 
-Experience Manager與Adobe IMS中群組對應並同步的群組，可以直接授予存取權，或透過使其成為另一個群組的成員。 以下是如何管理許可權的範例。
+與Adobe IMS中群組對應並同步的群組，可以直接授予存取權，或透過使其成為另一個群組的成員。 以下是如何管理許可權的範例。
 
 ![群組範例](assets/group-examples.png)
 
@@ -182,7 +191,7 @@ Experience Manager與Adobe IMS中群組對應並同步的群組，可以直接�
   例如，請確定這些群組與`dam-users`群組及Experience Manager管理員建立的群組不同。
 
   若其Adobe IMS群組的名稱與Experience Manager系統群組的名稱衝突或手動建立的群組名稱衝突，則不會用來控制使用者許可權。
-* 如果Adobe IMS使用者連線至Experience Manager執行個體(使用者名稱與先前建立的Experience Manager使用者衝突)，系統會為Adobe IMS使用者指定另一個名稱，並新增編號，使其成為唯一名稱。
+* 如果Adobe IMS使用者連線至Experience Manager執行個體（使用者名稱與先前建立的Experience Manager使用者衝突），系統會為Adobe IMS使用者指定另一個名稱，並新增編號，使其成為唯一名稱。
 
 **安裝第一次存取控制**
 
@@ -282,11 +291,11 @@ Experience Manager提供僅用於放置的轉譯(FPO)。 這些FPO轉譯的檔�
 * 確定您的部署符合先決條件。 具體來說，請確定已安裝適當的功能套件或套件。
 * 請聯絡貴組織的合作夥伴或系統整合商。
 * 如果您的Creative Cloud使用者無法驗證已簽出資產，則請檢查電子郵件ID中網域名稱的大小寫。 若要修正，請參閱[手動組態](#manual-configuration)。
-* 如需詳細資訊，請參閱[疑難排解Asset Link](https://helpx.adobe.com/tw/enterprise/kb/asset-link-troubleshooting.html)。
+* 如需詳細資訊，請參閱[疑難排解Asset Link](https://helpx.adobe.com/enterprise/kb/asset-link-troubleshooting.html)。
 
 
 >[!MORELIKETHIS]
 >
 >* [關於 Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)
->* [在Creative Cloud案頭應用程式中使用資產連結並管理資產](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [在Creative Cloud案頭應用程式中使用資產連結並管理資產](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
 >* [設定Adobe Experience Manager Assets as a Cloud Service](https://helpx.adobe.com/tw/enterprise/using/configure-aem-assets-for-asset-link.html)。

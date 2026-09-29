@@ -9,26 +9,35 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 68a4d4b2-91a3-4545-a491-2a1ec08ceec5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2078'
-ht-degree: 6%
-
+source-wordcount: '2082'
+ht-degree: 7%
 ---
-
 # 設定搜尋表單{#configuring-search-forms}
 
 使用&#x200B;**搜尋Forms**&#x200B;來自訂搜尋面板所使用的搜尋述詞選擇，這些面板可用於各種AEM主控台及/或製作環境的面板。 自訂這些面板可讓搜尋功能根據您的特定需求而通用。
 
 [範圍的述詞](#predicates-and-their-settings)是現成可用的。 您可以新增多個述詞，包括（其中包括）屬性述詞，以搜尋符合您指定之單一屬性的資產。 或者，使用「選項」述詞來搜尋符合您為特定屬性指定的一或多個值的資產。
 
-您可以[設定用於各種主控台和資產瀏覽器（編輯頁面時）的搜尋表單](#configuring-your-search-forms)。 設定這些表單[&#128279;](#configuring-your-search-forms)的對話方塊可透過下列方式存取：
+您可以[設定用於各種主控台和資產瀏覽器（編輯頁面時）的搜尋表單](#configuring-your-search-forms)。 設定這些表單](#configuring-your-search-forms)的[對話方塊可透過下列方式存取：
 
 * **工具**
 
-   * **一般**
+  * **一般**
 
-      * **搜尋Forms**
+    * **搜尋Forms**
 
 第一次存取此主控台時，您可以看到所有組態都有掛鎖符號。 這表示適當的設定是預設（現成）設定，且無法刪除。 自訂組態之後，除非您[刪除自訂的組態](#deleting-a-configuration-to-reinstate-the-default)，否則鎖定會消失。 在這種情況下，會恢復預設值（和掛鎖指示器）。
 
@@ -385,7 +394,7 @@ ht-degree: 6%
   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **選項節點路徑**
-實際上與&#x200B;**選項路徑**&#x200B;相同，只是這個在通用述詞欄位中，另一個則專用於資產。
+實際上與**選項路徑**&#x200B;相同，只是這個在通用述詞欄位中，另一個則專用於資產。
 
 * **單選**
 如果勾選，選項會呈現為僅允許單一選取的核取方塊。 如果錯誤地選取了，則可取消選取核取方塊。
@@ -434,7 +443,7 @@ ht-degree: 6%
 
    例如，**日期範圍述詞**&#x200B;的設定：
 
-   日期範圍述詞![&#128279;](assets/chlimage_1-376.png)的屬性
+   日期範圍述詞](assets/chlimage_1-376.png)的![屬性
 
 1. 視需要進行變更，並透過&#x200B;**完成**&#x200B;確認。
 

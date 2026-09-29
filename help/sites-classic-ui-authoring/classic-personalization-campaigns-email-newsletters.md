@@ -9,13 +9,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 03890f75-bfbc-4f73-85ae-07e991728115
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1135'
 ht-degree: 3%
-
 ---
-
 # 發佈電子郵件給電子郵件服務提供者{#publishing-an-email-to-email-service-providers}
 
 您可以將電子報發佈到電子郵件服務，例如ExactTarget和Silverpop Engage。 本檔案說明如何設定AEM以向這些電子郵件服務發佈電子報。
@@ -43,7 +54,7 @@ ht-degree: 3%
 1. 前往&#x200B;**網站**，然後前往&#x200B;**行銷活動**。 選取行銷活動。
 1. 按一下&#x200B;**新增**&#x200B;以開啟&#x200B;**建立頁面**&#x200B;視窗。
 1. 輸入標題、名稱，然後從可用的範本清單中選取&#x200B;**Geometrixx Newsletter**&#x200B;範本。
-1. 按一下&#x200B;**建立**。
+1. 按一下「**建立**」。
 1. 開啟已建立的電子郵件。
 1. 切換到設計模式以選取您要顯示在Sidekick中的元件。
 1. 切換到編輯模式，並開始將內容（文字、影像、[電子郵件工具](#adding-exacttarget-email-tools-to-your-email)、[個人化變數](#adding-text-and-personalization-tool-to-your-e-mail)等）新增至您的電子郵件。
@@ -143,7 +154,7 @@ ExactTarget的&#x200B;**電子郵件工具**&#x200B;元件可為您的電子郵�
 
 1. 開啟電子郵件。
 1. 發佈電子郵件之前，請確定您已套用正確的設定至電子郵件。
-1. 點擊&#x200B;**發佈**。這會開啟&#x200B;**將Newsletter發佈到電子郵件服務提供者**&#x200B;視窗。
+1. 點擊&#x200B;**發佈**。 這會開啟&#x200B;**將Newsletter發佈到電子郵件服務提供者**&#x200B;視窗。
 1. 填寫&#x200B;**Newsletter名稱**&#x200B;欄位。 電子郵件/電子報會以此名稱發佈至電子郵件服務提供者。 如果未提供電子郵件名稱，則會使用AEM中電子報的頁面名稱來發佈電子郵件。
 1. 點擊&#x200B;**發佈**。
 
@@ -167,7 +178,7 @@ ExactTarget的&#x200B;**電子郵件工具**&#x200B;元件可為您的電子郵�
 若要更新已發佈的電子郵件：
 
 1. 開啟先前已發佈至電子郵件服務提供者（您要在變更電子郵件/電子報後重新發佈）的電子郵件/電子報。
-1. 點擊&#x200B;**發佈**。會顯示&#x200B;**發佈Newsletter至電子郵件服務提供者**&#x200B;視窗。 按一下&#x200B;**更新**。
+1. 點擊&#x200B;**發佈**。 會顯示&#x200B;**發佈Newsletter至電子郵件服務提供者**&#x200B;視窗。 按一下&#x200B;**更新**。
 
    若要檢查是否已在ExactTarget上更新電子郵件/電子報，請按一下&#x200B;**檢視已發佈的電子郵件**。 這會帶您前往ExactTarget中已發佈的電子郵件。
 

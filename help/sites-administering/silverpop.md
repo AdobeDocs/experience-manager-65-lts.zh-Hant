@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 1782ad8c-b514-4d41-86c9-59c60af46cde
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 1%
-
 ---
-
 # 與Silverpop Engage整合{#integrating-with-silverpop-engage}
 
 <!--
@@ -50,7 +59,7 @@ THIS ENTIRE TOPIC APPEARS OBSOLETE BECAUSE SILVERPOP NO LONGER EXISTS AND THERE 
    >
    >除非您從Package Share下載套件，否則Silverpop Engage不提供協力廠商服務選項。
 
-1. 輸入標題，並選擇性地輸入名稱，然後按一下&#x200B;**建立**。 隨即開啟 **&#x200B; Silverpop設定**&#x200B;設定視窗。
+1. 輸入標題，並選擇性地輸入名稱，然後按一下&#x200B;**建立**。 隨即開啟** Silverpop設定**設定視窗。
 1. 輸入使用者名稱和密碼，然後從下拉式清單中選取API端點。
 1. 按一下&#x200B;**連線到Silverpop。** 成功連線後，您會看到成功對話方塊。 按一下&#x200B;**確定**&#x200B;以結束視窗。 您可以按一下&#x200B;**移至Silverpop Engage**，移至Silverpop。
 1. Silverpop已設定。 您可以按一下&#x200B;**編輯**&#x200B;來編輯組態。

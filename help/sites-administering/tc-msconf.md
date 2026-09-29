@@ -5,13 +5,25 @@ feature: Language Copy
 role: Admin
 solution: Experience Manager, Experience Manager Sites
 exl-id: e4beda86-2d74-44b9-a5f4-e3671ba9a2da
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 7%
-
+source-wordcount: '270'
+ht-degree: 9%
 ---
-
 # 連線到 Microsoft Translator {#connecting-to-microsoft-translator}
 
 AEM為[Microsoft Translator](https://www.microsoft.com/en-us/translator/business/)提供內建聯結器，用於翻譯頁面內容或資產。 從Microsoft取得使用Microsoft Translator的授權後，請依照本頁面上的指示設定聯結器。
@@ -19,8 +31,8 @@ AEM為[Microsoft Translator](https://www.microsoft.com/en-us/translator/business
 | 屬性 | 說明 |
 |---|---|
 | 翻譯標籤 | 翻譯服務的顯示名稱 |
-| 翻譯歸因 | （選用）對於使用者產生的內容，為已翻譯文字旁邊顯示的屬性，例如`Translations by Microsoft` |
-| WORKSPACE ID | （選用）要使用的自訂Microsoft Translator引擎識別碼 |
+| 翻譯屬性 | （選用）對於使用者產生的內容，為已翻譯文字旁邊顯示的屬性，例如`Translations by Microsoft` |
+| 工作區 ID | （選用）要使用的自訂Microsoft Translator引擎識別碼 |
 | 訂閱金鑰 | 您的Microsoft Translator Microsoft訂閱金鑰 |
 
 下列程式會建立Microsoft Translator設定。
@@ -35,7 +47,7 @@ AEM為[Microsoft Translator](https://www.microsoft.com/en-us/translator/business
 
    ![建立翻譯設定](assets/create-translation-config.png)
 
-1. 按一下&#x200B;**建立**。
+1. 按一下「**建立**」。
 1. 在&#x200B;**編輯組態**&#x200B;視窗中，提供上一個表格所述之翻譯服務的值。
 
    ![編輯翻譯設定](assets/msft-config-ui.png)

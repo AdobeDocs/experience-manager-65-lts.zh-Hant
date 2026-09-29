@@ -9,14 +9,31 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: f38ae7f8-75db-4031-a2a8-782ca3b42fc7
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 0%
-
 ---
-
 # 管理憑證 {#managing-certificates}
 
 >[!NOTE]
@@ -59,7 +76,7 @@ ht-degree: 0%
 
 1. 在管理控制檯中，按一下&#x200B;**[!UICONTROL 設定>信任存放區管理>憑證]**。
 1. 按一下要匯出的憑證的別名。 顯示&#x200B;**[!UICONTROL 憑證詳細資料]**&#x200B;頁面。
-1. 按一下[匯出]&#x200B;**&#x200B;**，依照指示匯出憑證，然後按一下[確定]&#x200B;**。**
+1. 按一下[匯出]****，依照指示匯出憑證，然後按一下[確定]]**。**[!UICONTROL 
 
 ## 編輯憑證的信任設定和信任存放區型別 {#edit-a-certificate-s-trust-settings-and-trust-store-type}
 
@@ -68,9 +85,9 @@ ht-degree: 0%
 1. 按一下&#x200B;**[!UICONTROL 更新憑證]**。
 1. 若要變更憑證的別名，請在「別名」方塊中鍵入新名稱。
 1. 若要更新憑證的信任存放區型別，請選取適當的信任存放區型別。
-1. 若要更新原則限制，請在[憑證原則]方塊中輸入原則資訊，然後按一下[確定]。**&#x200B;**
+1. 若要更新原則限制，請在[憑證原則]方塊中輸入原則資訊，然後按一下[確定]。****
 
 ## 刪除憑證 {#delete-a-certificate}
 
 1. 在管理控制檯中，按一下&#x200B;**[!UICONTROL 設定>信任存放區管理>憑證]**。
-1. 選取要刪除之憑證的核取方塊，按一下[刪除]，然後按一下[確定]。**&#x200B;**，再按一下[確定]。**&#x200B;**
+1. 選取要刪除之憑證的核取方塊，按一下[刪除]，然後按一下[確定]。****，再按一下[確定]。]****[!UICONTROL 

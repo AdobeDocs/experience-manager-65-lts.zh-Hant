@@ -9,13 +9,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: df3c15e0-549b-449f-9f50-bb40e1740159
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1194'
 ht-degree: 2%
-
 ---
-
 # 使用Adobe Campaign 6.1和Adobe Campaign Standard{#working-with-adobe-campaign-and-adobe-campaign-standard}
 
 您可以在AEM中建立電子郵件內容，並在Adobe Campaign電子郵件中處理。 若要這麼做，您必須：
@@ -40,7 +51,7 @@ ht-degree: 2%
 有兩種可能的情況：
 
 * 內容可以與Adobe Campaign的傳送同步。 這可讓您在傳送中使用AEM內容。
-* (僅限Adobe Campaign內部部署)內容可直接傳送至Adobe Campaign，這會自動產生新的電子郵件傳送。 此模式具有限制。
+* （僅限Adobe Campaign內部部署）內容可直接傳送至Adobe Campaign，這會自動產生新的電子郵件傳送。 此模式具有限制。
 
 本檔案將說明詳細說明。
 
@@ -86,7 +97,7 @@ ht-degree: 2%
    >
    >在新增雲端服務後，請務必按一下&#x200B;**確定**&#x200B;或&#x200B;**套用**。 這可讓&#x200B;**Adobe Campaign**&#x200B;索引標籤正常運作。
 
-1. 如果您想要套用預設&#x200B;**郵件**&#x200B;範本以外的特定電子郵件傳遞範本(來自Adobe Campaign)，請再次選取&#x200B;**頁面屬性**。 在&#x200B;**Adobe Campaign**&#x200B;索引標籤中，在相關的Adobe Campaign執行個體中輸入電子郵件傳遞範本的內部名稱。
+1. 如果您想要套用預設&#x200B;**郵件**&#x200B;範本以外的特定電子郵件傳遞範本（來自Adobe Campaign），請再次選取&#x200B;**頁面屬性**。 在&#x200B;**Adobe Campaign**&#x200B;索引標籤中，在相關的Adobe Campaign執行個體中輸入電子郵件傳遞範本的內部名稱。
 
    在Adobe Campaign Standard中，範本是&#x200B;**包含AEM內容的傳遞**。 在Adobe Campaign 6.1中，範本是&#x200B;**包含AEM內容的電子郵件傳遞**。
 
@@ -132,7 +143,7 @@ ht-degree: 2%
    >
    >可用的內容欄位對應至Adobe Campaign中的&#x200B;**設定檔**&#x200B;目標維度。
    >
-   >請參閱將AEM頁面連結至Adobe Campaign電子郵件[&#128279;](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#linkinganaempagetoanadobecampaignemail)。
+   >請參閱將AEM頁面連結至Adobe Campaign電子郵件](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#linkinganaempagetoanadobecampaignemail)。[
 
    ![chlimage_1-178](assets/chlimage_1-178.png)
 

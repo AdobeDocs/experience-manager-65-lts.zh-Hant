@@ -8,20 +8,33 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: b27fceaf-38f8-433e-96c6-4f98bafa31af
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '983'
 ht-degree: 1%
-
 ---
-
 # 建立表單資料模型{#create-form-data-model}
 
 ## 套用至 {#applies-to}
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html?lang=zh-Hant)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html)上的[AEM Forms 。
 
 
 ![hero-image](do-not-localize/data-integration.png)
@@ -80,7 +93,7 @@ AEM Forms資料整合提供直覺式使用者介面，用於建立和使用表�
 
    在更新Source標籤中：
 
-   * 在&#x200B;**[!UICONTROL 內容感知設定]**&#x200B;欄位中選取瀏覽圖示，並選取您要新增之資料來源的雲端設定所在的設定節點。 如果您未選取節點，當您選取`global`新增來源&#x200B;**[!UICONTROL 時，只會列出位於]**&#x200B;節點的雲端設定。
+   * 在&#x200B;**[!UICONTROL 內容感知設定]**&#x200B;欄位中選取瀏覽圖示，並選取您要新增之資料來源的雲端設定所在的設定節點。 如果您未選取節點，當您選取&#x200B;**[!UICONTROL 新增來源]**&#x200B;時，只會列出位於`global`節點的雲端設定。
 
    * 若要新增資料來源，請選取&#x200B;**[!UICONTROL 新增來源]**，然後選取要新增至表單資料模型的資料來源。 會顯示在`global`中設定的所有資料來源及選取的設定節點（若有的話）。
 

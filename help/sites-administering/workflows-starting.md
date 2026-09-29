@@ -9,25 +9,34 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: a8b1fab9-1a63-4f99-87e1-48f6167e9953
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '820'
 ht-degree: 2%
-
 ---
-
 # 開始工作流程{#starting-workflows}
 
 管理工作流程時，您可以使用各種方法來啟動工作流程：
 
 * 手動：
 
-   * 來自[工作流程模型](#workflow-models)。
-   * 正在使用[批次處理](#workflow-packages-for-batch-processing)的工作流程封裝。
+  * 來自[工作流程模型](#workflow-models)。
+  * 正在使用[批次處理](#workflow-packages-for-batch-processing)的工作流程封裝。
 
 * 自動：
 
-   * 回應節點變更；[使用啟動器](#workflows-launchers)。
+  * 回應節點變更；[使用啟動器](#workflows-launchers)。
 
 >[!NOTE]
 >
@@ -35,13 +44,13 @@ ht-degree: 2%
 >
 >* [將工作流程套用至頁面](/help/sites-authoring/workflows-applying.md)
 >* [如何將工作流程套用至DAM資產](/help/assets/assets-workflow.md)
->* [AEM Forms](https://helpx.adobe.com/tw/aem-forms/6-2/aem-workflows-submit-process-form.html)
+>* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [翻譯專案](/help/sites-administering/tc-manage.md)
 >
 
 ## 工作流程模型 {#workflow-models}
 
-您可以根據「工作流程模型」控制檯上列出的其中一個模型[&#128279;](/help/sites-administering/workflows.md#workflow-models-and-instances)來啟動工作流程。 唯一強制資訊是裝載，但也可以新增標題和/或評論。
+您可以根據「工作流程模型」控制檯上列出的其中一個模型](/help/sites-administering/workflows.md#workflow-models-and-instances)來啟動工作流程[。 唯一強制資訊是裝載，但也可以新增標題和/或評論。
 
 ## 工作流程啟動器 {#workflows-launchers}
 
@@ -65,7 +74,7 @@ ht-degree: 2%
 * `/var/mobile`
 * `/var/statistics`
 
-   * 例外狀況：變更`/var/statistics/tracking` *do*&#x200B;下的節點會導致工作流程啟動。
+  * 例外狀況：變更`/var/statistics/tracking` *do*&#x200B;下的節點會導致工作流程啟動。
 
 標準安裝包含各種定義。 這些是用於數位資產管理和社會合作任務：
 
@@ -122,9 +131,9 @@ ht-degree: 2%
 
      啟動工作流程的事件型別：
 
-      * 建立日期
-      * 修改日期
-      * 已移除
+     * 建立時間
+     * 已修改
+     * 已移除
 
    * **節點型別**
 
@@ -164,8 +173,8 @@ ht-degree: 2%
 
      控制是否啟動工作流程啟動器：
 
-      * 選取&#x200B;**啟用**，在組態屬性滿足時啟動工作流程。
-      * 選取&#x200B;**當工作流程不應執行時停用** （即使組態屬性已滿足，也不會執行）。
+     * 選取&#x200B;**啟用**，在組態屬性滿足時啟動工作流程。
+     * 選取&#x200B;**當工作流程不應執行時停用** （即使組態屬性已滿足，也不會執行）。
 
    * **排除清單**
 
@@ -173,8 +182,8 @@ ht-degree: 2%
 
      此啟動器屬性是以逗號分隔的專案清單： &quot;
 
-      * `property-name`忽略在指定屬性名稱上觸發的任何`jcr`事件。&quot;
-      * `event-user-data:<*someValue*>`會忽略任何包含透過[`ObservationManager` API](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String))設定的`*<someValue*`> `user-data`的事件。
+     * `property-name`忽略在指定屬性名稱上觸發的任何`jcr`事件。 &quot;
+     * `event-user-data:<*someValue*>`會忽略任何包含透過[`ObservationManager` API](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String))設定的`*<someValue*`> `user-data`的事件。
 
      例如：
 

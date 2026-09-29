@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d44e6ea8-b4e5-4ed7-a6d0-de1da2709e18
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2340'
-ht-degree: 1%
-
+source-wordcount: '2446'
+ht-degree: 2%
 ---
-
 # 開發Adobe Experience Manager (AEM)元件（傳統UI）{#developing-aem-components-classic-ui}
 
 傳統UI會使用ExtJS建立提供元件外觀的Widget。 由於這些Widget的性質，元件與傳統UI和[觸控式UI](/help/sites-developing/developing-components.md)的互動方式有一些差異。
@@ -29,7 +38,7 @@ ht-degree: 1%
 >
 >雖然HTML範本語言(HTL)和JSP都可用於開發傳統UI的元件，本頁還是會說明使用JSP進行開發。 這完全是因為在傳統UI中使用JSP的歷史。
 >
->HTL現在是AEM的建議指令碼語言。 請參閱[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hant)和[開發AEM元件](/help/sites-developing/developing-components.md)以比較方法。
+>HTL現在是AEM的建議指令碼語言。 請參閱[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)和[開發AEM元件](/help/sites-developing/developing-components.md)以比較方法。
 
 ## 結構 {#structure}
 
@@ -63,20 +72,20 @@ JSP指令碼檔案`global.jsp`可用來讓特定物件（亦即存取內容）�
 
 * `<cq:defineObjects />`
 
-   * `slingRequest` — 包裝的要求物件( `SlingHttpServletRequest`)。
-   * `slingResponse` — 包裝的回應物件( `SlingHttpServletResponse`)。
-   * `resource` - Sling資源物件( `slingRequest.getResource();`)。
-   * `resourceResolver` - Sling資源解析程式物件( `slingRequest.getResoucreResolver();`)。
-   * `currentNode` — 要求的已解析JCR節點。
-   * `log` — 預設記錄器()。
-   * `sling` - Sling指令碼協助程式。
-   * `properties` — 已定址資源( `resource.adaptTo(ValueMap.class);`)的屬性。
-   * `pageProperties` — 已定址資源的頁面屬性。
-   * `pageManager` — 存取AEM內容頁面的頁面管理員( `resourceResolver.adaptTo(PageManager.class);`)。
-   * `component` — 目前AEM元件的元件物件。
-   * `designer` — 用於擷取設計資訊的Designer物件( `resourceResolver.adaptTo(Designer.class);`)。
-   * `currentDesign` — 已定址資源的設計。
-   * `currentStyle` — 已定址資源的樣式。
+  * `slingRequest` — 包裝的要求物件( `SlingHttpServletRequest`)。
+  * `slingResponse` — 包裝的回應物件( `SlingHttpServletResponse`)。
+  * `resource` - Sling資源物件( `slingRequest.getResource();`)。
+  * `resourceResolver` - Sling資源解析程式物件( `slingRequest.getResoucreResolver();`)。
+  * `currentNode` — 要求的已解析JCR節點。
+  * `log` — 預設記錄器()。
+  * `sling` - Sling指令碼協助程式。
+  * `properties` — 已定址資源( `resource.adaptTo(ValueMap.class);`)的屬性。
+  * `pageProperties` — 已定址資源的頁面屬性。
+  * `pageManager` — 存取AEM內容頁面的頁面管理員( `resourceResolver.adaptTo(PageManager.class);`)。
+  * `component` — 目前AEM元件的元件物件。
+  * `designer` — 用於擷取設計資訊的Designer物件( `resourceResolver.adaptTo(Designer.class);`)。
+  * `currentDesign` — 已定址資源的設計。
+  * `currentStyle` — 已定址資源的樣式。
 
 ### 存取內容 {#accessing-content}
 
@@ -92,7 +101,7 @@ JSP指令碼檔案`global.jsp`可用來讓特定物件（亦即存取內容）�
 
 * 透過`global.jsp`中引入的`currentPage`物件：
 
-  `currentPage`物件是頁面的執行個體(請參閱[AEM API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html))。 Page類別提供一些存取內容的方法。
+  `currentPage`物件是頁面的執行個體（請參閱[AEM API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html)）。 Page類別提供一些存取內容的方法。
 
   範例：`String pageTitle = currentPage.getTitle();`
 
@@ -164,8 +173,8 @@ CQ和Sling標籤庫可讓您存取特定函式，以便在範本和元件的JSP�
 
    * 在對話方塊中新增欄位
 
-      * `cq:dialog` — 觸控式UI的對話方塊
-      * `dialog` — 傳統UI的對話方塊
+     * `cq:dialog` — 觸控式UI的對話方塊
+     * `dialog` — 傳統UI的對話方塊
 
    * 取代`.jsp`檔案（以新元件命名）
    * 或完全重工整個元件（若您需要）
@@ -278,16 +287,16 @@ CQ和Sling標籤庫可讓您存取特定函式，以便在範本和元件的JSP�
 
    * 元件名稱
 
-      * 將`jcr:description`設為`Text Image Component (Extended)`
-      * 將`jcr:title`設為`Text Image (Extended)`
+     * 將`jcr:description`設為`Text Image Component (Extended)`
+     * 將`jcr:title`設為`Text Image (Extended)`
 
    * 群組，其中元件列在Sidekick中（維持原狀）
 
-      * 保留`componentGroup`設定為`General`
+     * 保留`componentGroup`設定為`General`
 
    * 新元件的父元件（標準文字元件）
 
-      * 將`sling:resourceSuperType`設為`foundation/components/textimage`
+     * 將`sling:resourceSuperType`設為`foundation/components/textimage`
 
    在此步驟後，元件節點看起來像這樣：
 
@@ -305,24 +314,24 @@ CQ和Sling標籤庫可讓您存取特定函式，以便在範本和元件的JSP�
 
    * 在前兩個標籤（tab1和tab2）中：
 
-      * 將xtype變更為cqinclude （繼承自標準元件）。
-      * 分別使用值`/libs/foundation/components/textimage/dialog/items/tab1.infinity.json`和`/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`新增路徑屬性。
-      * 移除所有其他屬性或子節點。
+     * 將xtype變更為cqinclude （繼承自標準元件）。
+     * 分別使用值`/libs/foundation/components/textimage/dialog/items/tab1.infinity.json`和`/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`新增路徑屬性。
+     * 移除所有其他屬性或子節點。
 
    * 針對索引標籤3：
 
-      * 保留屬性和子節點而不變更
-      * 新增欄位定義至`tab3/items`，節點位置為`cq:Widget`
-      * 為新`tab3/items/position`節點設定下列屬性（型別為String）：
+     * 保留屬性和子節點而不變更
+     * 新增欄位定義至`tab3/items`，節點位置為`cq:Widget`
+     * 為新`tab3/items/position`節點設定下列屬性（型別為String）：
 
-         * `name`: `./imagePosition`
-         * `xtype`: `selection`
-         * `fieldLabel`: `Image Position`
-         * `type`: `select`
+       * `name`: `./imagePosition`
+       * `xtype`: `selection`
+       * `fieldLabel`: `Image Position`
+       * `type`: `select`
 
-      * 新增型別`cq:WidgetCollection`的子節點`position/options`以代表兩個影像放置選項，並在其下建立兩個節點，即`nt:unstructured`型別的o1和o2。
-      * 針對節點`position/options/o1`，將屬性： `text`設定為`Left`，`value`設定為`left.`
-      * 針對節點`position/options/o2`，將屬性： `text`設定為`Right`，`value`設定為`right`。
+     * 新增型別`cq:WidgetCollection`的子節點`position/options`以代表兩個影像放置選項，並在其下建立兩個節點，即`nt:unstructured`型別的o1和o2。
+     * 針對節點`position/options/o1`，將屬性： `text`設定為`Left`，`value`設定為`left.`
+     * 針對節點`position/options/o2`，將屬性： `text`設定為`Right`，`value`設定為`right`。
 
    * 刪除Tab4。
 
@@ -378,7 +387,7 @@ CQ和Sling標籤庫可讓您存取特定函式，以便在範本和元件的JSP�
 
 1. 編輯元件中繼資料：
 
-   * 將&#x200B;**jcr：title**&#x200B;設為`Image (Extended)`
+   * 將&#x200B;**jcr:title**&#x200B;設為`Image (Extended)`
 
 1. 導覽至 `/apps/geometrixx/components/image/dialog/items/image`。
 1. 新增屬性：
@@ -389,7 +398,7 @@ CQ和Sling標籤庫可讓您存取特定函式，以便在範本和元件的JSP�
 
    ![chlimage_1-63](assets/chlimage_1-63a.png)
 
-1. 按一下&#x200B;**全部儲存**。 元件已準備好進行測試。
+1. 按一下&#x200B;**「儲存全部」**。 元件已準備好進行測試。
 1. 在Geometrixx中開啟頁面，例如英文/公司。
 1. 切換到設計模式並啟動影像（延伸）。
 1. 切換回編輯模式，並將其新增至段落系統。 在下一張圖片中，您可以看到原始影像元件與您建立的影像元件之間的差異。

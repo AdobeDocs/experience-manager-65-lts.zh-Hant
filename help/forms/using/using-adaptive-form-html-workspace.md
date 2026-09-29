@@ -9,13 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench
 role: User, Developer
 exl-id: 3fdd889d-0984-457e-9b12-b55a4593a573
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 36ac8e9c-5c7a-56d8-af5e-39399fd7b101
+    internal-label: Workbench
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '706'
 ht-degree: 0%
-
 ---
-
 # 在HTML Workspace中使用最適化表單{#using-an-adaptive-form-in-html-workspace}
 
 JEE上的AEM Forms提供在HTML Workspace中使用最適化表單的功能。
@@ -74,7 +90,7 @@ JEE上的AEM Forms提供在HTML Workspace中使用最適化表單的功能。
 
    使用CRX資產
 
-1. 選取透過[管理Assets UI]建立的最適化表單，然後按一下[確定]。**&#x200B;**
+1. 選取透過[管理Assets UI]建立的最適化表單，然後按一下[確定]。****
 
    ![選取最適化表單](assets/selecting_form.png)
 
@@ -85,4 +101,4 @@ JEE上的AEM Forms提供在HTML Workspace中使用最適化表單的功能。
    >如需有關建立最適化表單的詳細資訊，請參閱[建立最適化表單](../../forms/using/creating-adaptive-form.md)。
    >
    >
-   >如需有關建立程式的詳細資訊，請參閱[建立和管理程式](https://help.adobe.com/zh_TW/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html)。
+   >如需有關建立程式的詳細資訊，請參閱[建立和管理程式](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html)。

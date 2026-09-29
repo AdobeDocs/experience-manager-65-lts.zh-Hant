@@ -5,13 +5,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: f15ead5f-d48c-401c-98c5-b58f93776f82
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 0%
-
 ---
-
 # 變更介面的色彩配置 {#changing-the-color-scheme-of-the-interface}
 
 您可以修改AEM Forms工作區使用者介面部分的色彩配置以符合您的需求。 以下是一些代表性色彩配置自訂的範例。 除了本文中討論的步驟之外，請參閱[AEM Forms工作區自訂的一般步驟](/help/forms/using/generic-steps-html-workspace-customization.md)。

@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 4d4c96ea-b7dd-49b9-86b5-2507e7518ba4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '905'
 ht-degree: 2%
-
 ---
-
 # 傳統UI標籤主控台{#classic-ui-tagging-console}
 
 本節內容適用於傳統UI標籤主控台。
@@ -49,19 +58,19 @@ ht-degree: 2%
 1. 在這兩種情況下，都輸入
 
    * **標題**
-（*必要*）標籤的顯示標題。 雖然可以輸入任何字元，
-建議您不要使用這些特殊字元：
+     （*必要*）標籤的顯示標題。 雖然可以輸入任何字元，
+     建議您不要使用這些特殊字元：
 
-      * `colon (:)` — 名稱空間分隔符號
-      * `forward slash (/)` — 子標籤分隔符號
+     * `colon (:)` — 名稱空間分隔符號
+     * `forward slash (/)` — 子標籤分隔符號
 
      如果輸入，將不會顯示這些字元。
 
    * **名稱**
-（*必要*）標籤的節點名稱。
+     （*必要*）標籤的節點名稱。
 
    * **描述**
-（*選用*）標籤的說明。
+     （*選用*）標籤的說明。
 
    * 選取&#x200B;**建立**
 

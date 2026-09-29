@@ -5,38 +5,52 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: d18c9dc3-fdcc-4558-b9b6-ecf1ce61048a
-source-git-commit: 004a3859c06e7c219e7919ac5920a9bc179ede43
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '546'
 ht-degree: 91%
-
 ---
-
 # AEM 6.5 LTS 常見問題集 (FAQ) {#faq}
 
 此頁面旨在回答一些關於 AEM 6.5 LTS 的常見問題。
 
 ## Adobe 為什麼要發行 AEM 的 6.5 LTS 版本？
 
-Adobe 始終致力於確保其提供之應用程式的安全性和穩定性。 AEM 6.5 Long-term Support 為 AEM 6.5 的未來更新奠下基礎。 值得注意的是，AEM 6.5 LTS 包含對於 Oracle Java 17 和 Java 21 的支援，且會成為接收 AEM 新功能和創新的 AEM 分支。
+Adobe 始終致力於確保其提供之應用程式的安全性和穩定性。 AEM 6.5 Long-term Support 為 AEM 6.5 的未來更新奠下基礎。 值得注意的是，AEM 6.5 LTS 支援 Oracle Java 17 和 Java 21，且會成為接收 AEM 新功能和創新功能的 AEM 分支。
 
 ## 我是內部部署客戶，如果我不升級至 AEM 6.5 LTS 會發生什麼事？
 
-AEM 6.5 LTS 包含重要的安全性和穩定性更新，包括對於 Oracle Java 17 和 Java 21 的支援。 建議貴組織計畫升級至6.5 LTS。 Adobe將繼續支援AEM 6.5，直到2027年2月28日。 如需詳細資訊，請檢視[藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem65)。
+AEM 6.5 LTS 包含重要的安全性和穩定性更新，包括對於 Oracle Java 17 和 Java 21 的支援。 建議貴組織計畫升級至6.5 LTS。 Adobe將繼續支援AEM 6.5，直到2027年2月28日。 如需詳細資訊，請檢視[藍圖](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem65)。
 
 ## 若升級至 AEM 6.5 LTS，我現有的自訂和整合功能會受到影響嗎？
 
 雖然 AEM 6.5 LTS 以維持回溯相容性為目標，但有一些舊版功能和成品已移除。
 請務必審閱[發行說明](/help/release-notes/release-notes.md#deprecated-and-removed-features)，並使用 [AEM Analyzer 工具](/help/sites-deploying/aem-analyzer.md)評估對自訂和整合功能的影響。
 
-## 我要如何確保能順利轉變為 AEM 6.5 LTS？
+## 我要如何確保能順利轉換為 AEM 6.5 LTS？
 
 為確保能順利轉變，建議您：
 
 * 詳細審閱[發行說明](/help/release-notes/release-notes.md)和文件。
 * 使用 [AEM Analyzer 工具](/help/sites-deploying/aem-analyzer.md)評估升級的複雜性。
 * 針對升級過程進行規劃並分配足夠的時間和資源。
-* 參與 Adobe 支援和賦能培訓課程以獲得指引和協助。
+* 參與 Adobe 支援和賦能課程，以獲得指引和協助。
 
 ## 什麼是 AEM 6.5 LTS Service Pack？
 

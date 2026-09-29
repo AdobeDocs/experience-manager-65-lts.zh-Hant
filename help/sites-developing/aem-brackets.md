@@ -9,18 +9,29 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
 exl-id: 103b6fde-e001-4332-9927-5cdf2acbc40c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 2%
-
+source-wordcount: '987'
+ht-degree: 4%
 ---
-
 # AEM Brackets擴充功能{#aem-brackets-extension}
 
 ## 概觀 {#overview}
 
-AEM Brackets Extension提供流暢的工作流程來編輯AEM元件和使用者端程式庫，並運用[Brackets](https://brackets.io/)程式碼編輯器的強大功能，提供從程式碼編輯器存取Photoshop檔案和圖層的許可權。 擴充功能提供的簡易同步功能（不需要Maven或檔案儲存庫）可提升開發人員效率，也可協助具備AEM有限知識的前端開發人員參與專案。 此擴充功能也提供對[HTML範本語言(HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hant)的一些支援，可降低JSP的複雜性，讓元件開發更容易、更安全。
+AEM Brackets Extension提供流暢的工作流程來編輯AEM元件和使用者端程式庫，並運用[Brackets](https://brackets.io/)程式碼編輯器的強大功能，提供從程式碼編輯器存取Photoshop檔案和圖層的許可權。 擴充功能提供的簡易同步功能（不需要Maven或檔案儲存庫）可提升開發人員效率，也可協助具備AEM有限知識的前端開發人員參與專案。 此擴充功能也提供對[HTML範本語言(HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)的一些支援，可降低JSP的複雜性，讓元件開發更容易、更安全。
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 

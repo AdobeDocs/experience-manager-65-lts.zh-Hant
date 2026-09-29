@@ -7,14 +7,29 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 622c4899-f75f-4b47-a6c0-f94c8427e977
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1407'
 ht-degree: 0%
-
 ---
-
 # Forms JEE工作流程 |處理使用者資料 {#forms-jee-workflows-handling-user-data}
 
 AEM Forms JEE工作流程提供設計、建立和管理業務流程的工具。 工作流程處理包含一系列以指定順序執行的步驟。 每個步驟都會執行特定動作，例如將任務指派給使用者或傳送電子郵件訊息。 程式可與資產、使用者帳戶和服務互動，並可使用下列任何方法觸發：
@@ -25,7 +40,7 @@ AEM Forms JEE工作流程提供設計、建立和管理業務流程的工具。 
 * 使用watched資料夾
 * 使用電子郵件
 
-如需建立AEM Forms JEE工作流程程式的詳細資訊，請參閱[Workbench說明](https://www.adobe.com/go/learn_aemforms_workbench_65_tw)。
+如需建立AEM Forms JEE工作流程程式的詳細資訊，請參閱[Workbench說明](https://www.adobe.com/go/learn_aemforms_workbench_65)。
 
 ## 使用者資料和資料存放區 {#user-data-and-data-stores}
 
@@ -128,7 +143,7 @@ AEM Forms JEE工作流程提供設計、建立和管理業務流程的工具。 
 
 1. 使用具有正確連線設定的`ServiceClientFactory`執行個體，建立公用`ProcessManager`使用者端(`com.adobe.idp.workflow.client.ProcessManager`)的執行個體。
 
-   如需詳細資訊，請參閱[類別ProcessManager](https://helpx.adobe.com/tw/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html)的Java™ API參考。
+   如需詳細資訊，請參閱[類別ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html)的Java™ API參考。
 
 1. 檢查工作流程例項的狀態。 如果狀態不是2 (COMPLETE)或4 (TERMINATED)，請先呼叫下列方法來終止執行個體：
 
@@ -142,7 +157,7 @@ AEM Forms JEE工作流程提供設計、建立和管理業務流程的工具。 
 
 ### 處理孤立任務 {#orphan}
 
-孤立任務是包含已啟動但尚未提交的流程的任務。 在此案例中，`process_instance_id`是&#x200B;**0** （零）。 因此，您無法使用程式執行個體ID來追蹤為孤立任務儲存的使用者資料。 不過，您可以使用孤立任務的工作ID來追蹤它。 您可以依照[當工作流程發起者或參與者已知時，識別處理程式執行個體ID &#x200B;](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant)中的說明，從`tb_task`表格為使用者識別工作ID。
+孤立任務是包含已啟動但尚未提交的流程的任務。 在此案例中，`process_instance_id`是&#x200B;**0** （零）。 因此，您無法使用程式執行個體ID來追蹤為孤立任務儲存的使用者資料。 不過，您可以使用孤立任務的工作ID來追蹤它。 您可以依照[當工作流程發起者或參與者已知時，識別處理程式執行個體ID ](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant)中的說明，從`tb_task`表格為使用者識別工作ID。
 
 取得工作ID後，請執行以下作業從GDS和資料庫中清除具有孤立工作的相關檔案和資料。
 

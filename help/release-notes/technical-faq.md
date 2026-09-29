@@ -1,17 +1,31 @@
 ---
 title: 技術常見問題集 (FAQ)
-description: 關於 AEM 6.5 LTS 的常見技術問題集。
+description: 關於 AEM 6.5 LTS 的常見技術問題。
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
-source-git-commit: f994a8712a403083de1edc62579846ba99bd3afd
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 78%
-
 ---
-
 # AEM 6.5 LTS 技術常見問題集 {#technical-faq}
 
 此頁面旨在回答關於 AEM 6.5 LTS 的一些常見技術問題。
@@ -20,7 +34,7 @@ ht-degree: 78%
 
 ### `/systemalive` 端點在 AEM 6.5 LTS 中不再可用。
 
-已設定為提供 `/systemalive` 端點的 Felix System Ready 搭售方案已棄用，並以 Apache Felix Health Check 取代。 AEM 6.5 LTS 不再包含此搭售方案。
+已設定為提供 `/systemalive` 端點的 Felix System Ready 搭售方案已棄用，並以 Apache Felix Health Check 取代。 AEM 6.5 LTS 不再包含此組合包。
 
 新的健康情況檢查端點可在 `/system/health` 取得，並使用 Apache Felix Health Check 實施。
 
@@ -50,7 +64,7 @@ AEM 6.5 中所使用的 AEM Groovy 主控台版本因為缺少 guava 相依性�
 
 否。 AEM 6.5 LTS不支援移轉到`jakarta.*`封裝名稱空間的Sling成品。 在您的程式碼和相依性中使用`javax.*`對等專案，例如Sling模型中的`javax.annotation.PostConstruct`而非`jakarta.annotation.PostConstruct`。 AEM 6.5 LTS中的Sling模型實作只辨識`javax.*`註釋，因此在初始化期間會無訊息地忽略`jakarta.*`註釋。
 
-如需詳細資訊，請參閱知識庫文章[在AEM 6.5 LTS](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-30339)上具有`jakarta.annotation.PostConstruct`的Sling模型失敗。
+如需詳細資訊，請參閱知識庫文章[在AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-30339)上具有`jakarta.annotation.PostConstruct`的Sling模型失敗。
 
 ## 取得其他協助
 

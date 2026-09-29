@@ -7,13 +7,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: 45178816afbda13ee9117a0b13dcb8a9218992da
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1563'
-ht-degree: 1%
-
+source-wordcount: '1586'
+ht-degree: 2%
 ---
-
 # 自訂獨立安裝{#custom-standalone-install}
 
 本節說明安裝獨立AEM執行個體時可用的選項。 您也可以閱讀[儲存體元素](/help/sites-deploying/storage-elements-in-aem-6.md)，以瞭解全新安裝AEM 6後選擇後端儲存體型別的詳細資訊。
@@ -126,7 +138,7 @@ AEM的預設連線埠為4502。 如果該連線埠無法使用或已使用，Qui
 >
 >安裝AEM即服務時，您必須從Configuration Manager為`com.adobe.xmp.worker.files.ncomm.XMPFilesNComm`中的記錄檔目錄提供絕對路徑。
 
-若要解除安裝服務，請在&#x200B;**服務**&#x200B;控制檯中按一下&#x200B;**停止**，或在命令列中，瀏覽至資料夾並輸入`instsrv.bat -uninstall cq5`。 當您輸入&#x200B;**時，服務會從**&#x200B;服務`net start`控制檯的清單或命令列的清單中移除。
+若要解除安裝服務，請在&#x200B;**服務**&#x200B;控制檯中按一下&#x200B;**停止**，或在命令列中，瀏覽至資料夾並輸入`instsrv.bat -uninstall cq5`。 當您輸入`net start`時，服務會從&#x200B;**服務**&#x200B;控制檯的清單或命令列的清單中移除。
 
 ## 重新定義臨時工作目錄的位置 {#redefining-the-location-of-the-temporary-work-directory}
 
@@ -306,7 +318,7 @@ Log files
 
 ## 驗證安裝 {#verifying-the-installation}
 
-下列連結可用來確認您的安裝是否可正常運作(所有範例均以執行個體在localhost的連線埠8080上執行、CRX安裝在/crx下、Launchpad安裝在/下為基礎)：
+下列連結可用來確認您的安裝是否可正常運作（所有範例均以執行個體在localhost的連線埠8080上執行、CRX安裝在/crx下、Launchpad安裝在/下為基礎）：
 
 * `https://localhost:8080/crx/de`
 CRXDE Lite主控台。
@@ -323,7 +335,7 @@ CRXDE Lite主控台。
 
 >[!NOTE]
 >
-> 對於全新的 AEM 6.5 LTS 安裝，必須獨立安裝索引定義。如需詳細資訊，請參閱[此處](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions)。
+> 對於全新的 AEM 6.5 LTS 安裝，必須獨立安裝索引定義。 如需詳細資訊，請參閱[此處](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions)。
 
 ## 存取CRXDE Lite和Web主控台 {#accessing-crxde-lite-and-the-web-console}
 

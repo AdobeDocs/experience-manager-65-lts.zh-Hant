@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 2f34b48a-0b95-4994-ac4f-616620a5b211
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 0%
-
 ---
-
 # AEM表單的備份與復原策略{#backup-and-recovery-strategy-for-aem-forms}
 
 如果您的AEM表單實作將其他自訂資料儲存在其他資料庫中，您應負責實作策略來備份此資料，並確保其與AEM表單資料保持同步。 此外，應用程式的設計必須足夠健全，能夠處理其他資料庫不同步的情況。 強烈建議您在交易內容中執行任何資料庫作業，以協助維持一致狀態。
@@ -45,9 +60,9 @@ AEM Forms備份策略包含兩種型別的備份：
 
 * **快照集備份**&#x200B;模式表示AEM表單系統處於無限期備份模式，或持續指定的分鐘數，之後不再啟用備份模式。 若要進入或離開快照備份模式，您可以使用下列其中一個選項。 在復原案例之後，不應啟用快照備份模式。
 
-   * 使用「管理主控台」中的「備份設定值」頁面。 若要進入快照模式，請選取「在安全備份模式下操作」核取方塊。 取消選取核取方塊以結束快照模式。
-   * 使用LCBackupMode指令碼（請參閱[備份資料庫、GDS和內容儲存根目錄](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)）。 若要結束快照集備份模式，請在指令碼引數中，將`continuousCoverage`引數設定為`false`或使用`leaveContinuousCoverage`選項。
-   * 使用提供的備份/復原API。<!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
+  * 使用「管理主控台」中的「備份設定值」頁面。 若要進入快照模式，請選取「在安全備份模式下操作」核取方塊。 取消選取核取方塊以結束快照模式。
+  * 使用LCBackupMode指令碼（請參閱[備份資料庫、GDS和內容儲存根目錄](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)）。 若要結束快照集備份模式，請在指令碼引數中，將`continuousCoverage`引數設定為`false`或使用`leaveContinuousCoverage`選項。
+  * 使用提供的備份/復原API。<!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
 
 * **正在捲動備份**&#x200B;模式表示系統一律處於備份模式，前一工作階段一經釋出就會啟動新的備份模式工作階段。 沒有與滾動備份模式相關的逾時。 呼叫LCBackupMode指令碼或API以離開滾動備份模式時，就會開始新的滾動備份模式工作階段。 此模式在支援連續備份時非常有用，但仍允許從GDS目錄中清除舊的和不需要的檔案。 不支援透過「備份與復原」頁面來捲動備份模式。 復原情況後，仍會啟用捲動備份模式。 您可以使用包含`leaveContinuousCoverage`選項的LCBackupMode指令碼，離開連續備份模式（滾動備份模式）。
 
@@ -82,7 +97,7 @@ AEM Forms備份策略包含兩種型別的備份：
 1. 以維護模式啟動系統。
 1. 請務必在維護模式下將表單管理員與AEM表單同步：
 
-   1. 前往https://&lt;*server*>：&lt;*port*>/lc/fm並使用管理員/密碼憑證登入。
+   1. 移至https://&lt;*伺服器*>：&lt;*連線埠*>/lc/fm並使用管理員/密碼認證登入。
    1. 按一下右上角的使用者名稱（此案例中為「超級管理員」）。
    1. 按一下&#x200B;**管理選項**。
    1. 按一下&#x200B;**開始**，從存放庫同步資產。

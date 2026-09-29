@@ -1,6 +1,6 @@
 ---
-title: Adobe Experience Manager Managed Services的Adobe IMS驗證和 [!DNL Admin Console] 支援
-description: 瞭解如何在Adobe Experience Manager中使用 [!DNL Admin Console] 。
+title: Adobe Experience Manager Managed Services的Adobe IMS驗證和[!DNL Admin Console]支援
+description: 瞭解如何在Adobe Experience Manager中使用[!DNL Admin Console]。
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -9,13 +9,25 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 63f42a35-fbd5-4b1b-bba1-1bdcfd23dd33
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1601'
-ht-degree: 5%
-
+source-wordcount: '1702'
+ht-degree: 9%
 ---
-
 # AEM Managed Services的Adobe IMS驗證和[!DNL Admin Console]支援 {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
 
 >[!NOTE]
@@ -36,7 +48,7 @@ AEM 6.4.3.0為&#x200B;**AEM Managed Services**&#x200B;客戶推出了[!DNL Admin
 * [!DNL Admin Console]中的產品設定檔將決定使用者可存取的執行個體
 * 支援使用客戶自己的符合SAML 2的身分提供者進行同盟驗證
 * 僅支援Enterprise ID或Federated ID （適用於客戶的單一登入），不支援個人Adobe ID。
-* [!DNL User Management] (在Adobe [!DNL Admin Console]中)將繼續由客戶管理員擁有。
+* [!DNL User Management] （在Adobe [!DNL Admin Console]中）將繼續由客戶管理員擁有。
 
 ## 架構 {#architecture}
 
@@ -63,7 +75,7 @@ AEM Managed Services客戶應先布建組織，而在IMS布建過程中，[!DNL 
 ![image2018-9-23_23-33-25](assets/image2018-9-23_23-33-25.png)
 
 1. 指定的系統管理員會收到登入[!DNL Admin Console]的邀請
-1. 系統管理員宣告網域，以確認網域的所有權(在此範例中為acme.com)
+1. 系統管理員宣告網域，以確認網域的所有權（在此範例中為acme.com）
 1. 系統管理員設定使用者目錄
 1. 系統管理員在[!DNL Admin Console]中設定身分提供者(IDP)以進行SSO設定。
 1. AEM管理員可照常管理本機群組、許可權和許可權。 請參閱使用者和群組同步
@@ -86,7 +98,7 @@ AEM Managed Services客戶應先布建組織，而在IMS布建過程中，[!DNL 
 
 您可以在[!DNL Admin Console] UI中手動建立使用者和群組。 如果可供管理的使用者不多，可使用此方法。 例如，AEM使用者少於50名。
 
-如果客戶已使用此方法來管理其他Adobe產品(例如Adobe Analytics、Adobe Target或Adobe Creative Cloud應用程式)，也可以手動建立使用者。
+如果客戶已使用此方法來管理其他Adobe產品（例如Adobe Analytics、Adobe Target或Adobe Creative Cloud應用程式），也可以手動建立使用者。
 
 ![image2018-9-23_20-39-9](assets/image2018-9-23_20-39-9.png)
 
@@ -171,7 +183,7 @@ AEM可繼續為管理員使用者支援本機登入，因為登入畫面具有�
 
 #### IMS登入 {#ims-based-login}
 
-若是其他使用者，在執行個體上設定 IMS 後，即可使用 IMS 登入。使用者先按一下&#x200B;**使用Adobe**&#x200B;登入，如下所示：
+若是其他使用者，在執行個體上設定 IMS 後，即可使用 IMS 登入。 使用者先按一下&#x200B;**使用Adobe**&#x200B;登入，如下所示：
 
 ![image2018-9-18_0-10-32](assets/image2018-9-18_0-10-32.png)
 
@@ -199,7 +211,7 @@ AEM存放庫中的現有使用者（來自本機，透過LDAP或SAML）可以使
 
 ### 在AEM中管理許可權和ACL {#managing-permissions-and-acls-in-aem}
 
-存取控制和許可權將繼續在AEM中管理，這可透過將來自IMS的使用者群組(例如，以下範例中的AEM-GRP-008)與定義許可權和存取控制的本機群組分離來達成。 可將從IMS同步的使用者群組指派給本機群組，並繼承許可權。
+存取控制和許可權將繼續在AEM中管理，這可透過將來自IMS的使用者群組（例如，以下範例中的AEM-GRP-008）與定義許可權和存取控制的本機群組分離來達成。 可將從IMS同步的使用者群組指派給本機群組，並繼承許可權。
 
 以下範例中，我們會示範將同步的群組新增至本機 *Dam_Users* 群組。
 

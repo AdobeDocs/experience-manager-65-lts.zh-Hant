@@ -10,16 +10,32 @@ role: User, Admin
 feature: Scene7 Mode,Hybrid Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7d21d993-f7a3-4c12-aa4d-03057c8f29fc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: ee69dd13-2aba-4eb0-912b-399e82368d73
+    internal-label: Scene7 mode
+  - id: cf50b0d2-df62-495c-a741-4fa0284ca4fc
+    internal-label: Hybrid mode
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '564'
 ht-degree: 2%
-
 ---
-
 # 關於從Dynamic Media-Hybrid移至Dynamic Media-Scene7 {#about-migrating}
 
-Dynamic Media-Hybrid是與Adobe Experience Manager整合的舊版Dynamic Media。 混合版本最初是在Adobe Experience Manager 6.1中引入。雖然Adobe持續支援混合模式，但並非偏好模式；建議使用Dynamic Media-Scene7模式。 混合模式也不支援智慧型裁切和全景影像等新功能，而Dynamic Media-Scene7則支援。
+Dynamic Media-Hybrid是與Adobe Experience Manager整合的舊版Dynamic Media。 混合版本最初是在Adobe Experience Manager 6.1中引入。 雖然Adobe持續支援混合模式，但並非偏好模式；建議使用Dynamic Media-Scene7模式。 混合模式也不支援智慧型裁切和全景影像等新功能，而Dynamic Media-Scene7則支援。
 
 Dynamic Media-Hybrid和Dynamic Media-Scene7之間的其他主要差異包括：
 

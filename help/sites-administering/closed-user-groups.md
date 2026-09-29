@@ -10,13 +10,25 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 0c20efb1-9b01-41ef-b38d-261fb4b0ff91
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '6780'
 ht-degree: 0%
-
 ---
-
 # AEM 中的封閉使用者群組{#closed-user-groups-in-aem}
 
 ## 簡介 {#introduction}
@@ -101,10 +113,10 @@ CUG原則的許可權評估以及與預設或任何其他授權模型的互動�
 * 為必須保護的資料或內容建立威脅模型，以識別威脅範圍，並清楚瞭解資料的敏感度以及與授權存取相關的角色
 * 為存放庫內容和CUG建模，以掌握一般授權相關層面和最佳實務：
 
-   * 請記住，只有在特定CUG以及設定授權中部署的其他模組評估允許特定主題讀取特定存放庫專案時，才會授予讀取許可權
-   * 避免建立讀取存取權已受其他授權模組限制的備援CUG
-   * 對巢狀CUG的過度需求可能會突顯內容設計中的問題
-   * 對CUG的需求過度（例如，在每個頁面上）可能表示需要自訂授權模式，可能更適合應用程式和手頭內容的特定安全性需求。
+  * 請記住，只有在特定CUG以及設定授權中部署的其他模組評估允許特定主題讀取特定存放庫專案時，才會授予讀取許可權
+  * 避免建立讀取存取權已受其他授權模組限制的備援CUG
+  * 對巢狀CUG的過度需求可能會突顯內容設計中的問題
+  * 對CUG的需求過度（例如，在每個頁面上）可能表示需要自訂授權模式，可能更適合應用程式和手頭內容的特定安全性需求。
 
 * 將CUG原則支援的路徑限制在存放庫中的幾個樹狀結構，以便獲得最佳效能。 例如，自AEM 6.3起，僅允許將/content節點底下的CUG作為預設值出貨。
 * CUG原則的設計目的，是要授予一小部分主體的讀取存取權。 大量主體的需求可能會突顯內容或應用程式設計中的問題，因此應重新考慮。
@@ -146,10 +158,10 @@ Apache Sling驗證需求會透過頁面或節點階層繼承。 繼承和評估�
 * 區分過期密碼和需要定期登入作為重新導向的原因；
 * 如果是定期登入，會測試是否可依下列順序取得登入路徑：
 
-   * 從由新`com.adobe.granite.auth.requirement.impl.RequirementService`實作的LoginPathProvider，
-   * 舊有已棄用的CUG實作，
-   * 從登入頁面對應（如`LoginSelectorHandler`所定義），
-   * 最後，依與`LoginSelectorHandler`的定義回覆至預設登入頁面。
+  * 從由新`com.adobe.granite.auth.requirement.impl.RequirementService`實作的LoginPathProvider，
+  * 舊有已棄用的CUG實作，
+  * 從登入頁面對應（如`LoginSelectorHandler`所定義），
+  * 最後，依與`LoginSelectorHandler`的定義回覆至預設登入頁面。
 
 * 透過上述呼叫取得有效的登入路徑時，使用者的請求會重新導向至該頁面。
 
@@ -158,10 +170,10 @@ Apache Sling驗證需求會透過頁面或節點階層繼承。 繼承和評估�
 * 登入路徑的註冊取決於區分過期密碼和需要定期登入作為重新導向的原因
 * 若為一般登入，會測試登入路徑是否可依下列順序取得：
 
-   * 從`LoginPathProvider` （由新的`com.adobe.granite.auth.requirement.impl.RequirementService`實作），
-   * 舊有已棄用的CUG實作，
-   * 從以`LoginSelectorHandler`定義的登入頁面對應，
-   * 最後回復到以`LoginSelectorHandler`定義的預設登入頁面。
+  * 從`LoginPathProvider` （由新的`com.adobe.granite.auth.requirement.impl.RequirementService`實作），
+  * 舊有已棄用的CUG實作，
+  * 從以`LoginSelectorHandler`定義的登入頁面對應，
+  * 最後回復到以`LoginSelectorHandler`定義的預設登入頁面。
 
 * 透過上述呼叫取得有效的登入路徑時，使用者的請求會重新導向至該頁面。
 
@@ -179,9 +191,9 @@ Apache Sling驗證需求會透過頁面或節點階層繼承。 繼承和評估�
 * 為存放庫內容建模，使得驗證需求適用於整個樹狀結構，而無需再次從需求中排除巢狀子樹狀結構。
 * 若要避免指定，然後註冊多餘的登入路徑，請執行下列動作：
 
-   * 依賴繼承並避免定義巢狀登入路徑
-   * 請勿將選擇性登入路徑設為對應至預設值或繼承值的值，
-   * 應用程式開發人員應識別在與`LoginSelectorHandler`關聯的全域登入路徑設定（預設和對應）中應設定哪些登入路徑。
+  * 依賴繼承並避免定義巢狀登入路徑
+  * 請勿將選擇性登入路徑設為對應至預設值或繼承值的值，
+  * 應用程式開發人員應識別在與`LoginSelectorHandler`關聯的全域登入路徑設定（預設和對應）中應設定哪些登入路徑。
 
 ## 在存放庫中的表示方式 {#representation-in-the-repository}
 
@@ -817,7 +829,7 @@ CUG授權模型可讓您個別開啟存取控制管理和許可權評估：
 * 如果模組有一或多個可建立CUG的支援路徑，則會啟用存取控制管理
 * 只有同時核取選項&#x200B;**CUG Evaluation Enabled**&#x200B;時，才會啟用許可權評估。
 
-在新的AEM預設設定CUG原則評估中，它僅在「發佈」執行模式中啟用。 如需詳細資訊，請參閱AEM 6.3[&#128279;](#default-configuration-since-aem)之後的預設設定。 這可透過比較給定路徑的有效原則與內容中儲存的原則來驗證。 只有啟用CUG的許可權評估時，才會顯示有效原則。
+在新的AEM預設設定CUG原則評估中，它僅在「發佈」執行模式中啟用。 如需詳細資訊，請參閱AEM 6.3](#default-configuration-since-aem)之後的[預設設定。 這可透過比較給定路徑的有效原則與內容中儲存的原則來驗證。 只有啟用CUG的許可權評估時，才會顯示有效原則。
 
 如上所述，CUG存取控制原則現在一律會儲存在內容中，但是只有在Apache Jackrabbit Oak **CUG組態的系統主控台中開啟**&#x200B;啟用CUG評估&#x200B;**時，才會強制執行這些原則所產生的有效許可權評估。** 預設情況下，僅在「發佈」執行模式中啟用它。
 

@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 084c59b1-1e72-475e-8ec9-2cbc6e695876
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '581'
 ht-degree: 2%
-
 ---
-
 # 管理工作流程存取權{#managing-access-to-workflows}
 
 根據使用者帳戶設定ACL以允許（或停用）啟動和參與工作流程。
@@ -27,13 +36,13 @@ ht-degree: 2%
 * 您正在使用`admin`帳戶
 * 帳戶已指派給預設群組`workflow-users`：
 
-   * 此群組擁有您的使用者執行工作流程動作所需的所有許可權。
-   * 當帳戶在此群組中時，它只能存取其已起始的工作流程。
+  * 此群組擁有您的使用者執行工作流程動作所需的所有許可權。
+  * 當帳戶在此群組中時，它只能存取其已起始的工作流程。
 
 * 帳戶已指派給預設群組`workflow-administrators`：
 
-   * 此群組擁有授權使用者監視和管理工作流程所需的所有許可權。
-   * 當帳戶在此群組中時，它可以存取所有工作流程。
+  * 此群組擁有授權使用者監視和管理工作流程所需的所有許可權。
+  * 當帳戶在此群組中時，它可以存取所有工作流程。
 
 >[!NOTE]
 >
@@ -54,7 +63,7 @@ ht-degree: 2%
 
 如果工作流程模型儲存在`/var/workflow/models`中，則您可以在資料夾中指派特定ACL （僅與該工作流程相關）：
 
-1. 在網頁瀏覽器中開啟CRXDE Lite (例如，[http://localhost:4502/crx/de](http://localhost:4502/crx/de))。
+1. 在網頁瀏覽器中開啟CRXDE Lite （例如，[http://localhost:4502/crx/de](http://localhost:4502/crx/de)）。
 1. 在節點樹狀結構中，選取工作流程模型資料夾的節點：
 
    `/var/workflow/models`
@@ -66,7 +75,7 @@ ht-degree: 2%
    * **主體**： `content-authors`
    * **類型**：`Deny`
    * **許可權**： `jcr:read`
-   * **rep：glob**：參考特定工作流程
+   * **rep:glob**：參考特定工作流程
 
    ![wf-108](assets/wf-108.png)
 
@@ -90,7 +99,7 @@ ht-degree: 2%
 
 然後，您可以將ACL新增至資料夾本身。
 
-1. 在網頁瀏覽器中開啟CRXDE Lite (例如，[http://localhost:4502/crx/de](http://localhost:4502/crx/de))。
+1. 在網頁瀏覽器中開啟CRXDE Lite （例如，[http://localhost:4502/crx/de](http://localhost:4502/crx/de)）。
 1. 在節點樹狀結構中，選取工作流程模型資料夾中個別資料夾的節點；例如：
 
    `/var/workflow/models/prototypes`
@@ -106,7 +115,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >和[套用特定工作流程模型的ACL至/var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models)一樣，您可以包含rep：glob以限制對特定工作流程的存取。
+   >與[套用特定工作流程模型的ACL至/var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models)一樣，您可以包含rep:glob以限制特定工作流程的存取權。
 
    ![wf-110](assets/wf-110.png)
 

@@ -10,13 +10,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 19ff5414-5798-4a89-afab-e0bad0f58b51
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 0%
-
+source-wordcount: '1802'
+ht-degree: 1%
 ---
-
 # 電子郵件行銷{#e-mail-marketing}
 
 >[!NOTE]
@@ -63,7 +74,7 @@ ht-degree: 0%
 
    ![建立體驗對話方塊](assets/mcm_createnewsletter.png)
 
-1. 按一下&#x200B;**建立**。
+1. 按一下「**建立**」。
 
 1. 隨即開啟新的對話方塊。 您可在此輸入Newsletter的屬性。
 
@@ -71,26 +82,26 @@ ht-degree: 0%
 
    ![頁面屬性對話方塊](assets/mcm_newnewsletterdialog.png)
 
-   * **來自名稱**
-應顯示為Newsletter寄件者的名稱。
+   * **來源名稱**
+     應顯示為Newsletter寄件者的名稱。
 
    * **寄件者地址**
-應顯示為Newsletter寄件者的郵件地址。
+     應顯示為Newsletter寄件者的郵件地址。
 
    * **主旨**
-Newsletter的主題。
+     Newsletter的主題。
 
    * **回覆**
-郵件地址，負責處理已傳送Newsletter的回覆
+     郵件地址，負責處理已傳送Newsletter的回覆
 
    * **描述**
-Newsletter的說明。
+     Newsletter的說明。
 
-   * **開啟時間**
-傳送Newsletter的準時。
+   * **準時**
+     傳送Newsletter的準時。
 
    * **預設收件者清單**
-應接收Newsletter的預設清單。
+     應接收Newsletter的預設清單。
 
    稍後可從&#x200B;**屬性……**&#x200B;對話方塊更新這些專案。
 
@@ -125,11 +136,11 @@ Newsletter的說明。
 
 1. 開啟您要個人化的文字元件。
 
-1. 將游標放在您要變數出現的位置，並從下拉式清單中選取變數，然後按一下&#x200B;**插入**。 請視需要為任意數量的變數執行此動作，然後按一下[確定]。**&#x200B;**
+1. 將游標放在您要變數出現的位置，並從下拉式清單中選取變數，然後按一下&#x200B;**插入**。 請視需要為任意數量的變數執行此動作，然後按一下[確定]。****
 
    ![正在新增變數](assets/mcm_newsletter_variables.png)
 
-1. 若要模擬變數在傳送時的外觀，請按CTRL+ALT+c開啟使用者端內容，並選取&#x200B;**載入**。 從清單中選取您要載入其設定檔的使用者，然後按一下[確定]。**&#x200B;**
+1. 若要模擬變數在傳送時的外觀，請按CTRL+ALT+c開啟使用者端內容，並選取&#x200B;**載入**。 從清單中選取您要載入其設定檔的使用者，然後按一下[確定]。****
 
    您載入的設定檔資訊已填入變數。
 
@@ -143,7 +154,7 @@ Newsletter的說明。
 >
 >依預設，引數的值為`localhost:4502`，如果執行執行個體的連線埠已變更，則作業無法完成。
 
-在常用的電子郵件使用者端之間切換，可檢視潛在客戶所看到的Newsletter外觀。 依預設，您的Newsletter會開啟，但未選取任何電子郵件使用者端。
+在常用的電子郵件用戶端之間切換，可查看銷售機會端所看到的 Newsletter 外觀。 依預設，您的Newsletter會開啟，但未選取任何電子郵件使用者端。
 
 目前，您可以在下列電子郵件使用者端中檢視電子報：
 
@@ -294,7 +305,7 @@ Newsletter的說明。
 
 ### 訂閱電子報 {#subscribing-to-a-newsletter-1}
 
-訂閱電子報(以Geometrixx網站為例)：
+訂閱電子報（以Geometrixx網站為例）：
 
 1. 按一下&#x200B;**網站**&#x200B;並導覽至Geometrixx **工具列**&#x200B;並開啟它。
 

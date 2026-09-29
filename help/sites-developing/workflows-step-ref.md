@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e82d97c2-c26a-48df-9210-47dc017c68c8
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3258'
+source-wordcount: '3268'
 ht-degree: 1%
-
 ---
-
 # 工作流程步驟參考 {#workflow-step-reference}
 
 工作流程模型包含一系列各種型別的步驟。 根據型別，您可以使用引數和指令碼來設定和擴充這些步驟，以提供您需要的功能和控制項。
@@ -275,7 +284,7 @@ function check(){
 
 若要建立對話方塊，您必須建立對話方塊：
 
-* 決定產生的資料儲存在承載[&#128279;](#dialog-participant-step-storing-data-in-the-payload)中的何處。
+* 決定產生的資料儲存在承載](#dialog-participant-step-storing-data-in-the-payload)中的何處[。
 * [定義對話方塊；包括定義用來收集和儲存資料的欄位](#dialog-participant-step-dialog-definition)。
 
 #### 對話方塊參與者步驟 — 將資料儲存在承載中 {#dialog-participant-step-storing-data-in-the-payload}
@@ -553,7 +562,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 * [一般](#step-properties-common-tab)
 * **引數**
 
-  * **參與者**：指定可供選取的使用者清單。 若要新增使用者至清單，請按一下[新增專案] **&#x200B;**，然後輸入使用者節點的本位目錄路徑或使用者ID。 使用者的順序不會影響被指派工作專案的可能性。
+  * **參與者**：指定可供選取的使用者清單。 若要新增使用者至清單，請按一下[新增專案] ****，然後輸入使用者節點的本位目錄路徑或使用者ID。 使用者的順序不會影響被指派工作專案的可能性。
 
 ### 工作流程發起人參與者選擇器 {#workflow-initiator-participant-chooser}
 

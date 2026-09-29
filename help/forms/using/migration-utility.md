@@ -6,13 +6,27 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 636f7b61-549e-45c7-ab21-94bb90db2b22
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 1%
-
+source-wordcount: '1765'
+ht-degree: 2%
 ---
-
 # 移轉 AEM Forms 資產和文件{#migrate-aem-forms-assets-and-documents}
 
 移轉公用程式會將[最適化Forms資產](../../forms/using/introduction-forms-authoring.md)、[雲端組態](/help/sites-developing/extending-cloud-config.md)及[通訊管理資產](/help/forms/using/cm-overview.md)從舊版所使用的格式，轉換為Adobe Experience Manager (AEM) 6.5 LTS Forms中使用的格式。 當您執行移轉公用程式時，將會移轉下列專案：
@@ -28,17 +42,17 @@ ht-degree: 1%
 
 ## 移轉方法 {#approach-to-migration}
 
-您可以從AEM Forms 6.5.22.0[&#128279;](/help/forms/using/upgrade-forms-osgi.md) [升級](../../forms/using/upgrade.md)至AEM Forms 6.5 LTS。 根據您是升級先前的安裝還是執行全新安裝，您必須執行下列其中一項操作：
+您可以從AEM Forms 6.5.22.0](/help/forms/using/upgrade-forms-osgi.md) [升級](../../forms/using/upgrade.md)至[AEM Forms 6.5 LTS。 根據您是升級先前的安裝還是執行全新安裝，您必須執行下列其中一項操作：
 
 **如果有就地升級**
 
-如果您執行[就地升級](/help/sites-deploying/in-place-upgrade.md)，則升級的執行個體已經有資產和檔案。 不過，您必須先安裝[AEMFD相容性套件](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hant) （包含通訊管理相容性套件），才能使用資產和檔案。
+如果您執行[就地升級](/help/sites-deploying/in-place-upgrade.md)，則升級的執行個體已經有資產和檔案。 不過，您必須先安裝[AEMFD相容性套件](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) （包含通訊管理相容性套件），才能使用資產和檔案。
 
 接著，您必須執行[移轉公用程式](#runningmigrationutility)，更新資產和檔案。
 
 **如果有異地安裝**
 
-如果安裝不恰當（全新），您必須先安裝[AEMFD相容性套件](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hant) （包含通訊管理相容性套件），才能使用資產和檔案。
+如果安裝不恰當（全新），您必須先安裝[AEMFD相容性套件](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) （包含通訊管理相容性套件），才能使用資產和檔案。
 
 然後，您必須在新的設定上匯入您的資產套件（zip或cmp），然後執行[移轉公用程式](#runningmigrationutility)來更新資產和檔案。 Adobe建議，您必須先執行移轉公用程式，才能在新設定上建立資產。
 
@@ -48,7 +62,7 @@ ht-degree: 1%
 
 對於通訊管理資產：
 
-* 針對從先前平台匯入的資產，會新增屬性： **fd：version=1.0**。
+* 對於從先前平台匯入的資產，會新增屬性： **fd:version=1.0**。
 * 自AEM 6.1 Forms起，無法立即使用註解。 先前新增的註解可在資產中使用，但不會自動顯示在介面中。 在AEM Forms使用者介面中自訂extendedProperties屬性，使註解可見。
 * 在某些舊版（例如LiveCycle ES4）中，文字是使用Flex RichTextEditor進行編輯，但由於AEM 6.1 Forms，因此使用HTML編輯器。 由於這種演算和字型的外觀，字型大小和字型邊界可能與作者使用者介面中的先前版本不同。 但是，字母在轉譯時看起來是相同的。
 * 文字模組中的清單已改善，現在呈現方式也不同。 可能有視覺差異。 Adobe建議您轉譯並檢視您在文字模組中使用清單的字母。
@@ -57,7 +71,7 @@ ht-degree: 1%
 * 由於AEM 6.1 Forms已棄用「準備發佈」狀態，因此「準備發佈」狀態的所有資產都會變更為「已修改」狀態。
 * 由於使用者介面在AEM Forms 6.3中更新，執行自訂的步驟也不同。 如果您要從6.3版之前的版本移轉，請重做自訂。
 * 佈局片段從`/content/apps/cm/layouts/fragmentlayouts/1001`移至`/content/apps/cm/modules/fragmentlayouts`。 資產中的資料字典參考會顯示資料字典的路徑而非其名稱。
-* 文字模組中用於對齊的任何定位字元空格都必須重新調整。<!--For more information, see [Correspondence Management - Using tab spacing for arranging text](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html)-->。
+* 文字模組中用於對齊的任何定位字元空格都必須重新調整。 <!--For more information, see [Correspondence Management - Using tab spacing for arranging text](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html)-->.
 * 「通訊管理」設定的資產撰寫器設定變更。
 * Assets會移至名為「現有文字」和「現有清單」等名稱的資料夾下。
 
@@ -90,24 +104,24 @@ ht-degree: 1%
 
    * 若要移轉&#x200B;**資產**，請選取「AEM Forms Assets移轉」，然後在下一個畫面中選取「**開始移轉**」。 下列專案已移轉：
 
-      * 調適型表單
-      * 檔案片段
-      * 主題
-      * 字母
-      * 資料字典
+     * 調適型表單
+     * 檔案片段
+     * 主題
+     * 字母
+     * 資料字典
 
    >[!NOTE]
    >
-   >在資產移轉期間，您可能會發現警告訊息，例如「發現衝突……」。 這類訊息表示無法移轉適用性表單中部分元件的規則。 例如，如果元件有一個同時具有規則和指令碼的事件，如果規則發生在任何指令碼之後，則不會移轉元件的任何規則。 您可在最適化表單製作中開啟規則編輯器[&#128279;](#migrate-rules)，以移轉這類規則。
+   >在資產移轉期間，您可能會發現警告訊息，例如「發現衝突……」。 這類訊息表示無法移轉適用性表單中部分元件的規則。 例如，如果元件有一個同時具有規則和指令碼的事件，如果規則發生在任何指令碼之後，則不會移轉元件的任何規則。 您可在最適化表單製作中開啟規則編輯器](#migrate-rules)，以[移轉這類規則。
 
    * 若要移轉最適化表單自訂元件，請選取&#x200B;**最適化Forms自訂元件移轉**，然後在[自訂元件移轉]頁面中，選取&#x200B;**開始移轉**。 下列專案已移轉：
 
-      * 為最適化Forms撰寫的自訂元件
-      * 元件覆蓋（如果有的話）。
+     * 為最適化Forms撰寫的自訂元件
+     * 元件覆蓋（如果有的話）。
 
    * 若要移轉最適化表單範本，請選取&#x200B;**最適化Forms範本移轉**，然後在[自訂元件移轉]頁面中，選取&#x200B;**開始移轉**。 下列專案已移轉：
 
-      * 使用AEM範本編輯器在`/apps`或`/conf`下建立的最適化表單範本。
+     * 使用AEM範本編輯器在`/apps`或`/conf`下建立的最適化表單範本。
 
    * 移轉AEM Forms Cloud Configuration Services以使用新的內容感知雲端服務範例，包括已啟用觸控的UI （在`/conf`下）。 當您移轉AEM Forms雲端設定服務時，`/etc`中的雲端服務會移至`/conf`。 如果您沒有任何相依於舊版路徑(`/etc`)的雲端服務自訂專案，Adobe建議您在升級至6.5後執行移轉公用程式；請使用雲端設定Touch UI進行後續工作。 如果您有任何現有的雲端服務自訂專案，請在升級安裝時繼續使用傳統UI，直到自訂專案更新為符合移轉的路徑(`/conf`)為止，然後執行移轉公用程式。
 
@@ -115,23 +129,23 @@ ht-degree: 1%
 
    * 表單資料模型雲端服務
 
-      * Source路徑： `/etc/cloudservices/fdm`
-      * 目標路徑： `/conf/global/settings/cloudconfigs/fdm`
+     * Source路徑： `/etc/cloudservices/fdm`
+     * 目標路徑： `/conf/global/settings/cloudconfigs/fdm`
 
    * Recaptcha
 
-      * Source路徑： `/etc/cloudservices/recaptcha`
-      * 目標路徑： `/conf/global/settings/cloudconfigs/recaptcha`
+     * Source路徑： `/etc/cloudservices/recaptcha`
+     * 目標路徑： `/conf/global/settings/cloudconfigs/recaptcha`
 
    * Adobe Sign
 
-      * Source路徑： `/etc/cloudservices/echosign`
-      * 目標路徑： `/conf/global/settings/cloudconfigs/echosign`
+     * Source路徑： `/etc/cloudservices/echosign`
+     * 目標路徑： `/conf/global/settings/cloudconfigs/echosign`
 
    * Typekit雲端服務
 
-      * Source路徑： `/etc/cloudservices/typekit`
-      * 目標路徑： `/conf/global/settings/cloudconfigs/typekit`
+     * Source路徑： `/etc/cloudservices/typekit`
+     * 目標路徑： `/conf/global/settings/cloudconfigs/typekit`
 
    當移轉程式進行時，瀏覽器視窗會顯示下列內容：
 
@@ -151,15 +165,15 @@ ht-degree: 1%
 
 * 若要移轉自訂元件中的規則和指令碼（從6.3升級時則為不需要），請選取「最適化Forms自訂元件移轉」 ，然後在下一個畫面中選取「開始移轉」 。 下列專案已移轉：
 
-   * 使用規則編輯器（6.1 FP1和更新版本）建立的規則和指令碼
+  * 使用規則編輯器（6.1 FP1和更新版本）建立的規則和指令碼
 
-   * 使用6.1和更舊版本UI中的指令碼索引標籤建立的指令碼
+  * 使用6.1和更舊版本UI中的指令碼索引標籤建立的指令碼
 
 * 若要移轉範本（如果從6.3和6.4升級，則不需要），請選取「最適化Forms範本移轉」，然後在下一個畫面中選取「開始移轉」。 下列專案已移轉：
 
-   * 舊範本 — 在/apps下使用AEM 6.1 Forms或更舊版本建立的最適化表單範本。 這包括範本元件中定義的指令碼。
+  * 舊範本 — 在/apps下使用AEM 6.1 Forms或更舊版本建立的最適化表單範本。 這包括範本元件中定義的指令碼。
 
-   * 新範本 — 使用`/conf`下的範本編輯器建立的最適化表單範本。 這包括移轉使用規則編輯器建立的規則和指令碼。
+  * 新範本 — 使用`/conf`下的範本編輯器建立的最適化表單範本。 這包括移轉使用規則編輯器建立的規則和指令碼。
 
 ### 執行移轉公用程式後的內部管理工作 {#housekeepingtasks}
 

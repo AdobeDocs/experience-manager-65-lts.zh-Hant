@@ -9,13 +9,27 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 1e3c4724-9dbd-4e39-a0fc-efe7fd8906cd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '689'
-ht-degree: 3%
-
+source-wordcount: '690'
+ht-degree: 4%
 ---
-
 # 搜尋表單和資產{#searching-for-forms-and-assets}
 
 您可以使用文字字串或文字字串以及萬用字元來搜尋您的表單或表單資產。 您也可以使用「搜尋」面板中各種類別所提供的條件來縮小搜尋範圍。
@@ -84,14 +98,14 @@ AEM表單和資產搜尋的搜尋欄位和引數或篩選器
  <tbody>
   <tr>
    <th>選項</th> 
-   <th>描述</th> 
+   <th>說明</th> 
   </tr>
   <tr>
    <td>表單範本<br /> </td> 
    <td>搜尋所有表單範本。<br /> </td> 
   </tr>
   <tr>
-   <td>PDF表單</td> 
+   <td>PDF 表單</td> 
    <td>搜尋所有PDF檔案。</td> 
   </tr>
   <tr>

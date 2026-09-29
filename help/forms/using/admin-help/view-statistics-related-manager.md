@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 7c1023ac-9d52-49f8-8e92-20e2d9d7079b
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1217'
 ht-degree: 0%
-
 ---
-
 # 檢視與工作管理員相關的統計資料 {#view-statistics-related-to-work-manager}
 
 「工作管理員」標籤會顯示與「工作管理員」專案相關的統計資料。 這些工作專案會根據其處理過程中的位置而處於不同狀態。 (請參閱[狀態（僅適用於預設、工作流程或事件類別）](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only)。) 您可以使用各種可用的選項（例如，「狀態」或「類別」）來篩選資訊，以僅檢視專案的子集。 您可以按一下其中一個欄標題，對產生的工作或工作專案進行排序（以遞增或遞減順序）。 您也可以使用工作專案清單上方顯示的作業工具來管理工作專案。

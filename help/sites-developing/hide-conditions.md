@@ -9,16 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: b96517c1-e0b9-4ccd-9ac2-f9e56a812382
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 7%
-
 ---
-
 # 使用隱藏條件 {#using-hide-conditions}
 
-隱藏條件可用於判斷元件資源是否已轉譯。 例如，範本作者在[範本編輯器](/help/sites-authoring/templates.md)中設定核心元件[list元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=zh-Hant)，並決定停用根據子頁面建立清單的選項。 在「設計」對話方塊中停用此選項會設定屬性，以便在呈現清單元件時，會評估隱藏條件，並且不會顯示顯示子頁面的選項。
+隱藏條件可用於判斷元件資源是否已轉譯。 例如，範本作者在[範本編輯器](/help/sites-authoring/templates.md)中設定核心元件[list元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html)，並決定停用根據子頁面建立清單的選項。 在「設計」對話方塊中停用此選項會設定屬性，以便在呈現清單元件時，會評估隱藏條件，並且不會顯示顯示子頁面的選項。
 
 ## 概觀 {#overview}
 
@@ -56,7 +65,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 ## 範例 {#example}
 
-隱藏條件的範例可在整個AEM中找到，特別是[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)。 例如，考慮[清單核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=zh-Hant)。
+隱藏條件的範例可在整個AEM中找到，特別是[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)。 例如，考慮[清單核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html)。
 
 [使用範本編輯器](/help/sites-authoring/templates.md)，範本作者可以在設計對話方塊中定義清單元件中哪些選項可供頁面作者使用。 您可以啟用或停用選項，例如是否允許清單成為靜態清單、子頁面清單、標籤頁面清單等。
 
@@ -77,7 +86,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 1. 從設計組態中提取`disableChildren`的值，而運算式`${cqDesign.disableChildren}`評估為`false`，表示選項將不會呈現為元件的一部分。
 
-   您可以在GitHub[&#128279;](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40)中檢視隱藏運算式為`granite:hide`屬性的值。
+   您可以在GitHub](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40)中檢視隱藏運算式為`granite:hide`屬性[的值。
 
 1. 使用清單元件時，不再為頁面作者轉譯選項&#x200B;**子頁面**。
 

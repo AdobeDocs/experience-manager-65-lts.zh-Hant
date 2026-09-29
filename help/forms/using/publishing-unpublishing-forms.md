@@ -10,13 +10,26 @@ solution: Experience Manager, Experience Manager Forms
 feature: Correspondence Management
 role: Admin, User, Developer
 exl-id: 475e3c95-913d-49ee-8245-b88b967f9b7e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1409'
 ht-degree: 1%
-
 ---
-
 # 發佈和取消發佈表單和文件{#publishing-and-unpublishing-forms-and-documents}
 
 AEM Forms可讓您輕鬆建立、發佈和取消發佈表單。 如需AEM Forms的詳細資訊，請參閱[管理表單簡介](../../forms/using/introduction-managing-forms.md)。
@@ -33,7 +46,7 @@ AEM Forms支援下列資產型別：
 * 主題
 * 表單範本（XFA表單）
 * PDF forms
-* 檔案(平面PDF檔案)
+* 檔案（平面PDF檔案）
 * 表單集
 * 資源（影像、方案和樣式表）
 
@@ -48,12 +61,12 @@ AEM Forms支援下列資產型別：
 * 只有當使用者擁有管理員許可權時，才會啟用其他雲端服務設定。
 * 自訂。 這些包括但不限於：
 
-   * 自訂版面
-   * 自訂外觀
-   * CSS檔案 — 在調適型表單容器屬性對話方塊中作為輸入專案
-   * 使用者端資料庫類別 — 在調適型表單容器屬性對話方塊中作為輸入內容
-   * 任何其他使用者端程式庫，可能包含在調適型表單範本中。
-   * 設計路徑
+  * 自訂版面
+  * 自訂外觀
+  * CSS檔案 — 在調適型表單容器屬性對話方塊中作為輸入專案
+  * 使用者端資料庫類別 — 在調適型表單容器屬性對話方塊中作為輸入內容
+  * 任何其他使用者端程式庫，可能包含在調適型表單範本中。
+  * 設計路徑
 
 ## 資產狀態 {#asset-states}
 

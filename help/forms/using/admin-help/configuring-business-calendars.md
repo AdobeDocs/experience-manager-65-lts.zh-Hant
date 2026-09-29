@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 23fab14d-3658-4fd3-88c1-fc71f1ac0400
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1938'
+source-wordcount: '1949'
 ht-degree: 0%
-
 ---
-
 # 設定商務行事曆 {#configuring-business-calendars}
 
 *工作歷*&#x200B;為您的組織定義工作天和非工作天（例如，法定假日、週末和公司關門日）。 使用商業行事曆時，AEM表單會在執行某些日期計算時略過非商業日。 在Workbench中，您可以指定是否將商業行事曆用於與使用者相關的事件（例如工作提醒、截止日期和升級），或用於與使用者無關的動作（例如計時器事件和等待服務）。
@@ -78,7 +93,7 @@ AEM Forms提供預設商務行事曆（名為&#x200B;*內建行事曆*），將�
 
    如果您選取此選項，在指定時間範圍之前發生的事件會移至時間範圍的開頭，而在時間範圍之後發生的事件則會移至下一個營業日的開始時間。
 
-   例如，假設某個星期二凌晨2:00為使用者指派任務，而該任務的提醒設為兩個工作天。 若沒有營業時間，提醒將會在星期四凌晨2:00發生。 如果營業時間設為上午8:00至下午5:00，則提醒會推送到星期四上午8:00。 若沒有營業時間，若於星期二下午6:00建立提醒事件，則會在星期四營業時間後進行提醒。 若營業時間設定為上午8:00至下午5:00，則提醒會在星期五上午8:00發生。
+   例如，假設某個使用者在星期二凌晨2:00被指派一項任務，而該任務的提醒已設定為兩個工作天。 如果沒有營業時間，提醒將會在星期四凌晨2:00發生。 如果營業時間設為上午8:00至下午5:00，則提醒會推送至星期四上午8:00。 若沒有營業時間，若在星期二下午6:00建立提醒事件，則會在星期四營業時間之後進行提醒。 若營業時間設定為上午8:00至下午5:00，提醒將會在星期五上午8:00進行。
 
 1. 在左側的行事曆中，連按兩下任何其他非工作日，例如假日。 您無法選取過去的天數。 您選取的非營業日會出現在右側的清單中，而日期會在一行中出現兩次。 在左側選取日期，以輸入非營業日的名稱或說明。
 

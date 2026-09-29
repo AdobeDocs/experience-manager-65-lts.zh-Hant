@@ -9,13 +9,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
 exl-id: c7c42bcd-d90a-430a-bbcd-b104d0670ebf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '285'
 ht-degree: 1%
-
 ---
-
 # ContextHub{#contexthub}
 
 ContextHub是一種用於儲存、操控和呈現內容資料的架構。 使用者端JavaScript API可讓您存取個人化內容的資料。
@@ -41,7 +52,7 @@ ContextHub會儲存使用者端上持續儲存的內容資料。 ContextHub Java
 * 開發人員可以[建立自訂商店型別](/help/sites-developing/ch-extend.md#creating-custom-store-candidates)。
 * 開發人員可以透過JavaScript [存取存放區資料](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores)。
 
-## Segmentation {#segmentation}
+## 細分 {#segmentation}
 
 ContextHub包含區段引擎，可管理區段並決定針對目前內容解析哪些區段。 已定義數個區段。 您可以使用JavaScript API來[決定已解析的區段](/help/sites-developing/ch-adding.md#determining-resolved-contexthub-segments)。
 
@@ -52,7 +63,7 @@ ContextHub包含區段引擎，可管理區段並決定針對目前內容解析�
 每個ContextHub UI模組都是預先定義模組型別的例項：
 
 * ContextHub提供數個[範例模組型別](/help/sites-developing/ch-samplemodules.md)。
-* 使用AEM主控台來[新增UI模組](ch-configuring.md#adding-a-ui-module)，並將它們以UI模式[&#128279;](ch-configuring.md#adding-a-ui-mode)分組。
+* 使用AEM主控台來[新增UI模組](ch-configuring.md#adding-a-ui-module)，並將它們以UI模式](ch-configuring.md#adding-a-ui-mode)分組[。
 
 * 開發人員可以[建立自訂模組型別](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types)。
 

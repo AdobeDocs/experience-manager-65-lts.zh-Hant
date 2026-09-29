@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: eb47f730-ac26-47a0-9bd7-3b7e94c79ecd
-source-git-commit: cc96a14ebaf9f895a798b5f4904f5b4769b990bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '417'
 ht-degree: 0%
-
 ---
-
 # 內容架構{#content-architecture}
 
 ## 遵循David的模式 {#follow-david-s-model}
@@ -46,7 +55,7 @@ David Nuescheler在多年前寫了David&#39;s Model，但它的想法至今仍�
 
 ### 避免定義新的節點型別 {#avoid-defining-new-node-types}
 
-節點型別在基礎建設層中的低階運作。 大部分的需求都是透過使用指派給`sling:resourceType`、`nt:unstructured`、`oak:Unstructured`或`sling:Folder`節點型別的`cq:Page`來滿足。 節點型別等同於存放庫中的結構描述，並且之後變更節點型別可能會很昂貴。
+節點型別在基礎建設層中的低階運作。 大部分的需求都是透過使用指派給`nt:unstructured`、`oak:Unstructured`、`sling:Folder`或`cq:Page`節點型別的`sling:resourceType`來滿足。 節點型別等同於存放庫中的結構描述，並且之後變更節點型別可能會很昂貴。
 
 ### 遵守JCR中的命名慣例 {#adhere-to-naming-conventions-in-the-jcr}
 
@@ -54,14 +63,14 @@ David Nuescheler在多年前寫了David&#39;s Model，但它的想法至今仍�
 
 * 節點名稱
 
-   * 全部小寫。
-   * 使用連字型大小進行分詞。
+  * 全部小寫。
+  * 使用連字型大小進行分詞。
 
 * 屬性名稱
 
-   * 駝峰式大小寫，以小寫字母開頭。
+  * 駝峰式大小寫，以小寫字母開頭。
 
 * 元件(JSP/HTML)
 
-   * 全部小寫。
-   * 使用連字型大小進行分詞。
+  * 全部小寫。
+  * 使用連字型大小進行分詞。

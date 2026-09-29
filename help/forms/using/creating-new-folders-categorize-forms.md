@@ -8,13 +8,27 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: cc84c92b-d1a3-4314-a079-7dcbf013712a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '387'
 ht-degree: 0%
-
 ---
-
 # 建立新資料夾以將表單分類 {#create-new-folders-to-categorize-forms}
 
 您可以使用資料夾更妥善地組織您的資產。 由於AEM Forms支援多種型別的資產（表單範本、PDF、檔案、資源和調適型表單）以及各種中繼資料，因此您可以使用資料夾來根據所需的條件將表單分類。
@@ -25,7 +39,7 @@ AEM Forms可讓您變更資料夾的標題。 標題與存放庫中儲存資料�
 
 您可以透過下列其中一種方式，在AEM Forms中建立資料夾：
 
-* 上傳包含所需資料夾結構中的資產的ZIP檔案(請參閱[在AEM Forms中取得XDP和PDF檔案](/help/forms/using/get-xdp-pdf-documents-aem.md))
+* 上傳包含所需資料夾結構中的資產的ZIP檔案（請參閱[在AEM Forms中取得XDP和PDF檔案](/help/forms/using/get-xdp-pdf-documents-aem.md)）
 
 * 建立空的資料夾
 

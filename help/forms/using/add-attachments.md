@@ -9,16 +9,30 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: ef0917ec-bae2-4a5c-b3ca-5b6e57f8bc93
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '569'
 ht-degree: 0%
-
 ---
-
 # 新增附件{#adding-attachments}
 
-## 在與AEM Forms工作流程伺服器(JEE上的AEM Forms)同步的表單中新增附件 {#adding-annotations}
+## 在與AEM Forms工作流程伺服器（JEE上的AEM Forms）同步的表單中新增附件 {#adding-annotations}
 
 AEM Forms應用程式可讓您將影像、手寫筆記和文字筆記附加至與AEM Forms JEE伺服器同步的表單。 如果您的表單是從AEM Forms Workflow伺服器載入，您的附件就會新增至表單。 您可以選取附件按鈕![attachments-app](assets/attachments-app.png)，一起檢視表單中的所有附件。 紅色通知會指定表單中的附件數量。 如果表單中沒有附件，您將看不到紅色通知按鈕。 如果表單中沒有附件，當您選取附件按鈕![attch](assets/attch.png)時，您會取得附加像片或塗鴉的選項。
 
@@ -71,7 +85,7 @@ AEM Forms應用程式可讓您將影像、手寫筆記和文字筆記附加至�
 
    ![手寫介面](assets/scribble-ui.png)
 
-   塗鴉
+   塗抹
 
    您可以在Scribble介面中使用下列選項：
 
@@ -82,7 +96,7 @@ AEM Forms應用程式可讓您將影像、手寫筆記和文字筆記附加至�
 
    ![AEM Forms應用程式中的鍵盤塗鴉](assets/keyboard-inapp.png)
 
-## 表單中的附件不使用AEM Forms Workflow (OSGi上的AEM Forms)與AEM Forms伺服器同步 {#attachments-in-forms-synced-with-the-aem-forms-servers-without-aem-forms-workflow-aem-forms-on-osgi}
+## 表單中的附件不使用AEM Forms Workflow （OSGi上的AEM Forms）與AEM Forms伺服器同步 {#attachments-in-forms-synced-with-the-aem-forms-servers-without-aem-forms-workflow-aem-forms-on-osgi}
 
 與AEM Forms OSGi伺服器同步的行動表單附件，其運作方式與AEM Forms JEE伺服器類似。
 

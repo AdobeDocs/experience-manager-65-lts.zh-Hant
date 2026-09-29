@@ -10,22 +10,38 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 41799183-ef5a-4990-bd7b-7b58cafe3960
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '220'
 ht-degree: 0%
-
 ---
-
 # 設定AEM Forms應用程式的環境{#set-up-environment-for-aem-forms-app}
 
 您需要下列硬體、軟體和授權，才能建置和部署AEM Forms應用程式：
 
 ## Windows裝置 {#for-windows-devices}
 
-* Microsoft® Windows 10
-* Microsoft® Visual Studio 2015
-* Microsoft® Visual Studio Tools for Apache Cordova
+* ® Windows 10
+* ® Visual Studio 2015
+* ® Visual Studio Tools for Apache Cordova
 
 ## 適用於iOS裝置 {#for-ios-devices}
 
@@ -36,7 +52,7 @@ ht-degree: 0%
 * 用於發佈內部iOS應用程式的企業憑證
 * Apple iPad搭配iOS 8.4或更新版本
 
-## 若為Android™裝置 {#for-android-devices}
+## 若為™裝置 {#for-android-devices}
 
 * 可從[https://developer.android.com/studio](https://developer.android.com/studio)下載的Android™ Development Toolkit （ADT套件）
 * 若環境設定在Mac系統上，則ADT應安裝在「應用程式」資料夾中。
@@ -44,4 +60,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->adobe-lc-mobileworkspace-src.zip包含PhoneGap SDK 5.0。請確定未預先安裝PhoneGap SDK。
+>adobe-lc-mobileworkspace-src.zip包含PhoneGap SDK 5.0。 請確定未預先安裝PhoneGap SDK。

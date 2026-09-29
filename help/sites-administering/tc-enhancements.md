@@ -7,13 +7,25 @@ feature: Language Copy
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 59b4d716-37a2-4f67-88eb-68c93359242c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '687'
 ht-degree: 0%
-
 ---
-
 # 翻譯增強功能{#translation-enhancements}
 
 本頁介紹AEM翻譯管理功能的遞增增強功能和細化。
@@ -80,8 +92,8 @@ AEM會更新已設定TMS之翻譯記憶庫中現有字串的翻譯。
 
 * TMS必須設定為可與AEM搭配使用。
 * 聯結器需要實作方法[`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html)。
-   * 此方法中的程式碼會決定翻譯記憶體更新請求的情況。
-   * AEM翻譯架構會透過此方法實作，將字串值配對（原始和更新的翻譯）傳回TMS。
+  * 此方法中的程式碼會決定翻譯記憶體更新請求的情況。
+  * AEM翻譯架構會透過此方法實作，將字串值配對（原始和更新的翻譯）傳回TMS。
 
 在使用專有翻譯記憶庫的情況下，可以攔截翻譯記憶庫更新並傳送到自訂目的地。
 
@@ -102,7 +114,7 @@ AEM會更新已設定TMS之翻譯記憶庫中現有字串的翻譯。
 
 >[!NOTE]
 >
->語言根可以有任何頁面名稱，而不僅僅是語言的ISO程式碼。 AEM一律會先檢查路徑和名稱，但如果頁面名稱未識別語言，AEM會檢查頁面的cq：language屬性以取得語言識別。
+>語言根可以有任何頁面名稱，而不僅僅是語言的ISO程式碼。 AEM一律會先檢查路徑和名稱，但如果頁面名稱未識別語言，AEM會檢查頁面的cq:language屬性以取得語言識別。
 
 ## 翻譯狀態報表 {#translation-status-reporting}
 

@@ -1,17 +1,31 @@
 ---
 title: 使用智慧內容服務設定資產標籤
-description: 瞭解如何使用智慧內容服務，在 [!DNL Adobe Experience Manager]中設定智慧標籤和增強智慧標籤。
+description: 瞭解如何使用智慧內容服務，在[!DNL Adobe Experience Manager]中設定智慧標籤和增強智慧標籤。
 role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: 26371d15-b0e1-4892-9c52-bc9829e462ca
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 752f9248-f39f-5793-a7dd-5ddafcd403c7
+    internal-label: Tagging
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: f0e3b2ca-813f-4b7a-81df-52339e17ddcf
+    internal-label: Smart Tags
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 7%
-
+source-wordcount: '1079'
+ht-degree: 8%
 ---
-
 # 針對OAuth憑證的智慧標籤進行疑難排解 {#oauth-config}
 
 需要開啟的授權設定，才能接受對[!DNL Adobe Experience Manager]應用程式的同意，以安全的方式與智慧內容服務互動。
@@ -27,7 +41,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->如有需要，您可以在[支援程式](https://experienceleague.adobe.com/zh-hant?lang=en&support-tab=home#support)之後提交支援票證。
+>如有需要，您可以在[支援程式](https://experienceleague.adobe.com/?lang=en&support-tab=home#support)之後提交支援票證。
 
 ## 現有AMS使用者的OAuth設定 {#oauth-config-new-ams-users}
 
@@ -39,12 +53,12 @@ OAuth設定需要下列先決條件：
 
 * 在[Developer Console](https://developer.adobe.com/console/user/servicesandapis)中建立新的OAuth整合。 在下列步驟中使用`ClientID`、`ClientSecret`、`OrgID`和其他屬性：
 * 下列檔案可在此路徑`/apps/system/config in crx/de`找到：
-   * `com.**adobe**.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
-   * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
+  * `com.**adobe**.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+  * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
 
 ### 現有AMS和On Prem使用者的OAuth設定 {#steps-config-oauth-onprem}
 
-以下步驟可由系統管理員執行。 AMS客戶可以聯絡Adobe代表，或在[支援程式](https://experienceleague.adobe.com/zh-hant?lang=en&support-tab=home#support)後提交支援票證。
+以下步驟可由系統管理員執行。 AMS客戶可以聯絡Adobe代表，或在[支援程式](https://experienceleague.adobe.com/?lang=en&support-tab=home#support)後提交支援票證。
 
 1. 在`com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`中新增或更新以下屬性：
 
@@ -52,7 +66,6 @@ OAuth設定需要下列先決條件：
    * `auth.token.provider.orgId="<OrgID>"`
    * `auth.token.provider.default.claims=("\"iss\"\ :\ \"<OrgID>\"")`
    * `auth.token.provider.scope="read_pc.dma_smart_content,\ openid,\ AdobeID,\ additional_info.projectedProductContext"`
-
      `auth.token.validator.type="adobe-ims-similaritysearch"`
    * 以新OAuth設定的使用者端識別碼更新`auth.token.provider.client.id`。
    * 將`auth.access.token.request`更新為`"https://ims-na1.adobelogin.com/ims/token/v3"`
@@ -76,9 +89,9 @@ OAuth設定需要下列先決條件：
 
 1. 移至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 作業]** > **[!UICONTROL 網頁主控台]**&#x200B;以開啟OSGi主控台。 按一下&#x200B;**[!UICONTROL 主要] > [!UICONTROL JMX]**。
 
-1. 按一下 `com.day.cq.dam.similaritysearch.internal.impl`。它會開啟&#x200B;**[!UICONTROL SimilaritySearch其他任務]**。
+1. 按一下 `com.day.cq.dam.similaritysearch.internal.impl`。 它會開啟&#x200B;**[!UICONTROL SimilaritySearch其他任務]**。
 
-1. 按一下 `validateConfigs()`。在&#x200B;**[!UICONTROL 驗證組態]**&#x200B;對話方塊中，按一下&#x200B;**[!UICONTROL 叫用]**。
+1. 按一下 `validateConfigs()`。 在&#x200B;**[!UICONTROL 驗證組態]**&#x200B;對話方塊中，按一下&#x200B;**[!UICONTROL 叫用]**。
 
 驗證結果會顯示在相同的對話方塊中。
 
@@ -104,13 +117,13 @@ OAuth設定需要下列先決條件：
 
 1. 在「雲端服務」頁面中，按一下「**[!UICONTROL Assets智慧標籤]**」下的「**[!UICONTROL 立即設定]**」。
 
-1. 在&#x200B;**[!UICONTROL 建立設定]**&#x200B;對話方塊中，指定智慧標籤設定的標題和名稱。 按一下&#x200B;**[!UICONTROL 建立]**。
+1. 在&#x200B;**[!UICONTROL 建立設定]**&#x200B;對話方塊中，指定智慧標籤設定的標題和名稱。 按一下「**[!UICONTROL 建立]**」。
 
 1. 在&#x200B;**[!UICONTROL AEM Smart Content Service]**&#x200B;對話方塊中，使用以下值：
 
    **[!UICONTROL 服務URL]**： `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
 
-   例如 `https://smartcontent.adobe.io/apac`。您可以將`na`、`emea`或`apac`指定為代管Experience Manager作者執行個體的地區。
+   例如 `https://smartcontent.adobe.io/apac`。 您可以將`na`、`emea`或`apac`指定為代管Experience Manager作者執行個體的地區。
 
    >[!NOTE]
    >
@@ -127,7 +140,7 @@ OAuth設定需要下列先決條件：
 
    >[!NOTE]
    >
-   >提供為[!UICONTROL 服務URL]的URL無法透過瀏覽器存取，且會產生404錯誤。 設定在[!UICONTROL 服務URL]引數的相同值下運作正常。 如需整體服務狀態與維護排程，請參閱[https://status.adobe.com/zh-tw](https://status.adobe.com/zh-tw)。
+   >提供為[!UICONTROL 服務URL]的URL無法透過瀏覽器存取，且會產生404錯誤。 設定在[!UICONTROL 服務URL]引數的相同值下運作正常。 如需整體服務狀態與維護排程，請參閱[https://status.adobe.com](https://status.adobe.com)。
 
 1. 按一下&#x200B;**[!UICONTROL 下載OAuth整合的公開憑證]**，然後下載公開憑證檔案`AEM-SmartTags.crt`。 此外，您不再需要在Adobe開發人員控制檯中上傳此憑證。
 
@@ -137,13 +150,13 @@ OAuth設定需要下列先決條件：
 
 ## 建立Adobe Developer Console整合 {#create-adobe-i-o-integration}
 
-若要使用智慧內容服務API，請在Adobe Developer Console中建立整合，以取得[!DNL Experience Manager]中雲端設定的[!UICONTROL Assets智慧標籤服務設定]的[!UICONTROL API金鑰] (產生於Adobe Developer Console整合的[!UICONTROL 使用者端識別碼]欄位中)、[!UICONTROL 技術帳戶識別碼]、[!UICONTROL 組織識別碼]以及[!UICONTROL 使用者端密碼]。
+若要使用智慧內容服務API，請在Adobe Developer Console中建立整合，以取得[!DNL Experience Manager]中雲端設定的[!UICONTROL Assets智慧標籤服務設定]的[!UICONTROL API金鑰] （產生於Adobe Developer Console整合的[!UICONTROL 使用者端識別碼]欄位中）、[!UICONTROL 技術帳戶識別碼]、[!UICONTROL 組織識別碼]以及[!UICONTROL 使用者端密碼]。
 
 1. 存取瀏覽器中的[https://developer.adobe.com/console/](https://developer.adobe.com/console/)。 選取適當的帳戶，並確認相關聯的組織角色是系統管理員。
 
-1. 以任何所需的名稱建立專案。按一下&#x200B;**[!UICONTROL 「新增 API」]**。
+1. 以任何所需的名稱建立專案。 按一下&#x200B;**[!UICONTROL 「新增 API」]**。
 
-1. 在&#x200B;**[!UICONTROL 新增 API]** 頁面上選取&#x200B;**[!UICONTROL 「Experience Cloud」]**，然後選取&#x200B;**[!UICONTROL 「智慧內容」]**。按一下&#x200B;**[!UICONTROL 下一步]**。
+1. 在&#x200B;**[!UICONTROL 新增 API]** 頁面上選取&#x200B;**[!UICONTROL 「Experience Cloud」]**，然後選取&#x200B;**[!UICONTROL 「智慧內容」]**。 按一下&#x200B;**[!UICONTROL 下一步]**。
 
 1. 選擇&#x200B;**[!UICONTROL OAuth伺服器對伺服器]**&#x200B;驗證方法。
 
@@ -172,7 +185,7 @@ OAuth設定需要下列先決條件：
 
 1. 在&#x200B;**[!UICONTROL Assets智慧標籤]**&#x200B;底下，開啟上方建立的設定。 在服務設定頁面上，按一下&#x200B;**[!UICONTROL 編輯]**。
 
-1. 在「 **[!UICONTROL AEM Smart Content Service]** 」對話方塊中 **[!UICONTROL ，使用「服務URL」和「授權伺服器」欄位的預先填入值]**&#x200B;**&#x200B;** 。
+1. 在「 **[!UICONTROL AEM Smart Content Service]** 」對話方塊中 **[!UICONTROL ，使用「服務URL」和「授權伺服器」欄位的預先填入值]****** 。
 
 1. 針對欄位[!UICONTROL Api金鑰]、[!UICONTROL 技術帳戶ID]、[!UICONTROL 組織ID]和[!UICONTROL 使用者端密碼]，請複製並使用在[Adobe Developer Console整合](#create-adobe-i-o-integration)中產生的下列值。
 
@@ -187,4 +200,4 @@ OAuth設定需要下列先決條件：
 >
 >* [智慧標籤概觀及訓練方式](enhanced-smart-tags.md)
 >* [設定智慧標籤](config-smart-tagging.md)
->* [有關智慧標籤的教學影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=zh-Hant)
+>* [有關智慧標籤的教學影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

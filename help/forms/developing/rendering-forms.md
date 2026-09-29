@@ -10,14 +10,27 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 3f1f9ecb-be62-4428-8db8-23c57081b0f7
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 0%
-
 ---
-
 # 呈現Forms {#rendering-forms}
 
 **本檔案中的範例和範例僅適用於JEE環境上的AEM Forms。**
@@ -50,7 +63,7 @@ Forms服務可讓您建立互動式資料擷取使用者端應用程式，以驗
 * 根據片段轉譯表單。 （請參閱[根據片段呈現Forms](/help/forms/developing/rendering-forms-based-fragments.md)。）
 * 轉譯啟用許可權的表單。 （請參閱[轉譯啟用許可權的Forms](/help/forms/developing/rendering-rights-enabled-forms.md)。）
 * 將表單轉譯為HTML。 （請參閱[將Forms轉譯為HTML](/help/forms/developing/rendering-forms-html.md)。）
-* 使用自訂CSS檔案呈現HTML Forms （[使用自訂CSS檔案呈現HTML Forms &#x200B;](/help/forms/developing/rendering-html-forms-using-custom.md)。）
+* 使用自訂CSS檔案呈現HTML Forms （[使用自訂CSS檔案呈現HTML Forms ](/help/forms/developing/rendering-html-forms-using-custom.md)。）
 * 處理提交的表單。 （請參閱[處理已提交的Forms](/help/forms/developing/handling-submitted-forms.md)。）
 * 使用已提交的XML資料建立PDF檔案。 （請參閱[使用已提交的XML資料建立PDF檔案](/help/forms/developing/creating-pdf-documents-submitted-xml.md)。）
 * 預先填入表單。 （請參閱[使用可流動配置預先填入Forms](/help/forms/developing/prepopulating-forms-flowable-layouts.md)。）

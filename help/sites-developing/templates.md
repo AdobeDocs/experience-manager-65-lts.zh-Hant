@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 3b3cff43-4edc-4250-8e6d-08eb5906ffcd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 2%
-
 ---
-
 # 範本{#templates}
 
 範本在AEM中的不同時間點使用：
@@ -45,9 +54,9 @@ AEM現在提供兩種基本型別的範本以用於建立頁面：
 
 * 此更新已引入，可讓您為使用範本建立的任何頁面定義下列內容：
 
-   * 結構
-   * 初始內容
-   * 內容原則
+  * 結構
+  * 初始內容
+  * 內容原則
 
 * 建立新頁面後，頁面與範本之間會維持動態連線。 此連線表示對範本結構的變更會反映在使用該範本建立的任何頁面上；初始內容的變更不會反映出來。
 * 使用內容原則（從範本編輯器編輯）來儲存設計屬性（不使用頁面編輯器中的設計模式）。
@@ -56,7 +65,7 @@ AEM現在提供兩種基本型別的範本以用於建立頁面：
 
 >[!NOTE]
 >
->請參閱[使用可編輯的頁面範本來開發Experience Manager網站](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=zh-Hant)。
+>請參閱[使用可編輯的頁面範本來開發Experience Manager網站](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)。
 
 ### 靜態範本 {#static-templates}
 

@@ -6,13 +6,22 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
 exl-id: 9df608f8-cdd0-4820-aab1-eab9fd70f961
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1796'
 ht-degree: 2%
-
 ---
-
 # 升級自訂搜尋Forms{#upgrading-custom-search-forms}
 
 在AEM 6.2中，自訂搜尋Forms在存放庫中的儲存位置已變更。 升級後，這些檔案會從6.1中的位置移至：
@@ -156,13 +165,13 @@ ht-degree: 2%
 * 移除`pagestatuspredicate`節點
 * 複製節點
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
-   * 至`/conf/global/settings/cq/search/facets/sites/jcr:content/items`
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
+  * 至`/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
 * 複製節點
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
-   * 至`/conf/global/settings/cq/search/facets/sites/jcr:content/items`
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
+  * 至`/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
 * 請確定您將`analyticspredicate`節點的`listOrder`屬性設定為&quot;**8**&quot;。 這是避免衝突所需。
 

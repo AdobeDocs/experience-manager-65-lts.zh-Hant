@@ -6,13 +6,22 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
 exl-id: c499432d-6aa4-481f-821d-bd2f9b7a911d
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 1%
-
 ---
-
 # 使用模式偵測器評估升級複雜性
 
 ## 概觀 {#overview}
@@ -49,7 +58,7 @@ ht-degree: 1%
    ![熒幕擷圖–2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **透過互動式文字或一般JSON介面**
-* **透過反應式JSON行介面，**&#x200B;可在每行產生個別的JSON檔案。
+* **透過反應式JSON行介面，**可在每行產生個別的JSON檔案。
 
 以下詳細說明了這兩種方法：
 
@@ -110,7 +119,7 @@ curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-det
     "code": "ECU",
     "type": "extraneous.content.usage",
     "detective": "ContentAccessDetector",
-    "moreInfo": "https://www.adobe.com/go/aem6_ECU_tw"
+    "moreInfo": "https://www.adobe.com/go/aem6_ECU"
   },
   "item": {
     "id": "a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f",

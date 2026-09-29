@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7ae41982-8438-41a6-91f9-3b3b6755a39b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 11%
-
 ---
-
 # 建立自訂Cloud Service{#creating-a-custom-cloud-service}
 
 預設的雲端服務組合可使用自訂Cloud Service型別進行擴充。 這可讓您以結構化的方式將自訂標籤插入頁面中。 這主要用於協力廠商分析提供者，例如Google Analytics、Chartbeat等。 Cloud Services從父頁面繼承到子頁面，並能夠在任何層級中斷繼承。
@@ -51,7 +60,7 @@ ht-degree: 11%
    * **超級型別**： `cq/cloudserviceconfigs/components/configpage`
    * **群組**： `.hidden`
 
-1. 按兩次「下一步&#x200B;**&#x200B;**」並指定：
+1. 按兩次「下一步&#x200B;****」並指定：
 
    * **允許的父系：** `acs/analytics/templates/googleanalytics`
 

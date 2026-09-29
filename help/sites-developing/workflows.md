@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 625affd0-0e1a-4db8-812f-b6ce70cfe035
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1453'
+source-wordcount: '1478'
 ht-degree: 3%
-
 ---
-
 # 開發和延伸工作流程{#developing-and-extending-workflows}
 
 AEM提供了數種工具和資源，用於建立工作流程模型、開發工作流程步驟，以及以程式設計方式與工作流程互動。
@@ -51,7 +60,7 @@ AEM提供了數種工具和資源，用於建立工作流程模型、開發工�
 
 工作流程模型的版本已設定。 當您執行工作流程例項時，它會使用並保留工作流程的執行階段模型（如工作流程啟動時可用）。
 
-在工作流程模型編輯器[&#128279;](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model)中觸發&#x200B;**Sync**&#x200B;時，產生執行階段模型。
+在工作流程模型編輯器](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model)中觸發&#x200B;**Sync**&#x200B;時，產生執行階段模型[。
 
 對發生的工作流程模型或產生的執行階段模型（或兩者皆有） *之後*&#x200B;特定執行個體啟動的編輯未套用至該執行個體。
 
@@ -66,7 +75,7 @@ AEM提供了數種工具和資源，用於建立工作流程模型、開發工�
 每個步驟都會完成離散任務。 有不同型別的工作流程步驟：
 
 * 參與者（使用者/群組）：這些步驟會產生工作專案並將其指派給使用者或群組。 使用者必須完成工作專案才能推進工作流程。
-* 處理(指令碼、Java™方法呼叫)：這些步驟會由系統自動執行。 ECMA指令碼或Java™類別會實作該步驟。 可以開發服務以監聽特殊的工作流程事件，並根據商業邏輯執行任務。
+* 處理（指令碼、Java™方法呼叫）：這些步驟會由系統自動執行。 ECMA指令碼或Java™類別會實作該步驟。 可以開發服務以監聽特殊的工作流程事件，並根據商業邏輯執行任務。
 * 容器（子工作流程）：此型別的步驟會啟動另一個工作流程模型。
 * OR分割/聯結：使用邏輯來決定要在工作流程中執行下一個步驟。
 * AND分割/聯結：允許同時執行多個步驟。
@@ -89,7 +98,7 @@ AEM提供了數種工具和資源，用於建立工作流程模型、開發工�
 * `WorkItem`參考工作流程執行個體。
 * 在存放庫中，`WorkItem`儲存在工作流程執行個體下方。
 
-### 總額 {#payload}
+### 承載 {#payload}
 
 參考必須透過工作流程進行進階的資源。
 
@@ -200,11 +209,11 @@ AEM提供了數種工具和資源，用於建立工作流程模型、開發工�
    | 步驟 5 | 完成 |
    | 步驟 6 | 完成 |
 
-1. 執行工作流程時，使用者可以根據階段名稱（而不是步驟名稱）檢視進度。 工作流程進度顯示在[收件匣](/help/sites-authoring/inbox.md)中列出的工作流程專案[&#128279;](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions)的工作流程詳細資訊視窗的工作流程資訊索引標籤中。
+1. 執行工作流程時，使用者可以根據階段名稱（而不是步驟名稱）檢視進度。 工作流程進度顯示在[收件匣](/help/sites-authoring/inbox.md)中列出的工作流程專案](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions)的工作流程詳細資訊視窗的[工作流程資訊索引標籤中。
 
 ### 工作流程和Forms {#workflows-and-forms}
 
-工作流程通常用於處理AEM中的表單提交。 它可以是標準AEM執行個體中可用的[核心元件表單元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=zh-Hant)，或是[AEM Forms解決方案](/help/forms/using/aem-forms-workflow.md)。
+工作流程通常用於處理AEM中的表單提交。 它可以是標準AEM執行個體中可用的[核心元件表單元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html)，或是[AEM Forms解決方案](/help/forms/using/aem-forms-workflow.md)。
 
 建立表單時，可輕鬆將表單提交與工作流程模型建立關聯。 例如，將內容儲存在存放庫的特定位置，或通知使用者表單提交及其內容。
 

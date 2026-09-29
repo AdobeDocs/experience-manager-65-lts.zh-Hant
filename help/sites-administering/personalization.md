@@ -9,13 +9,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
 exl-id: 558cf29b-34f4-4ead-b8d6-67ef8aaa5dc5
-source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1542'
 ht-degree: 2%
-
 ---
-
 # 個人化 {#personalization}
 
 ## 什麼是Personalization？ {#what-is-personalization}
@@ -73,7 +84,7 @@ Personalization可用於許多情況，例如：
 
 ### 銷售及分銷網站 {#sales-site}
 
-* 銷售和發佈網站(例如Amazon)可以結合使用者個人資料、使用者的銷售記錄和瀏覽記錄，以建議使用者接下來可能會感興趣的內容。
+* 銷售和發佈網站（例如Amazon）可以結合使用者個人資料、使用者的銷售記錄和瀏覽記錄，以建議使用者接下來可能會感興趣的內容。
 
 ### 搜尋網站 {#search-site}
 

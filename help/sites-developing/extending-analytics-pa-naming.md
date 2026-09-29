@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d7c33a37-a675-490d-b28d-1a367ffa33e9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 0%
-
 ---
-
 # 為Analytics實作伺服器端頁面命名{#implementing-server-side-page-naming-for-analytics}
 
 Adobe Analytics使用`s.pageName`屬性來唯一識別頁面，並為頁面所收集的資料建立關聯。 您通常會在AEM中執行下列工作，將AEM傳送給Analytics的值指派給此屬性：
@@ -42,7 +51,7 @@ Adobe Analytics使用`s.pageName`屬性來唯一識別頁面，並為頁面所�
 
 * `pagedata.navTitle`：服務使用`page.getNavigationTitle()`
 
-`page`物件是頁面的[`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/tw/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) Java物件。
+`page`物件是頁面的[`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) Java物件。
 
 如果您未將CQ變數對應到架構中的`s.pageName`屬性，則會從頁面路徑產生`s.pageName`的值。 例如，路徑為`/content/geometrixx/en`的頁面使用`s.pageName`的值`content:geometrixx:en`。
 

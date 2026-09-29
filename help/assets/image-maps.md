@@ -6,13 +6,24 @@ role: User, Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 6665a26e-61b3-4780-87e4-1c6824ca5cc0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '273'
 ht-degree: 2%
-
 ---
-
 # 新增影像地圖 {#adding-image-maps}
 
 影像地圖可讓您新增一或多個功能與其他超連結相同的超連結區域。
@@ -28,7 +39,7 @@ ht-degree: 2%
    * 在&#x200B;**[!UICONTROL 卡片]**&#x200B;或&#x200B;**[!UICONTROL 清單]**&#x200B;檢視中，選取資產並按一下工具列上的&#x200B;**[!UICONTROL 編輯]**。
    * 從資產頁面按一下&#x200B;**[!UICONTROL 編輯]**。
 
-1. 若要插入影像地圖，請從工具列按一下[啟動地圖] **![&#x200B; &#x200B;](assets/do-not-localize/image-map-icon.png)。**
+1. 若要插入影像地圖，請從工具列按一下[啟動地圖] ]**![ ](assets/do-not-localize/image-map-icon.png)。**[!UICONTROL 
 1. 選取影像地圖的形狀。 選取形狀的熱點會放置在影像上。
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
@@ -45,4 +56,4 @@ ht-degree: 2%
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
-   如果[動態媒體]選項已啟用，請瀏覽至[資產編輯器]，然後按一下[對映]&#x200B;**[!UICONTROL 以檢視所有套用的影像對映。]**
+   如果[動態媒體]選項已啟用，請瀏覽至[資產編輯器]，然後按一下[對映]**[!UICONTROL 以檢視所有套用的影像對映。]**

@@ -1,6 +1,6 @@
 ---
 title: 基本處理
-description: 使用Adobe Experience Manager作者環境時的基本處理概觀。 它使用Sites主控台作為基礎。
+description: 使用Adobe Experience Manager作者環境時的基本處理概觀。 其以 Sites 主控台作為基礎。
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: bc424dcd-f3a7-48f5-848d-1b14b8e26862
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 3%
-
+source-wordcount: '1188'
+ht-degree: 4%
 ---
-
 # 基本處理{#basic-handling}
 
 >[!NOTE]
@@ -54,7 +63,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><strong>啟動</strong></td>
-   <td>這可協助您管理您的<a href="/help/sites-classic-ui-authoring/classic-launches.md">啟動</a>；這些啟動可讓您為未來發行的一或多個已啟動網頁開發內容。<br /> <i>注意：在觸控式UI中，Sites主控台中提供許多相同的功能，以及參考邊欄。</i> <i>如有必要，可以從[工具]主控台取得此主控台；請選取[作業]，然後選取[啟動]。</i></td>
+   <td>這可協助您管理您的<a href="/help/sites-classic-ui-authoring/classic-launches.md">啟動</a>；這些啟動可讓您為未來發行的一或多個已啟動網頁開發內容。<br /> <i>注意：在觸控式UI中，Sites Console中提供許多相同的功能，以及「參考」邊欄。</i> <i>如有必要，可以從[工具]主控台取得此主控台；請選取[作業]，然後選取[啟動]。</i></td>
   </tr>
   <tr>
    <td><strong>收件匣 </strong></td>
@@ -117,10 +126,10 @@ ht-degree: 3%
 
 * 按一下左窗格中的頁面名稱會執行下列動作：
 
-   * 列出右側窗格中的子頁面
-   * 展開左側窗格中的結構。
+  * 列出右側窗格中的子頁面
+  * 展開左側窗格中的結構。
 
-     基於效能考量，此動作會視子節點的數目而定。 在標準安裝中，當子節點數目為`30`或更少時，這個擴充方法就會運作。
+    基於效能考量，此動作會視子節點的數目而定。 在標準安裝中，當子節點數目為`30`或更少時，這個擴充方法就會運作。
 
 * 連按兩下頁面名稱（左窗格）會展開樹狀結構，不過同時開啟頁面時，這種效果並不明顯。
 
@@ -141,7 +150,7 @@ ht-degree: 3%
 >在：
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
->如需詳細資訊，請參閱CQ Widget API[&#128279;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin)中的SiteAdmin 。
+>如需詳細資訊，請參閱CQ Widget API](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin)中的[SiteAdmin 。
 
 ## 網站主控台上的頁面資訊 {#page-information-on-the-websites-console}
 
@@ -155,7 +164,7 @@ ht-degree: 3%
  <tbody>
   <tr>
    <td><strong>欄</strong></td>
-   <td><strong>描述</strong></td>
+   <td><strong>說明</strong></td>
   </tr>
   <tr>
    <td>縮圖</td>
@@ -174,7 +183,7 @@ ht-degree: 3%
    <td>指出頁面是否已發佈，並提供發佈日期和時間。</td>
   </tr>
   <tr>
-   <td>修改日期</td>
+   <td>已修改</td>
    <td>指出頁面是否已修改，並提供修改日期和時間。 若要儲存任何修改，您必須啟動頁面。</td>
   </tr>
   <tr>
@@ -198,7 +207,7 @@ ht-degree: 3%
    <td>表示頁面在工作流程中。</td>
   </tr>
   <tr>
-   <td>鎖定者: </td>
+   <td>鎖定者:</td>
    <td>顯示頁面何時已鎖定，以及已鎖定頁面的使用者帳戶。</td>
   </tr>
   <tr>
@@ -220,8 +229,8 @@ ht-degree: 3%
 | 已發佈 | 黃色 | 正在等候發佈。 系統尚未收到發佈的確認。 |
 | 已發佈 | 紅色 | 發佈失敗。 未與發佈執行個體建立連線。 這也表示內容已停用。 |
 | 已發佈 | *空白* | 此頁面未曾發佈。 |
-| 修改日期 | 藍色 | 自上次發佈後，頁面已修改。 |
-| 修改日期 | *空白* | 此頁面從未修改過，或自上次發佈後從未修改過。 |
+| 已修改 | 藍色 | 自上次發佈後，頁面已修改。 |
+| 已修改 | *空白* | 此頁面從未修改過，或自上次發佈後從未修改過。 |
 
 ## 內容功能表 {#context-menus}
 

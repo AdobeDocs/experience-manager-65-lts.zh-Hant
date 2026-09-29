@@ -5,13 +5,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: fc736c74bc5bd584059038ad5a54ffc814d095a2
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1437'
 ht-degree: 4%
-
 ---
-
 # 部署和維護{#deploying-and-maintaining}
 
 您可以在此頁面找到：
@@ -102,7 +114,7 @@ AEM伺服器是&#x200B;**Java型**，並在支援該平台的大多數作業系�
 
 ### 使用Cloud Manager的Managed Services {#managed-services-using-cloud-manager}
 
-對於Adobe Managed Services部署，AEM環境是透過[Cloud Manager](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/introduction)部署及管理。 若要監視整個生產和非生產環境的應用程式效能和基礎結構狀況，請參閱[可觀察性深入分析](https://experienceleague.adobe.com/zh-hant/docs/ams-observability-insights/content/overview)。
+對於Adobe Managed Services部署，AEM環境是透過[Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)部署及管理。 若要監視整個生產和非生產環境的應用程式效能和基礎結構狀況，請參閱[可觀察性深入分析](https://experienceleague.adobe.com/en/docs/ams-observability-insights/content/overview)。
 
 ## 快速入門 {#getting-started}
 

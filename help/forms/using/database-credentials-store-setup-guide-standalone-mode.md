@@ -5,13 +5,21 @@ solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
 exl-id: f6e29287-a558-43ad-8465-ebf167c79c63
-source-git-commit: b4abf61e0d30396e78ecebf228114ad2bde30633
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 0%
-
+source-wordcount: '844'
+ht-degree: 1%
 ---
-
 # Database Credential Store安裝指南（獨立模式）
 
 ## 概觀
@@ -44,11 +52,11 @@ ht-degree: 0%
    - 指令碼使用`embed-server`，這要求伺服器停止
    - 如果JBoss正在執行，指令碼將會失敗
    - 檢查JBoss是否正在執行：
-      - Windows：檢查`java.exe`處理序的工作管理員
-      - Linux： `ps aux | grep jboss`或`ps aux | grep java`
+     - Windows：檢查`java.exe`處理序的工作管理員
+     - Linux： `ps aux | grep jboss`或`ps aux | grep java`
    - 停止JBoss （若正在執行）：
-      - 在執行JBoss的終端機中按`Ctrl+C`
-      - 或手動終止處理序
+     - 在執行JBoss的終端機中按`Ctrl+C`
+     - 或手動終止處理序
 
 2. **您已準備好資料庫密碼**
 
@@ -69,7 +77,7 @@ ht-degree: 0%
 
 **指令碼：** `create-elytron-cred-standalone.bat`
 
-從`create-elytron-cred-standalone.bat`軟體發佈入口網站[下載](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip)指令碼。
+從[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip)下載`create-elytron-cred-standalone.bat`指令碼。
 
 **指令碼會提示您輸入：**
 1. **JBOSS_HOME路徑** （例如`C:\Adobe\Adobe_Experience_Manager_Forms\jboss`）
@@ -82,10 +90,10 @@ ht-degree: 0%
 - 建立認證存放區： `JBOSS_HOME\standalone\configuration\cred-store.p12`
 - 暫時修改設定檔案以啟用認證存放區建立
 - 使用資料庫密碼新增下列別名：
-   - `EncryptDBPassword`
-   - `EncryptDBPassword_IDP_DS`
-   - `EncryptDBPassword_EDC_DS`
-   - `EncryptDBPassword_AEM_DS`
+  - `EncryptDBPassword`
+  - `EncryptDBPassword_IDP_DS`
+  - `EncryptDBPassword_EDC_DS`
+  - `EncryptDBPassword_AEM_DS`
 - 將組態檔還原至其原始狀態
 - 驗證所有別名是否已成功新增
 
@@ -93,7 +101,7 @@ ht-degree: 0%
 
 **指令碼** `create-elytron-cred-standalone.sh`
 
-從`create-elytron-cred-standalone.sh`軟體發佈入口網站[下載](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip)指令碼。
+從[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip)下載`create-elytron-cred-standalone.sh`指令碼。
 
 **指令碼會提示您輸入：**
 
@@ -107,10 +115,10 @@ ht-degree: 0%
 - 建立認證存放區： `JBOSS_HOME/standalone/configuration/cred-store.p12`
 - 暫時修改設定檔案以啟用認證存放區建立
 - 使用資料庫密碼新增下列別名：
-   - `EncryptDBPassword`
-   - `EncryptDBPassword_IDP_DS`
-   - `EncryptDBPassword_EDC_DS`
-   - `EncryptDBPassword_AEM_DS`
+  - `EncryptDBPassword`
+  - `EncryptDBPassword_IDP_DS`
+  - `EncryptDBPassword_EDC_DS`
+  - `EncryptDBPassword_AEM_DS`
 - 將組態檔還原至其原始狀態
 - 驗證所有別名是否已成功新增
 
@@ -152,7 +160,7 @@ Credential store setup completed successfully!
 set "JAVA_OPTS=%JAVA_OPTS% -DCS_PASS=YourActualPassword123"
 ```
 
-以您在步驟1中使用的`YourActualPassword123`認證存放區密碼&#x200B;**取代**。
+以您在步驟1中使用的&#x200B;**認證存放區密碼**&#x200B;取代`YourActualPassword123`。
 
 #### 在Linux上：
 
@@ -166,7 +174,7 @@ set "JAVA_OPTS=%JAVA_OPTS% -DCS_PASS=YourActualPassword123"
 JAVA_OPTS="$JAVA_OPTS -DCS_PASS=YourActualPassword123"
 ```
 
-以您在步驟1中使用的`YourActualPassword123`認證存放區密碼&#x200B;**取代**。
+以您在步驟1中使用的&#x200B;**認證存放區密碼**&#x200B;取代`YourActualPassword123`。
 
 ### 步驟3：啟動JBoss
 
@@ -222,7 +230,7 @@ ERROR Unable to load credential store - Invalid password
 ```
 
 **解決方案：**
-驗證`standalone.conf.bat` / `standalone.conf` （步驟2）中的密碼是否與建立認證存放區（步驟1）時使用的密碼相符。
+確認`standalone.conf.bat` / `standalone.conf` （步驟2）中的密碼符合建立認證存放區（步驟1）時使用的密碼。
 
 要修正的&#x200B;**：**
 編輯`standalone.conf.bat` / `standalone.conf`並更新密碼：

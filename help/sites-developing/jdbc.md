@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 0d5e1e83-9ecf-41d6-adbe-8b06a034943e
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 0%
-
 ---
-
 # 連線到SQL資料庫{#connecting-to-sql-databases}
 
 存取外部SQL資料庫，讓您的CQ應用程式可以與資料互動：
@@ -28,7 +37,7 @@ ht-degree: 0%
 
 某些資料庫廠商以OSGi套件組合提供JDBC驅動程式，例如[MySQL](https://dev.mysql.com/downloads/connector/j/)。 如果資料庫的JDBC驅動程式無法做為OSGi套件組合使用，請取得驅動程式JAR並將其包裝在OSGi套件組合中。 組合必須匯出與資料庫伺服器互動所需的套件。 組合也必須匯入它參照的套件。
 
-下列範例使用Maven[&#128279;](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html)的Bundle外掛程式將HSQLDB驅動程式包裝在OSGi套件中。 POM會指示外掛程式內嵌識別為相依性的hsqldb.jar檔案。 所有org.hsqldb套裝軟體都會匯出。
+下列範例使用Maven](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html)的[Bundle外掛程式將HSQLDB驅動程式包裝在OSGi套件中。 POM會指示外掛程式內嵌識別為相依性的hsqldb.jar檔案。 所有org.hsqldb套裝軟體都會匯出。
 
 外掛程式會自動決定要匯入哪些套件，並將它們列在套件組合的MANIFEST.MF檔案中。 如果CQ伺服器上沒有任何套裝軟體，安裝時就不會啟動套裝軟體。 兩種可能的解決方案如下：
 

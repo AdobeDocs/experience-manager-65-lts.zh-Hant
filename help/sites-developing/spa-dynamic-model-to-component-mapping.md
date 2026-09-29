@@ -10,13 +10,27 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 051be106-bb15-46b2-8158-53817f68f57c
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '336'
 ht-degree: 0%
-
 ---
-
 
 # SPA的元件對應動態模型{#dynamic-model-to-component-mapping-for-spas}
 
@@ -39,7 +53,7 @@ ht-degree: 0%
 使用適用於AEM的JavaScript SPA SDK的單頁應用程式是模型導向的：
 
 1. 前端元件註冊到[元件對應存放區](/help/sites-developing/spa-dynamic-model-to-component-mapping.md#componentmapping-module)。
-1. 然後[模型提供者](/help/sites-developing/spa-blueprint.md#container)提供模型的[容器](/help/sites-developing/spa-blueprint.md#the-model-provider)會反複執行其模型內容(`:items`)。
+1. 然後[模型提供者](/help/sites-developing/spa-blueprint.md#the-model-provider)提供模型的[容器](/help/sites-developing/spa-blueprint.md#container)會反複執行其模型內容(`:items`)。
 
 1. 如果有頁面，其子系(`:children`)會先從[元件對應](/help/sites-developing/spa-blueprint.md#componentmapping)取得元件類別，然後將其具現化。
 

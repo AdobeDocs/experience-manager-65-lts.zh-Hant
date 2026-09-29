@@ -10,13 +10,26 @@ feature: Forms Designer,Designer
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: b364d618-57fa-4e43-a1cd-049b7313e6a6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 1af3c3d4-88d7-5e0f-813c-eb70824bfcdd
+    internal-label: Forms Designer
+  - id: 794033c1-20ea-55a4-a8a6-b1107e12deb0
+    internal-label: Designer
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '657'
 ht-degree: 0%
-
 ---
-
 # 在HTML5 Forms中使用手寫簽名{#using-scribble-signature-in-html-forms}
 
 HTML5表單越來越多地用於觸控裝置，常見的要求之一便是支援簽名。 在行動裝置上簽署表單時，塗寫（使用手寫筆或手指書寫）已成為一種可接受的方式。 HTML5 forms和Forms Designer現在提供在表單上有手寫簽名欄位的選項。 當表單在瀏覽器中呈現時，人們可以使用手寫筆、滑鼠或觸控來登入這些欄位。

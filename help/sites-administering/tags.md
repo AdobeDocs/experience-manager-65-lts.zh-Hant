@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 6659ca39-f297-40b9-88e2-d942aa653e9b
-source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1745'
-ht-degree: 9%
-
+source-wordcount: '1771'
+ht-degree: 10%
 ---
-
 # 管理標記 {#administering-tags}
 
 標籤是一種將網站內容分類的快速輕鬆方法。 它們可視為關鍵字或標籤（中繼資料），以便在搜尋結果中更快地找到內容。
@@ -24,32 +33,32 @@ ht-degree: 9%
 
 * 頁面的內容節點（請參閱[使用標籤](/help/sites-authoring/tags.md)）
 
-* 資產的中繼資料節點(請參閱[管理數位Assets的中繼資料](/help/assets/metadata.md))
+* 資產的中繼資料節點（請參閱[管理數位Assets的中繼資料](/help/assets/metadata.md)）
 
 ## 標記功能 {#tag-features}
 
 AEM中的部分標籤功能包括：
 
-* 標籤可以分組到各種名稱空間中。 此類階層允許建立分類。 這些分類法在整個 AEM 中都適用。
+* 標記可分門別類至不同的命名空間。 此類階層允許建立分類。 這些分類法在整個 AEM 中都適用。
 * 新建立標籤的主要限制是在特定名稱空間中必須是唯一的。
 * 標籤的標題不應包含標籤路徑分隔字元（如果存在的話，也不會顯示）
 
-   * 冒號`:` — 分隔名稱空間標籤
-   * 正斜線`/` — 分隔子標籤
+  * 冒號`:` — 分隔名稱空間標籤
+  * 正斜線`/` — 分隔子標籤
 
 * 作者和網站訪客可套用標籤。 無論由誰建立，所有形式的標記都可在指定給頁面或搜尋時用於選取。
 * 「tag-administrators」群組的成員以及擁有`/content/cq:tags`修改許可權的成員可以建立標籤並修改其分類。
 
-   * 包含子標籤的標籤稱為容器標籤
-   * 非容器標籤的標籤稱為分葉標籤
-   * 標籤名稱空間是葉標籤或容器標籤
+  * 包含子標籤的標籤稱為容器標籤
+  * 非容器標籤的標籤稱為分葉標籤
+  * 標籤名稱空間是葉標籤或容器標籤
 
-* [搜尋元件](https://helpx.adobe.com/tw/experience-manager/core-components/using/quick-search.html)使用標籤來協助尋找內容。
-* 標籤由[Teaser元件](https://helpx.adobe.com/tw/experience-manager/core-components/using/teaser.html)使用，該元件會監視使用者的標籤雲以提供目標內容。
+* [搜尋元件](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html)使用標籤來協助尋找內容。
+* 標籤由[Teaser元件](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html)使用，該元件會監視使用者的標籤雲以提供目標內容。
 * 如果標籤是內容的重要方面
 
-   * 請務必封裝標籤與使用這些標籤的頁面
-   * 請確定[標籤許可權](#setting-tag-permissions)啟用讀取存取權
+  * 請務必封裝標籤與使用這些標籤的頁面
+  * 請確定[標籤許可權](#setting-tag-permissions)啟用讀取存取權
 
 ## 標記主控台 {#tagging-console}
 
@@ -63,9 +72,9 @@ AEM中的部分標籤功能包括：
 * 以管理許可權登入
 * 從全域導覽
 
-   * 選取&#x200B;**`Tools`**
-   * 選取&#x200B;**`General`**
-   * 選取&#x200B;**`Tagging`**
+  * 選取&#x200B;**`Tools`**
+  * 選取&#x200B;**`General`**
+  * 選取&#x200B;**`Tagging`**
 
 ![managing_tags_usingthetagasministrationconsole](assets/managing_tags_usingthetagasministrationconsolea.png)
 
@@ -83,7 +92,7 @@ AEM中的部分標籤功能包括：
 * **名稱**
   *（選擇性）*&#x200B;名稱空間的名稱。 如果未指定，則會從標題建立有效的節點名稱。 請參閱 [TagID](/help/sites-developing/framework.md#tagid)。
 
-* **說明**
+* **描述**
   *（選擇性）*&#x200B;名稱空間的描述。
 
 輸入必要資訊後
@@ -167,7 +176,7 @@ AEM中的部分標籤功能包括：
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
-選取名稱空間或其他標籤時，可以變更標題、說明，並透過選取&#x200B;**`Edit`**&#x200B;圖示提供標題的當地語系化。
+選取名稱空間或其他標籤時，可以變更標題、說明，並透過選取**`Edit`**圖示提供標題的當地語系化。
 
 完成編輯後，選取&#x200B;**儲存**。
 
@@ -218,7 +227,7 @@ AEM中的部分標籤功能包括：
 >
 >合併之後，原先選取的&#x200B;**路徑**&#x200B;將（實際上）不再存在。
 >
->移動或合併參照的標籤時，並不會實際刪除標籤，因此可以保留參照。
+>移動或合併參照的標記時，不會將該標記真的刪除，因此有可能維持參照。
 
 ### 發佈標記 {#publishing-tags}
 
@@ -238,7 +247,7 @@ AEM中的部分標籤功能包括：
 
 ![chlimage_1-203](assets/chlimage_1-203.png)
 
-選取名稱空間或其他標籤時，選取&#x200B;**刪除**&#x200B;圖示將會從作者環境中永久移除標籤。 如果該標記已發布，也會將其從發佈環境中移除。如果選取的標籤是容器標籤，則會一併移除其所有子標籤。
+選取名稱空間或其他標籤時，選取&#x200B;**刪除**&#x200B;圖示將會從作者環境中永久移除標籤。 如果該標記已發布，也會將其從發佈環境中移除。 如果選取的標籤是容器標籤，則會一併移除其所有子標籤。
 
 ## 設定標籤許可權 {#setting-tag-permissions}
 
@@ -246,30 +255,30 @@ AEM中的部分標籤功能包括：
 
 * 在作者執行個體上
 
-   * 以管理許可權登入
-   * 存取[安全性主控台](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console)，
+  * 以管理許可權登入
+  * 存取[安全性主控台](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console)，
 
-      * 例如，瀏覽至http://localhost:4502/useradmin
+    * 例如，瀏覽至http://localhost:4502/useradmin
 
-   * 在左窗格中，選取要授與[讀取許可權](/help/sites-administering/security.md#permissions)的群組（或使用者）
-   * 在右窗格中，找到&#x200B;**Path &#x200B;** 到「標籤名稱空間」
+  * 在左窗格中，選取要授與[讀取許可權](/help/sites-administering/security.md#permissions)的群組（或使用者）
+  * 在右窗格中，找到**Path **到「標籤名稱空間」
 
-      * 例如，`/content/cq:tags/mycommunity`
+    * 例如，`/content/cq:tags/mycommunity`
 
-   * 選取`checkbox`讀取&#x200B;**資料行中的**
-   * 選取&#x200B;**儲存**
+  * 選取&#x200B;**讀取**&#x200B;資料行中的`checkbox`
+  * 選取&#x200B;**儲存**
 
 ![chlimage_1-204](assets/chlimage_1-204.png)
 
 * 確認所有發佈執行個體都具有相同許可權
 
-   * 一種方法是在作者上[建立名稱空間套件](/help/sites-administering/package-manager.md#package-manager)
+  * 一種方法是在作者上[建立名稱空間套件](/help/sites-administering/package-manager.md#package-manager)
 
-      * 在`Advanced`索引標籤上，為`AC Handling`選取`Overwrite`
+    * 在`Advanced`索引標籤上，為`AC Handling`選取`Overwrite`
 
-   * 復寫封裝
+  * 復寫封裝
 
-      * 從封裝管理員選擇`Replicate`
+    * 從封裝管理員選擇`Replicate`
 
 ## 管理不同語言的標記 {#managing-tags-in-different-languages}
 
@@ -277,9 +286,9 @@ AEM中的部分標籤功能包括：
 
 ### 定義多種語言的標籤標題 {#defining-tag-titles-in-multiple-languages}
 
-以下說明如何將標籤`title`Animals **的**&#x200B;從英文翻譯成德文和法文。
+以下說明如何將標籤&#x200B;**Animals**&#x200B;的`title`從英文翻譯成德文和法文。
 
-首先，請選取&#x200B;**Stock Photography**&#x200B;名稱空間下的標籤，然後選取&#x200B;**`Edit`**&#x200B;圖示（請參閱[編輯標籤](#editing-tags)區段）。
+首先，請選取&#x200B;**Stock Photography**&#x200B;名稱空間下的標籤，然後選取**`Edit`**圖示（請參閱[編輯標籤](#editing-tags)區段）。
 
 「編輯標籤」面板可讓您選擇要將標籤標題當地語系化的語言。
 

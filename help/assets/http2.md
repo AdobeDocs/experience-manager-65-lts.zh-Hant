@@ -9,13 +9,29 @@ role: User, Admin
 feature: Publishing,Configuration
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7576e0e3-b05a-483b-9d38-316ddf0d5816
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 3%
-
 ---
-
 # HTTP/2 內容傳送 {#http-delivery-of-content}
 
 Adobe 很榮幸宣佈推出有助於提升整體效能的 HTTP/2 內容傳送。
@@ -61,7 +77,7 @@ Adobe自己的測試產生以下結果：
 
 您起始切換至HTTP/2的要求；不會自動為您完成。
 
-1. 若要切換至HTTP/2，請起始Adobe客戶支援請求。 請參閱[開啟支援票證](https://experienceleague.adobe.com/zh-hant?support-solution=General&lang=en&support-tab=home#support)。
+1. 若要切換至HTTP/2，請起始Adobe客戶支援請求。 請參閱[開啟支援票證](https://experienceleague.adobe.com/?support-solution=General&lang=en&support-tab=home#support)。
 
    1. 在您的支援要求中提供下列資訊：
 

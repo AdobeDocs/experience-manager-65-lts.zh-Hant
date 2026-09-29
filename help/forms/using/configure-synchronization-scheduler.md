@@ -9,13 +9,29 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
 exl-id: b41e5e15-eb7f-4404-82a0-2ba034694577
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 36ac8e9c-5c7a-56d8-af5e-39399fd7b101
+    internal-label: Workbench
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 0%
-
 ---
-
 # 設定同步排程器 {#configuring-the-synchronization-scheduler}
 
 根據預設，同步排程器每3分鐘會執行一次，以同步處理在存放庫中透過LiveCycle Workbench 11修改及更新的所有資產。 同步程式完成後，AEM Forms使用者介面中會顯示包含表單和資源的應用程式。
@@ -52,7 +68,7 @@ ht-degree: 0%
 
 您可以在工作流程設計工具(LiveCycle Workbench)中建立新的應用程式。
 
-如果新建立的應用程式和位於/content/dam/formsanddocuments的資料夾具有相同的名稱，則會發生錯誤「*」根層級已存在與此應用程式同名的資產。「*」已記錄。
+如果新建立的應用程式和位於/content/dam/formsanddocuments的資料夾具有相同的名稱，則會發生錯誤「*根層級已存在與此應用程式同名的資產。*」 已記錄。
 
 若要解決衝突，請重新命名應用程式，然後手動同步資產。
 

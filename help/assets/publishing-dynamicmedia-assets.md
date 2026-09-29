@@ -9,21 +9,35 @@ role: User, Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7b31db6e-1b3f-4dfe-8b87-8d70548e9c42
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '497'
 ht-degree: 4%
-
 ---
-
 # 發佈 Dynamic Media 資產 {#publishing-dynamic-media-assets}
 
 選取您已上傳的資產，並點選「**[!UICONTROL 發佈]**」或「**[!UICONTROL 快速發佈]**」，即可發佈您的Dynamic Media資產。 發佈Dynamic Media資產後，您可以透過URL或內嵌程式碼至網頁，將資產納入網頁中。
 
 您也可立即發佈您上傳的資產，無需任何使用者介入。 請參閱[設定Dynamic Media - Scene7模式](config-dms7.md)
-或者，您可以在資料夾層級使用&#x200B;**[!UICONTROL 選擇性發佈]**，選擇性地將資產發佈至Dynamic Media或Adobe Experience Manager （互斥）。 請參閱[在Dynamic Media中使用選擇性發佈](/help/assets/selective-publishing.md)。
+或者，您可以在資料夾層級使用**[!UICONTROL 選擇性發佈]**，選擇性地將資產發佈至Dynamic Media或Adobe Experience Manager （互斥）。 請參閱[在Dynamic Media中使用選擇性發佈](/help/assets/selective-publishing.md)。
 
-在&#x200B;**[!UICONTROL 卡片檢視]**&#x200B;中，資產名稱正下方以及日期和時間左側會顯示一個小型全球圖示，以指出資產已發佈。 在「清 **[!UICONTROL 單檢視]**」中，「已發佈」 **&#x200B;**&#x200B;欄會指出已發佈或未發佈的資產。
+在&#x200B;**[!UICONTROL 卡片檢視]**&#x200B;中，資產名稱正下方以及日期和時間左側會顯示一個小型全球圖示，以指出資產已發佈。 在「清 **[!UICONTROL 單檢視]**」中，「已發佈」 **** 欄會指出已發佈或未發佈的資產。
 
 >[!NOTE]
 >

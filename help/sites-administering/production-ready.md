@@ -9,13 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 99724bd6-41b4-4491-9958-1f5d9e1f5050
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 3%
-
+source-wordcount: '383'
+ht-degree: 4%
 ---
-
 # 以生產就緒模式執行AEM{#running-aem-in-production-ready-mode}
 
 透過AEM 6.1，Adobe推出了新的`"nosamplecontent"`執行模式，旨在將準備AEM執行個體以部署在生產環境中所需的步驟自動化。
@@ -66,7 +78,7 @@ java -jar aem-quickstart.jar -r author,crx3,crx3mongo,nosamplecontent -Doak.mong
 
 1. 根據預設，**Apache Sling GET Servlet**&#x200B;設定為支援安全設定，如下所示：
 
-| **組態** | **作者** | **發佈** |
+| **組態** | **製作者** | **發佈** |
 |---|---|---|
 | TXT轉譯 | 已停用 | 已停用 |
 | HTML轉譯 | 已停用 | 已停用 |

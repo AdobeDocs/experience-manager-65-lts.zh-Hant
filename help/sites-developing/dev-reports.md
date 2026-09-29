@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6ca4f66d-993b-4cfb-9b09-84bb20a54d4c
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '5298'
 ht-degree: 1%
-
 ---
-
 # 開發報表 {#developing-reports}
 
 Adobe Experience Manager (AEM)提供了一系列[標準報告](/help/sites-administering/reporting.md)，其中大部分都以報告架構為基礎。
@@ -82,7 +91,7 @@ Adobe Experience Manager (AEM)提供了一系列[標準報告](/help/sites-admin
 報告頁面為：
 
 * 標準CQ5頁面。
-* 根據為報告[&#128279;](#report-template)設定的標準CQ5範本。
+* 根據為報告](#report-template)設定的[標準CQ5範本。
 
 ### 報表基礎 {#report-base}
 
@@ -235,7 +244,7 @@ N:apps
 此元件可作為整個報表的容器，並提供下列專案的資訊：
 
 * [查詢定義](#query-definition)。
-* 用於設定報告的[&#x200B; （選擇性）對話方塊](#configuration-dialog)。
+* 用於設定報告的[ （選擇性）對話方塊](#configuration-dialog)。
 * 任何與報告整合的[圖表](#chart-definitions)。
 
 ```
@@ -361,7 +370,7 @@ N:charting
 
       * `totals` ( `Boolean`)
 
-        如果應該顯示其他顯示&#x200B;**總計**&#x200B;的行，則為True。
+        如果應該顯示其他顯示&#x200B;**總計**的行，則為True。
         預設： `false`
 
       * `series` ( `Long`)

@@ -10,16 +10,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: e1771229-b2ce-406a-95a5-99b11fafbe34
-source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '521'
 ht-degree: 0%
-
 ---
-
 # 與Adobe Target整合的先決條件{#prerequisites-for-integrating-with-adobe-target}
 
-作為AEM與Adobe Target[整合的](/help/sites-administering/target.md)一部分，您需要向Adobe Target註冊、設定復寫代理程式，以及在發佈節點上安全活動設定。
+作為AEM與Adobe Target](/help/sites-administering/target.md)整合的[一部分，您需要向Adobe Target註冊、設定復寫代理程式，以及在發佈節點上安全活動設定。
 
 ## 向Adobe Target註冊 {#registering-with-adobe-target}
 
@@ -31,7 +40,7 @@ ht-degree: 0%
 >
 >Target團隊必須啟用您的帳戶才能使用整合。
 >
->如果不是這種情況，請聯絡[Adobe客戶服務](https://experienceleague.adobe.com/zh-hant/docs/target/using/cmp-resources-and-contact-information)。
+>如果不是這種情況，請聯絡[Adobe客戶服務](https://experienceleague.adobe.com/en/docs/target/using/cmp-resources-and-contact-information)。
 
 ## 啟用Target復寫代理 {#enabling-the-target-replication-agent}
 
@@ -40,7 +49,7 @@ ht-degree: 0%
 1. 在AEM首頁上，按一下&#x200B;**工具** > **部署** > **復寫**。
 1. 按一下作者上的&#x200B;**代理程式**。
 1. 按一下&#x200B;**Test and Target (test and target)**&#x200B;復寫代理程式，然後按一下&#x200B;**編輯**。
-1. 選取[啟用]選項，然後按一下[確定]。**&#x200B;**
+1. 選取[啟用]選項，然後按一下[確定]。****
 
    >[!NOTE]
    >
@@ -52,13 +61,13 @@ ht-degree: 0%
 
 保護發佈執行個體上的活動設定節點&#x200B;**cq:ActivitySettings**，使其無法正常使用者存取。 活動設定節點應該只能由處理與Adobe Target的活動同步的服務存取。
 
-在CRXDE Lite中，活動&#x200B;**節點下的:ActivitySettings*** *下有`/content/campaigns/*nameofbrand*`cq`jcr:content`節點可供使用。 例如 `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`。此節點只有在您鎖定元件目標之後才會建立。
+在CRXDE Lite中，活動`jcr:content`節點下的`/content/campaigns/*nameofbrand*`* *下有&#x200B;**cq:ActivitySettings**&#x200B;節點可供使用。 例如 `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`。 此節點只有在您鎖定元件目標之後才會建立。
 
-活動的&#x200B;**下的:ActivitySettings** cq`jcr:content`節點受下列ACL保護：
+活動的`jcr:content`下的&#x200B;**cq:ActivitySettings**&#x200B;節點受下列ACL保護：
 
 * 拒絕所有人的所有。
-* 允許`jcr:read,rep:write`的`target-activity-authors` （作者是此開箱即用群組的成員）。
-* 允許`jcr:read,rep:write`的`targetservice`。
+* 允許`target-activity-authors`的`jcr:read,rep:write` （作者是此開箱即用群組的成員）。
+* 允許`targetservice`的`jcr:read,rep:write`。
 
 這些設定可確保一般使用者無權存取節點屬性。 在製作和發佈上使用相同的ACL。 如需詳細資訊，請參閱[使用者管理與安全性](/help/sites-administering/security.md)。
 

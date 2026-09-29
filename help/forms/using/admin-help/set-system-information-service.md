@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: e31614a9-d670-4d22-88ba-8953797f6e14
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 0%
-
 ---
-
 # 設定系統資訊服務 {#set-up-the-system-information-service}
 
 >[!NOTE]
@@ -29,4 +44,4 @@ ht-degree: 0%
 1. 導覽至「服務>應用程式及服務>服務管理」。
 1. 在[服務管理]頁面上，按一下&#x200B;**SystemInfo**&#x200B;服務。
 1. 在[端點]索引標籤上的清單中，選取[REST]，然後按一下[**新增**]。
-1. 在[新增REST端點]畫面上，按一下[新增&#x200B;**&#x200B;**]。
+1. 在[新增REST端點]畫面上，按一下[新增&#x200B;****]。

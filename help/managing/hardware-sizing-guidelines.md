@@ -5,13 +5,27 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader
 exl-id: dac9b87a-cbd2-49e3-bd4d-ebcccdec1659
-source-git-commit: a5e7c2326785d6801601eabc71647923ba854f04
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 0%
-
 ---
-
 # 硬體大小調整准則{#hardware-sizing-guidelines}
 
 這些大小調整准則提供部署AEM專案所需硬體資源的近似值。 預估規模取決於專案的架構、解決方案的複雜性、預期的流量和專案需求。 本指南可協助您判斷特定解決方案的硬體需求，或尋找硬體需求的上限與下限。
@@ -107,7 +121,7 @@ AEM在虛擬化環境中運作良好，但可能有些因素無法直接等同�
 預估需要多少叢集節點是根據基本需求及特定Web專案的特定使用案例而定：
 
 * 從故障安全的角度來看，必須根據叢集節點復原所需的時間，決定所有環境的嚴重故障以及故障補償時間。
-* 在擴充性方面，寫入作業的數目基本上是最重要的因素。 可以針對僅存取系統的作業建立負載平衡，以處理讀取作業；如需詳細資訊，請參閱[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)。
+* 在擴充性方面，寫入作業的數目基本上是最重要的因素。 可以針對僅存取系統的作業建立負載平衡，以處理讀取作業；如需詳細資訊，請參閱[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)。
 
 ### 硬體建議 {#hardware-recommendations}
 

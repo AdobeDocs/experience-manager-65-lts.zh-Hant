@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 71a49353-5273-46ee-a1ff-5bbfe5b6b0b4
-source-git-commit: c0bf6864bb344e582c4f88371c892d401ce2827c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 7%
-
+source-wordcount: '786'
+ht-degree: 8%
 ---
-
 # `We.Retail`參考實作{#we-retail-reference-implementation}
 
 ## 簡介 {#introduction}
@@ -58,7 +67,7 @@ ht-degree: 7%
 
 ### 首要步驟 {#first-steps}
 
-1. 啟動AEM （和/或安裝`We.Retail`）後，**`We.Retail`**&#x200B;網站主控台[即可使用網站](/help/sites-authoring/basic-handling.md#global-navigation)。
+1. 啟動AEM （和/或安裝`We.Retail`）後，[網站主控台](/help/sites-authoring/basic-handling.md#global-navigation)即可使用網站&#x200B;**`We.Retail`**。
 1. 例如，可以開啟下列頁面，它應該會如下列[附錄](#appendix)中所示：
 
    `https://<server name>:<port number>/editor.html/content/we-retail/language-masters/en.html`
@@ -104,7 +113,7 @@ GITHUB上的程式碼
 
 您可以在GitHub上找到此頁面的程式碼。
 
-* 在GitHub上[開啟aem-sample-we-retail專案](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
+* [在GitHub上開啟aem-sample-we-retail專案](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
 * 將專案下載為[ZIP檔](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/zip/refs/heads/master)
 
 最新版本也可以是[直接下載](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/tag/we.retail.reactor-4.0.0)作為可安裝的套件。

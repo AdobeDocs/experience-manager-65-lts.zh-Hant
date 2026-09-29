@@ -9,23 +9,43 @@ solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 exl-id: c7b91bc0-8369-44de-996c-7beaa3828c4e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '898'
 ht-degree: 0%
-
 ---
-
 # 新的轉譯與提交服務{#new-render-and-submit-service}
 
 ## 簡介 {#introduction}
 
-在Workbench中，當您定義`AssignTask`作業時，請指定特定表單(XDP或PDF表單)。 此外，透過動作設定檔指定一組轉譯和提交服務。
+在Workbench中，當您定義`AssignTask`作業時，請指定特定表單（XDP或PDF表單）。 此外，透過動作設定檔指定一組轉譯和提交服務。
 
 XDP可呈現為PDF表單或HTML表單。 新功能包括：
 
 * 以HTML形式呈現和提交XDP表單
-* 在案頭上以PDF呈現和提交XDP表單，並在行動裝置上以HTML呈現(例如iPad)
+* 在案頭上以PDF呈現和提交XDP表單，並在行動裝置上以HTML呈現（例如iPad）
 
 ### 全新HTML Forms服務 {#new-html-forms-service}
 

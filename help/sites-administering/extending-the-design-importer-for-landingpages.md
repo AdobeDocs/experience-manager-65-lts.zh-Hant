@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 1121af36-b07a-4e8d-a60b-6c5b91e56f82
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3524'
 ht-degree: 0%
-
 ---
-
 # 擴充和設定登入頁面的Design Importer{#extending-and-configuring-the-design-importer-for-landing-pages}
 
 本節說明如何設定，以及視需要擴充登入頁面的設計匯入工具。 匯入後使用登入頁面包含在[登入頁面中。](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
@@ -531,7 +540,7 @@ data-cq-component中的路徑應為元件的resourceType。
 >
 >例如，如果預設設定為
 >
->&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >而且您必須將`CQ_DESIGN_PATH`取代為搜尋模式中的`VIPURL`，則您的搜尋模式應該如下所示：
 >

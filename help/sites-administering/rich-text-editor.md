@@ -6,13 +6,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 5511817e-dcf8-463d-8e62-cbbef64ad162
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2817'
+source-wordcount: '2975'
 ht-degree: 1%
-
 ---
-
 # 設定RTF編輯器 {#configure-the-rich-text-editor}
 
 RTF編輯器(RTE)為作者提供了一系列廣泛的功能，以便編輯其文字內容。 提供圖示、選取方塊、工具列和功能表，以提供WYSIWYG文字編輯體驗。
@@ -88,8 +97,8 @@ Experience Manager元件可在全熒幕檢視中開啟，以隱藏頁面內容�
 
 * `features`屬性：
 
-   * 用來啟用或停用該外掛程式的基本功能
-   * 可使用標準化的程式進行設定
+  * 用來啟用或停用該外掛程式的基本功能
+  * 可使用標準化的程式進行設定
 
 * 適當時，需要專門設定的其他屬性和選項。
 
@@ -101,7 +110,7 @@ RTE的基本功能會由適當外掛程式特定節點上的`features`屬性值�
 * `features`屬性的允許值。
 * 外掛程式所提供功能的說明。
 
-| 外掛程式ID | 功能 | 描述 |
+| 外掛程式ID | 功能 | 說明 |
 |--- |--- |--- |
 | 編輯 | 剪下複製paste-default paste-plaintext paste-wordhtml | [剪下、複製和三種貼上模式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles)。 |
 | findreplace | 尋找取代 | 尋找和取代。 |
@@ -145,7 +154,7 @@ RTE的基本功能會由適當外掛程式特定節點上的`features`屬性值�
 
 設定以下僅適用於Touch UI中對話方塊編輯模式的屬性：
 
-* `useFixedInlineToolbar`：將這個RTE節點（具有sling：resourceType= `cq/gui/components/authoring/dialog/richtext`的節點）上定義的布林值屬性設定為`True`，以使RTE工具列固定而非浮動。
+* `useFixedInlineToolbar`：將這個RTE節點（具有sling:resourceType= `cq/gui/components/authoring/dialog/richtext`的節點）上定義的布林值屬性設定為`True`，以使RTE工具列固定而非浮動。
 
   此屬性為true時，RTF編輯預設會在「foundation-contentloaded」事件中啟動。
 
@@ -176,9 +185,9 @@ RTE功能可透過一系列外掛程式使用，每個外掛程式都具備功�
 
 >[!NOTE]
 >
->[核心元件文字元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=zh-Hant#the-text-component-and-the-rich-text-editor)可讓範本編輯器在GUI中設定許多RTE外掛程式作為內容原則，而不需要技術設定。 內容原則可搭配使用RTE UI設定，如本檔案所述。
+>[核心元件文字元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)可讓範本編輯器在GUI中設定許多RTE外掛程式作為內容原則，而不需要技術設定。 內容原則可搭配使用RTE UI設定，如本檔案所述。
 >
->如需詳細資訊，請參閱本檔案的[RTE UI設定和內容原則](/help/sites-administering/rich-text-editor.md)一節，以及[建立頁面範本](/help/sites-authoring/templates.md)和[核心元件開發人員檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=zh-Hant)。
+>如需詳細資訊，請參閱本檔案的[RTE UI設定和內容原則](/help/sites-administering/rich-text-editor.md)一節，以及[建立頁面範本](/help/sites-authoring/templates.md)和[核心元件開發人員檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)。
 
 >[!NOTE]
 >
@@ -254,7 +263,7 @@ RTE中可用的選項會從使用者介面設定向下流向內容原則。
 * 如果RTE的使用者介面設定已移除或未啟用專案，則內容原則無法進行設定。
 * 作者只能存取使用者介面設定和內容原則所提供的功能。
 
-例如，您可以看到[文字核心元件檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=zh-Hant#the-text-component-and-the-rich-text-editor)。
+例如，您可以看到[文字核心元件檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor)。
 
 ## 自訂工具列圖示和命令之間的對應 {#iconstoolbar}
 
@@ -325,8 +334,8 @@ RTE中可用的選項會從使用者介面設定向下流向內容原則。
 * [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText)元件提供表單欄位，用於編輯樣式文字資訊(RTF)。 若要瞭解RTF表單可用的所有引數，請參閱設定選項。
 * RTF元件使用[CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)下列出的外掛程式，提供各種功能。 對於每個外掛程式：
 
-   * 如需可啟用（或已停用）功能的詳細資訊，請參閱功能
-   * 如需適當外掛程式的詳細設定資訊，請參閱設定選項以取得所有可用引數
+  * 如需可啟用（或已停用）功能的詳細資訊，請參閱功能
+  * 如需適當外掛程式的詳細設定資訊，請參閱設定選項以取得所有可用引數
 
 * 您也可以參閱連結適用的HTML規則詳細資訊。
 

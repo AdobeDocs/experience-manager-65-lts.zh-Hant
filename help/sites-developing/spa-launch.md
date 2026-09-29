@@ -11,13 +11,27 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: aa4471bf-8477-4377-b474-861269f69334
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 1%
-
+source-wordcount: '178'
+ht-degree: 8%
 ---
-
 
 # SPA與Adobe Experience Platform Launch整合{#spa-and-adobe-experience-platform-launch-integration}
 
@@ -27,7 +41,7 @@ Adobe Experience Platform Launch是在單頁應用程式(SPA)中實作Analytics�
 
 ## 教學課程 {#tutorial}
 
-若要瞭解如何將SPA與Adobe Experience Platform Launch整合，請參閱[此知識庫文章和教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=zh-Hant)，它會引導您完成Launch設定，並透過Angular或React內建並實作Experience Cloud。
+若要瞭解如何將SPA與Adobe Experience Platform Launch整合，請參閱[此知識庫文章和教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html)，它會引導您完成Launch設定，並實作內建有Angular或React的Experience Cloud。
 
 >[!NOTE]
 >

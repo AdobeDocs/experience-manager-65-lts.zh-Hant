@@ -8,13 +8,26 @@ feature: Transaction Reports
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 761c9946-bf8e-468e-b8f5-36c958d68e90
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '890'
 ht-degree: 0%
-
 ---
-
 # 在OSGi上檢視和瞭解AEM Forms的交易報表{#viewing-and-understanding-transaction-reports}
 
 交易報表可讓您擷取及追蹤已提交表單、已處理檔案及已轉譯檔案的數量。 追蹤這些交易的目的是，針對產品使用狀況做出明智的決策，並重新平衡軟硬體投資。 如需詳細資訊，請參閱[AEM Forms交易報表概觀](../../forms/using/transaction-reports-overview.md)。
@@ -26,7 +39,7 @@ ht-degree: 0%
 * 在所有發佈執行個體上啟用反向復寫
 * 啟用交易報告
 * 提供檢視交易報告的許可權
-* （選擇性）設定交易排清期間與寄件匣[&#128279;](/help/forms/using/installing-configuring-aem-forms-osgi.md)
+* （選擇性）設定交易排清期間與寄件匣[](/help/forms/using/installing-configuring-aem-forms-osgi.md)
 
 >[!NOTE]
 >
@@ -45,7 +58,7 @@ ht-degree: 0%
 
 1. 以管理員身分登入AEM執行個體。 移至&#x200B;**工具** > **作業** > **網頁主控台**。
 1. 尋找並開啟&#x200B;**Forms Transaction Reporting**&#x200B;服務。
-1. 選取「記錄異動」核取方塊。 按一下「**儲存**」。
+1. 選取「記錄異動」核取方塊。 按一下&#x200B;**儲存**。
 
    在所有製作和發佈執行個體上重複步驟1至3。
 
@@ -59,13 +72,13 @@ ht-degree: 0%
 
 1. 以管理員身分登入作者執行個體。 移至&#x200B;**工具** > **作業** > **網頁主控台**。
 1. 找到並開啟&#x200B;**Forms交易存放庫儲存提供者**&#x200B;服務。
-1. 在&#x200B;**交易排清期間**&#x200B;欄位中指定秒數。 按一下「**儲存**」。
+1. 在&#x200B;**交易排清期間**&#x200B;欄位中指定秒數。 按一下&#x200B;**儲存**。
 
 反向復寫會將交易資料複製到製作執行個體的預設寄件匣。 您可以將交易資料放入自訂寄件匣。 執行以下步驟來指定自訂寄件匣：
 
 1. 以管理員身分登入作者執行個體。 移至&#x200B;**工具** > **作業** > **網頁主控台**。
 1. 找到並開啟&#x200B;**Forms交易存放庫儲存提供者**&#x200B;服務。
-1. 在&#x200B;**寄件匣**&#x200B;欄位中指定自訂寄件匣的名稱。 按一下「**儲存**」。具有指定名稱的寄件匣會在所有製作執行個體上建立。
+1. 在&#x200B;**寄件匣**&#x200B;欄位中指定自訂寄件匣的名稱。 按一下「**儲存**」。 具有指定名稱的寄件匣會在所有製作執行個體上建立。
 
 ## 檢視交易報告 {#viewing-the-transaction-report}
 

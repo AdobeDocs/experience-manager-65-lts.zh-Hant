@@ -9,13 +9,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 852aaf6e-acf3-4224-bf4c-c0913110abd4
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '588'
 ht-degree: 3%
-
 ---
-
 # 使用任務 {#working-with-tasks}
 
 任務代表與內容相關要執行的工作專案。 當您被指派任務時，它會顯示在「工作流程收件匣」中。 任務專案可透過&#x200B;**Type**&#x200B;資料行的值來與工作流程專案區分。
@@ -87,4 +100,4 @@ ht-degree: 3%
 
 ![收件匣](assets/project-inbox.png)
 
-若要完成工作，請選取工作，然後按一下工具列中的[完成]。 **&#x200B;**&#x200B;新增資訊至工作，然後按一下[完成]。**&#x200B;** 如需詳細資訊，請參閱[您的收件匣](/help/sites-authoring/inbox.md)。
+若要完成工作，請選取工作，然後按一下工具列中的[完成]。 ****&#x200B;新增資訊至工作，然後按一下[完成]。**** 如需詳細資訊，請參閱[您的收件匣](/help/sites-authoring/inbox.md)。

@@ -8,13 +8,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 6ed130d5-30b5-4864-8bea-dfe41bed5422
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '156'
 ht-degree: 1%
-
 ---
-
 # 一致性和周遊檢查{#consistency-and-traversal-checks}
 
 升級時，可能會因為工作區不一致而發生問題。 您可以執行測試升級以檢視這是否為問題，或執行一致性檢查作為預防性動作。

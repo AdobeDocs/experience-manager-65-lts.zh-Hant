@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 7aa0e3b3-69de-4991-a1c8-06c9de5404c4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1123'
 ht-degree: 1%
-
 ---
-
 # WebDAV存取{#webdav-access}
 
 透過WebDAV使用KDE連線至AEM：
@@ -80,7 +89,7 @@ WebDAV伺服器的URL結構如下：
    <td><code>/crx.default</code></td>
   </tr>
   <tr>
-   <td><strong>描述</strong></td>
+   <td><strong>說明</strong></td>
    <td>AEM執行所在的主機和連線埠</td>
    <td>AEM存放庫Webapp的路徑</td>
    <td>WebDAV servlet對應到的路徑</td>
@@ -103,11 +112,11 @@ http://localhost:4502/crx/repository/staging
 
 * [Windows](/help/sites-administering/webdav-access.md#windows)
 * [macOS](/help/sites-administering/webdav-access.md#macos)
-* [Linux](/help/sites-administering/webdav-access.md#linux)
+* [Linux®](/help/sites-administering/webdav-access.md#linux)
 
 ### Windows {#windows}
 
-若要成功將Microsoft® Windows 7 （及更新版本）系統連線至不使用SSL保護的AEM執行個體，必須在Windows中明確啟用透過不安全的網路建立基本驗證的選項。 這項功能需要在WebClient的Windows登入中進行變更。
+若要成功將® Windows 7 （及更新版本）系統連線至不使用SSL保護的AEM執行個體，必須在Windows中明確啟用透過不安全的網路建立基本驗證的選項。 這項功能需要在WebClient的Windows登入中進行變更。
 
 在更新登入之後，便可以將AEM執行個體對應為磁碟機。
 
@@ -133,7 +142,7 @@ http://localhost:4502/crx/repository/staging
 
 #### Windows 8設定 {#windows-configuration}
 
-若是Windows 8，請依照Windows 7和更新版本[&#128279;](/help/sites-administering/webdav-access.md#windows-and-greater-configuration)的說明變更登入專案。 但是，在執行此工作之前，必須啟用[案頭體驗]才能看到登入專案。
+若是Windows 8，請依照Windows 7和更新版本](/help/sites-administering/webdav-access.md#windows-and-greater-configuration)的說明變更登入專案[。 但是，在執行此工作之前，必須啟用[案頭體驗]才能看到登入專案。
 
 若要啟用案頭體驗，請開啟&#x200B;**伺服器管理員**，然後開啟&#x200B;**功能**，再開啟&#x200B;**新增功能**，然後開啟&#x200B;**案頭體驗**。
 
@@ -147,7 +156,7 @@ http://localhost:4502/crx/repository/staging
 
    ![chlimage_1-112](assets/chlimage_1-112a.png)
 
-1. 若要啟動精靈，請按一下[對應網路磁碟機]。**&#x200B;**
+1. 若要啟動精靈，請按一下[對應網路磁碟機]。****
 1. 輸入對應明細：
 
    * **磁碟機**：選擇任何可用的字母
@@ -209,7 +218,7 @@ macOS現在已透過WebDAV連線至AEM，您可以像使用Mac上的任何其他
 1. 在&#x200B;**資料夾**&#x200B;中，輸入`/dav`
 1. 輸入使用者名稱`admin`。 Adobe建議您使用預先設定的管理員帳戶進行測試。
 1. 將連線埠保留空白，並為您的連線輸入任何名稱。
-1. 按一下「**連結**」。AEM會提示您輸入密碼。
+1. 按一下「**連結**」。 AEM會提示您輸入密碼。
 1. 輸入密碼`admin`並按一下&#x200B;**連線**。
 
 GNOME現在已將AEM掛接為磁碟區，您可以像使用任何其他磁碟區一樣加以使用。

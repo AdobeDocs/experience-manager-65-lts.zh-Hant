@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: ff94f750-c193-438b-8be0-fcd7a40cead4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '358'
 ht-degree: 0%
-
 ---
-
 # 命令列啟動和停止{#command-line-start-and-stop}
 
 ## 從命令列啟動Adobe Experience Manager {#starting-adobe-experience-manager-from-the-command-line}
@@ -28,7 +37,7 @@ ht-degree: 0%
  <tbody>
   <tr>
    <td><strong>環境變數 </strong></td>
-   <td><strong>描述 </strong></td>
+   <td><strong>說明 </strong></td>
   </tr>
   <tr>
    <td>CQ_PORT</td>
@@ -91,8 +100,8 @@ CQ_PORT=1234 ./start
 
 * 根據您使用的平台：
 
-   * 如果您是從指令碼或命令列啟動AEM，請按&#x200B;**Ctrl+C**&#x200B;關閉伺服器。
-   * 如果您在UNIX®上使用過啟動指令碼，則必須使用停止指令碼來停止AEM。
+  * 如果您是從指令碼或命令列啟動AEM，請按&#x200B;**Ctrl+C**&#x200B;關閉伺服器。
+  * 如果您在UNIX®上使用過啟動指令碼，則必須使用停止指令碼來停止AEM。
 
 * 如果您是透過按兩下jar檔案來啟動AEM，請按一下啟動視窗上的&#x200B;**開啟**&#x200B;按鈕（按鈕會變成&#x200B;**關閉**）以關閉伺服器。
 

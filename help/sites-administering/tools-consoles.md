@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: b81d2f39-1517-49f0-9d16-bcde514cc199
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 25%
-
 ---
-
 # 工具主控台{#tools-consoles}
 
 **Tools**&#x200B;主控台可讓您存取數個專用工具，協助您管理網站、數位資產和內容存放庫的其他方面。 **工具**&#x200B;主控台目前有兩種風格，相依於您正在使用的UI：

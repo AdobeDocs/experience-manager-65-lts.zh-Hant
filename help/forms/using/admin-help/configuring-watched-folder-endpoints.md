@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: ae001541-ae7f-42ce-8236-5fbb6ddb4c1f
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '7169'
 ht-degree: 0%
-
 ---
-
 # 正在設定watched資料夾端點 {#configuring-watched-folder-endpoints}
 
 管理員可以設定網路資料夾，稱為&#x200B;*watched資料夾*，這樣當使用者將檔案（例如PDF檔案）放入watched資料夾時，就會叫用已設定的服務作業並操作檔案。 服務執行指定的作業後，會將修改的檔案儲存在指定的輸出資料夾中。
@@ -159,9 +174,9 @@ Watched資料夾服務可處理端點的建立、更新及刪除。 管理員建
 * 具有特定名稱的檔案；例如，data.&amp;ast；會排除名為&#x200B;*data1*、*data2*&#x200B;等檔案和資料夾。
 * 在名稱和副檔名中有複合運算式的檔案，如下列範例所示：
 
-   * 資料`[0-9][0-9][0-9]`.`[dD][aA]`&#39;連線埠&#39;
-   * &amp;ast；.`[dD][Aa]`&#39;連線埠&#39;
-   * &amp;ast；.`[Xx][Mm][Ll]`
+  * 資料`[0-9][0-9][0-9]`.`[dD][aA]`&#39;連線埠&#39;
+  * &amp;ast；.`[dD][Aa]`&#39;連線埠&#39;
+  * &amp;ast；.`[Xx][Mm][Ll]`
 
 如需檔案模式的詳細資訊，請參閱[關於檔案模式](configuring-watched-folder-endpoints.md#about-file-patterns)。
 
@@ -175,9 +190,9 @@ Watched資料夾服務可處理端點的建立、更新及刪除。 管理員建
 * 具有特定名稱的檔案；例如，data.&amp;ast；會包含名為&#x200B;*data1*、*data2*&#x200B;等的檔案和資料夾。
 * 在名稱和副檔名中有複合運算式的檔案，如下列範例所示：
 
-   * 資料`[0-9][0-9][0-9]`.`[dD][aA]`&#39;連線埠&#39;
-   * &amp;ast；.`[dD][Aa]`&#39;連線埠&#39;
-   * &amp;ast；.`[Xx][Mm][Ll]`
+  * 資料`[0-9][0-9][0-9]`.`[dD][aA]`&#39;連線埠&#39;
+  * &amp;ast；.`[dD][Aa]`&#39;連線埠&#39;
+  * &amp;ast；.`[Xx][Mm][Ll]`
 
 如需檔案模式的詳細資訊，請參閱[關於檔案模式](configuring-watched-folder-endpoints.md#about-file-patterns)。
 
@@ -247,9 +262,9 @@ Watched資料夾輸出可以是單一檔案、檔案清單或檔案地圖。 然
 * 具有特定名稱的檔案。 例如，data.&amp;ast；
 * 在名稱和副檔名中有複合運算式的檔案，如下列範例所示：
 
-   * 資料`[0-9][0-9][0-9].[dD][aA]`&#39;連線埠&#39;
-   * &amp;ast；.`[dD][Aa]`&#39;連線埠&#39;
-   * &amp;ast；.`[Xx][Mm][Ll]`
+  * 資料`[0-9][0-9][0-9].[dD][aA]`&#39;連線埠&#39;
+  * &amp;ast；.`[dD][Aa]`&#39;連線埠&#39;
+  * &amp;ast；.`[Xx][Mm][Ll]`
 
 管理員可以定義儲存結果的輸出資料夾的檔案模式。 對於輸出資料夾（結果、保留和失敗），管理員可以指定下列任一檔案模式：
 
@@ -378,17 +393,17 @@ Watched Folder會在每次輪詢時執行以下三個主要工作：
 * 對於檔案模式，管理員可以指定已新增支援萬用字元模式的規則運算式，以指定檔案模式。 Watched Folder修改規則運算式以支援萬用字元模式，例如&amp;ast；.&amp;ast；或&amp;ast；.pdf。 規則運算式不支援這些萬用字元模式。
 * Watched Folder會掃描輸入資料夾以取得輸入，並且不知道來源檔案或資料夾是否已完整複製到輸入資料夾中，然後再開始處理檔案或資料夾。 若要確保在擷取檔案或資料夾之前，將來源檔案或資料夾完全複製到watched資料夾的輸入資料夾，請執行下列工作：
 
-   * 使用等待時間，這是Watched資料夾從上次修改時間開始等待的時間（毫秒）。 如果您有大型檔案要處理，請使用此功能。 例如，如果檔案需要10分鐘下載，請將等待時間指定為10&amp;ast；60 &amp;ast；1000毫秒。 這會讓Watched Folder無法擷取在10分鐘以內的檔案。
-   * 使用排除檔案模式與包含檔案模式。 例如，如果排除檔案模式為`ex*`且包含檔案模式為`in*`，Watched資料夾將會挑選以「in」開頭的檔案，而不會挑選以「ex」開頭的檔案。 若要複製大型檔案或資料夾，請先重新命名檔案或資料夾，使名稱以「ex」開頭。 將名為「ex」的檔案或資料夾完整複製到watched資料夾後，將其重新命名為「in&amp;ast；」。
+  * 使用等待時間，這是Watched資料夾從上次修改時間開始等待的時間（毫秒）。 如果您有大型檔案要處理，請使用此功能。 例如，如果檔案需要10分鐘下載，請將等待時間指定為10&amp;ast；60 &amp;ast；1000毫秒。 這會讓Watched Folder無法擷取在10分鐘以內的檔案。
+  * 使用排除檔案模式與包含檔案模式。 例如，如果排除檔案模式為`ex*`且包含檔案模式為`in*`，Watched資料夾將會挑選以「in」開頭的檔案，而不會挑選以「ex」開頭的檔案。 若要複製大型檔案或資料夾，請先重新命名檔案或資料夾，使名稱以「ex」開頭。 將名為「ex」的檔案或資料夾完整複製到watched資料夾後，將其重新命名為「in&amp;ast；」。
 
 * 使用清除持續時間保持結果資料夾乾淨。 Watched Folder會清除所有超過清除期間中提及之期間的檔案。 持續時間以天為單位。
 * 新增Watched資料夾端點時，在選取作業名稱之後，會填入輸入引數對應。 對於操作的每個輸入，都會產生一個輸入引數對應欄位。 以下是輸入引數對應的範例：
 
-   * 針對`com.adobe.idp.Document`輸入：如果服務作業具有型別`Document`的輸入，則管理員可以將對應型別指定為`Variable`。 Watched資料夾會根據指定給輸入引數的檔案模式，從watched資料夾的輸入資料夾擷取輸入。 如果管理員指定`*.pdf`作為引數，則會擷取每個副檔名為.pdf的檔案，並轉換成`com.adobe.idp.Document`，然後叫用服務。
-   * 針對`java.util.Map`輸入：如果服務作業有型別`Map`的輸入，管理員可以將對應型別指定為`Variable`，並輸入模式如`*.pdf`的對應值。 例如，服務需要兩個`com.adobe.idp.Document`物件的對映，這些物件代表輸入資料夾（例如1.pdf和2.pdf）中的兩個檔案。 Watched資料夾將建立以索引鍵做為檔案名稱，且值做為為`com.adobe.idp.Document`的對應。
-   * 針對`java.util.List`輸入：如果服務作業具有型別List的輸入，則管理員可以將對應型別指定為`Variable`，並輸入模式如`*.pdf`的對應值。 將PDF檔案放入輸入資料夾時，Watched資料夾會建立代表這些檔案的`com.adobe.idp.Document`物件清單，並叫用目標服務。
-   * 針對`java.lang.String`：管理員有兩個選項。 首先，管理員可以將對應型別指定為`Literal`，並將對應值輸入為字串，例如`hello.` Watched Folder將使用字串`hello`叫用服務。 第二，管理員可以將對應型別指定為`Variable`，並輸入模式如`*.txt`的對應值。 在後一種情況下，副檔名為.txt的檔案會讀取為檔案，並以字串形式強制來叫用服務。
-   * Java基本型別：管理員可以將對應型別指定為`Literal`並提供值。 Watched資料夾會以指定的值叫用服務。
+  * 針對`com.adobe.idp.Document`輸入：如果服務作業具有型別`Document`的輸入，則管理員可以將對應型別指定為`Variable`。 Watched資料夾會根據指定給輸入引數的檔案模式，從watched資料夾的輸入資料夾擷取輸入。 如果管理員指定`*.pdf`作為引數，則會擷取每個副檔名為.pdf的檔案，並轉換成`com.adobe.idp.Document`，然後叫用服務。
+  * 針對`java.util.Map`輸入：如果服務作業有型別`Map`的輸入，管理員可以將對應型別指定為`Variable`，並輸入模式如`*.pdf`的對應值。 例如，服務需要兩個`com.adobe.idp.Document`物件的對映，這些物件代表輸入資料夾（例如1.pdf和2.pdf）中的兩個檔案。 Watched資料夾將建立以索引鍵做為檔案名稱，且值做為為`com.adobe.idp.Document`的對應。
+  * 針對`java.util.List`輸入：如果服務作業具有型別List的輸入，則管理員可以將對應型別指定為`Variable`，並輸入模式如`*.pdf`的對應值。 將PDF檔案放入輸入資料夾時，Watched資料夾會建立代表這些檔案的`com.adobe.idp.Document`物件清單，並叫用目標服務。
+  * 針對`java.lang.String`：管理員有兩個選項。 首先，管理員可以將對應型別指定為`Literal`，並將對應值輸入為字串，例如`hello.` Watched Folder將使用字串`hello`叫用服務。 第二，管理員可以將對應型別指定為`Variable`，並輸入模式如`*.txt`的對應值。 在後一種情況下，副檔名為.txt的檔案會讀取為檔案，並以字串形式強制來叫用服務。
+  * Java基本型別：管理員可以將對應型別指定為`Literal`並提供值。 Watched資料夾會以指定的值叫用服務。
 
 * Watched資料夾用於處理檔案。 支援的輸出為`com.adobe.idp.Document`、`org.w3c.Document`、`org.w3c.Node`，以及這些型別的清單和地圖。 任何其他型別都會導致失敗資料夾中的失敗輸出。
 * 如果結果不在結果資料夾中，請驗證失敗資料夾以檢視是否發生失敗。
@@ -396,17 +411,17 @@ Watched Folder會在每次輪詢時執行以下三個主要工作：
 * 建立watched資料夾以進行匯入和匯出作業時，無法擷取副檔名。 使用watched資料夾叫用Form Data Integration Service時，輸出檔案的副檔名型別可能與檔案物件型別的預期輸出格式不符。 例如，如果呼叫匯出作業之watched資料夾的輸入檔案是包含資料的XFA表單，則輸出應該是XDP資料檔案。 若要取得具有正確副檔名的輸出檔案，您可以在輸出引數對應中指定它。 在此範例中，您可以使用%F.xdp作為輸出引數對應。
 * Watched Folder可能會先處理輸入檔案，然後才將其完全複製到資料夾。 在UNIX上不強制鎖定檔案，因為在Windows上也是如此。 因此，當檔案被複製到watched資料夾時，Watched資料夾可能會將檔案移動到舞台，而不等待檔案複製完成。 此行為只會造成輸入檔案的一部分被處理。 目前有兩個因應措施：
 
-   * 因應措施1
+  * 因應措施1
 
-      1. 指定「排除檔案模式」的模式，例如temp&amp;ast；.ps。
-      1. 將以temp開頭的檔案（例如temp1.ps）複製到watched資料夾。
-      1. 將檔案完全複製到watched資料夾後，重新命名檔案以對應於「包含檔案模式」指定的模式。 Watched Folder然後將完成的檔案移至舞台。
+    1. 指定「排除檔案模式」的模式，例如temp&amp;ast；.ps。
+    1. 將以temp開頭的檔案（例如temp1.ps）複製到watched資料夾。
+    1. 將檔案完全複製到watched資料夾後，重新命名檔案以對應於「包含檔案模式」指定的模式。 Watched Folder然後將完成的檔案移至舞台。
 
-   * 因應措施2
+  * 因應措施2
 
-     如果您知道將檔案複製到watched資料夾所需的最大時間長度，請指定「等待時間」的時間（以秒為單位）。 接著，Watched資料夾會等待指定的時間長度，再將檔案移至舞台。
+    如果您知道將檔案複製到watched資料夾所需的最大時間長度，請指定「等待時間」的時間（以秒為單位）。 接著，Watched資料夾會等待指定的時間長度，再將檔案移至舞台。
 
-     這不是Windows上的檔案問題，因為Windows會在寫入執行緒時鎖定檔案。 不過，這是Windows資料夾的問題。 針對資料夾，您必須依照因應措施1中的步驟操作。
+    這不是Windows上的檔案問題，因為Windows會在寫入執行緒時鎖定檔案。 不過，這是Windows資料夾的問題。 針對資料夾，您必須依照因應措施1中的步驟操作。
 
 * 如果Watched資料夾的「保留資料夾名稱」端點屬性設定為Null目錄路徑，則不會清除暫存目錄。 目錄仍包含已處理的檔案和暫存資料夾。
 
@@ -432,5 +447,5 @@ Watched Folder會在每次輪詢時執行以下三個主要工作：
 
 * Watched資料夾依賴Quartz排程器掃描watched資料夾。 Quartz排程器有執行緒集區來掃描它們。 如果watched資料夾的重複間隔非常低（&lt; 5秒）且批次大小高(> 2)，就可能發生競爭條件。 發生這種情況時，會有兩個石英執行緒擷取一個檔案：
 
-   * 其中一個執行緒成功找到檔案，並叫用該檔案的目標服務。
-   * 第二個執行緒會看到檔案，但嘗試找出檔案是否有效時失敗（讀取或寫入檔案），這會造成錯誤失敗，指出檔案因唯讀而無法處理。 只有低重複間隔和高批次大小時才會發生這種情況。
+  * 其中一個執行緒成功找到檔案，並叫用該檔案的目標服務。
+  * 第二個執行緒會看到檔案，但嘗試找出檔案是否有效時失敗（讀取或寫入檔案），這會造成錯誤失敗，指出檔案因唯讀而無法處理。 只有低重複間隔和高批次大小時才會發生這種情況。

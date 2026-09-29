@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: cbcb9301-48c9-4394-b8c0-766eed76101d
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 0%
-
 ---
-
 # 備份Adobe Experience Manager (AEM) Forms資料 {#backing-up-the-aem-forms-data}
 
 <!-- back up is two words when used as a verb; backup is one word when used as an adjective or noun. -->
@@ -56,10 +71,10 @@ GDS位置的備份頻率取決於AEM Forms的使用方式以及可用的備份�
 
   備份製作和發佈執行個體時，請考慮以下幾點：
 
-   * 請確認製作與發佈執行個體的備份已同步處理，以便同時啟動。 雖然您可以在執行備份時繼續使用製作和發佈執行個體，但建議不要在備份期間發佈任何資產，以避免任何未擷取的變更。 請等待製作和發佈執行個體的備份結束，然後再發佈新資產。
-   * 製作節點的完整備份包括Forms Manager和AEM Forms Workspace資料的備份。
-   * Workbench開發人員可繼續在本機處理其程式。 他們不應在備份階段部署任何新程式。
-   * 每個備份工作階段長度（用於滾動備份模式）的決定應依據備份AEM Forms中的所有資料（DB、GDS、AEM存放庫和任何其他自訂資料）所花的總時間。
+  * 請確認製作與發佈執行個體的備份已同步處理，以便同時啟動。 雖然您可以在執行備份時繼續使用製作和發佈執行個體，但建議不要在備份期間發佈任何資產，以避免任何未擷取的變更。 請等待製作和發佈執行個體的備份結束，然後再發佈新資產。
+  * 製作節點的完整備份包括Forms Manager和AEM Forms Workspace資料的備份。
+  * Workbench開發人員可繼續在本機處理其程式。 他們不應在備份階段部署任何新程式。
+  * 每個備份工作階段長度（用於滾動備份模式）的決定應依據備份AEM Forms中的所有資料（DB、GDS、AEM存放庫和任何其他自訂資料）所花的總時間。
 
 備份AEM Forms資料庫，包括任何交易記錄。 請參閱[AEM Forms資料庫](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database)。
 

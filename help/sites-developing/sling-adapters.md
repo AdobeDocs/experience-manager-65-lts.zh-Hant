@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7eae83bd-7982-4051-821f-b43f65c5af2b
-source-git-commit: cf22b13e0f7c8e66b598f85aab81b022480e60bc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 2%
-
+source-wordcount: '2529'
+ht-degree: 1%
 ---
-
 # 使用Sling介面卡{#using-sling-adapters}
 
 [Sling](https://sling.apache.org)提供[介面卡模式](https://sling.apache.org/documentation/the-sling-engine/adapters.html)，方便翻譯實作[介面](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29)介面的物件。 此介面提供泛型[adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29)方法，將物件轉譯成作為引數傳遞的類別型別。
@@ -72,11 +81,11 @@ Node node = resource.adaptTo(Node.class);
 
   物件仍必須實作`Adaptable`介面且必須延伸[`SlingAdaptable`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/adapter/SlingAdaptable.html) （這會將`adaptTo`呼叫傳遞給中央介面卡管理員）。
 
-  連結到現有類別（例如`adaptTo`）的`Resource`機制。
+  連結到現有類別（例如`Resource`）的`adaptTo`機制。
 
 * 兩者的組合。
 
-對於第一種情況，Java™檔案可以說明哪些`adaptTo-targets`是可能的。 不過，如果是特定子類別（例如JCR型資源），則通常無法執行。 在後一種情況下，`AdapterFactory`的實施通常是套件組合私用類別的一部分，因此不會在使用者端API中公開，或列在Java™檔案中。 理論上來說，可以從`AdapterFactory`OSGi[服務執行階段存取所有](/help/sites-deploying/configuring-osgi.md)實作，並檢視其「可適配」（來源和目標）組態，但無法相互對應。 最後，這取決於內部邏輯，而這必須記錄在案。 因此，請參考。
+對於第一種情況，Java™檔案可以說明哪些`adaptTo-targets`是可能的。 不過，如果是特定子類別（例如JCR型資源），則通常無法執行。 在後一種情況下，`AdapterFactory`的實施通常是套件組合私用類別的一部分，因此不會在使用者端API中公開，或列在Java™檔案中。 理論上來說，可以從[OSGi](/help/sites-deploying/configuring-osgi.md)服務執行階段存取所有`AdapterFactory`實作，並檢視其「可適配」（來源和目標）組態，但無法相互對應。 最後，這取決於內部邏輯，而這必須記錄在案。 因此，請參考。
 
 ## 參照 {#reference}
 
@@ -168,7 +177,7 @@ Node node = resource.adaptTo(Node.class);
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/dam/api/Rendition.html">轉譯</a></td>
-   <td>如果是<code>dam:Asset</code>轉譯（<code>nt:file</code>轉譯資料夾下的<code>dam:Asset</code>）</td>
+   <td>如果是<code>dam:Asset</code>轉譯（<code>dam:Asset</code>轉譯資料夾下的<code>nt:file</code>）</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/tagging/Tag.html">標記</a></td>
@@ -338,7 +347,7 @@ Node node = resource.adaptTo(Node.class);
 
 #### 安全性 {#security}
 
-**可授權**、&lbrace;User&#x200B;**和&#x200B;**&#x200B;群組**&#x200B;適配：
+**可授權**、{User **和**&#x200B;群組**適配：
 
 | [節點](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) | 傳回使用者/群組主節點。 |
 | --- | --- |
@@ -364,4 +373,4 @@ Node node = resource.adaptTo(Node.class);
 
 #### 其他 {#other}
 
-此外，Sling / JCR / OCM也為自訂OCM （` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)`物件內容對應[）物件提供](https://jackrabbit.apache.org/jcr/object-content-mapping.html)。
+此外，Sling / JCR / OCM也為自訂OCM （[物件內容對應](https://jackrabbit.apache.org/jcr/object-content-mapping.html)）物件提供` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)`。

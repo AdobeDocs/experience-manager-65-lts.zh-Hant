@@ -5,7 +5,18 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: a9f7494e-4a09-4999-9164-c369e0989886
-source-git-commit: 60809c26ba9591bf9e30a19e25d71ceb449a162e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
@@ -18,7 +29,7 @@ ht-degree: 0%
 
 ## 升級前步驟 {#pre-upgrade-steps}
 
-在執行升級之前，必須完成數個步驟。 如需詳細資訊，請參閱[升級前維護工作](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。 此外，請確定您的系統符合AEM 6.5 LTS Servicepack[&#128279;](/help/sites-deploying/technical-requirements.md)的需求，並參閱[升級計畫考量事項](/help/sites-deploying/upgrade-planning.md)。
+在執行升級之前，必須完成數個步驟。 如需詳細資訊，請參閱[升級前維護工作](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。 此外，請確定您的系統符合AEM 6.5 LTS Servicepack](/help/sites-deploying/technical-requirements.md)的[需求，並參閱[升級計畫考量事項](/help/sites-deploying/upgrade-planning.md)。
 
 
 ### 移轉先決條件 {#migration-prerequisites}

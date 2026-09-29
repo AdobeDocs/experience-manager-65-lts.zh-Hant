@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 62b6d299-f44e-4af3-b5e1-b0e92ca0598a
-source-git-commit: cc96a14ebaf9f895a798b5f4904f5b4769b990bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 5%
-
+source-wordcount: '604'
+ht-degree: 7%
 ---
-
 # 請試用We.Retail中的核心元件{#trying-out-core-components-in-we-retail}
 
 核心元件是現代、彈性的元件，具有輕鬆擴充的功能，並可輕鬆整合至您的專案。 核心元件是圍繞幾項主要設計原則建置的，例如HTL、現成可用的能力、可設定性、版本設定和擴充性。 `We.Retail`網站建置在核心元件上。
@@ -57,7 +66,7 @@ ht-degree: 5%
 
 1. 在「感謝您」頁面上，選取文字元件，然後在元件的編輯選單中按一下「取消繼承」圖示。
 
-   [`We.Retail`具有全域化網站結構](/help/sites-developing/we-retail-globalized-site-structure.md)，內容透過稱為inheritance[的機制從主要語言網站推送至](/help/sites-administering/msm.md)即時副本。 因此，必須取消繼承，才能讓使用者手動編輯文字。
+   [`We.Retail`具有全域化網站結構](/help/sites-developing/we-retail-globalized-site-structure.md)，內容透過稱為inheritance](/help/sites-administering/msm.md)的機制從主要語言網站推送至[即時副本。 因此，必須取消繼承，才能讓使用者手動編輯文字。
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
@@ -86,10 +95,10 @@ ht-degree: 5%
 
 ## 另請參閱 {#further-information}
 
-如需核心元件的詳細資訊，請參閱撰寫指南[核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/introduction)，以取得功能的概觀。 如需技術概覽，請參閱指南[開發核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/overview)。
+如需核心元件的詳細資訊，請參閱撰寫指南[核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/introduction)，以取得功能的概觀。 如需技術概覽，請參閱指南[開發核心元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview)。
 
 
 
-如需核心元件的詳細資訊，請參閱撰寫檔案[核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/introduction)，以取得核心元件功能的概述，以及開發人員檔案[開發核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/overview)，以取得技術詳細資訊。
+如需核心元件的詳細資訊，請參閱撰寫檔案[核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/introduction)，以取得核心元件功能的概述，以及開發人員檔案[開發核心元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview)，以取得技術詳細資訊。
 
 您可能也想要調查[可編輯的範本](/help/sites-developing/we-retail-editable-templates.md)。 如需可編輯範本的完整詳細資訊，請參閱編寫檔案[建立頁面範本](/help/sites-authoring/templates.md)或開發人員檔案頁面[範本 — 可編輯](/help/sites-developing/page-templates-editable.md)。

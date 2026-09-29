@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 109ab777-c7be-4725-8b91-c4e5d6a735ab
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
-
 ---
-
 # 在AEM中啟用CRXDE Lite{#enabling-crxde-lite-in-aem}
 
 為了確保AEM安裝儘可能安全，安全性檢查清單建議在生產環境中停用WebDAV[。](/help/sites-administering/security-checklist.md#disable-webdav)
@@ -34,7 +43,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->由於這些方法的操作方式稍有不同，您應該使用&#x200B;**&#x200B;**&#x200B;**&#x200B; OSGI &#x200B;***或*** cURL。
+>由於這些方法的操作方式稍有不同，您應該使用&#x200B;****** OSGI ***或*** cURL。
 >
 >這兩個方法&#x200B;***不是***&#x200B;可互換。
 

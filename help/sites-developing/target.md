@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 722c8052-6b1e-4b52-a332-b549f4a6bc05
-source-git-commit: 6360a0573f3683ad491c5e9edad5d34840f98ebb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 0%
-
 ---
-
 
 # 針對目標內容開發 {#developing-for-targeted-content}
 
@@ -205,7 +214,7 @@ JSP會將必要的Analytics JavaScript物件及參照新增至使用者端JavaSc
 
 用來建立mbox的預設`mbox.js`檔案位於`/etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js`。 若要使用自訂`mbox.js`檔案，請將檔案新增至Target雲端設定。 若要新增檔案，檔案系統上必須有`mbox.js`檔案。
 
-例如，如果您想要使用[Marketing Cloud ID服務，](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)您必須下載`mbox.js`，使其包含以您的租使用者為基礎之`imsOrgID`變數的正確值。 若要與Marketing Cloud ID服務整合，此變數為必要專案。 如需詳細資訊，請參閱[Adobe Analytics作為Adobe Target的報表Source](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=zh-Hant)和[在您實作之前。](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html?lang=zh-Hant)
+例如，如果您想要使用[Marketing Cloud ID服務，](https://experienceleague.adobe.com/docs/id-service/using/home.html)您必須下載`mbox.js`，使其包含以您的租使用者為基礎之`imsOrgID`變數的正確值。 若要與Marketing Cloud ID服務整合，此變數為必要專案。 如需詳細資訊，請參閱[Adobe Analytics作為Adobe Target的報表Source](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html)和[在您實作之前。](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html)
 
 >[!NOTE]
 >

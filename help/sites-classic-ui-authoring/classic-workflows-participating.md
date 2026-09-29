@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: aea2daf6-c1e2-4e17-8c3f-6b25c693a45c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '544'
 ht-degree: 4%
-
 ---
-
 # 參與工作流程{#participating-in-workflows}
 
 工作流程通常包括需要人員在頁面或資產上執行活動的步驟。 工作流程會選取執行活動的使用者或群組，並將工作專案指派給該人員或群組。
@@ -34,9 +43,9 @@ ht-degree: 4%
 
   可委派的使用者取決於工作專案的指派者：
 
-   * 如果工作專案已指派給群組，則群組成員可供使用。
-   * 如果工作專案已指派給群組，然後又委派給使用者，則群組成員和群組可供使用。
-   * 如果工作專案已指派給單一使用者，則無法委派工作專案。
+  * 如果工作專案已指派給群組，則群組成員可供使用。
+  * 如果工作專案已指派給群組，然後又委派給使用者，則群組成員和群組可供使用。
+  * 如果工作專案已指派給單一使用者，則無法委派工作專案。
 
 * **後退**
 

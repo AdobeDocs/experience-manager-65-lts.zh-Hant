@@ -9,14 +9,26 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 7d975fe3-9444-4337-ba32-98a8cc2e03f3
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 0%
-
 ---
-
 # 建立和管理原則集 {#creating-and-managing-policy-sets}
 
 >[!NOTE]
@@ -71,11 +83,11 @@ ht-degree: 0%
    * 選取要新增的使用者或群組核取方塊，然後按一下下一步。
    * 選取原則集協調器許可權，然後按一下新增。 可設定下列許可權：
 
-      * 檢視事件
-      * 管理檔案（撤銷並恢復檔案的存取權，以及切換檔案原則）
-      * 管理原則（建立、編輯和刪除原則）
-      * 管理檔案發行者（新增和移除檔案發行者）
-      * 委派（新增和移除原則集協調員）
+     * 檢視事件
+     * 管理檔案（撤銷並恢復檔案的存取權，以及切換檔案原則）
+     * 管理原則（建立、編輯和刪除原則）
+     * 管理檔案發行者（新增和移除檔案發行者）
+     * 委派（新增和移除原則集協調員）
 
 1. 重複步驟5以新增更多原則集協調員。
 1. 檢閱原則集協調器設定值，然後按下一步。

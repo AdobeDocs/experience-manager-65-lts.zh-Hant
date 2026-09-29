@@ -9,14 +9,29 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 6a0c7dbf-02ae-4211-a5c7-941eb353a403
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '10888'
 ht-degree: 1%
-
 ---
-
 # 以程式管理端點 {#programmatically-managing-endpoints}
 
 **本檔案中的範例和範例僅適用於JEE環境上的AEM Forms。**
@@ -948,8 +963,8 @@ ht-degree: 1%
 
    * 使用物件的建構函式並傳遞下列值來建立`CreateEndpointCategoryInfo`物件：
 
-      * 字串值，指定類別的識別碼值
-      * 字串值，指定類別的說明
+     * 字串值，指定類別的識別碼值
+     * 字串值，指定類別的說明
 
    * 叫用`EndpointRegistryClient`物件的`createEndpointCategory`方法並傳遞`CreateEndpointCategoryInfo`物件以建立類別。 此方法會傳回代表新類別的`EndpointCategory`物件。
 
@@ -1068,8 +1083,8 @@ ht-degree: 1%
    * 透過叫用它的建構函式來建立`ModifyEndpointInfo`物件。
    * 對於每個要設定的組態值，呼叫`ModifyEndpointInfo`物件的`setConfigParameterAsText`方法。 例如，若要設定URL組態值，請叫用`ModifyEndpointInfo`物件的`setConfigParameterAsText`方法，並傳遞下列值：
 
-      * 字串值，指定組態值的名稱。 例如，若要設定`url`組態值，請指定`url`。
-      * 字串值，指定設定值的值。 若要定義`url`設定值的值，請指定watched資料夾位置。
+     * 字串值，指定組態值的名稱。 例如，若要設定`url`組態值，請指定`url`。
+     * 字串值，指定設定值的值。 若要定義`url`設定值的值，請指定watched資料夾位置。
 
    * 叫用`EndpointRegistryClient`物件的`modifyEndpoint`方法並傳遞`ModifyEndpointInfo`物件。
 

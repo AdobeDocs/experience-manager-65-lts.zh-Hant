@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: bc621086-8128-4836-a580-dca99f61c439
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 0%
-
+source-wordcount: '1779'
+ht-degree: 1%
 ---
-
 # 體驗片段 {#experience-fragments}
 
 ## 基本資訊 {#the-basics}
@@ -64,11 +73,11 @@ ht-degree: 0%
 使用`Sling Rewriter`管道產生HTML轉譯。 管道定義於`/libs/experience-fragments/config/rewriter/experiencefragments`。 HTML轉換器支援下列選項：
 
 * `allowedCssClasses`
-   * 符合應留在最終轉譯中的CSS類別的RegEx運算式。
-   * 如果客戶想要移除某些特定的CSS類別，則此功能會很有用
+  * 符合應留在最終轉譯中的CSS類別的RegEx運算式。
+  * 如果客戶想要移除某些特定的CSS類別，則此功能會很有用
 * `allowedTags`
-   * 最終轉譯中允許的HTML標籤清單。
-   * 依預設，系統允許不設定下列標籤：html、head、title、body、img、p、span、ul、li、a、b、i、em、strong、h1、h2、h3、h4、h5、h6、br、`noscript`、div、link和script。
+  * 最終轉譯中允許的HTML標籤清單。
+  * 依預設，系統允許不設定下列標籤：html、head、title、body、img、p、span、ul、li、a、b、i、em、strong、h1、h2、h3、h4、h5、h6、br、`noscript`、div、link和script。
 
 建議您使用覆蓋來設定重寫程式。 檢視[重疊](/help/sites-developing/overlays.md)
 
@@ -86,12 +95,12 @@ ht-degree: 0%
 
 * 若要擷取影像，
 
-   * `fileReference`
-   * `fileName`
+  * `fileReference`
+  * `fileName`
 
 * 若要擷取文字，
 
-   * `text`
+  * `text`
 
 僅考慮使用此慣例的元件。
 
@@ -114,7 +123,7 @@ ht-degree: 0%
 
    1. 範本的名稱必須以下列專案開頭：
       `experience-fragments`
-可讓使用者在`/content/experience-fragments`中建立體驗片段，因為此資料夾的`cq:allowedTemplates`屬性包含名稱以`experience-fragment`開頭的所有範本。 客戶可以更新此屬性以包含他們自己的命名配置或範本位置。
+      可讓使用者在`/content/experience-fragments`中建立體驗片段，因為此資料夾的`cq:allowedTemplates`屬性包含名稱以`experience-fragment`開頭的所有範本。 客戶可以更新此屬性以包含他們自己的命名配置或範本位置。
 
 1. 可以在體驗片段主控台中設定[允許的範本](/help/sites-authoring/experience-fragments.md#configure-allowed-templates-folder)。
 <!--
@@ -150,7 +159,7 @@ ht-degree: 0%
 * 新增元件，
 * 然後以HTML格式或JSON格式將其匯出為Adobe Target選件。
 
-可在AEM[&#128279;](/help/sites-administering/experience-fragments-target.md#Prerequisites)的作者執行個體上啟用此功能。 它需要有效的Adobe Target設定，以及Link Externalizer設定。
+可在AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites)的作者執行個體上[啟用此功能。 它需要有效的Adobe Target設定，以及Link Externalizer設定。
 
 Link Externalizer是用來判斷建立Target選件的HTML版本時所需的URL，然後傳送至Adobe Target。 Adobe Target需要公開存取Target HTML選件中的所有連結。 在使用體驗片段和這些連結參照的任何資源之前，先發佈這些體驗片段和資源。
 
@@ -254,7 +263,7 @@ public class GeneralLinkRewriter implements ExperienceFragmentLinkRewriterProvid
 * ` [shouldRewrite](#shouldrewrite)`
 * ` [rewriteLink](#rewritelink)`
 
-   * `rewriteLinkExample2`
+  * `rewriteLinkExample2`
 
 * ` [getPriority](#priorities-getpriority)`
 

@@ -8,13 +8,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: e63c1dc2-9843-47ca-8f3c-c49720659aa0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 0%
-
 ---
-
 # 疑難排解AEM Forms應用程式 {#troubleshoot-aem-forms-app}
 
 本文會說明建置AEM Forms應用程式時可能顯示的錯誤訊息，以及解決這些問題的步驟。
@@ -50,8 +64,8 @@ iOS適用的AEM Forms應用程式設定為在OSGi上與AEM Forms同步，僅支�
 
 1. 在CRXDE的根路徑中，按一下[存取控制]下的[存取控制清單]。**+**
 1. 在&#x200B;**新增專案**&#x200B;對話方塊中，按一下[主體]欄位中的群組搜尋按鈕。
-1. 在[選取主體]對話方塊的[名稱]欄位中，輸入`PERM_WORKSPACE_USER`並按一下[搜尋]。**&#x200B;**
-1. 在[選取主體]對話方塊中選取`PERM_WORKSPACE_USER`群組，然後按一下[確定]。**&#x200B;**
+1. 在[選取主體]對話方塊的[名稱]欄位中，輸入`PERM_WORKSPACE_USER`並按一下[搜尋]。****
+1. 在[選取主體]對話方塊中選取`PERM_WORKSPACE_USER`群組，然後按一下[確定]。****
 1. 在[新增專案]對話方塊中，在[主體]欄位中選取`PERM_WORKSPACE_USER`群組。
 
    啟用使用者群組的`jcr:read`許可權。

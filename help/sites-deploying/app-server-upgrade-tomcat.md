@@ -5,13 +5,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 7f8de16f-9e9a-4d37-9978-d26c496b911c
-source-git-commit: 2a33cb4b8aa1dcfd989cf61465492d563f9cd99a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '504'
 ht-degree: 0%
-
 ---
-
 # 應用程式伺服器安裝的升級步驟(Tomcat - Sidegrade) {#upgrade-steps-for-application-server-installations-tomcat}
 
 >[!NOTE]
@@ -20,12 +29,12 @@ ht-degree: 0%
 
 ## 升級前步驟 {#pre-upgrade-steps}
 
-在執行升級之前，必須完成數個步驟。 如需詳細資訊，請參閱[升級程式碼和自訂](/help/sites-deploying/upgrading-code-and-customizations.md)和[升級前維護工作](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。 此外，請確定您的系統符合AEM 6.5 LTS [的](/help/sites-deploying/technical-requirements.md)需求，並檢視[升級計畫考量事項](/help/sites-deploying/upgrade-planning.md)以及[分析器](/help/sites-deploying/aem-analyzer.md)如何協助您估計複雜性。
+在執行升級之前，必須完成數個步驟。 如需詳細資訊，請參閱[升級程式碼和自訂](/help/sites-deploying/upgrading-code-and-customizations.md)和[升級前維護工作](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。 此外，請確定您的系統符合AEM 6.5 LTS ](/help/sites-deploying/technical-requirements.md)的[需求，並檢視[升級計畫考量事項](/help/sites-deploying/upgrade-planning.md)以及[分析器](/help/sites-deploying/aem-analyzer.md)如何協助您估計複雜性。
 
 
 ### 移轉先決條件 {#migration-prerequisites}
 
-* **最低必要的Java版本**：請確定您已在Tomcat伺服器上安裝Oracle® JRE 17/21。
+* **最低必要的Java版本**：請確定您已在Tomcat伺服器上安裝® JRE 17/21。
 * **Tomcat伺服器**： AEM 6.5 LTS支援的Tomcat伺服器版本為&#x200B;**10.0.x**&#x200B;和&#x200B;**10.1.x**。
 
 ### 執行升級 {#performing-the-upgrade}
@@ -33,7 +42,7 @@ ht-degree: 0%
 此程式中的所有範例都使用Tomcat作為應用程式伺服器，並暗示您已部署AEM的有效版本。 此程式旨在記錄從AEM版本&#x200B;**6.5**&#x200B;到&#x200B;**6.5 LTS**&#x200B;所執行的升級。
 
 1. 如果已部署AEM 6.5，請存取： *`https://<serveraddress:port>/system/console/bundles`*&#x200B;以檢查套件組合是否正常運作
-1. 接下來，停止AEM 6.5。這可以從Tomcat App Manager完成，位於： *`https://<serveraddress:port>/manager/html`*
+1. 接下來，停止AEM 6.5。 這可以從Tomcat App Manager完成，位於： *`https://<serveraddress:port>/manager/html`*
 1. 在執行任何升級活動之前，請確定您已完成[預先升級](#pre-upgrade-steps)活動，例如AEM 6.5伺服器的備份
 1. 安裝Java 17/Java 21，並透過執行以下命令來確保它正確安裝：
 

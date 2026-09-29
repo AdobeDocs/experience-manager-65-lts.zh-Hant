@@ -1,24 +1,36 @@
 ---
 title: 共用資產的私人資料夾
-description: 瞭解如何在 [!DNL Adobe Experience Manager Assets] 中建立私人資料夾，並與其他使用者共用，以及指派各種許可權給他們。
+description: 瞭解如何在[!DNL Adobe Experience Manager Assets]中建立私人資料夾，並和其他使用者共用該資料夾，以及為其指派各種許可權。
 contentOwner: AG
 role: User
 feature: Collaboration
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: adcf1276-f4c3-4c32-a830-cc968185dca3
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: f7212149-7f65-4e43-89c2-1f075f45be16
+    internal-label: Collaboration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '604'
 ht-degree: 3%
-
 ---
-
 # [!DNL Adobe Experience Manager Assets]中的私人資料夾 {#private-folder}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/private-folder.html?lang=zh-Hant) |
+| AEM as a Cloud Service | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/private-folder.html?lang=en) |
 | AEM 6.5 | 本文章 |
 
 您可以在[!DNL Adobe Experience Manager Assets]使用者介面中建立您專屬的私人資料夾。 您可以與其他使用者共用此私人資料夾，並為他們指派各種許可權。 根據您指派的許可權層級，使用者可以在資料夾上執行各種工作，例如，檢視資料夾內的資產或編輯資產。
@@ -31,7 +43,7 @@ ht-degree: 3%
 
 若要建立和共用私人資料夾：
 
-1. 在[!DNL Assets]主控台中，按一下工具列中的[建立] **&#x200B;**，然後從功能表中選擇[資料夾] **&#x200B;**。
+1. 在[!DNL Assets]主控台中，按一下工具列中的[建立] ****，然後從功能表中選擇[資料夾] ****。
 
    ![建立資產資料夾](assets/Create-folder.png)
 

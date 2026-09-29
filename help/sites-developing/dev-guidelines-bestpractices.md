@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7fd478a6-ddc6-4c7f-b09b-e4de6ec0e897
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1091'
 ht-degree: 1%
-
 ---
-
 # AEM 開發 - 指導方針與最佳實務{#aem-development-guidelines-and-best-practices}
 
 ## 使用範本和元件的准則 {#guidelines-for-using-templates-and-components}
@@ -63,21 +72,21 @@ Adobe Experience Manager (AEM)元件和範本包含強大的工具組。 開發�
 
   這涉及覆蓋元件定義：
 
-   * 複製現有元件以在`/apps/<website-name>/components/<MyComponent>`中建立元件資料夾：
+  * 複製現有元件以在`/apps/<website-name>/components/<MyComponent>`中建立元件資料夾：
 
-      * 例如，若要自訂文字元件複製：
+    * 例如，若要自訂文字元件複製：
 
-         * 從 `/libs/foundation/components/text`
-         * 至`/apps/myProject/components/text`
+      * 從 `/libs/foundation/components/text`
+      * 至`/apps/myProject/components/text`
 
 * [自訂錯誤處理常式顯示的頁面](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
 
   此案例涉及覆蓋servlet：
 
-   * 在存放庫中，複製一或多個預設指令碼：
+  * 在存放庫中，複製一或多個預設指令碼：
 
-      * 從 `/libs/sling/servlet/errorhandler/`
-      * 至`/apps/sling/servlet/errorhandler/`
+    * 從 `/libs/sling/servlet/errorhandler/`
+    * 至`/apps/sling/servlet/errorhandler/`
 
 >[!CAUTION]
 >
@@ -163,6 +172,6 @@ XSSAPI速查表。
 
 ### 在Java™程式中開啟檔案 {#open-files-in-the-java-process}
 
-由於AEM可以存取許多檔案，因此建議您針對AEM明確設定Java™處理序[&#128279;](/help/sites-deploying/configuring.md#open-files-in-the-java-process)的開啟檔案數。
+由於AEM可以存取許多檔案，因此建議您針對AEM明確設定Java™處理序](/help/sites-deploying/configuring.md#open-files-in-the-java-process)的[開啟檔案數。
 
 為了將這個問題降至最低，開發應確保在（有意義的）可能時，正確關閉任何開啟的檔案。

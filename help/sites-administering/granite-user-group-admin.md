@@ -9,13 +9,25 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: ba02f9d4-5286-41d6-995c-307d6e13431b
-source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '956'
 ht-degree: 1%
-
 ---
-
 # Granite作業 — 使用者和群組管理{#granite-operations-user-and-group-administration}
 
 由於Granite納入CRX Repository的JCR API規格實作，因此有自己的使用者和群組管理。
@@ -34,9 +46,9 @@ ht-degree: 1%
 
   **使用者**&#x200B;主控台清單：
 
-   * 使用者名稱
-   * 使用者登入名稱（帳戶名稱）
-   * 已指定帳戶的任何標題
+  * 使用者名稱
+  * 使用者登入名稱（帳戶名稱）
+  * 已指定帳戶的任何標題
 
 * [群組管理](#group-administration)
 
@@ -44,9 +56,9 @@ ht-degree: 1%
 
   **群組**&#x200B;主控台清單：
 
-   * 群組名稱
-   * 群組說明
-   * 群組中的使用者/群組數量
+  * 群組名稱
+  * 群組說明
+  * 群組中的使用者/群組數量
 
 ## 使用者管理 {#user-administration}
 
@@ -90,8 +102,8 @@ ht-degree: 1%
    * **關於**
    * **帳戶設定**
 
-      * **狀態**
-您可以將帳戶標幟為&#x200B;**使用中**&#x200B;或&#x200B;**非使用中**。
+     * **狀態**
+       您可以將帳戶標幟為**使用中**&#x200B;或&#x200B;**非使用中**。
 
    * **像片**
 

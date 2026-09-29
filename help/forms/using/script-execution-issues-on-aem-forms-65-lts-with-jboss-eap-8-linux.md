@@ -5,13 +5,21 @@ solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
 exl-id: 4dfaa625-47fa-4681-9e2f-a3bbdca95276
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '240'
 ht-degree: 1%
-
 ---
-
 # 使用JBoss EAP 8 (Linux)的AEM Forms 6.5 LTS上指令碼執行失敗
 
 ## 問題
@@ -23,8 +31,8 @@ ht-degree: 1%
 $'\r': command not found
 ```
 
-在&#x200B;**Windows**&#x200B;系統上建立或編輯Shell指令碼或組態檔，且包含&#x200B;**CRLF （歸位+換行）**&#x200B;行結尾時，就會發生這些錯誤。
-Linux系統僅支援&#x200B;**LF （換行）**&#x200B;行結尾，而Windows樣式的行結尾會導致指令碼執行失敗。
+在&#x200B;**Windows**&#x200B;系統上建立或編輯Shell指令碼或組態檔，且包含&#x200B;**CRLF （歸位+換行）**行結尾時，就會發生這些錯誤。
+Linux系統僅支援**LF （換行）**&#x200B;行結尾，而Windows樣式的行結尾會導致指令碼執行失敗。
 
 ## 適用於
 
