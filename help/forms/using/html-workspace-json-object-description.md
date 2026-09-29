@@ -30,7 +30,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '2168'
 ht-degree: 7%
@@ -43,49 +43,49 @@ AEM Forms工作區中使用的JSON物件說明如下。
 
    類別會顯示在工作區的啟動流程標籤中。 這些類別是用來分類起點。
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>屬性</strong></td>
-   <td><strong>僅限使用者端</strong></td>
-   <td><strong>評論</strong></td>
-  </tr>
-  <tr>
-   <td>名稱</td>
-   <td>五</td>
-   <td>類別名稱</td>
-  </tr>
-  <tr>
-   <td>id</td>
-   <td>五</td>
-   <td>類別識別碼<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>描述<br type="_moz" /> </td>
-   <td>五</td>
-   <td>類別描述<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>parentOid<br type="_moz" /> </td>
-   <td>五</td>
-   <td>包含父類別<br type="_moz" />的OID </td>
-  </tr>
-  <tr>
-   <td>startPointsList<br type="_moz" /> </td>
-   <td>二</td>
-   <td>包含類別中存在的所有起點的清單</td>
-  </tr>
-  <tr>
-   <td>categorylist</td>
-   <td>二</td>
-   <td>包含類別<br type="_moz" />的直接子類別清單 </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>屬性</strong></td>
+      <td><strong>僅限使用者端</strong></td>
+      <td><strong>評論</strong></td>
+   </tr>
+   <tr>
+      <td>名稱</td>
+      <td>五</td>
+      <td>類別名稱</td>
+   </tr>
+   <tr>
+      <td>id</td>
+      <td>五</td>
+      <td>類別識別碼<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>描述<br type="_moz" /> </td>
+      <td>五</td>
+      <td>類別描述<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>parentOid<br type="_moz" /> </td>
+      <td>五</td>
+      <td>包含父類別<br type="_moz" />的OID </td>
+   </tr>
+   <tr>
+      <td>startPointsList<br type="_moz" /> </td>
+      <td>二</td>
+      <td>包含類別中存在的所有起點的清單</td>
+   </tr>
+   <tr>
+      <td>categorylist</td>
+      <td>二</td>
+      <td>包含類別<br type="_moz" />的直接子類別清單 </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->所有「起點」和「我的最愛」都是在使用者端定義的類別。 我的最愛類別包含使用者標示為我的最愛的所有起點。 「所有起點」類別包含所有起點。
+   >[!NOTE]
+   >
+   >所有「起點」和「我的最愛」都是在使用者端定義的類別。 我的最愛類別包含使用者標示為我的最愛的所有起點。 「所有起點」類別包含所有起點。
 
 1. 起點
 

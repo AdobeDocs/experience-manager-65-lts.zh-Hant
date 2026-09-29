@@ -22,7 +22,7 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 3%
@@ -74,42 +74,42 @@ ExactTarget的&#x200B;**電子郵件工具**&#x200B;元件可為您的電子郵�
 
 1. 從&#x200B;**選項**&#x200B;功能表選取選項：
 
-<table>
- <tbody>
-  <tr>
-   <td>郵寄地址（必要）</td>
-   <td>此元件會在您的電子郵件中插入組織的實體郵寄地址。</td>
-  </tr>
-  <tr>
-   <td>設定檔中心 (必要)</td>
-   <td>設定檔中心是一個網頁，訂閱者可在此輸入並維護您保留的相關個人資訊。</td>
-  </tr>
-  <tr>
-   <td>以網頁的形式檢視電子郵件</td>
-   <td>此元件可讓使用者以網頁的形式檢視電子郵件。</td>
-  </tr>
-  <tr>
-   <td>隱私權原則</td>
-   <td>此元件會在電子郵件中插入隱私權原則的連結。<br /> </td>
-  </tr>
-  <tr>
-   <td>取消訂閱中心</td>
-   <td>為使用者提供取消訂閱郵寄清單的選項。</td>
-  </tr>
-  <tr>
-   <td>訂閱中心</td>
-   <td>訂閱中心是一個網頁，訂閱者可在此控制從您的組織收到的訊息。</td>
-  </tr>
-  <tr>
-   <td>追蹤電子郵件開啟次數</td>
-   <td>可讓您使用ExactTarget追蹤功能的隱藏元件。<br /> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>郵寄地址（必要）</td>
+      <td>此元件會在您的電子郵件中插入組織的實體郵寄地址。</td>
+   </tr>
+   <tr>
+      <td>設定檔中心 (必要)</td>
+      <td>設定檔中心是一個網頁，訂閱者可在此輸入並維護您保留的相關個人資訊。</td>
+   </tr>
+   <tr>
+      <td>以網頁的形式檢視電子郵件</td>
+      <td>此元件可讓使用者以網頁的形式檢視電子郵件。</td>
+   </tr>
+   <tr>
+      <td>隱私權原則</td>
+      <td>此元件會在電子郵件中插入隱私權原則的連結。<br /> </td>
+   </tr>
+   <tr>
+      <td>取消訂閱中心</td>
+      <td>為使用者提供取消訂閱郵寄清單的選項。</td>
+   </tr>
+   <tr>
+      <td>訂閱中心</td>
+      <td>訂閱中心是一個網頁，訂閱者可在此控制從您的組織收到的訊息。</td>
+   </tr>
+   <tr>
+      <td>追蹤電子郵件開啟次數</td>
+      <td>可讓您使用ExactTarget追蹤功能的隱藏元件。<br /> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->**選項**&#x200B;下拉式功能表只有在將ExactTarget組態套用至電子郵件時才會填入。 如需詳細資訊，請參閱[將電子郵件服務組態套用至電子郵件設定](#applying-e-mail-service-configuration-to-e-mail-settings)。
+   >[!NOTE]
+   >
+   >**選項**&#x200B;下拉式功能表只有在將ExactTarget組態套用至電子郵件時才會填入。 如需詳細資訊，請參閱[將電子郵件服務組態套用至電子郵件設定](#applying-e-mail-service-configuration-to-e-mail-settings)。
 
 1. 將電子郵件發佈到ExactTarget。
 

@@ -25,9 +25,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '17116'
+source-wordcount: '17115'
 ht-degree: 0%
 ---
 # 數位簽署和認證檔案 {#digitally-signing-and-certifying-documents}
@@ -611,9 +611,9 @@ PDF檔案是以公開金鑰技術簽署。 簽署者有兩個金鑰：公開金�
 
 將這個組態值新增至cknfastrc檔案之後，便可以使用新的認證而不需重新啟動J2EE應用程式伺服器。
 
-    >[！NOTE]
-    >
-    >建議使用&#39;Ctrl + C&#39;命令重新啟動SDK。 使用替代方法重新啟動AEM SDK （例如停止Java程式），可能會導致AEM開發環境不一致。
+>[!NOTE]
+>
+> 建議您使用&#39;Ctrl + C&#39;命令重新啟動SDK。 使用替代方法重新啟動AEM SDK （例如停止Java程式），可能會導致AEM開發環境不一致。
 
 **簽章不受信任**
 

@@ -19,7 +19,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '1587'
 ht-degree: 2%
@@ -32,11 +32,11 @@ ht-degree: 2%
 * Proxy Worker用來定義和管理特定工作。
 這些可以涵蓋各種工作；例如，使用[!DNL InDesign Server]處理檔案。
 
-若要將檔案完全上傳至您已使用[!DNL Adobe InDesign]建立的[!DNL Experience Manager Assets]，請使用Proxy。 這會使用Proxy背景工作來與[!DNL Adobe InDesign Server]通訊，其中執行[指令碼](https://helpx.adobe.com/tw/indesign/using/scripting.html)以擷取中繼資料並產生[!DNL Experience Manager Assets]的各種轉譯。 Proxy背景工作可啟用雲端組態中[!DNL InDesign Server]與[!DNL Experience Manager]執行個體之間的雙向通訊。
+若要將檔案完全上傳至您已使用[!DNL Adobe InDesign]建立的[!DNL Experience Manager Assets]，請使用Proxy。 這會使用Proxy背景工作來與[!DNL Adobe InDesign Server]通訊，其中執行[指令碼](https://helpx.adobe.com/indesign/using/scripting.html)以擷取中繼資料並產生[!DNL Experience Manager Assets]的各種轉譯。 Proxy背景工作可啟用雲端組態中[!DNL InDesign Server]與[!DNL Experience Manager]執行個體之間的雙向通訊。
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign]以兩種不同的方案提供。 [Adobe InDesign](https://www.adobe.com/tw/products/indesign.html)案頭應用程式，用來設計列印和數位分送的版面配置。 [Adobe InDesign Server](https://www.adobe.com/tw/products/indesignserver.html)可讓您根據使用[!DNL InDesign]建立的內容，以程式設計方式建立自動化檔案。 它以提供[ExtendScript](https://helpx.adobe.com/tw/indesign/using/scripting.html)引擎介面的服務方式運作。指令碼是以[!DNL ExtendScript]撰寫，類似[!DNL JavaScript]。
+>[!DNL Adobe InDesign]以兩種不同的方案提供。 [Adobe InDesign](https://www.adobe.com/products/indesign.html)案頭應用程式，用來設計列印和數位分送的版面配置。 [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html)可讓您根據使用[!DNL InDesign]建立的內容，以程式設計方式建立自動化檔案。 它以提供[ExtendScript](https://helpx.adobe.com/indesign/using/scripting.html)引擎介面的服務方式運作。指令碼是以[!DNL ExtendScript]撰寫，類似[!DNL JavaScript]。
 
 ## 擷取的運作方式 {#how-the-extraction-works}
 
@@ -80,7 +80,7 @@ ht-degree: 2%
 1. [安裝InDesign Server](#installing-the-indesign-server)。
 1. 必要時，[設定Experience Manager Assets工作流程](#configuring-the-aem-assets-workflow)。
 只有在預設值不適合您的執行個體時，才需要執行此操作。
-1. 設定InDesign Server[&#128279;](#configuring-the-proxy-worker-for-indesign-server)的Proxy背景工作。
+1. 設定InDesign Server](#configuring-the-proxy-worker-for-indesign-server)的[Proxy背景工作。
 
 ### 安裝[!DNL InDesign Server] {#installing-the-indesign-server}
 
@@ -211,23 +211,23 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 
 1. 儲存這些變更。
 1. 若要啟用Adobe CS6和更新版本的多工作階段支援，請核取`com.day.cq.dam.ids.impl.IDSJobProcessor.name`設定下的`enable.multisession.name`核取方塊。
-1. 將SOAP端點新增至IDS Worker設定[&#128279;](#configuring-the-proxy-worker-for-indesign-server)，以建立`x` IDS Worker的集區。
+1. 將SOAP端點新增至IDS Worker設定](#configuring-the-proxy-worker-for-indesign-server)，以建立`x` IDS Worker的[集區。
 
    如果有多部電腦執行[!DNL InDesign Server]，請為每部電腦新增SOAP端點（每部電腦的處理器數目–1）。
+
+   >[!NOTE]
+   >
+   >使用背景工作集區時，您可以啟用封鎖的IDS背景工作清單。
+   >
+   >若要這麼做，請在`com.day.cq.dam.ids.impl.IDSJobProcessor.name`設定下啟用&#x200B;**[!UICONTROL enable.retry.name]**&#x200B;核取方塊，以啟用IDS工作重試。
+   >
+   >此外，在`com.day.cq.dam.ids.impl.IDSPoolImpl.name`設定下，為`max.errors.to.blacklist`引數設定正值，該值決定在從工作處理常式清單中禁止ID之前的工作重試次數。
+   >
+   >根據預設，在可設定的(`retry.interval.to.whitelist.name`)時間（以分鐘為單位）之後，會重新驗證IDS背景工作。 如果線上上找到背景工作，就會從封鎖清單中移除背景工作。
 
 <!-- 
 TBD: Make updates to configurations for allow and block list after product updates are done.
 -->
-
->[!NOTE]
->
->使用背景工作集區時，您可以啟用封鎖的IDS背景工作清單。
->
->若要這麼做，請在`com.day.cq.dam.ids.impl.IDSJobProcessor.name`設定下啟用&#x200B;**[!UICONTROL enable.retry.name]**&#x200B;核取方塊，以啟用IDS工作重試。
->
->此外，在`com.day.cq.dam.ids.impl.IDSPoolImpl.name`設定下，為`max.errors.to.blacklist`引數設定正值，該值決定在從工作處理常式清單中禁止ID之前的工作重試次數。
->
->根據預設，在可設定的(`retry.interval.to.whitelist.name`)時間（以分鐘為單位）之後，會重新驗證IDS背景工作。 如果線上上找到背景工作，就會從封鎖清單中移除背景工作。
 
 ## 啟用[!DNL InDesign Server] 10.0或更新版本的支援 {#enabling-support-for-indesign-server-or-later}
 
@@ -251,4 +251,4 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 >[!MORELIKETHIS]
 >
->* [關於Adobe InDesign Server](https://www.adobe.com/tw/products/indesignserver/faq.html)
+>* [關於Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)

@@ -16,7 +16,7 @@ role_v2:
     internal-label: Developer
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 0%
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 ### 比較表單版本 {#compare-form-versions}
 
-表單作者可比較兩個不同的表單版本，以供預覽。 若要比較版本，請選取任一表單版本，然後按一下[與目前版本比較]。**&#x200B;** 它會在預覽模式中顯示兩個不同的表單版本。
+表單作者可比較兩個不同的表單版本，以供預覽。 若要比較版本，請選取任一表單版本，然後按一下[與目前版本比較]。**** 它會在預覽模式中顯示兩個不同的表單版本。
 
 ![比較表單版本](assets/compare-form-versions.png)
 
@@ -69,8 +69,8 @@ ht-degree: 0%
 稽核是一種機制，可讓一或多個稽核者在表單上加上註解。 任何表單使用者都可以評論表單或透過評論來檢閱表單。 若要在表單上加上註解，請選取&#x200B;**[!UICONTROL 表單]**，然後新增&#x200B;**[!UICONTROL 註解]**&#x200B;至表單。
 
 >[!NOTE]
-> 如上所述，當您在調適型表單核心元件中使用註解時，表單功能[新增稽核者至表單](/help/forms/using/create-reviews-forms.md)會停用。
-
+>
+>如上所述，當您在調適型表單核心元件中使用註解時，表單功能[新增稽核者至表單](/help/forms/using/create-reviews-forms.md)會停用。
 
 ![在表單上新增註解](assets/form-comments.png)
 
