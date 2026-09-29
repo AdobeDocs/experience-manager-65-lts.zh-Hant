@@ -38,7 +38,7 @@ ht-degree: 7%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html)上的[AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html)上的AEM Forms 。
 
 <span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
@@ -90,7 +90,7 @@ ht-degree: 7%
 
    ![從指定的XML結構描述模型選取複雜型別](assets/complex-type.png)
 
-1. 按一下[建立]****，然後按一下[開啟]****，以編輯模式開啟具有預設範本的片段。
+1. 按一下[建立]&#x200B;**&#x200B;**，然後按一下[開啟]&#x200B;**&#x200B;**，以編輯模式開啟具有預設範本的片段。
 
 在編輯模式中，您可以將任何最適化表單元件從AEM sidekick拖放至片段上。 如需最適化表單元件的相關資訊，請參閱[製作最適化表單簡介](../../forms/using/introduction-forms-authoring.md)。
 
@@ -122,8 +122,8 @@ ht-degree: 7%
 
    * **表單模型**：根據最適化表單的表單模型，此欄位會顯示&#x200B;**XML結構描述**、**表單範本**&#x200B;或&#x200B;**無**。 這是不可編輯的欄位。
 
-   * **片段模型根**：僅出現在XSD型最適化表單中。 它會指定片段模型的根。 您可以從下拉式清單中選擇&#x200B;**/**或XSD複雜型別。 只有在選取複雜型別作為片段模型根時，才能在另一個最適化表單中重複使用片段。
-     如果您選擇**/**&#x200B;作為片段模型根目錄，則最適化表單資料模型標籤中會顯示根目錄的完整XSD樹狀結構。 對於複雜型別片段模型根，在調適型表單資料模型標籤中只會顯示所選複雜型別的子系。 如果您建立片段並選擇複雜型別做為&#x200B;**片段模型根**，則您可以在使用該複雜型別的地方使用它，無論是在相同表單中還是在多個表單中。
+   * **片段模型根**：僅出現在XSD型最適化表單中。 它會指定片段模型的根。 您可以從下拉式清單中選擇&#x200B;**/**&#x200B;或XSD複雜型別。 只有在選取複雜型別作為片段模型根時，才能在另一個最適化表單中重複使用片段。
+     如果您選擇&#x200B;**/**&#x200B;作為片段模型根目錄，則最適化表單資料模型標籤中會顯示根目錄的完整XSD樹狀結構。 對於複雜型別片段模型根，在調適型表單資料模型標籤中只會顯示所選複雜型別的子系。 如果您建立片段並選擇複雜型別做為&#x200B;**片段模型根**，則您可以在使用該複雜型別的地方使用它，無論是在相同表單中還是在多個表單中。
 
    * **XSD Ref**：僅出現在XSD型最適化表單中。 它顯示XML綱要的位置。
 
