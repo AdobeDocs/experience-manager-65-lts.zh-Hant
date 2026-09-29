@@ -152,7 +152,7 @@ AEM收件匣只會顯示作用中的任務。 已完成的任務未出現在清�
      | allowExplicitSharing | allowExplicitSharing | 布林值 |
 
 
-   * 透過AEM套件部署索引。 您可以使用[AEM Archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using)專案來建立可部署的AEM套件。 使用以下範常式式碼，將索引新增至AEM Archetype專案：
+   * 透過AEM套件部署索引。 您可以使用[AEM Archetype](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/using)專案來建立可部署的AEM套件。 使用以下範常式式碼，將索引新增至AEM Archetype專案：
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()

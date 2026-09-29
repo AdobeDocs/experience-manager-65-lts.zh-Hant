@@ -156,7 +156,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 
   您也可以使用[捷徑鍵](/help/sites-authoring/keyboard-shortcuts.md) `/` （正斜線）從任何主控台叫用搜尋。
 
-* [解決方案](https://business.adobe.com/)
+* [解決方案](https://business.adobe.com/tw/)
 
   ![解決方案](do-not-localize/screen_shot_2018-03-23at103552.png)
 

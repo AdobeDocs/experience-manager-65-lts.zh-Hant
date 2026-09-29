@@ -87,7 +87,7 @@ ht-degree: 3%
 
 1. 確認已安裝最新程式碼：
 
-* [AEM平台更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)
+* [AEM平台更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=zh-Hant)
 
 ### &#x200B;1. Apache Sling 分配代理 - 同步代理工廠 {#apache-sling-distribution-agent-sync-agents-factory}
 
