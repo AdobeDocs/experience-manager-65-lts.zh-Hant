@@ -1,5 +1,5 @@
 ---
-title: 為HTML5表單自訂錯誤訊息
+title: 自訂 HTML5 表單的錯誤訊息
 description: 瞭解如何自訂HTML5表單的錯誤訊息顯示，包括如何變更其位置和外觀。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
@@ -7,14 +7,29 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 424e7664-7d1c-4f47-83bd-0af3f40e7fa9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 3%
-
+source-wordcount: '508'
+ht-degree: 6%
 ---
-
-# 為HTML5表單自訂錯誤訊息 {#customizing-error-messages-for-html-forms}
+# 自訂 HTML5 表單的錯誤訊息 {#customizing-error-messages-for-html-forms}
 
 在HTML5 Forms中，錯誤訊息和警告會立即使用固定的位置和外觀（字型和顏色），錯誤只會針對選取的欄位顯示，而且只會顯示一個錯誤。
 
@@ -75,7 +90,7 @@ ht-degree: 3%
    ```
 
 1. 儲存並關閉檔案。
-1. 導覽至`CustomErrorManager-1.0-SNAPSHOT`資料夾，並建立jcr_root和META-INF資料夾的封存。 將封存重新命名為CustomErrorManager-1.0-SNAPSHOT.zip。
+1. 導覽至`CustomErrorManager-1.0-SNAPSHOT`資料夾，並建立jcr_root與META-INF資料夾的封存。 將封存重新命名為CustomErrorManager-1.0-SNAPSHOT.zip。
 1. 使用封裝管理員來上傳及安裝封裝。
 
 ## 顯示多個欄位的錯誤訊息  {#display-error-messages-for-multiple-fields-nbsp}

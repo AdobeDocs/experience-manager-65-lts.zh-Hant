@@ -10,16 +10,34 @@ role: User, Admin
 feature: Components,Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: d3699ddf-2a6e-4837-a98b-61b565de3d76
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a9d2a4a6-0a32-4f6e-8eb1-128ec2b18a80
+    internal-label: Components
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3404'
 ht-degree: 6%
-
 ---
-
 # 將 Dynamic Media 資產新增至頁面{#adding-dynamic-media-assets-to-pages}
 
-若要將動態媒體功能新增至您在網站上使用的資產，您可以直接在頁面上新增&#x200B;**動態媒體**、**互動媒體**、**全景媒體**&#x200B;或&#x200B;**Video 360 Media**&#x200B;元件。 若要新增元件，請進入「版面」模式並啟用「動態媒體」元件。 然後，您可以將這些元件新增至頁面，並新增資產至元件。 動態媒體元件是智慧型的——他們知道您是新增影像還是視訊，而可用的設定選項也會隨之變更。
+若要將動態媒體功能新增至您在網站上使用的資產，您可以直接在頁面上新增&#x200B;**動態媒體**、**互動媒體**、**全景媒體**&#x200B;或&#x200B;**Video 360 Media**&#x200B;元件。 若要新增元件，請進入「版面」模式並啟用「動態媒體」元件。 然後，您可以將這些元件新增至頁面，並新增資產至元件。 動態媒體元件是智慧型的——它們知道您是新增影像還是影片，而可用的設定選項也會隨之變更。
 
 如果您使用Adobe Experience Manager做為WCM，可以直接將Dynamic Media資產新增至頁面。 如果您使用第三方來處理WCM，請連結 [或](/help/assets/linking-urls-to-yourwebapplication.md) [嵌入資](/help/assets/embed-code.md) 產。 如需響應式第三方互動網站，請參閱將最佳化 [的影像傳送至響應式網站](/help/assets/responsive-site.md)。
 

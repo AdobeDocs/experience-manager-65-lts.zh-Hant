@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6c54197f-86da-41bd-93e6-ee78ece91013
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '951'
 ht-degree: 1%
-
 ---
-
 # 取得JSON格式的頁面資訊{#obtaining-page-information-in-json-format}
 
 若要取得頁面資訊，請傳送要求至PageInfo servlet以取得JSON格式的頁面中繼資料。
@@ -538,7 +547,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 建立自訂頁面資訊提供者服務，新增您的應用程式可輕鬆取得的頁面中繼資料。
 
-1. 實作`com.day.cq.wcm.api.PageInfoProvider`介面。
+1. 實作 `com.day.cq.wcm.api.PageInfoProvider` 介面。
 1. 將類別捆綁並部署為OSGi服務。
 1. 在應用程式中建立頁面元件。 使用`foundation/components/page`做為`sling:resourceSuperType`屬性的值。
 

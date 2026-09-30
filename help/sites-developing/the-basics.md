@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: fe3735ff-5c9b-4eb8-bf1d-f2189ec7e26f
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3373'
 ht-degree: 0%
-
 ---
-
 # AEM核心概念 {#aem-core-concepts}
 
 >[!NOTE]
@@ -28,10 +37,10 @@ ht-degree: 0%
 
 * 網頁應用程式技術的基本知識，包括：
 
-   * request -response (XMLHttpRequest / XMLHttpResponse)循環
-   * HTML
-   * CSS
-   * JavaScript
+  * request -response (XMLHttpRequest / XMLHttpResponse)循環
+  * HTML
+  * CSS
+  * JavaScript
 
 * Experience Server (CRX)的工作知識，包括Content Explorer
 * 若要使用傳統UI進行開發，您也必須具備JSP (JavaServer Pages)的基本知識，包括瞭解及修改簡單JSP範例的能力。
@@ -86,8 +95,8 @@ Sling是&#x200B;*以內容為中心*。 這表示處理著重於內容，因為�
 * RESTful，而不只是曲面上的；資源和表示在伺服器內正確建模
 * 移除一或多個資料模型
 
-   * 之前需要下列專案：URL結構、業務物件、DB綱要；
-   * 現在減少為： URL =資源= JCR結構
+  * 之前需要下列專案：URL結構、業務物件、DB綱要；
+  * 現在減少為： URL =資源= JCR結構
 
 ### URL分解 {#url-decomposition}
 
@@ -160,11 +169,11 @@ Sling也可讓JCR節點以外的專案成為資源，但這是進階功能。
 * 當需要方法(GET、POST)時，會根據HTTP規格以大寫指定，例如jobs.POST.esp （請參閱下文）
 * 支援各種指令碼引擎：
 
-   * HTL （HTML範本語言 — Adobe Experience Manager偏好並建議的HTML伺服器端範本系統）： `.html`
-   * ECMAScript (JavaScript)頁面（伺服器端執行）： `.esp, .ecma`
-   * Java™ Server Pages （伺服器端執行）： `.jsp`
-   * Java™ Servlet編譯器（伺服器端執行）： `.java`
-   * JavaScript範本（使用者端執行）： `.jst`
+  * HTL （HTML範本語言 — Adobe Experience Manager偏好並建議的HTML伺服器端範本系統）： `.html`
+  * ECMAScript (JavaScript)頁面（伺服器端執行）： `.esp, .ecma`
+  * Java™ Server Pages （伺服器端執行）： `.jsp`
+  * Java™ Servlet編譯器（伺服器端執行）： `.java`
+  * JavaScript範本（使用者端執行）： `.jst`
 
 特定AEM執行個體支援的指令碼引擎清單列在Felix管理主控台( `http://<host>:<port>/system/console/slingscripting`)上。
 
@@ -198,19 +207,19 @@ Sling也可讓JCR節點以外的專案成為資源，但這是進階功能。
 
 * 如果未定義sling:resourceType，則：
 
-   * 內容路徑可用來搜尋適當的指令碼（如果路徑型ResourceTypeProvider為作用中）。
+  * 內容路徑可用來搜尋適當的指令碼（如果路徑型ResourceTypeProvider為作用中）。
 
-     例如，`../content/corporate/jobs/developer.html`的指令碼將在`/apps/content/corporate/jobs/`中產生搜尋。
+    例如，`../content/corporate/jobs/developer.html`的指令碼將在`/apps/content/corporate/jobs/`中產生搜尋。
 
-   * 主要節點型別已使用。
+  * 主要節點型別已使用。
 
 * 如果找不到指令碼，則會使用預設指令碼。
 
   支援純文字(.txt)、HTML (.html)和JSON (.json)作為預設轉譯，所有這些轉譯都列出節點的屬性（格式適當）。 副檔名為.res或沒有要求副檔名的要求的預設轉譯為儘可能將資源多工緩衝處理。
 * 如需http錯誤處理（程式碼403或404），Sling會在以下位置尋找指令碼：
 
-   * [自訂指令碼的位置/apps/sling/servlet/errorhandler](/help/sites-developing/customizing-errorhandler-pages.md)
-   * 或標準指令碼/libs/sling/servlet/errorhandler/403.esp或404.esp的位置。
+  * [自訂指令碼的位置/apps/sling/servlet/errorhandler](/help/sites-developing/customizing-errorhandler-pages.md)
+  * 或標準指令碼/libs/sling/servlet/errorhandler/403.esp或404.esp的位置。
 
 如果特定請求套用多個指令碼，則會選取最符合的指令碼。 相符專案越具體，越好；換言之，無論是否有任何相符的要求副檔名或方法名稱，選取器越符合越好。
 
@@ -243,30 +252,30 @@ Sling也可讓JCR節點以外的專案成為資源，但這是進階功能。
 
 * /
 
-   * a
-   * b
+  * a
+  * b
 
-      * sling:resourceSuperType = a
+    * sling:resourceSuperType = a
 
-   * c
+  * c
 
-      * sling:resourceSuperType = b
+    * sling:resourceSuperType = b
 
-   * x
+  * x
 
-      * sling:resourceType = c
+    * sling:resourceType = c
 
-   * y
+  * y
 
-      * sling:resourceType = c
-      * sling:resourceSuperType = a
+    * sling:resourceType = c
+    * sling:resourceSuperType = a
 
 下列專案的型別階層：
 
 * `/x`
-   * 為`[ c, b, a, <default>]`
+  * 為`[ c, b, a, <default>]`
 * 為`/y`時
-   * 階層為`[ c, a, <default>]`
+  * 階層為`[ c, a, <default>]`
 
 這是因為`/y`具有`sling:resourceSuperType`屬性，而`/x`沒有，因此其超型別取自其資源型別。
 
@@ -278,8 +287,8 @@ Sling也可讓JCR節點以外的專案成為資源，但這是進階功能。
 
 * 自動處理GET以外的http方法，包括：
 
-   * POST、PUT、DELETE，由Sling預設實作處理
-   * sling:resourceType位置中的`POST.jsp`指令碼
+  * POST、PUT、DELETE，由Sling預設實作處理
+  * sling:resourceType位置中的`POST.jsp`指令碼
 
 * 您的程式碼架構已不像原來那麼乾淨和結構清晰；這對於大規模開發至關重要
 
@@ -470,9 +479,9 @@ FileVault為您的JCR存放庫提供檔案系統對應和版本控制。 透過�
 * 有效管理網站的不同語言版本。
 * 根據來源網站自動更新一或多個網站：
 
-   * 強制實施通用基礎結構，並在多個網站間使用通用內容。
-   * 最大限度地利用可用資源。
-   * 維持共同的外觀與風格。
-   * 集中管理網站之間不同的內容。
+  * 強制實施通用基礎結構，並在多個網站間使用通用內容。
+  * 最大限度地利用可用資源。
+  * 維持共同的外觀與風格。
+  * 集中管理網站之間不同的內容。
 
 如需詳細資訊，請參閱[多網站管理員](/help/sites-administering/msm.md)。

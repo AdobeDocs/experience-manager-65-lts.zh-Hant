@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 1976047c-661a-4398-8dd8-c71cd05d53be
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '200'
 ht-degree: 1%
-
 ---
-
 # 元件{#components}
 
 Adobe Experience Manager (AEM)隨附多種現成的元件，為網站作者提供全方位功能。 在[編輯頁面](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md)時，這些元件可供使用，並且依主要功能區域（即元件群組）分組，以協助篩選。

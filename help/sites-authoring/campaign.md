@@ -9,13 +9,30 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Developer
 exl-id: 1d621e12-6da5-4b49-98c9-3fb9b8189ff7
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2769'
+source-wordcount: '2794'
 ht-degree: 2%
-
 ---
-
 # 合作使用Adobe Campaign Classic與Adobe Campaign Standard{#working-with-adobe-campaign-classic-and-adobe-campaign-standard}
 
 您可以在AEM中建立電子郵件內容，並在Adobe Campaign電子郵件中處理。 若要這麼做，您必須：
@@ -173,7 +190,7 @@ ht-degree: 2%
    >Adobe Campaign Standard的&#x200B;**：**
    >
    >* 可用的內容欄位對應至Adobe Campaign中的&#x200B;**設定檔**&#x200B;目標維度。
-   >* 請參閱將AEM頁面連結至Adobe Campaign電子郵件[。](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard)
+   >* 請參閱將AEM頁面連結至Adobe Campaign電子郵件[&#128279;](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard)。
    >
    >Adobe Campaign Classic的&#x200B;**：**
    >
@@ -198,7 +215,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >如果您使用Adobe Campaign Standard並使用範例範本，顯示初始內容的兩個個人化區塊 — **&quot;&lt;%@包含view=&quot;MirrorPage&quot; %>&quot;**&#x200B;和&#x200B;**&quot;&lt;%@包含view=&quot;UnsubscriptionLink&quot; %>&quot;** — 在傳送期間匯入內容時將會擲回錯誤。 您可以使用個人化區塊選擇器選取對應的區塊，以調整這些區塊。
+   >如果您使用Adobe Campaign Standard並使用範例範本，顯示初始內容的兩個個人化區塊 — **&quot;&lt;%@ include view=&quot;MirrorPage&quot; %>&quot;**&#x200B;和&#x200B;**&quot;&lt;%@ include view=&quot;UnsubscriptionLink&quot; %>&quot;** — 在傳送期間匯入內容時將會擲回錯誤。 您可以使用個人化區塊選擇器選取對應的區塊，以調整這些區塊。
 
 1. 若要預覽個人化，請按一下/點選工具列中的對應圖示以開啟ContextHub。 個人化欄位標籤現在由所選角色的種子資料取代。 瞭解在ContextHub中切換角色時，變數如何調整。
 
@@ -323,7 +340,7 @@ Adobe Campaign可讓您復原在AEM中建立的內容，並與以下內容同步
 >
 >[!NOTE]
 >
->AEM 6.1已棄用工作流程步驟&#x200B;**發佈至Adobe Campaign**。此步驟是AEM 6.0與Adobe Campaign整合的一部分，已不再是必要步驟。
+>AEM 6.1已棄用工作流程步驟&#x200B;**發佈至Adobe Campaign**。 此步驟是AEM 6.0與Adobe Campaign整合的一部分，已不再是必要步驟。
 
 若要將AEM中建立的內容與來自Adobe Campaign的傳送同步：
 

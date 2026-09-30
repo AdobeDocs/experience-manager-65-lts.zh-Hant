@@ -1,17 +1,31 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  6.5 LTS 版發行說明'
+title: '[!DNL Adobe Experience Manager] 6.5 LTS的發行說明'
 description: 尋找 Adobe Experience Manager 6.5 LTS 的最新版本資訊。
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: dfda31ac-765b-401d-98d0-c19f0de22aab
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 100%
-
+source-wordcount: '1161'
+ht-degree: 99%
 ---
-
 # Adobe Experience Manager 6.5 LTS 的最新發行說明 {#release-notes}
 
 ## 版本資訊 {#release-information}
@@ -79,7 +93,7 @@ Adobe 會持續審閱產品功能，藉由更新或取代舊功能，提高客�
 
 ### 已棄用功能 {#deprecated-features}
 
-此區段列出 Adobe 在 AEM 6.5 LTS 中已棄用的特點與功能。 通常，在未來版本中移除某些功能之前，Adobe 會先將棄用該功能並提供替代方案。
+此區段列出 Adobe 在 AEM 6.5 LTS 中已棄用的特點與功能。 通常，Adobe 會先棄用功能，再於未來版本中將其移除，並提供替代方案。
 
 
 建議客戶檢查其目前的部署中是否使用這些特點/功能，並規劃變更其實施方案，改用所提供的替代方案。
@@ -137,7 +151,7 @@ AEM 6.5.21、6.5.22、6.5.23 和 AEM 6.5 LTS 正式發佈版隨附 `org.apache.s
 * 健康情況檢查失敗，回應代碼為 HTTP 400
 * Dispatcher 與 AEM 實例之間的流量中斷
 * 無法透過 Dispatcher 正確地提供內容
-* 利用 Dispatcher 設定中的 IP 位址進行 HTTPS 連線失敗
+* 在 Dispatcher 設定中搭配 IP 位址使用 HTTPS 時發生連線失敗
 * 透過 HTTPS + IP 連線時出現 HTTP 400「無效 SNI」錯誤
 
 **受影響的環境：**

@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 255f52f3-aff4-432c-a541-3ce03e626742
-source-git-commit: 9bc1cad84bb14b7513ede1fff2c1a37768dac442
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1735'
-ht-degree: 5%
-
+source-wordcount: '1738'
+ht-degree: 6%
 ---
-
 # 自訂節點型別{#custom-node-types}
 
 由於Adobe Experience Manager (AEM)是以Sling為基礎，並使用JCR存放庫，因此兩者提供的節點型別都可用於以下專案：
@@ -43,9 +52,9 @@ ht-degree: 5%
 **定義**
 
 * `[cq:AuditEvent]`
-   * `- * (undefined)`
-   * `- * (undefined) multiple`
-   * `+ * (nt:base) = nt:base multiple version`
+  * `- * (undefined)`
+  * `- * (undefined) multiple`
+  * `+ * (nt:base) = nt:base multiple version`
 * `- cq:time (date)`
 * `- cq:userid (string)`
 * `- cq:path (string)`
@@ -83,8 +92,8 @@ ht-degree: 5%
 **定義**
 
 * `[cq:CommentAttachment] > nt:file`
-   * `- * (undefined)`
-   * `- * (undefined) multiple`
+  * `- * (undefined)`
+  * `- * (undefined) multiple`
 
 ### `cq:CommentContent` {#cq-commentcontent}
 
@@ -141,8 +150,8 @@ ht-degree: 5%
 **定義**
 
 * `[cq:Page] > nt:hierarchyNode orderable`
-   * `+ jcr:content (nt:base) = nt:unstructured copy primary`
-   * `+ * (nt:base) = nt:base version`
+  * `+ jcr:content (nt:base) = nt:unstructured copy primary`
+  * `+ * (nt:base) = nt:base version`
 
 ### `cq:PseudoPage` {#cq-pseudopage}
 
@@ -180,17 +189,17 @@ ht-degree: 5%
 **定義**
 
 * `[cq:PageContent] > nt:unstructured, mix:title, mix:created, cq:OwnerTaggable, sling:VanityPath, cq:ReplicationStatus, sling:Resource orderable`
-   * `- cq:template (string)`
-   * `- cq:allowedTemplates (string) multiple`
-   * `- pageTitle (string)`
-   * `- navTitle (string)`
-   * `- hideInNav (boolean)`
-   * `- onTime (date)`
-   * `- offTime (date)`
-   * `- cq:lastModified (date)`
-   * `- cq:lastModifiedBy (string)`
-   * `- cq:designPath (string)`
-   * `- jcr:language (string)`
+  * `- cq:template (string)`
+  * `- cq:allowedTemplates (string) multiple`
+  * `- pageTitle (string)`
+  * `- navTitle (string)`
+  * `- hideInNav (boolean)`
+  * `- onTime (date)`
+  * `- offTime (date)`
+  * `- cq:lastModified (date)`
+  * `- cq:lastModifiedBy (string)`
+  * `- cq:designPath (string)`
+  * `- jcr:language (string)`
 
 ### `cq:Template` {#cq-template}
 
@@ -202,10 +211,10 @@ ht-degree: 5%
 * `@node icon.png` — 儲存特徵圖示的檔案。
 * `@node thumbnail.png` — 儲存特徵縮圖影像的檔案。
 * `@node workflows` — 自動指派工作流程設定。 設定遵循下列結構：
-   * `+ workflows`
-      * `+ name1`
-         * `- cq:path`
-            * `- cq:workflowName`
+  * `+ workflows`
+    * `+ name1`
+      * `- cq:path`
+        * `- cq:workflowName`
 * `@prop allowedParents` — 規則運算式模式，可決定允許做為父範本的範本路徑。
 * `@prop allowedChildren` — 規則運算式模式，可決定允許做為子範本的範本路徑。
 * `@prop ranking` — 在建立頁面對話方塊的範本清單中的位置。
@@ -213,16 +222,16 @@ ht-degree: 5%
 **定義**
 
 * `[cq:Template] > nt:hierarchyNode, mix:title`
-   * `- * (undefined)`
-   * `- * (undefined) multiple`
-   * `+ * (nt:base) = nt:base multiple version`
-   * `+ jcr:content (nt:base) copy`
-   * `+ icon.png (nt:file) copy`
-   * `+ thumbnail.png (nt:file) copy`
-   * `+ workflows (nt:base) copy`
-   * `- allowedParents (string) multiple`
-   * `- allowedChildren (string) multiple`
-   * `- ranking (long)`
+  * `- * (undefined)`
+  * `- * (undefined) multiple`
+  * `+ * (nt:base) = nt:base multiple version`
+  * `+ jcr:content (nt:base) copy`
+  * `+ icon.png (nt:file) copy`
+  * `+ thumbnail.png (nt:file) copy`
+  * `+ workflows (nt:base) copy`
+  * `- allowedParents (string) multiple`
+  * `- allowedChildren (string) multiple`
+  * `- ranking (long)`
 
 ### `cq:Component` {#cq-component}
 
@@ -252,25 +261,25 @@ ht-degree: 5%
 **定義**
 
 * `[cq:Component] > nt:folder, mix:title, sling:ResourceSuperType`
-   * `- * (undefined)`
-   * `- * (undefined) multiple`
-   * `+ * (nt:base) = nt:base multiple version`
-   * `+ dialog (nt:base) = nt:unstructured copy`
-   * `- dialogPath (string)`
-   * `+ design_dialog (nt:base) = nt:unstructured copy`
-   * `- cq:cellName (string)`
-   * `- cq:isContainer (boolean)`
-   * `- cq:noDecoration (boolean)`
-   * `+ cq:editConfig (cq:EditConfig) = cq:EditConfig copy`
-   * `+ cq:childEditConfig (cq:EditConfig) = cq:EditConfig copy`
-   * `+ cq:htmlTag (nt:base) = nt:unstructured copy`
-   * `+ icon.png (nt:file) copy`
-   * `+ thumbnail.png (nt:file) copy`
-   * `- allowedParents (string) multiple`
-   * `- allowedChildren (string) multiple`
-   * `+ virtual (nt:base) = sling:Folder copy`
-   * `- componentGroup (string)`
-   * `+ cq:infoProviders (nt:base) = nt:unstructured copy`
+  * `- * (undefined)`
+  * `- * (undefined) multiple`
+  * `+ * (nt:base) = nt:base multiple version`
+  * `+ dialog (nt:base) = nt:unstructured copy`
+  * `- dialogPath (string)`
+  * `+ design_dialog (nt:base) = nt:unstructured copy`
+  * `- cq:cellName (string)`
+  * `- cq:isContainer (boolean)`
+  * `- cq:noDecoration (boolean)`
+  * `+ cq:editConfig (cq:EditConfig) = cq:EditConfig copy`
+  * `+ cq:childEditConfig (cq:EditConfig) = cq:EditConfig copy`
+  * `+ cq:htmlTag (nt:base) = nt:unstructured copy`
+  * `+ icon.png (nt:file) copy`
+  * `+ thumbnail.png (nt:file) copy`
+  * `- allowedParents (string) multiple`
+  * `- allowedChildren (string) multiple`
+  * `+ virtual (nt:base) = sling:Folder copy`
+  * `- componentGroup (string)`
+  * `+ cq:infoProviders (nt:base) = nt:unstructured copy`
 
 ### `cq:ComponentMixin` {#cq-componentmixin}
 
@@ -289,14 +298,14 @@ ht-degree: 5%
 定義`editbar`的組態。
 
 * `@prop cq:dialogMode` — 對話方塊模式：
-   * `floating` — 適用於一般浮動對話方塊
-   * `inline` — 內嵌編輯
-   * `auto` — 自動偵測（視可用空間而定）
+  * `floating` — 適用於一般浮動對話方塊
+  * `inline` — 內嵌編輯
+  * `auto` — 自動偵測（視可用空間而定）
 * `@node cq:inplaceEditing` — 為此元件就地編輯設定。
 * `@prop cq:layout` — 編輯列的配置：
-   * `editbar` — 編輯列
-   * `rollover` — 滑鼠指向影格
-   * `auto` — 自動偵測
+  * `editbar` — 編輯列
+  * `rollover` — 滑鼠指向影格
+  * `auto` — 自動偵測
 * `@node cq:formParameters` — 要新增至對話方塊表單的其他引數。
 * `@prop cq:actions` — 動作清單（編輯列按鈕或功能表專案）。
 * `@node cq:actionConfigs` — 編輯列或功能表專案的Widget設定。
@@ -306,13 +315,13 @@ ht-degree: 5%
 **定義**
 
 * `[cq:EditConfig] > nt:unstructured, nt:hierarchyNode orderable`
-   * `- cq:dialogMode (string) < 'auto', 'floating', 'inline'`
-   * `- cq:layout (string) < 'editbar', 'rollover', 'auto' + cq:formParameters (nt:base) = nt:unstructured`
-   * `- cq:actions (string) multiple`
-   * `+ cq:actionConfigs (nt:base) = nt:unstructured`
-   * `- cq:emptyText (string)`
-   * `+ cq:dropTargets (nt:base) = nt:unstructured`
-   * `+ cq:listeners (nt:base) = cq:EditListenersConfig`
+  * `- cq:dialogMode (string) < 'auto', 'floating', 'inline'`
+  * `- cq:layout (string) < 'editbar', 'rollover', 'auto' + cq:formParameters (nt:base) = nt:unstructured`
+  * `- cq:actions (string) multiple`
+  * `+ cq:actionConfigs (nt:base) = nt:unstructured`
+  * `- cq:emptyText (string)`
+  * `+ cq:dropTargets (nt:base) = nt:unstructured`
+  * `+ cq:listeners (nt:base) = cq:EditListenersConfig`
 
 ### `cq:DropTargetConfig` {#cq-droptargetconfig}
 
@@ -327,10 +336,10 @@ ht-degree: 5%
 **定義**
 
 * `[cq:DropTargetConfig] > nt:unstructured orderable`
-   * `- accept (string) multiple`
-   * `- groups (string) multiple`
-   * `- propertyName (string)`
-   * `+ parameters (nt:base) = nt:unstructured`
+  * `- accept (string) multiple`
+  * `- groups (string) multiple`
+  * `- propertyName (string)`
+  * `+ parameters (nt:base) = nt:unstructured`
 
 ### `cq:VirtualComponent` {#cq-virtualcomponent}
 
@@ -381,15 +390,15 @@ ht-degree: 5%
 **定義**
 
 * `[cq:EditListenersConfig]`
-   * `- &ast; (undefined)`
-   * `- &ast; (undefined) multiple`
-   * `+ &ast; (nt:base) = nt:base multiple version`
-   * `- aftercreate (string)`
-   * `- afteredit (string)`
-   * `- afterdelete (string)`
-   * `- afterinsert (string)`
-   * `- afterremove (string)`
-   * `- aftermove (string)`
+  * `- &ast; (undefined)`
+  * `- &ast; (undefined) multiple`
+  * `+ &ast; (nt:base) = nt:base multiple version`
+  * `- aftercreate (string)`
+  * `- afteredit (string)`
+  * `- afterdelete (string)`
+  * `- afterinsert (string)`
+  * `- afterremove (string)`
+  * `- aftermove (string)`
 
 ## DAM {#dam}
 
@@ -402,8 +411,8 @@ DAM資產的內容。
 **定義**
 
 * `[dam:AssetContent] > nt:unstructured`
-   * `+ metadata (nt:unstructured)`
-   * `+ renditions (nt:folder)`
+  * `+ metadata (nt:unstructured)`
+  * `+ renditions (nt:folder)`
 
 ### `dam:Asset` {#dam-asset}
 
@@ -426,8 +435,8 @@ DAM資產。
 **定義**
 
 * `[dam:Thumbnails]`
-   * `mixin`
-   * `+ dam:thumbnails (nt:folder)`
+  * `mixin`
+  * `+ dam:thumbnails (nt:folder)`
 
 ## 傳遞容器清單 {#delivery-container-list}
 
@@ -440,7 +449,7 @@ DAM資產。
 **定義**
 
 * `[cq:containerList]`
-   * `mixin`
+  * `mixin`
 
 ## 傳遞頁面 {#delivery-page}
 
@@ -458,10 +467,10 @@ DAM資產。
 **定義**
 
 * `[cq:Cq4PageAttributes] > nt:base`
-   * `- created (long) mandatory copy`
-   * `- csd (string) mandatory copy`
-   * `- timestamp (long) mandatory copy`
-   * `- &ast; (string) copy`
+  * `- created (long) mandatory copy`
+  * `- csd (string) mandatory copy`
+  * `- timestamp (long) mandatory copy`
+  * `- &ast; (string) copy`
 
 ### `cq:Cq4ContentPage` {#cq-cq-contentpage}
 
@@ -478,8 +487,8 @@ DAM資產。
 **定義**
 
 * `[cq:Cq4ContentPage]`
-   * `- cq:csd (string) mandatory copy`
-   * `+ cq:attributes (cq:Cq4PageAttributes)`
+  * `- cq:csd (string) mandatory copy`
+  * `+ cq:attributes (cq:Cq4PageAttributes)`
 
 ## 匯入工具 {#importer}
 
@@ -497,10 +506,10 @@ DAM資產。
 **定義**
 
 * `[cq:PollConfig]`
-   * `mixin`
-   * `- source (String) mandatory`
-   * `- target (String)`
-   * `- interval (Long)`
+  * `mixin`
+  * `- source (String) mandatory`
+  * `- target (String)`
+  * `- interval (Long)`
 
 ### `cq:PollConfigFolder` {#cq-pollconfigfolder}
 
@@ -526,9 +535,9 @@ DAM資產。
 **定義**
 
 * `[cq:GeoLocation]`
-   * `mixin`
-   * `- latitude (double)`
-   * `- longitude (double)`
+  * `mixin`
+  * `- latitude (double)`
+  * `- longitude (double)`
 
 ## 郵件程式 {#mailer}
 
@@ -541,10 +550,10 @@ MailerService節點型別。 郵件程式會使用具有此mixin的節點作為�
 **定義**
 
 * `[cq:mailerMessage]`
-   * `mixin`
-   * `- messageStatus (string)`
-   * `= 'new'`
-   * `mandatory autocreated`
+  * `mixin`
+  * `- messageStatus (string)`
+  * `= 'new'`
+  * `mandatory autocreated`
 
 ## MSM {#msm}
 
@@ -557,9 +566,9 @@ MailerService節點型別。 郵件程式會使用具有此mixin的節點作為�
 **定義**
 
 * `[cq:LiveRelationship] mixin`
-   * `- cq:lastRolledout (date)`
-   * `- cq:lastRolledoutBy (string)`
-   * `- cq:sourceUUID (string)`
+  * `- cq:lastRolledout (date)`
+  * `- cq:lastRolledoutBy (string)`
+  * `- cq:sourceUUID (string)`
 
 ### `cq:LiveSync` {#cq-livesync}
 
@@ -589,7 +598,7 @@ MailerService節點型別。 郵件程式會使用具有此mixin的節點作為�
 **定義**
 
 * `[cq:LiveSyncCancelled] > cq:LiveRelationship mixin`
-   * `- cq:isCancelledForChildren (boolean)`
+  * `- cq:isCancelledForChildren (boolean)`
 
 ### `cq:LiveSyncAction` {#cq-livesyncaction}
 
@@ -613,9 +622,9 @@ Live Sync設定。
 **定義**
 
 * `[cq:LiveSyncConfig]`
-   * `- cq:master (string) mandatory`
-   * `- cq:isDeep (boolean)`
-   * `- cq:trigger (string) /** deprecated **/`
+  * `- cq:master (string) mandatory`
+  * `- cq:isDeep (boolean)`
+  * `- cq:trigger (string) /** deprecated **/`
 
 若為AEM 5.4，請在清單結尾新增：
 
@@ -642,7 +651,7 @@ Blueprint動作
 **定義**
 
 * `[cq:Console] > sling:VanityPath, mix:title`
-   * `mixin`
+  * `mixin`
 
 ## 複製 {#replication}
 
@@ -662,13 +671,13 @@ Blueprint動作
 **定義**
 
 * `[cq:ReplicationStatus]`
-   * `mixin`
-   * `- cq:lastPublished (date) ignore`
-   * `- cq:lastPublishedBy (string) ignore`
-   * `- cq:lastReplicated (date) ignore`
-   * `- cq:lastReplicatedBy (string) ignore`
-   * `- cq:lastReplicationAction (string) ignore`
-   * `- cq:lastReplicationStatus (string) ignore`
+  * `mixin`
+  * `- cq:lastPublished (date) ignore`
+  * `- cq:lastPublishedBy (string) ignore`
+  * `- cq:lastReplicated (date) ignore`
+  * `- cq:lastReplicatedBy (string) ignore`
+  * `- cq:lastReplicationAction (string) ignore`
+  * `- cq:lastReplicationStatus (string) ignore`
 
 ## 安全性 {#security}
 
@@ -694,14 +703,14 @@ Blueprint動作
 **定義**
 
 * `[cq:PrivilegeAcl] > cq:ApplicationPrivilege mixin orderable`
-   * `- cq:isPathDependent (boolean)`
-   * `+ * (cq:PrivilegeAce) = cq:PrivilegeAce`
+  * `- cq:isPathDependent (boolean)`
+  * `+ * (cq:PrivilegeAce) = cq:PrivilegeAce`
 
 ### `cq:PrivilegeAce` {#cq-privilegeace}
 
 **說明**
 
-它定義應用程式許可權的ACE。
+它會定義應用程式許可權的ACE。
 
 * `@prop path`
 * `@prop deny`
@@ -709,8 +718,8 @@ Blueprint動作
 **定義**
 
 * `[cq:PrivilegeAce]`
-   * `- path mandatory`
-   * `- deny (boolean)`
+  * `- path mandatory`
+  * `- deny (boolean)`
 
 ### `cq:ApplicationPrivilege` {#cq-applicationprivilege-1}
 
@@ -734,14 +743,14 @@ Blueprint動作
 **定義**
 
 * `[cq:PrivilegeAcl] > cq:ApplicationPrivilege mixin orderable`
-   * `- cq:isPathDependent (boolean)`
-   * `+ * (cq:PrivilegeAce) = cq:PrivilegeAce`
+  * `- cq:isPathDependent (boolean)`
+  * `+ * (cq:PrivilegeAce) = cq:PrivilegeAce`
 
 ### `cq:PrivilegeAce` {#cq-privilegeace-1}
 
 **說明**
 
-它定義應用程式許可權的ACE。
+它會定義應用程式許可權的ACE。
 
 * `@prop path`
 * `@prop deny`
@@ -749,8 +758,8 @@ Blueprint動作
 **定義**
 
 * `[cq:PrivilegeAce]`
-   * `- path mandatory`
-   * `- deny (boolean)`
+  * `- path mandatory`
+  * `- deny (boolean)`
 
 ## Site Importer {#site-importer}
 
@@ -775,10 +784,10 @@ Blueprint動作
 **定義**
 
 * `[cq:Tag] > nt:base, mix:title`
-   * `- sling:resourceType (String)`
-   * `- * (undefined) multiple`
-   * `- * (undefined)`
-   * `+ * (nt:base) = cq:Tag version`
+  * `- sling:resourceType (String)`
+  * `- * (undefined) multiple`
+  * `- * (undefined)`
+  * `+ * (nt:base) = cq:Tag version`
 
 ### `cq:Taggable` {#cq-taggable}
 
@@ -791,7 +800,7 @@ Blueprint動作
 **定義**
 
 * `[cq:Taggable]`
-   * `- cq:tags (string) multiple`
+  * `- cq:tags (string) multiple`
 
 ### `cq:OwnerTaggable` {#cq-ownertaggable}
 
@@ -812,7 +821,7 @@ Blueprint動作
 **定義**
 
 * `[cq:UserTaggable] > cq:Taggable`
-   * `mixin`
+  * `mixin`
 
 ### `cq:AllowsUserContent` {#cq-allowsusercontent}
 
@@ -823,14 +832,14 @@ Blueprint動作
 **定義**
 
 * `[cq:AllowsUserContent]`
-   * `mixin`
-   * `+ cq:userContent (nt:unstructured)`
+  * `mixin`
+  * `+ cq:userContent (nt:unstructured)`
 
 延伸變體，更明確地定義`cq:userContent`樹狀結構
 
 * `[cq:AllowsUserContent]`
-   * `mixin`
-   * `+ cq:userContent (cq:UserContent)`
+  * `mixin`
+  * `+ cq:userContent (cq:UserContent)`
 
 ### `cq:UserContent` {#cq-usercontent}
 
@@ -841,10 +850,10 @@ Blueprint動作
 **定義**
 
 * `[cq:UserContent] > nt:unstructured`
-   * `// userids`
-   * `+ * (cq:UserData)`
-   * `// other content`
-   * `+ * (nt:base)`
+  * `// userids`
+  * `+ * (cq:UserData)`
+  * `// other content`
+  * `+ * (nt:base)`
 
 ### `cq:UserData` {#cq-userdata}
 
@@ -867,8 +876,8 @@ Blueprint動作
 **定義**
 
 * `[cq:ClientLibraryFolder] > sling:Folder`
-   * `- categories (string) multiple`
-   * `- dependencies (string) multiple`
+  * `- categories (string) multiple`
+  * `- dependencies (string) multiple`
 
 ### `cq:Widget` {#cq-widget}
 
@@ -879,10 +888,10 @@ Blueprint動作
 **定義**
 
 * `[cq:Widget] > nt:unstructured orderable`
-   * `- xtype (string)`
-   * `- name (string)`
-   * `- title (string)`
-   * `+ items (nt:base) = cq:WidgetCollection copy`
+  * `- xtype (string)`
+  * `- name (string)`
+  * `- title (string)`
+  * `+ items (nt:base) = cq:WidgetCollection copy`
 
 ### `cq:WidgetCollection` {#cq-widgetcollection}
 
@@ -893,8 +902,8 @@ Widget集合
 **定義**
 
 * `[cq:WidgetCollection] > nt:unstructured`
-   * `orderable`
-   * `+ * (cq:Widget) = cq:Widget copy`
+  * `orderable`
+  * `+ * (cq:Widget) = cq:Widget copy`
 
 ### `cq:Dialog` {#cq-dialog}
 
@@ -925,7 +934,7 @@ Widget集合
 **定義**
 
 * `[cq:TabPanel]` > `cq:Panel orderable`
-   * `- activeTab (long)`
+  * `- activeTab (long)`
 
 ### `cq:Field` {#cq-field}
 
@@ -936,9 +945,9 @@ Widget集合
 **定義**
 
 * `[cq:Field] > cq:Widget orderable`
-   * `- fieldLabel (string)`
-   * `- value (string)`
-   * `- ignoreData (boolean)`
+  * `- fieldLabel (string)`
+  * `- value (string)`
+  * `- ignoreData (boolean)`
 
 ## Wiki {#wiki}
 
@@ -951,17 +960,17 @@ Wiki主題
 **定義**
 
 * `[wiki:Topic] > nt:unstructured, nt:hierarchyNode, mix:versionable, mix:lockable`
-   * `+ * (wiki:Topic) version`
-   * `+ wiki:attachments (nt:folder) = nt:folder version`
-   * `+ wiki:properties (wiki:Properties) = wiki:Properties copy`
-   * `- wiki:text (string) mandatory primary`
-   * `- wiki:lastModified (date) mandatory`
-   * `- wiki:lastModifiedBy (string) mandatory`
-   * `- wiki:topicName`
-   * `- wiki:topicTitle`
-   * `- wiki:lockedBy`
-   * `- wiki:logMessage (string)`
-   * `- wiki:quietSave (boolean)`
+  * `+ * (wiki:Topic) version`
+  * `+ wiki:attachments (nt:folder) = nt:folder version`
+  * `+ wiki:properties (wiki:Properties) = wiki:Properties copy`
+  * `- wiki:text (string) mandatory primary`
+  * `- wiki:lastModified (date) mandatory`
+  * `- wiki:lastModifiedBy (string) mandatory`
+  * `- wiki:topicName`
+  * `- wiki:topicTitle`
+  * `- wiki:lockedBy`
+  * `- wiki:logMessage (string)`
+  * `- wiki:quietSave (boolean)`
 
 ### `wiki:User` {#wiki-user}
 
@@ -972,7 +981,7 @@ Wiki使用者
 **定義**
 
 * `[wiki:User] mixin`
-   * `- wiki:subscriptions (string) multiple`
+  * `- wiki:subscriptions (string) multiple`
 
 ### `wiki:Properties` {#wiki-properties}
 
@@ -983,8 +992,8 @@ Wiki屬性
 **定義**
 
 * `[wiki:Properties]`
-   * `- wiki:isGlobal (boolean)`
-   * `- * (undefined)`
+  * `- wiki:isGlobal (boolean)`
+  * `- * (undefined)`
 
 ## 工作流程 {#workflow}
 
@@ -997,21 +1006,21 @@ Wiki屬性
 **定義**
 
 * `[cq:Workflow] > nt:base, mix:referenceable`
-   * `- modelId (String)`
-   * `- modelVersion (String)`
-   * `- startTime (Date)`
-   * `- endTime (Date)`
-   * `- initiator (String)`
-   * `- &ast; (undefined)`
-   * `- &ast; (undefined) multiple`
-   * `- sling:resourceType (String) = "cq/workflow/components/instance" mandatory autocreated`
-   * `+ workflowStack (nt:unstructured)`
-   * `+ wait (nt:unstructured)`
-   * `+ orTab (nt:unstructured)`
-   * `+ data (cq:WorkflowData)`
-   * `+ history (nt:unstructured)`
-   * `+ metaData (nt:unstructured)`
-   * `+ workItems (nt:unstructured)`
+  * `- modelId (String)`
+  * `- modelVersion (String)`
+  * `- startTime (Date)`
+  * `- endTime (Date)`
+  * `- initiator (String)`
+  * `- &ast; (undefined)`
+  * `- &ast; (undefined) multiple`
+  * `- sling:resourceType (String) = "cq/workflow/components/instance" mandatory autocreated`
+  * `+ workflowStack (nt:unstructured)`
+  * `+ wait (nt:unstructured)`
+  * `+ orTab (nt:unstructured)`
+  * `+ data (cq:WorkflowData)`
+  * `+ history (nt:unstructured)`
+  * `+ metaData (nt:unstructured)`
+  * `+ workItems (nt:unstructured)`
 
 ### `cq:WorkItem` {#cq-workitem}
 
@@ -1022,14 +1031,14 @@ Wiki屬性
 **定義**
 
 * `[cq:WorkItem]`
-   * `- assignee (String)`
-   * `- workflowId (String)`
-   * `- nodeId (String)`
-   * `- startTime (Date)`
-   * `- endTime (Date)`
-   * `- dueTime (Date)`
-   * `- sling:resourceType (String) = "cq/workflow/components/workitem" mandatory autocreated`
-   * `+ metaData (nt:unstructured)`
+  * `- assignee (String)`
+  * `- workflowId (String)`
+  * `- nodeId (String)`
+  * `- startTime (Date)`
+  * `- endTime (Date)`
+  * `- dueTime (Date)`
+  * `- sling:resourceType (String) = "cq/workflow/components/workitem" mandatory autocreated`
+  * `+ metaData (nt:unstructured)`
 
 ### `cq:Payload` {#cq-payload}
 
@@ -1040,13 +1049,13 @@ Wiki屬性
 **定義**
 
 * `[cq:Payload]`
-   * `- path (Path)`
-   * `- uuid (String)`
-   * `- jcr:url (String)`
-   * `- binary (Binary)`
-   * `- javaObject (String)`
-   * `- * (undefined)`
-   * `- * (undefined) multiple`
+  * `- path (Path)`
+  * `- uuid (String)`
+  * `- jcr:url (String)`
+  * `- binary (Binary)`
+  * `- javaObject (String)`
+  * `- * (undefined)`
+  * `- * (undefined) multiple`
 
 ### `cq:WorkflowData` {#cq-workflowdata}
 
@@ -1057,10 +1066,10 @@ Wiki屬性
 **定義**
 
 * `[cq:WorkflowData]`
-   * `- * (undefined)`
-   * `- * (undefined) multiple`
-   * `+ payload (cq:Payload)`
-   * `+ metaData (nt:unstructured) copy`
+  * `- * (undefined)`
+  * `- * (undefined) multiple`
+  * `+ payload (cq:Payload)`
+  * `+ metaData (nt:unstructured) copy`
 
 ### `cq:WorkflowModel` {#cq-workflowmodel}
 
@@ -1069,24 +1078,24 @@ Wiki屬性
 自動指派工作流程設定。 設定遵循以下結構：
 
 * `workflows`
-   * `+ name1`
-      * `- cq:path`
-      * `- cq:workflowName`
-   * `+ workflows (nt:base)`
+  * `+ name1`
+    * `- cq:path`
+    * `- cq:workflowName`
+  * `+ workflows (nt:base)`
 
 **定義**
 
 * `[cq:WorkflowModel] > nt:base, mix:versionable`
-   * `orderable`
-   * `- title (String)`
-   * `- description (String)`
-   * `- sling:resourceType (String) = "cq/workflow/components/model" mandatory autocreated`
-   * `+ nodes (nt:unstructured)`
-      * `copy`
-   * `+ transitions (nt:unstructured)`
-      * `copy`
-   * `+ metaData (nt:unstructured)`
-      * `copy`
+  * `orderable`
+  * `- title (String)`
+  * `- description (String)`
+  * `- sling:resourceType (String) = "cq/workflow/components/model" mandatory autocreated`
+  * `+ nodes (nt:unstructured)`
+    * `copy`
+  * `+ transitions (nt:unstructured)`
+    * `copy`
+  * `+ metaData (nt:unstructured)`
+    * `copy`
 
 ### `cq:WorkflowNode` {#cq-workflownode}
 
@@ -1097,16 +1106,16 @@ Wiki屬性
 **定義**
 
 * `[cq:WorkflowNode] orderable`
-   * `- title (String)`
-   * `- description (String)`
-   * `- maxIdleTime (long)`
-   * `- type (String)`
-   * `- * (undefined)`
-   * `- * (undefined) multiple`
-   * `+ metaData (nt:unstructured)`
-      * `copy`
-   * `+ timeoutConfiguration (nt:unstructured)`
-      * `copy`
+  * `- title (String)`
+  * `- description (String)`
+  * `- maxIdleTime (long)`
+  * `- type (String)`
+  * `- * (undefined)`
+  * `- * (undefined) multiple`
+  * `+ metaData (nt:unstructured)`
+    * `copy`
+  * `+ timeoutConfiguration (nt:unstructured)`
+    * `copy`
 
 ### `cq:WorkflowTransition` {#cq-workflowtransition}
 
@@ -1117,11 +1126,11 @@ Wiki屬性
 **定義**
 
 * `[cq:WorkflowTransition] orderable`
-   * `- from (String)`
-   * `- to (String)`
-   * `- rule (String)`
-   * `+ metaData (nt:unstructured)`
-      * `copy`
+  * `- from (String)`
+  * `- to (String)`
+  * `- rule (String)`
+  * `+ metaData (nt:unstructured)`
+    * `copy`
 
 ### `cq:OrTab` {#cq-ortab}
 
@@ -1132,8 +1141,8 @@ Wiki屬性
 **定義**
 
 * `[cq:OrTab]`
-   * `- workflowId (String) // not compulsory as this node is already be attached to the workflow node`
-   * `- nodeId (String)`
+  * `- workflowId (String) // not compulsory as this node is already be attached to the workflow node`
+  * `- nodeId (String)`
 
 ### `cq:Wait` {#cq-wait}
 
@@ -1144,9 +1153,9 @@ Wiki屬性
 **定義**
 
 * `[cq:Wait]`
-   * `- workflowId (String) // not compulsory as this node is already attached to the workflow node`
-   * `- destNodeId (String)`
-   * `- fromNodeId (String)`
+  * `- workflowId (String) // not compulsory as this node is already attached to the workflow node`
+  * `- destNodeId (String)`
+  * `- fromNodeId (String)`
 
 ### `cq:WorkflowStack` {#cq-workflowstack}
 
@@ -1157,9 +1166,9 @@ Wiki屬性
 **定義**
 
 * `[cq:WorkflowStack]`
-   * `- containeeInstanceId (String)`
-   * `- parentInstanceId (String)`
-   * `- nodeId (String)`
+  * `- containeeInstanceId (String)`
+  * `- parentInstanceId (String)`
+  * `- nodeId (String)`
 
 ### `cq:ProcessStack` {#cq-processstack}
 
@@ -1170,10 +1179,10 @@ Wiki屬性
 **定義**
 
 * `[cq:ProcessStack]`
-   * `- workflowId (String) // not compulsory as this node is already attached to the workflow node`
-   * `- containerWorkflowModelId (String)`
-   * `- containerWorkflowNodeId`
-   * `- containerWorkflowEndNodeId // still needed (if name already defines that id)`
+  * `- workflowId (String) // not compulsory as this node is already attached to the workflow node`
+  * `- containerWorkflowModelId (String)`
+  * `- containerWorkflowNodeId`
+  * `- containerWorkflowEndNodeId // still needed (if name already defines that id)`
 
 ### `cq:WorkflowLauncher` {#cq-workflowlauncher}
 
@@ -1184,11 +1193,11 @@ Wiki屬性
 **定義**
 
 * `[cq:WorkflowLauncher]`
-   * `- nodetype (String)`
-   * `- glob (String)`
-   * `- eventType (Long)`
-   * `- description (String)`
-   * `- condition (String)`
-   * `- workflow (String)`
-   * `- * (undefined)`
-   * `- * (undefined) multiple`
+  * `- nodetype (String)`
+  * `- glob (String)`
+  * `- eventType (Long)`
+  * `- description (String)`
+  * `- condition (String)`
+  * `- workflow (String)`
+  * `- * (undefined)`
+  * `- * (undefined) multiple`

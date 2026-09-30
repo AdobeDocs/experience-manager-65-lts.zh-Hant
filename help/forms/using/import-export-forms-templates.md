@@ -9,13 +9,29 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 98304115-1c27-4261-9c34-70a9d7e7cd53
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2481'
 ht-degree: 0%
-
 ---
-
 # 將資產匯入及匯出至AEM Forms{#importing-and-exporting-assets-to-aem-forms}
 
 您可以在不同AEM Forms執行個體之間移動表單和相關資產、主題、資料字典、檔案片段和字母。 將系統移轉或將表單從預備伺服器移至生產伺服器時，需要執行這種移動。 對於支援透過AEM Forms UI上傳和匯入的資產，建議使用Forms UI進行匯出或匯入。 不建議使用AEM Package Manager來匯出或匯入這類資產。
@@ -38,10 +54,10 @@ AEM Forms使用者介面可讓您將資產下載為AEM CRX套件或二進位檔�
 1. 在下載資產中，選擇下列其中一個選項，然後選取&#x200B;**下載**。
 
    * **下載為CRX套件：**&#x200B;使用選項從AEM Forms執行個體下載及移動所有選取的資產及相關相依性至另一個執行個體。 它會將所有資產和資料夾下載為CRX套件。 任何表單資產，包括在AEM （最適化表單、互動式通訊和最適化表單片段）中編寫的表單、表單集、表單範本、PDF檔案和資源（XSD、XFS、影像），都可以從AEM Forms UI以套件形式下載。
-以封裝形式下載資產的優點是，它也能下載所選要下載的資產所使用的資產。 例如，如果您有使用表單範本、XSD和影像的最適化表單。 當您選取此最適化表單並將其下載為套件時，下載的套件也包含表單範本、XSD和影像。 也會下載與資產相關聯的所有中繼資料屬性（包括自訂屬性）。
+     以封裝形式下載資產的優點是，它也能下載所選要下載的資產所使用的資產。 例如，如果您有使用表單範本、XSD和影像的最適化表單。 當您選取此最適化表單並將其下載為套件時，下載的套件也包含表單範本、XSD和影像。 也會下載與資產相關聯的所有中繼資料屬性（包括自訂屬性）。
 
    * **將資產下載為二進位檔案：**&#x200B;使用選項僅下載表單範本(XDP)、PDF forms (PDF)、檔案(PDF)和資源（影像、結構描述、樣式表）。 您可以使用外部應用程式編輯這些資產。 它會將具有二進位檔（例如XSD、XDP、影像、PDF和XDP）的表單資產下載為.zip檔案。
-您無法使用&#x200B;**將資產下載為二進位檔案**&#x200B;選項來下載最適化表單、互動式通訊、最適化表單片段、主題和表單集。 若要下載這些資產，您應該使用&#x200B;**以CRX封裝形式下載**&#x200B;選項。
+     您無法使用&#x200B;**將資產下載為二進位檔案**&#x200B;選項來下載最適化表單、互動式通訊、最適化表單片段、主題和表單集。 若要下載這些資產，您應該使用&#x200B;**以CRX封裝形式下載**&#x200B;選項。
 
    選取的資產會下載為封存（.zip檔案）。
 
@@ -176,7 +192,7 @@ AEM Forms使用者介面可讓您將資產下載為AEM CRX套件或二進位檔�
 1. 指定套件的名稱、版本和群組。 按一下&#x200B;**[!UICONTROL 「確定」]**。
 1. 按一下「**[!UICONTROL 編輯]**」並開啟「**[!UICONTROL 篩選器]**」標籤。 按一下&#x200B;**[!UICONTROL 新增篩選器]**。 指定工作流程應用程式的路徑。 例如，/etc/fd/dashboard/startpoints/homemortgage。 按一下&#x200B;**[!UICONTROL 新增規則]**。
 
-1. 開啟&#x200B;**[!UICONTROL 進階]**&#x200B;標籤。 在ACL處理欄位中選取&#x200B;**[!UICONTROL 合併]**&#x200B;或&#x200B;**[!UICONTROL 覆寫]**。 按一下「**[!UICONTROL 儲存]**」。
+1. 開啟&#x200B;**[!UICONTROL 進階]**&#x200B;標籤。 在ACL處理欄位中選取&#x200B;**[!UICONTROL 合併]**&#x200B;或&#x200B;**[!UICONTROL 覆寫]**。 按一下&#x200B;**[!UICONTROL 儲存]**。
 1. 按一下&#x200B;**[!UICONTROL 建置]**&#x200B;以建立封裝。
 
    建置套件後，您可以下載套件並將其匯入至其他伺服器。 工作流程應用程式會出現在上傳封裝的伺服器上。

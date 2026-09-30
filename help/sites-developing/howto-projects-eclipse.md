@@ -9,13 +9,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
 exl-id: 951e436c-adf4-4277-895f-383aaef17940
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '448'
 ht-degree: 1%
-
 ---
-
 # 如何使用Eclipse開發AEM專案{#how-to-develop-aem-projects-using-eclipse}
 
 本指南說明如何使用Eclipse開發以AEM為基礎的專案。
@@ -54,7 +65,7 @@ ht-degree: 1%
 Eclipse也可支援使用JSP，例如
 
 * 自動完成標籤程式庫
-* 由&lt;cq：defineObjects />和&lt;sling：defineObjects />定義的物件的Eclipse感知
+* 由&lt;cq:defineObjects />和&lt;sling:defineObjects />定義的物件的Eclipse感知
 
 為了讓此功能發揮作用：
 

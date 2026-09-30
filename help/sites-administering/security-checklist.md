@@ -10,13 +10,27 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin,Developer
 exl-id: 9b957118-2a21-4e2b-a575-6518d5dba54f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3024'
+source-wordcount: '3048'
 ht-degree: 3%
-
 ---
-
 # 安全性檢查清單 {#security-checklist}
 
 本節說明您應採取的各種步驟，以確保在部署時AEM安裝的安全。 檢查清單旨在從上到下套用。
@@ -225,27 +239,27 @@ AEM 6.1隨附有助於防止跨網站請求偽造攻擊的機制，稱為&#x200B
 
 * [Adobe Granite HTML資料庫管理員](/help/sites-deploying/osgi-configuration-settings.md#day-cq-html-library-manager)：
 
-   * 啟用&#x200B;**最小化** （移除CRLF和空白字元）。
-   * 啟用&#x200B;**Gzip** （允許透過一個要求來壓縮及存取檔案）。
-   * 停用&#x200B;**偵錯**
-   * 停用&#x200B;**計時**
+  * 啟用&#x200B;**最小化** （移除CRLF和空白字元）。
+  * 啟用&#x200B;**Gzip** （允許透過一個要求來壓縮及存取檔案）。
+  * 停用&#x200B;**偵錯**
+  * 停用&#x200B;**計時**
 
 * [天CQ WCM偵錯篩選器](/help/sites-deploying/osgi-configuration-settings.md#day-cq-wcm-debug-filter)：
 
-   * 取消勾選&#x200B;**啟用**
+  * 取消勾選&#x200B;**啟用**
 
 * [天CQ WCM篩選器](/help/sites-deploying/osgi-configuration-settings.md)：
 
-   * 在僅限發佈上，將&#x200B;**WCM模式**&#x200B;設定為「已停用」
+  * 在僅限發佈上，將&#x200B;**WCM模式**&#x200B;設定為「已停用」
 
 * [Apache Sling JavaScript處理常式](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-javascript-handler)：
 
-   * 停用&#x200B;**產生偵錯資訊**
+  * 停用&#x200B;**產生偵錯資訊**
 
 * [Apache Sling JSP指令碼處理常式](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-jsp-script-handler)：
 
-   * 停用&#x200B;**產生偵錯資訊**
-   * 停用&#x200B;**對應的內容**
+  * 停用&#x200B;**產生偵錯資訊**
+  * 停用&#x200B;**對應的內容**
 
 請參閱[OSGi組態設定](/help/sites-deploying/osgi-configuration-settings.md)。
 
@@ -266,9 +280,9 @@ AEM 6.1隨附有助於防止跨網站請求偽造攻擊的機制，稱為&#x200B
 
   例如，`.../en.html`也可以要求為：
 
-   * `.../en.ExtensionDosAttack`
-   * `.../en.SelectorDosAttack.html`
-   * `.../en.html/SuffixDosAttack`
+  * `.../en.ExtensionDosAttack`
+  * `.../en.SelectorDosAttack.html`
+  * `.../en.html/SuffixDosAttack`
 
   所有有效的變數（例如，傳回`200`回應並設定為快取）都會由Dispatcher快取，最終導致完整的檔案系統，而且沒有服務可進一步要求。
 

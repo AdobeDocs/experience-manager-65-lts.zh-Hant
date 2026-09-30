@@ -10,13 +10,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 0e4b5758-3da5-4ca5-8553-161f923661aa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '4125'
 ht-degree: 0%
-
 ---
-
 # 使用待辦事項清單{#working-with-to-do-lists}
 
 當您檢視您的待辦事項清單時，您可能會看到商務程式指派給您、您所屬的任何群組，或是其他使用者的共用工作。 您可以視需要開啟、處理及完成工作，例如核准或拒絕請求或新增更多資訊。 當您完成任務後，它會傳送給商務程式中的下一個人員，

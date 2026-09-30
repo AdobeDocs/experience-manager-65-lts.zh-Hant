@@ -10,13 +10,26 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 6653649a-5076-48e3-a7ed-5b74d4d2e8e1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 0%
-
+source-wordcount: '1253'
+ht-degree: 2%
 ---
-
 # Document Security方案{#document-security-offerings}
 
 Adobe Experience Manager Forms document security可確保只有授權的使用者才能使用您的檔案。 使用Document Security，您可以安全地散發以支援格式儲存的任何資訊。 支援的檔案格式包括Adobe可攜式檔案格式(PDF)和Microsoft®Word、Excel和PowerPoint檔案。
@@ -51,13 +64,13 @@ AEM Forms Document Security提供多種工具來套用安全性原則。 您可�
 
   Document Security SDK可同時用於Java™和C++。 Java™ SDK包含在AEM Forms Document Security產品中，並安裝在JEE上部署AEM Forms上。 聯絡[AEM客戶支援](https://experienceleague.adobe.com/zh-hant?support-solution=General&support-tab=home#support)以取得C++ SDK。 C++ SDK可以使用Microsoft® Visual Studio 2013進行編譯。 造訪[Document Security API檔案](https://help.adobe.com/zh_TW/livecycle/11.0/Services/WS92d06802c76abadb76c48dfe12dbeb3e281-7ff0.2.html)網站，瞭解並使用SDK的功能。
 
-* **Adobe Acrobat：**&#x200B;您可以使用Adobe Acrobat將安全性原則套用至使用熱門案頭應用程式(例如Microsoft®Office、網頁瀏覽器或任何支援以PDF格式列印的應用程式)建立的PDF檔案。
+* **Adobe Acrobat：**&#x200B;您可以使用Adobe Acrobat將安全性原則套用至使用熱門案頭應用程式（例如Microsoft®Office、網頁瀏覽器或任何支援以PDF格式列印的應用程式）建立的PDF檔案。
 
   您可以從[Adobe Acrobat網站](https://www.adobe.com/acrobat/free-trial-download.html)購買並下載Adobe。 Adobe Acrobat文章[設定PDF的安全性原則](https://helpx.adobe.com/tw/acrobat/using/setting-security-policies-pdfs.html)提供在Adobe Acrobat中建立和套用原則的詳細資訊。
 
-* **Microsoft® Office適用的Document Security Extension**：您可以使用Microsoft® Office適用的Document Security Extension，從Microsoft® Office程式將預先定義的原則套用至Microsoft® Office檔案。 此擴充功能可確保只有授權人員才能使用受原則保護的Microsoft®Word、Excel和PowerPoint檔案。 只有已安裝外掛程式的授權使用者才能使用受原則保護的檔案。
+* **® Office適用的Document Security Extension**：您可以使用Microsoft® Office適用的Document Security Extension，從Microsoft® Office程式將預先定義的原則套用至Microsoft® Office檔案。 此擴充功能可確保只有授權人員才能使用受原則保護的®Word、Excel和PowerPoint檔案。 只有已安裝外掛程式的授權使用者才能使用受原則保護的檔案。
 
-  Document Security Extension可作為Microsoft® Office外掛程式使用。 請連絡[AEM客戶支援](https://helpx.adobe.com/ca/marketing-cloud/contact-support.html)以取得擴充功能。 稍後您可以造訪[Microsoft適用的Document Security Extension® Office](https://experienceleague.adobe.com/docs/experience-manager-document-security/using/download-installer.html?lang=zh-Hant)說明，瞭解安裝、設定和使用擴充功能的相關資訊。
+  Document Security Extension可作為® Office外掛程式使用。 請連絡[AEM客戶支援](https://helpx.adobe.com/ca/marketing-cloud/contact-support.html)以取得擴充功能。 稍後您可以造訪[Microsoft適用的Document Security Extension® Office](https://experienceleague.adobe.com/docs/experience-manager-document-security/using/download-installer.html?lang=zh-Hant)說明，瞭解安裝、設定和使用擴充功能的相關資訊。
 
 * **可攜式保護庫：** PPL會在本機保護檔案，不會將檔案傳送至AEM Forms伺服器。 只有安全性認證和原則詳細資料會透過網路傳遞。 PPL也可讓您將原則擷取存取許可權製為只有登入的使用者。 您可以根據登入AEM使用者之使用者的內容擷取原則。
 
@@ -69,12 +82,12 @@ AEM Forms Document Security提供多種工具來套用安全性原則。 您可�
 
 * 對於&#x200B;**PDF檔案**，您可以使用Adobe Acrobat DC、Acrobat Reader和Acrobat Reader Mobile來檢視受保護的PDF檔案。 大部分使用者已在裝置上安裝Acrobat Reader，因此他們不需要取得或學習其他軟體即可檢視受保護檔案。 您也可以從[Acrobat Reader下載網站](https://get.adobe.com/reader/)下載Acrobat Reader。
 
-* 若為&#x200B;**Microsoft® Office檔案**，您需要使用Microsoft® Office適用的Microsoft® Office和AEM Forms Document Security Extension。 Document Security Extension可作為Microsoft® Office外掛程式使用。 您可以從Adobe網站下載擴充功能。
+* 若為&#x200B;**® Office檔案**，您需要使用Microsoft® Office適用的Microsoft® Office和AEM Forms Document Security Extension。 Document Security Extension可作為® Office外掛程式使用。 您可以從Adobe網站下載擴充功能。
 
 ### 受保護檔案索引 {#index-protected-documents}
 
-Microsoft® Windows全文檢索搜尋引擎(SharePoint Index server)和Adobe Experience Manager (AEM)可以對常用的檔案格式(例如純文字檔、Microsoft® Office檔案和PDF檔案)執行全文檢索。 您可以使用Document Security索引子來啟用全文檢索搜尋引擎，以搜尋受保護的PDF檔案：
+® Windows全文檢索搜尋引擎(SharePoint Index server)和Adobe Experience Manager (AEM)可以對常用的檔案格式（例如純文字檔、Microsoft® Office檔案和PDF檔案）執行全文檢索。 您可以使用Document Security索引子來啟用全文檢索搜尋引擎，以搜尋受保護的PDF檔案：
 
-* **iFilter索引子：**&#x200B;您可以使用iFilter索引子來索引受保護的PDF檔案，並啟用Microsoft® Windows全文檢索搜尋引擎(案頭索引服務和SharePoint索引伺服器)來搜尋受保護的PDF檔案。 如需詳細資訊，請參閱受保護檔案的[AEM SharePoint IFilter](assets/sharepoint-ifilter-doc-security.pdf)。
+* **iFilter索引子：**&#x200B;您可以使用iFilter索引子來索引受保護的PDF檔案，並啟用Microsoft® Windows全文檢索搜尋引擎（案頭索引服務和SharePoint索引伺服器）來搜尋受保護的PDF檔案。 如需詳細資訊，請參閱受保護檔案的[AEM SharePoint IFilter](assets/sharepoint-ifilter-doc-security.pdf)。
 
 * **AEM Forms Document Security Indexer：**&#x200B;您可以使用AEM Forms Document Security Indexer為受保護的PDF檔案建立索引，並讓Adobe Experience Manager搜尋受保護的PDF檔案。 索引器是AEM Forms Document Security產品的一部分。 這些包含在JEE安裝程式的AEM Forms中。

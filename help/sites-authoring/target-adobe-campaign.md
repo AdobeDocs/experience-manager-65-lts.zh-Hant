@@ -9,13 +9,30 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Developer
 exl-id: ce6ebfff-3a1d-4c9f-aa50-23d1c3afc852
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '429'
 ht-degree: 0%
-
 ---
-
 
 # 鎖定您的Adobe Campaign{#targeting-your-adobe-campaign}
 
@@ -35,7 +52,7 @@ ht-degree: 0%
 
 若要建立區段：
 
-1. 在[&lt;host>：&lt;port>/miscadmin#/etc/segmentation](http://localhost:4502/miscadmin#/etc/segmentation)開啟&#x200B;**分段主控台**。
+1. 在&#x200B;**&lt;host>：&lt;port>/miscadmin#/etc/segmentation**&#x200B;開啟[分段主控台](http://localhost:4502/miscadmin#/etc/segmentation)。
 1. 建立頁面並輸入標題 — 例如&#x200B;**AC區段** — 並選取&#x200B;**區段(Adobe Campaign)**&#x200B;範本。
 1. 在左側的樹狀檢視中選取建立的頁面。
 1. 建立區段，例如，將目標定位為男性使用者，方法是在您建立的名為「男性」的區段下建立頁面，並選取&#x200B;**區段(Adobe Campaign)**&#x200B;範本。

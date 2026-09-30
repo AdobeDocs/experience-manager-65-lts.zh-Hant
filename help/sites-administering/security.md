@@ -10,13 +10,25 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 2661bd32-82c4-4a04-bf85-6ed120a73de4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '5443'
 ht-degree: 1%
-
 ---
-
 # 使用者管理與安全性{#user-administration-and-security}
 
 本章說明如何設定和維護使用者授權，同時也說明在AEM中驗證和授權如何運作的理論。
@@ -268,7 +280,7 @@ AEM WCM使用存取控制清單(ACL)來組織套用至不同頁面的許可權�
   </tr>
   <tr>
    <td>下方</td>
-   <td>列出可以在樹狀結構中的其他位置產生效果的非有效專案（由具有限制專案範圍之對應ACE的特殊屬性所指示）。 或者，它是一個條目，其效果被在給定路徑或祖先節點定義的另一個條目撤銷。</td>
+   <td>列出可能會在樹狀結構中的其他位置產生效果的非有效專案（如特殊屬性所指示，而對應的ACE會限制專案的範圍）。 或者，它是一個條目，其效果被在給定路徑或祖先節點定義的另一個條目撤銷。</td>
   </tr>
  </tbody>
 </table>

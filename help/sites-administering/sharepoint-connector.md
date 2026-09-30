@@ -9,13 +9,19 @@ docset: aem65
 feature: Integration
 role: Admin
 exl-id: 3f8ec723-2705-4ce5-8cb2-e7e6bfe94512
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1482'
-ht-degree: 1%
-
+source-wordcount: '1625'
+ht-degree: 2%
 ---
-
 # SharePoint聯結器{#sharepoint-connector}
 
 本文包含適用於Microsoft SharePoint 2010和Microsoft SharePoint 2013,4.0版的Adobe JCR Connector詳細資訊。
@@ -66,18 +72,18 @@ SharePoint聯結器支援下列基本功能：
 
 SharePoint聯結器可從[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673)下載。
 
-### 支援平台 {#supported-platforms}
+### 受支援平台 {#supported-platforms}
 
 聯結器支援下列專案：
 
 * AEM版本：
 
-   * AEM 6.4、6.3
+  * AEM 6.4、6.3
 
 * Microsoft SharePoint版本：
 
-   * Microsoft Office SharePoint Server (MOSS) 2010
-   * Microsoft Office SharePoint Server (MOSS) 2013
+  * Microsoft Office SharePoint Server (MOSS) 2010
+  * Microsoft Office SharePoint Server (MOSS) 2013
 
 * 如果您需要聯結器的自訂部署支援（OEM、特殊需求、自訂驗證方法），請聯絡您所在地區的Adobe辦事處。
 
@@ -117,7 +123,7 @@ Software Distribution用於發佈產品功能、範例和Hot Fix。 如需詳細
 1. 搜尋Microsoft Sharepoint **套件組合的**&#x200B;天JCR聯結器。
 1. 編輯設定值。
 1. 將SharePoint伺服器URL設定為&#x200B;**工作區**&#x200B;的值。
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -194,7 +200,7 @@ Sharepoint包括「傳統」和「宣告式」驗證方法，兩者都支援下�
 * 索賠 — 基本
 * 宣告型Forms
 
-適用於AEM SharePoint 2010和Microsoft SharePoint 2013的Microsoft JCR Connector 4.0版支援宣告型驗證(由Microsoft建議)，其作業模式如下：
+適用於Microsoft SharePoint 2010和Microsoft SharePoint 2013的AEM JCR Connector 4.0版。 支援宣告型驗證（由Microsoft建議），其操作模式如下：
 
 * **基本/NTLM驗證**：聯結器會先嘗試使用基本驗證進行連線。 如果無法使用，它會切換至NTLM式驗證。
 * **以Forms為基礎的驗證**： Sharepoint會根據使用者在登入表單（通常是網頁）中輸入的認證，來驗證使用者。 系統會為已驗證請求發出權杖，其中包含為後續請求重新建立身分的金鑰。
@@ -207,7 +213,7 @@ Sharepoint包括「傳統」和「宣告式」驗證方法，兩者都支援下�
 1. 搜尋「Microsoft Sharepoint的Day JCR Connector」
 1. 按一下「編輯設定值」
 1. 將&#39;Sharepoint Connection Factory&#39;的值設為&#39;com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory&#39;
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
 **設定基本驗證(Windows)**
 
@@ -217,7 +223,7 @@ Sharepoint包括「傳統」和「宣告式」驗證方法，兩者都支援下�
 1. 搜尋Microsoft Sharepoint **的**&#x200B;天JCR聯結器。
 1. 按一下「`Edit the configuration values`」。
 1. 將Sharepoint Connection Factory的值設定為`com.day.crx.spi.sharepoint.security.WindowsAuthenticationConnectionFactory`。
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
 只有已在AEM和SharePoint上驗證的使用者才能透過聯結器存取SharePoint內容。
 
@@ -230,7 +236,7 @@ Sharepoint包括「傳統」和「宣告式」驗證方法，兩者都支援下�
 1. 按一下「安全性」。
 1. 按一下「使用者」。
 1. 按一下&#x200B;**建立使用者**。
-1. 提供使用者ID (可存取SharePoint的使用者名稱)。
+1. 提供使用者ID （可存取SharePoint的使用者名稱）。
 1. 提供對應的密碼。
 1. 按一下綠色勾號符號以建立使用者。
 

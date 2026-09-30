@@ -8,13 +8,29 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: de5cc19f-f3dc-42d5-877d-c15bd00487d7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 2%
-
+source-wordcount: '998'
+ht-degree: 5%
 ---
-
 # 教學課程：發佈最適化表單 {#tutorial-publish-your-adaptive-form}
 
 ![主圖影像](do-not-localize/13-publish-your-adaptive-form-small.png)
@@ -27,7 +43,7 @@ ht-degree: 2%
 
 * [將最適化表單發佈為AEM頁面](../../forms/using/publish-your-adaptive-form.md#publish-the-adaptive-form-as-an-aem-page)
 * [將最適化表單內嵌到AEM Sites頁面中](#embed-the-adaptive-form-in-an-aem-sites-page)
-* [將最適化表單內嵌於外部網頁(託管於AEM外部的非AEM網頁)中](../../forms/using/publish-your-adaptive-form.md)
+* [將最適化表單內嵌於外部網頁（託管於AEM外部的非AEM網頁）中](../../forms/using/publish-your-adaptive-form.md)
 
 ## 開始之前 {#before-you-start}
 
@@ -40,13 +56,13 @@ ht-degree: 2%
 
 1. 登入AEM [!DNL Forms]作者執行個體，並在AEM [!DNL Forms] UI中找到shipping-address-add-update-form最適化表單。
    `https://localhost:4502/aem/forms.html/content/dam/formsanddocuments`
-1. 選取shipping-address-add-update-form最適化表單，然後選取&#x200B;**[!UICONTROL 發佈]**。 隨即顯示對話方塊，其中包含與最適化表單相關的資產。 選取&#x200B;**[!UICONTROL 發佈]**。 最適化表單已發佈，且成功對話方塊隨即顯示。
+1. 選取shipping-address-add-update-form最適化表單，然後選取&#x200B;**[!UICONTROL 發佈]**。 隨即顯示對話方塊，其中包含與最適化表單相關的資產。 選取「**[!UICONTROL 發佈]**」。 最適化表單已發佈，且成功對話方塊隨即顯示。
 1. 在發佈執行個體上開啟表單。 一般使用者可填寫並提交表單。
    `https://localhost:4503/content/forms/af/shipping-address-add-update-form.html`
 
 ## 將最適化表單內嵌到AEM Sites頁面中 {#embed-the-adaptive-form-in-an-aem-sites-page}
 
-AEM [!DNL Forms]可讓表單開發人員順暢地將最適化表單內嵌到AEM [!DNL Sites]頁面中。 嵌入式調適型表單功能齊全，使用者無需離開頁面即可填寫並提交表單。它有助於使用者停留在網頁上其他元素的內容中，同時與表單互動。
+AEM [!DNL Forms]可讓表單開發人員順暢地將最適化表單內嵌到AEM [!DNL Sites]頁面中。 嵌入式調適型表單功能齊全，使用者無需離開頁面即可填寫並提交表單。 它有助於使用者停留在網頁上其他元素的內容中，同時與表單互動。
 
 AEM [!DNL Forms]提供元件AEM [!DNL Forms]容器，以將最適化表單內嵌至AEM [!DNL Sites]頁面。 依預設，元件在AEM [!DNL Sites]容器中不可見。 執行以下步驟來啟用AEM [!DNL Forms] Container元件，並將最適化表單內嵌到AEM [!DNL Sites]頁面中：
 
@@ -59,7 +75,7 @@ AEM [!DNL Forms]提供元件AEM [!DNL Forms]容器，以將最適化表單內嵌
 1. 選取![屬性](assets/properties.png)頁面資訊，並在新建立的We.Retail網站頁面中選取&#x200B;**[!UICONTROL 編輯範本]**&#x200B;選項。 頁面範本會在瀏覽器的新標籤中開啟。
 1. 在&#x200B;**[!UICONTROL 配置容器]**&#x200B;方塊中選取，並選取![feedmanagement](assets/feedmanagement.png)。 在「**[!UICONTROL 允許的元件]**」標籤中，展開「**[!UICONTROL 一般]**」摺疊式功能表，選取「**[!UICONTROL AEM表單]**」選項，然後選取「![儲存圖示](assets/save_icon.svg)」。 已為頁面啟用AEM [!DNL Forms]容器元件。
 
-1. 開啟包含AEM [!DNL Sites]頁面的瀏覽器索引標籤，此頁面已在步驟1中開啟。 選取&#x200B;**[!UICONTROL 將元件拖曳到這裡]**&#x200B;方塊並選取&#x200B;**+。在**&#x200B;[!UICONTROL &#x200B;插入新元件&#x200B;]&#x200B;**方塊中的**，選取&#x200B;**[!UICONTROL AEM表單]**。 **[!UICONTROL AEM Forms Container]**&#x200B;元件已新增至頁面。
+1. 開啟包含AEM [!DNL Sites]頁面的瀏覽器索引標籤，此頁面已在步驟1中開啟。 選取&#x200B;**[!UICONTROL 將元件拖曳到這裡]**&#x200B;方塊並選取&#x200B;**+.** 在&#x200B;**[!UICONTROL 插入新元件]**&#x200B;方塊中，選取&#x200B;**[!UICONTROL AEM表單]**。 **[!UICONTROL AEM Forms Container]**&#x200B;元件已新增至頁面。
 1. 選取&#x200B;**[!UICONTROL AEM Forms container]**&#x200B;元件，然後選取![configure-icon](assets/configure-icon.svg)。 會顯示含有AEM [!DNL Forms]容器屬性的對話方塊。 在&#x200B;**[!UICONTROL 資產路徑]**&#x200B;欄位中，瀏覽並選取shipping-address-add-update-form最適化表單。 選取![儲存圖示](assets/save_icon.svg)。 最適化表單已內嵌在頁面中。
 1. 發佈最適化表單和[!DNL Sites]頁面。 以下是您需要考慮的幾點：
 
@@ -73,4 +89,4 @@ AEM [!DNL Forms]提供元件AEM [!DNL Forms]容器，以將最適化表單內嵌
 
 ## 將最適化表單內嵌在外部網頁中 {#embed-the-adaptive-form-in-an-external-webpage}
 
-您可以在外部網頁中插入幾行JavaScript，將調適型表單內嵌至外部網頁(託管於AEM外部的非AEM網頁)。 JavaScript程式碼會將HTTP要求傳送至AEM [!DNL Forms]伺服器，以取得最適化表單和相關資源，並將最適化表單新增至網頁。 如需詳細步驟，請參閱[將最適化表單內嵌至外部網頁](/help/forms/using/embed-adaptive-form-external-web-page.md)。
+您可以在外部網頁中插入幾行JavaScript，將調適型表單內嵌至外部網頁（託管於AEM外部的非AEM網頁）。 JavaScript程式碼會將HTTP要求傳送至AEM [!DNL Forms]伺服器，以取得最適化表單和相關資源，並將最適化表單新增至網頁。 如需詳細步驟，請參閱[將最適化表單內嵌至外部網頁](/help/forms/using/embed-adaptive-form-external-web-page.md)。

@@ -5,13 +5,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: b2e73e28-fa34-436d-8a20-848d353e3b8c
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1082'
 ht-degree: 0%
-
 ---
-
 # AEM常見問題集 {#aem-faqs}
 
 瞭解部分AEM疑難排解和設定問題的解答。
@@ -49,8 +58,8 @@ ht-degree: 0%
 
 #### 如何稽核AEM功能，例如，登入嘗試以及ACL或許可權變更？ {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
 
-AEM匯入了記錄管理變更的功能，以便進行更好的疑難排解和稽核。依預設，資訊會記錄在`error.log`檔案中。為了更輕鬆地進行監視，建議將它們重新導向到單獨的記錄檔。
-若要將輸出重新導向至個別的記錄檔，請參閱[如何在AEM中稽核使用者管理作業](/help/sites-administering/audit-user-management-operations.md)。
+AEM匯入了記錄管理變更的功能，以便進行更好的疑難排解和稽核。 依預設，資訊會記錄在`error.log`檔案中。 為了更輕鬆地進行監視，建議將它們重新導向到單獨的記錄檔。
+若要將輸出重新導向至個別的記錄檔，請參閱[如何稽核AEM中的使用者管理作業](/help/sites-administering/audit-user-management-operations.md)。
 
 #### 如何預設啟用SSL？ {#how-to-enable-ssl-by-default}
 
@@ -88,8 +97,8 @@ Adobe Experience Manager (AEM) 6.4隨附SSL精靈，並提供使用者介面以�
 
 當您透過Touch UI （**參考** > **更新語言副本**）建立語言副本時，會在新語言下建立新的DAM資料夾，並從中參考資產。
 
-這是現成組態的預設設定。您可以在翻譯設定中設定&#x200B;**翻譯頁面Assets** = **不翻譯**。
-針對AEM 6.4，**工具** > **雲端服務** > **翻譯雲端服務**。
+這是現成組態的預設設定。 您可以在翻譯設定中設定&#x200B;**翻譯頁面Assets** = **不翻譯**。
+若為AEM 6.4，**工具** > **雲端服務** > **翻譯雲端服務**。
 
 #### 如何停用造成AEM SegmentStore (AEM 6.3.1.1)指數式增長的AEM元件？ {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
 

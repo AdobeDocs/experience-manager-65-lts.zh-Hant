@@ -1,5 +1,5 @@
 ---
-title: HTML5表單的Picture子句支援
+title: HTML5 表單的圖片子句支援
 description: HTML5 forms支援XFA Picture子句，用於顯示日期、文字和數值符號的值及格式化值。
 contentOwner: robhagat
 content-type: reference
@@ -10,18 +10,33 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 21afdc66-0b27-4c73-9cb4-1efd5c0aefae
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 0%
-
+source-wordcount: '652'
+ht-degree: 3%
 ---
-
-# HTML5表單的Picture子句支援 {#picture-clause-support-for-html-forms}
+# HTML5 表單的圖片子句支援 {#picture-clause-support-for-html-forms}
 
 HTML5 forms支援XFA Picture子句，用於顯示日期、文字和數值符號的值及格式化值。 支援下列Picture子句運算式：
 
-* category(locale){picture-clause} | category(locale){picture-clause} | category(locale){picture-clause}
+* 類別（地區設定）{picture-clause} |類別（地區設定）{picture-clause} |類別（地區設定）{picture-clause}
 * category.subcategory{}
 
 >[!NOTE]
@@ -37,7 +52,7 @@ Date Picture子句支援的運算式：
 * date.medium{}
 * date.full{}
 * date.short{}
-* date{date Picture子句符號}
+* 日期{date Picture Clause symbols}
 
 >[!NOTE]
 >
@@ -46,7 +61,7 @@ Date Picture子句支援的運算式：
 <table>
  <tbody>
   <tr>
-   <th><strong>符號</strong></th>
+   <th><strong>代碼</strong></th>
    <th>解譯</th>
   </tr>
   <tr>
@@ -115,13 +130,13 @@ HTML5表單支援數字圖片符號。 不過，PDF forms和HTML Forms之間的�
 * num.integer{}
 * num.decimal{}
 * num.currency{}
-* num.percent{}
-* num{Numeric Picture子句符號}
+* 數字。%{}
+* 數字{Numeric Picture Clause Symbols}
 
 <table>
  <tbody>
   <tr>
-   <th><strong>符號</strong></th>
+   <th><strong>代碼</strong></th>
    <th><strong>解譯</strong></th>
    <th>輸入剖析</th>
   </tr>
@@ -207,7 +222,7 @@ HTML5表單支援數字圖片符號。 不過，PDF forms和HTML Forms之間的�
 
 HTML5 Forms支援下列Text Picture子句運算式：
 
-* text{text Picture子句符號}
+* text{text Picture clause symbols}
 
 | **符號** | **解釋** |
 |---|---|

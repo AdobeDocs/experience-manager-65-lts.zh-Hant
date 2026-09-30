@@ -11,17 +11,31 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: f4a15b51-fbb9-454f-809d-b15ed8cbdd0c
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 9%
-
+source-wordcount: '548'
+ht-degree: 10%
 ---
-
 
 # 針對 SPA 實作 React元件{#implementing-a-react-component-for-spa}
 
-單頁應用程式 (SPA) 可為網站使用者提供引人入勝的體驗。開發人員希望能使用SPA架構建立網站，而作者則想在Adobe Experience Manager (AEM)中為使用SPA架構建立的網站順暢地編輯內容。
+單頁應用程式 (SPA) 可為網站使用者提供引人入勝的體驗。 開發人員希望能使用SPA架構建立網站，而作者則想在Adobe Experience Manager (AEM)中為使用SPA架構建立的網站順暢地編輯內容。
 
 SPA製作功能提供全方位的解決方案，可支援AEM中的SPA。 本文將以範例說明如何調整簡單的現有React元件，以搭配AEM SPA Editor使用。
 
@@ -33,7 +47,7 @@ SPA製作功能提供全方位的解決方案，可支援AEM中的SPA。 本文�
 
 本文說明We.Retail Journal範例SPA上的天氣元件範例。
 
-在閱讀本文之前，您應該先熟悉AEM[的SPA應用程式的](/help/sites-developing/spa-getting-started-react.md)結構。
+在閱讀本文之前，您應該先熟悉AEM[&#128279;](/help/sites-developing/spa-getting-started-react.md)的SPA應用程式的結構。
 
 >[!CAUTION]
 >本檔案僅將[We.Retail Journal應用程式](https://github.com/adobe/aem-sample-we-retail-journal)用於示範用途。 請勿用於任何專案工作。

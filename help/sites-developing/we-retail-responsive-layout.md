@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 25e035ce-0445-43a3-bd75-513a2e601b6a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 4%
-
+source-wordcount: '261'
+ht-degree: 3%
 ---
-
 # 在We.Retail中試用回應式版面{#trying-out-responsive-layout-in-we-retail}
 
 所有We.Retail頁面都會使用版面容器元件，以實施回應式設計。 版面容器提供段落系統，讓您在回應式格線內放置元件。 此格線可根據裝置/視窗大小和格式重新排列版面。 此元件與頁面編輯器中的&#x200B;**配置**&#x200B;模式搭配使用，可讓您建立和編輯相依於裝置的回應式配置。

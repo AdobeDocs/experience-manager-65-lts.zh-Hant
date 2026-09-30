@@ -9,13 +9,22 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 893d04cb-3a71-4400-9ca4-62ad46aacfdd
-source-git-commit: 4c6423d295aa93f6f7048a5ac919b551f3f305d7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1872'
-ht-degree: 0%
-
+source-wordcount: '1942'
+ht-degree: 1%
 ---
-
 # Adobe Experience Manager (AEM)中的服務使用者 {#service-users-in-aem}
 
 ## 概觀 {#overview}
@@ -40,44 +49,44 @@ ht-degree: 0%
 
 * **變更存取控制**
 
-   * 確定真正需要存取許可權的使用者或群組確實擁有存取權；
+  * 確定真正需要存取許可權的使用者或群組確實擁有存取權；
 
 * **調整內容結構**
 
-   * 將其移至其他位置，例如，存取控制與可用的請求工作階段相符的位置；
-   * 變更內容粒度；
+  * 將其移至其他位置，例如，存取控制與可用的請求工作階段相符的位置；
+  * 變更內容粒度；
 
 * **將您的程式碼重構為適當的服務**
 
-   * 將商業邏輯從JSP程式碼移至服務。 這允許不同的內容模式。
+  * 將商業邏輯從JSP程式碼移至服務。 這允許不同的內容模式。
 
 此外，請確定您開發的任何新功能都遵守以下原則：
 
 * **安全性需求應該驅動內容結構**
 
-   * 管理存取控制應該感覺很自然
-   * 存取控制必須由存放庫執行，而非應用程式
+  * 管理存取控制應該感覺很自然
+  * 存取控制必須由存放庫執行，而非應用程式
 
 * **使用節點型別**
 
-   * 限制可設定的屬性集
+  * 限制可設定的屬性集
 
 * **尊重隱私權設定**
 
-   * 如果有私人設定檔，其中一個範例就是不要公開在私人`/profile`節點上找到的設定檔圖片、電子郵件或全名。
+  * 如果有私人設定檔，其中一個範例就是不要公開在私人`/profile`節點上找到的設定檔圖片、電子郵件或全名。
 
 ## 嚴格存取控制 {#strict-access-control}
 
 無論您在重新建構內容時套用存取控制，還是為新的服務使用者執行此動作時，都必須儘可能套用最嚴格的ACL。 使用所有可能的存取控制工具：
 
-* 例如，不要在`jcr:read`上套用`/apps`，而只將其套用至`/apps/*/components/*/analytics`
+* 例如，不要在`/apps`上套用`jcr:read`，而只將其套用至`/apps/*/components/*/analytics`
 
 * 使用[限制](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html)
 
 * 為節點型別套用ACL
 * 限制權限
 
-   * 例如，當只需要寫入內容時，不要授予`jcr:write`許可權；請改用`jcr:modifyProperties`
+  * 例如，當只需要寫入內容時，不要授予`jcr:write`許可權；請改用`jcr:modifyProperties`
 
 ## 服務使用者與對應 {#service-users-and-mappings}
 
@@ -109,11 +118,11 @@ ht-degree: 0%
 1. 識別您服務的必要許可權，牢記最小許可權原則。
 1. 檢查是否有使用者可以使用您所需的確切許可權設定。 如果沒有任何現有使用者符合您的需求，請建立系統服務使用者。 需要RTC才能建立服務使用者。 有時候，建立多個子服務使用者（例如，一個用於寫入，一個用於讀取）以進一步劃分存取權是有意義的。
 1. 為您的使用者設定及測試ACE。
-1. 為您的服務和`service-user`新增`user/sub-users`對應
+1. 為您的服務和`user/sub-users`新增`service-user`對應
 
 1. 讓您的套件組合可以使用服務使用者sling功能：更新至`org.apache.sling.api`的最新版本。
 
-1. 以`admin-session`或`loginService` API取代程式碼中的`getServiceResourceResolver`。
+1. 以`loginService`或`getServiceResourceResolver` API取代程式碼中的`admin-session`。
 
 ## 建立服務使用者 {#creating-a-new-service-user}
 
@@ -169,7 +178,7 @@ end
 1. 在套件的src/main/resources資料夾下方建立子資料夾SLING-INF/content
 1. 在此資料夾中，建立名為org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.modified-&lt;您工廠設定的某些唯一名稱>.xml的檔案，其中包含您工廠設定的內容（包括所有子服務使用者對應）。 範例：
 
-1. 在您的套件組合的`SLING-INF/content`資料夾底下建立`src/main/resources`資料夾；
+1. 在您的套件組合的`src/main/resources`資料夾底下建立`SLING-INF/content`資料夾；
 1. 在此資料夾中，建立包含您工廠組態內容的檔案`named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-<a unique name for your factory configuration>.xml`，包含所有子服務使用者對應。
 
    為了方便說明，請取得名為`org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-com.adobe.granite.auth.saml.xml`的檔案：
@@ -191,7 +200,7 @@ end
    </node>
    ```
 
-1. 參考您套件組合`maven-bundle-plugin`中`pom.xml`的組態中的Sling初始內容。 範例：
+1. 參考您套件組合`pom.xml`中`maven-bundle-plugin`的組態中的Sling初始內容。 範例：
 
    ```xml
    <Sling-Initial-Content>
@@ -243,7 +252,7 @@ JSP無法使用`loginService()`，因為沒有關聯的服務。 不過，JSP中
 
    **缺點：**&#x200B;需要強大的服務使用者彈性化，這很容易導致許可權提升。 規避安全性模式。
 
-1. 傳遞事件裝載中`Subject`的序列化，並根據該主題建立`ResourceResolver`。 其中一個範例是在`doAsPrivileged`中使用JAAS `ResourceResolverFactory`。
+1. 傳遞事件裝載中`Subject`的序列化，並根據該主題建立`ResourceResolver`。 其中一個範例是在`ResourceResolverFactory`中使用JAAS `doAsPrivileged`。
 
    **優點：**&#x200B;從安全性觀點來清除實作。 它可避免重新驗證，並以原始許可權操作。 安全性相關程式碼對事件的取用者而言是透明的。
 

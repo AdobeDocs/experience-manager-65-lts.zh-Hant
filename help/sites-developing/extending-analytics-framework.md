@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Developer
 exl-id: 6a32bd9d-268d-4d03-b495-47ec6660c138
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1610'
+source-wordcount: '1638'
 ht-degree: 0%
-
 ---
-
 # 自訂Adobe Analytics框架{#customizing-the-adobe-analytics-framework}
 
 Adobe Analytics架構會決定使用Adobe Analytics追蹤的資訊。 若要自訂預設架構，請使用JavaScript新增自訂追蹤、整合Adobe Analytics外掛程式，以及變更用於追蹤之架構內的一般設定。
@@ -24,7 +33,7 @@ Adobe Analytics架構會決定使用Adobe Analytics追蹤的資訊。 若要自�
 
 當頁面與Adobe Analytics架構相關聯，且頁面包含[對Analytics模組](/help/sites-administering/adobeanalytics.md)的參考時，系統會自動為頁面產生analytics.sitecatalyst.js檔案。
 
-頁面中的JavaScript會建立`s_gi`物件(s_code.js Adobe Analytics程式庫所定義)並指派值給其屬性。 物件執行個體的名稱為`s`。 本節中顯示的程式碼範例會對此`s`變數提供數個參考。
+頁面中的JavaScript會建立`s_gi`物件（s_code.js Adobe Analytics程式庫所定義）並指派值給其屬性。 物件執行個體的名稱為`s`。 本節中顯示的程式碼範例會對此`s`變數提供數個參考。
 
 以下範常式式碼類似於analytics.sitecatalyst.js檔案中的程式碼：
 
@@ -122,7 +131,7 @@ s.trackingServerSecure = "xxxxxxx.net";
 
 `s.prop10= 'CONSTANT';`
 
-[analytics.sitecatalyst.js](/help/sites-developing/extending-analytics-components.md)檔案中的程式碼(包含Adobe Analytics `s-code.js`檔案的內容)包含下列程式碼：
+[analytics.sitecatalyst.js](/help/sites-developing/extending-analytics-components.md)檔案中的程式碼（包含Adobe Analytics `s-code.js`檔案的內容）包含下列程式碼：
 
 `if (s.usePlugins) s.doPlugins(s)`
 
@@ -185,7 +194,7 @@ s.doPlugins=s_doPlugins;
 */
 ```
 
-analytics.sitecatalyst.js檔案中的程式碼(包括Adobe Analytics s_code.js檔案的內容)包含下列程式碼：
+analytics.sitecatalyst.js檔案中的程式碼（包括Adobe Analytics s_code.js檔案的內容）包含下列程式碼：
 
 若為(s.usePlugins) s.doPlugins(s)
 
@@ -273,7 +282,7 @@ AEM會安裝下列Adobe Analytics外掛程式，以便依預設提供：
 
    * 名稱：使用者端程式庫資料夾的名稱，例如my-plugins
 
-   * 型別： cq：ClientLibraryFolder
+   * 型別： cq:ClientLibraryFolder
 
 1. 選取您建立的使用者端程式庫資料夾，並使用右下方的屬性列來新增下列屬性：
 

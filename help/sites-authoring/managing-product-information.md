@@ -9,13 +9,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 4531a41c-99fa-4e98-b4f4-f8fc92ed9095
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2888'
+source-wordcount: '2905'
 ht-degree: 0%
-
 ---
-
 # Creative專案與PIM整合 {#creative-project-and-pim-integration}
 
 如果您是行銷人員或創意專業人員，可以使用Adobe Experience Manager (AEM)中的Creative專案工具來管理組織內與電子商務相關的產品攝影和相關創意流程。
@@ -49,7 +62,7 @@ Creative專案提供各種專案範本，以滿足各種專案需求。 **產品
 
    ![專案詳細資料](assets/chlimage_1-134a.png)
 
-1. 按一下「**建立**」。確認訊息會通知專案已建立。
+1. 按一下「**建立**」。 確認訊息會通知專案已建立。
 1. 按一下&#x200B;**完成**&#x200B;以返回&#x200B;**專案**&#x200B;主控台。 或者，按一下&#x200B;**開啟**&#x200B;以檢視專案中的資產。
 
 ## 在產品像片拍攝專案中開始工作 {#starting-work-in-a-product-photo-shoot-project}
@@ -69,7 +82,7 @@ Creative專案提供各種專案範本，以滿足各種專案需求。 **產品
 
 * 建立快照清單
 * 上傳拍照
-* 潤飾拍照
+* 後製拍照
 * 檢閱和核准
 * 移至生產任務
 
@@ -79,7 +92,7 @@ Creative專案提供各種專案範本，以滿足各種專案需求。 **產品
 
 * 上傳快照清單
 * 上傳拍照
-* 潤飾拍照
+* 後製拍照
 * 檢閱和核准
 * 移至生產任務
 
@@ -240,7 +253,7 @@ Creative專案提供各種專案範本，以滿足各種專案需求。 **產品
 
 如果您是編輯者，可以上傳在前一個任務中建立或上傳之&#x200B;**shotlist.csv**&#x200B;檔案中所列產品的快照。
 
-要上傳的影像名稱必須以`<ProductId_>`開頭，其中`ProductId`是從&#x200B;**檔案的** Id`shotlist.csv`欄位中參考的。 例如，對於快照清單中具有&#x200B;**識別碼** `397122`的產品，您可以上傳名稱為`397122_highcontrast.jpg`、`397122_lowlight.png`等等的檔案。
+要上傳的影像名稱必須以`<ProductId_>`開頭，其中`ProductId`是從`shotlist.csv`檔案的&#x200B;**Id**&#x200B;欄位中參考的。 例如，對於快照清單中具有&#x200B;**識別碼** `397122`的產品，您可以上傳名稱為`397122_highcontrast.jpg`、`397122_lowlight.png`等等的檔案。
 
 您可以直接上傳影像或上傳包含影像的ZIP檔案。 根據影像的名稱，這些影像會放置在像片拍攝資料夾中個別的產品資料夾內。
 
@@ -319,7 +332,7 @@ Creative專案會將核准的資產與參考的產品建立關聯。 資產中�
 
    ![移至路徑](assets/chlimage_1-162a.png)
 
-1. 按一下&#x200B;**移至生產環境**。 關閉確認訊息。資產會移至所述的路徑，並根據資料夾階層，為每個產品的已核准資產自動建立迴轉集。
+1. 按一下&#x200B;**移至生產環境**。 關閉確認訊息。 資產會移至所述的路徑，並根據資料夾階層，為每個產品的已核准資產自動建立迴轉集。
 
 1. 按一下工具列中的&#x200B;**完成**&#x200B;圖示。 當最後一個步驟標籤為完成時，工作流程即會完成。
 

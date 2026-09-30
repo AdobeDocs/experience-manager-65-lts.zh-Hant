@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 49225f9f-d09e-4ab6-9e29-b47ba41e8889
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1224'
 ht-degree: 0%
-
 ---
-
 # Assets效能指南{#assets-performance-guide}
 
 數位資產管理(DAM)通常用於效能重要的情況。 不過，典型的DAM設定包含數個可能會影響效能的軟硬體元件。 本檔案提供下列內容：
@@ -39,11 +48,11 @@ ht-degree: 0%
 * 對於使用標準轉譯小於100 MB的影像，時間少於1分鐘
 * HD視訊剪輯不到五分鐘，長度不到一分鐘
 
-**3。 下載速度**&#x200B;從AEM DAM下載時發生輸送量問題需花很長時間，且在瀏覽DAM Admin或DAM Finder時不會立即顯示縮圖。
+**3. 下載速度**&#x200B;從AEM DAM下載時發生輸送量問題需花很長時間，且在瀏覽DAM Admin或DAM Finder時不會立即顯示縮圖。
 
 傳輸量效能是以每秒千位元的速度來測量。 一般目標效能為300 Kbps，可同時下載100次。
 
-**4。 影響資產處理效能的因素**
+**4. 影響資產處理效能的因素**
 
 為了能夠估計處理資產所需的硬體，應該考慮以下方面：
 
@@ -57,7 +66,7 @@ ht-degree: 0%
 
 DAM程式非常適合大量同時執行。 以批次及多核心處理器上傳資產，可加快每個資產的絕對逗留時間。
 
-**5。 正在預估執行資產處理的硬體需求**
+**5. 正在預估執行資產處理的硬體需求**
 
 廣泛的數位資產處理需要最佳化的硬體資源，其中最相關的因素包括影像大小和已處理影像的尖峰輸送量。
 

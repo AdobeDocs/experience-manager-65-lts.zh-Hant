@@ -7,28 +7,42 @@ feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, Developer
 exl-id: 708a4ab2-ca66-445d-8d69-bcf12fd5158a
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1849'
-ht-degree: 9%
-
+source-wordcount: '1940'
+ht-degree: 10%
 ---
-
 # 根據核心元件在最適化表單中建立和使用最適化Forms片段 {#adaptive-form-fragments}
 
 ## 套用至 {#applies-to}
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=zh-Hant)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=zh-Hant)上的AEM Forms 。
 
 雖然每個表單都是為特定目的而設計，但大多數表單中都有一些常見的區段，例如提供個人詳細資訊，例如姓名和地址、家庭詳細資訊、收入詳細資訊。 每次建立新表單時，表單開發人員都必須建立這些通用區段。
 
 最適化Forms提供一種便利的機制，讓您只需建立一次表單區段（例如面板或欄位群組），即可在最適化Forms中重複使用。 這些可重複使用的獨立區段稱為「最適化表單片段」。
 
-表單片段可無縫整合至多種表單，精簡建立一致且專業外觀的表單。 表單片段透過「一次變更，處處反映」功能確保可重複性、標準化和品牌一致性。由於在一處進行的更新會自動傳播到使用這些片段的所有表單，因此可體驗更高的可維護性和效率。
+表單片段可無縫整合至多種表單，精簡建立一致且專業外觀的表單。 表單片段透過「一次變更，處處反映」功能確保可重複性、標準化和品牌一致性。 由於在一處進行的更新會自動傳播到使用這些片段的所有表單，因此可體驗更高的可維護性和效率。
 
-您可以將片段多次新增到檔案，並使用其元件的資料繫結屬性將其連結到不同的資料來源或結構描述。 例如，您可以將相同的地址片段用於永久、通訊和帳單地址，並將其連線到資料來源或結構的不同欄位。
+您可以將片段多次新增到檔案，並使用其元件的資料繫結屬性將其連結到不同的資料來源或結構描述。 例如，您可以將相同的地址片段用於永久、通訊和帳單地址，並將其連接到資料來源或結構描述的不同欄位。
 
 >[!NOTE]
 >
@@ -41,7 +55,7 @@ ht-degree: 9%
 
 1. 在https://[*主機名稱*]：[*連線埠*]/aem/forms.html登入您的AEM Forms執行個體。
 1. 按一下「**建立 > 自適應表單片段**」。
-1. 指定片段的標題、名稱、說明和標籤。 確保為片段指定唯一的名稱。如果已存在名稱相同的片段，將無法建立片段。
+1. 指定片段的標題、名稱、說明和標籤。 確保為片段指定唯一的名稱。 如果已存在名稱相同的片段，將無法建立片段。
 1. 選取表單範本。 您可以為以核心元件為基礎的Adaptive Forms或基礎元件為基礎的Adaptive Forms建立表單片段。
    * 若要建立核心元件型表單的表單片段，請選取核心元件型範本。
    * 若要為以基礎元件為基礎的表單建立表單片段，請選取基礎元件範本。 例如，/libs/fd/af/templateForFragment/defaultFragmentTemplate。
@@ -183,7 +197,7 @@ Perform the following steps to show complete fragments in forms:
 
 ## 使用片段時要記住的關鍵點 {#key-points-to-remember-when-working-with-fragments}
 
-* 確認片段使用唯一的名稱。如果現有片段擁有相同的名稱，則無法建立片段。
+* 確認片段使用唯一的名稱。 如果現有片段擁有相同的名稱，則無法建立片段。
 * 在XDP型最適化表單中，如果您將面板儲存為包含其他XDP片段的片段，則產生的片段會自動與子XDP片段繫結。 如果是XSD型最適化表單，產生的片段會與結構描述根繫結。
 * 建立最適化表單片段時，會建立片段節點，此節點類似於CRXDE Lite中的最適化表單的guideContainer節點。
 * 不支援使用不同表單資料模型的最適化表單中的片段。 例如，XSD型最適化表單中不支援XDP型片段，反之亦然。
@@ -193,7 +207,7 @@ Perform the following steps to show complete fragments in forms:
 * 發佈最適化表單時，您需要發佈在最適化表單中透過參考插入的獨立最適化表單片段。
 * 當您重新發佈更新的Adaptive Form片段時，變更會反映在使用片段的Adaptive Form的已發佈例項中。
 * 包含Verify元件的調適型表單不支援匿名使用者。 此外，不建議在自適應表單片段中使用驗證元件。
-* (**僅限Mac**)若要確保表單片段功能在所有案例中都能完美運作，請將下列專案新增至/private/etc/hosts檔案：
+* （**僅限Mac**）若要確保表單片段功能在所有案例中都能完美運作，請將下列專案新增至/private/etc/hosts檔案：
   `127.0.0.1 <Host machine>` **主機電腦**：部署AEM Forms的Apple Mac電腦。
 
 ## 參考片段 {#reference-fragments}
@@ -203,7 +217,7 @@ Perform the following steps to show complete fragments in forms:
 
 ## 另請參閱 {#see-also}
 
-* [建立以核心元件為主的自適應表單。](create-an-adaptive-form-core-components.md)
+* [建立以核心元件為主的自適應表單](create-an-adaptive-form-core-components.md)
 * [使用規則編輯器將動態行為新增至表單](rule-editor.md)
 * [建立或自訂核心元件型最適化Forms的主題](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [建立核心元件型最適化Forms的範本](template-editor.md)

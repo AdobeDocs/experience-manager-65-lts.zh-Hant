@@ -6,13 +6,27 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: cb5495f9-bc54-4515-ae15-55a5397500aa
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2387'
-ht-degree: 0%
-
+source-wordcount: '2476'
+ht-degree: 1%
 ---
-
 
 # 在Adobe Experience Manager中編輯外部SPA {#editing-external-spa-within-aem}
 
@@ -30,16 +44,16 @@ ht-degree: 0%
 
 * 確定AEM的執行個體在本機執行。
 * 使用[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant&#available-properties)建立基礎AEM SPA專案。
-   * 這將構成AEM專案的基礎，專案將更新以包含外部SPA。
-   * 本檔案中的範例使用[WKND SPA專案](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=zh-Hant#spa-editor)的起點。
+  * 這將構成AEM專案的基礎，專案將更新以包含外部SPA。
+  * 本檔案中的範例使用[WKND SPA專案](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=zh-Hant#spa-editor)的起點。
 * 準備好您想要整合的可使用外部React SPA。
 
 ## 將SPA上傳至AEM專案 {#upload-spa-to-aem-project}
 
 首先，您需要將外部SPA上傳至AEM專案。
 
-1. 將`src`專案資料夾中的`/ui.frontend`取代為React應用程式的`src`資料夾。
-1. 在`package.json`檔案中的應用程式`/ui.frontend/package.json`中包含任何其他相依性。
+1. 將`/ui.frontend`專案資料夾中的`src`取代為React應用程式的`src`資料夾。
+1. 在`/ui.frontend/package.json`檔案中的應用程式`package.json`中包含任何其他相依性。
    * 請確定SPA SDK相依性為[建議的版本](spa-getting-started-react.md#dependencies)。
 1. 在`/public`資料夾中包含任何自訂專案。
 1. 包含任何新增至`/public/index.html`檔案的內嵌指令碼或樣式。
@@ -72,9 +86,9 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
 這需要在應用程式的`src/index.js`檔案中或在呈現應用程式根目錄的任何位置完成。
 
-為此，請使用`initializationAsync`提供的`ModelManager` API。
+為此，請使用`ModelManager`提供的`initializationAsync` API。
 
-下列熒幕擷圖顯示如何在簡單的React應用程式中啟用`ModelManager`的初始化。 唯一的限制是必須在`initializationAsync`之前呼叫`ReactDOM.render()`。
+下列熒幕擷圖顯示如何在簡單的React應用程式中啟用`ModelManager`的初始化。 唯一的限制是必須在`ReactDOM.render()`之前呼叫`initializationAsync`。
 
 ![初始化ModelManager](assets/external-spa-initialize-modelmanager.png)
 
@@ -166,7 +180,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
    * `pagePath`：包含節點的頁面，例如`/content/wknd-spa-react/us/en/home`
    * `itemPath`：頁面中節點的路徑，範例： `root/responsivegrid/text`
-      * 由頁面上包含專案的名稱組成。
+     * 由頁面上包含專案的名稱組成。
 
    ![節點的路徑](assets/external-spa-path.png)
 
@@ -248,7 +262,7 @@ mvn clean install -PautoInstallSinglePackage
 
 ![aem](assets/external-spa-text20-aem.png)中的text_20節點
 
-內容作者更新此元件時，會在`text_20`的`root/responsivegrid/text_20`建立新的`/content/wknd-spa-react/us/en/home`節點。
+內容作者更新此元件時，會在`/content/wknd-spa-react/us/en/home`的`root/responsivegrid/text_20`建立新的`text_20`節點。
 
 ![text20節點](assets/external-spa-text20-node.png)
 
@@ -260,9 +274,9 @@ mvn clean install -PautoInstallSinglePackage
 * 在`pagePath`中的路徑所提供的頁面節點必須存在於AEM專案中。
 * 必須在`itemPath`中提供要建立的節點名稱。
 * 可在任何層級建立元件。
-   * 如果在上一個範例中提供`itemPath='text_20'`，則會直接在頁面`/content/wknd-spa-react/us/en/home/jcr:content/text_20`下建立新節點
+  * 如果在上一個範例中提供`itemPath='text_20'`，則會直接在頁面`/content/wknd-spa-react/us/en/home/jcr:content/text_20`下建立新節點
 * 透過`itemPath`提供時，建立新節點的節點路徑必須有效。
-   * 在此範例中，`root/responsivegrid`必須存在，才能在那裡建立新節點`text_20`。
+  * 在此範例中，`root/responsivegrid`必須存在，才能在那裡建立新節點`text_20`。
 * 僅支援建立分葉元件。 未來版本將支援虛擬容器和頁面。
 
 ### 虛擬容器 {#virtual-containers}
@@ -281,13 +295,13 @@ mvn clean install -PautoInstallSinglePackage
 
 ![容器預留位置](assets/container-placeholder.png)
 
-JCR![中的](assets/container-jcr-structure.png)容器位置
+JCR![&#128279;](assets/container-jcr-structure.png)中的容器位置
 
 一旦作者將子元件新增至容器後，新容器節點就會以JCR結構中的對應名稱建立。
 
 ![包含內容的容器](assets/container-with-content.png)
 
-含有JCR![內容的](assets/container-with-content-jcr.png)容器
+含有JCR![&#128279;](assets/container-with-content-jcr.png)內容的容器
 
 現在，您可以依照作者的需求，將更多元件和內容新增至容器，且變更將會持續存在。
 
@@ -297,8 +311,8 @@ JCR![中的](assets/container-jcr-structure.png)容器位置
 
 * 決定可新增哪些元件的原則將會從父容器繼承。
 * 要建立的容器的直接父系必須已存在於AEM中。
-   * 如果AEM容器中已存在容器`root/responsivegrid`，則可提供路徑`root/responsivegrid/newContainer`以建立新容器。
-   * 但是`root/responsivegrid/newContainer/secondNewContainer`是不可能的。
+  * 如果AEM容器中已存在容器`root/responsivegrid`，則可提供路徑`root/responsivegrid/newContainer`以建立新容器。
+  * 但是`root/responsivegrid/newContainer/secondNewContainer`是不可能的。
 * 一次只能虛擬建立一個新層級的元件。
 
 ## 其他自訂 {#additional-customizations}
@@ -307,13 +321,13 @@ JCR![中的](assets/container-jcr-structure.png)容器位置
 
 ### 根節點ID {#root-node-id}
 
-依預設，我們假設React應用程式呈現在元素識別碼`div`的`spa-root`內。 如有需要，可自訂。
+依預設，我們假設React應用程式呈現在元素識別碼`spa-root`的`div`內。 如有需要，可自訂。
 
-例如，假設我們有一個SPA，應用程式在元素識別碼`div`的`root`內轉譯。 這需要在三個檔案中反映。
+例如，假設我們有一個SPA，應用程式在元素識別碼`root`的`div`內轉譯。 這需要在三個檔案中反映。
 
 1. 在React應用程式的`index.js`中（或呼叫`ReactDOM.render()`的位置）
 
-   index.js檔案![中的](assets/external-spa-root-index.png)ReactDOM.render()
+   index.js檔案![&#128279;](assets/external-spa-root-index.png)中的ReactDOM.render()
 
 1. 在React應用程式的`index.html`
 
@@ -354,10 +368,10 @@ JCR![中的](assets/container-jcr-structure.png)容器位置
 
    ![路由協助程式](assets/external-spa-router-helper.png)
 
-   * `toAEMPath`提供的`@adobe/cq-spa-page-model-manager`協助程式可用於此專案。 它會轉換為路由提供的路徑，以便在AEM例項上開啟應用程式時包含AEM的特定部分。 它接受三個引數：
-      * 路由所需的路徑
-      * 編輯SPA的AEM執行個體的來源URL
-      * AEM上的專案根目錄，如第一步所決定
+   * `@adobe/cq-spa-page-model-manager`提供的`toAEMPath`協助程式可用於此專案。 它會轉換為路由提供的路徑，以便在AEM例項上開啟應用程式時包含AEM的特定部分。 它接受三個引數：
+     * 路由所需的路徑
+     * 編輯SPA的AEM執行個體的來源URL
+     * AEM上的專案根目錄，如第一步所決定
 
    * 這些值可設為環境變數，以獲得更多彈性。
 
@@ -367,7 +381,7 @@ JCR![中的](assets/container-jcr-structure.png)容器位置
 
 ## 框架限制 {#framework-limitations}
 
-RemotePage元件預期實作會提供資產資訊清單，例如GitHub[上的](https://github.com/shellscape/webpack-manifest-plugin)webpack-manifest-plugin。 不過，RemotePage元件僅通過測試可用於React架構（以及透過remote-page-next元件的Next.js），因此不支援從其他架構（例如Angular）從遠端載入應用程式。
+RemotePage元件預期實作會提供資產資訊清單，例如GitHub[&#128279;](https://github.com/shellscape/webpack-manifest-plugin)上的webpack-manifest-plugin。 不過，RemotePage元件僅通過測試可用於React架構（以及透過remote-page-next元件的Next.js），因此不支援從其他架構（例如Angular）從遠端載入應用程式。
 
 ## 其他資源 {#additional-resources}
 

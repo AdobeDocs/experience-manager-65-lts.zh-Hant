@@ -6,13 +6,22 @@ feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: 810be820-b577-4035-9fda-3d919361c58c
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: a1f87682-0525-5459-aa06-3560bb4c3b2a
+    internal-label: Workfront Integrations and Apps
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1735'
 ht-degree: 1%
-
 ---
-
 # 設定 [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
 | 版本 | 文章連結 |
@@ -123,23 +132,23 @@ Adobe Workfront檔案與Assets之間的中繼資料對應是在AEM中繼資料�
 
 * `workfront-field`可以是
 
-   * 前置詞`DE:`所識別的自訂表單欄位。
-   * 由其名稱識別的可編輯欄位。 在[[!DNL Workfront] API總管](https://experience.workfront.com/s/api-explorer)中找到欄位名稱。
+  * 前置詞`DE:`所識別的自訂表單欄位。
+  * 由其名稱識別的可編輯欄位。 在[[!DNL Workfront] API總管](https://experience.workfront.com/s/api-explorer)中找到欄位名稱。
 
 * `aem-mapped-property` 可能是：
 
-   * 常值。 這些應該以引號括住。
-   * AEM屬性。 此參考應相對於工作流程裝載。
-   * 具名值。 這些應該以方括弧括住。
-   * 上述3個專案的串連。 使用`{+}`指定它。
-   * 以`{replace(<value>,"old-char","new-char")}`包圍值來變更上述3個專案。
+  * 常值。 這些應該以引號括住。
+  * AEM屬性。 此參考應相對於工作流程裝載。
+  * 具名值。 這些應該以方括弧括住。
+  * 上述3個專案的串連。 使用`{+}`指定它。
+  * 以`{replace(<value>,"old-char","new-char")}`包圍值來變更上述3個專案。
 
 * 部分範例包括：
 
-   * `status="INP"`
-   * `DE:Asset Type=jcr:content/metadata/assetType`
-   * `DE:Path={path}`
-   * `URL="https://my-aem-author/assets.html"{+}{path}`
+  * `status="INP"`
+  * `DE:Asset Type=jcr:content/metadata/assetType`
+  * `DE:Path={path}`
+  * `URL="https://my-aem-author/assets.html"{+}{path}`
 
 ![對應屬性的組態](/help/assets/assets/wf-map-property-config.png)
 

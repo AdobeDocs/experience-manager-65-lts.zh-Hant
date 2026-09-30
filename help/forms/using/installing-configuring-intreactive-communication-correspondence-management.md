@@ -5,13 +5,31 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,Correspondence Management
 exl-id: d03965e1-4fa3-414c-80b6-c9fca281bee4
-source-git-commit: bd33420307a7be6664b6bbb52677af66edaa9c0e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 4%
-
 ---
-
 # 安裝及設定互動式通訊{#install-and-configure-interactive-communications}
 
 ## 簡介 {#introduction}
@@ -41,15 +59,15 @@ AEM Forms互動式通訊會在AEM Forms的製作例項上執行管理、製作�
 * AEM執行個體的安裝路徑未包含空格。
 * AEM執行個體已啟動且執行中。 在AEM術語中，「例項」是在伺服器上以製作或發佈模式執行的AEM副本。 您至少需要一個AEM執行個體（製作或處理）才能執行AEM Forms互動式通訊和通訊管理功能：
 
-   * **作者**：用來建立、上傳和編輯內容以及管理網站的AEM執行個體。 一旦內容準備好上線，就會將其復寫到發佈執行個體。
-   * **處理：**&#x200B;處理執行個體是[強化的AEM作者](/help/forms/using/hardening-securing-aem-forms-environment.md)執行個體。 您可以設定Author例項，並在執行安裝後加以強化。
+  * **作者**：用來建立、上傳和編輯內容以及管理網站的AEM執行個體。 一旦內容準備好上線，就會將其復寫到發佈執行個體。
+  * **處理：**&#x200B;處理執行個體是[強化的AEM作者](/help/forms/using/hardening-securing-aem-forms-environment.md)執行個體。 您可以設定Author例項，並在執行安裝後加以強化。
 
-   * **發佈**：透過網際網路或內部網路，向公眾提供已發佈內容的AEM執行個體。
+  * **發佈**：透過網際網路或內部網路，向公眾提供已發佈內容的AEM執行個體。
 
 * 符合記憶體需求。 AEM Forms附加元件套件需要：
 
-   * ® Windows安裝專用的15 GB暫存空間。
-   * UNIX安裝需要6 GB的暫存空間。
+  * ® Windows安裝專用的15 GB暫存空間。
+  * UNIX安裝需要6 GB的暫存空間。
 
 * UNIX系統的額外需求：如果您使用的是UNIX作業系統，請從個別作業系統的安裝媒體安裝下列套件。
 

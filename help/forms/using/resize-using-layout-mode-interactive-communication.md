@@ -5,13 +5,27 @@ feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 39339f53-be4f-46a0-8c39-fd56a7f7e770
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '898'
 ht-degree: 1%
-
 ---
-
 # 使用版面模式調整元件大小 {#use-layout-mode-to-resize-components}
 
 互動式通訊Web Channel編寫介面可讓您使用「版面」模式調整元件大小。 在欄中拖放藍點以定義起始點和終止點來定位元件。 點選回應式格線中的元件後，系統會顯示藍點。 回應式格線由12個相等的欄組成。 替代欄中的白色和藍色陰影可區分一欄與另一欄。

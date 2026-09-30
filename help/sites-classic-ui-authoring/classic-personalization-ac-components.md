@@ -10,13 +10,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: abdb803b-a770-4f4b-8788-45d067341e0f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2564'
 ht-degree: 6%
-
 ---
-
 # Adobe Campaign元件{#adobe-campaign-components}
 
 與Adobe Campaign整合時，您擁有可在使用電子報和表單時使用的元件。 本檔案將說明這兩者。
@@ -36,10 +47,10 @@ ht-degree: 6%
 * 標題 (行銷活動)
 * 影像 (行銷活動)
 * 連結 (行銷活動)
-* Scene7 影像範本 (行銷活動)
-* 目標參考 (行銷活動)
-* 文字與影像 (行銷活動)
-* 文字與個人化 (行銷活動)
+* Scene7 影像範本 (Campaign)
+* 目標參考 (Campaign)
+* 文字與影像 (Campaign)
+* 文字與個人化 (Campaign)
 
 下一節將說明這些元件。
 
@@ -228,12 +239,12 @@ ht-degree: 6%
 
 * 核取方塊 (行銷活動)
 * 日期欄位（行銷活動）和日期欄位/HTML5 （行銷活動）
-* 加密的主索引鍵 (行銷活動)
-* 錯誤顯示 (行銷活動)
-* 隱藏調和索引鍵 (行銷活動)
-* 數值欄位 (行銷活動)
-* 選項欄位 (行銷活動)
-* 訂閱檢查清單 (行銷活動)
+* 加密的主索引鍵 (Campaign)
+* 錯誤顯示 (Campaign)
+* 隱藏調和索引鍵 (Campaign)
+* 數值欄位 (Campaign)
+* 選項欄位 (Campaign)
+* 訂閱檢查清單 (Campaign)
 * 測試欄位 (行銷活動)
 
 本節詳細說明每個元件。
@@ -255,7 +266,7 @@ ht-degree: 6%
    <td><p>不再聯絡（透過任何管道）</p> </td>
   </tr>
   <tr>
-   <td><p>日期欄位 (行銷活動)</p> <p>日期欄位/HTML 5 (行銷活動)</p> </td>
+   <td><p>日期欄位 (Campaign)</p> <p>日期欄位/HTML 5 (Campaign)</p> </td>
    <td><p>日期</p> </td>
    <td><p>出生日期</p> </td>
   </tr>

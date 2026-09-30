@@ -1,5 +1,5 @@
 ---
-title: 建立HTML5表單的自訂設定檔
+title: 建立 HTML5 表單的自訂設定檔
 description: HTML5表單設定檔是Apache Sling中的資源節點。 它代表HTML5 Forms轉譯服務的自訂版本。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,22 +9,37 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 1f7c1213-4100-45d2-8083-531ff8d413e0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 0%
-
+source-wordcount: '657'
+ht-degree: 2%
 ---
-
-# 建立HTML5表單的自訂設定檔 {#creating-a-custom-profile-for-html-forms}
+# 建立 HTML5 表單的自訂設定檔 {#creating-a-custom-profile-for-html-forms}
 
 設定檔是[Apache Sling](https://sling.apache.org/)中的資源節點。 它代表HTML5 Forms轉譯服務的自訂版本。 您可以使用HTML5 Forms轉譯服務來自訂HTML5表單的外觀、行為和互動。 設定檔節點存在於JCR存放庫的`/content`資料夾中。 您可以直接將節點放在`/content`資料夾或`/content`資料夾的任何子資料夾下。
 
-設定檔節點具有&#x200B;**sling：resourceSuperType**&#x200B;屬性，預設值為&#x200B;**xfaforms/profile**。 節點的轉譯器指令碼位於/libs/xfaforms/profile。
+設定檔節點具有&#x200B;**sling:resourceSuperType**&#x200B;屬性，預設值為&#x200B;**xfaforms/profile**。 節點的轉譯器指令碼位於/libs/xfaforms/profile。
 
 Sling指令碼是JSP指令碼。 這些JSP指令碼可當作容器，用來將請求表單和必要的JS / CSS成品的HTML放在一起。 這些Sling指令碼也稱為&#x200B;**設定檔轉譯器指令碼**。 設定檔轉譯器會呼叫Forms OSGi服務來轉譯請求的表單。
 
-設定檔指令碼位於html.jsp和html.POST.jsp中，適用於GET和POST請求。 您可以複製和修改一或多個檔案，以覆寫和新增自訂。 請勿進行任何就地變更，修補程式更新會覆寫此類變更。
+設定檔指令碼位於html.jsp和html.POST.jsp中，以用於GET和POST要求。 您可以複製和修改一或多個檔案，以覆寫和新增自訂。 請勿進行任何就地變更，修補程式更新會覆寫此類變更。
 
 設定檔包含各種模組。 這些模組是formRuntime.jsp、config.jsp、toolbar.jsp、formBody.jsp、nav_footer.jsp和footer.jsp。
 
@@ -64,7 +79,7 @@ footer.jsp模組是空的。 它可讓您新增僅用於使用者互動的指令
 
 1. 複製節點預設值，並將節點貼到名稱為&#x200B;*hrform*&#x200B;的不同資料夾(*/content/profiles*)中。
 
-1. 選取新節點&#x200B;*hrform*，然後新增字串屬性： *sling：resourceType*，值為： *hrform/demo*。
+1. 選取新節點&#x200B;*hrform*，然後新增字串屬性： *sling:resourceType*，值為： *hrform/demo*。
 
 1. 按一下工具列功能表中的「儲存全部」以儲存變更。
 

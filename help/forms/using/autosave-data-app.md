@@ -10,13 +10,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 8f504453-1009-46d9-83a5-d4a8531d7e2c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '295'
 ht-degree: 0%
-
 ---
-
 # 在AEM Forms應用程式中使用自動儲存{#using-autosave-in-aem-forms-app}
 
 當使用者在Adobe Experience Manager Forms應用程式中輸入資料時，自動儲存功能會定期儲存資料。 AEM Forms應用程式中的自動儲存功能可協助您在應用程式意外關閉時避免資料遺失。
@@ -42,4 +56,4 @@ ht-degree: 0%
 1. 當您重新啟動應用程式並以同一個使用者登入時，系統會提示您使用「復原未儲存的工作」對話方塊來復原工作。 在[復原未儲存的工作]對話方塊中按一下[確定]&#x200B;**&#x200B;**&#x200B;以繼續使用已儲存的工作。 您可以按一下&#x200B;**取消**，刪除與上次觸發的自動儲存相對應的已儲存資料，並開始處理新工作。
 
    當您按一下&#x200B;**確定**&#x200B;時，工作會以與應用程式當機前觸發的最新自動儲存相對應的資料還原。 其中包含表單資料及與工作相關的所有附件。
-   [![正在復原工作&#x200B;](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.**&#x200B;正在處理的表單&#x200B;**B.**&#x200B;應用程式已強制關閉&#x200B;**C.**&#x200B;應用程式已重新啟動，其中復原未儲存的工作對話方塊&#x200B;**D.**&#x200B;表單已還原為原始資料
+   [![正在復原工作&#x200B;](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** 在製品表單&#x200B;**B.**&#x200B;應用程式已強制關閉&#x200B;**C.**&#x200B;應用程式已重新啟動，其中復原未儲存的工作對話方塊&#x200B;**D.**&#x200B;表單已還原為原始資料

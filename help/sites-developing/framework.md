@@ -10,13 +10,24 @@ feature: Developing,Tagging
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 exl-id: 5d1c2c73-c457-49dc-b519-eba5ad9d5722
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: 752f9248-f39f-5793-a7dd-5ddafcd403c7
+    internal-label: Tagging
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1627'
-ht-degree: 0%
-
+source-wordcount: '1641'
+ht-degree: 1%
 ---
-
 # AEM 標記框架 {#aem-tagging-framework}
 
 標籤可讓內容分類並整理。 標籤可以依名稱空間和分類法來分類。 如需使用標籤的詳細資訊：
@@ -30,12 +41,12 @@ ht-degree: 0%
 
 若要標籤內容及使用AEM標籤基礎結構：
 
-* 標籤必須存在為[&#128279;](#taxonomy-root-node)分類根節點下型別`[cq:Tag](#tags-cq-tag-node-type)`的節點。
+* 標籤必須存在為[分類根節點下型別`[cq:Tag](#tags-cq-tag-node-type)`的節點。](#taxonomy-root-node)
 
 * 標籤的內容節點的`NodeType`必須包含[`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin。
 * [`TagID`](#tagid)已新增至內容節點的[`cq:tags`](#tagged-content-cq-tags-property)屬性，並解析為型別` [cq:Tag](#tags-cq-tag-node-type)`的節點。
 
-## 標籤：cq：Tag節點型別  {#tags-cq-tag-node-type}
+## 標籤：cq:Tag節點型別  {#tags-cq-tag-node-type}
 
 在型別`cq:Tag`的節點中的儲存庫中擷取標籤的宣告。
 
@@ -77,7 +88,7 @@ TagID包含[名稱空間](#tag-namespace)，後面接著本機TagID。 [容器�
 
 ### 標籤名稱空間 {#tag-namespace}
 
-名稱空間可讓您將專案分組。 最典型的使用案例是每個網站的名稱空間（例如公用、內部和入口網站）或大型應用程式(例如WCM、Assets、Communities)。 但名稱空間可用於各種其他需求。 在使用者介面中使用名稱空間，以僅顯示適用於目前內容的標籤子集（即特定名稱空間的標籤）。
+名稱空間可讓您將專案分組。 最典型的使用案例是每個網站的名稱空間（例如公用、內部和入口網站）或大型應用程式（例如WCM、Assets、Communities）。 但名稱空間可用於各種其他需求。 在使用者介面中使用名稱空間，以僅顯示適用於目前內容的標籤子集（即特定名稱空間的標籤）。
 
 標籤的名稱空間是分類子樹狀結構中的第一個層級，它是[分類根節點](#taxonomy-root-node)正下方的節點。 名稱空間是型別`cq:Tag`的節點，其父系不是`cq:Tag`節點型別。
 
@@ -128,7 +139,7 @@ TagID包含[名稱空間](#tag-namespace)，後面接著本機TagID。 [容器�
 * 允許使用者/作者讀取他們應可讀取的所有名稱空間（幾乎全部）。
 * 允許使用者/作者寫入存取那些標籤應該可由使用者/作者自由定義的名稱空間（在`/content/cq:tags/some_namespace`下新增節點）
 
-## 可標籤的內容：cq：Taggable Mixin {#taggable-content-cq-taggable-mixin}
+## 可標籤的內容：cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
 
 若要讓應用程式開發人員將標籤附加至內容型別，節點的註冊([CND](https://jackrabbit.apache.org/jcr/node-type-notation.html))必須包含`cq:Taggable` mixin或`cq:OwnerTaggable` mixin。
 
@@ -163,7 +174,7 @@ AEM中包含之節點型別的基本定義如下：
     mixin
 ```
 
-## 標籤內容： cq：tags屬性 {#tagged-content-cq-tags-property}
+## 標籤的內容： cq:tags屬性 {#tagged-content-cq-tags-property}
 
 `cq:tags`屬性是`String`陣列，用來儲存一或多個TagID （當作者或網站訪客套用至內容時）。 屬性只有在新增至使用`[cq:Taggable](#taggable-content-cq-taggable-mixin)` mixin定義的節點時才有意義。
 
@@ -177,14 +188,14 @@ AEM中包含之節點型別的基本定義如下：
 
 * 將標籤A移動或合併到`/content/cq:tags`下的標籤B中時：
 
-   * 標籤A未刪除並取得`cq:movedTo`屬性。
-   * 標籤B已建立（如果有移動）並取得`cq:backlinks`屬性。
+  * 標籤A未刪除並取得`cq:movedTo`屬性。
+  * 標籤B已建立（如果有移動）並取得`cq:backlinks`屬性。
 
 * `cq:movedTo`指向標籤B。
 
-   * 此屬性表示標籤A已移動或合併到標籤B中。移動標籤B會相應地更新此屬性。 因此標籤A會隱藏，並僅保留在存放庫中，以解析指向標籤A的內容節點中的標籤ID。標籤記憶體回收行程會移除標籤A，如此一來，內容節點便不再指向這些標籤。
+  * 此屬性表示標籤A已移動或合併到標籤B中。移動標籤B會相應地更新此屬性。 因此標籤A會隱藏，並僅保留在存放庫中，以解析指向標籤A的內容節點中的標籤ID。標籤記憶體回收行程會移除標籤A，如此一來，內容節點便不再指向這些標籤。
 
-   * `cq:movedTo`屬性的特殊值為`nirvana`。 它會在標籤刪除時套用，但無法從存放庫移除，因為必須保留具有`cq:movedTo`的子標籤。
+  * `cq:movedTo`屬性的特殊值為`nirvana`。 它會在標籤刪除時套用，但無法從存放庫移除，因為必須保留具有`cq:movedTo`的子標籤。
 
   >[!NOTE]
   >
@@ -204,13 +215,13 @@ AEM中包含之節點型別的基本定義如下：
 
 * 讀取內容節點的`cq:tags`屬性涉及下列解析度：
 
-   1. 如果`/content/cq:tags`下沒有相符專案，則不會傳回任何標籤。
+  1. 如果`/content/cq:tags`下沒有相符專案，則不會傳回任何標籤。
 
-   1. 如果標籤已設定`cq:movedTo`屬性，則會接著參考的標籤ID。
+  1. 如果標籤已設定`cq:movedTo`屬性，則會接著參考的標籤ID。
 
-      * 只要後續的標籤具有`cq:movedTo`屬性，就會重複此步驟。
+     * 只要後續的標籤具有`cq:movedTo`屬性，就會重複此步驟。
 
-   1. 如果追蹤的標籤沒有`cq:movedTo`屬性，則會讀取標籤。
+  1. 如果追蹤的標籤沒有`cq:movedTo`屬性，則會讀取標籤。
 
 * 若要在標籤移動或合併時發佈變更，必須復寫`cq:Tag`節點及其所有反向連結。 當在標籤管理控制檯中啟動標籤時，會自動完成此作業。
 

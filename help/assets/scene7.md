@@ -10,13 +10,27 @@ role: User, Admin
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
 exl-id: 80ffa496-880a-4638-bf78-1aab0c052983
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: c12bda38-aa1a-4647-b62e-42cd4537dac6
+    internal-label: Dynamic Media Classic
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2844'
+source-wordcount: '2902'
 ht-degree: 2%
-
 ---
-
 # 將Dynamic Media Classic功能新增至頁面 {#adding-scene-features-to-your-page}
 
 [Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=zh-Hant)是託管式解決方案，可管理、增強、發佈多媒體資產，並將其傳送至Web、行動裝置、電子郵件及連線至網際網路的顯示器和列印。
@@ -236,7 +250,7 @@ Dynamic Media Classic **[!UICONTROL 影像]**&#x200B;元件可讓您將Dynamic M
 
 ### 視訊元件 {#video-component}
 
-Dynamic Media Classic **[!UICONTROL 視訊]**&#x200B;元件(可從sidekick的Dynamic Media Classic區段取得)會使用裝置和頻寬偵測，將正確的視訊提供給每個熒幕。 此元件是HTML5視訊播放器；它是可用於跨頻道的單一檢視器。
+Dynamic Media Classic **[!UICONTROL 視訊]**&#x200B;元件（可從sidekick的Dynamic Media Classic區段取得）會使用裝置和頻寬偵測，將正確的視訊提供給每個熒幕。 此元件是HTML5視訊播放器；它是可用於跨頻道的單一檢視器。
 
 它可用於自我調整視訊集、單一MP4視訊或單一F4V視訊。
 
@@ -329,7 +343,7 @@ Dynamic Media Classic內容瀏覽器可讓您直接在Experience Manager中從Dy
 >
 >* 在傳統UI中，您也可以搜尋&#x200B;**Flash**&#x200B;和&#x200B;**FXG**。 不支援在觸控最佳化UI中篩選這些型別。
 >
->* 搜尋視訊時，您會搜尋單一轉譯。 結果會傳回原始轉譯（僅限&amp;amp；ast；.mp4）和編碼的轉譯。
+>* 搜尋視訊時，您會搜尋單一轉譯。 結果會傳回原始轉譯（僅限&amp;ast；.mp4）和編碼的轉譯。
 >* 搜尋最適化視訊集時，您將會搜尋資料夾和所有子資料夾，但前提是您已新增關鍵字至搜尋。 如果您尚未新增關鍵字，Experience Manager不會搜尋子檔案夾。
 >
 

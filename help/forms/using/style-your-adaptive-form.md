@@ -6,13 +6,29 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 5b3beaa6-ca0a-454e-85ee-c3653dd423fe
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '2174'
+source-wordcount: '2193'
 ht-degree: 10%
-
 ---
-
 # 設計您的自適應表單 {#do-not-publish-style-your-adaptive-form}
 
 瞭解如何建立自訂主題、設定個別元件的樣式，以及在主題中使用Web Fonts。
@@ -444,16 +460,12 @@ ht-degree: 10%
 您可以使用各種字型來設計最適化表單。 所有在其中檢視最適化表單的裝置可能沒有用來設計最適化表單的字型。 您可以使用Web字型服務，將所需的字型傳送至目標裝置。
 
 [!DNL Adobe Fonts]是Web Fonts服務。 您可以透過最適化表單來設定和使用服務。 若要在最適化表單中使用[!DNL Adobe Fonts]：
-1. 瀏覽Adobe字型的[資料庫](https://fonts.adobe.com/)，並選擇字型來設定表單的樣式。
-<!--
->[!NOTE]
->
->![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).
--->
 
->[!NOTE]
->
-> 您可以新增標籤或篩選器來調整字型清單。
+1. 瀏覽Adobe字型的[資料庫](https://fonts.adobe.com/)，並選擇字型來設定表單的樣式。
+
+   >[!NOTE]
+   >
+   > 您可以新增標籤或篩選器來調整字型清單。
 
 1. 按一下&lt;/>按鈕，將系列新增至Web專案，以備您找到想要的字型時使用。
 
@@ -463,31 +475,40 @@ ht-degree: 10%
 
    >[!NOTE]
    >
-   > 只有在Web專案有&lt;/>按鈕可用時，您才能新增字型。
+   >只有在Web專案有&lt;/>按鈕可用時，您才能新增字型。
 
-2. 為您的Web專案命名。
-3. 選取核取方塊以選取要包含的字型粗細和樣式。
+1. 為您的Web專案命名。
+1. 選取核取方塊以選取要包含的字型粗細和樣式。
 
    ![新增字型庫](assets/add-a-font-window.png)
 
-4. 選取&#x200B;**按一下**&#x200B;以建立專案。
-5. 從畫面複製內嵌程式碼和URL。
+1. 選取&#x200B;**按一下**&#x200B;以建立專案。
+1. 從畫面複製內嵌程式碼和URL。
+
    ![內嵌程式碼和URL](assets/font-add-url.png)
 
-6. 按一下&#x200B;**完成**&#x200B;以關閉Web專案視窗。
-7. 登入您的AEM執行個體並移至URL `http://server:port/crx/de/index.jsp#`
-8. 在CRXDE中建立資料夾結構，例如`/apps/[fontslibrary]/[customlibrary(clientlibrary)]`。
-9. 移至新建立的`clientlibs`資料夾並新增`allowProxy`和`categories`屬性。
-10. 瀏覽至`/apps/[fontslibrary]/[customlibrary(clientlibrary)]`並建立css資料夾。
-11. 移至已建立的CSS資料夾並建立檔案。例如，將檔案建立為`fonts.css`並貼上內嵌程式碼以及URL。
-    ![資料夾結構](/help/forms/using/assets/fonts-add-in-crxde.png)
-12. 儲存變更。
+1. 按一下&#x200B;**完成**&#x200B;以關閉Web專案視窗。
+1. 登入您的AEM執行個體並移至URL `http://server:port/crx/de/index.jsp#`
+1. 在CRXDE中建立資料夾結構，例如`/apps/[fontslibrary]/[customlibrary(clientlibrary)]`。
+1. 移至新建立的`clientlibs`資料夾並新增`allowProxy`和`categories`屬性。
+1. 瀏覽至`/apps/[fontslibrary]/[customlibrary(clientlibrary)]`並建立css資料夾。
+1. 移至已建立的CSS資料夾並建立檔案。 例如，將檔案建立為`fonts.css`並貼上內嵌程式碼以及URL。
+
+   ![資料夾結構](/help/forms/using/assets/fonts-add-in-crxde.png)
+
+1. 儲存變更。
 
 >[!NOTE]
 >
 > 若要在最適化表單中使用新增的自訂字型，請確定&#x200B;**[!UICONTROL 使用者端資料庫類別]**&#x200B;中的使用者端資料庫名稱與clientlib資料夾的「類別」選項中指定的名稱一致。
 
 最適化表單現在可透過下列自訂字型使用者端資料庫存取包含的字型。
+
+<!--
+>[!NOTE]
+>
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).
+-->
 
 
 <!--

@@ -5,13 +5,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8c4ffb0e-b4dc-4a81-ac43-723754cbc0de
-source-git-commit: a85b54d5a7c3b00f95f439941a390dcfee883187
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 0%
-
+source-wordcount: '580'
+ht-degree: 1%
 ---
-
 # 使用Oak將AEM 6.5移轉至AEM 6.5 LTS內容 — 升級 {#aem-65-to-aem-65lts-content-migration-using-oak-upgrade}
 
 本檔案說明如何將Adobe Experience Manager從&#x200B;**6.5**&#x200B;升級為&#x200B;**6.5 LTS**，並著重於移轉內容存放庫。 內容包括使用Oak-upgrade工具，以精確和控制方式在存放庫之間傳輸內容。
@@ -22,7 +31,7 @@ ht-degree: 0%
 
 1. Java相容性：必須安裝並設定AEM 6.5 LTS，才能與Java™ 17一起執行。 設定後，請啟動AEM執行個體，確認所有套件組合皆有效且執行中沒有任何問題
 1. 系統資源：確保有足夠的磁碟空間和記憶體可在移轉過程中處理這兩個存放庫
-1. Oak-upgrade工具：從`oak-upgrade`官方Maven存放庫[下載](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) jar。 確保版本符合AEM 6.5 LTS中使用的Oak核心版本。 Oak-upgrade工具會在Oracle® Java™ 11或更新版本上執行
+1. Oak-upgrade工具：從[官方Maven存放庫](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade)下載`oak-upgrade` jar。 確保版本符合AEM 6.5 LTS中使用的Oak核心版本。 Oak-upgrade工具會在Oracle® Java™ 11或更新版本上執行
 
 ## 移轉程式 {#step-by-step-migration-process}
 
@@ -71,7 +80,7 @@ java -jar oak-upgrade-*.jar [options] /path/to/source/repository /path/to/destin
 
 ### 移轉查核點 {#migratiing-checkpoints}
 
-將舊的SegmentMK存放庫(Oak 1.6以前版本)移轉至新的SegmentMK (Oak版本大於或等於1.6版本)時，查核點也會一併移轉。 此程式避免在新存放庫上首次執行Oak時重新索引。 不過，在下列情況下不會移轉查核點：
+將舊的SegmentMK存放庫（Oak 1.6以前版本）移轉至新的SegmentMK （Oak版本大於或等於1.6版本）時，查核點也會一併移轉。 此程式避免在新存放庫上首次執行Oak時重新索引。 不過，在下列情況下不會移轉查核點：
 
 1. 已指定自訂包含 — 、排除 — 或合併 — 路徑，或
 1. 系統會參考複製二進位檔案。 未指定來源資料存放區，且兩個不同的查核點在相同路徑下包含不同的二進位檔案。

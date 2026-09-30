@@ -1,18 +1,32 @@
 ---
 title: '[!DNL Assets] Proxy開發'
-description: Proxy是使用Proxy Worker處理工作的 [!DNL Experience Manager] 執行個體。 瞭解如何設定 [!DNL Experience Manager] Proxy、支援的作業、Proxy元件，以及如何開發自訂Proxy Worker。
+description: Proxy是使用Proxy背景工作處理工作的[!DNL Experience Manager]執行個體。 瞭解如何設定[!DNL Experience Manager] Proxy、支援的作業、Proxy元件，以及如何開發自訂Proxy Worker。
 contentOwner: AG
 role: Admin,Developer
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
 exl-id: 8de16e9d-40b6-49d2-9e6b-1aba13137d78
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: e17747bc-9b7b-44e6-a443-f54229a02620
+    internal-label: Integrations
+subfeature_v2:
+  - id: cf4d26de-6586-4a7a-8ccb-6e8a29ee21ea
+    internal-label: Proxy workers
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '856'
 ht-degree: 0%
-
 ---
-
 # [!DNL Assets] Proxy開發 {#assets-proxy-development}
 
 [!DNL Adobe Experience Manager Assets]使用Proxy來分配特定工作的處理。
@@ -145,13 +159,13 @@ Proxy和Proxy Worker組態均可透過雲端服務組態使用，可從[!DNL Ass
 
 * 設定和實作（使用Sling事件）：
 
-   * 自訂工作主題
-   * 自訂工作事件處理常式
+  * 自訂工作主題
+  * 自訂工作事件處理常式
 
 * 然後使用JobService API來：
 
-   * 將您的自訂工作分派給Proxy
-   * 管理您的工作
+  * 將您的自訂工作分派給Proxy
+  * 管理您的工作
 
 * 如果您想要使用工作流程的Proxy，您必須使用WorkflowExternalProcess API和JobService API實作自訂外部步驟。
 

@@ -5,14 +5,26 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 194ad425-ca1a-4a6e-9f4e-094c4577cde9
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1211'
 ht-degree: 0%
-
 ---
-
 # 管理受邀和本機使用者帳戶 {#managing-invited-and-local-user-accounts}
 
 >[!NOTE]
@@ -129,6 +141,6 @@ ht-degree: 0%
 * 向上三角形表示遞增順序。
 * 向下三角形表示遞減順序。
 
-   1. 在管理控制檯中，按一下「服務> Document Security >受邀和本機使用者」。
-   1. 若要排序受邀使用者，請按一下受邀使用者索引標籤，然後按一下適當的欄標題。
-   1. 若要排序本機使用者，請按一下[本機使用者]索引標籤，然後按一下適當的欄標題。
+  1. 在管理控制檯中，按一下「服務> Document Security >受邀和本機使用者」。
+  1. 若要排序受邀使用者，請按一下受邀使用者索引標籤，然後按一下適當的欄標題。
+  1. 若要排序本機使用者，請按一下[本機使用者]索引標籤，然後按一下適當的欄標題。

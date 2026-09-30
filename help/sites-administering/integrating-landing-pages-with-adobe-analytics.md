@@ -9,16 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 24ab494d-4a11-408e-8dc0-de16508edfac
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '380'
 ht-degree: 1%
-
 ---
-
 # 將登入頁面與Adobe Analytics整合{#integrating-landing-pages-with-adobe-analytics}
 
-AEM已透過使用下列召喚行動(CTA)元件，將登入頁面解決方案與[Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst)整合：
+AEM已透過使用下列call-to-action (CTA)元件，將登入頁面解決方案與[Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst)整合：
 
 1. 點進元件
 1. 圖形連結元件
@@ -31,7 +40,7 @@ Adobe建議您透過[現有的AEM-Adobe Analytics整合](/help/sites-administeri
 
 ## 可用於對應的元件 {#components-available-for-mapping}
 
-在AEM中，sidekick中顯示的&#x200B;**行動號召**&#x200B;元件 — **ClickThroughLink**&#x200B;和&#x200B;**GraphicalLink** — 可以對應到Adobe Analytics變數。
+在AEM中，顯示在sidekick中的&#x200B;**Call to action**&#x200B;元件 — **ClickThroughLink**&#x200B;和&#x200B;**GraphicalLink** — 可以對應到Adobe Analytics變數。
 
 ![chlimage_1-21](assets/chlimage_1-21a.jpeg)
 
@@ -40,7 +49,7 @@ Adobe建議您透過[現有的AEM-Adobe Analytics整合](/help/sites-administeri
 若要將登入頁面元件對應至Adobe Analytics：
 
 1. 建立Adobe Analytics設定和建立框架後，請從下拉式選單中選取適當的報表套裝。 這會擷取Adobe Analytics變數，並在內容尋找器中顯示它們。
-1. 視需要將Call to Action (CTA)元件從Sidekick拖放至頁面中間的對應區域。
+1. 視情況將Call to action (CTA)元件從Sidekick拖放至頁面中間的對應區域。
 
 <table>
  <tbody>

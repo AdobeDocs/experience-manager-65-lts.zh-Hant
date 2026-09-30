@@ -1,24 +1,33 @@
 ---
 title: 開發 AEM Sites 快速入門 - WKND 教學課程
-description: 了解如何建置您的 AEM 執行個體。深入了解平台和元件，並找尋有關開發工具和個人化的資訊。
+description: 了解如何建置您的 AEM 執行個體。 深入了解平台和元件，並找尋有關開發工具和個人化的資訊。
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: eac6c640-1c00-4fd9-9858-50fa2a0ea1ef
-source-git-commit: fa066f9b822f1d5883e79610b239b13224a62fe0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 80%
-
+source-wordcount: '253'
+ht-degree: 79%
 ---
-
 # 開發 AEM Sites 快速入門 - WKND 教學課程{#getting-started-developing-aem-sites-wknd-tutorial}
 
 ## 概觀 {#overview}
 
-第一次開發 AEM？需要複習最佳做法？這是開始的地方！
+第一次開發 AEM？ 需要複習最佳做法？ 這是開始的地方！
 
-這個由多個部分組成的教學課程的目標是指導 AEM 新手開發人員如何使用最新的標準和技術在 AEM 中實作網站。希望在本教學課程結束時，您將了解 AEM 平台的基本知識和一些常見設計模式的知識。
+這個由多個部分組成的教學課程的目標是指導 AEM 新手開發人員如何使用最新的標準和技術在 AEM 中實作網站。 希望在本教學課程結束時，您將了解 AEM 平台的基本知識和一些常見設計模式的知識。
 
 ## WKND 開發人員教學課程 {#wknd-developer-tutorial}
 
@@ -28,7 +37,7 @@ ht-degree: 80%
 
 ## 核心概念 {#core-concepts}
 
-教學課程實作使用 AEM 的許多強大功能。此網站將使用以下項目實作：
+教學課程實作使用 AEM 的許多強大功能。 此網站將使用以下項目實作：
 
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hant)
 * [Sling 模型](https://sling.apache.org/documentation/bundles/models.html)

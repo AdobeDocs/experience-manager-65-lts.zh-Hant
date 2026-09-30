@@ -9,13 +9,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 5e5ce783-8d0c-421c-b938-7020215682a0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
-
 ---
-
 # 將表單另存為範本 {#save-forms-as-templates}
 
 有時，使用者填寫表單時，對幾個欄位的輸入會維持不變。 對於這類例項，您可以填寫每個例項中需要相同值的欄位，並將表單或草稿另存為範本。 現在，每次建立範本的執行個體時，指定的欄位都會填入範本中指定的值。 這有助於您節省填寫表單所需的時間和精力。

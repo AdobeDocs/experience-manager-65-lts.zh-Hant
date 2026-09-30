@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 364eebca-b4cf-470b-994e-9e56ec68597b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 47%
-
 ---
-
 # 元件概觀{#components-overview}
 
 此頁面概觀了 Adobe Experience Manager (AEM) 元件，例如那些[用於頁面編寫](/help/sites-authoring/default-components-foundation.md) 的元件。
@@ -109,7 +118,7 @@ AEM隨附各種[現成可用的元件](/help/sites-authoring/default-components.
 * [使用隱藏條件](/help/sites-developing/hide-conditions.md)
 * 傳統 UI
 
-   * [AEM元件（傳統UI）](/help/sites-developing/developing-components-classic.md)
-   * [使用和擴充Widget （傳統UI）](/help/sites-developing/widgets.md)
-   * [使用xtype （傳統UI）](/help/sites-developing/xtypes.md)
-   * [開發Forms (Classic UI)](/help/sites-developing/developing-forms.md)
+  * [AEM元件（傳統UI）](/help/sites-developing/developing-components-classic.md)
+  * [使用和擴充Widget （傳統UI）](/help/sites-developing/widgets.md)
+  * [使用xtype （傳統UI）](/help/sites-developing/xtypes.md)
+  * [開發Forms (Classic UI)](/help/sites-developing/developing-forms.md)

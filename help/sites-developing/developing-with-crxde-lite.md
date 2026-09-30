@@ -10,13 +10,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
 exl-id: a022067a-3bbe-4bce-9d49-b813fcbf0c6f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2113'
+source-wordcount: '2116'
 ht-degree: 1%
-
 ---
-
 # 使用CRXDE Lite進行開發{#developing-with-crxde-lite}
 
 本節說明如何使用CRXDE Lite開發您的Adobe Experience Manager (AEM)應用程式。
@@ -72,7 +83,7 @@ CRXDE Lite提供下列功能：
   </tr>
   <tr>
    <td>編輯窗格</td>
-   <td><p><strong>首頁</strong>標籤：可讓您搜尋內容和/或檔案，並存取開發人員資源（檔案、開發人員部落格、知識庫）和支援(Adobe首頁和支援中心)。<br /> </p> <p>連按兩下<strong>總管</strong>窗格中的檔案，以便顯示其內容。 例如，.jsp或.java檔案。 然後，您可以修改它並儲存變更。</p> <p>在<strong>編輯</strong>窗格中編輯檔案後，工具列上有下列工具： <br /> </p> - <strong>在樹狀結構中顯示： </strong>在存放庫樹狀結構中顯示檔案。<br /> - <strong>搜尋/取代……</strong>：執行搜尋或取代。<br /> <br />連按兩下<strong>編輯</strong>窗格的狀態行會開啟<strong>移至行</strong>對話方塊，讓您能夠輸入要移至的特定行號。<br /> </td>
+   <td><p><strong>首頁</strong>標籤：可讓您搜尋內容和/或檔案，並存取開發人員資源（檔案、開發人員部落格、知識庫）和支援（Adobe首頁和支援中心）。<br /> </p> <p>連按兩下<strong>總管</strong>窗格中的檔案，以便顯示其內容。 例如，.jsp或.java檔案。 然後，您可以修改它並儲存變更。</p> <p>在<strong>編輯</strong>窗格中編輯檔案後，工具列上有下列工具： <br /> </p> - <strong>在樹狀結構中顯示： </strong>在存放庫樹狀結構中顯示檔案。<br /> - <strong>搜尋/取代……</strong>：執行搜尋或取代。<br /> <br /> 連按兩下<strong>編輯</strong>窗格的狀態行會開啟<strong>移至行</strong>對話方塊，讓您能夠輸入特定行號來移至。<br /> </td>
   </tr>
   <tr>
    <td>屬性標籤<br /> </td>
@@ -161,7 +172,7 @@ CRXDE Lite提供下列功能：
 
 1. 輸入範本的&#x200B;**標籤**、**標題**、**描述**、**資源型別**&#x200B;和&#x200B;**排名**。 按一下「**下一步**」。
 
-1. 此步驟為選用：設定&#x200B;**允許的路徑**。 按一下&#x200B;**下一步**
+1. 此步驟為選用：設定&#x200B;**允許的路徑**。 按一下「**下一步**」。
 
 1. 此步驟是選擇性的：設定&#x200B;**允許的父項**。 按一下「**下一步**」。
 
@@ -244,7 +255,7 @@ CRXDE Lite提供下列功能：
 
 1. 在瀏覽器中開啟CRXDE Lite 。
 1. 在「導覽」窗格中，選取您要新增屬性的節點。
-1. 在底部窗格的&#x200B;**屬性**&#x200B;索引標籤中，輸入&#x200B;**名稱**、**型別**&#x200B;和&#x200B;**值**。 按一下&#x200B;**新增**。
+1. 在底部窗格的&#x200B;**屬性**&#x200B;索引標籤中，輸入&#x200B;**名稱**、**型別**&#x200B;和&#x200B;**值**。 按一下&#x200B;**「新增」**。
 
 1. 按一下[儲存全部]&#x200B;**&#x200B;**&#x200B;儲存伺服器上的變更。
 

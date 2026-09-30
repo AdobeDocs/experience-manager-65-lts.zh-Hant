@@ -10,13 +10,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '928'
 ht-degree: 0%
-
 ---
-
 # 疑難排解復寫{#troubleshooting-replication}
 
 此頁面提供如何疑難排解復寫問題的資訊。
@@ -54,13 +63,13 @@ ht-degree: 0%
    1. 按一下頂端功能表中的「工具」。
    1. 按一下放大鏡按鈕。
    1. 選取「XPath」作為「型別」。
-   1. 在「查詢」方塊中，輸入此查詢/jcr：root/var/eventing/jobs//element(&#42;，slingevent：Job) order by @slingevent：created
+   1. 在「查詢」方塊中，輸入此查詢/jcr:root/var/eventing/jobs//element(&#42;，slingevent:Job)按@slingevent:created排序
    1. 按一下「搜尋」。
    1. 在結果中，排名最前的專案是最新的Sling事件工作。 按一下每個復寫，然後尋找符合佇列頂端所顯示內容的停滯復寫。
 
 **建立replication.log**
 
-有時候，在DEBUG層級將所有的復寫記錄檔設定為新增到個別的記錄檔中會很有幫助。 若要這麼做：
+有時候，在DEBUG層級將所有的復寫記錄檔設定為新增到個別的記錄檔中會很有幫助。 執行方法：
 
 1. 前往https://host:port/system/console/configMgr並以管理員身分登入。
 1. 尋找Apache Sling記錄記錄器設定，並按一下工廠設定右側的&#x200B;**+**&#x200B;按鈕以建立執行個體。 這會建立新的記錄日誌程式。
@@ -70,7 +79,7 @@ ht-degree: 0%
    * 記錄檔：logs/replication.log
    * 記錄器： com.day.cq.replication
 
-1. 如果您懷疑問題與任何方式的Sling事件/工作有關，您也可以在categories：org.apache.sling.event底下新增此Java™套件
+1. 如果您懷疑問題與任何方式的Sling事件/工作有關，您也可以在categories:org.apache.sling.event底下新增此Java™套件
 
 ## 暫停復寫代理程式佇列  {#pausing-replication-agent-queue}
 

@@ -9,13 +9,29 @@ feature: Adaptive Forms,Foundation Components
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 exl-id: 9c516c90-1b1d-406a-b42d-909aae8bb634
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '878'
 ht-degree: 1%
-
 ---
-
 # 支援最適化表單本地化的全新地區設定{#supporting-new-locales-for-adaptive-forms-localization}
 
 ## 套用至 {#applies-to}
@@ -40,18 +56,18 @@ ht-degree: 1%
 
 * 依指定順序檢視下列引數：
 
-   * 要求引數`afAcceptLang`
-若要覆寫使用者的瀏覽器地區設定，您可以傳遞`afAcceptLang`要求引數以強制地區設定。例如，以下URL被強制以日文地區設定呈現表單：
-     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+  * 要求引數 `afAcceptLang`
+若要覆寫使用者的瀏覽器地區設定，您可以傳遞`afAcceptLang`要求引數以強制地區設定。 例如，以下URL被強制以日文地區設定呈現表單：
+    `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-   * 使用`Accept-Language`標頭在請求中指定之使用者的瀏覽器地區設定。
+  * 使用`Accept-Language`標頭在請求中指定之使用者的瀏覽器地區設定。
 
-   * AEM中指定的使用者的語言設定。
+  * AEM中指定的使用者的語言設定。
 
-   * 瀏覽器地區設定預設為啟用。 若要變更瀏覽器地區設定，
-      * 開啟組態管理員。 URL是`http://[server]:[port]/system/console/configMgr`
-      * 找到並開啟&#x200B;**[!UICONTROL 最適化表單和互動式通訊Web Channel]**&#x200B;設定。
-      * 變更&#x200B;**[!UICONTROL 使用瀏覽器地區設定]**&#x200B;選項和&#x200B;**[!UICONTROL 儲存]**&#x200B;組態的狀態。
+  * 瀏覽器地區設定預設為啟用。 若要變更瀏覽器地區設定，
+    * 開啟組態管理員。 URL是`http://[server]:[port]/system/console/configMgr`
+    * 找到並開啟&#x200B;**[!UICONTROL 最適化表單和互動式通訊Web Channel]**&#x200B;設定。
+    * 變更&#x200B;**[!UICONTROL 使用瀏覽器地區設定]**&#x200B;選項和&#x200B;**[!UICONTROL 儲存]**&#x200B;組態的狀態。
 
 地區設定一經識別，最適化表單就會挑選表單專屬的字典。 如果找不到所要求地區設定的表單特定字典，則會使用最適化表單所編寫語言的字典。
 

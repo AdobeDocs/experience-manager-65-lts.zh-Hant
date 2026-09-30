@@ -1,17 +1,29 @@
 ---
-title: 整合 [!DNL Assets] 與 [!DNL InDesign Server]
-description: 瞭解如何整合 [!DNL Adobe Experience Manager Assets] 與 [!DNL Adobe InDesign Server]。
+title: 將[!DNL Assets]與[!DNL InDesign Server]整合
+description: 瞭解如何將[!DNL Adobe Experience Manager Assets]與[!DNL Adobe InDesign Server]整合。
 role: Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: f0db5ec6-45ea-418e-ae5f-e6e307a40a38
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1587'
 ht-degree: 2%
-
 ---
-
 # 將[!DNL Adobe Experience Manager Assets]與[!DNL Adobe InDesign Server]整合 {#integrating-aem-assets-with-indesign-server}
 
 [!DNL Adobe Experience Manager Assets]使用：
@@ -41,9 +53,9 @@ ht-degree: 2%
    * 擷取INDD檔案。
    * 執行[!DNL InDesign Server]命令：
 
-      * 會擷取結構、文字及任何媒體檔案。
-      * PDF和JPG轉譯會產生。
-      * HTML和IDML轉譯會產生。
+     * 會擷取結構、文字及任何媒體檔案。
+     * PDF和JPG轉譯會產生。
+     * HTML和IDML轉譯會產生。
 
    * 將產生的檔案發佈回[!DNL Experience Manager Assets]。
 
@@ -136,7 +148,7 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 ![chlimage_1-96](assets/chlimage_1-289.png)
 
 * **頁面擷取處理常式**：從快顯清單中選取您要使用的處理常式。 擷取處理常式會針對相關`RenditionPicker`選擇的特定轉譯進行操作（請參閱`ExtractionHandler` API）。 在標準[!DNL Experience Manager]安裝中，可以使用下列專案：
-   * IDML匯出擷取控制代碼：在MediaExtract步驟中產生的`IDML`轉譯上操作。
+  * IDML匯出擷取控制代碼：在MediaExtract步驟中產生的`IDML`轉譯上操作。
 
 * **頁面名稱**：指定您要指派給結果頁面的名稱。 如果保留為空白，則名稱為「page」（如果「page」已存在，則為衍生專案）。
 
@@ -163,7 +175,7 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
    ![proxy_idsworkerconfig](assets/proxy_idsworkerconfig.png)
 
    * **IDS集區**
-用來與[!DNL InDesign Server]通訊的SOAP端點。 您可以新增、移除及訂購必要專案。
+     用來與[!DNL InDesign Server]通訊的SOAP端點。 您可以新增、移除及訂購必要專案。
 
 1. 按一下「確定」以儲存。
 
@@ -203,19 +215,19 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 
    如果有多部電腦執行[!DNL InDesign Server]，請為每部電腦新增SOAP端點（每部電腦的處理器數目–1）。
 
+   >[!NOTE]
+   >
+   >使用背景工作集區時，您可以啟用封鎖的IDS背景工作清單。
+   >
+   >若要這麼做，請在`com.day.cq.dam.ids.impl.IDSJobProcessor.name`設定下啟用&#x200B;**[!UICONTROL enable.retry.name]**&#x200B;核取方塊，以啟用IDS工作重試。
+   >
+   >此外，在`com.day.cq.dam.ids.impl.IDSPoolImpl.name`設定下，為`max.errors.to.blacklist`引數設定正值，該值決定在從工作處理常式清單中禁止ID之前的工作重試次數。
+   >
+   >根據預設，在可設定的(`retry.interval.to.whitelist.name`)時間（以分鐘為單位）之後，會重新驗證IDS背景工作。 如果線上上找到背景工作，就會從封鎖清單中移除背景工作。
+
 <!-- 
 TBD: Make updates to configurations for allow and block list after product updates are done.
 -->
-
->[!NOTE]
->
->使用背景工作集區時，您可以啟用封鎖的IDS背景工作清單。
->
->若要這麼做，請在`com.day.cq.dam.ids.impl.IDSJobProcessor.name`設定下啟用&#x200B;**[!UICONTROL enable.retry.name]**&#x200B;核取方塊，以啟用IDS工作重試。
->
->此外，在`com.day.cq.dam.ids.impl.IDSPoolImpl.name`設定下，為`max.errors.to.blacklist`引數設定正值，該值決定在從工作處理常式清單中禁止ID之前的工作重試次數。
->
->根據預設，在可設定的(`retry.interval.to.whitelist.name`)時間（以分鐘為單位）之後，會重新驗證IDS背景工作。 如果線上上找到背景工作，就會從封鎖清單中移除背景工作。
 
 ## 啟用[!DNL InDesign Server] 10.0或更新版本的支援 {#enabling-support-for-indesign-server-or-later}
 

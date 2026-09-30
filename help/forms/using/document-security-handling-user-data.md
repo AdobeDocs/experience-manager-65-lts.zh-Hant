@@ -7,13 +7,29 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: c619a3b8-cd06-4f5d-af20-67f3a4bfcdce
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 0%
-
 ---
-
 # Document Security |處理使用者資料 {#document-security-handling-user-data}
 
 AEM Forms document security可讓您建立、儲存及套用預先定義的安全性設定至您的檔案。 可確保只有授權的使用者才能使用檔案。 您可以使用原則來保護檔案。 原則是包含安全性設定和授權使用者清單的資訊集合。 您可以將原則套用至一或多個檔案，並授權新增至AEM Forms JEE使用者管理中的使用者。

@@ -1,18 +1,27 @@
 ---
 title: 擴充搜尋功能
-description: 將 [!DNL Adobe Experience Manager Assets] 的搜尋功能延伸至預設值之外。
+description: 將[!DNL Adobe Experience Manager Assets]的搜尋功能延伸至預設值之外。
 contentOwner: AG
 role: Developer
 feature: Search
 solution: Experience Manager, Experience Manager Assets
 exl-id: 92efe52b-8fa5-4006-bd68-2472b4ba04f6
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 16%
-
+source-wordcount: '827'
+ht-degree: 7%
 ---
-
 # 擴充資產搜尋 {#extending-assets-search}
 
 您可以擴充[!DNL Adobe Experience Manager Assets]搜尋功能。 [!DNL Experience Manager Assets]可立即使用字串搜尋資產。
@@ -140,7 +149,7 @@ ht-degree: 16%
    </script>
    ```
 
-1. 若要讓元件可用，您必須能夠加以編輯。若要讓元件可編輯，請在CRXDE中新增主要類型 **cq:EditConfig的節點cq:editConfig**&#x200B;**&#x200B;**。為了能夠移除段落，請新增多值屬性 **cq:actions** ，其中單一值 **為DELETE**。
+1. 若要讓元件可用，您必須能夠加以編輯。 若要讓元件可編輯，請在CRXDE中新增主要型別&#x200B;**cq:EditConfig**&#x200B;的節點&#x200B;**cq:editConfig**。 為了移除段落，請新增多值屬性&#x200B;**cq:actions**，其單一值為&#x200B;**DELETE**。
 1. 導覽至瀏覽器，並在範例頁面（例如，**press.html**）上切換至設計模式，並為述詞段落系統啟用新元件（例如，**left**）。
 
 1. 在&#x200B;**編輯**&#x200B;模式中，新元件現在可在Sidekick中使用（可在&#x200B;**搜尋**&#x200B;群組中找到）。 在&#x200B;**Predicates**&#x200B;欄中插入元件，並輸入搜尋字詞，例如&#x200B;**Diamond**，然後按一下放大鏡開始搜尋。
@@ -244,7 +253,7 @@ ht-degree: 16%
        });
    ```
 
-1. 若要讓元件可用，您必須能夠加以編輯。若要讓元件可編輯，請在CRXDE中新增主要類型 **cq:EditConfig的節點cq:editConfig**&#x200B;**&#x200B;**。為了能夠移除段落，請新增多值屬性 **cq:actions** ，其中單一值 **為DELETE**。
+1. 若要讓元件可用，您必須能夠加以編輯。 若要讓元件可編輯，請在CRXDE中新增主要型別&#x200B;**cq:EditConfig**&#x200B;的節點&#x200B;**cq:editConfig**。 為了移除段落，請新增多值屬性&#x200B;**cq:actions**，其單一值為&#x200B;**DELETE**。
 1. 導覽至瀏覽器，並在範例頁面（例如，**press.html**）上切換至設計模式，並為述詞段落系統啟用新元件（例如，**left**）。
 1. 在&#x200B;**編輯**&#x200B;模式中，新元件現在可在Sidekick中使用（可在&#x200B;**搜尋**&#x200B;群組中找到）。 在&#x200B;**Predicates**&#x200B;欄中插入元件。
 
@@ -254,14 +263,14 @@ ht-degree: 16%
 
 ### 全文述詞 {#fulltextpredicate}
 
-| 屬性 | 類型 | 描述 |
+| 屬性 | 類型 | 說明 |
 |---|---|---|
 | predicatename | 字串 | 述詞的名稱。 預設為`fulltext` |
 | searchCallback | 函數 | 用於觸發事件`keyup`搜尋的回呼。 預設為`CQ.wcm.SiteAdmin.doSearch` |
 
 ### 屬性述詞 {#propertypredicate}
 
-| 屬性 | 類型 | 描述 |
+| 屬性 | 類型 | 說明 |
 |---|---|---|
 | predicatename | 字串 | 述詞的名稱。 預設為`property` |
 | propertyName | 字串 | JCR屬性的名稱。 預設為`jcr:title` |
@@ -269,7 +278,7 @@ ht-degree: 16%
 
 ### 路徑述詞 {#pathpredicate}
 
-| 屬性 | 類型 | 描述 |
+| 屬性 | 類型 | 說明 |
 |---|---|---|
 | predicatename | 字串 | 述詞的名稱。 預設為`path` |
 | 根路徑 | 字串 | 述詞的根路徑。 預設為`/content/dam` |
@@ -278,7 +287,7 @@ ht-degree: 16%
 
 ### DatePredicate {#datepredicate}
 
-| 屬性 | 類型 | 描述 |
+| 屬性 | 類型 | 說明 |
 |---|---|---|
 | predicatename | 字串 | 述詞的名稱。 預設為`daterange` |
 | propertyname | 字串 | JCR屬性的名稱。 預設為`jcr:content/jcr:lastModified` |
@@ -286,7 +295,7 @@ ht-degree: 16%
 
 ### 選項述詞 {#optionspredicate}
 
-| 屬性 | 類型 | 描述 |
+| 屬性 | 類型 | 說明 |
 |---|---|---|
 | 標題 | 字串 | 新增其他最上層標題 |
 | predicatename | 字串 | 述詞的名稱。 預設為`daterange` |

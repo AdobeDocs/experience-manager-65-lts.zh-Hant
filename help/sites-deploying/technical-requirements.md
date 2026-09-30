@@ -6,13 +6,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: f5a36877c0d051de5c96a8ab89b2886b28865249
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3090'
 ht-degree: 5%
-
 ---
-
 # 技術需求{#technical-requirements}
 
 Adobe支援平台上的(AEM) Adobe Experience Manager，詳情請參閱本檔案的下列資訊。
@@ -74,7 +86,7 @@ Adobe會推薦這些設定，並在標準軟體維護合約中提供完整支援
 
 | 支援程度 | 說明 |
 |---|---|
-| **Z：不支援** | 不支援此設定。 Adobe 不會說明此設定是否適用，且不支援此設定。 |
+| **Z：不支援** | 不支援此設定。 Adobe 不會說明此設定是否可運作，且不支援此設定。 |
 
 ## 受支援平台 {#supported-platforms}
 
@@ -155,7 +167,7 @@ Adobe Experience Manager可與下列伺服器平台搭配使用以用於生產�
 | **平台** | **支援等級** |
 |---|---|
 | **Linux®，根據Red Hat®分佈** | A：支援的`[1]` `[2]` |
-| Linux®，根據Debian分佈，包括 烏本圖 | A：支援的`[1]` |
+| Linux®，根據Debian分佈，包括Ubuntu | A：支援的`[1]` |
 | Linux®，根據SUSE®分佈 | A：支援的`[1]` |
 | ® Windows Server 2022 | R：支援 |
 
@@ -441,9 +453,9 @@ AEM Dynamic Media預設為停用。 請參閱此處[啟用Dynamic Media](/help/a
 
 * **作業系統：**
 
-   * Linux® （64位元系統支援32位元和32位元應用程式）。
-   * Windows Server
-   * macOS X （64位元）
+  * Linux® （64位元系統支援32位元和32位元應用程式）。
+  * Windows Server
+  * macOS X （64位元）
 
 * **檔案格式**： JPEG、PNG、TIFF、PDF、INDD、AI和EPS。
 

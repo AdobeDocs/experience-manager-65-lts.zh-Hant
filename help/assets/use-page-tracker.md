@@ -6,13 +6,27 @@ role: Developer,Admin
 feature: Asset Reports
 solution: Experience Manager, Experience Manager Assets
 exl-id: bf8b2e51-60f8-423e-8ed6-167d71d6ec94
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: c29e3a96-cd2b-4e21-b382-a8279aa04553
+    internal-label: Asset reports
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
-
 ---
-
 # 在網頁中使用頁面追蹤器及內嵌程式碼 {#using-page-tracker-and-embed-code-in-web-pages}
 
 頁面追蹤器是您包含在協力廠商網站程式碼中的JavaScript程式碼，可讓Adobe Analytics擷取這些網站上約[!DNL Adobe Experience Manager Assets]的使用量資料。

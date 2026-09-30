@@ -1,19 +1,35 @@
 ---
-title: 管理 [!DNL Adobe Stock] 資產
-description: 從 [!DNL Adobe Experience Manager]內搜尋、擷取、授權及管理 [!DNL Adobe Stock] 資產。 將授權資產作為任何其他數位資產使用。
+title: 管理[!DNL Adobe Stock]資產
+description: 從[!DNL Adobe Experience Manager]內搜尋、擷取、授權及管理[!DNL Adobe Stock]個資產。 將授權資產作為任何其他數位資產使用。
 contentOwner: Vishabh Gupta
 feature: Search, Adobe Stock
 role: User, Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 33f539d2-ae00-4f43-a27a-55c1b55a6c0c
-source-git-commit: 62ca090edf7c6200eadf27bb4edbd9c03e34de76
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+  - id: e17747bc-9b7b-44e6-a443-f54229a02620
+    internal-label: Integrations
+subfeature_v2:
+  - id: b946c10d-6d59-4459-94a6-e1a584a89c5f
+    internal-label: Adobe Stock integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '2166'
+source-wordcount: '2241'
 ht-degree: 3%
-
 ---
-
 # 在[!DNL Adobe Experience Manager Assets]中使用[!DNL Adobe Stock]個資產 {#use-adobe-stock-assets-in-aem-assets}
 
 | 版本 | 文章連結 |
@@ -116,9 +132,9 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
 1. 按一下&#x200B;**[!UICONTROL 新增至專案]**&#x200B;並選取&#x200B;**[!UICONTROL API]**。
 1. 選取&#x200B;**[!UICONTROL Adobe Stock]**&#x200B;並按一下&#x200B;**[!UICONTROL 下一步]**。
 1. 指定&#x200B;**[!UICONTROL 認證名稱]**&#x200B;並確認已選取&#x200B;**[!UICONTROL OAuth伺服器對伺服器]**，然後按一下[下一步]&#x200B;**&#x200B;**。
-1. 選取&#x200B;**[!UICONTROL AEM Assets]** **[!UICONTROL 產品設定檔]**，然後按一下&#x200B;**[!UICONTROL 儲存設定的API]**。系統會顯示成功訊息，確認您在[!DNL Developer Console]中建立了專案。您的專案儀表板隨即開啟，在頂端顯示專案名稱，**[!UICONTROL API]**&#x200B;底下的&#x200B;**[!UICONTROL Adobe Stock]**，**[!UICONTROL 產品設定檔]**&#x200B;底下的&#x200B;**[!UICONTROL AEM Assets]**，以及&#x200B;**[!UICONTROL 連線的認證]**&#x200B;底下的&#x200B;**[!UICONTROL OAuth伺服器對伺服器]**&#x200B;認證卡。
+1. 選取&#x200B;**[!UICONTROL AEM Assets]** **[!UICONTROL 產品設定檔]**，然後按一下&#x200B;**[!UICONTROL 儲存設定的API]**。 系統會顯示成功訊息，確認您已在[!DNL Developer Console]中建立專案。 您的專案儀表板隨即開啟，在頂端顯示專案名稱，**[!UICONTROL API]**&#x200B;底下的&#x200B;**[!UICONTROL Adobe Stock]**&#x200B;和&#x200B;**[!UICONTROL 產品設定檔]**&#x200B;底下的&#x200B;**[!UICONTROL AEM Assets]**，以及&#x200B;**[!UICONTROL 連線的認證]**&#x200B;底下的&#x200B;**[!UICONTROL OAuth伺服器對伺服器]**&#x200B;認證卡。
    ![整合aem assets和adobe stock](/help/assets/assets/adc-project-name.png)
-1. 選取&#x200B;**[!UICONTROL OAuth伺服器對伺服器]**&#x200B;認證卡，並顯示&#x200B;**[!UICONTROL 認證詳細資料]**。使用您專案的[!DNL OAuth Server-to-Server]認證詳細資料，例如&#x200B;**[!UICONTROL 使用者端ID]**、**[!UICONTROL 使用者端密碼]**、**[!UICONTROL 範圍]**、**[!UICONTROL 認證名稱]**、**[!UICONTROL 技術帳戶ID]**、**[!UICONTROL 組織ID]**，以在AEM編寫執行個體[&#128279;](#add-configuration-in-the-aem-author-instance)中新增設定。
+1. 選取&#x200B;**[!UICONTROL OAuth伺服器對伺服器]**&#x200B;認證卡，並顯示&#x200B;**[!UICONTROL 認證詳細資料]**。 使用您專案的[!DNL OAuth Server-to-Server]認證詳細資料，例如&#x200B;**[!UICONTROL 使用者端ID]**、**[!UICONTROL 使用者端密碼]**、**[!UICONTROL 範圍]**、**[!UICONTROL 認證名稱]**、**[!UICONTROL 技術帳戶ID]**、**[!UICONTROL 組織ID]**，將設定新增至AEM編寫執行個體[&#128279;](#add-configuration-in-the-aem-author-instance)。
    ![aem assets和adobe stock](/help/assets/assets/oauth-server-server-credentials-details-page.png)
 
 ### 在[!DNL AEM]作者執行個體中新增設定 {#add-configuration-in-the-aem-author-instance}
@@ -306,6 +322,7 @@ To configure the [!DNL Adobe Stock] cloud service:
 
 1. Click **[!UICONTROL Save & Close]**. 
 -->
+
 您的[!DNL Experience Manager Assets]作者執行個體現在已與[!DNL Adobe Stock]整合。 您可以建立多個[!DNL Adobe Stock]組態（例如地區設定組態）。 您現在可以從[!DNL Experience Manager]使用者介面存取、搜尋及授權[!DNL Adobe Stock]資產。
 
 ![search-stock-assets](assets/aem-stock-searchstocks.png)
@@ -467,7 +484,7 @@ To configure the [!DNL Adobe Stock] cloud service:
 
 >[!MORELIKETHIS]
 >
->* [有關搭配使用 [!DNL Adobe Stock] 資產與 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=zh-Hant)的教學影片
+>* [有關搭配使用 [!DNL Adobe Stock] 資產與 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)的教學影片
 >* [[!DNL Adobe Stock] 企業計畫說明](https://helpx.adobe.com/tw/enterprise/using/adobe-stock-enterprise.html)
 >* [[!DNL Adobe Stock] 常見問題](https://helpx.adobe.com/tw/stock/faq.html)
 

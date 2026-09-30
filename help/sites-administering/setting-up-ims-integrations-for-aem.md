@@ -4,19 +4,31 @@ description: 瞭解如何設定AEM的IMS整合
 feature: Security
 role: Admin
 exl-id: 05ba39fc-4b53-43c0-9a9f-7da3293b1ca2
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 68%
-
+source-wordcount: '441'
+ht-degree: 63%
 ---
-
 # 為AEM設定IMS整合 {#setting-up-ims-integrations-for-aem}
 
 
 >[!NOTE]
 >
->Adobe客戶使用[Adobe Developer Console](https://developer.adobe.com/console)產生可存取各種API的認證。 客戶可以選擇各種認證類型，包括 OAuth 伺服器到伺服器和單頁應用程式。認證型別服務帳戶(JWT)現在已遭取代，改用OAuth伺服器對伺服器認證。
+>Adobe客戶使用[Adobe Developer Console](https://developer.adobe.com/console)產生可存取各種API的認證。 客戶可以選擇各種認證類型，包括 OAuth 伺服器到伺服器和單頁應用程式。 認證型別服務帳戶(JWT)現在已遭取代，改用OAuth伺服器對伺服器認證。
 
 Adobe Experience Manager (AEM)可與許多其他Adobe解決方案整合。 例如 Adobe Target、Adobe Analytics 等。
 
@@ -24,13 +36,13 @@ Adobe Experience Manager (AEM)可與許多其他Adobe解決方案整合。 例�
 
 * 建立之後：
 
-   * [Developer Console 中的認證](#credentials-in-the-developer-console)
+  * [Developer Console 中的認證](#credentials-in-the-developer-console)
 
 * 就可以：
 
-   * 建立 (新的) [OAuth 設定](#creating-oauth-configuration)
+  * 建立 (新的) [OAuth 設定](#creating-oauth-configuration)
 
-   * [將現有 JWT 設定移轉到 OAuth 設定](#migrating-existing-JWT-configuration-to-oauth)
+  * [將現有 JWT 設定移轉到 OAuth 設定](#migrating-existing-JWT-configuration-to-oauth)
 
 >[!CAUTION]
 >
@@ -46,15 +58,15 @@ Adobe Experience Manager (AEM)可與許多其他Adobe解決方案整合。 例�
 
 * 概觀：
 
-   * [伺服器對伺服器驗證](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
+  * [伺服器對伺服器驗證](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
 
 * 建立新的 OAuth 認證：
 
-   * [OAuth 伺服器對伺服器認證實作指南](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
+  * [OAuth伺服器對伺服器認證實作指南](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
 * 將現有 JWT 認證移轉到 OAuth 認證：
 
-   * [從服務帳戶 (JWT) 認證移轉至 OAuth 伺服器對伺服器認證](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
+  * [從服務帳戶(JWT)認證移轉至OAuth伺服器對伺服器認證](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
 
 例如：
 
@@ -68,7 +80,7 @@ Adobe Experience Manager (AEM)可與許多其他Adobe解決方案整合。 例�
 
 1. 選取「**建立**」。
 
-1. 根據 [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) 中的詳細資訊完成設定。例如：
+1. 根據 [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) 中的詳細資訊完成設定。 例如：
 
    ![建立 OAuth 設定](assets/ims-create-oauth-configuration.png)
 
@@ -84,7 +96,7 @@ Adobe Experience Manager (AEM)可與許多其他Adobe解決方案整合。 例�
 
 1. 在 AEM 中，導覽至「**工具**」、「**安全性**」、「**Adobe IMS 整合**」。
 
-1. 選取需要移轉的 JWT 設定。JWT 設定以「**JWT 認證 (已淘汰)**」警告標示。
+1. 選取需要移轉的 JWT 設定。 JWT 設定以「**JWT 認證 (已淘汰)**」警告標示。
 
 1. 選取「**屬性**」：
 

@@ -1,18 +1,31 @@
 ---
-title: '[!DNL Experience Manager Assets]與 [!DNL Adobe Workfront]整合'
-description: ' [!DNL Assets] 與 [!DNL Workfront]之間的整合簡介'
+title: '[!DNL Experience Manager Assets]與[!DNL Adobe Workfront]整合'
+description: '[!DNL Assets]與[!DNL Workfront]之間的整合簡介'
 role: Admin,Leader,Developer
 feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: 5181d278-2e6e-41f7-891e-1067a03de016
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: a1f87682-0525-5459-aa06-3560bb4c3b2a
+    internal-label: Workfront Integrations and Apps
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1179'
 ht-degree: 7%
-
 ---
-
 # [!DNL Adobe Experience Manager Assets]與[!DNL Adobe Workfront]整合 {#assets-integration-overview}
 
 | 版本 | 文章連結 |
@@ -59,7 +72,7 @@ ht-degree: 7%
 | 從Workfront下載連結的AEM Assets | 在Workfront中連結資產時，使用者可以下載資產的位元組。 | ✓ | ✓ | ✓ |
 | 在Workfront中搜尋AEM Assets | Workfront中的AEM Assets選擇器允許以全文搜尋資產。 | ✓ | ✓ | ✓ |
 | 在Workfront中搜尋AEM資料夾 | Workfront中的AEM Assets選擇器允許以全文搜尋資料夾。 | ✓ | ✓ | ✓ |
-| 從Workfront檢視及導覽AEM資料夾階層 | Workfront中的AEM Assets選擇器可讓您瀏覽受以下限制的AEM Assets階層：   在AEM中設定的使用者關聯存取控制項和許可權。 | ✓ | ✓ | ✓ |
+| 從Workfront檢視及導覽AEM資料夾階層 | Workfront中的AEM Assets選擇器可讓您瀏覽受使用者在AEM中設定的相關存取控制項和許可權限制的AEM Assets階層。 | ✓ | ✓ | ✓ |
 | 在AEM時間軸中追蹤資產版本 | 維護Workfront和AEM之間的檔案版本記錄。 | ✓ | ✓ | ✓ |
 | 在Workfront中從AEM Assets取消連結Assets | 從AEM連結的現有資產可以從關聯的Workfront檔案中取消連結。 這不會刪除AEM內的原始資產。 | ✓ | ✓ | ✓ |
 | 從Workfront將新版本的資產新增到AEM Assets | 在Workfront中將新新增的版本新增到檔案上時，使用者可以將新版本傳送到AEM以取代現有版本。 | ✓ | ✓ | ✓ |

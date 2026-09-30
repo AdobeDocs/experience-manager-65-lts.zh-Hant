@@ -6,13 +6,24 @@ role: User, Admin
 feature: Projects
 solution: Experience Manager, Experience Manager Assets
 exl-id: de9f266b-a167-4eba-be2c-8f6a0457265f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 2e0e1a8a-56e7-5bd5-b805-f35a7c0c2ca7
+    internal-label: Projects
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 1%
-
+source-wordcount: '449'
+ht-degree: 2%
 ---
-
 # 準備要翻譯的資產 {#preparing-assets-for-translation}
 
 多語言資產是指具有多語言二進位檔案、中繼資料和標籤的資產。 一般而言，資產的二進位檔案、中繼資料和標籤會以一種語言存在，然後會翻譯成其他語言以用於多語言專案。
@@ -46,7 +57,7 @@ ht-degree: 1%
 
 若要建立語言根，請建立資料夾並使用ISO語言代碼作為Name屬性的值。 建立語言根後，您可以在語言根內的任何層級建立語言副本。
 
-例如，範例階層的義大利文語言副本的根頁面以`it`作為Name屬性。 Name屬性會用作存放庫中資產節點的名稱，從而決定資產的路徑。(`https://[aem_server]:[port]/assets.html/content/dam/it/`)。
+例如，範例階層的義大利文語言副本的根頁面以`it`作為Name屬性。 Name屬性會用作存放庫中資產節點的名稱，從而決定資產的路徑。 (`https://[aem_server]:[port]/assets.html/content/dam/it/`).
 
 1. 從[!DNL Assets]主控台，按一下&#x200B;**[!UICONTROL 建立]**，然後從功能表選擇&#x200B;**[!UICONTROL 資料夾]**。
 
@@ -56,7 +67,7 @@ ht-degree: 1%
 
    ![在資料夾中新增語言代碼](assets/Add-language-code-in-folder.png)
 
-1. 按一下「**[!UICONTROL 建立]**」。語言根目錄是在[!DNL Assets]主控台中建立。
+1. 按一下「**[!UICONTROL 建立]**」。 語言根目錄是在[!DNL Assets]主控台中建立。
 
 ## 檢視語言根 {#viewing-language-roots}
 

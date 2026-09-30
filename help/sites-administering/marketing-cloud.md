@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 456bcdf5-3d43-43d8-b243-70095e0cf58c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '868'
 ht-degree: 1%
-
 ---
-
 # 與Adobe Experience Cloud整合{#integrating-with-the-adobe-marketing-cloud}
 
 [Adobe Experience Cloud](https://business.adobe.com/tw/products/marketing-cloud/main.html)包含強大的網站分析和網站最佳化產品，可提供可操作的即時資料和深入分析，以推動成功的線上方案。 它提供整合且開放的平台，用於線上業務最佳化。 雲端包含整合式應用程式，可收集並釋放客戶insight的強大功能，以最佳化客戶贏取、轉換和保留工作，以及內容的建立和分發。

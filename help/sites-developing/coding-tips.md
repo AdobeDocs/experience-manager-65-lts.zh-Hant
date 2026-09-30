@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e431a240-45a2-4222-b854-32b90e5cd100
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '861'
 ht-degree: 0%
-
 ---
-
 # 編碼提示{#coding-tips}
 
 ## 儘可能使用taglibs或HTL {#use-taglibs-or-htl-as-much-as-possible}
@@ -79,7 +88,7 @@ API一經棄用，最好尋找新的建議方法，而非依賴已棄用的API�
 
 ### 為安全逸出資源路徑 {#escape-resource-paths-for-safety}
 
-雖然JCR中的路徑不應包含空格，但它們的存在不應導致程式碼中斷。 Jackrabbit提供&#x200B;*escape()*&#x200B;和&#x200B;*escapePath()*&#x200B;方法的文字公用程式類別。 針對JSP，Granite UI會公開&#x200B;*granite：encodeURIPath() EL*&#x200B;函式。
+雖然JCR中的路徑不應包含空格，但它們的存在不應導致程式碼中斷。 Jackrabbit提供&#x200B;*escape()*&#x200B;和&#x200B;*escapePath()*&#x200B;方法的文字公用程式類別。 針對JSP，Granite UI會公開&#x200B;*granite:encodeURIPath() EL*&#x200B;函式。
 
 ### 使用XSS API和/或HTL來抵禦跨網站指令碼攻擊 {#use-the-xss-api-and-or-htl-to-protect-against-cross-site-scripting-attacks}
 

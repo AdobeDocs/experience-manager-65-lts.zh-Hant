@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 4f830ee9-e0e3-48df-b67d-709258cb1991
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 5%
-
+source-wordcount: '387'
+ht-degree: 15%
 ---
-
 # 部署最佳實務{#deploying-best-practices}
 
 部署最佳實務說明如何以最有效率和最有效率的方式部署或維護Adobe Experience Manager (AEM)。 這份不斷增加的主題清單包括AEM中的各個領域。
@@ -86,7 +95,7 @@ AEM目前在同一版本中有兩個UI：傳統和觸控最佳化UI。 因此，
   <tr>
    <td>搭配 CDN 使用 Dispatcher</td>
    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant#using-dispatcher-with-a-cdn">搭配 CDN 使用 Dispatcher</a></td>
-   <td>內容傳遞網路(CDN) (例如Akamai Edge Delivery或Amazon Cloud Front)會從接近使用者的位置傳遞內容。</td>
+   <td>內容傳遞網路 (CDN) (例如 Akamai Edge Delivery 或 Amazon Cloud Front) 會從接近使用者的位置傳遞內容。</td>
   </tr>
   <tr>
    <td>效能最佳化</td>

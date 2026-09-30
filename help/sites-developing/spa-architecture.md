@@ -11,17 +11,31 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 8670d700-6ccd-4809-b719-8580d6fb2cf8
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2018'
-ht-degree: 5%
-
+source-wordcount: '2074'
+ht-degree: 6%
 ---
-
 
 # 針對 AEM 開發 SPA{#developing-spas-for-aem}
 
-單頁應用程式 (SPA) 可為網站使用者提供引人入勝的體驗。開發人員希望能使用SPA架構建立網站，而作者則想在Adobe Experience Manager (AEM)中為使用這類架構建立的網站順暢地編輯內容。
+單頁應用程式 (SPA) 可為網站使用者提供引人入勝的體驗。 開發人員希望能使用SPA架構建立網站，而作者則想在Adobe Experience Manager (AEM)中為使用這類架構建立的網站順暢地編輯內容。
 
 本文介紹當請前端開發人員為AEM開發SPA時應考慮的重要問題，並概述有關在AEM上部署SPA的AEM架構。
 
@@ -29,7 +43,7 @@ ht-degree: 5%
 
 ## AEM的SPA開發原則 {#spa-development-principles-for-aem}
 
-在 AEM 開發單頁應用程式是假設前端開發人員在建立 SPA 時有遵守標準最佳做法。如果您身為前端開發人員，遵循這些一般最佳實務和一些AEM特定原則，您的SPA將可搭配[AEM及其內容製作功能](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa)運作。
+在 AEM 開發單頁應用程式是假設前端開發人員在建立 SPA 時有遵守標準最佳做法。 如果您身為前端開發人員，遵循這些一般最佳實務和一些AEM特定原則，您的SPA將可搭配[AEM及其內容製作功能](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa)運作。
 
 * **[可攜性](/help/sites-developing/spa-architecture.md#portability) -**&#x200B;與任何元件一樣，元件應該儘可能建置為可攜式。 SPA 應該使用可攜帶和可重複使用的元件建置。
 * **[AEM 促成網站結構](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)** - 前端開發人員建立元件並擁有其內部結構，但依賴 AEM 來定義網站的內容結構。
@@ -70,7 +84,7 @@ SPA應該僅依賴內容的動態轉譯。 這是AEM擷取並轉譯內容結構�
 
 ## SPA設計模型 {#spa-design-models}
 
-如果遵循AEM[中開發SPA的](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)原則，則您的SPA將可搭配所有支援的AEM內容製作功能運作。
+如果遵循AEM[&#128279;](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)中開發SPA的原則，則您的SPA將可搭配所有支援的AEM內容製作功能運作。
 
 不過，在某些情況下，這並非完全必要。 下表概述各種設計模型、其優點和缺點。
 
@@ -192,8 +206,8 @@ SPA應該僅依賴內容的動態轉譯。 這是AEM擷取並轉譯內容結構�
 
   這是出庫SPA應用程式來源和元件來源的所在位置。
 
-   * NPM clientlib產生器會從SPA專案建立使用者端程式庫。
-   * 該程式庫由Maven取得，並由Maven Build外掛程式與元件部署到AEM Author。
+  * NPM clientlib產生器會從SPA專案建立使用者端程式庫。
+  * 該程式庫由Maven取得，並由Maven Build外掛程式與元件部署到AEM Author。
 
 * **AEM作者**
 
@@ -201,11 +215,11 @@ SPA應該僅依賴內容的動態轉譯。 這是AEM擷取並轉譯內容結構�
 
   在製作環境中使用SPA編輯器編輯SPA時：
 
-   1. SPA會要求外部HTML。
-   1. CSS已載入。
-   1. 已載入SPA應用程式的JavaScript。
-   1. 執行SPA應用程式時會要求JSON，允許應用程式建置包含`cq-data`屬性的頁面DOM。
-   1. 此`cq-data`屬性可讓編輯器載入其他頁面資訊，以便知道元件有哪些可用的編輯設定。
+  1. SPA會要求外部HTML。
+  1. CSS已載入。
+  1. 已載入SPA應用程式的JavaScript。
+  1. 執行SPA應用程式時會要求JSON，允許應用程式建置包含`cq-data`屬性的頁面DOM。
+  1. 此`cq-data`屬性可讓編輯器載入其他頁面資訊，以便知道元件有哪些可用的編輯設定。
 
 * **AEM發佈**
 
@@ -215,8 +229,8 @@ SPA應該僅依賴內容的動態轉譯。 這是AEM擷取並轉譯內容結構�
 
   Dispatcher可作為AEM的快取階層，以供網站的訪客使用。
 
-   * 要求的處理方式類似於AEM作者上的要求，不過不會要求頁面資訊，因為只有編輯器才需要這樣做。
-   * 快取JavaScript、CSS、JSON和HTML，最佳化頁面以快速傳送。
+  * 要求的處理方式類似於AEM作者上的要求，不過不會要求頁面資訊，因為只有編輯器才需要這樣做。
+  * 快取JavaScript、CSS、JSON和HTML，最佳化頁面以快速傳送。
 
 >[!NOTE]
 >

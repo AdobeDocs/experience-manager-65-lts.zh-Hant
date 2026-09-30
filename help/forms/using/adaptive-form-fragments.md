@@ -9,22 +9,38 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 7da165ac-2039-4ac8-810d-fbe6f771453a
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '2381'
-ht-degree: 6%
-
+source-wordcount: '2463'
+ht-degree: 7%
 ---
-
 # 最適化表單片段{#adaptive-form-fragments}
 
 ## 套用至 {#applies-to}
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=zh-Hant)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=zh-Hant)上的AEM Forms 。
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
 雖然每個表單都是為特定目的而設計，但大多數表單中都有一些常見的區段，例如提供個人詳細資訊，例如姓名和地址、家庭詳細資訊和收入詳細資訊。 每次建立新表單時，表單開發人員都必須建立這些通用區段。
 
@@ -46,7 +62,7 @@ ht-degree: 6%
 
    >[!NOTE]
    >
-   >確保為片段指定唯一的名稱。如果存在另一個相同名稱的片段，則無法建立片段。
+   >確保為片段指定唯一的名稱。 如果存在另一個相同名稱的片段，則無法建立片段。
 
 1. 按一下以開啟&#x200B;**表單模型**&#x200B;標籤，然後從&#x200B;**選取自**&#x200B;下拉式功能表中，為片段選取下列其中一個模型：
 
@@ -94,7 +110,7 @@ ht-degree: 6%
    * **名稱**：片段的名稱。 預設值為面板的元素名稱。 這是必填欄位。
      >[!NOTE]
      >
-     >確保為片段指定唯一的名稱。如果存在另一個相同名稱的片段，則無法建立片段。
+     >確保為片段指定唯一的名稱。 如果存在另一個相同名稱的片段，則無法建立片段。
 
    * **Title**：片段的標題。 預設值為面板的標題。
 
@@ -107,7 +123,7 @@ ht-degree: 6%
    * **表單模型**：根據最適化表單的表單模型，此欄位會顯示&#x200B;**XML結構描述**、**表單範本**&#x200B;或&#x200B;**無**。 這是不可編輯的欄位。
 
    * **片段模型根**：僅出現在XSD型最適化表單中。 它會指定片段模型的根。 您可以從下拉式清單中選擇&#x200B;**/**&#x200B;或XSD複雜型別。 只有在選取複雜型別作為片段模型根時，才能在另一個最適化表單中重複使用片段。
-如果您選擇&#x200B;**/**&#x200B;作為片段模型根目錄，則最適化表單資料模型標籤中會顯示根目錄的完整XSD樹狀結構。 對於複雜型別片段模型根，在調適型表單資料模型標籤中只會顯示所選複雜型別的子系。 如果您建立片段並選擇複雜型別做為&#x200B;**片段模型根**，則您可以在使用該複雜型別的地方使用它，無論是在相同表單中還是在多個表單中。
+     如果您選擇&#x200B;**/**&#x200B;作為片段模型根目錄，則最適化表單資料模型標籤中會顯示根目錄的完整XSD樹狀結構。 對於複雜型別片段模型根，在調適型表單資料模型標籤中只會顯示所選複雜型別的子系。 如果您建立片段並選擇複雜型別做為&#x200B;**片段模型根**，則您可以在使用該複雜型別的地方使用它，無論是在相同表單中還是在多個表單中。
 
    * **XSD Ref**：僅出現在XSD型最適化表單中。 它顯示XML綱要的位置。
 
@@ -260,7 +276,7 @@ ht-degree: 6%
 
 ## 使用片段時要記住的關鍵點 {#key-points-to-remember-when-working-with-fragments}
 
-* 確認片段使用唯一的名稱。如果現有片段擁有相同的名稱，則無法建立片段。
+* 確認片段使用唯一的名稱。 如果現有片段擁有相同的名稱，則無法建立片段。
 * 在XDP型最適化表單中，如果您將面板儲存為包含其他XDP片段的片段，則產生的片段會自動與子XDP片段繫結。 如果存在XSD型最適化表單，則產生的片段會與結構描述根繫結。
 * 建立最適化表單片段時，會建立片段節點，這類似於CRXDE Lite中最適化表單的guideContainer節點。
 * 不支援使用不同表單資料模型的最適化表單中的片段。 例如，XSD型最適化表單中不支援XDP型片段，反之亦然。
@@ -270,7 +286,7 @@ ht-degree: 6%
 * 發佈最適化表單時，您必須發佈在最適化表單中透過參考插入的獨立最適化表單片段。
 * 當您重新發佈更新的自適應表單片段時，變更會反映在使用片段的自適應表單的已發佈例項中。
 * 包含Verify元件的調適型表單不支援匿名使用者。 此外，不建議在自適應表單片段中使用驗證元件。
-* (**僅限Mac**)若要確保表單片段功能在所有案例中都能完美運作，請將下列專案新增至/private/etc/hosts檔案：
+* （**僅限Mac**）若要確保表單片段功能在所有案例中都能完美運作，請將下列專案新增至/private/etc/hosts檔案：
   `127.0.0.1 <Host machine>` **主機電腦**：部署AEM Forms的Apple Mac電腦。
 
 ## 參考片段 {#reference-fragments}

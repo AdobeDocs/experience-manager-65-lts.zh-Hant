@@ -10,18 +10,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 8028e74e-29df-4081-a567-5eb87ae362d4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1174'
 ht-degree: 0%
-
 ---
-
 # 大量編輯器{#the-bulk-editor}
 
 當不需要視覺化頁面內容時，大量編輯器可提供有效的編輯，因為它可讓您：
 
-* 從多個頁面搜尋（和顯示）內容；這是使用GQL (Google查詢語言)完成的
+* 從多個頁面搜尋（和顯示）內容；這是使用GQL （Google查詢語言）完成的
 * 直接在大量編輯器中編輯此內容
 * 儲存變更（至原始頁面）
 * 將此內容匯出至以定位點分隔的(.tsv)試算表檔案
@@ -76,7 +85,7 @@ Geometrixx網站中提供說明此使用案例的範例：
   </tr>
   <tr>
    <td>根路徑</td>
-   <td>表示大量編輯器搜尋的根路徑。<br />例如，<code>/content/geometrixx/en</code>。 「大量編輯器」會搜尋所有子節點。</td>
+   <td>表示大量編輯器搜尋的根路徑。<br /> 例如 <code>/content/geometrixx/en</code>。 「大量編輯器」會搜尋所有子節點。</td>
   </tr>
   <tr>
    <td>查詢參數</td>
@@ -121,7 +130,7 @@ Geometrixx網站中提供說明此使用案例的範例：
 * **路徑：**&#x200B;僅搜尋此路徑下的節點。 如果您指定多個具有路徑首碼的字詞，則只會考慮最後一個字詞。
 * **型別：**&#x200B;只傳回指定節點型別的節點。 這包括主要和mixin型別。 您可以指定多個逗號分隔的節點型別。 GQL會傳回任何指定型別的節點。
 * **順序：**&#x200B;依指定的屬性排序結果。 您可以指定多個以逗號分隔的屬性名稱。 若要以遞減順序排序結果，只需在屬性名稱前面加上減號即可。 例如，order：-name。 使用加號會以遞增順序傳回結果，這也是預設值。
-* **限制：**&#x200B;會使用間隔來限制結果的數量。 例如，limit：10..20間隔以零為基準，開始為包含範圍，結束為排除範圍。 您也可以指定開啟的`interval:limit:10..`或`limit:..20`
+* **限制：**&#x200B;會使用間隔來限制結果的數量。 例如，limit：10..20間隔以零為基準，開始為包含範圍，結束為排除範圍。 您也可以指定開啟的`interval:limit:10..`或 `limit:..20`
 如果省略點且只指定了一個值，GQL最多會傳回此數量的結果。 例如，`limit:10` （傳回前十個結果）。
 
 ### 匯出內容 {#exporting-content}
@@ -140,7 +149,7 @@ Geometrixx網站中提供說明此使用案例的範例：
    ![正在匯出結果](assets/srchrsesultexport.png)
 
 1. 選取位置並確認您要下載檔案。
-1. 下載檔案後，您可以從試算表程式(例如Microsoft® Excel)開啟該檔案。 試算表程式會匯入檔案，並將其轉換為試算表格式。
+1. 下載檔案後，您可以從試算表程式（例如® Excel）開啟該檔案。 試算表程式會匯入檔案，並將其轉換為試算表格式。
 
    ![在試算表中匯出結果](assets/exportinexcel.png)
 

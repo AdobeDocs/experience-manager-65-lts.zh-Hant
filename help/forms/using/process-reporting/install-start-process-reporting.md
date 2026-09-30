@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: e64a3b6f-7248-4426-9f13-f703eab3632d
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 0%
-
+source-wordcount: '1774'
+ht-degree: 2%
 ---
-
 # 開始使用程式報告{#getting-started-with-process-reporting}
 
 流程報表可讓AEM Forms使用者查詢目前在AEM Forms實作中定義的AEM Forms流程相關資訊。 不過，程式報告不會直接從AEM Forms存放庫存取資料。 資料會先以排程方式發佈到Process Reporting存放庫（*由ProcessDataPublisher和ProcessDataStorage服務*）。 接著，會從發佈至存放庫的「程式報告」資料產生「程式報告」中的報告和查詢。 程式報告會安裝為Forms Workflow模組的一部分。
@@ -45,7 +60,7 @@ Process Reporting服務會依排程從AEM Forms資料庫發佈資料至Process R
 
 這項作業相當耗用資源，且可能影響AEM Forms伺服器的效能。 建議您在AEM Forms伺服器忙碌時段以外排程此專案。
 
-根據預設，資料的發佈排程為每天凌晨2:00執行。
+根據預設，資料的發佈排程為每天2:00 am執行。
 
 若要變更發佈排程，請執行下列步驟：
 

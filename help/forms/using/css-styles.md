@@ -1,5 +1,5 @@
 ---
-title: 建立HTML5表單的CSS樣式
+title: 建立 HTML5 表單的 CSS 樣式
 description: 瞭解如何修改與HTML表單元素關聯的CSS類別，以變更HTML5表單的外觀。
 contentOwner: robhagat
 content-type: reference
@@ -10,14 +10,29 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: f7b8a37a-df4c-4db2-a0fc-dabcdbd74e48
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 3%
-
+source-wordcount: '825'
+ht-degree: 4%
 ---
-
-# 建立HTML5表單的CSS樣式 {#creating-css-styles-for-html-forms}
+# 建立 HTML5 表單的 CSS 樣式 {#creating-css-styles-for-html-forms}
 
 XFA式表單範本的HTML5轉譯包含數個HTML元素。 這些元素會依順序排列。 每個元素都有已妥善定義的CSS類別。 您可以使用這些CSS類別來選取和變更元素的外觀。
 
@@ -25,7 +40,7 @@ XFA式表單範本的HTML5轉譯包含數個HTML元素。 這些元素會依順�
 >
 >在CSS類別中，請勿變更width、height、border-thickness、top、left、right、bottom、padding、margin及其他位置與大小屬性的值。 位置和大小屬性的任何變更都會對表單的版面配置造成變更。
 
-## CSS類別  針對元素  {#css-classes-nbsp-for-elements-nbsp}
+## 元素的CSS類別  {#css-classes-nbsp-for-elements-nbsp}
 
 每個元素都包含定義良好的CSS類別。 您可以修改這些類別來變更元素的外觀。 每個元素（欄位和繪圖元素除外）都有兩個CSS類別 — Type類別和Name類別。
 

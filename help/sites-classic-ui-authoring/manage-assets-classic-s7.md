@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: e452c343-3bba-4774-b153-c5ba05f24362
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3545'
+source-wordcount: '3578'
 ht-degree: 1%
-
 ---
-
 # 新增Dynamic Media Classic (Scene7)功能至您的頁面{#adding-scene-features-to-your-page}
 
 [Adobe Dynamic Media Classic (Scene7)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=zh-Hant)是託管式解決方案，可管理、增強、發佈多媒體資產，並將其傳送至Web、行動裝置、電子郵件及連線至網際網路的顯示器和列印。

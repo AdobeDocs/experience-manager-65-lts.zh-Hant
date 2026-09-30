@@ -5,14 +5,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: c97a8651-aca7-42e3-bcd0-71d089c3e753
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 0%
-
 ---
-
 # 在JEE自訂DSC上使用AEM Forms來壓縮和解壓縮檔案 {#compressing-decompressing-files}
 
 ## 必備條件知識 {#prerequisites}
@@ -25,7 +40,7 @@ Java™編輯器，例如[Eclipse](https://www.eclipse.org/)或[Netbeans IDE](ht
 
 ## 使用者層級 {#user-level}
 
-中級
+中階
 
 JEE上的AEM Forms可讓開發人員建立自訂ASC （Acrobat服務容器），以建立豐富的現成功能。 建立這類元件可插入JEE執行階段環境的AEM Forms，並達到預期目的。 本文會說明如何建立自訂ZIP服務，可用來將檔案清單壓縮成.zip檔案，並將.zip解壓縮成檔案清單。
 

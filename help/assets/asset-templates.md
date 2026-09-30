@@ -1,17 +1,28 @@
 ---
 title: 資產範本
-description: 瞭解 [!DNL Adobe Experience Manager Assets] 中的資產範本，以及如何使用資產範本建立行銷宣傳品。
+description: 瞭解[!DNL Adobe Experience Manager Assets]中的資產範本，以及如何使用資產範本建立行銷宣傳品。
 role: User
 feature: Asset Management,Developer Tools
 solution: Experience Manager, Experience Manager Assets
 exl-id: 8584d5ea-6ef2-4e81-8b18-5aa2d4226ea6
-source-git-commit: 9ed889c74a886e1b41c379dac77bb570ef5c2c39
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1571'
 ht-degree: 1%
-
 ---
-
 # 資產範本 {#asset-templates}
 
 資產範本是一種特殊型別的資產，可協助您將視覺豐富的內容快速重新用於數位和印刷媒體。 資產範本包含固定傳訊區段和可編輯區段兩個部分。 固定傳訊區段可包含專有內容，例如已停用編輯的品牌標誌和版權資訊。 可編輯區段可在可編輯以自訂訊息的欄位中包含視覺和文字內容。

@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Developer
 exl-id: 94bdf379-d10f-4dd3-b250-f2d1a3e4c251
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1279'
 ht-degree: 0%
-
 ---
-
 # 將Adobe Analytics追蹤新增至元件{#adding-adobe-analytics-tracking-to-components}
 
 ## 在頁面元件中包含Adobe Analytics模組 {#including-the-adobe-analytics-module-in-a-page-component}
@@ -109,7 +118,7 @@ $CQ(function(){
 </div>
 ```
 
-所有AEM範例網站(例如Geometrixx Outdoors)皆包含此程式碼。
+所有AEM範例網站（例如Geometrixx Outdoors）皆包含此程式碼。
 
 ### sitecatalystAfterCollect事件 {#the-sitecatalystaftercollect-event}
 
@@ -173,25 +182,25 @@ $CQ(document).trigger("sitecatalystAfterCollect");
 
 1. 將下列屬性新增至分析節點，讓您可以將追蹤事件命名為：
 
-   * 名稱：cq：trackevents
+   * 名稱： cq:trackevents
    * 型別：字串
    * 值： topnavClick
 
 1. 將下列屬性新增至Analytics節點，讓您可以將資料變數命名為：
 
-   * 名稱：cq：trackvars
+   * 名稱： cq:trackvars
    * 型別：字串
    * 值： topnavTarget，topnavLocation
 
 1. 將以下屬性新增到Analytics節點，為Sidekick的元件命名：
 
-   * 名稱：cq：componentName
+   * 名稱： cq:componentName
    * 型別：字串
    * 值： topnav （追蹤）
 
 1. 將以下屬性新增到Analytics節點，為Sidekick的元件群組命名：
 
-   * 名稱：cq：componentGroup
+   * 名稱： cq:componentGroup
    * 型別：字串
    * 值：一般
 
@@ -439,6 +448,6 @@ Adobe Analytics整合模組使用AEM元件產生的`product`值來建構`s.produ
 
 #### 限制追蹤呼叫的大小 {#limiting-the-size-of-tracking-calls}
 
-一般而言，網頁瀏覽器會限制GET請求的大小。 由於CQ產品和SKU值是存放庫路徑，因此包含多個值的產品陣列可能會超過請求大小限制。 因此，您的元件應該限制每個`CQ_Analytics.record function`之`product`陣列中的專案數。 如果必須追蹤的專案數量可能超過限制，請建立多個函式。
+一般而言，網頁瀏覽器會限制GET要求的大小。 由於CQ產品和SKU值是存放庫路徑，因此包含多個值的產品陣列可能會超過請求大小限制。 因此，您的元件應該限制每個`CQ_Analytics.record function`之`product`陣列中的專案數。 如果必須追蹤的專案數量可能超過限制，請建立多個函式。
 
 例如，電子商務`submitorder`元件將呼叫中`product`專案的數量限製為4。 當購物車包含四個以上的產品時，它會產生多個`CQ_Analytics.record`功能。

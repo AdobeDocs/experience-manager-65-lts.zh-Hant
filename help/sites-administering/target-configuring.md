@@ -5,13 +5,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 55f100b2-625a-4d0e-b8bb-011c7e3e3580
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2125'
+source-wordcount: '2209'
 ht-degree: 1%
-
 ---
-
 # 手動設定與Adobe Target的整合 {#manually-configuring-the-integration-with-adobe-target}
 
 您可以修改使用精靈時進行的選擇加入精靈設定，或手動與Adobe Target整合，而不使用精靈。
@@ -96,7 +105,7 @@ ht-degree: 1%
 
 ![AdobeTargetSettings](assets/adobe-target-settings.jpg)
 
-按一下&#x200B;**確定**。 使用Adobe Target鎖定內容時，您可以[選取您的報表來源](/help/sites-authoring/content-targeting-touch.md)。
+按一下&#x200B;**「確定」**。 使用Adobe Target鎖定內容時，您可以[選取您的報表來源](/help/sites-authoring/content-targeting-touch.md)。
 
 ## 手動與Adobe Target整合 {#manually-integrating-with-adobe-target}
 
@@ -139,7 +148,7 @@ ht-degree: 1%
 
       ![Adobe Target設定](assets/adobe-target-create-configuration.png)
 
-1. 按一下&#x200B;**建立**。
+1. 按一下「**建立**」。
 
    編輯對話方塊隨即開啟。
 
@@ -163,7 +172,7 @@ ht-degree: 1%
    * **A4T Analytics Cloud設定**：選取用於鎖定活動目標和量度的Analytics Cloud設定。 如果您在鎖定目標內容時使用Adobe Analytics作為報表來源，則需要此設定。 如果沒有看見您的雲端設定，請參閱[設定A4T Analytics Cloud設定](#configuring-a-t-analytics-cloud-configuration)中的注意事項。
 
    * **使用準確定位：**&#x200B;預設會選取此核取方塊。 如果選取，雲端服務設定會等待內容載入後再載入內容。 請參閱下列備註。
-   * **從Adobe Target同步區段：**&#x200B;選取此選項，您可以下載Target中定義的區段，以便在AEM中使用它們。 當「API型別」屬性為REST時，選取此選項，因為內嵌區段不受支援，且您必須使用Target中的區段。 ( AEM術語「區段」等同於Target「對象」。)
+   * **從Adobe Target同步區段：**&#x200B;選取此選項，您可以下載Target中定義的區段，以便在AEM中使用它們。 當「API型別」屬性為REST時，選取此選項，因為內嵌區段不受支援，且您必須使用Target中的區段。 （ AEM術語「區段」等同於Target「對象」。）
    * **使用者端資料庫：**&#x200B;選取您要使用mbox.js或AT.js使用者端資料庫。
    * **使用DTM來提供使用者端程式庫** — 選取此選項，即可使用DTM或其他標籤管理系統中的AT.js或mbox.js。 設定[DTM整合](/help/sites-administering/dtm.md)以使用此選項。 Adobe建議您使用DTM來交付程式庫，而非AEM。
    * **自訂mbox.js**：如果您已勾選DTM方塊或使用預設的mbox.js，請留空。 或者上傳您的自訂mbox.js。 只有在您已選取mbox.js時才會顯示。
@@ -253,7 +262,7 @@ ht-degree: 1%
    >
    >請確定您選取的是您建立的特定&#x200B;**架構**，而不是建立架構時所依據的Target雲端組態。
 
-1. 按一下&#x200B;**「完成」**。
+1. 按一下&#x200B;**完成**。
 1. 啟動網站的根頁面，以便將其復寫至發佈伺服器。 （請參閱[如何發佈頁面](/help/sites-authoring/publishing-pages.md)。）
 
    >[!NOTE]

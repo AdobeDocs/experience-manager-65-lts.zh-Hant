@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d6aa0ff8-01b8-48ef-93f3-59edb9cd50bd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '482'
 ht-degree: 2%
-
 ---
-
 # 擷取字串進行翻譯{#extracting-strings-for-translating}
 
 使用xgettext-maven-plugin從您的原始程式碼中擷取需要翻譯的字串。 Maven外掛程式會將字串擷取至您傳送的XLIFF檔案進行翻譯。 字串會從下列位置擷取：
@@ -44,7 +53,7 @@ ht-degree: 2%
 /potentials { }
 ```
 
-| 區段 | 描述 |
+| 區段 | 說明 |
 |---|---|
 | /filter | 識別要剖析的檔案。 |
 | /parsers/vaultxml | 設定儲存庫檔案的剖析。 識別包含外部化字串和本地化提示的JCR節點。 也會識別要忽略的JCR節點。 |
@@ -66,10 +75,10 @@ i18n.any檔案的/filter區段會識別xgettext-maven-plugin工具剖析的檔�
 | 前綴 | 效果 |
 |---|---|
 | / | 表示JCR路徑。 因此，此首碼會比對jcr_root目錄下的檔案。 |
-| &amp;amp；ast； | 表示檔案系統上的一般檔案。 |
+| &amp;ast； | 表示檔案系統上的一般檔案。 |
 | 無 | 沒有字首或以資料夾或檔案名稱開頭的模式，表示檔案系統上的一般檔案。 |
 
-當在模式中使用時，/字元表示子目錄，而&amp;amp；ast；字元符合所有。 下表列出數個規則範例。
+當在模式中使用時，/字元表示子目錄，而&amp;ast；字元符合所有。 下表列出數個規則範例。
 
 <table>
  <tbody>

@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 8c66b978-872e-4f5e-8f64-1e2dfb7d7dde
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 9%
-
+source-wordcount: '453'
+ht-degree: 15%
 ---
-
 # 內容服務的 JSON 匯出工具{#json-exporter-for-content-services}
 
 AEM Content Services的設計目的，是要概括AEM內/外部內容的說明和傳遞，而不只是關注網頁。
@@ -30,7 +39,7 @@ AEM Content Services的設計目的，是要概括AEM內/外部內容的說明�
 
 >[!NOTE]
 >
->此處說明的功能適用於[發行版本1.1.0的核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)之後的所有核心元件。
+>此處說明的功能適用於[發行版本1.1.0的核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)之後的所有核心元件。
 
 ## 包含內容片段核心元件的JSON匯出工具 {#json-exporter-with-content-fragment-core-components}
 
@@ -82,15 +91,15 @@ AEM Content Services的設計目的，是要概括AEM內/外部內容的說明�
 
 * Assets HTTP API
 
-   * [Assets HTTP API](/help/assets/mac-api-assets.md)
+  * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
 * Sling模型：
 
-   * [Sling模型 — 自130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)起將模型類別與資源型別建立關聯
+  * [Sling模型 — 自130起將模型類別與資源型別建立關聯](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 
 * AEM與JSON：
 
-   * [取得JSON格式的頁面資訊](/help/sites-developing/pageinfo.md)
+  * [取得JSON格式的頁面資訊](/help/sites-developing/pageinfo.md)
 
 ## 相關檔案 {#related-documentation}
 
@@ -102,4 +111,4 @@ AEM Content Services的設計目的，是要概括AEM內/外部內容的說明�
 * [使用內容片段製作](/help/sites-authoring/content-fragments.md)
 * [為元件啟用 JSON 匯出](/help/sites-developing/json-exporter-components.md)
 
-* [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)和[內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)
+* [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)和[內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)

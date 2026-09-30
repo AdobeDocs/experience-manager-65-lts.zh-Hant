@@ -9,18 +9,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d8fe6fb6-8ede-4fa7-95da-adee313bf768
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '625'
 ht-degree: 1%
-
 ---
-
 # 覆蓋{#overlays}
 
 Adobe Experience Manager (AEM) （以及之前的CQ）一直使用覆蓋原則來讓您延伸及自訂[主控台](/help/sites-developing/customizing-consoles-touch.md)和其他功能（例如[頁面製作](/help/sites-developing/customizing-page-authoring-touch.md)）。
 
-覆蓋是許多內容中使用的辭彙。 在此情境中(擴充AEM)，覆蓋是指採用預先定義的功能，並將您自己的定義強加於此功能（以自訂標準功能）。
+覆蓋是許多內容中使用的辭彙。 在此情境中（擴充AEM），覆蓋是指採用預先定義的功能，並將您自己的定義強加於此功能（以自訂標準功能）。
 
 在標準執行個體中，預先定義的功能儲存在`/libs`下，建議在`/apps`分支下定義您的覆蓋（自訂）。 AEM使用搜尋路徑來尋找資源，先搜尋`/apps`分支，然後搜尋`/libs`分支（可以設定[搜尋路徑](#configuring-the-search-paths)）。 此機制表示您的覆蓋（以及其中定義的自訂）有優先權。
 
@@ -28,32 +37,32 @@ Adobe Experience Manager (AEM) （以及之前的CQ）一直使用覆蓋原則�
 
 * AEM 6.0及更高版本 — 適用於[Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)相關覆蓋圖（亦即觸控式UI）
 
-   * 方法
+  * 方法
 
-      * 在`/apps`下重新建構適當的`/libs`結構。
+    * 在`/apps`下重新建構適當的`/libs`結構。
 
-        這不需要1:1的復本，[Sling Resource Merger](/help/sites-developing/sling-resource-merger.md)用於互動參照所需的原始定義。 Sling Resource Merger提供的服務可存取及合併具有不同（差異）機制的資源。
+      這不需要1:1的復本，[Sling Resource Merger](/help/sites-developing/sling-resource-merger.md)用於互動參照所需的原始定義。 Sling Resource Merger提供的服務可存取及合併具有不同（差異）機制的資源。
 
-      * 在`/apps`底下，進行任何變更。
+    * 在`/apps`底下，進行任何變更。
 
-   * 優點
+  * 優點
 
-      * 對`/libs`下的變更更健全。
-      * 僅重新定義必要的專案。
+    * 對`/libs`下的變更更健全。
+    * 僅重新定義必要的專案。
 
 * AEM 6.0之前的非Granite覆蓋圖和覆蓋圖
 
-   * 方法
+  * 方法
 
-      * 將內容從`/libs`複製到`/apps`
+    * 將內容從`/libs`複製到`/apps`
 
-        複製整個子分支，包括屬性。
+      複製整個子分支，包括屬性。
 
-      * 在`/apps`底下，進行任何變更。
+    * 在`/apps`底下，進行任何變更。
 
-   * 缺點
+  * 缺點
 
-      * 雖然您的變更不會在`/libs`下發生變更時遺失，但您可能必須重新建立`/apps`下覆蓋圖中所發生的特定變更。
+    * 雖然您的變更不會在`/libs`下發生變更時遺失，但您可能必須重新建立`/apps`下覆蓋圖中所發生的特定變更。
 
 >[!CAUTION]
 >
@@ -63,12 +72,11 @@ Adobe Experience Manager (AEM) （以及之前的CQ）一直使用覆蓋原則�
 
 重疊是許多變更的建議方法，例如[設定您的主控台](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console)或[在側面板中的資產瀏覽器中建立您的選取類別](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) （用於編寫頁面）。 其需求為：
 
-* ***不要*&#x200B;在`/libs`分支&#x200B;**&#x200B;中進行變更
-您所做的任何變更都可能會遺失，因為每當您：
+* ***不要*&#x200B;在`/libs`分支中進行變更&#x200B;**&#x200B;您所做的任何變更都可能會遺失，因為每當您：
 
-   * 在您的執行個體上升級
-   * 套用hotfix
-   * 安裝功能套件
+  * 在您的執行個體上升級
+  * 套用hotfix
+  * 安裝功能套件
 
 * 這些功能可將您的變更集中在一個位置；如有需要，讓您更輕鬆地追蹤、移轉、備份或偵錯變更。
 
@@ -78,10 +86,10 @@ Adobe Experience Manager (AEM) （以及之前的CQ）一直使用覆蓋原則�
 
 * **Apache Sling Resource Resolver Factory**&#x200B;的資源&#x200B;**解析器搜尋路徑**&#x200B;定義於[OSGi設定](/help/sites-deploying/configuring-osgi.md)。
 
-   * 搜尋路徑的由上而下的順序表示其各自的優先順序。
-   * 在標準安裝中，主要預設值為`/apps`， `/libs` — 因此`/apps`的內容優先順序高於`/libs`的內容（亦即&#x200B;*覆蓋*）。
+  * 搜尋路徑的由上而下的順序表示其各自的優先順序。
+  * 在標準安裝中，主要預設值為`/apps`， `/libs` — 因此`/apps`的內容優先順序高於`/libs`的內容（亦即&#x200B;*覆蓋*）。
 
-* 兩位服務使用者需要有JCR：READ存取權才能存取儲存指令碼的位置。 這些使用者是： components-search-service (由com.day.cq.wcm.coreto使用)和sling-scripting （由org.apache.sling.servlets.resolver使用來尋找servlet）。
+* 兩個服務使用者需要JCR:READ存取指令碼儲存位置。 這些使用者是： components-search-service （由com.day.cq.wcm.coreto使用）和sling-scripting （由org.apache.sling.servlets.resolver使用來尋找servlet）。
 * 下列設定也必須根據您放置指令碼的位置（此範例中位於/etc、/libs或/apps下）進行設定。
 
   ```

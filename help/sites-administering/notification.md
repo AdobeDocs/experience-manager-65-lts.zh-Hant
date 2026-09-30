@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 3ef72c05-1301-402e-94ce-49fbaf26fb98
-source-git-commit: aff6c41e13293a1c83eca226354f5c16cff18d99
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2175'
 ht-degree: 9%
-
 ---
-
 # 設定電子郵件通知{#configuring-email-notification}
 
 AEM傳送電子郵件通知給使用者，符合以下條件：
@@ -403,11 +412,11 @@ AEM為其整合的郵件程式服務提供OAuth2支援，以允許組織遵守�
    * 填入授權URL、權杖URL和重新整理權杖URL，方法為依照此程式結尾[的說明](#microsoft-outlook)建構它們
    * 使用者端ID和使用者端密碼：使用上述擷取的值來設定這些欄位。
    * 將以下範圍新增到設定中：
-      * openid
-      * offline_access
-      * `https://outlook.office365.com/Mail.Send`
-      * `https://outlook.office365.com/Mail.Read`
-      * `https://outlook.office365.com/SMTP.Send`
+     * openid
+     * offline_access
+     * `https://outlook.office365.com/Mail.Send`
+     * `https://outlook.office365.com/Mail.Read`
+     * `https://outlook.office365.com/SMTP.Send`
    * AuthCode重新導向Url： `http://localhost:4503/services/mailer/oauth2/token`
    * 重新整理記號URL：這應該與上述記號URL的值相同
 1. 按一下&#x200B;**儲存**。

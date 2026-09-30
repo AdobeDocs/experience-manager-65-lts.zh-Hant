@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e9b26de3-6e14-4187-8f25-6e56ee3092a7
-source-git-commit: 013c9155817811913963ca514f7a6369b338d487
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 7%
-
 ---
-
 # 移轉至Touch UI{#migration-to-the-touch-ui}
 
 從6.0版開始，Adobe Experience Manager (AEM)推出了稱為&#x200B;*觸控式UI*&#x200B;的新使用者介面（也簡稱為&#x200B;*觸控式UI*）。 這會與Adobe Experience Cloud和整體Adobe使用者介面指導方針一致。 這已成為AEM中的標準UI，具有稱為&#x200B;*傳統UI*&#x200B;的舊版案頭導向介面。
@@ -114,7 +123,7 @@ ht-degree: 7%
 * [從傳統元件移轉](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
 * [AEM現代化工具](/help/sites-developing/modernization-tools.md) — 協助您將傳統UI元件的對話方塊轉換為觸控式UI
 
-   * 觸控式UI提供相容性層，可在「觸控式UI包裝函式」中開啟傳統UI對話方塊，但此功能有限，長期而言不建議使用。
+  * 觸控式UI提供相容性層，可在「觸控式UI包裝函式」中開啟傳統UI對話方塊，但此功能有限，長期而言不建議使用。
 
 * [在觸控式UI中自訂對話方塊欄位](https://helpx.adobe.com/tw/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [建立新的Granite UI欄位元件](/help/sites-developing/granite-ui-component.md)

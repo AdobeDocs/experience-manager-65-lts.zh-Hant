@@ -1,5 +1,5 @@
 ---
-title: 為HTML5表單設計表單範本
+title: 設計 HTML5 表單的表單範本
 description: AEM Forms可將XFA表單範本轉譯為HTML5格式。 表單設計人員可以使用Designer設計表單範本並使用HTML5轉譯功能。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,29 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 52dc3ecd-339b-4389-b875-4a261d2449e4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 0%
-
+source-wordcount: '487'
+ht-degree: 3%
 ---
-
-# 為HTML5表單設計表單範本{#designing-form-templates-for-html-forms}
+# 設計 HTML5 表單的表單範本{#designing-form-templates-for-html-forms}
 
 AEM中的HTML5表單元件可將XFA表單範本轉譯為HTML5格式。 表單設計人員可以使用[Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)設計表單範本，並使用HTML5轉譯功能。 這些表單範本及其資產可以位於AEM存放庫、檔案系統，或透過http公開。 不過，如果您打算使用Forms Manager管理表單，範本和資產應存放在AEM存放庫中。
 

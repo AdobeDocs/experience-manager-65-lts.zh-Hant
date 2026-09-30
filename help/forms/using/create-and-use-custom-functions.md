@@ -4,13 +4,23 @@ description: AEM Forms支援自訂函式，可讓使用者在規則編輯器中�
 feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
 exl-id: 40329e80-d794-4e43-8ed4-d88ce3c48751
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1071'
 ht-degree: 4%
-
 ---
-
 # Adaptive Forms中的自訂函式
 
 ## 簡介
@@ -75,10 +85,10 @@ function ValidateEmail(inputText)
 顯示函式使用的引數。 一個函式可以有多個引數標籤，每個引數會依發生順序各一個標籤。
   `{type}`代表引數型別。 允許的引數型別為：
 
-   1. 字串
-   2. 數字
-   3. 布林值
-   4. 範圍
+  1. 字串
+  2. 數字
+  3. 布林值
+  4. 範圍
 
   範圍是用來反向連結最適化表單的欄位。 表單使用延遲載入時，您可以使用`scope`存取其欄位。 您可以在載入欄位時存取欄位，或者如果欄位標示為全域。
 
@@ -88,11 +98,11 @@ function ValidateEmail(inputText)
 語法： `@return {type}`
 或者，您可以使用`@returns {type}`。
 新增函式的相關資訊，例如其目標。
-{type}代表函式的傳回型別。 允許的傳回型別為：
+  {type}代表函式的傳回型別。 允許的傳回型別為：
 
-   1. 字串
-   1. 數字
-   1. 布林值
+  1. 字串
+  1. 數字
+  1. 布林值
 
   所有其他回訪型別則會歸類到上述任一型別下。 不支援任何專案。 請確定您選取以上任一型別。 傳回型別不區分大小寫。
 
@@ -186,7 +196,7 @@ var c = {
 若要建立自訂函式，請執行下列步驟：
 
 1. 登入`http://server:port/crx/de/index.jsp#`。
-1. 在 `/apps` 檔案夾中建立一個檔案夾。例如，建立名為`experience-league`的資料夾。
+1. 在 `/apps` 檔案夾中建立一個檔案夾。 例如，建立名為`experience-league`的資料夾。
 1. 儲存您的變更。
 1. 導覽至建立的資料夾，並建立型別為`cq:ClientLibraryFolder`的節點作為`clientlibs`。
 1. 導覽至新建立的`clientlibs`資料夾並新增`allowProxy`和`categories`屬性：

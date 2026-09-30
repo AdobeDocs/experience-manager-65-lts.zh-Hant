@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 20aea30b-9cfe-45c1-aa8d-08085f8e3e7d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1032'
 ht-degree: 0%
-
 ---
-
 # 發佈頁面{#publishing-pages}
 
 在作者環境中建立並檢閱您的內容後，使其可在您的公開網站（您的發佈環境）上使用。
@@ -56,7 +65,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您也可以使用[工具]主控台上的[啟動樹狀結構] [&#128279;](#howtoactivateacompletesectiontreeofyourwebsite)，啟動多個頁面的子樹狀結構。
+>您也可以使用[工具]主控台上的[啟動樹狀結構] [&#x200B; &#x200B;](#howtoactivateacompletesectiontreeofyourwebsite)，啟動多個頁面的子樹狀結構。
 
 ### 從網站主控台啟用頁面 {#activating-a-page-from-the-websites-console}
 

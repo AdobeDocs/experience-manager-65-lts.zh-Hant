@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 39473f0a-e4ee-4372-a0ea-ccf5d32501b9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1487'
 ht-degree: 1%
-
 ---
-
 # 將體驗片段匯出到 Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
 您可以將在Adobe Experience Manager (AEM)中建立的[體驗片段](/help/sites-authoring/experience-fragments.md)匯出至Adobe Target (Target)。 接著，可將這些選件做為Target活動中的選件，以大規模測試並個人化體驗。
@@ -37,7 +46,7 @@ AEM體驗片段可以匯出至Adobe Target中的預設工作區，或匯出至Ad
 
 >[!NOTE]
 >
->Adobe Target本身並不存在Adobe Target工作區。 它們是在Adobe IMS (Identity Management系統)中定義和管理，然後使用Adobe Developer Console中的整合選取以供跨解決方案使用。
+>Adobe Target本身並不存在Adobe Target工作區。 它們是在Adobe IMS （Identity Management系統）中定義和管理，然後使用Adobe Developer Console中的整合選取以供跨解決方案使用。
 
 >[!NOTE]
 >
@@ -187,12 +196,12 @@ AEM體驗片段可以匯出至Adobe Target中的預設工作區，或匯出至Ad
 
   AEM中的錯誤訊息不會禁止使用者（強制）刪除體驗片段。 如果刪除體驗片段：
 
-   * 具有AEM體驗片段的Target選件可能會顯示不良行為
+  * 具有AEM體驗片段的Target選件可能會顯示不良行為
 
-      * 選件可能仍會呈現，因為體驗片段HTML已推送至Target
-      * 如果也在AEM中刪除了參照的資產，體驗片段中的任何參照都無法正常運作。
+    * 選件可能仍會呈現，因為體驗片段HTML已推送至Target
+    * 如果也在AEM中刪除了參照的資產，體驗片段中的任何參照都無法正常運作。
 
-   * 由於體驗片段在AEM中不再存在，因此無法對體驗片段進行任何進一步的修改。
+  * 由於體驗片段在AEM中不再存在，因此無法對體驗片段進行任何進一步的修改。
 
 
 ## 從匯出至Target的體驗片段中移除ClientLibs {#removing-clientlibs-from-fragments-exported-target}

@@ -10,14 +10,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: de61c579-50ed-423b-adca-60329f3f0b89
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2471'
 ht-degree: 0%
-
 ---
-
 # 呈現互動式PDF forms {#rendering-interactive-pdf-forms}
 
 **本檔案中的範例和範例僅適用於JEE環境上的AEM Forms。**
@@ -40,7 +57,7 @@ Forms服務會將互動式PDF forms轉譯給使用者端裝置（通常為網頁
  <thead>
   <tr>
    <th><p>步驟</p></th>
-   <th><p>說明</p></th>
+   <th><p>描述</p></th>
   </tr>
  </thead>
  <tbody>
@@ -204,7 +221,7 @@ Forms應用程式中的資源路徑為：
    * 使用它的建構函式建立`java.util.HashMap`物件以儲存檔案附件。
    * 對每個要附加到轉譯表單的檔案叫用`java.util.HashMap`物件的`put`方法。 將下列值傳遞至此方法：
 
-      * 字串值，指定檔案附件的名稱，包括副檔名。
+     * 字串值，指定檔案附件的名稱，包括副檔名。
 
    * 包含檔案附件的`com.adobe.idp.Document`物件。
 
@@ -259,7 +276,7 @@ Forms應用程式中的資源路徑為：
    * 使用它的建構函式建立`java.util.HashMap`物件以儲存檔案附件。
    * 對每個要附加到轉譯表單的檔案叫用`java.util.HashMap`物件的`put`方法。 將下列值傳遞至此方法：
 
-      * 字串值，指定檔案附件的名稱，包括副檔名
+     * 字串值，指定檔案附件的名稱，包括副檔名
 
    * 包含檔案附件的`BLOB`物件
 

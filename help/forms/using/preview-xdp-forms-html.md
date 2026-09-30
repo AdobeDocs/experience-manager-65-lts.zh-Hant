@@ -1,5 +1,5 @@
 ---
-title: 產生XDP表單的HTML5預覽
+title: 產生 XDP 表單的 HTML5 預覽
 description: 在LiveCycle Designer中預覽HTML索引標籤可用來預覽顯示在瀏覽器中的表單。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -8,14 +8,29 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 8cab9656-3dda-4fdd-bb1a-df0bc4750e72
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 0%
-
+source-wordcount: '807'
+ht-degree: 2%
 ---
-
-# 產生XDP表單的HTML5預覽{#generate-html-preview-of-an-xdp-form}
+# 產生 XDP 表單的 HTML5 預覽{#generate-html-preview-of-an-xdp-form}
 
 在AEM Forms Designer中設計表單時，除了預覽表單的PDF轉譯外，您也可以預覽表單的HTML5轉譯。 您可以使用&#x200B;**預覽HTML**&#x200B;標籤來預覽顯示在瀏覽器中的表單。
 
@@ -37,13 +52,13 @@ ht-degree: 0%
 
    * JEE上的AEM Forms
 
-      * -/content/xfaforms
-      * -/etc/clientlibs
+     * -/content/xfaforms
+     * -/etc/clientlibs
 
    * OSGi上的AEM Forms
 
-      * -/content/xfaforms
-      * -/etc/clientlibs/fd/xfaforms
+     * -/content/xfaforms
+     * -/etc/clientlibs/fd/xfaforms
 
    >[!NOTE]
    >
@@ -74,14 +89,14 @@ ht-degree: 0%
    * **HTTP連線埠號碼**： AEM伺服器連線埠。 預設值為 4502。
    * **HTML預覽內容：**&#x200B;呈現XFA表單的設定檔路徑。 下列預設設定檔是用來在Designer中預覽表單。 不過，您也可以指定自訂設定檔的路徑。
 
-      * `/content/xfaforms/profiles/default.html` (OSGi上的AEM Forms)
+     * `/content/xfaforms/profiles/default.html` （OSGi上的AEM Forms）
 
-      * `/lc/content/xfaforms/profiles/default.html` (JEE上的AEM Forms)
+     * `/lc/content/xfaforms/profiles/default.html` （JEE上的AEM Forms）
 
    * **Forms Manager內容：**&#x200B;部署Forms Manager UI的內容路徑。 預設值為：
 
-      * `/aem/forms` (OSGi上的AEM Forms)
-      * `/lc/forms` (JEE上的AEM Forms)
+     * `/aem/forms` （OSGi上的AEM Forms）
+     * `/lc/forms` （JEE上的AEM Forms）
 
    >[!NOTE]
    >
@@ -105,7 +120,7 @@ ht-degree: 0%
 
    >[!CAUTION]
    >
-   >若要測試真實的一般使用者體驗，請在外部瀏覽器(Google Chrome、Microsoft Edge、Mozilla Firefox等)中預覽您的表單。 每個瀏覽器使用不同的引擎來呈現HTML，因此Designer中的表單預覽方式與外部瀏覽器之間可能有一些差異。
+   >若要測試真實的一般使用者體驗，請在外部瀏覽器（Google Chrome、Microsoft Edge、Mozilla Firefox等）中預覽您的表單。 每個瀏覽器使用不同的引擎來呈現HTML，因此Designer中的表單預覽方式與外部瀏覽器之間可能有一些差異。
 
 ## 若要使用範例資料預覽表單 {#to-preview-a-form-using-sample-data}
 
@@ -119,7 +134,7 @@ Designer可讓您使用範例XML資料預覽及測試表單。 建議您經常�
 
 1. 按一下「**預覽**」標籤，然後在「資料檔案」方塊中輸入測試資料檔案的完整路徑。 您也可以使用「瀏覽」按鈕來導覽至檔案。
 
-1. 按一下&#x200B;**確定**。 下次您在&#x200B;**預覽HTML**&#x200B;索引標籤中預覽表單時，範例XML檔案中的資料值將會顯示在個別物件中。
+1. 按一下&#x200B;**「確定」**。 下次您在&#x200B;**預覽HTML**&#x200B;索引標籤中預覽表單時，範例XML檔案中的資料值將會顯示在個別物件中。
 
 ## 在存放庫中預覽表單 {#html-preview-of-forms-in-forms-manager}
 

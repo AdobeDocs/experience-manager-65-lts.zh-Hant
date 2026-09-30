@@ -1,19 +1,33 @@
 ---
-title: 搜尋 [!DNL Adobe Experience Manager]中的數位資產和影像
-description: 瞭解如何使用「篩選器」面板在 [!DNL Adobe Experience Manager] 中尋找所需資產，以及如何使用搜尋中顯示的資產。
+title: 搜尋[!DNL Adobe Experience Manager]中的數位資產和影像
+description: 瞭解如何使用篩選器面板在[!DNL Adobe Experience Manager]中尋找所需的資產，以及如何使用搜尋中顯示的資產。
 mini-toc-levels: 1
 feature: Search, Metadata
 role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 3511e07b-f6d0-435a-aa80-55357d3dccf5
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: ed6971a3-2c12-4fd2-81f4-ff329c416250
+    internal-label: Metadata
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '5811'
+source-wordcount: '5812'
 ht-degree: 5%
-
 ---
-
 # 在[!DNL Adobe Experience Manager]中搜尋數位資產 {#search-assets-in-aem}
 
 | 版本 | 文章連結 |
@@ -221,7 +235,7 @@ Creative專業人員使用案頭應用程式，讓[!DNL Experience Manager Asset
 
 ### 搜尋[!DNL Adobe Stock]個影像 {#adobe-stock1}
 
-在[!DNL Experience Manager]使用者介面中，使用者可以搜尋Adobe Stock資產並授權必要的資產。 在Omnisearch欄位中新增`Location: Adobe Stock`。 您也可以使用&#x200B;**[!UICONTROL 篩選器]**&#x200B;面板來尋找所有授權或未授權的資產，或使用Adobe Stock檔案編號搜尋特定資產。 檢視 [!DNL Experience Manager][&#128279;](/help/assets/aem-assets-adobe-stock.md#usemanage)中的管理 [!DNL Adobe Stock] 影像。
+在[!DNL Experience Manager]使用者介面中，使用者可以搜尋Adobe Stock資產並授權必要的資產。 在Omnisearch欄位中新增`Location: Adobe Stock`。 您也可以使用&#x200B;**[!UICONTROL 篩選器]**&#x200B;面板來尋找所有授權或未授權的資產，或使用Adobe Stock檔案編號搜尋特定資產。 檢視 [!DNL Experience Manager]&#x200B;[&#128279;](/help/assets/aem-assets-adobe-stock.md#usemanage)中的管理 [!DNL Adobe Stock] 影像。
 
 ### 搜尋[!DNL Dynamic Media]資產 {#dynamic-media}
 
@@ -439,7 +453,7 @@ Creative專業人員使用案頭應用程式，讓[!DNL Experience Manager Asset
 
 若要檢視資產的所有中繼資料，請選取該資產，然後從工具列按一下&#x200B;**[!UICONTROL 屬性]**。
 
-若要檢查資產或資產版本記錄的註解，請按一下資產以開啟大型預覽。 在左側導軌中開啟時間軸，並選取「 **[!UICONTROL 注釋]** 」或「 **[!UICONTROL 版本」]**。 您也可以依時間順序將時間軸活動 (例如注釋或版本) 排序。
+若要檢查資產的註解或資產的版本記錄，請按一下資產以開啟大型預覽。 在左側導軌中開啟時間軸，並選取「 **[!UICONTROL 注釋]** 」或「 **[!UICONTROL 版本」]**。 您也可以依時間順序將時間軸活動 (例如注釋或版本) 排序。
 
 ![排序搜尋資產的時間表專案](assets/sort_timeline_search_results.gif)
 
@@ -462,7 +476,7 @@ Creative專業人員使用案頭應用程式，讓[!DNL Experience Manager Asset
 * 資產、資料夾和其他集合的靜態參考清單。
 * 根據搜尋條件填入集合中資產的動態清單（智慧型集合）。
 
-您可以根據搜尋准則建立智慧型系列。 從「濾鏡 **[!UICONTROL 器]** 」面板中，選 **[!UICONTROL 擇「檔案]** 」並單 **[!UICONTROL 擊「保存智慧集」]**。 請參閱 [管理系列](/help/assets/manage-collections.md)。
+您可以根據搜尋準則建立智慧型系列。 從「濾鏡 **[!UICONTROL 器]** 」面板中，選 **[!UICONTROL 擇「檔案]** 」並單 **[!UICONTROL 擊「保存智慧集」]**。 請參閱 [管理系列](/help/assets/manage-collections.md)。
 
 ### 建立版本 {#create-version}
 

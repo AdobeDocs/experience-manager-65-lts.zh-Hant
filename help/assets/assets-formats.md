@@ -1,19 +1,35 @@
 ---
 title: 支援的檔案格式和MIME型別
-description: ' [!DNL Assets] 和 [!DNL Dynamic Media] 支援的檔案格式和MIME型別，以及每種格式支援的功能。'
+description: '[!DNL Assets]和[!DNL Dynamic Media]支援的檔案格式和MIME型別，以及每種格式支援的功能。'
 mini-toc-levels: 1
 role: User, Admin
 feature: Asset Management,Renditions
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e48f7950-1b6e-4896-8abc-523552e42ed9
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2014'
+source-wordcount: '2016'
 ht-degree: 10%
-
 ---
-
 # [!DNL Adobe Experience Manager Assets]支援的格式 {#assets-supported-formats}
 
 [!DNL Experience Manager Assets]支援廣泛的檔案格式，而且每種功能對於不同的MIME型別都有不同的支援。 若要將[!DNL Assets]與其他符合標準的數位資產管理(DAM)解決方案和案頭軟體整合，請使用Adobe的[!DNL Extensible Metadata Platform] (XMP)。
@@ -67,7 +83,7 @@ ht-degree: 10%
 | DN | ✓ | ✓ | ✓ | | ✓ | ✓ | − | − |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
 | gLTF | ✓ | ✓ | ✓ | | ✓ | − | ✓ | − |
-| 物件 | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
 | 美元z | ✓ | ✓ | ✓ | ✓ | ✓ | − | − | ✓ |
 
@@ -333,12 +349,12 @@ Dynamic Media支援下列3D格式。
 
 另請參閱[在Dynamic Media中使用3D資產](/help/assets/assets-3d.md)。
 
-| 3D副檔名 | 檔案格式 | MIME型別 | 備註 |
+| 3D副檔名 | 檔案格式 | MIME 類型 | 備註 |
 |---|---|---|---|
 | GLB | 二進位GL傳輸 | model/gltf-binary | 將材質和紋理納入為單一資產。 |
-| 物件 | WaveFront 3D物件檔案 | application/x-tgif |  |
+| OBJ | WaveFront 3D物件檔案 | application/x-tgif |  |
 | STL | 立體成型 | application/vnd.ms-pki.stl |  |
-| USDZ | Universal Scene說明Zip封存 | model/vnd.usdz+zip | *僅支援擷取；無法使用檢視或互動。* USDZ是專屬的3D格式，可供Safari和iOS裝置原生檢視。 |
+| USDZ | Universal Scene Description Zip封存 | model/vnd.usdz+zip | *僅支援擷取；無法使用檢視或互動。* USDZ是專屬的3D格式，可供Safari和iOS裝置原生檢視。 |
 
 >[!MORELIKETHIS]
 >

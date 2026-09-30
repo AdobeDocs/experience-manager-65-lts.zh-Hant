@@ -9,14 +9,29 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 42c85231-9e65-4c3c-8b86-3efdaa577161
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '5557'
 ht-degree: 0%
-
 ---
-
 # 使用Java API叫用AEM Forms {#invoking-aem-forms-using-the-javaapi}
 
 **本檔案中的範例和範例僅適用於JEE環境上的AEM Forms。**
@@ -423,21 +438,21 @@ Java API支援下列功能：
 
 * **DSC_DEFAULT_EJB_ENDPOINT：**&#x200B;如果您使用EJB連線模式，此值代表部署AEM Forms之J2EE應用程式伺服器的URL。 若要從遠端叫用AEM Forms，請指定部署AEM Forms的J2EE應用程式伺服器名稱。 如果您的使用者端應用程式位於相同的J2EE應用程式伺服器上，則可以指定`localhost`。 視建置AEM Forms的J2EE應用程式伺服器而定，請指定下列其中一個值：
 
-   * JBoss： `https://<ServerName>:8080 (default port)`
-   * WebSphere： `iiop://<ServerName>:2809 (default port)`
-   * WebLogic： `t3://<ServerName>:7001 (default port)`
+  * JBoss： `https://<ServerName>:8080 (default port)`
+  * WebSphere： `iiop://<ServerName>:2809 (default port)`
+  * WebLogic： `t3://<ServerName>:7001 (default port)`
 
 * **DSC_DEFAULT_SOAP_ENDPOINT**：如果您使用SOAP連線模式，此值代表叫用要求傳送到的端點。 若要從遠端叫用AEM Forms，請指定部署AEM Forms的J2EE應用程式伺服器名稱。 如果您的使用者端應用程式位於相同的J2EE應用程式伺服器上，您可以指定`localhost` （例如，`http://localhost:8080`）。
 
-   * 如果J2EE應用程式是JBoss，則通訊埠值`8080`適用。 如果J2EE應用程式伺服器是® WebSphere®，請使用連線埠`9080`。 同樣地，如果J2EE應用程式伺服器是WebLogic，請使用連線埠`7001`。 (這些值是預設的連線埠值。 如果您變更連線埠值，請使用適用的連線埠號碼。)
+  * 如果J2EE應用程式是JBoss，則通訊埠值`8080`適用。 如果J2EE應用程式伺服器是® WebSphere®，請使用連線埠`9080`。 同樣地，如果J2EE應用程式伺服器是WebLogic，請使用連線埠`7001`。 (這些值是預設的連線埠值。 如果您變更連線埠值，請使用適用的連線埠號碼。)
 
 * **DSC_TRANSPORT_PROTOCOL**：如果您使用EJB連線模式，請為此值指定`ServiceClientFactoryProperties.DSC_EJB_PROTOCOL`。 如果您使用SOAP連線模式，請指定`ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`。
 * **DSC_SERVER_TYPE**：指定部署AEM Forms的J2EE應用程式伺服器。 有效值為`JBoss`、`WebSphere`、`WebLogic`。
 
-   * 如果您將此連線屬性設為`WebSphere`，則`java.naming.factory.initial`值會設為`com.ibm.ws.naming.util.WsnInitCtxFactory`。
-   * 如果您將此連線屬性設為`WebLogic`，則`java.naming.factory.initial`值會設為`weblogic.jndi.WLInitialContextFactory`。
-   * 同樣地，如果您將此連線屬性設為`JBoss`，則`java.naming.factory.initial`值會設為`org.jnp.interfaces.NamingContextFactory`。
-   * 如果您不想使用預設值，您可以將`java.naming.factory.initial`屬性設定為符合您要求的值。
+  * 如果您將此連線屬性設為`WebSphere`，則`java.naming.factory.initial`值會設為`com.ibm.ws.naming.util.WsnInitCtxFactory`。
+  * 如果您將此連線屬性設為`WebLogic`，則`java.naming.factory.initial`值會設為`weblogic.jndi.WLInitialContextFactory`。
+  * 同樣地，如果您將此連線屬性設為`JBoss`，則`java.naming.factory.initial`值會設為`org.jnp.interfaces.NamingContextFactory`。
+  * 如果您不想使用預設值，您可以將`java.naming.factory.initial`屬性設定為符合您要求的值。
 
   >[!NOTE]
   >
@@ -475,12 +490,12 @@ Java API支援下列功能：
    * `ServiceClientFactoryProperties.DSC_SERVER_TYPE`列舉值
    * 字串值，指定代管AEM Forms的J2EE應用程式伺服器（例如，如果AEM Forms部署在JBoss上，請指定`JBoss`）。
 
-      1. 若要設定`DSC_CREDENTIAL_USERNAME`連線屬性，請叫用`java.util.Properties`物件的`setProperty`方法，並傳遞下列值：
+     1. 若要設定`DSC_CREDENTIAL_USERNAME`連線屬性，請叫用`java.util.Properties`物件的`setProperty`方法，並傳遞下列值：
 
    * `ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME`列舉值
    * 字串值，指定呼叫AEM Forms所需的使用者名稱
 
-      1. 若要設定`DSC_CREDENTIAL_PASSWORD`連線屬性，請叫用`java.util.Properties`物件的`setProperty`方法，並傳遞下列值：
+     1. 若要設定`DSC_CREDENTIAL_PASSWORD`連線屬性，請叫用`java.util.Properties`物件的`setProperty`方法，並傳遞下列值：
 
    * `ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD`列舉值
    * 字串值，指定對應的密碼值
@@ -887,7 +902,7 @@ c：/temp/input.pdf檔案必須位於使用者端電腦上（而非伺服器電�
 <table>
  <thead>
   <tr>
-   <th><p>MIME型別</p></th>
+   <th><p>MIME 類型</p></th>
    <th><p>說明</p></th>
   </tr>
  </thead>

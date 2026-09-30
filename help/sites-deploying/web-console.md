@@ -9,13 +9,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 55d4f34c-6766-48b7-86a1-689901e8871f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '718'
 ht-degree: 1%
-
 ---
-
 # Web 控制台{#web-console}
 
 Adobe Experience Manager (AEM)中的Web主控台是以[Apache Felix Web管理主控台](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html)為基礎。 Apache Felix是社群努力實施OSGi R4服務平台，其中包括OSGi架構和標準服務。
@@ -65,8 +74,8 @@ Web主控台提供一系列用於維護OSGi套裝的標籤，包括：
 * **組態**
 可讓您更新現有的組態。 這些具有持續性身分(PID)，可以是：
 
-   * AEM的標準與整合功能；若刪除這些值，會傳回預設設定，則需使用這些功能。
-   * 從「工廠組態」建立的執行處理；這些執行處理是由使用者建立的，刪除會移除執行處理。
+  * AEM的標準與整合功能；若刪除這些值，會傳回預設設定，則需使用這些功能。
+  * 從「工廠組態」建立的執行處理；這些執行處理是由使用者建立的，刪除會移除執行處理。
 
 * **工廠組態**
 可讓您建立所需功能物件的例項。

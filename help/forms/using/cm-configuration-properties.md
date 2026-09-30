@@ -8,13 +8,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 23be6248-1013-488e-91e6-ac1f6fb7da50
-source-git-commit: c714e51f0c0368988ce552969747ab5fce5c186f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '816'
 ht-degree: 3%
-
 ---
-
 # 通訊管理設定屬性 {#correspondence-management-configuration-properties}
 
 若要設定這些屬性，請在瀏覽器中開啟下列URL： `https://<server>:<port>/<contextPath>/system/console/configMgr`並選取&#x200B;**通訊管理設定**。
@@ -48,7 +61,7 @@ ht-degree: 3%
    <td><p>任何數字</p> </td>
   </tr>
   <tr>
-   <td>轉譯型別</td>
+   <td>轉譯類型</td>
    <td>應用程式用來呈現字母預覽的轉譯型別。 </td>
    <td>HTML轉譯</td>
    <td>HTML轉譯/ PDF轉譯</td>
@@ -68,7 +81,7 @@ ht-degree: 3%
   <tr>
    <td><p>目標醒目提示色彩</p> </td>
    <td><p>應用程式中的目標反白顯示顏色。</p> </td>
-   <td><p>90；155；245</p> </td>
+   <td><p>90;155;245</p> </td>
    <td><p>R；G；B格式的任何RGB顏色</p> </td>
   </tr>
   <tr>
@@ -80,7 +93,7 @@ ht-degree: 3%
   <tr>
    <td><p>內容反白顯示色彩</p> </td>
    <td><p>應用程式中的內容反白顯示顏色。</p> </td>
-   <td><p>210；225；245</p> </td>
+   <td><p>210;225;245</p> </td>
    <td><p>R；G；B格式的任何RGB顏色</p> </td>
   </tr>
   <tr>
@@ -92,7 +105,7 @@ ht-degree: 3%
   <tr>
    <td><p>欄位反白顯示色彩</p> </td>
    <td><p>應用程式中的欄位反白顯示顏色。</p> </td>
-   <td><p>210；225；245</p> </td>
+   <td><p>210;225;245</p> </td>
    <td><p>R；G；B格式的任何RGB顏色</p> </td>
   </tr>
   <tr>
@@ -127,7 +140,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><p>PDF提交型別</p> </td>
-   <td><p>PDF提交型別(從應用程式提交時產生的PDF型別)。</p> </td>
+   <td><p>PDF提交型別（從應用程式提交時產生的PDF型別）。</p> </td>
    <td><p>非互動式</p> </td>
    <td><p>互動/非互動</p> </td>
   </tr>
@@ -152,7 +165,7 @@ ht-degree: 3%
   <tr>
    <td><p>資料顯示格式</p> </td>
    <td><p>指定資料的區域設定特定顯示格式。</p> </td>
-   <td><p>locale=en_US； dateFormat=dd-MM-yyyy； numberDecimalSeparator=.； numberGroupSeparator=，； numberUseGroupSeparator=truelocale=de_DE； dateFormat=dd-MM-yyyy； numberDecimalSeparator=，； numberGroupSeparator=.； numberUseGroupSeparator=truelocale=fr_FR； dateFormat=dd-MM-yyyy； numberDecimalSeparator=，； numberGroupSeparator= ； numberUseGroupSeparator=truelocale=ja_JP； dateFormat=dd-MM-yyy； numberDecimalSeparator=。； numberGroupSeparator=，； numberUseGroupSeparator=true</p> </td>
+   <td><p>locale=en_US； dateFormat=dd-MM-yyyy； numberDecimalSeparator=.； numberGroupSeparator=，； numberUseGroupSeparator=truelocale=de_DE； dateFormat=dd-MM-yyy； numberDecimalSeparator=，； numberUseGroupSeparator=fr_FR； dateFormat=dd-MM-yyy； numberDecimalSeparator=； numberUseGroupSeparator=truelocale=ja_JP； dateFormat=dd-MM-yyyy； numberDecimalSeparator=.； numberGroupSeparator=，； numberUseGroupSeparator=true</p> </td>
    <td><p>--</p> </td>
   </tr>
   <tr>

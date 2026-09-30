@@ -8,20 +8,33 @@ feature: Transaction Reports
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 205394bf-4609-4bdd-a030-974e354f9700
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 4%
-
+source-wordcount: '294'
+ht-degree: 3%
 ---
-
 # 在OSGi上記錄AEM Forms的自訂實作交易 {#record-a-transaction-for-custom-implementations}
 
 ## 套用至 {#applies-to}
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[上的](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/using-communications/record-transaction-custom-implementation)AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/record-transaction-custom-implementation)上的AEM Forms 。
 
 使用TransactionRecorder API來記錄未自動計入交易的動作
 

@@ -4,13 +4,19 @@ description: 瞭解通用編輯器的彈性，以及如何協助您使用AEM 6.5
 feature: Developing
 role: Developer
 exl-id: 495df631-5bdd-456b-b115-ec8561f33488
-source-git-commit: 49922325d3cc993d551683fac1effe9fc9590880
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1320'
 ht-degree: 12%
-
 ---
-
 # 關於通用編輯器 {#universal-editor}
 
 瞭解通用編輯器的彈性，以及如何協助您使用AEM 6.5 LTS強化Headless體驗。
@@ -39,9 +45,9 @@ Universal Editor是一項與AEM搭配使用的服務，可讓您無頭製作內�
 下列專案支援通用編輯器：
 
 * AEM 6.5 LTS GA
-   * 內部部署和Adobe Managed Services (AMS)*託管均受支援。
+  * 內部部署和Adobe Managed Services (AMS)*託管均受支援。
 * [AEM 6.5](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
-   * 支援內部部署和AMS*託管。
+  * 支援內部部署和AMS*託管。
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) （版本`2023.8.13099`或更新版本）
 
 本檔案著重於通用編輯器的AEM 6.5 LTS支援。 若要搭配AEM 6.5 LTS使用通用編輯器，您需要下列專案：
@@ -100,7 +106,7 @@ Universal Editor依賴許多必須設定的服務。
 1. 定義應開啟通用編輯器的內容路徑或`sling:resourceTypes`。
    * 在「**通用編輯器開啟對應**」欄位中，提供通用編輯器的開啟路徑。
    * 在&#x200B;**Sling:resourceTypes （應由通用編輯器**&#x200B;欄位開啟）中，輸入通用編輯器直接開啟的資源清單。
-1. 按一下&#x200B;**儲存**。
+1. 按一下「**儲存**」。
 1. 檢查您的[外部器組態](/help/sites-developing/externalizer.md)，並確定您至少有本機、作者和發佈環境設定，如下列範例所示：
 
    ```text
@@ -129,11 +135,11 @@ Universal Editor依賴許多必須設定的服務。
 範例對應：
 
 * 在 AEM Author 上開啟 `/content/foo` 之下的所有頁面：
-   * `/content/foo:${author}${path}.html?login-token=${token}`
-   * 結果開啟`https://localhost:4502/content/foo/x.html?login-token=<token>`
+  * `/content/foo:${author}${path}.html?login-token=${token}`
+  * 結果開啟`https://localhost:4502/content/foo/x.html?login-token=<token>`
 * 在遠端NextJS伺服器上開啟`/content/bar`下的所有頁面，提供所有變數作為資訊
-   * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
-   * 結果開啟`https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
+  * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
+  * 結果開啟`https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
 
 ### 設定Universal Editor服務 {#set-up-ue}
 

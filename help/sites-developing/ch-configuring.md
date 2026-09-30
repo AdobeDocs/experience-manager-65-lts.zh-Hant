@@ -9,13 +9,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
 exl-id: 00dfc10f-6cdf-4c79-b11e-85c801425858
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1751'
 ht-degree: 1%
-
 ---
-
 # 設定 ContextHub {#configuring-contexthub}
 
 ContextHub是一種用於儲存、操控和呈現內容資料的架構。 如需ContextHub的詳細資訊，請參閱[開發人員檔案](/help/sites-developing/contexthub.md)。 ContextHub取代觸控式UI中的[使用者端內容](/help/sites-administering/client-context.md)。
@@ -92,7 +103,7 @@ AEM提供基礎UI模組型別以及數個範例UI模組型別，您可作為這�
 
 UI模組屬性包含詳細設定，您可以在其中提供模組特定屬性的值。 您可以提供JSON格式的詳細資料設定。 表格中的模組型別欄提供每個UI模組型別所需JSON程式碼相關資訊的連結。
 
-| 模組型別 | 描述 | 存放 |
+| 模組類型 | 說明 | 存放 |
 |---|---|---|
 | [contexthub.base](/help/sites-developing/ch-samplemodules.md#contexthub-base-ui-module-type) | 通用UI模組型別 | 在UI模組屬性中設定 |
 | [contexthub.browserinfo](/help/sites-developing/ch-samplemodules.md#contexthub-browserinfo-ui-module-type) | 顯示瀏覽器的相關資訊 | surferinfo |
@@ -134,7 +145,7 @@ Detail Configuration屬性的值是JSON格式的`config`物件。
 
 AEM提供下列範例商店候選者，您可作為商店的基礎。
 
-| 存放區型別 | 描述 |
+| 存放庫類型 | 說明 |
 |---|---|
 | [aem.segmentation](/help/sites-developing/ch-samplestores.md#aem-segmentation-sample-store-candidate) | 儲存已解析和未解析的ContextHub區段。 自動從ContextHub SegmentManager擷取區段 |
 | [aem.resolvedsegments](/help/sites-developing/ch-samplestores.md#aem-resolvedsegments-sample-store-candidate) | 儲存目前解析的區段。 偵聽ContextHub SegmentManager服務以自動更新存放區 |

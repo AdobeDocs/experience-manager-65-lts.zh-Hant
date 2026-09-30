@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 420dc7d6-0e9e-47be-baef-4c79296eb69a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1817'
 ht-degree: 0%
-
 ---
-
 # 設定Adobe Analytics的視訊追蹤{#configuring-video-tracking-for-adobe-analytics}
 
 有數種方法可用來追蹤視訊事件，其中2種是舊版Adobe Analytics的舊版選項。 這些舊版選項為：舊版里程碑和舊版秒數。
@@ -79,15 +88,15 @@ XX尾碼是定義里程碑的軌跡位移。 例如，指定4、8、16、20和28
    <th>Adobe Analytics屬性</th>
   </tr>
   <tr>
-   <td>eventdata.videoName </td>
+   <td>事件資料。視訊名稱 </td>
    <td>對應至此的變數將包含視訊的<strong>使用者易記的</strong>名稱（<strong>標題</strong>），若在DAM中設定；若未設定，將改為傳送視訊的<strong>檔案名稱</strong>。 只傳送一次，在播放視訊開始時傳送。</td>
   </tr>
   <tr>
-   <td>eventdata.videoFileName </td>
+   <td>事件資料。視訊檔案名稱 </td>
    <td>對應至此的變數將包含檔案名稱。 僅與eventdata.events.a.media.view一起傳送 </td>
   </tr>
   <tr>
-   <td>eventdata.videoFilePath </td>
+   <td>事件資料。視訊檔案路徑 </td>
    <td>對應至此的變數將包含檔案在伺服器上的路徑。 僅與eventdata.events.a.media.view一起傳送 </td>
   </tr>
   <tr>
@@ -153,15 +162,15 @@ XX尾碼是定義里程碑的軌跡位移。 例如，指定4、8、16、20和28
    <th>Adobe Analytics屬性</th>
   </tr>
   <tr>
-   <td>eventdata.videoName </td>
+   <td>事件資料。視訊名稱 </td>
    <td>prop2</td>
   </tr>
   <tr>
-   <td>eventdata.videoFileName </td>
+   <td>事件資料。視訊檔案名稱 </td>
    <td>prop3 </td>
   </tr>
   <tr>
-   <td>eventdata.videoFilePath </td>
+   <td>事件資料。視訊檔案路徑 </td>
    <td>prop4</td>
   </tr>
   <tr>
@@ -293,26 +302,26 @@ eventdata.events.milestoneXX
 
    此外，傳送至Adobe Analytics的資訊不易自訂；只有3個變數可用於對應：
 
-<table>
- <tbody>
-  <tr>
-   <td>eventdata.videoName <br /> </td>
-   <td>對應至此的變數將包含視訊的<strong>使用者易記的</strong>名稱（<strong>標題</strong>），如果在DAM中設定；如果未設定標題，將改為傳送視訊的<strong>檔案名稱</strong>。 只傳送一次，在播放視訊開始時傳送。<br /> </td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFileName </td>
-   <td>對應至此的變數將包含檔案名稱。 只傳送一次，在播放視訊開始時傳送。</td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFilePath </td>
-   <td>對應至此的變數將包含檔案在伺服器上的路徑。 只傳送一次，在播放視訊開始時傳送。</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>eventdata.videoName <br /> </td>
+      <td>對應至此的變數將包含視訊的<strong>使用者易記的</strong>名稱（<strong>標題</strong>），如果在DAM中設定；如果未設定標題，將改為傳送視訊的<strong>檔案名稱</strong>。 只傳送一次，在播放視訊開始時傳送。<br /> </td>
+   </tr>
+   <tr>
+      <td>事件資料。視訊檔案名稱 </td>
+      <td>對應至此的變數將包含檔案名稱。 只傳送一次，在播放視訊開始時傳送。</td>
+   </tr>
+   <tr>
+      <td>事件資料。視訊檔案路徑 </td>
+      <td>對應至此的變數將包含檔案在伺服器上的路徑。 只傳送一次，在播放視訊開始時傳送。</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->您可以開啟視訊以在DAM中編輯，並將&#x200B;**Title**&#x200B;中繼資料欄位設定為所要的名稱，藉此設定視訊的&#x200B;**好記的**&#x200B;名稱。 完成時，您還需要儲存所做的變更。
+   >[!NOTE]
+   >
+   >您可以開啟視訊以在DAM中編輯，並將&#x200B;**Title**&#x200B;中繼資料欄位設定為所要的名稱，藉此設定視訊的&#x200B;**好記的**&#x200B;名稱。 完成時，您還需要儲存所做的變更。
 
 1. 將這些變數對應至prop 1至3
 
@@ -328,7 +337,7 @@ eventdata.events.milestoneXX
 
    * *Length* — 視訊檔案的長度（以秒為單位） (*100*)
 
-   * *播放器名稱* — 用來播放視訊檔案的視訊播放器(*HTML5視訊*)
+   * *播放器名稱* — 用來播放視訊檔案的視訊播放器（*HTML5視訊*）
 
    * *播放的總秒數* — 播放視訊的總秒數(*25*)
 
@@ -350,26 +359,26 @@ eventdata.events.milestoneXX
 
    傳送至Adobe Analytics的資訊較不易自訂。 只有3個變數可用於對應：
 
-<table>
- <tbody>
-  <tr>
-   <td>eventdata.videoName <br /> </td>
-   <td>對應至此的變數將包含視訊的<strong>使用者易記的</strong>名稱（<strong>標題</strong>），如果在DAM中設定；如果未設定標題，將改為傳送視訊的<strong>檔案名稱</strong>。 只傳送一次，在播放視訊開始時傳送。<br /> </td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFileName </td>
-   <td>對應至此的變數將包含檔案名稱。 只傳送一次，在播放視訊開始時傳送。</td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFilePath </td>
-   <td>對應至此的變數將包含檔案在伺服器上的路徑。 只傳送一次，在播放視訊開始時傳送。</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>eventdata.videoName <br /> </td>
+      <td>對應至此的變數將包含視訊的<strong>使用者易記的</strong>名稱（<strong>標題</strong>），如果在DAM中設定；如果未設定標題，將改為傳送視訊的<strong>檔案名稱</strong>。 只傳送一次，在播放視訊開始時傳送。<br /> </td>
+   </tr>
+   <tr>
+      <td>事件資料。視訊檔案名稱 </td>
+      <td>對應至此的變數將包含檔案名稱。 只傳送一次，在播放視訊開始時傳送。</td>
+   </tr>
+   <tr>
+      <td>事件資料。視訊檔案路徑 </td>
+      <td>對應至此的變數將包含檔案在伺服器上的路徑。 只傳送一次，在播放視訊開始時傳送。</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->您可以開啟視訊以在DAM中編輯，並將&#x200B;**Title**&#x200B;中繼資料欄位設定為所要的名稱，藉此設定視訊的&#x200B;**好記的**&#x200B;名稱。 完成時，您還需要儲存所做的變更。
+   >[!NOTE]
+   >
+   >您可以開啟視訊以在DAM中編輯，並將&#x200B;**Title**&#x200B;中繼資料欄位設定為所要的名稱，藉此設定視訊的&#x200B;**好記的**&#x200B;名稱。 完成時，您還需要儲存所做的變更。
 
 1. 將這些變數對應至prop1、prop2和prop3
 

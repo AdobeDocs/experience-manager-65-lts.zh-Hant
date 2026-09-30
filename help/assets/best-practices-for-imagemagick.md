@@ -6,13 +6,27 @@ role: Admin
 feature: Renditions,Developer Tools
 solution: Experience Manager, Experience Manager Assets
 exl-id: 258c0d5e-ce2a-48c5-be79-bf5fac70ca96
-source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 0%
-
 ---
-
 # 安裝並設定ImageMagick以搭配[!DNL Experience Manager Assets]使用 {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
 ImageMagick是用來建立、編輯、撰寫或轉換點陣圖影像的軟體外掛程式。 它能夠以各種格式（超過200種）讀寫影像，包括PNG、JPEG、JPEG-2000、GIF、TIFF、DPX、EXR、WebP、Postscript、PDF和SVG。 使用ImageMagick來調整影像大小、翻轉、鏡射、旋轉、扭曲、傾斜和變形。 您也可以使用ImageMagick調整影像顏色、套用各種特殊效果，或繪製文字、線條、多邊形、橢圓和曲線。

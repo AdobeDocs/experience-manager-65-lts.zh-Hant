@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 8bf470d5-1824-41d6-80e4-4af1eb6df713
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2212'
 ht-degree: 2%
-
 ---
-
 # 整合Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
 將[Adobe Dynamic Tag Management](https://business.adobe.com/tw/products/experience-platform/adobe-experience-platform.html)與AEM整合，以便您可以使用您的Dynamic Tag Management Web屬性來追蹤AEM網站。 Dynamic Tag Management可讓行銷人員管理用於收集資料的標籤，並在所有數位行銷系統間散發資料。 例如，使用Dynamic Tag Management來收集AEM網站的使用量資料，並散發資料，以便在Adobe Analytics或Adobe Target中進行分析。

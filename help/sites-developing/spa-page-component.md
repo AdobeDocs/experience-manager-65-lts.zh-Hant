@@ -11,13 +11,27 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 470636ce-3934-4aac-80ff-1fe6bd84455e
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 6%
-
+source-wordcount: '718'
+ht-degree: 7%
 ---
-
 
 # SPA 頁面元件{#spa-page-component}
 
@@ -27,7 +41,7 @@ ht-degree: 6%
 
 ## 簡介 {#introduction}
 
-SPA的頁面元件不會透過JSP或HTL檔案和資源物件提供其子元件的HTML元素。 此操作委派給 SPA 框架。子元件的表示會擷取為JSON資料結構（即模型）。 接著，系統就會根據提供的JSON模型將SPA元件新增至頁面。 因此，頁面元件初始內文構成與其預先轉譯的HTML對應內容不同。
+SPA的頁面元件不會透過JSP或HTL檔案和資源物件提供其子元件的HTML元素。 此操作委派給 SPA 框架。 子元件的表示會擷取為JSON資料結構（即模型）。 接著，系統就會根據提供的JSON模型將SPA元件新增至頁面。 因此，頁面元件初始內文構成與其預先轉譯的HTML對應內容不同。
 
 ## 頁面模型管理 {#page-model-management}
 
@@ -42,7 +56,7 @@ SPA的頁面元件不會透過JSP或HTL檔案和資源物件提供其子元件�
 
 ## 通訊資料類型 {#communication-data-type}
 
-通訊資料型別是使用`data-cq-datatype`屬性在AEM頁面元件中設定HTML元素。 當通訊資料型別設為JSON時，GET請求會點選元件的Sling模型端點。 在頁面編輯器中完成更新後，已更新元件的 JSON 表示將傳送到頁面模型庫。然後，頁面模型程式庫會警告SPA有更新。
+通訊資料型別是使用`data-cq-datatype`屬性在AEM頁面元件中設定HTML元素。 當通訊資料型別設為JSON時，GET要求會點選元件的Sling模型端點。 在頁面編輯器中完成更新後，已更新元件的 JSON 表示將傳送到頁面模型庫。 然後，頁面模型程式庫會警告SPA有更新。
 
 **SPA頁面元件 —`body.html`**
 
@@ -84,7 +98,7 @@ SPA的頁面元件不會透過JSP或HTL檔案和資源物件提供其子元件�
 * `cq:wcmmode`：編輯器的WCM模式（例如，頁面、範本）
 * `cq:pagemodel_root_url`：應用程式根模型的URL。 由於子頁面模型是應用程式根模型的片段，因此直接存取子頁面時十分重要。 然後，` [PageModelManager](/help/sites-developing/spa-page-component.md)`會系統地將應用程式初始模型重新組合為從根進入點進入應用程式。
 
-* `cq:pagemodel_router`：啟用或停用` [ModelRouter](/help/sites-developing/spa-routing.md)`資料庫的`PageModelManager`
+* `cq:pagemodel_router`：啟用或停用`PageModelManager`資料庫的` [ModelRouter](/help/sites-developing/spa-routing.md)`
 
 * `cq:pagemodel_route_filters`：以逗號分隔的清單或規則運算式，提供` [ModelRouter](/help/sites-developing/spa-routing.md)`必須忽略的路由。
 

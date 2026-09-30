@@ -9,18 +9,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 7f1b25dd-c58b-4c83-a8f3-2b60dcd478bf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 35%
-
+source-wordcount: '185'
+ht-degree: 33%
 ---
-
 # 啟動{#launches}
 
 啟動可讓您有效率地開發未來版本的內容。
 
-系統隨即會建立啟動，讓您將來的變更準備就緒，以便發佈（同時維護目前頁面）。 在編輯和更新您的啟動頁面後，您將它們提升回來源，然後啟動來源頁面 (頂層)。提升功能會將啟動內容複製回來源頁面，可以手動或自動完成 (視建立和編輯啟動時設定的欄位)。
+系統隨即會建立啟動，讓您將來的變更準備就緒，以便發佈（同時維護目前頁面）。 在編輯和更新您的啟動頁面後，您將它們提升回來源，然後啟動來源頁面 (頂層)。 提升功能會將啟動內容複製回來源頁面，可以手動或自動完成 (視建立和編輯啟動時設定的欄位)。
 
 >[!NOTE]
 >

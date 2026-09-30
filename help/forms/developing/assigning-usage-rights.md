@@ -9,14 +9,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services, Reader Extensions
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: d8027b43-10c7-435c-8fb5-059508966d42
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 621ad6f8-3769-57bb-838c-1d26cfb18d50
+    internal-label: Reader Extensions
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3973'
 ht-degree: 0%
-
 ---
-
 # 指派使用許可權 {#assigning-usage-rights}
 
 **本檔案中的範例和範例僅適用於JEE環境上的AEM Forms。**
@@ -125,14 +142,14 @@ Acrobat Reader DC擴充功能服務將使用許可權套用至PDF檔案後，您
 
    * 使用物件的建構函式建立`ReaderExtensionsOptionSpec`物件。 此物件包含Acrobat Reader DC擴充功能服務所需的執行階段選項。 叫用此建構函式時，您必須指定下列值：
 
-      * 包含要套用至檔案之使用許可權的`UsageRights`物件。
-      * 字串值，指定在Adobe Reader 7.x中開啟啟用許可權的PDF檔案時，使用者看到的訊息。 Adobe Reader 8.0不會顯示此訊息。
+     * 包含要套用至檔案之使用許可權的`UsageRights`物件。
+     * 字串值，指定在Adobe Reader 7.x中開啟啟用許可權的PDF檔案時，使用者看到的訊息。 Adobe Reader 8.0不會顯示此訊息。
 
    * 叫用`ReaderExtensionsServiceClient`物件的`applyUsageRights`方法並傳遞下列值，以套用使用許可權至PDF檔案：
 
-      * 包含套用使用許可權之PDF檔案的`com.adobe.idp.Document`物件。
-      * 字串值，指定可讓您套用使用許可權的認證別名。
-      * 字串值，指定對應的密碼值。 (目前會忽略此引數。 您可以傳遞`null`。)
+     * 包含套用使用許可權之PDF檔案的`com.adobe.idp.Document`物件。
+     * 字串值，指定可讓您套用使用許可權的認證別名。
+     * 字串值，指定對應的密碼值。 (目前會忽略此引數。 您可以傳遞`null`。)
 
    * 包含執行階段選項的`ReaderExtensionsOptionSpec`物件。
 
@@ -173,10 +190,10 @@ Acrobat Reader DC擴充功能服務將使用許可權套用至PDF檔案後，您
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
 
-      * 將AEM表單使用者名稱指派給欄位`ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`。
-      * 將對應的密碼值指派給欄位`ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`。
-      * 將常數值`HttpClientCredentialType.Basic`指派給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`指派給欄位`BasicHttpBindingSecurity.Security.Mode`。
+     * 將AEM表單使用者名稱指派給欄位`ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`。
+     * 將對應的密碼值指派給欄位`ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`。
+     * 將常數值`HttpClientCredentialType.Basic`指派給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`指派給欄位`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 擷取PDF檔案。
 
@@ -198,9 +215,9 @@ Acrobat Reader DC擴充功能服務將使用許可權套用至PDF檔案後，您
    * 將字串值指派給`ReaderExtensionsOptionSpec`物件的`message`資料成員，該字串值會指定在Adobe Reader中開啟啟用許可權的PDF檔案時，使用者看到的訊息。
    * 叫用`ReaderExtensionsServiceClient`物件的`applyUsageRights`方法並傳遞下列值，以套用使用許可權至PDF檔案：
 
-      * 包含套用使用許可權之PDF檔案的`BLOB`物件。
-      * 字串值，指定可讓您套用使用許可權的認證別名。
-      * 字串值，指定對應的密碼值。 (目前會忽略此引數。 您可以傳遞`null`。)
+     * 包含套用使用許可權之PDF檔案的`BLOB`物件。
+     * 字串值，指定可讓您套用使用許可權的認證別名。
+     * 字串值，指定對應的密碼值。 (目前會忽略此引數。 您可以傳遞`null`。)
 
    * 包含執行階段選項的`ReaderExtensionsOptionSpec`物件。
 
@@ -329,10 +346,10 @@ Acrobat Reader DC擴充功能服務將使用許可權套用至PDF檔案後，您
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
 
-      * 將AEM表單使用者名稱指派給欄位`ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`。
-      * 將對應的密碼值指派給欄位`ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`。
-      * 將常數值`HttpClientCredentialType.Basic`指派給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`指派給欄位`BasicHttpBindingSecurity.Security.Mode`。
+     * 將AEM表單使用者名稱指派給欄位`ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`。
+     * 將對應的密碼值指派給欄位`ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`。
+     * 將常數值`HttpClientCredentialType.Basic`指派給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`指派給欄位`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 擷取PDF檔案。
 
@@ -464,10 +481,10 @@ Acrobat Reader DC擴充功能服務將使用許可權套用至PDF檔案後，您
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作來啟用基本的HTTP驗證：
 
-      * 將AEM表單使用者名稱指派給欄位`ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`。
-      * 將對應的密碼值指派給欄位`ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`。
-      * 將常數值`HttpClientCredentialType.Basic`指派給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`指派給欄位`BasicHttpBindingSecurity.Security.Mode`。
+     * 將AEM表單使用者名稱指派給欄位`ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`。
+     * 將對應的密碼值指派給欄位`ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`。
+     * 將常數值`HttpClientCredentialType.Basic`指派給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`指派給欄位`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 擷取PDF檔案。
 

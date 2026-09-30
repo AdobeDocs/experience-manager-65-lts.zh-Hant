@@ -1,17 +1,30 @@
 ---
 title: 作者在AEM中建立內容時的首要步驟
-description: 探索在 AEM 6.5 LTS 中建立內容和編寫的關鍵概念。您也會找到使用標記、範本及其他頁面功能等相關資訊。
+description: 探索在 AEM 6.5 LTS 中建立內容和編寫的關鍵概念。 您也會找到使用標記、範本及其他頁面功能等相關資訊。
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 8fc30cfe-cb10-47ba-911c-e4fdfaa970b5
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '416'
 ht-degree: 7%
-
 ---
-
 # 作者的首要步驟{#first-steps-for-authors}
 
 本節提供當[開始使用Adobe Experience Manager (AEM)編寫內容](/help/sites-authoring/author.md#concept-of-authoring-and-publishing)時，您將使用的主要工作概覽。
@@ -55,7 +68,7 @@ ht-degree: 7%
 
 ### 發佈頁面 {#publishing-a-page}
 
-當您完成編輯頁面後，您將會想要發佈（或啟動）您的頁面[，以便您的網站中的訪客可以使用該頁面。](/help/sites-authoring/publishing-pages.md#main-pars-title-10)
+當您完成編輯頁面後，您將會想要發佈（或啟動）您的頁面[&#128279;](/help/sites-authoring/publishing-pages.md#main-pars-title-10)，以便您的網站中的訪客可以使用該頁面。
 
 ## 其他動作 {#further-actions}
 

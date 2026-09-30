@@ -9,13 +9,27 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 23ffbaa6-1bd9-48c3-afa3-19737bb15de0
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1547'
 ht-degree: 0%
-
 ---
-
 # AEM Forms的架構和部署拓撲 {#architecture-and-deployment-topologies-for-aem-forms}
 
 ## 套用至 {#applies-to}
@@ -36,9 +50,9 @@ AEM Forms的架構包括下列元件：
 * **Forms服務：**&#x200B;提供表單相關功能，例如建立、組合、散發及封存PDF檔案、新增數位簽章以限制檔案的存取權，以及解碼條碼式表單。 這些服務可供AEM中共同部署的自訂程式碼公開使用。
 * **網頁層：** JSP或servlet，建置在通用和表單服務之上，可提供下列功能：
 
-   * **製作前端**：用於製作和管理表單的表單製作和表單管理使用者介面。
-   * **表單轉譯與提交前端**：使用者對面的介面，可供AEM Forms的一般使用者（例如，存取政府網站的公民）使用。 此功能提供表單轉譯（在網頁瀏覽器中顯示表單）和提交功能。
-   * **REST API**： JSP和servlet會匯出表單服務的子集，以供HTTP型使用者端（例如Forms行動SDK）遠端使用。
+  * **製作前端**：用於製作和管理表單的表單製作和表單管理使用者介面。
+  * **表單轉譯與提交前端**：使用者對面的介面，可供AEM Forms的一般使用者（例如，存取政府網站的公民）使用。 此功能提供表單轉譯（在網頁瀏覽器中顯示表單）和提交功能。
+  * **REST API**： JSP和servlet會匯出表單服務的子集，以供HTTP型使用者端（例如Forms行動SDK）遠端使用。
 
 **OSGi上的AEM Forms：** OSGi環境上的AEM Forms是標準的AEM Author或AEM Publish ，且已在其上部署AEM Forms套件。 您可以在[單一伺服器環境、伺服器陣列和叢集設定](/help/sites-deploying/recommended-deploys.md)中的OSGi上執行AEM Forms。 叢集設定僅適用於AEM Author執行個體。
 

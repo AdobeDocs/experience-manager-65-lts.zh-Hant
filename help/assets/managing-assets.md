@@ -9,13 +9,24 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: c4b1960b-6264-43de-9802-3908ce259b2d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 7%
-
+source-wordcount: '129'
+ht-degree: 6%
 ---
-
 # 關於管理Dynamic Media資產 {#managing-assets}
 
 管理Dynamic Media資產（影像、視訊和互動式資產）上傳後，會涉及許多工作，包括預覽、下載或發佈這些資產。

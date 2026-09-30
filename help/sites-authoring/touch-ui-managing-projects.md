@@ -9,13 +9,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 53400e3d-542f-4abc-9909-45eb11b0cfcc
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '970'
 ht-degree: 2%
-
 ---
-
 # 管理專案 {#managing-projects}
 
 在&#x200B;**專案**&#x200B;主控台中，您可以存取和管理您的專案。
@@ -45,7 +58,7 @@ ht-degree: 2%
 
    精靈的![屬性步驟](assets/create-project-wizard-properties.png)
 
-1. 按一下「**建立**」。確認會詢問您是要開啟新專案，還是返回主控台。
+1. 按一下「**建立**」。 確認會詢問您是要開啟新專案，還是返回主控台。
 
 建立專案的程式與所有專案範本相同。 專案型別之間的差異與可用的[使用者角色](/help/sites-authoring/projects.md)和[工作流程有關。](/help/sites-authoring/projects-with-workflows.md)
 
@@ -60,7 +73,7 @@ ht-degree: 2%
 
    ![新增圖磚](assets/project-add-tile.png)
 
-1. 按一下「**建立**」。您的資源已連結至專案，從現在開始，您就可以從專案存取該資源。
+1. 按一下「**建立**」。 您的資源已連結至專案，從現在開始，您就可以從專案存取該資源。
 
 ### 將專案新增至圖磚 {#adding-items-to-a-tile}
 
@@ -107,7 +120,7 @@ Assets會顯示在邊欄中。 完成後，使用邊欄選擇器返回正常檢�
 
 ### 檢視非作用中專案 {#viewing-active-inactive-projects}
 
-若要在作用中和[非作用中專案之間切換，請在](#making-projects-inactive-or-active)專案&#x200B;**主控台中按一下**&#x200B;切換作用中專案&#x200B;**圖示。**
+若要在作用中和[非作用中專案之間切換，請在&#x200B;**專案**&#x200B;主控台中按一下&#x200B;**切換作用中專案**&#x200B;圖示。](#making-projects-inactive-or-active)
 
 ![切換使用中的專案圖示](assets/projects-toggle-active.png)
 
@@ -133,7 +146,7 @@ Assets會顯示在邊欄中。 完成後，使用邊欄選擇器返回正常檢�
 
 ### 停用專案 {#making-projects-inactive-or-active}
 
-如果專案已完成，您可能想要將其標示為非使用中，但仍要保留有關專案的資訊。 [非使用中的專案現在預設會在](#viewing-active-inactive-projects)專案&#x200B;**主控台中顯示**。
+如果專案已完成，您可能想要將其標示為非使用中，但仍要保留有關專案的資訊。 [非使用中的專案現在預設會在&#x200B;**專案**&#x200B;主控台中顯示](#viewing-active-inactive-projects)。
 
 若要停用專案，請執行下列步驟。
 

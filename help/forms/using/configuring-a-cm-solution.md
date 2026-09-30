@@ -8,13 +8,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: da668935-9d16-49e1-8e7a-772fc4040c1d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '307'
 ht-degree: 1%
-
 ---
-
 # 設定通訊管理解決方案 {#configuring-a-correspondence-management-solution}
 
 ## 定義VersionRestoreManagerImpl的作者執行個體URL {#defining-author-instance-url-for-versionrestoremanagerimpl}
@@ -33,7 +46,7 @@ ht-degree: 1%
    >
    >如果負載平衡器前有多個作者執行個體（叢集），請在&#x200B;**[!UICONTROL VersionRestoreManager作者URL]**&#x200B;欄位中指定負載平衡器的URL。
 
-1. 按一下「**[!UICONTROL 儲存]**」。
+1. 按一下&#x200B;**[!UICONTROL 儲存]**。
 
 ## 定義ActivationManagerImpl （公用執行個體啟動管理員）的發佈執行個體URL {#defining-the-publish-instance-url-for-activationmanagerimpl-public-instance-activation-manager}
 
@@ -49,6 +62,6 @@ ht-degree: 1%
 
      `https://<hostname>:<port>:/libs/fd/fdm/content/crud/lc.content.remote.activate.activationManager`
 
-1. 按一下「**[!UICONTROL 儲存]**」。
+1. 按一下&#x200B;**[!UICONTROL 儲存]**。
 
 如需有關設定通訊管理的詳細資訊，請參閱[通訊管理組態屬性](https://helpx.adobe.com/tw/aem-forms/6-2/cm-configuration-properties.html)。

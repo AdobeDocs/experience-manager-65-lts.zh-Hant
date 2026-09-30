@@ -9,13 +9,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
 exl-id: d2f5fc90-7047-4a45-9c82-996f0da60782
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '620'
 ht-degree: 1%
-
 ---
-
 # 整合 Adobe Target{#integrating-with-adobe-target}
 
 作為Adobe Marketing Cloud的一部分，[Adobe Target](https://www.adobe.com/ro/solutions/testing-targeting/testandtarget.html)可讓您透過所有管道的定位和測量，增加內容關聯性。 行銷人員使用Adobe Target來設計和執行線上測試、建立即時對象區段（根據行為）並自動化內容鎖定目標和線上體驗。 AEM已採用Adobe Target Standard中使用的目標定位工作流程。 如果您使用Target，您將熟悉AEM中的目標定位編輯環境。
@@ -52,7 +63,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->保護發佈執行個體上的活動設定節點&#x200B;**cq：ActivitySettings**，使其無法正常使用者存取。 活動設定節點應該只能由處理與Adobe Target的活動同步的服務存取。
+>保護發佈執行個體上的活動設定節點&#x200B;**cq:ActivitySettings**，使其無法正常使用者存取。 活動設定節點應該只能由處理與Adobe Target的活動同步的服務存取。
 >
 >如需詳細資訊，請參閱[與Adobe Target整合的必要條件](/help/sites-administering/target-requirements.md#securing-the-activity-settings-node)。
 
@@ -66,7 +77,7 @@ ht-degree: 1%
 
 將AEM與Adobe Target整合需要Adobe Target、AEM活動管理和AEM受眾管理的知識。 您應熟悉下列資訊：
 
-* Adobe Target (請參閱[Adobe Target檔案](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=zh-Hant))。
+* Adobe Target （請參閱[Adobe Target檔案](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=zh-Hant)）。
 * AEM活動主控台（請參閱[管理活動](/help/sites-authoring/activitylib.md)）。
 * AEM對象（請參閱[管理對象](/help/sites-authoring/managing-audiences.md)）。
 

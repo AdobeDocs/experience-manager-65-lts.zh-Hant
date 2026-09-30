@@ -10,13 +10,24 @@ feature: Interactive Videos
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: caacf3b3-1e12-4ea3-9160-774181aadf41
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2287199-aefe-59f7-9b29-14176a1a51d4
+    internal-label: Interactive Videos
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6172'
+source-wordcount: '6215'
 ht-degree: 3%
-
 ---
-
 # 互動式影片{#interactive-videos}
 
 您可以輕鬆建立互動式視訊（也稱為可購物視訊），以直接從視訊推動轉換。 客戶與影片互動於影片播放器旁的面板中進行，相關服務、資訊或產品縮圖會根據影片中的功能捲動至檢視畫面中。 客戶可以選取縮圖並直接連結至服務，或將專案新增至購物車以立即購買，或連結至網頁以取得詳細資訊。
@@ -33,7 +44,7 @@ ht-degree: 3%
 
 * 如果要暫停視訊並開啟產品的快速檢視，請選取縮圖。 例如，在視訊中選取KitchenAid縮圖影像以體驗混合器的360度旋轉檢視，或放大以檢視混合器詳細資訊。
 
-<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html?lang=zh-Hant. This now needs to call a new interactive video-->
+<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
 ![互動式可購物視訊的影格](assets/chlimage_1-126.png) *互動式可購物視訊的視訊影格擷取。*
 
@@ -63,13 +74,13 @@ NOT FOUND; FIND REPLACEMENT
 
 在部分快速入門工作中尋找&#x200B;**範例**&#x200B;標題。 它包含以這個開始示範網頁為基礎的簡短教學課程，*尚未*&#x200B;新增互動功能：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=zh-Hant](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=zh-Hant)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 範例 **可協助您說明** ，如何將互動式視訊整合在您自己的網站上。
 
 當您完成最後一個範例區段中的教學課程時，最後示範網頁與完全整合的互動式影片看起來會像這樣：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=zh-Hant](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=zh-Hant)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 互動視訊步驟：
 
@@ -188,7 +199,7 @@ NOT FOUND; FIND REPLACEMENT
 
 將上述方法套用至範例網站時，您的網頁會有數個產品縮圖，每個縮圖都有「檢視更多」按鈕：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=zh-Hant](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=zh-Hant)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 啟用頁面上可用的所有產品快速檢視後，您會取得向後端提出之快速檢視要求的清單如下：
 
@@ -257,7 +268,7 @@ NOT FOUND; FIND REPLACEMENT
 1. 將視訊和相關聯的縮圖資產上傳到您想要的資料夾。
 
    請參閱[上傳資產](/help/assets/manage-assets.md)。
-請參閱[使用FTP工作排程](/help/assets/manage-assets.md)上傳資產。
+   請參閱[使用FTP工作排程](/help/assets/manage-assets.md)上傳資產。
 
    現在將互動性新增至您的視訊。
 
@@ -367,9 +378,9 @@ NOT FOUND; FIND REPLACEMENT
 
      使用下列導覽捷徑來快速檢查並微調視訊區段：
 
-      * 若要直接尋找該區段開頭的視訊，請選取開頭的藍色橢圓形。
-      * 若要直接搜尋視訊到該區段的結尾，請選取結尾的藍色橢圓形。
-      * 若要將視訊播放傳回該區段的開頭，請選取整個區段。
+     * 若要直接尋找該區段開頭的視訊，請選取開頭的藍色橢圓形。
+     * 若要直接搜尋視訊到該區段的結尾，請選取結尾的藍色橢圓形。
+     * 若要將視訊播放傳回該區段的開頭，請選取整個區段。
 
    ![chlimage_1-26](assets/chlimage_1-132.png)
 
@@ -498,7 +509,7 @@ NOT FOUND; FIND REPLACEMENT
 
    >[!NOTE]
    >
-   >當您儲存互動式視訊時，會自動 `.vtt` 儲存相關的檔案。 `.vtt`檔案已儲存至&#x200B;**[!UICONTROL Assets]**&#x200B;根目錄的`_VTT`資料夾。 您的互動式視訊必須有檔案和資料夾才能在網站上正確播放。 因此，請勿移動、編輯或刪除資料夾 `_VTT` 或其內容。
+   >當您儲存互動式視訊時，會自動 `.vtt` 儲存相關的檔案。 `.vtt`檔案已儲存至&#x200B;**[!UICONTROL Assets]**&#x200B;根目錄的`_VTT`資料夾。 檔案和資料夾是讓您的互動式影片能在網站上正確播放的必要項目。 因此，請勿移動、編輯或刪除資料夾 `_VTT` 或其內容。
 
 1. 發佈互動式視訊。 發佈作業會建立內嵌程式碼或URL，您最後會將其複製並貼到您的網站體驗中。
 
@@ -542,7 +553,7 @@ NOT FOUND; FIND REPLACEMENT
 
 以示範網站為例：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=zh-Hant](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=zh-Hant)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 請注意，內嵌程式碼為標準版：
 
@@ -573,7 +584,7 @@ NOT FOUND; FIND REPLACEMENT
 
 整合就像移除視訊內嵌程式碼，並從Experience Manager將其取代為互動式視訊內嵌程式碼一樣簡單。 您可以在以下URL看到結果。 雖然它會顯示頁面上顯示的互動式視訊，但尚未與現有的快速檢視整合：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=zh-Hant](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=zh-Hant)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
 ## 將互動式視訊與現有的Quickview整合 {#integrating-an-interactive-video-with-an-existing-quickview}
 
@@ -773,7 +784,7 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 具備完全整合互動式視訊的最終示範網站看起來如下所示：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=zh-Hant](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=zh-Hant)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 ## 使用 Quickview 建立自訂快顯視窗 {#using-quickviews-to-create-custom-pop-ups}
 

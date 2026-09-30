@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6b9b8d8c-8cd5-4c21-9b75-acd74d00354a
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 3%
-
+source-wordcount: '570'
+ht-degree: 4%
 ---
-
 # 雲端服務設定{#cloud-service-configurations}
 
 設定旨在提供儲存服務設定的邏輯和結構。
@@ -31,7 +40,7 @@ ht-degree: 3%
 * 依路徑從Analytics節點參照。
 * 可輕鬆擴充。
 * 具有彈性以因應更複雜的組態，例如[Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)。
-* 相依性支援(例如，[Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)外掛程式需要[Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)設定)。
+* 相依性支援（例如，[Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)外掛程式需要[Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)設定）。
 
 ## 結構 {#structure}
 
@@ -49,8 +58,8 @@ ht-degree: 3%
 
 * 在此底下：
 
-   * 設定範本
-   * 設定元件
+  * 設定範本
+  * 設定元件
 
 範本和元件必須繼承基底範本的`sling:resourceSuperType`：
 
@@ -165,7 +174,7 @@ propertyname
 >
 >根據預設，`EcryptionPostProcessor`只會加密對`/etc/cloudservices`提出的`POST`個請求。
 
-#### 服務頁面的其他屬性jcr：content節點 {#additional-properties-for-service-page-jcr-content-nodes}
+#### 服務頁面jcr:content節點的其他屬性 {#additional-properties-for-service-page-jcr-content-nodes}
 
 <table>
  <tbody>
@@ -175,7 +184,7 @@ propertyname
   </tr>
   <tr>
    <td>componentreference</td>
-   <td>要自動納入頁面中的元件的參照路徑。<br />這用於其他功能和JS包含。<br />這包含在包含<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br />的頁面上的元件（通常在<code>body</code>標籤之前）。<br />若是Adobe Analytics和Adobe Target，我們會使用這個包含其他功能，例如JavaScript呼叫以追蹤訪客行為。</td>
+   <td>要自動包含在頁面中的元件的參考路徑。<br /> 這用於其他功能和JS包含。<br /> 這包括包含<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br />的頁面上的元件（通常在<code>body</code>標籤之前）。<br /> 若是Adobe Analytics和Adobe Target，我們會使用這一點來包含其他功能，例如追蹤訪客行為的JavaScript呼叫。</td>
   </tr>
   <tr>
    <td>說明</td>
@@ -216,7 +225,7 @@ propertyname
 
 預設會提供下列服務：
 
-* [追蹤器代碼片段](/help/sites-administering/external-providers.md) (Google、WebTrends等)
+* [追蹤器代碼片段](/help/sites-administering/external-providers.md) （Google、WebTrends等）
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [Test&amp;Target](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
 <!-- Search&Promote is end of life as of September 1, 2022 * [Search&Promote](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote) -->

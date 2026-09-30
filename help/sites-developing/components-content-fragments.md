@@ -11,13 +11,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Content Fragments
 role: Developer
 exl-id: 2196af09-8053-49c3-8a23-caf03bb9a39d
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 0%
-
+source-wordcount: '1004'
+ht-degree: 2%
 ---
-
 # 內容片段的元件{#components-for-content-fragments}
 
 ## 片段編寫的元件 {#components-for-fragment-authoring}
@@ -40,7 +54,7 @@ ht-degree: 0%
 >
 >另請參閱[轉譯專用內容片段設定元件](/help/sites-developing/content-fragments-config-components-rendering.md)以取得進一步資訊。
 
-Adobe Experience Manager (AEM)內容片段是[建立並管理為不受頁面影響的資產](/help/assets/content-fragments/content-fragments.md)。 它們可讓您建立管道中性內容，連同（可能特定於管道）變數。 [您接著可以在編寫內容頁面時，使用這些片段及其變數](/help/sites-authoring/content-fragments.md)。 您也可以[將現有內容片段資產從資產瀏覽器拖曳至頁面](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) （如同其他資產型元件，例如基礎元件影像）來使用現有內容片段資產。 現成可用的內容片段元件只會顯示參照內容片段的一個[元素](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)。 使用元件對話方塊，您可以定義要在頁面上顯示的[元素、變數和片段段落](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)的範圍。
+Adobe Experience Manager(AEM)內容片段會建 [立並管理為不受頁面影響的資產](/help/assets/content-fragments/content-fragments.md)。 它們可讓您建立管道中性內容，連同（可能特定於管道）變數。 [您接著可以在編寫內容頁面時，使用這些片段及其變數](/help/sites-authoring/content-fragments.md)。 您也可以[將現有內容片段資產從資產瀏覽器拖曳至頁面](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) （如同其他資產型元件，例如基礎元件影像）來使用現有內容片段資產。 現成可用的內容片段元件只會顯示參照內容片段的一個[元素](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)。 使用元件對話方塊，您可以定義要在頁面上顯示的[元素、變數和片段段落](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)的範圍。
 
 >[!NOTE]
 >
@@ -81,21 +95,21 @@ Adobe Experience Manager (AEM)內容片段是[建立並管理為不受頁面影�
 * 由三個段落組成的內容片段例項
 * 而且有些內容已經插入在第二段之後
 
-   * 這表示內容會儲存在第二個parsys中。
+  * 這表示內容會儲存在第二個parsys中。
 
 基本上，如果此例項的段落結構有所變更（透過變更顯示的變化、元素或段落範圍），可能會影響內容片段內容時顯示的中間內容：
 
 * 會進行編輯，並在第二段之前新增另一個段落：
 
-   * 中間內容會顯示在新建的段落之後（第二個parsys現在會儲存新建的段落）。
+  * 中間內容會顯示在新建的段落之後（第二個parsys現在會儲存新建的段落）。
 
 * 已編輯並移除第二段：
 
-   * 中間內容會顯示在先前為第三個的段落之後（第二個parsys現在會保留前一個第三個段落）。
+  * 中間內容會顯示在先前為第三個的段落之後（第二個parsys現在會保留前一個第三個段落）。
 
 * 設定為只顯示第一段：
 
-   * 不會顯示中間內容（由於新設定，第二個parsys不再呈現）。
+  * 不會顯示中間內容（由於新設定，第二個parsys不再呈現）。
 
 ### 自訂內容片段元件 {#customizing-the-content-fragment-component}
 
@@ -104,9 +118,9 @@ Adobe Experience Manager (AEM)內容片段是[建立並管理為不受頁面影�
 * 重複使用HTL演算指令碼及其關聯的POJO，以便檢視中間內容功能的實作方式。
 * 重複使用內容片段節點： `cq:editConfig`
 
-   * `afterinsert`/ `afteredit`/ `afterdelete`接聽程式是用來觸發JS事件。 這些事件會在`cq.authoring.editor.plugin.cfm`使用者端資料庫中處理，以在側面板中顯示關聯內容。
-   * `cq:dropTargets`已設定為支援拖曳內容片段資產。
-   * `cq:inplaceEditing`已設定為支援在頁面編輯器中編寫內容片段。 片段就地編輯器定義於`cq.authoring.editor.plugin.cfm`使用者端程式庫中，允許快速連結以在[片段編輯器](/help/assets/content-fragments/content-fragments-variations.md)中開啟目前的[元素/變數](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)。
+  * `afterinsert`/ `afteredit`/ `afterdelete`接聽程式是用來觸發JS事件。 這些事件會在`cq.authoring.editor.plugin.cfm`使用者端資料庫中處理，以在側面板中顯示關聯內容。
+  * `cq:dropTargets`已設定為支援拖曳內容片段資產。
+  * `cq:inplaceEditing`已設定為支援在頁面編輯器中編寫內容片段。 片段就地編輯器定義於`cq.authoring.editor.plugin.cfm`使用者端程式庫中，允許快速連結以在[片段編輯器](/help/assets/content-fragments/content-fragments-variations.md)中開啟目前的[元素/變數](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)。
 
 ### 轉譯前的資產重新寫入 {#asset-rewriting-before-rendering}
 

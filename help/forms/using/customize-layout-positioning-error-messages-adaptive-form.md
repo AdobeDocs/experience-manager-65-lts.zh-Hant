@@ -9,13 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
 exl-id: 9347f22a-166f-4403-9ca9-c29139384b2b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '530'
 ht-degree: 0%
-
 ---
-
 # 自訂最適化表單的錯誤訊息佈局和位置{#customize-layout-and-positioning-of-error-messages-of-an-adaptive-form}
 
 您可以自訂最適化表單的錯誤訊息版面配置和位置。 您可以執行下列自訂：
@@ -51,11 +67,11 @@ ht-degree: 0%
 
 ## 建立自訂欄位佈局 {#create-a-custom-field-layout}
 
-1. 開啟CRXDE Lite。 預設URL為https://&#39;[伺服器]：[連線埠]&#39;/crx/de。
+1. 開啟 CRXDE Lite。 預設URL為https://&#39;[伺服器]：[連線埠]&#39;/crx/de。
 1. 將欄位配置從/libs/fd/af/layouts/field節點（例如defaultFieldLayout）複製到/apps節點（例如/apps/af-field-layout）。
 1. 重新命名複製的節點和defaultFieldLayout.jsp檔案。 例如，errorOnRight.jsp。
 
-1. 變更所複製節點的qtip和jcr：description屬性的值。 例如，將屬性的值變更為Error On Right
+1. 變更所複製節點的qtip和jcr:description屬性值。 例如，將屬性的值變更為Error On Right
 
 1. 若要新增樣式和行為，請在/etc節點中建立使用者端程式庫。
 

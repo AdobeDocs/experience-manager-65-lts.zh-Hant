@@ -5,28 +5,42 @@ solution: Experience Manager
 feature: Authoring, AI Assistant, AI Tools
 role: Admin,Developer,User
 exl-id: e653d37f-5802-4b0f-a71b-539b33ad5ca5
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
-workflow-type: ht
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 100%
-
 ---
-
 # 設定 AEM 中的 AI 助理 {#aem-ai-asst-admin-setup}
 
 <!-- An Administrator must configure access, permissions, and settings before users in their organization can use the features in AI Assistant in AEM. -->
 
 <!-- badge: label="Beta" type="Positive" -->
 
-若要在 AEM (Adobe Experience Manager) 中使用 AI 助理，必須擁有透過 AI 助理存取產品知識的權限。此權限預設為「開啟」。
+若要在 AEM (Adobe Experience Manager) 中使用 AI 助理，必須擁有透過 AI 助理存取產品知識的權限。 此權限預設為「開啟」。
 
-如果您想要控制誰可以存取產品知識，請從與您的 Adobe ID 關聯之電子郵件地址寄送電子郵件到 [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com)。Adobe 可啟用使用者層級存取控制。啟用後，您的管理員可以依照下列步驟授予使用者層級存取權。
+如果您想要控制誰可以存取產品知識，請從與您的 Adobe ID 關聯之電子郵件地址寄送電子郵件到 [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com)。 Adobe 可啟用使用者層級存取控制。 啟用後，您的管理員可以依照下列步驟授予使用者層級存取權。
 
-如果您已要求使用者層級存取控制，您的組織必須透過 Adobe Admin Console 選擇加入。產品管理員會建立 (或選擇) 使用者群組，並授予其新的「AI 助理」權限。新增到該群組的所有人都能立即在整個 AEM 中存取 AI 助理。如果目標是讓整個公司都可使用，管理員只需將所有使用者指派給該群組即可。
+如果您已要求使用者層級存取控制，您的組織必須透過 Adobe Admin Console 選擇加入。 產品管理員會建立 (或選擇) 使用者群組，並授予其新的「AI 助理」權限。 新增到該群組的所有人都能立即在整個 AEM 中存取 AI 助理。 如果目標是讓整個公司都可使用，管理員只需將所有使用者指派給該群組即可。
 
-從員工的角度來看，程序簡單明瞭：識別組織中的 Adobe Experience Manager 產品管理員，並請求將其新增至具有 AI 功能的使用者群組。當您出現在該群組時，「助理」圖示便會在您下次登入時自動顯示。
+從員工的角度來看，程序簡單明瞭：識別組織中的 Adobe Experience Manager 產品管理員，並請求將其新增至具有 AI 功能的使用者群組。 當您出現在該群組時，「助理」圖示便會在您下次登入時自動顯示。
 
-管理員應記住正常的 Cloud Manager 治理。在 Admin Console 中保留產品管理員權限，以建立輪廓、管理使用者群組或編輯權限。如果使用者還需要助理的內建&#x200B;**建立支援票證**&#x200B;功能，請將標準&#x200B;**支援管理員**&#x200B;角色 (標準 Admin Console 角色) 新增至相同的個體或群組。
+管理員應記住正常的 Cloud Manager 治理。 在 Admin Console 中保留產品管理員權限，以建立輪廓、管理使用者群組或編輯權限。 如果使用者還需要助理的內建&#x200B;**建立支援票證**&#x200B;功能，請將標準&#x200B;**支援管理員**&#x200B;角色 (標準 Admin Console 角色) 新增至相同的個體或群組。
 
 AEM 中的 AI 助理之設定程序包含下列步驟：
 
@@ -48,14 +62,14 @@ AEM 中的 AI 助理之設定程序包含下列步驟：
 * 處理時間：在 Cloud Manager 中建立的資源可能需要最多 2 分鐘才會出現在 Admin Console 以進行權限設定。
 * 多個輪廓：使用者可以成為多個輪廓的一部分，並且權限會從所有指派的輪廓中合併。
 * 組織範圍：某些權限可能適用於所有方案的組織層級。
-* 預先定義的輪廓：請勿從 Admin Console 刪除預先定義的權限輪廓。
+* 預先定義的設定檔：請勿從 Admin Console 刪除預先定義的權限設定檔。
 
 
 ## &#x200B;1. - 在 Adobe Admin Console 中建立新的產品輪廓{#create-profile}
 
 1. 在 Experience Platform 文件中找到[在 Adobe Admin Console 中建立新的產品輪廓](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/ui/create-profile)的詳細說明，並依循其指示進行操作。
 
-1. 建立新產品輪廓時，您可以對 AI 助理使用下列建議值。
+1. 建立新產品設定檔時，您可以對 AI 助理使用下列建議值。
 
    | 文字欄位 | 建議值 |
    | --- | --- |
@@ -65,9 +79,9 @@ AEM 中的 AI 助理之設定程序包含下列步驟：
    | 通知 | 根據您組織的偏好進行設定 |
 
 
-## &#x200B;2. - 啟用 AI 助理產品知識權限{#enable-permission}
+## 2 - 啟用 AI 助理產品知識權限{#enable-permission}
 
-指派自訂權限給產品輪廓的程序遵循標準 Adobe Cloud Manager 自訂權限工作流程。
+指派自訂權限給產品設定檔的程序遵循標準 Adobe Cloud Manager 自訂權限工作流程。
 
 參考文章：[將自訂權限指派到新的產品輪廓](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
 
@@ -92,7 +106,7 @@ AEM 中的 AI 助理之設定程序包含下列步驟：
    您的產品輪廓現在已啟用 AI 助理產品知識權限。
 
 
-## &#x200B;3. - 建立新的使用者群組 (或使用現有的使用者群組){#create-user-group}
+## 3 - 建立新的使用者群組 (或使用現有的使用者群組){#create-user-group}
 
 1. 執行下列任一項作業：
 
@@ -159,7 +173,7 @@ AEM 中的 AI 助理之設定程序包含下列步驟：
 >[!ENDTABS]
 
 
-## &#x200B;5. - 將產品輪廓指派給使用者群組{#assign-product-profile}
+## 5 - 將產品輪廓指派給使用者群組{#assign-product-profile}
 
 此步驟遵循將產品輪廓指派給使用者群組的標準 Adobe Admin Console 工作流程。
 

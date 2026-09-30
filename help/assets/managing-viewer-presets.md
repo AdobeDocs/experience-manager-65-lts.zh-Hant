@@ -11,13 +11,27 @@ feature: Viewer Presets
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: bb860b28-19ee-4b1c-b420-3f61528156f0
-source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d8e79b3c-92b5-4c4d-a46c-5f16d63a14dc
+    internal-label: Viewer presets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '4537'
-ht-degree: 8%
-
+source-wordcount: '4661'
+ht-degree: 7%
 ---
-
 # 管理檢視器預設集{#managing-viewer-presets}
 
 檢視器預設集是一組設定，可決定使用者在其電腦熒幕和行動裝置上檢視多媒體資產的方式。 如果您是管理員，可以建立檢視器預設集。 設定可供一系列檢視器組態選項使用。 例如，您可以變更檢視器的顯示大小或縮放行為。
@@ -458,15 +472,15 @@ Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統�
    >對於按鈕圖稿，請選擇2x影像並上傳高解析度圖稿。 使用互動式影像和可購物橫幅時，您也可以選取各種現成的熱點按鈕。
 
 1. （選擇性）在[編輯檢視器預設集]頁面頂端附近，選取&#x200B;**[!UICONTROL Desktop]**、**[!UICONTROL Tablet]**&#x200B;或&#x200B;**[!UICONTROL Phone]**，為不同的裝置和熒幕型別定義獨特的視覺樣式。
-1. 在[檢視器預設集編輯器]頁面上，選取&#x200B;**[!UICONTROL 行為]**&#x200B;標籤。或者，您可以在檢視器中選取任何視覺元素，以選取它進行設定。
+1. 在[檢視器預設集編輯器]頁面上，選取&#x200B;**[!UICONTROL 行為]**&#x200B;標籤。 或者，您可以在檢視器中選取任何視覺元素，以選取它進行設定。
 例如，對於*VideoPlayer*&#x200B;型別，在&#x200B;**[!UICONTROL 修飾元]** > **[!UICONTROL 播放]**&#x200B;底下，您可以從下列三個最適化位元速率串流選項中選取：
 
    * **[!UICONTROL 破折號]** — 視訊資料流僅以破折號顯示。 不過，在Safari / iOS裝置上，您必須選取&#x200B;**[!UICONTROL hls]**&#x200B;做為型別。
    * **[!UICONTROL hls]** — 視訊資料流僅作為hls。
    * **[!UICONTROL auto]** — 最佳實務。 建立DASH和HLS串流時，會最佳化儲存空間。 因此，Adobe建議您一律選取&#x200B;**[!UICONTROL auto]**&#x200B;作為播放型別。 視訊串流採用虛線、hls或漸進式，如下列播放順序所示：
-      * 如果瀏覽器支援DASH，則會先使用DASH串流。
-      * 如果瀏覽器不支援DASH，則次要使用HLS串流。
-      * 如果瀏覽器不支援DASH或HLS，則最後會使用漸進式播放。
+     * 如果瀏覽器支援DASH，則會先使用DASH串流。
+     * 如果瀏覽器不支援DASH，則次要使用HLS串流。
+     * 如果瀏覽器不支援DASH或HLS，則最後會使用漸進式播放。
 
 1. 從「選 **[!UICONTROL 定類型]** 」(Selected Type)下拉菜單中，選擇要更改其行為的元件。
 

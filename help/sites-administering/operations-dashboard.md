@@ -10,13 +10,22 @@ feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: fcabfd44-31c2-4884-8dbd-99aa74972cfa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6016'
+source-wordcount: '6022'
 ht-degree: 2%
-
 ---
-
 # 操作控制面板 {#operations-dashboard}
 
 ## 簡介 {#introduction}
@@ -107,13 +116,13 @@ AEM 6中有兩種健康狀態檢查型別：
 
    * **名稱：** `sling:resourceType`
 
-      * **型別：** `String`
-      * **值：** `granite/operations/components/mbean`
+     * **型別：** `String`
+     * **值：** `granite/operations/components/mbean`
 
    * **名稱：** `resource`
 
-      * **型別：** `String`
-      * **值：** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
+     * **型別：** `String`
+     * **值：** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
 
    >[!NOTE]
    >
@@ -164,19 +173,19 @@ AEM 6中有兩種健康狀態檢查型別：
 
    * **名稱：** `Composite Health Check`
 
-      * **型別：** `nt:unstructured`
+     * **型別：** `nt:unstructured`
 
    具有以下屬性：
 
    * **名稱：** `sling:resourceType`
 
-      * **型別：** `String`
-      * **值：** `granite/operations/components/mbean`
+     * **型別：** `String`
+     * **值：** `granite/operations/components/mbean`
 
    * **名稱：** `resource`
 
-      * **型別：** `String`
-      * **值：** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
+     * **型別：** `String`
+     * **值：** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
 
    >[!NOTE]
    >
@@ -495,7 +504,7 @@ UI可用來篩選表格中的索引，方法是在畫面左上角的搜尋方塊
 1. **專案清除**&#x200B;維護任務，位於&#x200B;**每週維護期間**&#x200B;功能表下；使用&#x200B;**新增**&#x200B;選項。
 1. **清除臨機任務**&#x200B;維護任務，位於&#x200B;**每週維護期間**&#x200B;功能表下；使用&#x200B;**新增**&#x200B;選項。
 
-每日維護期間的預設時間為上午2:00到上午5:00。設定為在每週維護期間執行的工作，會在星期六上午1:00至上午2:00之間執行。
+每日維護期間的預設時間為凌晨2:00至下午5:00。設定在每週維護期間執行的工作，會在星期六上午1:00到凌晨2:00之間執行。
 
 您也可以按兩個維護卡片上的齒輪圖示來設定計時：
 

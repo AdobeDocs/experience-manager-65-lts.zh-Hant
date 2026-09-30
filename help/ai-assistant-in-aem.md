@@ -5,20 +5,36 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Authoring, AI Assistant, AI Tools
 role: Admin,Developer,User
 exl-id: 391d46e3-05c9-4af1-8882-ffd39b04a701
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+feature_v2:
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1380'
 ht-degree: 100%
-
 ---
-
 # AEM 6.5 LTS 中的 AI 助理 {#about-ai-assistant-in-aem}
 
 >[!IMPORTANT]
 >
 >未使用 Cloud Manager/Experience Hub 的 AEM 6.5 和 AEM 6.5 LTS 客戶必須聯絡其 Adobe 客戶成功工程師以要求存取 AI 助理。
 
-AEM (Adobe Experience Manager) AI 助理提供對話式介面，旨在簡化於 Adobe Experience Manager 相關查詢尋找答案的流程。 其可以幫助您立即獲得與 AEM 產品相關問題之答案 (*適用於所有使用者*)，並自動支援票證建立 (*適用於支援管理員*)。
+AEM (Adobe Experience Manager) AI 助理提供對話式介面，旨在簡化尋找 Adobe Experience Manager 相關查詢答案的流程。 其可以幫助您立即獲得與 AEM 產品相關問題之答案 (*適用於所有使用者*)，並自動支援票證建立 (*適用於支援管理員*)。
 
 AI 助理支援 AEM as a Cloud Service，包括下列解決方案：
 
@@ -46,7 +62,7 @@ AI 助理會直接嵌入 AEM，並且可透過 AEM Experience Hub、Cloud Manage
 
 >[!NOTE]
 >
->AEM 中的 AI 助理要求會透過 Adobe Identity Management Services (IMS) 驗證。 如需詳細資訊，請參閱 [Adobe Identity Management 服務概觀](https://www.adobe.com/tw/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf)。
+>AEM 中的 AI 助理請求會透過 Adobe Identity Management Services (IMS) 驗證。 如需詳細資訊，請參閱 [Adobe Identity Management 服務概觀](https://www.adobe.com/tw/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf)。
 
 **在 AEM 中存取 AI 助理：**
 
@@ -71,7 +87,7 @@ AEM 中的 AI 助理之設計特別強調隱私權、安全性和治理。
 
 本文概述 AEM 中的 AI 助理可提供的以信任為中心之功能：
 
-* AEM 中的 AI 助理不會使用任何個人資料，包括培訓用資料。
+* AEM 中的 AI 助理不會使用任何個人資料，包括用於培訓目的。
 * AEM 中的 AI 助理無法存取消費者資料。
 * 需要明確權限，才能與 AEM 中的 AI 助理互動。
 * 使用者提供的提示 (問題、查詢等) 不會與其他客戶共用。
@@ -85,11 +101,11 @@ AEM 中的 AI 助理之設計特別強調隱私權、安全性和治理。
 
 | 產品知識 | 適用於所有使用者<br>範例 |
 | :--- | :--- |
-| 針對性的學習 | <ul><li>什麼是通用編輯器？</li><li>如何在 Cloud Manager 中建立方案？</li></ul> |
+| 針對性的學習 | <ul><li>什麼是通用編輯器？</li><li>如何在 Cloud Manager 中建立程式？</li></ul> |
 | 開放式探索 | <ul><li>如何使用通用編輯器？</li><li>是否有辦法將內容從一個環境複製到另一個？</li></ul> |
 | 疑難排解 | <ul><li>為何無法存取通用編輯器？</li><li>為何我的管道會失敗？</li></ul> |
 | **支援票證建立** | **僅適用於支援管理員&#x200B;**<br>**範例** |
-| 自動建立支援票證，擷取 AI 助理聊天歷史記錄與內容 | <ul><li>為我建立支援票證。</li></ul> |
+| 自動建立支援票證，擷取 AI 助理聊天歷史記錄與情境 | <ul><li>為我建立支援票證。</li></ul> |
 | 擷取支援票證的狀態 | <ul><li>顯示我已開啟的所有支援票證。</li><li>顯示票證「E-----------」的狀態</li></ul> |
 
 {style="table-layout:auto"}
@@ -102,7 +118,7 @@ AEM 中的 AI 助理之設計特別強調隱私權、安全性和治理。
 * 以簡潔明瞭的方式清楚說明您的任務或問題。
 * 為增進理解度，請避免含糊不清的措辭或過於複雜的語法。
 * 加入您任務或問題的相關內容，因為此方法有助 AEM 中的 AI 助理提供更精確及相關的答案。
-例如，在您的提示中，為您目前使用的 AEM 解決方案命名為 Sites、Assets、Dynamic Media、Edge Delivery Services、Cloud Manager 或 Forms 會有所幫助。
+例如，在您的提示中，指出您正在使用的 AEM 解決方案 (例如 Sites、Assets、Dynamic Media、Edge Delivery Services、Cloud Manager 或 Forms) 會有所幫助。
 
 ### 不支援的問題範例 {#ai-unsupported-questions}
 
@@ -135,9 +151,9 @@ See also [Custom Permissions](/help/implementing/cloud-manager/custom-permission
 -->
 
 
-### 在 AEM 對話中開始使用 AI 助理
+### 開始在 AEM 中與 AI 助理對話
 
-您可以在 AEM 中重設 AI 助理，並在想要變更主題時開始新對話。 在為失敗的查詢進行疑難排解或提供不正確的資訊時，此功能特別實用。
+您可以在 AEM 中重設 AI 助理，並在想要變更主題時開始新對話。 當您要對失敗或提供錯誤資訊的查詢進行疑難排解時，此功能特別實用。
 
 **在 AEM 對話中開始使用 AI 助理：**
 

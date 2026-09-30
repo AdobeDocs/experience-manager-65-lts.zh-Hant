@@ -5,13 +5,29 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
 exl-id: 5d1bd8c9-2d9b-47a5-9204-9328eadfb102
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 1%
-
+source-wordcount: '1911'
+ht-degree: 0%
 ---
-
 # 使用[!DNL Adobe Launch]的Analytics {#analyticsusingadobelaunch}
 
 AEM Forms與[Adobe Analytics](https://experienceleague.adobe.com/zh-hant/docs/analytics-learn/tutorials/overview)整合，可讓您擷取及追蹤已發佈表單的績效量度。 分析這些量度是為了讓業務使用者深入瞭解一般使用者行為，並最佳化資料擷取體驗。 您可以透過Adobe Analytics for Adaptive Forms擷取及追蹤已登入和未登入（匿名）使用者的行為。
@@ -164,7 +180,7 @@ AEM Forms與[Adobe Analytics](https://experienceleague.adobe.com/zh-hant/docs/an
 
 1. 在&#x200B;**[!UICONTROL 動作]**&#x200B;區段中，選取+並指定&#x200B;**[!UICONTROL Adobe Analytics]**&#x200B;作為擴充功能名稱。
 
-1. 選取&#x200B;**[!UICONTROL 清除變數]**&#x200B;作為動作型別。選取&#x200B;**[!UICONTROL 保留變更]**。執行這些步驟後，**[!UICONTROL 動作]**&#x200B;區段顯示為：
+1. 選取&#x200B;**[!UICONTROL 清除變數]**&#x200B;作為動作型別。 選取&#x200B;**[!UICONTROL 保留變更]**。 執行這些步驟後，**[!UICONTROL 動作]**&#x200B;區段顯示為：
    ![動作設定](/help/forms/using/assets/actions-config.png)
 
    根據您的需求自訂&#x200B;**[!UICONTROL 動作]**&#x200B;區段。 例如，您可以在「動作」流程中定義兩個&#x200B;**傳送信標**&#x200B;步驟，將資料傳送至[!DNL Adobe Analytics]，並在一個步驟中將它視為頁面檢視，將資料傳送至[!DNL Adobe Analytics]，並在第二個步驟中不要將其視為頁面檢視。
@@ -238,8 +254,8 @@ AEM Forms與[Adobe Analytics](https://experienceleague.adobe.com/zh-hant/docs/an
 為最適化表單啟用[!DNL Adobe Analytics]後，如果AEM Forms和[!DNL Adobe Analytics]之間有適當的資料事件流程，您可以[驗證](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/implement-in-websites/implement-solutions/analytics#validate-the-page-view-beacon)。 AEM Forms與Adobe Analytics的整合已完成。 您現在可以[在Adobe Analytics](#view-reports-adobe-analytics)中設定和檢視報告。
 
 >[!NOTE]
+>
 >如果同時啟用使用Cloud Service Framework的[Analytics](/help/forms/using/configure-analytics-forms-documents.md)和使用Adobe Launch的&#x200B;**Analytics**&#x200B;功能，則優先使用Adobe Launch的&#x200B;**Analytics**。
-> 
 
 ### 建立規則以擷取自訂事件（選用） {#capture-custom-events}
 

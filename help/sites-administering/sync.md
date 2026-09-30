@@ -10,13 +10,25 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b7b1bce6-9cea-4f13-955f-f9e361f298bf
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2340'
-ht-degree: 2%
-
+source-wordcount: '2351'
+ht-degree: 3%
 ---
-
 # 使用者同步{#user-synchronization}
 
 ## 簡介 {#introduction}
@@ -77,24 +89,24 @@ ht-degree: 2%
 
 * [AEM平台更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=zh-Hant)
 
-### &#x200B;1. Apache Sling散發代理程式 — 同步代理程式工廠 {#apache-sling-distribution-agent-sync-agents-factory}
+### &#x200B;1. Apache Sling 分配代理 - 同步代理工廠 {#apache-sling-distribution-agent-sync-agents-factory}
 
 **啟用使用者同步**
 
 * 作者&#x200B;**上的**
 
-   * 以系統管理員許可權登入
-   * 存取[網頁主控台](/help/sites-deploying/configuring-osgi.md)
+  * 以系統管理員許可權登入
+  * 存取[網頁主控台](/help/sites-deploying/configuring-osgi.md)
 
-      * 例如，[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+    * 例如，[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
-   * 尋找`Apache Sling Distribution Agent - Sync Agents Factory`
+  * 尋找`Apache Sling Distribution Agent - Sync Agents Factory`
 
-      * 選取現有組態，以便開啟它進行編輯（鉛筆圖示）
-驗證`name`： **`socialpubsync`**
+    * 選取現有組態，以便開啟它進行編輯（鉛筆圖示）
+      驗證`name`： **`socialpubsync`**
 
-      * 選取`Enabled`核取方塊
-      * 選取`Save`
+    * 選取`Enabled`核取方塊
+    * 選取`Save`
 
 ![Apache Sling散發代理程式](assets/chlimage_1-20.png)
 
@@ -106,19 +118,19 @@ ht-degree: 2%
 
 * 每個發佈執行個體上的&#x200B;**&#x200B;**
 
-   * 以系統管理員許可權登入
-   * 存取[安全性主控台](/help/sites-administering/security.md)
+  * 以系統管理員許可權登入
+  * 存取[安全性主控台](/help/sites-administering/security.md)
 
-      * 例如，[https://localhost:4503/useradmin](https://localhost:4503/useradmin)
+    * 例如，[https://localhost:4503/useradmin](https://localhost:4503/useradmin)
 
-   * 建立使用者
+  * 建立使用者
 
-      * 例如，`usersync-admin`
+    * 例如，`usersync-admin`
 
-   * 將此使用者新增至&#x200B;**`administrators`**&#x200B;使用者群組
-   * [將此使用者的ACL新增至/home](#howtoaddacl)
+  * 將此使用者新增至&#x200B;**`administrators`**&#x200B;使用者群組
+  * [將此使用者的ACL新增至/home](#howtoaddacl)
 
-      * 限製為`rep:glob=*/activities/*`的`Allow jcr:all`
+    * 限製為`rep:glob=*/activities/*`的`Allow jcr:all`
 
 >[!CAUTION]
 >
@@ -131,17 +143,17 @@ ht-degree: 2%
 
 * 存取CRXDE Lite
 
-   * 例如，[https://localhost:4503/crx/de](https://localhost:4503/crx/de)
+  * 例如，[https://localhost:4503/crx/de](https://localhost:4503/crx/de)
 
 * 選取`/home`節點
 * 在右窗格中，選取`Access Control`索引標籤
 * 若要新增ACL專案，請選取`+`按鈕
 
-   * **主體**： *搜尋為使用者同步處理建立的使用者*
-   * **類型**：`Allow`
-   * **許可權**： `jcr:all`
-   * **限制** `rep:glob`： `*/activities/*`
-   * 選取&#x200B;**確定**
+  * **主體**： *搜尋為使用者同步處理建立的使用者*
+  * **類型**：`Allow`
+  * **許可權**： `jcr:all`
+  * **限制** `rep:glob`： `*/activities/*`
+  * 選取&#x200B;**確定**
 
 * 選取&#x200B;**全部儲存**
 
@@ -152,7 +164,7 @@ ht-degree: 2%
 * [存取許可權管理](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * 疑難排解區段[在回應處理期間修改作業例外狀況](#modify-operation-exception-during-response-processing)。
 
-### &#x200B;3. Adobe Granite發佈 — 加密的密碼傳輸機密提供者 {#adobegraniteencpasswrd}
+### &#x200B;3. Adobe Granite 分配 - 加密密碼傳輸祕密提供者 {#adobegraniteencpasswrd}
 
 **設定許可權**
 
@@ -160,18 +172,18 @@ ht-degree: 2%
 
 * 作者&#x200B;**上的**
 
-   * 以系統管理員許可權登入
-   * 存取[網頁主控台](/help/sites-deploying/configuring-osgi.md)
+  * 以系統管理員許可權登入
+  * 存取[網頁主控台](/help/sites-deploying/configuring-osgi.md)
 
-      * 例如，[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+    * 例如，[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
-   * 尋找`com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
-   * 若要開啟以進行編輯，請選取現有組態（鉛筆圖示）
-驗證`property name`： **`socialpubsync-publishUser`**
+  * 尋找`com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
+  * 若要開啟以進行編輯，請選取現有組態（鉛筆圖示）
+    驗證`property name`： **`socialpubsync-publishUser`**
 
-   * 將使用者名稱與密碼設定為步驟2在[發佈]中建立的[授權使用者](#createauthuser)
+  * 將使用者名稱與密碼設定為步驟2在[發佈]中建立的[授權使用者](#createauthuser)
 
-      * 例如，`usersync-admin`
+    * 例如，`usersync-admin`
 
 ![加密的密碼傳輸機密提供者](assets/chlimage_1-22.png)
 
@@ -181,20 +193,20 @@ ht-degree: 2%
 
 * 每個發佈執行個體&#x200B;**上的**：
 
-   * 以系統管理員許可權登入
-   * 存取[網頁主控台](/help/sites-deploying/configuring-osgi.md)
+  * 以系統管理員許可權登入
+  * 存取[網頁主控台](/help/sites-deploying/configuring-osgi.md)
 
-      * 例如，[https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+    * 例如，[https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
-   * 尋找`Apache Sling Distribution Agent - Queue Agents Factory`
+  * 尋找`Apache Sling Distribution Agent - Queue Agents Factory`
 
-      * 若要開啟以進行編輯，請選取現有組態（鉛筆圖示）
-驗證`Name`： `socialpubsync-reverse`
+    * 若要開啟以進行編輯，請選取現有組態（鉛筆圖示）
+      驗證`Name`： `socialpubsync-reverse`
 
-      * 選取`Enabled`核取方塊
-      * 選取`Save`
+    * 選取`Enabled`核取方塊
+    * 選取`Save`
 
-   * 針對每個發佈執行個體重複&#x200B;**重複**
+  * 針對每個發佈執行個體重複&#x200B;**重複**
 
 ![佇列代理程式Factory](assets/chlimage_1-23.png)
 
@@ -204,19 +216,19 @@ ht-degree: 2%
 
 * 每個發佈執行個體&#x200B;**上的**：
 
-   * 以系統管理員許可權登入
-   * 存取[網頁主控台](/help/sites-deploying/configuring-osgi.md)
+  * 以系統管理員許可權登入
+  * 存取[網頁主控台](/help/sites-deploying/configuring-osgi.md)
 
-      * 例如，[https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+    * 例如，[https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
-   * 尋找&#x200B;**`Adobe Social Sync - Diff Observer Factory`**
+  * 尋找&#x200B;**`Adobe Social Sync - Diff Observer Factory`**
 
-      * 若要開啟以進行編輯，請選取現有組態（鉛筆圖示）
+    * 若要開啟以進行編輯，請選取現有組態（鉛筆圖示）
 
-        驗證`agent name`： `socialpubsync-reverse`
+      驗證`agent name`： `socialpubsync-reverse`
 
-      * 選取`Enabled`核取方塊
-      * 選取`Save`
+    * 選取`Enabled`核取方塊
+    * 選取`Save`
 
 ![比較觀察者處理站](assets/screen-shot_2019-05-24at090809.png)
 
@@ -228,19 +240,19 @@ ht-degree: 2%
 
 * 作者&#x200B;**上的**
 
-   * 以系統管理員許可權登入
-   * 存取[網頁主控台](/help/sites-deploying/configuring-osgi.md)
+  * 以系統管理員許可權登入
+  * 存取[網頁主控台](/help/sites-deploying/configuring-osgi.md)
 
-      * 例如，[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+    * 例如，[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
-   * 尋找`Apache Sling Distribution Trigger - Scheduled Triggers Factory`
+  * 尋找`Apache Sling Distribution Trigger - Scheduled Triggers Factory`
 
-      * 若要開啟以進行編輯，請選取現有組態（鉛筆圖示）
+    * 若要開啟以進行編輯，請選取現有組態（鉛筆圖示）
 
-         * 驗證`Name`： `socialpubsync-scheduled-trigger`
+      * 驗證`Name`： `socialpubsync-scheduled-trigger`
 
-      * 將`Interval in Seconds`設定為所需的間隔
-      * 選取`Save`
+    * 將`Interval in Seconds`設定為所需的間隔
+    * 選取`Save`
 
 ![排定的觸發程式Factory](assets/chlimage_1-24.png)
 
@@ -248,35 +260,35 @@ ht-degree: 2%
 
 預設設定適用於單一發佈執行個體。 由於啟用使用者同步的原因是同步多個發佈執行個體，例如發佈伺服器陣列，因此必須將其他發佈執行個體新增到同步代理程式處理站。
 
-### &#x200B;7. Apache Sling散發代理程式 — 同步代理程式工廠 {#apache-sling-distribution-agent-sync-agents-factory-1}
+### &#x200B;7. Apache Sling 分配代理 - 同步代理工廠 {#apache-sling-distribution-agent-sync-agents-factory-1}
 
 **新增發佈執行個體：**
 
 * 作者&#x200B;**上的**
 
-   * 以系統管理員許可權登入
-   * 存取[網頁主控台](/help/sites-deploying/configuring-osgi.md)
+  * 以系統管理員許可權登入
+  * 存取[網頁主控台](/help/sites-deploying/configuring-osgi.md)
 
-      * 例如，[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+    * 例如，[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
-   * 尋找`Apache Sling Distribution Agent - Sync Agents Factory`
+  * 尋找`Apache Sling Distribution Agent - Sync Agents Factory`
 
-      * 若要開啟以進行編輯，請選取現有組態（鉛筆圖示）
-驗證`Name`： `socialpubsync`
+    * 若要開啟以進行編輯，請選取現有組態（鉛筆圖示）
+      驗證`Name`： `socialpubsync`
 
 ![同步代理程式處理站](assets/chlimage_1-25.png)
 
 * **匯出工具端點**
-每個發佈執行個體都應該有一個匯出工具端點。 例如，如果有2個Publish執行個體（localhost:4503和4504），則應該有兩個專案：
+每個發佈執行個體都應該有一個匯出工具端點。 例如，如果有2個Publish執行個體localhost：4503和4504，則應該有兩個專案：
 
-   * `https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse`
-   * `https://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse`
+  * `https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse`
+  * `https://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse`
 
 * **匯入工具端點**
-每個Publish執行個體都應該有Importer端點。 例如，如果有2個Publish執行個體（localhost:4503和4504），則應該有兩個專案：
+每個Publish執行個體都應該有Importer端點。 例如，如果有2個Publish執行個體localhost：4503和4504，則應該有兩個專案：
 
-   * `https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync`
-   * `https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync`
+  * `https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync`
+  * `https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync`
 
 * 選取`Save`
 
@@ -302,11 +314,11 @@ ht-degree: 2%
 
    * 搜尋並刪除名為&#x200B;*sling.id.file*&#x200B;的檔案
 
-      * 例如，在Linux®系統上：
-        `rm -i $(find . -type f -name sling.id.file)`
+     * 例如，在Linux®系統上：
+       `rm -i $(find . -type f -name sling.id.file)`
 
-      * 例如，在Windows系統上：
-        `use windows explorer and search for *sling.id.file*`
+     * 例如，在Windows系統上：
+       `use windows explorer and search for *sling.id.file*`
 
 1. 啟動發佈執行個體
 
@@ -323,27 +335,27 @@ ht-degree: 2%
 * 在每個AEM發佈執行個體上
 * 存取[網頁主控台](/help/sites-deploying/configuring-osgi.md)
 
-   * 例如，[https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+  * 例如，[https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
 * 找到`Apache Sling Distribution Packaging - Vault Package Builder Factory`
 
-   * `Builder name: socialpubsync-vlt`
+  * `Builder name: socialpubsync-vlt`
 
 * 選取編輯圖示
 * 新增兩個`Package Node Filters`：
 
-   * `/home/users|-.*/.tokens`
-   * `/home/users|-.*/rep:cache`
+  * `/home/users|-.*/.tokens`
+  * `/home/users|-.*/rep:cache`
 
 * 原則處理：
 
-   * 若要以新節點覆寫現有的rep:policy節點，請新增第三個封裝篩選器：
+  * 若要以新節點覆寫現有的rep:policy節點，請新增第三個封裝篩選器：
 
-      * `/home/users|+.*/rep:policy`
+    * `/home/users|+.*/rep:policy`
 
-   * 若要防止發佈原則，請設定
+  * 若要防止發佈原則，請設定
 
-      * `Acl Handling:` `IGNORE`
+    * `Acl Handling:` `IGNORE`
 
 ![Vault Package Builder Factory](assets/vault-package-builder-factory.png)
 
@@ -371,29 +383,29 @@ ht-degree: 2%
 
 * 對作者：
 
-   * 使用[CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)
+  * 使用[CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)
 
-      * 尋找`/var/sling/distribution/packages`中的專案
+    * 尋找`/var/sling/distribution/packages`中的專案
 
-         * 以模式`distrpackage_*`命名的資料夾節點
+      * 以模式`distrpackage_*`命名的資料夾節點
 
-   * 使用[封裝管理員](/help/sites-administering/package-manager.md)
+  * 使用[封裝管理員](/help/sites-administering/package-manager.md)
 
-      * 尋找擱置中的套件（尚未安裝）
+    * 尋找擱置中的套件（尚未安裝）
 
-         * 以模式`socialpubsync-vlt*`命名
+      * 以模式`socialpubsync-vlt*`命名
 
 當發佈佇列為空時，停用使用者同步：
 
 * 作者
 
-   * *取消勾選*1&rbrace;Apache Sling散發代理程式 — 同步代理程式處理站[&#128279;](#apache-sling-distribution-agent-sync-agents-factory)的`Enabled`核取方塊
+  * *取消勾選*1&rbrace;Apache Sling散發代理程式 — 同步代理程式處理站[&#128279;](#apache-sling-distribution-agent-sync-agents-factory)的`Enabled`核取方塊
 
 工作完成時，若要重新啟用使用者同步：
 
 * 作者
 
-   * 檢查[Apache Sling散發代理程式 — 同步代理程式處理站](#apache-sling-distribution-agent-sync-agents-factory)的`Enabled`核取方塊
+  * 檢查[Apache Sling散發代理程式 — 同步代理程式處理站](#apache-sling-distribution-agent-sync-agents-factory)的`Enabled`核取方塊
 
 ### 使用者同步診斷 {#user-sync-diagnostics}
 
@@ -485,19 +497,19 @@ ht-degree: 2%
 
 * 存在使用者和使用者群組的發佈執行個體上：
 
-   * [如果啟用，請停用使用者同步](#how-to-take-user-sync-offline)
-   * [建立`/home`的封裝](/help/sites-administering/package-manager.md#creating-a-new-package)
+  * [如果啟用，請停用使用者同步](#how-to-take-user-sync-offline)
+  * [建立`/home`的封裝](/help/sites-administering/package-manager.md#creating-a-new-package)
 
-      * 編輯套件時
+    * 編輯套件時
 
-         * 篩選器索引標籤：新增篩選器：根路徑： `/home`
-         * 進階標籤： AC處理： `Overwrite`
+      * 篩選器索引標籤：新增篩選器：根路徑： `/home`
+      * 進階標籤： AC處理： `Overwrite`
 
-   * [匯出套件](/help/sites-administering/package-manager.md#downloading-packages-to-your-file-system)
+  * [匯出套件](/help/sites-administering/package-manager.md#downloading-packages-to-your-file-system)
 
 * 在其他Publish執行個體上：
 
-   * [匯入套件](/help/sites-administering/package-manager.md#installing-packages)
+  * [匯入套件](/help/sites-administering/package-manager.md#installing-packages)
 
 若要設定或啟用使用者同步，請移至步驟1： [Apache Sling Distribution Agent - Sync Agents Factory](#apache-sling-distribution-agent-sync-agents-factory)
 
@@ -523,12 +535,12 @@ ht-degree: 2%
 
 * 對作者：
 
-   * [讓使用者同步處理離線](#how-to-take-user-sync-offline)
-   * 依照[步驟7](#apache-sling-distribution-agent-sync-agents-factory)從兩個伺服器清單中移除發佈執行個體：
+  * [讓使用者同步處理離線](#how-to-take-user-sync-offline)
+  * 依照[步驟7](#apache-sling-distribution-agent-sync-agents-factory)從兩個伺服器清單中移除發佈執行個體：
 
-      * `Exporter Endpoints`
-      * `Importer Endpoints`
+    * `Exporter Endpoints`
+    * `Importer Endpoints`
 
-   * 重新啟用使用者同步
+  * 重新啟用使用者同步
 
-      * 檢查[Apache Sling散發代理程式 — 同步代理程式處理站](#apache-sling-distribution-agent-sync-agents-factory)的`Enabled`核取方塊
+    * 檢查[Apache Sling散發代理程式 — 同步代理程式處理站](#apache-sling-distribution-agent-sync-agents-factory)的`Enabled`核取方塊

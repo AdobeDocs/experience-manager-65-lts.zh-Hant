@@ -1,36 +1,54 @@
 ---
 title: 為We.Finance參考網站的住房抵押貸款工作流程設定Microsoft Dynamics 365
-description: 瞭解如何透過最適化表單針對We.Finance參考網站的首頁按揭工作流程使用Microsoft&amp；reg； Dynamics 365服務。
+description: 瞭解如何透過最適化表單針對We.Finance參考網站的住房抵押貸款工作流程使用Microsoft&reg； Dynamics 365服務。
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: develop, Configuration
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 exl-id: 1021fbb4-a12a-4758-8f36-dc9ad73681cd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '415'
 ht-degree: 0%
-
 ---
-
 # 為We.Finance參考網站的住房抵押貸款工作流程設定Microsoft Dynamics 365 {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
 
-瞭解如何透過最適化表單針對We.Finance參考網站的住房抵押貸款工作流程使用Microsoft® Dynamics 365服務
+瞭解如何透過最適化表單針對We.Finance參考網站的住房抵押貸款工作流程使用® Dynamics 365服務
 
 ## 概觀 {#overview}
 
-Microsoft® Dynamics 365是客戶關係管理(CRM)和企業資源規劃(ERP)軟體，提供企業解決方案來建立和管理客戶帳戶、聯絡人、銷售機會、商機和案例。
+® Dynamics 365是客戶關係管理(CRM)和企業資源規劃(ERP)軟體，提供企業解決方案來建立和管理客戶帳戶、聯絡人、銷售機會、商機和案例。
 
-AEM Forms提供雲端服務，以整合Dynamics 365與[Forms資料整合](/help/forms/using/data-integration.md)模組。 您必須先設定Microsoft® Dynamics 365，以與We.Finance參考網站搭配使用，才能透過Microsoft® Dynamics案例使用Home Mortgage應用程式逐步說明。
+AEM Forms提供雲端服務，以整合Dynamics 365與[Forms資料整合](/help/forms/using/data-integration.md)模組。 您必須先設定® Dynamics 365，以與We.Finance參考網站搭配使用，才能透過Microsoft® Dynamics案例使用Home Mortgage應用程式逐步說明。
 
 ## 先決條件 {#prerequisites}
 
 開始設定和設定Dynamics 365之前，請確定您擁有：
 
 * AEM 6.3 Forms Service Pack 1及更新版本
-* Microsoft® Dynamics 365帳戶
-* 已向Microsoft® Azure Active Directory註冊Dynamics 365服務的應用程式
+* ® Dynamics 365帳戶
+* 透過® Azure Active Directory為Dynamics 365服務註冊的應用程式
 * 已註冊應用程式的使用者端ID和使用者端密碼
 
 ## 將住房抵押貸款電腦與您的網站首頁連結 {#link-the-home-mortgage-calculator-with-your-site-home-page}
@@ -57,18 +75,18 @@ AEM Forms提供雲端服務，以整合Dynamics 365與[Forms資料整合](/help/
    >
    >計算器欄位與FDM的繫結是透過We.Finance參考站台套件預先設定。 若要檢視繫結，您可以在撰寫模式中開啟表單，並檢視欄位繫結參考。
 
-1. 若要建立自訂實體來儲存房屋抵押貸款申請者的申請記錄，請將AEMFormsFSIRefsite_1_0.zip解決方案套件匯入您的Microsoft® Dynamics執行個體：
+1. 若要建立自訂實體來儲存房屋抵押貸款申請者的申請記錄，請將AEMFormsFSIRefsite_1_0.zip解決方案套件匯入您的® Dynamics執行個體：
 
    1. 從以下位置下載套件：
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
 
-   1. 將解決方案套件匯入至Microsoft® Dynamics執行個體。 在您的Microsoft® Dynamics執行個體中，移至&#x200B;**設定** > **解決方案**，然後選取&#x200B;**匯入**。
+   1. 將解決方案套件匯入至® Dynamics執行個體。 在您的® Dynamics執行個體中，移至&#x200B;**設定** > **解決方案**，然後選取&#x200B;**匯入**。
 
-1. 若要設定重新網站中使用的使用者聯絡詳細資訊，請將Sarah Rose Contact.CSV套件匯入您的Microsoft® Dynamics執行個體：
+1. 若要設定重新網站中使用的使用者聯絡詳細資訊，請將Sarah Rose Contact.CSV套件匯入您的® Dynamics執行個體：
 
    1. 從以下位置下載套件：
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
-   1. 將套件匯入您的Microsoft® Dynamics執行個體。 在您的Microsoft® Dynamics執行個體中，移至&#x200B;**銷售** > **連絡人**，然後選取&#x200B;**匯入資料**。
+   1. 將套件匯入您的® Dynamics執行個體。 在您的® Dynamics執行個體中，移至&#x200B;**銷售** > **連絡人**，然後選取&#x200B;**匯入資料**。

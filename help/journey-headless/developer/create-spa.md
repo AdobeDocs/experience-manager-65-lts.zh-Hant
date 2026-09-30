@@ -5,13 +5,29 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer
 exl-id: 47e73efa-997d-44d9-bb41-6f550eac137a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 76%
-
+source-wordcount: '1281'
+ht-degree: 75%
 ---
-
 # 如何使用 AEM 建立單頁應用程式 (SPA) {#create-spa}
 
 在[AEM Headless開發人員歷程](overview.md)的選擇性延續，您將瞭解Adobe Experience Manager (AEM)如何將Headless傳送與傳統全棧疊CMS功能結合，以及如何使用AEM的SPA Editor架構建立可編輯的SPA，以及整合外部SPA，以視需要啟用編輯功能。
@@ -29,13 +45,13 @@ ht-degree: 76%
 
 因此，您現在不是使用您的第一個AEM Headless專案，就是已經知道要這樣做。 恭喜！
 
-那麼你為什麼要閱讀這個額外的、選擇性的歷程延續部分呢？您可能會記得，在[快速入門](getting-started.md#integration-levels)中，曾短暫討論AEM如何不僅支援Headless傳送和傳統的全棧疊模型，而且支援結合兩者優勢的混合模型。 雖然不是傳統的 Headless 模型，但這類混合模型可以為特定專案提供前所未有的靈活性。
+那麼你為什麼要閱讀這個額外的、選擇性的歷程延續部分呢？ 您可能會記得，在[快速入門](getting-started.md#integration-levels)中，曾短暫討論AEM如何不僅支援Headless傳送和傳統的全棧疊模型，而且支援結合兩者優勢的混合模型。 雖然不是傳統的 Headless 模型，但這類混合模型可以為特定專案提供前所未有的靈活性。
 
-本文章以您對 AEM Headless 的了解為基礎，深入探討如何建立您自己的單頁應用程式 (SPA)，這些應用程式可在 AEM 中編輯。如此一來，您就可以建立內容並以無周邊方式傳送至SPA，但該SPA在AEM中仍可編輯。
+本文章以您對 AEM Headless 的了解為基礎，深入探討如何建立您自己的單頁應用程式 (SPA)，這些應用程式可在 AEM 中編輯。 如此一來，您就可以建立內容並以無周邊方式傳送至SPA，但該SPA在AEM中仍可編輯。
 
 ## 目標 {#objective}
 
-本文件可協助您了解如何使用 AEM SPA 編輯器框架開發單頁應用程式。閱讀本文件後，您應該：
+本文件可協助您了解如何使用 AEM SPA 編輯器框架開發單頁應用程式。 閱讀本文件後，您應該：
 
 * 了解 SPA 編輯器的基本功能。
 * 了解為 AEM 建立完全可編輯的 SPA 的要求。
@@ -61,7 +77,7 @@ ht-degree: 76%
 
 ## 什麼是 SPA？ {#what-is-a-spa}
 
-單頁應用程式 (SPA) 與傳統頁面的不同之處在於它是在用戶端呈現並且主要由 JavaScript 驅動，依賴 Ajax 呼叫來載入資料和動態更新頁面。在單頁載入時一次擷取大部分或所有內容，並根據使用者與頁面的互動，視需要非同步載入其他資源。
+單頁應用程式 (SPA) 與傳統頁面的不同之處在於它是在用戶端呈現並且主要由 JavaScript 驅動，依賴 Ajax 呼叫來載入資料和動態更新頁面。 在單頁載入時一次擷取大部分或所有內容，並根據使用者與頁面的互動，視需要非同步載入其他資源。
 
 這減少了頁面重新整理的需要，讓使用者擁有順暢、快速且像是使用原生應用程式的體驗。
 
@@ -75,12 +91,12 @@ SPA變得更快速、順暢，更像原生應用程式，不僅對網頁訪客�
 
 ## AEM 如何處理 SPA
 
-在 AEM 開發單頁應用程式是假設前端開發人員在建立 SPA 時有遵守標準最佳做法。身為前端開發人員，如果您遵循這些一般最佳實務和一些AEM特定原則，您的SPA將可搭配AEM及其內容製作功能運作。
+在 AEM 開發單頁應用程式是假設前端開發人員在建立 SPA 時有遵守標準最佳做法。 身為前端開發人員，如果您遵循這些一般最佳實務和一些AEM特定原則，您的SPA將可搭配AEM及其內容製作功能運作。
 
-* **可攜性** - 如同任何元件，SPA 元件應盡可能建置為具可攜性。SPA 應該使用可攜帶和可重複使用的元件建置。
+* **可攜性** - 如同任何元件，SPA 元件應盡可能建置為具可攜性。 SPA 應該使用可攜帶和可重複使用的元件建置。
 * **AEM 促成網站結構** - 前端開發人員建立元件並擁有其內部結構，但依賴 AEM 來定義網站的內容結構。
 * **動態呈現** - 所有呈現都應該是動態的。
-* **動態路由** - SPA 負責路由，AEM 會偵聽並據此進行擷取。任何路由也應該是動態的。
+* **動態路由** - SPA 負責路由，AEM 會偵聽並據此進行擷取。 任何路由也應該是動態的。
 
 如需 AEM 如何處理 SPA 的完整說明，請參閱[其他資源](#additional-resources)章節以取得更多深入文件的連結。
 
@@ -90,13 +106,13 @@ SPA變得更快速、順暢，更像原生應用程式，不僅對網頁訪客�
 
 若要能在 AEM 中編輯 SPA，SPA 的 JSON 輸出與 AEM 存放庫中的內容模型之間必須要有對應，才能儲存內容的變更。
 
-AEM 中的 SPA 支援帶入一個薄 JS 層，在頁面編輯器中載入內容時會與 SPA JS 程式碼互動，如此可以傳送事件，可以啟動編輯控制項的位置以允許進行情境式編輯。此功能是以內容服務 API 端點概念為建置基礎，因為來自 SPA 的內容必須透過內容服務載入。
+AEM 中的 SPA 支援帶入一個薄 JS 層，在頁面編輯器中載入內容時會與 SPA JS 程式碼互動，如此可以傳送事件，可以啟動編輯控制項的位置以允許進行情境式編輯。 此功能是以內容服務 API 端點概念為建置基礎，因為來自 SPA 的內容必須透過內容服務載入。
 
 如需 AEM SPA 編輯器的完整說明，請參閱[其他資源](#additional-resources)章節以取得更多深入文件的連結。
 
 ## 容納現有的 SPA {#existing-spas}
 
-如果您已有 SPA，AEM 支援將其內嵌到 AEM，以便您的內容作者可在 AEM 編輯器看到它。這對於透過內容片段在將會使用內容的最終應用程式內容中檢視他們正在建立的內容可能很有用。
+如果您已有 SPA，AEM 支援將其嵌入到 AEM，以便您的內容作者可在 AEM 編輯器看到它。 這對於透過內容片段在將會使用內容的最終應用程式內容中檢視他們正在建立的內容可能很有用。
 
 此外，只需少量變更，您就可以在 AEM 編輯器中對外部 SPA 進行特定編輯。
 
@@ -124,9 +140,9 @@ RemotePage 元件允許在 AEM 中呈現外部 SPA。
 以下是一些其他資源，它們對本文件提到的一些概念有更深入的探討。
 
 * [AEM Headful 和 Headless 技術](/help/sites-developing/headful-headless.md) - 描述 AEM 提供的不同傳遞模型
-* [SPA 簡介和逐步解說。](/help/sites-developing/spa-walkthrough.md)- 對 AEM 中的 SPA 有很好的介紹
+* [SPA簡介和逐步解說。](/help/sites-developing/spa-walkthrough.md) - AEM中的SPA簡介
 * [開發 SPA 以在 AEM 中使用](/help/sites-developing/spa-architecture.md) - 說明如何開發 SPA 以在 AEM 中使用
-* [SPA 編輯器概述](/help/sites-developing/spa-overview.md) - 詳細說明 SPA 編輯器的運作原理
+* [SPA 編輯器概觀](/help/sites-developing/spa-overview.md) - 詳細說明 SPA 編輯器的運作原理
 * [SPA 參考文件](/help/sites-developing/spa-reference-materials.md) - 開放原始碼 AEM SPA GitHub 專案的 JavaScript API 參考和連結
 * [內容片段](/help/assets/content-fragments/content-fragments.md) - 如何建立內容片段
 * [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) - 一種 Maven 範本，其依照最佳做法建立簡化的 Adobe Experience Manager (AEM) 專案，作為您網站的起點。

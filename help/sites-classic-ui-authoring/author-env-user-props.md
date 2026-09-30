@@ -10,25 +10,34 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 19930920-ffa5-4cfc-a564-ae004320e143
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 13%
-
+source-wordcount: '229'
+ht-degree: 15%
 ---
-
 # 設定帳戶環境{#configuring-your-account-environment}
 
 Adobe Experience Manager (AEM)可讓您設定帳戶及製作環境的特定方面。
 
 使用[帳戶設定](#account-settings)和[使用者偏好設定](#user-preferences)，可以定義下列選項和偏好設定：
 
-* **正在編輯工具列**
+* **編輯工具列**
 選取您是否想要擁有全域編輯工具列。 這個工具列顯示在瀏覽器視窗的頂端，提供您&#x200B;**複製**、**剪下**、**貼上**、**刪除**&#x200B;用於該頁面段落元件的按鈕：
 
-   * 需要時顯示 (預設)
-   * 永遠顯示
-   * 保持隱藏
+  * 需要時顯示 (預設)
+  * 永遠顯示
+  * 保持隱藏
 
 * **模擬為**
 [模擬為](/help/sites-administering/security.md#impersonating-another-user)的功能可讓使用者代表其他使用者工作。
@@ -39,10 +48,10 @@ Adobe Experience Manager (AEM)可讓您設定帳戶及製作環境的特定方�
 * **視窗管理**
 選取：
 
-   * 多視窗（預設）
-頁面會在新視窗中開啟。
-   * 單一視窗
-頁面會在目前視窗中開啟。
+  * 多視窗 (預設)
+    頁面會在新視窗中開啟。
+  * 單一視窗
+    頁面會在目前視窗中開啟。
 
 ## 帳戶設定 {#account-settings}
 

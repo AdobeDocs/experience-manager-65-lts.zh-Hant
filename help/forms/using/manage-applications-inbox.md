@@ -5,13 +5,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 5454ee3d-45fb-4ed2-b2f2-1fa9e2460759
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1091'
 ht-degree: 3%
-
 ---
-
 # 在 AEM 收件匣管理 Forms 應用程式和任務{#manage-forms-applications-and-tasks-in-aem-inbox}
 
 要啟動或觸發以Forms為中心的工作流程，有許多方式之一，就是透過AEM收件匣中的應用程式來進行。 若要讓Forms工作流程在收件匣中成為應用程式，請建立工作流程應用程式。 如需工作流程應用程式和其他啟動Forms工作流程之方法的詳細資訊，請參閱[在OSGi上啟動Forms為中心的工作流程](../../forms/using/aem-forms-workflow.md#launch)。

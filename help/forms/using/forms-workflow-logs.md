@@ -9,13 +9,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 90a44cab-3ecf-4a71-95d4-e8ce2d996980
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '293'
 ht-degree: 5%
-
 ---
-
 # 登入AEM Forms工作流程{#logging-in-aem-forms-workflows}
 
 Forms Workflow步驟提供詳細的記錄檔，可方便您偵錯工作流程相關問題。 啟用AEM Forms工作流程的偵錯記錄以檢視記錄。
@@ -81,7 +95,7 @@ Forms Workflow步驟提供詳細的記錄檔，可方便您偵錯工作流程相
 
 1. 前往AEM Web主控台設定管理員，網址：
 
-   https://&#39;[伺服器]：[連線埠]&#39;/system/console/configMgr
+   https://'[伺服器]：[連線埠]'/system/console/configMgr
 
 1. 選取&#x200B;**[!UICONTROL Sling]** > **[!UICONTROL 記錄檔支援]**。
 1. 選取&#x200B;**[!UICONTROL 新增記錄器。]**

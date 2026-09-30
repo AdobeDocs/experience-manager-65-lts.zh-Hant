@@ -11,18 +11,26 @@ thumbnail: 34350.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 5f6171f8-20ca-4c31-a99f-a5bc07a63baf
-source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 3%
-
+source-wordcount: '934'
+ht-degree: 9%
 ---
-
 # 進階URL設定 {#url}
 
 >[!NOTE]
 >
->搜尋引擎最佳化 (SEO) 已成為許多行銷人員的重點考量。因此，許多AEM專案中的SEO考量都必須解決。 如需詳細資訊，請參閱[SEO和URL管理最佳實務](/help/managing/seo-and-url-management.md)。
+>搜尋引擎最佳化 (SEO) 已成為許多行銷人員的重點考量。 因此，許多AEM專案中的SEO考量都必須解決。 如需詳細資訊，請參閱[SEO和URL管理最佳實務](/help/managing/seo-and-url-management.md)。
 
 [AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components)提供進階設定，可自訂產品和類別頁面的URL。 許多實施會針對搜尋引擎最佳化(SEO)目的自訂這些URL。 以下影片詳細說明如何設定`UrlProvider`服務和[Sling對應](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)的功能，以自訂產品和類別頁面的URL。
 
@@ -105,7 +113,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->此設定必須使用專案使用的外部網域進行調整。 Sling對應是根據主機名稱和網域來運作。 因此，此設定預設為停用，必須在部署之前啟用。 若要這樣做，請根據使用的網域名稱重新命名`hostname.adobeaemcloud.com`中的Sling對應`ui.content/src/main/content/jcr_root/etc/map.publish/https`資料夾，並將`resource.resolver.map.location="/etc/map.publish"`新增到專案的`JcrResourceResolver`設定中來啟用此設定。
+>此設定必須使用專案使用的外部網域進行調整。 Sling對應是根據主機名稱和網域來運作。 因此，此設定預設為停用，必須在部署之前啟用。 若要這樣做，請根據使用的網域名稱重新命名`ui.content/src/main/content/jcr_root/etc/map.publish/https`中的Sling對應`hostname.adobeaemcloud.com`資料夾，並將`resource.resolver.map.location="/etc/map.publish"`新增到專案的`JcrResourceResolver`設定中來啟用此設定。
 
 ## 其他資源
 

@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 163c1f4e-7d90-44dd-84e7-9f02a9508783
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1708'
 ht-degree: 2%
-
 ---
-
 # 將 Dynamic Media 資產新增至頁面{#adding-dynamic-media-assets-to-pages}
 
 若要將動態媒體功能新增至您在網站上使用的資產，您可以直接在頁面上新增&#x200B;**[!UICONTROL 動態媒體]**&#x200B;或&#x200B;**[!UICONTROL 互動媒體]**&#x200B;元件。 進入&#x200B;**[!UICONTROL 設計]**&#x200B;模式並啟用Dynamic Media元件。 然後，您可以將這些元件新增至頁面，並新增資產至元件。 Dynamic Media和互動媒體元件是智慧型的，可知道您是新增影像還是視訊，而可用的選項會據此變更。

@@ -1,19 +1,33 @@
 ---
 title: 中繼資料功能的設定和管理。
-description: 與中繼資料新增和管理相關的 [!DNL Experience Manager Assets] 功能的設定和管理。
+description: 與中繼資料新增和管理相關的[!DNL Experience Manager Assets]功能的設定和管理。
 contentOwner: AG
 role: User, Admin
 feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 43fb8af8-9750-44c1-8e02-34b25b92fd65
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: ed6971a3-2c12-4fd2-81f4-ff329c416250
+    internal-label: Metadata
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2007'
+source-wordcount: '2008'
 ht-degree: 7%
-
 ---
-
 # 在[!DNL Assets]中設定和管理中繼資料功能 {#config-metadata}
 
 | 版本 | 文章連結 |
@@ -264,7 +278,7 @@ To apply a metadata profile globally, follow these steps:
 
 ### 使用資料夾中繼資料結構 {#use-the-folder-metadata-schema}
 
-開啟配置了資料夾元資料結構描述的資料夾的屬性。 **[!UICONTROL 資料夾中繼資料]**&#x200B;索引標籤會顯示在資料夾[!UICONTROL 內容]頁面中。 要查看資料夾元資料結構表單，請選擇此頁籤。
+開啟配置了資料夾元資料結構描述的資料夾的屬性。 **[!UICONTROL 資料夾中繼資料]**&#x200B;索引標籤會顯示在資料夾[!UICONTROL 內容]頁面中。 要查看資料夾後設資料結構表單，請選擇此頁籤。
 
 在各個欄位中輸入中繼資料值，然後按一下[儲存]儲存這些值。 **&#x200B;**&#x200B;您指定的值會儲存在CRX存放庫的資料夾節點中。
 

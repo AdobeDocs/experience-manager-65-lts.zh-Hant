@@ -10,13 +10,22 @@ feature: Developing
 role: Developer
 exl-id: 7cdce721-ca00-43ac-a543-85bfad382821
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '533'
 ht-degree: 1%
-
 ---
-
 
 # 自訂Adobe Campaign擴充功能 {#creating-custom-extensions}
 
@@ -167,11 +176,11 @@ AEM提供立即可用的API，可擷取Siteadmin Explorer檢視中任何位置�
 
 對於總管中的每個節點，都有一個API連結至該節點。 例如，對於節點：
 
-* [http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommended](http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends)
+* [http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends](http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends)
 
 API是：
 
-* [http://localhost:4502/content/campaigns/geometrixx/scott-recommended.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
+* [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
 URL **.1.json**&#x200B;的結尾可以根據您想要取得的子層級數目由&#x200B;**.2.json**、**.3.json**&#x200B;取代。 若要取得所有關鍵字，可使用&#x200B;**無限**：
 

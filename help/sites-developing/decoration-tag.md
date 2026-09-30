@@ -1,28 +1,37 @@
 ---
 title: 裝飾標記
-description: 轉譯網頁中的元件時可產生 HTML 元素，將轉譯的元件圍在其中。對於開發人員來說，AEM 提供簡單清晰的邏輯，可控制圍住所含元件的裝飾標記。
+description: 轉譯網頁中的元件時可產生 HTML 元素，將轉譯的元件圍在其中。 對於開發人員來說，AEM 提供簡單清晰的邏輯，可控制圍住所含元件的裝飾標記。
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 085192a0-0415-4861-8bea-a66cd50d9487
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 8%
-
+source-wordcount: '890'
+ht-degree: 10%
 ---
-
 # 裝飾標記{#decoration-tag}
 
-轉譯網頁中的元件時可產生 HTML 元素，將轉譯的元件圍在其中。這主要有兩個用途：
+轉譯網頁中的元件時可產生 HTML 元素，將轉譯的元件圍在其中。 這主要有兩個用途：
 
 * 元件必須以HTML元素包住，才能加以編輯。
 * 包裝元素是用來套用HTML類別，提供：
 
-   * 配置資訊
-   * 樣式資訊
+  * 配置資訊
+  * 樣式資訊
 
-對於開發人員而言，AEM提供簡單清晰的邏輯，可控制包住所含元件的裝飾標籤。 裝飾標籤是否及如何呈現取決於兩個因素的組合，此頁面將深入研究這兩個因素：
+對於開發人員來說，AEM 提供簡單清晰的邏輯，可控制圍住所含元件的裝飾標記。 裝飾標籤是否及如何呈現取決於兩個因素的組合，此頁面將深入研究這兩個因素：
 
 * 元件本身可使用一組屬性來設定其裝飾標籤。
 * 包含元件（HTL、JSP、Dispatcher等）的指令碼可以使用包含引數來定義裝飾標籤的各個層面。
@@ -43,9 +52,9 @@ ht-degree: 8%
 
 * **`cq:htmlTag`節點：**&#x200B;此節點可以新增到元件下，並且可以具有以下屬性：
 
-   * **`cq:tagName {String}`：**&#x200B;這可用來指定用於包住元件的自訂HTML標籤，而非預設DIV元素。
-   * **`class {String}`：**&#x200B;這可用來指定要新增至包裝函式的CSS類別名稱。
-   * 其他屬性名稱將會新增為HTML屬性，其字串值與提供的值相同。
+  * **`cq:tagName {String}`：**&#x200B;這可用來指定用於包住元件的自訂HTML標籤，而非預設DIV元素。
+  * **`class {String}`：**&#x200B;這可用來指定要新增至包裝函式的CSS類別名稱。
+  * 其他屬性名稱將會新增為HTML屬性，其字串值與提供的值相同。
 
 ## 指令碼控制項 {#script-controls}
 

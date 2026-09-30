@@ -5,13 +5,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 92f4946d-1f49-4286-a51e-84b2a46a6b8a
-source-git-commit: f69262246bafca44f88ff15a4c86125f5335507e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '612'
 ht-degree: 0%
-
 ---
-
 # 建立有效的Newsletter登陸頁面{#creating-an-effective-newsletter-landing-page}
 
 有效的電子報登陸頁面可協助您讓儘可能多的使用者註冊您的電子報（或其他電子郵件行銷活動）。 您可以使用從電子報註冊收集到的資訊來取得銷售機會。
@@ -44,7 +55,7 @@ ht-degree: 0%
 
 下列範例中的隱藏欄位提供最低限度的資訊量（電子郵件）；此外，您可以稍後新增更多欄位，但這會影響轉換率。
 
-下列範例是在https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html建立的表單。
+以下範例是在https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html建立的表單。
 
 1. 建立表單。
 

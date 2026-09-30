@@ -9,13 +9,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '5215'
 ht-degree: 16%
-
 ---
-
 # 效能最佳化 {#performance-optimization}
 
 >[!NOTE]
@@ -579,7 +588,7 @@ www.myCompany.com/news/main.large.html
 
 #### 讓用於導覽的影像檔案失效 {#invalidating-image-files-used-for-navigation}
 
-如果您將圖片用於導覽專案，此方法基本上與標題相同，但稍微複雜一點。 將所有導覽影像與目標頁面一起儲存。 如果您將兩張圖片用於一般和活躍情境，可以使用以下指令碼：
+如果您將圖片用於導覽專案，此方法基本上與標題相同，但稍微複雜一點。 將所有導覽影像與目標頁面一起儲存。 如果您將兩張圖片用於一般和作用中狀態，可以使用以下指令碼：
 
 * 正常顯示頁面的指令碼。
 * 處理「.normal」請求並傳回正常圖片的指令碼。
@@ -593,15 +602,17 @@ www.myCompany.com/news/main.large.html
 
 建議您將個人化限制在必要的地方。 以下說明原因：
 
-* 如果您使用可自由地自訂的起始頁，則每次使用者請求該頁面時都必須編寫它。
+* 如果您使用可自由地自訂的起始頁，則每次使用者請求該頁面時都必須重新產生該頁面。
 * 反之，如果您提供 10 個不同起始頁的選擇，您可以快取每一個起始頁，進而提高效能。
 
 >[!TIP]
+>
 >如需設定Dispatcher快取的詳細資訊，請參閱[AEM Dispatcher快取教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html?lang=zh-Hant)及其有關[快取受保護內容](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html?lang=zh-Hant#dispatcher-tips-and-tricks)的章節。
 
 如果您將使用者名稱放在標題列中來個人化每個頁面（例如），則會影響效能。
 
 >[!TIP]
+>
 >如需快取安全內容，請參閱Dispatcher指南中的[快取安全內容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hant)。
 
 關於在單一頁面上混合限制和公開內容，請考慮以下策略：在Dispatcher中使用伺服器端包含，或透過瀏覽器中的Ajax使用使用者端包含。

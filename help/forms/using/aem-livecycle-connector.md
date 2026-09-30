@@ -8,13 +8,27 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: f6530bd3-16cd-4d6b-b92b-6c96f01f1939
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1033'
 ht-degree: 0%
-
 ---
-
 # 將AEM Forms與Adobe LiveCycle連線 {#connecting-aem-forms-with-adobe-livecycle}
 
 Adobe Experience Manager (AEM) LiveCycle Connector可讓您從Adobe Web應用程式和工作流程中，順暢地叫用AEM LiveCycle ES4 Acrobat Services。 LiveCycle提供豐富的使用者端SDK，可讓使用者端應用程式使用Java™ API來啟動LiveCycle服務。 AEM LiveCycle Connector簡化了OSGi環境中使用這些API的程式。
@@ -44,7 +58,7 @@ AEM LiveCycle Connector是[AEM Forms附加元件套件](/help/forms/using/instal
 
 ## 啟動檔案服務 {#starting-document-services}
 
-使用者端應用程式可以使用Java™ API、Web服務、Remoting和REST以程式設計方式啟動LiveCycle服務。 對於Java™使用者端，應用程式可以使用LiveCycle SDK。 LiveCycle SDK提供Java™ API，讓您從遠端啟動這些服務。 例如，若要將Microsoft® Word檔案轉換為PDF，使用者端會啟動GeneratePDFervice。 呼叫流程包含下列步驟：
+使用者端應用程式可以使用Java™ API、Web服務、Remoting和REST以程式設計方式啟動LiveCycle服務。 對於Java™使用者端，應用程式可以使用LiveCycle SDK。 LiveCycle SDK提供Java™ API，讓您從遠端啟動這些服務。 例如，若要將® Word檔案轉換為PDF，使用者端會啟動GeneratePDFervice。 呼叫流程包含下列步驟：
 
 1. 建立ServiceClientFactory執行個體。
 1. 每個服務都會提供使用者端類別。 若要啟動服務，請建立服務的使用者端執行個體。

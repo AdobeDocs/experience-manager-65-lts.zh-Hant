@@ -9,20 +9,29 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 330f5cc5-1af4-4777-b386-b0755e6781df
-source-git-commit: d37df3dc09122909adbb62ede6634939af105e06
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '783'
 ht-degree: 2%
-
 ---
-
 # 管理工作流程{#administering-workflows}
 
 工作流程可讓您自動化Adobe Experience Manager (AEM)活動。 工作流程：
 
 * 由一系列以特定順序執行的步驟組成。
 
-   * 每個步驟都會執行不同的活動；例如等待使用者輸入、啟用頁面或傳送電子郵件訊息。
+  * 每個步驟都會執行不同的活動；例如等待使用者輸入、啟用頁面或傳送電子郵件訊息。
 
 * 可與存放庫中的資產、使用者帳戶和AEM服務互動。
 * 可以協調涉及AEM任何層面的複雜活動。

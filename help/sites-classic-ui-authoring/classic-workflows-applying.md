@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: d2c16908-18c2-4ab9-a1da-6fc072c94bf9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 11%
-
+source-wordcount: '255'
+ht-degree: 10%
 ---
-
 # 將工作流程套用至頁面{#applying-workflows-to-pages}
 
 套用工作流程時，請指定下列資訊：
@@ -25,8 +34,8 @@ ht-degree: 11%
   您可以套用您有權存取的任何工作流程 (由AEM管理員指派)。
 * 選擇性：
 
-   * 提供啟動工作流程原因相關資訊的註解。
-   * 有助於識別使用者收件匣中工作流程例項的標題。
+  * 提供啟動工作流程原因相關資訊的註解。
+  * 有助於識別使用者收件匣中工作流程例項的標題。
 
 >[!NOTE]
 >

@@ -1,17 +1,25 @@
 ---
-title: 移轉至AEM Commerce integration framework (CIF)附加元件
-description: 如何從舊版移轉至AEM Commerce integration framework (CIF)附加元件。
+title: 移轉至AEM Commerce Integration Framework (CIF)附加元件
+description: 如何從舊版移轉至AEM Commerce Integration Framework (CIF)附加元件。
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 847c33c1-17d6-447a-9f2c-91f2a81a3f04
-source-git-commit: 981b175b039fd7ffbddf558a77d2da2fed52ad79
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 4%
-
+source-wordcount: '320'
+ht-degree: 5%
 ---
-
 # Experience Manager附加元件的移轉指南 {#cif-migration}
 
 本指南協助識別您需要為Experience Manager附加元件移轉進行更新的區域。
@@ -30,7 +38,7 @@ CIF附加元件不支援匯入產品目錄資料。 使用CIF附加元件主體�
 
 >[!TIP]
 >
->如果沒有可用的即時API，則應使用具有API的外部產品快取進行整合。 範例[Magento開放原始碼](https://business.adobe.com/tw/products/magento/open-source.html)。
+>如果沒有可用的即時API，則應使用具有API的外部產品快取進行整合。 範例[Magento open-source](https://business.adobe.com/tw/products/magento/open-source.html)。
 
 ## AEM轉譯的產品目錄體驗
 

@@ -5,13 +5,21 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: b749ec33-9a78-41d5-889f-73dbdb33ceed
-source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '726'
 ht-degree: 0%
-
 ---
-
 # 編寫Commerce體驗 {#authoring-commerce-experiences}
 
 ## 概觀 {#overview}
@@ -80,7 +88,7 @@ CIF產品目錄頁面是即時轉譯的虛擬頁面。 因此，不可能內嵌�
 
 ### 存取關聯產品內容 {#associated-content}
 
-如果Universal Editor可辨識頁面上的1:n個產品，側面板會自動顯示「關聯的Commerce內容」索引標籤。 此索引標籤可讓作者快速存取已使用產品標籤的AEM內容(如需詳細資訊，請參閱[以相關AEM內容擴充產品資料](./enrich-product-associated-content.md))。 如果頁面上有多個產品，此標籤會提供下拉式選單，以篩選內容型別和特定產品。 使用內容的運作方式與使用「Assets」標籤中的內容完全相同。
+如果Universal Editor可辨識頁面上的1:n個產品，側面板會自動顯示「關聯的Commerce內容」索引標籤。 此索引標籤可讓作者快速存取已使用產品標籤的AEM內容（如需詳細資訊，請參閱[以相關AEM內容擴充產品資料](./enrich-product-associated-content.md)）。 如果頁面上有多個產品，此標籤會提供下拉式選單，以篩選內容型別和特定產品。 使用內容的運作方式與使用「Assets」標籤中的內容完全相同。
 
 ![產品資料側面板](/help/commerce/cif/assets/authoring/associated-commerce-content-tab.png)
 

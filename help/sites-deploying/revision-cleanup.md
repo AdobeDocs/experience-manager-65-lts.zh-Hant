@@ -9,13 +9,22 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 114a77bc-0b7e-49ce-bca1-e5195b4884dc
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '5313'
+source-wordcount: '5314'
 ht-degree: 0%
-
 ---
-
 # 修訂清除{#revision-cleanup}
 
 ## 簡介 {#introduction}
@@ -167,7 +176,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>決定「線上修訂清除」持續時間的因素為何？</strong></td>
-   <td>因子為： <br />
+   <td>因素包括：<br />
     <ul>
      <li>存放庫大小</li>
      <li>在系統上載入（每分鐘的要求數，特別是寫入作業）</li>
@@ -380,7 +389,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>根據健康狀態檢查與記錄專案，線上修訂清除連續三次未順利完成。 需要什麼才能讓線上修訂清除順利完成？</strong></td>
-   <td>您可以執行數個步驟來尋找及修正問題：<br />
+   <td>您可以採取數個步驟來尋找及修正問題：<br />
     <ul>
      <li>首先，檢查記錄專案<br /> </li>
      <li>根據記錄中的資訊，採取適當的動作：

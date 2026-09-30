@@ -10,13 +10,29 @@ feature: Spin Sets,Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 16b03ca5-c060-4944-ad30-ad0bd350dc52
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: cb008a68-9156-4b10-9c66-391409a53067
+    internal-label: Spin Sets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2001'
+source-wordcount: '2038'
 ht-degree: 9%
-
 ---
-
 # 迴轉集{#spin-sets}
 
 「迴轉集」會模擬實際動作，即旋轉物件來檢查它。 「迴轉集」可讓您從任何角度檢視專案，從任何角度獲得關鍵的視覺細節。
@@ -221,8 +237,8 @@ ht-degree: 9%
 
    * 若要重新排序影像，請將影像拖曳至新位置（選取重新排序圖示以移動專案）。
    * 若要以遞增或遞減順序排序專案，請選取欄標題。
-   * 若要新增資產或更新現有資產，請選取&#x200B;**[!UICONTROL 新增資產]**。導覽至某個資產，選取該資產，然後選取右上角附近的&#x200B;**[!UICONTROL 選取]**。
-如果您刪除Experience Manager用於縮圖的影像，改為其他影像，仍會顯示原始資產。
+   * 若要新增資產或更新現有資產，請選取&#x200B;**[!UICONTROL 新增資產]**。 導覽至某個資產，選取該資產，然後選取右上角附近的&#x200B;**[!UICONTROL 選取]**。
+     如果您刪除Experience Manager用於縮圖的影像，改為其他影像，仍會顯示原始資產。
    * 若要刪除資產，請選取該資產，然後選取&#x200B;**[!UICONTROL 刪除資產]**。
    * 若要套用預設集，請選取「預設集」圖示並選取預設集。
    * 若要刪除整個迴轉集，請導覽至該迴轉集，選取它，然後選取&#x200B;**[!UICONTROL 刪除]**

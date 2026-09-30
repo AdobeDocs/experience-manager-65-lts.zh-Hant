@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 8d53072b-826d-4ff4-843b-09204fb5a455
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1468'
 ht-degree: 39%
-
 ---
-
 # 自訂頁面編寫{#customizing-page-authoring}
 
 >[!CAUTION]
@@ -28,12 +37,12 @@ Adobe Experience Manager (AEM)提供各種機制，可讓您自訂編寫執行�
 
   Clientlibs可讓您擴充預設實作以實現新功能，同時重複使用標準函式、物件和方法。 進行自訂時，您可以在 `/apps.` 下面建立自己的 clientlib。新的 clientlib 必須：
 
-   * 取決於編寫clientlib `cq.authoring.editor.sites.page`
-   * 屬於適當的`cq.authoring.editor.sites.page.hook`類別
+  * 取決於編寫clientlib `cq.authoring.editor.sites.page`
+  * 屬於適當的`cq.authoring.editor.sites.page.hook`類別
 
 * 覆蓋
 
-  覆蓋是以節點定義為基礎，可讓您以您自己的自訂功能（在`/apps`中）覆蓋標準功能（在`/libs`中）。 建立覆蓋時不需要原始的1:1復本，因為[sling資源合併器](/help/sites-developing/sling-resource-merger.md)允許繼承。
+  覆蓋是以節點定義為基礎，可讓您以您自己的自訂功能（在`/apps`中）覆蓋標準功能（在`/libs`中）。 建立覆蓋時不需要1:1的原始復本，因為[sling資源合併器](/help/sites-developing/sling-resource-merger.md)允許繼承。
 
 >[!NOTE]
 >
@@ -151,12 +160,12 @@ GITHUB上的程式碼
 
      例如：
 
-      * `/libs/foundation/components/text/cq:editConfig`
-      * `/libs/foundation/components/image/cq:editConfig`
+     * `/libs/foundation/components/text/cq:editConfig`
+     * `/libs/foundation/components/image/cq:editConfig`
 
-         * 屬性：`editorType`
+       * 屬性：`editorType`
 
-           定義觸發該元件的就地編輯時所使用的內聯編輯器的類型；例如，`text`、`textimage`、`image`、`title`。
+         定義觸發該元件的就地編輯時所使用的內聯編輯器的類型；例如，`text`、`textimage`、`image`、`title`。
 
 1. 編輯器的其他組態詳細資料可使用包含組態的`config`節點和包含必要外掛程式組態詳細資料的`plugin`節點來設定。
 

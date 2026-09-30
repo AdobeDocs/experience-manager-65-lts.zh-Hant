@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e49d1d3d-984c-4b08-b0e5-2016fbff0b80
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
-
 ---
-
 # 建立新的Granite UI欄位元件{#creating-a-new-granite-ui-field-component}
 
 Granite UI提供一系列設計用於表單的元件；這些在Granite UI辭彙中稱為&#x200B;*欄位*。 標準Granite表單元件可在下列位置取得：
@@ -34,16 +43,16 @@ Granite UI提供一系列設計用於表單的元件；這些在Granite UI辭彙
 
 * 伺服器端：
 
-   * 基礎元件的集合
+  * 基礎元件的集合
 
-      * 基礎 — 模組化、可組合、可分層、可重複使用
-      * 元件 — Sling元件
+    * 基礎 — 模組化、可組合、可分層、可重複使用
+    * 元件 — Sling元件
 
-   * 協助開發應用程式的協助程式
+  * 協助開發應用程式的協助程式
 
 * 使用者端：
 
-   * 提供一些辭彙（即HTML語言的延伸）的clientlibs集合，可透過Hypermedia驅動的使用者介面實現一般互動模式。
+  * 提供一些辭彙（即HTML語言的延伸）的clientlibs集合，可透過Hypermedia驅動的使用者介面實現一般互動模式。
 
 一般Granite UI元件`field`由兩個感興趣的檔案組成：
 
@@ -56,7 +65,7 @@ Granite UI提供一系列設計用於表單的元件；這些在Granite UI辭彙
 
 * `cqgems/customizingfield/components/colorpicker`
 
-   * 由[程式碼範例](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)提供
+  * 由[程式碼範例](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)提供
 
 * `granite/ui/components/foundation/form`
 

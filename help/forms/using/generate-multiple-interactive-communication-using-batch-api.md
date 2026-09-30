@@ -9,13 +9,27 @@ feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 92bb4045-ed22-4cc3-9365-65cb39b3c82d
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2267'
 ht-degree: 1%
-
 ---
-
 # 使用批次API產生多個互動式通訊 {#use-batch-api-to-generate-multiple-ic}
 
 您可以使用批次API從範本產生多個互動式通訊。 範本是沒有任何資料的互動式通訊。 Batch API將資料與範本結合，以產生互動式通訊。 此API適合用於大量生產互動式通訊。 例如，電話帳單、多個客戶的信用卡對帳單。
@@ -93,7 +107,7 @@ ht-degree: 1%
 
       | 屬性 | 類型 | 說明 |
       |--- |--- |--- |
-      | 範本路徑 | 字串 | 指定要使用的互動式通訊範本路徑。 例如 `/content/dam/formsanddocuments/testsample/mediumic`。這是強制屬性。 |
+      | 範本路徑 | 字串 | 指定要使用的互動式通訊範本路徑。 例如 `/content/dam/formsanddocuments/testsample/mediumic`。 這是強制屬性。 |
       | recordPath | 字串 | recordPath欄位的值有助於設定互動式通訊的名稱。 您可以將記錄欄位的路徑設定為recordPath欄位的值。 例如，若您指定/employee/Id，則id欄位的值會變成對應互動式通訊的名稱。 預設值為[隨機UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID())。 |
       | usePrefillService | 布林值 | 將值設為False。 您可以使用usePrefillService引數來預填互動式通訊，其中包含從針對對應互動式通訊而設定的預填服務擷取的資料。 當usePrefillService設為true時，輸入JSON資料（每個記錄）會視為FDM引數。 預設值為false。 |
       | batchType | 字串 | 將值設定為PRINT、WEB或WEB_AND_PRINT。 預設值為WEB_AND_PRINT。 |
@@ -111,7 +125,7 @@ ht-degree: 1%
 
 #### 使用儲存在外部資料來源中並透過表單資料模型存取的輸入資料來產生互動式通訊 {#use-fdm-as-data-source}
 
-您可以將儲存在外部資料來源中的資料（記錄）與互動式通訊範本結合，以產生互動式通訊。 當您建立互動式通訊時，可以透過表單資料模型(FDM)將其連線到外部資料來源以存取資料。 您可以設定Watched資料夾批次處理服務，以使用相同的表單資料模型從外部資料來源擷取資料。 若要從儲存在外部資料來源[中的記錄建立互動式通訊](/help/forms/using/work-with-form-data-model.md)：
+您可以將儲存在外部資料來源中的資料（記錄）與互動式通訊範本結合，以產生互動式通訊。 當您建立互動式通訊時，可以透過表單資料模型(FDM)將其連線到外部資料來源以存取資料。 您可以設定Watched資料夾批次處理服務，以使用相同的表單資料模型從外部資料來源擷取資料。 若要從儲存在外部資料來源[&#128279;](/help/forms/using/work-with-form-data-model.md)中的記錄建立互動式通訊：
 
 1. 設定範本的表單資料模型：
    1. 開啟與互動式通訊範本關聯的表單資料模型。
@@ -328,7 +342,7 @@ ht-degree: 1%
    * 當您同時指定PRINT和WEB選項時，PDF檔案和JSON檔案都會針對每筆記錄產生。
 
 1. [使用maven將更新的程式碼部署至您的AEM執行個體](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=zh-Hant)。
-1. 若要產生互動式通訊，請叫用批次API。 批處理API打印會根據記錄數返回PDF和.json檔案流。您可以使用JSON檔案[預先填入Web範本](#web-template)。 如果您使用上述程式碼，則API部署在`http://localhost:4502/bin/batchServlet`。 程式碼會列印並傳回PDF和JSON檔案的串流。
+1. 若要產生互動式通訊，請叫用批次API。 批次API列印會根據記錄數量傳回son檔案的資料流。 您可以使用JSON檔案[預先填入Web範本](#web-template)。 如果您使用上述程式碼，則API部署在`http://localhost:4502/bin/batchServlet`。 程式碼會列印並傳回PDF和JSON檔案的串流。
 
 ### 預先填入Web範本 {#web-template}
 
@@ -338,7 +352,7 @@ ht-degree: 1%
 `http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>`
 
 **範例**
-若您的JSON檔案位於`C:\batch\mergedJsonPath.json`，且您使用以下互動式通訊範本： `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
+如果您的JSON檔案位於`C:\batch\mergedJsonPath.json`，且您使用以下互動式通訊範本： `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
 
 然後，發佈節點上的以下URL會顯示互動式通訊的Web Channel
 `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/batch/mergedJsonData.json`

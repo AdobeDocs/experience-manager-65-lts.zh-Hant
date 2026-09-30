@@ -9,13 +9,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: b8d9df45-8b71-4f93-b94a-ecaf3da9b67b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '714'
 ht-degree: 0%
-
 ---
-
 # 追蹤退信電子郵件{#tracking-bounced-emails}
 
 >[!NOTE]
@@ -64,7 +75,7 @@ ht-degree: 0%
 
    可讓您設定要搜尋的標幟。
 
-   `imap.flag.SEEN`：將新/未檢視的訊息設為false，將已讀取的訊息設為true
+   新/未檢視訊息為`imap.flag.SEEN`:Set false，已讀取訊息為true
 
    如需完整的旗標清單，請參閱[https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html)。
 

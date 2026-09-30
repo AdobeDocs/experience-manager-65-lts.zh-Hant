@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 7a908b05-3c45-4d02-bb84-7786339485cd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 3%
-
+source-wordcount: '308'
+ht-degree: 4%
 ---
-
 # 編輯頁面時的鍵盤快速鍵{#keyboard-shortcuts-when-editing-pages}
 
 AEM提供各種鍵盤快速鍵。 有些適用於編輯頁面，有些則適用於[使用主控台](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)。
@@ -38,8 +47,8 @@ AEM提供各種鍵盤快速鍵。 有些適用於編輯頁面，有些則適用�
  <tbody>
   <tr>
    <th>位置</th>
-   <th>捷徑</th>
-   <th>描述</th>
+   <th>快速鍵</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td>編輯模式</td>
@@ -69,7 +78,7 @@ AEM提供各種鍵盤快速鍵。 有些適用於編輯頁面，有些則適用�
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-X</code></strong></td>
-   <td>剪下選取的段落。<strong><br />注意：</strong>剪下的段落在貼到新位置之前不會消失。</td>
+   <td>剪下選取的段落。<strong><br /> 注意：</strong>剪下的段落在貼到新位置之前不會消失。</td>
   </tr>
   <tr>
    <td> </td>
@@ -94,7 +103,7 @@ AEM提供各種鍵盤快速鍵。 有些適用於編輯頁面，有些則適用�
   <tr>
    <td> </td>
    <td><strong><code>Alt-right-click</code></strong></td>
-   <td>強制預設（瀏覽器）內容功能表。<br /> <strong>注意：</strong> AEM內容功能表只出現在傳統UI中。</td>
+   <td>強制預設（瀏覽器）內容功能表。<br /> <strong>注意：</strong> AEM內容功能表只會出現在傳統UI中。</td>
   </tr>
   <tr>
    <td> </td>
@@ -159,8 +168,8 @@ AEM提供各種鍵盤快速鍵。 有些適用於編輯頁面，有些則適用�
  <tbody>
   <tr>
    <th>位置</th>
-   <th>捷徑</th>
-   <th>描述</th>
+   <th>快速鍵</th>
+   <th>說明</th>
   </tr>
   <tr>
    <td>編輯模式</td>

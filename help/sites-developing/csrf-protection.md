@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d6bd4028-56c9-4e09-9bba-1199a41b41b8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 1%
-
+source-wordcount: '278'
+ht-degree: 3%
 ---
-
 # CSRF保護架構{#the-csrf-protection-framework}
 
 除了Apache Sling反向連結篩選條件之外，Adobe還提供新的CSRF保護架構以抵禦此類攻擊。
@@ -45,6 +54,6 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如果您將資訊清單快取與Web應用程式搭配使用，請務必將&quot;**&amp;amp；ast；**&quot;新增至資訊清單，以確定權杖不會使CSRF權杖產生呼叫離線。 如需詳細資訊，請參閱此[連結](https://www.w3.org/TR/offline-webapps/)。
+>如果您將資訊清單快取與Web應用程式搭配使用，請務必將&quot;**&amp;ast；**&quot;新增至資訊清單，以確定權杖不會使CSRF權杖產生呼叫離線。 如需詳細資訊，請參閱此[連結](https://www.w3.org/TR/offline-webapps/)。
 >
 >如需有關CSRF攻擊和緩解其方法的詳細資訊，請參閱[跨網站請求偽造OWASP頁面](https://owasp.org/www-community/attacks/csrf)。

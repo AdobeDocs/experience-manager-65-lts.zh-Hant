@@ -7,13 +7,29 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Form Data Model
 exl-id: 57385e88-9a3d-4d89-986b-9f254aa722ca
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 0%
-
 ---
-
 # 通訊管理 |處理使用者資料 {#correspondence-management-handling-user-data}
 
 AEM Forms Correspondence Management可讓您建立、管理及簡化安全且個人化的客戶信函。 它提供直覺式使用者介面，供商業使用者使用預先核准的內容區塊和媒體元素來建立對應。 如需建立通訊的詳細資訊，請參閱[建立通訊](/help/forms/using/create-correspondence.md)。

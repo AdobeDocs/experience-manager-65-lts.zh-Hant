@@ -7,26 +7,42 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Document Services
 exl-id: b3b3567f-df0a-4a24-849c-dcc0b745de63
-source-git-commit: 5995dda0aac101e6c0d506ac5bba786674b0735b
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 0%
-
+source-wordcount: '945'
+ht-degree: 1%
 ---
-
 # 動態選取使用者或群組，以進行AEM Forms為中心的工作流程步驟 {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
 瞭解如何在執行階段為AEM Forms工作流程選取使用者或群組。
 
 在大型組織中，需要動態選取流程的使用者。 例如，根據代理商與客戶的鄰近程度，選取欄位代理商以提供客戶服務。 在這種情況下，代理程式會以動態方式選取。
 
-在OSGi[上指派工作和](/help/forms/using/aem-forms-workflow.md)以Forms為中心的工作流程的Adobe Sign步驟，提供可動態選取使用者的選項。 您可以使用ECMAScript或OSGi套件組合，為「指派工作」步驟動態選取受指派人，或為「簽署檔案」步驟選取簽署者。
+在OSGi[&#128279;](/help/forms/using/aem-forms-workflow.md)上指派工作和以Forms為中心的工作流程的Adobe Sign步驟，提供可動態選取使用者的選項。 您可以使用ECMAScript或OSGi套件組合，為「指派工作」步驟動態選取受指派人，或為「簽署檔案」步驟選取簽署者。
 
 ## 使用ECMAScript動態選取使用者或群組 {#use-ecmascript-to-dynamically-select-a-user-or-group}
 
 ECMAScript是一種指令碼語言。 用於使用者端指令碼和伺服器應用程式。 執行以下步驟，使用ECMAScript動態選取使用者或群組：
 
-1. 開啟CRXDE Lite。 URL是`https://'[server]:[port]'/crx/de/index.jsp`
+1. 開啟 CRXDE Lite。 URL是`https://'[server]:[port]'/crx/de/index.jsp`
 1. 在下列路徑建立副檔名為.ecma的檔案。 如果路徑（節點結構）不存在，請建立它：
 
    * （指派工作步驟的路徑） `/apps/fd/dashboard/scripts/participantChooser`
@@ -46,7 +62,7 @@ ECMAScript是一種指令碼語言。 用於使用者端指令碼和伺服器應
       |--- |--- |--- |
       | `jcr:title` | 字串 | 指定指令碼的名稱。 例如，選擇最近的欄位代理。 此名稱會顯示在`Assign Task`和[簽署檔案]步驟中。 |
 
-   1. 按一下&#x200B;**全部儲存**。 指令碼將可以在AEM工作流程的元件中選擇。
+   1. 按一下&#x200B;**「儲存全部」**。 指令碼將可以在AEM工作流程的元件中選擇。
 
       ![指令碼](assets/script.png)
 
@@ -120,7 +136,7 @@ function getAdobeSignRecipients() {
 您需要[AEM Forms使用者端SDK](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) jar和[granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/)檔案，才能編譯下列的程式碼範例。 將這些jar檔案新增為外部相依性至OSGi套件專案。 您可以使用任何Java IDE來建立OSGi套件。 下列程式提供使用Eclipse建立OSGi套件的步驟：
 
 1. 開啟Eclipse IDE。 瀏覽至&#x200B;**[!UICONTROL 檔案]**> **[!UICONTROL 新專案]**。
-1. 在[選取精靈]畫面上，選取&#x200B;**[!UICONTROL Maven專案]**，然後按一下[下一步] **[!UICONTROL 。]**
+1. 在[選取精靈]畫面上，選取&#x200B;**[!UICONTROL Maven專案]**，然後按一下[下一步] **。**
 1. 在新的Maven專案中，保留預設值，然後按一下&#x200B;**[!UICONTROL 下一步]**。 選取原型並按一下&#x200B;**[!UICONTROL 下一步]**。 例如，maven-archetype-quickstart。 指定專案的&#x200B;**[!UICONTROL 群組識別碼]**、**[!UICONTROL 成品識別碼]**、**[!UICONTROL 版本]**&#x200B;和&#x200B;**[!UICONTROL 封裝]**，然後按一下&#x200B;**[!UICONTROL 完成]**。 專案已建立。
 1. 開啟pom.xml檔案進行編輯，並將檔案的所有內容取代為下列內容：
 

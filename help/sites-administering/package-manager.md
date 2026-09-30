@@ -9,13 +9,22 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 exl-id: 6c0238ca-568e-4a46-a3cc-0b08a10cf324
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3568'
-ht-degree: 1%
-
+source-wordcount: '3576'
+ht-degree: 2%
 ---
-
 # 封裝管理員 {#working-with-packages}
 
 套件可讓您匯入和匯出存放庫內容。 您可以使用套件來安裝新內容、安裝新功能、在執行個體之間傳輸內容以及備份存放庫內容。
@@ -64,8 +73,8 @@ ht-degree: 1%
 * **左側導覽面板** — 此面板可讓您篩選及排序封裝清單。
 * **封裝清單** — 這是執行個體上按照左側導覽面板中的選取專案篩選和排序的封裝清單。
 * **活動記錄** — 此面板一開始會最小化，並展開以詳細說明封裝管理員的活動，例如建置或安裝封裝時。 「活動記錄」標籤中還有額外的按鈕可執行下列動作：
-   * **清除記錄檔**
-   * **顯示/隱藏**
+  * **清除記錄檔**
+  * **顯示/隱藏**
 * **工具列** — 工具列包含[左側導覽面板]和[封裝清單]的重新整理按鈕，以及搜尋、建立和上傳封裝的按鈕。
 
 ![封裝管理員UI](assets/package-manager-ui.png)
@@ -127,7 +136,7 @@ ht-degree: 1%
 | 名稱 | 封裝的名稱 |
 | 群組 | 若要組織封裝，您可以鍵入新群組的名稱或選取現有群組 |
 | 版本 | 用於版本的文字 |
-| 描述 | 套件允許格式化時使用HTML標籤的簡短說明 |
+| 說明 | 套件允許格式化時使用HTML標籤的簡短說明 |
 | 縮圖 | 隨套件清單一起出現的圖示 |
 
 #### 封裝縮圖 {#thumbnails}
@@ -174,7 +183,7 @@ Official Service Pack
 | include | 包含將包含指定目錄中符合規則運算式的所有檔案和資料夾。 包含&#x200B;**將不會**&#x200B;包含指定根路徑下的其他檔案或資料夾。 |
 | 排除 | 排除將排除符合規則運算式的所有檔案和資料夾。 |
 
-當您首次[建立封裝時，最常會定義封裝篩選器。](#creating-a-new-package)不過，它們也可在稍後編輯，之後應重新建置封裝，以根據新的篩選定義更新其內容。
+當您首次[建立封裝時，最常會定義封裝篩選器。](#creating-a-new-package) 不過，它們也可在稍後進行編輯，之後應重新建置套件，以根據新的篩選定義更新其內容。
 
 >[!TIP]
 >
@@ -243,7 +252,7 @@ Official Service Pack
 
    ![新封裝](assets/new-package.png)
 
-1. 按一下&#x200B;**編輯**&#x200B;以定義[封裝內容。完成編輯設定後，](#package-contents)按一下&#x200B;**儲存**。
+1. 按一下&#x200B;**編輯**&#x200B;以定義[封裝內容。](#package-contents) 完成編輯設定後，請按一下&#x200B;**儲存**。
 
 1. 您現在可以[建置](#building-a-package)您的封裝。
 
@@ -259,7 +268,7 @@ Official Service Pack
 
 1. 按一下&#x200B;**建置**。 對話方塊會要求您確認是否要建置封裝，因為任何現有的封裝內容都會被覆寫。
 
-1. 按一下&#x200B;**確定**。 AEM會建置套件，並在活動清單中列出新增至套件的所有內容。 完成時，AEM會顯示已建置封裝的確認，而且（當您關閉對話方塊時）會更新封裝清單資訊。
+1. 按一下&#x200B;**「確定」**。 AEM會建置套件，並在活動清單中列出新增至套件的所有內容。 完成時，AEM會顯示已建置封裝的確認，而且（當您關閉對話方塊時）會更新封裝清單資訊。
 
 ### 編輯封裝 {#edit-package}
 
@@ -577,7 +586,7 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 1. 會複製套件，並在活動記錄中報告詳細資訊。
 
-## Software Distribution {#software-distribution}
+## 軟體散發 {#software-distribution}
 
 AEM套件可用來在AEM環境中建立和共用內容。
 

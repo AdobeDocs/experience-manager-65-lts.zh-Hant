@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 9fe575ad-1e8d-460f-a933-ddc2e927a6e8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '172'
 ht-degree: 2%
-
 ---
-
 # 要求分析指令碼{#request-analysis-script}
 
 ## 下載 {#download}
@@ -24,7 +33,7 @@ ht-degree: 2%
 
 [取得檔案](assets/analyse-access.sh)
 
-## 描述 {#description}
+## 說明 {#description}
 
 編寫此指令碼是為了方便分析`access.log`個檔案，產生可讀報告以供日後處理。
 
@@ -38,7 +47,7 @@ ht-degree: 2%
 
 分析CQ `access.log`推斷各種資訊，並在`stdout`上產生Markdown輸出。
 
-## 使用情況 {#usage}
+## 用途 {#usage}
 
 `./analyse-access.sh access.log.2013-&ast;`
 

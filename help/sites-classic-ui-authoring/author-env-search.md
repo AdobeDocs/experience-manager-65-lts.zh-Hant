@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2e4f4444-5005-4b46-8bbc-eb935b3a19a5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '474'
 ht-degree: 2%
-
 ---
-
 # 搜尋{#searching}
 
 AEM的製作環境提供多種搜尋內容的機制，視資源型別而定。
@@ -52,7 +61,7 @@ AEM的製作環境提供多種搜尋內容的機制，視資源型別而定。
 
 按一下窗格底部的&#x200B;**搜尋**&#x200B;以執行搜尋。 按一下&#x200B;**重設**&#x200B;以清除搜尋條件。
 
-## 篩選條件 {#filter}
+## 篩選器 {#filter}
 
 您可以在不同的位置設定（和清除）篩選器，以向下鑽研並調整您的檢視：
 
