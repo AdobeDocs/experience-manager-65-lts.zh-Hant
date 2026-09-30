@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2738'
+source-wordcount: '2739'
 ht-degree: 0%
 ---
 # 協助撰寫AEM{#contributing-to-aem}
@@ -53,7 +53,7 @@ HyperText傳輸通訊協定(HTTP)是我們所有工作的核心。 因此，在�
 * 瀏覽器Cookie
 * 和其他現代Web開發概念
 
-Adobe Experience Manager的技術棧疊是以具有[Apache Sling](https://sling.apache.org/index.html)網頁架構的[Apache Felix](https://felix.apache.org/documentation/index.html) OSGI容器為基礎，並內嵌以[Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html)為基礎的Java™內容存放庫([JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html))。 請詳閱這些個別專案，以及您打算協助撰寫之區域中所使用的任何其他開放原始碼元件（例如Apache Lucene）。
+Adobe Experience Manager的技術棧疊是以具有[Apache Sling](https://sling.apache.org/index.html)網頁架構的[Apache Felix](https://felix.apache.org/documentation/index.html) OSGI容器為基礎，並內嵌以[Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html)為基礎的Java™內容存放庫([JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html))。 請詳閱這些個別專案，以及您打算協助撰寫之區域中所使用的任何其他開放原始碼元件（例如Apache Lucene）。
 
 ## 部落知識 {#tribal-knowledge}
 

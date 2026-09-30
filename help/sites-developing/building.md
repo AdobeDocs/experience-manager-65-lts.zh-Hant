@@ -9,18 +9,16 @@ feature: Developing,Tagging
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 exl-id: c835a110-89cf-4857-9ee0-c0ad781a66ae
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '940'
 ht-degree: 0%
-
 ---
-
 # 將標籤建置到AEM應用程式中{#building-tagging-into-an-aem-application}
 
 若要以程式設計方式處理自訂AEM應用程式內的標籤或擴展標籤，本頁會說明如何使用
 
-* [標籤API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/tagging/package-summary.html)
+* [標籤API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/tagging/package-summary.html)
 
 那個會與
 
@@ -33,7 +31,7 @@ ht-degree: 0%
 
 ## 標籤API的總覽 {#overview-of-the-tagging-api}
 
-AEM中[標籤架構](/help/sites-developing/framework.md)的實作允許使用JCR API管理標籤和標籤內容。 TagManager會確保在`cq:tags`字串陣列屬性上作為值輸入的標籤不會重複，它會移除指向不存在標籤的TagID，並更新已移動或合併標籤的標籤ID。 TagManager會使用JCR觀察監聽器來回覆任何不正確的變更。 主要類別位於[com.day.cq.tagging](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/tagging/package-summary.html)封裝中：
+AEM中[標籤架構](/help/sites-developing/framework.md)的實作允許使用JCR API管理標籤和標籤內容。 TagManager會確保在`cq:tags`字串陣列屬性上作為值輸入的標籤不會重複，它會移除指向不存在標籤的TagID，並更新已移動或合併標籤的標籤ID。 TagManager會使用JCR觀察監聽器來回覆任何不正確的變更。 主要類別位於[com.day.cq.tagging](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/index.html?com/day/cq/tagging/package-summary.html)封裝中：
 
 * JcrTagManagerFactory — 傳回`TagManager`的JCR型實作。 此版本為「標籤API」的參考實作。
 * `TagManager` — 允許依路徑和名稱解析及建立標籤。
@@ -152,35 +150,35 @@ http://localhost:4502/system/console/configMgr/com.day.cq.tagging.impl.TagGarbag
 
 如管理標籤的檔案中所述，在[管理不同語言的標籤](/help/sites-administering/tags.md#managing-tags-in-different-languages)一節中，可以使用不同語言定義標籤`title`。 然後，區分語言的屬性會新增至標籤節點。 這個屬性的格式為`jcr:title.<locale>`，例如，法文翻譯為`jcr:title.fr`。 `<locale>`必須是小寫的ISO地區設定字串，並使用「_」而非「 — 」，例如： `de_ch`。
 
-將&#x200B;**Animals**&#x200B;標籤新增至&#x200B;**Products**&#x200B;頁面時，值`stockphotography:animals`會新增至節點/content/geometrixx/en/products/jcr：content的屬性`cq:tags`。 將從標籤節點引用翻譯。
+將&#x200B;**Animals**&#x200B;標籤新增至&#x200B;**Products**&#x200B;頁面時，值`stockphotography:animals`會新增至節點/content/geometrixx/en/products/jcr:content的屬性`cq:tags`。 將從標籤節點引用翻譯。
 
 伺服器端API已本地化`title`相關方法：
 
-* [com.day.cq.tagging.Tag](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/tagging/Tag.html)
+* [com.day.cq.tagging.Tag](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/index.html?com/day/cq/tagging/Tag.html)
 
-   * getLocalizedTitle（地區設定）
-   * getLocalizedTitlePaths()
-   * getLocalizedTitles()
-   * getTitle（地區設定）
-   * getTitlePath（地區設定）
+  * getLocalizedTitle（地區設定）
+  * getLocalizedTitlePaths()
+  * getLocalizedTitles()
+  * getTitle（地區設定）
+  * getTitlePath（地區設定）
 
-* [com.day.cq.tagging.TagManager](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/tagging/TagManager.html)
+* [com.day.cq.tagging.TagManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/index.html?com/day/cq/tagging/TagManager.html)
 
-   * canCreateTagByTitle(String tagTitlePath， Locale)
-   * createTagByTitle(String tagTitlePath， Locale)
-   * resolveByTitle(String tagTitlePath， Locale)
+  * canCreateTagByTitle(String tagTitlePath， Locale)
+  * createTagByTitle(String tagTitlePath， Locale)
+  * resolveByTitle(String tagTitlePath， Locale)
 
 在AEM中，可以從頁面語言或使用者語言取得語言：
 
 * 擷取JSP中的頁面語言：
 
-   * `currentPage.getLanguage(false)`
+  * `currentPage.getLanguage(false)`
 
 * 擷取JSP中的使用者語言：
 
-   * `slingRequest.getLocale()`
+  * `slingRequest.getLocale()`
 
-`currentPage`和`slingRequest`可透過[&lt;cq：definedObjects>](/help/sites-developing/taglib.md)標籤在JSP中使用。
+`currentPage`和`slingRequest`可透過[&lt;cq:definedObjects](/help/sites-developing/taglib.md)標籤在JSP中使用。
 
 對於標籤，本地化取決於內容，因為標籤`titles`可以頁面語言、使用者語言或任何其他語言顯示。
 

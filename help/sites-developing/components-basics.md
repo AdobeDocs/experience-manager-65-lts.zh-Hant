@@ -16,9 +16,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '4952'
+source-wordcount: '4955'
 ht-degree: 1%
 ---
 # Adobe Experience Manager (AEM)元件 — 基本知識{#aem-components-the-basics}
@@ -210,7 +210,7 @@ AEM元件的結構既強大又靈活，主要考量事項為：
 
 元件的圖示或縮寫可在開發人員建立元件時，透過元件的JCR屬性來定義。 系統會依下列順序評估這些屬性，並使用找到的第一個有效屬性。
 
-1. `cq:icon` — 字串屬性，指向[Coral UI程式庫](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/Coral.Icon.html)中要顯示在元件瀏覽器中的標準圖示
+1. `cq:icon` — 字串屬性，指向[Coral UI程式庫](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/coral-ui/coralui3/Coral.Icon.html)中要顯示在元件瀏覽器中的標準圖示
    * 使用Coral圖示的HTML屬性值。
 1. `abbreviation` — 字串屬性，用於自訂元件瀏覽器中元件名稱的縮寫
    * 縮寫應限製為兩個字元。
@@ -1042,7 +1042,7 @@ AEM中的元件受到三個不同階層的限制：
 
 >[!NOTE]
 >
->如需傳統UI，若要檢視哪些引數可以在處理常式中使用，請參閱[`CQ.wcm.EditBar`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBar)和[`CQ.wcm.EditRollover`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) Widget檔案的`before<action>`和`after<action>`事件區段。
+>如需傳統UI，若要檢視哪些引數可以在處理常式中使用，請參閱[`CQ.wcm.EditBar`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.EditBar)和[`CQ.wcm.EditRollover`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) Widget檔案的`before<action>`和`after<action>`事件區段。
 
 使用下列設定時，頁面會在刪除、編輯、插入或移動元件後重新整理：
 

@@ -24,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '6780'
+source-wordcount: '6781'
 ht-degree: 0%
 ---
 # AEM 中的封閉使用者群組{#closed-user-groups-in-aem}
@@ -217,7 +217,7 @@ Oak檔案說明新的CUG政策在存放庫內容中的反映方式。 如需詳�
 
 ### 管理CUG政策 {#managing-cug-policies}
 
-使用JCR存取控制管理API來管理限制CUG讀取存取的新型別的存取控制原則，並遵循[JCR 2.0規格](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html)所述的機制。
+使用JCR存取控制管理API來管理限制CUG讀取存取的新型別的存取控制原則，並遵循[JCR 2.0規格](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html)所述的機制。
 
 #### 設定新的CUG政策 {#set-a-new-cug-policy}
 

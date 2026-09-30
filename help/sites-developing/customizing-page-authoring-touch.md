@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1468'
-ht-degree: 39%
+source-wordcount: '1472'
+ht-degree: 38%
 ---
 # 自訂頁面編寫{#customizing-page-authoring}
 
@@ -46,7 +46,7 @@ Adobe Experience Manager (AEM)提供各種機制，可讓您自訂編寫執行�
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱[JS檔案集](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)。
+>如需詳細資訊，請參閱[JS檔案集](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/jsdoc/ui-touch/editor-core/index.html)。
 
 您可以透過多種方式，在AEM例項中擴充頁面製作功能。 選取範圍會涵蓋在底下（高階）。
 
@@ -56,7 +56,7 @@ Adobe Experience Manager (AEM)提供各種機制，可讓您自訂編寫執行�
 >
 >* 正在使用和建立[clientlibs](/help/sites-developing/clientlibs.md)。
 >* 使用和建立[重疊](/help/sites-developing/overlays.md)。
->* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [AEM觸控式UI的結構](/help/sites-developing/touch-ui-structure.md)，以取得用於編寫頁面的結構區域的詳細資訊。
 >
 
@@ -116,9 +116,9 @@ GITHUB上的程式碼
 
 編寫頁面時，使用者通常必須從資源（例如頁面、元件和資產）中選取。 例如，這可採取清單的形式，作者必須從中選取專案。
 
-若要將清單保持為合理的大小並且和使用案例相關，可以以自訂述詞的形式實作篩選器。 例如，如果使用[`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui)元件來允許使用者選取特定資源的路徑，則顯示的路徑可依下列方式篩選：
+若要將清單保持為合理的大小並且和使用案例相關，可以以自訂述詞的形式實作篩選器。 例如，如果使用[`pathbrowser`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui)元件來允許使用者選取特定資源的路徑，則顯示的路徑可依下列方式篩選：
 
-* 透過實作 [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/predicate/package-summary.html) 介面實作自訂述詞。
+* 透過實作 [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/predicate/package-summary.html) 介面實作自訂述詞。
 * 指定述詞的名稱，並在使用 `pathbrowser` 時參照該名稱。
 
 如需建立自訂述詞的詳細資訊，請參閱[為查詢產生器實作自訂述詞評估器](/help/sites-developing/implementing-custom-predicate-evaluator.md)。

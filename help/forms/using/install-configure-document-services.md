@@ -24,9 +24,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
 workflow-type: tm+mt
-source-wordcount: '10681'
+source-wordcount: '10769'
 ht-degree: 1%
 ---
 # 安裝和設定檔案服務 {#installing-and-configuring-document-services}
@@ -200,6 +200,10 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
   * libc.so.6
   * ld-linux.so.2
   * libexpat.so.1
+
+* 在Red Hat® Enterprise Linux® 9上，32位元的OpenOffice組建需要`libcrypt.so.1`，預設不會安裝。 如果遺失，OpenOffice將無法啟動，並出現錯誤`soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`，且OpenOffice到PDF的轉換會失敗。 安裝`libxcrypt-compat`套件（32位元）以提供程式庫：
+
+  `sudo dnf install -y libxcrypt-compat.i686`
 
 ## 安裝前設定 {#preinstallationconfigurations}
 
@@ -1377,6 +1381,10 @@ DocAssurance服務可套用使用許可權至PDF檔案。 若要套用使用許�
 
 * 建立環境變數`OpenOffice_PATH`，並將其設定為指向設定在[主控台](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/)或dt （裝置樹狀結構）設定檔中的OpenOffice安裝。
 * 如果安裝OpenOffice時發生問題，請確定OpenOffice安裝所需的[32位元程式庫](#extrarequirements)可供使用。
+
+* 在Red Hat® Enterprise Linux® 9上，32位元的OpenOffice組建需要`libcrypt.so.1`，預設不會安裝。 如果遺失，OpenOffice將無法啟動，並出現錯誤`soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`，且OpenOffice到PDF的轉換會失敗。 安裝`libxcrypt-compat`套件（32位元）以提供程式庫：
+
+  `sudo dnf install -y libxcrypt-compat.i686`
 
 +++
 

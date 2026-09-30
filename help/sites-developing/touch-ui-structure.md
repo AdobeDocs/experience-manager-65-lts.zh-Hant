@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 6%
+source-wordcount: '890'
+ht-degree: 4%
 ---
 # Adobe Experience Manager觸控式UI的結構{#structure-of-the-aem-touch-enabled-ui}
 
@@ -176,4 +176,4 @@ AEM隨附數個已針對頁面製作實作的圖層；例如編輯、預覽、�
 
 如需有關觸控式UI概念的詳細資訊，請參閱[AEM觸控式UI的概念](/help/sites-developing/touch-ui-concepts.md)。
 
-如需更多技術資訊，請參閱觸控式頁面編輯器的[JS檔案集](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)。
+如需更多技術資訊，請參閱觸控式頁面編輯器的[JS檔案集](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/jsdoc/ui-touch/editor-core/index.html)。

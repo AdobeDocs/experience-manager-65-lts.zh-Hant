@@ -17,9 +17,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '828'
 ht-degree: 7%
 ---
 # 擴充資產搜尋 {#extending-assets-search}
@@ -61,7 +61,7 @@ ht-degree: 7%
 
 除了使用現有的述詞之外，[!DNL Experience Manager]開發人員也可以使用[查詢產生器API](/help/sites-developing/querybuilder-api.md)建立自己的述詞。
 
-建立自訂述詞需要有關[Widget架構](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)的基本知識。
+建立自訂述詞需要有關[Widget架構](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html)的基本知識。
 
 最佳實務是複製並調整現有述詞。 範例述詞位於&#x200B;**/libs/cq/search/components/predicates**&#x200B;中。
 

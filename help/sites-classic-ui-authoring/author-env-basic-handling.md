@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1189'
 ht-degree: 4%
 ---
 # 基本處理{#basic-handling}
@@ -150,7 +150,7 @@ ht-degree: 4%
 >在：
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
->如需詳細資訊，請參閱CQ Widget API[&#128279;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin)中的SiteAdmin 。
+>如需詳細資訊，請參閱CQ Widget API[&#128279;](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin)中的SiteAdmin 。
 
 ## 網站主控台上的頁面資訊 {#page-information-on-the-websites-console}
 

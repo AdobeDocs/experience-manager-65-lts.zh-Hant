@@ -24,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2066'
 ht-degree: 23%
 ---
 # AEM Assets HTTP API中的內容片段支援 {#content-fragments-support-in-aem-assets-http-api}
@@ -286,7 +286,7 @@ Assets可以有多個轉譯。 這些通常會顯示為子實體，其中一個�
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱[API參考](/help/assets/assets-api-content-fragments.md#api-reference)。 特別是 [Adobe Experience Manager Assets API - 內容片段](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)。
+>如需詳細資訊，請參閱[API參考](/help/assets/assets-api-content-fragments.md#api-reference)。 特別是 [Adobe Experience Manager Assets API - 內容片段](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/assets-api-content-fragments/index.html)。
 
 ### 讀取/傳遞 {#read-delivery}
 
@@ -410,7 +410,7 @@ Assets可以有多個轉譯。 這些通常會顯示為子實體，其中一個�
 
 如需詳細的API參考資料，請參閱此處：
 
-* [Adobe Experience Manager Assets API — 內容片段](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API — 內容片段](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/assets-api-content-fragments/index.html)
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
   * [可用功能](/help/assets/mac-api-assets.md#assets)

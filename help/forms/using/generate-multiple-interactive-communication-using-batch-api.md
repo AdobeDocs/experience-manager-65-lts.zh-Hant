@@ -25,9 +25,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2268'
 ht-degree: 1%
 ---
 # 使用批次API產生多個互動式通訊 {#use-batch-api-to-generate-multiple-ic}
@@ -185,7 +185,7 @@ ht-degree: 1%
 
 ## 使用REST請求叫用批次API
 
-您可以透過代表性狀態轉移(REST)要求叫用[批次API](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html)。 它可讓您提供REST端點給其他使用者以存取API，並設定您自己的方法來處理、儲存和自訂互動式通訊。 您可以開發自己的自訂Java™ servlet，以便在您的AEM執行個體上部署API。
+您可以透過代表性狀態轉移(REST)要求叫用[批次API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/index.html)。 它可讓您提供REST端點給其他使用者以存取API，並設定您自己的方法來處理、儲存和自訂互動式通訊。 您可以開發自己的自訂Java™ servlet，以便在您的AEM執行個體上部署API。
 
 部署Java™ Servlet之前，請確保您已進行互動式通訊，且對應的資料檔案已準備就緒。 執行以下步驟，以便您可以建立和部署Java™ Servlet：
 

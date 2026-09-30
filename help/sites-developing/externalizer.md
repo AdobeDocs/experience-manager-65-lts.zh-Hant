@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '506'
 ht-degree: 0%
 ---
 # 外部化URL{#externalizing-urls}
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 由於執行個體在網頁層後面執行時無法知道其外部可見的URL，而且有時必須在請求範圍之外建立連結，因此此服務會提供中央位置來設定這些外部URL並建置它們。
 
-此頁面說明如何設定&#x200B;**Externalizer**&#x200B;服務以及如何使用它。 如需詳細資訊，請參閱[Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html)。
+此頁面說明如何設定&#x200B;**Externalizer**&#x200B;服務以及如何使用它。 如需詳細資訊，請參閱[Javadocs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html)。
 
 ## 設定Externalizer服務 {#configuring-the-externalizer-service}
 
@@ -137,4 +137,4 @@ ht-degree: 0%
 
    * `https://publish-3.internal/contextpath/my/page.html`
 
-1. 您可以在[Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html)中找到更多範例。
+1. 您可以在[Javadocs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html)中找到更多範例。

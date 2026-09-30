@@ -21,9 +21,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '688'
 ht-degree: 0%
 ---
 # 翻譯增強功能{#translation-enhancements}
@@ -91,7 +91,7 @@ AEM會更新已設定TMS之翻譯記憶庫中現有字串的翻譯。
 若要使用此功能：
 
 * TMS必須設定為可與AEM搭配使用。
-* 聯結器需要實作方法[`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html)。
+* 聯結器需要實作方法[`storeTranslation`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html)。
   * 此方法中的程式碼會決定翻譯記憶體更新請求的情況。
   * AEM翻譯架構會透過此方法實作，將字串值配對（原始和更新的翻譯）傳回TMS。
 

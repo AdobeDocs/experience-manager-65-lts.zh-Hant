@@ -33,9 +33,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1110'
 ht-degree: 84%
 ---
 # 如何透過 AEM Assets API 更新您的內容 {#update-your-content}
@@ -283,7 +283,7 @@ API 參考文件中定義了受支援要求的確切格式。
 
 >[!NOTE]
 >
->如需更多詳細資訊，請參閱 API 參考。 特別是 [Adobe Experience Manager Assets API - 內容片段](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)。
+>如需更多詳細資訊，請參閱 API 參考。 特別是 [Adobe Experience Manager Assets API - 內容片段](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/assets-api-content-fragments/index.html)。
 
 ### 讀取/傳遞 {#read-delivery}
 
@@ -353,7 +353,7 @@ API 參考文件中定義了受支援要求的確切格式。
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 * [內容片段 REST API](/help/assets/assets-api-content-fragments.md)
   * [API 參考](/help/assets/assets-api-content-fragments.md#api-reference)
-* [Adobe Experience Manager Assets API — 內容片段](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API — 內容片段](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/assets-api-content-fragments/index.html)
 * [使用內容片段](/help/assets/content-fragments/content-fragments.md)
 * [AEM 核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
 * [CORS/AEM說明](https://helpx.adobe.com/tw/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)

@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '5042'
+source-wordcount: '5049'
 ht-degree: 0%
 ---
 # 使用和擴充Widget （傳統UI）{#using-and-extending-widgets-classic-ui}
@@ -40,7 +40,7 @@ AEM使用[ExtJS](https://www.sencha.com/) Widget程式庫，此程式庫提供�
 
 這些Widget包含在AEM中，除了由AEM本身使用外，也可由使用AEM建立的任何網站使用。
 
-如需AEM中所有可用Widget的完整參考，請參閱[Widget API檔案](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)或現有xtype[&#128279;](/help/sites-developing/xtypes.md)的清單。 此外，許多說明如何使用ExtJS架構的範例可在架構擁有者[Sencha](https://examples.sencha.com/extjs/7.6.0/)網站上取得。
+如需AEM中所有可用Widget的完整參考，請參閱[Widget API檔案](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html)或現有xtype[&#128279;](/help/sites-developing/xtypes.md)的清單。 此外，許多說明如何使用ExtJS架構的範例可在架構擁有者[Sencha](https://examples.sencha.com/extjs/7.6.0/)網站上取得。
 
 本頁提供如何使用及擴充Widget的一些深入分析。 它首先說明如何[在頁面](#including-the-client-sided-code-in-a-page)中包含使用者端程式碼。 然後它會說明一些已建立的範例元件，以說明一些基本用途和擴充功能。 這些元件可在&#x200B;**封裝共用**&#x200B;上的&#x200B;**使用ExtJS Widget**&#x200B;封裝中使用。
 
@@ -402,7 +402,7 @@ AEM隨附的現成可用Widget應涵蓋大部分使用案例。 不過，有時�
 * 顯示包含面板（節點型別= `cq:Widget`，xtype = ` [panel](/help/sites-developing/xtypes.md#panel)`）的`tabpanel` Widget （節點型別= `cq:Widget`，xtype = ` [tabpanel](/help/sites-developing/xtypes.md#tabpanel)`）。
 * 面板有`multifield` Widget （節點型別= `cq:Widget`，xtype = ` [multifield](/help/sites-developing/xtypes.md#multifield)`）。
 * `multifield` Widget具有以自訂xtype &#39; `ejstcustom`&#39;為基礎的fieldconfig （節點型別= `nt:unstructured`，xtype = `ejstcustom`，optionsProvider = `Ejst.x3.provideOptions`）：
-  * &#39;`fieldconfig`&#39;是` [CQ.form.MultiField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.MultiField)`物件的組態選項。
+  * &#39;`fieldconfig`&#39;是` [CQ.form.MultiField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.MultiField)`物件的組態選項。
   * &#39;`optionsProvider`&#39;是`ejstcustom` Widget的設定。 它是使用定義於`exercises.js`中的`Ejst.x3.provideOptions`方法設定的：
     `/apps/extjstraining/clientlib/js/exercises.js`
     和會傳回兩個選項。
@@ -416,12 +416,12 @@ AEM隨附的現成可用Widget應涵蓋大部分使用案例。 不過，有時�
 * 是名為`Ejst.CustomWidget`的JavaScript物件
 * 已在`CustomWidget.js` JavaScript檔案中定義於：
   `/apps/extjstraining/clientlib/js/CustomWidget.js`
-* 擴充` [CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField)` Widget。
+* 擴充` [CQ.form.CompositeField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.CompositeField)` Widget。
 * 有三個欄位： `hiddenField` (Textfield)、`allowField` (ComboBox)和`otherField` (Textfield)
 * 覆寫`CQ.Ext.Component#initComponent`以新增三個欄位：
-  * `allowField`是型別為&#39;select&#39;的[CQ.form.Selection](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.Selection)物件。 optionsProvider是Selection物件的組態，它是使用對話方塊中定義的CustomWidget的optionsProvider組態具現化
-  * `otherField`是[CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)物件
-* 覆寫[CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField)的方法`setValue`、`getValue`和`getRawValue`，以設定和擷取CustomWidget的值，格式為：
+  * `allowField`是型別為&#39;select&#39;的[CQ.form.Selection](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.Selection)物件。 optionsProvider是Selection物件的組態，它是使用對話方塊中定義的CustomWidget的optionsProvider組態具現化
+  * `otherField`是[CQ.Ext.form.TextField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)物件
+* 覆寫[CQ.form.CompositeField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.CompositeField)的方法`setValue`、`getValue`和`getRawValue`，以設定和擷取CustomWidget的值，格式為：
   `<allowField value>/<otherField value>, for example: 'Bla1/hello'`。
 * 將自身註冊為&#39; `ejstcustom`&#39; xtype：
   `CQ.Ext.reg('ejstcustom', Ejst.CustomWidget);`
@@ -449,13 +449,13 @@ AEM隨附的現成可用Widget應涵蓋大部分使用案例。 不過，有時�
 * 是名為`Ejst.CustomWidget`的JavaScript物件
 * 已在`CustomBrowseField.js` JavaScript檔案中定義於：
   `/apps/extjstraining/clientlib/js/CustomBrowseField.js`
-* 延伸` [CQ.Ext.form.TriggerField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)`。
+* 延伸` [CQ.Ext.form.TriggerField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)`。
 * 定義名為`browseWindow`的瀏覽視窗。
-* 覆寫` [CQ.Ext.form.TriggerField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)#onTriggerClick`以在按一下箭頭時顯示瀏覽視窗。
-* 定義[CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)物件：
+* 覆寫` [CQ.Ext.form.TriggerField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)#onTriggerClick`以在按一下箭頭時顯示瀏覽視窗。
+* 定義[CQ.Ext.tree.TreePanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)物件：
   * 它透過呼叫在`/bin/wcm/siteadmin/tree.json`註冊的servlet來取得其資料。
   * 其根目錄為&quot; `apps/extjstraining`&quot;。
-* 定義`window`物件( ` [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)`)：
+* 定義`window`物件( ` [CQ.Ext.Window](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.Window)`)：
   * 根據預先定義的面板。
   * 具有&#x200B;**確定**&#x200B;按鈕，可設定所選路徑的值並隱藏面板。
 * 視窗錨定在&#x200B;**路徑**&#x200B;欄位下方。
@@ -488,8 +488,8 @@ RTE外掛程式：
 * 是名為`Ejst.InsertTextPlugin`的JavaScript物件
 * 已在`InsertTextPlugin.js` JavaScript檔案中定義於：
   `/apps/extjstraining/clientlib/js/InsertTextPlugin.js`
-* 擴充` [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)`物件。
-* 下列方法定義` [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)`物件，且會在實作外掛程式中覆寫：
+* 擴充` [CQ.form.rte.plugins.Plugin](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)`物件。
+* 下列方法定義` [CQ.form.rte.plugins.Plugin](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)`物件，且會在實作外掛程式中覆寫：
   * `getFeatures()`會傳回外掛程式使其可用的所有功能陣列。
   * `initializeUI()`將新按鈕新增至RTE工具列。
   * 當按鈕懸停時，`notifyPluginConfig()`顯示標題和文字。
@@ -519,7 +519,7 @@ RTE外掛程式：
 
 ### 樹狀結構概述 {#tree-overview}
 
-現成可用的` [CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)`物件提供樹狀結構資料的UI表示法。 **使用ExtJS Widget**&#x200B;封裝中包含的樹狀結構概觀元件會顯示如何使用`TreePanel`物件在指定路徑下顯示JCR樹狀結構。 視窗本身可以停靠/取消停靠。 在此範例中，視窗邏輯內嵌在&lt;script>&lt;/script>標籤之間的元件jsp中。
+現成可用的` [CQ.Ext.tree.TreePanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)`物件提供樹狀結構資料的UI表示法。 **使用ExtJS Widget**&#x200B;封裝中包含的樹狀結構概觀元件會顯示如何使用`TreePanel`物件在指定路徑下顯示JCR樹狀結構。 視窗本身可以停靠/取消停靠。 在此範例中，視窗邏輯內嵌在&lt;script>&lt;/script>標籤之間的元件jsp中。
 
 若要將&#x200B;**樹狀結構概觀**&#x200B;元件加入範例頁面：
 
@@ -551,13 +551,13 @@ RTE外掛程式：
 內嵌在元件jsp中的JavaScript程式碼：
 
 * 嘗試從頁面擷取樹狀結構視窗，以定義`tree`物件。
-* 如果顯示樹狀結構的視窗不存在，則會建立`treePanel` ([CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel))：
+* 如果顯示樹狀結構的視窗不存在，則會建立`treePanel` ([CQ.Ext.tree.TreePanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel))：
   * `treePanel`包含用來建立視窗的資料。
   * 系統會呼叫在下列位置註冊的servlet來擷取資料：
     `/bin/wcm/siteadmin/tree.json`
 * `beforeload`接聽程式會確定已載入選取的節點。
 * `root`物件將路徑`apps/extjstraining`設定為樹狀根目錄。
-* `tree` ( ` [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)`)是根據預先定義的`treePanel`設定的，且顯示為：
+* `tree` ( ` [CQ.Ext.Window](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.Window)`)是根據預先定義的`treePanel`設定的，且顯示為：
   `tree.show();`
 * 如果視窗存在，視窗會根據從存放庫擷取的寬度、高度和停駐屬性顯示。
 
@@ -628,17 +628,17 @@ RTE外掛程式：
 
 * 嘗試從頁面擷取視窗元件，以定義`grid`物件：
   `var grid = CQ.Ext.getCmp("<%= node.getName() %>-grid");`
-* 如果`grid`不存在，則會呼叫`getGridPanel()`方法以定義[CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)物件(`gridPanel`) （請參閱下文）。 此方法已在`defaultgrid.js`中定義。
-* `grid`是根據預先定義的GridPanel的` [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)`物件，顯示為： `grid.show();`
+* 如果`grid`不存在，則會呼叫`getGridPanel()`方法以定義[CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)物件(`gridPanel`) （請參閱下文）。 此方法已在`defaultgrid.js`中定義。
+* `grid`是根據預先定義的GridPanel的` [CQ.Ext.Window](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.Window)`物件，顯示為： `grid.show();`
 * 如果`grid`存在，則會根據從存放庫擷取的寬度、高度及停駐屬性來顯示。
 
-元件jsp中參考的JavaScript檔案(`defaultgrid.js`)定義了`getGridPanel()`方法，該方法由內嵌於JSP中的指令碼呼叫，並根據靜態資料傳回` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`物件。 邏輯如下：
+元件jsp中參考的JavaScript檔案(`defaultgrid.js`)定義了`getGridPanel()`方法，該方法由內嵌於JSP中的指令碼呼叫，並根據靜態資料傳回` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`物件。 邏輯如下：
 
 * `myData`是靜態資料的陣列，格式化為包含五欄和四列的表格。
 * `store`是使用`myData`的`CQ.Ext.data.Store`物件。
 * `store`已載入記憶體：
   `store.load();`
-* `gridPanel`是使用`store`的` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`物件：
+* `gridPanel`是使用`store`的` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`物件：
   * 欄寬一律會按比例分配：
     `forceFit: true`
   * 一次只能選取一列：
@@ -652,7 +652,7 @@ RTE外掛程式：
 * 是以呼叫servlet從存放庫擷取的資料為基礎。
 * 可以編輯最後一欄的儲存格。 值會保留在第一欄中顯示的路徑所定義的節點下方的`test`屬性中。
 
-如前節所述，視窗物件透過呼叫`/apps/extjstraining/components/gridoverview/defaultgrid.js`的`defaultgrid.js`檔案中定義的`getGridPanel()`方法，取得其` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`物件。 **Grid概述**&#x200B;元件為`getGridPanel()`方法提供不同的實作，方法定義於`/apps/extjstraining/components/gridoverview/referencesearch.js`的`referencesearch.js`檔案。 透過切換元件jsp中參照的.js檔案，格線會以從儲存庫中擷取的資料為基礎。
+如前節所述，視窗物件透過呼叫`/apps/extjstraining/components/gridoverview/defaultgrid.js`的`defaultgrid.js`檔案中定義的`getGridPanel()`方法，取得其` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`物件。 **Grid概述**&#x200B;元件為`getGridPanel()`方法提供不同的實作，方法定義於`/apps/extjstraining/components/gridoverview/referencesearch.js`的`referencesearch.js`檔案。 透過切換元件jsp中參照的.js檔案，格線會以從儲存庫中擷取的資料為基礎。
 
 切換在元件jsp中參照的.js檔案：
 
@@ -667,22 +667,22 @@ RTE外掛程式：
 
 ![screen_shot_2012-02-01at121429pm](assets/screen_shot_2012-02-01at121429pm.png)
 
-元件jsp ( `referencesearch.js`)中參考的JavaScript程式碼會定義從元件jsp呼叫的`getGridPanel()`方法，並根據從存放庫動態擷取的資料傳回` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`物件。 `referencesearch.js`中的邏輯將某些動態資料定義為GridPanel的基礎：
+元件jsp ( `referencesearch.js`)中參考的JavaScript程式碼會定義從元件jsp呼叫的`getGridPanel()`方法，並根據從存放庫動態擷取的資料傳回` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`物件。 `referencesearch.js`中的邏輯將某些動態資料定義為GridPanel的基礎：
 
-* `reader`是` [CQ.Ext.data.JsonReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.JsonReader)`物件，讀取三欄的json格式的servlet回應。
-* `cm`是三欄的` [CQ.Ext.grid.ColumnModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel)`物件。
+* `reader`是` [CQ.Ext.data.JsonReader](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.data.JsonReader)`物件，讀取三欄的json格式的servlet回應。
+* `cm`是三欄的` [CQ.Ext.grid.ColumnModel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel)`物件。
 「測試」欄儲存格可以編輯，因為它們是使用編輯器定義的：
-  `editor: new [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)({})`
+  `editor: new [CQ.Ext.form.TextField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)({})`
 * 欄可排序：
   `cm.defaultSortable = true;`
-* `store`是` [CQ.Ext.data.GroupingStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.GroupingStore)`物件：
+* `store`是` [CQ.Ext.data.GroupingStore](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.data.GroupingStore)`物件：
   * 它會透過呼叫「`/bin/querybuilder.json`」上註冊的servlet來取得其資料，並使用一些用於篩選查詢的引數
   * 它是以`reader`為基礎，預先定義
   * 資料表是根據&#39;**jcr:path**&#39;資料行以遞增順序排序
-* `gridPanel`是可編輯的` [CQ.Ext.grid.EditorGridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)`物件：
+* `gridPanel`是可編輯的` [CQ.Ext.grid.EditorGridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)`物件：
   * 是以預先定義的`store`和資料行模型`cm`為基礎
   * 一次只能選取一列：
-    `sm: new [CQ.Ext.grid.RowSelectionModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.RowSelectionModel)({singleSelect:true})`
+    `sm: new [CQ.Ext.grid.RowSelectionModel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.RowSelectionModel)({singleSelect:true})`
   * `afteredit`接聽程式會確定已編輯&#39;&#39;**Test**&#39;&#39;資料行中的儲存格之後：
     * &#39;**jcr:path**&#39;資料行所定義路徑之節點的屬性&#39;`test`&#39;是在儲存庫中以儲存格的值設定的
     * 如果POST成功，則會將值新增至`store`物件，否則會遭到拒絕

@@ -26,9 +26,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2866'
+source-wordcount: '2871'
 ht-degree: 3%
 ---
 # 最適化表單運算式{#adaptive-form-expressions}
@@ -37,7 +37,7 @@ ht-degree: 3%
 
 適用性表單透過動態指令碼功能，為使用者提供最佳化和簡化的表單填寫體驗。 它可讓您編寫運算式以新增各種行為，例如動態顯示/隱藏欄位和面板。 它也可讓您新增計算欄位、讓欄位成為唯讀、新增驗證邏輯等。 動態行為取決於使用者輸入或預填的資料。
 
-JavaScript是適用性表單的運算式語言。 所有運算式都是有效的JavaScript運算式，並使用適用性表單指令碼模型API。 這些運算式會傳回某些型別的值。 如需最適化表單類別、事件、物件和公用API的完整清單，請參閱[最適化表單的JavaScript資料庫API參考。](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
+JavaScript是適用性表單的運算式語言。 所有運算式都是有效的JavaScript運算式，並使用適用性表單指令碼模型API。 這些運算式會傳回某些型別的值。 如需最適化表單類別、事件、物件和公用API的完整清單，請參閱[最適化表單的JavaScript資料庫API參考。](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/index.html)
 
 ## 撰寫運算式的最佳作法 {#best-practices-for-writing-expressions}
 
@@ -52,7 +52,7 @@ JavaScript是適用性表單的運算式語言。 所有運算式都是有效的
 * 若要建立重複面板，請在面板對話方塊中開啟設定，並將最大計數欄位的值設定為大於1。
 * 面板重複設定的最小計數值可以是一個或多個，但不能超過最大計數值。
 * 當運算式參考重複面板的欄位時，運算式中的欄位名稱會解析為最接近的重複元素。
-* 調適型表單提供一些特殊函式，可簡化可重複面板的計算，例如sum、count、min、max、filter等等。 如需完整的函式清單，請參閱[最適化表單的JavaScript資料庫API參考](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
+* 調適型表單提供一些特殊函式，可簡化可重複面板的計算，例如sum、count、min、max、filter等等。 如需完整的函式清單，請參閱[最適化表單的JavaScript資料庫API參考](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/index.html)
 * 用於操控重複面板執行個體的API包括：
 
   * 若要新增面板執行個體： `panel1.instanceManager.addInstance()`
@@ -98,7 +98,7 @@ JavaScript是適用性表單的運算式語言。 所有運算式都是有效的
 
 ### 按一下運算式 {#click-expression}
 
-click運算式會處理對按鈕的點選事件執行的動作。 GuideBridge開箱即用地提供API來執行各種功能，例如提交、驗證以及按一下運算式使用。 如需API的完整清單，請參閱[GuideBridge API。](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)
+click運算式會處理對按鈕的點選事件執行的動作。 GuideBridge開箱即用地提供API來執行各種功能，例如提交、驗證以及按一下運算式使用。 如需API的完整清單，請參閱[GuideBridge API。](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/GuideBridge.html)
 
 **套用至**：按鈕欄位
 
@@ -229,7 +229,7 @@ click運算式會處理對按鈕的點選事件執行的動作。 GuideBridge開
 
 ### GuideBridge - API和事件 {#guidebridge-apis-and-events}
 
-GuideBridge是API的集合，可用來與瀏覽器中記憶體模型中的調適型表單互動。 如需指南Bridge API、類別方法、公開事件的詳細介紹，請參閱[最適化表單的JavaScript資料庫API參考。](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
+GuideBridge是API的集合，可用來與瀏覽器中記憶體模型中的調適型表單互動。 如需指南Bridge API、類別方法、公開事件的詳細介紹，請參閱[最適化表單的JavaScript資料庫API參考。](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/index.html)
 
 >[!NOTE]
 >
@@ -275,7 +275,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 #### GuideBridge事件 {#guidebridge-events}
 
-GuideBridge也在託管頁面上提供某些外部指令碼事件。 外部指令碼可監聽這些事件並執行各種作業。 例如，每當表單中的使用者名稱變更時，顯示在頁面標題中的名稱也會變更。 如需這類事件的詳細資訊，請參閱[最適化表單的JavaScript資料庫API參考。](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)
+GuideBridge也在託管頁面上提供某些外部指令碼事件。 外部指令碼可監聽這些事件並執行各種作業。 例如，每當表單中的使用者名稱變更時，顯示在頁面標題中的名稱也會變更。 如需這類事件的詳細資訊，請參閱[最適化表單的JavaScript資料庫API參考。](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/GuideBridge.html)
 
 請使用下列程式碼來註冊處理常式：
 

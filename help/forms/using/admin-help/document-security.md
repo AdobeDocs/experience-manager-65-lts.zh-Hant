@@ -20,9 +20,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3286'
+source-wordcount: '3287'
 ht-degree: 0%
 ---
 # 關於Document Security {#about-document-security}
@@ -283,4 +283,4 @@ Document Security管理員可以在「使用者管理」中使用以下許可權
 
   >[!NOTE]
   >
-  >您可以使用[getAllPolicysetnames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) API來擷取最多1000個原則集名稱。 在內部，API會擷取API叫用程式具有檔案發佈者許可權的最多1000個原則，然後建立與擷取之原則相關的唯一原則集名稱清單，並傳回給您。 例如，當API擷取1000個原則，且擷取的原則與總共200個原則集相關聯時，API只會傳回200個原則集名稱。
+  >您可以使用[getAllPolicysetnames()](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) API來擷取最多1000個原則集名稱。 在內部，API會擷取API叫用程式具有檔案發佈者許可權的最多1000個原則，然後建立與擷取之原則相關的唯一原則集名稱清單，並傳回給您。 例如，當API擷取1000個原則，且擷取的原則與總共200個原則集相關聯時，API只會傳回200個原則集名稱。

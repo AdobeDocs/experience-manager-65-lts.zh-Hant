@@ -23,9 +23,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '520'
 ht-degree: 3%
 ---
 # OWASP前10名{#owasp-top}
@@ -74,7 +74,7 @@ AEM依賴[Apache Jackrabbit](https://jackrabbit.apache.org/jcr/index.html)和[Ap
 
 ## &#x200B;8. 無法限制URL存取 {#failure-to-restrict-url-access}
 
-存放庫允許透過存取控制專案，為任何指定路徑的任何指定使用者或群組設定[精細的許可權（由JCR指定）](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html)。 存取限制由存放庫強制執行。
+存放庫允許透過存取控制專案，為任何指定路徑的任何指定使用者或群組設定[精細的許可權（由JCR指定）](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html)。 存取限制由存放庫強制執行。
 
 ## &#x200B;9. 傳輸層保護不足 {#insufficient-transport-layer-protection}
 

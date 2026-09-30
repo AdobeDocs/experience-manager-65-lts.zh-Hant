@@ -18,9 +18,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1673'
 ht-degree: 0%
 ---
 # 將服務與JMX主控台整合{#integrating-services-with-the-jmx-console}
@@ -47,11 +47,11 @@ ht-degree: 0%
 
 ### 使用註解提供MBean資訊 {#using-annotations-to-provide-mbean-information}
 
-[com.adobe.granite.jmx.annotation](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)套件提供數個註解和類別，可輕鬆將MBean中繼資料提供給JMX主控台。 使用這些註解和類別，而非直接將資訊新增到MBean的MBeanInfo物件。
+[com.adobe.granite.jmx.annotation](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)套件提供數個註解和類別，可輕鬆將MBean中繼資料提供給JMX主控台。 使用這些註解和類別，而非直接將資訊新增到MBean的MBeanInfo物件。
 
 **註解**
 
-將註解新增至管理介面以指定MBean中繼資料。 該資訊會顯示在每個已部署的實作類別的JMX主控台中。 有以下註解可供使用（如需完整資訊，請參閱[com.adobe.granite.jmx.annotation JavaDocs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)）：
+將註解新增至管理介面以指定MBean中繼資料。 該資訊會顯示在每個已部署的實作類別的JMX主控台中。 有以下註解可供使用（如需完整資訊，請參閱[com.adobe.granite.jmx.annotation JavaDocs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)）：
 
 * **描述：**&#x200B;提供MBean類別或方法的描述。 在類別宣告上使用時，說明會顯示在MBean的「JMX主控台」頁面上。 在方法上使用時，說明會顯示為對應屬性或作業的暫留文字。
 * **影響：**&#x200B;方法的影響。 有效引數值是由[javax.management.MBeanOperationInfo](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html)定義的欄位。
