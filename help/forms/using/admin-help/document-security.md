@@ -20,9 +20,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3286'
+source-wordcount: '3287'
 ht-degree: 0%
 ---
 # 關於Document Security {#about-document-security}
@@ -259,7 +259,7 @@ Document Security管理員可以在「使用者管理」中使用以下許可權
 
   使用原則集可以更輕鬆地將相關原則指派和管理給組織或部門中的特定使用者。 例如，財務與人力資源部門的個別原則集可協助您輕鬆管理相關原則，並將其套用至指定給相應部門的檔案。
 
-* **使用外部授權器以動態方式套用許可權：**&#x200B;您可以使用[外部授權器](https://help.adobe.com/zh_TW/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html)根據外部條件評估及動態套用許可權。 根據外部條件以動態方式評估許可權時，您可以：
+* **使用外部授權器以動態方式套用許可權：**&#x200B;您可以使用[外部授權器](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html)根據外部條件評估及動態套用許可權。 根據外部條件以動態方式評估許可權時，您可以：
 
   * 為您組織中的檔案提供集中式存取控制。
 
@@ -267,7 +267,7 @@ Document Security管理員可以在「使用者管理」中使用以下許可權
 
   * 使用內容管理系統所使用的存取控制機制，以及標準原則評估程式。 例如，當服務決定使用者是否可以列印受原則保護的檔案時，它可以使用標準原則評估程式。 此外，它也可以使用您的內容管理系統所使用的存取控制機制。
 
-  雖然您可以使用外部授權處理常式完全取代Document Security原則評估程式，但建議您使用外部授權處理常式來評估原則程式。 因此，檔案存取可受內容管理系統使用的相同控制機制控制。 例如，當Document Security服務確定使用者是否可以列印受原則保護的檔案時，它會使用標準原則評估程式。 它也會使用您的內容管理系統所使用的存取控制機制。 如需詳細資訊，請參閱[建立外部授權處理常式](https://help.adobe.com/zh_TW/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html)。
+  雖然您可以使用外部授權處理常式完全取代Document Security原則評估程式，但建議您使用外部授權處理常式來評估原則程式。 因此，檔案存取可受內容管理系統使用的相同控制機制控制。 例如，當Document Security服務確定使用者是否可以列印受原則保護的檔案時，它會使用標準原則評估程式。 它也會使用您的內容管理系統所使用的存取控制機制。 如需詳細資訊，請參閱[建立外部授權處理常式](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html)。
 
 * **將原則集保留為有限的數目：**&#x200B;有幾個因素會導致原則與原則集持續成長。 常見因素包括：
 
@@ -283,4 +283,4 @@ Document Security管理員可以在「使用者管理」中使用以下許可權
 
   >[!NOTE]
   >
-  >您可以使用[getAllPolicysetnames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) API來擷取最多1000個原則集名稱。 在內部，API會擷取API叫用程式具有檔案發佈者許可權的最多1000個原則，然後建立與擷取之原則相關的唯一原則集名稱清單，並傳回給您。 例如，當API擷取1000個原則，且擷取的原則與總共200個原則集相關聯時，API只會傳回200個原則集名稱。
+  >您可以使用[getAllPolicysetnames()](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) API來擷取最多1000個原則集名稱。 在內部，API會擷取API叫用程式具有檔案發佈者許可權的最多1000個原則，然後建立與擷取之原則相關的唯一原則集名稱清單，並傳回給您。 例如，當API擷取1000個原則，且擷取的原則與總共200個原則集相關聯時，API只會傳回200個原則集名稱。

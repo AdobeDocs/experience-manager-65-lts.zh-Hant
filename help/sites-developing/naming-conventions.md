@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '318'
 ht-degree: 2%
 ---
 # 命名慣例 {#naming-conventions}
@@ -42,7 +42,7 @@ ht-degree: 2%
 
 ### jcr公用程式 {#jcr-utilities}
 
-[JcrUtil](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html)是JCR公用程式的AEM實作。 驗證名稱特別需要的是它控制的字元對應以及下列驗證：
+[JcrUtil](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html)是JCR公用程式的AEM實作。 驗證名稱特別需要的是它控制的字元對應以及下列驗證：
 
 * `isValidName`
 
@@ -56,7 +56,7 @@ ht-degree: 2%
 
 ### 頁面管理員 {#page-manager}
 
-[PageManager](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html)提供基於[JCRUtil](#jcr-utilities)的頁面層級作業方法。
+[PageManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html)提供基於[JCRUtil](#jcr-utilities)的頁面層級作業方法。
 
 ### 標準 UI {#standard-ui}
 

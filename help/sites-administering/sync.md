@@ -24,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2351'
+source-wordcount: '2352'
 ht-degree: 3%
 ---
 # 使用者同步{#user-synchronization}
@@ -45,7 +45,7 @@ ht-degree: 3%
 
 ## Sling散佈 {#sling-distribution}
 
-使用者資料及其[ACL](/help/sites-administering/security.md)儲存在Oak JCR下層的[Oak Core](/help/sites-deploying/platform.md)中，並可使用[Oak API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-summary.html)存取。 由於不經常更新，因此使用[Sling內容發佈](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) （Sling發佈）將使用者資料與其他發佈執行個體同步是合理的。
+使用者資料及其[ACL](/help/sites-administering/security.md)儲存在Oak JCR下層的[Oak Core](/help/sites-deploying/platform.md)中，並可使用[Oak API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-summary.html)存取。 由於不經常更新，因此使用[Sling內容發佈](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) （Sling發佈）將使用者資料與其他發佈執行個體同步是合理的。
 
 與傳統復寫相比，使用Sling散發進行使用者同步的優點包括：
 
@@ -87,7 +87,7 @@ ht-degree: 3%
 
 1. 確認已安裝最新程式碼：
 
-* [AEM平台更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=zh-Hant)
+* [AEM平台更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)
 
 ### &#x200B;1. Apache Sling 分配代理 - 同步代理工廠 {#apache-sling-distribution-agent-sync-agents-factory}
 
@@ -116,7 +116,7 @@ ht-degree: 3%
 
 在步驟3中使用授權使用者來設定Author上的Sling發佈。
 
-* 每個發佈執行個體上的&#x200B;**&#x200B;**
+* 每個發佈執行個體上的&#x200B;****
 
   * 以系統管理員許可權登入
   * 存取[安全性主控台](/help/sites-administering/security.md)
@@ -399,7 +399,7 @@ ht-degree: 3%
 
 * 作者
 
-  * *取消勾選*1&rbrace;Apache Sling散發代理程式 — 同步代理程式處理站[&#128279;](#apache-sling-distribution-agent-sync-agents-factory)的`Enabled`核取方塊
+  * *取消勾選*1}Apache Sling散發代理程式 — 同步代理程式處理站](#apache-sling-distribution-agent-sync-agents-factory)的`Enabled`核取方塊[
 
 工作完成時，若要重新啟用使用者同步：
 

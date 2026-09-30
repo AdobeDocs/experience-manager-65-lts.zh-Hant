@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '627'
 ht-degree: 1%
 ---
 # 覆蓋{#overlays}
@@ -35,7 +35,7 @@ Adobe Experience Manager (AEM) （以及之前的CQ）一直使用覆蓋原則�
 
 自AEM 6.0起，覆蓋圖實施及使用方式已發生變更：
 
-* AEM 6.0及更高版本 — 適用於[Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)相關覆蓋圖（亦即觸控式UI）
+* AEM 6.0及更高版本 — 適用於[Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)相關覆蓋圖（亦即觸控式UI）
 
   * 方法
 
@@ -66,13 +66,13 @@ Adobe Experience Manager (AEM) （以及之前的CQ）一直使用覆蓋原則�
 
 >[!CAUTION]
 >
->[Sling Resource Merger](/help/sites-developing/sling-resource-merger.md)和相關方法只能搭配[Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)使用。 這表示建立具有骨架結構的覆蓋圖僅適用於標準觸控式UI。
+>[Sling Resource Merger](/help/sites-developing/sling-resource-merger.md)和相關方法只能搭配[Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)使用。 這表示建立具有骨架結構的覆蓋圖僅適用於標準觸控式UI。
 >
 >其他區域（包括傳統UI）的覆蓋需要複製適當的節點和整個子結構，然後進行必要的變更。
 
 重疊是許多變更的建議方法，例如[設定您的主控台](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console)或[在側面板中的資產瀏覽器中建立您的選取類別](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) （用於編寫頁面）。 其需求為：
 
-* ***不要*&#x200B;在`/libs`分支中進行變更&#x200B;**&#x200B;您所做的任何變更都可能會遺失，因為每當您：
+* ***不要*&#x200B;在`/libs`分支中進行變更&#x200B;**您所做的任何變更都可能會遺失，因為每當您：
 
   * 在您的執行個體上升級
   * 套用hotfix

@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3268'
+source-wordcount: '3270'
 ht-degree: 1%
 ---
 # 工作流程步驟參考 {#workflow-step-reference}
@@ -284,7 +284,7 @@ function check(){
 
 若要建立對話方塊，您必須建立對話方塊：
 
-* 決定產生的資料儲存在承載[&#128279;](#dialog-participant-step-storing-data-in-the-payload)中的何處。
+* 決定產生的資料儲存在承載](#dialog-participant-step-storing-data-in-the-payload)中的何處[。
 * [定義對話方塊；包括定義用來收集和儲存資料的欄位](#dialog-participant-step-dialog-definition)。
 
 #### 對話方塊參與者步驟 — 將資料儲存在承載中 {#dialog-participant-step-storing-data-in-the-payload}
@@ -349,7 +349,7 @@ function check(){
 
 1. **範例對話方塊定義**
 
-   下列XML程式碼片段代表在承載內容的`watchEmail`節點中儲存`String`值的對話方塊。 標題節點代表[TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html)元件：
+   下列XML程式碼片段代表在承載內容的`watchEmail`節點中儲存`String`值的對話方塊。 標題節點代表[TextField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html)元件：
 
    ```xml
    jcr:primaryType="nt:unstructured"
@@ -437,7 +437,7 @@ function check(){
 
 * **OSGi服務**
 
-  服務必須實作[com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html)介面。 介面會定義下列成員：
+  服務必須實作[com.day.cq.workflow.exec.ParticipantStepChooser](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html)介面。 介面會定義下列成員：
 
   * `SERVICE_PROPERTY_LABEL`欄位：使用此欄位來指定參與者選擇器的名稱。 該名稱出現在&#x200B;**動態參與者步驟**&#x200B;屬性的可用參與者選擇器清單中。
 
@@ -562,7 +562,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 * [一般](#step-properties-common-tab)
 * **引數**
 
-  * **參與者**：指定可供選取的使用者清單。 若要新增使用者至清單，請按一下[新增專案] **&#x200B;**，然後輸入使用者節點的本位目錄路徑或使用者ID。 使用者的順序不會影響被指派工作專案的可能性。
+  * **參與者**：指定可供選取的使用者清單。 若要新增使用者至清單，請按一下[新增專案] ****，然後輸入使用者節點的本位目錄路徑或使用者ID。 使用者的順序不會影響被指派工作專案的可能性。
 
 ### 工作流程發起人參與者選擇器 {#workflow-initiator-participant-chooser}
 

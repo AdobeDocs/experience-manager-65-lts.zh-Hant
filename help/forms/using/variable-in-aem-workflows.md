@@ -25,9 +25,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2214'
 ht-degree: 0%
 ---
 # AEM Forms工作流程中的變數{#variables-in-aem-forms-workflows}
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html)上的AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html)上的[AEM Forms 。
 
 工作流程模型中的變數是根據其資料型別儲存值的方式。 然後，您就可以在任何工作流程步驟中使用變數的名稱，來擷取儲存在變數中的值。 您也可以使用變數名稱來定義用於進行路由決定的運算式。
 
@@ -46,20 +46,20 @@ ht-degree: 0%
 * [使用「設定變數」工作流程步驟，設定變數](../../forms/using/variable-in-aem-workflows.md#set-a-variable)的值。
 * [在所有AEM Forms工作流程步驟中使用變數](../../forms/using/variable-in-aem-workflows.md#use-a-variable)來擷取儲存的值，並在OR Split和Goto步驟中定義路由運算式。
 
-變數是現有[MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)介面的延伸。 您可以在ECMAScript中使用[MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)來存取使用變數儲存的中繼資料。
+變數是現有[MetaDataMap](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)介面的延伸。 您可以在ECMAScript中使用[MetaDataMap](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)來存取使用變數儲存的中繼資料。
 
 ## 建立變數 {#create-a-variable}
 
 您可以使用工作流程模型Sidekick中可用的變數區段來建立變數。 AEM工作流程變數支援下列資料型別：
 
 * **基本資料型別**： Long、Double、Boolean、Date和String
-* **複雜資料型別**： [檔案](https://helpx.adobe.com/tw/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html)、[XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html)、[JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)和表單資料模型執行個體。
+* **複雜資料型別**： [檔案](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html)、[XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html)、[JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)和表單資料模型執行個體。
 
 >[!NOTE]
 >
 >工作流程僅支援ISO8601格式用於日期型別變數。
 
-檔案與表單資料模型資料型別需要[AEM Forms附加元件套件](https://helpx.adobe.com/tw/aem-forms/kb/aem-forms-releases.html)。  使用ArrayList資料型別建立變數集合。 您可以為所有基本和複雜資料型別建立ArrayList變數。 例如，建立ArrayList變數並選取String作為子型別，以使用變數儲存多個字串值。
+檔案與表單資料模型資料型別需要[AEM Forms附加元件套件](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)。  使用ArrayList資料型別建立變數集合。 您可以為所有基本和複雜資料型別建立ArrayList變數。 例如，建立ArrayList變數並選取String作為子型別，以使用變數儲存多個字串值。
 
 執行以下步驟來建立變數：
 
@@ -197,7 +197,7 @@ ht-degree: 0%
 
 ### 不支援變數的工作流程步驟 {#workflow-steps-without-support-for-variables}
 
-您可以使用[MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)介面，在不支援變數的工作流程步驟中存取變數。
+您可以使用[MetaDataMap](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)介面，在不支援變數的工作流程步驟中存取變數。
 
 #### 擷取變數值 {#retrieve-the-variable-value}
 
@@ -211,7 +211,7 @@ ht-degree: 0%
 | 表單資料模型 | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData()。getMetaDataMap()。get(variableName， Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class)； |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData()。getMetaDataMap()。get(variableName， Packages.com.google.gson.JsonObject.class)； |
 
-檔案和表單資料模型變數資料型別需要[AEM Forms附加元件套件](https://helpx.adobe.com/tw/aem-forms/kb/aem-forms-releases.html)。
+檔案和表單資料模型變數資料型別需要[AEM Forms附加元件套件](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)。
 
 **範例**
 
@@ -241,7 +241,7 @@ workItem.getWorkflowData().getMetaDataMap().put(salary, 50000)
 
 您可以使用API來設定變數，並傳遞它們以叫用工作流程例項。
 
-[workflowSession.startWorkflow](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-)使用模型、wfData和metaData做為引數。 使用MetaDataMap設定變數的值。
+[workflowSession.startWorkflow](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-)使用模型、wfData和metaData做為引數。 使用MetaDataMap設定變數的值。
 
 在此API中，使用metaData.put(variableName， value)將&#x200B;**variableName**&#x200B;變數設為&#x200B;**value**；
 

@@ -25,9 +25,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1698'
 ht-degree: 1%
 ---
 # 撰寫最適化表單的自訂提交動作{#writing-custom-submit-action-for-adaptive-forms}
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html?lang=zh-Hant)上的AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html)上的[AEM Forms 。
 
 調適型表單需要提交動作來處理使用者指定的資料。 提交動作會決定使用最適化表單提交之資料所執行的工作。 Adobe Experience Manager (AEM)包含[立即可用的提交動作](../../forms/using/configuring-submit-actions.md)，可示範您可使用使用者提交的資料執行的自訂工作。 例如，您可以執行工作，例如傳送電子郵件或儲存資料。
 
@@ -121,7 +121,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 ## 建立自訂提交動作 {#creating-a-custom-submit-action}
 
-執行以下步驟來建立自訂提交動作，將資料儲存至CRX存放庫，然後傳送電子郵件給您。 最適化表單包含立即可用的提交動作存放區內容（已棄用），可將資料儲存至CRX存放庫。 此外，CQ還提供可用於傳送電子郵件的[郵件](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant) API。 在使用Mail API之前，請透過系統主控台[設定](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant&wcmmode=disabled) Day CQ Mail服務。 您可以重複使用「儲存內容（已棄用）」動作，將資料儲存在存放庫中。 存放區內容（已棄用）動作可在CRX存放庫中的/libs/fd/af/components/guidessubmittype/store位置取得。
+執行以下步驟來建立自訂提交動作，將資料儲存至CRX存放庫，然後傳送電子郵件給您。 最適化表單包含立即可用的提交動作存放區內容（已棄用），可將資料儲存至CRX存放庫。 此外，CQ還提供可用於傳送電子郵件的[郵件](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant) API。 在使用Mail API之前，請透過系統主控台[設定](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&wcmmode=disabled) Day CQ Mail服務。 您可以重複使用「儲存內容（已棄用）」動作，將資料儲存在存放庫中。 存放區內容（已棄用）動作可在CRX存放庫中的/libs/fd/af/components/guidessubmittype/store位置取得。
 
 1. 登入CRXDE Lite，網址為https://&lt;server>：&lt;port>/crx/de/index.jsp。 在/apps/custom_submit_action資料夾中建立具有屬性sling:Folder和名稱store_and_mail的節點。 建立custom_submit_action資料夾（如果尚未存在）。
 
@@ -157,7 +157,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
    將post.POST.jsp指令碼新增至您的動作。 (/apps/custom_submit_action/store_and_mail/)。
 
-   執行現成可用的商店動作（post.POST.jsp指令碼）。 使用CQ在您的程式碼中提供的[FormsHelper.runAction](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction(java.lang.String,java.lang.String,org.apache.sling.api.resource.Resource,org.apache.sling.api.SlingHttpServletRequest,org.apache.sling.api.SlingHttpServletResponse))&#x200B;(java.lang.String， java.lang.String， org.apache.sling.api.resource.Resource， org.apache.sling.api.SlingHttpServletRequest， org.apache.sling.api.SlingHttpServletResponse) API來執行存放區動作。 在JSP檔案中新增下列程式碼：
+   執行現成可用的商店動作（post.POST.jsp指令碼）。 使用CQ在您的程式碼中提供的[FormsHelper.runAction](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction(java.lang.String,java.lang.String,org.apache.sling.api.resource.Resource,org.apache.sling.api.SlingHttpServletRequest,org.apache.sling.api.SlingHttpServletResponse))&#x200B;(java.lang.String， java.lang.String， org.apache.sling.api.resource.Resource， org.apache.sling.api.SlingHttpServletRequest， org.apache.sling.api.SlingHttpServletResponse) API來執行存放區動作。 在JSP檔案中新增下列程式碼：
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 
@@ -167,7 +167,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
    `String mailTo = properties.get("mailTo");`
 
-   最後，使用CQ Mail API傳送電子郵件。 使用[SimpleEmail](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/commons/mail/SimpleEmail.html)類別來建立電子郵件物件，如下所示：
+   最後，使用CQ Mail API傳送電子郵件。 使用[SimpleEmail](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/commons/mail/SimpleEmail.html)類別來建立電子郵件物件，如下所示：
 
    >[!NOTE]
    >

@@ -9,13 +9,11 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
-source-git-commit: a85b54d5a7c3b00f95f439941a390dcfee883187
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2354'
+source-wordcount: '2358'
 ht-degree: 1%
-
 ---
-
 # 查詢產生器述詞參考{#query-builder-predicate-reference}
 
 >[!CAUTION]
@@ -27,7 +25,7 @@ ht-degree: 1%
 >
 >例如，請參閱：
 >
->* [http://localhost:4502/system/console/services？filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
+>* [http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
 
 ## 一般 {#general}
 
@@ -229,7 +227,7 @@ group.2_group.type=dam:Asset
 
 ### hasPermission {#haspermission}
 
-將結果限製為目前工作階段具有指定[JCR許可權的專案。](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+將結果限製為目前工作階段具有指定[JCR許可權的專案。](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 僅限篩選的述詞，且無法使用搜尋索引。 不支援多面向擷取。
 
@@ -269,7 +267,7 @@ group.2_group.type=dam:Asset
 
 ### memberOf {#memberof}
 
-尋找屬於特定[sling資源集合](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html)成員的專案。
+尋找屬於特定[sling資源集合](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html)成員的專案。
 
 僅限篩選的述詞，且無法使用搜尋索引。 不支援多面向擷取。
 
@@ -475,18 +473,18 @@ group.2_group.type=dam:Asset
 
   （僅適用於JSON servlet）選取將點選寫入為JSON的方式，並使用這些標準點選（可透過ResultHitWriter服務擴充）：
 
-   * **簡單**：
+  * **簡單**：
 
-     最小專案，例如`path`、`title`、`lastmodified`、`excerpt` （若已設定）。
+    最小專案，例如`path`、`title`、`lastmodified`、`excerpt` （若已設定）。
 
-   * **完整**：
+  * **完整**：
 
-     結果會呈現為每個節點的Sling JSON，`jcr:path`顯示點選路徑。 依預設，回應僅包含節點的直接屬性；使用`p.nodedepth=N`包含更深入的內容，其中`0`會傳回整個子樹狀結構。 設定`p.acls=true`以包含每個專案目前工作階段的JCR許可權(`create` = `add_node`，`modify` = `set_property`，`delete` = `remove`)。
+    結果會呈現為每個節點的Sling JSON，`jcr:path`顯示點選路徑。 依預設，回應僅包含節點的直接屬性；使用`p.nodedepth=N`包含更深入的內容，其中`0`會傳回整個子樹狀結構。 設定`p.acls=true`以包含每個專案目前工作階段的JCR許可權(`create` = `add_node`，`modify` = `set_property`，`delete` = `remove`)。
 
 
-   * **選擇性**：
+  * **選擇性**：
 
-     回應僅包含`p.properties`中列出的屬性，這是以空格分隔的相對路徑清單（在URL中使用`+`）。 如果相對路徑的深度大於1，則輸出會將其巢狀內嵌為子物件。 特殊`jcr:path`屬性一律包含點選路徑。
+    回應僅包含`p.properties`中列出的屬性，這是以空格分隔的相對路徑清單（在URL中使用`+`）。 如果相對路徑的深度大於1，則輸出會將其巢狀內嵌為子物件。 特殊`jcr:path`屬性一律包含點選路徑。
 
 
 ### `savedquery` {#savedquery}

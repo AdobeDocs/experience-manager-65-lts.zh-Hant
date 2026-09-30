@@ -24,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2066'
 ht-degree: 23%
 ---
 # AEM Assets HTTP API中的內容片段支援 {#content-fragments-support-in-aem-assets-http-api}
@@ -65,7 +65,7 @@ ht-degree: 23%
 
 例如，單頁應用程式(SPA)，以框架為基礎或自訂，需要透過HTTP API提供的內容，通常為JSON格式。
 
-雖然[AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)提供非常完整、彈性且可自訂的API，可為此提供所需的讀取作業，並可自訂其JSON輸出，但這些元件確實需要AEM WCM （網頁內容管理）專門知識才能實作，因為它們必須託管在基於專用AEM範本的頁面中。 並非所有SPA開發組織都能直接存取這些知識。
+雖然[AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)提供非常完整、彈性且可自訂的API，可為此提供所需的讀取作業，並可自訂其JSON輸出，但這些元件確實需要AEM WCM （網頁內容管理）專門知識才能實作，因為它們必須託管在基於專用AEM範本的頁面中。 並非所有SPA開發組織都能直接存取這些知識。
 
 此時可使用Assets REST API。 它可讓開發人員直接存取資產（例如影像和內容片段），而不需要先將資產內嵌在頁面中，並以序列化JSON格式傳送其內容。
 
@@ -178,8 +178,8 @@ HTTP 方法決定要執行的操作：
 >
 >如需進一步詳細資訊，請參閱：
 >
->* [CORS/AEM 說明](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=zh-Hant)
->* [影片 - 使用 AEM 開發 CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=zh-Hant)
+>* [CORS/AEM 說明](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [影片 - 使用 AEM 開發 CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 在有特定驗證需求的環境中，建議使用OAuth。
@@ -286,7 +286,7 @@ Assets可以有多個轉譯。 這些通常會顯示為子實體，其中一個�
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱[API參考](/help/assets/assets-api-content-fragments.md#api-reference)。 特別是 [Adobe Experience Manager Assets API - 內容片段](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)。
+>如需詳細資訊，請參閱[API參考](/help/assets/assets-api-content-fragments.md#api-reference)。 特別是 [Adobe Experience Manager Assets API - 內容片段](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/assets-api-content-fragments/index.html)。
 
 ### 讀取/傳遞 {#read-delivery}
 
@@ -410,7 +410,7 @@ Assets可以有多個轉譯。 這些通常會顯示為子實體，其中一個�
 
 如需詳細的API參考資料，請參閱此處：
 
-* [Adobe Experience Manager Assets API — 內容片段](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API — 內容片段](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/assets-api-content-fragments/index.html)
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
   * [可用功能](/help/assets/mac-api-assets.md#assets)
@@ -420,4 +420,4 @@ Assets可以有多個轉譯。 這些通常會顯示為子實體，其中一個�
 如需進一步詳細資訊，請參閱：
 
 * [Assets HTTP API檔案](/help/assets/mac-api-assets.md)
-* [AEM Gem工作階段： OAuth](https://helpx.adobe.com/tw/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [AEM Gem工作階段： OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)

@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '687'
 ht-degree: 23%
 ---
 # 自訂主控台 {#customizing-the-consoles}
@@ -48,7 +48,7 @@ Clientlibs可讓您擴充預設實作以實現新功能，同時重複使用標�
 >
 >* 正在使用和建立[clientlibs](/help/sites-developing/clientlibs.md)。
 >* 使用和建立[重疊](/help/sites-developing/overlays.md)。
->* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
+>* [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/index.html)
 >
 
 
@@ -73,7 +73,7 @@ Clientlibs可讓您擴充預設實作以實現新功能，同時重複使用標�
 
 >[!NOTE]
 >
->請參閱知識庫文章[疑難排解AEM TouchUI問題](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-16935)，以取得進一步的秘訣和工具。
+>請參閱知識庫文章[疑難排解AEM TouchUI問題](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935)，以取得進一步的秘訣和工具。
 
 ## 自訂主控台的預設檢視 {#customizing-the-default-view-for-a-console}
 
@@ -159,7 +159,7 @@ Clientlibs可讓您擴充預設實作以實現新功能，同時重複使用標�
 
 1. 選擇性：
 
-   * 如果您想要插入其他資料，您必須使用撰寫[PageInforProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)
+   * 如果您想要插入其他資料，您必須使用撰寫[PageInforProvider](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)
      `pageInfoProviderType`屬性。
 
    例如，請參閱底下的附加類別/套件（來自GitHub）。

@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2207'
+source-wordcount: '2209'
 ht-degree: 1%
 ---
 # Adobe Experience Manager觸控式UI的概念{#concepts-of-the-aem-touch-enabled-ui}
@@ -205,7 +205,7 @@ Granite UI和ExtJS （用於傳統UI）之間的差異也令人感興趣：
 
 ### Granite UI Foundation元件 {#granite-ui-foundation-components}
 
-[Granite UI基礎元件](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)提供建置任何UI所需的基本建置區塊。 其中包括：
+[Granite UI基礎元件](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)提供建置任何UI所需的基本建置區塊。 其中包括：
 
 * 按鈕
 * 超連結
@@ -250,19 +250,19 @@ Granite UI和ExtJS （用於傳統UI）之間的差異也令人感興趣：
 | `pathfield, paragraphreference` | `granite/ui/components/foundation/form/pathbrowser` |
 | `selection` | `granite/ui/components/foundation/form/select` |
 | `sizefield` | `cq/gui/components/authoring/dialog/sizefield` |
-| `tags` | `granite/ui/components/foundation/form/autocomplete`&#x200B;`cq/gui/components/common/datasources/tags` |
+| `tags` | `granite/ui/components/foundation/form/autocomplete``cq/gui/components/common/datasources/tags` |
 | `textarea` | `granite/ui/components/foundation/form/textarea` |
 | `textfield` | `granite/ui/components/foundation/form/textfield` |
 
 | **節點型別** | **Granite UI資源型別** |
 |---|---|
 | `cq:WidgetCollection` | `granite/ui/components/foundation/container` |
-| `cq:TabPanel` | `granite/ui/components/foundation/container`&#x200B;`granite/ui/components/foundation/layouts/tabs` |
+| `cq:TabPanel` | `granite/ui/components/foundation/container``granite/ui/components/foundation/layouts/tabs` |
 | `cq:panel` | `granite/ui/components/foundation/container` |
 
 ### Granite UI管理元件 {#granite-ui-administration-components}
 
-[Granite UI管理元件](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)建置在基礎元件上，以提供任何管理應用程式都可以實作的通用建置區塊。 其中包括：
+[Granite UI管理元件](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)建置在基礎元件上，以提供任何管理應用程式都可以實作的通用建置區塊。 其中包括：
 
 * 全域導覽列
 * 邊欄（骨架）

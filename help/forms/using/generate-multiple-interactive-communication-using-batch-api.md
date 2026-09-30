@@ -25,9 +25,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2268'
 ht-degree: 1%
 ---
 # 使用批次API產生多個互動式通訊 {#use-batch-api-to-generate-multiple-ic}
@@ -125,7 +125,7 @@ ht-degree: 1%
 
 #### 使用儲存在外部資料來源中並透過表單資料模型存取的輸入資料來產生互動式通訊 {#use-fdm-as-data-source}
 
-您可以將儲存在外部資料來源中的資料（記錄）與互動式通訊範本結合，以產生互動式通訊。 當您建立互動式通訊時，可以透過表單資料模型(FDM)將其連線到外部資料來源以存取資料。 您可以設定Watched資料夾批次處理服務，以使用相同的表單資料模型從外部資料來源擷取資料。 若要從儲存在外部資料來源[&#128279;](/help/forms/using/work-with-form-data-model.md)中的記錄建立互動式通訊：
+您可以將儲存在外部資料來源中的資料（記錄）與互動式通訊範本結合，以產生互動式通訊。 當您建立互動式通訊時，可以透過表單資料模型(FDM)將其連線到外部資料來源以存取資料。 您可以設定Watched資料夾批次處理服務，以使用相同的表單資料模型從外部資料來源擷取資料。 若要從儲存在外部資料來源](/help/forms/using/work-with-form-data-model.md)中的記錄建立互動式通訊[：
 
 1. 設定範本的表單資料模型：
    1. 開啟與互動式通訊範本關聯的表單資料模型。
@@ -185,13 +185,13 @@ ht-degree: 1%
 
 ## 使用REST請求叫用批次API
 
-您可以透過代表性狀態轉移(REST)要求叫用[批次API](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html)。 它可讓您提供REST端點給其他使用者以存取API，並設定您自己的方法來處理、儲存和自訂互動式通訊。 您可以開發自己的自訂Java™ servlet，以便在您的AEM執行個體上部署API。
+您可以透過代表性狀態轉移(REST)要求叫用[批次API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/index.html)。 它可讓您提供REST端點給其他使用者以存取API，並設定您自己的方法來處理、儲存和自訂互動式通訊。 您可以開發自己的自訂Java™ servlet，以便在您的AEM執行個體上部署API。
 
 部署Java™ Servlet之前，請確保您已進行互動式通訊，且對應的資料檔案已準備就緒。 執行以下步驟，以便您可以建立和部署Java™ Servlet：
 
 1. 登入您的AEM執行個體並建立互動式通訊。 若要使用下列範常式式碼中提及的互動式通訊，[請按一下這裡](assets/SimpleMediumIC.zip)。
-1. [在您的AEM執行個體上使用Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=zh-Hant)建置和部署AEM專案。
-1. 在您的AEM Forms專案的POM檔案相依性清單中新增[AEM Client SDK 6.0.12版或更新版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hant)。 例如，
+1. [在您的AEM執行個體上使用Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html)建置和部署AEM專案。
+1. 在您的AEM Forms專案的POM檔案相依性清單中新增[AEM Client SDK 6.0.12版或更新版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)。 例如，
 
    ```xml
        <dependency>
@@ -341,7 +341,7 @@ ht-degree: 1%
    * 當您指定WEB選項時，系統會產生每個記錄的JSON檔案。 您可以使用JSON檔案[預先填入Web範本](#web-template)。
    * 當您同時指定PRINT和WEB選項時，PDF檔案和JSON檔案都會針對每筆記錄產生。
 
-1. [使用maven將更新的程式碼部署至您的AEM執行個體](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=zh-Hant)。
+1. [使用maven將更新的程式碼部署至您的AEM執行個體](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html)。
 1. 若要產生互動式通訊，請叫用批次API。 批次API列印會根據記錄數量傳回son檔案的資料流。 您可以使用JSON檔案[預先填入Web範本](#web-template)。 如果您使用上述程式碼，則API部署在`http://localhost:4502/bin/batchServlet`。 程式碼會列印並傳回PDF和JSON檔案的串流。
 
 ### 預先填入Web範本 {#web-template}
@@ -377,4 +377,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->預設只會啟用CRX通訊協定。 若要啟用其他支援的通訊協定，請參閱[使用Configuration Manager設定預填服務](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=zh-Hant)。
+>預設只會啟用CRX通訊協定。 若要啟用其他支援的通訊協定，請參閱[使用Configuration Manager設定預填服務](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en)。

@@ -24,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '6780'
+source-wordcount: '6781'
 ht-degree: 0%
 ---
 # AEM 中的封閉使用者群組{#closed-user-groups-in-aem}
@@ -217,7 +217,7 @@ Oak檔案說明新的CUG政策在存放庫內容中的反映方式。 如需詳�
 
 ### 管理CUG政策 {#managing-cug-policies}
 
-使用JCR存取控制管理API來管理限制CUG讀取存取的新型別的存取控制原則，並遵循[JCR 2.0規格](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html)所述的機制。
+使用JCR存取控制管理API來管理限制CUG讀取存取的新型別的存取控制原則，並遵循[JCR 2.0規格](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html)所述的機制。
 
 #### 設定新的CUG政策 {#set-a-new-cug-policy}
 
@@ -829,7 +829,7 @@ CUG授權模型可讓您個別開啟存取控制管理和許可權評估：
 * 如果模組有一或多個可建立CUG的支援路徑，則會啟用存取控制管理
 * 只有同時核取選項&#x200B;**CUG Evaluation Enabled**&#x200B;時，才會啟用許可權評估。
 
-在新的AEM預設設定CUG原則評估中，它僅在「發佈」執行模式中啟用。 如需詳細資訊，請參閱AEM 6.3[&#128279;](#default-configuration-since-aem)之後的預設設定。 這可透過比較給定路徑的有效原則與內容中儲存的原則來驗證。 只有啟用CUG的許可權評估時，才會顯示有效原則。
+在新的AEM預設設定CUG原則評估中，它僅在「發佈」執行模式中啟用。 如需詳細資訊，請參閱AEM 6.3](#default-configuration-since-aem)之後的[預設設定。 這可透過比較給定路徑的有效原則與內容中儲存的原則來驗證。 只有啟用CUG的許可權評估時，才會顯示有效原則。
 
 如上所述，CUG存取控制原則現在一律會儲存在內容中，但是只有在Apache Jackrabbit Oak **CUG組態的系統主控台中開啟**&#x200B;啟用CUG評估&#x200B;**時，才會強制執行這些原則所產生的有效許可權評估。** 預設情況下，僅在「發佈」執行模式中啟用它。
 

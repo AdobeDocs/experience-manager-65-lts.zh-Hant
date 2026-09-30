@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1952'
 ht-degree: 1%
 ---
 # 開發Forms (Classic UI){#developing-forms-classic-ui}
@@ -48,7 +48,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->本檔案著重於在傳統UI中使用[Foundation元件](/help/sites-authoring/default-components-foundation.md)來開發表單。 Adobe建議在觸控式UI中使用新的[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)和[隱藏條件](/help/sites-developing/hide-conditions.md)進行表單開發。
+>本檔案著重於在傳統UI中使用[Foundation元件](/help/sites-authoring/default-components-foundation.md)來開發表單。 Adobe建議在觸控式UI中使用新的[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)和[隱藏條件](/help/sites-developing/hide-conditions.md)進行表單開發。
 
 ## 預先載入表單值 {#preloading-form-values}
 
@@ -81,7 +81,7 @@ ht-degree: 1%
 
 1. 新增多值字串( `String[]`)型別的新屬性（例如`myList`），以包含下拉式清單專案的清單。 也可以使用指令碼匯入內容，例如使用JSP指令碼或shell指令碼中的cURL。
 
-1. 在&#x200B;**專案載入路徑**&#x200B;欄位中使用完整路徑：
+1. 在&#x200B;**專案載入路徑**欄位中使用完整路徑：
 例如，`/etc/designs/geometrixx/formlistvalues/myList`
 
 請注意，如果`String[]`中的值格式如下：
@@ -324,7 +324,7 @@ ht-degree: 1%
 
 ### 開發指令碼以與Forms搭配使用 {#developing-scripts-for-use-with-forms}
 
-如需可在編寫指令碼時使用的API元素的詳細資訊，請參閱與表單[&#128279;](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html)相關的javadocs。
+如需可在編寫指令碼時使用的API元素的詳細資訊，請參閱與表單](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html)相關的[javadocs。
 
 您可以將此用於動作，例如在提交表單前呼叫服務，以及在服務失敗時取消服務：
 

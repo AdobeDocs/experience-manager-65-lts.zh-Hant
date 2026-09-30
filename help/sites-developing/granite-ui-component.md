@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '550'
 ht-degree: 0%
 ---
 # 建立新的Granite UI欄位元件{#creating-a-new-granite-ui-field-component}
@@ -37,7 +37,7 @@ Granite UI提供一系列設計用於表單的元件；這些在Granite UI辭彙
 
 >[!NOTE]
 >
->如需有關欄位的完整詳細資訊，請參閱[Granite UI檔案](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)。
+>如需有關欄位的完整詳細資訊，請參閱[Granite UI檔案](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)。
 
 使用Granite UI Foundation架構來開發及/或擴充Granite元件。 此變數有兩個元素：
 
@@ -59,7 +59,7 @@ Granite UI提供一系列設計用於表單的元件；這些在Granite UI辭彙
 * `init.jsp`：處理一般處理；標籤、說明，並提供呈現欄位時所需的表單值。
 * `render.jsp`：這是實際執行欄位轉譯的位置，必須覆寫自訂欄位的內容；由`init.jsp`包含。
 
-如需詳細資訊，請參閱[Granite UI檔案 — 欄位](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html)。
+如需詳細資訊，請參閱[Granite UI檔案 — 欄位](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html)。
 
 如需範例，請參閱：
 

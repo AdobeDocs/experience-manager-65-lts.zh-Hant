@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2446'
+source-wordcount: '2449'
 ht-degree: 2%
 ---
 # 開發Adobe Experience Manager (AEM)元件（傳統UI）{#developing-aem-components-classic-ui}
@@ -38,7 +38,7 @@ ht-degree: 2%
 >
 >雖然HTML範本語言(HTL)和JSP都可用於開發傳統UI的元件，本頁還是會說明使用JSP進行開發。 這完全是因為在傳統UI中使用JSP的歷史。
 >
->HTL現在是AEM的建議指令碼語言。 請參閱[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hant)和[開發AEM元件](/help/sites-developing/developing-components.md)以比較方法。
+>HTL現在是AEM的建議指令碼語言。 請參閱[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)和[開發AEM元件](/help/sites-developing/developing-components.md)以比較方法。
 
 ## 結構 {#structure}
 
@@ -101,7 +101,7 @@ JSP指令碼檔案`global.jsp`可用來讓特定物件（亦即存取內容）�
 
 * 透過`global.jsp`中引入的`currentPage`物件：
 
-  `currentPage`物件是頁面的執行個體（請參閱[AEM API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html)）。 Page類別提供一些存取內容的方法。
+  `currentPage`物件是頁面的執行個體（請參閱[AEM API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html)）。 Page類別提供一些存取內容的方法。
 
   範例：`String pageTitle = currentPage.getTitle();`
 
@@ -185,8 +185,8 @@ CQ和Sling標籤庫可讓您存取特定函式，以便在範本和元件的JSP�
    >
    >的元件：
    >
-   >* 觸控式UI使用[Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)元件
-   >* 傳統UI使用[ExtJS Widget](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+   >* 觸控式UI使用[Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)元件
+   >* 傳統UI使用[ExtJS Widget](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html)
 
    >[!NOTE]
    >

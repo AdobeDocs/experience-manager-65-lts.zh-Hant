@@ -23,9 +23,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3107'
+source-wordcount: '3109'
 ht-degree: 0%
 ---
 # 使用者、群組和存取權管理{#user-group-and-access-rights-administration}
@@ -72,7 +72,7 @@ CRX可讓您設定使用者和群組帳戶的存取權。 然後會將相同的�
 
 >[!NOTE]
 >
->CRX實作由JSR-283[&#128279;](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html)定義的存取控制。
+>CRX實作由JSR-283](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html)定義的[存取控制。
 >
 >CRX存放庫的標準安裝設定為使用資源型存取控制清單。 這是JSR-283存取控制的一個可能實作，也是Jackrabbit提供的實作之一。
 
@@ -491,7 +491,7 @@ CRX中的存取權評估如下：
 
   您可以輸入&#x200B;**主體**&#x200B;名稱，或按一下欄位右側的圖示以開啟&#x200B;**選取主體**&#x200B;對話方塊。
 
-  這可讓您&#x200B;**搜尋**&#x200B;使用者&#x200B;**或**&#x200B;群組&#x200B;**的**。 從結果清單中選取所需的主體，然後按一下[確定] **&#x200B;**，將該值帶回上一個對話方塊。
+  這可讓您&#x200B;**搜尋**&#x200B;使用者&#x200B;**或**&#x200B;群組&#x200B;**的**。 從結果清單中選取所需的主體，然後按一下[確定] ****，將該值帶回上一個對話方塊。
 
 ![crx_accesscontrol_selectprincipal](assets/crx_accesscontrol_selectprincipal.png)
 
@@ -503,7 +503,7 @@ CRX中的存取權評估如下：
 
 ### 權限 {#privileges}
 
-新增存取控制專案時，可以選取下列許可權（如需完整詳細資訊，請參閱[安全性API](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html)）：
+新增存取控制專案時，可以選取下列許可權（如需完整詳細資訊，請參閱[安全性API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html)）：
 
 <table>
  <tbody>

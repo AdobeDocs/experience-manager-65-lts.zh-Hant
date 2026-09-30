@@ -16,9 +16,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1999'
+source-wordcount: '2003'
 ht-degree: 0%
 ---
 # AEM工作流程中的變數{#variables-in-aem-workflows}
@@ -31,7 +31,7 @@ ht-degree: 0%
 * [使用「設定變數」工作流程步驟，設定變數](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable)的值。
 * [在OR Split和Goto AEM工作流程步驟中使用變數](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable)，以便定義用於進行路由決定的運算式。 您也可以在所有AEM Forms工作流程步驟中使用變數。
 
-變數是[MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)介面的延伸。 您可以在ECMAScript中使用[MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)來存取使用變數儲存的中繼資料。
+變數是[MetaDataMap](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)介面的延伸。 您可以在ECMAScript中使用[MetaDataMap](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)來存取使用變數儲存的中繼資料。
 
 ## 建立變數 {#create-a-variable}
 
@@ -178,7 +178,7 @@ ht-degree: 0%
 
 ### 不支援變數的工作流程步驟 {#workflow-steps-without-support-for-variables}
 
-您可以使用[MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)介面，在不支援變數的工作流程步驟中存取變數。
+您可以使用[MetaDataMap](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)介面，在不支援變數的工作流程步驟中存取變數。
 
 #### 擷取變數值 {#retrieve-the-variable-value}
 
@@ -220,7 +220,7 @@ workItem.getWorkflowData().getMetaDataMap().put(salary, 50000)
 
 您可以使用API來設定變數，並傳遞它們以叫用工作流程例項。
 
-[workflowSession.startWorkflow](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-)使用模型、wfData和metaData做為引數。 使用MetaDataMap設定變數的值。
+[workflowSession.startWorkflow](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-)使用模型、wfData和metaData做為引數。 使用MetaDataMap設定變數的值。
 
 在此API中，使用metaData.put(variableName， value)將&#x200B;**variableName**&#x200B;變數設為&#x200B;**value**；
 

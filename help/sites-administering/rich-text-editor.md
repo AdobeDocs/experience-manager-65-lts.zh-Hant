@@ -17,9 +17,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2975'
+source-wordcount: '2978'
 ht-degree: 1%
 ---
 # 設定RTF編輯器 {#configure-the-rich-text-editor}
@@ -185,9 +185,9 @@ RTE功能可透過一系列外掛程式使用，每個外掛程式都具備功�
 
 >[!NOTE]
 >
->[核心元件文字元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=zh-Hant#the-text-component-and-the-rich-text-editor)可讓範本編輯器在GUI中設定許多RTE外掛程式作為內容原則，而不需要技術設定。 內容原則可搭配使用RTE UI設定，如本檔案所述。
+>[核心元件文字元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)可讓範本編輯器在GUI中設定許多RTE外掛程式作為內容原則，而不需要技術設定。 內容原則可搭配使用RTE UI設定，如本檔案所述。
 >
->如需詳細資訊，請參閱本檔案的[RTE UI設定和內容原則](/help/sites-administering/rich-text-editor.md)一節，以及[建立頁面範本](/help/sites-authoring/templates.md)和[核心元件開發人員檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=zh-Hant)。
+>如需詳細資訊，請參閱本檔案的[RTE UI設定和內容原則](/help/sites-administering/rich-text-editor.md)一節，以及[建立頁面範本](/help/sites-authoring/templates.md)和[核心元件開發人員檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)。
 
 >[!NOTE]
 >
@@ -263,7 +263,7 @@ RTE中可用的選項會從使用者介面設定向下流向內容原則。
 * 如果RTE的使用者介面設定已移除或未啟用專案，則內容原則無法進行設定。
 * 作者只能存取使用者介面設定和內容原則所提供的功能。
 
-例如，您可以看到[文字核心元件檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=zh-Hant#the-text-component-and-the-rich-text-editor)。
+例如，您可以看到[文字核心元件檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor)。
 
 ## 自訂工具列圖示和命令之間的對應 {#iconstoolbar}
 
@@ -327,12 +327,12 @@ RTE中可用的選項會從使用者介面設定向下流向內容原則。
 
 ## 更多資訊 {#further-information}
 
-如需有關設定RTE的詳細資訊，請參閱[AEM Widget API](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText)參考。
+如需有關設定RTE的詳細資訊，請參閱[AEM Widget API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.RichText)參考。
 
 具體來說，若要檢視外掛程式和可用的相關選項：
 
-* [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText)元件提供表單欄位，用於編輯樣式文字資訊(RTF)。 若要瞭解RTF表單可用的所有引數，請參閱設定選項。
-* RTF元件使用[CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)下列出的外掛程式，提供各種功能。 對於每個外掛程式：
+* [CQ.form.RichText](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.RichText)元件提供表單欄位，用於編輯樣式文字資訊(RTF)。 若要瞭解RTF表單可用的所有引數，請參閱設定選項。
+* RTF元件使用[CQ.form.rte.plugins.Plugin](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)下列出的外掛程式，提供各種功能。 對於每個外掛程式：
 
   * 如需可啟用（或已停用）功能的詳細資訊，請參閱功能
   * 如需適當外掛程式的詳細設定資訊，請參閱設定選項以取得所有可用引數

@@ -24,9 +24,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1903'
 ht-degree: 2%
 ---
 # 在建立通訊UI中新增自訂動作按鈕 {#add-custom-action-button-in-create-correspondence-ui}
@@ -235,7 +235,7 @@ ACMExtensionsMessages.properties檔案包含「建立通訊」使用者介面中
       將檔案命名為ccrcustomization.js。
 
    1. 連按兩下ccrcustomization.js檔案，以在CRX中開啟。
-   1. 在檔案中貼上下列程式碼，然後按一下[儲存全部] **&#x200B;**：
+   1. 在檔案中貼上下列程式碼，然後按一下[儲存全部] ****：
 
       ```javascript
       /* for adding and handling custom actions in Extensible Toolbar.
@@ -437,11 +437,11 @@ LCA程式會在LiveCycle伺服器上執行，而且需要伺服器位址和登�
    >
    >每次在伺服器端進行變更時，請重新啟動LiveCycle Server。
 
-   DSCSample.jar檔案使用renderLetter API。 如需有關renderLetter API的詳細資訊，請參閱[介面LetterRenderService](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html)。
+   DSCSample.jar檔案使用renderLetter API。 如需有關renderLetter API的詳細資訊，請參閱[介面LetterRenderService](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html)。
 
 #### 將DSC匯入LiveCycle {#import-dsc-to-livecyle}
 
-DSCSample.jar檔案使用renderLetter API從DSC提供作為輸入的XML資料將信函轉譯為PDF位元組。 如需有關renderLetter和其他API的詳細資訊，請參閱[信函轉譯服務](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html)。
+DSCSample.jar檔案使用renderLetter API從DSC提供作為輸入的XML資料將信函轉譯為PDF位元組。 如需有關renderLetter和其他API的詳細資訊，請參閱[信函轉譯服務](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html)。
 
 1. 啟動Workbench並登入。
 1. 選取&#x200B;**視窗>顯示檢視>元件**。 「元件」檢視會新增至Workbench ES2。

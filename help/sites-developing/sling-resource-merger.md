@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1262'
 ht-degree: 1%
 ---
 # 在AEM中使用Sling Resource Merger{#using-the-sling-resource-merger-in-aem}
@@ -43,7 +43,7 @@ Sling Resource Merger將覆蓋和覆寫資源（及其屬性）與原始資源�
 
 >[!CAUTION]
 >
->Sling Resource Merger和相關方法只能搭配[Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html)使用。 此情況也表示這僅適用於標準的觸控式UI，特別是以這種方式定義的覆寫僅適用於元件的觸控式對話方塊。
+>Sling Resource Merger和相關方法只能搭配[Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/index.html)使用。 此情況也表示這僅適用於標準的觸控式UI，特別是以這種方式定義的覆寫僅適用於元件的觸控式對話方塊。
 >
 >若要覆蓋或覆寫其他區域（包括觸控式元件或傳統UI的其他部分），請從原始節點複製適當的節點和結構。 將復本放置於您定義自訂的位置。
 

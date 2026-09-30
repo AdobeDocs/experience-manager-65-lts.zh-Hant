@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '790'
 ht-degree: 3%
 ---
 # 測試您的UI{#testing-your-ui}
@@ -39,7 +39,7 @@ AEM測試架構使用Hobbes.js，這是以JavaScript撰寫的測試程式庫。 
 
 >[!NOTE]
 >
->如需API的完整詳細資訊，請參閱Hobbes.js [檔案](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)。
+>如需API的完整詳細資訊，請參閱Hobbes.js [檔案](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html)。
 
 ## 測試結構 {#structure-of-tests}
 
@@ -112,7 +112,7 @@ AEM測試架構使用Hobbes.js，這是以JavaScript撰寫的測試程式庫。 
 
 下列程式會逐步引導您使用[We.Retail內容](/help/sites-developing/we-retail.md)建立並執行測試套裝，但您可以輕鬆修改測試，以使用不同的網頁。
 
-如需建立您自己的測試套裝的完整詳細資訊，請參閱[Hobbes.js API檔案](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)。
+如需建立您自己的測試套裝的完整詳細資訊，請參閱[Hobbes.js API檔案](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html)。
 
 1. 開啟 CRXDE Lite。 ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. 用滑鼠右鍵按一下`/etc/clientlibs`資料夾，然後按一下&#x200B;**建立>建立資料夾**。 輸入名稱`myTests`並按一下&#x200B;**確定**。
@@ -150,7 +150,7 @@ AEM測試架構使用Hobbes.js，這是以JavaScript撰寫的測試程式庫。 
    myTestSuite.js
    ```
 
-1. 按一下[儲存全部]&#x200B;**&#x200B;**，然後關閉`js.txt`檔案。
+1. 按一下[儲存全部]****，然後關閉`js.txt`檔案。
 1. 以滑鼠右鍵按一下`myFirstTest`節點，然後按一下&#x200B;**建立>建立檔案**。 將檔案命名為`myTestSuite.js`並按一下&#x200B;**確定**。
 1. 將下列程式碼複製到`myTestSuite.js`檔案，然後儲存檔案：
 

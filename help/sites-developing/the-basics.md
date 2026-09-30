@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3373'
+source-wordcount: '3379'
 ht-degree: 0%
 ---
 # AEM核心概念 {#aem-core-concepts}
@@ -49,11 +49,11 @@ ht-degree: 0%
 
 ## Java™內容存放庫 {#java-content-repository}
 
-Java™ Content Repository (JCR)標準[JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)指定了在內容存放庫內的精細層級，以獨立於廠商和實作的方式雙向存取內容。
+Java™ Content Repository (JCR)標準[JSR 283](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html)指定了在內容存放庫內的精細層級，以獨立於廠商和實作的方式雙向存取內容。
 
 規格領先者為Adobe Research （瑞士） AG。
 
-[JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)套件javax.jcr.&amp;ast；用於直接存取及操控存放庫內容。
+[JCR API 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/index.html)套件javax.jcr.&amp;ast；用於直接存取及操控存放庫內容。
 
 ## Experience Server (CRX)和Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -296,7 +296,7 @@ Sling也可讓JCR節點以外的專案成為資源，但這是進階功能。
 
 這會使用Sling API套件、org.apache.sling.&amp;ast；和標籤程式庫。
 
-### 使用sling:include參考現有元素 {#referencing-existing-elements-using-sling-include}
+### 使用sling:include {#referencing-existing-elements-using-sling-include}參考現有元素
 
 最後考量是需要參考指令碼中的現有元素。
 
@@ -345,7 +345,7 @@ OSGi定義用於開發和部署模組化應用程式和程式庫的架構（也�
 
 **專案**&#x200B;專案是節點或屬性。
 
-如需有關操作Item物件的詳細資訊，請參閱介面javax.jcr.Item的[Java™檔案](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html)
+如需有關操作Item物件的詳細資訊，請參閱介面javax.jcr.Item的[Java™檔案](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html)
 
 **節點（及其屬性）**&#x200B;節點及其屬性是在JCR API 2.0規格(JSR 283)中定義。 它們儲存內容、物件定義、演算指令碼和其他資料。
 
@@ -361,7 +361,7 @@ OSGi定義用於開發和部署模組化應用程式和程式庫的架構（也�
 
 currentNode是目前的節點物件。
 
-如需有關操作Node物件的詳細資訊，請參閱[Java™檔案](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html)。
+如需有關操作Node物件的詳細資訊，請參閱[Java™檔案](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html)。
 
 **Widget**&#x200B;在AEM中，所有使用者輸入均由Widget管理。 這些通常用於控制內容的編輯。
 
@@ -400,7 +400,7 @@ AEM是使用Widget的ExtJS資料庫開發的。
 
 S`tring pageName = currentPage.getName();`
 
-TcurrentPage為目前頁面物件。 如需有關操控頁面物件的詳細資訊，請參閱[Java™檔案](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html)。
+TcurrentPage為目前頁面物件。 如需有關操控頁面物件的詳細資訊，請參閱[Java™檔案](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html)。
 
 **頁面管理員**&#x200B;頁面管理員是提供頁面層級作業方法的介面。
 
@@ -408,7 +408,7 @@ TcurrentPage為目前頁面物件。 如需有關操控頁面物件的詳細資�
 
 頁面myPage = pageManager.getContainingPage(myResource)；
 
-pageManager是頁面管理員物件，myResource是資源物件。 如需頁面管理員所提供方法的詳細資訊，請參閱[Java™檔案](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html)。
+pageManager是頁面管理員物件，myResource是資源物件。 如需頁面管理員所提供方法的詳細資訊，請參閱[Java™檔案](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html)。
 
 ## 存放庫內的結構 {#structure-within-the-repository}
 
@@ -456,7 +456,7 @@ pageManager是頁面管理員物件，myResource是資源物件。 如需頁面�
 
 ## Dispatcher {#the-dispatcher}
 
-Dispatcher是Adobe的快取和/或負載平衡工具。 您可以在[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)下找到進一步資訊。
+Dispatcher是Adobe的快取和/或負載平衡工具。 您可以在[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)下找到進一步資訊。
 
 ## FileVault （來源修訂系統） {#filevault-source-revision-system}
 

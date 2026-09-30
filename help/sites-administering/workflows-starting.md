@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '821'
 ht-degree: 2%
 ---
 # 開始工作流程{#starting-workflows}
@@ -44,13 +44,13 @@ ht-degree: 2%
 >
 >* [將工作流程套用至頁面](/help/sites-authoring/workflows-applying.md)
 >* [如何將工作流程套用至DAM資產](/help/assets/assets-workflow.md)
->* [AEM Forms](https://helpx.adobe.com/tw/aem-forms/6-2/aem-workflows-submit-process-form.html)
+>* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [翻譯專案](/help/sites-administering/tc-manage.md)
 >
 
 ## 工作流程模型 {#workflow-models}
 
-您可以根據「工作流程模型」控制檯上列出的其中一個模型[&#128279;](/help/sites-administering/workflows.md#workflow-models-and-instances)來啟動工作流程。 唯一強制資訊是裝載，但也可以新增標題和/或評論。
+您可以根據「工作流程模型」控制檯上列出的其中一個模型](/help/sites-administering/workflows.md#workflow-models-and-instances)來啟動工作流程[。 唯一強制資訊是裝載，但也可以新增標題和/或評論。
 
 ## 工作流程啟動器 {#workflows-launchers}
 
@@ -183,7 +183,7 @@ ht-degree: 2%
      此啟動器屬性是以逗號分隔的專案清單： &quot;
 
      * `property-name`忽略在指定屬性名稱上觸發的任何`jcr`事件。 &quot;
-     * `event-user-data:<*someValue*>`會忽略任何包含透過[`ObservationManager` API](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String))設定的`*<someValue*`> `user-data`的事件。
+     * `event-user-data:<*someValue*>`會忽略任何包含透過[`ObservationManager` API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String))設定的`*<someValue*`> `user-data`的事件。
 
      例如：
 
