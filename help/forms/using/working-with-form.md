@@ -24,12 +24,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 2b710c6ef8d291a42b4a7658bf84f5e764422d5c
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '471'
 ht-degree: 0%
 ---
 # 使用表單 {#working-with-a-form}
+
+>[!NOTE]
+>
+>AEM Forms應用程式的Android和iOS版本已停止服務。 Android應用程式已於2026年9月從Google Play取消發佈，且iOS應用程式已從Apple App Store中移除。
+>這些應用程式已無法供安裝。 如需Android應用程式的協助，請連絡[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)。
 
 如果表單已啟用在表單應用程式中同步，則會下載表單，且您可以直接使用表單。
 
@@ -47,7 +52,7 @@ ht-degree: 0%
 
 1. 移至&#x200B;**https://[伺服器]：[連線埠]/system/console/configMgr**。
 1. 搜尋&#x200B;**[!UICONTROL Adobe Granite權杖驗證處理常式]**，然後按一下&#x200B;**[!UICONTROL 編輯]**。
-1. 從下拉式功能表中選取登入權杖Cookie **屬性之** SameSite屬性的&#x200B;**[!UICONTROL 無]**&#x200B;選項。
+1. 從下拉式功能表中選取登入權杖Cookie ]**屬性之**[!UICONTROL  SameSite屬性的&#x200B;**[!UICONTROL 無]**&#x200B;選項。
 1. 按一下&#x200B;**[!UICONTROL 儲存]**。
 
 ![將影像與AFA Android應用程式同步](/help/forms/using/assets/afaandroid.png)

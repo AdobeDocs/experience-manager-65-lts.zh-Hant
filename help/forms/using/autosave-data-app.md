@@ -26,12 +26,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 2b710c6ef8d291a42b4a7658bf84f5e764422d5c
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '352'
 ht-degree: 0%
 ---
 # 在AEM Forms應用程式中使用自動儲存{#using-autosave-in-aem-forms-app}
+
+>[!NOTE]
+>
+>AEM Forms應用程式的Android和iOS版本已停止服務。 Android應用程式已於2026年9月從Google Play取消發佈，且iOS應用程式已從Apple App Store中移除。
+>這些應用程式已無法供安裝。 如需Android應用程式的協助，請連絡[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)。
 
 當使用者在Adobe Experience Manager Forms應用程式中輸入資料時，自動儲存功能會定期儲存資料。 AEM Forms應用程式中的自動儲存功能可協助您在應用程式意外關閉時避免資料遺失。
 
@@ -50,10 +55,10 @@ ht-degree: 0%
 執行以下步驟，在AEM Forms應用程式中使用自動儲存功能：
 
 1. 登入應用程式，並瀏覽至&#x200B;**設定>一般**。
-1. 在「一般」畫面中，使用&#x200B;**自動儲存頻率**&#x200B;選項，選取您希望應用程式儲存輸入資料的間隔。
+1. 在「一般」畫面中，使用&#x200B;**自動儲存頻率**選項，選取您希望應用程式儲存輸入資料的間隔。
    [![正在設定自動儲存頻率](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
 
-1. 當您重新啟動應用程式並以同一個使用者登入時，系統會提示您使用「復原未儲存的工作」對話方塊來復原工作。 在[復原未儲存的工作]對話方塊中按一下[確定]&#x200B;**&#x200B;**&#x200B;以繼續使用已儲存的工作。 您可以按一下&#x200B;**取消**，刪除與上次觸發的自動儲存相對應的已儲存資料，並開始處理新工作。
+1. 當您重新啟動應用程式並以同一個使用者登入時，系統會提示您使用「復原未儲存的工作」對話方塊來復原工作。 在[復原未儲存的工作]對話方塊中按一下[確定]****&#x200B;以繼續使用已儲存的工作。 您可以按一下&#x200B;**取消**，刪除與上次觸發的自動儲存相對應的已儲存資料，並開始處理新工作。
 
-   當您按一下&#x200B;**確定**&#x200B;時，工作會以與應用程式當機前觸發的最新自動儲存相對應的資料還原。 其中包含表單資料及與工作相關的所有附件。
+   當您按一下&#x200B;**確定**時，工作會以與應用程式當機前觸發的最新自動儲存相對應的資料還原。 其中包含表單資料及與工作相關的所有附件。
    [![正在復原工作&#x200B;](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** 在製品表單&#x200B;**B.**&#x200B;應用程式已強制關閉&#x200B;**C.**&#x200B;應用程式已重新啟動，其中復原未儲存的工作對話方塊&#x200B;**D.**&#x200B;表單已還原為原始資料

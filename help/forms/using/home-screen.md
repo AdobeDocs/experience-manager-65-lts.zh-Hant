@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 2b710c6ef8d291a42b4a7658bf84f5e764422d5c
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '397'
 ht-degree: 0%
 ---
 # 主畫面{#home-screen}
+
+>[!NOTE]
+>
+>AEM Forms應用程式的Android和iOS版本已停止服務。 Android應用程式已於2026年9月從Google Play取消發佈，且iOS應用程式已從Apple App Store中移除。
+>這些應用程式已無法供安裝。 如需Android應用程式的協助，請連絡[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)。
 
 當您登入AEM Forms應用程式時，系統會將您重新導向至首頁畫面。
 
@@ -48,7 +53,7 @@ Click to enlarge
 ![home-screen-1-1](assets/home-screen-1-1.png)
 -->
 
-1. **功能表按鈕**：選取&#x200B;**功能表**&#x200B;按鈕以瀏覽至[工作]、[Forms]、[寄件匣]和[設定]。 如果您的AEM Forms應用程式已連線至AEM Forms JEE伺服器，您會看到「工作」選項。 「工作」選項也會儲存從處理序中的工作建立的草稿。 若為AEM Forms OSGi伺服器，會隱藏工作選項。 Outbox會在與伺服器同步之前儲存已儲存的表單和草稿。 當應用程式與伺服器[&#128279;](../../forms/using/sync-app.md)進行同步處理時，「寄件匣」中所有儲存的表單和草稿都會上傳至AEM Forms伺服器。 如需設定的詳細資訊，請參閱[更新一般設定](../../forms/using/update-general-settings.md)。
+1. **功能表按鈕**：選取&#x200B;**功能表**&#x200B;按鈕以瀏覽至[工作]、[Forms]、[寄件匣]和[設定]。 如果您的AEM Forms應用程式已連線至AEM Forms JEE伺服器，您會看到「工作」選項。 「工作」選項也會儲存從處理序中的工作建立的草稿。 若為AEM Forms OSGi伺服器，會隱藏工作選項。 Outbox會在與伺服器同步之前儲存已儲存的表單和草稿。 當應用程式與伺服器](../../forms/using/sync-app.md)進行[同步處理時，「寄件匣」中所有儲存的表單和草稿都會上傳至AEM Forms伺服器。 如需設定的詳細資訊，請參閱[更新一般設定](../../forms/using/update-general-settings.md)。
 1. **任務或表單**：選取您想要使用的列出任務或表單。
 1. **水準省略符號**：表示表單有可用的動作。 點選省略符號會顯示作者提供的動作和說明。 當您選取省略符號時，**刪除草稿**&#x200B;和&#x200B;**完成**&#x200B;選項會顯示。
 1. **重新整理圖示**：選取重新整理圖示，即可將您的應用程式與AEM Forms伺服器同步。

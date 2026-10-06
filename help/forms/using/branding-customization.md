@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 2%
+source-wordcount: '953'
+ht-degree: 1%
 ---
 # 品牌自訂 {#branding-customization}
+
+>[!NOTE]
+>
+>AEM Forms應用程式的Android和iOS版本已停止服務。 Android應用程式已於2026年9月從Google Play取消發佈，且iOS應用程式已從Apple App Store中移除。
+>這些應用程式已無法供安裝。 如需Android應用程式的協助，請連絡[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)。
 
 您可以自訂應用程式圖示、應用程式名稱、啟動影像和登入頁面，為AEM Forms應用程式提供獨特的組織特定外觀。 例如，您可以將影像變更為使用貴組織的標誌。 AEM Forms應用程式支援下列自訂：
 
@@ -60,9 +65,9 @@ ht-degree: 2%
 
    將它們上傳到Capture專案，以取代專案中現有的檔案。
 
-   >[!NOTE]
-   >
-   >確保影像的名稱和解析度與您在專案中取代的影像相符。
+>[!NOTE]
+>
+>確保影像的名稱和解析度與您在專案中取代的影像相符。
 
 1. 在iOS裝置或AEM Forms模擬器上建置並執行iOS應用程式。
 
@@ -80,9 +85,9 @@ ht-degree: 2%
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xxhdpi`
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xxxhdpi`
 
-   >[!NOTE]
-   >
-   >確保影像的名稱和解析度與您在專案中取代的影像相符。
+>[!NOTE]
+>
+>確保影像的名稱和解析度與您在專案中取代的影像相符。
 
 1. 重建AEM Forms應用程式。
 
@@ -96,9 +101,9 @@ ht-degree: 2%
 
    `%HOMEPATH%\adobe-lc-mobileworkspace-src-<version>\src\windows\MWSWindows\res\screens\windows`
 
-   >[!NOTE]
-   >
-   >確保影像的名稱和解析度與您在專案中取代的影像相符。
+>[!NOTE]
+>
+>確保影像的名稱和解析度與您在專案中取代的影像相符。
 
 1. 重建AEM Forms應用程式。
 

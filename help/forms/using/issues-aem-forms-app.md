@@ -24,12 +24,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 2b710c6ef8d291a42b4a7658bf84f5e764422d5c
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '740'
 ht-degree: 0%
 ---
 # 疑難排解AEM Forms應用程式 {#troubleshoot-aem-forms-app}
+
+>[!NOTE]
+>
+>AEM Forms應用程式的Android和iOS版本已停止服務。 Android應用程式已於2026年9月從Google Play取消發佈，且iOS應用程式已從Apple App Store中移除。
+>這些應用程式已無法供安裝。 如需Android應用程式的協助，請連絡[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)。
 
 本文會說明建置AEM Forms應用程式時可能顯示的錯誤訊息，以及解決這些問題的步驟。
 
@@ -64,8 +69,8 @@ iOS適用的AEM Forms應用程式設定為在OSGi上與AEM Forms同步，僅支�
 
 1. 在CRXDE的根路徑中，按一下[存取控制]下的[存取控制清單]。**+**
 1. 在&#x200B;**新增專案**&#x200B;對話方塊中，按一下[主體]欄位中的群組搜尋按鈕。
-1. 在[選取主體]對話方塊的[名稱]欄位中，輸入`PERM_WORKSPACE_USER`並按一下[搜尋]。**&#x200B;**
-1. 在[選取主體]對話方塊中選取`PERM_WORKSPACE_USER`群組，然後按一下[確定]。**&#x200B;**
+1. 在[選取主體]對話方塊的[名稱]欄位中，輸入`PERM_WORKSPACE_USER`並按一下[搜尋]。****
+1. 在[選取主體]對話方塊中選取`PERM_WORKSPACE_USER`群組，然後按一下[確定]。****
 1. 在[新增專案]對話方塊中，在[主體]欄位中選取`PERM_WORKSPACE_USER`群組。
 
    啟用使用者群組的`jcr:read`許可權。

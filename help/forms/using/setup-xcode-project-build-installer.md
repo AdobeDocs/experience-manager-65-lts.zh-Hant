@@ -9,14 +9,17 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: c5092e61-c3f9-4770-91be-247e6a02cdb4
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '838'
 ht-degree: 2%
-
 ---
-
 # 設定Xcode專案並建置iOS應用程式{#set-up-the-xcode-project-and-build-the-ios-app}
+
+>[!NOTE]
+>
+>適用於iOS的AEM Forms應用程式已終止服務，並已從Apple App Store中移除。
+>無法再安裝。
 
 AEM Forms提供AEM Forms應用程式的完整原始碼。 來源包含建立自訂AEM Forms應用程式的所有元件。 原始程式碼封存`adobe-lc-mobileworkspace-src-<version>.zip`是Software Distribution上`adobe-aemfd-forms-app-src-pkg-<version>.zip`套件的一部分。
 
@@ -122,9 +125,9 @@ AEM Forms提供AEM Forms應用程式的完整原始碼。 來源包含建立自�
    </dict>
    ```
 
-   >[!NOTE]
-   >
-   >只有在AEM Forms應用程式需要連線到未遵循App Transport Security要求的伺服器時，才需要執行此步驟。
+>[!NOTE]
+>
+>只有在AEM Forms應用程式需要連線到未遵循App Transport Security要求的伺服器時，才需要執行此步驟。
 
 1. 在&#x200B;**專案**&#x200B;下，選取&#x200B;**AEM Forms**，並確定已針對&#x200B;**程式碼簽署身分識別**、**偵錯**、**版本**&#x200B;和&#x200B;**任何iOS SDK**&#x200B;選取適當的簽章。
 1. 將布建的iPad連線至Mac電腦。
@@ -151,7 +154,7 @@ AEM Forms提供AEM Forms應用程式的完整原始碼。 來源包含建立自�
 1. 選取&#x200B;**產品** > **清除**。
 1. 選取&#x200B;**產品** > **組建**。
 1. 選取&#x200B;**產品** > **封存**。
-1. 在[組織者 — 封存]中，選取您專案的最新封存，然後按一下[發佈]。**&#x200B;**
+1. 在[組織者 — 封存]中，選取您專案的最新封存，然後按一下[發佈]。****
 1. 選取&#x200B;**儲存以供企業或臨機部署**&#x200B;作為發佈方法，然後按一下&#x200B;**下一步**。
 1. 選取適當的&#x200B;**程式碼簽署身分識別**，然後按一下&#x200B;**下一步**。 按一下&#x200B;**允許**&#x200B;以套用簽章。
 1. 提供應用程式的名稱，並選取&#x200B;**儲存以供企業發佈**。
