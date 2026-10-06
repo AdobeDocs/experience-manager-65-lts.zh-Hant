@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '449'
 ht-degree: 1%
 ---
 # 更新一般設定{#updating-general-settings}
+
+>[!NOTE]
+>
+>AEM Forms應用程式的Android和iOS版本已停止服務。 Android應用程式已於2026年9月從Google Play取消發佈，且iOS應用程式已從Apple App Store中移除。
+>這些應用程式已無法供安裝。 如需Android應用程式的協助，請連絡[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)。
 
 AEM Forms應用程式的一般設定可讓您指定設定，例如擷取附件、離線模式、登陸畫面、預設類別和自動儲存頻率。
 
@@ -51,9 +56,9 @@ AEM Forms應用程式的一般設定可讓您指定設定，例如擷取附件�
 
    一般設定畫面
 
-   >[!NOTE]
-   >
-   >選項在不同行動裝置上的顯示方式可能有所不同。
+>[!NOTE]
+>
+>選項在不同行動裝置上的顯示方式可能有所不同。
 
 ### 一般設定 {#general-settings}
 

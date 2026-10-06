@@ -8,14 +8,17 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 425c6194-0b87-4b01-a013-f620755072b3
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 3%
-
+source-wordcount: '646'
+ht-degree: 2%
 ---
-
 # 設定™ studio專案並建置Android™應用程式 {#set-up-the-android-studio-project-and-build-the-android-app}
+
+>[!NOTE]
+>
+>AEM Forms應用程式的Android和iOS版本已停止服務。 Android應用程式已於2026年9月從Google Play取消發佈，且iOS應用程式已從Apple App Store中移除。
+>這些應用程式已無法供安裝。 如需Android應用程式的協助，請連絡[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)。
 
 本文內容適用於建置AEM Forms應用程式6.3.1.1和更新版本。 若要從AEM Forms App 6.3的原始程式碼建置應用程式，請參閱[設定Eclipse專案並建置Android™應用程式](/help/forms/using/setup-eclipse-project-build-installer.md)。
 
@@ -52,9 +55,9 @@ src![&#128279;](assets/android-folder.png)中Android資料夾的目錄結構
 
    Windows®使用者&#x200B;**的**： `%HOMEPATH%\Projects`
 
-   >[!NOTE]
-   >
-   >若為Windows®，建議您將Android™專案保留在系統磁碟機中。
+>[!NOTE]
+>
+>若為Windows®，建議您將Android™專案保留在系統磁碟機中。
 
 1. 解壓縮下列目錄中的封存：
 
@@ -62,9 +65,9 @@ src![&#128279;](assets/android-folder.png)中Android資料夾的目錄結構
 
    Windows®使用者&#x200B;**的**： `%HOMEPATH%\Projects\[your-project]`
 
-   >[!NOTE]
-   >
-   >建議您將專案匯入™ Studio之前，將擷取的Android專案保留在系統磁碟機中。
+>[!NOTE]
+>
+>建議您將專案匯入™ Studio之前，將擷取的Android專案保留在系統磁碟機中。
 
 1. 啟動™ Studio。
 

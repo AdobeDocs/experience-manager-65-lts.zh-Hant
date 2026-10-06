@@ -27,12 +27,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 2b710c6ef8d291a42b4a7658bf84f5e764422d5c
 workflow-type: tm+mt
-source-wordcount: '2386'
+source-wordcount: '2414'
 ht-degree: 1%
 ---
 # AEM Forms應用程式簡介 {#aem-forms-app}
+
+>[!NOTE]
+>
+>AEM Forms應用程式的Android和iOS版本已停止服務。 Android應用程式已於2026年9月從Google Play取消發佈，且iOS應用程式已從Apple App Store中移除。
+>這些應用程式已無法供安裝。 如需Android應用程式的協助，請連絡[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)。
 
 ## 概觀 {#overview}
 
@@ -40,12 +45,8 @@ AEM Forms應用程式可根據您的伺服器，在行動裝置上同步最適�
 
 客戶可透過Software Distribution取得AEM Forms應用程式的原始程式碼。 Software Distribution中的原始程式碼套件可用為： `adobe-aemfd-forms-app-src-pkg-<version>.zip`。
 
-iOS、Android、Windows裝置支援AEM Forms應用程式。 您可以從Google Play安裝適用於Android的AEM Forms應用程式，從App Store安裝iOS，以及從Windows市集安裝Windows。
+Android和iOS的AEM Forms應用程式支援已終止。 Google Play或Apple App Store已不再提供Android和iOS應用程式。
 
-    [&#x200B; ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
-    
-    [&#x200B; ![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&mt=8)
-    
     [&#x200B; ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 若要在iOS、Android或Windows裝置上安裝、自訂和發佈應用程式，請參閱[自訂、建置和發佈AEM Forms應用程式](#customize-build-distribute)。

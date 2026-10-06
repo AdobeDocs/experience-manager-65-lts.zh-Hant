@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '371'
 ht-degree: 0%
 ---
 # 手勢自訂 {#gesture-customization}
+
+>[!NOTE]
+>
+>AEM Forms應用程式的Android和iOS版本已停止服務。 Android應用程式已於2026年9月從Google Play取消發佈，且iOS應用程式已從Apple App Store中移除。
+>這些應用程式已無法供安裝。 如需Android應用程式的協助，請連絡[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)。
 
 您可以自訂AEM Forms應用程式的手勢，以提供與應用程式互動的不同方法。 例如，您可以新增手勢以開啟或關閉任務或起點。
 
@@ -50,9 +55,9 @@ ht-degree: 0%
    * 在Eclipse中，導覽至&#x200B;**資產> www > wsmobile > js > runtime >檢視**&#x200B;資料夾。
    * 在Visual Studio中，瀏覽至&#x200B;**MWSWindows > www > wsmobile > js > runtime > views**&#x200B;資料夾。
 
-   >[!NOTE]
-   >
-   >task.js檔案包含與任務或「起點」清單中列出的每個任務或「起點」相關聯的骨幹檢視。
+>[!NOTE]
+>
+>task.js檔案包含與任務或「起點」清單中列出的每個任務或「起點」相關聯的骨幹檢視。
 
 1. 在`task.js`檔案中，搜尋檢視的events屬性。
 

@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 2b710c6ef8d291a42b4a7658bf84f5e764422d5c
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '383'
 ht-degree: 0%
 ---
 # 將表單另存為範本 {#save-forms-as-templates}
+
+>[!NOTE]
+>
+>AEM Forms應用程式的Android和iOS版本已停止服務。 Android應用程式已於2026年9月從Google Play取消發佈，且iOS應用程式已從Apple App Store中移除。
+>這些應用程式已無法供安裝。 如需Android應用程式的協助，請連絡[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)。
 
 有時，使用者填寫表單時，對幾個欄位的輸入會維持不變。 對於這類例項，您可以填寫每個例項中需要相同值的欄位，並將表單或草稿另存為範本。 現在，每次建立範本的執行個體時，指定的欄位都會填入範本中指定的值。 這有助於您節省填寫表單所需的時間和精力。
 
