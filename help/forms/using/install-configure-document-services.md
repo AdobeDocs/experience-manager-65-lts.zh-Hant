@@ -24,9 +24,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
+source-git-commit: 1b62d0d980c9916d03ed6a14d7e42a4923967243
 workflow-type: tm+mt
-source-wordcount: '10769'
+source-wordcount: '10979'
 ht-degree: 1%
 ---
 # 安裝和設定檔案服務 {#installing-and-configuring-document-services}
@@ -1122,6 +1122,27 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 此套件包含AEM 
 1. 開啟[AEM Forms PDF Generator設定](http://localhost:4502/libs/fd/pdfg/config/ui.html)頁面。
 
 1. 在&#x200B;**[!UICONTROL 使用者帳戶]**&#x200B;索引標籤中，提供本機使用者帳戶的認證，然後按一下&#x200B;**[!UICONTROL 提交]**。 如果®Windows提示，請允許使用者存取。 成功新增後，設定的使用者會顯示在&#x200B;**[!UICONTROL 使用者帳戶]**&#x200B;索引標籤的&#x200B;**[!UICONTROL 您的使用者帳戶]**&#x200B;區段下。
+
+### （僅限Windows）啟用多執行緒PDF Generator轉換
+
+若要在AEM Forms以Windows服務形式執行時執行多執行緒檔案轉換，PDF Generator會在單一已設定的使用者帳戶下處理轉換。
+
+>[!NOTE]
+>
+> 在此模式中，**®Word** (doc/docx)和&#x200B;**Excel** (xls/xlsx)的多個執行個體會在同一個使用者下執行，並且同時處理轉換。 **® PowerPoint** (ppt/pptx)不支援此模式。 PDF Generator一次只能啟動一個PowerPoint執行個體，因此PowerPoint不支援多執行緒轉換。
+
+若要啟用Word與Excel的多執行緒轉換：
+
+1. 設定PDF Generator的[本機使用者帳戶](#configure-a-local-user-account-to-run-the-pdf-generator-service)。
+1. 登入AEM作者執行個體並導覽至&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 設定PDF Generator]**。 預設URL為<http://localhost:4502/libs/fd/pdfg/config/ui.html>。
+1. 在&#x200B;**[!UICONTROL 「一般組態」]**&#x200B;標籤中，設定下列選項（為Word設定PDFMaker，為Excel設定Native2PDF）：
+
+   * **為PDFMaker啟用單一使用者模式：** **true**
+   * **PDFMaker單一使用者處理序集區大小：**&#x200B;已視需要設定。 此值是可同時執行轉換的Word執行個體數目上限。
+   * **為Native2PDF啟用單一使用者模式：** **true**
+   * **Native2PDF單一使用者處理序集區大小：**&#x200B;已視需要設定。 此值是可同時執行轉換的Excel執行個體數目上限。
+
+1. 重新啟動AEM Forms伺服器。
 
 ### 設定逾時設定 {#configure-the-time-out-settings}
 
