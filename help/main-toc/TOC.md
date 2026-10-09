@@ -7,9 +7,9 @@ user-guide-description: 使用Adobe Experience Manager 6.5 LTS檔案瞭解其運
 breadcrumb-title: 使用手冊
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: 4df5a9888532afd86562678a76c35841ac5634b8
+source-git-commit: 8781bd3762ec04424802d899d3517754e0c81fc5
 workflow-type: tm+mt
-source-wordcount: '7804'
+source-wordcount: '7799'
 ht-degree: 22%
 ---
 # Adobe Experience Manager 6.5 LTS檔案 {#content}
@@ -1111,7 +1111,6 @@ ht-degree: 22%
 + AEM 中的 AI {#ai-in-aem}
   + [概觀](/help/ai-in-aem/overview.md)
   + AI 助理 {#ai-assistant}
-    + [設定 AEM 中的 AI 助理](/help/ai-assistant-in-aem-admin.md)
     + [關於 AEM 中的 AI 助理](/help/ai-assistant-in-aem.md)
 + 內容 and Commerce {#commerce}
   + [簡介和概觀](/help/commerce/cif/introduction.md)
