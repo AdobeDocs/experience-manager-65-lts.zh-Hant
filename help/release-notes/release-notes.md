@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 60fd1764a1b2a6440d306d21a8a84a8f9d879811
+source-git-commit: 7fb04d7017fa8f6183508cf4f880077eb533c057
 workflow-type: tm+mt
-source-wordcount: '7432'
+source-wordcount: '7577'
 ht-degree: 21%
 ---
 
@@ -674,30 +674,27 @@ If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier 
 >Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.4.7 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
 -->
 
+AEM 6.5 LTS SP3升級`jackson`套件。 此變更會影響使用GlobalLink翻譯聯結器的部署。
 
-
-<!--
-AEM 6.5 LTS SP3 upgrades the `jackson` bundle. This change affects deployments that use the GlobalLink translation connector.
-
-If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.0, upgrade the bundle to a compatible version. Version 3.4.0 or later works with the upgraded `jackson` bundle in SP3.
+如果您使用3.4.0之前版本的`gs4tr-globallink-adaptors-aem.core`套件組合，請將套件組合升級至相容版本。 3.4.0版或更新版本可搭配SP3中升級的`jackson`套件組合使用。
 
 >[!NOTE]
 >
-> Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.0 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
+> 在SP3更新之前或期間，將`gs4tr-globallink-adaptors-aem.core`套件組合升級至3.4.0或更新版本，以避免GlobalLink聯結器的相容性問題。
 
 
-### Install required Oak indexes for Sites Headless APIs{#site-headless-api}
+### 安裝 Sites Headless API 必要的 Oak 索引{#site-headless-api}
 
-Some APIs that moved to Sites Headless require additional Oak indexes for full functionality. 
+部分移至 Sites Headless 的 API 需要額外的 Oak 索引才能完整發揮功能。
 
-To use the following features, install the `cq-dam-cfm-indices` package:
+若要使用下列功能，請安裝`cq-dam-cfm-indices`套件：
 
-* List Content Fragment Models
-* List Content Fragments
-* Search API
-* Workflows
+* 列出內容片段模型
+* 列出內容片段
+* 搜尋 API
+* 工作流程
 
-Download the index package [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) from the Adobe Software Distribution portal. 
+從 Adobe 軟體發佈入口網站下載索引套件 [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip)。
 
 -->
 
