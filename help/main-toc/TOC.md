@@ -7,9 +7,9 @@ user-guide-description: 使用Adobe Experience Manager 6.5 LTS檔案瞭解其運
 breadcrumb-title: 使用手冊
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: 8781bd3762ec04424802d899d3517754e0c81fc5
+source-git-commit: a895c5e5cb2a4e21d7460d598bd260a5292ed2ad
 workflow-type: tm+mt
-source-wordcount: '7799'
+source-wordcount: '7801'
 ht-degree: 22%
 ---
 # Adobe Experience Manager 6.5 LTS檔案 {#content}
@@ -332,6 +332,7 @@ ht-degree: 22%
     + [設定中繼資料功能](/help/assets/metadata-config.md)
     + [中繼資料結構描述](/help/assets/metadata-schemas.md)
     + [XMP回寫至轉譯](/help/assets/xmp-writeback.md)
+    + [C2PA中繼資料](/help/assets/c2pa-metadata.md)
     + [資產連結共用](/help/assets/link-sharing.md)
     + [資產報表](/help/assets/asset-reports.md)
     + [設定智慧內容服務以進行標籤](/help/assets/config-smart-tagging.md)
