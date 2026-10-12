@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fb04d7017fa8f6183508cf4f880077eb533c057
+source-git-commit: 168e33d380dcef163d43d6d10dc21c840c55e96c
 workflow-type: tm+mt
-source-wordcount: '7577'
+source-wordcount: '7799'
 ht-degree: 21%
 ---
 
@@ -41,7 +41,9 @@ ht-degree: 21%
 
 <!-- UPDATE ABOVE FOR EACH NEW RELEASE -->
 
-<!-- **Mandatory Hotfix** – To avoid SNFE (SegmentNotFoundException) issues with offline compaction when installing SP2, install the hotfix described in [Known issues – Repository corruption during online compaction](#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146). -->
+>[!IMPORTANT]
+>
+> **強制Hotfix** — 若要避免在待命線上壓縮期間發生SNFE (SegmentNotFoundException)問題，請安裝[已知問題 — 線上壓縮期間存放庫損毀](#repository-corruption-during-online-compaction-granite-73045)中說明的Hotfix。
 
 ## [!DNL Adobe Experience Manager] 6.5 LTS、SP3包含哪些專案 {#what-is-new}
 
@@ -646,6 +648,20 @@ Adobe 會持續審閱或演進產品功能，藉由更新或取代舊版功能�
 
 ## 已知問題 {#known-issues}
 
+### 待命時線上壓縮期間存放庫損毀(GRANITE-73045) {#repository-corruption-during-online-compaction-granite-73045}
+
+如果執行個體先前是以TarMK冷待命執行且後來升級為主要，使用者可能會線上上壓縮期間遇到存放庫損毀的情況。 此情境中可能會發生 `SegmentNotFoundException` (SNFE)，並可能導致存放庫損毀。
+
+若要解決此問題，請安裝「[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/cq-6.5.lts.3-hotfix-GRANITE-74457-1.0.zip)」處的 Hotfix。 由於 Hotfix 包含低階 `oak-segment-tar` 組合包，所以執行個體會在安裝後重新啟動。
+
+計劃套用執行個體時的停機時間。 若要離線壓縮，請使用對應的 [`oak-run` jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar) (也可在 Software Distribution 中使用)。
+
+>[!NOTE]
+>
+> * 對於任何`oak-run`作業，請使用[`oak-run` 2.4.1-B002 jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar)。
+>
+> * 設定系統屬性 `oak.segment.cleanup.skipDanglingFutureReclaim=true` 以啟動 AEM。
+
 ### AEM Forms
 
 * 在 Configuration Manager 中，未選取模組或僅選取有限元件時，在 AEM Forms 6.5 LTS JEE Turnkey 自訂模式中的 Bootstrap 期間，資料庫初始化會失敗。 失敗是因為遺失相依性 (xalan-2.7.2.jar)，導致錯誤。 將JAR檔案新增至Adobe-livecycle-jboss.ear\lib即可解決問題。 (FORMS-24690)
@@ -698,7 +714,7 @@ AEM 6.5 LTS SP3升級`jackson`套件。 此變更會影響使用GlobalLink翻譯
 
 -->
 
-&#x200B;###
+###
 
 ### 使用僅限 SSL 連線功能時 Dispatcher 連線失敗 (AEM 6.5 LTS SP1 及以上版本已修正){#ssl-only-feature}
 
