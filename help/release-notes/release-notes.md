@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 0eb20f3494bb75de7adf27745ddfb13d024af59c
+source-git-commit: fe79cf30a6062d86ac2ecd5cb1b87b83a57e2480
 workflow-type: tm+mt
-source-wordcount: '7882'
+source-wordcount: '7815'
 ht-degree: 21%
 ---
 
@@ -695,27 +695,6 @@ Adobe 會持續審閱或演進產品功能，藉由更新或取代舊版功能�
 >
 > 為避免升級至AEM 6.5 LTS SP2後內容載入失敗，請從`Sling-Initial-Content`套件組合中的JSON檔案移除所有註解。
 
-<!--
-### Jackson bundle upgrade affects the GlobalLink connector {#jackson-upgrade-globallink-connector}
-
-AEM 6.5 LTS SP3 upgrades the jackson bundle. This change affects deployments that use the GlobalLink translation connector.
- 
-If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.4.7, upgrade the bundle to a compatible version. Version 3.4.4.7 or later works with the upgraded jackson bundle in SP3.
- 
->[!NOTE]
->
->Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.4.7 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
--->
-
-AEM 6.5 LTS SP3升級`jackson`套件。 此變更會影響使用GlobalLink翻譯聯結器的部署。
-
-如果您使用3.4.0之前版本的`gs4tr-globallink-adaptors-aem.core`套件組合，請將套件組合升級至相容版本。 3.4.0版或更新版本可搭配SP3中升級的`jackson`套件組合使用。
-
->[!NOTE]
->
-> 在SP3更新之前或期間，將`gs4tr-globallink-adaptors-aem.core`套件組合升級至3.4.0或更新版本，以避免GlobalLink聯結器的相容性問題。
-
-
 ### 安裝 Sites Headless API 必要的 Oak 索引{#site-headless-api}
 
 部分移至 Sites Headless 的 API 需要額外的 Oak 索引才能完整發揮功能。
@@ -731,7 +710,7 @@ AEM 6.5 LTS SP3升級`jackson`套件。 此變更會影響使用GlobalLink翻譯
 
 -->
 
-&#x200B;###
+###
 
 ### 使用僅限 SSL 連線功能時 Dispatcher 連線失敗 (AEM 6.5 LTS SP1 及以上版本已修正){#ssl-only-feature}
 
