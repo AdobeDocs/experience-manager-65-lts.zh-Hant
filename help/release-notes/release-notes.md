@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 168e33d380dcef163d43d6d10dc21c840c55e96c
+source-git-commit: fe79cf30a6062d86ac2ecd5cb1b87b83a57e2480
 workflow-type: tm+mt
-source-wordcount: '7799'
+source-wordcount: '7815'
 ht-degree: 21%
 ---
 
@@ -383,6 +383,23 @@ Campaign ContentServlet現在會在內容請求期間保留JSON回應內容型�
 
 * 在JEE 6.5 LTS SP3 **上的** AEM Forms上，將&#x200B;**PostScript (PS)、EPS和PRN檔案轉換到PDF**&#x200B;失敗。 `PsToPdfSvc`原生處理序可能會意外終止，導致轉換工作失敗，並產生`ALC-PDG-003-011`和`ALC-PDG-001-028`等錯誤。 請聯絡Adobe客戶支援以尋求協助。 (FORMS-28152)
 
+在JEE上的AEM Forms上，Reader擴充功能無法在WebSphere® Liberty Profile (WLP)平台上運作。 LTS SP3隨附的EAR檔案在其類別路徑上遺漏必要的Bouncy Castle資料庫。
+
+**因應措施**
+
+1. 前往 `<AEM Forms JEE installation>\Adobe_Experience_Manager_Forms\configurationManager\export`。
+1. 開啟`adobe-livecycle-websphere.ear\adobe-dscf.jar\META-INF\MANIFEST.MF`並將這些專案附加至`Class-Path`專案：
+
+   ```
+   bcmail-jdk18on-1.84.jar bcprov-jdk18on-1.84.jar bcpkix-jdk18on-1.84.jar bcutil-jdk18on-1.84.jar
+   ```
+
+1. 將修改過的EAR檔案重新部署至WebSphere® Liberty Profile `dropins`資料夾：
+   1. 停止WebSphere® Liberty設定檔伺服器，並從`<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`中刪除`adobe-livecycle-websphere.ear`。
+   1. 從`<WebSphere Liberty Profile install location>\usr\servers\<server-name>\apps\expanded\`刪除`adobe-livecycle-websphere.ear`目錄。
+   1. 將步驟2中修改過的EAR檔案複製到`<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`。
+   1. 啟動WebSphere® Liberty設定檔伺服器。
+
 #### 安全性修正 {#forms-security-fixes-65-lts-sp3}
 
 此版本解決AEM Forms中的安全漏洞，包括XSS、SSRF和XXE，以及更新程式庫。
@@ -677,27 +694,6 @@ Adobe 會持續審閱或演進產品功能，藉由更新或取代舊版功能�
 >[!CAUTION]
 >
 > 為避免升級至AEM 6.5 LTS SP2後內容載入失敗，請從`Sling-Initial-Content`套件組合中的JSON檔案移除所有註解。
-
-<!--
-### Jackson bundle upgrade affects the GlobalLink connector {#jackson-upgrade-globallink-connector}
-
-AEM 6.5 LTS SP3 upgrades the jackson bundle. This change affects deployments that use the GlobalLink translation connector.
- 
-If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.4.7, upgrade the bundle to a compatible version. Version 3.4.4.7 or later works with the upgraded jackson bundle in SP3.
- 
->[!NOTE]
->
->Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.4.7 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
--->
-
-AEM 6.5 LTS SP3升級`jackson`套件。 此變更會影響使用GlobalLink翻譯聯結器的部署。
-
-如果您使用3.4.0之前版本的`gs4tr-globallink-adaptors-aem.core`套件組合，請將套件組合升級至相容版本。 3.4.0版或更新版本可搭配SP3中升級的`jackson`套件組合使用。
-
->[!NOTE]
->
-> 在SP3更新之前或期間，將`gs4tr-globallink-adaptors-aem.core`套件組合升級至3.4.0或更新版本，以避免GlobalLink聯結器的相容性問題。
-
 
 ### 安裝 Sites Headless API 必要的 Oak 索引{#site-headless-api}
 
