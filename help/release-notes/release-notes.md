@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 168e33d380dcef163d43d6d10dc21c840c55e96c
+source-git-commit: 0eb20f3494bb75de7adf27745ddfb13d024af59c
 workflow-type: tm+mt
-source-wordcount: '7799'
+source-wordcount: '7882'
 ht-degree: 21%
 ---
 
@@ -383,6 +383,23 @@ Campaign ContentServlet現在會在內容請求期間保留JSON回應內容型�
 
 * 在JEE 6.5 LTS SP3 **上的** AEM Forms上，將&#x200B;**PostScript (PS)、EPS和PRN檔案轉換到PDF**&#x200B;失敗。 `PsToPdfSvc`原生處理序可能會意外終止，導致轉換工作失敗，並產生`ALC-PDG-003-011`和`ALC-PDG-001-028`等錯誤。 請聯絡Adobe客戶支援以尋求協助。 (FORMS-28152)
 
+在JEE上的AEM Forms上，Reader擴充功能無法在WebSphere® Liberty Profile (WLP)平台上運作。 LTS SP3隨附的EAR檔案在其類別路徑上遺漏必要的Bouncy Castle資料庫。
+
+**因應措施**
+
+1. 前往 `<AEM Forms JEE installation>\Adobe_Experience_Manager_Forms\configurationManager\export`。
+1. 開啟`adobe-livecycle-websphere.ear\adobe-dscf.jar\META-INF\MANIFEST.MF`並將這些專案附加至`Class-Path`專案：
+
+   ```
+   bcmail-jdk18on-1.84.jar bcprov-jdk18on-1.84.jar bcpkix-jdk18on-1.84.jar bcutil-jdk18on-1.84.jar
+   ```
+
+1. 將修改過的EAR檔案重新部署至WebSphere® Liberty Profile `dropins`資料夾：
+   1. 停止WebSphere® Liberty設定檔伺服器，並從`<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`中刪除`adobe-livecycle-websphere.ear`。
+   1. 從`<WebSphere Liberty Profile install location>\usr\servers\<server-name>\apps\expanded\`刪除`adobe-livecycle-websphere.ear`目錄。
+   1. 將步驟2中修改過的EAR檔案複製到`<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`。
+   1. 啟動WebSphere® Liberty設定檔伺服器。
+
 #### 安全性修正 {#forms-security-fixes-65-lts-sp3}
 
 此版本解決AEM Forms中的安全漏洞，包括XSS、SSRF和XXE，以及更新程式庫。
@@ -714,7 +731,7 @@ AEM 6.5 LTS SP3升級`jackson`套件。 此變更會影響使用GlobalLink翻譯
 
 -->
 
-&#x200B;###
+###
 
 ### 使用僅限 SSL 連線功能時 Dispatcher 連線失敗 (AEM 6.5 LTS SP1 及以上版本已修正){#ssl-only-feature}
 
