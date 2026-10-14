@@ -21,7 +21,7 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: fe79cf30a6062d86ac2ecd5cb1b87b83a57e2480
+source-git-commit: ea816eea4c8594f6f186e7e92540e536243b6a05
 workflow-type: tm+mt
 source-wordcount: '7815'
 ht-degree: 21%
@@ -710,7 +710,7 @@ Adobe 會持續審閱或演進產品功能，藉由更新或取代舊版功能�
 
 -->
 
-&#x200B;###
+###
 
 ### 使用僅限 SSL 連線功能時 Dispatcher 連線失敗 (AEM 6.5 LTS SP1 及以上版本已修正){#ssl-only-feature}
 
