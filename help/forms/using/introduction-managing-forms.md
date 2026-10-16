@@ -25,7 +25,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 1%
@@ -114,8 +114,8 @@ AEM工具面板包含各種元件的工具。 若要瀏覽至AEM Forms專用工�
   ![AEM Forms工具](assets/aem_forms_tools_new.png)
 
 * **設定PDF Generator：**&#x200B;管理員可以設定AEM [!DNL Forms] PDF Generator設定、新增使用者帳戶，以及將設定匯入或匯出至PDF Generator。
-* **Publish Correspondence Management Assets：** AEM [!DNL Forms]可讓您一次從製作執行個體發佈所有字母、檔案片段和資料字典以及相關相依性。 發佈的資產包含所有「對應管理」資產和相關相依性。 如需詳細資訊，請參閱[發佈與取消發佈表單與檔案](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets)。
-* **匯出通訊管理Assets：**&#x200B;您可以從AEM [!DNL Forms]執行個體將所有Correspondence Management資產和相關相依性下載為套件。 如需詳細步驟，請參閱[匯入和匯出資產至AEM Forms](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
+* **Publish Correspondence Management Assets：** AEM [!DNL Forms]可讓您一次從製作執行個體發佈所有字母、檔案片段和資料字典以及相關相依性。 發佈的資產包含所有「對應管理」資產和相關相依性。 如需詳細資訊，請參閱[發佈與取消發佈表單與檔案](../../forms/using/publishing-unpublishing-forms.md#publish-all-the-correspondence-management-assets)。
+* **匯出通訊管理Assets：**&#x200B;您可以從AEM [!DNL Forms]執行個體將所有Correspondence Management資產和相關相依性下載為套件。 如需詳細步驟，請參閱[匯入和匯出資產至AEM Forms](../../forms/using/import-export-forms-templates.md#import-and-export-assets-in-correspondence-management)
 
 ## 使用者介面的通用元素 {#commonelements}
 

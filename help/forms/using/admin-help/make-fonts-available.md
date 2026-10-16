@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 2%
@@ -40,7 +40,7 @@ ht-degree: 2%
 
 確定表單內使用的字型可用於託管AEM表單的J2EE應用程式伺服器。 例如，請考量下列情況。 表單設計人員將字型新增到Designer使用的字型目錄中，並建立在不同電腦上使用該字型的表單。 為了讓Output服務使用字型，請將其放置在Customer fonts目錄中。 如果Customer fonts目錄不存在，請在裝載AEM表單的J2EE應用程式伺服器上建立目錄。
 
-如需其他字型設定的詳細資訊，請參閱[設定一般AEM表單設定](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)。
+如需其他字型設定的詳細資訊，請參閱[設定一般AEM表單設定](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#general-aem-forms-settings)。
 
 **指定Customer字型目錄的位置**
 

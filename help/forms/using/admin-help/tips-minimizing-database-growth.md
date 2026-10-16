@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
@@ -50,4 +50,4 @@ ht-degree: 0%
 
 有效使用全球檔案儲存(GDS)。 Forms伺服器上的GDS目錄可用來儲存（除其他專案外）傳遞至處理程式中AEM表單一部分的服務的檔案。 為了改善效能，較小的檔案會儲存在記憶體中，並保留在資料庫中。
 
-管理主控台會公開「預設檔案最大內嵌大小」屬性，以設定儲存在記憶體中並保留在資料庫中的檔案大小上限。 （請參閱[設定一般AEM表單設定](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)。） 如果您將此屬性設定為較低的值，則大部分檔案都會儲存在GDS目錄，而非資料庫中。 優點在於，當檔案儲存在GDS目錄中時，您可以更輕鬆地刪除檔案。
+管理主控台會公開「預設檔案最大內嵌大小」屬性，以設定儲存在記憶體中並保留在資料庫中的檔案大小上限。 （請參閱[設定一般AEM表單設定](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#general-aem-forms-settings)。） 如果您將此屬性設定為較低的值，則大部分檔案都會儲存在GDS目錄，而非資料庫中。 優點在於，當檔案儲存在GDS目錄中時，您可以更輕鬆地刪除檔案。

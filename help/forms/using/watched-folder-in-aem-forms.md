@@ -27,9 +27,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
-source-wordcount: '7272'
+source-wordcount: '7270'
 ht-degree: 0%
 ---
 # AEM Forms中的Watched資料夾{#watched-folder-in-aem-forms}
@@ -100,7 +100,7 @@ ht-degree: 0%
 >
 >如果主控Watched資料夾的伺服器沒有任何指定的執行模式，則無論伺服器上的執行模式為何，Watched資料夾一律會啟動。
 
-* **outputFilePattern （字串）**：輸出檔案的模式。 您可以指定資料夾或檔案模式。 如果指定資料夾模式，則輸出檔案的名稱如工作流程中所述。 如果指定了檔案模式，則輸出檔案的名稱如檔案模式中所述。 [檔案和資料夾模式](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)也可以指定輸出檔案的目錄結構。 這是強制屬性。
+* **outputFilePattern （字串）**：輸出檔案的模式。 您可以指定資料夾或檔案模式。 如果指定資料夾模式，則輸出檔案的名稱如工作流程中所述。 如果指定了檔案模式，則輸出檔案的名稱如檔案模式中所述。 [檔案和資料夾模式](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns)也可以指定輸出檔案的目錄結構。 這是強制屬性。
 
 * **stageFileExpirationDuration （長，預設值–1）**：已擷取以進行處理的輸入檔案/資料夾要等候的秒數，應視為已逾時並標籤為失敗。 只有當這個屬性的值是正數時，這個到期機制才會啟動。
 
@@ -112,7 +112,7 @@ ht-degree: 0%
 
 * **pollInterval （長）**：掃描Watched資料夾以進行輸入的間隔（秒）。 除非啟用「節流」設定，否則輪詢「間隔」應比處理平均作業的時間長；否則，系統可能會超載。 預設值為 5。 如需詳細資訊，請參閱「批次大小」的說明。 輪詢間隔的值必須大於或等於1。
 * **excludeFilePattern （字串）**：以分號(；)分隔的模式清單，Watched資料夾會使用這些模式來決定要掃描和擷取的檔案和資料夾。 不會掃描任何具有此模式的檔案或資料夾以進行處理。 當輸入是具有多個檔案的資料夾時，此設定非常有用。 資料夾的內容可以複製到一個資料夾中，其名稱由Watched資料夾擷取。 這可防止Watched資料夾在資料夾完全複製到輸入資料夾之前擷取資料夾進行處理。 預設值為null。
-您可以使用[檔案模式](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)來排除：
+您可以使用[檔案模式](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns)來排除：
 
   * 具有特定副檔名的檔案；例如，&#42;.dat、&#42;.xml、.pdf、&#42;.&#42;
   * 具有特定名稱的檔案；例如， data&#42;會排除名為data1、data2等的檔案和資料夾。
@@ -122,7 +122,7 @@ ht-degree: 0%
     * &#42;.`[dD][Aa]`&#39;連線埠&#39;
     * &#42;.`[Xx][Mm][Ll]`
 
-如需檔案模式的詳細資訊，請參閱[關於檔案模式](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)。
+如需檔案模式的詳細資訊，請參閱[關於檔案模式](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns)。
 
 * **includeFilePattern （字串）**：以分號(；)分隔的模式清單，Watched資料夾會使用這些模式來決定要掃描和擷取的資料夾和檔案。 例如，如果IncludeFilePattern是輸入&#42;，則會擷取符合輸入&#42;的所有檔案和資料夾。 這包括名為input1、input2等的檔案和資料夾。 預設值為&#42;，表示所有檔案和資料夾。 您可以使用檔案模式來包含：
 
@@ -136,7 +136,7 @@ ht-degree: 0%
     * &#42;.`[dD][Aa]`&#39;連線埠&#39;
     * &#42;.`[Xx][Mm][Ll]`
 
-如需檔案模式的詳細資訊，請參閱[關於檔案模式](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
+如需檔案模式的詳細資訊，請參閱[關於檔案模式](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns)
 
 * **waitTime (Long)**：建立資料夾或檔案後，掃描資料夾或檔案前的等待時間（毫秒）。 例如，如果等待時間為3,600,000毫秒（一小時），且檔案是在一分鐘前建立的，則系統會在59分鐘或更長時間後擷取此檔案。 預設值為 0。 此設定對於確保檔案或資料夾完全複製到輸入資料夾非常有用。 例如，如果您有大型檔案需要處理，且檔案下載需要10分鐘，請將等待時間設定為10&#42;60 &#42;1000毫秒。 這可防止Watched資料夾在檔案未滿十分鐘時掃描檔案。
 * **purgeDuration (Long)**：結果資料夾中的檔案和資料夾早於此值時會被清除。 此值以天為單位測量。 此設定對於確保結果資料夾不會填滿非常有用。 值為–1天表示絕不刪除結果資料夾。 預設值為 -1。
@@ -159,7 +159,7 @@ ht-degree: 0%
 
   例如，如果是2009年7月17日晚上8點，而您指定C：/Test/WF0/failure/%Y/%M/%D/%H/，則結果資料夾是C：/Test/WF0/failure/2009/07/17/20
 
-  如果路徑不是絕對路徑而是相對路徑，則會在Watched資料夾中建立資料夾。 預設值為result/%Y/%M/%D/，這是Watched資料夾內的Result資料夾。 如需檔案模式的詳細資訊，請參閱[關於檔案模式](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)。
+  如果路徑不是絕對路徑而是相對路徑，則會在Watched資料夾中建立資料夾。 預設值為result/%Y/%M/%D/，這是Watched資料夾內的Result資料夾。 如需檔案模式的詳細資訊，請參閱[關於檔案模式](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns)。
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ ht-degree: 0%
 
   當檔案被放入Watched資料夾時，它會列出輸入中的檔案，如果每秒都進行掃描，則會降低效能。 增加掃描間隔可以改善效能。 如果捨棄的檔案量很小，請相應地調整「批次大小」和「輪詢間隔」。 例如，如果每秒丟棄10個檔案，請嘗試將pollInterval設定為1秒，並將Batch Size設定為10
 
-* **throttleOn （布林值）**：選取此選項時，會限制AEM Forms在任何指定時間處理的Watched資料夾工作數目。 最大作業數由「批次大小」值決定。 預設值為true。 （請參閱[關於節流](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p)。）
+* **throttleOn （布林值）**：選取此選項時，會限制AEM Forms在任何指定時間處理的Watched資料夾工作數目。 最大作業數由「批次大小」值決定。 預設值為true。 （請參閱[關於節流](../../forms/using/watched-folder-in-aem-forms.md#about-throttling)。）
 
 * **overwriteDuplicateFilename （布林值）**：設定為True時，會覆寫結果資料夾和保留資料夾中的檔案。 設定為False時，名稱會使用具有數值索引尾碼的檔案和資料夾。 預設值為False。
 * **preserveOnFailure （布林值）**：如果服務無法執行作業，則保留輸入檔案。 預設值為true。
@@ -260,9 +260,9 @@ Watched資料夾的設定引數。
 public class OutputWriter implements ContentProcessor {
 ```
 
-在[設定Watched資料夾](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p)時，如果您將inputProcessorId屬性指定為(foo=bar)，並將inputProcessorType屬性指定為Service，則上述服務（自訂實作）將用於處理Watched資料夾的輸入檔案。
+在[設定Watched資料夾](../../forms/using/watched-folder-in-aem-forms.md#create-watched-folder-configuration-node)時，如果您將inputProcessorId屬性指定為(foo=bar)，並將inputProcessorType屬性指定為Service，則上述服務（自訂實作）將用於處理Watched資料夾的輸入檔案。
 
-以下範例也是ContentProcessor介面的自訂實作。 在此範例中，服務接受輸入檔案，將檔案複製到暫存位置，然後傳回包含檔案內容的檔案物件。 檔案物件的內容會儲存到結果資料夾中。 在[觀察資料夾設定節點](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p)中設定結果資料夾的實體路徑。
+以下範例也是ContentProcessor介面的自訂實作。 在此範例中，服務接受輸入檔案，將檔案複製到暫存位置，然後傳回包含檔案內容的檔案物件。 檔案物件的內容會儲存到結果資料夾中。 在[觀察資料夾設定節點](../../forms/using/watched-folder-in-aem-forms.md#create-watched-folder-configuration-node)中設定結果資料夾的實體路徑。
 
 ```java
 @Component(immediate = true)
@@ -289,7 +289,7 @@ public class TestContentProcessor1 implements ContentProcessor {
 * **getConfigParameters**：傳回Map型別的不可變對應。 對應包含Watched資料夾的設定引數。
 * **setResult**： ContentProcessor實作使用API將輸出檔案寫入結果資料夾。 您可以為setResult API的輸出檔案提供名稱。 API可能會根據指定的輸出資料夾/檔案模式，選擇使用或忽略提供的檔案。 如果指定資料夾模式，則輸出檔案的名稱如工作流程中所述。 如果指定了檔案模式，則輸出檔案的名稱如檔案模式中所述。
 
-下列程式碼為ECMAScript範例。 它接受輸入檔案，將檔案複製到暫存位置，並傳回檔案物件與檔案內容。 檔案物件的內容會儲存到結果資料夾中。 在[觀察資料夾設定節點](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p)中設定結果資料夾的實體路徑。
+下列程式碼為ECMAScript範例。 它接受輸入檔案，將檔案複製到暫存位置，並傳回檔案物件與檔案內容。 檔案物件的內容會儲存到結果資料夾中。 在[觀察資料夾設定節點](../../forms/using/watched-folder-in-aem-forms.md#create-watched-folder-configuration-node)中設定結果資料夾的實體路徑。
 
 >[!NOTE]
 >
@@ -352,7 +352,7 @@ processWorkflowContext()的引數是com.adobe.aemfd.watchfolder.workflow.api.Wor
 * getMetadata：傳回中繼資料變數的值。變數會傳遞至WorkflowContextService.execute()方法。
 * getCommittedVariables：傳回代表先前步驟所設定變數的唯讀物件對應。 如果變數未在前面的任何步驟中修改，則會傳回設定Watched資料夾時指定的預設值。
 * getCommittedResults：傳回唯讀檔案對應。 對映代表先前步驟產生的輸出檔案。
-* setVariable： WorkflowContextProcessor實作會使用變數來操控變數，這些變數代表在步驟之間流程的自訂動態資料。 變數的名稱和型別與[設定Watched資料夾](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)時指定的變數名稱相同。 若要變更變數的值，請使用非null值呼叫setVariable API。 若要移除變數，請使用null值呼叫setVariable()。
+* setVariable： WorkflowContextProcessor實作會使用變數來操控變數，這些變數代表在步驟之間流程的自訂動態資料。 變數的名稱和型別與[設定Watched資料夾](../../forms/using/watched-folder-in-aem-forms.md#configure-the-watched-folder)時指定的變數名稱相同。 若要變更變數的值，請使用非null值呼叫setVariable API。 若要移除變數，請使用null值呼叫setVariable()。
 
 也可以使用下列ProcessorContext API：
 
@@ -531,8 +531,8 @@ Watched Folder會以每個pollInterval掃描輸入資料夾，擷取在「批次
 節流可防止Watched資料夾在先前工作未完成時叫用新工作。 Watched資料夾會偵測進行中的工作，並根據批次大小減去進行中的工作來處理新工作。 例如，在第二個叫用中，如果完成的工作只有三個，而一個工作仍在進行中，則Watched資料夾只會叫用另外三個工作。
 
 * Watched資料夾取決於Stage資料夾中的檔案數目，以找出正在進行的工作數目。 如果stage資料夾中的檔案仍未處理，Watched資料夾就不會再叫用任何工作。 例如，如果批次大小為四且三個工作已停止，則Watched資料夾在後續的叫用中只會叫用一個工作。 有多個情況可能會導致stage資料夾中的檔案保持未處理狀態。 當工作停止時，管理員可以在「程式管理」管理頁面上終止程式，以便Watched Folder將檔案移出stage資料夾。
-* 如果AEM Forms伺服器在Watched資料夾叫用工作之前關閉，管理員可以將檔案移出stage資料夾。 如需詳細資訊，請參閱[失敗點與復原](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p)。
-* 如果AEM Forms伺服器正在執行，但工作管理員服務回撥時Watched Folder並未執行（當服務未依順序啟動時就會發生回撥），管理員可以將檔案移出stage資料夾。 如需詳細資訊，請參閱[失敗點與復原](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p)。
+* 如果AEM Forms伺服器在Watched資料夾叫用工作之前關閉，管理員可以將檔案移出stage資料夾。 如需詳細資訊，請參閱[失敗點與復原](../../forms/using/watched-folder-in-aem-forms.md#failure-points-and-recoveryfailure-points-and-recovery)。
+* 如果AEM Forms伺服器正在執行，但工作管理員服務回撥時Watched Folder並未執行（當服務未依順序啟動時就會發生回撥），管理員可以將檔案移出stage資料夾。 如需詳細資訊，請參閱[失敗點與復原](../../forms/using/watched-folder-in-aem-forms.md#failure-points-and-recoveryfailure-points-and-recovery)。
 
 ### 失敗點與復原失敗點與復原 {#failure-points-and-recoveryfailure-points-and-recovery}
 
@@ -615,9 +615,9 @@ Watched資料夾可以連結在一起，因此一個Watched資料夾的結果檔
 
 執行以下步驟，使用PDF Generator設定Watched資料夾：
 
-1. [建立ECMAScript](../../forms/using/watched-folder-in-aem-forms.md#p-create-an-ecmascript-p)
-1. [建立工作流程](../../forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p)
-1. [設定Watched資料夾](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)
+1. [建立ECMAScript](../../forms/using/watched-folder-in-aem-forms.md#create-an-ecmascript)
+1. [建立工作流程](../../forms/using/watched-folder-in-aem-forms.md#create-a-workflow)
+1. [設定Watched資料夾](../../forms/using/watched-folder-in-aem-forms.md#configure-the-watched-folder)
 
 ### 建立ECMAScript {#create-an-ecmascript}
 
@@ -659,11 +659,11 @@ ECMAScript會使用PDF Generator的createPDF API將Microsoft Word (.docx)檔案�
 1. 在瀏覽器視窗中開啟AEM工作流程UI。
    <https://[servername>]：&#39;port&#39;/workflow
 
-1. 在[模型]檢視中，按一下[新增]。**&#x200B;** 在[新增工作流程]對話方塊中，指定&#x200B;**標題**，然後按一下[確定]。**&#x200B;**
+1. 在[模型]檢視中，按一下[新增]。**** 在[新增工作流程]對話方塊中，指定&#x200B;**標題**，然後按一下[確定]。****
 
    ![create-a-workflow-pdf](assets/create-a-workflow-pdf.png)
 
-1. 選取新建立的工作流程，然後按一下[編輯]。**&#x200B;** 工作流程會在新視窗中開啟。
+1. 選取新建立的工作流程，然後按一下[編輯]。**** 工作流程會在新視窗中開啟。
 
 1. 刪除預設的工作流程步驟。 將「流程步驟」從Sidekick拖放至「工作流程」。
 
@@ -671,7 +671,7 @@ ECMAScript會使用PDF Generator的createPDF API將Microsoft Word (.docx)檔案�
 
 1. 以滑鼠右鍵按一下[處理步驟]並選取&#x200B;**編輯**。 「步驟屬性」視窗會出現。
 
-1. 在「處理」標籤中，選取ECMAScript。 例如，在[建立ECMAScript](#p-create-an-ecmascript-p)中建立的pdfg-openOffice-sample.ecma指令碼。 啟用&#x200B;**處理常式進階**&#x200B;選項，然後按一下&#x200B;**確定**。
+1. 在「處理」標籤中，選取ECMAScript。 例如，在[建立ECMAScript](#create-an-ecmascript)中建立的pdfg-openOffice-sample.ecma指令碼。 啟用&#x200B;**處理常式進階**&#x200B;選項，然後按一下&#x200B;**確定**。
 
    ![create-a-workflow3-pdf](assets/create-a-workflow3-pdf.png)
 

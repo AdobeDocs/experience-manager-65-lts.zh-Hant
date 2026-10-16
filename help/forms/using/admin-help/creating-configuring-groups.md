@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1590'
 ht-degree: 0%
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 有兩種不同型別的群組可供使用。 您可以手動建立群組，並將使用者和其他群組新增至群組。 您也可以建立動態群組，以自動包含符合指定規則集的所有使用者。
 
-如果使用者屬於許多群組（例如500個或更多）或群組巢狀結構較深（例如30個層級），回應時間可能會變慢。 如果您遇到此問題，可以設定AEM表單以從特定網域預先擷取資訊。 （請參閱[設定AEM表單以預先擷取網域資訊](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information)。）
+如果使用者屬於許多群組（例如500個或更多）或群組巢狀結構較深（例如30個層級），回應時間可能會變慢。 如果您遇到此問題，可以設定AEM表單以從特定網域預先擷取資訊。 （請參閱[設定AEM表單以預先擷取網域資訊](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetchdomain-information)。）
 
 ## 手動建立群組 {#create-a-group-manually}
 

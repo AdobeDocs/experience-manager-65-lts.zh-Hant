@@ -26,20 +26,20 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 7%
 ---
 # 透過延遲載入改善大型表單的效能{#improve-performance-of-large-forms-with-lazy-loading}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
 ## 套用至 {#applies-to}
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/lazy-loading-adaptive-forms.html?lang=zh-Hant)上的AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/lazy-loading-adaptive-forms.html)上的[AEM Forms 。
 
 ## 延遲載入簡介 {#introduction-to-lazy-loading}
 
@@ -59,7 +59,7 @@ ht-degree: 7%
 * **識別並標籤全域值**
 Forms型交易涉及動態元素，可從使用者擷取相關資料並進行處理，以簡化表單填寫體驗。 例如，您的表單在片段X中有欄位A，其值決定了另一個片段中欄位B的有效性。 在此案例中，如果片段X標示為延遲載入，則欄位A的值必須可用於驗證欄位B，即使未載入片段X。 為此，您可以將欄位A標示為全域，以確保其值可在未載入片段X時用於驗證欄位B。
 
-  如需有關如何將欄位值設為全域值的資訊，請參閱[設定延遲載入](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p)。
+  如需有關如何將欄位值設為全域值的資訊，請參閱[設定延遲載入](../../forms/using/lazy-loading-adaptive-forms.md#configuring-lazy-loading)。
 
 * **寫入規則以控制欄位的可見度**
 Forms包含某些欄位和區段，不適用於所有使用者和所有條件。 Forms作者和開發人員可使用可見度或顯示隱藏規則，根據使用者輸入控制其可見度。 例如，在表單的「就業狀態」欄位中選擇「失業」的使用者不會看到「辦公室地址」欄位。 如需撰寫規則的詳細資訊，請參閱[使用規則編輯器](../../forms/using/rule-editor.md)。

@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%
@@ -42,11 +42,11 @@ Process Reporting使用內嵌的Process Reporting存放庫來發佈Forms資料�
 
 「程式報表」包含下列模組：
 
-* [ProcessDataPublisher服務](#processdatapublisher-service-br-p)
-* [ProcessDataStorage服務](#processdatastorageprovider-service-br-p)
-* [OSGi服務](#osgi-service-br-p)
-* [查詢資料servlet](#querydataservlet-service-br-p)
-* [程式報告使用者介面](#process-reporting-user-interface-br-p)
+* [ProcessDataPublisher服務](#processdatapublisher-service-br)
+* [ProcessDataStorage服務](#processdatastorageprovider-service-br)
+* [OSGi服務](#osgi-service-br)
+* [查詢資料servlet](#querydataservlet-service-br)
+* [程式報告使用者介面](#process-reporting-user-interface-br)
 
 ## 程式報告架構 {#process-reporting-architecture-br}
 
@@ -58,13 +58,13 @@ Process Reporting使用內嵌的Process Reporting存放庫來發佈Forms資料�
 
 ProcessDataPublisher伺服器會定期在AEM Forms資料庫上執行，並擷取上次執行服務後變更的資料。 然後會將資料發佈至「程式資料儲存」服務。
 
-如需設定服務的詳細資訊，請參閱[設定ProcessDataPublisher服務](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p)。
+如需設定服務的詳細資訊，請參閱[設定ProcessDataPublisher服務](/help/forms/using/process-reporting/install-start-process-reporting.md#reportconfiguration-service)。
 
 ### ProcessDataStorageProvider服務 {#processdatastorageprovider-service-br}
 
 ProcessDataStorageProvider服務會從ProcessDataPublisher服務接收處理作業資料，並將資料儲存到Process Reporting儲存庫。
 
-如需設定服務的詳細資訊，請參閱[設定ProcessDataStorageProvider服務](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p)。
+如需設定服務的詳細資訊，請參閱[設定ProcessDataStorageProvider服務](/help/forms/using/process-reporting/install-start-process-reporting.md#to-configure-the-process-reporting-repository-locations)。
 
 ### OSGi服務 {#osgi-service-br}
 

@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 0%
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 * Watched資料夾是AEM表單的進階功能。 此功能需要AEM Forms附加元件套件才能運作。 確保已安裝並設定適當的AEM Forms附加元件套件。
 * 您可以在共用存放區或本機存放區中建立watched資料夾。 確定設定為執行watched資料夾的AEM表單使用者擁有watched資料夾的讀寫許可權。
-* 您可以使用服務、工作流程或指令碼，自動執行watched資料夾的作業。 確保對應的服務、工作流程或指令碼已建立並準備執行。 如需有關建立服務、工作流程及指令碼的資訊，請參閱[處理檔案的各種方法](/help/forms/using/watched-folder-in-aem-forms.md#various-methods-for-processing-files)。
+* 您可以使用服務、工作流程或指令碼，自動執行watched資料夾的作業。 確保對應的服務、工作流程或指令碼已建立並準備執行。 如需有關建立服務、工作流程及指令碼的資訊，請參閱[處理檔案的各種方法](/help/forms/using/watched-folder-in-aem-forms.md#variousmethodsforprocessingfiles)。
 * Watched資料夾有各種屬性，請參閱[Watched資料夾屬性](watched-folder-in-aem-forms.md#watchedfolderproperties)。
 
 執行以下步驟來建立watched資料夾：

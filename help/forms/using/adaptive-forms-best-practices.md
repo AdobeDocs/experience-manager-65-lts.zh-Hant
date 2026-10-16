@@ -16,14 +16,14 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '5707'
 ht-degree: 1%
 ---
 # 使用最適化表單的最佳作法 {#best-practices-for-working-with-adaptive-forms}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/introduction)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
 ## 概觀 {#overview}
 
@@ -102,11 +102,11 @@ Adobe Experience Manager (AEM)表單可協助您將複雜的交易轉換為簡�
   * 若要自訂/libs中現成可用的最適化表單元件的版面，除了[預設版面](/help/forms/using/layout-capabilities-adaptive-forms.md)之外，還要[建立自訂版面元件](/help/forms/using/custom-layout-components-forms.md)。
   * 透過建立自訂Widget或外觀來引入自訂互動。 不建議修改預設元件。 如需詳細資訊，請參閱[外觀架構](/help/forms/using/introduction-widgets.md)。
 
-* 如需處理PII資料的建議，請參閱[處理個人識別資訊](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p)。
+* 如需處理PII資料的建議，請參閱[處理個人識別資訊](/help/forms/using/adaptive-forms-best-practices.md#handling-personally-identifiable-information)。
 
 ### 建立表單範本
 
-您可以使用&#x200B;**設定瀏覽器**&#x200B;中啟用的表單範本來建立最適化表單。 若要啟用表單範本，請參閱[建立最適化表單範本](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template)。
+您可以使用&#x200B;**設定瀏覽器**&#x200B;中啟用的表單範本來建立最適化表單。 若要啟用表單範本，請參閱[建立最適化表單範本](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template)。
 
 表單範本也可以從其他作者電腦上建立的最適化表單套件上傳。 透過安裝[aemforms-references-*封裝](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)，即可使用表單範本。 建議的一些最佳實務如下：
 
@@ -288,7 +288,7 @@ AEM Forms提供[規則編輯器](/help/forms/using/rule-editor.md)，可讓您�
 
 需要伺服器端驗證，以防止任何在使用者端上繞過驗證的嘗試，以及資料提交和業務規則違規的任何可能危害。 伺服器端驗證會透過載入所需的使用者端程式庫在伺服器上執行。
 
-* 將函式包含在使用者端程式庫中，以驗證最適化表單中的運算式，並在最適化表單容器對話方塊中指定使用者端程式庫。 如需詳細資訊，請參閱[伺服器端重新驗證](/help/forms/using/configuring-submit-actions.md#p-server-side-revalidation-in-adaptive-form-p)。
+* 將函式包含在使用者端程式庫中，以驗證最適化表單中的運算式，並在最適化表單容器對話方塊中指定使用者端程式庫。 如需詳細資訊，請參閱[伺服器端重新驗證](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form)。
 * 伺服器端驗證會驗證表單模型。 建議您建立個別的使用者端程式庫進行驗證，不要將其與相同使用者端程式庫中的HTML樣式和DOM操作等其他專案混合。
 
 ### 將調適型表單當地語系化 {#localizing-adaptive-forms}
@@ -330,13 +330,13 @@ AEM提供翻譯工作流程，您可用來將最適化表單當地語系化。 �
 設定AEM以改善整體效能的一些最佳實務如下：
 
 * 從Felix主控台啟用適用於JavaScript和CSS的HTML使用者端程式庫壓縮。
-* 快取`/etc.clientlibs/fd`的所有使用者端資料庫，以及AEM Dispatcher上的任何其他自訂使用者端資料庫，以提高您發佈表單的回應速度與安全性。 如需詳細資訊，請參閱[Dispatcher](https://helpx.adobe.com/tw/experience-manager/dispatcher/using/dispatcher.html)。
+* 快取`/etc.clientlibs/fd`的所有使用者端資料庫，以及AEM Dispatcher上的任何其他自訂使用者端資料庫，以提高您發佈表單的回應速度與安全性。 如需詳細資訊，請參閱[Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)。
 
 * 不要快取`/content/forms/af/`和`/content/dam/formsanddocuments/*`路徑。 如需設定最適化表單快取的詳細資訊，請參閱[快取最適化表單](/help/forms/using/configure-adaptive-forms-cache.md)。
 
 * 透過網頁伺服器壓縮模組啟用HTML。 如需詳細資訊，請參閱[AEM Forms伺服器的效能調整](/help/forms/using/performance-tuning-aem-forms.md)。
 * 針對大型表單，增加每個請求設定的呼叫。 請參閱[最佳化大型與複雜表單的效能](#optimizing-performance-of-large-and-complex-forms)。
-* 建立錯誤處理常式[&#128279;](/help/sites-developing/customizing-errorhandler-pages.md)顯示的自訂錯誤頁面。
+* 建立錯誤處理常式](/help/sites-developing/customizing-errorhandler-pages.md)顯示的[自訂錯誤頁面。
 * 安全的AEM Forms伺服器。
 
   * 使用`nosamplecontent`執行模式，確保生產伺服器上未部署範例內容和範例使用者。 請參閱[在生產就緒模式下執行AEM](/help/sites-administering/production-ready.md)。
@@ -373,11 +373,11 @@ AEM提供翻譯工作流程，您可用來將最適化表單當地語系化。 �
 
 AEM Forms規則編輯器提供建立和管理規則的視覺介面，減少大量編碼的需求。 對於可能沒有進階程式設計技能，但需要在表單中定義及維護商業規則的商務使用者或表單設計人員而言，此功能特別實用。這裡我們將討論一些使用案例，規則編輯器可讓您：
 
-* &#x200B;<!-- Allows you --> 為您的表單定義商業規則，而不需要大量的程式設計。
-* &#x200B;<!-- Use the Rule Editor when you need --> 若要在表單中實作條件式邏輯。 這包括顯示或隱藏表單元素、根據特定條件變更欄位值，或動態變更表單的行為。
-* &#x200B;<!--When you want --> 若要對表單提交強制執行資料驗證規則，可使用規則編輯器來定義驗證條件。
-* &#x200B;<!-- When you need --> 若要將表單與外部資料來源(FDM)或服務整合，規則編輯器可協助定義在表單互動期間擷取、顯示或操控資料的規則。
-* &#x200B;<!-- If you want -->若要建立回應使用者動作的動態與互動式表單，規則編輯器可讓您定義規則以即時控制表單元素的行為。
+* <!-- Allows you --> 為您的表單定義商業規則，而不需要大量的程式設計。
+* <!-- Use the Rule Editor when you need --> 若要在表單中實作條件式邏輯。 這包括顯示或隱藏表單元素、根據特定條件變更欄位值，或動態變更表單的行為。
+* <!--When you want --> 若要對表單提交強制執行資料驗證規則，可使用規則編輯器來定義驗證條件。
+* <!-- When you need --> 若要將表單與外部資料來源(FDM)或服務整合，規則編輯器可協助定義在表單互動期間擷取、顯示或操控資料的規則。
+* <!-- If you want -->若要建立回應使用者動作的動態與互動式表單，規則編輯器可讓您定義規則以即時控制表單元素的行為。
 
 規則編輯器適用於AEM Forms Foundation元件和核心元件。
 

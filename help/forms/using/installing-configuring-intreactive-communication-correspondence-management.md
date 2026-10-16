@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 4%
@@ -113,7 +113,7 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 此套件包含AEM 
 1. 開啟[封裝管理員](/help/sites-administering/package-manager.md)，然後按一下&#x200B;**[!UICONTROL 上傳封裝]**&#x200B;以上傳封裝。
 1. 選取封裝並按一下&#x200B;**[!UICONTROL 安裝]**。
 
-   您也可以透過[AEM Forms發行版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hant)文章中列出的直接連結來下載套件。
+   您也可以透過[AEM Forms發行版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)文章中列出的直接連結來下載套件。
 
 1. 安裝套件後，系統會提示您重新啟動AEM執行個體。 **不要立即重新啟動伺服器。** 在停止AEM Forms伺服器之前，請等候ServiceEvent REGISTERED和ServiceEvent UNREGISTERED訊息停止出現在[AEM-Installation-Directory]/crx-quickstart/logs/error.log檔案中，而且記錄檔穩定。
 
@@ -183,13 +183,13 @@ Dispatcher是Adobe Experience Manager的快取與負載平衡工具，用於企�
 
 1. 設定反向連結篩選服務：
 
-   以管理員身分登入Apache Felix設定管理員。 組態管理員的預設URL為https://&#39;server&#39;：[連線埠號碼]/system/console/configMgr。 在&#x200B;**設定**&#x200B;功能表中，選取&#x200B;**Apache Sling反向連結篩選器**&#x200B;選項。 在「允許主機」欄位中，輸入Dispatcher的主機名稱，以允許其作為反向連結，然後按一下「儲存」**&#x200B;**。 專案的格式為https://&#39;[伺服器]：[連線埠]&#39;。
+   以管理員身分登入Apache Felix設定管理員。 組態管理員的預設URL為https://&#39;server&#39;：[連線埠號碼]/system/console/configMgr。 在&#x200B;**設定**&#x200B;功能表中，選取&#x200B;**Apache Sling反向連結篩選器**&#x200B;選項。 在「允許主機」欄位中，輸入Dispatcher的主機名稱，以允許其作為反向連結，然後按一下「儲存」****。 專案的格式為https://&#39;[伺服器]：[連線埠]&#39;。
 
 #### 整合 Adobe Target {#integrate-adobe-target}
 
 如果互動式通訊提供的體驗不吸引人，您的客戶可能會捨棄互動式通訊。 雖然這會讓客戶感到挫折，但也會提高貴組織的支援數量和成本。 識別並提供適當的客戶體驗以提高轉換率，這既重要又具有挑戰性。 AEM表單擁有此問題的關鍵所在。
 
-AEM Forms與Adobe Target （Adobe Experience Cloud解決方案）整合，跨多個數位頻道提供個人化及吸引人的客戶體驗。 若要使用Adobe Target來個人化互動式通訊，[將Adobe Target與AEM Forms整合](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms)。
+AEM Forms與Adobe Target （Adobe Experience Cloud解決方案）整合，跨多個數位頻道提供個人化及吸引人的客戶體驗。 若要使用Adobe Target來個人化互動式通訊，[將Adobe Target與AEM Forms整合](../../forms/using/ab-testing-adaptive-forms.md#set-up-and-integrate-target-in-aem-forms)。
 
 #### 設定表單資料模型的SSL通訊  {#configure-ssl-communcation-for-form-data-model}
 

@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1295'
 ht-degree: 0%
@@ -88,7 +88,7 @@ AEM Forms與[Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html)�
 
 **設定目標**
 
-若要為最適化表單建立並執行A/B測試，請依照[在AEM Forms中設定並整合Target](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p)中的說明在AEM Forms中設定Target。
+若要為最適化表單建立並執行A/B測試，請依照[在AEM Forms中設定並整合Target](../../forms/using/ab-testing-adaptive-forms.md#set-up-and-integrate-target-in-aem-forms)中的說明在AEM Forms中設定Target。
 
 #### 步驟2：檢視分析報表 {#step-view-analytics-report-br}
 

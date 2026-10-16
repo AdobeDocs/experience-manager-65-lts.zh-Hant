@@ -22,7 +22,7 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2092'
 ht-degree: 7%
@@ -33,7 +33,7 @@ ht-degree: 7%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=zh-Hant)上的AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html)上的[AEM Forms 。
 
 
 <!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
@@ -93,7 +93,7 @@ AEM Forms 6.5提供下列核心元件型最適化Forms的主題。
 
 * 安裝[Apache Maven.](https://maven.apache.org/download.cgi)的最新版本 Apache Maven是常用於Java™專案的組建自動化工具。 安裝最新版本可確保您擁有佈景主題自訂的必要相依性。
 
-* 瞭解如何在Adobe Experience Manager[&#128279;](/help/sites-developing/clientlibs.md)中建立使用者端資料庫。 AEM提供使用者端程式庫，可讓您將使用者端程式碼儲存在存放庫中、將其組織成類別，並定義每個類別程式碼何時及如何提供給使用者端。
+* 瞭解如何在Adobe Experience Manager](/help/sites-developing/clientlibs.md)中建立[使用者端資料庫。 AEM提供使用者端程式庫，可讓您將使用者端程式碼儲存在存放庫中、將其組織成類別，並定義每個類別程式碼何時及如何提供給使用者端。
 
 * 安裝純文字編輯器。 例如，® Visual Studio Code。 使用純文字編輯器（例如® Visual Studio Code）可提供方便使用的環境，用於編輯和修改佈景主題檔案。
 
@@ -101,7 +101,7 @@ AEM Forms 6.5提供下列核心元件型最適化Forms的主題。
 
 ### 自訂主題的考量事項 {#consideration}
 
-* 請確定您使用在您的環境中啟用Adaptive Forms核心元件[&#128279;](/help/forms/using/enable-adaptive-forms-core-components.md)所使用的Archetype專案，來自訂您的主題。
+* 請確定您使用在您的環境中啟用Adaptive Forms核心元件](/help/forms/using/enable-adaptive-forms-core-components.md)所使用的[Archetype專案，來自訂您的主題。
 
 * 發佈最適化表單時，使用者端程式庫不會自動發佈在發佈執行個體上。 請確定您手動將在最適化表單中參考的使用者端程式庫發佈到您的發佈環境。
 
@@ -115,7 +115,7 @@ AEM Forms 6.5提供下列核心元件型最適化Forms的主題。
 1. [自訂佈景主題的外觀](#customize-the-theme)
 1. [準備好本機部署的主題](#generate-the-clientlib)
 1. [在本機環境中部署主題](#deploy-the-theme-on-a-local-environment)
-1. [在生產環境中部署主題](#5-deploy-a-theme-on-your-production-environment)
+1. [在生產環境中部署主題](#deploy-theme)
 
 <!--
  ![Theme Customization workflow](/help/forms/using/assets/custom-theme-steps.png)
@@ -141,7 +141,7 @@ AEM Forms 6.5提供下列核心元件型最適化Forms的主題。
       git clone [Path of Git Repository of the theme]
    ```
 
-   將主題&rbrack;的Git存放庫的&lbrack;路徑取代為主題對應的Git存放庫的實際URL
+   將主題]的Git存放庫的[路徑取代為主題對應的Git存放庫的實際URL
 
    例如，若要複製畫布主題，請執行下列命令：
 
@@ -356,4 +356,4 @@ The selected theme is applied to the Adaptive Form.
 * [建立或自訂核心元件型最適化Forms的主題](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [建立核心元件型最適化Forms的範本](template-editor.md)
 * [建立最適化表單或新增最適化表單至AEM Sites頁面或體驗片段](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [範例主題範本和表單資料模型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hant)
+* [範例主題範本和表單資料模型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

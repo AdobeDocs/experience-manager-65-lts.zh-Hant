@@ -18,7 +18,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3533'
 ht-degree: 2%
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 本檔案適用於&#x200B;**AEM 6.5 LTS Forms**。
 
-如需AEM as a Cloud Service檔案，請參閱Cloud Service[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions)上的AEM Forms 。
+如需AEM as a Cloud Service檔案，請參閱Cloud Service](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions)上的[AEM Forms 。
 
 ## 簡介
 
@@ -94,7 +94,7 @@ AEM Forms 6.5包含JavaScript函式，可讓您使用規則編輯器定義複雜
   * date[]：代表日期值的陣列。
   * array：代表包含各種型別值的泛型陣列。
   * object：代表傳遞至自訂函式的表單物件，而非直接傳遞其值。
-  * 範圍：代表全域物件，其中包含唯讀變數，例如表單例項、目標欄位例項，以及在自訂函式內執行表單修改的方法。 這會宣告為JavaScript註解中的最後一個引數，且調適型表單的規則編輯器無法看到它。 scope引數可存取表單或元件的物件，以觸發表單處理所需的規則或事件。 如需有關Globals物件及其使用方式的進一步資訊，[請按一下這裡](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)
+  * 範圍：代表全域物件，其中包含唯讀變數，例如表單例項、目標欄位例項，以及在自訂函式內執行表單修改的方法。 這會宣告為JavaScript註解中的最後一個引數，且調適型表單的規則編輯器無法看到它。 scope引數可存取表單或元件的物件，以觸發表單處理所需的規則或事件。 如需有關Globals物件及其使用方式的進一步資訊，[請按一下這裡](/help/forms/using/create-and-use-custom-functions-core-components.md#support-field-and-global-objects)
 
 引數型別是&#x200B;**不區分大小寫**，而且引數名稱中不允許有空格。
 
@@ -366,7 +366,7 @@ var c = {
 
 ### 使用AEM專案原型建立使用者端程式庫{#create-client-library-archetype}
 
-您可以使用AEM專案原型[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/using#getting-started)，將使用者端程式庫新增至已建立的專案，以新增自訂函式。
+您可以使用AEM專案原型](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started)，將使用者端程式庫新增至已建立的專案[，以新增自訂函式。
 如果您有現有的專案<!--and have already the project structure as shown in the image below,-->，您可以直接將[自訂函式](#create-add-custom-function)新增到您的本機專案。
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
@@ -543,11 +543,11 @@ var c = {
 
 ![正在新增自訂函式使用者端程式庫](/help/forms/using//assets/calculateage-customfunction.png)
 
-現在，讓我們瞭解如何在AEM Forms 6.5[&#128279;](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)中使用規則編輯器的Invoke服務來設定和使用自訂函式
+現在，讓我們瞭解如何在AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke)中使用[規則編輯器的Invoke服務來設定和使用自訂函式
 
 ## 在最適化表單中使用自訂函式 {#use-custom-functions}
 
-在最適化表單中，您可以在規則編輯器[&#128279;](/help/forms/using/rule-editor-core-components.md)中使用自訂函式。
+在最適化表單中，您可以在規則編輯器](/help/forms/using/rule-editor-core-components.md)中使用[自訂函式。
 讓我們將下列程式碼新增至JavaScript檔案（`Function.js`檔案），以根據出生日期(YYYY-MM-DD)計算年齡。 建立自訂函式為`calculateAge()`，它以出生日期作為輸入並傳回年齡：
 
 ```javascript
@@ -583,7 +583,7 @@ var c = {
 
 >[!NOTE]
 >
-> 您可以參考下列[自訂函式](/help/forms/using/assets/customfunctions.zip)資料夾。 使用[封裝管理員](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager)下載此資料夾，並將其安裝在您的AEM執行個體中。
+> 您可以參考下列[自訂函式](/help/forms/using/assets/customfunctions.zip)資料夾。 使用[封裝管理員](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager)下載此資料夾，並將其安裝在您的AEM執行個體中。
 
 ### 支援自訂函式中的非同步函式 {#support-of-async-functions}
 

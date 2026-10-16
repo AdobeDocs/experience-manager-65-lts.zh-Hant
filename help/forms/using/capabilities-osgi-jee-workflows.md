@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 19%
@@ -412,7 +412,7 @@ OSGi和AEM Forms JEE Workflows （JEE程式管理上的AEM Forms）以表單為�
 1. 原生AEM Forms檔案服務適用於OSGi上的表單中心AEM工作流程和JEE工作流程上的AEM Forms 。 AEM工作流程在OSGi和AEM Forms JEE （流程管理）工作流程中，使用原生檔案服務來處理以表單為中心的AEM工作流程。
 1. AEM Forms JEE工作流程只能轉譯最適化表單。 不支援將最適化表單轉譯為PDF檔案。
 1. AEM forms JEE工作流程沒有適用於Adobe Sign的個別步驟。 您需要啟用Adobe Sign的最適化表單以用於AEM Forms JEE工作流程。 如需詳細資訊，請參閱[Adobe Sign檔案](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component)。
-1. 您可以使用[啟動表單資料模型服務](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p)步驟來啟動Web服務服務，並從協力廠商應用程式張貼或擷取資料。
+1. 您可以使用[啟動表單資料模型服務](../../forms/using/aem-forms-workflow-step-reference.md#invoke-form-data-model-service-step)步驟來啟動Web服務服務，並從協力廠商應用程式張貼或擷取資料。
 1. 您可以使用[傳送電子郵件](../../forms/using/aem-forms-workflow-step-reference.md#send-email-step)步驟來傳送電子郵件。
 
 ## AEM收件匣與AEM Forms應用程式功能之間的差異 {#differences-between-aem-inbox-and-aem-forms-app-features}

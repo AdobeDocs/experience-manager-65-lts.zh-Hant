@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3826'
 ht-degree: 1%
@@ -47,7 +47,7 @@ ht-degree: 1%
 1. 作者[藉由上傳結構描述或從頭開始建立資料字典](#createdatadictionary)。
 1. 作者會根據資料字典建立信函和互動式通訊，並視需要聯結信函和互動式通訊中的資料字典元素。
 1. 作者可以下載以資料字典的結構描述為基礎的範例資料XML檔案。 作者可以修改範例資料XML檔案，該檔案可以與資料字典關聯為測試資料。 字母預覽期間會使用相同的值。
-1. 在[預覽信件](../../forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p)時，作者選擇預覽包含資料的信件（自訂預覽）。 信函會開啟，預先填入作者提供的資料。 這會在建立通訊介面中開啟。 預覽此信函的代理程式可以修改此信函的內容、資料及附件，也可以提交最終信函。 如需建立信件的詳細資訊，請參閱[建立信件](../../forms/using/create-letter.md)。
+1. 在[預覽信件](../../forms/using/create-letter.md#types-of-linkage-available-for-each-of-the-fields)時，作者選擇預覽包含資料的信件（自訂預覽）。 信函會開啟，預先填入作者提供的資料。 這會在建立通訊介面中開啟。 預覽此信函的代理程式可以修改此信函的內容、資料及附件，也可以提交最終信函。 如需建立信件的詳細資訊，請參閱[建立信件](../../forms/using/create-letter.md)。
 
 ## 必備條件 {#prerequisite}
 
@@ -74,7 +74,7 @@ ht-degree: 1%
 
    ![德文指定的資料字典屬性](do-not-localize/1_ddproperties.png)
 
-1. （選擇性）若要上傳資料字典的XSD結構描述定義，請在[資料字典結構]窗格下選取[上傳XML結構描述]。**&#x200B;**&#x200B;瀏覽至XSD檔案，選取該檔案，然後選取&#x200B;**開啟**。 系統會根據上傳的XML結構描述建立資料字典。 您需要調整資料字典中元素的顯示名稱和說明。 要執行此操作，請點選元素名稱並編輯其說明、顯示名稱和其他在右窗格欄位中的詳細資訊。
+1. （選擇性）若要上傳資料字典的XSD結構描述定義，請在[資料字典結構]窗格下選取[上傳XML結構描述]。****&#x200B;瀏覽至XSD檔案，選取該檔案，然後選取&#x200B;**開啟**。 系統會根據上傳的XML結構描述建立資料字典。 您需要調整資料字典中元素的顯示名稱和說明。 要執行此操作，請點選元素名稱並編輯其說明、顯示名稱和其他在右窗格欄位中的詳細資訊。
 
    如需有關已計算DD元素的詳細資訊，請參閱[已計算的資料字典元素](#computedddelements)。
 

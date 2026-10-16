@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '6510'
 ht-degree: 1%
@@ -34,11 +34,11 @@ ht-degree: 1%
 
 本檔案的範例和範例可協助您瞭解及使用OSGi環境上AEM Forms上的AEM Document Services 。 如需JEE環境上AEM Forms的範例和範例，請參閱
 
-* [簽名服務Java API快速入門](/help/forms/developing/signature-service-java-api-quick.md#programming-aem-forms-jee)
+* [簽名服務Java API快速入門](/help/forms/developing/signature-service-java-api-quick.md#signature-service-java-api-quickstart-soap)
 
-* [加密服務Java API快速入門](/help/forms/developing/encryption-service-java-api-quick.md#developer-reference)
+* [加密服務Java API快速入門](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quickstart-soap)
 
-* [Acrobat Reader擴充功能服務Java API快速入門](/help/forms/developing/acrobat-reader-dc-extensions-service.md#developer-reference)
+* [Acrobat Reader擴充功能服務Java API快速入門](/help/forms/developing/acrobat-reader-dc-extensions-service.md#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap)
 
 ## 必備條件 {#prerequisite}
 
@@ -58,35 +58,35 @@ DocAssurance服務包括下列服務：
 
 您可以使用DocAssurance服務執行下列作業：
 
-* [新增隱藏的簽章](/help/forms/using/aem-document-services-programmatically.md#p-adding-an-invisible-signature-field-p)
+* [新增隱藏的簽章](/help/forms/using/aem-document-services-programmatically.md#adding-an-invisible-signature-field)
 
-* [新增簽章欄位](/help/forms/using/aem-document-services-programmatically.md#p-adding-a-signature-field-nbsp-p)
+* [新增簽章欄位](/help/forms/using/aem-document-services-programmatically.md#adding-a-signature-field-nbsp)
 * [套用文件時間戳記](/help/forms/using/aem-document-services-programmatically.md#apply-document-timestamp)
 
-* [取得簽章](/help/forms/using/aem-document-services-programmatically.md#p-getting-signature-p)
-* [取得簽章欄位清單](/help/forms/using/aem-document-services-programmatically.md#p-getting-signature-field-list-nbsp-p)
-* [修改簽章欄位](/help/forms/using/aem-document-services-programmatically.md#p-modifying-signature-fields-nbsp-p)
+* [取得簽章](/help/forms/using/aem-document-services-programmatically.md#getting-signature)
+* [取得簽章欄位清單](/help/forms/using/aem-document-services-programmatically.md#getting-signature-field-list-nbsp)
+* [修改簽章欄位](/help/forms/using/aem-document-services-programmatically.md#modifying-signature-fields-nbsp)
 
-* [安全保護文件](/help/forms/using/aem-document-services-programmatically.md#p-securing-documents-p)
+* [安全保護文件](/help/forms/using/aem-document-services-programmatically.md#securing-documents)
 
-* [取得認證使用許可權](/help/forms/using/aem-document-services-programmatically.md#p-getting-credential-usage-rights-p)
+* [取得認證使用許可權](/help/forms/using/aem-document-services-programmatically.md#getting-credential-usage-rights)
 
-* [取得檔案使用許可權](/help/forms/using/aem-document-services-programmatically.md#p-getting-document-usage-rights-p)
+* [取得檔案使用許可權](/help/forms/using/aem-document-services-programmatically.md#getting-document-usage-rights)
 
-* [移除使用許可權](/help/forms/using/aem-document-services-programmatically.md#p-removing-usage-rights-p)
-* [驗證數位簽名](/help/forms/using/aem-document-services-programmatically.md#p-verifying-digital-signatures-p)
-* [驗證多個數位簽名](/help/forms/using/aem-document-services-programmatically.md#p-verifying-multiple-digital-signatures-p)
-* [移除數位簽名](/help/forms/using/aem-document-services-programmatically.md#p-removing-digital-signatures-p)
+* [移除使用許可權](/help/forms/using/aem-document-services-programmatically.md#removing-usage-rights)
+* [驗證數位簽名](/help/forms/using/aem-document-services-programmatically.md#verifying-digital-signatures)
+* [驗證多個數位簽名](/help/forms/using/aem-document-services-programmatically.md#verifying-multiple-digital-signatures)
+* [移除數位簽名](/help/forms/using/aem-document-services-programmatically.md#removing-digital-signatures)
 
-* [取得認證簽名欄位](/help/forms/using/aem-document-services-programmatically.md#p-getting-certifying-signature-field-p)
-* [取得PDF加密型別](/help/forms/using/aem-document-services-programmatically.md#p-getting-pdf-encryption-type-p)
-* [移除密碼加密](/help/forms/using/aem-document-services-programmatically.md#p-removing-password-encryption-from-pdf-p)
+* [取得認證簽名欄位](/help/forms/using/aem-document-services-programmatically.md#getting-certifying-signature-field)
+* [取得PDF加密型別](/help/forms/using/aem-document-services-programmatically.md#getting-pdf-encryption-type)
+* [移除密碼加密](/help/forms/using/aem-document-services-programmatically.md#removing-password-encryption-from-pdf)
 
-* [移除憑證加密](/help/forms/using/aem-document-services-programmatically.md#p-removing-certificate-encryption-p)
+* [移除憑證加密](/help/forms/using/aem-document-services-programmatically.md#removing-certificate-encryption)
 
 >[!NOTE]
 >
->所有這些服務都使用Document物件作為輸入引數，可在URL [https://helpx.adobe.com/tw/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/tw/experience-manager/6-3/forms/javadocs/index.html)找到Javadoc
+>所有這些服務都使用Document物件作為輸入引數，可在URL [https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html)找到Javadoc
 
 ### 新增不可見的簽章欄位 {#adding-an-invisible-signature-field}
 
@@ -3651,17 +3651,17 @@ public class GetPDFEncryption {
 
 Output服務提供可轉譯.pdf、.pcl、.zpl及.ps格式之XDP檔案的API。 此服務支援下列API：
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p)：**&#x200B;將表單設計與儲存在網路位置、本機檔案系統或HTTP位置上的資料合併為常值，以產生PDF檔案。
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutput)：**&#x200B;將表單設計與儲存在網路位置、本機檔案系統或HTTP位置上的資料合併為常值，以產生PDF檔案。
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p)：**&#x200B;將表單設計與儲存在應用程式中的資料合併，以產生PDF檔案。
-* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p)：**&#x200B;將表單設計與資料合併，以建立PDF檔案。 選擇性地為每個記錄產生中繼資料檔案，或將輸出儲存至PDF檔案。
-* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p)：**&#x200B;從儲存在網路位置、本機檔案系統或HTTP位置的表單設計和資料檔產生PCL、PostScript或ZPL輸出做為常值。
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutput)：**&#x200B;將表單設計與儲存在應用程式中的資料合併，以產生PDF檔案。
+* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutputbatch)：**&#x200B;將表單設計與資料合併，以建立PDF檔案。 選擇性地為每個記錄產生中繼資料檔案，或將輸出儲存至PDF檔案。
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#generateprintedoutput)：**&#x200B;從儲存在網路位置、本機檔案系統或HTTP位置的表單設計和資料檔產生PCL、PostScript或ZPL輸出做為常值。
 
-* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p)：**&#x200B;從儲存在應用程式中的表單設計和資料檔產生PCL、PostScript和ZPL輸出。
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#generateprintedoutput)：**&#x200B;從儲存在應用程式中的表單設計和資料檔產生PCL、PostScript和ZPL輸出。
 
 ### generatePDFOutput {#generatepdfoutput}
 
-generatePDFOutput API會將表單設計與資料合併，以產生PDF檔案。 選擇性地為每個記錄產生中繼資料檔案，或將輸出儲存至PDF檔案。 針對儲存在網路位置、本機檔案系統或HTTP位置上的表單設計或資料使用generatePDFOutput API做為常值。 如果表單設計和XML資料儲存在應用程式中，請使用[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) API。
+generatePDFOutput API會將表單設計與資料合併，以產生PDF檔案。 選擇性地為每個記錄產生中繼資料檔案，或將輸出儲存至PDF檔案。 針對儲存在網路位置、本機檔案系統或HTTP位置上的表單設計或資料使用generatePDFOutput API做為常值。 如果表單設計和XML資料儲存在應用程式中，請使用[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutput) API。
 
 **語法：** `Document generatePDFOutput(String uriOrFileName, Document data, PDFOutputOptions options);`
 
@@ -3768,7 +3768,7 @@ generatePDFOutput API會將表單設計與資料合併，以產生PDF檔案。 �
 
 ### generatePDFOutput {#generatepdfoutput-1}
 
-generatePDFOutput API會將表單設計與資料合併，以產生PDF檔案。 或者為每筆記錄產生中繼資料檔案，或將輸出儲存至PDF檔案。 針對儲存在應用程式中的表單設計或資料使用generatePrintedOutput API。 如果表單設計和XML資料儲存在網路位置、本機或HTTP位置中作為常值，請使用[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) API。
+generatePDFOutput API會將表單設計與資料合併，以產生PDF檔案。 或者為每筆記錄產生中繼資料檔案，或將輸出儲存至PDF檔案。 針對儲存在應用程式中的表單設計或資料使用generatePrintedOutput API。 如果表單設計和XML資料儲存在網路位置、本機或HTTP位置中作為常值，請使用[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutput) API。
 
 **語法：** `Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
 
@@ -4310,8 +4310,8 @@ String outputFolder="C:/Output";
 
 Forms服務提供可匯入及匯出互動式PDF表單之資料的API。 互動式PDF表單是一份PDF檔案，其中包含一或多個用來顯示和收集使用者資訊的欄位。 此服務支援下列API：
 
-* **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p)：**&#x200B;從PDF表單匯出資料。
-* **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p)：**&#x200B;將資料匯入互動式PDF表單。
+* **[exportData](/help/forms/using/aem-document-services-programmatically.md#exportdata)：**&#x200B;從PDF表單匯出資料。
+* **[importData](/help/forms/using/aem-document-services-programmatically.md#importdata)：**&#x200B;將資料匯入互動式PDF表單。
 
 ### exportData {#exportdata}
 
@@ -4481,7 +4481,7 @@ PDF Generator服務提供可將原生檔案格式轉換為PDF的API。 它也會
 GeneratePDFService提供的API可將各種檔案格式(如.doc、.docx、.ppt、.pptx、.xls、.xlsx、.odp、.odt、.ods、.swf （已棄用）、.jpg、.bmp、.tif、.png、.html和許多其他檔案格式)轉換為PDF。 它也提供將PDF匯出為各種檔案格式和最佳化PDF的API。 此服務支援下列API：
 
 * **createPDF**：將支援的檔案型別轉換為PDF檔案。 它支援Microsoft Word、Microsoft PowerPoint、Microsoft Excel和Microsoft Project等檔案格式。 除了這些應用程式外，任何產生應用程式型別的協力廠商通用PDF也可以插入API中。
-* **exportPDF**：將PDF檔案轉換為支援的檔案型別。 方法接受PDF作為輸入，並以指定的檔案型別格式匯出PDF的內容。 您可以將PDF檔案匯出為Encapsulated PostScript( eps)、HTML 3.2( htm， html)、HTML 4.01 (含CSS 1.0( htm， html)、JPEG( jpg， jpeg， jpe)、JPEG2000( jpf， jpx， jp2， j2k， j2c， jpc)、Microsoft Word Document( doc， docx) Microsoft Excel活頁簿( xlsx)、Microsoft PowerPoint簡報( pptx)、PNG( png)、PostScript( ps)、Rtf格式( rtf)文本（可訪問）(txt)、文本（純）(txt) TIFF( tif， tiff)、XML 1.0( xml)、PDF/A-1a(sRGB)、PDF/A-1b、PDF/A-2a(sRGB)、PDF/A-2b(sRGB)、PDF/A-3a(sRGB)、PDF/A-3b(sRGB)格式。 您也可以為PDF輸出指定[自訂預檢設定檔](https://helpx.adobe.com/tw/acrobat/using/preflight-profiles-acrobat-pro.html)。
+* **exportPDF**：將PDF檔案轉換為支援的檔案型別。 方法接受PDF作為輸入，並以指定的檔案型別格式匯出PDF的內容。 您可以將PDF檔案匯出為Encapsulated PostScript( eps)、HTML 3.2( htm， html)、HTML 4.01 (含CSS 1.0( htm， html)、JPEG( jpg， jpeg， jpe)、JPEG2000( jpf， jpx， jp2， j2k， j2c， jpc)、Microsoft Word Document( doc， docx) Microsoft Excel活頁簿( xlsx)、Microsoft PowerPoint簡報( pptx)、PNG( png)、PostScript( ps)、Rtf格式( rtf)文本（可訪問）(txt)、文本（純）(txt) TIFF( tif， tiff)、XML 1.0( xml)、PDF/A-1a(sRGB)、PDF/A-1b、PDF/A-2a(sRGB)、PDF/A-2b(sRGB)、PDF/A-3a(sRGB)、PDF/A-3b(sRGB)格式。 您也可以為PDF輸出指定[自訂預檢設定檔](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html)。
 
 * **optimizePDF**：最佳化PDF檔案，並將PDF檔案從一種型別轉換為另一種型別。 方法接受PDF檔案作為輸入。
 * **htmlToPdf2**：將HTML頁面轉換為PDF檔案。 它接受HTML頁面的URL作為輸入。

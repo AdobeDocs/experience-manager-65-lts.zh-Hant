@@ -21,7 +21,7 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1137'
 ht-degree: 2%
@@ -31,7 +31,7 @@ ht-degree: 2%
 本文列出為解決已知問題、改善系統穩定性及增強AEM Forms 6.5 LTS整體效能而實作的重大修正。
 
 
-本文適用於AEM Forms 6.5 LTS。 若為AEM 6.5 （非LTS）部署，請參閱[Adobe Experience Manager Forms Hotfix](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/release-notes/aem-forms-hotfix)。
+本文適用於AEM Forms 6.5 LTS。 若為AEM 6.5 （非LTS）部署，請參閱[Adobe Experience Manager Forms Hotfix](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-hotfix)。
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ ht-degree: 2%
 
 執行以下步驟來下載及安裝Hotfix：
 
-1. 從Software Distribution連結下載[Hotfix](#hotfix-for-adaptive-forms)。
+1. 從Software Distribution連結下載[Hotfix](#hotfix-for-aem-forms)。
 1. 解壓縮Hotfix封存檔案，以便取得Experience Manager套件(.zip)和套件(.jar)檔案。
 1. 透過[封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing)上傳及安裝封裝(.zip)。
 1. 開啟設定管理員組合`https://server:host/system/console/bundles`，上傳並安裝組合(.jar)。 已安裝Hotfix。

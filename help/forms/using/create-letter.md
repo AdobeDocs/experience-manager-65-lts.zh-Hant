@@ -22,7 +22,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '4013'
 ht-degree: 2%
@@ -244,7 +244,7 @@ ht-degree: 2%
 * 構成信函部分的其他XDP （[佈局片段](document-fragments.md#document-fragments)）。 XDP\Layouts是在[Designer](https://www.adobe.com/go/learn_aemforms_designer_65_tw)中建立。
 * 相關的[資料字典](/help/forms/using/data-dictionary.md) （選擇性）。
 * 您要在通訊中使用的[資料模組](/help/forms/using/document-fragments.md)。
-* [測試資料](/help/forms/using/data-dictionary.md#p-working-with-test-data-p)是已移植測試資料的XML檔案。 如果您使用資料字典，則需要測試資料。
+* [測試資料](/help/forms/using/data-dictionary.md#working-with-test-data)是已移植測試資料的XML檔案。 如果您使用資料字典，則需要測試資料。
 
 ## 建立字母範本 {#create-a-letter-template}
 
@@ -275,7 +275,7 @@ ht-degree: 2%
 
    ![警示訊息：字母已成功建立](assets/createcorrespondencecreated.png)
 
-   **下一步**：當您選取&#x200B;**開啟**&#x200B;時，Correspondence Management會顯示配置圖的表示法，其中列有配置(XDP)中的所有元件。 繼續插入[資料模組及配置片段並加以設定](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p)。
+   **下一步**：當您選取&#x200B;**開啟**&#x200B;時，Correspondence Management會顯示配置圖的表示法，其中列有配置(XDP)中的所有元件。 繼續插入[資料模組及配置片段並加以設定](/help/forms/using/create-letter.md#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them)。
 
 ### 在信函中插入資料模組和佈局片段並進行設定 {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 

@@ -26,14 +26,14 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2871'
 ht-degree: 3%
 ---
 # 最適化表單運算式{#adaptive-form-expressions}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
 適用性表單透過動態指令碼功能，為使用者提供最佳化和簡化的表單填寫體驗。 它可讓您編寫運算式以新增各種行為，例如動態顯示/隱藏欄位和面板。 它也可讓您新增計算欄位、讓欄位成為唯讀、新增驗證邏輯等。 動態行為取決於使用者輸入或預填的資料。
 
@@ -93,7 +93,7 @@ JavaScript是適用性表單的運算式語言。 所有運算式都是有效的
 
 **傳回型別**：運算式傳回與顯示運算式結果的欄位相容的值（例如，小數）。
 
-**範例**：顯示&#x200B;**欄位1**&#x200B;中兩個欄位總和的計算運算式是：
+**範例**：顯示&#x200B;**欄位1**中兩個欄位總和的計算運算式是：
 `field2.value + field3.value`
 
 ### 按一下運算式 {#click-expression}
@@ -153,7 +153,7 @@ click運算式會處理對按鈕的點選事件執行的動作。 GuideBridge開
 
 **套用至**：欄位
 
-**傳回型別**：運算式傳回代表欄位驗證狀態的布林值。 值&#x200B;**false**&#x200B;表示欄位無效，**true**&#x200B;表示欄位有效。
+**傳回型別**：運算式傳回代表欄位驗證狀態的布林值。 值&#x200B;**false**&#x200B;表示欄位無效，**true**表示欄位有效。
 **範例**：對於代表UK郵遞區號的欄位，驗證運算式為：
 
 (**this.value** &amp;&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
@@ -175,7 +175,7 @@ click運算式會處理對按鈕的點選事件執行的動作。 GuideBridge開
 
 **傳回型別：**&#x200B;值認可指令碼運算式未傳回任何值。 如果有任何運算式傳回值，則會忽略值。
 
-**範例：**&#x200B;若要將在欄位中輸入的字母大小寫轉換成認可時的大寫，值認可運算式為：
+**範例：**若要將在欄位中輸入的字母大小寫轉換成認可時的大寫，值認可運算式為：
 `this.value=this.value.toUpperCase()`
 
 >[!NOTE]
@@ -219,7 +219,7 @@ click運算式會處理對按鈕的點選事件執行的動作。 GuideBridge開
 
 ### 驗證運算式 {#validation-expressions}
 
-欄位驗證也可使用不同欄位上的運算式計算。 這些運算式會寫入元件&#x200B;**編輯**&#x200B;對話方塊之&#x200B;**指令碼**&#x200B;索引標籤的&#x200B;**驗證指令碼**&#x200B;欄位中。 欄位的驗證狀態取決於運算式傳回的值。 如需如何撰寫這類運算式的資訊，請參閱[驗證運算式](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p)。
+欄位驗證也可使用不同欄位上的運算式計算。 這些運算式會寫入元件&#x200B;**編輯**&#x200B;對話方塊之&#x200B;**指令碼**&#x200B;索引標籤的&#x200B;**驗證指令碼**&#x200B;欄位中。 欄位的驗證狀態取決於運算式傳回的值。 如需如何撰寫這類運算式的資訊，請參閱[驗證運算式](../../forms/using/adaptive-form-expressions.md#validate-expression)。
 
 ## 其他資訊 {#additional-information}
 

@@ -26,18 +26,18 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 6%
 ---
 # 將最適化表單與 XFA Form 範本同步{#synchronizing-adaptive-forms-with-xfa-form-templates}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
 ## 簡介 {#introduction}
 
-您可以根據XFA表單範本（ `*.XDP`檔案）建立最適化表單。 此重複使用可讓您保留在現有XFA表單中的投資。 有關如何使用XFA表單範本建立最適化表單的資訊，請[根據範本建立最適化表單](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p)。
+您可以根據XFA表單範本（ `*.XDP`檔案）建立最適化表單。 此重複使用可讓您保留在現有XFA表單中的投資。 有關如何使用XFA表單範本建立最適化表單的資訊，請[根據範本建立最適化表單](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)。
 
 您可以在最適化表單中重複使用XDP檔案中的欄位。 這些欄位稱為繫結欄位。 繫結欄位的屬性（例如指令碼、標籤和顯示格式）會從XDP檔案複製。 您也可以選擇覆寫其中某些屬性的值。
 
@@ -55,11 +55,11 @@ AEM Forms可協助您保持最適化表單的欄位與稍後對XDP檔案中對�
 
 * XFA （XML Forms架構）
 
-若要使用文章範例中提供的資產，請下載範例套件，如下一節[範例套件](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-sample-package-p)中所述。
+若要使用文章範例中提供的資產，請下載範例套件，如下一節[範例套件](../../forms/using/synchronizing-adaptive-forms-xfa.md#sample-package)中所述。
 
 ## 範例套件 {#sample-package}
 
-文章以範例示範如何將最適化表單與更新的XFA表單範本同步。 範例中使用的資產可在套件中使用，該套件可從本文的[下載](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-downloads-p)區段下載。
+文章以範例示範如何將最適化表單與更新的XFA表單範本同步。 範例中使用的資產可在套件中使用，該套件可從本文的[下載](../../forms/using/synchronizing-adaptive-forms-xfa.md#downloads)區段下載。
 
 上傳套件後，您可以在AEM Forms UI中檢視這些資產。
 
@@ -122,7 +122,7 @@ AEM Forms可協助您保持最適化表單的欄位與稍後對XDP檔案中對�
 
 >[!NOTE]
 >
->標籤AF數值欄位未變更，因為您已從元件屬性對話方塊覆寫此屬性，如[將內容新增至調適型表單](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-add-content-to-adaptive-form-br-p)中所述。
+>標籤AF數值欄位未變更，因為您已從元件屬性對話方塊覆寫此屬性，如[將內容新增至調適型表單](../../forms/using/synchronizing-adaptive-forms-xfa.md#add-content-to-adaptive-form-br)中所述。
 
 ### 將XDP檔案的新欄位新增至最適化表單   {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 
@@ -146,7 +146,7 @@ AEM Forms可協助您保持最適化表單的欄位與稍後對XDP檔案中對�
 
 已刪除的欄位也會標示圖示，以指出欄位中的錯誤。
 
-欄位![&#128279;](assets/error-field.png)中的錯誤圖示
+欄位](assets/error-field.png)中的![錯誤圖示
 
 >[!NOTE]
 >

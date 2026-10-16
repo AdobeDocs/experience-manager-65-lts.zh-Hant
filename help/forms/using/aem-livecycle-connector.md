@@ -24,7 +24,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 0%
@@ -66,7 +66,7 @@ AEM LiveCycle Connector是[AEM Forms附加元件套件](/help/forms/using/instal
 
 AEM LiveCycle Connector透過將這些使用者端執行個體公開為OSGi服務（可使用標準OSGi方式存取）來簡化流程。 LiveCycle Connector提供下列功能：
 
-* 作為OSGi服務的使用者端執行個體：封裝為OSGI套裝的使用者端列在[Acrobat服務清單](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p)區段中。 每個使用者端jar都會向OSGi服務登入將使用者端執行個體註冊為OSGi服務。
+* 作為OSGi服務的使用者端執行個體：封裝為OSGI套裝的使用者端列在[Acrobat服務清單](/help/forms/using/aem-livecycle-connector.md#document-services-list)區段中。 每個使用者端jar都會向OSGi服務登入將使用者端執行個體註冊為OSGi服務。
 * 使用者認證傳輸：連線至LiveCycle伺服器所需的連線詳細資訊，是在中央位置管理的。
 * ServiceClientFactory服務：若要啟動程式，使用者端應用程式可以存取ServiceClientFactory執行個體。
 
@@ -94,7 +94,7 @@ AEM LiveCycle Connector透過將這些使用者端執行個體公開為OSGi服�
    </dependency>
    ```
 
-   若要啟動服務，請為該服務新增對應的Maven相依性。 如需相依性清單，請參閱[Acrobat服務清單](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p)。 例如，對於產生PDF服務，新增下列相依性：
+   若要啟動服務，請為該服務新增對應的Maven相依性。 如需相依性清單，請參閱[Acrobat服務清單](/help/forms/using/aem-livecycle-connector.md#document-services-list)。 例如，對於產生PDF服務，新增下列相依性：
 
    ```xml
    <dependency>

@@ -25,14 +25,14 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
 ---
 # 變更品牌化的組織標誌 {#changing-the-organization-logo-for-branding}
 
-組織標誌會顯示在AEM Forms工作區的左上角。 若要更新標誌，請依照AEM Forms工作區自訂[&#128279;](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization)的一般步驟進行，然後依照下列步驟進行。
+組織標誌會顯示在AEM Forms工作區的左上角。 若要更新標誌，請依照AEM Forms工作區自訂](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-aem-forms-workspace-customization)的[一般步驟進行，然後依照下列步驟進行。
 
 1. 建立標誌並將檔案命名為`NewWorkspace.png`。 使用WebDAV使用者端將影像檔案置於/apps/ws/images資料夾中。
 

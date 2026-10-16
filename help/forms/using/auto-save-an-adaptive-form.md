@@ -25,14 +25,14 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 8%
 ---
 # 自動儲存最適化表單 {#auto-save-an-adaptive-form}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
 您可以設定最適化表單，以根據事件或預先定義的時間間隔自動開始儲存內容。 依預設，最適化表單的內容會在使用者動作時儲存，例如按下儲存按鈕時。 自動儲存選項非常實用：
 
@@ -58,7 +58,7 @@ ht-degree: 8%
    * 如果您選取&#x200B;**[!UICONTROL 以時間為基準]**&#x200B;觸發器，請指定時間間隔。
    * 如果您選取&#x200B;**[!UICONTROL 以事件為基礎的]**&#x200B;觸發器，請指定事件名稱。
 
-   您也可以建立自己的自訂策略並新增至清單中。 如需詳細資訊，請參閱[實作自訂策略以自動儲存表單](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p)。
+   您也可以建立自己的自訂策略並新增至清單中。 如需詳細資訊，請參閱[實作自訂策略以自動儲存表單](/help/forms/using/auto-save-an-adaptive-form.md#implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms)。
 
 1. （僅限以時間為基礎的自動儲存）執行下列步驟，設定「以時間為基礎的自動儲存」選項。
 
@@ -66,7 +66,7 @@ ht-degree: 8%
 
 1. （僅限事件式自動儲存）執行下列步驟，設定事件式自動儲存的選項。
 
-   1. 在此事件&#x200B;**方塊後的**&#x200B;自動儲存中，指定[GuideBridge](https://helpx.adobe.com/tw/aem-forms/6/javascript-api/GuideBridge.html)事件。 每次運算式評估為TRUE時，都會儲存表單。
+   1. 在此事件&#x200B;**方塊後的**&#x200B;自動儲存中，指定[GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)事件。 每次運算式評估為TRUE時，都會儲存表單。
 
 1. （選擇性）若要自動儲存匿名使用者的內容，請選取&#x200B;**啟用匿名使用者的自動儲存**&#x200B;選項，然後按一下&#x200B;**[!UICONTROL 確定]**。
 
@@ -103,4 +103,4 @@ ht-degree: 8%
 
 1. 在編輯模式中，選取元件，然後選取![欄位層級](assets/field-level.png) > **[!UICONTROL 最適化表單容器]**，然後選取![cmppr](assets/cmppr.png)。
 1. 在屬性中，開啟&#x200B;**[!UICONTROL 基本]**&#x200B;區段。 在&#x200B;**[!UICONTROL 使用者端資料庫類別]**&#x200B;方塊中，輸入建立使用者端資料庫資料夾時定義的類別屬性值。
-1. 開啟自動儲存區段。 在此事件&#x200B;**之後的**&#x200B;自動儲存方塊中，指定已在使用者端程式庫中定義的自訂事件。 按一下&#x200B;**[!UICONTROL 「確定」]**。
+1. 開啟自動儲存區段。 在此事件&#x200B;]**之後的**[!UICONTROL &#x200B;自動儲存方塊中，指定已在使用者端程式庫中定義的自訂事件。 按一下&#x200B;**[!UICONTROL 「確定」]**。

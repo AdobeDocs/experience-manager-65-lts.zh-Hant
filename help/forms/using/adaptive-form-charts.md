@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 ![Hero_Image](assets/charts_hero_image.jpg)
 
 圖表或圖表是資料的視覺化表示法。 它可讓您將大量資訊壓縮成容易理解的視覺格式，讓您更妥善地視覺化、解譯和分析複雜的資料。
-AEM Forms附加元件套件提供立即可用的Chart元件。 您可在最適化表單和檔案中使用，在&#x200B;**可重複面板**&#x200B;和&#x200B;**表格**&#x200B;中以視覺化方式呈現二維資料。 「圖表」元件可讓您新增及設定下列型別的圖表：
+AEM Forms附加元件套件提供立即可用的Chart元件。 您可在最適化表單和檔案中使用，在**可重複面板**&#x200B;和&#x200B;**表格**&#x200B;中以視覺化方式呈現二維資料。 「圖表」元件可讓您新增及設定下列型別的圖表：
 
 1. 圓餅圖
 1. 欄
@@ -148,7 +148,7 @@ AEM Forms附加元件套件提供立即可用的Chart元件。 您可在最適�
 
 ### 自訂函式 {#custom-functions}
 
-除了在圖表中使用預設函式之外，您還可以在JavaScript中撰寫[自訂函式](/help/forms/using/rule-editor.md#custom-functions-in-rule-editor-custom-functions)，並在圖表元件的函式清單中讓這些函式可用。
+除了在圖表中使用預設函式之外，您還可以在JavaScript中撰寫[自訂函式](/help/forms/using/rule-editor.md#custom-functions)，並在圖表元件的函式清單中讓這些函式可用。
 
 函式將一或多個值和類別名稱視為輸入並傳回值。 例如：
 

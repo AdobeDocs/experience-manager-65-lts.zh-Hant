@@ -26,14 +26,14 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 18%
 ---
 # 編寫表單欄位的內容內說明{#authoring-in-context-help-for-form-fields}
 
-<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
+<span class="preview">Adobe 建議使用新式且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，用來[建立新的最適化表單](/help/forms/using/create-an-adaptive-form-core-components.md)或[將最適化表單新增到 AEM Sites 頁面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文會介紹使用基礎元件編寫最適化表單的舊方法。</span>
 
 ## 簡介 {#introduction}
 
@@ -45,8 +45,8 @@ ht-degree: 18%
 
 您可以使用側邊欄中「屬性」標籤的「說明內容」區段中的下列選項來指定內容內說明。
 
-* [簡要說明](../../forms/using/authoring-in-field-help.md#p-short-description-p)
-* [詳細說明](../../forms/using/authoring-in-field-help.md#p-long-description-p)
+* [簡要說明](../../forms/using/authoring-in-field-help.md#short-description)
+* [詳細說明](../../forms/using/authoring-in-field-help.md#long-description)
 
 ![表單欄位的內容內說明](assets/descriptions.png)
 

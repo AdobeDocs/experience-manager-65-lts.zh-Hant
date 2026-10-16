@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 2%
@@ -87,7 +87,7 @@ Process Reporting服務會依排程從AEM Forms資料庫發佈資料至Process R
 1. 停止AEM Forms伺服器執行個體。
 1. 登入WebSphere®管理主控台。 在導覽樹狀結構中，按一下&#x200B;**伺服器** > **應用程式伺服器**，然後在右窗格中按一下伺服器名稱。
 
-1. 在[伺服器基礎結構]下，按一下&lbrack;™0&rbrace;Java&rbrace;和[處理程式管理]&#x200B;**> [處理程式定義]**&#x200B;**。**
+1. 在[伺服器基礎結構]下，按一下[™0}Java}和[處理程式管理]**> [處理程式定義]****。**
 
 1. 在[其他內容]下，按一下[**Java™ Virtual Machine**]。
 
@@ -97,11 +97,11 @@ Process Reporting服務會依排程從AEM Forms資料庫發佈資料至Process R
 
    * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
-1. 按一下[套用]&#x200B;**&#x200B;**，按一下[確定]，然後按一下[直接儲存至主組態]&#x200B;**。**
+1. 按一下[套用]****，按一下[確定]，然後按一下[直接儲存至主組態]**。**
 1. 重新啟動AEM Forms伺服器執行個體。
 1. 停止AEM Forms伺服器執行個體。
 1. 登入WebLogic管理主控台。 WebLogic管理主控台的預設位址是`https://[hostname]:[port]/console`。
-1. 在[變更中心]下，按一下[鎖定與編輯]。**&#x200B;**
+1. 在[變更中心]下，按一下[鎖定與編輯]。****
 1. 在[網域結構]下，按一下[環境&#x200B;**] > [伺服器**] **，然後在右窗格中按一下[受管理的伺服器名稱]。**
 1. 在下一個畫面中，按一下&#x200B;**組態**&#x200B;標籤> **伺服器啟動**&#x200B;標籤。
 1. 在[引數]方塊中，新增JVM引數`-Dreporting.publisher.cron = <expression>`。
@@ -110,7 +110,7 @@ Process Reporting服務會依排程從AEM Forms資料庫發佈資料至Process R
 
    `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
-1. 按一下[儲存]&#x200B;**&#x200B;**，然後按一下[啟動變更]&#x200B;**&#x200B;**。
+1. 按一下[儲存]****，然後按一下[啟動變更]****。
 1. 重新啟動AEM Forms伺服器執行個體。
 
 ![processdatapublisherservice](assets/processdatapublisherservice.png)
@@ -289,7 +289,7 @@ AEM Forms環境包含設定環境時的資料。
 
 「上次更新時間」會顯示資料更新已推送至「程式報表」存放庫的上次日期與時間。
 
-如需資料發佈服務以及如何排程此服務的詳細資訊，請參閱「程式報告快速入門」一文中的[排程程式資料發佈](/help/forms/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p)。
+如需資料發佈服務以及如何排程此服務的詳細資訊，請參閱「程式報告快速入門」一文中的[排程程式資料發佈](/help/forms/using/process-reporting/install-start-process-reporting.md#schedule-process-data-publishing)。
 
 **處理序報告使用者：**&#x200B;登入的使用者名稱會顯示在上次更新時間的右側。
 

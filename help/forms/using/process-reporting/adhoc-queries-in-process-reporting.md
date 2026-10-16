@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1650'
 ht-degree: 0%
@@ -40,9 +40,9 @@ ht-degree: 0%
 
 此外，也可以使用流程和任務屬性篩選器來定義特定查詢。 然後可以儲存這些篩選器，並用於稍後執行報表。
 
-[**處理程式搜尋**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-search-p)：使用使用者定義的搜尋篩選器，根據處理程式屬性來搜尋處理程式執行個體。
+[**處理程式搜尋**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#process-task-search)：使用使用者定義的搜尋篩選器，根據處理程式屬性來搜尋處理程式執行個體。
 
-[**處理序詳細資料**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-details-p)：指定處理序識別碼，以檢視處理序執行個體的詳細資料。
+[**處理序詳細資料**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#process-task-details)：指定處理序識別碼，以檢視處理序執行個體的詳細資料。
 
 **任務搜尋**：使用使用者定義的搜尋篩選器，根據任務屬性來搜尋任務執行個體。
 
@@ -165,7 +165,7 @@ ht-degree: 0%
    ![task_search_result](assets/task_search_result.png)
 
 1. 按一下左上角的邊欄按鈕![lc_pr_rail_button](assets/lc_pr_rail_button.png)以摺疊&#x200B;**我的篩選器**&#x200B;窗格，並展開&#x200B;**報表**&#x200B;面板的可用空間。
-1. 使用&#x200B;**報表**&#x200B;面板右上角的選項，對查詢結果執行操作。
+1. 使用**報表**面板右上角的選項，對查詢結果執行操作。
 
    * **重新整理**：以存放裝置中的最新資料重新整理報告
 

@@ -29,7 +29,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1740'
 ht-degree: 0%
@@ -80,7 +80,7 @@ AEM表單提供兩種啟用單一登入(SSO)的方式 — HTTP標題和SPNEGO。
 
 ### 指派角色給使用者和群組
 
-按一下以瞭解[將角色指派給使用者和群組](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups)的步驟。
+按一下以瞭解[將角色指派給使用者和群組](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-groups)的步驟。
 
 ## 使用SPNEGO啟用SSO {#enable-sso-using-spnego}
 
@@ -198,7 +198,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 
 1. 存取應用程式以測試設定。 目標應用程式的歡迎頁面應該會出現。
 
-按一下以瞭解[將角色指派給使用者和群組](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups)的步驟。
+按一下以瞭解[將角色指派給使用者和群組](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-groups)的步驟。
 
 ## 指派角色給使用者和群組 {#assign-roles-to-users-groups}
 

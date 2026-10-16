@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 0%
@@ -223,7 +223,7 @@ ht-degree: 0%
 
 建立最適化表單主題後，請執行以下步驟以在最適化表單中使用此主題：
 
-1. 若要包含在[中建立的佈景主題以建立最適化表單佈景主題](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p)區段，請建立型別`cq:Component`的自訂頁面。
+1. 若要包含在[中建立的佈景主題以建立最適化表單佈景主題](/help/forms/using/creating-custom-adaptive-form-themes.md#to-create-an-adaptive-form-theme)區段，請建立型別`cq:Component`的自訂頁面。
 
    例如 `/apps/myAfCustomizations/myAfPages/forestPage`
 

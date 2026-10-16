@@ -14,7 +14,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 16%
@@ -66,7 +66,7 @@ AEM 6.5最適化Forms支援hCaptcha&amp;reg。 您可以用它來在表單提交
       ui中的![hCaptcha®](assets/hcaptcha-in-ui.png)
    1. 選取已建立或已更新的設定容器，如上一節所述。 選取「**[!UICONTROL 建立]**」。
       ![組態hCaptcha®](assets/config-hcaptcha.png)
-   1. 指定&#x200B;**[!UICONTROL 標題]**，<!--**[!UICONTROL Name]**--> 已在[&#128279;](#prerequisite)先決條件中取得hCaptcha®服務的&#x200B;**[!UICONTROL 網站金鑰]**&#x200B;和&#x200B;**[!UICONTROL 秘密金鑰]**。
+   1. 指定&#x200B;**[!UICONTROL 標題]**，<!--**[!UICONTROL Name]**--> 已在](#prerequisite)先決條件中取得hCaptcha®服務[的&#x200B;**[!UICONTROL 網站金鑰]**&#x200B;和&#x200B;**[!UICONTROL 秘密金鑰]**。
    1. 按一下「**[!UICONTROL 建立]**」。
 
       ![設定Cloud Service以使用hCaptcha連線您的AEM Forms環境®](assets/create-hcaptcha-config.png)
@@ -84,7 +84,7 @@ AEM 6.5最適化Forms支援hCaptcha&amp;reg。 您可以用它來在表單提交
 1. 在&#x200B;**[!UICONTROL 設定容器]**&#x200B;中，選取包含連線AEM Forms與hCaptcha的雲端設定的設定容器。
 1. 按一下「**[!UICONTROL 儲存並關閉]**」。
 
-   如果您沒有hCaptcha的設定容器，請參閱[使用hCaptcha®連線您的AEM Forms環境](#configure-hcaptcha-steps-to-configure-hcaptcha)一節，以瞭解如何建立設定容器。
+   如果您沒有hCaptcha的設定容器，請參閱[使用hCaptcha®連線您的AEM Forms環境](#connect-your-forms-environment-with-hcaptcha-service)一節，以瞭解如何建立設定容器。
 
    ![選取設定容器](/help/forms/using/assets/captcha-properties.png)
 

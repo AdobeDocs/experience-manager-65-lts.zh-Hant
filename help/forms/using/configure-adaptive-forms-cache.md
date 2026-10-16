@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 2%
@@ -48,7 +48,7 @@ ht-degree: 2%
 
    最適化表單HTML快取的![設定對話方塊](assets/cache-configuration-edit.png)
 
-1. 按一下[儲存]儲存組態。**&#x200B;**
+1. 按一下[儲存]儲存組態。****
 
 您的環境已設定為使用快取最適化表單和相關資產。
 
@@ -70,16 +70,16 @@ ht-degree: 2%
   * 使用URL格式`http://host:port/content/forms/af/<afName>.<locale>.html`來要求最適化表單的本地化版本，而非`http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
   * [針對格式為`http://host:port/content/forms/af/<adaptivefName>.html`的URL停用使用瀏覽器地區設定](supporting-new-language-localization.md#how-localization-of-adaptive-form-works)。
   * 當您使用URL格式`http://host:port/content/forms/af/<adaptivefName>.html`，且組態管理員中的&#x200B;**[!UICONTROL 使用瀏覽器地區設定]**&#x200B;已停用時，會提供非當地語系化版本的調適型表單。 非當地語系化語言是開發最適化表單時使用的語言。 系統不會考量為瀏覽器設定的地區設定（瀏覽器地區設定），而是提供最適化表單的非當地語系化版本。
-  * 當您使用URL格式`http://host:port/content/forms/af/<adaptivefName>.html`，並且啟用Configuration Manager中的&#x200B;**[!UICONTROL 使用瀏覽器地區設定]**&#x200B;時，會提供當地語系化的最適化表單版本（如果有的話）。 當地語系化最適化表單的語言取決於瀏覽器設定的地區設定（瀏覽器地區設定）。 這會導致只快取[最適化表單]的第一個執行個體。 若要防止執行個體發生問題，請參閱[疑難排解](#only-first-insatnce-of-adptive-forms-is-cached)。
+  * 當您使用URL格式`http://host:port/content/forms/af/<adaptivefName>.html`，並且啟用Configuration Manager中的&#x200B;**[!UICONTROL 使用瀏覽器地區設定]**&#x200B;時，會提供當地語系化的最適化表單版本（如果有的話）。 當地語系化最適化表單的語言取決於瀏覽器設定的地區設定（瀏覽器地區設定）。 這會導致只快取[最適化表單]的第一個執行個體。 若要防止執行個體發生問題，請參閱[疑難排解](#only-first-instance-of-adaptive-forms-is-cached)。
 
 ### 在Dispatcher啟用快取
 
 若要在Dispatcher上啟用並設定快取調適型表單，請執行以下步驟：
 
-1. 為環境的每個發佈執行個體開啟下列URL，並[為環境的發佈執行個體啟用排清代理程式](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=zh-Hant#invalidating-dispatcher-cache-from-a-publishing-instance)：
+1. 為環境的每個發佈執行個體開啟下列URL，並[為環境的發佈執行個體啟用排清代理程式](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance)：
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
-1. [將以下專案新增到您的dispatcher.any檔案](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hant#automatically-invalidating-cached-files)：
+1. [將以下專案新增到您的dispatcher.any檔案](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files)：
 
    ```JSON
       /invalidate
@@ -108,7 +108,7 @@ ht-degree: 2%
    * 最適化表單會保留在快取中，直到表單的更新版本未發佈為止。
 
    * 當最適化表單中參考的資源的較新版本發佈時，受影響的最適化表單會自動失效。 參考資源的自動失效有一些例外。 如需例外狀況的因應措施，請參閱[疑難排解](#troubleshooting)區段。
-1. [新增以下規則dispatcher.any或自訂規則檔案](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hant#specifying-the-documents-to-cache)。 它會排除不支援快取的URL。 例如，互動式通訊。
+1. [新增以下規則dispatcher.any或自訂規則檔案](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache)。 它會排除不支援快取的URL。 例如，互動式通訊。
 
    ```JSON
       /0000 {
@@ -132,7 +132,7 @@ ht-degree: 2%
       }
    ```
 
-1. [將下列引數新增至忽略URL引數清單](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hant#ignoring-url-parameters)：
+1. [將下列引數新增至忽略URL引數清單](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)：
 
    ```JSON
       /ignoreUrlParams {
@@ -142,7 +142,7 @@ ht-degree: 2%
       }
    ```
 
-您的AEM環境已設定為快取最適化表單。 它會快取所有型別的調適型表單。 如果您需要在傳遞快取頁面之前檢查頁面的使用者存取許可權，請參閱[快取安全內容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hant)。
+您的AEM環境已設定為快取最適化表單。 它會快取所有型別的調適型表單。 如果您需要在傳遞快取頁面之前檢查頁面的使用者存取許可權，請參閱[快取安全內容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html)。
 
 ## 疑難排解 {#troubleshooting}
 

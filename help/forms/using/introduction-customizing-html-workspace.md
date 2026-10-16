@@ -32,7 +32,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1790'
 ht-degree: 0%
@@ -148,11 +148,11 @@ CSS自訂的頂層步驟為：
 * 將樣式專案新增至此CSS。 如需詳細資訊，請參閱瞭解CSS樣式。
 * 在`html.jsp`中更新其參考。
 
-如需進行這些自訂的確切步驟，請參閱[AEM Forms工作區自訂的一般步驟](../../forms/using/generic-steps-html-workspace-customization.md)。 AEM Forms工作區隨附的CSS檔案位於/libs/ws/css/。 對於與CSS相關的自訂，請使用[出貨套件](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)。 如需CSS相關自訂的特定範例，請參閱本文結尾的相關說明主題。
+如需進行這些自訂的確切步驟，請參閱[AEM Forms工作區自訂的一般步驟](../../forms/using/generic-steps-html-workspace-customization.md)。 AEM Forms工作區隨附的CSS檔案位於/libs/ws/css/。 對於與CSS相關的自訂，請使用[出貨套件](../../forms/using/introduction-customizing-html-workspace.md#crx-package)。 如需CSS相關自訂的特定範例，請參閱本文結尾的相關說明主題。
 
 #### 影像 {#image}
 
-您可以自訂AEM Forms工作區，以新增使用者的頭像或新增組織的標誌。 對於這些自訂，請使用[出貨套件](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)。
+您可以自訂AEM Forms工作區，以新增使用者的頭像或新增組織的標誌。 對於這些自訂，請使用[出貨套件](../../forms/using/introduction-customizing-html-workspace.md#crx-package)。
 
 影像自訂的最上層步驟為：
 
@@ -173,7 +173,7 @@ HTML範本自訂的最上層步驟為：
 * 在使用者定義的資料夾中新增範本。
 * 對複製的檔案進行相關更新，例如新範本的路徑。
 
-如需此類自訂的特定範例，請參閱本文結尾提供的說明主題。 根據要自訂的範本，選擇[出貨封裝](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)或[開發封裝](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)。
+如需此類自訂的特定範例，請參閱本文結尾提供的說明主題。 根據要自訂的範本，選擇[出貨封裝](../../forms/using/introduction-customizing-html-workspace.md#crx-package)或[開發封裝](../../forms/using/introduction-customizing-html-workspace.md#crx-package)。
 
 ### 語意變更 {#semantic-changes}
 
@@ -202,7 +202,7 @@ HTML範本自訂的最上層步驟為：
 
 此範本主要用於自訂，因為它提供產生以下內容的功能：
 
-* 出貨、偵錯和開發設定檔的CRX套件（在[CRX套件](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)中提到）。
+* 出貨、偵錯和開發設定檔的CRX套件（在[CRX套件](../../forms/using/introduction-customizing-html-workspace.md#crx-package)中提到）。
 * 自訂程式碼的縮製版本（用於語意變更）。
 
 #### WS內容 {#ws-content}

@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2481'
 ht-degree: 0%
@@ -53,11 +53,11 @@ AEM Forms使用者介面可讓您將資產下載為AEM CRX套件或二進位檔�
 1. 選取Forms資產並選取&#x200B;**下載**&#x200B;圖示。
 1. 在下載資產中，選擇下列其中一個選項，然後選取&#x200B;**下載**。
 
-   * **下載為CRX套件：**&#x200B;使用選項從AEM Forms執行個體下載及移動所有選取的資產及相關相依性至另一個執行個體。 它會將所有資產和資料夾下載為CRX套件。 任何表單資產，包括在AEM （最適化表單、互動式通訊和最適化表單片段）中編寫的表單、表單集、表單範本、PDF檔案和資源（XSD、XFS、影像），都可以從AEM Forms UI以套件形式下載。
+   * **下載為CRX套件：**使用選項從AEM Forms執行個體下載及移動所有選取的資產及相關相依性至另一個執行個體。 它會將所有資產和資料夾下載為CRX套件。 任何表單資產，包括在AEM （最適化表單、互動式通訊和最適化表單片段）中編寫的表單、表單集、表單範本、PDF檔案和資源（XSD、XFS、影像），都可以從AEM Forms UI以套件形式下載。
      以封裝形式下載資產的優點是，它也能下載所選要下載的資產所使用的資產。 例如，如果您有使用表單範本、XSD和影像的最適化表單。 當您選取此最適化表單並將其下載為套件時，下載的套件也包含表單範本、XSD和影像。 也會下載與資產相關聯的所有中繼資料屬性（包括自訂屬性）。
 
-   * **將資產下載為二進位檔案：**&#x200B;使用選項僅下載表單範本(XDP)、PDF forms (PDF)、檔案(PDF)和資源（影像、結構描述、樣式表）。 您可以使用外部應用程式編輯這些資產。 它會將具有二進位檔（例如XSD、XDP、影像、PDF和XDP）的表單資產下載為.zip檔案。
-     您無法使用&#x200B;**將資產下載為二進位檔案**&#x200B;選項來下載最適化表單、互動式通訊、最適化表單片段、主題和表單集。 若要下載這些資產，您應該使用&#x200B;**以CRX封裝形式下載**&#x200B;選項。
+   * **將資產下載為二進位檔案：**使用選項僅下載表單範本(XDP)、PDF forms (PDF)、檔案(PDF)和資源（影像、結構描述、樣式表）。 您可以使用外部應用程式編輯這些資產。 它會將具有二進位檔（例如XSD、XDP、影像、PDF和XDP）的表單資產下載為.zip檔案。
+     您無法使用**將資產下載為二進位檔案**&#x200B;選項來下載最適化表單、互動式通訊、最適化表單片段、主題和表單集。 若要下載這些資產，您應該使用&#x200B;**以CRX封裝形式下載**&#x200B;選項。
 
    選取的資產會下載為封存（.zip檔案）。
 
@@ -106,12 +106,12 @@ AEM Forms使用者介面可讓您將資產下載為AEM CRX套件或二進位檔�
 
 1. 在Experience Manager中，導覽至&#x200B;**Forms >主題**。
 1. 在「佈景主題」頁面中，按一下&#x200B;**建立>檔案上傳**。
-1. 在[檔案上傳]提示中，瀏覽並選取您電腦上的主題封裝，然後按一下[上傳]。**&#x200B;**
+1. 在[檔案上傳]提示中，瀏覽並選取您電腦上的主題封裝，然後按一下[上傳]。****
 上傳的主題可在主題頁面中使用。
 
 1. 登入AEM Forms執行個體。
 1. 選取Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png)圖示>導覽![compass](assets/compass.png)圖示> Forms>主題。
-1. 按一下&#x200B;**建立** > **檔案上傳**。 在[檔案上傳]提示中，瀏覽並選取您電腦上的主題封裝，然後按一下[上傳]。**&#x200B;** 主題已上傳。
+1. 按一下&#x200B;**建立** > **檔案上傳**。 在[檔案上傳]提示中，瀏覽並選取您電腦上的主題封裝，然後按一下[上傳]。**** 主題已上傳。
 
 ## 在通訊管理中匯入和匯出資產 {#import-and-export-assets-in-correspondence-management}
 
@@ -136,7 +136,7 @@ AEM Forms使用者介面可讓您將資產下載為AEM CRX套件或二進位檔�
 
 使用此選項可從AEM表單執行個體以套件形式下載所有通訊管理資產和相關相依性。
 
-例如，如果「通訊管理」有使用影像和文字的信件，則下載的套件也包含與信件相關的影像和文字。 也會下載與資產相關聯的所有中繼資料屬性（包括自訂屬性）。 下載套件(.cmp)後，您可以[將套件匯入其他AEM Forms執行個體](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p)。
+例如，如果「通訊管理」有使用影像和文字的信件，則下載的套件也包含與信件相關的影像和文字。 也會下載與資產相關聯的所有中繼資料屬性（包括自訂屬性）。 下載套件(.cmp)後，您可以[將套件匯入其他AEM Forms執行個體](../../forms/using/import-export-forms-templates.md#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management)。
 
 若要以套件形式下載所有Correspondence Management資產和相關相依性，請完成以下步驟：
 
@@ -161,7 +161,7 @@ AEM Forms使用者介面可讓您將資產下載為AEM CRX套件或二進位檔�
 
 1. 選取&#x200B;**下載匯出的封裝**&#x200B;連結來下載封裝檔案。
 
-   若要將套件中的資產新增至Correspondence Management的另一個執行個體，請[將套件匯入至AEM Forms執行個體](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p)。
+   若要將套件中的資產新增至Correspondence Management的另一個執行個體，請[將套件匯入至AEM Forms執行個體](../../forms/using/import-export-forms-templates.md#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management)。
 
 ### 將檔案片段、信函和/或資料字典匯入通訊管理 {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
 
