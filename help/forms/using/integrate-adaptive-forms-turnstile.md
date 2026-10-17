@@ -14,7 +14,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 9%
@@ -86,7 +86,7 @@ Cloudflare的Turnstile驗證碼是一種安全性措施，旨在保護表單和�
 1. 選取最適化表單，然後按一下&#x200B;**[!UICONTROL 屬性]**。 在&#x200B;**[!UICONTROL 設定容器]**&#x200B;中，選取包含連線AEM Forms與Turnstile的雲端設定的設定容器。
 1. 按一下「**[!UICONTROL 儲存並關閉]**」。
 
-   如果您沒有組態容器可設定Captcha服務，請參閱[設定Turnstile](#configure-turnstile-steps-to-configure-hcaptcha)一節，以瞭解如何建立組態容器。
+   如果您沒有組態容器可設定Captcha服務，請參閱[設定Turnstile](#steps-to-configure-hcaptcha)一節，以瞭解如何建立組態容器。
 
    ![選取設定容器](assets/captcha-properties.png)
 

@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3906'
 ht-degree: 0%
@@ -49,7 +49,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果資料字典與信函沒有關聯，信函預覽會開啟。 否則，如果信函是以資料字典為基礎，Correspondence Management會在「預覽」選單中顯示「預覽」和「自訂」選項，而且您可以選取兩個選項之一。 您也可以將測試資料與資料字典建立關聯。 當[資料字典關聯測試資料](../../forms/using/data-dictionary.md#p-working-with-test-data-p)時，則選取預覽選項時，一般預覽會開啟，並填入測試資料。
+   >如果資料字典與信函沒有關聯，信函預覽會開啟。 否則，如果信函是以資料字典為基礎，Correspondence Management會在「預覽」選單中顯示「預覽」和「自訂」選項，而且您可以選取兩個選項之一。 您也可以將測試資料與資料字典建立關聯。 當[資料字典關聯測試資料](../../forms/using/data-dictionary.md#working-with-test-data)時，則選取預覽選項時，一般預覽會開啟，並填入測試資料。
 
 1. 若要在預覽信函時呈現信函，您必須是管理員或屬於下列其中一個群組：
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
    如果您沒有所需的許可權，請要求管理員提供適當的存取許可權。 如需建立使用者並將其新增至群組的詳細資訊，請參閱[新增使用者或群組至群組](/help/sites-administering/security.md)。 如果您在沒有適當許可權的情況下嘗試轉譯通訊，則會顯示404錯誤頁面。
 
-1. 如果您已選取&#x200B;**預覽** > **自訂**，則會開啟對話方塊。 在對話方塊中，選取資料字典對應的資料檔以預覽字母，然後選取&#x200B;**預覽**。 系統會根據特定字母的資料字典建立資料檔案。 如需資料檔案的詳細資訊，請參閱[資料字典](../../forms/using/data-dictionary.md#p-working-with-test-data-p)。
+1. 如果您已選取&#x200B;**預覽** > **自訂**，則會開啟對話方塊。 在對話方塊中，選取資料字典對應的資料檔以預覽字母，然後選取&#x200B;**預覽**。 系統會根據特定字母的資料字典建立資料檔案。 如需資料檔案的詳細資訊，請參閱[資料字典](../../forms/using/data-dictionary.md#working-with-test-data)。
 
    ![預覽字母](assets/8_previewcustomdatafile.png)
 
@@ -254,7 +254,7 @@ ht-degree: 0%
 
    ![明確的分頁符號](assets/8_pagebreak.png)
 
-1. 若要將信函另存為草稿（稍後可繼續處理），請選取「另存為草稿」。 若要使用此選項，您的信件必須是[已發佈](../../forms/using/publishing-unpublishing-forms.md#publishanasset)。 如需詳細資訊，請參閱[儲存草稿及提交信件執行個體](#savingdrafts)下的草稿執行個體。
+1. 若要將信函另存為草稿（稍後可繼續處理），請選取「另存為草稿」。 若要使用此選項，您的信件必須是[已發佈](../../forms/using/publishing-unpublishing-forms.md#publish-an-asset)。 如需詳細資訊，請參閱[儲存草稿及提交信件執行個體](#savingdrafts)下的草稿執行個體。
 
    ![saveasdraft](assets/saveasdraft.png)
 
@@ -284,7 +284,7 @@ ht-degree: 0%
 
 有兩種型別的信件例項可以儲存：草稿例項和提交例項。
 
-* **草稿執行個體**：草稿執行個體擷取您正在預覽的信函的目前狀態。 若要儲存草稿例項，請先確定信函及其引用的所有資產都處於「已發佈」狀態。 如需有關發佈信件的資訊，請參閱[發佈資產](../../forms/using/publishing-unpublishing-forms.md#publishanasset)。 您必須先發佈信件，才能將其儲存為草稿，因為當您發佈信件時，會在該時間點建立信件的版本、其相依資產和資料。 您或其他使用者無法編輯信函的已發佈版本，且稍後可在沒有任何與已發佈版本非預期差異的情況下還原。 您可以稍後返回此執行個體，並從您離開的地方繼續。
+* **草稿執行個體**：草稿執行個體擷取您正在預覽的信函的目前狀態。 若要儲存草稿例項，請先確定信函及其引用的所有資產都處於「已發佈」狀態。 如需有關發佈信件的資訊，請參閱[發佈資產](../../forms/using/publishing-unpublishing-forms.md#publish-an-asset)。 您必須先發佈信件，才能將其儲存為草稿，因為當您發佈信件時，會在該時間點建立信件的版本、其相依資產和資料。 您或其他使用者無法編輯信函的已發佈版本，且稍後可在沒有任何與已發佈版本非預期差異的情況下還原。 您可以稍後返回此執行個體，並從您離開的地方繼續。
 
 * **送出執行個體**：送出執行個體會擷取信件送出的狀態。 提交執行個體會在信件執行個體進行後處理後，連同使用者在建立通訊使用者介面中輸入的資料一起儲存信件執行個體的PDF狀態。
 

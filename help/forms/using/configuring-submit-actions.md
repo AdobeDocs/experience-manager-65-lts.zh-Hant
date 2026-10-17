@@ -28,9 +28,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
-source-wordcount: '2700'
+source-wordcount: '2701'
 ht-degree: 49%
 ---
 # 設定提交動作 {#configuring-the-submit-action}
@@ -186,7 +186,7 @@ ht-degree: 49%
 
 最適化表單編輯器提供&#x200B;**叫用 Microsoft® Power Automate 流程**&#x200B;提交動作，將最適化表單資料、附件和記錄文件發送到 Power Automate Cloud Flow。 若要使用「提交」動作將擷取的資料傳送至® Power Automate，[將您的AEM Forms執行個體連線至Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md)
 
-在設定成功之後，使用[叫用 Microsoft® Power Automate 流程](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action)提交動作，將資料傳送到 Power Automate Flow。
+在設定成功之後，使用[叫用 Microsoft® Power Automate 流程](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-microsoft-power-automate-flow-submit-action)提交動作，將資料傳送到 Power Automate Flow。
 
 ## 提交至® SharePoint清單{#submit-to-sharedrive}
 

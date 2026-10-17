@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 0%
@@ -179,7 +179,7 @@ maven原型是建立自訂外觀的起點。 要使用的原型的詳細資訊�
    * `getEventMap`方法將對應由Widget觸發的事件，以及最適化表單模型所需的事件。 預設值對應預設Widget的標準HTML事件，如果觸發替代事件，則需要更新。
    * `showDisplayValue`與`showValue`套用顯示與編輯圖片子句，而且可以覆寫為有替代行為。
 
-   * `commit`事件發生時，最適化表單架構會呼叫`getCommitValue`方法。 一般而言，這是退出事件（除了在變更時發生的下拉式清單、選項按鈕和核取方塊元素以外）。 如需詳細資訊，請參閱[最適化Forms運算式](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p)。
+   * `commit`事件發生時，最適化表單架構會呼叫`getCommitValue`方法。 一般而言，這是退出事件（除了在變更時發生的下拉式清單、選項按鈕和核取方塊元素以外）。 如需詳細資訊，請參閱[最適化Forms運算式](../../forms/using/adaptive-form-expressions.md#value-commit-script)。
 
    * 範本檔案提供各種方法的範例實作。 移除不可擴充的方法。
 

@@ -16,7 +16,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '5707'
 ht-degree: 1%
@@ -102,7 +102,7 @@ Adobe Experience Manager (AEM)表單可協助您將複雜的交易轉換為簡�
   * 若要自訂/libs中現成可用的最適化表單元件的版面，除了[預設版面](/help/forms/using/layout-capabilities-adaptive-forms.md)之外，還要[建立自訂版面元件](/help/forms/using/custom-layout-components-forms.md)。
   * 透過建立自訂Widget或外觀來引入自訂互動。 不建議修改預設元件。 如需詳細資訊，請參閱[外觀架構](/help/forms/using/introduction-widgets.md)。
 
-* 如需處理PII資料的建議，請參閱[處理個人識別資訊](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p)。
+* 如需處理PII資料的建議，請參閱[處理個人識別資訊](/help/forms/using/adaptive-forms-best-practices.md#handling-personally-identifiable-information)。
 
 ### 建立表單範本
 
@@ -288,7 +288,7 @@ AEM Forms提供[規則編輯器](/help/forms/using/rule-editor.md)，可讓您�
 
 需要伺服器端驗證，以防止任何在使用者端上繞過驗證的嘗試，以及資料提交和業務規則違規的任何可能危害。 伺服器端驗證會透過載入所需的使用者端程式庫在伺服器上執行。
 
-* 將函式包含在使用者端程式庫中，以驗證最適化表單中的運算式，並在最適化表單容器對話方塊中指定使用者端程式庫。 如需詳細資訊，請參閱[伺服器端重新驗證](/help/forms/using/configuring-submit-actions.md#p-server-side-revalidation-in-adaptive-form-p)。
+* 將函式包含在使用者端程式庫中，以驗證最適化表單中的運算式，並在最適化表單容器對話方塊中指定使用者端程式庫。 如需詳細資訊，請參閱[伺服器端重新驗證](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form)。
 * 伺服器端驗證會驗證表單模型。 建議您建立個別的使用者端程式庫進行驗證，不要將其與相同使用者端程式庫中的HTML樣式和DOM操作等其他專案混合。
 
 ### 將調適型表單當地語系化 {#localizing-adaptive-forms}

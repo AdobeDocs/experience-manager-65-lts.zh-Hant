@@ -27,7 +27,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2057'
 ht-degree: 10%
@@ -57,7 +57,7 @@ ht-degree: 10%
    >對於預設安裝，登入為`admin`，密碼為`admin`。
 
 1. 選取&#x200B;**[!UICONTROL 建立]**&#x200B;並選取&#x200B;**[!UICONTROL 最適化表單]**。
-1. 隨即顯示選取範本的選項。 如需範本的詳細資訊，請參閱[最適化表單範本](creating-adaptive-form.md#p-adaptive-form-templates-p)。 選取要選取的範本，然後選取「下一步」。
+1. 隨即顯示選取範本的選項。 如需範本的詳細資訊，請參閱[最適化表單範本](creating-adaptive-form.md#adaptive-form-templates)。 選取要選取的範本，然後選取「下一步」。
 1. 「新增屬性」的選項隨即顯示。 指定下列屬性欄位的值。 「標題」和「名稱」欄位為必填欄位：
 
    * **[!UICONTROL 標題：]**&#x200B;指定表單的顯示名稱。 標題有助於在 [!DNL Experience Manager Forms] 使用者介面中識別表單。

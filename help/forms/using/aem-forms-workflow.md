@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3758'
 ht-degree: 1%
@@ -288,7 +288,7 @@ AEM Forms應用程式會與AEM Forms伺服器同步，可讓您變更帳戶中�
 
 ### 清除工作流程例項 {#purge-workflow-instances}
 
-將工作流程例項的數目降至最低會提升工作流程引擎的效能，因此您可以定期從儲存庫中清除已完成或執行中的工作流程例項。 如需詳細資訊，請參閱[定期清除工作流程執行個體](/help/sites-administering/workflows-administering.md#regular)清除工作流程執行個體。
+將工作流程例項的數目降至最低會提升工作流程引擎的效能，因此您可以定期從儲存庫中清除已完成或執行中的工作流程例項。 如需詳細資訊，請參閱[定期清除工作流程執行個體](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)清除工作流程執行個體。
 
 ## 將工作流程變數的敏感資料引數化，並儲存在外部資料存放區中 {#externalize-wf-variables}
 

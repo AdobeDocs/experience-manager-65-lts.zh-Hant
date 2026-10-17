@@ -24,7 +24,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2193'
 ht-degree: 10%
@@ -126,7 +126,7 @@ ht-degree: 10%
 
 1. 選擇 **[!UICONTROL 建立]**。 主題隨即建立，並出現對話方塊以開啟表單進行編輯。 選取&#x200B;**[!UICONTROL 開啟]**&#x200B;以在新索引標籤中開啟新建立的主題。 主題會在主題編輯器中開啟。 對於樣式，主題編輯器使用AEM [!DNL Forms]隨附的現成最適化表單。
 
-   如需有關使用主題編輯器UI的資訊，請參閱[關於主題編輯器](/help/forms/using/themes.md#aboutthethemeeditor)。
+   如需有關使用主題編輯器UI的資訊，請參閱[關於主題編輯器](/help/forms/using/themes.md#about-the-theme-editor)。
 
 1. 選取&#x200B;**[!UICONTROL 主題選項]** ![主題選項](assets/theme-options.png) > **[!UICONTROL 設定]**。 在&#x200B;**[!UICONTROL 預覽表單]**&#x200B;欄位中，選取&#x200B;**shipping-address-add-update-form**&#x200B;最適化表單，選取![aem_6_3_forms_save](assets/aem_6_3_forms_save.png)，選取&#x200B;**[!UICONTROL 儲存]**。 現在，主題編輯器已設定為使用您自己的最適化表單，而不是預設的最適化表單。 選取&#x200B;**[!UICONTROL 取消]**&#x200B;以返回主題編輯器。
 

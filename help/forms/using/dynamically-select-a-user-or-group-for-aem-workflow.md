@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 1%
@@ -240,7 +240,7 @@ function getAdobeSignRecipients() {
    </project>
    ```
 
-1. 新增使用[RecipientInfoSpecificer](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java介面來動態選擇指派工作步驟的使用者或群組的原始程式碼。 如需程式碼範例，請參閱[使用Java介面動態選擇使用者或群組的範例](#-sample-scripts-for)。
+1. 新增使用[RecipientInfoSpecificer](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java介面來動態選擇指派工作步驟的使用者或群組的原始程式碼。 如需程式碼範例，請參閱[使用Java介面動態選擇使用者或群組的範例](#sample-java-code-to-dynamically-choose-a-user-or-a-group)。
 1. 開啟命令提示字元並導覽至包含OSGi套件專案的目錄。 使用以下命令來建立OSGi套件：
 
    `mvn clean install`

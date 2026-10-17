@@ -28,7 +28,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 5%
@@ -135,7 +135,7 @@ ht-degree: 5%
 1. 若要指定子表單重複次數的最大值，請選取「最大值」，並在相關方塊中輸入數字。 如果您未在「最大值」方塊中指定值，則子表單重複次數將無限制。
 1. 若要指定一組子表單重複次數，而不考慮資料數量，請選取「初始計數」，並在相關方塊中輸入數字。 如果選取此選項，但無可用資料或資料專案少於指定的初始計數值，則表格上仍會放置子表格的空白執行個體。
 1. 在父子表單中新增兩個按鈕 — 一個用於新增例項，另一個用於刪除可重複子表單的例項。 如需詳細步驟，請參閱[建置動作](https://help.adobe.com/zh_TW/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2)。
-1. 現在將表單範本連結至最適化表單。 如需詳細步驟，請參閱[根據範本建立最適化表單](/help/forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template)。
+1. 現在將表單範本連結至最適化表單。 如需詳細步驟，請參閱[根據範本建立最適化表單](/help/forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)。
 1. 使用在步驟9中建立的按鈕來新增和移除子表單。
 
 附加的.zip檔案包含一個範例可重複的子表單。

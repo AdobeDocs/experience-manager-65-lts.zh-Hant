@@ -29,7 +29,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1968'
 ht-degree: 10%
@@ -123,7 +123,7 @@ reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 請�
    1. 將版本選取為reCAPTCHA v2，指定reCAPTCHA服務（在步驟1中取得）的名稱、網站金鑰和秘密金鑰，並選取&#x200B;**[!UICONTROL 建立]**&#x200B;以建立雲端服務組態。
    1. 在「編輯元件」對話方塊中，指定在步驟1中取得的網站和秘密金鑰。 選取&#x200B;**[!UICONTROL 儲存設定]**，然後選取&#x200B;**確定**&#x200B;以完成設定。
 
-   在設定reCAPTCHA服務後，就可用於調適型表單。 如需詳細資訊，請參閱[在最適化表單中使用驗證碼](#using-captcha)。
+   在設定reCAPTCHA服務後，就可用於調適型表單。 如需詳細資訊，請參閱[在最適化表單中使用驗證碼](#using-captcha-in-adaptive-forms)。
 
 ![reCAPTCHA v2](/help/forms/using/assets/recaptcha-v2.png)
 

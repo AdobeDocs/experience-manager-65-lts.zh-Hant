@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1650'
 ht-degree: 0%
@@ -40,9 +40,9 @@ ht-degree: 0%
 
 此外，也可以使用流程和任務屬性篩選器來定義特定查詢。 然後可以儲存這些篩選器，並用於稍後執行報表。
 
-[**處理程式搜尋**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-search-p)：使用使用者定義的搜尋篩選器，根據處理程式屬性來搜尋處理程式執行個體。
+[**處理程式搜尋**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#process-task-search)：使用使用者定義的搜尋篩選器，根據處理程式屬性來搜尋處理程式執行個體。
 
-[**處理序詳細資料**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-details-p)：指定處理序識別碼，以檢視處理序執行個體的詳細資料。
+[**處理序詳細資料**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#process-task-details)：指定處理序識別碼，以檢視處理序執行個體的詳細資料。
 
 **任務搜尋**：使用使用者定義的搜尋篩選器，根據任務屬性來搜尋任務執行個體。
 

@@ -24,7 +24,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%
@@ -58,6 +58,6 @@ ht-degree: 0%
 
 在AEM Forms中，XFA表單範本可由最適化表單或其他XFA表單範本參照。 此外，範本可以參照資源或其他XFA範本。
 
-不建議刪除最適化表單參考的XFA表單，因為這樣可能會損毀最適化表單。 當最適化表單參考XFA表單時，其欄位會受到限制。 刪除XFA後，最適化表單無法將其欄位與XFA欄位同步，並顯示此類欄位的錯誤訊息。 若要進一步瞭解參考XFA刪除的影響以及已修改的AF，請參閱[更新參考的XFA表單](/help/forms/using/get-xdp-pdf-documents-aem.md#p-updating-referenced-xfa-forms-p)。
+不建議刪除最適化表單參考的XFA表單，因為這樣可能會損毀最適化表單。 當最適化表單參考XFA表單時，其欄位會受到限制。 刪除XFA後，最適化表單無法將其欄位與XFA欄位同步，並顯示此類欄位的錯誤訊息。 若要進一步瞭解參考XFA刪除的影響以及已修改的AF，請參閱[更新參考的XFA表單](/help/forms/using/get-xdp-pdf-documents-aem.md#updating-referenced-xfa-forms)。
 
 若要刪除這類XFA表單，請更新最適化表單並移除與XFA欄位的繫結。

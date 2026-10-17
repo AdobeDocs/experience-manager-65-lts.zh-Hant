@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2481'
 ht-degree: 0%
@@ -136,7 +136,7 @@ AEM Forms使用者介面可讓您將資產下載為AEM CRX套件或二進位檔�
 
 使用此選項可從AEM表單執行個體以套件形式下載所有通訊管理資產和相關相依性。
 
-例如，如果「通訊管理」有使用影像和文字的信件，則下載的套件也包含與信件相關的影像和文字。 也會下載與資產相關聯的所有中繼資料屬性（包括自訂屬性）。 下載套件(.cmp)後，您可以[將套件匯入其他AEM Forms執行個體](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p)。
+例如，如果「通訊管理」有使用影像和文字的信件，則下載的套件也包含與信件相關的影像和文字。 也會下載與資產相關聯的所有中繼資料屬性（包括自訂屬性）。 下載套件(.cmp)後，您可以[將套件匯入其他AEM Forms執行個體](../../forms/using/import-export-forms-templates.md#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management)。
 
 若要以套件形式下載所有Correspondence Management資產和相關相依性，請完成以下步驟：
 
@@ -161,7 +161,7 @@ AEM Forms使用者介面可讓您將資產下載為AEM CRX套件或二進位檔�
 
 1. 選取&#x200B;**下載匯出的封裝**&#x200B;連結來下載封裝檔案。
 
-   若要將套件中的資產新增至Correspondence Management的另一個執行個體，請[將套件匯入至AEM Forms執行個體](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p)。
+   若要將套件中的資產新增至Correspondence Management的另一個執行個體，請[將套件匯入至AEM Forms執行個體](../../forms/using/import-export-forms-templates.md#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management)。
 
 ### 將檔案片段、信函和/或資料字典匯入通訊管理 {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
 

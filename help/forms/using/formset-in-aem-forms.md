@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2816'
 ht-degree: 0%
@@ -80,7 +80,7 @@ AEM Forms應用程式也支援表單集，可讓您的欄位員工離線建立�
 
    * 表單順序：拖放表單以重新排序。 表單順序會定義在AEM Forms應用程式和獨立轉譯中向一般使用者顯示表單的順序。
    * 表單識別碼：指定要用於適用性運算式之表單的唯一身分。
-   * 資料根：針對表單集中的每個表單，作者可以設定XPATH，該特定表單的資料會放置於提交的XML中。 預設值為/。 如果表單集中的所有表單都是結構描述繫結並共用相同的XML結構描述，您可以變更此值。 建議表單中的每個欄位都有XDP中指定的適當資料繫結。 如果兩個不同表單中的兩個欄位共用相同的資料繫結，則第二個表單中的欄位會顯示第一個表單中的預填值。 請勿將內部內容相同的兩個子表單繫結至相同的XML節點。 如需表單集的XML結構的詳細資訊，請參閱[預填表單集的XML](../../forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p)。
+   * 資料根：針對表單集中的每個表單，作者可以設定XPATH，該特定表單的資料會放置於提交的XML中。 預設值為/。 如果表單集中的所有表單都是結構描述繫結並共用相同的XML結構描述，您可以變更此值。 建議表單中的每個欄位都有XDP中指定的適當資料繫結。 如果兩個不同表單中的兩個欄位共用相同的資料繫結，則第二個表單中的欄位會顯示第一個表單中的預填值。 請勿將內部內容相同的兩個子表單繫結至相同的XML節點。 如需表單集的XML結構的詳細資訊，請參閱[預填表單集的XML](../../forms/using/formset-in-aem-forms.md#prefill-xml-for-form-set)。
    * 適用性運算式：指定JavaScript運算式，用於評估布林值並指示表單集中的表單是否符合填寫條件。 如果為false，則不會要求使用者填寫表單，甚至不會向其顯示要填寫的表單。 通常，運算式會根據此表單前擷取的欄位值。 運算式也包含對表單集API fs.valueOf的呼叫，以擷取使用者在表單集表單的欄位中填入的值：
 
    *fs.valueOf(&lt;Form Identifier>， &lt;fieldSom expression>) > &lt;value>*

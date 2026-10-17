@@ -27,7 +27,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2993'
 ht-degree: 3%
@@ -314,7 +314,7 @@ Adobe Experience Manager Forms需要由Java™開發套件(JDK)散發提供的Ja
 
 - 除了指定的主要和次要支援軟體版本之外，JEE上的AEM Forms還支援更新和修正套件。 不過，除非另有指定，否則不支援更新至下一個主要或次要版本。
 - 叢集式安裝不支援TarMK持續性。 如需有關支援的持續性的資訊，請參閱[為AEM Forms安裝選擇持續性型別](/help/forms/using/choosing-persistence-type-for-aem-forms.md)。
-- 根據Adobe的[協力廠商軟體支援政策](#third-party-patch-support-policy-third-party-patch-support-policy)，JEE上的AEM Forms可支援各種協力廠商軟體。
+- 根據Adobe的[協力廠商軟體支援政策](#third-party-patch-support-policy)，JEE上的AEM Forms可支援各種協力廠商軟體。
 - 根據協力廠商提供的支援，在JEE上使用AEM Forms支援平台。 協力廠商可能不允許某些組合。 例如，許多廠商尚未通過Oracle認證其應用程式伺服器。 因此，JEE上的AEM Forms也不支援這些組合。 為確保您選擇支援的軟體版本，請一併參閱協力廠商的支援矩陣。
 - JEE上的AEM Forms不支援TarMK冷待命。
 - JEE上的AEM Forms不支援垂直叢集。

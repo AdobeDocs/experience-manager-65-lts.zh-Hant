@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 0%
@@ -68,7 +68,7 @@ ht-degree: 0%
 
    在&#x200B;**[!UICONTROL 主旨]**&#x200B;與&#x200B;**[!UICONTROL 電子郵件範本]**&#x200B;欄位中分別指定電子郵件的主旨與內文。
 
-   您也可以在欄位中指定變數預留位置，在這種情況下，當一般使用者成功提交表單時會處理欄位的值。 如需詳細資訊，請參閱[使用最適化表單欄位名稱來動態建立電子郵件內容](../../forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p)。
+   您也可以在欄位中指定變數預留位置，在這種情況下，當一般使用者成功提交表單時會處理欄位的值。 如需詳細資訊，請參閱[使用最適化表單欄位名稱來動態建立電子郵件內容](../../forms/using/form-submission-receipt-via-email.md#using-adaptive-form-field-names-to-dynamically-create-email-content)。
 
    如果表單包含檔案附件，而且您想要在電子郵件中附加這些檔案，請選取&#x200B;**[!UICONTROL 包含附件]**。
 

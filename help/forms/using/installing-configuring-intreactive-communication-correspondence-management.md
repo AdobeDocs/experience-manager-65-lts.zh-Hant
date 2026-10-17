@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 4%
@@ -189,7 +189,7 @@ Dispatcher是Adobe Experience Manager的快取與負載平衡工具，用於企�
 
 如果互動式通訊提供的體驗不吸引人，您的客戶可能會捨棄互動式通訊。 雖然這會讓客戶感到挫折，但也會提高貴組織的支援數量和成本。 識別並提供適當的客戶體驗以提高轉換率，這既重要又具有挑戰性。 AEM表單擁有此問題的關鍵所在。
 
-AEM Forms與Adobe Target （Adobe Experience Cloud解決方案）整合，跨多個數位頻道提供個人化及吸引人的客戶體驗。 若要使用Adobe Target來個人化互動式通訊，[將Adobe Target與AEM Forms整合](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms)。
+AEM Forms與Adobe Target （Adobe Experience Cloud解決方案）整合，跨多個數位頻道提供個人化及吸引人的客戶體驗。 若要使用Adobe Target來個人化互動式通訊，[將Adobe Target與AEM Forms整合](../../forms/using/ab-testing-adaptive-forms.md#set-up-and-integrate-target-in-aem-forms)。
 
 #### 設定表單資料模型的SSL通訊  {#configure-ssl-communcation-for-form-data-model}
 

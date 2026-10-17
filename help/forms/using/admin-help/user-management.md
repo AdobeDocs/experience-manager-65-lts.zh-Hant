@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 「使用者管理」可讓您使用安全性宣告標籤語言(SAML)，在AEM表單模組與Netegrity SiteMinder保護的應用程式之間啟用單一登入(SSO)。 實作SSO時，AEM表單使用者登入頁面不是必要頁面，且若使用者已透過公司入口網站驗證，則不顯示。
 
-如需有關改善DB2的資料庫和目錄同步處理效能的資訊，請參閱[IBM DB2資料庫：執行定期維護的命令](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance)。
+如需有關改善DB2的資料庫和目錄同步處理效能的資訊，請參閱[IBM DB2資料庫：執行定期維護的命令](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db-database-running-commands-for-regular-maintenance)。
 
 ## 為啟用SSL的LDAP伺服器設定使用者管理 {#configuring-user-management-for-an-ssl-enabled-ldap-server}
 

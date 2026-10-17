@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 21%
@@ -62,9 +62,9 @@ ht-degree: 21%
 
    如需記錄檔案設定和組態的詳細資訊，請參閱：
 
-   [記錄範本文件配置](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-template-configuration-p)
+   [記錄範本文件配置](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-template-configuration)
 
-   [記錄檔案設定](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
+   [記錄檔案設定](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-settings)
 
 1. [自訂記錄檔案的品牌資訊](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)，並確定瀏覽器地區設定為您使用機器語言將最適化表單當地語系化的語言。 瀏覽器地區設定有助於記錄檔案中的品牌資訊本地化。
 1. 若要檢視本地化記錄檔案，請選取「產生預覽」。 記錄檔案PDF會在您的瀏覽器中以新索引標籤產生和開啟。

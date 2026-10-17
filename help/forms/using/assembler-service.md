@@ -23,14 +23,14 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2167'
 ht-degree: 6%
 ---
 # 使用組合器服務{#using-assembler-service}
 
-Assembler服務可讓您組合、重新排列和增加PDF和XDP檔案，並取得有關PDF檔案的資訊。 提交至組合器服務的每個工作都包含檔案描述XML (DDX)檔案、來原始檔及外部資源（字串與圖形）。 如需有關組合器服務的詳細資訊，請參閱[組合器服務概述](../../forms/using/overview-aem-document-services.md#p-assembler-service-p)。
+Assembler服務可讓您組合、重新排列和增加PDF和XDP檔案，並取得有關PDF檔案的資訊。 提交至組合器服務的每個工作都包含檔案描述XML (DDX)檔案、來原始檔及外部資源（字串與圖形）。 如需有關組合器服務的詳細資訊，請參閱[組合器服務概述](../../forms/using/overview-aem-document-services.md#assembler-service)。
 
 您可以使用組裝服務進行下列操作：
 

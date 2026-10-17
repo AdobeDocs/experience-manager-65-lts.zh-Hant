@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 1%
@@ -81,13 +81,13 @@ AEM Forms目前支援英文(en)、西班牙文(es)、法文(fr)、義大利文(i
 
 若要在最適化表單執行階段新增對新地區設定的支援：
 
-1. [新增語言環境至GuideLocalizationService服務](../../forms/using/supporting-new-language-localization.md#p-add-a-locale-to-the-guide-localization-service-br-p)
+1. [新增語言環境至GuideLocalizationService服務](../../forms/using/supporting-new-language-localization.md#add-a-locale-to-the-guide-localization-service-br)
 
-1. [為地區設定新增XFA使用者端資料庫](../../forms/using/supporting-new-language-localization.md#p-add-xfa-client-library-for-a-locale-br-p)
+1. [為地區設定新增XFA使用者端資料庫](../../forms/using/supporting-new-language-localization.md#add-xfa-client-library-for-a-locale-br)
 
-1. [為地區設定新增最適化表單使用者端資料庫](../../forms/using/supporting-new-language-localization.md#p-add-adaptive-form-client-library-for-a-locale-br-p)
-1. [新增字典的地區設定支援](../../forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
-1. [重新啟動伺服器](../../forms/using/supporting-new-language-localization.md#p-restart-the-server-p)
+1. [為地區設定新增最適化表單使用者端資料庫](../../forms/using/supporting-new-language-localization.md#add-adaptive-form-client-library-for-a-locale-br)
+1. [新增字典的地區設定支援](../../forms/using/supporting-new-language-localization.md#add-locale-support-for-the-dictionary-br)
+1. [重新啟動伺服器](../../forms/using/supporting-new-language-localization.md#restart-the-server)
 
 ### 新增語言環境至指南本地化服務 {#add-a-locale-to-the-guide-localization-service-br}
 

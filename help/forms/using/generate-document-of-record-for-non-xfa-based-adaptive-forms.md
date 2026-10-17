@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '4354'
 ht-degree: 3%
@@ -433,7 +433,7 @@ ht-degree: 3%
   * **強調色：**&#x200B;您可以預先定義[!UICONTROL 記錄檔案]的範本顏色。
   * **字型系列：**&#x200B;為[!UICONTROL 記錄檔案]文字選取字型型別。
   * **包含未繫結欄位於DoR：**&#x200B;設定屬性包含來自[!UICONTROL 記錄檔案]中結構描述型最適化表單的未繫結欄位。 預設為true。
-  * **若隱藏則從DoR排除欄位：**&#x200B;設定屬性以在表單提交時從[!UICONTROL 記錄檔案]排除隱藏欄位。 當您在伺服器[&#128279;](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)上啟用重新驗證時，伺服器會先重新計算隱藏的欄位，然後再從[!UICONTROL 記錄檔案]中排除這些欄位
+  * **若隱藏則從DoR排除欄位：**&#x200B;設定屬性以在表單提交時從[!UICONTROL 記錄檔案]排除隱藏欄位。 當您在伺服器[&#128279;](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form)上啟用重新驗證時，伺服器會先重新計算隱藏的欄位，然後再從[!UICONTROL 記錄檔案]中排除這些欄位
 * **[!UICONTROL 表單欄位屬性]**
   * 如果勾選選項&#x200B;**對於核取方塊與選項按鈕元件，只顯示選取的值**，它將只產生具有選取值的DoR輸出。
   * 您可以為多個選取的值選取「分隔符號」，也可以選擇任何其他分隔符號型別。

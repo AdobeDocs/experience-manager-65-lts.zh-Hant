@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 8%
@@ -58,7 +58,7 @@ ht-degree: 8%
    * 如果您選取&#x200B;**[!UICONTROL 以時間為基準]**&#x200B;觸發器，請指定時間間隔。
    * 如果您選取&#x200B;**[!UICONTROL 以事件為基礎的]**&#x200B;觸發器，請指定事件名稱。
 
-   您也可以建立自己的自訂策略並新增至清單中。 如需詳細資訊，請參閱[實作自訂策略以自動儲存表單](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p)。
+   您也可以建立自己的自訂策略並新增至清單中。 如需詳細資訊，請參閱[實作自訂策略以自動儲存表單](/help/forms/using/auto-save-an-adaptive-form.md#implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms)。
 
 1. （僅限以時間為基礎的自動儲存）執行下列步驟，設定「以時間為基礎的自動儲存」選項。
 

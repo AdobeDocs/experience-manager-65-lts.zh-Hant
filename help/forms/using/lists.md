@@ -20,7 +20,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '6927'
 ht-degree: 0%
@@ -65,7 +65,7 @@ ht-degree: 0%
 
    瀏覽器中的預設拼字檢查程式會檢查文字編輯器中的拼字。 若要管理拼字與文法檢查，您可以編輯瀏覽器的拼字檢查程式設定，或安裝瀏覽器外掛程式/附加元件以檢查拼字與文法。
 
-   您也可以在文字編輯器中使用各種鍵盤快速鍵來管理、編輯文字及設定文字格式。 如需有關「通訊管理」鍵盤快速鍵中[文字編輯器](/help/forms/using/keyboard-shortcuts.md#p-formatting-p)鍵盤快速鍵的詳細資訊。
+   您也可以在文字編輯器中使用各種鍵盤快速鍵來管理、編輯文字及設定文字格式。 如需有關「通訊管理」鍵盤快速鍵中[文字編輯器](/help/forms/using/keyboard-shortcuts.md#formatting)鍵盤快速鍵的詳細資訊。
 
 1. 文字編輯器開啟，輸入文字。 使用頁面頂端的工具列來格式化文字、插入條件、連結和分頁符號。
 
@@ -501,7 +501,7 @@ DD具有收集元素Nominied_details，其具有三個原始元素的複合元�
 
    然後選取DD並匯出範例資料。 您取得的XML檔案包含Employee資料和3個Nominee_details例項（依預設會下載3個例項）。 您可以依需求新增或刪除)。 更新值，然後將測試資料匯入DD。 CMP檔案是套件，其中包含DD。 因此，請將DD匯入Correspondence Management。
 
-   如需使用資料字典和測試資料的詳細資訊，請參閱[資料字典](/help/forms/using/data-dictionary.md#p-working-with-test-data-p)。
+   如需使用資料字典和測試資料的詳細資訊，請參閱[資料字典](/help/forms/using/data-dictionary.md#working-with-test-data)。
 
    ![資料字典結構](assets/dd.jpeg)
 

@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2207'
 ht-degree: 18%
@@ -231,7 +231,7 @@ ht-degree: 18%
 
 #### 使用收到的認證連線AEM Forms與適用於政府的Adobe Acrobat Sign Solutions
 
-1. 在瀏覽器中開啟`re-direct URL`。 您在[在您的AEM執行個體](#create-redirect-url)區段上建立重新導向URL的最後一步中建立並記下`re-direct URL`。
+1. 在瀏覽器中開啟`re-direct URL`。 您在[在您的AEM執行個體](#create-a-redirect-url-for-your-aem-instance)區段上建立重新導向URL的最後一步中建立並記下`re-direct URL`。
 
 1. 在&#x200B;**[!UICONTROL 建立Adobe Sign組態]**&#x200B;頁面的&#x200B;**[!UICONTROL 一般]**&#x200B;標籤中，指定組態的&#x200B;**[!UICONTROL 名稱]**，並選取&#x200B;**[!UICONTROL 下一步]**。 您可以選擇指定&#x200B;**[!UICONTROL 標題]**&#x200B;並瀏覽以選取設定的&#x200B;**[!UICONTROL 縮圖]**。 按一下「**[!UICONTROL 下一步]**」。
 
@@ -282,7 +282,7 @@ ht-degree: 18%
 1. 發佈設定。
 1. 使用[復寫](/help/sites-deploying/replication.md)在對應發佈執行個體上建立相同的組態。
 
-現在，您可以[在最適化表單中新增Adobe Acrobat Sign欄位](working-with-adobe-sign.md)或[AEM工作流程](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)。 請確定您將用於Cloud Service設定的設定容器新增至為[!DNL Adobe Acrobat Sign]啟用的所有最適化Forms。 您可從最適化表單的屬性指定設定容器。
+現在，您可以[在最適化表單中新增Adobe Acrobat Sign欄位](working-with-adobe-sign.md)或[AEM工作流程](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step)。 請確定您將用於Cloud Service設定的設定容器新增至為[!DNL Adobe Acrobat Sign]啟用的所有最適化Forms。 您可從最適化表單的屬性指定設定容器。
 
 
 ## 設定[!DNL Adobe Sign]排程器以同步處理簽署狀態 {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
@@ -301,5 +301,5 @@ ht-degree: 18%
 ## 相關文章 {#related-articles}
 
 * [在最適化表單中使用Adobe Sign](../../forms/using/working-with-adobe-sign.md)
-* [Adobe Sign使用以表單為中心的工作流程](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)
+* [Adobe Sign使用以表單為中心的工作流程](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step)
 * [搭配使用Adobe Sign與AEM Forms （影片）](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)

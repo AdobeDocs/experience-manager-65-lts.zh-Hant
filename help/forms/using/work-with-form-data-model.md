@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '4264'
 ht-degree: 0%
@@ -122,7 +122,7 @@ ht-degree: 0%
 
 1. 在表單資料模型中，選取資料模型物件並選取&#x200B;**[!UICONTROL 建立子屬性]**。
 1. 在&#x200B;**[!UICONTROL 建立子屬性]**&#x200B;對話方塊中，分別在&#x200B;**[!UICONTROL Name]**&#x200B;和&#x200B;**[!UICONTROL Type]**&#x200B;欄位中指定屬性的名稱和資料型別。 您可以選擇指定屬性的標題和說明。
-1. 如果屬性是計算屬性，則啟用Computed 。 計算屬性的值是根據規則或運算式來評估。 如需詳細資訊，請參閱[編輯屬性](#edit-properties)。
+1. 如果屬性是計算屬性，則啟用Computed 。 計算屬性的值是根據規則或運算式來評估。 如需詳細資訊，請參閱[編輯屬性](#properties)。
 1. 如果資料模型物件繫結至資料來源，則新增的子屬性會自動繫結至具有相同名稱和資料型別的父資料模型物件的屬性。
 
    若要手動繫結子屬性與資料模型物件屬性，請選取&#x200B;**[!UICONTROL 繫結參考]**&#x200B;欄位旁的瀏覽圖示。 **[!UICONTROL 選取物件]**&#x200B;對話方塊會列出父資料模型物件的所有屬性。 選取要繫結的屬性，然後選取勾號圖示。 請注意，您只能選取與子屬性具有相同資料型別的屬性。

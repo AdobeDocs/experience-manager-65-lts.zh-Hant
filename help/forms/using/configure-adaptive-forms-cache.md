@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 2%
@@ -70,7 +70,7 @@ ht-degree: 2%
   * 使用URL格式`http://host:port/content/forms/af/<afName>.<locale>.html`來要求最適化表單的本地化版本，而非`http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
   * [針對格式為`http://host:port/content/forms/af/<adaptivefName>.html`的URL停用使用瀏覽器地區設定](supporting-new-language-localization.md#how-localization-of-adaptive-form-works)。
   * 當您使用URL格式`http://host:port/content/forms/af/<adaptivefName>.html`，且組態管理員中的&#x200B;**[!UICONTROL 使用瀏覽器地區設定]**&#x200B;已停用時，會提供非當地語系化版本的調適型表單。 非當地語系化語言是開發最適化表單時使用的語言。 系統不會考量為瀏覽器設定的地區設定（瀏覽器地區設定），而是提供最適化表單的非當地語系化版本。
-  * 當您使用URL格式`http://host:port/content/forms/af/<adaptivefName>.html`，並且啟用Configuration Manager中的&#x200B;**[!UICONTROL 使用瀏覽器地區設定]**&#x200B;時，會提供當地語系化的最適化表單版本（如果有的話）。 當地語系化最適化表單的語言取決於瀏覽器設定的地區設定（瀏覽器地區設定）。 這會導致只快取[最適化表單]的第一個執行個體。 若要防止執行個體發生問題，請參閱[疑難排解](#only-first-insatnce-of-adptive-forms-is-cached)。
+  * 當您使用URL格式`http://host:port/content/forms/af/<adaptivefName>.html`，並且啟用Configuration Manager中的&#x200B;**[!UICONTROL 使用瀏覽器地區設定]**&#x200B;時，會提供當地語系化的最適化表單版本（如果有的話）。 當地語系化最適化表單的語言取決於瀏覽器設定的地區設定（瀏覽器地區設定）。 這會導致只快取[最適化表單]的第一個執行個體。 若要防止執行個體發生問題，請參閱[疑難排解](#only-first-instance-of-adaptive-forms-is-cached)。
 
 ### 在Dispatcher啟用快取
 

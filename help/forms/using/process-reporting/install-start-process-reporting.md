@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 2%
@@ -289,7 +289,7 @@ AEM Forms環境包含設定環境時的資料。
 
 「上次更新時間」會顯示資料更新已推送至「程式報表」存放庫的上次日期與時間。
 
-如需資料發佈服務以及如何排程此服務的詳細資訊，請參閱「程式報告快速入門」一文中的[排程程式資料發佈](/help/forms/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p)。
+如需資料發佈服務以及如何排程此服務的詳細資訊，請參閱「程式報告快速入門」一文中的[排程程式資料發佈](/help/forms/using/process-reporting/install-start-process-reporting.md#schedule-process-data-publishing)。
 
 **處理序報告使用者：**&#x200B;登入的使用者名稱會顯示在上次更新時間的右側。
 

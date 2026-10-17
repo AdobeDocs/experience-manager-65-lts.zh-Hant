@@ -22,7 +22,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1765'
 ht-degree: 2%
@@ -181,7 +181,7 @@ ht-degree: 2%
 
 1. 請確定版面和片段版面的XFA版本為3.3或更新版本。 如果您使用較舊版本的版面和片段版面，則呈現信函時可能會出現問題。 若要將舊版XFA更新至最新版本，請完成以下步驟：
 
-   1. [從Forms使用者介面下載XFA為zip檔](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p)。
+   1. [從Forms使用者介面下載XFA為zip檔](../../forms/using/import-export-forms-templates.md#import-and-export-assets-in-correspondence-management)。
    1. 擷取檔案。
    1. 在最新的Designer中開啟XFA檔案並儲存。 XFA的版本會更新至最新版本。
    1. 在Forms使用者介面中上傳XFA。

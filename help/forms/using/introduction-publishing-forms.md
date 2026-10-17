@@ -24,7 +24,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 2%
@@ -84,7 +84,7 @@ Forms入口網站可讓您將表單從表單存放庫列出到您的入口網站
 1. **啟用Forms Portal元件**：現成可用的Forms Portal元件無法使用。 [為AEM Sites頁面啟用AEM sidekick](/help/forms/using/enabling-forms-portal-components.md)中的元件。
 1. **在頁面上列出表單（建立Forms入口網站頁面）：**&#x200B;您可以在AEM Sites和非AEM網站頁面上列出表單。 此清單包含發佈執行個體上可用的表單。 使用者可以開啟表單並開始填寫這些表單。 每當使用者開啟表單時，就會建立表單的新例項：
 
-   1. **在AEM Sites頁面上列出表單**：將&#x200B;**[Search &amp; Lister](../../forms/using/creating-form-portal-page.md)**&#x200B;元件新增至頁面，並在其中設定&#x200B;**[List Pane](../../forms/using/creating-form-portal-page.md#p-list-pane-p)**，以列出頁面上的表單。 將&#x200B;**Search Pane**&#x200B;元件新增並設定到&#x200B;**Search &amp; Lister**&#x200B;元件，也可將搜尋功能新增到頁面。 包含Forms Portal元件的頁面稱為[Forms Portal頁面](../../forms/using/creating-form-portal-page.md)。
+   1. **在AEM Sites頁面上列出表單**：將&#x200B;**[Search &amp; Lister](../../forms/using/creating-form-portal-page.md)**&#x200B;元件新增至頁面，並在其中設定&#x200B;**[List Pane](../../forms/using/creating-form-portal-page.md#list-pane)**，以列出頁面上的表單。 將&#x200B;**Search Pane**&#x200B;元件新增並設定到&#x200B;**Search &amp; Lister**&#x200B;元件，也可將搜尋功能新增到頁面。 包含Forms Portal元件的頁面稱為[Forms Portal頁面](../../forms/using/creating-form-portal-page.md)。
 
    1. **在非AEM Sites頁面上列出表單：**&#x200B;使用[Forms入口網站搜尋API](/help/forms/using/listing-forms-webpage-using-apis.md)在非AEM Sites頁面上查詢、擷取和列出表單。
 

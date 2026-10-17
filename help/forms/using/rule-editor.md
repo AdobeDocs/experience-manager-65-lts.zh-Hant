@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '6814'
 ht-degree: 2%
@@ -215,7 +215,7 @@ _
 
 **移除執行個體**&#x200B;移除指定之可重複面板或表格列的執行個體。
 
-**導覽至**&#x200B;導覽至其他互動式通訊、最適化表單、其他資產（例如影像或檔案片段）或外部URL。 如需詳細資訊，請參閱[新增按鈕至互動式通訊](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel)。
+**導覽至**&#x200B;導覽至其他互動式通訊、最適化表單、其他資產（例如影像或檔案片段）或外部URL。 如需詳細資訊，請參閱[新增按鈕至互動式通訊](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel)。
 
 ### 設定值 {#set-value-of}
 
