@@ -219,7 +219,7 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 >* Adobe Acrobat、Microsoft®Word、Excel和Powerpoint僅適用於Microsoft®Windows。 如果您使用UNIX作業系統，請安裝OpenOffice，將RTF文字檔和支援的® Office檔案轉換成PDF檔案。
 >* 關閉在安裝Adobe Acrobat和協力廠商軟體後，針對所有設定為使用PDF Generator服務的使用者顯示的所有對話方塊。
 >* 至少啟動一次所有已安裝的軟體。 關閉所有設定要使用PDF Generator服務之使用者的所有對話方塊。
->* [檢查Adobe Acrobat序號的到期日](https://helpx.adobe.com/tw/enterprise/kb/volume-license-expiration-check.html)並設定更新授權的日期，或[根據到期日](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)移轉您的序號。
+>* [檢查Adobe Acrobat序號的到期日](https://helpx.adobe.com/tw/enterprise/kb/volume-license-expiration-check.html)並設定更新授權的日期，或[根據到期日](https://www.adobe.com/tw/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)移轉您的序號。
 
 安裝Acrobat後，請開啟Microsoft® Word。 在&#x200B;**Acrobat**&#x200B;標籤上，按一下&#x200B;**建立PDF**，並將電腦上可用的.doc或.docx檔案轉換成PDF檔案。 如果轉換成功，AEM Forms就可以將Acrobat與PDF Generator服務搭配使用。
 
@@ -1494,9 +1494,9 @@ DocAssurance服務可套用使用許可權至PDF檔案。 若要套用使用許�
 
 +++AEM Forms伺服器上安裝的Adobe Acrobat授權到期
 
-* 如果您已有Adobe Acrobat的授權且已過期，請[下載最新版的Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html)，並移轉您的序號。 在[移轉您的序號](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)之前。
+* 如果您已有Adobe Acrobat的授權且已過期，請[下載最新版的Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html)，並移轉您的序號。 在[移轉您的序號](https://www.adobe.com/tw/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)之前。
 
-  * 使用以下命令來產生prov.xml，並使用prov.xml檔案重新整理現有的安裝，而不使用[移轉序號](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)編號文章中提供的命令。
+  * 使用以下命令來產生prov.xml，並使用prov.xml檔案重新整理現有的安裝，而不使用[移轉序號](https://www.adobe.com/tw/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)編號文章中提供的命令。
 
         &quot;&#39;
         
@@ -1511,7 +1511,7 @@ DocAssurance服務可套用使用許可權至PDF檔案。 若要套用使用許�
         
         &grave;&grave;
     
-* 若是大規模安裝，請使用[Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html)移除舊版Reader和Acrobat。 自訂安裝程式，並將其部署至組織的所有電腦。
+* 若是大規模安裝，請使用[Acrobat Customization Wizard](https://www.adobe.com/tw/devnet-docs/acrobatetk/tools/Wizard/index.html)移除舊版Reader和Acrobat。 自訂安裝程式，並將其部署至組織的所有電腦。
 
 +++
 

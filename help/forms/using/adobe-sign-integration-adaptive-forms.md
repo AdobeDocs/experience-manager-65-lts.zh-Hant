@@ -57,7 +57,7 @@ ht-degree: 18%
 
 您需要下列專案才能將[!DNL Adobe Sign]與AEM [!DNL Forms]整合：
 
-* 有效的[Adobe Sign開發人員帳戶。](https://www.adobe.com/acrobat/business/developer-form.html)
+* 有效的[Adobe Sign開發人員帳戶。](https://www.adobe.com/tw/acrobat/business/developer-form.html)
 * 已啟用[SSL](/help/sites-administering/ssl-by-default.md) AEM [!DNL Forms]伺服器。
 * [Adobe Sign API 應用程式](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 * [!DNL Adobe Sign] API 應用程式的認證 (用戶端 ID 和用戶端密碼)。
