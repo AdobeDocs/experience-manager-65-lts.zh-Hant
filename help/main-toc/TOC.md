@@ -7,9 +7,9 @@ user-guide-description: 使用Adobe Experience Manager 6.5 LTS檔案瞭解其運
 breadcrumb-title: 使用手冊
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: a895c5e5cb2a4e21d7460d598bd260a5292ed2ad
+source-git-commit: 82ad777feafc14635e26f445a1be6001a2b82672
 workflow-type: tm+mt
-source-wordcount: '7801'
+source-wordcount: '7809'
 ht-degree: 22%
 ---
 # Adobe Experience Manager 6.5 LTS檔案 {#content}
@@ -462,6 +462,7 @@ ht-degree: 22%
     + [安裝及設定Designer](/help/forms/using/installing-configuring-designer.md)
     + 設定 AEM Forms {#configure-aem-forms}
       + [AEM Forms伺服器的效能調整](/help/forms/using/performance-tuning-aem-forms.md)
+      + [建立最適化表單參考的自訂索引](/help/forms/using/create-custom-index-for-adaptive-forms-references.md)
       + [設定最適化表單快取](/help/forms/using/configure-adaptive-forms-cache.md)
       + [正在設定AEM DS設定](/help/forms/using/configuring-the-processing-server-url.md)
       + [設定同步排程器](/help/forms/using/configure-synchronization-scheduler.md)
