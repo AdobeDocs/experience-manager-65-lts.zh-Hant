@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a09b87b0103e007d357b8901233ae890998a307d
+source-git-commit: 7c3cc17781a4f5ca68ed738e76063a75c18beaeb
 workflow-type: tm+mt
-source-wordcount: '7815'
+source-wordcount: '7886'
 ht-degree: 21%
 ---
 
@@ -382,6 +382,8 @@ Campaign ContentServlet現在會在內容請求期間保留JSON回應內容型�
 #### 已知問題 {#forms-known-issues-65-lts-sp3}
 
 * 在JEE 6.5 LTS SP3 **上的** AEM Forms上，將&#x200B;**PostScript (PS)、EPS和PRN檔案轉換到PDF**&#x200B;失敗。 `PsToPdfSvc`原生處理序可能會意外終止，導致轉換工作失敗，並產生`ALC-PDG-003-011`和`ALC-PDG-001-028`等錯誤。 請聯絡Adobe客戶支援以尋求協助。 (FORMS-28152)
+
+* 在JEE 6.5 LTS SP3 **上的** AEM Forms上，當數位簽署的PDF附加至AEM Forms JEE Workspace中的工作時，上傳保持卡在上傳狀態或失敗並出現「檔案無效」錯誤。 因此，無法將較大的已簽署PDF附件新增至工作。 此問題已在較新版本中修正。 如需目前版本的Hotfix，請聯絡Adobe支援。 (FORMS-28517)
 
 在JEE上的AEM Forms上，Reader擴充功能無法在WebSphere® Liberty Profile (WLP)平台上運作。 LTS SP3隨附的EAR檔案在其類別路徑上遺漏必要的Bouncy Castle資料庫。
 
