@@ -3,6 +3,7 @@ title: Adobe Experience Manager 6.5 LTS、SP3最新發行說明
 description: 尋找Adobe Experience Manager 6.5 LTS Service Pack 3的最新發行資訊。
 solution: Experience Manager
 feature: Release Information
+owner: Rick Brough
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 product_v2:
@@ -21,10 +22,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7c3cc17781a4f5ca68ed738e76063a75c18beaeb
+source-git-commit: dc085d8f240ae633d82c0b03e8e30ccb82a92008
 workflow-type: tm+mt
-source-wordcount: '7886'
-ht-degree: 21%
+source-wordcount: '7820'
+ht-degree: 20%
 ---
 
 # Adobe Experience Manager 6.5 LTS、SP3最新發行說明 {#release-notes}
@@ -43,7 +44,7 @@ ht-degree: 21%
 
 >[!IMPORTANT]
 >
-> **強制Hotfix** — 若要避免在待命線上壓縮期間發生SNFE (SegmentNotFoundException)問題，請安裝[已知問題 — 線上壓縮期間存放庫損毀](#repository-corruption-during-online-compaction-granite-73045)中說明的Hotfix。
+> **強制Hotfix** — 若要避免在待命線上壓縮期間發生SNFE (SegmentNotFoundException)問題，請安裝[已知問題 — 線上壓縮期間存放庫損毀](#repository-corruption-during-online-compaction-on-standby)中說明的Hotfix。
 
 ## [!DNL Adobe Experience Manager] 6.5 LTS、SP3包含哪些專案 {#what-is-new}
 
@@ -93,7 +94,7 @@ ht-degree: 21%
 
 * 自訂屬性編輯器現在支援鍵盤互動及其格式控制項。 作者可以在工具列選項之間移動焦點、選取文字樣式，以及僅使用鍵盤設定屬性值的格式。 (SITES-40333)主要
 
-* 當可用的互動需要拖放時，鍵盤焦點現在會略過側面板「元件」清單。 這項變更可防止鍵盤使用者進入無法使用的元件選擇工作流程。 (SITES-40752)
+* 當可用的互動需要手動移動時，鍵盤焦點現在會略過側面板「元件」清單。 這項變更可防止鍵盤使用者進入無法使用的元件選擇工作流程。 (SITES-40752)
 * 關閉覆蓋現在會將焦點恢復至其觸發控制項。 鍵盤和熒幕助讀程式的使用者不會再回到覆蓋圖或失去在介面中的位置。 (SITES-40819)
 * 鍵盤導覽不再將焦點移至隱藏的頁面內容。 此變更可維持可預測的焦點順序，避免導覽中斷。 (SITES-41430)
 * 「鎖定」按鈕現在會根據標題提供精確熒幕助讀程式的意見回饋。 使用者會聽到清楚的動作標籤，而不是冗長的說明。 (SITES-41431)
@@ -148,7 +149,7 @@ ht-degree: 21%
 * 頁首功能表按鈕不再告訴熒幕助讀程式它們會開啟對話方塊。 熒幕助讀程式會朗讀每個按鈕的展開或收合狀態，以準確說明功能表行為。 (SITES-24742)
 * 「刪除」按鈕上的文字現在可以針對紅色背景提供足夠的對比。 使用者在確認刪除之前，可更輕鬆辨識動作。 (SITES-24772)
 * 畫布卡不再公開通往相同目的地的個別影像和標題連結。 單一連結可減少重複的鍵盤停止和重複的熒幕助讀程式宣告。 (SITES-24947)
-* 「清單檢視」現在會顯示具有較高視覺顯著性的拖放按鈕。 圖示大小、重量和對比更新後，控制項更容易找到和使用。 (SITES-24951)
+* 「清單檢視」現在會顯示具有較高視覺顯著性的手動移動按鈕。 圖示大小、重量和對比更新後，控制項更容易找到和使用。 (SITES-24951)
 * 頁首按鈕現在提供簡明的協助工具名稱：搜尋、應用程式、說明、收件匣和使用者。 熒幕助讀程式不會再在鍵盤導覽期間宣告「可點按」或「圖形」等多餘詞語。 (SITES-24715)
 * 應用程式導覽中的連結現在會顯示更強的視覺重點。 增加文字大小和重量，可改善視力不佳或色覺差異使用者的可讀性。 (SITES-24723)
 * 收件匣連結現在使用語意清單標籤。 熒幕助讀程式可將連結識別為相關群組、宣佈專案計數，並支援更有效率的導覽。 (SITES-24730)
@@ -175,7 +176,7 @@ ht-degree: 21%
 
 #### 管理員使用者介面{#sites-adminui-65-lts-sp3}
 
-* AEM現在可讓管理員群組成員解鎖頁面並模擬使用者。 群組成員可以透過其現有的存取權完成這兩項管理工作。 (SITES-14732)
+* AEM現在可讓管理員群組的成員解鎖頁面並模擬使用者。 群組成員可以透過其現有的存取權完成這兩項管理工作。 (SITES-14732)
 * Assets管理員檢視現在會在作者在時間軸中選取「**還原為此版本**」後更新資產卡。 縮圖會立即顯示還原的版本，不再顯示過時的預覽內容。 (SITES-46590)
 
 
@@ -242,7 +243,7 @@ Headless內容片段REST API套件組合會移除過時的功能切換與相關�
 
 #### 元件控制台{#sites-component-console-65-lts-sp3}
 
-內容尋找器現在會列出名稱中包含不可編碼字元的資產，而不會失敗或產生例外。 「元件即時使用情況」頁面也會持續載入大型結果集，而不會在捲動期間顯示空白列。 (SITES-44672)主要
+內容尋找器現在會列出名稱中包含不可編碼字元的資產，而不會失敗或產生例外。 「元件即時使用情況」頁面也會持續載入大型結果集，而不會在捲動期間顯示空白列。 (SITES-44672)
 
 <!--
 #### Content API{#sites-content-api-65-lts-sp3}
@@ -325,51 +326,51 @@ Campaign ContentServlet現在會在內容請求期間保留JSON回應內容型�
 
 #### 增強功能 {#forms-enhancements-65-lts-sp3}
 
-* Forms-24360：新增適用於Microsoft Office 2024的PDF Generator (PDFG)支援。 這同時適用於OSGi和JEE部署。
-* Forms-24949：在Forms 6.5 LTS上新增AEM Forms Builder Agent支援。 如此可匯入Forms Manager HTTP API和代理程式所需的Form Generative AI (GenAI) HTTP API。
-* Forms-25180：已將`daysUntilSigningDeadline`值新增至AEM Forms使用者介面，讓作者可以向收件者顯示Adobe Sign簽署截止日期前的剩餘天數。
-* Forms-25182、FORMS-25181：設定為單一使用者帳戶時，PDF Generator (PDFG)現在支援多執行緒檔案轉換。 這同時適用於OSGi和JEE部署。
-* Forms-27595：在AEM Forms Document Security中為動態浮水印新增&#x200B;**使用者設定檔說明**&#x200B;屬性，因此浮水印可包含使用者的設定檔說明。
+* 新增適用於Microsoft Office 2024的PDF Generator (PDFG)支援。 這同時適用於OSGi和JEE部署。 (FORMS-24360)
+* 在AEM Forms 6.5 LTS上新增Forms Builder Agent支援。 如此可匯入Forms Manager HTTP API和代理程式所需的Form Generative AI (GenAI) HTTP API。 (FORMS-24949)
+* 已將`daysUntilSigningDeadline`值新增至AEM Forms使用者介面，讓作者可以向收件者顯示Adobe Sign簽署截止日期前的剩餘天數。 (FORMS-25180)
+* 設定為單一使用者帳戶時，PDF Generator (PDFG)現在支援多執行緒檔案轉換。 這同時適用於OSGi和JEE部署。 (FORMS-25182， FORMS-25181)
+* 在AEM Forms Document Security中為動態浮水印新增&#x200B;**使用者設定檔描述**&#x200B;屬性，因此浮水印可以包含使用者的設定檔描述。 (FORMS-27595)
 * 除了Oracle資料庫之外，WebSphere® Liberty Profile (WLP)現在也支援Microsoft® SQL Server。
 
 #### 已修正的問題 {#forms-fixed-issues-65-lts-sp3}
 
-* Forms-23726：在Adaptive Forms屬性中套用XML結構描述失敗，因為`xsom`資料庫衝突。 結構描述選取現在可以運作。
-* Forms-24296： Foundation元件檔案附件欄位在上傳時接受不允許的檔案型別（例如`.xsd`），並僅在提交時拒絕它們，這與其他封鎖的型別不同。 不允許的型別現在會在上傳時封鎖。
-* Forms-24603：在通訊管理信函中，包含條件的文字片段在儲存為草稿時遺失了分行符號。 草稿現在會保留原始的分行符號。
-* Forms-24783：從Open Services Gateway Initiative (OSGi)型Forms工作流程的`assignTask`步驟中捨棄檔案附件。 附件現在會透過工作指派保留。
-* Forms-24877：套用顯示模式時，「日期選擇器」行事曆圖示未顯示任何可存取的標籤，因此NVDA熒幕助讀程式僅宣告「可點按」。 圖示現在會提供描述性標籤。
-* Forms-24913： AEM Forms工作流程在Adobe Sign步驟後停滯，因為系統從未傳回簽署狀態。 工作流程現在會在簽署完成後繼續。
-* Forms-25033：鍵盤索引標籤順序已略過手寫簽名元件，導致僅限鍵盤的使用者無法存取輔助功能。 索引標籤導覽現在會到達欄位。
-* Forms-25045：繁體中文（香港）翻譯在升級後停止呈現，因此表單會回覆為預設語言。 現在，已翻譯的文字可正確轉譯。
-* Forms-25170：當起始執行個體計數為0時，呼叫`addInstance()`未顯示動態新增的面板。 新增的面板現在會立即顯示。
-* Forms-25225：伺服器端重新驗證移除了最適化Forms中片段外部的欄位翻譯，將標籤回覆為基本語言。 這些翻譯現在會保留。
-* Forms-25233：在OSGi部署上，組合器服務無法解析XDP檔案中的巢狀片段參考，導致它們在組合輸出中遺失。 巢狀片段現在已解析。
-* Forms-25289： Forms轉譯服務針對各個Service Pack的相同輸入傳回不同的輸出，這會影響「通訊管理」信件。 演算輸出現在是一致的。
-* Forms-25290：儲存的通訊管理信件在重新開啟時會遺失空格，並在部分位置顯示誤判的「x」。 儲存的信件內容現在會保持不變。
-* Forms-25346：Service Pack升級後，互動式通訊(IC)字母在載入進度環上凍結，而字母在預覽中載入遺失的間距。 載入和間距現在可以正常運作。
-* Forms-25431：「建立表單片段」精靈會在標題欄位中的每個按鍵時傳送網路要求。 已刪除多餘的呼叫。
-* Forms-25645：從內嵌上傳的JSON結構描述建立核心元件型最適化表單片段失敗，原因是「ALC-FMG-700-009已指定無效的表單模型」。 現在接受內嵌JSON結構描述。
-* Forms-25646：以JSON結構描述建置的核心元件為基礎的最適化表單片段，在編輯器中顯示空白的「資料來源」面板。 面板現在會列出結構描述資料來源。
-* Forms-25674：互動式通訊(IC)代理程式使用者介面會開啟至空白頁面，使代理程式無法檢視IC內容。 代理程式使用者介面現在會呈現。
-* Forms-25686：切換建立最適化表單片段精靈中的結構描述型別選項時，沒有清除前一個選項的狀態，因此會產生結構描述不符的情況。 精靈現在會重設非使用中選項。
-* Forms-25757：套用佈景主題時沒有更新基本使用者端資料庫，因此佈景主題變更似乎沒有效果。 主題現在會更新基本使用者端資料庫。
-* Forms-25825：行動漢堡選單未回應點選，導致導覽在行動裝置上無法使用。 功能表現在會如預期般開啟。
-* Forms-26333：取消發佈表單後，「發佈」動作消失，封鎖重新發佈。 現在取消發佈後即可使用「發佈」。
-* Forms-26763：在Designer中，對靜態文字物件內的超連結進行編輯後，其粗體格式會遺失。 粗體格式現在於編輯中保留下來。
-* Forms-26817：按一下最適化表單上的「重設」 ，會清除影像元件中作者設定的影像，並留下損毀的影像，而其他欄位會正確重設。 重設現在會保留已設定的影像。
-* Forms-26852：在「代理程式」使用者介面中，日期/時間欄位會顯示比儲存值早一天的日期。 欄位現在顯示正確的日期。
-* Forms-26733、FORMS-26734：將Apache Log4j更新至2.25.5版。
+* 在Adaptive Forms屬性中套用XML結構描述失敗，因為`xsom`資料庫衝突。 結構描述選取現在可以運作。 (FORMS-23726)
+* Foundation元件檔案附件欄位在上傳時接受不允許的檔案型別（例如`.xsd`），並只在上傳時拒絕它們，不像其他被封鎖的型別。 不允許的型別現在會在上傳時封鎖。 (FORMS-24296)
+* 在「通訊管理」信函中，包含條件的文字片段在儲存為草稿時遺失其分行符號。 草稿現在會保留原始的分行符號。 (FORMS-24603)
+* 從以Open Services Gateway Initiative (OSGi)為基礎的Forms工作流程中的`assignTask`步驟捨棄檔案附件。 附件現在會透過工作指派保留。 (FORMS-24783)
+* 套用顯示模式時，「日期選擇器」行事曆圖示未顯示任何可存取的標籤，因此NVDA熒幕助讀程式僅宣告「可點按」。 圖示現在會提供描述性標籤。 (FORMS-24877)
+* AEM Forms工作流程在Adobe Sign步驟後停頓，因為系統從未傳回簽署狀態。 工作流程現在會在簽署完成後繼續。 (FORMS-24913)
+* 鍵盤標籤順序已略過手寫簽名元件，為僅使用鍵盤的使用者建立協助工具障礙。 索引標籤導覽現在會到達欄位。 (FORMS-25033)
+* 繁體中文（香港）翻譯在升級後停止轉譯，因此表單會回覆為預設語言。 現在，已翻譯的文字可正確轉譯。 (FORMS-25045)
+* 當開始執行個體計數為0時，呼叫`addInstance()`未顯示動態新增的面板。 新增的面板現在會立即顯示。 (FORMS-25170)
+* 伺服器端重新驗證移除了最適化Forms中位於片段外部的欄位翻譯，將標籤回覆為基本語言。 這些翻譯現在會保留。 (FORMS-25225)
+* 在OSGi部署上，組合器服務無法解析XDP檔案中的巢狀片段參考，導致它們在組合輸出中遺失。 巢狀片段現在已解析。 (FORMS-25233)
+* Forms轉譯服務針對各個Service Pack的相同輸入傳回不同的輸出，這會影響通訊管理信件。 演算輸出現在是一致的。 (FORMS-25289)
+* 「已儲存的通訊管理」信件在重新開啟時，遺失空格，並在某些位置顯示誤碼「x」。 儲存的信件內容現在會保持不變。 (FORMS-25290)
+* Service Pack升級後，互動式通訊(IC)字母在載入進度環上凍結，而確實載入字母在預覽中遺失間距。 載入和間距現在可以正常運作。 (FORMS-25346)
+* 「建立表單片段」精靈會在標題欄位中的每個按鍵時傳送網路要求。 已刪除多餘的呼叫。 (FORMS-25431)
+* 從內嵌上傳的JSON結構描述建立核心元件型最適化表單片段失敗，原因是「ALC-FMG-700-009已指定無效的表單模型」。 現在接受內嵌JSON結構描述。 (FORMS-25645)
+* 以JSON結構描述建置的核心元件式最適化表單片段，在編輯器中顯示空白的「資料來源」面板。 面板現在會列出結構描述資料來源。 (FORMS-25646)
+* 互動式通訊(IC)代理程式使用者介面會開啟至空白頁面，使代理程式無法檢視IC內容。 代理程式使用者介面現在會呈現。 (FORMS-25674)
+* 在建立最適化表單片段精靈中切換結構描述型別選項時，不會清除前一個選項的狀態，進而產生結構描述不符的情況。 精靈現在會重設非使用中選項。 (FORMS-25686)
+* 套用佈景主題不會更新基本使用者端資料庫，因此佈景主題變更似乎沒有效果。 主題現在會更新基本使用者端資料庫。 (FORMS-25757)
+* 行動漢堡選單沒有回應點選，導致導覽在行動裝置上無法使用。 功能表現在會如預期般開啟。 (FORMS-25825)
+* 取消發佈表單後，「發佈」動作消失，這會封鎖重新發佈。 現在取消發佈後即可使用「發佈」。 (FORMS-26333)
+* 在Designer中，對靜態文字物件內的超連結進行編輯後，其粗體格式會遺失。 粗體格式現在於編輯中保留下來。 (FORMS-26763)
+* 按一下最適化表單上的「重設」 ，會清除影像元件中作者設定的影像，並留下損毀的影像，而其他欄位會正確重設。 重設現在會保留已設定的影像。 (FORMS-26817)
+* 在「代理程式」使用者介面中，日期/時間欄位會顯示比儲存值早一天的日期。 欄位現在顯示正確的日期。 (FORMS-26852)
+* 將Apache Log4j更新至2.25.5版。 (FORMS-26733， FORMS-26734)
 
 已在6.5 LTS Service Pack 3中修正JEE上AEM Forms的下列問題：
 
-* Forms-27585：在JEE上的AEM Forms上，呼叫`submitForm()`的XFA型PDF forms無法在指令碼呼叫`closeDoc()`時在Adobe Reader或Acrobat中顯示提交結果。 現在提交結果可正確顯示。
-* Forms-25998：在JEE上的AEM Forms上，在管理控制檯中測試HSM連線時，在Java 21下註冊Hardware Security Module (HSM)私密金鑰憑證失敗，出現`IllegalAccessError`。 HSM私密金鑰憑證註冊現在可以運作。
-* Forms-24993：在JEE上的AEM Forms上，在叫用Web服務步驟中載入WSDL失敗，出現`SAXException` （「檔案過早結束」）。 WSDL現在可正確載入。
-* Forms-24518：在JEE上的AEM Forms (JBoss)上，由於舊版JSTL taglib URI，Reader擴充功能Web應用程式在全新安裝後傳回「錯誤處理請求」。 Reader擴充功能網頁應用程式現在會載入。
-* Forms-27495：在JEE上的AEM Forms上，啟用單一使用者模式時，PDF Generator未轉換Excel (`.xlsx`)檔案，轉換無限期擱置。 Excel轉換現在會在單一使用者模式下完成。
-* Forms-27098：在JEE上的AEM Forms上，以管理員身分登入`/lc`失敗，因為SOAP SDK (`/sdk`)驗證閘道。 管理員登入現在成功。
-* Forms-25869：在JEE版的AEM Forms上，PDF Generator整合更新的轉換引擎修正，以提高轉換可靠性。
+* 在JEE上的AEM Forms上，當指令碼呼叫`closeDoc()`時，以XFA為基礎的PDF forms呼叫`submitForm()`無法在Acrobat Reader或Acrobat中顯示提交結果。 現在提交結果可正確顯示。 (FORMS-27585)
+* 在JEE上的AEM Forms上，在管理控制檯中測試HSM連線時，在Java 21下註冊Hardware Security Module (HSM)私密金鑰憑證失敗，出現`IllegalAccessError`。 HSM私密金鑰憑證註冊現在可以運作。 (FORMS-25998)
+* 在JEE上的AEM Forms上，在叫用Web服務步驟中載入WSDL失敗，結果為`SAXException` （「檔案過早結束」）。 WSDL現在可正確載入。 (FORMS-24993)
+* 在JEE上的AEM Forms (JBoss)上，由於舊版JSTL taglib URI，Reader擴充功能Web應用程式在全新安裝後傳回「錯誤處理請求」。 Reader擴充功能網頁應用程式現在會載入。 (FORMS-24518)
+* 在JEE上的AEM Forms上，啟用單一使用者模式時，PDF Generator未轉換Excel (`.xlsx`)檔案，轉換無限期擱置。 Excel轉換現在會在單一使用者模式下完成。 (FORMS-27495)
+* 在JEE上的AEM Forms上，以管理員身分登入`/lc`失敗，因為SOAP SDK (`/sdk`)驗證閘道。 管理員登入現在成功。 (FORMS-27098)
+* 在JEE版AEM Forms上，PDF Generator整合了更新的轉換引擎修正，以提高轉換可靠性。 (FORMS-25869)
 
 在JEE上&#x200B;**安裝AEM Forms 6.5 LTS SP3**
 
@@ -383,7 +384,7 @@ Campaign ContentServlet現在會在內容請求期間保留JSON回應內容型�
 
 * 在JEE 6.5 LTS SP3 **上的** AEM Forms上，將&#x200B;**PostScript (PS)、EPS和PRN檔案轉換到PDF**&#x200B;失敗。 `PsToPdfSvc`原生處理序可能會意外終止，導致轉換工作失敗，並產生`ALC-PDG-003-011`和`ALC-PDG-001-028`等錯誤。 請聯絡Adobe客戶支援以尋求協助。 (FORMS-28152)
 
-* 在JEE 6.5 LTS SP3 **上的** AEM Forms上，當數位簽署的PDF附加至AEM Forms JEE Workspace中的工作時，上傳保持卡在上傳狀態或失敗並出現「檔案無效」錯誤。 因此，無法將較大的已簽署PDF附件新增至工作。 此問題已在較新版本中修正。 如需目前版本的Hotfix，請聯絡Adobe支援。 (FORMS-28517)
+* 在JEE 6.5 LTS SP3 **上的** AEM Forms上，將數位簽署的PDF上傳到AEM Forms JEE Workspace中的工作失敗或擱置。 因此，無法將較大的已簽署PDF附件新增至工作。 此問題已在較新版本中修正。 如需目前版本的Hotfix，請聯絡Adobe支援。 (FORMS-28517)
 
 在JEE上的AEM Forms上，Reader擴充功能無法在WebSphere® Liberty Profile (WLP)平台上運作。 LTS SP3隨附的EAR檔案在其類別路徑上遺漏必要的Bouncy Castle資料庫。
 
@@ -396,7 +397,7 @@ Campaign ContentServlet現在會在內容請求期間保留JSON回應內容型�
    bcmail-jdk18on-1.84.jar bcprov-jdk18on-1.84.jar bcpkix-jdk18on-1.84.jar bcutil-jdk18on-1.84.jar
    ```
 
-1. 將修改過的EAR檔案重新部署至WebSphere® Liberty Profile `dropins`資料夾：
+1. 將修改過的EAR檔案重新部署至WebSphere® Liberty Profile `dropins`資料夾
    1. 停止WebSphere® Liberty設定檔伺服器，並從`<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`中刪除`adobe-livecycle-websphere.ear`。
    1. 從`<WebSphere Liberty Profile install location>\usr\servers\<server-name>\apps\expanded\`刪除`adobe-livecycle-websphere.ear`目錄。
    1. 將步驟2中修改過的EAR檔案複製到`<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`。
@@ -404,9 +405,7 @@ Campaign ContentServlet現在會在內容請求期間保留JSON回應內容型�
 
 #### 安全性修正 {#forms-security-fixes-65-lts-sp3}
 
-此版本解決AEM Forms中的安全漏洞，包括XSS、SSRF和XXE，以及更新程式庫。
-
-
+此版本解決AEM Forms的安全漏洞，包括XSS、SSRF和XXE，以及更新程式庫。
 
 
 ### 基礎 {#foundation-65-lts-sp3}
@@ -551,7 +550,7 @@ Eclipse Jetty 11.0.x 會用於作為快速入門的 servlet 引擎。
 
 適用於：安裝Service Pack 3 (SP3)的AEM 6.5 LTS （內部部署）客戶。 SP3會以Quickstart JAR形式提供。
 
-**為什麼這種升級做法很重要**
+**為什麼此升級實務很重要**
 EM 6.5 LTS 適用的 SP2 會以 Quickstart JAR 形式提供，而非透過「封裝管理員」進行安裝的 ZIP 檔。 內部部署客戶可透過取代Quickstart JAR、將其擷取並重新啟動來升級。 此方法與Adobe的標準升級程式一致。
 
 
@@ -667,19 +666,15 @@ Adobe 會持續審閱或演進產品功能，藉由更新或取代舊版功能�
 
 ## 已知問題 {#known-issues}
 
-### 待命時線上壓縮期間存放庫損毀(GRANITE-73045) {#repository-corruption-during-online-compaction-granite-73045}
+### 待命線上壓縮期間存放庫損毀 {#repository-corruption-during-online-compaction-on-standby}
 
-如果執行個體先前是以TarMK冷待命執行且後來升級為主要，使用者可能會線上上壓縮期間遇到存放庫損毀的情況。 此情境中可能會發生 `SegmentNotFoundException` (SNFE)，並可能導致存放庫損毀。
+如果執行個體先前執行為TarMK Cold Standby，而後來升級為主要，則線上壓縮可能會以`SegmentNotFoundException` (SNFE)損毀JCR存放庫。
 
-若要解決此問題，請安裝「[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/cq-6.5.lts.3-hotfix-GRANITE-74457-1.0.zip)」處的 Hotfix。 由於 Hotfix 包含低階 `oak-segment-tar` 組合包，所以執行個體會在安裝後重新啟動。
+**解析度**
 
-計劃套用執行個體時的停機時間。 若要離線壓縮，請使用對應的 [`oak-run` jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar) (也可在 Software Distribution 中使用)。
-
->[!NOTE]
->
-> * 對於任何`oak-run`作業，請使用[`oak-run` 2.4.1-B002 jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar)。
->
-> * 設定系統屬性 `oak.segment.cleanup.skipDanglingFutureReclaim=true` 以啟動 AEM。
+1. 從Software Distribution安裝[hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/cq-6.5.lts.3-hotfix-GRANITE-74457-1.0.zip)。 它包含低階`oak-segment-tar`套件組合，因此在安裝後重新啟動執行個體 — 規劃停機時間。
+1. 啟動AEM時設定系統屬性`oak.segment.cleanup.skipDanglingFutureReclaim=true`。 AEM啟動時需要此旗標，而非執行離線壓縮時。
+1. 對於任何`oak-run`作業，請使用Software Distribution中相符的[`oak-run` 2.4.1-B002 jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar)。
 
 ### AEM Forms
 
@@ -710,7 +705,6 @@ Adobe 會持續審閱或演進產品功能，藉由更新或取代舊版功能�
 
 從 Adobe 軟體發佈入口網站下載索引套件 [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip)。
 
--->
 
 &#x200B;###
 
