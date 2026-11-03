@@ -7,9 +7,9 @@ user-guide-description: 使用Adobe Experience Manager 6.5 LTS檔案瞭解其運
 breadcrumb-title: 使用手冊
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: 82ad777feafc14635e26f445a1be6001a2b82672
+source-git-commit: bac5d173f2b6c822f2aa59a6647b5cb127788d2d
 workflow-type: tm+mt
-source-wordcount: '7809'
+source-wordcount: '7768'
 ht-degree: 22%
 ---
 # Adobe Experience Manager 6.5 LTS檔案 {#content}
@@ -773,12 +773,6 @@ ht-degree: 22%
     + [代表其他使用者保護檔案](/help/forms/using/protect-document-on-behalf-of-another-user.md)
   + Forms Designer {#use-forms-designer}
     + [Forms Designer說明](/help/forms/using/forms-designer-help.md)
-    + [使用Designer](https://www.adobe.com/go/learn_aemforms_designer_65_tw)
-    + [Designer快速入門教學課程](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
-    + [Designer範例](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
-    + [Designer指令碼基本需知](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_tw)
-    + [Designer指令碼參考](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_tw)
-    + [Designer FormCalc參考](https://www.adobe.com/go/learn_aemforms_formCalc_65_tw)
     + [在HTML5 Forms中使用手寫簽名](/help/forms/using/scribble-signature.md)
     + [在 Designer 中變更頁面零內容](/help/forms/using/changing-page-zero-content-designer.md)
     + 協助工具最佳實務 {#accessibility-best-practices}
