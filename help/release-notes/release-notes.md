@@ -22,9 +22,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: dc085d8f240ae633d82c0b03e8e30ccb82a92008
+source-git-commit: 5bc7e1ae18a7ee667241c2c82b55d3f32e71ce41
 workflow-type: tm+mt
-source-wordcount: '7820'
+source-wordcount: '7863'
 ht-degree: 20%
 ---
 
@@ -381,6 +381,8 @@ Campaign ContentServlet現在會在內容請求期間保留JSON回應內容型�
 1. 如果您的專案使用`adobe-livecycle-client.jar` SDK使用者端資料庫，請在專案的類別路徑中更新它。 最新版本可在`<AEM_Forms_Installation_dir>/sdk/client-libs/common/adobe-livecycle-client.jar`取得。
 
 #### 已知問題 {#forms-known-issues-65-lts-sp3}
+
+* 在Windows **的JEE和OSGi上的** AEM Forms 6.5 LTS SP3上，將現有PDF Generator檔案匯出為其他支援的檔案格式時，PDF (PDFG)會擱置。 匯出作業未完成，且未傳迴轉換的輸出檔案。 (FORMS-29849)
 
 * 在JEE 6.5 LTS SP3 **上的** AEM Forms上，將&#x200B;**PostScript (PS)、EPS和PRN檔案轉換到PDF**&#x200B;失敗。 `PsToPdfSvc`原生處理序可能會意外終止，導致轉換工作失敗，並產生`ALC-PDG-003-011`和`ALC-PDG-001-028`等錯誤。 請聯絡Adobe客戶支援以尋求協助。 (FORMS-28152)
 
