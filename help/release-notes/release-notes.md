@@ -22,9 +22,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: dc085d8f240ae633d82c0b03e8e30ccb82a92008
+source-git-commit: 5bc7e1ae18a7ee667241c2c82b55d3f32e71ce41
 workflow-type: tm+mt
-source-wordcount: '7820'
+source-wordcount: '7863'
 ht-degree: 20%
 ---
 
@@ -382,6 +382,8 @@ Campaign ContentServlet現在會在內容請求期間保留JSON回應內容型�
 
 #### 已知問題 {#forms-known-issues-65-lts-sp3}
 
+* 在Windows **的JEE和OSGi上的** AEM Forms 6.5 LTS SP3上，將現有PDF Generator檔案匯出為其他支援的檔案格式時，PDF (PDFG)會擱置。 匯出作業未完成，且未傳迴轉換的輸出檔案。 (FORMS-29849)
+
 * 在JEE 6.5 LTS SP3 **上的** AEM Forms上，將&#x200B;**PostScript (PS)、EPS和PRN檔案轉換到PDF**&#x200B;失敗。 `PsToPdfSvc`原生處理序可能會意外終止，導致轉換工作失敗，並產生`ALC-PDG-003-011`和`ALC-PDG-001-028`等錯誤。 請聯絡Adobe客戶支援以尋求協助。 (FORMS-28152)
 
 * 在JEE 6.5 LTS SP3 **上的** AEM Forms上，將數位簽署的PDF上傳到AEM Forms JEE Workspace中的工作失敗或擱置。 因此，無法將較大的已簽署PDF附件新增至工作。 此問題已在較新版本中修正。 如需目前版本的Hotfix，請聯絡Adobe支援。 (FORMS-28517)
@@ -706,7 +708,7 @@ Adobe 會持續審閱或演進產品功能，藉由更新或取代舊版功能�
 從 Adobe 軟體發佈入口網站下載索引套件 [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip)。
 
 
-&#x200B;###
+###
 
 ### 使用僅限 SSL 連線功能時 Dispatcher 連線失敗 (AEM 6.5 LTS SP1 及以上版本已修正){#ssl-only-feature}
 
