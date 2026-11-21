@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: adca0a252dc42816ac61dd402c9102796ad47ead
 workflow-type: tm+mt
-source-wordcount: '10238'
+source-wordcount: '10248'
 ht-degree: 3%
 ---
 # 管理您的數位資產 {#manage-digital-assets}
@@ -35,11 +35,11 @@ ht-degree: 3%
 
 在[!DNL Adobe Experience Manager Assets]中，您除了儲存及控管資產之外，還能執行其他作業。 [!DNL Experience Manager]提供企業級資產管理功能。 您可以編輯和共用資產、執行進階搜尋，以及建立數十種支援的檔案格式的多重轉譯。 您也可以管理版本和數位版權、自動化資產處理、管理和控管中繼資料、使用註解進行合作等等。
 
-本文會說明基本資產管理工作，例如建立或上傳、中繼資料更新、複製、移動和刪除、發佈、取消發佈和搜尋資產。 若要瞭解使用者介面，請參閱[開始使用資產使用者介面](/help/sites-authoring/basic-handling.md)。 若要管理內容片段，請參閱[管理內容片段](/help/assets/content-fragments/content-fragments-managing.md)資產。
+本文會說明基本資產管理工作：建立、上傳、更新中繼資料、複製、移動、刪除、發佈、取消發佈和搜尋。 若要瞭解使用者介面，請參閱[開始使用資產使用者介面](/help/sites-authoring/basic-handling.md)。 若要管理內容片段，請參閱[管理內容片段](/help/assets/content-fragments/content-fragments-managing.md)資產。
 
 ## 建立檔案夾 {#creating-folders}
 
-組織資產集合（例如，所有`Nature`影像）時，您可以建立資料夾以將它們保持在一起。 您可以使用資料夾來分類及組織您的資產。 [!DNL Experience Manager Assets]不要求您組織資料夾中的資產才能改善運作。
+若要同時保留資產集合（例如`Nature`個影像），請建立資料夾。 您可以使用資料夾來分類及組織您的資產。 [!DNL Experience Manager Assets]不要求您組織資料夾中的資產才能改善運作。
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ Move this section into a new article. CQDOC-14874 ticket is created for this.
 In this complete article, replace emphasis with UICONTROL where appropriate.
 -->
 
-您可以從本機資料夾或網路磁碟機將各種型別的資產（包括影像、PDF檔案、RAW檔案等）上傳到[!DNL Experience Manager Assets]。
+您可以從本機資料夾或網路磁碟機將各種資產（包括影像、PDF和RAW檔案）上傳到[!DNL Experience Manager Assets]。
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 >
 >您上傳至Experience Manager的Assets若檔案名稱超過100個字元，在Dynamic Media中使用時，名稱會縮短。
 >
->檔案名稱中的前100個字元會依原樣使用；其餘字元會由英數字元字串取代。 此重新命名方法可確保在Dynamic Media中使用資產時具有唯一名稱。 其用意也是為了適應Dynamic Media中允許的最大資產檔案名稱長度。
+>[!DNL Experience Manager]使用檔案名稱的前100個字元，並以英數字串取代任何剩餘的字元。 此重新命名方法可確保在Dynamic Media中使用資產時具有唯一名稱。 其用意也是為了適應Dynamic Media中允許的最大資產檔案名稱長度。
 
 您可以選擇將資產上傳到資料夾，而不論資料夾是否已指派處理設定檔。
 
@@ -97,7 +97,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
    ![上傳資產進度列](assets/upload-progress-bar.png)
 
-可設定資產的大小，超過此大小即可視為大型資產。 例如，您可以將系統設定為將超過1000 MB （而非500 MB）的資產視為大型資產。 在此情況下，當大小超過1000 MB的資產被上傳時，**[!UICONTROL 暫停]**&#x200B;會出現在進度列上。
+可設定資產的大小，超過此大小即可視為大型資產。 若要將超過1000 MB （而非500 MB）的資產視為大資產，請設定系統。 在此情況下，當大小超過1000 MB的資產被上傳時，**[!UICONTROL 暫停]**&#x200B;會出現在進度列上。
 
 如果上傳大於1000 MB的檔案時小於1000 MB，則不會顯示[!UICONTROL 暫停]選項。 但是，如果您取消小於1000 MB的檔案上傳，則會顯示&#x200B;**[!UICONTROL 暫停]**&#x200B;選項。
 
@@ -267,7 +267,7 @@ Dynamic Media可透過FTP伺服器批次上傳資產。 如果您想要上傳大
 | 處理中 | | 選擇&#x200B;**[!UICONTROL 點陣化]**，將檔案中的向量圖形轉換成點陣圖格式。 |
 | 在演算後的影像中維持透明背景 | | 維持檔案的背景透明度。 |
 | 解決方法 | | 決定解析度設定。 此設定決定檔案中每英吋顯示的畫素數目。 |
-| 色彩空間 | | 選取「色域」選單，然後從下列色域選項中選擇： |
+| 色彩空間 | | Select的「色域」功能表，並從下列色域選項中選擇： |
 | | 自動偵測 | 保留檔案的色域。 |
 | | 強製為RGB | 轉換為RGB色域。 |
 | | 強製為CMYK | 轉換為CMYK色彩空間。 |
@@ -581,7 +581,11 @@ PDF在擷取時最多可考慮5000頁以供新上傳使用。 2022年12月31日�
 
 若要從其他頁面解析或移除傳入的參考，請先更新相關參考，然後再刪除資產。 若要禁止使用者刪除參照的資產並留下中斷的連結，請使用覆蓋圖停用強制刪除選項。
 
-若要刪除資產或包含資產的檔案夾：
+>[!IMPORTANT]
+>
+>Dynamic Media - Scene7模式啟用時，刪除Experience Manager中的資產也會將其從Dynamic Media中永久刪除。 資產未移動至Dynamic Media垃圾桶資料夾，因此您無法從Dynamic Media還原。
+
+**若要刪除資產：**
 
 1. 導覽至您要刪除的資產或資料夾位置。
 
@@ -756,7 +760,7 @@ CUG是限制資產存取權的額外方式。 您也可以設定資料夾的登�
 
 1. 在時間軸底部的 **[!UICONTROL 「注釋]** 」方塊中新增注釋。 或者，在影像上標籤一個區域，並在「添加註釋」( **[!UICONTROL Add Annotation]** )對話框中添加註釋。
 
-1. 若要通知註解的使用者，請指定使用者的電子郵件地址並新增註解。 例如，若要通知Aaron MacDonald註解的相關資訊，請輸入@aa。 所有相符使用者的提示都會顯示在清單中。 從清單中選取Aaron的電子郵件地址，這樣您便可以用評論標籤人員。 同樣地，您可以在註解的任何位置或在註解之前或之後標籤更多使用者。
+1. 若要通知註解的使用者，請指定使用者的電子郵件地址並新增註解。 例如，若要通知Aaron MacDonald註解的相關資訊，請輸入@aa。 所有相符使用者的提示都會顯示在清單中。 Select Aaron的電子郵件地址，讓您可利用評論標籤人員。 同樣地，您可以在註解的任何位置或在註解之前或之後標籤更多使用者。
 
    ![指定使用者的電子郵件地址並新增註解以通知使用者](assets/annotate-gif.gif)
 
@@ -779,11 +783,11 @@ CUG是限制資產存取權的額外方式。 您也可以設定資料夾的登�
 
 1. 若要選擇不同的顏色以便區分使用者，請按一下[設定檔]選項，然後按一下[我的偏好設定] **&#x200B;**。
 
-   ![選取使用者設定檔選項，然後選取[我的偏好設定]以開啟[使用者偏好設定]](assets/User-profile-preferences.png)
+   ![Select使用者設定檔選項，然後按一下「我的偏好設定」以開啟「使用者偏好設定」](assets/User-profile-preferences.png)
 
    在&#x200B;**[!UICONTROL 註釋顏色]**&#x200B;方塊中指定所要的顏色，然後按一下&#x200B;**[!UICONTROL 接受]**。
 
-   ![在使用者偏好設定中選取附註顏色，以設定使用者角色顏色](assets/Annotation-color.png)
+   ![使用者偏好設定中的Select註解顏色，以設定使用者角色顏色](assets/Annotation-color.png)
 
 >[!NOTE]
 >
